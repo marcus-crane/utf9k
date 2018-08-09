@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+  <title>utf9k</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a463f2">
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% endblock %}
+</head>
+<body class="w-100 sans-serif bg-white">
+  <main>
+    <article class="cf ph3 ph5-ns pv3 pv5-ns">
+    	<header class="fn fl-ns w-50-ns pr4-ns mb4 mb0-ns">
+        <h2 class="mb3 mt0 lh-title">
+          <a href="/" class="light-purple link">utf9k</a>
+        </h2>
+        <dl class="f6 lh-title mv2">
+          <a href="/projects" class="dib ml0 gray link">Projects</a>
+        </dl>
+        <dl class="f6 lh-title mv2">
+          <a href="/blog" class="dib ml0 gray link">Blog</a>
+        </dl>
+      </header>
+      {% block content %}{% endblock %}
+    </article>
+  </main>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+</body>
+</html>

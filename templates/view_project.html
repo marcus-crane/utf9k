@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="fn fl-ns w-50-ns">
+  <h2 class="mb0 mt0">{{ project.metadata.title }}</h2>
+  <h2 class="f6 fw4 mt2 mb3 black-60">
+    {{ project.metadata.date }} [ <a href="{{ project.link }}" class="fab fa-github link light-purple"></a> ]
+  </h2>
+  {{ project.body|safe }}
+</div>
+{% endblock %}
