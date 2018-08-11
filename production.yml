@@ -2,21 +2,17 @@ version: '3'
 services:
   site:
     build: .
+    container_name: site
     ports:
       - "5000:5000"
-    networks:
-      - site_nw
+    restart: on-failure
   nginx:
-    image: "nginx:1.13.5"
+    build: ./nginx
+    container_name: nginx
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./conf.d:/etc/nginx/conf.d
-      - certs:/etc/letsencrypt
-      - certs-data:/data/letsencrypt
-    networks:
-      - site_nw
-networks:
-  site_nw:
-    driver: bridge
+      - /etc/letsencrypt:/etc/letsencrypt
+    depends_on:
+      - site

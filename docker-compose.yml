@@ -2,18 +2,6 @@ version: '3'
 services:
   site:
     build: .
+    container_name: site
     ports:
       - "5000:5000"
-    networks:
-      - site_nw
-  nginx:
-    image: "nginx:1.13.5"
-    ports:
-      - "80:80"
-    volumes:
-      - ./conf.d:/etc/nginx/conf.d
-    networks:
-      - site_nw
-networks:
-  site_nw:
-    driver: bridge
