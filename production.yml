@@ -10,8 +10,11 @@ services:
     image: "nginx:1.13.5"
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./conf.d:/etc/nginx/conf.d
+      - certs:/etc/letsencrypt
+      - certs-data:/data/letsencrypt
     networks:
       - site_nw
 networks:

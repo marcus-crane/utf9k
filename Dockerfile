@@ -5,7 +5,7 @@ RUN mkdir /code
 COPY . /code
 WORKDIR /code
 
-RUN pip install pipenv
+RUN pip install -U pipenv
 RUN pipenv install --system --deploy
 
 CMD ["python", "app.py"]
