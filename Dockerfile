@@ -8,5 +8,4 @@ WORKDIR /code
 RUN pip install pipenv
 RUN pipenv install --system --deploy
 
-EXPOSE 80
 CMD ["python", "app.py"]
