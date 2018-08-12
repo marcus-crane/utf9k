@@ -1,11 +1,10 @@
-from datetime import datetime
-
 from flask import Flask, render_template
+import pendulum
 
 import utils
 
 app = Flask(__name__, static_url_path='')
-last_deployed = datetime.now().strftime('%B %-m %Y at around %-I%p')
+last_deployed = pendulum.now(tz='Pacific/Auckland').strftime('%B %-m %Y at around %-I%p')
 
 @app.route('/')
 def index():

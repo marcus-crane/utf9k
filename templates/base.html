@@ -3,11 +3,13 @@
 <head>
   {% block head %}
   <title>utf9k</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#a463f2">
-  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="theme-color" content="#a463f2" />
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
   {% endblock %}
 </head>
 <body class="w-100 sans-serif bg-white">
@@ -29,10 +31,19 @@
   </main>
   <div class="footer">
     <center>
-      <p class="dib gray pt2 pb1">Last update was {% block last_deploy %}{% endblock %}</p>
+      <p class="dib gray pt2 pb1">Last update was {% block last_deploy %}{% endblock %}
+        <span class="nztdef" title="New Zealand Time">NZT</span>
+      </p>
     </center>
   </div>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
+  <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
+  <script type="text/javascript">
+    tippy('.nztdef', {
+      'animation': 'fade',
+      'arrow': true
+    })
+  </script>
 </body>
 </html>
