@@ -10,7 +10,7 @@
         </dl>
         <dl class="f6 lh-title mv2">
           <dd class="dib ml0 gray">
-            {{ item.date }} [ <a href="{{ item.link }}" class="fab fa-github link light-purple"></a> ]
+            {{ item.date }} {% if 'link' in item %}[ <a href="{{ item.link }}" class="fab fa-github link light-purple"></a> ]{% endif %}
           </dd>
         </dl>
       </div>
