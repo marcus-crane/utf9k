@@ -27,6 +27,11 @@
       {% block content %}{% endblock %}
     </article>
   </main>
+  <div class="footer">
+    <center>
+      <p class="dib gray pt2 pb1">Last update was {% block last_deploy %}{% endblock %}</p>
+    </center>
+  </div>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Mono" rel="stylesheet">
 </body>

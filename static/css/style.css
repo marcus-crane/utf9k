@@ -1,3 +1,24 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.footer p {
+    font-size: 0.65rem;
+}
+
 .item {
     margin: -10px;
     padding: 10px 0 5px 10px;
