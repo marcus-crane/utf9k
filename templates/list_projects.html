@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="mt0 fn fl-ns w-50-ns">
+<div class="mt0 fn fl-ns w-60-ns">
   <h2 class="pb3 mt0 lh-title">Projects</h2>
   <div class="content ml3 ml0-ns">
     {% for item in projects %}
       <div class="item">
-        <dl class="f6 lh-title mv2">
-          <a href="{{ item.path }}" class="dib b black link">{{ item.title }}</a>
+        <dl class="lh-title mv2">
+          <a href="{{ item.path }}" class="f4 dib black link">{{ item.title }}</a>
         </dl>
-        <dl class="f6 lh-title mv2">
+        <dl class="lh-title mv2">
           <dd class="dib ml0 gray">
             {{ item.date }} {% if 'link' in item %}[ <a href="{{ item.link }}" class="fab fa-github link light-purple"></a> ]{% endif %}
           </dd>

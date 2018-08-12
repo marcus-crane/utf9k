@@ -1,7 +1,6 @@
 .item {
-    border-left: 4px solid #a463f2;
-    margin: -15px;
-    padding: 15px 0 5px 10px;
+    margin: -10px;
+    padding: 10px 0 5px 10px;
 }
 
 .item:first-of-type {
@@ -9,8 +8,10 @@
 }
 
 p {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
 }
 
 pre {
