@@ -2,17 +2,17 @@ path: /projects/ipecac
 date: 2018
 title: ipecac
 
-ipecac is a [https://en.wikipedia.org/wiki/Command-line_interface](CLI) utility that I created for use in my daily role as an [SRE](https://en.wikipedia.org/wiki/Site_Reliability_Engineering) at [Xero](https://xero.com/nz/).
+ipecac is a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) utility that I created for use in my daily role as an [SRE](https://en.wikipedia.org/wiki/Site_Reliability_Engineering) at [Xero](https://xero.com/nz/).
 
 As a Site Reliability Engineer, one of our key virtues is reducing toil. My team was at a point where we needed to start creating some endpoint documentation for all of the microservices that we own. Our internal platform is able to scaffold a new service, with configuration already sorted, meaning all the end user needs to do is test and write the core logic they require. Once they're ready, a merged PR to master will send their new service straight out the door to production (assuming they pass UAT deploy, testing and other various checks along the way)
 
 Now that you've got that bit of context, the actual problem. Essentially, we're lazy. Well, I like to think I'm not but collectively, we want to focus on providing value to our (internal) customers, as quick as we can and writing documentation can sometimes feel at odds with that goal. That isn't to say it's not important but if we make (or delete) a service, it'd be nice to just have our endpoint documentation automatically reflect that change.
 
-The solution, that does the job nicely enough, is a CLI called ipecac. Our endpoint documentation lives in the form of Python code comments and at build time, ipecac recursively scans all of our microservices and generates a [Swagger/OAS 3.0(https://swagger.io/specification/) definition file. 
+The solution, that does the job nicely enough, is a CLI called ipecac. Our endpoint documentation lives in the form of Python code comments and at build time, ipecac recursively scans all of our microservices and generates a [Swagger/OAS 3.0](https://swagger.io/specification/) definition file. 
 
 In its current form, all of our code comments actually live in a file called `doc.py` which each service has, but that's purely because all of our controllers are abstracted away into a common base package. For a smaller application, there's no reason you couldn't place ipecac comments above each individual route and generate from there.
 
-Below is an example of what a route comment might look like for an endpoint called /stats/:
+Below is an example of what a route comment might look like for a `/stats/` endpoint:
 
 ```python
 """
