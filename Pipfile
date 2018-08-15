@@ -10,6 +10,11 @@ mistune = "*"
 mistune-contrib = "*"
 pendulum = "*"
 gunicorn = "*"
+redis = "*"
+apscheduler = "*"
+requests = "*"
+pytvdbapi = "*"
+"bs4" = "*"
 
 [dev-packages]
 pylint = "*"

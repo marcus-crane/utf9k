@@ -36,6 +36,14 @@ main {
     padding: 1px 0 5px 10px;
 }
 
+.game {
+    max-height: 475px;
+}
+
+.stats-block {
+    width: 100%
+}
+
 p {
     font-size: 18px;
     line-height: 1.5;
