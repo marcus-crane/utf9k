@@ -5,3 +5,8 @@ services:
     container_name: site
     ports:
       - "80:5000"
+  redis:
+    container_name: redis
+    image: redislabs/rejson:latest
+    ports:
+      - "6379:6379"
