@@ -1,4 +1,5 @@
 from glob import glob
+
 import mistune
 from mistune_contrib import meta
 import pendulum
@@ -28,7 +29,8 @@ def view_content(file_path, base=Settings.CONTENT_BASE, format_date=True):
     with open(f'{base}{file_path}.md') as file:
         item = meta.parse(file.read())
         if format_date:
-            item[0]['date'] = pendulum.parse(item[0]['date']).to_formatted_date_string()
+            item[0]['date'] = pendulum.parse(
+                item[0]['date']).to_formatted_date_string()
         content['metadata'] = item[0]
         content['body'] = markdown(item[1])
         return content

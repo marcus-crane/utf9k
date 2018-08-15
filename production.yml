@@ -6,6 +6,8 @@ services:
     ports:
       - "5000:5000"
     restart: on-failure
+    depends_on:
+      - redis
   nginx:
     build: ./nginx
     container_name: nginx
@@ -14,5 +16,13 @@ services:
       - "443:443"
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
+    restart: on-failure
     depends_on:
       - site
+      - redis
+  redis:
+    container_name: redis
+    image: redislabs/rejson:latest
+    ports:
+      - "6379:6379"
+    restart: on-failure
