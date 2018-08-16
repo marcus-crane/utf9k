@@ -49,6 +49,10 @@ def view_post(post):
                            last_deployed=last_deployed)
 
 
+@app.route('/api/movies')
+def api_movies():
+    return jsonify(json.loads(rc.execute_command('JSON.GET', 'movies')))
+
 @app.route('/api/music')
 def api_music():
     return jsonify(json.loads(rc.execute_command('JSON.GET', 'music')))
@@ -66,10 +70,14 @@ def view_stats():
     except TypeError:
         games = None
     try:
+        movies = json.loads(rc.execute_command('JSON.GET', 'movies'))
+    except TypeError:
+        movies = None
+    try:
         music = json.loads(rc.execute_command('JSON.GET', 'music'))
     except TypeError:
         music = None
-    return render_template('view_stats.html', tracks=music, games=games,
+    return render_template('view_stats.html', tracks=music, games=games, movies=movies,
                            last_deployed=last_deployed)
 
 

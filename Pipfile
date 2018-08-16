@@ -13,7 +13,6 @@ gunicorn = "*"
 redis = "*"
 apscheduler = "*"
 requests = "*"
-pytvdbapi = "*"
 "bs4" = "*"
 
 [dev-packages]
