@@ -7,12 +7,32 @@
     {% for game in games %}
       <div class="dib">
         <a class="mw5 black link dim" title="Game link" href={{ game.link }}>
-          <img class="game db ba b--black-10" alt="Game cover" src={{ game.image }}>
+          <img class="entry db ba b--black-10" alt="Game cover" src={{ game.image }}>
           <dl class="mt2 f6 lh-copy">
             <dt class="clip">Game</dt>
             <dd class="ml0 fw9">{{  game.name }} ({{ game.year }})</dd>
             <dt class="clip">Platform</dt>
             <dd class="ml0 gray">{{ game.platform }}</dd>
+          </dl>
+        </a>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No game data</p>
+  {% endif %}
+  </div>
+  <h3 class="mt0 mb2 lh-title">Movies</h3>
+  <div class="dib stats-block mb3 ml0-ns nowrap overflow-x-auto">
+  {% if movies %}
+    {% for movie in movies %}
+      <div class="dib">
+        <a class="mw5 black link dim" title="Movie link" href={{ movie.link }}>
+          <img class="entry db ba b--black-10" alt="Movie cover" src={{ movie.image }}>
+          <dl class="mt2 f6 lh-copy">
+            <dt class="clip">Title</dt>
+            <dd class="ml0 fw9">{{  movie.name }}</dd>
+            <dt class="clip">Year</dt>
+            <dd class="ml0 gray">{{ movie.year }}</dd>
           </dl>
         </a>
       </div>

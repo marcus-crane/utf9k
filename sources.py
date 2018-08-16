@@ -31,6 +31,30 @@ def query_service(url, headers=dict(), payload=dict()):
     return r.text
 
 
+def film_covers(tmdb):
+    """
+    This function fetches film posters, sometimes called covers,
+    from TheMovieDB.
+    In the event that a cover can't be found, a local placeholder
+    will be used instead.
+    I've never actually had it trigger though
+    since film posters are seemingly always available.
+    :param tmdb: A string containing an ID for TheMovieDB entry.
+    :return: A string containing a URL to an image.
+    """
+    url = ('https://api.themoviedb.org/3/movie/{}/images'
+           '?api_key={}'.format(tmdb, Settings.TMDB))
+    headers = {'Content-Type': 'application/json'}
+    try:
+        data = query_service(url, headers)
+        poster = data['posters'][0]['file_path']
+        img = 'https://image.tmdb.org/t/p/w500{}'.format(poster)
+    except Exception:
+        img = 'no_cover.png'
+
+    return img
+
+
 def game_data(title):
     """
     This function fetches game cover art and other data from Giant Bomb.
@@ -53,7 +77,7 @@ def game_data(title):
         game['name'] = entry['name']
         game['year'] = int(entry['original_release_date'][0:4])
     except Exception:
-        game['img'] = 'https://static.thingsima.de/shared/img/no_cover.png'
+        game['img'] = 'no_cover.png'
 
     return game
 
@@ -71,6 +95,22 @@ def fetch_games():
     data = query_service(url, headers=headers, payload=payload)
     vg_data = parsers.howlongtobeat(data)
     rc.execute_command('JSON.SET', 'games', '.', json.dumps(vg_data))
+
+
+def fetch_movies():
+    """
+    Calling this kicks off everything required to store recently
+    watched movies in the database.
+    :return: N/A
+    """
+    rc.delete('movies')
+    url = 'https://api.trakt.tv/users/sentry/history/movies'
+    headers = {'Content-Type': 'application/json',
+               'trakt-api-version': '2',
+               'trakt-api-key': Settings.TRAKT}
+    data = query_service(url, headers)
+    movie_data = parsers.trakt_movies(data)
+    rc.execute_command('JSON.SET', 'movies', '.', json.dumps(movie_data))
 
 
 def fetch_music():
