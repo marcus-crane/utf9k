@@ -49,20 +49,6 @@ def view_post(post):
                            last_deployed=last_deployed)
 
 
-@app.route('/api/movies')
-def api_movies():
-    return jsonify(json.loads(rc.execute_command('JSON.GET', 'movies')))
-
-@app.route('/api/music')
-def api_music():
-    return jsonify(json.loads(rc.execute_command('JSON.GET', 'music')))
-
-
-@app.route('/api/games')
-def api_games():
-    return jsonify(json.loads(rc.execute_command('JSON.GET', 'games')))
-
-
 @app.route('/stats')
 def view_stats():
     try:

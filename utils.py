@@ -18,11 +18,17 @@ def list_content(folder, base=Settings.CONTENT_BASE, format_date=True):
             file = file.read()
             metadata = meta.parse(file)[0]
             if format_date:
-                content_created = pendulum.parse(metadata['date'])
-                metadata['date'] = content_created.to_formatted_date_string()
+                metadata['date'] = pendulum.parse(metadata['date'])
             content.append(metadata)
-    return sorted(content, key=lambda item: item['date'], reverse=True)
+    if format_date:
+        content = sort_content(content)
+    return content
 
+def sort_content(posts):
+    posts.sort(key=lambda item: item['date'], reverse=True)
+    for post in posts:
+        post['date'] = post['date'].to_formatted_date_string()
+    return posts
 
 def view_content(file_path, base=Settings.CONTENT_BASE, format_date=True):
     content = dict()
