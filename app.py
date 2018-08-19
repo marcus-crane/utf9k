@@ -9,7 +9,7 @@ import utils
 
 app = Flask(__name__, static_url_path='')
 last_deployed = pendulum.now(tz='Pacific/Auckland').strftime(
-    '%B %-m %Y at around %-I%p')
+    '%B %-d %Y at around %-I%p')
 rc = redis.StrictRedis(host='redis', port=6379, db=0, decode_responses=True)
 
 scheduler.start_scheduler()
