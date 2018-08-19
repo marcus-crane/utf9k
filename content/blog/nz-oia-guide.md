@@ -49,7 +49,7 @@ You'll need to know two things: who you want to contact (even roughly) and what 
 
 Now that you've got a goal in mind, the next step is just to contact the agency in question. As noted in Part 2, Section 12(1AA)(a), your request can take any form, whether it be a letter, email or even just verbally. Generally, email is the way to go however so just look up the website for your agency of choice and they should have a page for OIA requests.
 
-For example: a Google Search for `ministry of justice oia` brings up their [OIA request page].(https://www.justice.govt.nz/about/official-information-act-requests/). It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you'll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it's fairly rare for that to occur.
+For example: a Google Search for `ministry of justice oia` brings up their [OIA request page](https://www.justice.govt.nz/about/official-information-act-requests/). It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you'll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it's fairly rare for that to occur.
 
 ## Where to make a request (the easy, public way)
 

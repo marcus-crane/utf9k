@@ -53,7 +53,7 @@ def lastfm(data):
     for item in tracks:
         song = {
             'name': item['name'],
-            'image': '/static/img/no_cover.png',
+            'image': '/img/no_cover.png',
             'link': item['url'],
             'artist': item['artist']['#text']
         }
