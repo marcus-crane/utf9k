@@ -50,7 +50,7 @@ def film_covers(tmdb):
         poster = data['posters'][0]['file_path']
         img = 'https://image.tmdb.org/t/p/w500{}'.format(poster)
     except Exception:
-        img = 'no_cover.png'
+        img = ' /img/no_cover.png'
 
     return img
 
@@ -77,7 +77,7 @@ def game_data(title):
         game['name'] = entry['name']
         game['year'] = int(entry['original_release_date'][0:4])
     except Exception:
-        game['img'] = 'no_cover.png'
+        game['img'] = '/img/no_cover.png'
 
     return game
 
