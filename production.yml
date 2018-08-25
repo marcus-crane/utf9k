@@ -8,6 +8,9 @@ services:
     restart: on-failure
     depends_on:
       - redis
+    networks:
+      - public
+      - private
   nginx:
     build: ./nginx
     container_name: nginx
@@ -17,6 +20,8 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
     restart: on-failure
+    networks:
+      - public
     depends_on:
       - site
       - redis
@@ -26,3 +31,9 @@ services:
     ports:
       - "6379:6379"
     restart: on-failure
+    networks:
+      - private
+networks:
+  public:
+  private:
+    internal: true
