@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<div class="fn fl-ns w-50-ns">
-  <h2 class="mb0 mt0">{{ post.metadata.title }}</h2>
-  <h2 class="f6 fw4 mt2 mb3 black-60">{{ post.metadata.date }}</h2>
-  {{ post.body|safe }}
-</div>
-{% endblock %}
-{% block last_deploy %}{{ last_deployed }}{% endblock %}
