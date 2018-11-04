@@ -7,6 +7,7 @@ SITENAME = 'utf9k'
 SITEURL = ''
 MENUITEMS = [('Projects', '/projects.html'), ('Blog', '/blog.html'), ('Stats', '/stats.html')]
 THEME = 'themes/utf9k'
+THEME_STATIC_DIR = ''
 
 PATH = 'content'
 CSS_FILE = 'css/style.css'
