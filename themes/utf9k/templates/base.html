@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   {% block head %}
-  <title>utf9k</title>
+  <title>{{ SITENAME }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="theme-color" content="#a463f2" />
-  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}" />
+  <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="/css/style.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121987285-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -23,28 +23,25 @@
 <body class="w-100 sans-serif bg-white">
   <main>
     <article class="cf ph3 ph5-ns pv3 pv5-ns">
-    	<header class="fn fl-ns w-30-ns pr4-ns mb4 mb0-ns">
+        <header class="fn fl-ns w-30-ns pr4-ns mb4 mb0-ns">
         <h2 class="mb3 mt0 lh-title">
-          <a href="/" class="light-purple link">utf9k</a>
+          <a href="/" class="light-purple link">{{ SITENAME }}</a>
         </h2>
-        <dl class="lh-title mv2">
-          <a href="/projects" class="dib ml0 gray link">Projects</a>
-        </dl>
-        <dl class="lh-title mv2">
-          <a href="/blog" class="dib ml0 gray link">Blog</a>
-        </dl>
-        <dl class="lh-title mv2">
-          <a href="/stats" class="dib ml0 gray link">Stats</a>
-        </dl>
+        {% for title, link in MENUITEMS %}
+          <dl class="lh-title mv2">
+            <a href="{{ link }}" class="dib ml0 gray link">{{ title }}</a>
+          </dl>
+        {% endfor %}
       </header>
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
     </article>
   </main>
   <div class="footer">
     <center>
       <p class="dib gray pt2 pb1">
         <span class="lastcommit">Last update</span>
-         was {% block last_deploy %}{% endblock %}
+         was (time goes here)
         <span class="nztdef" title="New Zealand Time">NZT</span>
       </p>
     </center>
@@ -53,6 +50,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
   <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
-  <script src="{{ url_for('static', filename='js/tooltips.js') }}"></script>
+  <script src="/js/tooltips.js"></script>
 </body>
 </html>
