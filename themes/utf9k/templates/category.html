@@ -10,11 +10,14 @@
         </dl>
         <dl class="lh-title mv2">
           <dd class="dib ml0 gray">
-            {{ article.locale_date }}
+            {{ article.date | strftime('%d %B %Y') }}
           </dd>
         </dl>
       </div>
     {% endfor %}
+    {% if articles_page.has_other_pages() %}
+      {% include 'pagination.html' %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}

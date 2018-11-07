@@ -2,7 +2,7 @@
 {% block content %}
 <div class="fn fl-ns w-50-ns">
   <h2 class="mb0 mt0">{{ article.title }}</h2>
-  <h2 class="f6 fw4 mt2 mb3 black-60">{{ article.locale_date }}</h2>
+  <h2 class="f6 fw4 mt2 mb3 black-60">{{ article.date | strftime('%d %B %Y') }}</h2>
   {{ article.content }}
 </div>
 {% endblock %}

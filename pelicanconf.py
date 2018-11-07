@@ -1,10 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+
+DEV_MACHINES = ['LM-C02VR8K2HTD6']
+SYSTEM = os.uname().nodename
 
 AUTHOR = 'Marcus Crane'
 SITENAME = 'utf9k'
-SITEURL = ''
+if SYSTEM in DEV_MACHINES:
+    SITEURL = 'http://localhost:8000'
+else:
+    SITEURL = 'https://utf9k.net'
 MENUITEMS = [('Projects', '/projects.html'), ('Blog', '/blog.html'), ('Stats', '/stats.html')]
 THEME = 'themes/utf9k'
 THEME_STATIC_DIR = ''
@@ -28,20 +35,9 @@ DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
