@@ -9,15 +9,10 @@
   <meta name="theme-color" content="#a463f2" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
-  <link rel="stylesheet" href="{{ THEME_STATIC_DIR}}/{{ CSS_FILE }}" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121987285-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-121987285-3');
-</script>
+  <link rel="stylesheet" href="/css/style.css" />
+  {% if CATEGORY_FEED_ATOM and category %}
+  <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ category.slug }} atom feed" />
+  {% endif %}
   {% endblock %}
 </head>
 <body class="w-100 sans-serif bg-white">
@@ -46,7 +41,7 @@
       </p>
     </center>
   </div>
-  <div id="template"">Fetching latest commit...</div>
+  <div id="template">Fetching latest commit...</div>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
   <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
