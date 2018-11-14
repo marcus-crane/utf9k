@@ -1,7 +1,7 @@
 {
-    "short_name": "utf9k",
-    "name": "utf9k",
-    "display": "standalone",
-    "background_color": "#a463f2",
-    "theme_color": "#a463f2"
+  "short_name": "utf9k",
+  "name": "utf9k",
+  "display": "standalone",
+  "background_color": "#a463f2",
+  "theme_color": "#a463f2"
 }

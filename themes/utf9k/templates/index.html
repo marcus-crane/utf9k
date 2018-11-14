@@ -1,37 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="mt0 fn fl-ns w-60-ns">
-  <h2 class="mt0 lh-title">Welcome!</h2>
-  <p class="measure mt0-ns">
-    I'm Marcus Crane, a <a href="https://en.wikipedia.org/wiki/Site_Reliability_Engineering" target="_blank" rel="noreferrer" class="blue link">Site Reliability Engineer</a> at <a href="https://www.xero.com/nz/"  target="_blank" rel="noreferrer" class="blue link">Xero</a> in <a href="https://en.wikipedia.org/wiki/Auckland" target="_blank" rel="noreferrer" class="blue link">Auckland, New Zealand.</a>
-  </p>
-  <p class="measure mt0-ns">
-    This site acts as a portfolio but more importantly, it's my own little playground on the web!
-  </p>
-  <p class="measure mt0-ns">
-    You can view the source for this site right <a href="https://github.com/marcus-crane/utf9k" target="_blank" rel="noreferrer" class="blue link">here.</a>
-  </p>
-  <p class="measure mt0-ns">
-    I'm around the web in a bunch of places:
-  </p>
-  <div>
-    <a class="f6 link dim ph3 pv2 mb2 dib ba b--light-purple light-purple br2" target="_blank" rel="noreferrer" href="https://github.com/marcus-crane">
-      <i class="fab fa-github link"></i>
-      Github
-    </a>
-    <a class="f6 link dim ph3 pv2 mb2 dib ba b--light-purple light-purple br2" target="_blank" rel="noreferrer" href="https://instagram.com/sentryism">
-      <i class="fab fa-instagram link"></i>
-      Instagram
-    </a>
-    <a class="f6 link dim ph3 pv2 mb2 dib ba b--light-purple light-purple br2" target="_blank" rel="noreferrer" href="https://linkedin.com/in/marcus-crane">
-      <i class="fab fa-linkedin link"></i>
-      Linkedin
-    </a>
-    <a class="f6 link dim ph3 pv2 mb2 dib ba b--light-purple light-purple br2" target="_blank" rel="noreferrer" href="https://twitter.com/sentreh">
-      <i class="fab fa-twitter link"></i>
-      Twitter
-    </a>
-  </div>
-</div>
+<h2 class="text-2xl font-bold mb-2">Welcome!</h2>
+
+<p class="text-lg mb-3">I'm Marcus Crane, a <a class="dashed-anchor" target="_blank" href="https://en.wikipedia.org/wiki/Site_Reliability_Engineering">Site Reliability Engineer</a> at <a class="dashed-anchor" target="_blank" href="https://xero.com/nz/">Xero</a> in <a class="dashed-anchor" target="_blank" href="https://en.wikipedia.org/wiki/Auckland">Auckland, New Zealand.</a></p>
+
+<p class="text-lg mb-3">This site acts as my portfolio but more importantly, it's my own little playground on the web!</p>
+
+<p class="text-lg mb-3">Heck, you can even view the source right <a class="dashed-anchor" target="_blank" href="https://github.com/marcus-crane/utf9k">here.</a></p>
+
+<p class="text-lg mb-3">I'm around the web in a bunch of places:</p>
+
+<a class="no-underline" target="_blank" rel="noreferrer" href="https://github.com/marcus-crane">
+    <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded">Github</button>
+</a>
+<a class="no-underline" target="_blank" rel="noreferrer" href="https://instagram.com/sentryism">
+    <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded">Instagram</button>
+</a>
+<a class="no-underline" target="_blank" rel="noreferrer" href="https://linkedin.com/in/marcus-crane">
+    <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded">Linkedin</button>
+</a>
+<a class="no-underline" target="_blank" rel="noreferrer" href="https://twitter.com/sentreh">
+    <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded">Twitter</button>
+</a>
 {% endblock %}
 {% block last_deploy %}{{ last_deployed }}{% endblock %}
