@@ -12,7 +12,7 @@ if SYSTEM in DEV_MACHINES:
     SITEURL = 'http://localhost:8000'
 else:
     SITEURL = 'https://utf9k.net'
-MENUITEMS = [('Projects', '/projects.html'), ('Blog', '/blog.html'), ('Stats', '/stats.html')]
+MENUITEMS = [('Projects', '/projects.html'), ('Blog', '/blog.html'), ('Stats', '/stats.html'), ('Contact', '/contact.html')]
 THEME = 'themes/utf9k'
 THEME_STATIC_DIR = ''
 
