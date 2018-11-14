@@ -8,43 +8,35 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="theme-color" content="#a463f2" />
   <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link href="/css/tailwind.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
   {% if CATEGORY_FEED_ATOM and category %}
   <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ category.slug }} atom feed" />
   {% endif %}
   {% endblock %}
 </head>
-<body class="w-100 sans-serif bg-white">
-  <main>
-    <article class="cf ph3 ph5-ns pv3 pv5-ns">
-        <header class="fn fl-ns w-30-ns pr4-ns mb4 mb0-ns">
-        <h2 class="mb3 mt0 lh-title">
-          <a href="/" class="light-purple link">{{ SITENAME }}</a>
-        </h2>
-        {% for title, link in MENUITEMS %}
-          <dl class="lh-title mv2">
-            <a href="{{ link }}" class="dib ml0 gray link">{{ title }}</a>
-          </dl>
-        {% endfor %}
-      </header>
-      {% block content %}
-      {% endblock %}
-    </article>
-  </main>
-  <div class="footer">
-    <center>
-      <p class="dib gray pt2 pb1">
-        <span class="lastcommit">Last update</span>
-         was some time ago
-        <span class="nztdef" title="New Zealand Time">NZT</span>
-      </p>
-    </center>
+<body>
+  <div class="p-2 pt-12 font-sans leading-normal">
+    <div class="px-2">
+      <div class="sm:flex -mx-2 h-12">
+        <div class="w-1/5 px-12">
+          <a href="/" class="text-purple text-2xl font-bold">
+            {{ SITENAME }}
+          </a>
+          <ul class="list-reset mb-8 pt-6">
+          {% for title, link in MENUITEMS %}
+            <li>
+              <a href="{{ link }}">{{ title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="w-100 xl:w-1/2 md:w-3/5 sm:w-4/5 px-12">
+        {% block content %}
+        {% endblock %}
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="template">Fetching latest commit...</div>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
-  <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
-  <script src="/js/tooltips.js"></script>
 </body>
 </html>
