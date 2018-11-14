@@ -15,3 +15,7 @@ a:hover {
 #content p {
   padding-bottom: 1rem;
 }
+
+textarea {
+  min-height: 250px;
+}
