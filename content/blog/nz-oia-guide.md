@@ -90,5 +90,5 @@ I'd love to hear what those US Film Industry interactions were about myself. Per
 
 Sources for the table above:
 
-https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960
-https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439
+* [FOIA Sections S6(a) and S(6)b(i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
+* [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)
