@@ -19,3 +19,38 @@ a:hover {
 textarea {
   min-height: 250px;
 }
+
+/* Table styles (should be made into a plugin later) */
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th {
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+tbody {
+    vertical-align: baseline;
+}
+
+td {
+    white-space: nowrap;
+    font-size: .75rem;
+    color: #794acf;
+    border-top-width: 1px;
+}
+
+/* Code styles */
+pre {
+    padding-bottom: 1rem;
+}
+
+code.hljs {
+    border-radius: 5px;
+    padding: 1em;
+}

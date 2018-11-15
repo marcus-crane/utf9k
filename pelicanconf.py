@@ -41,6 +41,13 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 10
 
+MARKDOWN = {
+    'extension_configs': {
+        'tables': {},
+        'fenced_code': {}
+    }
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 # USE_FOLDER_AS_CATEGORY = True
