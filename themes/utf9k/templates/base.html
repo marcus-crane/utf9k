@@ -7,11 +7,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="theme-color" content="#a463f2" />
   <link rel="manifest" href="/manifest.json" />
-  <link href="/css/tailwind.min.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-  {% if CATEGORY_FEED_ATOM and category %}
-  <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ category.slug }} atom feed" />
-  {% endif %}
+  <link href="/css/tailwind.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
   {% block head %}
   {% endblock %}
 </head>
