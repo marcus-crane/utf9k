@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 pelican = "*"
 markdown = "*"
+pygments = "*"
 
 [requires]
 python_version = "3.6"
