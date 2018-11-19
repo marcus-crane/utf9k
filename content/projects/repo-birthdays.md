@@ -4,7 +4,7 @@ Tags: chrome, extension, javascript
 Slug: repo-birthdays
 Summary: View the birthday for a Github repo
 
-I'd often visit a repository and wonder just how old it is. Stars might indicate popularity but I imagine most of the time there's an initial burst of activity that slowly dies off as product hunters and hacker newsers fade into the either.
+I'd often visit a repository and wonder just how old it is. Stars might indicate popularity but I imagine most of the time there's an initial burst of activity that slowly dies off as [product hunters](https://producthunt.com) and [hacker newsers](https://news.ycombinator.com) fade into the either.
 
 I was also looking for an excuse to make a browser extension and Repo Birthdays was the result. It's pretty straight forward in that it just checks your URL to see if you're on a Github page two levels deep ie `github.com/blah/bleh`.
 
