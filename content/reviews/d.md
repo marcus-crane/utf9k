@@ -1,0 +1,125 @@
+Title: D
+Date: 2015-01-31
+Slug: d
+
+Hailing from the distant lands of 1995, **D is not a title that has aged very
+well**. Not at all. If you 're looking for an enjoyable game to invest long
+hours into, sorry friend but this isn't the one for you. D is more of a title
+you may enjoy checking out for the strange quirks but I don't expect anyone to
+fall in love over this thing. Well, that and I really just want an excuse to
+talk about the development behind the game.  
+  
+Laura Harris is the main character in D. She's also the digital actress which
+I'll explain later on. The 20 year old San Franciscan scholar is going about
+her business when she receives a call that her well-respected father, Dr.
+Richter Harris, has snapped. Uh oh, it looks like Dad has gone on a mass
+murder spree at the local hospital so we better find out what that's all
+about. That's it. **There really isn 't much of a back story to D which
+instead opts to just throw the player into the game's scenario** without any
+proper context at all. Dr. Harris will appear in ghost form every so often
+telling Laura to turn back as he "can't hold on for much longer". I won't
+spoil the ending but put simply, Dr. Harris is changing, along with the
+hospital which now has the interiors of a medieval castle. He attributes the
+interior redecoration to the fact that Laura has crossed over into an
+alternate reality that will close in 2 hours time. That is, **you 've got 2
+real world hours to finish the game**. The game is pretty short by design
+although you can finish it well within time no sweat. You can replay for a few
+different endings but personally, I don't think there's any real excuse for
+such a non-existent story. I suppose it was back in a time where gameplay was
+made it rain awards.  
+  
+So, the gameplay is really great, right?! Hahahaha, no. **The gameplay is
+alright but it 's pretty boring really**. Wikipedia labels it as survival
+horror which is a bit of a joke since the only actual enemy that you encounter
+is no more than a QTE encounter mid-game. If you miss or are too slow, you'll
+just be booted into a pit only to climb a ladder back out to try again. It's
+an adventure game where you have to solve puzzles by interacting with the
+environment. The game uses pre-rendered 3D CGI backgrounds that you navigate
+around by pressing d-pad buttons to slowly move between preset directions.
+Ready to set off into the next room? Well, feel free to get up, get yourself a
+cup of tea, maybe a few biscuits and by the time you're back, the full motion
+video should be done playing. Seriously, Laura moves as if she's just come
+fresh out of hip surgery, decided to go on a bit of an quest and forgotten to
+realise that she has the mobility of a pensioner in the midst of a heart
+attack. Mind you, I suppose if I was in hospital-turned-castle littered with
+bodies and an apparition of my murderous dad kept bugging me every 20 minutes,
+I'd be just about ready to give up as well.  
+  
+I think the game is still something to see despite what I consider to be its
+failings. The opening and ending are kinda cool and the game can actually be a
+bit scary at times. Not so much due to the "scary" bits but **looking back at
+the graphics today, they have a spooky uncanny valley style to them**. I
+suppose that 's to be expected since back then, the visuals were considered
+impressive despite only taking 3 whole Commodore Amiga's to create. D is also
+the spiritual prequel to a game I've been really looking forward to playing:
+D2 for the Sega Dreamcast but we'll save that one for another day.  
+  
+Let's rewind a bit to when I first mentioned Laura. I said she was a digital
+actress. D marked her first appearance and she would go on to star in Enemy
+Zero as Laura Lewis and D2 as Laura Parton. She's the same character as far as
+her first name and 3D model but her personality, history and last name changes
+in each title she appears in. It's a strange concept and I'm not really sure
+how to interpret it. I'm not going to assume that developer WARP were just
+being lazy reusing the same character model but at the same time, there's no
+reason given. There is no background to Laura the actor, only Laura the
+protagonist. There aren't any quirks to imply that the character is acting in
+a videogame either. I thought maybe they would have eventually messed with the
+player, perhaps one of the sequels has enemies appear but you soon realise
+that they are real and you have to escape the set into the real world. Maybe
+I'm missing something but **I just don 't really get the reason they created
+the idea of digital actors**.  
+  
+Alrighty, what I really wanted to talk about the most were the hijinks that
+the development team pulled to actually get this thing released. The story, in
+particular Dr. Harris's cannibalistic murder spree and the FMVs in the game
+were considered to be quite gruesome at the time. Kenji Eno, head developer,
+was worried that the game would suffer poor sales due to an inevitable Adults
+Only rating. Instead of editing the game, he opted to keep the storyline a
+secret from other members of the WARP team, submitting an alternate version of
+the game that had no controversial elements. Once the game had been approved,
+he deliberately let the submission date for the master copy lapse as the
+penalty for doing meant that Eno would have to fly to the US and hand deliver
+the game to the manufacturer. **While in midair, he swapped the alternate
+version of the game out with the more gruesome final copy which allowed it to
+slip past any censorship entirely**.  
+  
+The game went on to sell extremely well in Japan with the Sega Saturn version
+hitting #1 on the charts but it didn 't fare too well in America. Acclaim
+stepped up to fully localize the title in both the US and Europe on the
+Saturn, PS1 and MS-DOS which did fairly well. Sony were given confirmation
+that there were 100,000 units preordered for manufacturing but **Sony opted to
+spend more resources on in house titles spitting out a mere 28,000 titles of
+D** , according to Eno. He would later go on to unveil his next title, Enemy
+Zero, during a Sony conference. Still annoyed at Sony's manufacturing blunder,
+the trailer behind him ended with the Playstation logo. Much to the audience's
+amazement, the logo then slowly transitioned into the Sega Saturn logo **with
+Eno announcing that all of his future titles would be on Sega platforms**
+where I assume he promptly left the stage. He later stated some years later
+that a few press members were left confused thinking Eno had just announced
+that Sony was buying Sega which he thought was humorous.  
+  
+So there you have it. That 's D for you. I suppose you could call it an indie
+game really since the development team was no more than about 10 members. **I
+'ve got some issues with the game and how it has aged but don't get me wrong,
+I have nothing but respect for the WARP team**. Their later titles would play
+around with the idea of using sound, rather than visuals as a game input which
+was perhaps only contested by Seaman at the time. They were a small studio but
+they weren't afraid to try things out of the ordinary even if their games can
+be a bit jarring at times. They were even once home to a relatively unknown
+animator in his late 20s. You might know him now as Fumito Ueda, director of
+Ico and Shadow of Colossus.  
+  
+After the release of D2, WARP officially left the game industry, rebranding
+their company to Superwarp with a newly found focus on online music, DVD
+products and network services. By 2005, Superwarp was officially retired with
+Eno founding game development company, From Yellow to Orange. His last and
+only game with the company was a Wiiware title called You, Me, and the Cubes.  
+  
+_On February 20, 2013 at the age of 42, Kenji Eno passed away due to heart
+failure._  
+  
+Developer: WARP  
+Publisher: Acclaim Entertainment  
+Released in 1995  
+Platforms: 3DO, MS-DOS, Playstation 1, Sega Saturn
+

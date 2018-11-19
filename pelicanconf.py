@@ -12,14 +12,20 @@ if SYSTEM in DEV_MACHINES:
     SITEURL = 'http://localhost:8000'
 else:
     SITEURL = 'https://utf9k.net'
-MENUITEMS = [('Projects', '/projects.html'), ('Blog', '/blog.html'), ('Stats', '/stats.html'), ('Contact', '/contact.html')]
+MENUITEMS = [
+        ('Projects', '/projects.html'),
+        ('Blog', '/blog.html'),
+        ('Reviews', '/reviews.html'),
+        ('Stats', '/stats.html'),
+        ('Contact', '/contact.html')
+]
 THEME = 'themes/utf9k'
 THEME_STATIC_DIR = ''
 
 PATH = 'content'
 CSS_FILE = 'css/style.css'
 
-ARTICLE_PATHS = ['blog', 'projects']
+ARTICLE_PATHS = ['blog', 'projects', 'reviews']
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 ARTICLE_URL = '{category}/{slug}.html'
 CATEGORY_URL = '{slug}.html'
