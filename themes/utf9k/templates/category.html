@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>{{ category }} </h2>
+<h2>{{ category|title }} </h2>
 <ul class="list-reset mb-8 pt-6">
   {% for article in articles_page.object_list %}
     <li>
