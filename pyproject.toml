@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "utf9k"
+version = "0.1.0"
+description = "My personal site"
+authors = ["Marcus Crane <marcus@utf9k.net>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pelican = "^4.0"
+markdown = "^3.0"
+pygments = "^2.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
