@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+  <ul class="list-reset mb-8 pt-6">
+    {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{ .URL }}" class="f4 dib black link">{{ .Title }}</a>
+        <p class="pb-3 font-light text-base">{{ dateFormat "Jan 2, 2006" .Date }}</p>
+      <li>
+    {{ end }}
+  </ul>
+  {{- template "_internal/pagination.html" . -}}
+{{ end }}

@@ -7,6 +7,10 @@
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     {{ .Hugo.Generator }}
+    <link rel="manifest" href="/manifest.json" />
+
+    <link href="/css/tailwind.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
 
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
