@@ -1,11 +1,13 @@
 ---
 title: D
-date: 2018
-draft: true
-developer: WARP
-publisher: Acclaim Entertainment
-release_year: 1995
-platforms: 3D0, MS-DOS, Playstation 1, Sega Saturn
+date: 2018-10-01
+draft: false
+developer:
+publisher:
+release_year:
+platforms:
 ---
 
-This was D yeah
+This was D
+
+# D Warp

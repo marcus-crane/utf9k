@@ -1,10 +1,7 @@
 ---
 title: ipecac
-date: March 2018
-draft: true
+date: 2018-03-01
+draft: false
 source: https://github.com/marcus-crane/ipecac
 ---
 
-# ipecac
-
-It's a thing!
