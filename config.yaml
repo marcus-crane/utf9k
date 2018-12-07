@@ -18,9 +18,3 @@ menu:
     - name: Contact
       url: /contact/
       weight: 5
-params:
-  author: Marcus Crane
-  github: https://github.com/marcus-crane
-  instagram: https://instagram.com/sentreh
-  linkedin: https://linkedin.com/in/marcus-crane
-  twitter: https://twitter.com/sentreh
