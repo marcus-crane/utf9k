@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#a463f2" />
+    <title>utf9k  | When automation goes horribly right</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.47.1" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link href="/css/tailwind.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <meta property="og:title" content="When automation goes horribly right" />
+<meta property="og:description" content="Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a blog post. There were a bunch of things from quick replies to profile-listed support hours which I&rsquo;m sure were of some use.
+I used the latter but I also enabled &ldquo;welcome messages&rdquo;: automated replies that would trigger when a &ldquo;customer&rdquo; opened your direct messages." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/blog/automation-right/" /><meta property="article:published_time" content="2018-12-03T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-12-03T00:00:00&#43;00:00"/>
+<meta itemprop="name" content="When automation goes horribly right">
+<meta itemprop="description" content="Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a blog post. There were a bunch of things from quick replies to profile-listed support hours which I&rsquo;m sure were of some use.
+I used the latter but I also enabled &ldquo;welcome messages&rdquo;: automated replies that would trigger when a &ldquo;customer&rdquo; opened your direct messages.">
+
+
+<meta itemprop="datePublished" content="2018-12-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="599">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="When automation goes horribly right"/>
+<meta name="twitter:description" content="Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a blog post. There were a bunch of things from quick replies to profile-listed support hours which I&rsquo;m sure were of some use.
+I used the latter but I also enabled &ldquo;welcome messages&rdquo;: automated replies that would trigger when a &ldquo;customer&rdquo; opened your direct messages."/>
+</head>
+  <body>
+    <div class="p-2 pt-12 font-sans leading-normal">
+      <div class="px-2">
+        <div class="sm:flex -mx-2 h-12">
+          <div class="w-1/5 px-12">
+            <a href="/" class="text-purple text-2xl font-bold">
+              utf9k
+            </a>
+            
+
+  <ul class="list-reset mb-8 pt-6">
+  
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+  
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+  
+    <li>
+      <a href="/reviews/">Reviews</a>
+    </li>
+  
+    <li>
+      <a href="/stats/">Stats</a>
+    </li>
+  
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+  
+  </ul>
+
+
+          </div>
+          <div class="w-100 xl:w-1/2 md:w-3/5 sm:w-4/5 px-12">
+            
+  <h2>When automation goes horribly right</h2>
+  <h3 class="pb-3 font-light text-base">Dec 3, 2018</h3>
+  <div id="content"><p>Today, I finally solved an issue that has been a pain in my ass for many months: successful automation</p>
+
+<p>Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a <a href="https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html">blog post</a>. There were a bunch of things from quick replies to profile-listed support hours which I&rsquo;m sure were of some use.</p>
+
+<p>I used the latter but I also enabled &ldquo;welcome messages&rdquo;: automated replies that would trigger when a &ldquo;customer&rdquo; opened your direct messages. In my case, I&rsquo;m not a business so it was more just some silliness to add to my profile and it confused a few people along the way.</p>
+
+<p><img src="/img/automated-right/confusion-one.png" alt="" /></p>
+
+<p>Over time, I&rsquo;d forget that I had it enabled and then someone else would get caught out by it a few months later</p>
+
+<p><img src="/img/automated-right/confusion-two.png" alt="" /></p>
+
+<p>and then it kept going at which point it started becoming a bit of a nuisance.</p>
+
+<p><img src="/img/automated-right/confusion-three.png" alt="" /></p>
+
+<p>At this point, I was particularly annoyed and attempted to turn it off. I clearly remembered that there was a dashboard but do you think I could find it? That would be too easy!</p>
+
+<p>You can actually see a walkthrough of that very page right <a href="https://youtu.be/H-n0hRO7oLk?t=75">here</a> but good luck finding it because it was actually removed.</p>
+
+<p>At first I didn&rsquo;t believe it. I just figured I had forgotten how to navigate to it but every month, I&rsquo;d try once again to track it down with no luck. Eventually, I just resigned myself to the fact that some automation was running somewhere inside Twitter and I could never turn it off.</p>
+
+<p>Things changed. I started a new job as a Site Reliability Engineer funnily enough. I would laugh to myself whenever we discussed service availability. Inevitably, it would come up that Google has planned outages in order to keep downstream providers on their toes and not overly reliant.</p>
+
+<p>I wished so hard that Twitter would have a planned outage but no, apparently this microservice, or whatever it was, never failed. It was perfect and never toppled. Seriously, give those developers a pat on the back because I wanted nothing more than to take a baseball bat to the entire fucking cloud.</p>
+
+<p>Obviously I couldn&rsquo;t just simply call Twitter and ask them.</p>
+
+<p>Fast forward to today and once more, a confused friend simply messaged me &ldquo;?&rdquo;. I didn&rsquo;t even have to ask. Whatever this automation was, it never really seemed consistent either. Those who I talked to often would suddenly receive an automated response out of nowhere. Not that I could tell since it wasn&rsquo;t me talking.</p>
+
+<p>Finally I stumbled onto the Twitter Developer forum and&hellip; ah! <a href="https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561">I wasn&rsquo;t alone!</a> I&rsquo;m not crazy! Someone else remembers this thing!</p>
+
+<p>After a bit of confusion, it was cleared up that the Twitter API has a section for &ldquo;welcome messages&rdquo; which are these very same automated snippets. Using <a href="https://github.com/twitter/twurl">twurl</a>, a Twitter-modified version of curl, I could view those darn things finally.</p>
+
+<p><img src="/img/automated-right/welcome-messages.png" alt="" /></p>
+
+<p>There they were. Sitting within the API the whole time although I&rsquo;d guess that feature was only documented as part of the recent overhaul of Twitter&rsquo;s developer APIs. Even the original URL, dashboard.twitter.com, doesn&rsquo;t resolve anymore which is all the proof I needed that I&rsquo;d been left out in the cold.</p>
+
+<p>With some copy paste magic, I quickly wiped the slate clean. I was free! Finally awake from that god awful nightmare. The Twitter Business Experience was definitely just that&hellip;</p>
+
+<p>That just leaves one last question: if it took me many months to fix this problem, what hope do those actual businesses who signed up have?</p>
+
+<p>I guess you get the support you pay for, huh?</p>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/</link>
+    <description>Recent content on utf9k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>When automation goes horribly right</title>
+      <link>https://utf9k.net/blog/automation-right/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/automation-right/</guid>
+      <description>Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a blog post. There were a bunch of things from quick replies to profile-listed support hours which I&amp;rsquo;m sure were of some use.
+I used the latter but I also enabled &amp;ldquo;welcome messages&amp;rdquo;: automated replies that would trigger when a &amp;ldquo;customer&amp;rdquo; opened your direct messages.</description>
+    </item>
+    
+    <item>
+      <title>A brief guide to OIAs in New Zealand</title>
+      <link>https://utf9k.net/blog/nz-oia-guide/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/nz-oia-guide/</guid>
+      <description>I was browsing Hacker News earlier this week and came across an interesting post called Using FOIA Data and Unix to halve major source of parking tickets. As you can imagine, the post is exactly what it says on the tin and got me inspired to do some own data wrangling of my own.
+A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story.</description>
+    </item>
+    
+    <item>
+      <title>Humans don&#39;t come with lore tabs</title>
+      <link>https://utf9k.net/blog/lore-tabs/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/lore-tabs/</guid>
+      <description>This post has been a long time coming because I&amp;rsquo;ve never really known how to express it. I&amp;rsquo;m not even sure I can write it properly anyway but I&amp;rsquo;m going to at least try.
+I recently started the Xero Graduate Programme which has been amazing! As with any new position, it inevitably involves meeting a lot of new people for the first time. I&amp;rsquo;m not really here to talk about the program itself which is a story for another time.</description>
+    </item>
+    
+    <item>
+      <title>Day Xero</title>
+      <link>https://utf9k.net/blog/day-xero/</link>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/day-xero/</guid>
+      <description>Technically it&amp;rsquo;s Day 1 of my new job, a Graduate Site Reliability Engineer at Xero but it hasn&amp;rsquo;t officially started since I&amp;rsquo;m still on my way to the airport.
+I told myself that when I finally got my first full time development position, I&amp;rsquo;d write a big post mortem about how long it took, how many times I was rejected and all that but since I haven&amp;rsquo;t (yet), this is my offering to the Content Overlords.</description>
+    </item>
+    
+    <item>
+      <title>Installing Arch Linux on my Intel NUC</title>
+      <link>https://utf9k.net/blog/arch-nuc-install/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/arch-nuc-install/</guid>
+      <description>It&amp;rsquo;s that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
+Please note that this isn&amp;rsquo;t some guide for pros or that I expect to have the most 100% correct or efficient method of installing.</description>
+    </item>
+    
+    <item>
+      <title>Some thoughts about running a wiki</title>
+      <link>https://utf9k.net/blog/wiki-thoughts/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://utf9k.net/blog/wiki-thoughts/</guid>
+      <description>Recently, I started playing a mobile game called Blustone. It&amp;rsquo;s not perfect and for all the minor issues I have with it, it&amp;rsquo;s pretty enjoyable for the most part. The most important draw however has been the community.
+It&amp;rsquo;s not huge and it does have its bad apples but for the most part, I&amp;rsquo;ve met a few nice people online.
+Anyway, that brings me to the VSFan Wiki which I started since there were hardly any English resources, let alone gathered all in one place.</description>
+    </item>
+    
+  </channel>
+</rss>

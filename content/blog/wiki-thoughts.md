@@ -1,7 +1,8 @@
-Title: Some thoughts about running a wiki
-Date: 2017-12-18
-Tags: mediawiki, retro, gaming, community
-Slug: wiki-thoughts
+---
+title: Some thoughts about running a wiki
+date: 2017-12-18
+draft: false
+---
 
 Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
 

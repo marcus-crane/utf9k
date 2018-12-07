@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#a463f2" />
+    <title>utf9k  | A brief guide to OIAs in New Zealand</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.47.1" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link href="/css/tailwind.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <meta property="og:title" content="A brief guide to OIAs in New Zealand" />
+<meta property="og:description" content="I was browsing Hacker News earlier this week and came across an interesting post called Using FOIA Data and Unix to halve major source of parking tickets. As you can imagine, the post is exactly what it says on the tin and got me inspired to do some own data wrangling of my own.
+A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/blog/nz-oia-guide/" /><meta property="article:published_time" content="2018-08-18T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-08-18T00:00:00&#43;00:00"/>
+<meta itemprop="name" content="A brief guide to OIAs in New Zealand">
+<meta itemprop="description" content="I was browsing Hacker News earlier this week and came across an interesting post called Using FOIA Data and Unix to halve major source of parking tickets. As you can imagine, the post is exactly what it says on the tin and got me inspired to do some own data wrangling of my own.
+A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story.">
+
+
+<meta itemprop="datePublished" content="2018-08-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-08-18T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1538">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A brief guide to OIAs in New Zealand"/>
+<meta name="twitter:description" content="I was browsing Hacker News earlier this week and came across an interesting post called Using FOIA Data and Unix to halve major source of parking tickets. As you can imagine, the post is exactly what it says on the tin and got me inspired to do some own data wrangling of my own.
+A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story."/>
+</head>
+  <body>
+    <div class="p-2 pt-12 font-sans leading-normal">
+      <div class="px-2">
+        <div class="sm:flex -mx-2 h-12">
+          <div class="w-1/5 px-12">
+            <a href="/" class="text-purple text-2xl font-bold">
+              utf9k
+            </a>
+            
+
+  <ul class="list-reset mb-8 pt-6">
+  
+    <li>
+      <a href="/projects/">Projects</a>
+    </li>
+  
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+  
+    <li>
+      <a href="/reviews/">Reviews</a>
+    </li>
+  
+    <li>
+      <a href="/stats/">Stats</a>
+    </li>
+  
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+  
+  </ul>
+
+
+          </div>
+          <div class="w-100 xl:w-1/2 md:w-3/5 sm:w-4/5 px-12">
+            
+  <h2>A brief guide to OIAs in New Zealand</h2>
+  <h3 class="pb-3 font-light text-base">Aug 18, 2018</h3>
+  <div id="content">
+
+<p>I was browsing <a href="https://news.ycombinator.com">Hacker News</a> earlier this week and came across an interesting post called <a href="http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html">Using FOIA Data and Unix to halve major source of parking tickets</a>. As you can imagine, the post is <a href="https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin">exactly what it says on the tin</a> and got me inspired to do some own data wrangling of my own.</p>
+
+<p>A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story. They seemed to think it was a neat idea but didn&rsquo;t have a great understanding of the Official Information Act process. I mean, just look at that name! It sounds all legal and fancy but really, it&rsquo;s actually very straight forward (and arguably kinda fun).</p>
+
+<p>I&rsquo;m no expert myself but I can at least show you where to start. I actually have a yearly FOIA request I make but I&rsquo;ll save that story for the end of this post. Now, onward!</p>
+
+<h2 id="some-caveats">Some caveats</h2>
+
+<p>It&rsquo;s worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked #1 in <a href="https://www.transparency.org/country/NZL">Transparency International&rsquo;s Corruption Perception Index</a> so as you can imagine, there&rsquo;s generally no hassle with requesting information from our government.</p>
+
+<p>It should go without saying that a less transparent, or even citizen-hostile government is going to be an entirely different kettle of fish.</p>
+
+<h2 id="official-information-what">Official Information what?</h2>
+
+<p>Ah yes, right. Maybe you&rsquo;ve heard of the term FOIA or OIA but haven&rsquo;t really got an idea of what it is or where the ability originates from. Is it a service granted from the kindness of our governmental overlords? Hah! Well&hellip; it is!</p>
+
+<p>The Official Information Act of 1982, readable <a href="http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html">here</a>, is actually a replacement for the <a href="http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183/">Official Secrets Act 1951</a>. I can&rsquo;t say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I&rsquo;ve cut out some bits so it&rsquo;s not just a huge wall of text.</p>
+
+<blockquote>
+<p>6 (1) If any person, having in his possession or control [&hellip;] any sketch, plan, model, article, note, document, or information [&hellip;] which has    been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has   obtained or to which he has had access owing to his position <a href="a">&hellip;</a> Communicates the code word, password, sketch, plan, model, article, note,   document, or information to any person, other than a person to whom he is authorized to communicate it [&hellip;] he commits an offence against this    Act.</p>
+</blockquote>
+
+<p>The idea of information belonging to &ldquo;the Queen and her advisors&rdquo; slowly seemed like a bunch of nonsense and as a result, the Official Information Act was born. In short, it allows anyone present in New Zealand (citizen or visitor) to request, surprise, information from any government Minister, department or organization. That&rsquo;s basically all it boils down to.</p>
+
+<h2 id="what-can-i-request">What can I request?</h2>
+
+<p>Generally speaking, there&rsquo;s no limit on what you can request but as with most parts of life, just because you ask doesn&rsquo;t mean you shall receive.</p>
+
+<p>There are some cases where the requestee can deny your request but it has to be justified. Specifically, Section 6(a) through (e) outlines acceptable reasons for dismissing your request:</p>
+
+<blockquote>
+<p>(a) to prejudice the security or defence of New Zealand or the international relations of the Government of New Zealand; or</p>
+
+<p>(b) to prejudice the entrusting of information to the Government of New Zealand on a basis of confidence by— (i) the Government of any other country or any agency of such a Government; or (ii) any international organisation; or</p>
+
+<p>&copy; to prejudice the maintenance of the law, including the prevention, investigation, and detection of offences, and the right to a fair trial; or</p>
+
+<p>(d) to endanger the safety of any person; or</p>
+
+<p>(e) to damage seriously the economy of New Zealand by disclosing prematurely decisions to change or continue government economic or financial policies relating to— (i) exchange rates or the control of overseas exchange transactions: (ii) the regulation of banking or credit: (iii) taxation: (iv) the stability, control, and adjustment of prices of goods and services, rents, and other costs, and rates of wages, salaries, and other incomes: (v) the borrowing of money by the Government of New Zealand: (vi) the entering into of overseas trade agreements.</p>
+</blockquote>
+
+<h2 id="where-to-make-a-request-the-hard-secret-way">Where to make a request (the hard, secret way)</h2>
+
+<p>So, you want to learn a thing or two, eh?</p>
+
+<p>You&rsquo;ll need to know two things: who you want to contact (even roughly) and what you want to ask them. It seems obvious but if your request is too vague, or wide reaching, you&rsquo;ll likely be asked to be more specific. Don&rsquo;t forget, each request is painstakingly completed by a civil servant so they can&rsquo;t shift mountains or compile impossible requests.</p>
+
+<p>Now that you&rsquo;ve got a goal in mind, the next step is just to contact the agency in question. As noted in Part 2, Section 12(1AA)(a), your request can take any form, whether it be a letter, email or even just verbally. Generally, email is the way to go however so just look up the website for your agency of choice and they should have a page for OIA requests.</p>
+
+<p>For example: a Google Search for <code>ministry of justice oia</code> brings up their <a href="https://www.justice.govt.nz/about/official-information-act-requests/">OIA request page</a>. It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you&rsquo;ll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it&rsquo;s fairly rare for that to occur.</p>
+
+<h2 id="where-to-make-a-request-the-easy-public-way">Where to make a request (the easy, public way)</h2>
+
+<p>There&rsquo;s actually an easier way to make OIA requests thanks to the fine folks over at <a href="https://fyi.org.nz/">FYI.org.nz</a>. Simply pick an agency, fill in your request and the rest is sorted from there. Your request is given a page, not unlike a forum thread, and responses show up when they come back. Other users can give you advice if they think the response you got was crap and you&rsquo;ll also be given the option to forward your response to the <a href="http://www.ombudsman.parliament.nz/">Ombudsman</a> should you choose to dispute it.</p>
+
+<p>The only catch is that all requests are public, so as to cut down on duplicate requests. Don&rsquo;t worry, none of your information is public, just your first name. The initial query, and any replies you send, are sent through FYI&rsquo;s own email address which acts as a middle man on your behalf.</p>
+
+<p>If you&rsquo;d like to do a project surrounding public utilities, persuing past requests can be a great way to get ideas on what sort of information you could request.</p>
+
+<h2 id="what-requests-have-you-done">What requests have you done?</h2>
+
+<p>At this point, the guide itself is over but I have a bit of a fun story that you might like to use as inspiration yourself. Earlier, I mentioned Section 6 which outlines reasons that agencies can reject your requests. There&rsquo;s a few requests on FYI that have been rejected or redacted under those grounds.</p>
+
+<p>It occured to me one day. While I can&rsquo;t even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It&rsquo;s an interesting list, and probably about what I would guess to.</p>
+
+<table>
+<thead>
+<tr>
+<th>Request Date</th>
+<th>Subject</th>
+<th>Denied under</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>09/02/2016</td>
+<td>Detention and deportation of New Zealanders from Australia</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>30/03/2016</td>
+<td>Prime Minister&rsquo;s recent visit to Sri Lanka</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>06/04/2016</td>
+<td>Communications regarding the 2016 US Presidential election</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>25/05/2016</td>
+<td>Britain possibly leaving the European Union</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>07/06/2016</td>
+<td>Panama Papers</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>16/08/2016</td>
+<td>Decision to extend New Zealand&rsquo;s training mission to Iraq</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>Intelligence and advice to the NZ government related to the <sup>9</sup>&frasl;<sub>11</sub> event</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>Record of OIAs from February 2017</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>Preparation for Trump Administration</td>
+<td>6(a) and 6(b)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>NSS handbook examples of 1080 and domestic incident</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>The steel industry and trade issues</td>
+<td>6(a)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>Meetings with Australian officials on social security</td>
+<td>6(a) and 6(b)</td>
+</tr>
+
+<tr>
+<td>2016 - 2017</td>
+<td>Interactions with United States Film Industry representatives</td>
+<td>6(a)</td>
+</tr>
+</tbody>
+</table>
+
+<p>A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it&rsquo;s still interesting nonetheless.</p>
+
+<p>I&rsquo;d love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can &ldquo;FOIA the fuck out of it&rdquo; to quote a tweet I saw earlier today.</p>
+
+<hr />
+
+<p>Sources for the table above:</p>
+
+<ul>
+<li><a href="https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960">FOIA Sections S6(a) and S(6)b(i) - fyi.govt.nz</a></li>
+<li><a href="https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439">Withheld / Rejected OIA Filings - fyi.govt.nz</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
