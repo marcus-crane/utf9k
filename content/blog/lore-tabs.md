@@ -1,7 +1,9 @@
-Title: Humans don't come with lore tabs
-Date: 2018-02-28
-Tags: society
-Slug: lore-tabs
+---
+title: Humans don't come with lore tabs
+date: 2018-02-28
+tags:
+  - people
+---
 
 This post has been a long time coming because I've never really known how to express it. I'm not even sure I can write it properly anyway but I'm going to at least try.
 

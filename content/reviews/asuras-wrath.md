@@ -1,7 +1,13 @@
-Title: Asura's Wrath
-Date: 2014-12-23
-Tags: capcom, ps3, gaming, xbox-360
-Slug: asuras-wrath
+---
+title: Asura's Wrath
+date: 2014-12-23
+developer: CyberConnect2
+publisher: Capcom
+release_year: 2012
+platforms:
+  - Playstation 3
+  - Xbox 360
+---
 
 If you've heard of this title before but have yet to play it, I'm going to
 assume that the first thing that springs to mind is "Oh, wasn't Asura's Wrath
@@ -117,9 +123,4 @@ _P.S. Check the download store for the platform of your choice, whether PS3 or
 Xbox 360 for a downloadable demo. Both fights give a good sense of the action
 in the game but also should be a good decider as to whether or not you like
 the gameplay or not._
-
-Developer: CyberConnect2  
-Publisher: Capcom  
-Released in 2012  
-Platforms: Playstation 3 and Xbox 360
 
