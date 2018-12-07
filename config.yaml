@@ -1,0 +1,20 @@
+baseURL: https://utf9k.net
+languageCode: en-us
+title: utf9k
+menu:
+  main:
+    - name: Projects
+      url: /projects/
+      weight: 1
+    - name: Blog
+      url: /blog/
+      weight: 2
+    - name: Reviews
+      url: /reviews/
+      weight: 3
+    - name: Stats
+      url: /stats/
+      weight: 4
+    - name: Contact
+      url: /contact/
+      weight: 5

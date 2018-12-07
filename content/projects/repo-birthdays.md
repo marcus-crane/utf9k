@@ -1,8 +1,11 @@
-Title: Repo Birthdays
-Date: 2017-12-03
-Tags: chrome, extension, javascript
-Slug: repo-birthdays
-Summary: View the birthday for a Github repo
+---
+title: Repo Birthdays
+date: 2017-12-03
+tags:
+  - chrome
+  - extension
+  - javascript
+---
 
 I'd often visit a repository and wonder just how old it is. Stars might indicate popularity but I imagine most of the time there's an initial burst of activity that slowly dies off as [product hunters](https://producthunt.com) and [hacker newsers](https://news.ycombinator.com) fade into the either.
 

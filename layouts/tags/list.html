@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+  <ul class="list-reset mb-8 pt-6">
+    {{ range (.Paginator 50).Pages }}
+    <a class="no-underline" rel="noreferrer" href="{{ .URL }}">
+      <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center mb-1">
+        <span>{{ .Title }}</span>
+      </button>
+    </a>
+    {{ end }}
+    {{- template "_internal/pagination.html" . -}}
+  </ul>
+{{ end }}

@@ -1,7 +1,8 @@
-Title: Installing Arch Linux on my Intel NUC
-Date: 2017-12-24
-Tags: linux, arch, howto, guide
-Slug: arch-nuc-install
+---
+title: Installing Arch Linux on my Intel NUC
+date: 2017-12-24
+tags: [arch, linux]
+---
 
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
