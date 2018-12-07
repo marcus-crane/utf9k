@@ -2,12 +2,12 @@
   <h2>{{ .Title }}</h2>
   <h3 class="pb-3 font-light text-base">{{ dateFormat "Jan 2, 2006" .Date }}</h3>
   <div id="content">{{ .Content }}</div>
-  <p>Developer: {{ .Params.Developer }}</p>
-  <p>Publisher: {{ .Params.Publisher }}</p>
-  <p>Released in {{ .Params.Release_Year }}</p>
+  <p>Developer: {{ .Params.developer }}</p>
+  <p>Publisher: {{ .Params.publisher }}</p>
+  <p>Released in {{ .Params.release_year }}</p>
   <p>Platforms: </p>
   <ul>
-  {{ range .Params.Platforms }}
+  {{ range .Params.platforms }}
     <li>{{ . }}</li>
   {{ end }}
   </ul>
