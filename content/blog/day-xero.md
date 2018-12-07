@@ -1,7 +1,10 @@
 ---
 title: Day Xero
 date: 2018-02-15
-draft: false
+tags:
+  - anxiety
+  - job
+  - xero
 ---
 
 Technically it's Day 1 of my new job, a Graduate Site Reliability Engineer at [Xero](https://www.xero.com/nz/) but it hasn't officially started since I'm still on my way to the airport.

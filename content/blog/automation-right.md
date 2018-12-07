@@ -1,8 +1,10 @@
 ---
 title: When automation goes horribly right
 date: 2018-12-03
-draft: false
-tags: [twitter, automation, microservices]
+tags:
+  - automation
+  - microservices
+  - twitter
 ---
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation

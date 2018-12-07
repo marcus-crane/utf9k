@@ -1,7 +1,10 @@
 ---
 title: A brief guide to OIAs in New Zealand
 date: 2018-08-18
-draft: false
+tags:
+  - government
+  - new zealand
+  - official information act
 ---
 
 I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin) and got me inspired to do some own data wrangling of my own.
