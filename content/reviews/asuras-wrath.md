@@ -1,10 +1,10 @@
 ---
-title: Asura's Wrath
-date: 2014-12-23
-developer: CyberConnect2
-publisher: Capcom
-release_year: 2012
-platforms:
+Title: Asura's Wrath
+Date: 2014-12-23
+Developer: CyberConnect2
+Publisher: Capcom
+Released: 2012
+Platforms:
   - Playstation 3
   - Xbox 360
 ---

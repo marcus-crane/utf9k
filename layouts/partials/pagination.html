@@ -1,0 +1,16 @@
+<div class="inline-flex mb-4">
+  {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}">
+      <p>« Prev</p>
+    </a>
+  {{ end }}
+  {{ if eq .Paginator.HasPrev .Paginator.HasNext }}
+    <pre>  </pre>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}">
+      <p>Next »</p>
+    </a>
+  {{ end }}
+</div>
+
