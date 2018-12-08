@@ -1,0 +1,68 @@
+---
+Title: inFamous
+Date: 2014-10-10
+Developer: Sucker Punch Productions  
+Publisher: Sony Computer Entertainment  
+Released: 2009  
+Platforms:
+  - Playstation 3
+---
+
+I only really picked up inFamous as inFamous: Second Son for the Playstation 4
+looked interesting. That and I'm not really one to just jump straight into a
+series in the middle of a story.
+
+At the time of writing, I have finished both a good and a bad playthrough, not
+that they really differ beyond some dialogue and reversal of role (fighting
+against the police instead of with them for example in side missions).
+
+Personally, **I thought the game was quite slow to begin with** as I had no
+clear objective so it just felt like I was running around the city fighting
+enemies. Eventually, **as you get more powers, it gets more enjoyable** but it
+feels like every so often, they 'll drop in a plot element to keep you going
+then you won't see it for another 3 or 4 missions.
+
+The story was, I can't say it was bad as such, it just had really weird
+pacing. You'd have characters introduced who you barely meet then they'll
+either disappear for ages without explaining a single thing about them or
+their alignments or it's straight to their boss battle with no real context as
+to who they even are. Even after two playthroughs, I had to read the Wiki just
+to even figure out half of what was even really going on!
+
+**EDIT** : Since writing this review, I have gone on to collect all 350 blast
+shards and dead drops. I can now say that **a fair amount of back story on the
+main enemy faction is contained in the collectable dead drops around the
+city**. I hadn 't actually bothered to listen to them until I got them all so
+I didn't realise that earlier. Woops.
+
+**The gameplay is pretty fun** , you've got various electric powers that you
+unlock from underground substations. You'll first get the power then platform
+for a bit, usually just as a way to test out your power and figure out what
+sort of scenario you would use it for, eg; disarming shielded enemies or
+taking out enemies on turrets. The later powers are pretty cool but I don't
+feel like they are even that important by the time you get them. I even forgot
+one of the earlier ones even existed until my second playthrough and even
+then, I barely used it.
+
+Beyond powers, **you traverse the world using parkour** which, at the best of
+times, **feels really fluid** and gives you the sense that the designers
+crafted every piece of the map so you can continuously rail grind from one
+side of an island to the other. At worst though, it feels like you 're just
+mashing X to climb buildings without having to do much at all.
+
+Oh, the **AI can be kind of annoying** though. I played on both Normal and
+Hard mode and **Hard just basically means lots and lots of projectiles and
+bullets flying at you**. Like, the shitty kind of hard where you get knocked
+down and killed before you can even get back up. That and I didn 't think
+there was a lot of visual feedback on enemies. They'd just kind of stagger
+back a little until they died which only gets more annoying on larger bosses
+since you can't even tell if you're going the battle right.
+
+All in all, I felt like the game **definitely isn 't perfect** but the
+enjoyment I had with it, **still outweighed any of the glaring flaws**. It 'd
+recommend it if you come across a cheap copy and I'm definitely hoping
+inFamous 2 fixes the issues I had with the first game. It seems like the art
+style is more stylised which I think is good since in terms of graphics,
+inFamous definitely hasn't ages hugely well. It looks very, err, brown and
+bloom to say the least even for a destroyed city.
+
