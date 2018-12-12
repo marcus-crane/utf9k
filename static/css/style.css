@@ -46,11 +46,7 @@ td {
 }
 
 /* Code styles */
-pre {
+.highlight {
     padding-bottom: 1rem;
 }
 
-code.hljs {
-    border-radius: 5px;
-    padding: 1em;
-}
