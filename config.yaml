@@ -1,6 +1,10 @@
+# Basic site config stuff
 baseURL: https://utf9k.net
-languageCode: en-us
 title: utf9k
+languageCode: en-us
+
+# The weight specified here determines the order that menu
+# items are rendered in, rather than the order of the array
 menu:
   main:
     - name: Projects
@@ -18,10 +22,23 @@ menu:
     - name: Contact
       url: /contact/
       weight: 5
-pygmentsuseclasses: true
+
+# A bunch of custom parameters that allow the site to be
+# slightly more dynamic ie; not having to edit the base
+# HTML template to add a new CSS file every time
 params:
   custom_css:
     - /css/tailwind.min.css
     - /css/style.css
   static_includes:
     - manifest.json
+
+# BlackFriday is the markdown parser for Hugo. It has a bunch
+# of settings that are nice to have but not on by default
+blackfriday:
+  nofollowLinks: true
+  hrefTargetBlank: true
+
+# Render code with classes so we can apply our own CSS style
+# that isn't shipped as part of Pygments default set
+pygmentsuseclasses: true
