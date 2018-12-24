@@ -16,6 +16,10 @@ a:hover {
   padding-bottom: 1rem;
 }
 
+#content {
+  padding-bottom: 1rem;
+}
+
 textarea {
   min-height: 250px;
 }
@@ -46,7 +50,26 @@ td {
 }
 
 /* Code styles */
+#content > p > code {
+    background-color: #DAEAF8;
+    border-radius: 4px;
+    color: #3490dc;
+    font-size: 90%;
+    padding: 2px 4px;
+    white-space: pre;
+}
+
 .highlight {
     padding-bottom: 1rem;
 }
 
+.highlight pre {
+    background-color: #3f3f3f;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+    font-size: 15px;
+    margin: 0 0 12px;
+    overflow-x: auto;
+    padding: 1em;
+}
