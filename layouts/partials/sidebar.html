@@ -1,6 +1,6 @@
 {{ $currentPage := . }}
 {{ if .Site.Menus.main }}
-  <ul class="list-reset mb-8 pt-6">
+  <ul class="flex-col list-reset text-lg">
   {{ range .Site.Menus.main }}
     <li>
       <a href="{{ .URL }}">{{ .Name }}</a>
