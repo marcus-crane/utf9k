@@ -10,7 +10,7 @@ I was messing around with some queuing earlier today in order to try out the [Ko
 
 To add a message to a queue, it looks a little like this:
 
-{{< highlight python "linenos=table" >}}
+{{< highlight python >}}
 from kombu import Connection, Queue
 
 conn = Connection() # Defaults to a RabbitMQ Docker container I have running locally
@@ -20,7 +20,7 @@ queue.get('this is a message i want to put on the queue')
 
 You may want to use a context manager instead but for a simple test, this works fine. Now then, how about getting a message off the queue? It's straight forward as well.
 
-{{< highlight python "linenos=table" >}}
+{{< highlight python >}}
 queue.get()
 # <Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
 {{< /highlight >}}
@@ -33,7 +33,7 @@ This is a scenario I ran into and it got me wondering: Is it possible to retriev
 
 If you're just running in the Python REPL however, there is actually a way: The handy _ operator.
 
-{{< highlight python "linenos=table" >}}
+{{< highlight python >}}
 # <Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
 _.ack()
 # <Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
