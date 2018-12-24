@@ -15,7 +15,7 @@ from kombu import Connection, Queue
 
 conn = Connection() # Defaults to a RabbitMQ Docker container I have running locally
 queue = conn.SimpleQueue('test')
-queue.get('this is a message i want to put on the queue')
+queue.put('this is a message i want to put on the queue')
 {{< /highlight >}}
 
 You may want to use a context manager instead but for a simple test, this works fine. Now then, how about getting a message off the queue? It's straight forward as well.
