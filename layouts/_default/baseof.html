@@ -7,14 +7,17 @@
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     {{ .Hugo.Generator }}
-    <link rel="manifest" href="/manifest.json" />
+    
+    {{ range .Site.Params.static_includes -}}
+    <link href="{{ . | absURL }}" rel="stylesheet" />
+    {{ end }}
 
-    <link href="/css/tailwind.min.css" rel="stylesheet" />
-    <link href="/css/style.css" rel="stylesheet" />
-    <link href="/css/oceanicnext.dark.css" rel="stylesheet" />
+    {{ range .Site.Params.custom_css -}}
+    <link href="{{ . | absURL }}" rel="stylesheet" />
+    {{ end }}
 
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{- if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
 
     {{- template "_internal/opengraph.html" . -}}

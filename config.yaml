@@ -19,3 +19,9 @@ menu:
       url: /contact/
       weight: 5
 pygmentsuseclasses: true
+params:
+  custom_css:
+    - /css/tailwind.min.css
+    - /css/style.css
+  static_includes:
+    - manifest.json
