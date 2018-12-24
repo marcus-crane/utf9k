@@ -12,7 +12,7 @@ Please note that this isn't some guide for pros or that I expect to have the mos
 
 As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll start by getting online. You can do this graphically by running `wifi-menu`.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 wifi-menu
 {{< /highlight >}}
 
@@ -24,7 +24,7 @@ Personally, I wouldn't, and probably couldn't (yet) install Arch Linux as a dual
 
 First, we need to see what our current devices are:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 fdisk -l
 {{< /highlight >}}
 
@@ -47,7 +47,7 @@ The following uses [Parted](https://www.gnu.org/software/parted/manual/parted.ht
 
 ## Partitioning
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 # Launched parted, passing our hard drive as an argument
 parted /dev/sda
 
@@ -93,7 +93,7 @@ Now that are partitions are set up, running `fdisk -l` again should show the fol
 
 We don't need any utilites to create our file systems, we can just do 'em straight outta the box like so:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 # Create a 32bit VFAT filesystem for our boot partition
 # VFAT is essentially FAT32 with support for longer filenames. See below for more details.
 # ~ http://wiki.linuxquestions.org/wiki/VFAT
@@ -127,7 +127,7 @@ Just as a reminder, here's where we want our partitions to end up
 
 Here's how this layout translates into mount commands:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 # Mount our root partition to /mnt
 # NOTE: /mnt doesn't persist once we're in our bash prompt
 # For example, /mnt/home becomes just /home
@@ -152,7 +152,7 @@ Nice! We're completely done and can start to actually install and configure Arch
 
 Now we need to download and install the base packages for Arch Linux to our `/mnt` which will becomes our root (`/`) later on.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 pacstrap /mnt base
 {{< /highlight >}}
 
@@ -170,7 +170,7 @@ With Arch Linux installed, we can finally move off of our live USB and start a b
 
 Step 1 is generating a [file systems table](http://www.linfo.org/etc_fstab.html), referred to as `fstab` going forward. This is done so that all devices (/dev/sdaX) specificied in the file are mounted automatically on startup.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 genfstab -U /mnt >> /mnt/etc/fstab
 {{< /highlight >}}
 
@@ -178,7 +178,7 @@ The `-U` flag denotes that we want to identify our devices using [UUIDs](https:/
 
 Step 2 is even quicker being shorter
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 arch-chroot /mnt
 {{< /highlight >}}
 
@@ -217,7 +217,7 @@ To do so, edit `/etc/locale.gen` and uncomment your respective locale. In short,
 
 Once you've done that, you'll need to generate the locale files and export your language to your environment
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 locale-gen
 export LANG={xx}_{yy}.UTF-8
 {{< /highlight >}}
@@ -232,7 +232,7 @@ Selecting our timezone is fairly straightforward thanks to an interactive progra
 
 Once you've confirmed the output, it will mention appending the timezone to a file. Instead, we want to symlink that timezone to a file. In my case, the timezone is `Pacific/Auckland` but of course, you'll want to input your respective timezone instead.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 {{< /highlight >}}
 
@@ -240,7 +240,7 @@ ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 
 The last of our locale related setups is configuring the system clock. To do that, we'll tell our hardware clock to set the system time using the `--hctosys` option. You can read more about `hwclock` and how it differs from system time [here](https://linux.die.net/man/8/hwclock)
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 hwclock --systohc
 {{< /highlight >}}
 
@@ -248,13 +248,13 @@ hwclock --systohc
 
 We like life to be simple (but no simpler) and giving our computer/server a unique name is an important part of that process. For this bit, let's assume we want to name our system `weinerdog` because it sounds silly.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 echo weinerdog > /etc/hostname
 {{< /highlight >}}
 
 Oh, that was easy. We also need to tell our system that `weinerdog` is an alias for `127.0.0.1`, just like `localhost` is. We could fire up our favourite editor but it's likely `/etc/hosts` is empty so just do the following:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 echo 127.0.0.1 localhost weinerdog > /etc/hosts
 {{< /highlight >}}
 
@@ -264,7 +264,7 @@ How quick was that, huh?
 
 We'll be using this password to login, which I sometimes forget. It _bashould_ be different than the password for the user account we'll be making soon but I'd be lying if I said I have a super secure password. You have bigger problems if you think this writeup will give you top notch security anyway. I'm just here for a usable system!
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 passwd
 {{< /highlight >}}
 
@@ -274,7 +274,7 @@ Just type in your password twice. Not much more to it than that.
 
 We'll be using `systemd-boot` as our EFI boot manager. I couldn't tell you anything about it other than it works and that's good enough.
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 bootctl --path=/boot install
 {{< /highlight >}}
 
@@ -284,13 +284,13 @@ The above command copies the `systemd-boot` binary to our EFI System Partition (
 
 Now that we have a boot manager, we need to tell it what to boot exactly. We'll create a new `arch.conf` entry using `nano`:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 nano /boot/loader/entries/arch.conf
 {{< /highlight >}}
 
 and enter the following
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 title Arch Linux
 linux /vmlinuz-linux
 initrd /intel-ucode.img
@@ -304,13 +304,13 @@ As for the options, I couldn't say if you need, or don't need, any of them but i
 
 Once that's created, set it as the default configuration:
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 echo "default arch" > /boot/loader/loader.conf
 {{< /highlight >}}
 
 and now you're ready to reboot into a nicely working system!
 
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 exit
 reboot
 {{< /highlight >}}
