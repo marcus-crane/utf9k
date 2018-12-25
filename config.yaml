@@ -42,3 +42,9 @@ blackfriday:
 # Render code with classes so we can apply our own CSS style
 # that isn't shipped as part of Pygments default set
 pygmentsuseclasses: true
+
+# Enable Git information so we can show when a page last updated
+enableGitInfo: true
+
+# Enable usage of emoji with shortcodes
+enableEmoji: true

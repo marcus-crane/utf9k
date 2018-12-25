@@ -1,5 +1,5 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h2>
-  <h3 class="pb-3 font-light text-base">{{ dateFormat "Jan 2, 2006" .Date }}</h3>
+  <h3 class="pb-3 font-light text-base">{{ dateFormat "Jan 2, 2006" .Date }} // ~{{ .ReadingTime }} minutes</h3>
   <div id="content">{{ .Content }}</div>
 {{ end }}
