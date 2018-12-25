@@ -1,0 +1,9 @@
+<div>
+  <p class="text-center text-xs">
+    {{ $source := "static/thanks.csv" }}
+    {{ $delimiter := ","}}
+    {{ range $line := getCSV $delimiter $source | shuffle | first 1 }}
+    {{ index $line 0 | emojify }} {{ index $line 1 }}
+    {{ end }}
+  </p>
+</div>
