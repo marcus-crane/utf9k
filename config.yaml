@@ -30,6 +30,9 @@ params:
   custom_css:
     - /css/tailwind.min.css
     - /css/style.css
+    - https://use.fontawesome.com/releases/v5.6.3/css/all.css
+
+
   static_includes:
     - manifest.json
 
