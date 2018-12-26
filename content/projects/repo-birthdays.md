@@ -5,6 +5,9 @@ tags:
   - chrome
   - extension
   - javascript
+links:
+  chrome: https://chrome.google.com/webstore/detail/repo-birthdays/pmfhcjhcddnompkialjfidnbiibbccie
+  github: https://github.com/marcus-crane/repo-birthdays
 ---
 
 I'd often visit a repository and wonder just how old it is. Stars might indicate popularity but I imagine most of the time there's an initial burst of activity that slowly dies off as [product hunters](https://producthunt.com) and [hacker newsers](https://news.ycombinator.com) fade into the either.
