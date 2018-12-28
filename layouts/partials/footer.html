@@ -5,5 +5,8 @@
     {{ range $line := getCSV $delimiter $source | shuffle | first 1 }}
     {{ index $line 0 | emojify }} {{ index $line 1 }}
     {{ end }}
+    <span id="music" style="display: none">I'm currently listening to... nothing?</span>
+    <span id="tv" style="display: none">I'm currently watching... nothing?</span>
   </p>
+  <script src="/js/currently_listening.js"></script>
 </div>
