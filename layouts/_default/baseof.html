@@ -9,7 +9,7 @@
     {{ .Hugo.Generator }}
     
     {{ range .Site.Params.static_includes -}}
-    <link href="{{ . | absURL }}" rel="stylesheet" />
+    <link href="{{ . | absURL }}" />
     {{ end }}
 
     {{ range .Site.Params.custom_css -}}
