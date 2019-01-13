@@ -2,11 +2,11 @@ const musicNode = document.querySelector('#music')
 // const tvNode = document.querySelector('#tv')
 const showMusicNode = (res) => {
   musicNode.style.display = "inline-block"
-  musicNode.innerHTML = ` // 🎵I'm currently listening to <a href=${res.album_link} target="_blank" rel="noreferrer">${res.track}</a> by <a href=${res.artist_link} target="_blank" rel="noreferrer">${res.artist}</a>`
+  musicNode.innerHTML = ` // 🎵 I'm currently listening to <a href=${res.album_link} target="_blank" rel="noreferrer">${res.track}</a> by <a href=${res.artist_link} target="_blank" rel="noreferrer">${res.artist}</a>`
 }
 // const showTVNode = (res) => {
 //   tvNode.style.display = "inline-block"
-//   tvNode.innerHTML = ` // 📺I'm currently watching <a href=${res.title_link}>Season ${res.season}, Episode ${res.number}</a> of <a href=${res.show_link}>${res.show}</a>`
+//   tvNode.innerHTML = ` // 📺 I'm currently watching <a href=${res.title_link}>Season ${res.season}, Episode ${res.number}</a> of <a href=${res.show_link}>${res.show}</a>`
 // }
 const hideMusicNode = () => musicNode.style.display = "none"
 // const hideTVNode = () => tvNode.style.display = "none"
