@@ -29,7 +29,7 @@ const wasScrobbling = "last scrobbled"
 function get_current_song() {
   // Before you freak out at this being a raw IP, it's a kube cluster
   // that I haven't put a domain name in front of yet!
-  const url = "http://157.230.63.234:31225/api/current_track"
+  const url = "https://api.utf9k.net/current_track"
   fetch(url)
     .then(data => data.json())
     .then(res => {
