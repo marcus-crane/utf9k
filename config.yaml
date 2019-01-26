@@ -16,12 +16,9 @@ menu:
     - name: Reviews
       url: /reviews/
       weight: 3
-    - name: Stats
-      url: /stats/
-      weight: 4
     - name: Contact
       url: /contact/
-      weight: 5
+      weight: 4
 
 # A bunch of custom parameters that allow the site to be
 # slightly more dynamic ie; not having to edit the base
