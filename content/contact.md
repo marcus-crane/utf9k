@@ -1,5 +1,6 @@
 ---
 title: Looking to get in touch?
+description: Contact me
 ---
 
 <form class="form-horizontal" method="POST" netlify>
