@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <h2 class="blog-header">{{ .Title }}</h2>
-  <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
   <div id="content">
+    <h2 class="blog-header">{{ .Title }}</h2>
+    <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
     {{ .Content }}
     <label class="label label-rounded label-primary label-review">Developer: {{ .Params.Developer }}</label>
     <label class="label label-rounded label-primary label-review">Publisher: {{ .Params.Publisher }}</label>
@@ -9,5 +9,13 @@
     {{ range .Params.Platforms }}
       <label class="label label-rounded label-primary label-review">{{ . }}</label>
     {{ end }}
+    <script src="https://utteranc.es/client.js"
+      repo="marcus-crane/utf9k"
+      issue-term="og:title"
+      label="comments"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+    </script>
   </div>
 {{ end }}

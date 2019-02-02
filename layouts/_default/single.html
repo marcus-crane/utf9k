@@ -1,5 +1,7 @@
 {{ define "main" }}
-  <h2 class="blog-header">{{ .Title }}</h2>
-  <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
-  <div id="content">{{ .Content }}</div>
+  <div id="content">
+    <h2 class="blog-header">{{ .Title }}</h2>
+    <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
+    {{ .Content }}
+  </div>
 {{ end }}
