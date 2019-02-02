@@ -1,16 +1,18 @@
-<div class="inline-flex mb-4">
-  {{ if .Paginator.HasPrev }}
-    <a href="{{ .Paginator.Prev.URL }}">
-      <p>« Prev</p>
-    </a>
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<ul class="pagination">
+  <li class="page-item {{ if not .Paginator.HasPrev }}disabled{{ end }}">
+    <a href="{{ if .Paginator.HasPrev }}{{ .Paginator.Prev.URL }}{{ end }}" tabindex="-1">Prev</a>
+  </li>
+  {{ if gt $paginator.TotalPages 1 }}
+    {{ range $paginator.Pagers }}
+    <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+    </li>
+    {{ end }}
   {{ end }}
-  {{ if eq .Paginator.HasPrev .Paginator.HasNext }}
-    <pre>  </pre>
-  {{ end }}
-  {{ if .Paginator.HasNext }}
-    <a href="{{ .Paginator.Next.URL }}">
-      <p>Next »</p>
-    </a>
-  {{ end }}
-</div>
-
+  <li class="page-item {{ if not .Paginator.HasNext }}disabled{{ end }}">
+    <a href="{{ if .Paginator.HasNext }}{{ .Paginator.Next.URL }}{{ end }}" tabindex="-1">Next</a>
+  </li>
+</ul>
+{{ end }}

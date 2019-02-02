@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  <h3 class="pb-3 font-light text-base">
+  <h2 class="blog-header">{{ .Title }}</h2>
+  <p>
     {{ dateFormat "January 2006" .Date }}
     {{ if .Params.Links }} // {{ end }}
     {{ range $source, $url := .Params.Links }}
     [ <a href={{ $url }}><i class="fab fa-{{ $source }}"></i></a> ]
     {{ end }}
-  </h3>
+  </p>
   <div id="content">{{ .Content }}</div>
 {{ end }}
