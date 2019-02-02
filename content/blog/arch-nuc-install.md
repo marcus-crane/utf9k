@@ -32,12 +32,37 @@ You may see a few. In my case, my hard drive has a few `/dev/sda{number}` entrie
 
 My hard drive will end up looking as follows once I've set it up:
 
-| Size | Purpose        | Location |
-| ---- | -------------- | -------- |
-| 500M | Boot Sector    | /boot    |
-|  20G | System Root    | /        |
-|   8G | Swap Space     | N/A      |
-| 437G | Home Directory | /home    |
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Size</th>
+            <th>Purpose</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>500M</td>
+            <td>Boot Sector</td>
+            <td>/boot</td>
+        </tr>
+        <tr>
+            <td>20G</td>
+            <td>System Root</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>8G</td>
+            <td>Swap Space</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>437G</td>
+            <td>Home Directory</td>
+            <td>/home</td>
+        </tr>
+    </tbody>
+</table>
 
 I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) BIOS  so we'll be using [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table) for our partition table.
 
@@ -82,12 +107,37 @@ quit
 
 Now that are partitions are set up, running `fdisk -l` again should show the following:
 
-| Device    | Size   | Type             |
-| --------- | ------ | ---------------- |
-| /dev/sda1 |   499M | EFI System       |
-| /dev/sda2 |    20G | Linux filesystem |
-| /dev/sda3 |     8G | Linux swap       |
-| /dev/sda3 | 437.3G | Linux filesystem |
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Device</th>
+            <th>Size</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/dev/sda1</td>
+            <td>499M</td>
+            <td>EFI system</td>
+        </tr>
+        <tr>
+            <td>/dev/sda2</td>
+            <td>20G</td>
+            <td>Linux filesystem</td>
+        </tr>
+        <tr>
+            <td>/dev/sda3</td>
+            <td>8G</td>
+            <td>Linux swap</td>
+        </tr>
+        <tr>
+            <td>/dev/sda4</td>
+            <td>437.3G</td>
+            <td>Linux filesystem</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Making file systems
 
@@ -119,11 +169,32 @@ Now that our hard drive is completely set up, we're ready to mount our file syst
 
 Just as a reminder, here's where we want our partitions to end up
 
-| Device    | Format | Location |
-| --------- | ------ | -------- |
-| /dev/sda1 | ESP    | /boot    |
-| /dev/sda2 | ext4   | /        |
-| /dev/sda4 | ext4   | /home    |
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Device</th>
+            <th>Format</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/dev/sda1</td>
+            <td>ESP</td>
+            <td>/boot</td>
+        </tr>
+        <tr>
+            <td>/dev/sda2</td>
+            <td>ext4</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>/dev/sda4</td>
+            <td>ext4</td>
+            <td>/home</td>
+        </tr>
+    </tbody>
+</table>
 
 Here's how this layout translates into mount commands:
 
@@ -196,11 +267,34 @@ I also need some extra bits and pieces for later at this point. We couldn't have
 
 I need the following bits:
 
-| Package                                                                       | Purpose                                            |
-| ----------------------------------------------------------------------------- | -------------------------------------------------- |
-| [dialog](http://invisible-island.net/dialog/)                                 | A library for console-based UIs like `wifi-menu`   |
-| [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data) | Micro-code updates for Intel CPUs                  |
-| [wpa_supplicant](https://w1.fi/wpa_supplicant/)                               | Used to connect to wireless networks (put simply)  |
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Package</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a href="http://invisible-island.net/dialog/">dialog</a>
+            </td>
+            <td>A library for console-based UIs like `wifi-menu`</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://downloadcenter.intel.com/search?keyword=microcode+data">intel-ucode</a>
+            </td>
+            <td>Micro-code updates for Intel CPUs</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://w1.fi/wpa_supplicant/">wpa_supplicant</a>
+            </td>
+            <td>Used to connect to wireless networks (put simply)</td>
+        </tr>
+    </tbody>
+</table>
 
 That should be everything for now. The other bits (`netctl` and `dhcpcd`) were already installed as part of the `base` group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
 

@@ -4,8 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="theme-color" content="#a463f2" />
+    <meta name="author" content="Marcus Crane">
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     {{ .Hugo.Generator }}
     
     {{ range .Site.Params.static_includes -}}
@@ -25,20 +26,12 @@
     {{- template "_internal/schema.html" . -}}
     {{- template "_internal/twitter_cards.html" . -}}
   </head>
-  <body class="h-full w-full font-sans leading-normal">
-    <div class="min-h-full w-full flex flex-col">
-      <div class="flex flex-col md:flex-row flex-grow">
-          <div class="flex-none flex-col w-100 md:w-1/5 pt-12 pl-12">
-            <a href="/" class="flex text-purple text-2xl font-bold pb-6">
-              {{ .Site.Title }}
-            </a>
-            {{ partial "sidebar.html" . }}
-          </div>
-          <div class="h-full w-100 md:w-1/2 pt-12 pl-12 p-8 pb-2 text-xl">
-            {{ block "main" . }}{{ end }}
-          </div>
+  <body>
+    <div class="off-canvas off-canvas-sidebar-show">
+      {{ partial "sidebar.html" . }}
+      <div class="off-canvas-content">
+        {{ block "main" . }}{{ end }}
       </div>
-      {{ partial "footer.html" . }}
     </div>
   </body>
 </html>
