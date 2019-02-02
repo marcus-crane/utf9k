@@ -1,5 +1,6 @@
 ---
 title: Repo Birthdays
+description: A Chrome extension for showing the age of a Github repo
 date: 2017-12-03
 tags:
   - chrome
