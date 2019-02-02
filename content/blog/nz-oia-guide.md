@@ -70,29 +70,88 @@ At this point, the guide itself is over but I have a bit of a fun story that you
 
 It occured to me one day. While I can't even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It's an interesting list, and probably about what I would guess to.
 
-| Request Date | Subject                                                                | Denied under  |
-| ------------ | ---------------------------------------------------------------------- | ------------- |
-| 09/02/2016   | Detention and deportation of New Zealanders from Australia             | 6(a)          |
-| 30/03/2016   | Prime Minister's recent visit to Sri Lanka                             | 6(a)          |
-| 06/04/2016   | Communications regarding the 2016 US Presidential election             | 6(a)          |
-| 25/05/2016   | Britain possibly leaving the European Union                            | 6(a)          |
-| 07/06/2016   | Panama Papers                                                          | 6(a)          |
-| 16/08/2016   | Decision to extend New Zealand's training mission to Iraq              | 6(a)          |
-| 2016 - 2017  | Intelligence and advice to the NZ government related to the 9/11 event | 6(a)          |
-| 2016 - 2017  | Record of OIAs from February 2017                                      | 6             |
-| 2016 - 2017  | Preparation for Trump Administration                                   | 6(a) and 6(b) |
-| 2016 - 2017  | NSS handbook examples of 1080 and domestic incident                    | 6(a)          |
-| 2016 - 2017  | The steel industry and trade issues                                    | 6(a)          |
-| 2016 - 2017  | Meetings with Australian officials on social security                  | 6(a) and 6(b) |
-| 2016 - 2017  | Interactions with United States Film Industry representatives          | 6(a)          |
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Request Date</th>
+            <th>Subject</th>
+            <th>Denied Under</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>09/02/2016</td>
+            <td>Detention and deportation of New Zealanders from Australia</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>30/03/2016</td>
+            <td>Prime Minister’s recent visit to Sri Lanka</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>06/04/2016</td>
+            <td>Communications regarding the 2016 US Presidential election</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>25/05/2016</td>
+            <td>Britain possibly leaving the European Union</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>07/06/2016</td>
+            <td>Panama Papers</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>16/08/2016</td>
+            <td>Decision to extend New Zealand’s training mission to Iraq</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>Intelligence and advice to the NZ government related to the 9⁄11 event</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>Record of OIAs from February 2017</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>Preparation for Trump Administration</td>
+            <td>6(a) and 6(b)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>NSS handbook examples of 1080 and domestic incident</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>The steel industry and trade issues</td>
+            <td>6(a)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>Meetings with Australian officials on social security</td>
+            <td>6(a) and 6(b)</td>
+        </tr>
+        <tr>
+            <td>2016 - 2017</td>
+            <td>Interactions with United States Film Industry representatives</td>
+            <td>6(a)</td>
+        </tr>
+    </tbody>
+</table>
 
 A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it's still interesting nonetheless.
 
 I'd love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can "FOIA the fuck out of it" to quote a tweet I saw earlier today.
 
----
-
-Sources for the table above:
+<div class="divider text-center" data-content="Table Sources"></div>
 
 * [FOIA Sections S6(a) and S(6)b(i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
 * [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)

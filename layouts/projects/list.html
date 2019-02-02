@@ -1,12 +1,8 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h2>
-  <ul class="list-reset mb-4 pt-6">
-    {{ range .Paginator.Pages }}
-      <li>
-        <a href="{{ .URL }}" class="f4 dib black link">{{ .Title }}</a>
-        <p class="pb-3 font-light text-base">{{ dateFormat "January 2006" .Date }}</p>
-      <li>
-    {{ end }}
-  </ul>
+  {{ range .Paginator.Pages }}
+    <a href="{{ .URL }}">{{ .Title }}</a>
+    <p class="card-subtitle text-gray">{{ dateFormat "January 2006" .Date }}</p>
+  {{ end }}
   {{ partial "pagination.html" . }}
 {{ end }}
