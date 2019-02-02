@@ -1,10 +1,23 @@
 {{ $currentPage := . }}
-{{ if .Site.Menus.main }}
-  <ul class="flex-col list-reset text-lg">
-  {{ range .Site.Menus.main }}
-    <li>
-      <a href="{{ .URL }}">{{ .Name }}</a>
-    </li>
-  {{ end }}
-  </ul>
-{{ end }}
+<div class="navbar">
+    <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+        <i class="icon icon-menu"></i>
+    </a>
+</div>
+<div class="off-canvas-sidebar" id="sidebar">
+    <div class="brand">
+        <a href="/">
+            <h4>utf9k</h4>
+        </a>
+    </div>
+    <ul class="nav">
+        {{ if .Site.Menus.main }}
+            {{ range .Site.Menus.main }}
+            <li class="nav-item">
+                <a href="{{ .URL }}" class="accordion-header c-hand">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</div>
+<a class="off-canvas-overlay" href="#close"></a>

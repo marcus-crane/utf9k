@@ -1,19 +1,13 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  <h3 class="pb-3 font-light text-base">{{ dateFormat "Jan 2, 2006" .Date }} // ~{{ .ReadingTime }} minutes</h3>
+  <h2 class="blog-header">{{ .Title }}</h2>
+  <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
   <div id="content">
     {{ .Content }}
-    Developer: {{ .Params.Developer }}
-    <br />
-    Publisher: {{ .Params.Publisher }}
-    <br />
-    Released in {{ .Params.Released }}
-    <br />
-    Platforms: 
-    <ul>
+    <label class="label label-rounded label-primary label-review">Developer: {{ .Params.Developer }}</label>
+    <label class="label label-rounded label-primary label-review">Publisher: {{ .Params.Publisher }}</label>
+    <label class="label label-rounded label-primary label-review">{{ .Params.Released }}</label>
     {{ range .Params.Platforms }}
-      <li>{{ . }}</li>
+      <label class="label label-rounded label-primary label-review">{{ . }}</label>
     {{ end }}
-    </ul>
   </div>
 {{ end }}
