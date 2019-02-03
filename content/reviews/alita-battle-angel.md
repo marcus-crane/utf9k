@@ -7,7 +7,7 @@ tags:
   - movies
 ---
 
-It's a respectable 24.7°C on this slightly humid Summer day and I had the contradictory idea of picking up a nice hot pizza. Doubly so, because once I've eaten about 2 slices, it will then [linger](https://www.thesaurus.com/browse/linger) in my fridge until the end of time.
+It's a respectable 24.7°C on this slightly humid summer day and I had the contradictory idea of picking up a nice hot pizza. Doubly so, because once I've eaten about 2 slices, it will then [linger](https://www.thesaurus.com/browse/linger) in my fridge until the end of time.
 
 On my way back from [the pizza store](https://hellpizza.com), I was marvelling at a video billboard for the upcoming Marvel film starring the hit character Captain Marvel: the appropriately titled [Captain Marvel](https://www.imdb.com/title/tt4154664/). Specifically, it got me thinking about movies. Perhaps I could spend money to see a series of moving pictures synced up to audio?
 
