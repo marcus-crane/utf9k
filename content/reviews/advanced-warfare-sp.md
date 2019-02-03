@@ -1,15 +1,15 @@
 --- 
 Title: "Call of Duty: Advanced Warfare - Single Player"
 Date: 2014-11-13
-Developer: Sledgehammer Games
-Publisher: Activision
-Released: 2014
-Platforms:
-  - PC
-  - Playstation 3
-  - Playstation 4
-  - Xbox 360
-  - Xbox One
+Metadata:
+    - "Developer: Sledgehammer Games"
+    - "Publisher: Activision"
+    - 2014
+    - PC
+    - Playstation 3
+    - Playstation 4
+    - Xbox 360
+    - Xbox One
 ---
 
 I like to think of the Call of Shooty Shoots games as being like B movies.
