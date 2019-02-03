@@ -31,6 +31,10 @@ body {
     max-width: 800px;
 }
 
+#content iframe {
+    padding-bottom: 1rem;
+}
+
 .blog-header {
     margin-bottom: 0;
 }
@@ -46,6 +50,10 @@ a:hover {
 .fa-icon {
     font-size: 60px;
     padding: 0 .3em .3em;
+}
+
+span.tooltip {
+    border-bottom: 1px dashed #999;
 }
 
 /* Code styles */

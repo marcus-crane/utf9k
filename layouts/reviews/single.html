@@ -3,11 +3,8 @@
     <h2 class="blog-header">{{ .Title }}</h2>
     <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
     {{ .Content }}
-    <label class="label label-rounded label-primary label-review">Developer: {{ .Params.Developer }}</label>
-    <label class="label label-rounded label-primary label-review">Publisher: {{ .Params.Publisher }}</label>
-    <label class="label label-rounded label-primary label-review">{{ .Params.Released }}</label>
-    {{ range .Params.Platforms }}
-      <label class="label label-rounded label-primary label-review">{{ . }}</label>
+    {{ range .Params.Metadata }}
+    <label class="label label-rounded label-primary label-review">{{ . }}</label>
     {{ end }}
     <script src="https://utteranc.es/client.js"
       repo="marcus-crane/utf9k"
