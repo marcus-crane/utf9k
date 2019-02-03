@@ -1,5 +1,5 @@
 ---
-title: Alita Battle Angel
+title: "Alita: Battle Angel"
 date: 2019-02-03
 tags:
   - anime
