@@ -56,6 +56,10 @@ span.tooltip {
     border-bottom: 1px dashed #999;
 }
 
+twitter-widget {
+    margin: 0 auto;
+}
+
 /* Code styles */
 
 .highlight code {
