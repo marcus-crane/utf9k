@@ -1,8 +1,0 @@
-{{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  {{ range .Paginator.Pages }}
-    <a href="{{ .URL }}">{{ .Title }}</a>
-    <p class="card-subtitle text-gray">{{ dateFormat "January 2006" .Date }}</p>
-  {{ end }}
-  {{ partial "pagination.html" . }}
-{{ end }}
