@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="theme-color" content="#a463f2" />
+    <meta name="theme-color" content="#ff9b00" />
     <meta name="author" content="Marcus Crane">
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -27,11 +27,6 @@
     {{- template "_internal/twitter_cards.html" . -}}
   </head>
   <body>
-    <div class="off-canvas off-canvas-sidebar-show">
-      {{ partial "sidebar.html" . }}
-      <div class="off-canvas-content">
-        {{ block "main" . }}{{ end }}
-      </div>
-    </div>
+      {{ block "main" . }}{{ end }}
   </body>
 </html>

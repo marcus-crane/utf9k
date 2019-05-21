@@ -1,15 +1,15 @@
 {{ define "main" }}
+  <a id="back" href="/blog">⏎</a>
+  <h1>{{ .Title }}</h1>
   <div id="content">
-    <h2 class="blog-header">{{ .Title }}</h2>
-    <p>{{ dateFormat "Jan 2, 2006" .Date }} // <mark>{{ .ReadingTime }} minutes</mark></p>
     {{ .Content }}
-    <script src="https://utteranc.es/client.js"
-      repo="marcus-crane/utf9k"
-      issue-term="og:title"
-      label="comments"
-      theme="github-light"
-      crossorigin="anonymous"
-      async>
-    </script>
   </div>
+  <script src="https://utteranc.es/client.js"
+    repo="marcus-crane/utf9k"
+    issue-term="og:title"
+    label="comments"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+  </script>
 {{ end }}
