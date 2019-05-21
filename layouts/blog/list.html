@@ -1,6 +1,6 @@
 {{ define "main" }}
   <a id="back" href="/">⏎</a>
-  <h1>{{ .Title }}</h1>
+  <h1>Posts</h1>
   <div id="content">
     {{ range .Paginator.Pages }}
       <span class="post-date">{{ dateFormat "Jan 02, 2006" .Date }}</span>

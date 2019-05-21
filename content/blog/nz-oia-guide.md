@@ -25,7 +25,7 @@ Ah yes, right. Maybe you've heard of the term FOIA or OIA but haven't really got
 
 The Official Information Act of 1982, readable [here](http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html), is actually a replacement for the [Official Secrets Act 1951](http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183/). I can't say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I've cut out some bits so it's not just a huge wall of text.
 
-> 6 (1) If any person, having in his possession or control [...] any sketch, plan, model, article, note, document, or information [...] which has    been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has   obtained or to which he has had access owing to his position [...] (a) Communicates the code word, password, sketch, plan, model, article, note,   document, or information to any person, other than a person to whom he is authorized to communicate it [...] he commits an offence against this    Act.
+> 6 (1) If any person, having in his possession or control ... any sketch, plan, model, article, note, document, or information ... which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position ... (a) Communicates the code word, password, sketch, plan, model, article, note,   document, or information to any person, other than a person to whom he is authorized to communicate it ... he commits an offence against this Act.
 
 The idea of information belonging to "the Queen and her advisors" slowly seemed like a bunch of nonsense and as a result, the Official Information Act was born. In short, it allows anyone present in New Zealand (citizen or visitor) to request, surprise, information from any government Minister, department or organization. That's basically all it boils down to.
 
@@ -82,37 +82,37 @@ It occured to me one day. While I can't even know what that redacted information
         <tr>
             <td>09/02/2016</td>
             <td>Detention and deportation of New Zealanders from Australia</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>30/03/2016</td>
             <td>Prime Minister’s recent visit to Sri Lanka</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>06/04/2016</td>
             <td>Communications regarding the 2016 US Presidential election</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>25/05/2016</td>
             <td>Britain possibly leaving the European Union</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>07/06/2016</td>
             <td>Panama Papers</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>16/08/2016</td>
             <td>Decision to extend New Zealand’s training mission to Iraq</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
             <td>Intelligence and advice to the NZ government related to the 9⁄11 event</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
@@ -122,27 +122,27 @@ It occured to me one day. While I can't even know what that redacted information
         <tr>
             <td>2016 - 2017</td>
             <td>Preparation for Trump Administration</td>
-            <td>6(a) and 6(b)</td>
+            <td>6 (a) and 6 (b)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
             <td>NSS handbook examples of 1080 and domestic incident</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
             <td>The steel industry and trade issues</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
             <td>Meetings with Australian officials on social security</td>
-            <td>6(a) and 6(b)</td>
+            <td>6 (a) and 6 (b)</td>
         </tr>
         <tr>
             <td>2016 - 2017</td>
             <td>Interactions with United States Film Industry representatives</td>
-            <td>6(a)</td>
+            <td>6 (a)</td>
         </tr>
     </tbody>
 </table>
@@ -151,7 +151,9 @@ A quick glance tells that the majority of rejected/redacted requests were on the
 
 I'd love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can "FOIA the fuck out of it" to quote a tweet I saw earlier today.
 
-<div class="divider text-center" data-content="Table Sources"></div>
+<hr />
 
-* [FOIA Sections S6(a) and S(6)b(i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
+Table Sources
+
+* [FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
 * [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)
