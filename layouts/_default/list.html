@@ -2,11 +2,10 @@
   <a id="back" href="/">⏎</a>
   <h1>{{ .Title }}</h1>
   <div id="content">
-    {{ range .Paginator.Pages }}
+    {{ range .Pages }}
       <span class="post-date">{{ dateFormat "Jan 02, 2006" .Date }}</span>
       <a href="{{ .URL }}">{{ .Title }}</a>
       <br />
     {{ end }}
   </div>
-  {{ partial "pagination.html" . }}
 {{ end }}
