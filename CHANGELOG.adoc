@@ -1,0 +1,9 @@
+= Changelog
+:toc:
+
+== 2019
+
+=== August
+
+* Added this changelog to track all the different variations of my site over time (will fill it out later)
+* Moved to Jekyll. Wanted to try Asciidoc and Hugo puts some limitations on Asciidoc rendering
