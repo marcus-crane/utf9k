@@ -7,12 +7,9 @@ I'm always moving this site around but you should be able to find everything on 
 
 You can also view the source of this site on https://github.com/marcus-crane/utf9k[Github].
 
-I'm around the web in a bunch of places:
+I'm around the web in a bunch of places: https://github.com/marcus-crane[github] | https://instagram.com/sentryism[instagram] | https://linkedin.com/in/marcus-crane[linkedin] | https://twitter.com/sentreh[twitter]
 
-- https://github.com/marcus-crane[github]
-- https://instagram.com/sentryism[instagram]
-- https://linkedin.com/in/marcus-crane[linkedin]
-- https://twitter.com/sentreh[twitter]
++//+
 
 == Blog
 
@@ -22,24 +19,12 @@ I'm around the web in a bunch of places:
 {% endfor %}
 ++++
 
-// == Projects
++//+
 
-// ++++
-// <details>
-//   <summary>2019</summary>
-//   {% for project in site.projects %}
-//     <a href="{{ project.url }}">{{ project.title }}</a>
-//   {% endfor %}
-// </details>
-// ++++
+== Reviews
 
-// == Reviews
-
-// ++++
-// <details>
-//   <summary>2016</summary>
-//   {% for review in site.reviews %}
-//     <a href="{{ review.url }}">{{ review.title }}</a>
-//   {% endfor %}
-// </details>
-// ++++
+++++
+{% for review in site.reviews reversed %}
+	<li>{{ review.date | date: "%d/%m/%Y" }} <a href="{{ review.url }}">{{ review.title }}</a></li>
+{% endfor %}
+++++
