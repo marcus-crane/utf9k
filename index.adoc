@@ -9,10 +9,10 @@ You can also view the source of this site on https://github.com/marcus-crane/utf
 
 I'm around the web in a bunch of places:
 
-* https://github.com/marcus-crane[github]
-* https://instagram.com/sentryism[instagram]
-* https://linkedin.com/in/marcus-crane[linkedin]
-* https://twitter.com/sentreh[twitter]
+- https://github.com/marcus-crane[github]
+- https://instagram.com/sentryism[instagram]
+- https://linkedin.com/in/marcus-crane[linkedin]
+- https://twitter.com/sentreh[twitter]
 
 == Blog
 

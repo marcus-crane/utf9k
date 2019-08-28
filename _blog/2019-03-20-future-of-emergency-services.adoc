@@ -15,7 +15,9 @@ It didn't leave me with a good feeling or sense of security but it did get me wo
 
 Most of this article would likely have been joking about how there will probably be "Uber for Ambulances" as I often have.
 
-{{< tweet 744467417909235712 >}}
++++
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">new startup idea: uber for ambulances. cheaper rates than a normal ambulance unless rugby is on then it&#39;s 6x surge prices or you&#39;re fucked</p>&mdash; Marcus (@sentreh) <a href="https://twitter.com/sentreh/status/744467417909235712?ref_src=twsrc%5Etfw">June 19, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
++++
 
 There have been https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html[a] https://www.buzzfeednews.com/article/carolineodonovan/taking-uber-lyft-emergency-room-legal-liabilities[few] writeups about how patients are using ridesharing services in place of ambulances and I think I understand why.
 
