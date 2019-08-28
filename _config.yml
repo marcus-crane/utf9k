@@ -1,0 +1,43 @@
+title: utf9k
+description: My personal site
+url: https://utf9k.net
+author: Marcus Crane <marcus@utf9k.net>
+
+plugins:
+  - jekyll-feed
+
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
+  redirects:
+    output: true
+    permalink: /:path/
+  reviews:
+    output: true
+    permalink: /:collection/:name
+
+feed:
+  path: ""
+  collections:
+    blog:
+      path: "/rss.xml"
+
+asciidoctor:
+  attributes:
+    - showtitle=@
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
