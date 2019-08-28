@@ -9,6 +9,8 @@ It's that time again where I decide to reinstall Arch Linux and likely end up ba
 
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
 
+*2019 Update*: https://manjaro.org/[Manjaro] is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
+
 == Getting online
 
 As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll start by getting online. You can do this graphically by running `wifi-menu`.
