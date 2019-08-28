@@ -1,8 +1,0 @@
-{{ define "main" }}
-<h2>{{ .Title }}</h2>
-  {{ range (.Paginator 50).Pages }}
-  <a class="label label-rounded label-primary label-review" href="{{ .URL }}">{{ .Title }}</a>
-  </a>
-  {{ end }}
-  {{ partial "pagination.html" . }}
-{{ end }}
