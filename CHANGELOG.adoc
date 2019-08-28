@@ -6,4 +6,4 @@
 === August
 
 * Added this changelog to track all the different variations of my site over time (will fill it out later)
-* Moved to Jekyll. Wanted to try Asciidoc and Hugo puts some limitations on Asciidoc rendering
+* Moved to Jekyll. Wanted to try Asciidoc and Hugo puts some limitations on Asciidoc rendering. I also remove all of the list type pages in favour of having everything the front page. Still not sure how I feel about it so it might change some more in the future!
