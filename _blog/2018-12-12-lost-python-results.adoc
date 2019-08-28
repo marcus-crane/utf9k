@@ -1,6 +1,7 @@
 = Recovering lost Python results in the REPL
 Marcus Crane <marcus@utf9k.net>
 v1.0, 2018-12-12
+:source-highlighter: rouge
 :page-tags: [python, snippet]
 
 I was messing around with some queuing earlier today in order to try out the https://github.com/celery/kombu[Kombu] library. It works pretty nicely but I goofed up while playing with it.

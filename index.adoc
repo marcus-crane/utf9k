@@ -18,7 +18,7 @@ I'm around the web in a bunch of places:
 
 ++++
 {% for post in site.blog reversed %}
-	<li>{{ post.date | date: "%d/%m/%Y" }} <a target="_blank" rel="noopener noreferrer" href="{{ post.url }}">{{ post.title }}</a></li>
+	<li>{{ post.date | date: "%d/%m/%Y" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 ++++
 
