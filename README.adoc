@@ -2,6 +2,10 @@
 
 The content files that make up my personal site: https://utf9k.net
 
+It now lives on Gitlab over at https://gitlab.com/marcus-crane/utf9k.
+
+This repo will no longer receive updates as Github has no official way of setting up mirrors.
+
 == Prerequisites
 
 The only thing you'll need to install is https://jekyllrb.com[jekyll], the static site generator that I use to build my site.
