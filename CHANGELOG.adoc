@@ -7,6 +7,7 @@
 
 ==== 29th
 
+* Switched the primary repo for this site from Github to Gitlab
 * Filled out the majority of the changes for 2019.
 * Added this changelog to track all the different variations of my site over time (will fill it out later)
 * Moved to Jekyll. I wanted to try Asciidoc and Hugo puts some limitations on Asciidoc rendering.
