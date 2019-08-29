@@ -7,6 +7,7 @@
 
 ==== 29th
 
+* Filled out the majority of the changes for 2019.
 * Added this changelog to track all the different variations of my site over time (will fill it out later)
 * Moved to Jekyll. I wanted to try Asciidoc and Hugo puts some limitations on Asciidoc rendering.
   - I also removed all of the list type pages in favour of having everything the front page. Still not sure how I feel about it so it might change some more in the future!
@@ -15,3 +16,63 @@
 ==== 19th
 
 * Wrote a post about turning 25. It was mainly just a tangent about what I'd like to do with this site going forward.
+
+==== 6th
+
+* Added an MIT License. All of my stuff already carries an MIT license anyway.
+
+=== July
+
+==== 29th
+
+* Wrote a post about extracting credentials from Jenkins
+* Removed pagination from the blog list page
+
+==== 20th
+
+* Added https://forestry.io[foresty.io] configuration again. It wouldn't survive very long.
+* Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :)
+
+=== May
+
+==== 21st
+
+* Revamped everything to follow a dark theme while still aiming to be readable. It was inspired by a website I was browsing on an iPhone 6S Plus set to greyscale mode!
+* All of the CSS was entirely from scratch whereas I had been using CSS frameworks up until now.
+
+=== March
+
+==== 21st
+
+* Added a post thinking about the future of emergency services. This would have been shortly after I had been admitted to hospital, if not the same day.
+
+==== 18th
+
+* Uploaded my resume as a static asset for easy linking. Not particular relevant to the content of the site.
+
+=== February
+
+==== 22nd
+
+* Uploaded some images from a work related incident. Looking back, I probably shouldn't have but there's nothing particular useful or secret in there anyway.
+
+==== 10th
+
+* Uploaded `vsreport.html` which was a security review of sorts for a videogame I was playing. I had churned it out like an entire year prior but never hosted it anywhere. I think I was talking to someone about it and wanted to send them a link.
+
+==== 7th
+
+* Tried out https://forestry.io[forestry.io] for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
+
+==== 3rd
+
+* Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review...
+* Added support for https://utteranc.es/[utteranc.es], a neat little comment section powered by Github.
+* Revamed the site to move from tailwind.css to spectre.css
+* Some of the layout changed as a result such as adding opengraph metatags and generally going for a more minimalist approach.
+
+=== January
+
+==== 27th
+
+* Removed the stats page from navigation. It was only showing a placeholder page anyway and so far marks the last time it appeared.
