@@ -1,11 +1,8 @@
----
-title: Some thoughts about running a wiki
-date: 2017-12-18
-tags:
-  - community
-  - leadership
-  - wiki
----
+= Some thoughts about running a wiki
+Marcus Crane <marcus@utf9k.net>
+v1.0, 2017-12-18
+:page-tags: [community, leadership, wiki]
+
 
 Recently, I started playing a mobile game called http://bs.visualshower.com/[Blustone]. It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
 
