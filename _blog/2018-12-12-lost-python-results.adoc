@@ -1,6 +1,7 @@
 = Recovering lost Python results in the REPL
 Marcus Crane <marcus@utf9k.net>
 v1.0, 2018-12-12
+:page-permalink: /blog/lost-python-results
 :source-highlighter: rouge
 :page-tags: [python, snippet]
 
