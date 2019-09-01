@@ -3,6 +3,12 @@
 
 == 2019
 
+=== September
+
+==== 1st
+
+* Realised I had broken all of the links when porting to Jekyll! Links like `/blog/lore-tabs` were not `blog/2018-02-28-lore-tabs`. This wouldn't be such a big deal but I've linked to some posts and I know that searching `arch linux on intel nuc` on Google brings up my post in 3rd place. Hopefully it's useful for some people, despite possibly being a little out of date. It's a handy Arch guide in general I think, since I use it myself. I should write more in depth explainers sometime.
+
 === August
 
 ==== 29th
