@@ -1,6 +1,7 @@
 = Humans don't come with lore tabs
 Marcus Crane <marcus@utf9k.net>
 v1.0, 2018-02-28
+:page-permalink: /blog/lore-tabs
 :page-tags: [people]
 
 This post has been a long time coming because I've never really known how to express it. I'm not even sure I can write it properly anyway but I'm going to at least try.
