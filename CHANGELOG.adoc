@@ -5,9 +5,15 @@
 
 === September
 
+==== 7th
+
+* Backfilled the changelog some more. Entries mentioned new posts now link to said posts
+* Swapped the (supposedly placeholder) https://graphemica.com/%E2%8F%8E[return symbol (U+23CE)] being used as a back button for a https://graphemica.com/%E2%9E%B2[circled heavy white rightwards arrow (U+27B2)]. I couldn't find a leftwards version so I just rotated it using some CSS
+* Updated some links to be relative, such as the CHANGELOG on the front page which was a link to the live version up until now. Much nicer for working locally.
+
 ==== 1st
 
-* Realised I had broken all of the links when porting to Jekyll! Links like `/blog/lore-tabs` were not `blog/2018-02-28-lore-tabs`. This wouldn't be such a big deal but I've linked to some posts and I know that searching `arch linux on intel nuc` on Google brings up my post in 3rd place. Hopefully it's useful for some people, despite possibly being a little out of date. It's a handy Arch guide in general I think, since I use it myself. I should write more in depth explainers sometime.
+* Realised I had broken all of the links when porting to Jekyll! Links like `/blog/lore-tabs` now looked like `blog/2018-02-28-lore-tabs`. This wouldn't be such a big deal but I've linked to some posts and I know that searching `arch linux on intel nuc` on Google brings up my post in 3rd place. Hopefully it's useful for some people, despite possibly being a little out of date. It's a handy Arch guide in general I think, since I use it myself. I should write more in depth explainers sometime.
 
 === August
 
@@ -22,7 +28,7 @@
 
 ==== 19th
 
-* Wrote a post about turning 25. It was mainly just a tangent about what I'd like to do with this site going forward.
+* Wrote a post about turning 25. It was mainly just a tangent about what I'd like to do with this site going forward. link:/blog/25[»]
 
 ==== 6th
 
@@ -32,13 +38,13 @@
 
 ==== 29th
 
-* Wrote a post about extracting credentials from Jenkins
+* Wrote a post about extracting credentials from Jenkins link:/blog/retrieving-jenkins-credentials[»]
 * Removed pagination from the blog list page
 
 ==== 20th
 
 * Added https://forestry.io[foresty.io] configuration again. It wouldn't survive very long.
-* Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :)
+* Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :) link:/blog/wsl2-vhd-issue[»]
 
 === May
 
@@ -51,7 +57,7 @@
 
 ==== 21st
 
-* Added a post thinking about the future of emergency services. This would have been shortly after I had been admitted to hospital, if not the same day.
+* Added a post thinking about the future of emergency services. This would have been shortly after I had been admitted to hospital, if not the same day. link:/blog/future-of-emergency-services[»]
 
 ==== 18th
 
@@ -73,7 +79,7 @@
 
 ==== 3rd
 
-* Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review...
+* Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review... link:/reviews/battle-angel-alita[»]
 * Added support for https://utteranc.es/[utteranc.es], a neat little comment section powered by Github.
 * Revamed the site to move from tailwind.css to spectre.css
 * Some of the layout changed as a result such as adding opengraph metatags and generally going for a more minimalist approach.
@@ -83,3 +89,60 @@
 ==== 27th
 
 * Removed the stats page from navigation. It was only showing a placeholder page anyway and so far marks the last time it appeared.
+
+==== 15th
+
+* Uploaded my parnell mapping side project (but not presented anywhere user facing)
+
+==== 13th
+
+* Updated currently listening script to point to a proper domain name instead of a raw IP address
+* Added some whitespace to the currently listening portion of the footer
+
+== 2018
+
+=== December
+
+==== 29th
+
+* Added a script for showing what I'm currently listening to or watching. It was powered by a single node kubernetes cluster. Hugely overkill but it was an interesting learning experience!
+
+==== 27th
+
+* Removed the project page for ipecac which I didn't really intend to publish yet. It was literally half finished with some sentences that just cut off midway. Oops!
+
+==== 26th
+
+* Added a README describing how the site operates and is deployed
+* Added a project page for ipecac
+* Finished rewriting styling to use flexbox
+* Added a footer that shows randomly generated lines of nonsense
+* Added estimated reading time for blog posts and reviews
+* Enabled support for emoji and git info
+* Added links to repo birthdays project post
+* Added font awesome for use in posts
+
+==== 24th
+
+* Swapped from monokai to oceanic-next styling for code blocks
+* Add styling for singular `<code>` elements
+* Added a 404 page
+* Removed CSS from base template in favor of an extensable params block in the site config
+* Added some overrides for the blackfriday markdown parser used by Hugo
+* Started rewriting styling to make use of flexbox
+
+==== 16th
+
+* Fixed a typo in the link:/blog/lost-python-results[lost python results] post
+
+==== 14th
+
+* Fixed a bug where social media links had mistakenly set a second `href` instead of a `class` attribute
+
+==== 13th
+
+* Update link:/blog/arch-nuc-install[arch nuc install] and link:/blog/lost-python-results[lost python results] posts to use hugo's syntax highlighting shortcode
+
+==== 12th
+
+* Wrote a post about the `-` operator in Python link:/blog/lost-python-results[»]
