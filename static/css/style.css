@@ -31,9 +31,10 @@ pre {
 
 #back {
   float: left;
-  margin-left: -2.3rem;
-  margin-top: 2.3rem;
-  width: 0;
+  font-size: 48px;
+  margin-left: -3.5rem;
+  margin-top: .25rem;
+  transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 600px) {
