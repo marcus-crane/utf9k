@@ -146,3 +146,247 @@
 ==== 12th
 
 * Wrote a post about the `-` operator in Python link:/blog/lost-python-results[»]
+
+==== 8th
+
+* Ported reviews over to Hugo
+* Added pagination
+
+==== 7th
+
+* Ported site from https://blog.getpelican.com/[Pelican] to https://gohugo.io/[Hugo]
+
+==== 6th
+
+* Swap out https://github.com/pypa/pipenv[pipenv] for https://github.com/sdispater/poetry[Poetry]
+
+==== 3rd
+
+* Added post about Twitter automation link:/blog/automation-right[»]
+
+=== November
+
+==== 28th
+
+* Changed border for contact form inputs from grey to black
+
+==== 19th
+
+* Added projects page for repo birthdays chrome extension
+* Added some reviews that used to live at https://neatgam.es
+
+==== 18th
+
+* Disabled RSS feeds and added Pygments
+
+==== 15th
+
+* Added styling for tables
+* Added Monokai syntax highlighting colour scheme
+
+==== 14th
+
+* Added a contact form powered by Netlify
+* Changed from https://tachyons.io/[Tachyons] to https://tailwindcss.com/[Tailwind CSS]
+
+==== 7th
+
+* Ported remaining content over to Pelican
+
+==== 5th
+
+* Ported from Flask app to https://blog.getpelican.com/[Pelican]
+
+=== August
+
+==== 25th
+
+* Added draft post about Docker container security. I never actually finished this but I believe someone compromised my Redis instance (it wasn't secured). Not side effects though since all of the content was static content anyway.
+* Updated CSP header to whitelist self hosted images
+
+==== 20th
+
+* Fixed `strftime` bug in the site footer
+
+==== 19th
+
+* Moved credentials to not be inline so I can commit settings
+* Added a fallback for any missing cover art
+* Fixed error with links
+
+==== 18th
+
+* Added a post about submitting Official Information Act requests in New Zealand link:/blog/nz-oia-guide[»]
+* Added Google Analytics
+* Fixed sorting to show posts in reverse order
+
+==== 16th
+
+* Added movies to the stats page
+
+==== 15th
+
+* Added redirect from my old URL `thingsima.de` to `utf9k.net`
+* Added page for showing personal stats
+
+==== 12th
+
+* Added section to footer that fetches and shows the latest commit for the site
+* General style changes
+* nginx change for rewriting `https://www.utf9k.net -> https://utf9k.net`
+
+==== 11th
+
+* Set up nginx for serving the site
+* Copied over some static files
+
+==== 9th
+
+* Moved site to a new repo at https://github.com/marcus-crane/utf9k (now archived). This was to reflect the move from https://thingsima.de to https://utf9k.net
+* I believe at this point, I reverted to the old Flask site I had. Prior to this point, I was using Django.
+
+=== May
+
+==== 10th
+
+* Added README
+* Added placeholder keys for `giantbomb`, `howlongtobeat` and `steam`
+* CSS changes to better suit mobile devices
+
+==== 6th
+
+* Moved from https://tachyons.io/[Tachyons] to https://picturepan2.github.io/spectre/[Spectre CSS]
+* Changed from https://github.com/pypa/pipenv[pipenv] to a generic virtual environment
+
+=== April
+
+==== 8th
+
+* Started rendering covers for Goodreads entries on stats page
+* Fixed RSS feeds
+* Fixed date rendering for blog post list
+* Update postgres container to only save state to disc during development
+
+==== 7th
+
+* Updated postgres container to save state to disc
+* Update game fetching to ignore any non-game resources
+
+==== 6th
+
+* Added currently playing games to stats page
+* Updated config key examples
+
+==== 2nd
+
+=== March
+
+==== 31st
+
+==== 30th
+
+==== 12th
+
+==== 3rd
+
+==== 2nd
+
+==== 1st
+
+=== February
+
+==== 18th
+
+==== 17th
+
+==== 12th
+
+==== 10th
+
+==== 8th
+
+==== 6th
+
+==== 5th
+
+==== 4th
+
+==== 2nd
+
+==== 1st
+
+=== January
+
+==== 29th
+
+==== 28th
+
+==== 27th
+
+==== 26th
+
+==== 21st
+
+==== 20th
+
+==== 8th
+
+==== 7th
+
+==== 4th
+
+==== 3rd
+
+==== 2nd
+
+== 2017
+
+=== December
+
+==== 30th
+
+==== 29th
+
+==== 28th
+
+==== 26th
+
+==== 20th
+
+==== 19th
+
+==== 5th
+
+==== 2nd
+
+==== 1st
+
+=== November
+
+==== 21st
+
+==== 20th
+
+==== 19th
+
+==== 18th
+
+==== 8th
+
+==== 6th
+
+=== October
+
+==== 29th
+
+==== 28th
+
+==== 27th
+
+==== 26th
+
+==== 25th
+
+==== 24th
+
+==== 23rd
