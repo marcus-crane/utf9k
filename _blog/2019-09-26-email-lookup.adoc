@@ -115,7 +115,7 @@ Our first step is to say hello to the server, which sounds like a joke but it's 
 250 mx.google.com at your service
 ----
 
-I've artificially inserted a prompt here to denote what I've entered but generally, nslookup will have no such prompt.
+I've artificially inserted a prompt here to denote what I've entered but generally, telnet will have no such prompt.
 
 Next, we'll need to say who the message is coming from. You can use your own email, or any email really. I like to use `test@example.com` because it's a dummy email, but it also comes from a real domain name. If that sounds like news, https://www.iana.org[IANA] provides example.com as a domain for use in "illustrative documents" like books. Anyway, we provide our identity like so:
 
