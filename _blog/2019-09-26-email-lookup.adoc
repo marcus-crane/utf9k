@@ -90,7 +90,7 @@ If you want to read more about nslookup for command prompt, I dug up https://doc
 
 == Interrogating/whispering to the mail server
 
-Ok, got that mail server address handy? Now the fun begins because from this point, the command should be exactly the same across all major platforms with one caveat.
+Ok, got that mail server address handy? Now the party begins because from this point, the commands should be exactly the same across all major platforms with one quick caveat.
 
 Windows users? You'll need to enable `telnet` by searching for "Turn Windows features on or off", ticking `Telnet Client` and restarting to gain access.
 
