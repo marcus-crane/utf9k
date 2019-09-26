@@ -222,3 +222,7 @@ rcpt to: <not.a.real.user@evernote.com>
 rcpt to: <ian@evernote.com>
 250 2.1.5 OK c127si1944876pga.334 - gsmtp
 ----
+
+== What is this handy for?
+
+I first came across this trick a few years back. I had been talking to someone about a job interview, before I was actually in the tech industry but I... forgot to ask them for their email address. I remembered their name but I didn't know how it was formatted exactly so that's where this trick came in handy. It's useful to have in your back pocket when you want to email a semi-public figure too like the CEO of a company. Just make sure to use it wisely and respectfully. You won't make any friends by being malicious.
