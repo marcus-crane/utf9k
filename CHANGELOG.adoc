@@ -5,6 +5,10 @@
 
 === September
 
+==== 26th
+
+* Wrote a blog post about a handy trick I use to look up email addresses that I'm not 100% sure about link:/blog/email-lookup[»]
+
 ==== 7th
 
 * Backfilled the changelog some more. Entries mentioned new posts now link to said posts
