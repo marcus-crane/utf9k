@@ -226,3 +226,16 @@ rcpt to: <ian@evernote.com>
 == What is this handy for?
 
 I first came across this trick a few years back. I had been talking to someone about a job interview, before I was actually in the tech industry but I... forgot to ask them for their email address. I remembered their name but I didn't know how it was formatted exactly so that's where this trick came in handy. It's useful to have in your back pocket when you want to email a semi-public figure too like the CEO of a company. Just make sure to use it wisely and respectfully. You won't make any friends by being malicious.
+
+== Fun fact
+
+[source, bash]
+----
+> nslookup -q=MX nintendo.co.uk
+Server:         192.168.1.1
+Address:        192.168.1.1#53
+
+Non-authoritative answer:
+nintendo.co.uk  mail exchanger = 20 luigi-mx.nintendo.de.
+nintendo.co.uk  mail exchanger = 10 mario-mx.nintendo.de.
+----
