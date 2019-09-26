@@ -179,11 +179,11 @@ Connected to microsoft-com.mail.protection.outlook.com.
 Escape character is '^]'.
 220 BL2NAM06FT004.mail.protection.outlook.com Microsoft ESMTP MAIL Service ready at Thu, 26 Sep 2019 10:51:20 +0000
 helo hi
-250 BL2NAM06FT004.mail.protection.outlook.com Hello [121.74.99.244]
+250 BL2NAM06FT004.mail.protection.outlook.com Hello [121.74.XX.XX]
 mail from: <test@example.com>
 250 2.1.0 Sender OK
 rcpt to: <satya.nadella@microsoft.com>
-550 5.7.606 Access denied, banned sending IP [121.74.99.244]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609) [BL2NAM06FT004.Eop-nam06.prod.protection.outlook.com]
+550 5.7.606 Access denied, banned sending IP [121.74.XX.XX]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609) [BL2NAM06FT004.Eop-nam06.prod.protection.outlook.com]
 ----
 
 I've noticed it with websites that use Microsoft / Outlook primarily where it mentioned that your IP address, or perhaps your entire IP range, is banned and that you should visit a particular link.
