@@ -126,7 +126,7 @@ mail from: <test@example.com>
 250 2.1.0 OK b26si1910042pgs.432 - gsmtp
 ----
 
-We see another `250` response code followed by an `OK` which means that the mail server has accepted. If someone went wrong, we'd see a 500 code. Sometimes I think you can get them if you give a domain name that doesn't exist, depending on the SMTP server you're talking with.
+We see another `250` response code followed by an `OK` which means that the mail server has accepted. If someone went wrong, we'd see a 500 code. I think I've gotten errors on rare occasions where I've used fake domain names so I just use example.com to play it safe.
 
 Lately, and where all our hard work pays off, is providing a recipient. This won't actually send an email, it'll just let us know if the address is real or not.
 
