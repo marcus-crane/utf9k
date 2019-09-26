@@ -103,7 +103,7 @@ Trying 172.217.194.26...
 Connected to aspmx.l.google.com.
 Escape character is '^]'.
 220 mx.google.com ESMTP b26si1910042pgs.432 - gsmtp
----
+----
 
 There's not much to see besides a 200 code, meaning we've connected successfully. I feel like a lot of servers usually have a nice message like "hi" or "welcome" and I thought Google did too but I guess not.
 
