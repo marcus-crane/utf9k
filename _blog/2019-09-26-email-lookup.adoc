@@ -63,7 +63,7 @@ As above, you'll want to copy the mail server with the highest preference, which
 
 If you're a diehard command prompt fan, or just don't like/have access to Powershell, you can also get by using command prompt. It actually has a tool called `nslookup` that comes with two modes: interactive and non-interactive. I couldn't get a one liner to work so instead, we'll just have to settle for the interactive mode.
 
-[source, console]
+[source, bash]
 ----
 C:\Users\marcus.crane>nslookup
 Default Server:  UnKnown
