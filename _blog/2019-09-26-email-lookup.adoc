@@ -121,7 +121,7 @@ Next, we'll need to say who the message is coming from. You can use your own ema
 
 [source, bash]
 ----
-> rcpt from: <test@example.com>
+> mail from: <test@example.com>
 mail from: <test@example.com>
 250 2.1.0 OK b26si1910042pgs.432 - gsmtp
 ----

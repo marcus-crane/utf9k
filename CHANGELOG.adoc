@@ -5,6 +5,10 @@
 
 === September
 
+==== 27th
+
+* Removed italics to make the site easier to read, and fixed some typos in the email lookup post
+
 ==== 26th
 
 * Wrote a blog post about a handy trick I use to look up email addresses that I'm not 100% sure about link:/blog/email-lookup[»]
