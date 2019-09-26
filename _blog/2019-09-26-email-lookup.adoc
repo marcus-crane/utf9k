@@ -206,7 +206,7 @@ rcpt to: <mark@fb.com>
 250 2.1.5 Recipient ok
 ----
 
-There's not really any way around this other than sending a real email I suppose but you can test for it pretty easily. I like to use two emails, `postmaster` and `not.a.real.user` first as a test to see what they return. By default, the large majority of mail servers, if not all, have support for a postmaster address out of the box so you can almost guarantee it exists. Likewise, you'd almost never create an address called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual target address.
+There's not really any way around this other than sending a real email I suppose but you can test for it pretty easily. I like to use two emails, `postmaster` and `not.a.real.user` first as a test to see what they return. By default, the large majority of mail servers, if not all, have a postmaster address by default so you can almost guarantee it exists. Likewise, you'd almost never create an address called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual target address.
 
 [source, bash]
 ----
