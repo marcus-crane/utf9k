@@ -8,6 +8,8 @@
 ==== 27th
 
 * Removed italics to make the site easier to read, and fixed some typos in the email lookup post
+* Added an old review for Yakuza link:/reviews/yakuza[»]
+* Cleaned up and added an old post about Deepfakes link:/blog/deepfakes[»]
 
 ==== 26th
 
