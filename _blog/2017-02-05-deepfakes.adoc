@@ -6,7 +6,7 @@ v1.0, 2017-05-02
 :toc: preamble
 :imagesdir: /static/img/deepfakes
 
-NOTE: I dug this post up from an older version of my site. It was written two years ago during the emergence of deepfakes. Any mention of machine learning may not be accurate but I've left them as is. In all likehood, I would know less now then I did back then when I had much more time to follow ML trends.
+I dug this post up from an older version of my site. It was written two years ago during the emergence of deepfakes. Any mention of machine learning may not be accurate but I've left them as is. In all likehood, I would know less now then I did back then when I had much more time to follow ML trends.
 
 == An overview
 
