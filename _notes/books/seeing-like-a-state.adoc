@@ -2,15 +2,14 @@
 Marcus Crane <marcus@utf9k.net>
 :page-permalink: /notes/books/seeing-like-a-state
 :emoji: 📭
-:nofooter:
 :toc: preamble
 
 Compulsory ujamaa villages in Tanzania, collectivisation in Russia, Le Corbusier’s urban planning theory realised in Brasilia, the Great Leap Forward in China, agricultural "modernisation" in the Tropics—the twentieth century has been racked by grand utopian schemes that have inadvertently brought death and disruption to millions. Why do well-intentioned plans for improving the human condition go tragically awry?
 
 == Terms to look up
 
-* [] Brasilia
-* [] Chandigarh
+* [ ] Brasilia
+* [ ] Chandigarh
 
 == Ideas
 
