@@ -10,6 +10,9 @@ collections:
   blog:
     output: true
     permalink: /:collection/:name
+  notes:
+    output: true
+    permalink: /:collection/:name
   projects:
     output: true
     permalink: /:collection/:name
