@@ -1,0 +1,50 @@
+= wget
+Marcus Crane <marcus@utf9k.net>
+:toc:
+
+== Downloading a site
+
+You can use wget to crawl an entire website like so:
+
+[source, bash]
+----
+wget --wait=2 \  # <1>
+    --level=inf \  # <2>
+    --limit-rate=20K \  # <3>
+    --recursive \  # <4>
+    --page-requisites \  # <5>
+    --user-agent=Mozilla \  # <6>
+    --no-parent \  # <7>
+    --convert-links \  # <8>
+    --adjust-extension \  # <9>
+    --no-clobber \  # <10>
+    -e robots=off \  # <11>
+    https://example.com
+----
+<1> Wait 2 seconds between each download
+<2> Recurse infinitely (can be an integer to go eg; 2 levels deep)
+<3> Limit the download speed to 20KB/sec
+<4> Retrieve items recursively (5 levels deep by default)
+<5> Download any required files eg; stylesheets, images etc
+<6> Override the user agent to appear as "Mozilla"
+<7> Don't ascend to the parent directory eg; https://example.com/child wouldn't traverse to https://example.com
+<8> Convert any links to make them relative eg /blog instead of https://example.com/blog
+<9> If a file has the type text/html and the url doesn't end with .html, this flag will append it where required
+<10> If the same file is encountered a second time, it won't overwrite the one currently on disc
+<11> Ignore robots.txt
+
+== Downloading certain files
+
+If you wanted all .png files on a site:
+
+[source, bash]
+----
+wget -A "*.png" -r
+----
+
+If you wanted everything except .dmg files on a site
+
+[source, bash]
+----
+wget -R "*.dmg" -r
+----
