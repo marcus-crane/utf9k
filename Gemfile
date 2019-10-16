@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.0.0"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-asciidoc", "~> 3.0.0"
+  gem "asciidoctor-diagram", "~> 1.5.19"
 end
 
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
