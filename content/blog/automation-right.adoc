@@ -1,9 +1,10 @@
 = When automation goes horribly right
 Marcus Crane <marcus@utf9k.net>
-v1.0, 2018-12-03
+:page-date: 2018-12-03
+:imagesdir: /static/img/automation-right
+:page-layout: post
 :page-permalink: /blog/automation-right
 :page-tags: [automation, microservices, twitter]
-:imagesdir: /static/img/automation-right
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
 
