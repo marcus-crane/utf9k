@@ -1,9 +1,10 @@
 = Fixing a WSL2 VHD conversion issue
 Marcus Crane <marcus@utf9k.net>
-v1.0, 2019-07-20
+:page-date: 2019-07-20
+:page-layout: post
 :page-permalink: /blog/wsl2-vhd-issue
-:source-highlighter: rouge
 :page-tags: [windows, wsl, beta, linux]
+:source-highlighter: rouge
 
 I recently started running the Windows Insider builds on my desktop so that I could play around with the new Windows Subsystem for Linux but I ran into some trouble. Before I get into the fix, here's a little bit of history
 

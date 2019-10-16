@@ -9,7 +9,7 @@ You can use wget to crawl an entire website like so:
 
 [source, bash]
 ----
-wget --wait=2 \  # <1>
+> wget --wait=2 \  # <1>
     --level=inf \  # <2>
     --limit-rate=20K \  # <3>
     --recursive \  # <4>
@@ -40,12 +40,12 @@ If you wanted all .png files on a site:
 
 [source, bash]
 ----
-wget -A "*.png" -r
+> wget -A "*.png" -r
 ----
 
 If you wanted everything except .dmg files on a site
 
 [source, bash]
 ----
-wget -R "*.dmg" -r
+> wget -R "*.dmg" -r
 ----
