@@ -1,6 +1,6 @@
 = Deepfakes
 Marcus Crane <marcus@utf9k.net>
-v1.1, 2017-05-02
+:page-date: 2017-02-05
 :imagesdir: /static/img/deepfakes
 :page-layout: post
 :page-permalink: /blog/deepfakes

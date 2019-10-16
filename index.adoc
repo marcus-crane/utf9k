@@ -14,10 +14,9 @@ I'm around the web in a bunch of places: https://github.com/marcus-crane[github]
 == Blog
 
 ++++
-{% assign blog_posts = site.pages | where_exp: "item", "item.dir == '/blog/'" %}
+{% assign blog_posts = site.pages | where_exp: "item", "item.dir == '/blog/'" | sort: "date" | reverse %}
 {% for post in blog_posts %}
 	<li>{{ post.date | date: "%d/%m/%Y" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-	{{ post.dir }}
 {% endfor %}
 ++++
 
@@ -26,7 +25,8 @@ I'm around the web in a bunch of places: https://github.com/marcus-crane[github]
 == Reviews
 
 ++++
-{% for review in site.reviews reversed %}
+{% assign reviews = site.pages | where_exp: "item", "item.dir == '/reviews/'" | sort: "date" | reverse %}
+{% for review in reviews %}
 	<li>{{ review.date | date: "%d/%m/%Y" }} <a href="{{ review.url }}">{{ review.title }}</a></li>
 {% endfor %}
 ++++

@@ -1,6 +1,7 @@
 = Seeing Like a State
 Marcus Crane <marcus@utf9k.net>
 :page-permalink: /notes/books/seeing-like-a-state
+:page-tags: [book, society, government, authority]
 :emoji: 📭
 :toc: preamble
 
