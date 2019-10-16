@@ -3,6 +3,16 @@
 
 == 2019
 
+=== October
+
+==== 16th
+
+* Moved some more notes onto the site but most of them won't be very effective until I redesign the site's CSS
+
+==== 15th
+
+* Started adding a personal notes section
+
 === September
 
 ==== 27th
