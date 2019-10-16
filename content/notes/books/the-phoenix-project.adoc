@@ -1,6 +1,7 @@
 = The Phoenix Project
 Marcus Crane <marcus@utf9k.net>
 :page-permalink: /notes/books/the-phoenix-project
+:page-tags: [book, business, development]
 :emoji: 📈
 :toc:
 

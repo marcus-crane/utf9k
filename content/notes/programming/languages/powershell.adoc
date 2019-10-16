@@ -1,18 +1,19 @@
-= wget
+= Powershell
 Marcus Crane <marcus@utf9k.net>
-:page-permalink: /notes/programming/tools/powershell
+:page-permalink: /notes/programming/languages/powershell
 :toc:
+:experimental:
 
 == Killing a process
 
-[source, powershell]
-----
-Get-Process
-Stop-Process -ID 6840 -Force
-----
+If you have a process that's hanging, you can use the regular task manager (kbd:[Ctrl+Alt+Delete]) or you could use Powershell.
+
+First we need to find the process. Open up a new terminal and run `Get-Process` which will return the following table
 
 [source, powershell]
 ----
+> Get-Process
+
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
     826      40    37532      42292       1.78  13040   1 1Password
@@ -26,3 +27,13 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
     480      73   208484     212608      86.17   1340   1 Code
     624      31   134276     128448      22.64   2056   1 Code
 ----
+
+Look in the `Id` column for the process you want to kill and then run the following:
+
+[source, powershell]
+----
+
+> Stop-Process -ID <program-id-here> -Force
+----
+
+Done!
