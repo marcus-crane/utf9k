@@ -343,45 +343,93 @@
 
 ==== 12th
 
-* Churned out a blog post
+* Churned out a blog post before starting my first day at Xero link:/blog/day-xero[»]
 
 ==== 10th
 
+* Added some custom CSS sizing for the stats page
+* Added some CSS for pygments pulled from an Oceanic Next stylesheet link:https://github.com/wbinnssmith/base16-oceanic-next/blob/master/pygments/base16-oceanicnext.dark.css[»]
+* Extended mistune's renderer to parse blockquotes and code snippets within Markdown
+
 ==== 8th
+
+* Messed with stats page styling a bunch
+* Normalised all URLs to be eg; `/blog/` instead of `/blog`
 
 ==== 6th
 
+* Attempted to add docstrings to the various Python functions that made up this version of the site. They were comments that described what the code did, rather than why the code was written a certain way. I wouldn't consider them particularly useful at all, it was more about emulating what looked like good documentation without understanding what actually makes good documentation :)
+
 ==== 5th
+
+* Applied Pycharm auto formatting to the repo which, in hindsight, destroyed the layout of the main app.py file. I always wondered what had reduced it into a one line view within Github!
+* Changed static file URLs to start from the root eg; `/static/style.css` became `/style.css`.
+* Polished off a post about Deepfakes link:/blog/deepfakes[»]
 
 ==== 4th
 
+* Added a `manifest.json`
+* Rearranged parts of the Deepfakes post I was in the process of writing
+* Added an indicator for whether a post was safe for work or not
+
 ==== 2nd
 
+* Merged and deployed the migration from Django to Flask, into "production"
+
 ==== 1st
+
+* Split out the stats portion of the site from the rest of the content
 
 === January
 
 ==== 29th
 
+* Started adding Celery as a background scheduler for updating stats
+* Ported game reviews to Markdown
+* Added RSS generation
+
 ==== 28th
+
+* Recreated most of the stats page functionality in a very messy fashion
+* Swapped out show stats from TMDB to TVDB as it often had better cover art I believe
+* My first crack at using class inheritence within this version of the site. I still didn't understand the idea of classes so this was perhaps my first time trying to properly grasp their purpose.
 
 ==== 27th
 
+* Starting importing credentials as environment variables. Good thing I didn't accidentally commit one of the API keys I was using...
+
 ==== 26th
+
+* I believe until this point, I had been writing a lot of closures for the stats portion of the site. I started writing some classes, for the sake of having classes, likely because I had seen them used in Django a bunch. Looking back, it's funny to me that I had a file called `classes.py`!
 
 ==== 21st
 
+* Churned out CSS, HTML templates and even markdown rendering. I got the rewrite to a point where it would render a dummy blog post (from a markdown file to a HTML page with CSS)
+
 ==== 20th
+
+* I deleted the entire site and started rewriting it from scratch as a containerised Flask app
 
 ==== 8th
 
+* Made an attempt at dockerising Django which wasn't the cleanest thing to do, given the existence of migrations
+
 ==== 7th
+
+* Added error / not found images for tv series without cover art
 
 ==== 4th
 
+* Added functionality to pull recently watched movies and TV shows from https://trakt.tv[Trakt.tv], every 30 minutes.
+
 ==== 3rd
 
+* Continued improving the review portion of the site. New reviews would automatically pull, resize and apply gausian blur to cover art, which acted as a background banner.
+
 ==== 2nd
+
+* Started adding a django app for supporting reviews that used to live at the now defunct https://neatgam.es
+* Changed markdown rendered from markdown2 to CommonMark as it had an extension for tables in Markdown
 
 == 2017
 
