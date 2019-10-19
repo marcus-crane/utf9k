@@ -263,7 +263,7 @@
 ==== 9th
 
 * Moved site to a new repo at https://github.com/marcus-crane/utf9k (now archived). This was to reflect the move from https://thingsima.de to https://utf9k.net
-* I believe at this point, I reverted to the old Flask site I had. Prior to this point, I was using Django.
+* I believe at this point, I reverted to the old Flask site I had. Prior to this point, I was using Django
 
 === May
 
@@ -299,29 +299,51 @@
 
 ==== 2nd
 
-* Ported entire site from Flask to Django
+* Rolled out the port from Flask to Django
 
 === March
 
 ==== 31st
 
+* Containerised the site to run Django and any background tasks from a single docker-compose file
+
 ==== 30th
+
+* Started rebuilding the site using Django
 
 ==== 12th
 
+* Fixed some CSS styling for larger monitors
+* Updated the stats portion of the site to automatically populate upon startup of the backend server
+
 ==== 3rd
+
+* Uploaded some old reviews to the site
+* Fixed RSS generation
 
 ==== 2nd
 
+* Made some alterations to the lore tabs post. Mainly just editing jarring sentences.
+
 ==== 1st
+
+* Added a new post called "Humans don't come with lore tabs" link:/blog/humans-dont-come-with-lore-tabs[»]
 
 === February
 
 ==== 18th
 
+* Started trying to write tests for some elements. I claimed to be doing TDD but I was writing tests after the fact so...
+
 ==== 17th
 
+* Pruned a bunch of unused CSS
+* Added some error pages
+* Updated blockquote parsing
+
 ==== 12th
+
+* Churned out a blog post
 
 ==== 10th
 
