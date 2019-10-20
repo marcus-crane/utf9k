@@ -7,7 +7,7 @@
 
 ==== 20th
 
-* Backfilled this entire CHANGELOG. Enjoy!
+* Finally completed backfilling this entire CHANGELOG. Enjoy!
 
 ==== 16th
 
