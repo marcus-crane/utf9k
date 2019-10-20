@@ -5,6 +5,10 @@
 
 === October
 
+==== 20th
+
+* Backfilled this entire CHANGELOG. Enjoy!
+
 ==== 16th
 
 * Moved some more notes onto the site but most of them won't be very effective until I redesign the site's CSS
@@ -437,48 +441,105 @@
 
 ==== 30th
 
+* Added placeholder cover art for items on the stats page that didn't include them
+
 ==== 29th
+
+* Added movies to stats page and refactored a lot of celery related code
 
 ==== 28th
 
+* Updated code highlighting to use an Oceanic One theme
+* Added support for fetching recently watched TV episodes to the stats page
+
 ==== 26th
+
+* General style tweaks and styling for markdown tables
 
 ==== 20th
 
+* Committed some dependencies that were missing from `requirements.txt`
+
 ==== 19th
+
+* Reverted + disabled some pages that weren't working correctly
+* General bug fixes
+* Cleaned out a heap of non-essential dependencies
 
 ==== 5th
 
+* Upgraded the site to Django 2.0 (was previously 2.0 beta 1)
+
 ==== 2nd
 
+* Altered styling for blog detail and list templates
+
 ==== 1st
+
+* First version of my stats page went live!
 
 === November
 
 ==== 21st
 
+* Added live Steam stats to the contact page, using the profile API
+* Completed the first working version of stats page. Essentially just scheduled tasks using Celery.
+
 ==== 20th
+
+* Started writing the first version of the stats page. This used to be my "flagship" feature of my personal site. It would pull all sorts of stats regularly such as what music I was listening to. I learned a lot maintaining it, even if I was the only person who actually looked at it!
 
 ==== 19th
 
+* General improvements (hide draft posts, add status code 500 error page etc)
+* Created a prototype of what would become the "stats page". It would pull recently played tracks from Last.FM in real time. This would never scale though since it would be pulling the same information every time, rather than caching it.
+
 ==== 18th
+
+* Generated some slightly better configuration for the production version of the site
+* Added a 404 error page
 
 ==== 8th
 
+* Added support for providing custom header/footer items such as one off JS scripts
+
 ==== 6th
+
+* Pulled in Django's admin panel CSS rather than generating my own
 
 === October
 
 ==== 29th
 
+* Updated `requirements.txt` to reflect the current requirements to run the site
+
 ==== 28th
+
+* Removed prev / next buttons for blog posts
+* Added a section for projects
 
 ==== 27th
 
+* General restyling and refactorings
+* Added a contact / feedback page
+
 ==== 26th
+
+* Rearranged the site folder structure even more, which had these weird extra namespaces
+* Created a new homepage which was previously just an image of a terminal
 
 ==== 25th
 
+* Rearranged directory after seeing how the Dolphin emulator website was structured
+* Added the bulk of the code that would live on inside the Django version of the site such as markdown rendering and post display logic
+
 ==== 24th
 
+* Added escaping for markdown posts
+* Added some CSS that extended off of https://tachyons.io/[Tachyons]
+
 ==== 23rd
+
+* My first recorded commit for my personal site adding an empty Django project, followed by a model for a blog
+
+If there are any changes that existed earlier than this, I'll see if I can find them. I know I definitely had some blog posts written prior to this point but I don't know if they were hosted anywhere.
