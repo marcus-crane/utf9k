@@ -69,4 +69,4 @@ iex> %Type{}
 }
 ----
 
-Much quicker!
+Much quicker! You can read more about the `.iex.exs` file here: https://hexdocs.pm/iex/IEx.html#module-the-iex-exs-file
