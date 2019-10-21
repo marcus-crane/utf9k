@@ -5,6 +5,10 @@
 
 === October
 
+==== 21st
+
+* Added a tip about automatically importing and/or aliasing modules in IEX link:/notes/programming/languages/elixir#automatically-aliasing-modules-when-starting-iex[»]
+
 ==== 20th
 
 * Finally completed backfilling this entire CHANGELOG. Enjoy!
