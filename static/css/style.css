@@ -11,6 +11,10 @@ a {
   color: #104ba3;
 }
 
+img {
+  width: 100%;
+}
+
 #content {
   margin-left: 4rem;
   margin-top: 4rem;
