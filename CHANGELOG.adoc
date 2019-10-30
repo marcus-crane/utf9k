@@ -1,4 +1,5 @@
 = Changelog
+:page-layout: post
 :toc:
 
 == 2019
