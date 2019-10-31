@@ -37,7 +37,7 @@ Thankfully, their annual reports contain some of the information we're after. Le
 
 If we jump all the way to Page 50, we can see a breakdown of numbers with 533,669 ambulance emergency calls made. Another line item mentions 480,411 patients treated or transported by ambulance officers. If we were to very roughly assume that 1 call correlated with 1 patient, that would leave 53,258 calls that are never responded to.
 
-Obviously that's not the whole picture. One call could be for a car crash with multiple injuries while the already deceased may not found as being "Patients treated or transported". Similarly, it doesn't take into account prank calls, duplicate calls and no-show patients who can't cancel callouts.
+Obviously that's not the whole picture. One call could be for a car crash with multiple injuries while the already deceased may not be counted as "Patients treated or transported". Similarly, it doesn't take into account prank calls, duplicate calls and no-show patients who can't cancel callouts.
 
 Either way, I think it still does point out that there's likely a chunk of callouts that never get responded to as a result of unstaffing combined with ever increasing callout numbers. It's pretty dystopian having something like the "Gig Economy" acting as a replacement for essential services but I suppose I'll take what I can get.
 
