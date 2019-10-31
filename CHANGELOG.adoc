@@ -6,6 +6,10 @@
 
 === October
 
+==== 31st
+
+* Fixed a typo in the emergency services post
+
 ==== 30th
 
 * Reset + recreated CSS to focus on readability. I'll need to reimplement some previously existing styles such as code highlighting, tables and so on but for now, I'm just going to roll out the changes incrementally.
