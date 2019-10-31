@@ -1,7 +1,34 @@
 = Changelog
+:page-layout: post
 :toc:
 
 == 2019
+
+=== October
+
+==== 30th
+
+* Reset + recreated CSS to focus on readability. I'll need to reimplement some previously existing styles such as code highlighting, tables and so on but for now, I'm just going to roll out the changes incrementally.
+
+==== 29th
+
+* Added some tips for getting image metadata and converting SVGs to PNGs link:/notes/programming/tools/image-conversion[»]
+
+==== 21st
+
+* Added a tip about automatically importing and/or aliasing modules in IEX link:/notes/programming/languages/elixir#automatically-aliasing-modules-when-starting-iex[»]
+
+==== 20th
+
+* Finally completed backfilling this entire CHANGELOG. Enjoy!
+
+==== 16th
+
+* Moved some more notes onto the site but most of them won't be very effective until I redesign the site's CSS
+
+==== 15th
+
+* Started adding a personal notes section
 
 === September
 
@@ -253,7 +280,7 @@
 ==== 9th
 
 * Moved site to a new repo at https://github.com/marcus-crane/utf9k (now archived). This was to reflect the move from https://thingsima.de to https://utf9k.net
-* I believe at this point, I reverted to the old Flask site I had. Prior to this point, I was using Django.
+* I believe at this point, I reverted to the old Flask site I had. Prior to this point, I was using Django
 
 === May
 
@@ -289,67 +316,137 @@
 
 ==== 2nd
 
-* Ported entire site from Flask to Django
+* Rolled out the port from Flask to Django
 
 === March
 
 ==== 31st
 
+* Containerised the site to run Django and any background tasks from a single docker-compose file
+
 ==== 30th
+
+* Started rebuilding the site using Django
 
 ==== 12th
 
+* Fixed some CSS styling for larger monitors
+* Updated the stats portion of the site to automatically populate upon startup of the backend server
+
 ==== 3rd
+
+* Uploaded some old reviews to the site
+* Fixed RSS generation
 
 ==== 2nd
 
+* Made some alterations to the lore tabs post. Mainly just editing jarring sentences.
+
 ==== 1st
+
+* Added a new post called "Humans don't come with lore tabs" link:/blog/humans-dont-come-with-lore-tabs[»]
 
 === February
 
 ==== 18th
 
+* Started trying to write tests for some elements. I claimed to be doing TDD but I was writing tests after the fact so...
+
 ==== 17th
+
+* Pruned a bunch of unused CSS
+* Added some error pages
+* Updated blockquote parsing
 
 ==== 12th
 
+* Churned out a blog post before starting my first day at Xero link:/blog/day-xero[»]
+
 ==== 10th
+
+* Added some custom CSS sizing for the stats page
+* Added some CSS for pygments pulled from an Oceanic Next stylesheet link:https://github.com/wbinnssmith/base16-oceanic-next/blob/master/pygments/base16-oceanicnext.dark.css[»]
+* Extended mistune's renderer to parse blockquotes and code snippets within Markdown
 
 ==== 8th
 
+* Messed with stats page styling a bunch
+* Normalised all URLs to be eg; `/blog/` instead of `/blog`
+
 ==== 6th
+
+* Attempted to add docstrings to the various Python functions that made up this version of the site. They were comments that described what the code did, rather than why the code was written a certain way. I wouldn't consider them particularly useful at all, it was more about emulating what looked like good documentation without understanding what actually makes good documentation :)
 
 ==== 5th
 
+* Applied Pycharm auto formatting to the repo which, in hindsight, destroyed the layout of the main app.py file. I always wondered what had reduced it into a one line view within Github!
+* Changed static file URLs to start from the root eg; `/static/style.css` became `/style.css`.
+* Polished off a post about Deepfakes link:/blog/deepfakes[»]
+
 ==== 4th
+
+* Added a `manifest.json`
+* Rearranged parts of the Deepfakes post I was in the process of writing
+* Added an indicator for whether a post was safe for work or not
 
 ==== 2nd
 
+* Merged and deployed the migration from Django to Flask, into "production"
+
 ==== 1st
+
+* Split out the stats portion of the site from the rest of the content
 
 === January
 
 ==== 29th
 
+* Started adding Celery as a background scheduler for updating stats
+* Ported game reviews to Markdown
+* Added RSS generation
+
 ==== 28th
+
+* Recreated most of the stats page functionality in a very messy fashion
+* Swapped out show stats from TMDB to TVDB as it often had better cover art I believe
+* My first crack at using class inheritence within this version of the site. I still didn't understand the idea of classes so this was perhaps my first time trying to properly grasp their purpose.
 
 ==== 27th
 
+* Starting importing credentials as environment variables. Good thing I didn't accidentally commit one of the API keys I was using...
+
 ==== 26th
+
+* I believe until this point, I had been writing a lot of closures for the stats portion of the site. I started writing some classes, for the sake of having classes, likely because I had seen them used in Django a bunch. Looking back, it's funny to me that I had a file called `classes.py`!
 
 ==== 21st
 
+* Churned out CSS, HTML templates and even markdown rendering. I got the rewrite to a point where it would render a dummy blog post (from a markdown file to a HTML page with CSS)
+
 ==== 20th
+
+* I deleted the entire site and started rewriting it from scratch as a containerised Flask app
 
 ==== 8th
 
+* Made an attempt at dockerising Django which wasn't the cleanest thing to do, given the existence of migrations
+
 ==== 7th
+
+* Added error / not found images for tv series without cover art
 
 ==== 4th
 
+* Added functionality to pull recently watched movies and TV shows from https://trakt.tv[Trakt.tv], every 30 minutes.
+
 ==== 3rd
 
+* Continued improving the review portion of the site. New reviews would automatically pull, resize and apply gausian blur to cover art, which acted as a background banner.
+
 ==== 2nd
+
+* Started adding a django app for supporting reviews that used to live at the now defunct https://neatgam.es
+* Changed markdown rendered from markdown2 to CommonMark as it had an extension for tables in Markdown
 
 == 2017
 
@@ -357,48 +454,105 @@
 
 ==== 30th
 
+* Added placeholder cover art for items on the stats page that didn't include them
+
 ==== 29th
+
+* Added movies to stats page and refactored a lot of celery related code
 
 ==== 28th
 
+* Updated code highlighting to use an Oceanic One theme
+* Added support for fetching recently watched TV episodes to the stats page
+
 ==== 26th
+
+* General style tweaks and styling for markdown tables
 
 ==== 20th
 
+* Committed some dependencies that were missing from `requirements.txt`
+
 ==== 19th
+
+* Reverted + disabled some pages that weren't working correctly
+* General bug fixes
+* Cleaned out a heap of non-essential dependencies
 
 ==== 5th
 
+* Upgraded the site to Django 2.0 (was previously 2.0 beta 1)
+
 ==== 2nd
 
+* Altered styling for blog detail and list templates
+
 ==== 1st
+
+* First version of my stats page went live!
 
 === November
 
 ==== 21st
 
+* Added live Steam stats to the contact page, using the profile API
+* Completed the first working version of stats page. Essentially just scheduled tasks using Celery.
+
 ==== 20th
+
+* Started writing the first version of the stats page. This used to be my "flagship" feature of my personal site. It would pull all sorts of stats regularly such as what music I was listening to. I learned a lot maintaining it, even if I was the only person who actually looked at it!
 
 ==== 19th
 
+* General improvements (hide draft posts, add status code 500 error page etc)
+* Created a prototype of what would become the "stats page". It would pull recently played tracks from Last.FM in real time. This would never scale though since it would be pulling the same information every time, rather than caching it.
+
 ==== 18th
+
+* Generated some slightly better configuration for the production version of the site
+* Added a 404 error page
 
 ==== 8th
 
+* Added support for providing custom header/footer items such as one off JS scripts
+
 ==== 6th
+
+* Pulled in Django's admin panel CSS rather than generating my own
 
 === October
 
 ==== 29th
 
+* Updated `requirements.txt` to reflect the current requirements to run the site
+
 ==== 28th
+
+* Removed prev / next buttons for blog posts
+* Added a section for projects
 
 ==== 27th
 
+* General restyling and refactorings
+* Added a contact / feedback page
+
 ==== 26th
+
+* Rearranged the site folder structure even more, which had these weird extra namespaces
+* Created a new homepage which was previously just an image of a terminal
 
 ==== 25th
 
+* Rearranged directory after seeing how the Dolphin emulator website was structured
+* Added the bulk of the code that would live on inside the Django version of the site such as markdown rendering and post display logic
+
 ==== 24th
 
+* Added escaping for markdown posts
+* Added some CSS that extended off of https://tachyons.io/[Tachyons]
+
 ==== 23rd
+
+* My first recorded commit for my personal site adding an empty Django project, followed by a model for a blog
+
+If there are any changes that existed earlier than this, I'll see if I can find them. I know I definitely had some blog posts written prior to this point but I don't know if they were hosted anywhere.
