@@ -1,0 +1,72 @@
+= Elixir
+Marcus Crane <marcus@utf9k.net>
+:page-permalink: /notes/programming/languages/elixir
+:toc:
+
+== Helper function
+
+IEx has a bunch of helper functions with `h` being perhaps the most useful
+
+[source, elixir]
+----
+iex> h IO
+----
+
+`i` is also handy for inspecting Elixir constructs
+
+[source, elixir]
+----
+iex> i Map
+----
+
+== Customising IEx
+
+You can change various settings of IEx by adding a `.iex.exs` file to your home directory.
+
+A list of available settings can be found using `h IEx.configure`
+
+== Automatically aliasing modules when starting IEx
+
+Sometimes you might want to reference a particular namespace within IEx.
+
+For example, let's say we want to create an empty struct, nested a few modules deep.
+
+[source, elixir]
+----
+iex> %MyCoolModule.Groupings.Namespaces.Things.Type{}
+%MyCoolModule.Groupings.Namespaces.Things.Type{
+  __meta__: #Ecto.Schema.Metadata<:built, "types">,
+  id: nil,
+  name: nil
+}
+----
+
+It works but it's a lot of typing just to reference one thing, especially if you do it often!
+
+You can place a file called `.iex.exs` at the root of your Elixir project and add any modules you want to alias like so
+
+[source, bash]
+----
+> cat .iex.exs
+alias MyCoolModule.Groupings.Namespaces.Things.{Type}
+
+alias MyCoolModule.SomeOtherContext
+
+import Ecto.Query
+----
+
+The commands above will be automatically evaluated when you run `iex`. There's nothing particularly special about the commands themselves.
+
+Next time you'll be able to just do the following:
+
+[source, elixir]
+----
+iex> %Type{}
+%MyCoolModule.Groupings.Namespaces.Things.Type{
+  __meta__: #Ecto.Schema.Metadata<:built, "types">,
+  id: nil,
+  name: nil
+}
+----
+
+Much quicker! You can read more about the `.iex.exs` file here: https://hexdocs.pm/iex/IEx.html#module-the-iex-exs-file

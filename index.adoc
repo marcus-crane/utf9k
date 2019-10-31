@@ -1,11 +1,12 @@
 = Welcome!
+:page-layout: home
 :page-liquid:
 
 I'm Marcus Crane, a https://en.wikipedia.org/wiki/Site_Reliability_Engineering[Site Reliability Engineer] at https://xero.com/nz/[Xero] in https://en.wikipedia.org/wiki/Auckland[Auckland, New Zealand].
 
-I'm always moving this site around but you should be able to find everything on this site linked below. You can see changes listed in the link:/CHANGELOG[CHANGELOG].
+I'm always moving this site around but you should be able to find everything on this site linked below.
 
-You can also view the source of this site on https://gitlab.com/marcus-crane/utf9k[Gitlab].
+You can see changes listed in the link:/CHANGELOG[CHANGELOG] and the source of this site on https://gitlab.com/marcus-crane/utf9k[Gitlab].
 
 I'm around the web in a bunch of places: https://github.com/marcus-crane[github] | https://gitlab.com/marcus-crane[gitlab] | https://instagram.com/sentryism[instagram] | https://linkedin.com/in/marcus-crane[linkedin] | https://twitter.com/sentreh[twitter]
 
@@ -14,7 +15,8 @@ I'm around the web in a bunch of places: https://github.com/marcus-crane[github]
 == Blog
 
 ++++
-{% for post in site.blog reversed %}
+{% assign blog_posts = site.pages | where_exp: "item", "item.dir == '/blog/'" | sort: "date" | reverse %}
+{% for post in blog_posts %}
 	<li>{{ post.date | date: "%d/%m/%Y" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 ++++
@@ -24,7 +26,8 @@ I'm around the web in a bunch of places: https://github.com/marcus-crane[github]
 == Reviews
 
 ++++
-{% for review in site.reviews reversed %}
+{% assign reviews = site.pages | where_exp: "item", "item.dir == '/reviews/'" | sort: "date" | reverse %}
+{% for review in reviews %}
 	<li>{{ review.date | date: "%d/%m/%Y" }} <a href="{{ review.url }}">{{ review.title }}</a></li>
 {% endfor %}
 ++++

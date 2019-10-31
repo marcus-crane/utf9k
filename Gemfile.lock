@@ -4,6 +4,8 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     asciidoctor (2.0.10)
+    asciidoctor-diagram (1.5.19)
+      asciidoctor (>= 1.5.7, < 3.x)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
     em-websocket (0.5.1)
@@ -30,9 +32,9 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-asciidoc (2.1.1)
+    jekyll-asciidoc (3.0.0)
       asciidoctor (>= 1.5.0)
-      jekyll (>= 2.3.0)
+      jekyll (>= 3.0.0)
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.0.0)
@@ -73,8 +75,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  asciidoctor-diagram (~> 1.5.19)
   jekyll (~> 4.0.0)
-  jekyll-asciidoc
+  jekyll-asciidoc (~> 3.0.0)
   jekyll-feed (~> 0.12)
   tzinfo (~> 1.2)
   tzinfo-data
