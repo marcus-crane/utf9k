@@ -1,3 +1,7 @@
+---
+title: "Day Xero"
+date: 2018-02-15
+---
 = Day Xero
 Marcus Crane <marcus@utf9k.net>
 :page-date: 2018-02-15
