@@ -1,0 +1,5 @@
+= content main
+  ul
+  {{ range .Paginator.Pages }}
+    li {{ .Title }}
+  {{ end }}
