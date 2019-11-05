@@ -1,3 +1,7 @@
+---
+title: "When automation goes horribly right"
+date: 2018-12-03
+---
 = When automation goes horribly right
 Marcus Crane <marcus@utf9k.net>
 :page-date: 2018-12-03

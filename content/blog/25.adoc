@@ -1,3 +1,7 @@
+---
+title: "25"
+date: 2019-08-19
+---
 = 25
 Marcus Crane <marcus@utf9k.net>
 :page-date: 2019-08-19
