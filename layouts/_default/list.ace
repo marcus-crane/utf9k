@@ -1,5 +1,12 @@
 = content main
-  ul
-  {{ range .Paginator.Pages }}
-    li {{ .Title }}
-  {{ end }}
+  section class="bg-washed-blue pa2 pa4-ns"
+    article class="ba b--black-10 br2 bg-white pa4 mw6 center"
+      div
+        h4 class="f5 fw4 black-60 dib v-mid mv0 mr3" Blog
+      ul class="list f6 pl0 mt3 mb0"
+        {{ range .Paginator.Pages }}
+        li class="pv2"
+          a href="{{ .URL }}" class="link blue lh-title"
+            span class="fw7 underline-hover" {{ .Title }}
+            span class="db black-60" {{ .Date.Format "January 2, 2006" }}
+        {{ end }}
