@@ -1,7 +1,10 @@
+---
+title: "Fixing a WSL2 VHD conversion issue"
+date: 2019-07-20
+---
 = Fixing a WSL2 VHD conversion issue
 Marcus Crane <marcus@utf9k.net>
 :page-date: 2019-07-20
-:page-layout: post
 :page-permalink: /blog/wsl2-vhd-issue
 :page-tags: [windows, wsl, beta, linux]
 :source-highlighter: rouge

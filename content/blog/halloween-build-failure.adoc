@@ -1,8 +1,12 @@
+---
+title: "Night of the Living Build Failures"
+date: 2019-11-02
+draft: true
+---
 = Night of the Living Build Failures
 Marcus Crane <marcus@utf9k.net>
 :page-date: 2019-11-02
 :page-draft: true
-:page-layout: post
 :page-permalink: /blog/halloween-build-failures
 :page-tags: [mystery, investigation, travis, node]
 :toc: preamble
