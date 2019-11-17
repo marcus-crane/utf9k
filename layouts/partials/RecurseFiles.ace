@@ -1,0 +1,14 @@
+{{ $abspath := .CurrentPath }}
+{{ $site := .Site }}
+{{ $level := int .Level }}
+{{ range (readDir $abspath) }}
+  {{ $nextPath := path.Join $abspath .Name }}
+  {{ $nextLevel := add $level 1 }}
+  {{ if .IsDir }}
+    li style="list-style: none; text-indent: {{ $.Level }}0px" {{ .Name }}
+    {{ partial "RecurseFiles.html" (dict "CurrentPath" $nextPath "Site" $site "Level" $nextLevel) }}
+  {{ else }}
+    {{ $trimmedPath := replace $nextPath "content/" "" }}
+    {{ partial "GetPageTitle.html" (dict "PostPath" $trimmedPath "Site" $site "Level" $nextLevel) }}
+  {{ end }}
+{{ end }}
