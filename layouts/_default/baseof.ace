@@ -7,7 +7,11 @@ html
     meta name="theme-color" content="#a463f2"
     meta name="author" content="Marcus Crane"
     meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    link href="/css/style.css" rel="stylesheet" type="text/css"
+    link href="https://fonts.googleapis.com/css?family=Crimson+Pro:400,700&display=swap" rel="stylesheet"
     link type="application/atom+xml" rel="alternate" href="/rss.xml" title="utf9k"
-  body class="w-100 sans-serif bg-white"
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  body
     = yield main
