@@ -1,0 +1,12 @@
+= content main
+  div id="content"
+    h1 {{ .Title }}
+    ul
+      {{ range .Paginator.Pages }}
+      li
+        a href="{{ .RelPermalink }}"
+          span {{ .Title }}
+        br
+        span {{ .Date.Format "January 2, 2006" }}
+      br
+      {{ end }}
