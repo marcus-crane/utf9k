@@ -1,8 +1,4 @@
 = content main
-  main
-    article class="bg-white"
-      div class="ph4 ph5-m ph6-l"
-        div class="pv5 f4 f2-ns measure center"
-          h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir" {{ .Title }}
-          div class="lh-copy measure f4 f3-ns black-70 baskerville"
-            {{ .Content }}
+  div id="content"
+    h1 {{ .Title }}
+    {{ .Content }}

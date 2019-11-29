@@ -1,4 +1,18 @@
 = content main
-  h1 Welcome!
-  p..
-    I'm Marcus Crane, a Site Reliability Engineer at Xero
+  div id=home
+    h1 Welcome!
+    
+    p.. 
+      I'm Marcus Crane, a Site Reliability Engineer at Xero in Auckland, New Zealand.
+    
+      The source of the site is available on <a href="https://gitlab.com/marcus-crane/utf9k">Gitlab</a>.
+      
+      I'm around the web in a bunch of places: <a href="https://github.com/marcus-crane">github</a> | <a href="https://gitlab.com/marcus-crane">gitlab</a> | <a href="https://linkedin.com/in/marcus-crane">linkedin</a> | <a href="https://twitter.com/sentreh">twitter</a>
+
+      This site is always moving around but I make sure links always remain alive no matter what
+
+    ul
+      li
+        a href="/blog" blog
+      li
+        a href="/reviews" reviews
