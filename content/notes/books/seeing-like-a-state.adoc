@@ -1,3 +1,6 @@
+---
+title: "Seeing Like a State"
+---
 = Seeing Like a State
 Marcus Crane <marcus@utf9k.net>
 :page-permalink: /notes/books/seeing-like-a-state
