@@ -2,7 +2,7 @@
   div id="content"
     h1 {{ .Title }}
     ul
-      {{ range .Paginator.Pages }}
+      {{ range .Pages }}
       li
         a href="{{ .RelPermalink }}"
           span {{ .Title }}
