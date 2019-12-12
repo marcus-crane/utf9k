@@ -1,4 +1,0 @@
-= content main
-  div id="content"
-    h1 {{ .Title }}
-    {{ .Content }}

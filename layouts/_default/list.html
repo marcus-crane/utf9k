@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="pa3 pa5-ns">
+    <h4 class="f6 fw6">{{ .Title }}</h4>
+    {{ range .Pages }}
+    <dl class="f6 lh-title mv2">
+      <dt class="dib gray list-date">{{ .Date.Format "Jan 02 2006" }}</dt>
+      <dd class="dib">
+        <a class="link dim dark-gray" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </dd>
+    </dl>
+    {{ end }}
+{{ end }}

@@ -4,83 +4,15 @@
 
 body {
   background: #deeffe;
-  font-family: 'Crimson Pro', serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
   max-width: 100%;
   padding: 0;
   word-wrap: break-word;
 }
 
-a {
-  color: #104ba3;
-}
-
-img {
-  width: 100%;
-}
-
-#content {
-  margin-left: 4rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  width: 40%;
-}
-
-@media only screen and (max-width: 600px) {
-  #content {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    width: 85%;
-  }
-}
-
-h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1.4rem;
-}
-
-h3 {
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1.4rem;
-}
-
-p, ol, li {
-  font-weight: 400;
-  font-size: 1.4rem;
-}
-
-p {
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
-  padding-right: 0;
-}
-
-.listingblock {
-  overflow-x: scroll;
-}
-
-/* Homepage */
-
-#home {
-  margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  width: 80%;
-}
-
-#home li {
-  margin-bottom: .8rem;
-  list-style: none;
+dt.list-date {
+  width: 7rem;
 }
 
 /****
