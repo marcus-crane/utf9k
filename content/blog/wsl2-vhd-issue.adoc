@@ -38,7 +38,7 @@ Upon trying to convert my WSL distros to Version 2, they complained about a virt
 
 You'd never know it but your WSL packages live under `%LOCALAPPDATA%/packages/<distro title surrounded by nonsense>`. In my case, Debian lives at `C:\Users\Marcus\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76v4gfsz19hv4`. If you visit your distro's respective folder, you'll find no virtual disk image in sight.
 
-The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under menu:General[Advanced], I spotted `Compress contents to save disk space` was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion then worked as you'd hope.
+The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under menu:General[Advanced], I spotted `Compress contents to save disk space` was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion worked as you'd hope.
 
 image::/static//img/wsl2-vhd-issue/compressed.png[]
 

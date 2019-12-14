@@ -48,6 +48,6 @@ print(message)
 # <Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
 ----
 
-As you can see, the interpreter actually binds the last result to the `_` character. If you were to do `1 + 1`, the value of `_` would be 2! You can also bind the value to a variable for use later on.
+As you can see, the interpreter actually binds the last result to the `\_` character. If you were to do `1 + 1`, the value of `_` would be 2! You can also bind the value to a variable for use later on.
 
 I don't think I'd need it often but it's very handy to know.
