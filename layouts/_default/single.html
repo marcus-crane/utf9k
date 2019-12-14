@@ -1,6 +1,15 @@
 {{ define "main" }}
-  <div id="content">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </div>
+  <article class="cf ph3 ph6-m ph7-l pv4 sans-serif">
+    <header class="mb2">
+      <h1 class="f2 fw9 f-headline-l mb1 mt0 dib">
+        {{ .Title }}
+      </h1>
+      <time class="f6 ttu tracked gray db">
+        {{ .Date.Format "Jan 02 2006" }}
+      </time>
+    </header>
+    <div class="lh-copy" id="content">
+      {{ .Content }}
+    </div>
+  </article>
 {{ end }}
