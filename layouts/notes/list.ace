@@ -1,7 +1,0 @@
-= content main
-  main
-    div
-      h1 {{ .Title }}
-      ul
-        {{ .Section }}
-        {{ partial "RecurseFiles.html" (dict "CurrentPath" "./content/notes" "Site" . "Level" 2) }}
