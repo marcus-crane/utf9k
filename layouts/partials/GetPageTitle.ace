@@ -1,4 +1,0 @@
-li style="list-style: none; text-indent: {{ .Level }}0px"
-  {{ with .Site.GetPage .PostPath }}
-    a href="{{ .RelPermalink }}" {{ lower .Title }}
-  {{ end }}
