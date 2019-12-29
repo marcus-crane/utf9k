@@ -6,6 +6,11 @@
 
 === December
 
+==== 30th
+
+* Ported all posts back to Markdown. Perhaps I'll do a postmortem about what I liked and disliked about Asciidoc since it's really promising but not quite there just yet.
+* Ditched any custom stuff in favour of the `hello-friend` theme
+
 ==== 24th
 
 * Realised that I lost this changelog somewhere along the way so revive it and backfilled it again
