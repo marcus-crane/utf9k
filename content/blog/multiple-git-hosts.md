@@ -1,7 +1,7 @@
 ---
 date: "2020-01-06"
-title: "Dealing with multiple git hosts"
 tags: ["linux", "git", "github",  "gitlab"]
+title: "Dealing with multiple git hosts"
 ---
 
 When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They [live in a Gitlab repository](https://gitlab.com/marcus-crane/dotfiles) under my personal account, and I use plain old git to sync changes.

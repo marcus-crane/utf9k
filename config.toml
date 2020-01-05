@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
+buildFuture = true
 
 [params]
   # dir name of your blog content (default is `content/posts`)
