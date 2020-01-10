@@ -6,7 +6,7 @@
 
 #### 6th
 
-* Wrote a blog post detailing how to create an ssh config file link:/blog/multiple-git-hosts[»]
+* Wrote a blog post detailing how to create an ssh config file [»](/blog/multiple-git-hosts)
 
 ## 2019
 
@@ -55,7 +55,7 @@
 
 #### 16th
 
-* Added a note about how to find WSL files on Windows 10 link:/notes/programming/tools/wsl[»]
+* Added a note about how to find WSL files on Windows 10 [»](/notes/programming/tools/wsl)
 
 #### 15th
 
@@ -81,11 +81,11 @@
 
 #### 29th
 
-* Added some tips for getting image metadata and converting SVGs to PNGs link:/notes/programming/tools/image-conversion[»]
+* Added some tips for getting image metadata and converting SVGs to PNGs [»](/notes/programming/tools/image-conversion)
 
 #### 21st
 
-* Added a tip about automatically importing and/or aliasing modules in IEX link:/notes/programming/languages/elixir#automatically-aliasing-modules-when-starting-iex[»]
+* Added a tip about automatically importing and/or aliasing modules in IEX [»](/notes/programming/languages/elixir#automatically-aliasing-modules-when-starting-iex)
 
 #### 20th
 
@@ -104,12 +104,12 @@
 #### 27th
 
 * Removed italics to make the site easier to read, and fixed some typos in the email lookup post
-* Added an old review for Yakuza link:/reviews/yakuza[»]
-* Cleaned up and added an old post about Deepfakes link:/blog/deepfakes[»]
+* Added an old review for Yakuza [»](/reviews/yakuza)
+* Cleaned up and added an old post about Deepfakes [»](/blog/deepfakes)
 
 #### 26th
 
-* Wrote a blog post about a handy trick I use to look up email addresses that I'm not 100% sure about link:/blog/email-lookup[»]
+* Wrote a blog post about a handy trick I use to look up email addresses that I'm not 100% sure about [»](/blog/email-lookup)
 
 #### 7th
 
@@ -134,7 +134,7 @@
 
 #### 19th
 
-* Wrote a post about turning 25. It was mainly just a tangent about what I'd like to do with this site going forward. link:/blog/25[»]
+* Wrote a post about turning 25. It was mainly just a tangent about what I'd like to do with this site going forward. [»](/blog/25)
 
 #### 6th
 
@@ -144,13 +144,13 @@
 
 #### 29th
 
-* Wrote a post about extracting credentials from Jenkins link:/blog/retrieving-jenkins-credentials[»]
+* Wrote a post about extracting credentials from Jenkins [»](/blog/retrieving-jenkins-credentials)
 * Removed pagination from the blog list page
 
 #### 20th
 
 * Added https://forestry.io[foresty.io] configuration again. It wouldn't survive very long.
-* Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :) link:/blog/wsl2-vhd-issue[»]
+* Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :) [»](/blog/wsl2-vhd-issue)
 
 ### May
 
@@ -163,7 +163,7 @@
 
 #### 21st
 
-* Added a post thinking about the future of emergency services. This would have been shortly after I had been admitted to hospital, if not the same day. link:/blog/future-of-emergency-services[»]
+* Added a post thinking about the future of emergency services. This would have been shortly after I had been admitted to hospital, if not the same day. [»](/blog/future-of-emergency-services)
 
 #### 18th
 
@@ -185,7 +185,7 @@
 
 #### 3rd
 
-* Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review... link:/reviews/battle-angel-alita[»]
+* Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review... [»](/reviews/battle-angel-alita)
 * Added support for https://utteranc.es/[utteranc.es], a neat little comment section powered by Github.
 * Revamed the site to move from tailwind.css to spectre.css
 * Some of the layout changed as a result such as adding opengraph metatags and generally going for a more minimalist approach.
@@ -239,7 +239,7 @@
 
 #### 16th
 
-* Fixed a typo in the link:/blog/lost-python-results[lost python results] post
+* Fixed a typo in the [lost python results](/blog/lost-python-results) post
 
 #### 14th
 
@@ -247,11 +247,11 @@
 
 #### 13th
 
-* Update link:/blog/arch-nuc-install[arch nuc install] and link:/blog/lost-python-results[lost python results] posts to use hugo's syntax highlighting shortcode
+* Update [arch nuc install](/blog/arch-nuc-install) and [lost python results](/blog/lost-python-results) posts to use hugo's syntax highlighting shortcode
 
 #### 12th
 
-* Wrote a post about the `-` operator in Python link:/blog/lost-python-results[»]
+* Wrote a post about the `-` operator in Python [»](/blog/lost-python-results)
 
 #### 8th
 
@@ -268,7 +268,7 @@
 
 #### 3rd
 
-* Added post about Twitter automation link:/blog/automation-right[»]
+* Added post about Twitter automation [»](/blog/automation-right)
 
 ### November
 
@@ -322,7 +322,7 @@
 
 #### 18th
 
-* Added a post about submitting Official Information Act requests in New Zealand link:/blog/nz-oia-guide[»]
+* Added a post about submitting Official Information Act requests in New Zealand [»](/blog/nz-oia-guide)
 * Added Google Analytics
 * Fixed sorting to show posts in reverse order
 
@@ -413,7 +413,7 @@
 
 #### 1st
 
-* Added a new post called "Humans don't come with lore tabs" link:/blog/humans-dont-come-with-lore-tabs[»]
+* Added a new post called "Humans don't come with lore tabs" [»](/blog/humans-dont-come-with-lore-tabs)
 
 ### February
 
@@ -429,12 +429,12 @@
 
 #### 12th
 
-* Churned out a blog post before starting my first day at Xero link:/blog/day-xero[»]
+* Churned out a blog post before starting my first day at Xero [»](/blog/day-xero)
 
 #### 10th
 
 * Added some custom CSS sizing for the stats page
-* Added some CSS for pygments pulled from an Oceanic Next stylesheet link:https://github.com/wbinnssmith/base16-oceanic-next/blob/master/pygments/base16-oceanicnext.dark.css[»]
+* Added some CSS for pygments pulled from an Oceanic Next stylesheet [»](https://github.com/wbinnssmith/base16-oceanic-next/blob/master/pygments/base16-oceanicnext.dark.css)
 * Extended mistune's renderer to parse blockquotes and code snippets within Markdown
 
 #### 8th
@@ -450,7 +450,7 @@
 
 * Applied Pycharm auto formatting to the repo which, in hindsight, destroyed the layout of the main app.py file. I always wondered what had reduced it into a one line view within Github!
 * Changed static file URLs to start from the root eg; `/static/style.css` became `/style.css`.
-* Polished off a post about Deepfakes link:/blog/deepfakes[»]
+* Polished off a post about Deepfakes [»](/blog/deepfakes)
 
 #### 4th
 
