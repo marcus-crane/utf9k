@@ -37,7 +37,7 @@
 
 #### 12th
 
-* I started experimenting with Tachyons[https://tachyons.io] again for creating a CSS layout. I really need to stop messing with so many different frameworks...
+* I started experimenting with [Tachyons](https://tachyons.io) again for creating a CSS layout. I really need to stop messing with so many different frameworks...
 
 #### 4th
 
@@ -114,7 +114,7 @@
 #### 7th
 
 * Backfilled the changelog some more. Entries mentioned new posts now link to said posts
-* Swapped the (supposedly placeholder) https://graphemica.com/%E2%8F%8E[return symbol (U+23CE)] being used as a back button for a https://graphemica.com/%E2%9E%B2[circled heavy white rightwards arrow (U+27B2)]. I couldn't find a leftwards version so I just rotated it using some CSS
+* Swapped the (supposedly placeholder) [return symbol (U+23CE)](https://graphemica.com/%E2%8F%8E) being used as a back button for a [circled heavy white rightwards arrow (U+27B2)](https://graphemica.com/%E2%9E%B2). I couldn't find a leftwards version so I just rotated it using some CSS
 * Updated some links to be relative, such as the CHANGELOG on the front page which was a link to the live version up until now. Much nicer for working locally.
 
 #### 1st
@@ -149,7 +149,7 @@
 
 #### 20th
 
-* Added https://forestry.io[foresty.io] configuration again. It wouldn't survive very long.
+* Added [foresty.io](https://forestry.io) configuration again. It wouldn't survive very long.
 * Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :) [»](/blog/wsl2-vhd-issue)
 
 ### May
@@ -181,12 +181,12 @@
 
 #### 7th
 
-* Tried out https://forestry.io[forestry.io] for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
+* Tried out [forestry.io](https://forestry.io) for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
 
 #### 3rd
 
 * Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review... [»](/reviews/battle-angel-alita)
-* Added support for https://utteranc.es/[utteranc.es], a neat little comment section powered by Github.
+* Added support for [utteranc.es](https://utteranc.es/), a neat little comment section powered by Github.
 * Revamed the site to move from tailwind.css to spectre.css
 * Some of the layout changed as a result such as adding opengraph metatags and generally going for a more minimalist approach.
 
@@ -260,11 +260,11 @@
 
 #### 7th
 
-* Ported site from https://blog.getpelican.com/[Pelican] to https://gohugo.io/[Hugo]
+* Ported site from [Pelican](https://blog.getpelican.com/) to [Hugo](https://gohugo.io/)
 
 #### 6th
 
-* Swap out https://github.com/pypa/pipenv[pipenv] for https://github.com/sdispater/poetry[Poetry]
+* Swap out [pipenv](https://github.com/pypa/pipenv) for [Poetry](https://github.com/sdispater/poetry)
 
 #### 3rd
 
@@ -293,7 +293,7 @@
 #### 14th
 
 * Added a contact form powered by Netlify
-* Changed from https://tachyons.io/[Tachyons] to https://tailwindcss.com/[Tailwind CSS]
+* Changed from [Tachyons](https://tachyons.io/) to [Tailwind CSS](https://tailwindcss.com/)
 
 #### 7th
 
@@ -301,7 +301,7 @@
 
 #### 5th
 
-* Ported from Flask app to https://blog.getpelican.com/[Pelican]
+* Ported from Flask app to [Pelican](https://blog.getpelican.com/)
 
 ### August
 
@@ -361,8 +361,8 @@
 
 #### 6th
 
-* Moved from https://tachyons.io/[Tachyons] to https://picturepan2.github.io/spectre/[Spectre CSS]
-* Changed from https://github.com/pypa/pipenv[pipenv] to a generic virtual environment
+* Moved from [Tachyons](https://tachyons.io/) to [Spectre CSS](https://picturepan2.github.io/spectre/)
+* Changed from [pipenv](https://github.com/pypa/pipenv) to a generic virtual environment
 
 ### April
 
@@ -506,7 +506,7 @@
 
 #### 4th
 
-* Added functionality to pull recently watched movies and TV shows from https://trakt.tv[Trakt.tv], every 30 minutes.
+* Added functionality to pull recently watched movies and TV shows from [Trakt.tv](https://trakt.tv), every 30 minutes.
 
 #### 3rd
 
@@ -618,7 +618,7 @@
 #### 24th
 
 * Added escaping for markdown posts
-* Added some CSS that extended off of https://tachyons.io/[Tachyons]
+* Added some CSS that extended off of [Tachyons](https://tachyons.io/)
 
 #### 23rd
 
