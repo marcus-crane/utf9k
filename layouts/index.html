@@ -5,8 +5,8 @@
   <p>There's a few bits and pieces: mainly my blog content but also other writings floating around</p>
 
   <h2>Some recent blog posts</h2>
-  <ul>
-    {{ $paginator := .Paginate (where site.RegularPages "Type" "blog") 10 }}
+  <ul class="no-list-style">
+    {{ $paginator := .Paginate (where site.RegularPages "Section" "blog") 10 }}
     {{ range $paginator.Pages }}
     <li>
       <span>{{ .Date.Format "2006-01-02" }}</span>
@@ -14,18 +14,12 @@
       <a href="{{ .RelPermalink }}">
         <span>{{ .Title }}</span>
       </a>
+      <span class="tag-list">
+      {{ range .Params.tags }}
+      <a href="/tags/{{ . }}">#{{ . }}</a>
+      {{ end }}
+      </span>
     </li>
     {{ end }}
-
-    <h2>A couple of projects I tinkered with</h2>
-    {{ $projPaginator := .Paginate (where site.RegularPages "Type" "reviews") 3 }}
-    {{ range $projPaginator.Pages }}
-    <li>
-      <span>{{ .Date.Format "2006-02-01" }}</span>
-      //
-      <a href="{{ .RelPermalink }}">
-        <span>{{ .Title }}</span>
-      </a>
-    </li>
-    {{ end }}
+    <a href="/blog/">> View more</a>
 {{ end }}

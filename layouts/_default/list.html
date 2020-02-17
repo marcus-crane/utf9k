@@ -1,14 +1,17 @@
 {{ define "main" }}
-<div id="content">
-  <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <span>{{ .Title }}</span>
-      </a>
-      <br />
-      <span>{{ .Date.Format "January 2, 2006" }}</span>
-      <br />
+<ul class="no-list-style">
+  {{ range .Pages }}
+  <li>
+    <span>{{ .Date.Format "2006-01-02" }}</span>
+    //
+    <a href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+    <span class="tag-list">
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . }}">#{{ . }}</a>
     {{ end }}
+    </span>
+  </li>
+  {{ end }}
 {{ end }}

@@ -15,6 +15,11 @@
   {{ end -}}
 </head>
 <body>
-  {{ block "main" . }}{{ end }}
+  {{ partial "header.html" . }}
+
+  <div class="content">
+    {{ block "main" . }}
+    {{ end }}
+  </div>
 </body>
 </html>
