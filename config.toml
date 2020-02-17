@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://utf9k.net/"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
