@@ -11,7 +11,6 @@ In particular, I'm a [Site Reliability Engineer](https://en.wikipedia.org/wiki/S
 You can find me on the web in a bunch of places:
 
 * [Github](https://github.com/marcus-crane)
-* [Gitlab](https://gitlab.com/marcus-crane)
 * [Instagram](https://instagram.com/sentryism)
 * [LinkedIn](https://linkedin.com/in/marcus-crane)
 * [Steam](https://steamcommunity.com/id/sandtree/)
