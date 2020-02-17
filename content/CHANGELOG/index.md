@@ -2,6 +2,12 @@
 
 ## 2020
 
+### February
+
+#### 17th
+
+* Updated RSS feed to use absolute links rather than relative links. Big thanks to [@zacjszewczyk](https://twitter.com/zacjszewczyk) for pointing it out!
+
 ### January
 
 #### 6th
