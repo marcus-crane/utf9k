@@ -9,6 +9,11 @@ buildFuture = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[languages]
+  [languages.en]
+    title = "utf9k"
+    subtitle = "Spewing words"
+
 [markup]
   [markup.tableOfContents]
     endLevel = 3
