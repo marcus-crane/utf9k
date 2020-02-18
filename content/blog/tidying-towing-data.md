@@ -13,6 +13,8 @@ Rather than leave code snippets lying around my hard drive, I've decided to shar
 
 That and I'm going to forget how to do any of this if I don't explain it step by step!
 
+{{< contents >}}
+
 ## Getting the data
 
 This is the first, and sometimes hardest step. My advice is to be as explicit as is reasonable when requesting the data. It's helpful to be particular about what metadata you're after, and it'll help you if you request to receive it in a machine readable format.

@@ -4,6 +4,8 @@ I'm currently work at [Xero](https://xero.com/nz/), a cloud accounting software 
 
 In particular, I'm a [Site Reliability Engineer](https://en.wikipedia.org/wiki/Site_Reliability_Engineering) based out of our office in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland).
 
+My resume is hosted on this site [right here](/resume.pdf) if you want a better idea of the sort of stuff I've worked on.
+
 You can find me on the web in a bunch of places:
 
 * [Github](https://github.com/marcus-crane)

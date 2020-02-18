@@ -1,8 +1,16 @@
-# CHANGELOG
+---
+title: "CHANGELOG"
+toc: true
+---
 
 ## 2020
 
 ### February
+
+#### 18th
+
+* Created a proper Now page [»](/now/)
+* Published a more minimal version of the site using some older custom styling that I was a bit fond of
 
 #### 17th
 
