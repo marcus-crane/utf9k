@@ -10,6 +10,8 @@ Please note that this isn't some guide for pros or that I expect to have the mos
 
 *2019 Update*: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
 
+{{< contents >}}
+
 ## Getting online
 
 As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll start by getting online. You can do this graphically by running `wifi-menu`.
