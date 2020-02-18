@@ -8,6 +8,8 @@ I dug this post up from an older version of my site. It was written two years ag
 
 I've made some slight rewordings, fixed typos and revived any links I could using the [Wayback Machine](https://web.archive.org/) but otherwise, the post is 99% intact from when I first wrote it. I didn't realise just how much I had written about this at the time. I'm kind of glad since this was before the subreddit was banned. A lot of it is now lost to time.
 
+{{< contents >}}
+
 ## An overview
 
 Just under 2 weeks ago, an article from The Verge titled [Fake celebrity porn is blowing up on Reddit, thanks to artificial intelligence](https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit) was posted on [Hacker News](https://news.ycombinator.com/item?id=16226495). If you'd just glimpsed the headline, you might assume it's a bunch of shitstirrers up to no good with Photoshop but unfortunately, it's arguably worse.
