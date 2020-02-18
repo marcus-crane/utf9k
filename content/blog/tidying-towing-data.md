@@ -45,7 +45,7 @@ This blog post isn't intended to teach you how to use Pandas, but I'll be specif
 
 Pandas has support for importing Excel spreadsheets by using the [xlrd](https://xlrd.readthedocs.io/en/latest/) library so let's install both. We'll also fetch sqlite3 which we'll use near the end:
 
-```
+```shell
 > pip install pandas xlrd sqlite3
 Collecting pandas
 [...]
@@ -55,7 +55,7 @@ Successfully installed numpy-1.18.1 pandas-0.25.3 xlrd-1.2.0
 
 Time to import our Excel spreadsheet into a Pandas dataframe but there's a bit of a catch first:
 
-```
+```python
 > python
 Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
@@ -70,7 +70,7 @@ Our workbook is not one big sheet but in fact, one sheet per month. For those of
 
 We still need to parse each sheet, one by one, in order to get a complete collection of data. To do so, we'll just iterate over each sheet and append it to an initially empty data frame:
 
-```
+```python
 > python
 Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
@@ -107,7 +107,7 @@ We've still got a long way to go however as we don't have a nice index, nor do w
 
 First, let's have a closer look at our data by printing the first 25 rows:
 
-```
+```python
 >>> df[0:25]
    Unnamed: 0        Date and Time   ... Unnamed: 9 Unnamed: 10
 0         NaN                   NaN  ...        NaN         NaN
@@ -141,7 +141,7 @@ First, let's have a closer look at our data by printing the first 25 rows:
 
 Focusing on the date column, there's a pattern that sticks out. The data is actually grouped visually by day like so:
 
-```
+```text
 [empty cell]
 Monday, 01 Aug 2016
 [empty cell]
@@ -156,7 +156,7 @@ Tuesday, 02 Aug 2016
 
 There's no consistency from a machine readable point of view so we'll have to clean it up into something more consistent manually. Before we do that, let's get some column headings.
 
-```
+```python
 > from pprint import pprint
 > pprint(list(df.columns))
 ['Unnamed: 0',
@@ -176,7 +176,7 @@ That's a lot of columns.
 
 After a quick skim of the dataset, we can see that only `Unnamed: 5` is used. We'll discard the unused columns and then clean up the remaining data:
 
-```
+```python
 > df = df.drop(columns=['Unnamed: 0', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'])
 >>> df
             Date and Time          Vehicle   ...       Towed Too  Unnamed: 5
@@ -195,7 +195,7 @@ After a quick skim of the dataset, we can see that only `Unnamed: 5` is used. We
 
 It's starting to look more reasonable. Now let's assign some appropriate names. You can't quite tell from the code snippets but there's actually some rogue whitespace in the columns so I opened to rename all of them for consistency:
 
-```
+```python
 > df = df.rename(columns={'Unnamed: 5': 'Suburb', 'Date and Time ': 'Date', 'Towed From ': 'Origin', 'Towed Too ': 'Destination', 'Vehicle ': 'Vehicle'})
 >>> df
                       Date          Vehicle  ...      Destination Suburb
@@ -222,7 +222,7 @@ Basically, I wrote some code to parse the dates into timestamps and it would kee
 
 Here are the following data fixes, provided so you can follow along entirely with my process:
 
-```
+```python
 df = df.replace('Sunda, 28 Aug 2016', 'Sunday, 28 Aug 2016')
 df = df.replace('Satruday, 06 Jan 2017', 'Saturday, 06 Jan 2017')
 df = df.replace('Tuesday, 28th Nov ', 'Tuesday, 28 Nov 2017')
@@ -262,7 +262,7 @@ The goal here isn't to get super accurate timestamps just yet, but rather someth
 
 Anyway, here's the shortest possible version of the code required that I came up with:
 
-```
+```python
 >>> current_date = ''
 >>> for idx, entry in enumerate(df['Date']):
 ...     item = str(entry)
@@ -275,7 +275,7 @@ Anyway, here's the shortest possible version of the code required that I came up
 
 It'll take a little bit to run, as it has to iterate over every row but it leaves us with something pretty promising:
 
-```
+```python
 >>> df
                       Date          Vehicle  ...      Destination Suburb
 0                      NaN              NaN  ...              NaN    NaN
@@ -295,7 +295,7 @@ It'll take a little bit to run, as it has to iterate over every row but it leave
 
 Ok, I lied earlier. We use the `pd.to_datetime` function earlier to generate entirely valid timestamps. All that's left is to get rid of those intermediary cells and we should have some fresh data ready to operate on.
 
-```
+```python
 >>> df = df.dropna()
 >>> df[0:25]
                    Date            Vehicle  ...      Destination Suburb
@@ -334,7 +334,7 @@ Looks good to me!
 
 Oh, one last thing. You'll see all of those numbers under the suburb section that don't appear to mean anything. The correspondence that came with the dataset explains what those represent. Let's quickly convert them into something human readable.
 
-```
+```python
 df['Suburb'] = df['Suburb'].replace(55, 'CENTRAL')
 df['Suburb'] = df['Suburb'].replace(66, 'NORTHERN')
 df['Suburb'] = df['Suburb'].replace(77, 'WESTERN')
@@ -345,7 +345,7 @@ df['Suburb'] = df['Suburb'].replace('Romeo', 'RURAL')
 
 Here's the final result after all of our hard work beating the dataset into shape:
 
-```
+```python
 >>> df
                      Date           Vehicle  ...            Destination   Suburb
 3     2016-08-01 08:34:00   TOYOTA FUNCARGO  ...         2 PUKEHANA AVE  CENTRAL
@@ -377,7 +377,7 @@ We also need to set an index or trying to export the dataset will fail. Not quit
 
 Given that a human is entering this data, I highly doubt any of our timestamps clash. That said, it's always a good idea to choose something truly guaranteed to be unique so consider yourself warned :)
 
-```
+```python
 >>> df = df.set_index('Date')
 >>> df
                               Vehicle          Origin            Destination   Suburb
@@ -399,7 +399,7 @@ Date
 
 Now we're ready to export it:
 
-```
+```python
 >>> import sqlite3
 >>> with sqlite3.connect('towing.db') as conn:
 ...     df.to_sql('towing', conn)
@@ -412,7 +412,7 @@ You might want to use a GUI tool like [DB Browser for SQLite](https://sqlitebrow
 
 Let's run a sample query to see the top 5 cars just to cap this post off once and for all:
 
-```
+```sql
 SELECT vehicle, COUNT(*) AS count
 FROM towing
 GROUP BY vehicle

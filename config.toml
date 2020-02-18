@@ -13,6 +13,9 @@ buildFuture = true
   # Show reading time in minutes for posts
   showReadingTime = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [languages]
   [languages.en]
     title = "utf9k"
