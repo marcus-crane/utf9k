@@ -4,47 +4,10 @@ paginate = 5
 buildFuture = true
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
   contentTypeName = "blog"
-  # "light" or "dark"
-  defaultTheme = "dark"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # Show reading time in minutes for posts
-  showReadingTime = true
 
 [markup.goldmark.renderer]
   unsafe = true
-
-[languages]
-  [languages.en]
-    title = "utf9k"
-    subtitle = "Spewing words"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-
-    [languages.en.params.logo]
-      logoText = "utf9k"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      #[[languages.en.menu.main]]
-      #  identifier = "showcase"
-      #  name = "Showcase"
-      #  url = "/showcase"
 
 [markup]
   [markup.tableOfContents]
