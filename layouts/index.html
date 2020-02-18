@@ -6,7 +6,7 @@
 
   <h2>Some recent blog posts</h2>
   <ul class="no-list-style">
-    {{ $paginator := .Paginate (where site.RegularPages "Section" "blog") 10 }}
+    {{ $paginator := .Paginate (where site.RegularPages "Section" "blog") 5 }}
     {{ range $paginator.Pages }}
     <li>
       <span>{{ .Date.Format "2006-01-02" }}</span>
@@ -21,5 +21,5 @@
       </span>
     </li>
     {{ end }}
-    <a href="/blog/">> View more</a>
+    <a href="/blog/">> View all</a>
 {{ end }}
