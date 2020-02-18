@@ -1,0 +1,17 @@
+{{ define "main" }}
+<ul class="no-list-style">
+  {{ range .Pages }}
+  <li>
+    <span>{{ .Date.Format "2006-01-02" }}</span>
+    //
+    <a href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+    <span class="tag-list">
+    {{ range .Params.tags }}
+    <a href="/tags/{{ . }}">#{{ . }}</a>
+    {{ end }}
+    </span>
+  </li>
+  {{ end }}
+{{ end }}
