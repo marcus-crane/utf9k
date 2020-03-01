@@ -4,6 +4,7 @@
 <meta name="author" content="Marcus Crane" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet" />
 <script src="https://kit.fontawesome.com/f550a8bc73.js" crossorigin="anonymous"></script>
 {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
