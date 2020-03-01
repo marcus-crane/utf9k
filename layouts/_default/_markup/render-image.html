@@ -1,0 +1,3 @@
+<a class="px-4" href="{{ .Destination | safeURL }}">
+  <img src="{{ .Destination | safeURL }}" class="mx-auto h-auto sm:h-64 rounded" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+</a>

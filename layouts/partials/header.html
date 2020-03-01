@@ -1,14 +1,45 @@
-<header class="header">
-    <span class="header-inner">
-        <a href="/">
-            <h3>utf9k</h3>
-        </a>
-        <span class="header-right">
-            <a href="/about">About</a>
-            //
-            <a href="/now">Now</a>
-            //
-            <a href="/index.xml">RSS</a>
-        </span>
-    </span>
-</header>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+
+<div>
+  <nav x-data="{ open: false }" @keydown.window.escale="open = false">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a href="/">
+              <h1 class="text-purple-300 text-lg font-bold">{{ .Site.Params.siteName }}</h1>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            {{/*
+              We don't want a slash to render on the last menu item so
+              just check if we're in the last iteration of the menu rendering loop
+            */}}
+            {{ $menuLength := sub (len .Site.Menus.main) 1 }}
+            {{ range $i, $link := .Site.Menus.main }}
+              <a href="{{ $link.URL }}" class="ml-1 px-1 py-2 rounded-md text-md font-medium text-purple-300">{{ $link.Name }}</a>
+              {{ if ne $menuLength $i }}<span class="ml-1 text-sm text-gray-500">//</span>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div :class="{ 'block': open, 'hidden': !open }" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 sm:px-3">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-purple-300">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,34 @@
+baseurl: "https://utf9k.net/"
+languageCode: "en-us"
+buildFuture: true
+
+params:
+  author: "Marcus Crane"
+  description: "I write here about things I find interesting!"
+  contentTypeName: "blog"
+  siteName: "utf9k"
+  paginate: 8
+
+menu:
+  main:
+  - identifier: about
+    name: About
+    url: /about
+    weight: 1
+  - identifier: now
+    name: Now
+    url: /now
+    weight: 2
+  - identifier: rss
+    name: RSS
+    url: /index.xml
+    weight: 100
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2

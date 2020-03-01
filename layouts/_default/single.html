@@ -1,4 +1,9 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+  {{ if and (ne .Title "") (ne .Params.showTitle false) }}
+  <h1 class="text-3xl sm:text-4xl font-semibold leading-tight">{{ .Title }}</h1>
+  <h3 class="text-lg">{{ partial "postdate.html" . }} <span class="ml-1 text-sm text-gray-500">//</span> {{ partial "readtime.html" . }}{{ if (ne .Params.showPageSource false) }} // {{ partial "pagesource.html" . }}{{ end }}</h3>
+  {{ end }}
+  <div class="markdown">
+    {{ .Content }}
+  </div>
 {{ end }}
