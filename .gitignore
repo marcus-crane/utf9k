@@ -6,3 +6,5 @@ output
 public
 _site
 .jekyll-cache
+node_modules
+resources

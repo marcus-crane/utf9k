@@ -2,16 +2,17 @@
 <ul class="no-list-style">
   {{ range .Pages }}
   <li>
-    <span>{{ .Date.Format "2006-01-02" }}</span>
+    <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>
     //
     <a href="{{ .RelPermalink }}">
       <span>{{ .Title }}</span>
     </a>
     <span class="tag-list">
     {{ range .Params.tags }}
-    <a href="/tags/{{ . }}">#{{ . }}</a>
+    <a class="text-gray-600" href="/tags/{{ . }}">#{{ . }}</a>
     {{ end }}
     </span>
   </li>
   {{ end }}
+</ul>
 {{ end }}

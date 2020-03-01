@@ -1,0 +1,16 @@
+<title>{{ if ne .Title "" }}{{ .Title }} | {{ end }}utf9k</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="theme-color" content="#a463f2" />
+<meta name="author" content="Marcus Crane" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+{{ if .Site.IsServer }}
+    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ else }}
+    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}

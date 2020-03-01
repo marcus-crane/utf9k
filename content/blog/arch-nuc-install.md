@@ -55,7 +55,7 @@ The following uses [Parted](https://www.gnu.org/software/parted/manual/parted.ht
 # Launched parted, passing our hard drive as an argument
 parted /dev/sda
 
-Create a partition table using the GUID Partition Table (GPT) format.
+# Create a partition table using the GUID Partition Table (GPT) format.
 # This wipes your drive(!)
 mklabel gpt
 

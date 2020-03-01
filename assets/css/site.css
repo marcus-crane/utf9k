@@ -1,0 +1,110 @@
+/*
+
+References I used for constructing the assets folder
+
+* https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter
+* https://tjaddison.com/blog/2019/08/styling-markdown-tailwind-gatsby/
+
+*/
+
+/* purgecss start ignore */
+
+a {
+  @apply text-purple-300;
+}
+
+/* General styles */
+
+.markdown {
+  @apply leading-relaxed text-lg;
+}
+
+.markdown p {
+  @apply font-sans text-base mt-5;
+}
+
+.markdown h1,
+.markdown h2 {
+  @apply text-2xl my-6 font-bold;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-xl my-3 font-semibold;
+}
+
+.markdown .footnotes {
+  @apply mt-6;
+}
+
+/* Blockquotes */
+
+.markdown blockquote {
+  @apply border-purple-300 border-solid border-l-4 ml-0 py-2 px-4 mt-6;
+}
+
+.markdown blockquote p {
+  margin: 0 0 1.2rem
+}
+
+.markdown blockquote p:last-child {
+  margin: 0;
+}
+
+/* Lists */
+
+.markdown ul,
+.markdown ol {
+  @apply m-2 ml-10;
+}
+
+.markdown li > p,
+.markdown li > a {
+  @apply text-base;
+}
+
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  @apply mb-0;
+}
+
+.markdown ol {
+  @apply list-decimal;
+}
+
+.markdown ul {
+  @apply list-disc;
+}
+
+.markdown > ul.no-list-style > li {
+  @apply list-none;
+}
+
+.markdown > ul.no-list-style {
+  @apply ml-0;
+}
+
+/* Tables */
+
+.markdown td,
+.markdown th {
+  @apply px-4 py-2;
+}
+
+.markdown td {
+  @apply border;
+}
+
+.markdown table {
+  @apply table-auto w-full;
+}
+
+/* Edit link */
+
+.page-source {
+  @apply text-sm;
+}
+
+/* purgecss end ignore */
