@@ -1,14 +1,24 @@
-<header class="header">
-  <span class="header-inner">
-    <a href="/">
-      <h3>utf9k</h3>
-    </a>
-    <span class="header-right">
-      <a href="/about">About</a>
-      //
-      <a href="/now">Now</a>
-      //
-      <a href="/index.xml">RSS</a>
-    </span>
-  </span>
-</header>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+
+<div>
+  <nav x-data="{ open: false }" @keydown.window.escale="open = false" class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <h1 class="text-purple-300 text-lg font-bold">utf9k</h1>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            <a href="#" class="ml-2 px-1 py-2 rounded-md text-sm font-medium text-purple-300">About</a>
+            <span class="ml-1 text-gray-500">//</span>
+            <a href="#" class="ml-1 px-1 py-2 rounded-md text-sm font-medium text-purple-300">Now</a>
+            <span class="ml-1 text-gray-500">//</span>
+            <a href="#" class="ml-1 px-1 py-2 rounded-md text-sm font-medium text-purple-300">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
