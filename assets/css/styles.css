@@ -4,7 +4,5 @@
 @import "node_modules/tailwindcss/components";
 /* Site Specific */
 @import "assets/css/site";
-/* Pygments theme */
-@import "assets/css/code";
 /* Tailwind's utility classes - generated based on config file */
 @import "node_modules/tailwindcss/utilities";
