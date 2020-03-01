@@ -1,6 +1,7 @@
 ---
-title: "Now"
-toc: true
+title: "What I'm working on currently"
+date: 2020-02-18
+showPageSource: false
 ---
 
 **Towing data**
@@ -30,7 +31,3 @@ There's plenty of ideas I've had written down but now I'm actually trying to foc
 I'm not particularly good at it but as a new habit to pick up for February, I've taken up running as a... hobby? Do people class exercise as a hobby? Can you just say that?
 
 Anyway, I'm slowly making progress which is a nice feeling but don't expect me to be any more specific than that.
-
-//
-
-Last updated 18th Feb 2020

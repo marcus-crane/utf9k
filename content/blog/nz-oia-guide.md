@@ -96,11 +96,11 @@ It occured to me one day. While I can't even know what that redacted information
 | 11/09/2018 | Inquiry into the appointment process for the Deputy Police Commissioner                 | 6(c)             |
 | 03/10/2018 | Phone calls to heads of state                                                           | 6(a)             |
 
+Sources: [^1][^2]
+
 A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it's still interesting nonetheless.
 
 I'd love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can "FOIA the fuck out of it" to quote a tweet I saw earlier today.
 
-Table Sources
-
-* [FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
-* [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)
+[^1]: [FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
+[^2]: [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)

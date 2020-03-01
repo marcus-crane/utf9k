@@ -19,7 +19,7 @@
             */}}
             {{ $menuLength := sub (len .Site.Menus.main) 1 }}
             {{ range $i, $link := .Site.Menus.main }}
-              <a href="{{ $link.URL }}" class="ml-2 px-1 py-2 rounded-md text-md font-medium text-purple-300">{{ $link.Name }}</a>
+              <a href="{{ $link.URL }}" class="ml-1 px-1 py-2 rounded-md text-md font-medium text-purple-300">{{ $link.Name }}</a>
               {{ if ne $menuLength $i }}<span class="ml-1 text-sm text-gray-500">//</span>{{ end }}
             {{ end }}
           </div>

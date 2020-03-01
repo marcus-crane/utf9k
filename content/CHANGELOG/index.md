@@ -5,6 +5,14 @@ toc: true
 
 ## 2020
 
+### March
+
+#### 1st
+
+* Revamped the entire site to be powered by [Tailwind](https://tailwindcss.com) but visually, it's mostly identical
+* CSS is now using PostCSS rather than plain CSS in order to apply Tailwind classes to rendered markdown
+* Added back date and read times to posts, plus a link to the source files on Github
+
 ### February
 
 #### 18th
