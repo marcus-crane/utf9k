@@ -1,61 +1,6 @@
-body {
-  background: #2e3440;
-  color: #9ca7b5;
-  font-family: "Barlow", "Helvetica", "Arial", sans-serif;
-}
-
-.content {
-  line-height: 1.5;
-  margin: 0 auto;
-  max-width: 50em;
-  padding: 1.5em 2em 1em;
-}
-
-h1,
-h2,
-strong {
-  color: #d1dae4
-}
-
-img {
-  max-height: 20rem;
-  max-width: 100%;
-  border-radius: .2rem;
-}
-
 code,
 pre {
   font-style: initial;
-}
-
-.post-date {
-  display: inline-block;
-  width: 8em;
-}
-
-#back {
-  float: left;
-  font-size: 48px;
-  margin-left: -3.5rem;
-  margin-top: .25rem;
-  transform: rotate(180deg);
-}
-
-@media only screen and (max-width: 600px) {
-  .post-date {
-    display: block;
-    width: inherit;
-  }
-
-  #back {
-    display: none;
-  }
-}
-
-pre {
-  border-left: .1rem solid #ff9b00;
-  overflow-x: auto;
-  padding: .5em 1em;
 }
 
 code {
@@ -66,19 +11,6 @@ code {
 .highlight > pre > code {
   padding: 0;
   vertical-align: text-bottom;
-}
-
-a {
-  color: #ff9b00;
-  text-decoration: none;
-}
-
-table {
-  width: 100%;
-}
-
-thead {
-  text-align: left;
 }
 
 blockquote {
@@ -93,33 +25,6 @@ blockquote p {
 
 blockquote p:last-child {
   margin: 0;
-}
-
-ul.no-list-style {
-  padding-left: 0;
-  list-style: none;
-}
-
-.tag-list a {
-  color: gray;
-}
-
-.header {
-  padding: 2px;
-  display: flex;
-  height: 3rem;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 100%;
 }
 
 /* Syntax highlighting -> https://github.com/dracula/pygments */

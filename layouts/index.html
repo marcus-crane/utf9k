@@ -11,10 +11,10 @@
     <li>
       <span>{{ .Date.Format "2006-01-02" }}</span>
       //
-      <a href="{{ .RelPermalink }}">
+      <a class="text-green-400" href="{{ .RelPermalink }}">
         <span>{{ .Title }}</span>
       </a>
-      <span class="tag-list">
+      <span class="text-gray-600">
       {{ range .Params.tags }}
       <a href="/tags/{{ . }}">#{{ . }}</a>
       {{ end }}
