@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <h1 class="text-purple-300 text-lg font-bold">utf9k</h1>
+            <h1 class="text-purple-300 text-lg font-bold">{{ .Site.Params.siteName }}</h1>
           </div>
         </div>
         <div class="hidden md:block">
@@ -30,9 +30,9 @@
     </div>
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden md:hidden">
       <div class="px-2 pt-2 pb-3 sm:px-3">
-        <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-purple-300">About</a>
-        <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-purple-300">Now</a>
-        <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-purple-300">RSS</a>
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-purple-300">{{ .Name }}</a>
+        {{ end }}
       </div>
     </div>
   </nav>
