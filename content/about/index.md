@@ -1,3 +1,8 @@
+---
+title: "About"
+showTitle: false
+---
+
 I never write as much as I wish I would but there's a handful of articles you can read.
 
 I'm currently work at [Xero](https://xero.com/nz/), a cloud accounting software company.

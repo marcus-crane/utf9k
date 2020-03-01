@@ -1,22 +1,22 @@
 {{ define "main" }}
-<div id="content">
+<div class="markdown max-w-4xl">
   <p>Hey there</p>
   <p>I'm <a href="/about">Marcus Crane</a>, and this is my personal site.</p>
   <p>There's a few bits and pieces: mainly my blog content but also other writings floating around</p>
 
   <h2>Some recent blog posts</h2>
   <ul class="no-list-style">
-    {{ $paginator := .Paginate (where site.RegularPages "Section" "blog") 5 }}
+    {{ $paginator := .Paginate (where site.RegularPages "Section" "blog") .Site.Params.Paginate }}
     {{ range $paginator.Pages }}
     <li>
       <span>{{ .Date.Format "2006-01-02" }}</span>
       //
-      <a class="text-green-400" href="{{ .RelPermalink }}">
+      <a href="{{ .RelPermalink }}">
         <span>{{ .Title }}</span>
       </a>
-      <span class="text-gray-600">
+      <span>
       {{ range .Params.tags }}
-      <a href="/tags/{{ . }}">#{{ . }}</a>
+      <a class="text-gray-600" href="/tags/{{ . }}">#{{ . }}</a>
       {{ end }}
       </span>
     </li>
