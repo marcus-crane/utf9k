@@ -19,6 +19,8 @@ strong {
 
 img {
   max-height: 20rem;
+  max-width: 100%;
+  border-radius: .2rem;
 }
 
 code,
@@ -73,6 +75,10 @@ a {
 
 table {
   width: 100%;
+}
+
+thead {
+  text-align: left;
 }
 
 blockquote {

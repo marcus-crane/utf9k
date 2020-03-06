@@ -10,6 +10,8 @@ A few days later, a coworker got a parking ticket and I was reminded of that pos
 
 I'm no expert myself but I can at least show you where to start. I actually have a yearly FOIA request I make but I'll save that story for the end of this post. Now, onward!
 
+{{< contents >}}
+
 ## Some caveats
 
 It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked #1 in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
