@@ -7,6 +7,10 @@ toc: true
 
 ### March
 
+#### 6th
+
+* Uploaded a bunch of images for use in an upcoming post about my everyday carry
+
 #### 1st
 
 * Revamped the entire site to be powered by [Tailwind](https://tailwindcss.com) but visually, it's mostly identical
