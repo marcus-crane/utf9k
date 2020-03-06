@@ -2,7 +2,6 @@
 date: "2017-12-24"
 tags: ["arch", "guide", "linux"]
 title: "Installing Arch Linux on my Intel NUC"
-type: "blog"
 ---
 
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
@@ -10,6 +9,8 @@ It's that time again where I decide to reinstall Arch Linux and likely end up ba
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
 
 *2019 Update*: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
+
+{{< contents >}}
 
 ## Getting online
 
