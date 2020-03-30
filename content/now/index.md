@@ -4,30 +4,30 @@ date: 2020-02-18
 showPageSource: false
 ---
 
-**Towing data**
+**Quarantine life**
 
-I'm currently working on visualising some towing data, which has been on the backburner for some time.
+Most people are in the same boat at this point, either voluntarily or otherwise.
 
-The hardest part, taking a messy spreadsheet and turning it into machine-readable GeoJSON, is done thankfully.
+New Zealand instituted a 30 day self isolation period so the entire country is in doors.
 
-Here's a little sneak peek:
+Thankfully, I'm able to work remote so my day to day doesn't change very much.
 
-{{< tweet 1227769843098648576 >}}
+I'm also not one to need much social interaction to thrive so I'm actually quite enjoying this extra time to work on various bits and pieces
 
 **This site**
 
-While I had decided to just pick a theme and use it, I'd be lying if I didn't think tinkering with styling is half of the fun.
+Given the above, I'm hoping to actually churn out a backlog of posts, or at least make progress on the various ideas I've had sitting around
 
-It'll be something to refine over time but at least I can say it's all mine 😈
+**GTD**
 
-**Content**
+I've been practicing this for a little bit, and it's definitely a "pick what you like, discard what you don't" type of deal
 
-I've mostly been adhoc about writing stuff but now that I've got a handful of posts, I'm going to try and set up a content calendar and actually get stuff out.
-
-There's plenty of ideas I've had written down but now I'm actually trying to focus on this site and get some of those things made
+I've fallen behind as social media and the news cycle has distracted me so I'll need to get my to do lists and what not back in order!
 
 **Running**
 
-I'm not particularly good at it but as a new habit to pick up for February, I've taken up running as a... hobby? Do people class exercise as a hobby? Can you just say that?
+I've still been running, especially during the lockdown period
 
-Anyway, I'm slowly making progress which is a nice feeling but don't expect me to be any more specific than that.
+Almost managed to do 2km continuous which was a pretty solid goal!
+
+Probably more important than ever to keep it up B)

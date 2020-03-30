@@ -7,6 +7,10 @@ toc: true
 
 ### March
 
+#### 31st
+
+* Published an update to my now page
+
 #### 6th
 
 * Uploaded a bunch of images for use in an upcoming post about my everyday carry
