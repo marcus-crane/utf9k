@@ -28,6 +28,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      footnote: true
   tableOfContents:
     endLevel: 3
     ordered: false
