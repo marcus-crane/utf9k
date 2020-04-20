@@ -21,7 +21,7 @@ All of the CSS assets are stored in `/assets/css` and get bundled by Hugo at bui
 
 Markdown content (posts, pages etc) are stored in `/content`
 
-HTML teplates live in `/layouts`
+HTML templates live in `/layouts`
 
 Images and other static content lives in `/static`
 
