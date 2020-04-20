@@ -4,9 +4,11 @@ tags: ["linux", "git", "github",  "gitlab"]
 title: "Dealing with multiple git hosts"
 ---
 
-When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They [live in a Gitlab repository](https://gitlab.com/marcus-crane/dotfiles) under my personal account, and I use plain old git to sync changes.
+NOTE: At the time of writing, I was using Gitlab so you'll see references to my dotfiles living there. I've now moved back to Github but kept the references to Gitlab in this post intact.
 
-In order to push and pull changes from Gitlab, I use an SSH key rather than a password. It's easy enough to generate one of course but I also have one for the internal repository at my work. Juggling the two can sometimes be annoying when setting up a fresh laptop without some proper configuration.
+When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They [live in a Github repository](https://github.com/marcus-crane/dotfiles) under my personal account, and I use plain old git to sync changes.
+
+In order to push and pull changes from Github, I use an SSH key rather than a password. It's easy enough to generate one of course but I also have one for the internal repository at my work. Juggling the two can sometimes be annoying when setting up a fresh laptop without some proper configuration.
 
 Usually I forget what that looks like so here's a quick walkthrough on how you too can juggle multiple git hosts.
 
