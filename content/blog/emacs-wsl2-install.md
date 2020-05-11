@@ -198,3 +198,5 @@ Very nice, you should be all good to go. If you'd like to use Doom Emacs as I am
 If you'd like to run Emacs in your terminal, just simply fire up `emacs`. If you'd like to run it on your Windows host, and have your X server running and set up, you can run `emacs &` to spawn it, and keep it open as a background process.
 
 Happy text manipulation!
+
+P.S. I wrote this entire post in Doom Emacs, launched from WSL 2 on my home desktop and it works like a charm :)
