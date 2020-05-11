@@ -40,7 +40,7 @@ The installation should be straight forward and I don't remember any flags that 
 
 Once you've got it installed, fire it up and you should see a silver X icon in your Windows task tray, in the bottom right of your screen.
 
-You'll need to click on it (left or right, it makes no difference) and select "Allow Public Access"
+You'll need to click on it (left or right, it makes no difference) and select "Allow Public Access". See the end of this section for a note on security.
 
 While the original WSL1 exposes things on `http://localhost` (from memory anyway), WSL2 is treated like a network storage.
 
@@ -50,9 +50,70 @@ When we connect to our X server, it'll be on an internal address such as 172.x.x
 
 Beyond that, we should be good to go! You can either read the alternative setup or skip on down to configuring your `DISPLAY` environment variable.
 
+Upon closer inspection, it seems that "Allow public access" does indeed do what it says on the tin.
+
+I can confirm that I was able to forward an emacs session from my work laptop to my home desktop without any prompting. The same should hold true of any other random person on your network.
+
+If you trust your network, and aren't proxying your computer to the internet or something interesting like that, you should be fine. In that case, feel free to jump down to the environment configuration section.
+
+If you'd sleep safer at night with some tighter restrictions, feel free to follow the Windows Firewall configuration steps I've suggested below, under the setup for VcXsrv. They should apply exactly the same, but to the firewall rule for `x410`.
+
 # The free, open source, slightly more involved way
 
-I'll write this part in a bit. [Send me an email](https://utf9k.net/about) if it's been a few days and I've forgotten!
+For those of you who prefer to be able to either not pay for your software, or audit it, you'll want to pick up a copy of [VcXsrv](https://sourceforge.net/projects/vcxsrv/files/vcxsrv/).
+
+It's a little more involved but not much more. I've gone through the gauntlet and figured out some settings that seem to work consistently while still staying relatively secure. That said, feel free to let me know since Windows Firewall isn't an area I tend to stray into often.
+
+Go ahead and install `VcXsrv` and then once that's done, open up your start menu and search for `XLaunch`.
+
+If you run it, it should prompt you for some default settings. You can leave it set to the default (Multiple windows with the display number set to -1 for auto)
+
+Extra settings should stay as the default.
+
+You should get to a panel for extra parameters however, and when you do, you'll want to add `-ac` as a flag. Without it, you'll have some trouble down the line.
+
+Upon finishing up this configuration, you should get a popup from Windows Defender Firewall. You can click Allow but we'll also do some further configuration next.
+
+So, with XLaunch all wrapped up, head to your start menu once again and search for "Windows Defender Firewall with Advanced Security".
+
+Open it up, click `Inbound Rules` and then scroll down until you find `VcXsrv windows server`. You'll likely have about 4 entries, with two for TCP connections and another two for UDP connections.
+
+Personally, I've opted to delete all of them except for one since I don't plan to keep a UDP configuration, nor do I need two types of TCP setup but you can leave them if you like.
+
+You can either double click, or right click and hit properties, to start modifying your firewall rule.
+
+First, under General, change the action to `Allow the connection` if it's not already set as such.
+
+Don't worry, we'll be scoping down the permissions quite a bit. Well, as much as I could figure out how to anyway. I already did more fiddling here, for the sake of this post, than I probably would otherwise.
+
+We don't want to allow just anyone to connect to our display server so under the `Scope` tab, I've added an IP address range.
+
+Under `Local IP Address`, select `These IP addresses`, click `Add` -> `This IP address range` and then enter the following:
+
+```
+From: 172.16.0.0
+To  : 172.31.255.255
+```
+
+Given that the Windows subsystem is treated like a network device of sorts, our display server will essentially be receiving a connection from a different computer, as far as it's concerned.
+
+In order to mitigate any actual other computers connecting, we're narrowing down the acceptable list of IP addresses to just those that fall within the WSL range.
+
+I suppose if you did have a big internal network, with a computer assigned an address on 172.16.x.x, then they could connect but we'll be doing some interface restrictions just below.
+
+Anyway, repeat the same steps for `Remote IP address` and then hit `Apply your changes`.
+
+At this point, what I wanted to do was reduce the scope of the `Protocols` tab to just TCP on the ports that X server uses (6000 - 6063) but I had no such luck.
+
+It potentially be the case that somewhere between WSL land and your host computer, some ports are proxied to be higher or lower, but honestly, I'm purely speculating based on no actual evidence.
+
+For the interested, the above protocol and port restriction causes the host X server to be unreachable. If you extend the range from 6000 to the highest possible port (65535), it does indeed connect which is why it seems it's relying on a range of ports higher than those 63 to be reachable.
+
+Anyway, enough sidetracking. There is one extra bit of restricting we can do. Under `Protocols and Ports` -> `Protocol type`, change it to just allow `TCP`. You can then navigate to `Advanced` -> `Interface types` -> `Customize`, and you should be able to narrow down the list to just `Local area network`.
+
+Presumably, even if anyone is on the wider network with an IP address that happens to match our WSL2 distro, they still won't be able to connect but I haven't tried this.
+
+With all of that nonsense behind us, we can get on to actually configuring our environment and testing that our setup has worked successfully!
 
 # Configuring your environment
 
