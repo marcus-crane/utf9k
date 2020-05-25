@@ -4,13 +4,13 @@ tags: ["community", "leadership", "wiki"]
 title: "Some thoughts about running a wiki"
 ---
 
-Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
+Recently, I started playing a mobile game called [[http://bs.visualshower.com/][Blustone]]. It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
 
 It's not huge and it does have its bad apples but for the most part, I've met a few nice people online.
 
-Anyway, that brings me to the [VSFan Wiki](https://vsfan.net/wiki) which I started since there were hardly any English resources, let alone gathered all in one place. I always thought sites like [Serebii.net](http://serebii.net/) were cool as a kid and wished I could make my own site like that.
+Anyway, that brings me to the [[https://vsfan.net/wiki][VSFan]] which I started since there were hardly any English resources, let alone gathered all in one place. I always thought sites like [[http://serebii.net/][Serebii]] were cool as a kid and wished I could make my own site like that.
 
-Oh, I should probably mention that VSFan is short for [VisualShower Fan](http://visualshower.com/), in reference to the developers.
+Oh, I should probably mention that VSFan is short for [[http://visualshower.com/][VisualShower Fan]], in reference to the developers.
 
 Anyway, it was half an excuse to dig into a project I cared about and half to generate some decent community resources because generally that stuff is already taken care of for most games by people much more dedicated than myself so this was quite a discover finding something that's hardly documented beyond a handful of YouTube videos and some scattered blog posts and walkthroughs.
 
@@ -36,4 +36,4 @@ In that sense, it gives users with different abilities and experience levels thi
 
 Err, anyway, this whole post was pretty impromptu and I just wanted to spit out some stuff I'd been thinking about for a while now. None of it is edited and chances are I'll never read it again but I don't think I made any typos!
 
-If you have any thoughts yourself or just want to leave a comment, you can send me a tweet to [@sentreh](https://twitter.com/sentreh).
+If you have any thoughts yourself or just want to leave a comment, you can send me a tweet to [[https://twitter.com/sentreh][@sentreh]].
