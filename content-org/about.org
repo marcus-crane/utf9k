@@ -1,24 +1,27 @@
----
-title: "About"
-showTitle: false
----
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: /
+
+* About
+:PROPERTIES:
+:EXPORT_FILE_NAME: /about
+:END:
 
 I never write as much as I wish I would but there's a handful of articles you can read.
 
-I'm currently work at [[https://www.xero.com/nz/][Xero]], a cloud-based accounting software company.
+I currently work at [[https://xero.com/nz/][Xero]], a cloud accounting software company.
 
 In particular, I'm a [[https://en.wikipedia.org/wiki/Site_Reliability_Engineering][Site Reliability Engineer]] based out of our office in [[https://en.wikipedia.org/wiki/Auckland][Auckland, New Zealand]].
 
-My resume is hosted on this site [[/resume.pdf][resume]] if you want a better idea of the sort of stuff I've worked on.
+My resume is hosted [[/resume.pdf][here]] if you want a better idea of what I've worked on before.
 
 You can find me on the web in a bunch of places:
 
 - [[https://github.com/marcus-crane][Github]]
 - [[https://news.ycombinator.com/user?id=spondyl][Hacker News]]
 - [[https://instagram.com/sentryism][Instagram]]
-- [[https://linkedin.com/in/marcus-crane][LinkedIn]]
+- [[https://linkedin.com/in/marcus-crane][Linkedin]]
 - [[https://lobste.rs/u/sentry][Lobsters]]
-- [[https://steamcommunity.com/id/sandtree/][Steam]]
+- [[https://steamcommunity.com/id/sandtree][Steam]]
 - [[https://twitter.com/sentreh][Twitter]]
 
 Finally, there's always trusty old email which is my first name @ this domain.
