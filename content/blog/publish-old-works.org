@@ -4,7 +4,7 @@ tags: ["rambling", "portfolio"]
 title: "You should publish your older works"
 ---
 
-If you haven't seen it, [Ira Glass on Storytelling 3](https://www.youtube.com/watch?v=X2wLP0izeJE) is a video worth watching.
+If you haven't seen it, [[https://www.youtube.com/watch?v=X2wLP0izeJE][Ira Glass on Storytelling 3]] is a video worth watching.
 
 Just the first few minutes is enough.
 
