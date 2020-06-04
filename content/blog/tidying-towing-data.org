@@ -15,19 +15,19 @@ That and I'm going to forget how to do any of this if I don't explain it step by
 
 {{< contents >}}
 
-## Getting the data
+* Getting the data
 
 This is the first, and sometimes hardest step. My advice is to be as explicit as is reasonable when requesting the data. It's helpful to be particular about what metadata you're after, and it'll help you if you request to receive it in a machine readable format.
 
 In my case, I received an XLSX file. Not as ideal as a CSV or GeoJSON but also better than receiving a PDF!
 
-You can see my original request and even get a copy of the data [here](https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts#incoming-39588).
+You can see my original request and even get a copy of the data [[https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts#incoming-39588][here]].
 
-## Parsing the data
+* Parsing the data
 
 First, we need to see what we've actually got to work with and then we can parse it into a nicer format.
 
-```shell
+#+begin_src shell
 > ls
 Marcus Aug 2016 Jul 2019.xlsx
 > mv Marcus\ Aug\ 2016\ Jul\ 2019.xlsx towing.xlsx
@@ -39,25 +39,25 @@ P!??@?6??[Content_Types].xml ??(??YMo?@?W???Z?eM?&?C??m??R??+??YR??]/?Q"?)s?w?{?
                          ?_rels/.rels ??(????N?0
                                                 ??H?C???n ???]&??*`????Q?A??$?F??؟???)??8??|h?*??r)?j6???|)W?R???`ϖ?<Q????j?L=?4???\lP???=?Ѐ!cG6u*????58???<???COq0J?????<??yٛ??մg}??3+??H֐Y9??|l?5?D_STҰ~J??\??%?'?\N???0PD?A??y?O???r?刦??t???w???????c?<,???F?ɷ,>??P!ωkE%??xl/_rels/workbook.xml.rels ??(??XMo?0?#?"߉?3?E????z?"q??&??C?
           ??Z??
-```
+#+end_src
 
-Well, that's not going to work! We need to use some tools that can actually parse this data. For that, I'm going to use [Pandas](https://pandas.pydata.org/), a data analysis library for Python.
+Well, that's not going to work! We need to use some tools that can actually parse this data. For that, I'm going to use [[https://pandas.pydata.org/][Pandas]], a data analysis library for Python.
 
 This blog post isn't intended to teach you how to use Pandas, but I'll be specific enough that you should be able to follow along with the provided dataset yourself.
 
-Pandas has support for importing Excel spreadsheets by using the [xlrd](https://xlrd.readthedocs.io/en/latest/) library so let's install both. We'll also fetch sqlite3 which we'll use near the end:
+Pandas has support for importing Excel spreadsheets by using the [[https://xlrd.readthedocs.io/en/latest/][xlrd]] library so let's install both. We'll also fetch sqlite3 which we'll use near the end:
 
-```shell
+#+begin_src shell
 > pip install pandas xlrd sqlite3
 Collecting pandas
 [...]
 Installing collected packages: numpy, pandas, xlrd
 Successfully installed numpy-1.18.1 pandas-0.25.3 xlrd-1.2.0
-```
+#+end_src
 
 Time to import our Excel spreadsheet into a Pandas dataframe but there's a bit of a catch first:
 
-```python
+#+begin_src python
 > python
 Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
@@ -66,13 +66,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> workbook = pd.ExcelFile('~/Downloads/towing.xlsx')
 >>> workbook.sheet_names
 ['Aug 16', 'Sep 16', 'Oct 16', 'Nov 16', 'Dec 16', 'Jan 17', 'Feb 17', 'Mar 17', 'Apr 17', 'May 17', 'Jun 17', 'Jul 17', 'Aug 17', 'Sep 17', 'Oct 17', 'Nov 17', 'Dec 17', 'Jan 18', 'Feb 18', 'Mar 18', 'Apr 18', 'May 18', 'Jun 18', 'Jul 18', 'Aug 18', 'Sep 18', 'Oct 18', 'Nov 18', 'Dec 18', 'Jan 19', 'Feb 19', 'Mar 19', 'Apr 19', 'May 19', 'Jun 19', 'Jul 19']
-```
+#+end_src
 
 Our workbook is not one big sheet but in fact, one sheet per month. For those of you who don't use Excel (ie me), sheets are those tabs at the bottom of the application. Usually you'll just see "Sheet 1" when viewing a blank spreadsheet.
 
 We still need to parse each sheet, one by one, in order to get a complete collection of data. To do so, we'll just iterate over each sheet and append it to an initially empty data frame:
 
-```python
+#+begin_src python
 > python
 Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
@@ -99,17 +99,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 1758        NaN                   NaN  ...        NaN         NaN
 
 [64160 rows x 11 columns]
-```
+#+end_src
 
 There we go, all 64,000 rows in one nice data frame we can reason about!
 
 We've still got a long way to go however as we don't have a nice index, nor do we even have anywhere remotely consistent data.
 
-## Cleaning up the data
+* Cleaning up the data
 
 First, let's have a closer look at our data by printing the first 25 rows:
 
-```python
+#+begin_src python
 >>> df[0:25]
    Unnamed: 0        Date and Time   ... Unnamed: 9 Unnamed: 10
 0         NaN                   NaN  ...        NaN         NaN
@@ -139,11 +139,11 @@ First, let's have a closer look at our data by printing the first 25 rows:
 24        NaN            04:13 p.m.  ...        NaN         NaN
 
 [25 rows x 11 columns]
-```
+#+end_src
 
 Focusing on the date column, there's a pattern that sticks out. The data is actually grouped visually by day like so:
 
-```text
+#begin_src
 [empty cell]
 Monday, 01 Aug 2016
 [empty cell]
@@ -154,11 +154,11 @@ Monday, 01 Aug 2016
 Tuesday, 02 Aug 2016
 [empty cell]
 02:04 a.m.
-```
+#+end_src
 
 There's no consistency from a machine readable point of view so we'll have to clean it up into something more consistent manually. Before we do that, let's get some column headings.
 
-```python
+#+begin_src python
 > from pprint import pprint
 > pprint(list(df.columns))
 ['Unnamed: 0',
@@ -172,13 +172,13 @@ There's no consistency from a machine readable point of view so we'll have to cl
  'Unnamed: 8',
  'Unnamed: 9',
  'Unnamed: 10']
-```
+#+end_src
 
 That's a lot of columns.
 
-After a quick skim of the dataset, we can see that only `Unnamed: 5` is used. We'll discard the unused columns and then clean up the remaining data:
+After a quick skim of the dataset, we can see that only ~Unnamed: 5~ is used. We'll discard the unused columns and then clean up the remaining data:
 
-```python
+#+begin_src python
 > df = df.drop(columns=['Unnamed: 0', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'])
 >>> df
             Date and Time          Vehicle   ...       Towed Too  Unnamed: 5
@@ -193,11 +193,11 @@ After a quick skim of the dataset, we can see that only `Unnamed: 5` is used. We
 1756                   NaN              NaN  ...              NaN      Romeo
 1757            09:05 p.m.   TOYOTA, ESTIMA  ...     7 FLAVELL DR      Romeo
 1758                   NaN              NaN  ...       Total    1      Romeo
-```
+#+end_src
 
 It's starting to look more reasonable. Now let's assign some appropriate names. You can't quite tell from the code snippets but there's actually some rogue whitespace in the columns so I opened to rename all of them for consistency:
 
-```python
+#+begin_src python
 > df = df.rename(columns={'Unnamed: 5': 'Suburb', 'Date and Time ': 'Date', 'Towed From ': 'Origin', 'Towed Too ': 'Destination', 'Vehicle ': 'Vehicle'})
 >>> df
                       Date          Vehicle  ...      Destination Suburb
@@ -212,11 +212,11 @@ It's starting to look more reasonable. Now let's assign some appropriate names. 
 1756                   NaN              NaN  ...              NaN  Romeo
 1757            09:05 p.m.   TOYOTA, ESTIMA  ...     7 FLAVELL DR  Romeo
 1758                   NaN              NaN  ...       Total    1  Romeo
-```
+#+end_src
 
 Even better! We're almost in a position to start parsing our dates into valid timestamps.
 
-## Performing some data fixes
+* Performing some data fixes
 
 Here's the part that was the most difficult, which I've already done for you thankfully.
 
@@ -224,7 +224,7 @@ Basically, I wrote some code to parse the dates into timestamps and it would kee
 
 Here are the following data fixes, provided so you can follow along entirely with my process:
 
-```python
+#+begin_src python
 df = df.replace('Sunda, 28 Aug 2016', 'Sunday, 28 Aug 2016')
 df = df.replace('Satruday, 06 Jan 2017', 'Saturday, 06 Jan 2017')
 df = df.replace('Tuesday, 28th Nov ', 'Tuesday, 28 Nov 2017')
@@ -235,9 +235,9 @@ df = df.replace('4.37 p.m.', '4:37pm')
 df = df.replace('17:01 p.m', '5:01pm')
 df = df.replace('4.22 p.m.', '4:22pm')
 df = df.replace('4.32 p.m.', '4:32pm')
-```
+#+end_src
 
-## Transforming dates into valid timestamps
+* Transforming dates into valid timestamps
 
 Now that our data is in much better shape, we can tackle arguably the part that really got me thinking. It wasn't difficult in a blood, sweat and tears kind of way but was definitely a stretch.
 
@@ -245,7 +245,7 @@ Before I walk you through what I settled for, I'll caveat that there may be more
 
 Since our date column includes pseudo-headings, I realised I can just pass over the whole column once.
 
-If the word `day` is in a column (as it would be in every heading), we can use that cell to determine the date we've gotten up to. Any time below that cell implicitly refers to that date so we can merge it into the following cells.
+If the word ~day~ is in a column (as it would be in every heading), we can use that cell to determine the date we've gotten up to. Any time below that cell implicitly refers to that date so we can merge it into the following cells.
 
 Here's a visual example of what I mean:
 
@@ -260,11 +260,11 @@ Here's a visual example of what I mean:
 | 4:00 a.m.                        | Tuesday, 23 Jul 2019 4:00 a.m.  |
 | 9:42 p.m.                        | Tuesday 23 Jul 2019 9:42 p.m.  |
 
-The goal here isn't to get super accurate timestamps just yet, but rather something good enough that is consistent and therefore parsable. The rest of the mess, such as those `NaN` are trivial to get rid of later.
+The goal here isn't to get super accurate timestamps just yet, but rather something good enough that is consistent and therefore parsable. The rest of the mess, such as those ~NaN~ are trivial to get rid of later.
 
 Anyway, here's the shortest possible version of the code required that I came up with:
 
-```python
+#+begin_src python
 >>> current_date = ''
 >>> for idx, entry in enumerate(df['Date']):
 ...     item = str(entry)
@@ -273,11 +273,11 @@ Anyway, here's the shortest possible version of the code required that I came up
 ...     if 'day' not in item and item != 'nan':
 ...             df.iloc[idx]['Date'] = pd.to_datetime(f'{current_date} {item}')
 ...
-```
+#+end_src
 
 It'll take a little bit to run, as it has to iterate over every row but it leaves us with something pretty promising:
 
-```python
+#+begin_src python
 >>> df
                       Date          Vehicle  ...      Destination Suburb
 0                      NaN              NaN  ...              NaN    NaN
@@ -293,11 +293,11 @@ It'll take a little bit to run, as it has to iterate over every row but it leave
 1758                   NaN              NaN  ...       Total    1  Romeo
 
 [64160 rows x 5 columns]
-```
+#+end_src
 
-Ok, I lied earlier. We use the `pd.to_datetime` function earlier to generate entirely valid timestamps. All that's left is to get rid of those intermediary cells and we should have some fresh data ready to operate on.
+Ok, I lied earlier. We use the ~pd.to_datetime~ function earlier to generate entirely valid timestamps. All that's left is to get rid of those intermediary cells and we should have some fresh data ready to operate on.
 
-```python
+#+begin_src python
 >>> df = df.dropna()
 >>> df[0:25]
                    Date            Vehicle  ...      Destination Suburb
@@ -328,26 +328,26 @@ Ok, I lied earlier. We use the `pd.to_datetime` function earlier to generate ent
 30  2016-08-02 18:54:00      NISSAN NAVARA  ...   230 SYMONDS ST     55
 
 [25 rows x 5 columns]
-```
+#+end_src
 
 Looks good to me!
 
-### Final cleanup
+* Final cleanup
 
 Oh, one last thing. You'll see all of those numbers under the suburb section that don't appear to mean anything. The correspondence that came with the dataset explains what those represent. Let's quickly convert them into something human readable.
 
-```python
+#+begin_src python
 df['Suburb'] = df['Suburb'].replace(55, 'CENTRAL')
 df['Suburb'] = df['Suburb'].replace(66, 'NORTHERN')
 df['Suburb'] = df['Suburb'].replace(77, 'WESTERN')
 df['Suburb'] = df['Suburb'].replace(88, 'SOUTHERN')
 df['Suburb'] = df['Suburb'].replace(99, 'CBD')
 df['Suburb'] = df['Suburb'].replace('Romeo', 'RURAL')
-```
+#+end_src
 
 Here's the final result after all of our hard work beating the dataset into shape:
 
-```python
+#+begin_src python
 >>> df
                      Date           Vehicle  ...            Destination   Suburb
 3     2016-08-01 08:34:00   TOYOTA FUNCARGO  ...         2 PUKEHANA AVE  CENTRAL
@@ -363,7 +363,7 @@ Here's the final result after all of our hard work beating the dataset into shap
 1757  2019-07-23 21:05:00    TOYOTA, ESTIMA  ...           7 FLAVELL DR    RURAL
 
 [49174 rows x 5 columns]
-```
+#+end_src
 
 While we're nowhere near done just yet, I think this is a good place to cap off this post as moving forward, the dataset will shift out of Pandas as we start to translate towing addresses into tangible GPS coordinates. Once we've got coordinates, we can begin plotting this data on a map.
 
@@ -371,15 +371,15 @@ Personally, I learnt a lot about Pandas by going through this whole ordeal. At f
 
 ### Exporting the data
 
-Rather than just leave this data sitting in memory, let's export it into a [SQLite](https://www.sqlite.org/index.html) database so we can play around with it a bit more.
+Rather than just leave this data sitting in memory, let's export it into a [[https://www.sqlite.org/index.html][SQLite]] database so we can play around with it a bit more.
 
-You'll need the `sqlite3` python package installed which I recommended installing near the top of this post.
+You'll need the ~sqlite3~ python package installed which I recommended installing near the top of this post.
 
 We also need to set an index or trying to export the dataset will fail. Not quite sure why but presumably it doesn't know what to do with the default index. I haven't looked into it but we'll just set our timestamps as the new index.
 
 Given that a human is entering this data, I highly doubt any of our timestamps clash. That said, it's always a good idea to choose something truly guaranteed to be unique so consider yourself warned :)
 
-```python
+#+begin_src python
 >>> df = df.set_index('Date')
 >>> df
                               Vehicle          Origin            Destination   Suburb
@@ -397,30 +397,30 @@ Date
 2019-07-23 21:05:00    TOYOTA, ESTIMA    9 FLAVELL DR           7 FLAVELL DR    RURAL
 
 [49174 rows x 4 columns]
-```
+#+end_src
 
 Now we're ready to export it:
 
-```python
+#+begin_src python
 >>> import sqlite3
 >>> with sqlite3.connect('towing.db') as conn:
 ...     df.to_sql('towing', conn)
 ...
-```
+#+end_src
 
-You should now have a file called `towing.db` sitting in the same directory that you opened your Python REPL.
+You should now have a file called ~towing.db~ sitting in the same directory that you opened your Python REPL.
 
-You might want to use a GUI tool like [DB Browser for SQLite](https://sqlitebrowser.org/) to play around with it. You might notice that we've still got some data that isn't quite right and such is the life of data analysis I suppose. I wouldn't know since I'm just a hobbyist, hahaha.
+You might want to use a GUI tool like [[https://sqlitebrowser.org/][DB Browser for SQLite]] to play around with it. You might notice that we've still got some data that isn't quite right and such is the life of data analysis I suppose. I wouldn't know since I'm just a hobbyist, hahaha.
 
 Let's run a sample query to see the top 5 cars just to cap this post off once and for all:
 
-```sql
+#+begin_src sql
 SELECT vehicle, COUNT(*) AS count
 FROM towing
 GROUP BY vehicle
 ORDER BY count DEST
 LIMIT 5
-```
+#+end_src
 
 We get the following table back:
 
