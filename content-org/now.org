@@ -1,0 +1,19 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: /
+
+* Now
+:PROPERTIES:
+:EXPORT_FILE_NAME: /now
+:END:
+
+** Quarantine life
+
+New Zealand is nearly down to alert level 1
+
+** Emacs
+
+Porting my site to org mode nice
+
+** Running
+
+Hah
