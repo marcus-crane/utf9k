@@ -1,9 +1,9 @@
+#+title: Blog
 #+HUGO_BASE_DIR: ../../
 #+HUGO_SECTION: blog
 #+OPTIONS: toc:2
 
 * Blog
-
 ** Setting up Emacs inside of a WSL2 distribution :emacs:linux:unix:windows:wsl:
 :PROPERTIES:
 :EXPORT_FILE_NAME: emacs-wsl2-install
@@ -207,7 +207,7 @@ Happy text manipulation!
 
 P.S. I wrote this entire post in Doom Emacs, launched from WSL 2 on my home desktop and it works like a charm :)
 
-** Data hoarding seems like a large mental overhead :data:overhead:off the cuff:
+** Data hoarding seems like a large mental overhead :data:overhead:off_the_cuff:
 :PROPERTIES:
 :EXPORT_FILE_NAME: mental-overhead-of-data
 :EXPORT_DATE: 2020-05-12

@@ -1,3 +1,4 @@
+#+title: Now
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: /
 
