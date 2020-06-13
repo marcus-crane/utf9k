@@ -1,7 +1,8 @@
 +++
-title = "Data hoarding seems like a large mental overhead :data:overhead:off the cuff:"
+title = "Data hoarding seems like a large mental overhead"
 author = ["Marcus Crane"]
 date = 2020-05-12
+tags = ["data", "overhead", "off-the-cuff"]
 draft = false
 +++
 
