@@ -1,0 +1,6 @@
+#+setupfile: ./hugo_setup.org
+#+title: The Inner Game of Tennis
+#+hugo_slug: the_inner_game_of_tennis
+#+roam_tag: book
+
+A book I read recently
