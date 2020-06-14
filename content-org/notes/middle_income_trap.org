@@ -1,4 +1,4 @@
-#+setupfile: ./hugo_setup.org
 #+title: Middle Income Trap
+#+setupfile: ./hugo_setup.org
 #+hugo_slug: middle_income_trap
 #+roam_tag:
