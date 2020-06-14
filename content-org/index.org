@@ -1,0 +1,22 @@
+#+title: Home
+#+hugo_base_dir: ../
+#+hugo_section: /
+
+* Home
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:END:
+
+Hey there
+
+I'm [[/about][Marcus Crane]], and this is my personal site
+
+A lot of things are being moved around at the moment but you can still read my content
+
+Blog posts live [[/blog][here]] and I've started uploading various notes [[/notes][here]]
+
+The notes are a bit of a mess though so don't expect to gain too much from them
+
+This site is currently powered by ~org-mode~ so if you're interested, the source code lives [[https://github.com/marcus-crane/utf9k][here]]
+
+Lastly, I've got a [[https://nownownow.com/about][now]] page that you can find [[/now][here]]
