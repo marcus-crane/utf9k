@@ -3,14 +3,8 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="bg-gray-800">
-  <div class="content font-sans text-gray-500">
-    <div class="w-full max-w-screen-xl relative mx-auto px-6 pt-10 pb-20 md:pb-14">
-      <div class="px-4 md:px-6 max-w-2xl md:max-w-3xl mx-auto">
-        {{ block "main" . }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
+<body>
+  {{ block "main" . }}
+  {{ end }}
 </body>
 </html>
