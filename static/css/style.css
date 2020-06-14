@@ -33,3 +33,17 @@ body {
     margin: 1.1em 0;
     padding: 0 0 0 15px;
 }
+
+.content-body img {
+    height: auto;
+    max-width: 100%;
+}
+
+.content-body pre {
+    overflow-x: scroll;
+}
+
+.content-body pre code {
+    display: inline-block;
+    padding: 1rem;
+}
