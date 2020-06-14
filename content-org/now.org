@@ -9,12 +9,8 @@
 
 ** Quarantine life
 
-New Zealand is nearly down to alert level 1
+As far as COVID-19 goes, New Zealand is fully back to normal!
 
 ** Emacs
 
-Porting my site to org mode nice
-
-** Running
-
-Hah
+I've been using Emacs daily for over a month now and now I'm even porting my site to use org-mode files
