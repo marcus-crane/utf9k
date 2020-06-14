@@ -1,0 +1,33 @@
+#+title: Elixir
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: elixir
+#+roam_tag: development prog_languages
+
+* View methods associated with an object
+
+Let's say we have the following module
+
+#+begin_src elixir
+defmodule Reminder do
+  def alarm(time, day) do
+  end
+end
+#+end_src
+
+We can check what methods are on it by providing a :functions atom
+
+#+begin_src
+Reminder.__info__(:functions)
+# [alarm: 2]
+#+end_src
+
+As we can see, this Reminder module has an alarm method, with an arity of 2.
+
+* Output help documentation for a module
+
+The iex interpreter includes a function called h which can be used to show documentation for a module
+
+#+begin_src elixir
+h String
+# h/1
+#+end_src
