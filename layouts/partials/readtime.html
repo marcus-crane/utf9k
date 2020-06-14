@@ -1,7 +1,0 @@
-{{ if gt .ReadingTime 1 }}
-  {{ .Scratch.Set "readingTime" "minutes" }}
-{{ else }}
-  {{ .Scratch.Set "readingTime" "minute" }}
-{{ end }}
-
-<span id="post-length">~{{ .ReadingTime }} {{ .Scratch.Get "readingTime" }} long</span>

@@ -1,0 +1,35 @@
+body {
+    font-family: -apple-system, system-ui,
+                 "Helvetica Neue", Helvetica,
+                 Arial, sans-serif;
+}
+
+.content {
+    text-rendering: optimizeLegibility;
+}
+
+.content-inner {
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 40px 20px;
+}
+
+.content-header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 .2em 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.content-body {
+    font-size: 1.15em;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.content-body blockquote {
+    border-left: 4px solid black;
+    margin: 1.1em 0;
+    padding: 0 0 0 15px;
+}
