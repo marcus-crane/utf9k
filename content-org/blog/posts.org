@@ -4,7 +4,7 @@
 #+OPTIONS: toc:2
 
 * Blog
-** Creatively hacking Jenkins to preview pull request artifacts :jenkins:
+** TODO Creatively hacking Jenkins to preview pull request artifacts :jenkins:
 :PROPERTIES:
 :EXPORT_FILE_NAME: jenkins-pull-requests
 :EXPORT_DATE: 2020-06-15
