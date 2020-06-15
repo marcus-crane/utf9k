@@ -64,7 +64,6 @@ My hard drive will end up looking as follows once I've set it up:
 
 | Size | Purpose        | Location |
 |------|----------------|----------|
-| ---- | -------------- | -------- |
 | 500M | Boot Sector    | /boot    |
 | 20G  | System Root    | /        |
 | 8G   | Swap Space     | N/A      |
@@ -116,7 +115,6 @@ Now that are partitions are set up, running `fdisk -l` again should show the fol
 
 | Device    | Size   | Type             |
 |-----------|--------|------------------|
-| --------- | ------ | ---------------- |
 | /dev/sda1 | 499M   | EFI system       |
 | /dev/sda2 | 20G    | Linux filesystem |
 | /dev/sda3 | 8G     | Linux swap       |
@@ -156,7 +154,6 @@ Just as a reminder, here's where we want our partitions to end up
 
 | Device    | Format | Location |
 |-----------|--------|----------|
-| --------- | ------ | -------- |
 | /dev/sda1 | ESP    | /boot    |
 | /dev/sda2 | ext4   | /        |
 | /dev/sda4 | ext4   | /home    |
@@ -237,7 +234,6 @@ I need the following bits:
 
 | Package                                                                       | Purpose                                           |
 |-------------------------------------------------------------------------------|---------------------------------------------------|
-| -------                                                                       | -------                                           |
 | [dialog](http://invisible-island.net/dialog/)                                 | A library for console-based UIs like `wifi-menu`  |
 | [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data) | Micro-code updates for Intel CPUs                 |
 | [wpa\_supplicant](https://w1.fi/wpa%5Fsupplicant/)                            | Used to connect to wireless networks (put simply) |
