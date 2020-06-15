@@ -1,7 +1,7 @@
 +++
 title = "Elixir"
 author = ["Marcus Crane"]
-lastmod = 2020-06-14T12:29:03+12:00
+lastmod = 2020-06-15T22:39:51+12:00
 slug = "elixir"
 draft = false
 +++
@@ -19,7 +19,7 @@ end
 
 We can check what methods are on it by providing a :functions atom
 
-```nil
+```elixir
 Reminder.__info__(:functions)
 # [alarm: 2]
 ```
