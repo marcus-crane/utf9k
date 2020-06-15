@@ -8,6 +8,10 @@
 
 ** 2020
 *** June
+**** 15th
+
+- Finally completed a huge effort to port utf9k to be fully powered by orgmode. In particular, all of the posts you see on this site now exist within one massive file called ~posts.org~. Surprisingly, it actually makes editing more convenient than having to jump around a bunch of files!
+
 **** 13th
 - Translated links and code comments within CHANGELOG to valid org-mode equivalents. Besides the actual blog posts which need a review, that should be the last of the static pages fully ported over
 *** May
