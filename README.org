@@ -1,28 +1,19 @@
 * utf9k
 
-This is my personal website, which is powered by [[https://gohugo.io/][Hugo]], [[https://tailwindcss.com/][Tailwind]] and [[https://postcss.org/][PostCSS]]
+This is my personal website, which is powered by [[https://gohugo.io/][Hugo]], [[https://orgmode.org/][orgmode]] and [[https://ox-hugo.scripter.co/][ox-hugo]]
 
 ** Getting setup
 
-Some prerequisites:
-
-- [[https://nodejs.org/en/download/][Node]]
-- [[https://yarnpkg.com/getting-started/install][Yarn]]
-- [[https://golang.org/doc/install][Go]]
-- [[https://gohugo.io/getting-started/quick-start/][Hugo]]
-
-If you're using a package manager (apt-get, homebrew), you can probably just install Hugo which will pull in golang along with it.
-
-Once that's all done, you shouldn't need to do anything besides a `yarn install` followed by a `yarn start` / `hugo serve -D`
+Assuming you have golang and Hugo installed, you should only need to run ~hugo serve~ to start previewing the site
 
 ** Layout
 
-All of the CSS assets are stored in ~/assets/css~ and get bundled by Hugo at build time. It pulls in Tailwind's CSS NPM package as well as some general utilities like ~autoprefixer~.
+Pages and posts live in ~content-org~ and are generated on the fly into the markdown files you see in ~content~
 
-Markdown content (posts, pages etc) are stored in ~/content~
+Following the preferred convention for ~ox-hugo~, and mainly to try something new, all of my blog posts exist in ~content-org/blog/posts.org~. Yes, it's one massive file, although I use orgmode to navigate around it quicker than having multiple small files.
 
 HTML templates live in ~/layouts~
 
-Images and other static content lives in ~/static~
+Images and other static content live in ~/static~
 
 Deployment is handled automatically by [[https://www.netlify.com/][Netlify]]
