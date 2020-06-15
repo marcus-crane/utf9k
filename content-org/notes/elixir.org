@@ -16,7 +16,7 @@ end
 
 We can check what methods are on it by providing a :functions atom
 
-#+begin_src
+#+begin_src elixir
 Reminder.__info__(:functions)
 # [alarm: 2]
 #+end_src
