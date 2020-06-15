@@ -3,7 +3,7 @@ title = "Creatively hacking Jenkins to preview pull request artifacts"
 author = ["Marcus Crane"]
 date = 2020-06-15
 tags = ["jenkins"]
-draft = false
+draft = true
 +++
 
 <div class="ox-hugo-toc toc">

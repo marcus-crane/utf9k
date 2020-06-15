@@ -1,6 +1,6 @@
 baseurl: "https://utf9k.net/"
 languageCode: "en-us"
-buildFuture: true
+buildFuture: false
 
 params:
   author: "Marcus Crane"
@@ -8,21 +8,6 @@ params:
   contentTypeName: "blog"
   siteName: "utf9k"
   paginate: 8
-
-menu:
-  main:
-  - identifier: about
-    name: About
-    url: /about
-    weight: 1
-  - identifier: now
-    name: Now
-    url: /now
-    weight: 2
-  - identifier: rss
-    name: RSS
-    url: /index.xml
-    weight: 100
 
 markup:
   goldmark:
