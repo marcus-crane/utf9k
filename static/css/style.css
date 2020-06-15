@@ -47,3 +47,8 @@ body {
     display: inline-block;
     padding: 1rem;
 }
+
+.content-body td {
+    border: 1px solid black;
+    padding: 0;
+}
