@@ -1,18 +1,43 @@
----
-date: "2017-12-24"
-tags: ["arch", "guide", "linux"]
-title: "Installing Arch Linux on my Intel NUC"
----
++++
+title = "Installing Arch Linux on my Intel NUC"
+author = ["Marcus Crane"]
+date = 2017-12-24
+tags = ["arch", "guide", "linux"]
+draft = false
++++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [Getting online](#getting-online)
+- [Setting up your hard drive](#setting-up-your-hard-drive)
+- [Partitioning](#partitioning)
+- [Making file systems](#making-file-systems)
+- [Mounting our new file systems](#mounting-our-new-file-systems)
+- [Installing base packages](#installing-base-packages)
+- [Set up bash](#set-up-bash)
+- [Updates and other dependencies (optional)](#updates-and-other-dependencies--optional)
+- [Generating locale](#generating-locale)
+- [Timezone](#timezone)
+- [Setting hardware clock](#setting-hardware-clock)
+- [Hostname setup](#hostname-setup)
+- [Set a root password](#set-a-root-password)
+- [Installing a boot manager](#installing-a-boot-manager)
+- [Configuring the boot manager](#configuring-the-boot-manager)
+
+</div>
+<!--endtoc-->
 
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
 
-*2019 Update*: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
+**2019 Update**: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
 
-{{< contents >}}
 
-## Getting online
+## Getting online {#getting-online}
 
 As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll start by getting online. You can do this graphically by running `wifi-menu`.
 
@@ -22,7 +47,8 @@ wifi-menu
 
 Once you've set up a profile, you'll see a new entry when using the `ifconfig` command and you can confirm you're online with `ping archlinux.org -c 3`.
 
-## Setting up your hard drive
+
+## Setting up your hard drive {#setting-up-your-hard-drive}
 
 Personally, I wouldn't, and probably couldn't (yet) install Arch Linux as a dual boot partition. That is, alongside another operating system such as Windows or macOS. You might like to and that's great but this isn't the guide for you :)
 
@@ -37,19 +63,20 @@ You may see a few. In my case, my hard drive has a few `/dev/sda<number>` entrie
 My hard drive will end up looking as follows once I've set it up:
 
 | Size | Purpose        | Location |
-| ---- | -------------- | -------- |
+|------|----------------|----------|
 | 500M | Boot Sector    | /boot    |
-|  20G | System Root    | /        |
-|   8G | Swap Space     | N/A      |
-| 437G | Home Directory | /home |
+| 20G  | System Root    | /        |
+| 8G   | Swap Space     | N/A      |
+| 437G | Home Directory | /home    |
 
-I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) BIOS  so we'll be using [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table) for our partition table.
+I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified%5FExtensible%5FFirmware%5FInterface) BIOS  so we'll be using [GPT](https://en.wikipedia.org/wiki/GUID%5FPartition%5FTable) for our partition table.
 
-The following uses [Parted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
+The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
 
-**NOTE**: The following WILL wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+****NOTE****: The following WILL wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
 
-## Partitioning
+
+## Partitioning {#partitioning}
 
 ```bash
 # Launched parted, passing our hard drive as an argument
@@ -87,13 +114,14 @@ quit
 Now that are partitions are set up, running `fdisk -l` again should show the following:
 
 | Device    | Size   | Type             |
-| --------- | ------ | ---------------- |
+|-----------|--------|------------------|
 | /dev/sda1 | 499M   | EFI system       |
-| /dev/sda2 |  20G   | Linux filesystem |
-| /dev/sda3 |   8G   | Linux swap       |
+| /dev/sda2 | 20G    | Linux filesystem |
+| /dev/sda3 | 8G     | Linux swap       |
 | /dev/sda4 | 437.3G | Linux filesystem |
 
-## Making file systems
+
+## Making file systems {#making-file-systems}
 
 We don't need any utilites to create our file systems, we can just do 'em straight outta the box like so:
 
@@ -119,12 +147,13 @@ mkfs.ext4 /dev/sda4
 
 Now that our hard drive is completely set up, we're ready to mount our file systems.
 
-## Mounting our new file systems
+
+## Mounting our new file systems {#mounting-our-new-file-systems}
 
 Just as a reminder, here's where we want our partitions to end up
 
 | Device    | Format | Location |
-| --------- | ------ | -------- |
+|-----------|--------|----------|
 | /dev/sda1 | ESP    | /boot    |
 | /dev/sda2 | ext4   | /        |
 | /dev/sda4 | ext4   | /home    |
@@ -152,7 +181,8 @@ mount /dev/sda4 /mnt/home
 
 Nice! We're completely done and can start to actually install and configure Arch Linux.
 
-## Installing base packages
+
+## Installing base packages {#installing-base-packages}
 
 Now we need to download and install the base packages for Arch Linux to our `/mnt` which will becomes our root (`/`) later on.
 
@@ -168,17 +198,18 @@ The script also runs the `mkinitcpio` bash script which you can learn more about
 
 This entire process may take a few minutes so feel free to read ahead while you wait.
 
-## Set up bash
+
+## Set up bash {#set-up-bash}
 
 With Arch Linux installed, we can finally move off of our live USB and start a bash process to set up our freshly initialised system after 2 more quick steps
 
-Step 1 is generating a [file systems table](http://www.linfo.org/etc_fstab.html), referred to as `fstab` going forward. This is done so that all devices (/dev/sdaX) specificied in the file are mounted automatically on startup.
+Step 1 is generating a [file systems table](http://www.linfo.org/etc%5Ffstab.html), referred to as `fstab` going forward. This is done so that all devices (/dev/sdaX) specificied in the file are mounted automatically on startup.
 
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-The `-U` flag denotes that we want to identify our devices using [UUIDs](https://en.wikipedia.org/wiki/Universally_unique_identifier), instead of labels, as noted [here](https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in#L86).
+The `-U` flag denotes that we want to identify our devices using [UUIDs](https://en.wikipedia.org/wiki/Universally%5Funique%5Fidentifier), instead of labels, as noted [here](https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in#L86).
 
 Step 2 is even quicker!
 
@@ -192,7 +223,8 @@ arch-chroot /mnt
 
 Huzzah! We're finally in our new system but will it boot? Not quite yet and we've still a lot to set up so let's carry on.
 
-## Updates and other dependencies (optional)
+
+## Updates and other dependencies (optional) {#updates-and-other-dependencies--optional}
 
 At this point, I like to run a system upgrade using `pacman -Syu` just in case. As we've just pulled our dependencies minutes ago, it'll likely find nothing but I reckon it feels good, haha.
 
@@ -200,11 +232,11 @@ I also need some extra bits and pieces for later at this point. We couldn't have
 
 I need the following bits:
 
-| Package | Purpose |
-| ------- | ------- |
-| [dialog](http://invisible-island.net/dialog/) | A library for console-based UIs like `wifi-menu` |
-| [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data) | Micro-code updates for Intel CPUs |
-| [wpa_supplicant](https://w1.fi/wpa_supplicant/) | Used to connect to wireless networks (put simply) |
+| Package                                                                       | Purpose                                           |
+|-------------------------------------------------------------------------------|---------------------------------------------------|
+| [dialog](http://invisible-island.net/dialog/)                                 | A library for console-based UIs like `wifi-menu`  |
+| [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data) | Micro-code updates for Intel CPUs                 |
+| [wpa\_supplicant](https://w1.fi/wpa%5Fsupplicant/)                            | Used to connect to wireless networks (put simply) |
 
 That should be everything for now. The other bits (`netctl` and `dhcpcd`) were already installed as part of the `base` group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
 
@@ -212,7 +244,8 @@ Honestly, we don't really need `dialog` as we could just use `netctl` directly b
 
 You might as well also enable `dhcpcd` if you need it for ethernet with `systemctl enable dhcpcd`.
 
-## Generating locale
+
+## Generating locale {#generating-locale}
 
 Popular software often ships in a number of languages but in order to show the correct language, currency and so on, it needs to know where you live. We achieve this by generating and setting a locale.
 
@@ -231,7 +264,8 @@ If done successfully, `echo $LANG` will display your locale.
 
 For reference, the actual `locale-gen` script can be seen [here](https://sourceware.org/git/?p=glibc.git;a=blob;f=localedata/gen-locale.sh;h=39f1475cbc45faaae32728dbfd7cce282c3cdb05;hb=HEAD) as part of [glibc](https://sourceware.org/git/?p=glibc.git;a=summary), the GNU implementation of the C standard library. I always wondered where it was from!
 
-## Timezone
+
+## Timezone {#timezone}
 
 Selecting our timezone is fairly straightforward thanks to an interactive program called `tzselect`. Running it will show a list of continents and oceans. Selecting one will drill down to display countries.
 
@@ -241,7 +275,8 @@ Once you've confirmed the output, it will mention appending the timezone to a fi
 ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 ```
 
-## Setting hardware clock
+
+## Setting hardware clock {#setting-hardware-clock}
 
 The last of our locale related setups is configuring the system clock. To do that, we'll tell our hardware clock to set the system time using the `--hctosys` option. You can read more about `hwclock` and how it differs from system time [here](https://linux.die.net/man/8/hwclock)
 
@@ -249,7 +284,8 @@ The last of our locale related setups is configuring the system clock. To do tha
 hwclock --systohc
 ```
 
-## Hostname setup
+
+## Hostname setup {#hostname-setup}
 
 We like life to be simple (but no simpler) and giving our computer/server a unique name is an important part of that process. For this bit, let's assume we want to name our system `weinerdog` because it sounds silly.
 
@@ -265,9 +301,10 @@ echo 127.0.0.1 localhost weinerdog > /etc/hosts
 
 How quick was that, huh?
 
-## Set a root password
 
-We'll be using this password to login, which I sometimes forget. It _bashould_ be different than the password for the user account we'll be making soon but I'd be lying if I said I have a super secure password. You have bigger problems if you think this writeup will give you top notch security anyway. I'm just here for a usable system!
+## Set a root password {#set-a-root-password}
+
+We'll be using this password to login, which I sometimes forget. It <span class="underline">should</span> be different than the password for the user account we'll be making soon but I'd be lying if I said I have a super secure password. You have bigger problems if you think this writeup will give you top notch security anyway. I'm just here for a usable system!
 
 ```bash
 passwd
@@ -275,7 +312,8 @@ passwd
 
 Just type in your password twice. Not much more to it than that.
 
-## Installing a boot manager
+
+## Installing a boot manager {#installing-a-boot-manager}
 
 We'll be using `systemd-boot` as our EFI boot manager. I couldn't tell you anything about it other than it works and that's good enough.
 
@@ -283,9 +321,10 @@ We'll be using `systemd-boot` as our EFI boot manager. I couldn't tell you anyth
 bootctl --path=/boot install
 ```
 
-The above command copies the `systemd-boot` binary to our EFI System Partition (`/boot`) and adds it as the default EFI application to be loaded as stated [here](https://wiki.archlinux.org/index.php/systemd-boot#EFI_boot).
+The above command copies the `systemd-boot` binary to our EFI System Partition (`/boot`) and adds it as the default EFI application to be loaded as stated [here](https://wiki.archlinux.org/index.php/systemd-boot#EFI%5Fboot).
 
-## Configuring the boot manager
+
+## Configuring the boot manager {#configuring-the-boot-manager}
 
 Now that we have a boot manager, we need to tell it what to boot exactly. We'll create a new `arch.conf` entry using `nano`:
 
@@ -303,7 +342,7 @@ initrd /initramfs-linux.img
 options root=/dev/sda2 rw elevator=deadline quiet splash resume=/dev/sda3 nmi_watchdog=0
 ```
 
-*NOTE*: The line `initrd /intel-ucode.img` *ONLY* applies if you installed the `intel-ucode` package from earlier which anyone with an Intel CPU should do.
+**NOTE**: The line `initrd /intel-ucode.img` **ONLY** applies if you installed the `intel-ucode` package from earlier which anyone with an Intel CPU should do.
 
 As for the options, I couldn't say if you need, or don't need, any of them but it's worked fine for me so far. I'll probably read up on them in depth shortly and update this post as required.
 

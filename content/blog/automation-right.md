@@ -1,24 +1,26 @@
----
-date: "2018-12-03"
-tags: ["automation", "microservices", "twitter"]
-title: "When automation goes horribly right"
----
++++
+title = "When automation goes horribly right"
+author = ["Marcus Crane"]
+date = 2018-12-03
+tags = ["automation", "microservices", "twitter"]
+draft = false
++++
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
 
-Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a [blog post](https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html). There were a bunch of things from quick replies to profile-listed support hours which I'm sure were of some use.
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a [blog post](https://blog.twitter.com/marketing/en%5Fus/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html). There were a bunch of things from quick replies to profile-listed support hours which I'm sure were of some use.
 
 I used the latter but I also enabled "welcome messages": automated replies that would trigger when a "customer" opened your direct messages. In my case, I'm not a business so it was more just some silliness to add to my profile and it confused a few people along the way.
 
-![Someone receiving my automated message](/img/automation-right/confusion-one.png)
+{{< figure src="/img/automation-right/confusion-one.png" >}}
 
 Over time, I'd forget that I had it enabled and then someone else would get caught out by it a few months later
 
-![](/img/automation-right/confusion-two.png)
+{{< figure src="/img/automation-right/confusion-two.png" >}}
 
 and then it kept going at which point it started becoming a bit of a nuisance.
 
-![](/img/automation-right/confusion-three.png)
+{{< figure src="/img/automation-right/confusion-three.png" >}}
 
 At this point, I was particularly annoyed and attempted to turn it off. I clearly remembered that there was a dashboard but do you think I could find it? That would be too easy!
 
@@ -38,7 +40,7 @@ Finally I stumbled onto the Twitter Developer forum and... ah! [I wasn't alone!]
 
 After a bit of confusion, it was cleared up that the Twitter API has a section for "welcome messages" which are these very same automated snippets. Using [twurl](https://github.com/twitter/twurl), a Twitter-modified version of curl, I could view those darn things finally.
 
-![](/img/automation-right/welcome-messages.png)
+{{< figure src="/img/automation-right/welcome-messages.png" >}}
 
 There they were. Sitting within the API the whole time although I'd guess that feature was only documented as part of the recent overhaul of Twitter's developer APIs. Even the original URL, [dashboard.twitter.com](https://dashboard.twitter.com), doesn't resolve anymore which is all the proof I needed that I'd been left out in the cold.
 

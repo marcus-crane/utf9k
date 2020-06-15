@@ -1,0 +1,16 @@
+#+title: Now
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: /
+
+* Now
+:PROPERTIES:
+:EXPORT_FILE_NAME: /now
+:END:
+
+** Quarantine life
+
+As far as COVID-19 goes, New Zealand is fully back to normal!
+
+** Emacs
+
+I've been using Emacs daily for over a month now and now I'm even porting my site to use org-mode files

@@ -1,8 +1,10 @@
----
-date: "2018-02-28"
-tags: ["people"]
-title: "Humans don't come with lore tabs"
----
++++
+title = "Humans don't come with lore tabs"
+author = ["Marcus Crane"]
+date = 2018-02-28
+tags = ["people"]
+draft = false
++++
 
 This post has been a long time coming because I've never really known how to express it. I'm not even sure I can write it properly anyway but I'm going to at least try.
 

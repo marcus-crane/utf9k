@@ -1,0 +1,12 @@
+#+title: Books
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: books
+#+roam_tag: books
+
+* 2019
+- [[file:the_phoenix_project.org][The Phoenix Project]]
+- [[file:the_unicorn_project.org][The Unicorn Project]]
+* 2020
+- [[file:the_information_diet.org][The Information Diet: A Case for Conscious Consumption]]
+- [[file:the_inner_game_of_tennis.org][The Inner Game of Tennis]]
+- [[file:why_i_write.org][Why I Write]]

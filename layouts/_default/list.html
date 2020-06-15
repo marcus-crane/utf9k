@@ -3,14 +3,11 @@
   {{ range .Pages }}
   <li>
     <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>
-    //
+    ~
     <a href="{{ .RelPermalink }}">
       <span>{{ .Title }}</span>
     </a>
     <span class="tag-list">
-    {{ range .Params.tags }}
-    <a class="text-gray-600" href="/tags/{{ . }}">#{{ . }}</a>
-    {{ end }}
     </span>
   </li>
   {{ end }}

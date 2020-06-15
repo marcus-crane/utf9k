@@ -1,8 +1,27 @@
----
-date: "2019-09-26"
-title: "Double checking if an email address exists"
-tags: ["email",  "nslookup", "tip", "telnet"]
----
++++
+title = "Double checking if an email address exists"
+author = ["Marcus Crane"]
+date = 2019-09-26
+tags = ["email", "nslookup", "tip", "telnet"]
+draft = false
++++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [Finding the mail server (macOS / Linux)](#finding-the-mail-server--macos-linux)
+- [Finding the mail server (Windows)](#finding-the-mail-server--windows)
+- [Interrogating/whispering to the mail server](#interrogating-whispering-to-the-mail-server)
+- [Common gotchas](#common-gotchas)
+    - [Blocked IP addresses](#blocked-ip-addresses)
+    - [Misleading success codes](#misleading-success-codes)
+- [What is this handy for?](#what-is-this-handy-for)
+- [Fun fact](#fun-fact)
+
+</div>
+<!--endtoc-->
 
 Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
 
@@ -10,9 +29,10 @@ I'll take you through a recent example where I wanted to email Ian Small, the CE
 
 Anyway, if I had to take a blind guess, ian<at>evernote.com would be a valid email. Well, it is indeed and so that's why I've picked it since it's such an obvious format. For the sake of learning, let's just pretend we're trying to find a valid email from scratch. Naturally, if you have a particular domain you're interested in, just swap out evernote.com for your domain of choice. Going forward however, I'll be using evernote.com.
 
-## Finding the mail server (macOS / Linux)
 
-For macOS and Linux, we'll want to use `nslookup` which should come ready to go as part of your OS/distro of choice. Fire up a terminal and enter `nslookup -q=MX evernote.com` and you should get a bunch of Google domains back like so:
+## Finding the mail server (macOS / Linux) {#finding-the-mail-server--macos-linux}
+
+For macOS and Linux, we'll want to use \`nslookup\` which should come ready to go as part of your OS/distro of choice. Fire up a terminal and enter \`nslookup -q=MX evernote.com\` and you should get a bunch of Google domains back like so:
 
 ```bash
 > nslookup -q=MX evernote.com
@@ -33,13 +53,14 @@ Authoritative answers can be found from:
 
 What we can see here is a list of the different mail servers used by Evernote. In this case, they're using Gmail, likely as part of Google's [GSuite](https://gsuite.google.com/) offering.
 
-Go ahead and copy the highest priority mail server, `aspmx.l.google.com`, to your clipboard as we'll be interrogating it shortly.
+Go ahead and copy the highest priority mail server, \`aspmx.l.google.com\`, to your clipboard as we'll be interrogating it shortly.
 
-## Finding the mail server (Windows)
+
+## Finding the mail server (Windows) {#finding-the-mail-server--windows}
 
 Personally, I'm not much of a Windows development person so I actually had to look up the Windows equivalents.
 
-For Powershell, there's a cmdlet called `Resolve-DnsName` that was surprisingly straight forward to use:
+For Powershell, there's a cmdlet called \`Resolve-DnsName\` that was surprisingly straight forward to use:
 
 ```powershell
 PS C:\Users\marcus.crane> Resolve-DnsName -Type MX evernote.com
@@ -55,9 +76,9 @@ evernote.com                             MX     43200 Answer     aspmx5.googlema
 evernote.com                             MX     43200 Answer     aspmx.l.google.com                        10
 ```
 
-As above, you'll want to copy the mail server with the highest preference, which is `aspmx.l.google.com` in this case.
+As above, you'll want to copy the mail server with the highest preference, which is \`aspmx.l.google.com\` in this case.
 
-If you're a diehard command prompt fan, or just don't like/have access to Powershell, you can also get by using command prompt. It actually has a tool called `nslookup` that comes with two modes: interactive and non-interactive. I couldn't get a one liner to work so instead, we'll just have to settle for the interactive mode.
+If you're a diehard command prompt fan, or just don't like/have access to Powershell, you can also get by using command prompt. It actually has a tool called \`nslookup\` that comes with two modes: interactive and non-interactive. I couldn't get a one liner to work so instead, we'll just have to settle for the interactive mode.
 
 ```bash
 C:\Users\marcus.crane>nslookup
@@ -83,13 +104,14 @@ Once more, `aspmx.l.google.com`, the server with the highest preference is the o
 
 If you want to read more about nslookup for command prompt, I dug up [some documentation](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup) which lives under the section for Windows Server. Let me know if you figure out how to use nslookup in non-interactive mode!
 
-## Interrogating/whispering to the mail server
+
+## Interrogating/whispering to the mail server {#interrogating-whispering-to-the-mail-server}
 
 Ok, got that mail server address handy? Now the party begins because from this point, the commands should be exactly the same across all major platforms with one quick caveat.
 
 Windows users? You'll need to enable `telnet` by searching for "Turn Windows features on or off", ticking `Telnet Client` and restarting to gain access.
 
-Fire up your terminal of choice and enter `telnet aspmx.l.google.com 25`. This is where you'd substitute your own mail server if you were following along at home with a different domain. Still the same port 25 though since we're dealing with SMTP no matter what.
+Fire up your terminal of choice and enter \`telnet aspmx.l.google.com 25\`. This is where you'd substitute your own mail server if you were following along at home with a different domain. Still the same port 25 though since we're dealing with SMTP no matter what.
 
 ```bash
 > telnet aspmx.l.google.com 25
@@ -101,7 +123,7 @@ Escape character is '^]'.
 
 There's not much to see besides a 200 code, meaning we've connected successfully. I feel like a lot of servers usually have a nice message like "hi" or "welcome" and I thought Google did too but I guess not.
 
-Our first step is to say hello to the server, which sounds like a joke but it's not. Enter `helo hi` and the server should greet you back like so:
+Our first step is to say hello to the server, which sounds like a joke but it's not. Enter \`helo hi\` and the server should greet you back like so:
 
 ```bash
 > helo hi
@@ -110,7 +132,7 @@ Our first step is to say hello to the server, which sounds like a joke but it's 
 
 I've artificially inserted a prompt here to denote what I've entered but generally, telnet will have no such prompt.
 
-Next, we'll need to say who the message is coming from. You can use your own email, or any email really. I like to use test@example.com because it's a dummy email, but it also comes from a real domain name. If that sounds like news, [IANA](https://www.iana.org) provides example.com as a domain for use in "illustrative documents" like books. Anyway, we provide our identity like so:
+Next, we'll need to say who the message is coming from. You can use your own email, or any email really. I like to use test@example.com because it's a dummy email, but it also comes from a real domain name. If that sounds like news, [IANA](<https://www.iana.org>) provides example.com as a domain for use in "illustrative documents" like books. Anyway, we provide our identity like so:
 
 ```bash
 > mail from: <test@example.com>
@@ -118,7 +140,7 @@ mail from: <test@example.com>
 250 2.1.0 OK b26si1910042pgs.432 - gsmtp
 ```
 
-We see another `250` response code followed by an `OK` which means that the mail server has accepted. If someone went wrong, we'd see a 500 code. I think I've gotten errors on rare occasions where I've used fake domain names so I just use example.com to play it safe.
+We see another `250` response code followed by an \`OK\` which means that the mail server has accepted. If someone went wrong, we'd see a 500 code. I think I've gotten errors on rare occasions where I've used fake domain names so I just use example.com to play it safe.
 
 Lately, and where all our hard work pays off, is providing a recipient. This won't actually send an email, it'll just let us know if the address is real or not.
 
@@ -151,13 +173,15 @@ rcpt to: <i.small@evernote.com>
 250 2.1.5 OK b26si1910042pgs.432 - gsmtp
 ```
 
-The most common formats are probably `first.name`, `f.last` and `flast` but I'm sure you can look up lists of common formats or something.
+The most common formats are probably \`first.name\`, \`f.last\` and \`flast\` but I'm sure you can look up lists of common formats or something.
 
-## Common gotchas
+
+## Common gotchas {#common-gotchas}
 
 The above usually works out for me most of the time but there's a few different things I've noticed along the way that can throw a spanner in the works.
 
-### Blocked IP addresses
+
+### Blocked IP addresses {#blocked-ip-addresses}
 
 This is one issue I came across while writing this post and it's to do with mail servers that refer you to a block list.
 
@@ -179,7 +203,8 @@ I've noticed it with websites that use Microsoft / Outlook primarily where it me
 
 Presumably this is because common home address ranges are blocked, as I imagine most spammers just operate from those same ranges. I don't really have a solution for these cases unfortunately.
 
-### Misleading success codes
+
+### Misleading success codes {#misleading-success-codes}
 
 Some SMTP servers are configured so that every address returns a success code meaning you can't tell what exists and what doesn't
 
@@ -194,7 +219,7 @@ Some SMTP servers are configured so that every address returns a success code me
 250 2.1.5 Recipient ok
 ```
 
-There's not really any way around this other than sending a real email I suppose but you can test for it pretty easily. I like to use two emails, `postmaster` and `not.a.real.user` first as a test to see what they return. By default, the large majority of mail servers, if not all, have a postmaster address by default so you can almost guarantee it exists. Likewise, you'd almost never create an address called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual target address.
+There's not really any way around this other than sending a real email I suppose but you can test for it pretty easily. I like to use two emails, \`postmaster\` and \`not.a.real.user\` first as a test to see what they return. By default, the large majority of mail servers, if not all, have a postmaster address by default so you can almost guarantee it exists. Likewise, you'd almost never create an address called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual target address.
 
 ```bash
 > mail from: <test@example.com>
@@ -210,11 +235,13 @@ There's not really any way around this other than sending a real email I suppose
 250 2.1.5 OK c127si1944876pga.334 - gsmtp
 ```
 
-## What is this handy for?
+
+## What is this handy for? {#what-is-this-handy-for}
 
 I first came across this trick a few years back. I had been talking to someone about a job interview, before I was actually in the tech industry but I... forgot to ask them for their email address. I remembered their name but I didn't know how it was formatted exactly so that's where this trick came in handy. It's useful to have in your back pocket when you want to email a semi-public figure too like the CEO of a company. Just make sure to use it wisely and respectfully. You won't make any friends by being malicious.
 
-## Fun fact
+
+## Fun fact {#fun-fact}
 
 ```bash
 > nslookup -q=MX nintendo.co.uk
