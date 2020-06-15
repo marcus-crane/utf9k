@@ -1,12 +1,26 @@
----
-date: "2019-07-20"
-tags: ["beta", "linux", "windows", "wsl"]
-title: "Fixing a WSL2 VHD conversion issue"
----
++++
+title = "Fixing a WSL2 VHD conversion issue"
+author = ["Marcus Crane"]
+date = 2019-07-20
+tags = ["beta", "linux", "windows", "wsl"]
+draft = false
++++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [The history](#the-history)
+- [The fix](#the-fix)
+
+</div>
+<!--endtoc-->
 
 I recently started running the Windows Insider builds on my desktop so that I could play around with the new Windows Subsystem for Linux but I ran into some trouble. Before I get into the fix, here's a little bit of history
 
-## The history
+
+## The history {#the-history}
 
 For the unfamiliar, it's a way to run Linux applications inside of a Windows environment using a lightweight VM.
 
@@ -16,7 +30,8 @@ The biggest downside was perhaps USB devices, in that there were no drivers to s
 
 Thankfully, this should hopefully be in the past now with the [announcement of WSL 2](https://devblogs.microsoft.com/commandline/announcing-wsl-2), a virtual machine that's supposed to be so light, it's not like those other slow virtual machines you think of.
 
-## The fix
+
+## The fix {#the-fix}
 
 Long story short, I dove in by following the installation instructions and hit a brick wall once I got to the second step.
 
@@ -34,6 +49,6 @@ You'd never know it but your WSL packages live under `%LOCALAPPDATA%/packages/<d
 
 The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under `Right Click -> Properties -> General -> Advanced`, I spotted `Compress contents to save disk space` was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion worked as you'd hope.
 
-![](/img/wsl2-vhd-issue/compressed.png)
+{{< figure src="/img/wsl2-vhd-issue/compressed.png" >}}
 
 So, if you run into this issue, have a poke around your packages and hopefully you'll be on your way to a nice, properly Linux-y home on Windows.

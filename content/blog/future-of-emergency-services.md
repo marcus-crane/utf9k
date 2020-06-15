@@ -1,10 +1,12 @@
----
-date: "2019-03-20"
-tags: ["future", "people"]
-title: "What is the future of emergency services?"
----
++++
+title = "What is the future of emergency services?"
+author = ["Marcus Crane"]
+date = 2019-03-20
+tags = ["future", "people"]
+draft = false
++++
 
-Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [Healthline](https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline) who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.
+Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [Healthline](https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline) who recommended I see either my GP, or [A&E](<https://en.wikipedia.org/wiki/Emergency%5Fdepartment>) within the next 6 hours.
 
 Shortly after I hung up, I had a pain spike bad enough to make me burst into tears. I wasn't getting anywhere clutching my stomach on the floor so I called an ambulance.
 
@@ -26,11 +28,11 @@ Now having said all this, there was actually an announcement this time last year
 
 My second question, and one that I'm not really qualified to answer, is to do with the actual callout rates.
 
-The [St John](https://en.wikipedia.org/wiki/St_John_New_Zealand) Organisation are the primary dispatcher of ambulances in New Zealand, providing emergency services to [nearly 90% of New Zealanders](https://www.stjohn.org.nz/What-we-do/St-John-Ambulance-Services/) according to their own website.
+The [St John](https://en.wikipedia.org/wiki/St%5FJohn%5FNew%5FZealand) Organisation are the primary dispatcher of ambulances in New Zealand, providing emergency services to [nearly 90% of New Zealanders](https://www.stjohn.org.nz/What-we-do/St-John-Ambulance-Services/) according to their own website.
 
 They have a handy [section on response times](https://www.stjohn.org.nz/News--Info/Our-Performance/Response-Times/) which links to the [Ministry of Health's Emergency Ambulance Service national performance reports](https://www.health.govt.nz/new-zealand-health-system/key-health-sector-organisations-and-people/naso-national-ambulance-sector-office/emergency-ambulance-services-eas/performance-quality-and-safety/emergency-ambulance-service-national-performance-reports). Look a bit closer and you'll see "For information about St John’s performance visit the performance section of their web site." which just leads us back to where we started!
 
-Thankfully, their annual reports contain some of the information we're after. Let's take the [2018 Annual report](https://www.stjohn.org.nz/globalassets/documents/publications/annual-report/stj-annual-report_2018_lq.pdf) as an example.
+Thankfully, their annual reports contain some of the information we're after. Let's take the [2018 Annual report](https://www.stjohn.org.nz/globalassets/documents/publications/annual-report/stj-annual-report%5F2018%5Flq.pdf) as an example.
 
 If we jump all the way to Page 50, we can see a breakdown of numbers with 533,669 ambulance emergency calls made. Another line item mentions 480,411 patients treated or transported by ambulance officers. If we were to very roughly assume that 1 call correlated with 1 patient, that would leave 53,258 calls that are never responded to.
 

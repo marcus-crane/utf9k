@@ -1,0 +1,11 @@
+{{ define "main" }}
+<ul class="no-list-style">
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

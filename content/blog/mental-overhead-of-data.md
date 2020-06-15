@@ -1,8 +1,10 @@
----
-date: "2020-05-12"
-title: "Data hoarding seems like a large mental overhead"
-tags: ["data", "mental overheads", "off the cuff"]
----
++++
+title = "Data hoarding seems like a large mental overhead"
+author = ["Marcus Crane"]
+date = 2020-05-12
+tags = ["data", "overhead", "off-the-cuff"]
+draft = false
++++
 
 This isn't a post that I've outlined before hand, or even really considered in any particular depth. I'm just making up this post, and it's structure as I type.
 
@@ -86,7 +88,7 @@ Is just removing something off a list satisfactory? Tell yourself "I'm done with
 
 Perhaps another contributor to all of this is generally using internet tools to track backlogs.
 
-I'm a big fan of [Trakt](https://trakt.tv) for example. No authority says "Thou must finish all movies or shows they intend to watch" but it's hard to not look at a list and wish to complete it.
+I'm a big fan of [Trakt.tv](https://trakt.tv) for example. No authority says "Thou must finish all movies or shows they intend to watch" but it's hard to not look at a list and wish to complete it.
 
 Finishing one list, in one medium alone is essentially impossible in a human lifetime, let alone all mediums you might appreciate.
 

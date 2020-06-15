@@ -1,0 +1,28 @@
+* utf9k
+
+This is my personal website, which is powered by [[https://gohugo.io/][Hugo]], [[https://tailwindcss.com/][Tailwind]] and [[https://postcss.org/][PostCSS]]
+
+** Getting setup
+
+Some prerequisites:
+
+- [[https://nodejs.org/en/download/][Node]]
+- [[https://yarnpkg.com/getting-started/install][Yarn]]
+- [[https://golang.org/doc/install][Go]]
+- [[https://gohugo.io/getting-started/quick-start/][Hugo]]
+
+If you're using a package manager (apt-get, homebrew), you can probably just install Hugo which will pull in golang along with it.
+
+Once that's all done, you shouldn't need to do anything besides a `yarn install` followed by a `yarn start` / `hugo serve -D`
+
+** Layout
+
+All of the CSS assets are stored in ~/assets/css~ and get bundled by Hugo at build time. It pulls in Tailwind's CSS NPM package as well as some general utilities like ~autoprefixer~.
+
+Markdown content (posts, pages etc) are stored in ~/content~
+
+HTML templates live in ~/layouts~
+
+Images and other static content lives in ~/static~
+
+Deployment is handled automatically by [[https://www.netlify.com/][Netlify]]

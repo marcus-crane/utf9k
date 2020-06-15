@@ -1,8 +1,10 @@
----
-date: "2020-02-07"
-tags: ["rambling", "portfolio"]
-title: "You should publish your older works"
----
++++
+title = "You should publish your older works"
+author = ["Marcus Crane"]
+date = 2020-02-07
+tags = ["rambling", "portfolio"]
+draft = false
++++
 
 If you haven't seen it, [Ira Glass on Storytelling 3](https://www.youtube.com/watch?v=X2wLP0izeJE) is a video worth watching.
 
@@ -10,7 +12,7 @@ Just the first few minutes is enough.
 
 I've recommended it a number of times in the last few years, and I'll likely continue to do so for many years to come.
 
-To repeat the premise of the video, Ira describes taste as the gap between what you can accomplish right now, with your current skillset, and what you /know/ is good.
+To repeat the premise of the video, Ira describes taste as the gap between what you can accomplish right now, with your current skillset, and what you _know_ is good.
 
 Your taste may be "killer", as he puts it, but that gap means you recognise your work isn't quite up to what you consider good enough.
 

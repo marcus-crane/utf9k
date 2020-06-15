@@ -1,8 +1,10 @@
----
-date: "2020-01-06"
-tags: ["linux", "git", "github",  "gitlab"]
-title: "Dealing with multiple git hosts"
----
++++
+title = "Dealing with multiple git hosts"
+author = ["Marcus Crane"]
+date = 2020-01-06
+tags = ["linux", "git", "github", "gitlab"]
+draft = false
++++
 
 NOTE: At the time of writing, I was using Gitlab so you'll see references to my dotfiles living there. I've now moved back to Github but kept the references to Gitlab in this post intact.
 
@@ -17,13 +19,13 @@ Let's have a look at a barebones ssh configuration file:
 ```shell
 > cat ~/.ssh/config
 Host github.example.com
-	IdentityFile ~/.ssh/work
+  IdentityFile ~/.ssh/work
 
 Host gitlab.com
-	IdentityFile ~/.ssh/personal
+  IdentityFile ~/.ssh/personal
 
 Host github.com
-	IdentityFile ~/.ssh/personal
+  IdentityFile ~/.ssh/personal
 ```
 
 We've got three different hosts and two different SSH keys.
@@ -83,6 +85,6 @@ If you're getting error messages from your internal git host, you could toggle o
 
 I'm sure there's all sorts of interesting stuff you could do but this post isn't meant to be comprehensive by any means. It's more of a reminder to myself on how to create an ssh config file.
 
-You can see all of the various commands offline by running `man ssh_config`. You can also read them online via the [OpenBSD manual page server](https://man.openbsd.org/ssh_config).
+You can see all of the various commands offline by running `man ssh_config`. You can also read them online via the [OpenBSD manual page server](https://man.openbsd.org/ssh%5Fconfig).
 
 Happy SSHing!

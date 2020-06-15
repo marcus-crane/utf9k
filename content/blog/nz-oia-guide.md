@@ -1,34 +1,52 @@
----
-date: "2018-08-18"
-tags: ["government", "guide", "nz", "oia"]
-title: "A brief guide to OIAs in New Zealand"
----
++++
+title = "A brief guide to OIAs in New Zealand"
+author = ["Marcus Crane"]
+date = 2018-08-18
+tags = ["government", "guide", "nz", "oia"]
+draft = false
++++
 
-I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin) and got me inspired to do some own data wrangling of my own.
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [Some caveats](#some-caveats)
+- [Official Information what?](#official-information-what)
+- [What can I request?](#what-can-i-request)
+- [Where to make a request (the hard, secret way)](#where-to-make-a-request--the-hard-secret-way)
+- [Where to make a request (the easy, public way)](#where-to-make-a-request--the-easy-public-way)
+- [What requests have you done?](#what-requests-have-you-done)
+
+</div>
+<!--endtoc-->
+
+I was browsing [Hacker News](<https://news.ycombinator.com>) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does%5Fexactly%5Fwhat%5Fit%5Fsays%5Fon%5Fthe%5Ftin) and got me inspired to do some own data wrangling of my own.
 
 A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story. They seemed to think it was a neat idea but didn't have a great understanding of the Official Information Act process. I mean, just look at that name! It sounds all legal and fancy but really, it's actually very straight forward (and arguably kinda fun).
 
 I'm no expert myself but I can at least show you where to start. I actually have a yearly FOIA request I make but I'll save that story for the end of this post. Now, onward!
 
-{{< contents >}}
 
-## Some caveats
+## Some caveats {#some-caveats}
 
 It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked #1 in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
 
 It should go without saying that a less transparent, or even citizen-hostile government is going to be an entirely different kettle of fish.
 
-## Official Information what?
+
+## Official Information what? {#official-information-what}
 
 Ah yes, right. Maybe you've heard of the term FOIA or OIA but haven't really got an idea of what it is or where the ability originates from. Is it a service granted from the kindness of our governmental overlords? Hah! Well... it is!
 
-The Official Information Act of 1982, readable [here](http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html), is actually a replacement for the [Official Secrets Act 1951](http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183/). I can't say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I've cut out some bits so it's not just a huge wall of text.
+The Official Information Act of 1982, readable [here](http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html), is actually a replacement for the [Official Secrets Act 1951](http://www.nzlii.org/nz/legis/hist%5Fact/osa19511951n77183/). I can't say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I've cut out some bits so it's not just a huge wall of text.
 
 > 6 (1) If any person, having in his possession or control ... any sketch, plan, model, article, note, document, or information ... which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position ... (a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it ... he commits an offence against this Act. --- Section 6 (1),  New Zealand Official Secrets Act 1951
 
 The idea of information belonging to "the Queen and her advisors" slowly seemed like a bunch of nonsense and as a result, the Official Information Act was born. In short, it allows anyone present in New Zealand (citizen or visitor) to request, surprise, information from any government Minister, department or organization. That's basically all it boils down to.
 
-## What can I request?
+
+## What can I request? {#what-can-i-request}
 
 Generally speaking, there's no limit on what you can request but as with most parts of life, just because you ask doesn't mean you shall receive.
 
@@ -45,7 +63,7 @@ There are some cases where the requestee can deny your request but it has to be 
 > (e) to damage seriously the economy of New Zealand by disclosing prematurely decisions to change or continue government economic or financial policies relating to— (i) exchange rates or the control of overseas exchange transactions: (ii) the regulation of banking or credit: (iii) taxation: (iv) the stability, control, and adjustment of prices of goods and services, rents, and other costs, and rates of wages, salaries, and other incomes: (v) the borrowing of money by the Government of New Zealand: (vi) the entering into of overseas trade agreements.
 
 
-## Where to make a request (the hard, secret way)
+## Where to make a request (the hard, secret way) {#where-to-make-a-request--the-hard-secret-way}
 
 So, you want to learn a thing or two, eh?
 
@@ -53,9 +71,10 @@ You'll need to know two things: who you want to contact (even roughly) and what 
 
 Now that you've got a goal in mind, the next step is just to contact the agency in question. As noted in Part 2, Section 12(1AA)(a), your request can take any form, whether it be a letter, email or even just verbally. Generally, email is the way to go however so just look up the website for your agency of choice and they should have a page for OIA requests.
 
-For example: a Google Search for `ministry of justice oia` brings up their [OIA request page](https://www.justice.govt.nz/about/official-information-act-requests/). It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you'll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it's fairly rare for that to occur.
+For example: a Google Search for \`ministry of justice oia\` brings up their [OIA request page](<https://www.justice.govt.nz/about/official-information-act-requests/>). It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you'll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it's fairly rare for that to occur.
 
-## Where to make a request (the easy, public way)
+
+## Where to make a request (the easy, public way) {#where-to-make-a-request--the-easy-public-way}
 
 There's actually an easier way to make OIA requests thanks to the fine folks over at [FYI.org.nz](https://fyi.org.nz). Simply pick an agency, fill in your request and the rest is sorted from there. Your request is given a page, not unlike a forum thread, and responses show up when they come back. Other users can give you advice if they think the response you got was crap and you'll also be given the option to forward your response to the [Ombudsman](http://www.ombudsman.parliament.nz/) should you choose to dispute it.
 
@@ -63,40 +82,41 @@ The only catch is that all requests are public, so as to cut down on duplicate r
 
 If you'd like to do a project surrounding public utilities, persuing past requests can be a great way to get ideas on what sort of information you could request.
 
-## What requests have you done?
+
+## What requests have you done? {#what-requests-have-you-done}
 
 At this point, the guide itself is over but I have a bit of a fun story that you might like to use as inspiration yourself. Earlier, I mentioned Section 6 which outlines reasons that agencies can reject your requests. There's a few requests on FYI that have been rejected or redacted under those grounds.
 
 It occured to me one day. While I can't even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It's an interesting list, and probably about what I would guess to.
 
-| Request Date | Subject                                                                               | Denied Under     |
-| ------------ | ------------------------------------------------------------------------------------- | ---------------- |
-| 09/02/2016   | Detention and deportation of New Zealanders from Australia                            | 6 (a)            |
-| 30/03/2016   | Prime Minister’s recent visit to Sri Lanka                                            | 6 (a)            |
-| 06/04/2016   | Communications regarding the 2016 US Presidential election                            | 6 (a)            |
-| 25/05/2016   | Britain possibly leaving the European Union                                           | 6 (a)            |
-| 07/06/2016   | Panama Papers                                                                         | 6 (a)            |
-| 16/08/2016   | Decision to extend New Zealand’s training mission to Iraq                             | 6 (a)            |
-| 2016 - 2017  | Intelligence and advice to the NZ government related to the 9⁄11 event                | 6 (a)            |
-| 2016 - 2017  | Record of OIAs from February 2017                                                     | 6                |
-| 2016 - 2017  | Preparation for Trump Administration                                                  | 6 (a), 6 (b)  |
-| 2016 - 2017  | NSS handbook examples of 1080 and domestic incident                                   | 6 (a)            |
-| 2016 - 2017  | The steel industry and trade issues                                                   | 6 (a)            |
-| 2016 - 2017  | Meetings with Australian officials on social security                                 | 6 (a), 6 (b)  |
-| 2016 - 2017  | Interactions with United States Film Industry representatives                         | 6 (a)            |
-| 13/04/2018 | Advice relating to Labour Party summer schools.                                         | 6 (c)            |
-| 18/04/2018 | Weekly reports provided to the Minister for National Security and Intelligence          | 6(a), 6(b)(i)    |
-| 20/04/2018 | Correspondence with the Office of the President of the United States                    | 6(a)             |
-| 18/05/2018 | Information including individual costs of gifts given during visit to Europe and the UK | 6(a)             |
-| 28/06/2018 | Prime Minister's diary                                                                  | 6(a), 6(c), 6(d) |
-| 03/07/2018 | Records of meeting with former President of the United States                           | 6(a)
-| 13/07/2018 | Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence | 6(a), 6(b)(i)
-| 24/07/2018 | Records relating to visit to NZ by former US Secretary of State Hillary Clinton         | 6(a),  6(c)    |
-| 30/07/2018 | Correspondence with the President of the US                                             | 6(a)             |
-| 11/09/2018 | Inquiry into the appointment process for the Deputy Police Commissioner                 | 6(c)             |
-| 03/10/2018 | Phone calls to heads of state                                                           | 6(a)             |
+| Request Date | Subject                                                                                                                                             | Denied Under  |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| 09/02/2016   | Detention and deporation of New Zealanders from Australia                                                                                           | 6(a)          |
+| 30/03/2016   | Prime Minister's recent visit to Sri Lanka                                                                                                          | 6(a)          |
+| 06/04/2016   | Communications regarding the 2016 US Presidential Election                                                                                          | 6(a)          |
+| 25/05/2016   | Britain possibly leaving the European Union                                                                                                         | 6(a)          |
+| 07/06/2016   | Panama Papers                                                                                                                                       | 6(a)          |
+| 16/08/2016   | Decision to extend New Zealand's training mission to Iraq                                                                                           | 6(a)          |
+| 2016 - 2017  | Intelligence and advice to the NZ government related to the 9/11 event                                                                              | 6(a)          |
+| 2016 - 2017  | Record of OIAs from February 2017                                                                                                                   | 6             |
+| 2016 - 2017  | Preparation for Trump Administration                                                                                                                | 6(a), 6(b)    |
+| 2016 - 2017  | NSS handbook examples of 1080 and domestic incident                                                                                                 | 6(a)          |
+| 2016 - 2017  | The steel industry and trade issues                                                                                                                 | 6(a)          |
+| 2016 - 2017  | Meetings with Australian officials on social security                                                                                               | 6(a), 6(b)    |
+| 2016 - 2017  | Interactions with United States Film Industry representatives                                                                                       | 6(a)          |
+| 13/04/2018   | Advice relating to Labour Party summer schools                                                                                                      | 6(c)          |
+| 18/04/2018   | Weekly reports provided to the Minister for National Security and Intelligence                                                                      | 6(a), 6(b)(i) |
+| 20/04/2018   | Correspondence with the Office of the President of the United States                                                                                | 6(a)          |
+| 18/05/2018   | Information including individual costs of gifts given during visit to Europe and the UK                                                             | 6(a)          |
+| 28/06/2018   | Prime Minister's diary                                                                                                                              | 6(a)          |
+| 03/07/2018   | Records of meeting with former President of the United States                                                                                       | 6(a)          |
+| 13/07/2018   | Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence | 6(a), 6(b)(i) |
+| 24/07/2018   | Records relating to visit to NZ by former US Secretary of State Hillary Clinton                                                                     | 6(a), 6(c)    |
+| 30/07/2018   | Correspondence with the President of the United States                                                                                              | 6(a)          |
+| 11/09/2018   | Inquiry into the appointment process for the Deputy Police Commissioner                                                                             | 6(c)          |
+| 03/10/2018   | Phone calls to heads of state                                                                                                                       | 6(a)          |
 
-Sources: [^1][^2]
+Sources:&nbsp;[^1][^2]
 
 A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it's still interesting nonetheless.
 

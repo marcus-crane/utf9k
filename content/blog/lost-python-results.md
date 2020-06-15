@@ -1,8 +1,10 @@
----
-date: "2018-12-12"
-tags: ["python", "snippet"]
-title: "Recovering lost python results in the REPL"
----
++++
+title = "Recovering lost python results in the REPL"
+author = ["Marcus Crane"]
+date = 2018-12-12
+tags = ["python", "snippet"]
+draft = false
++++
 
 I was messing around with some queuing earlier today in order to try out the [Kombu](https://github.com/celery/kombu) library. It works pretty nicely but I goofed up while playing with it.
 

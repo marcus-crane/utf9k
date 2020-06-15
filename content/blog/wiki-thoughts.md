@@ -1,14 +1,16 @@
----
-date: "2017-12-18"
-tags: ["community", "leadership", "wiki"]
-title: "Some thoughts about running a wiki"
----
++++
+title = "Some thoughts about running a wiki"
+author = ["Marcus Crane"]
+date = 2017-12-18
+tags = ["community", "leadership", "wiki"]
+draft = false
++++
 
 Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
 
 It's not huge and it does have its bad apples but for the most part, I've met a few nice people online.
 
-Anyway, that brings me to the [VSFan Wiki](https://vsfan.net/wiki) which I started since there were hardly any English resources, let alone gathered all in one place. I always thought sites like [Serebii.net](http://serebii.net/) were cool as a kid and wished I could make my own site like that.
+Anyway, that brings me to the [VSFan](https://vsfan.net/wiki) which I started since there were hardly any English resources, let alone gathered all in one place. I always thought sites like [Serebii](http://serebii.net/) were cool as a kid and wished I could make my own site like that.
 
 Oh, I should probably mention that VSFan is short for [VisualShower Fan](http://visualshower.com/), in reference to the developers.
 

@@ -1,8 +1,10 @@
----
-date: "2018-02-15"
-tags: ["anxiety", "work"]
-title: "Day Xero"
----
++++
+title = "Day Xero"
+author = ["Marcus Crane"]
+date = 2018-02-15
+tags = ["anxiety", "work"]
+draft = false
++++
 
 Technically it's Day 1 of my new job, a Graduate Site Reliability Engineer at [Xero](https://www.xero.com/nz/) but it hasn't officially started since I'm still on my way to the airport.
 
@@ -19,11 +21,11 @@ and let me tell you, MediaWiki is something... special alright but it's solid!
 
 I'd be silly of course to think that somehow knowing a bunch of frameworks and languages will somehow mean I'm set for life because that's nonsense talk. It's all about knowing picking the right tool for the right job, y'know?
 
-One of the things I'd like to do more this year is reading more about actual software stories. I started reading [Dreaming in Code](https://en.wikipedia.org/wiki/Dreaming_in_Code) earlier this year which seems to be a "what not to do" manual.
+One of the things I'd like to do more this year is reading more about actual software stories. I started reading [Dreaming in Code](https://en.wikipedia.org/wiki/Dreaming%5Fin%5FCode) earlier this year which seems to be a "what not to do" manual.
 
 The author, Scott Rosenberg often veers so far into tangents that half the book feels more like a history lesson than development but that's good! Software won't save you, or the planet, on its own. You gotta focus on the people behind it and getting them working together as a proper team.
 
-This post isn't actually about anything as you can tell. It's the [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld) of posts. Well, that's not true since Seinfeld isn't actually about nothing, it's just a show without drama. It's supposed to just be regular life because your average person doesn't live out [Sex in the City](https://en.wikipedia.org/wiki/Sex_and_the_City) on a daily basis. I've never actually seen that show though, it's just used as a punchline a lot.
+This post isn't actually about anything as you can tell. It's the [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld) of posts. Well, that's not true since Seinfeld isn't actually about nothing, it's just a show without drama. It's supposed to just be regular life because your average person doesn't live out [Sex in the City](https://en.wikipedia.org/wiki/Sex%5Fand%5Fthe%5FCity) on a daily basis. I've never actually seen that show though, it's just used as a punchline a lot.
 
 I'm sure if I look back at today, I'll wonder what I was even worried about. If you think about friends or coworkers, do you even really remember meeting them? It's like as soon as you properly know someone, you just kinda forget any awkward moments before your first interaction. I suppose it's like that with jobs. You just kinda turn up one day and, assuming you try your best, you just kinda slot in nicely as if you'd been there the whole time.
 
@@ -37,4 +39,4 @@ As someone else once told me:
 
 > Adults are just kids who got older
 
-*EDIT: This post was rushed and not planned out at all but I'll be posting it as is for historical reasons*
+**EDIT: This post was rushed and not planned out at all but I'll be posting it as is for historical reasons**

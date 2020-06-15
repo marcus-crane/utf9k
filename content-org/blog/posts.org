@@ -1,0 +1,2079 @@
+#+title: Blog
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: blog
+#+OPTIONS: toc:2
+
+* Blog
+** TODO Creatively hacking Jenkins to preview pull request artifacts :jenkins:
+:PROPERTIES:
+:EXPORT_FILE_NAME: jenkins-pull-requests
+:EXPORT_DATE: 2020-06-15
+:END:
+
+This is a bit of a niche thing that probably isn't helpful to anyone. I also wouldn't recommend you do this at all.
+
+Let me outline the situation that lead us down this route.
+
+*** The scenario
+
+We have a React application in house that uses Okta. For those unfamiliar, it's an [[https://www.okta.com/openid-connect/][OIDC]] provider. In short, you have one account that you can log into everything with.
+
+Anyway, one of the annoying things about it is that when you define your redirect uri, it [[https://tools.ietf.org/html/rfc6749#section-3.1.2][has to be absolute uri]]
+
+That rules out the possibility of having a url like ~https://pr-123.internal.blah~
+
+Well, that leaves things dead in the water.
+
+Hmm, if you think about it, Jenkins builds everything and has an absolute uri ~https://jenkins.internal.blah~
+
+If you could save artifacts, in this case an HTML file that executes Javasript, then naturally that artifact would still have a static, absolute uri you could reference, right?
+
+In our case, it didn't quite work as all of our links look like this: ~<Link to='/home'>Home</Link>~
+
+The problem with that is, clicking any button will jump you to the root of the domain, navigating back into Jenkins itself.
+
+Having said all that, it is possible to use this "solution" to render arbitrary HTML and JS
+
+*** The tl;dr
+
+The short version is that we ended up using [[https://plugins.jenkins.io/htmlpublisher/][HTML Publisher]] to publish our files under the ~Artifacts~ tab of our test build
+
+It was originally designed for HTML reports but can be used for anything I suppose.
+
+*** The prerequsities
+
+First, you'll need to install the [[https://plugins.jenkins.io/htmlpublisher/][HTML Publisher]] plugin.
+
+If you're just rendering plain HTML and CSS, you're good to go as far as setup goes. You can move onto the pipeline configuration step.
+
+If you're rendering inline JS and/or external CSS, you'll need to open up Jenkins CSP headers.
+
+I recommend applying these temporarily using [[https://www.jenkins.io/doc/book/managing/script-console/][Jenkins Script Console]]. To get them to persist, you'll need to bake them into your master node which... I didn't get far enough into this hell exercise to even look into
+
+That aside, two handy routes are the Jenkins wiki page on [[https://wiki.jenkins.io/display/JENKINS/Configuring+Content+Security+Policy][Configuring Content Security Policy]] as well as the MDN page on [[https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP][Content Security Policy]]
+
+In short, the following can be run in the Script Console to set a CSP header:
+
+#+begin_src groovy
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "<csp_header_here>")
+#+end_src
+
+while the following will set it back to the default:
+
+#+begin_src groovy
+System.clearProperty("hudson.model.DirectoryBrowserSupport.CSP")
+#+end_src
+
+If you're using inline Javascript (either a script tag or a link to a file hosted on the same domain), you'll need to add the ~'unsafe-inline'~ option like so:
+
+#+begin_src groovy
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';")
+#+end_src
+
+With that done, you should be set up to start rendering some files.
+
+*** The pipeline step
+
+I don't really know my way around configuring Jenkins with the GUI so I'm only going to be outlining what to add to a ~Jenkinsfile~
+
+Let's say upon every pull request, you wanted to publish a Hugo static site.
+
+For those unfamiliar, it spits out a ~public~ folder containing static HTML and CSS.
+
+In that case, we'd want a build step like so:
+
+#+begin_src groovy
+// ... rest of my pipeline
+stage("Publish preview") {
+  when {
+    branch 'PR-*'
+  }
+  steps {
+    sh "hugo" // generates a folder called 'public' containing static files
+    publishHTML(
+      target: [
+        allowMissing: false,
+        alwaysLinkToLastBuild: true,
+        keepAll: true,
+        reportDir: 'public',
+        reportFiles: 'index.html',
+        reportName: 'Pull Request Preview',
+        reportTitles: 'Pull Request Preview'
+      ]
+    )
+  }
+}
+// ... rest of my pipeline
+#+end_src
+
+Pushing that to a branch, and opening a pull request, should run that pipeline addition and generate your first build preview
+
+*** The step where we see our results
+
+You can see your artifacts in one of two places depending on your UI:
+
+Under ~Blue Ocean~, navigate to the most recent build ie ~https://jenkins.internal.blah/blue/organizations/jenkins/MyOrg%2FMyRepo/detail/PR-123/1/pipeline/~
+
+You'll see an Artifacts button in the top right and clicking it should show a link with the name of your "report"
+
+Click on it, and if everything is set up correct, it should open your "report" in a new tab.
+
+It'll appear in an iFrame but you can append ~index.html~ on the end of the URL to go directly to the page itself.
+
+Similarly, in ~Classic UI~, you should see the name of the report in the left sidebar. I don't use classic UI so I don't know if it just magically appears along with other artifacts like it seemed to.
+
+** Setting up Emacs inside of a WSL2 distribution :emacs:linux:unix:windows:wsl:
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-wsl2-install
+:EXPORT_DATE: 2020-05-06
+:END:
+
+I've never really dedicated myself to Emacs despite being interested in [[https://orgmode.org/][org mode]] for a little while now.
+
+One barrier to entry is that I had no idea how to install it on my desktop. The more places I have it installed, the quicker I can get comfortable enough to actually use it in my day to day life.
+
+In particular, I'm trying out [[https://github.com/hlissner/doom-emacs][Doom Emacs]], a lightweight configuration that uses vim-style bindings.
+
+I'm not much of a Vimmer either for the record. I'm fairly comfortable opening it up, moving around with H-J-K-L and editing here and there but I'm not much more productive than that.
+
+Anyway, here's a short guide on how you too can get Emacs up and running on Version 2 of the [[https://docs.microsoft.com/en-us/windows/wsl/about][Windows for Linux subsystem]]
+
+*** An optional prerequisite
+
+Currently, I'm using [[https://x410.dev/][X410]], an [[https://en.wikipedia.org/wiki/X_Window_System][X Window System]] for Windows.
+
+If you're not hugely familiar with X or Windowing systems, it's basically just a way of displaying applications outside of a terminal.
+
+In our case, while Emacs renders perfectly fine in the terminal, I like to have it render in its own window, which is what a windowing system provides more or less.
+
+There are plenty of other X servers for Windows but I found this one to be pretty seamless. [[https://sourceforge.net/projects/vcxsrv/][VcXsrv]] is another popular alternative, although I had some configuration troubles getting it working.
+
+That said, I've done some fiddling and have provided a setup guide for it as well!
+
+Before we get started, feel free to skip the entire window manager portion if you're comfortable with, or prefer, running Emacs in your terminal of course.
+
+*** The paid, but pretty seamless way
+
+I should stress that while I've opted to purchase an X server that has some extra bits and pieces, you can use an open source, unpaid alternative.
+
+X410 had some decent recommendations for being an easy setup, and happened to be under a very steep discount so I figured I'd give it a spin. I also ran into some issues with VcXsrv originally as well.
+
+You can find it [[https://www.microsoft.com/store/productId/9NLP712ZMN9Q][in the Windows Store]], presumably for any region. It'll require a Microsoft account to purchase which can be a little annoying if you don't already have one.
+
+The installation should be straight forward and I don't remember any flags that require toggling.
+
+Once you've got it installed, fire it up and you should see a silver X icon in your Windows task tray, in the bottom right of your screen.
+
+You'll need to click on it (left or right, it makes no difference) and select "Allow Public Access". See the end of this section for a note on security.
+
+While the original WSL1 exposes things on ~http://localhost~ (from memory anyway), WSL2 is treated like a network storage.
+
+This means that our Linux distribution is effectively its own "computer" with its own IP address, and so firewall policies come into place, and so on.
+
+When we connect to our X server, it'll be on an internal address such as 172.x.x.x rather than 127.0.0.1.
+
+Beyond that, we should be good to go! You can either read the alternative setup or skip on down to configuring your ~DISPLAY~ environment variable.
+
+Upon closer inspection, it seems that "Allow public access" does indeed do what it says on the tin.
+
+I can confirm that I was able to forward an emacs session from my work laptop to my home desktop without any prompting. The same should hold true of any other random person on your network.
+
+If you trust your network, and aren't proxying your computer to the internet or something interesting like that, you should be fine. In that case, feel free to jump down to the environment configuration section.
+
+If you'd sleep safer at night with some tighter restrictions, feel free to follow the Windows Firewall configuration steps I've suggested below, under the setup for VcXsrv. They should apply exactly the same, but to the firewall rule for ~x410~.
+
+*** The free, open source, slightly more involved way
+
+For those of you who prefer to be able to either not pay for your software, or audit it, you'll want to pick up a copy of [[https://sourceforge.net/projects/vcxsrv/files/vcxsrv/][VcXsrv]].
+
+It's a little more involved but not much more. I've gone through the gauntlet and figured out some settings that seem to work consistently while still staying relatively secure. That said, feel free to let me know since Windows Firewall isn't an area I tend to stray into often.
+
+Go ahead and install ~VcXsrv~ and then once that's done, open up your start menu and search for ~XLaunch~.
+
+If you run it, it should prompt you for some default settings. You can leave it set to the default (Multiple windows with the display number set to -1 for auto)
+
+Extra settings should stay as the default.
+
+You should get to a panel for extra parameters however, and when you do, you'll want to add ~-ac~ as a flag. Without it, you'll have some trouble down the line.
+
+Upon finishing up this configuration, you should get a popup from Windows Defender Firewall. You can click Allow but we'll also do some further configuration next.
+
+So, with XLaunch all wrapped up, head to your start menu once again and search for "Windows Defender Firewall with Advanced Security".
+
+Open it up, click ~Inbound Rules~ and then scroll down until you find ~VcXsrv windows server~. You'll likely have about 4 entries, with two for TCP connections and another two for UDP connections.
+
+Personally, I've opted to delete all of them except for one since I don't plan to keep a UDP configuration, nor do I need two types of TCP setup but you can leave them if you like.
+
+You can either double click, or right click and hit properties, to start modifying your firewall rule.
+
+First, under General, change the action to ~Allow the connection~ if it's not already set as such.
+
+Don't worry, we'll be scoping down the permissions quite a bit. Well, as much as I could figure out how to anyway. I already did more fiddling here, for the sake of this post, than I probably would otherwise.
+
+We don't want to allow just anyone to connect to our display server so under the ~Scope~ tab, I've added an IP address range.
+
+Under ~Local IP Address~, select ~These IP addresses~, click ~Add~ -> ~This IP address range~ and then enter the following:
+
+#+begin_src
+From: 172.16.0.0
+To  : 172.31.255.255
+#+end_src
+
+Given that the Windows subsystem is treated like a network device of sorts, our display server will essentially be receiving a connection from a different computer, as far as it's concerned.
+
+In order to mitigate any actual other computers connecting, we're narrowing down the acceptable list of IP addresses to just those that fall within the WSL range.
+
+I suppose if you did have a big internal network, with a computer assigned an address on 172.16.x.x, then they could connect but we'll be doing some interface restrictions just below.
+
+Anyway, repeat the same steps for ~Remote IP address~ and then hit ~Apply your changes~.
+
+At this point, what I wanted to do was reduce the scope of the ~Protocols~ tab to just TCP on the ports that X server uses (6000 - 6063) but I had no such luck.
+
+It potentially be the case that somewhere between WSL land and your host computer, some ports are proxied to be higher or lower, but honestly, I'm purely speculating based on no actual evidence.
+
+For the interested, the above protocol and port restriction causes the host X server to be unreachable. If you extend the range from 6000 to the highest possible port (65535), it does indeed connect which is why it seems it's relying on a range of ports higher than those 63 to be reachable.
+
+Anyway, enough sidetracking. There is one extra bit of restricting we can do. Under ~Protocols and Ports~ -> ~Protocol type~, change it to just allow ~TCP~. You can then navigate to ~Advanced~ -> ~Interface types~ -> ~Customize~, and you should be able to narrow down the list to just ~Local area network~.
+
+Presumably, even if anyone is on the wider network with an IP address that happens to match our WSL2 distro, they still won't be able to connect but I haven't tried this.
+
+With all of that nonsense behind us, we can get on to actually configuring our environment and testing that our setup has worked successfully!
+
+*** Configuring your environment
+
+As I briefly referenced in the setup steps for X410, WSL2 is treated as a network device of sorts.
+
+The exact details are besides the point here but just know that WSL2 is effectively a separate computer.
+
+What this means, is that we can't rely on Emacs automatically knowing where to find our X display server (if you're opting to use one)
+
+It'll check inside of our Linux distribution, but we need to point it to our Windows host, since that's where our X server is running.
+
+Doing so is only one step thankfully:
+
+#+begin_src bash
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+#+end_src
+
+Ok, easy enough but what just happened?
+
+By default, you'll have an ~/etc/resolv.conf~ generated by WSL. Here's what mine looks like on a relatively fresh installation:
+
+#+begin_src bash
+# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateResolvConf = false
+nameserver 172.31.96.1
+#+end_src
+
+That IP address there, ~172.31.96.1~, is the IP address for our Window host machine. At least, from WSL's point of view anyway.
+
+We can use ~grep~ to get the exact line we want:
+
+#+begin_src bash
+marcus@corbenik:~/code/utf9k$ cat /etc/resolv.conf | grep nameserver
+nameserver 172.31.96.1
+#+end_src
+
+and then use ~awk~ to get just the IP address by itself:
+
+#+begin_src bash
+marcus@corbenik:~/code/utf9k$ cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'
+172.31.96.1
+#+end_src
+
+Voila! One IP address. What our above command ends up evaluating to, is the following:
+
+#+begin_src bash
+export DISPLAY=172.31.96.1:0.0
+#+end_src
+
+That IP address can change from time to time however, which is why we want to automate setting it each time.
+
+Our ~DISPLAY~ environment variable will go away with each new shell so make sure you put it in your shell startup!
+
+All that's let is to check that we can connect as expected. Here's a connection test against X410, using ~nc~ (netcat)
+
+#+begin_src bash
+marcus@corbenik:~/code/utf9k$ nc -v 172.31.96.1 6000
+Connection to 172.31.96.1 6000 port [tcp/x11] succeeded!
+#+end_src
+
+Why do we use port 6000? It's the first in a range of ports for X window servers, which range from 6000 - 6063. If you note the ~0.0~ on the end of our ~DISPLAY~ variable, we're telling it to use display 0, screen 0.
+
+If we wanted to use a different display, or perhaps having a second X server may qualify, we could connect to ~<address>:1.0~ for display 1, screen 0. Under the hood, that would live on port 6001, which is the base port of 6000 added to our display number (1 in this case).
+
+I didn't really know any of that until writing this so I'd encourage you to do your own research if you want to know more, or double check anything I just claimed, haha.
+
+*** Installing Emacs
+
+Now then, we need an actual Emacs distribution but don't get too trigger happy just yet. For the most part, running ~sudo apt-get install emacs~ will give you an outdated package. In reality, it's probably Emacs 25 which is more than fine.
+
+If you'd like to run a more up to date version, you can do the following to fetch a copy of Emacs 26. If you'd like to be on the bleeding edge (and is what Doom Emacs recommends), you'll probably need to compile Emacs 27 from source :(
+
+#+begin_src bash
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt-get update
+sudo apt-get install emacs26
+#+end_src
+
+Very nice, you should be all good to go. If you'd like to use Doom Emacs as I am, you'll need some extra packages which you can find more info about [[https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#ubuntu][via the handy documentation]]
+
+If you'd like to run Emacs in your terminal, just simply fire up ~emacs~. If you'd like to run it on your Windows host, and have your X server running and set up, you can run ~emacs &~ to spawn it, and keep it open as a background process.
+
+Happy text manipulation!
+
+P.S. I wrote this entire post in Doom Emacs, launched from WSL 2 on my home desktop and it works like a charm :)
+
+** Data hoarding seems like a large mental overhead :data:overhead:off_the_cuff:
+:PROPERTIES:
+:EXPORT_FILE_NAME: mental-overhead-of-data
+:EXPORT_DATE: 2020-05-12
+:END:
+
+This isn't a post that I've outlined before hand, or even really considered in any particular depth. I'm just making up this post, and it's structure as I type.
+
+Having said that, I've got a few points on my whiteboard that made something click, along with some thoughts that have been frustrating me for a little bit now.
+
+I like to use [[https://exist.io][Exist.io]], a service for collecting personal data. It's run a nice Australian duo and I have no issues with the service. All of the data collection is automated, and is explicitly authorised using regular OAuth.
+
+Having all of that data consolidated in one place is nice.
+
+I still feel like I could be doing more with it.
+
+I could easily too, since I can export all that data at any point, and play with it or fetch certain subsets via their API.
+
+On a slightly different note, it has the ability to track my day manually. I can write a short note of how I'm feeling, a rating of my mood from 1 - 5, and also I can add tags to reflect what I did during that day.
+
+Easy enough and I can observe trends over time as more data is gathered.
+
+This post is not about data collection. Nothing here is malicious just to be clear.
+
+I haven't updated my mood, tags and so on for a few days now and I keep missing it. It's an understandable side effect of being stuck inside due to a global pandemic.
+
+The more I really think about it, I start to realise that there is a compounding effect that's very subtle.
+
+I start to feel back because I'm missing out on that data.
+
+I feel guilty because the picture I'm trying to capture is now missing some snippets of data. It's no longer a continuous streak. I could just input from today onwards but there's a little bit of guilt that is prompting me to backfill those days.
+
+There's a weird self guilt that I'm not maintaining a dataset that's as close to perfect as I can manage.
+
+Ironic since I'm missing that data since the first 24 years of my life but this would be the same feeling if I would journalling in a notebook and missed a day.
+
+So, there's two things here I think I've identified: I have a bunch of data and I could be doing more interesting things with it, and I have another bunch of data but I'm not keeping it "complete"... even though I'm not looking back at it.
+
+I could though! In some hypothetical future where I stop being reactionary, actually relax and review what I've got collected.
+
+At this point, I'm tempted to just throw away all that data and relieve myself of my self imposed burden to keep that dataset up to date, day after day.
+
+The data is becoming a massive mental overhead, and arguably an emotional liability.
+
+I suppose we expect, and hope that companies treat our data as a liability. While it's obviously an asset to me, there's no reason why upkeeping that data isn't also incurring a debt of sorts. Generating data is easy but actually recording it and auditing it would of course be some sort of investment.
+
+I don't know if that last sentence actually reflects that I'm trying to say properly but I'm going to leave this as is, given I'm writing it purely off the cuff with no edits.
+
+What else?
+
+I think all of my filesystems are mental liabilities at this point.
+
+There's so much crap scattered across my home desktop, home laptop, work laptop, phone? Images, documents, text snippets?
+
+It's all crap that slowly piles up in my mind.
+
+I should be cleaning it all up.
+
+Perhaps I should turn off my desktop icons for starters but that doesn't really address my issue.
+
+I just want to stop accumulating crap. How can I be a digital minimalist?
+
+My work Google Drive is full of stuff I've just dumped in there and never looked at again.
+
+There are shared drives I've been invited to, or requested access to, telling myself that I'll make use of all of this wonderful information.
+
+Maybe it's wonderful, I don't know. It's too much information, that's for sure.
+
+What I'm getting out of this is that if I haven't used something, or can't justify keeping it, I need to just delete it?
+
+There are plenty of data sets I've requested thinking I'll use them for cool projects but I never get around to it. Traffic data, parking data, data for this, data for that. It all becomes more and more of a liability in the back of your mind because of all of the things you "could" have done or are sitting unfinished.
+
+Bah!
+
+My bookmarks are just the same. I've got a stockpile of articles which might be amazing or they might be a waste of time. The more that piles up too, geez, when I actually create stuff instead of consuming content, hahaha
+
+Picking and choosing is very hard.
+
+Dropping books is another thing I really need to learn how to do. I'll start one, get partway in, get bored but still slog through it. Sometimes I'm pleasantly surprised but the idea of having it marked as "stalled" in my mind is almost a worse fate.
+
+Open loops is probably the keyword here?
+
+How do you close them?
+
+Is just removing something off a list satisfactory? Tell yourself "I'm done with that book/show/codebase/movie/manga/article/course" and then move on? Seems easier said than done?
+
+Perhaps another contributor to all of this is generally using internet tools to track backlogs.
+
+I'm a big fan of [[https://trakt.tv][Trakt.tv]] for example. No authority says "Thou must finish all movies or shows they intend to watch" but it's hard to not look at a list and wish to complete it.
+
+Finishing one list, in one medium alone is essentially impossible in a human lifetime, let alone all mediums you might appreciate.
+
+Hmm.
+
+I don't really have any good answers but hopefully writing all of this down means I can point to some words when I want to express my frustration.
+
+I'd love to hear your thoughts, if you've got any suggestions. You can email me at marcus (at) utf9k.net.
+
+You could of course use any other content method on my [about](/about) but just make sure the medium is enough to express your thoughts.
+
+This post wouldn't make a very good "tweetstorm" if you ask me.
+
+Thanks for reading!
+
+** Reducing my everyday carry during 2019 :organisation:
+:PROPERTIES:
+:EXPORT_FILE_NAME: reducing-my-edc-2019
+:EXPORT_DATE: 2020-04-13
+:END:
+
+During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.
+
+I managed to reduce down the complexity by quite a large amount, and it's probably one of the better investments I've made recently.
+
+Given that I haven't discarded my previous setup (just yet), I was able to recreate a bunch of before and after photos showing my progression over time.
+
+I'm not recommending you emulate my setup but it might serve as inspiration to make your own investment, into reducing or optimising your everyday carry (EDC going forward).
+
+Before we get started, I should point out that this setup has actually be retired for something even more optimal (for me) but that's a post for another time.
+
+*You can click on each photo to view a full size version*
+
+*** The original setup
+
+[[/img/edc-2019/original_carry.jpeg]]
+
+My EDC was already fairly compact and consisted of the following:
+
+- Google Pixel 3a (very lightweight!)
+- Wallet packed with cards (slow to sort through + a lot of unused cards)
+- A carabiner with a bunch of keys (which key is which?!)
+- A pair of wired earbuds (represented by a placeholder + easily gets tangled)
+
+Let's have a look at these individually as we break down my setup and slowly rebuild it
+
+*** Assessing my wallet
+
+[[/img/edc-2019/wallet_old.jpeg]]
+
+There's quite a lot in my wallet that I don't use, and different cards definitely get access more than others.
+
+Let's start by taking a closer look at those cards
+
+**** Regular cards
+
+[[/img/edc-2019/cards_scattered.jpeg]]
+
+There's a variety of different cards here:
+
+- Business cards
+- Gift cards
+- Loyalty cards
+- Membership cards (plastic + NFC)
+- Bank cards
+
+[[/img/edc-2019/business_cards.jpeg]]
+
+Business cards are pretty easy to get rid of as a first step. They just went straight into my contacts list. I don't have any need to carry them and should have digitised them a long time ago.
+
+[[/img/edc-2019/loyalty_cards.jpeg]]
+
+I don't use loyalty cards often enough, to make the space they take up worth it. Thankfully, it's easy to digitise them nowadays (if they have a barcode) and carry them on my phone instead.
+
+[[/img/edc-2019/gpay_cards.jpeg]]
+
+Last but not least, I can reduce the amount of time I'm pulling bank cards out of my wallet by adding them to Google Pay. I still need them on hand for larger purchases due to paywave limits.
+
+One type of card I can't simply digitise or reduce are my arcade cards. From what I remember, the arcade balance card itself is part of the [[https://www.mifare.net/en/products/chip-card-ics/mifare-desfire/][MIFARE DESFire]] family. Android does support [[https://developer.android.com/guide/topics/connectivity/nfc/hce][Host Emulation]] but from the little I've read, it isn't possible to emulate MIFARE cards nor would a software emulation necessarily be secure anyway.
+
+Similarly, I have a [[https://www.bandainamcoid.com/banapassport/en/][BANA Passport]] which I use to store my save progress with [[https://wanganmaxi-official.com/wanganmaxi6/en/special/001.php][Midnight Tune 6]], a particular arcade game I quite enjoy.
+
+I can live with carrying those two day to day, given that visiting the arcade is more of a spur of the moment thing, so it makes more sense to keep it on hand, than say an [[https://www.ebgames.co.nz][EB Games]] gift card
+
+**** Transit card
+
+This is my most used card, given I use it at least once a day on weekdays and sometimes multiple times on the weekend. Having it lumped in with all of my other cards is fine but it'd be nice if it was easier to access given it's part of the "hot path".
+
+What I ended up doing was taking it and replacing it with one of the [[https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag/][limited edition HOP tags]] that Auckland Transport occasionally releases.
+
+[[/img/edc-2019/hop.jpeg]]
+
+They're designed to live with your keys, coming with a metallic keychain, but I removed that for reasons which will be a little clearer as we continue on.
+
+**** Reviewing our progress so far
+
+After all of that reduction, my wallet is slimmed down to just the following essentials
+
+[[/img/edc-2019/cards.jpeg]]
+
+Nowadays, I wouldn't even carry the gift card around, instead just opting to either digitise it (if possible) or remembering to bring it whenever I decide to go in store or order online.
+
+My wallet has served me well for quite some time but it's really easy for just these few cards to fall out, since it's designed to hold a number of cards.
+
+I was browsing the web one day for unique takes on wallets and I came across this thing. It looks a bit confusing at first but having used it for the better part of a year, I really enjoyed it. Here's what it looks like disassembled.
+
+[[/img/edc-2019/wallet_disassembled.jpeg]]
+
+It probably doesn't look like much at the moment so let's add some keys and accessories
+
+[[/img/edc-2019/wallet_setup.jpeg]]
+
+I've got my three house keys, a bottle opener (under the blue key) and a USB drive all sitting snuggly in there.
+
+[[/img/edc-2019/wallet_underside.jpeg]]
+
+That's not all. We can stick those remaining cards in the bottom card holder too.
+
+[[/img/edc-2019/wallet_underside_full.jpeg]]
+
+To top it all off, I had some spare 3M wall hanger strips floating around so I repurposed one to affix my travel tag to the top of this contraption using velcro
+
+[[/img/edc-2019/wallet_top.jpeg]]
+
+Et voila, a pretty compact setup if I say so myself!
+
+[[/img/edc-2019/wallet_side.jpeg]]
+
+*** Untangling my headphones
+
+I used to have various pairs of earbuds over the years that were good enough.
+
+[[/img/edc-2019/wired_earbuds.jpeg]]
+
+I felt like I must have lost multiple hours of my life just untangling them over the years so I decided I might as well invest in a decent pair.
+
+While they seem to be much more popular and acclaimed these days, I had taken a gamble at the time and invested in a pair of [[https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778][Sony WF-1000XM3 Wireless Earbuds]] during a period when the Apple Airpods were basically the only thing you were supposed to buy.
+
+Given the price, I actually opted to pay them off over a period of time (might as well build my credit score after all!)
+
+That said, they've been a worthwhile investment for me. The battery life is great, considering they're properly wireless, and I'm always surprised how many charges I can get from putting them back in the case. When using them as a daily driver, back when walking to work was a thing, I would generally only need to recharge them once a week at most? More like once every 2 weeks I think.
+
+[[/img/edc-2019/wireless_earbuds.jpeg]]
+
+Also, I've been pleasantly surprised at the software updates that still roll out. About 6 months after I bought them, they received support for Amazon Alexa, which was a nice surprise given they already support the Google Assistant. Not that I use either...
+
+*** Wrapping up
+
+I believe that covers everything?
+
+I've reduced my wallet by probably 90%, moved my transit card to its own dedicated spot since it's on the "hot path" and I no longer have to spend any time untangling my headphones
+
+[[/img/edc-2019/all_three.jpeg]]
+
+As I mentioned earlier, I've made some further changes which I'll likely cover in a 2020 edition of this post.
+
+[[/img/edc-2019/all_third_alt.jpeg]]
+
+Mainly, I found that while the wallet served me well, it was a bit too heavy to take when I took up running earlier this year.
+
+My fix was to just unscrew it, take out my two main house keys and keep them in my pocket but reassembling my wallet got kinda tedious pretty quickly.
+
+Until next time, see what you're able to pull off with a wallet reduction!
+
+** My bookmarking categories in March 2020 :bookmarks:organisation:
+:PROPERTIES:
+:EXPORT_FILE_NAME: bookmarking-march-2020
+:EXPORT_DATE: 2020-03-08
+:END:
+
+For no particular reason, other than I figured it might help me make better sense of how I organise articles, here's a fairly detailed breakdown of my bookmarking setup.
+
+Currently I'm using [[https://raindrop.io][Raindrop.io]] but I've also used [[https://pinboard.in][Pinboard]], [[https://getpocket.com][Pocket]] and [[https://larder.io][Larder]] happily in the past too.
+
+At the moment, Raindrop seems like the most comprehensive of the bookmarking apps I've tried. It has a very nice UI, a consistent desktop/mobile experience, a (newly launched) API and supports syncing content to a storage provider (Dropbox or Google Drive) too.
+
+Anyway, I've linked some articles that I've found interesting myself within a lot of the categories.
+
+Most of them need some work, and I've got almost as many unsorted bookmarks as I do sorted since I write a custom title, description and apply tags for searching rather than just dumping them.
+
+I had a lot of stuff from Pocket that I archived which makes up the bulk of it. Most things I had in Pinboard were tagged so they were easy to transition into Raindrop.
+
+If you've got any feedback or want to share your own bookmarking categories, let me know! You can find my contact details on my [[/about][about]] page B)
+
+*** ???
+
+Anything that is generally quirky or surprising like [[https://audiokarma.org/forums/index.php?threads/jerry-seinfelds-speakers.48414/][this]], [[https://cooking.stackexchange.com/questions/105602/steak-dropped-in-soapy-dish-water][this]] or [[https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity/][this]]
+
+*** Behind the Scenes
+
+Great stories or posts that reveal what goes on behind the scenes of various products and companies
+
+[[https://news.ycombinator.com/item?id=20908168][Generally trends towards game development]]
+
+*** Business
+
+**** Economics
+
+This tends to be anything related to the economy, [[https://en.wikipedia.org/wiki/Capitol_Hill_Babysitting_Co-op][the theory of economics]] or [[https://abstrusegoose.com/389][generally anything to do with money]]
+
+**** Marketing
+
+Lessons and resources related to marketing of products, or marketing as an art
+
+**** Reports
+
+Various reports (shareholder, [[https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2019/building-operational-resilience-impact-tolerances-for-important-business-services.pdf][governmental]], [[https://sriramk.com/memos/goldberg-music.pdf][memos]])
+
+**** Resources
+
+General advice or reference material for going about conducting business and/or setting one up
+
+**** Strategy
+
+The art of [[https://apenwarr.ca/log/20190926][setting strategy]], as it relates to business, and [[https://danluu.com/sounds-easy/][how business things get done, in spite of their sheer scale]]
+
+*** Design
+
+**** Inspiration
+
+Cool websites that have interesting designs in some form or another
+
+**** Resources
+
+Design resources such as fonts, CSS frameworks, placeholder images or guides on how best to layout a design
+
+**** UI / UX
+
+Tips and tricks on providing a functional, accessible design. Generally just for web design but doesn't strictly have to be.
+
+*** Miscellaneous
+
+[[https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he][Anything that doesn't have an obvious category]]. If there seems to be a grouping of related articles, it'd prompt the creation of a new category but I also don't want to generate more categories that are useful.
+
+*** Postmortems
+
+Reviews in what went wrong, whether it be [[https://www.propublica.org/article/the-red-cross-secret-disaster][business]], [[https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html][software]] or [[http://www.fudco.com/chip/lessons.html][videogames]]. As this category grows, I'll likely split them out into eg; Business/Postmortems but for now, I don't have a big enough collection.
+
+*** Productivity
+
+Anything related to the art of productivity. It may also just be [[https://nesslabs.com/jomo][articles reminding you that sometimes less is more!]]
+
+*** Recommendations
+
+Things that I have been recommended but haven't looked into yet. If they are part of a medium that I track somewhere else (eg; books into Goodreads, games into How Long To Beat), then I tend to just put them there straight away. [[https://www.neogaf.com/threads/dead-franchises-almost-nobody-but-you-seems-to-want-back.1355948/][There may be threads that have a wide range of recommendations]] eg; book recommendations so I generally scour them when I get time and put the interesting items into eg; Goodreads.
+
+*** Shopping
+
+Things that look cool and I might want to buy one day. I may also just want to keep them for reference to link to people too.
+
+*** Society
+
+**** Discourse
+
+A bit of a wishy washy grouping but anything related to discussion of ideas and [[https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton.27s_fence][what can go wrong as a result]]. Perhaps communication is a clearer name for this category.
+
+**** Governments
+
+Articles related to governments, whether it be their functions, warfare (from a political point of view, not an on-the-ground point of view) or just [[https://web.archive.org/web/20071031080918/http://www.geocities.com/capecanaveral/4411/apollo13.htm]["government related things"]]
+
+**** Infrastructure
+
+This can be [[https://en.wikipedia.org/wiki/Signalling_System_No._7][specific infrastructure]] or articles about infrastructure in general ie cost overruns or how a traffic light system operates
+
+**** News Media
+
+Resources provided by the news media (eg; a database containing financial entities and their appearances in the media) or articles about the media itself. This doesn't contain articles FROM the news media however. It's more of a meta category.
+
+**** People
+
+This could be articles on [[https://en.wikipedia.org/wiki/Robert_Parker_(wine_critic)][specific people]] (biographies, news pieces) or [[https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and]["people" in a broader sense]] such as a story on a town or city.
+
+**** Politics
+
+Politics of any form, whether it be governmental (elections, "red tape") or more local such as office or industry politics
+
+**** World Views
+
+A bit of an abstract category. This contains articles and quotes that upon reading, I thought [[https://news.ycombinator.com/item?id=14391552]["Oh! This gave me some insight into how certain groups or individuals come to view the world."]]. That's neither a good or a bad thing, just interesting. Often it contains things that I've never considered before myself.
+
+*** Sports
+
+I had two links related to wrestling I put in here. I don't follow sports much but sometimes there can be interesting crossovers between say sports and business.
+
+*** Technology
+
+**** Databases
+
+Articles, Stack Overflow snippets and links in general related to "databases". For now, this has no subcategorisation between eg; MySQL v Postgres, SQL vs "NoSQL" and databases themselves vs database concepts.
+
+**** Growing As A Developer
+
+Some recommendations from other developers (eg; keep a logbook), utilities (resume creators, competency matrixes) and other tools for improving as a developer
+
+**** Historical Events
+
+Links to "historical events" which can be anything from [[https://github.com/npm/npm/issues/20791][unexpected outages]] and [[https://github.com/facebook/react/issues/10191][long running debates]] to [[http://www.doublewide.net/passport.htm][fascinating snippets that somehow haven't been lost yet]]
+
+**** Languages
+
+Anything specific to a programming language whether it be a blog post, tutorial, library or book. At the moment, I haven't split these out into subcategories as each article is tagged with their respective langauges anyway making search easy.
+
+**** Lower Level
+
+Anything related to "low level things". As someone who deals primarily with higher level languages (Python, Javascript) day to day, I classify C++ and C as low level too, haha.
+
+**** Neighbours
+
+This is really just blog posts with no particular category or links to entire websites or blogs. Neighbours in this term just means other developers in the industry.
+
+**** Networking
+
+As it suggests on the tin, any articles, posts etc related to networking in general.
+
+**** Observability
+
+This is a pretty new and empty category. I'm misusing the term on purpose as it has links to articles relating to observability as well as monitoring.
+
+**** Reference Materials
+
+Anything (lists, lists of lists, books, websites etc) that are useful to reference. There are some things in here that shouldn't be such as books on building applications in a specific language so it's a little bit of a dumping ground at the moment. I don't have a good distinction for where language-specific guides should live (languages or reference materials?)
+
+**** Reverse Engineering
+
+All things related to the art of reverse engineering such as applications, blog posts and reference guides
+
+**** Security
+
+As it says on the tin. Recommendations as well as [[https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses][interesting implementations]] related to security.
+
+**** Shared Concepts
+
+If it's technical / software development related but not part of any specific category (Unicode for example), I stick it in here
+
+**** The Art of Development
+
+This is another wishy-washy category since it has some things which should be [[https://blog.pragmaticengineer.com/on-writing-well/][part of Growing As A Developer]] as well as things that are more like [[https://www.devever.net/~hl/xml][how you should properly structure data]] rather than the actual act of development itself. I still need to refine this more.
+
+**** The Industry Itself
+
+This could be stories about [[http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt]["people" (in an individual sense)]], [[https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx]["people" (in the group sense)]], [[https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx][people opposing other people]] and also [[https://eager.io/blog/the-languages-which-almost-were-css/][choices made by people]]. Sometimes companies too.
+
+**** Tooling
+
+Tools and utilities that are useful to refer to later. Think CLIs, GUIs, CDNs and any other 3 letter combination you like.
+
+*** The Art of Writing
+
+Something I'm looking to flesh out but any articles or references on how to write better!
+
+** You should publish your older works :rambling:portfolio:
+:PROPERTIES:
+:EXPORT_FILE_NAME: publish-old-works
+:EXPORT_DATE: 2020-02-07
+:END:
+
+If you haven't seen it, [[https://www.youtube.com/watch?v=X2wLP0izeJE][Ira Glass on Storytelling 3]] is a video worth watching.
+
+Just the first few minutes is enough.
+
+I've recommended it a number of times in the last few years, and I'll likely continue to do so for many years to come.
+
+To repeat the premise of the video, Ira describes taste as the gap between what you can accomplish right now, with your current skillset, and what you /know/ is good.
+
+Your taste may be "killer", as he puts it, but that gap means you recognise your work isn't quite up to what you consider good enough.
+
+That gap, and the craving to close it, can be motivating in the best of times, and straight up depressing in others.
+
+While progression over time will close your own gap, I would also point out the taste (and gap) of others.
+
+Your taste will evolve over time, but others may be far ahead or behind your current progression of taste (if we pretend there is such a thing as scale of taste for a minute)
+
+What I'm trying to say is that, if you're a painter for example, you might dislike your latest work. You may even think your work from 5 years ago is utter rubbish.
+
+Perhaps but don't mistake that for thinking no one else is or can ever appreciate it.
+
+Someone years from now may strumble upon your back catalogue (online or off) and find a great deal of inspiration, knowledge or appreciation that you yourself don't hold presently.
+
+I like to think the same applies for software and "old" source code as well.
+
+It gets a bit asterisky with things like objectively uncompilable code, custom frameworks that have security bugs and so on but you may have source code or old projects you think are bad, that others can gain inspiration from or just generally appreciate.
+
+Arguably, that's the only reason I leave anything I've written online is that maybe someone else might get some use out of it in the future.
+
+Anyway, while this can somewhat apply to software, I made a note to write this post a long time ago, in response to some artist friends who wondered why they would ever upload their old work.
+
+For someone who doesn't make or generally seek out artworks, my own taste is pretty weak so I might appreciate an entry level "low taste" piece of work more than whatever is considered to be an "acquired taste".
+
+There's plenty of low tasters out there so you should try and embrace them :)
+
+** Dealing with multiple git hosts :linux:git:github:gitlab:
+:PROPERTIES:
+:EXPORT_FILE_NAME: multiple-git-hosts
+:EXPORT_DATE: 2020-01-06
+:END:
+
+NOTE: At the time of writing, I was using Gitlab so you'll see references to my dotfiles living there. I've now moved back to Github but kept the references to Gitlab in this post intact.
+
+When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They [[https://github.com/marcus-crane/dotfiles][live in a Github repository]] under my personal account, and I use plain old git to sync changes.
+
+In order to push and pull changes from Github, I use an SSH key rather than a password. It's easy enough to generate one of course but I also have one for the internal repository at my work. Juggling the two can sometimes be annoying when setting up a fresh laptop without some proper configuration.
+
+Usually I forget what that looks like so here's a quick walkthrough on how you too can juggle multiple git hosts.
+
+Let's have a look at a barebones ssh configuration file:
+
+#+begin_src shell
+> cat ~/.ssh/config
+Host github.example.com
+  IdentityFile ~/.ssh/work
+
+Host gitlab.com
+  IdentityFile ~/.ssh/personal
+
+Host github.com
+  IdentityFile ~/.ssh/personal
+#+end_src
+
+We've got three different hosts and two different SSH keys.
+
+Whenever you use ~ssh~, it'll check to see if you have any host blocks defined. If they match the host provided, it'll use the corresponding configuration.
+
+Let's see how it looks in action:
+
+#+begin_src shell
+> ssh -T git@github.example.com
+Hi marcus! You've successfully authenticated, but GitHub does not provide shell access.
+> ssh -T git@gitlab.com
+Welcome to GitLab, @marcus-crane!
+#+end_src
+
+The connection to ~github.example.com~ uses the key stored at ~~/.ssh/work~, while the connection to ~gitlab.com~ has used the key stored at ~~/.ssh/personal~. Perfect!
+
+You can also add additional configuration that is specific to just one host.
+
+Let's look at an example with a few more options:
+
+#+begin_src shell
+> cat ~/.ssh/config
+Host github.example.com
+  IdentityFile ~/.ssh/work
+
+Host gitlab.com
+  IdentityFile ~/.ssh/personal
+  LogLevel VERBOSE
+
+Host github.com
+  HostName notarealuser
+  IdentityFile ~/.ssh/personal
+#+end_src
+
+It's mostly the same with two new commands ~LogLevel~ and ~HostName~. Let's see it in action once again before we dive a bit deeper:
+
+#+begin_src shell
+> ssh -T git@github.com
+ssh: Could not resolve hostname notarealuser: Name or service not known
+> ssh -T git@gitlab.com
+Authenticated to gitlab.com ([35.231.145.151]:22).
+Welcome to GitLab, @marcus-crane!
+Transferred: sent 2036, received 3072 bytes, in 0.5 seconds
+Bytes per second: sent 4366.6, received 6588.4
+#+end_src
+
+We can see that we sent a request to ~github.com~ and it interpreted the corresponding host block, attempting to log in as someone called ~notarealuser~.
+
+For most git servers, the user will default to ~git~ and is generally part of your remote anyway. You can see it whenever you run ~git remote add origin git@github.com/user/blah~ or ~git remote -v~.
+
+It can be quite handy for regular servers however. Instead of connecting with ~ssh user@blah.net~, you can add the username to a host block and shorten that command down to just ~ssh blah.net~
+
+The ~LogLevel~ command is fairly straight forward. You can set it to a higher level of logging, and see more details about what SSH is doing under the hood, but for a specific host.
+
+If you're getting error messages from your internal git host, you could toggle on ~LogLevel DEBUG~ and see if your requests are making their way to the host or not as an example.
+
+I'm sure there's all sorts of interesting stuff you could do but this post isn't meant to be comprehensive by any means. It's more of a reminder to myself on how to create an ssh config file.
+
+You can see all of the various commands offline by running ~man ssh_config~. You can also read them online via the [[https://man.openbsd.org/ssh_config][OpenBSD manual page server]].
+
+Happy SSHing!
+
+** Double checking if an email address exists :email:nslookup:tip:telnet:
+:PROPERTIES:
+:EXPORT_FILE_NAME: email-lookup
+:EXPORT_DATE: 2019-09-26
+:END:
+
+Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
+
+I'll take you through a recent example where I wanted to email Ian Small, the CEO of Evernote, to thank him and the Evernote team for their wonderful Behind the Scenes videos. You can see them [[https://www.youtube.com/watch?v=5rNUpXYCcrA][here]] and I think they're worth a peek.
+
+Anyway, if I had to take a blind guess, ian<at>evernote.com would be a valid email. Well, it is indeed and so that's why I've picked it since it's such an obvious format. For the sake of learning, let's just pretend we're trying to find a valid email from scratch. Naturally, if you have a particular domain you're interested in, just swap out evernote.com for your domain of choice. Going forward however, I'll be using evernote.com.
+
+*** Finding the mail server (macOS / Linux)
+
+For macOS and Linux, we'll want to use `nslookup` which should come ready to go as part of your OS/distro of choice. Fire up a terminal and enter `nslookup -q=MX evernote.com` and you should get a bunch of Google domains back like so:
+
+#+begin_src bash
+> nslookup -q=MX evernote.com
+Server:         192.168.1.1
+Address:        192.168.1.1#53
+
+Non-authoritative answer:
+evernote.com    mail exchanger = 20 alt1.aspmx.l.google.com.
+evernote.com    mail exchanger = 20 alt2.aspmx.l.google.com.
+evernote.com    mail exchanger = 30 aspmx2.googlemail.com.
+evernote.com    mail exchanger = 30 aspmx3.googlemail.com.
+evernote.com    mail exchanger = 30 aspmx4.googlemail.com.
+evernote.com    mail exchanger = 30 aspmx5.googlemail.com.
+evernote.com    mail exchanger = 10 aspmx.l.google.com.
+
+Authoritative answers can be found from:
+#+end_src
+
+What we can see here is a list of the different mail servers used by Evernote. In this case, they're using Gmail, likely as part of Google's [[https://gsuite.google.com/][GSuite]] offering.
+
+Go ahead and copy the highest priority mail server, `aspmx.l.google.com`, to your clipboard as we'll be interrogating it shortly.
+
+*** Finding the mail server (Windows)
+
+Personally, I'm not much of a Windows development person so I actually had to look up the Windows equivalents.
+
+For Powershell, there's a cmdlet called `Resolve-DnsName` that was surprisingly straight forward to use:
+
+#+begin_src powershell
+PS C:\Users\marcus.crane> Resolve-DnsName -Type MX evernote.com
+
+Name                                     Type   TTL   Section    NameExchange                              Preference
+----                                     ----   ---   -------    ------------                              ----------
+evernote.com                             MX     43200 Answer     alt1.aspmx.l.google.com                   20
+evernote.com                             MX     43200 Answer     alt2.aspmx.l.google.com                   20
+evernote.com                             MX     43200 Answer     aspmx2.googlemail.com                     30
+evernote.com                             MX     43200 Answer     aspmx3.googlemail.com                     30
+evernote.com                             MX     43200 Answer     aspmx4.googlemail.com                     30
+evernote.com                             MX     43200 Answer     aspmx5.googlemail.com                     30
+evernote.com                             MX     43200 Answer     aspmx.l.google.com                        10
+#+end_src
+
+As above, you'll want to copy the mail server with the highest preference, which is `aspmx.l.google.com` in this case.
+
+If you're a diehard command prompt fan, or just don't like/have access to Powershell, you can also get by using command prompt. It actually has a tool called `nslookup` that comes with two modes: interactive and non-interactive. I couldn't get a one liner to work so instead, we'll just have to settle for the interactive mode.
+
+#+begin_src bash
+C:\Users\marcus.crane>nslookup
+Default Server:  UnKnown
+Address:  192.168.1.1
+
+> set q=mx
+> evernote.com
+Server:  UnKnown
+Address:  192.168.1.1
+
+Non-authoritative answer:
+evernote.com    MX preference = 20, mail exchanger = alt1.aspmx.l.google.com
+evernote.com    MX preference = 20, mail exchanger = alt2.aspmx.l.google.com
+evernote.com    MX preference = 30, mail exchanger = aspmx2.googlemail.com
+evernote.com    MX preference = 30, mail exchanger = aspmx3.googlemail.com
+evernote.com    MX preference = 30, mail exchanger = aspmx4.googlemail.com
+evernote.com    MX preference = 30, mail exchanger = aspmx5.googlemail.com
+evernote.com    MX preference = 10, mail exchanger = aspmx.l.google.com
+#+end_src
+
+Once more, ~aspmx.l.google.com~, the server with the highest preference is the one we're after so copy it and keep it handy.
+
+If you want to read more about nslookup for command prompt, I dug up [[https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup][some documentation]] which lives under the section for Windows Server. Let me know if you figure out how to use nslookup in non-interactive mode!
+
+*** Interrogating/whispering to the mail server
+
+Ok, got that mail server address handy? Now the party begins because from this point, the commands should be exactly the same across all major platforms with one quick caveat.
+
+Windows users? You'll need to enable ~telnet~ by searching for "Turn Windows features on or off", ticking ~Telnet Client~ and restarting to gain access.
+
+Fire up your terminal of choice and enter `telnet aspmx.l.google.com 25`. This is where you'd substitute your own mail server if you were following along at home with a different domain. Still the same port 25 though since we're dealing with SMTP no matter what.
+
+#+begin_src bash
+> telnet aspmx.l.google.com 25
+Trying 172.217.194.26...
+Connected to aspmx.l.google.com.
+Escape character is '^]'.
+220 mx.google.com ESMTP b26si1910042pgs.432 - gsmtp
+#+end_src
+
+There's not much to see besides a 200 code, meaning we've connected successfully. I feel like a lot of servers usually have a nice message like "hi" or "welcome" and I thought Google did too but I guess not.
+
+Our first step is to say hello to the server, which sounds like a joke but it's not. Enter `helo hi` and the server should greet you back like so:
+
+#+begin_src bash
+> helo hi
+250 mx.google.com at your service
+#+end_src
+
+I've artificially inserted a prompt here to denote what I've entered but generally, telnet will have no such prompt.
+
+Next, we'll need to say who the message is coming from. You can use your own email, or any email really. I like to use test@example.com because it's a dummy email, but it also comes from a real domain name. If that sounds like news, [IANA](https://www.iana.org) provides example.com as a domain for use in "illustrative documents" like books. Anyway, we provide our identity like so:
+
+#+begin_src bash
+> mail from: <test@example.com>
+mail from: <test@example.com>
+250 2.1.0 OK b26si1910042pgs.432 - gsmtp
+#+end_src
+
+We see another ~250~ response code followed by an `OK` which means that the mail server has accepted. If someone went wrong, we'd see a 500 code. I think I've gotten errors on rare occasions where I've used fake domain names so I just use example.com to play it safe.
+
+Lately, and where all our hard work pays off, is providing a recipient. This won't actually send an email, it'll just let us know if the address is real or not.
+
+#+begin_src bash
+> rcpt to: <ian@evernote.com>
+250 2.1.5 OK b26si1910042pgs.432 - gsmtp
+rcpt to: <not.ian@evernote.com>
+550-5.1.1 The email account that you tried to reach does not exist. Please try
+550-5.1.1 double-checking the recipient's email address for typos or
+550-5.1.1 unnecessary spaces. Learn more at
+550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp
+#+end_src
+
+As we can see, ian@evernote.com does indeed exist! We'd receive a 550 error if the user was invalid but there are often some catches.
+
+You won't always get it in the first go, or even necessarily have any leads on what the email structure looks like. All I can really suggest is brute force combinations until you get a response. If ian@evernote.com wasn't valid, my next step would look like this:
+
+#+begin_src bash
+> rcpt to: <ian.small@evernote.com>
+550-5.1.1 The email account that you tried to reach does not exist. Please try
+550-5.1.1 double-checking the recipient's email address for typos or
+550-5.1.1 unnecessary spaces. Learn more at
+550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp
+rcpt to: <i.small@evernote.com>
+550-5.1.1 The email account that you tried to reach does not exist. Please try
+550-5.1.1 double-checking the recipient's email address for typos or
+550-5.1.1 unnecessary spaces. Learn more at
+550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp
+> rcpt to: <ismall@evernote.com>
+250 2.1.5 OK b26si1910042pgs.432 - gsmtp
+#+end_src
+
+The most common formats are probably `first.name`, `f.last` and `flast` but I'm sure you can look up lists of common formats or something.
+
+*** Common gotchas
+
+The above usually works out for me most of the time but there's a few different things I've noticed along the way that can throw a spanner in the works.
+
+**** Blocked IP addresses
+
+This is one issue I came across while writing this post and it's to do with mail servers that refer you to a block list.
+
+#+begin_src bash
+> telnet microsoft-com.mail.protection.outlook.com 25
+Trying 104.47.53.36...
+Connected to microsoft-com.mail.protection.outlook.com.
+Escape character is '^]'.
+220 BL2NAM06FT004.mail.protection.outlook.com Microsoft ESMTP MAIL Service ready at Thu, 26 Sep 2019 10:51:20 +0000
+> helo hi
+250 BL2NAM06FT004.mail.protection.outlook.com Hello [121.74.XX.XX]
+> mail from: <test@example.com>
+250 2.1.0 Sender OK
+> rcpt to: <satya.nadella@microsoft.com>
+550 5.7.606 Access denied, banned sending IP [121.74.XX.XX]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609) [BL2NAM06FT004.Eop-nam06.prod.protection.outlook.com]
+#+end_src
+
+I've noticed it with websites that use Microsoft / Outlook primarily where it mentioned that your IP address, or perhaps your entire IP range, is banned and that you should visit a particular link.
+
+Presumably this is because common home address ranges are blocked, as I imagine most spammers just operate from those same ranges. I don't really have a solution for these cases unfortunately.
+
+**** Misleading success codes
+
+Some SMTP servers are configured so that every address returns a success code meaning you can't tell what exists and what doesn't
+
+#+begin_src bash
+> mail from: <test@example.com>
+250 2.1.0 Sender ok
+> rcpt to: <postmaster@fb.com>
+250 2.1.5 Recipient ok
+> rcpt to: <not.a.real.user@fb.com>
+250 2.1.5 Recipient ok
+> rcpt to: <mark@fb.com>
+250 2.1.5 Recipient ok
+#+end_src
+
+There's not really any way around this other than sending a real email I suppose but you can test for it pretty easily. I like to use two emails, `postmaster` and `not.a.real.user` first as a test to see what they return. By default, the large majority of mail servers, if not all, have a postmaster address by default so you can almost guarantee it exists. Likewise, you'd almost never create an address called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual target address.
+
+#+begin_src bash
+> mail from: <test@example.com>
+250 2.1.0 OK c127si1944876pga.334 - gsmtp
+> rcpt to: <postmaster@evernote.com>
+250 2.1.5 OK c127si1944876pga.334 - gsmtp
+> rcpt to: <not.a.real.user@evernote.com>
+550-5.1.1 The email account that you tried to reach does not exist. Please try
+550-5.1.1 double-checking the recipient's email address for typos or
+550-5.1.1 unnecessary spaces. Learn more at
+550 5.1.1  https://support.google.com/mail/?p=NoSuchUser c127si1944876pga.334 - gsmtp
+> rcpt to: <ian@evernote.com>
+250 2.1.5 OK c127si1944876pga.334 - gsmtp
+#+end_src
+
+*** What is this handy for?
+
+I first came across this trick a few years back. I had been talking to someone about a job interview, before I was actually in the tech industry but I... forgot to ask them for their email address. I remembered their name but I didn't know how it was formatted exactly so that's where this trick came in handy. It's useful to have in your back pocket when you want to email a semi-public figure too like the CEO of a company. Just make sure to use it wisely and respectfully. You won't make any friends by being malicious.
+
+*** Fun fact
+
+#+begin_src bash
+> nslookup -q=MX nintendo.co.uk
+Server:         192.168.1.1
+Address:        192.168.1.1#53
+
+Non-authoritative answer:
+nintendo.co.uk  mail exchanger = 20 luigi-mx.nintendo.de.
+nintendo.co.uk  mail exchanger = 10 mario-mx.nintendo.de.
+#+end_src
+
+** 25 :meta:
+:PROPERTIES:
+:EXPORT_FILE_NAME: 25
+:EXPORT_DATE: 2019-08-19
+:END:
+
+It's 6:30pm on my 25th birthday and I've been reflecting a bit on what I've managed to accomplish so far. While this isn't a post about that, there's no better time to assess the state of my personal site and where I'd like to go forward.
+
+*** The current state
+
+At present, my blog isn't really best effort. I'd like to write more things but I never really make it an actual goal. I'd say the biggest reason is that I've been wrapped up in work side projects instead of my own personal side projects so I'll be looking to stop doing that.
+
+My site has gone through plenty of iterations, with the current being a static site, built with Hugo and hosted on Netlify. It works but it's not exactly how I'd like it.
+
+Along the way, pages have disappeared. There used to be a projects page which never got filled in properly. There was also an archive of reviews I wrote years back. They're still there but not publically exposed anywhere.
+
+## Where I'd like to get to
+
+I always seem to fumble around a lot with Markdown. It works great but there's always things missing I wish I had. Some markdown libraries support tables while some don't, or defer to extensions.
+
+I've come across Asciidoc recently and it seems to be exactly what I'd like. Even as a general document format, it seems pretty handy.
+
+Hugo does have support for it, but it runs with some hardcoded flags that are annoying. It requires a Hugo heading block so you might get a mix like so:
+
+#+begin_src bash
+---
+title: 25
+date: 2019-08-19
+tags: [meta]
+---
+
+= 25
+Marcus Crane <marcus@utf9k.net>
+v1.0, 2019-08-19
+
+It's 6:30pm...
+#+end_src
+
+This works fine but I'd like to stick to just one single format. Mixing metadata just for Hugo and metadata just for Asciidoc is annoying so I'll have a look into that. Asciidoc itself provides pretty much everything I'd want out the box for a static site. The remainder is just building the category pages and so on, which I don't necessarily need a fully fledged framework for.
+
+*** Some topics I'd like to look into
+
+I've got a list of topics I sometimes keep handy but I haven't invested much time into exploring.
+
+Off the top of my head, there's some stuff I'd like to write about and others I'd have to research. In no particular order:
+
+- A writeup of all the iterations of my site with pros and cons (eg; Django, Flask, Hugo, Jekyll etc)
+- A comparison of "Prepay SMS UIs"
+  - A little while ago I changed cell providers (and then switched back). Topping up credit using SMS based menus was fascinating since it's like this whole web.
+  - It'd be interesting to model the various states you can get into and just talk about text based UIs in general
+  - Perhaps there'd be some lessons from there that could be reused in chat based UIs or whatever the flavour of the month is with Slack.
+- Donating to those who are homeless / on the streets in the future
+  - With plenty of things moving to Paywave type technology, what will happen?
+  - Personally, I rarely/never carry cash on me anymore so I couldn't give spare change even if I wanted
+- My own personal de-googlify post
+  - I recently deleted my Google account after finding a replacement for YouTube (exported my subscriptions as an RSS feed)
+  - Most other services I had a replacement for, or never used them.
+  - Currently running LineageOS with a custom location provider so pretty much no reliance on Google stuff for Android
+  - One missing piece then I'd be ready to write about how it's worked for (quite well actually)
+  - I'm not hardline "my freedoms" so I still run eg; Instagram and what not. The idea isn't to be pure but find a balance between convenience and privacy (as much as that's a thing hah)
+- Github vs Gitlab
+  - I recently imported some stuff to Gitlab. I haven't invested much time into it but it seems promising given how many features they've developed.
+  - They could all just be quite shallow and not very reliable however.
+- Reducing my "every day carry"
+  - I recently managed to merge my keys, cards and public transport tag into one which has been working quite well
+  - I'd always fancied the idea of not having a wallet but couldn't really see how it would work
+- Picking mediums
+  - Us humans seem to be bad at picking mediums. We do tweetstorms about political policy or complex issues rather than doing long form.
+  - In some cases, shorter mediums are popular but the medium itself shapes the content
+  - To fit eg; Twitter's message size, you're going to simplify ideas as much as you can (but no more) but nuance may get lost in the process.
+
+*** Other things to add
+
+- A proper projects page
+  - I've got some stuff I can probably put up but it would also give me a reason to focus on personal projects more
+- Bring back the reviews page
+  - I'd like to have something (automation idk) embed cover art and what not for reviews so they look a bit more official
+- Perhaps a stats page
+  - I used to have this at one point which would pull information from various places
+  - It was a nice excuse to play around with technology I wasn't familiar with like Redis or Celery queues
+- Setting the whole dynamic vs static thing
+  - Part of me wants to go back to dynamic all the time as an excuse to learn new technologies
+  - Maybe a mix of the two is would suit me best. Just use asciidoc (via a subprocess) to render pages / store them statically while dynamically building the list type pages
+
+*** How do I get there
+
+I just gotta start leaving my laptop at work or else I get tempted to work on work technologies honestly. None of the above is hard but it's easy to get side tracked or want to finish off something.
+
+In this case, there's no requirement for me to do so. Things just happen to cross over with my interests.
+
+Anyway, this post is me committing to changing that, and also having a list of things to look into before I forget.
+
+Perhaps we'll do a 26 this time next year. On that note.
+
+*** Some final thoughts
+
+- This site is essentially my portfolio but I don't care to make it particularly professional. The style is "Things past me would enjoy stumbling upon".
+- While there may be some posts about specialised topics, none of them should be sacred and should attempt to be readable by anyone.
+  - There's that scale that tells you if text is at a 3rd grade reading level etc. That could be an interesting thing to run over some posts.
+- I rarely look at analytics. They don't have any bearing on what I write. Comments I don't mind but they're not really integrated well. Maybe I'll get rid of them.
+- I'd like the site to be a bit more nice to look at. I tried the whole dark scheme for a bit and it's good but not quite perfect. Maybe I even support both?
+- Reference books seem to have some cool layouts. I could probably pull some inspiration from them.
+- I think I've fallen out of love with menus. If I do have then, breadcrumb style things might be a way to go.
+- I'd like to look back in a few years and see a bunch of stuff that reflects who I was, and how much I know, at that point in time. That's partly why having a format that lasts is important since Hugo may disappear one day for all I know.
+
+Thanks for reading
+
+** Retrieving credentials from Jenkins :cicd:jenkins:security:
+:PROPERTIES:
+:EXPORT_FILE_NAME: retrieving-jenkins-credentials
+:EXPORT_DATE: 2019-07-29
+:END:
+
+Have you ever stored a password in Jenkins, only to forget later on what the value is? You might try logging it from inside an existing job, but you'll find that Jenkins goes out of its way to mask that value from you (and any potential attackers!)
+
+There's a sneaky way to get those credentials out of a Jenkins agent that requires only a little bit of wrangling. It may be possible to lock this down, I haven't looked, so it's good to be aware of it, in order to consider the security implications too.
+
+Find the password you want to get your hands on
+
+[[/img/jenkins-credentials/credential-view.png]]
+
+Click ~Update~ which will show you an obscured version of the secret
+
+[[/img/jenkins-credentials/credential-update.png]]
+
+Right click on the ~Secret~ field and hit ~Inspect Element~ to bring up the developer tools for your browser
+
+[[/img/jenkins-credentials/inspect-element.png]]
+
+Either right click on the ~value~ part of the input field, or double click on the value area and copy the wonky looking hash. It'll be surrounded with braces eg; ~{ABC123=}~
+
+[[/img/jenkins-credentials/credential-hash.png]]
+
+With that value in your clipboard, go to ~/script~ eg; ~https://jenkins.example.com/script~ or from the homepage, visit ~Manage Jenkins -> Script Console~
+
+[[/img/jenkins-credentials/script-console.png]]
+
+Enter the following into the script console: ~println(hudson.util.Secret.decrypt('<paste hash here>'))~. Make sure to include the braces and the single quotes. You should see your credential output as seen below
+
+[[/img/jenkins-credentials/final-result.png]]
+
+It's a pretty handy trick, but quite obviously a borderline exploit at the same time. It's up to you to use it responsibly!
+
+** Fixing a WSL2 VHD conversion issue :beta:linux:windows:wsl:
+:PROPERTIES:
+:EXPORT_FILE_NAME: wsl2-vhd-issue
+:EXPORT_DATE: 2019-07-20
+:END:
+
+I recently started running the Windows Insider builds on my desktop so that I could play around with the new Windows Subsystem for Linux but I ran into some trouble. Before I get into the fix, here's a little bit of history
+
+*** The history
+
+For the unfamiliar, it's a way to run Linux applications inside of a Windows environment using a lightweight VM.
+
+For the familiar, you may have heard of WSL 1, which essentially translated Linux system calls into their appropriate NT kernel counterparts. The downside meant that things were kind of slow, and not everything worked as you would hope.
+
+The biggest downside was perhaps USB devices, in that there were no drivers to support them. Personally, I was unable to use the Yubikey NEO I had at the time, given that [[https://github.com/microsoft/WSL/issues/1521][smart cards had no support]]. Anyone using USB debug interfaces such as [[https://github.com/microsoft/WSL/issues/2185][JTAG]] or [[https://github.com/microsoft/WSL/issues/2195][ADB]] was out of luck too.
+
+Thankfully, this should hopefully be in the past now with the [[https://devblogs.microsoft.com/commandline/announcing-wsl-2][announcement of WSL 2]], a virtual machine that's supposed to be so light, it's not like those other slow virtual machines you think of.
+
+*** The fix
+
+Long story short, I dove in by following the installation instructions and hit a brick wall once I got to the second step.
+
+#+begin_src powershell
+PS C:\WINDOWS\system32> wsl --set-version Ubuntu 2
+Conversion in progress, this may take a few minutes...
+For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+The requested operation could not be completed due to a virtual disk system limitation.
+Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.
+#+end_src
+
+Upon trying to convert my WSL distros to Version 2, they complained about a virtual disk system limitation. I actually put this on the backburner for months until coming back to it today and the fix felt dumb.
+
+You'd never know it but your WSL packages live under ~%LOCALAPPDATA%/packages/<distro title surrounded by nonsense>~. In my case, Debian lives at ~C:\Users\Marcus\AppData\Local\Packages\TheDebianProject.DebianGNULinux_76v4gfsz19hv4~. If you visit your distro's respective folder, you'll find no virtual disk image in sight.
+
+The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under ~Right Click -> Properties -> General -> Advanced~, I spotted ~Compress contents to save disk space~ was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion worked as you'd hope.
+
+[[/img/wsl2-vhd-issue/compressed.png]]
+
+So, if you run into this issue, have a poke around your packages and hopefully you'll be on your way to a nice, properly Linux-y home on Windows.
+
+** What is the future of emergency services? :future:people:
+:PROPERTIES:
+:EXPORT_FILE_NAME: future-of-emergency-services
+:EXPORT_DATE: 2019-03-20
+:END:
+
+Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [[https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline][Healthline]] who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.
+
+Shortly after I hung up, I had a pain spike bad enough to make me burst into tears. I wasn't getting anywhere clutching my stomach on the floor so I called an ambulance.
+
+An operator took my information, said that someone would be on their way and then hung up. I waited... and waited... Just over an hour passed before I gave up and called an Uber. One just happened to be 2 minutes away, with the entire trip only taking about 10 minutes from start to finish.
+
+Part of me worried they had turned up only to find me not there so I called back and asked to have the request cancelled. They did so and I asked what the state of the callout was only to find that nothing was ever dispatched due to a high callout rate in my area. Presumably based on my age and the symptoms, they figured I was at low risk?
+
+It didn't leave me with a good feeling or sense of security but it did get me wondering about two things: Statistics and the future of emergency services.
+
+Most of this article would likely have been joking about how there will probably be "Uber for Ambulances" as I often have.
+
+#+begin_quote
+new startup idea: uber for ambulances. cheaper rates than a normal ambulance unless rugby is on then it's 6x surge prices or you're fucked --- [[https://twitter.com/sentreh][@sentreh]]
+#+end_quote
+
+There have been [[https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html][a]] [[https://www.buzzfeednews.com/article/carolineodonovan/taking-uber-lyft-emergency-room-legal-liabilities][few]] writeups about how patients are using ridesharing services in place of ambulances and I think I understand why.
+
+[[http://www2.ku.edu/~kuwpaper/2017Papers/201708.pdf][This non-peer reviewed paper]] in particular, from the University of Kansas, noted an 8% decline in ambulance callouts following the launch of Uber in each respective city measured in the study.
+
+Now having said all this, there was actually an announcement this time last year for [[https://www.uber.com/newsroom/uber-health/][Uber Health]] in the US. The service is more for booking health-related rides on behalf of patients, as opposed to straight up replacing ambulances but give it enough time and I could see that extra capacity being leveraged to fill in the gaps.
+
+My second question, and one that I'm not really qualified to answer, is to do with the actual callout rates.
+
+The [[https://en.wikipedia.org/wiki/St_John_New_Zealand][St John]] Organisation are the primary dispatcher of ambulances in New Zealand, providing emergency services to [[https://www.stjohn.org.nz/What-we-do/St-John-Ambulance-Services/][nearly 90% of New Zealanders]] according to their own website.
+
+They have a handy [[https://www.stjohn.org.nz/News--Info/Our-Performance/Response-Times/][section on response times]] which links to the [[https://www.health.govt.nz/new-zealand-health-system/key-health-sector-organisations-and-people/naso-national-ambulance-sector-office/emergency-ambulance-services-eas/performance-quality-and-safety/emergency-ambulance-service-national-performance-reports][Ministry of Health's Emergency Ambulance Service national performance reports]]. Look a bit closer and you'll see "For information about St John’s performance visit the performance section of their web site." which just leads us back to where we started!
+
+Thankfully, their annual reports contain some of the information we're after. Let's take the [[https://www.stjohn.org.nz/globalassets/documents/publications/annual-report/stj-annual-report_2018_lq.pdf][2018 Annual report]] as an example.
+
+If we jump all the way to Page 50, we can see a breakdown of numbers with 533,669 ambulance emergency calls made. Another line item mentions 480,411 patients treated or transported by ambulance officers. If we were to very roughly assume that 1 call correlated with 1 patient, that would leave 53,258 calls that are never responded to.
+
+Obviously that's not the whole picture. One call could be for a car crash with multiple injuries while the already deceased may not be counted as "Patients treated or transported". Similarly, it doesn't take into account prank calls, duplicate calls and no-show patients who can't cancel callouts.
+
+Either way, I think it still does point out that there's likely a chunk of callouts that never get responded to as a result of unstaffing combined with ever increasing callout numbers. It's pretty dystopian having something like the "Gig Economy" acting as a replacement for essential services but I suppose I'll take what I can get.
+
+Besides, I never liked the attention that came with flashing lights and sirens anyway.
+
+** Recovering lost python results in the REPL :python:snippet:
+:PROPERTIES:
+:EXPORT_FILE_NAME: lost-python-results
+:EXPORT_DATE: 2018-12-12
+:END:
+
+I was messing around with some queuing earlier today in order to try out the [[https://github.com/celery/kombu][Kombu]] library. It works pretty nicely but I goofed up while playing with it.
+
+To add a message to a queue, it looks a little like this:
+
+#+begin_src python
+from kombu import Connection, Queue
+
+conn = Connection() # Defaults to a RabbitMQ Docker container I have running locally
+queue = conn.SimpleQueue('test')
+queue.put('this is a message i want to put on the queue')
+#+end_src
+
+You may want to use a context manager instead but for a simple test, this works fine. Now then, how about getting a message off the queue? It's straight forward as well.
+
+#+begin_src python
+queue.get()
+# <Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
+#+end_src
+
+Cool, we've received a message now so next we need to acknowledge it with the ack function...
+
+Wait a minute, we forgot to save that message to a variable so how the hell can we acknowledge it?! Damn, it's totally just lost in memory, huh?
+
+This is a scenario I ran into and it got me wondering: Is it possible to retrieve a Python object by that hex/memory address? Well, it turns out that you can't. I haven't done a deep dive yet but if it's a continuously running application, it may soon exit memory and be lost forever.
+
+If you're just running in the Python REPL however, there is actually a way: The handy ~_~ operator.
+
+#+begin_src python
+# <Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
+_.ack()
+# <Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
+message = _
+print(message)
+# <Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}>
+#+end_src
+
+As you can see, the interpreter actually binds the last result to the ~_~ character. If you were to do ~1 + 1~, the value of ~_~ would be 2! You can also bind the value to a variable for use later on.
+
+I don't think I'd need it often but it's very handy to know.
+
+** When automation goes horribly right :automation:microservices:twitter:
+:PROPERTIES:
+:EXPORT_FILE_NAME: automation-right
+:EXPORT_DATE: 2018-12-03
+:END:
+
+Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
+
+Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a [[https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html][blog post]]. There were a bunch of things from quick replies to profile-listed support hours which I'm sure were of some use.
+
+I used the latter but I also enabled "welcome messages": automated replies that would trigger when a "customer" opened your direct messages. In my case, I'm not a business so it was more just some silliness to add to my profile and it confused a few people along the way.
+
+[[/img/automation-right/confusion-one.png]]
+
+Over time, I'd forget that I had it enabled and then someone else would get caught out by it a few months later
+
+[[/img/automation-right/confusion-two.png]]
+
+and then it kept going at which point it started becoming a bit of a nuisance.
+
+[[/img/automation-right/confusion-three.png]]
+
+At this point, I was particularly annoyed and attempted to turn it off. I clearly remembered that there was a dashboard but do you think I could find it? That would be too easy!
+
+You can actually see a walkthrough of that very page right [[https://youtu.be/H-n0hRO7oLk?t=75][here]] but good luck finding it because it was actually removed.
+
+At first I didn't believe it. I just figured I had forgotten how to navigate to it but every month, I'd try once again to track it down with no luck. Eventually, I just resigned myself to the fact that some automation was running somewhere inside Twitter and I could never turn it off.
+
+Things changed. I started a new job as a Site Reliability Engineer funnily enough. I would laugh to myself whenever we discussed service availability. Inevitably, it would come up that Google has planned outages in order to keep downstream providers on their toes and not overly reliant.
+
+I wished so hard that Twitter would have a planned outage but no, apparently this microservice, or whatever it was, never failed. It was perfect and never toppled. Seriously, give those developers a pat on the back because I wanted nothing more than to take a baseball bat to the entire fucking cloud.
+
+Obviously I couldn't just simply call Twitter and ask them.
+
+Fast forward to today and once more, a confused friend simply messaged me "?". I didn't even have to ask. Whatever this automation was, it never really seemed consistent either. Those who I talked to often would suddenly receive an automated response out of nowhere. Not that I could tell since it wasn't me talking.
+
+Finally I stumbled onto the Twitter Developer forum and... ah! [[https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561][I wasn't alone!]] I'm not crazy! Someone else remembers this thing!
+
+After a bit of confusion, it was cleared up that the Twitter API has a section for "welcome messages" which are these very same automated snippets. Using [[https://github.com/twitter/twurl][twurl]], a Twitter-modified version of curl, I could view those darn things finally.
+
+[[/img/automation-right/welcome-messages.png]]
+
+There they were. Sitting within the API the whole time although I'd guess that feature was only documented as part of the recent overhaul of Twitter's developer APIs. Even the original URL, [[https://dashboard.twitter.com][dashboard.twitter.com]], doesn't resolve anymore which is all the proof I needed that I'd been left out in the cold.
+
+With some copy paste magic, I quickly wiped the slate clean. I was free!
+
+Finally awake from that god awful nightmare.
+
+The Twitter Business Experience was definitely just that...
+
+That just leaves one last question: if it took me many months to fix this problem, what hope do those actual businesses who signed up have?
+
+I guess you get the support you pay for, huh?
+
+** A brief guide to OIAs in New Zealand :government:guide:nz:oia:
+:PROPERTIES:
+:EXPORT_FILE_NAME: nz-oia-guide
+:EXPORT_DATE: 2018-08-18
+:END:
+
+I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [[http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html][Using FOIA Data and Unix to halve major source of parking tickets]]. As you can imagine, the post is [[https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin][exactly what it says on the tin]] and got me inspired to do some own data wrangling of my own.
+
+A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story. They seemed to think it was a neat idea but didn't have a great understanding of the Official Information Act process. I mean, just look at that name! It sounds all legal and fancy but really, it's actually very straight forward (and arguably kinda fun).
+
+I'm no expert myself but I can at least show you where to start. I actually have a yearly FOIA request I make but I'll save that story for the end of this post. Now, onward!
+
+*** Some caveats
+
+It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked #1 in [[https://www.transparency.org/country/NZL][Transparency International's Corruption Perception Index]] so as you can imagine, there's generally no hassle with requesting information from our government.
+
+It should go without saying that a less transparent, or even citizen-hostile government is going to be an entirely different kettle of fish.
+
+*** Official Information what?
+
+Ah yes, right. Maybe you've heard of the term FOIA or OIA but haven't really got an idea of what it is or where the ability originates from. Is it a service granted from the kindness of our governmental overlords? Hah! Well... it is!
+
+The Official Information Act of 1982, readable [[http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html][here]], is actually a replacement for the [[http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183/][Official Secrets Act 1951]]. I can't say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I've cut out some bits so it's not just a huge wall of text.
+
+> 6 (1) If any person, having in his possession or control ... any sketch, plan, model, article, note, document, or information ... which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position ... (a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it ... he commits an offence against this Act. --- Section 6 (1),  New Zealand Official Secrets Act 1951
+
+The idea of information belonging to "the Queen and her advisors" slowly seemed like a bunch of nonsense and as a result, the Official Information Act was born. In short, it allows anyone present in New Zealand (citizen or visitor) to request, surprise, information from any government Minister, department or organization. That's basically all it boils down to.
+
+*** What can I request?
+
+Generally speaking, there's no limit on what you can request but as with most parts of life, just because you ask doesn't mean you shall receive.
+
+There are some cases where the requestee can deny your request but it has to be justified. Specifically, Section 6(a) through (e) outlines acceptable reasons for dismissing your request:
+
+> (a) to prejudice the security or defence of New Zealand or the international relations of the Government of New Zealand; or
+
+> (b) to prejudice the entrusting of information to the Government of New Zealand on a basis of confidence by— (i) the Government of any other country or any agency of such a Government; or (ii) any international organisation; or
+
+> (c) to prejudice the maintenance of the law, including the prevention, investigation, and detection of offences, and the right to a fair trial; or
+
+> (d) to endanger the safety of any person; or
+
+> (e) to damage seriously the economy of New Zealand by disclosing prematurely decisions to change or continue government economic or financial policies relating to— (i) exchange rates or the control of overseas exchange transactions: (ii) the regulation of banking or credit: (iii) taxation: (iv) the stability, control, and adjustment of prices of goods and services, rents, and other costs, and rates of wages, salaries, and other incomes: (v) the borrowing of money by the Government of New Zealand: (vi) the entering into of overseas trade agreements.
+
+*** Where to make a request (the hard, secret way)
+
+So, you want to learn a thing or two, eh?
+
+You'll need to know two things: who you want to contact (even roughly) and what you want to ask them. It seems obvious but if your request is too vague, or wide reaching, you'll likely be asked to be more specific. Don't forget, each request is painstakingly completed by a civil servant so they can't shift mountains or compile impossible requests.
+
+Now that you've got a goal in mind, the next step is just to contact the agency in question. As noted in Part 2, Section 12(1AA)(a), your request can take any form, whether it be a letter, email or even just verbally. Generally, email is the way to go however so just look up the website for your agency of choice and they should have a page for OIA requests.
+
+For example: a Google Search for `ministry of justice oia` brings up their [OIA request page](https://www.justice.govt.nz/about/official-information-act-requests/). It should be as straight forward as following the instructions from there. Some agencies, such as NZ Police, may ask for proof of citizenship in certain cases as I understand but you'll likely not run into that issue. Similarly, some agencies may charge for very large requests but as I understand, it's fairly rare for that to occur.
+
+*** Where to make a request (the easy, public way)
+
+There's actually an easier way to make OIA requests thanks to the fine folks over at [[https://fyi.org.nz][FYI.org.nz]]. Simply pick an agency, fill in your request and the rest is sorted from there. Your request is given a page, not unlike a forum thread, and responses show up when they come back. Other users can give you advice if they think the response you got was crap and you'll also be given the option to forward your response to the [[http://www.ombudsman.parliament.nz/][Ombudsman]] should you choose to dispute it.
+
+The only catch is that all requests are public, so as to cut down on duplicate requests. Don't worry, none of your information is public, just your first name. The initial query, and any replies you send, are sent through FYI's own email address which acts as a middle man on your behalf.
+
+If you'd like to do a project surrounding public utilities, persuing past requests can be a great way to get ideas on what sort of information you could request.
+
+*** What requests have you done?
+
+At this point, the guide itself is over but I have a bit of a fun story that you might like to use as inspiration yourself. Earlier, I mentioned Section 6 which outlines reasons that agencies can reject your requests. There's a few requests on FYI that have been rejected or redacted under those grounds.
+
+It occured to me one day. While I can't even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It's an interesting list, and probably about what I would guess to.
+
+| Request Date | Subject                                                                                                                                             | Denied Under  |
+|--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+---------------|
+| 09/02/2016   | Detention and deporation of New Zealanders from Australia                                                                                           | 6(a)          |
+| 30/03/2016   | Prime Minister's recent visit to Sri Lanka                                                                                                          | 6(a)          |
+| 06/04/2016   | Communications regarding the 2016 US Presidential Election                                                                                          | 6(a)          |
+| 25/05/2016   | Britain possibly leaving the European Union                                                                                                         | 6(a)          |
+| 07/06/2016   | Panama Papers                                                                                                                                       | 6(a)          |
+| 16/08/2016   | Decision to extend New Zealand's training mission to Iraq                                                                                           | 6(a)          |
+| 2016 - 2017  | Intelligence and advice to the NZ government related to the 9/11 event                                                                              | 6(a)          |
+| 2016 - 2017  | Record of OIAs from February 2017                                                                                                                   | 6             |
+| 2016 - 2017  | Preparation for Trump Administration                                                                                                                | 6(a), 6(b)    |
+| 2016 - 2017  | NSS handbook examples of 1080 and domestic incident                                                                                                 | 6(a)          |
+| 2016 - 2017  | The steel industry and trade issues                                                                                                                 | 6(a)          |
+| 2016 - 2017  | Meetings with Australian officials on social security                                                                                               | 6(a), 6(b)    |
+| 2016 - 2017  | Interactions with United States Film Industry representatives                                                                                       | 6(a)          |
+| 13/04/2018   | Advice relating to Labour Party summer schools                                                                                                      | 6(c)          |
+| 18/04/2018   | Weekly reports provided to the Minister for National Security and Intelligence                                                                      | 6(a), 6(b)(i) |
+| 20/04/2018   | Correspondence with the Office of the President of the United States                                                                                | 6(a)          |
+| 18/05/2018   | Information including individual costs of gifts given during visit to Europe and the UK                                                             | 6(a)          |
+| 28/06/2018   | Prime Minister's diary                                                                                                                              | 6(a)          |
+| 03/07/2018   | Records of meeting with former President of the United States                                                                                       | 6(a)          |
+| 13/07/2018   | Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence | 6(a), 6(b)(i) |
+| 24/07/2018   | Records relating to visit to NZ by former US Secretary of State Hillary Clinton                                                                     | 6(a), 6(c)    |
+| 30/07/2018   | Correspondence with the President of the United States                                                                                              | 6(a)          |
+| 11/09/2018   | Inquiry into the appointment process for the Deputy Police Commissioner                                                                             | 6(c)          |
+| 03/10/2018   | Phone calls to heads of state                                                                                                                       | 6(a)          |
+
+Sources: [^1][^2]
+
+A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it's still interesting nonetheless.
+
+I'd love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can "FOIA the fuck out of it" to quote a tweet I saw earlier today.
+
+[^1]: [[https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960][FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz]]
+[^2]: [[https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439][Withheld / Rejected OIA Filings - fyi.govt.nz]]
+
+** Humans don't come with lore tabs :people:
+:PROPERTIES:
+:EXPORT_FILE_NAME: lore-tabs
+:EXPORT_DATE: 2018-02-28
+:END:
+
+This post has been a long time coming because I've never really known how to express it. I'm not even sure I can write it properly anyway but I'm going to at least try.
+
+I recently started the Xero Graduate Programme which has been amazing! As with any new position, it inevitably involves meeting a lot of new people for the first time. I'm not really here to talk about the program itself which is a story for another time.
+
+I'm purely talking about my own experiences struggling to interact with people properly. I figure by writing about it, even if I should fail to improve as a result, you'll at least have an insight to how some people struggle with this kinda stuff.
+
+I often feel like I'm stuck in a recurring loop where I'll meet someone that I consider to be not only interesting, but worth knowing, and so I decide "I'd like to know more about this person". I mean, we all do it but the more I consider my past approaches, I've realised that I was digging for lore first, rather than getting to properly know the person.
+
+What do I mean? Well, let me take a step back and explain what lore is. It's a term that is found commonly in fictional universes such as TV series, games, comics, movies and so on. If the story and character progression of a TV series is the plot, then lore is the mythos of the characters and its world. Past battles, heroic struggles, craters left where cities once stood, ancient texts left by those past and so on. Obviously I'm not suggesting that your average person is supposed to be some kind of otherworldly being but the point is, humans don't have lore tabs.
+
+What I mean is that you can't, and shouldn't, be able to just learn about someone in an instant. Game of Thrones is likely a popular example of this. I haven't watched it but I know that if I were to start, I could pour over its wiki and spend hours learning about cities, people, kingdoms, tribes and so on. For years, humans have been fascinated by good stories and lore, no matter the medium it takes, is probably the purest concentration of stories past.
+
+Actual humans - living people - may have good stories and interesting tales but you can't just skip to the last page and find out what happens to your favourite character. At some point, you might consider learning a lot about someone would make you a better friend because you can understand their nuances. Learning what makes them tick may allow you to adapt but friendships aren't the result of studying someone's past. Funnily enough, they're the result of being a part of someone's past, which can only be done by being in the present. Ironic since it's almost putting the two backwards but in a sense, that's what I had been doing.
+
+What leads someone to think like that? I've been mulling over this lately because almost all of us act out the same pattern to an extent. Biographies, literally the story of others, are a popular book category while Wikipedia has detailed articles on any celebrity you can imagine. They're still people too like you and me so where do you draw the line? Heck, the sheer scale of public information shared by society makes it easier than ever before to scope out someone's past. We're the most documented group of humans in history, essentially recording our autobiographies in real time. The only deciding factor I can up with has to be intent.
+
+It's not what it used to be but I remembered a post from Lifehacker that I read back when, geez, I must've been about 14 at the time? The author was talking about Last.FM. The short of it is that you can "scrobble" music you listen to. It just records a song as listened to once you've hit, say 80% of the song played. Over time, you can view a history of your favourite artists, get recommendations and generally just share your taste in music. The post was talking about the Last.FM service, and specifically how the author had noted their friend would scrobble happy tracks on a good day and vice versa when things were looking bleak.
+
+Their friend was inadvertently letting on to how they truly felt without possibly giving it a second thought. I couldn't track down the original post which is probably long gone but the author noted how it enabled them to be a better friend to an extent. I'm fairly certain that was actually the day I signed up for the service and I still use it to this day. Spotify and other popular services still have native integrations built into their clients. Perhaps it's obvious but the same never happened for me. Who could expect such a thing with so much content floating around. Even if someone did have a look, you'd have to be consciously looking for patterns anyway. If I can't be lucky enough to have someone who thinks like that, surely I can be that person for someone else, right? The intention is good so what could go wrong?
+
+Like most things that get out of hand, this all started small and with the best of intentions. I've got two past examples that quickly spiraled in different directions. I'll leave them up for you to decide what's good, bad and in between. Sometimes things are never so clear cut, especially in the moment.
+
+I once was getting ready for a date and I was quite excited! It's not often that I set them up and when I do, I try to put in my best efforts. I was stood up and left very confused. Not only that, I was blocked on every conceivable platform for no obvious reason. I know it's often said but I genuinely didn't get it. I should've shrugged it off but it kept eating away at me until I decided I needed to find out just to get over it. Back to what I said about biographies, she'd had a YouTube channel with a public view history. Roughly 30% of the views she watched were themed around dealing with anxiety. Part of me wish I had known that earlier so I could have been more accomodating if that's what she needed but context matters. Here was a relative stranger that I have no right to know any more than she lets on personally. I still feel bad for her honestly even though I was the one who got burnt. Were they bad actions to take even though they had good intentions? I honestly can't say.
+
+I was scrolling my timeline one night and came across a tweet from a teenager. He'd claimed to have just swallowed an entire bottle of medicine in a suicide attempt that he desperately wanted to undo. Rounding up an online acquaintance, we put our cursed skills to work as quick as we could. From little more than a username, we narrowed him down to a first name, nationality, gender, age estimate and state. Unfortunately it wasn't enough specific enough that any authorities would be able to put it to use but he did end up surviving. I had previously sent him a message reassuring him since he'd disappeared offline but I never got a response.
+
+He's still active to this day I believe but understandably, two strangers digging up your information can be disconcering no matter the circumstance. I still feel bad about the situation, despite the outcome. As you comb through those forum posts, abandoned IRC logs and tweets, you begin to feel like you understand the person. You can almost picture how they're thinking by what they say, and even more crucially, what they don't. It's like you know the person for a brief moment only to remember it's a one way screen and they could give less of a shit about you despite the attempt. Good actions? Good intent? What's the difference? They're essentially the same story, right but they feel different.
+
+Anyway, what's the point of this little exercise, and this post as a whole? The big picture of it is that realistically, what I've just described is a problem. I often have a problem with getting to properly know people. I'm great at learning who someone is but generally at a distance. If a group of friends are the main cast, I'm one of the extras in the background. Honestly, I probably don't think I'm worthy enough to be promoted to a main character in this scenario because I often struggle to see it happening. I was recently at a meetup and I felt painfully like the odd one out. You can almost read the indifference in some people's face when you talk to them. If I've learnt anything over the last few years, it's that I think I'll always cope better being picky with this sort of stuff. Sometimes I try to be friendly and seemingly the other party gets the wrong impression that I have some kind of motive. To steal a quote from Wargames, it often feels like the only winning move is not to play.
+
+If you've ever read Dale Carnegie's How to Win Friends and Influence People, then good on you because I haven't. In the book, he comes to the conclusion that for others to take a genuine interest in you, it takes little more than being interested in them. The more you ask questions of others, the more interesting they will apparently find you. Perhaps it's true, I couldn't say but lately I feel like mystery might be a common thread. Looking back, some of the more interesting people I've met have been quite illusive. That is to say, they're never around. At that point, I have to wonder though if it's the absence generates the mystery or if being a wanted person generates the absence. Perhaps one feeds the other and the secret is to just not give a shit and purposely be unavailable. Just rarely look at notifications and struggle to keep appointments. Slowly disappear from view until you're all but forgotten. I'm joking of course but I wonder if there's something to be learnt from those people.
+
+All in all, what have we learnt? Well, I've basically admitted that I may or may not be an awful person depending on how you've felt after taking this lengthy journey. Odds are that you've already made up your mind well before now if we've met before. Hopefully you've gained some insight into the meta of dealing with other people. I suppose this kind of thing comes naturally but I feel like I missed a memo somewhere. Either way, the first step is admitting something is wrong. Once you do that, hopefully it should be more straightfoward to progress and become a better person. Perhaps you can let me know how I get on?
+
+Now if you'll excuse me, I have to go and return some videotapes.
+
+** Day Xero :anxiety:work:
+:PROPERTIES:
+:EXPORT_FILE_NAME: day-xero
+:EXPORT_DATE: 2018-02-15
+:END:
+
+Technically it's Day 1 of my new job, a Graduate Site Reliability Engineer at [[https://www.xero.com/nz/][Xero]] but it hasn't officially started since I'm still on my way to the airport.
+
+I told myself that when I finally got my first full time development position, I'd write a big post mortem about how long it took, how many times I was rejected and all that but since I haven't (yet), this is my offering to the Content Overlords.
+
+I don't even know if I actually slept last night because it felt like most of it was like "Oh no, what have I actually learnt over the last year" and other rude things from that pesky doubtful voice we all have.
+
+Excuse me, you silly voice, I'll have you know that I've used and/or fiddled with ahem
+
+[[https://docker.com/][doc]]hi[[http://flask.pocoo.org/][ask]]ydd4h[[https://www.python.org/][py]][[https://www.djangoproject.com/][dja]]22hf[[https://nodejs.org/en/][nod]]j2ve[[https://www.npmjs.com/][n]]a43[[https://reactjs.org/][rea]]f[[https://webpack.js.org/][we]]tex[[https://babeljs.io/][abe]]gdd0r
+g[[https://neovim.io/][neov]]1fuh[[https://github.com/][ith]]u[[https://github.com/lepture/mistune][ist]]fh[[https://www.archlinux.org/][rc]]8gzvf[[https://www.gnu.org/software/stow/][tow]]fi[[https://www.mediawiki.org/wiki/MediaWiki][med]]uwh[[https://www.mediawiki.org/wiki/Extension:Tabber][tab]]f2[[https://github.com/marcus-crane/dotfiles][do]]fq[[https://github.com/tmux/tmux][tmu]]d[[https://www.neomutt.org/][mu]]
+
+and let me tell you, MediaWiki is something... special alright but it's solid!
+
+I'd be silly of course to think that somehow knowing a bunch of frameworks and languages will somehow mean I'm set for life because that's nonsense talk. It's all about knowing picking the right tool for the right job, y'know?
+
+One of the things I'd like to do more this year is reading more about actual software stories. I started reading [[https://en.wikipedia.org/wiki/Dreaming_in_Code][Dreaming in Code]] earlier this year which seems to be a "what not to do" manual.
+
+The author, Scott Rosenberg often veers so far into tangents that half the book feels more like a history lesson than development but that's good! Software won't save you, or the planet, on its own. You gotta focus on the people behind it and getting them working together as a proper team.
+
+This post isn't actually about anything as you can tell. It's the [[https://en.wikipedia.org/wiki/Seinfeld][Seinfeld]] of posts. Well, that's not true since Seinfeld isn't actually about nothing, it's just a show without drama. It's supposed to just be regular life because your average person doesn't live out [[https://en.wikipedia.org/wiki/Sex_and_the_City][Sex in the City]] on a daily basis. I've never actually seen that show though, it's just used as a punchline a lot.
+
+I'm sure if I look back at today, I'll wonder what I was even worried about. If you think about friends or coworkers, do you even really remember meeting them? It's like as soon as you properly know someone, you just kinda forget any awkward moments before your first interaction. I suppose it's like that with jobs. You just kinda turn up one day and, assuming you try your best, you just kinda slot in nicely as if you'd been there the whole time.
+
+Anyway, I better deploy this thing before my taxi gets here. It's still kinda crazy to me that I can just give away the [[https://github.com/marcus-crane/site/blob/95ae742bbf33662f4dd4cf284e463d0f9320c8d1/site/posts/blog/2018/2018-02-12-day-xero.md][actual post file]] you're reading with a few entries into a terminal. Yes, I had to manually make that link because this post even in the repo yet! That's like some kinda preemptive sharing, whoaaa mannnnn.
+
+As someone who learnt piece by piece, pouring a bunch of hours into Right Click -> View Page Source, it's nice to give my own stuff back. I can't remember who said it or when but someone once said something along the lines of "I don't write code, I merely borrow it." Their point wasn't that they spend all day on Stack Overflow but rather that none of their ideas are truly original. Nothing is original because it's all inspired by things that came before.
+
+Ok, ok, my time is actually almost up and while I'm a bit freaked out that I'll be diving into my first full time software job after years of being a hobbyist, there's one thing that I try to remind myself. I might not truly know what I'm doing but neither does anyone else.
+
+As someone else once told me:
+
+#+begin_quote
+Adults are just kids who got older
+#+end_quote
+
+*EDIT: This post was rushed and not planned out at all but I'll be posting it as is for historical reasons*
+
+** Installing Arch Linux on my Intel NUC :arch:guide:linux:
+:PROPERTIES:
+:EXPORT_FILE_NAME: arch-nuc-install
+:EXPORT_DATE: 2017-12-24
+:END:
+
+It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
+
+Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
+
+*2019 Update*: [[https://manjaro.org/][Manjaro]] is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
+
+*** Getting online
+
+As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll start by getting online. You can do this graphically by running ~wifi-menu~.
+
+#+begin_src bash
+wifi-menu
+#+end_src
+
+Once you've set up a profile, you'll see a new entry when using the ~ifconfig~ command and you can confirm you're online with ~ping archlinux.org -c 3~.
+
+*** Setting up your hard drive
+
+Personally, I wouldn't, and probably couldn't (yet) install Arch Linux as a dual boot partition. That is, alongside another operating system such as Windows or macOS. You might like to and that's great but this isn't the guide for you :)
+
+First, we need to see what our current devices are:
+
+#+begin_src bash
+fdisk -l
+#+end_src
+
+You may see a few. In my case, my hard drive has a few ~/dev/sda<number>~ entries and my USB has 2 ~/dev/sdb<number>~ entries. For the purposes of this guide, I'll be assuming that your hard drive is under ~/dev/sda~ but when installing to, say, a Macbook, I've found that the hard drive can be under ~/dev/sdb~.
+
+My hard drive will end up looking as follows once I've set it up:
+
+| Size | Purpose        | Location |
+|------+----------------+----------|
+| 500M | Boot Sector    | /boot    |
+| 20G  | System Root    | /        |
+| 8G   | Swap Space     | N/A      |
+| 437G | Home Directory | /home    |
+
+I'm targeting a [[https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface][UEFI]] BIOS  so we'll be using [[https://en.wikipedia.org/wiki/GUID_Partition_Table][GPT]] for our partition table.
+
+The following uses [[https://www.gnu.org/software/parted/manual/parted.html][gparted]] which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
+
+**NOTE**: The following WILL wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+
+*** Partitioning
+
+#+begin_src bash
+# Launched parted, passing our hard drive as an argument
+parted /dev/sda
+
+# Create a partition table using the GUID Partition Table (GPT) format.
+# This wipes your drive(!)
+mklabel gpt
+
+# Create a 499M boot sector that will live at /boot
+# ESP is short for EFI System Partition and are always formatted as FAT32
+# We start at 1MiB instead of 0 because MBR/GPT both use the first block
+# ~ https://unix.stackexchange.com/a/286325
+# We use 550MiB as Rod Smith reports possible bugs with ESPs below 512MiB
+# ~ http://www.rodsbooks.com/efi-bootloaders/principles.html
+mkpart ESP fat32 1MiB 551MiB
+
+# Set the boot flag to ON on partition number 1
+# ~ https://www.gnu.org/software/parted/manual/html_node/set.html
+set 1 boot on
+
+# Create a 20G ext4 partition that will live at /
+mkpart primary ext4 551MiB 20.5GiB
+
+# Create an 8G swap partition
+mkpart primary linux-swap 20.5GiB 28.5GiB
+
+# Allocate the remaining space which will be used by users at /home/{user}
+mkpart primary 28.5GiB 100%
+
+# All done!
+quit
+#+end_src
+
+Now that are partitions are set up, running ~fdisk -l~ again should show the following:
+
+| Device    | Size   | Type             |
+|-----------+--------+------------------|
+| /dev/sda1 | 499M   | EFI system       |
+| /dev/sda2 | 20G    | Linux filesystem |
+| /dev/sda3 | 8G     | Linux swap       |
+| /dev/sda4 | 437.3G | Linux filesystem |
+
+*** Making file systems
+
+We don't need any utilites to create our file systems, we can just do 'em straight outta the box like so:
+
+#+begin_src bash
+# Create a 32bit VFAT filesystem for our boot partition
+# VFAT is essentially FAT32 with support for longer filenames. See below for more details.
+# ~ http://wiki.linuxquestions.org/wiki/VFAT
+# ~ https://unix.stackexchange.com/a/263731
+mkfs.vfat -F32 /dev/sda1
+
+# Create an ext4 filesystem for our root partition
+mkfs.ext4 /dev/sda2
+
+# Prepare a swap area
+mkswap /dev/sda3
+
+# Activate our created swap area
+swapon /dev/sda3
+
+# Create an ext4 filesystem for our home partition
+mkfs.ext4 /dev/sda4
+#+end_src
+
+Now that our hard drive is completely set up, we're ready to mount our file systems.
+
+*** Mounting our new file systems
+
+Just as a reminder, here's where we want our partitions to end up
+
+| Device    | Format | Location |
+|-----------+--------+----------|
+| /dev/sda1 | ESP    | /boot    |
+| /dev/sda2 | ext4   | /        |
+| /dev/sda4 | ext4   | /home    |
+
+Here's how this layout translates into mount commands:
+
+#+begin_src bash
+# Mount our root partition to /mnt
+# NOTE: /mnt doesn't persist once we're in our bash prompt
+# For example, /mnt/home becomes just /home
+mount /dev/sda2 /mnt
+
+# Create a folder which our ESP partition will be mounted to
+mkdir /mnt/boot
+
+# Mount our ESP partition to /boot
+mount /dev/sda1 /mnt/boot
+
+# Create a home folder where all of our user directories will live
+mkdir /mnt/home
+
+# Mount the home partition to /home
+mount /dev/sda4 /mnt/home
+#+end_src
+
+Nice! We're completely done and can start to actually install and configure Arch Linux.
+
+*** Installing base packages
+
+Now we need to download and install the base packages for Arch Linux to our ~/mnt~ which will becomes our root (~/~) later on.
+
+#+begin_src bash
+pacstrap /mnt base
+#+end_src
+
+For the curious, the ~base~ group contains a number of default libraries and utilties you may have used such as ~man~, ~openssl~, ~bash~, ~iptables~ and ~gcc~ to name a few.
+
+You can view the ~pacstrap~ script itself [[https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in][here]]. I thought it would be quite longer!
+
+The script also runs the ~mkinitcpio~ bash script which you can learn more about [[https://wiki.archlinux.org/index.php/mkinitcpio#Overview][here]].
+
+This entire process may take a few minutes so feel free to read ahead while you wait.
+
+*** Set up bash
+
+With Arch Linux installed, we can finally move off of our live USB and start a bash process to set up our freshly initialised system after 2 more quick steps
+
+Step 1 is generating a [[http://www.linfo.org/etc_fstab.html][file systems table]], referred to as ~fstab~ going forward. This is done so that all devices (/dev/sdaX) specificied in the file are mounted automatically on startup.
+
+#+begin_src bash
+genfstab -U /mnt >> /mnt/etc/fstab
+#+end_src
+
+The ~-U~ flag denotes that we want to identify our devices using [[https://en.wikipedia.org/wiki/Universally_unique_identifier][UUIDs]], instead of labels, as noted [[https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in#L86][here]].
+
+Step 2 is even quicker!
+
+#+begin_src bash
+arch-chroot /mnt
+#+end_src
+
+~arch-chroot~, seen [[https://github.com/falconindy/arch-install-scripts/blob/master/arch-chroot.in][here]] changes the root directory to, well, ~/~ which is our new root directory. As we're still on the live USB, we specify it as ~/mnt~ instead.
+
+~arch-chroot~ is also able to take some flags following the root partition such as ~arch-chroot /mnt /bin/bash~. It's worth noting that the preceeding example is actually fairly pointless seeing as ~arch-chroot~ already defaults to ~bash~ anyway.
+
+Huzzah! We're finally in our new system but will it boot? Not quite yet and we've still a lot to set up so let's carry on.
+
+*** Updates and other dependencies (optional)
+
+At this point, I like to run a system upgrade using ~pacman -Syu~ just in case. As we've just pulled our dependencies minutes ago, it'll likely find nothing but I reckon it feels good, haha.
+
+I also need some extra bits and pieces for later at this point. We couldn't have fetched these earlier as trying to run ~pacman~, the Arch Linux package manager, from the live USB would attempt to install to the USB itself and error out.
+
+I need the following bits:
+
+| Package        | Purpose                                           |
+|----------------+---------------------------------------------------|
+| [[http://invisible-island.net/dialog/][dialog]]         | A library for console-based UIs like ~wifi-menu~  |
+| [[https://downloadcenter.intel.com/search?keyword=microcode+data][intel-ucode]]    | Micro-code updates for Intel CPUs                 |
+| [[https://w1.fi/wpa_supplicant/][wpa_supplicant]] | Used to connect to wireless networks (put simply) |
+
+That should be everything for now. The other bits (~netctl~ and ~dhcpcd~) were already installed as part of the ~base~ group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
+
+Honestly, we don't really need ~dialog~ as we could just use ~netctl~ directly but I find it more user friendly and I'm not a masochist, haha.
+
+You might as well also enable ~dhcpcd~ if you need it for ethernet with ~systemctl enable dhcpcd~.
+
+*** Generating locale
+
+Popular software often ships in a number of languages but in order to show the correct language, currency and so on, it needs to know where you live. We achieve this by generating and setting a locale.
+
+To do so, edit ~/etc/locale.gen~ and uncomment your respective locale. In short, the format is ~{language}_{country code}.{character encoding}~. As an example, I'm in New Zealand so I uncomment the line ~en_NZ.UTF-8 UTF-8~. If in doubt, just opt for ~utf-8~.
+
+I just use ~nano~ but if you prefer, this would be an alright time to run ~pacman -S vim~.
+
+Once you've done that, you'll need to generate the locale files and export your language to your environment
+
+#+begin_src bash
+locale-gen
+export LANG={xx}_{yy}.UTF-8
+#+end_src
+
+If done successfully, ~echo $LANG~ will display your locale.
+
+For reference, the actual ~locale-gen~ script can be seen [[https://sourceware.org/git/?p=glibc.git;a=blob;f=localedata/gen-locale.sh;h=39f1475cbc45faaae32728dbfd7cce282c3cdb05;hb=HEAD][here]] as part of [[https://sourceware.org/git/?p=glibc.git;a=summary][glibc]], the GNU implementation of the C standard library. I always wondered where it was from!
+
+*** Timezone
+
+Selecting our timezone is fairly straightforward thanks to an interactive program called ~tzselect~. Running it will show a list of continents and oceans. Selecting one will drill down to display countries.
+
+Once you've confirmed the output, it will mention appending the timezone to a file. Instead, we want to symlink that timezone to a file. In my case, the timezone is ~Pacific/Auckland~ but of course, you'll want to input your respective timezone instead.
+
+#+begin_src bash
+ln -s /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
+#+end_src
+
+*** Setting hardware clock
+
+The last of our locale related setups is configuring the system clock. To do that, we'll tell our hardware clock to set the system time using the ~--hctosys~ option. You can read more about ~hwclock~ and how it differs from system time [[https://linux.die.net/man/8/hwclock][here]]
+
+#+begin_src bash
+hwclock --systohc
+#+end_src
+
+*** Hostname setup
+
+We like life to be simple (but no simpler) and giving our computer/server a unique name is an important part of that process. For this bit, let's assume we want to name our system ~weinerdog~ because it sounds silly.
+
+#+begin_src bash
+echo weinerdog > /etc/hostname
+#+end_src
+
+Oh, that was easy. We also need to tell our system that ~weinerdog~ is an alias for ~127.0.0.1~, just like ~localhost~ is. We could fire up our favourite editor but it's likely ~/etc/hosts~ is empty so just do the following:
+
+#+begin_src bash
+echo 127.0.0.1 localhost weinerdog > /etc/hosts
+#+end_src
+
+How quick was that, huh?
+
+*** Set a root password
+
+We'll be using this password to login, which I sometimes forget. It _should_ be different than the password for the user account we'll be making soon but I'd be lying if I said I have a super secure password. You have bigger problems if you think this writeup will give you top notch security anyway. I'm just here for a usable system!
+
+#+begin_src bash
+passwd
+#+end_src
+
+Just type in your password twice. Not much more to it than that.
+
+*** Installing a boot manager
+
+We'll be using ~systemd-boot~ as our EFI boot manager. I couldn't tell you anything about it other than it works and that's good enough.
+
+#+begin_src bash
+bootctl --path=/boot install
+#+end_src
+
+The above command copies the ~systemd-boot~ binary to our EFI System Partition (~/boot~) and adds it as the default EFI application to be loaded as stated [[https://wiki.archlinux.org/index.php/systemd-boot#EFI_boot][here]].
+
+*** Configuring the boot manager
+
+Now that we have a boot manager, we need to tell it what to boot exactly. We'll create a new ~arch.conf~ entry using ~nano~:
+
+#+begin_src bash
+nano /boot/loader/entries/arch.conf
+#+end_src
+
+and enter the following
+
+#+begin_src bash
+title Arch Linux
+linux /vmlinuz-linux
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+options root=/dev/sda2 rw elevator=deadline quiet splash resume=/dev/sda3 nmi_watchdog=0
+#+end_src
+
+*NOTE*: The line ~initrd /intel-ucode.img~ *ONLY* applies if you installed the ~intel-ucode~ package from earlier which anyone with an Intel CPU should do.
+
+As for the options, I couldn't say if you need, or don't need, any of them but it's worked fine for me so far. I'll probably read up on them in depth shortly and update this post as required.
+
+Once that's created, set it as the default configuration:
+
+#+begin_src bash
+echo "default arch" > /boot/loader/loader.conf
+#+end_src
+
+and now you're ready to reboot into a nicely working system!
+
+#+begin_src bash
+exit
+reboot
+#+end_src
+
+I've still got a lot to learn about Arch Linux but so far, the above setup has worked well for me.
+
+There's still more that goes into a system but this is enough to get past the pesky initial setup which gave me hours upon hours of grief as a beginner, which I still am essentially.
+
+** Some thoughts about running a wiki :community:leadership:wiki:
+:PROPERTIES:
+:EXPORT_FILE_NAME: wiki-thoughts
+:EXPORT_DATE: 2017-12-18
+:END:
+
+Recently, I started playing a mobile game called [[http://bs.visualshower.com/][Blustone]]. It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
+
+It's not huge and it does have its bad apples but for the most part, I've met a few nice people online.
+
+Anyway, that brings me to the [[https://vsfan.net/wiki][VSFan]] which I started since there were hardly any English resources, let alone gathered all in one place. I always thought sites like [[http://serebii.net/][Serebii]] were cool as a kid and wished I could make my own site like that.
+
+Oh, I should probably mention that VSFan is short for [[http://visualshower.com/][VisualShower Fan]], in reference to the developers.
+
+Anyway, it was half an excuse to dig into a project I cared about and half to generate some decent community resources because generally that stuff is already taken care of for most games by people much more dedicated than myself so this was quite a discover finding something that's hardly documented beyond a handful of YouTube videos and some scattered blog posts and walkthroughs.
+
+It'll probably be my first project that actually has some proper viewership and it kinda gives me the shits a bit knowing that the longer it exists, the more it's engrained into Google's search results or old chat messages/forum posts so there's no going back!
+
+That said, I've got nightly backups, both stored on the server itself (I can only afford one for now!) plus rsynced out to my little Intel NUC server at home so I am actually treating this properly but I think freaking out a little goes for anything that gets put online. I've been solving that by not running any analytics or looking at the server logs and just pretending it's only me and a few pals editing. There might not even be any users for all I know!
+
+Err, I feel like I had a point since I'm writing this as I go. Oh yeah, the next thing I'll be having to think about all the community management bits.
+
+Registrations require email verification, primarily due to one rogue spambot a few weeks back but I think it also works nicely as a buffer for quality. While some users may feel going into their email client and back is too much work, I think it's a low enough barrier that it'll deter those who aren't invested enough to register an account.
+
+Next up is guidelines which I still need to write. You don't wanna make them too strict but you also don't want to say "Go nuts, do anything" because you'll inevitably end up with vandalism. Personally, my primary concern is a drop in quality but I mean, that's flawed both in the sense that it's hard to be objective about your own tastes/skills and also it assumes a lot about others who may/will be just as hard working. I don't have any trouble admitting that however because if you can't, then how can you possibly get rid of those concerns, right?
+
+While I'm the "creator", I definitely think the best route is to treat admin roles as janitors essentially. Sure, they clean up messes and we likely don't give janitors enough credit but as soon as you attach a social standing or a general elevation of "worth" to your roles, it's a bit of a meltdown waiting to happen. It'll only ever serve to separate groups and, probably, generate nepotism and what not.
+
+On the flipside though, treating everyone equally is silly because some users will be better at some things than others. Some users may be immature (which isn't always tied to age) and may propose nonsense rules or err, be unable to "see the trees for the forest" as they say. I can't think of any specific examples at the moment but I guess what I'm getting at is that you do need moderation but as long as you only use it in, ahem, moderation.
+
+Another spark of division I wonder about is the following scenario. Let's say I'm interested in contributing but I'm too literal when it comes to condensing the contents of an episode into a summary. I might write "X did this. Next, X did that. Y came along." which is technically correct and accurate but it's not necessarily enjoyable to read.
+
+Some may say "Don't post if it's not quality" because they're interested in keeping the bar high at all times. Seeing as we're just getting started, our focus should be on content. Not only that but having something is often better than nothing at all. Provided it's detailed enough, it gives a starting point which the "wordsmiths" among us can shape without having to invest time into research.
+
+In that sense, it gives users with different abilities and experience levels things to do. If you're not so great at writing, make some stubs or provide some referencial data like EXP tables or pull some better screenshots. While the main resource for a wiki is text, fortunately there are more ways than one to communicate with the user.
+
+Err, anyway, this whole post was pretty impromptu and I just wanted to spit out some stuff I'd been thinking about for a while now. None of it is edited and chances are I'll never read it again but I don't think I made any typos!
+
+If you have any thoughts yourself or just want to leave a comment, you can send me a tweet to [[https://twitter.com/sentreh][@sentreh]].
+
+** Deepfakes :deepfakes:future:technology:
+:PROPERTIES:
+:EXPORT_FILE_NAME: deepfakes
+:EXPORT_DATE: 2017-02-05
+:END:
+
+I dug this post up from an older version of my site. It was written two years ago during the emergence of deepfakes. Any mention of machine learning may not be accurate but I've left them as is. In all likehood, I would know less now then I did back then when I had much more time to follow ML trends.
+
+I've made some slight rewordings, fixed typos and revived any links I could using the [[https://web.archive.org/][Wayback Machine]] but otherwise, the post is 99% intact from when I first wrote it. I didn't realise just how much I had written about this at the time. I'm kind of glad since this was before the subreddit was banned. A lot of it is now lost to time.
+
+*** An overview
+
+Just under 2 weeks ago, an article from The Verge titled [[https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit][Fake celebrity porn is blowing up on Reddit, thanks to artificial intelligence]] was posted on [[https://news.ycombinator.com/item?id=16226495][Hacker News]]. If you'd just glimpsed the headline, you might assume it's a bunch of shitstirrers up to no good with Photoshop but unfortunately, it's arguably worse.
+
+In the past, machine learning had been mainly kept within the realm of computer science due to its inherent complexity. As time marches on, new tools and libraries have popped up that make machine learning easier than ever to dive into for professionals and hobbyists alike. It was only a matter of time before someone decided to apply it to subjects considered taboo, and now we can see the results with a new crop of "fake" pornography. Now, I say "fake" to point out that this pornography isn't real but with results often being indistinguishable from reality itself, it kinda renders the term "fake" well... pointless.
+
+I felt like the downsides were glaringly obvious at first but after discussing this topic with a few non-technical coworkers, they seemed to have missed the forest for the trees. Their responses typically focused on the "cool tech" and "sweet custom porn" rather than realising that perhaps this is *the* Pandora's box which we can't go back from.
+
+Given my feelings on the matter, which can be summed up as "Oh fuck", this is my attempt at rounding up both my own thoughts and those posted in the various discussion threads that followed. Before we begin, I should explain a bit more about this technology and how it works. This isn't a master class on machine learning by any means. It's designed to be [[https://quoteinvestigator.com/2011/05/13/einstein-simple/]["as simple as possible, but not simpler"]], mainly because my understanding of the concepts involved is surface level at best. For anything deeper, you should seek out other sources.
+
+*** What are deepfakes?
+
+[[https://www.reddit.com/user/deepfakes][deepfakes]] is the name of a user on reddit who "pioneered" this new wave of computer-generated celebrity pornography. To further promote discussion, and share generated works, he created a subreddit named after himself – [[https://reddit.com/r/deepfakes][/r/deepfakes]]. The term *deepfake* has since been coined to refer to the creations that followed and it's the term I'll be using going forward.
+
+*** What is machine learning?
+
+While the term "machine learning" might invoke visions of [[https://en.wikipedia.org/wiki/Skynet_(Terminator)][Skynet]], it's worth noting that said machines aren't truly conscious like us humans. You'd think the ability to be self-aware and/or concious would be essential to learning, right? At its simplest, learning requires little more than a series of inputs (sound, sight, touch) which we then process in order to produce an output. When you first meet someone, you may forget their face but over time, you learn to recognise them as memories form. As time progresses, you can also identify them in different contexts such as an office, an airport or at a beach. In a rough sense, you've trained your brain to subconsciously identify their facial features so that it can recall which memories they've appeared in before.
+
+Another crucial part of learning is the ability to weigh up how confident we are in our judgements. If we aren't confident enough in a decision, we'll opt either to do nothing or pursue an alternative choice. For instance, each time you meet a friend, your brain is thinking "Ah, I'm 99% sure that's my friend Sarah". On the flipside, I'm short sighted but silly enough to not wear my glasses. Because of that, I might recognise the general facial features of someone across the street but without moving closer, I don't have enough visual information to be sure. My own brain is thinking "I'm only 40% confident that's Pat" and decides to not call it a definite match.
+
+It's a bit hand wavy but in essence, those are the two important elements. A machine "learns" by being fed data continuously and having its output judged. A facial detection network may be trained on photos of a single person, just like in our memory analogy, and then asked to identify if they are present in a handful of photos. It would respond Yes or No along with its level of confidence which can be checked against the actual answer. Those results are then fed back into the machine and it continues to improve itself as time goes on. The next training step of such an example might be continuously seeing if wanted criminals appear in live CCTV footage of an airport.
+
+*** So how do deepfakes work?
+
+How does this all relate to deepfakes? Well, it's a type of neural network. A what now, you say? It's essentially what I just described, which is a network that takes an output, does some unknown (hidden) calculations in the middle and returns an output. There are many different networks, with different numbers of inputs and outputs but in the case of deepfakes, we're only dealing with one of each. There's a [[https://web.archive.org/web/20180206231055/https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/][breakdown]] of how it functions but I felt it wasn't detailed enough for the casual observer.
+
+Similar to our facial detection example from just before, deepfakes uses two [[https://en.wikipedia.org/wiki/Autoencoder][autoencoder]] networks. One is trained on numerous photos of a celebrity while the other is trained on numerous photos of a "porn star" or performer which is the term I'll be using. The photos first are cropped so that only faces are displayed. Those faces are then fed into the networks as inputs. Photos of the celebrity go into Network A and photos of the performer go into Network B. You may like to read through [[https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694][this]] article too, in order to get a better idea of autoencoders.
+
+I struggled to understand the next step for quite some time as any mention of it was quite vague, however [[https://arxiv.org/pdf/1706.02932v2.pdf][this]] paper, mentioned by deepfakes [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl/][here (dead link)]] as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
+
+[[./img/deepfakes/celebs.png]]
+
+This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
+
+[[./img/deepfakes/cats.png]]
+
+Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [[https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o/][One explanation (dead link)]] suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve [...] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi/][their own creators (dead link)]] have no idea why decisions are being made.
+
+So what happens with this representation? It actually just recreates the original image to the best of its ability. It won't always be accurate to start with but over the course of many hours training its internal model, both networks begin to reliably decode the representations back into their respective faces. As more training iterations are performs, the network is exposed to different lighting conditions, facial expressions and so on. An error function measures the resulting image against the original so that it can continue to try different decoding variation, in the pursuit of accuracy. Do note too that the networks share the same facial encoder while each has a uniquely trained facial decoder.
+
+Once the user has determined that both models are sufficiently trained, the network is fed a video. Don't forget that videos are little more than a series of images. Each frame is cropped to just the face and fed into the network of the performer. As the encoders are shared, it's able to build an intermediate representation of any general face. The trick this time is that the decoders are switched midway. Since the celebrity decoder is uniquely trained, it can't help but reconstruct the representation into the face of the celebrity while still inheriting the details (expression, facial structure) of the performer. The result is that the performers face is morphed to look exactly like that of the celebrity.
+
+Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot]( https://en.wikipedia.org/wiki/Gal_Gadot) conversion posted by deepfakes himself. *As indicated earlier, the following is pornography and is definitely not safe for work*.
+
+<Original link was [[https://www.pornhub.com/embed/ph5a27755783e28][https://www.pornhub.com/embed/ph5a27755783e28 (NSFW!!)]] but it has since died. The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!>
+
+I chose the clip above because it provides a good indication of what works but also what can go wrong. There's a number of instances where the result is miserable, such as 1:09 where multiple facial expressions flash one after the other. Often times, the edges of the overlaid face can clearly be seen, giving an idea of which elements have been replaced. All in all though, the result can be frighteningly accurate, just with the small amount of code that the creator referred to as [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e/]["embarassingly simple" (dead link)]].
+
+*** Is this bad?
+
+Well, that's really up to your own personal beliefs, isn't it? It would seem to be a moral issue at best, as technically it doesn't seem to be illegal. An interviewee in [[https://www.wired.com/story/face-swap-porn-legal-limbo/][this Wired story]] sums it up as far as US law is concerned: "There are all sorts of First Amendment problems because it’s not their real body.". The assumption seems to be that any such creations could be considered art, not unlike a painting or a photoshop edit, which is legally understandable, but still feels a bit ethically shady.
+
+The obvious societal issue here is that it's presumably the next step in being able to objectify others? Rejected by your crush? Bust out the ol' [[https://facebook.com][Human Pokedex]] and scrape enough data to generate your own virtual fantasy. They might object but that's ok, right? You're not actually there to respect their wishes, it's their body you're after and that's all, right?
+
+Anyway, there's no point preaching to the choir on this. Those who get off on this stuff can easily justify it to themselves because "lol it's not actually them, its fake!!". I wouldn't be surprised if there's a teenager in awe right now who becomes the real life [[https://en.wikipedia.org/wiki/USS_Callister][Robert Daly]].
+
+*** What next?
+
+While it's easy to think one man has started this all, he does [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/drbv6io/][have a point (dead link)]] in that this really was inevitable. There are other projects that are more concerning, not for where they could lead, but for what they can do right now.
+
+This post has already gone on long enough so here's a few proof of concepts off the top of my head that give an indication of where we're headed
+
+- [[https://youtu.be/ohmajJTcpNk?t=160][Face2Face]]
+- [[https://youtu.be/o-nJpaCXL0k?t=212][Disney's FaceDirector]]
+- [[https://youtu.be/I3l4XLZ59iw?t=199][Adobe VoCo]]
+- [[https://youtu.be/9Yq67CjDqvw?t=107][Synthesizing Obama: Learning Lip Sync from Audio]]
