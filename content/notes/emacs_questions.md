@@ -1,7 +1,7 @@
 +++
 title = "Emacs Questions"
 author = ["Marcus Crane"]
-lastmod = 2020-06-14T12:46:05+12:00
+lastmod = 2020-06-16T13:54:25+12:00
 slug = "emacs_questions"
 draft = false
 +++
@@ -27,3 +27,11 @@ I still don't understand the above example since they both have double hyphens
 ## Why do some lists start with a backtick (`` ` ``) instead of a comma (`'`) {#why-do-some-lists-start-with-a-backtick-----instead-of-a-comma}
 
 One basically does list interpolation
+
+
+## How can I find out what places Emacs is checking for my passwords? {#how-can-i-find-out-what-places-emacs-is-checking-for-my-passwords}
+
+```emacs-lisp
+auth-sources
+(password-store "~/.authinfo.gpg")
+```

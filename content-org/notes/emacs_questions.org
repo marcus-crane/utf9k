@@ -22,3 +22,10 @@ I still don't understand the above example since they both have double hyphens
 * Why do some lists start with a backtick (~`~) instead of a comma (~'~)
 
 One basically does list interpolation
+
+* How can I find out what places Emacs is checking for my passwords?
+
+#+begin_src emacs-lisp
+auth-sources
+(password-store "~/.authinfo.gpg")
+#+end_src
