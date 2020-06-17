@@ -1,17 +1,12 @@
 +++
 title = "Clean Coders"
 author = ["Marcus Crane"]
-lastmod = 2020-06-17T21:33:15+12:00
+lastmod = 2020-06-17T21:46:41+12:00
 slug = "clean_coders"
 draft = false
 +++
 
-<div class="blockquote">
-  <div></div>
-
-The only way to stay fast, in the short term OR the long term, is to keep your code clean - Uncle Bob Martin
-
-</div>
+> The only way to stay fast, in the short term OR the long term, is to keep your code clean - Uncle Bob Martin
 
 
 ## Episode 2: Names {#episode-2-names}
