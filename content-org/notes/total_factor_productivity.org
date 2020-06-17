@@ -1,0 +1,4 @@
+#+title: Total Factor Productivity
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: total_factor_productivity
+#+roam_tag: economics

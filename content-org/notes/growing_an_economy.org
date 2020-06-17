@@ -1,0 +1,12 @@
+#+title: Growing an economy
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: growing_an_economy
+#+roam_tag: ecoonomics
+
+There are supposedly three ways to grow an economy
+
+1. Add more labour inputs
+2. Add more capital inputs
+3. Use one or both of the above more efficiently
+
+Look up [[file:total_factor_productivity.org][Total Factor Productivity]]
