@@ -3,9 +3,9 @@
 #+hugo_slug: clean_coders
 #+roam_tag: development
 
-#+begin_blockquote
+#+begin_quote
 The only way to stay fast, in the short term OR the long term, is to keep your code clean - Uncle Bob Martin
-#+end_blockquote
+#+end_quote
 
 * Episode 2: Names
 
