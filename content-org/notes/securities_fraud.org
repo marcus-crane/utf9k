@@ -1,0 +1,8 @@
+#+title: Securities Fraud
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: securities_fraud
+#+roam_tag: finance
+
+#+begin_quote
+Everything is securities fraud - Matt Levine
+#+end_quote
