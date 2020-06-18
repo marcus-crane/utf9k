@@ -1,7 +1,7 @@
 +++
-title = "GTD in the world of Slack Hugo Setup"
+title = "GTD in the world of Slack"
 author = ["Marcus Crane"]
-lastmod = 2020-06-18T22:36:15+12:00
+lastmod = 2020-06-18T22:50:28+12:00
 slug = "gtd_in_the_world_of_slack"
 draft = false
 +++

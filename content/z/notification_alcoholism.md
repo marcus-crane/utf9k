@@ -1,7 +1,7 @@
 +++
-title = "Notification Alcoholism Hugo Setup"
+title = "Notification Alcoholism"
 author = ["Marcus Crane"]
-lastmod = 2020-06-18T22:35:56+12:00
+lastmod = 2020-06-18T22:50:47+12:00
 slug = "notification_alcoholism"
 draft = false
 +++

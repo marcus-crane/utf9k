@@ -1,7 +1,7 @@
 +++
-title = "Havel's Greengrocer Hugo Setup"
+title = "Havel's Greengrocer"
 author = ["Marcus Crane"]
-lastmod = 2020-06-18T22:36:12+12:00
+lastmod = 2020-06-18T22:50:36+12:00
 slug = "havels_greengrocer"
 draft = false
 +++
