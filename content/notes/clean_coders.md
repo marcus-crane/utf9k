@@ -1,7 +1,7 @@
 +++
 title = "Clean Coders"
 author = ["Marcus Crane"]
-lastmod = 2020-06-17T21:46:41+12:00
+lastmod = 2020-06-18T22:38:46+12:00
 slug = "clean_coders"
 draft = false
 +++

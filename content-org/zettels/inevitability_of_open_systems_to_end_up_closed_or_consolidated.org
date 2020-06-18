@@ -1,0 +1,4 @@
+#+title: Inevitability of open systems to end up closed or consolidated
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: inevitability_of_open_systems_to_end_up_closed_or_consolidated
+#+roam_tag:
