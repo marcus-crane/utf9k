@@ -40,7 +40,9 @@ body {
 }
 
 .content-body pre {
-    overflow-x: scroll;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
 }
 
 .content-body pre code {
