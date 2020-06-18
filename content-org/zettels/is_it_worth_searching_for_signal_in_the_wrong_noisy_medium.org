@@ -1,0 +1,4 @@
+#+title: Is it worth searching for signal in the wrong noisy medium?
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: is_it_worth_searching_for_signal_in_the_wrong_noisy_medium
+#+roam_tag:
