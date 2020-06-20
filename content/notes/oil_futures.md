@@ -6,7 +6,7 @@ slug = "oil_futures"
 draft = false
 +++
 
-On April 20th 2020, oil futures fell to $37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.
+On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.
 
 In a sense, that's exactly the case but perhaps not for quite the reasons you might expect.
 
