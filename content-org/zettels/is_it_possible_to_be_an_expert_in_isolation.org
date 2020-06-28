@@ -1,0 +1,4 @@
+#+title: Is it possible to be an expert in isolation
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: is_it_possible_to_be_an_expert_in_isolation
+#+roam_tag:
