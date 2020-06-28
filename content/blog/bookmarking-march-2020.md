@@ -269,7 +269,7 @@ This is another wishy-washy category since it has some things which should be [p
 
 ### The Industry Itself {#the-industry-itself}
 
-This could be stories about ["people" (in an individual sense)](http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt), ["people" (in the group sense)](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx), [people opposing other people](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx) and also [choices made by people](https://eager.io/blog/the-languages-which-almost-were-css/). Sometimes companies too.
+This could be stories about ["people" (in an individual sense)](http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt), ["people" (in the group sense)](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx), [people opposing other people](https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011/) and also [choices made by people](https://eager.io/blog/the-languages-which-almost-were-css/). Sometimes companies too.
 
 
 ### Tooling {#tooling}

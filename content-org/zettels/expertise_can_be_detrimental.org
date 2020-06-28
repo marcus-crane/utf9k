@@ -1,0 +1,4 @@
+#+title: Expertise can be detrimental
+#+setupfile: ./hugo_setup.org
+#+hugo_slug: expertise_can_be_detrimental
+#+roam_tag:

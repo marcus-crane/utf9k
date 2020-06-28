@@ -754,7 +754,7 @@ This is another wishy-washy category since it has some things which should be [[
 
 **** The Industry Itself
 
-This could be stories about [[http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt]["people" (in an individual sense)]], [[https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx]["people" (in the group sense)]], [[https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx][people opposing other people]] and also [[https://eager.io/blog/the-languages-which-almost-were-css/][choices made by people]]. Sometimes companies too.
+This could be stories about [[http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt]["people" (in an individual sense)]], [[https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx]["people" (in the group sense)]], [[https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011/][people opposing other people]] and also [[https://eager.io/blog/the-languages-which-almost-were-css/][choices made by people]]. Sometimes companies too.
 
 **** Tooling
 
