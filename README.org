@@ -1,6 +1,6 @@
 * utf9k
 
-This is my personal website, which is powered by [[https://gohugo.io/][Hugo]], [[https://orgmode.org/][orgmode]] and [[https://ox-hugo.scripter.co/][ox-hugo]].
+This is my personal website, which is powered by [[https://gohugo.io/][Hugo]], [[https://orgmode.org/][orgmode]] and [[https://ox-hugo.scripter.co/][ox-hugo]]
 
 ** Getting setup
 
