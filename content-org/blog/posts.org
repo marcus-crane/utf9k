@@ -1,9 +1,13 @@
 #+title: Blog
 #+HUGO_BASE_DIR: ../../
 #+HUGO_SECTION: blog
-#+OPTIONS: toc:2
+#+OPTIONS: toc:2 html5-fancy
 
 * Blog
+:PROPERTIES:
+:BLAH: Nice
+:END:
+
 ** TODO Quicksand :wellbeing:rambling:
 :EXPORT_FILE_NAME: quicksand
 :EXPORT_DATE: 2020-07-07
@@ -30,7 +34,6 @@ The more I think about it, I don't think it's any one thing that becomes overwhe
 Earlier today, I was looking to essentially add post it notes to a whiteboard. In classic [[https://americanexpress.io/yak-shaving/][Yak Shaving]] fashion, I needed to login to our shared login provider, which requires me to pick up my phone to accept an MFA prompt, and then I need to find a link to the tool in question, which lives in a Trello board but then I need to go to my calendar to see what the actual work is to be done and then open up a spreadsheet on the side for reference and probably open a fresh Google doc to note down any ideas.
 
 That in itself is not technically difficult, although a little hellish, but each time you need to switch mediums, there's a little window for you to just get utterly derailed by notifications, messages, beeps, boops, noise, whatever your kryptonite is in this case.
-
 
 ** Setting up Emacs inside of a WSL2 distribution :emacs:linux:unix:windows:wsl:
 :PROPERTIES:

@@ -1,56 +1,56 @@
 body {
-    font-family: -apple-system, system-ui,
-                 "Helvetica Neue", Helvetica,
-                 Arial, sans-serif;
+  color: #444;
+  display: grid;
+  font-family: serif;
+  grid-template-columns: .5fr 40rem 1fr;
+  margin: auto;
 }
 
-.content {
-    text-rendering: optimizeLegibility;
-}
-
-.content-inner {
+@media screen and (max-width: 992px) {
+  article {
+    display: block;
     margin: 0 auto;
-    max-width: 660px;
-    padding: 40px 20px;
+    max-width: 90%;
+  }
 }
 
-.content-header h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 0 .2em 0;
-    padding: 0;
-    word-wrap: break-word;
+* {
+  grid-column: 2;
 }
 
-.content-body {
-    font-size: 1.15em;
-    font-style: normal;
-    line-height: 1.6;
+img {
+  display: block;
+  margin: auto;
 }
 
-.content-body blockquote {
-    border-left: 4px solid black;
-    margin: 1.1em 0;
-    padding: 0 0 0 15px;
+p,
+ul,
+ol {
+  line-height: 1.5rem;
+  margin-block-start: .5rem;
+  margin-block-end: .5rem;
 }
 
-.content-body img {
-    height: auto;
+aside {
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
+  grid-column: 3;
+  line-height: 1.3rem;
+  margin: auto;
+  max-width: 12rem;
+  padding: 4px;
+}
+
+@media screen and (max-width: 992px) {
+  aside {
     max-width: 100%;
+  }
 }
 
-.content-body pre {
-    overflow: auto;
-    white-space: pre;
-    word-wrap: normal;
-}
-
-.content-body pre code {
-    display: inline-block;
-    padding: 1rem;
-}
-
-.content-body td {
-    border: 1px solid black;
-    padding: 0;
+pre {
+  border-left: 6px solid #f3e5a7;
+  line-height: 1.3rem;
+  overflow: scroll;
+  padding-left: 1rem;
 }
