@@ -36,6 +36,39 @@ article {
   margin: auto;
 }
 
+blockquote {
+  border-left: 4px solid black;
+  margin: 1.1em 0;
+  padding: 0 0 0 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border-top: 2px solid;
+  margin: 1em auto;
+}
+
+table, thead {
+  border-bottom: 2px solid;
+}
+
+table tr {
+  border-top: 1px solid #d3d3d3;
+}
+
+table th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+td, th {
+  padding: .3em .6em;
+  vertical-align: middle;
+}
+
 @media(max-width: 992px) {
   article {
     display: block;
