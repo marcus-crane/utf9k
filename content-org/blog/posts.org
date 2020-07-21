@@ -4,10 +4,6 @@
 #+OPTIONS: toc:2 html5-fancy
 
 * Blog
-:PROPERTIES:
-:BLAH: Nice
-:END:
-
 ** TODO Quicksand :wellbeing:rambling:
 :EXPORT_FILE_NAME: quicksand
 :EXPORT_DATE: 2020-07-07

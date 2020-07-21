@@ -1,6 +1,8 @@
 <nav>
-  <a href="/">utf9k</a>{{ if eq .Parent .Section }} // {{ .Section }}{{ end }}
-  {{ .Type }}
-  {{ .Section }}
-  {{ .IsDescendant .Parent }}
+    <a href="/">utf9k</a>
+    {{ $strippedURL := replace .Page.URL "/" "" }}
+    {{ if ne .Section $strippedURL }}
+    //
+    <a href="/{{ .Section }}">up</a>
+    {{ end }}
 </nav>

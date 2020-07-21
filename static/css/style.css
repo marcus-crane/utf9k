@@ -1,21 +1,47 @@
 body {
   color: #444;
-  display: grid;
   font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: grid; 
   grid-template-columns: .5fr 40rem 1fr;
   margin: auto;
 }
 
-@media screen and (max-width: 992px) {
-  article {
+@media(max-width: 992px) {
+  #content {
     display: block;
-    margin: 0 auto;
-    max-width: 90%;
   }
 }
 
 * {
   grid-column: 2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav {
+  max-width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+article {
+  display: grid;
+  margin: auto;
+}
+
+@media(max-width: 992px) {
+  article {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
 }
 
 img {
@@ -40,11 +66,12 @@ aside {
   margin: auto;
   max-width: 12rem;
   padding: 4px;
+  padding-left: 7rem;
 }
 
-@media screen and (max-width: 992px) {
+@media(max-width: 992px) {
   aside {
-    max-width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -53,4 +80,9 @@ pre {
   line-height: 1.3rem;
   overflow: scroll;
   padding-left: 1rem;
+}
+
+
+img {
+  width: 100%;
 }
