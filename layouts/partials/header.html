@@ -1,0 +1,8 @@
+<nav>
+    <a href="/">utf9k</a>
+    {{ $strippedURL := replace .Page.URL "/" "" }}
+    {{ if ne .Section $strippedURL }}
+    //
+    <a href="/{{ .Section }}">up</a>
+    {{ end }}
+</nav>

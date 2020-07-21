@@ -1,7 +1,7 @@
 #+title: Blog
 #+HUGO_BASE_DIR: ../../
 #+HUGO_SECTION: blog
-#+OPTIONS: toc:2
+#+OPTIONS: toc:2 html5-fancy
 
 * Blog
 ** Quicksand :wellbeing:rambling:
@@ -139,7 +139,6 @@ You could of course use any other content method on my [about](/about) but just 
 This post wouldn't make a very good "tweetstorm" if you ask me.
 
 Thanks for reading!
-
 
 ** Setting up Emacs inside of a WSL2 distribution :emacs:linux:unix:windows:wsl:
 :PROPERTIES:

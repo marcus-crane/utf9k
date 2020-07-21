@@ -1,56 +1,121 @@
 body {
-    font-family: -apple-system, system-ui,
-                 "Helvetica Neue", Helvetica,
-                 Arial, sans-serif;
+  color: #444;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
 }
 
-.content {
-    text-rendering: optimizeLegibility;
+#content {
+  display: grid; 
+  grid-template-columns: .5fr 40rem 1fr;
+  margin: auto;
 }
 
-.content-inner {
+@media(max-width: 992px) {
+  #content {
+    display: block;
+  }
+}
+
+* {
+  grid-column: 2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav {
+  max-width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+article {
+  display: grid;
+  margin: auto;
+}
+
+blockquote {
+  border-left: 4px solid black;
+  margin: 1.1em 0;
+  padding: 0 0 0 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border-top: 2px solid;
+  margin: 1em auto;
+}
+
+table, thead {
+  border-bottom: 2px solid;
+}
+
+table tr {
+  border-top: 1px solid #d3d3d3;
+}
+
+table th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+td, th {
+  padding: .3em .6em;
+  vertical-align: middle;
+}
+
+@media(max-width: 992px) {
+  article {
+    display: block;
     margin: 0 auto;
-    max-width: 660px;
-    padding: 40px 20px;
+    max-width: 75%;
+  }
 }
 
-.content-header h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 0 .2em 0;
-    padding: 0;
-    word-wrap: break-word;
+img {
+  display: block;
+  margin: auto;
 }
 
-.content-body {
-    font-size: 1.15em;
-    font-style: normal;
-    line-height: 1.6;
+p,
+ul,
+ol {
+  line-height: 1.5rem;
+  margin-block-start: .5rem;
+  margin-block-end: .5rem;
 }
 
-.content-body blockquote {
-    border-left: 4px solid black;
-    margin: 1.1em 0;
-    padding: 0 0 0 15px;
+aside {
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
+  grid-column: 3;
+  line-height: 1.3rem;
+  margin: auto;
+  max-width: 12rem;
+  padding: 4px;
+  padding-left: 7rem;
 }
 
-.content-body img {
-    height: auto;
-    max-width: 100%;
+@media(max-width: 992px) {
+  aside {
+    padding-left: 0;
+  }
 }
 
-.content-body pre {
-    overflow: auto;
-    white-space: pre;
-    word-wrap: normal;
+pre {
+  border-left: 6px solid #f3e5a7;
+  line-height: 1.3rem;
+  overflow: scroll;
+  padding-left: 1rem;
 }
 
-.content-body pre code {
-    display: inline-block;
-    padding: 1rem;
-}
 
-.content-body td {
-    border: 1px solid black;
-    padding: 0;
+img {
+  width: 100%;
 }
