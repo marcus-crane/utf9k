@@ -1,15 +1,11 @@
 {{ define "main" }}
-<ul class="no-list-style">
+  {{ $prevYear := 3000 }}
   {{ range .Pages }}
-  <li>
-    <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>
-    ~
-    <a href="{{ .RelPermalink }}">
-      <span>{{ .Title }}</span>
-    </a>
-    <span class="tag-list">
-    </span>
-  </li>
+    {{ $currYear := .Date.Format "2006" }}
+    {{ if ne $currYear $prevYear }}
+      <h1>{{ $currYear }}</h1>
+    {{ end }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ $prevYear = $currYear }}
   {{ end }}
-</ul>
 {{ end }}

@@ -1,11 +1,5 @@
 {{ define "main" }}
-<ul class="no-list-style">
-  {{ range .Pages }}
-  <li>
-    <a href="{{ .RelPermalink }}">
-      <span>{{ .Title }}</span>
-    </a>
-  </li>
+  {{ range sort .Pages "Lastmod" "desc" }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{ end }}
-</ul>
 {{ end }}
