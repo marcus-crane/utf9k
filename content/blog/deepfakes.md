@@ -59,11 +59,11 @@ Similar to our facial detection example from just before, deepfakes uses two [au
 
 I struggled to understand the next step for quite some time as any mention of it was quite vague, however [this](https://arxiv.org/pdf/1706.02932v2.pdf) paper, mentioned by deepfakes [here (dead link)](https://www.reddit.com/r/deepfakes/comments/7jqvny/release%5Fface%5Fswap%5Fmodel%5Ftool/dreu4rl/) as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
 
-{{< figure src="./img/deepfakes/celebs.png" >}}
+{{< figure src="/ox-hugo/celebs.png" link="/ox-hugo/celebs.png" >}}
 
 This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
 
-{{< figure src="./img/deepfakes/cats.png" >}}
+{{< figure src="/ox-hugo/cats.png" link="/ox-hugo/cats.png" >}}
 
 Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [One explanation (dead link)](https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed%5Fexplanation%5Fof%5Fthe%5Falgorithm/dshkv3o/) suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve [...] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [their own creators (dead link)](https://www.reddit.com/r/deepfakes/comments/7jqvny/release%5Fface%5Fswap%5Fmodel%5Ftool/dra7ayi/) have no idea why decisions are being made.
 
@@ -71,7 +71,7 @@ So what happens with this representation? It actually just recreates the origina
 
 Once the user has determined that both models are sufficiently trained, the network is fed a video. Don't forget that videos are little more than a series of images. Each frame is cropped to just the face and fed into the network of the performer. As the encoders are shared, it's able to build an intermediate representation of any general face. The trick this time is that the decoders are switched midway. Since the celebrity decoder is uniquely trained, it can't help but reconstruct the representation into the face of the celebrity while still inheriting the details (expression, facial structure) of the performer. The result is that the performers face is morphed to look exactly like that of the celebrity.
 
-Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot]( <https://en.wikipedia.org/wiki/Gal%5FGadot>) conversion posted by deepfakes himself. **As indicated earlier, the following is pornography and is definitely not safe for work**.
+Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot](https://en.wikipedia.org/wiki/Gal%5FGadot) conversion posted by deepfakes himself. **As indicated earlier, the following is pornography and is definitely not safe for work**.
 
 <Original link was [https://www.pornhub.com/embed/ph5a27755783e28 (NSFW!!)](https://www.pornhub.com/embed/ph5a27755783e28) but it has since died. The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!>
 

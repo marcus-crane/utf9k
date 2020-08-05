@@ -140,7 +140,6 @@ This post wouldn't make a very good "tweetstorm" if you ask me.
 
 Thanks for reading!
 
-
 ** Setting up Emacs inside of a WSL2 distribution :emacs:linux:unix:windows:wsl:
 :PROPERTIES:
 :EXPORT_FILE_NAME: emacs-wsl2-install
@@ -364,7 +363,7 @@ Before we get started, I should point out that this setup has actually be retire
 
 *** The original setup
 
-[[/img/edc-2019/original_carry.jpeg]]
+[[./img/edc-2019/original_carry.jpeg][file:./img/edc-2019/original_carry.jpeg]]
 
 My EDC was already fairly compact and consisted of the following:
 
@@ -377,7 +376,7 @@ Let's have a look at these individually as we break down my setup and slowly reb
 
 *** Assessing my wallet
 
-[[/img/edc-2019/wallet_old.jpeg]]
+[[./img/edc-2019/wallet_old.jpeg][file:./img/edc-2019/wallet_old.jpeg]]
 
 There's quite a lot in my wallet that I don't use, and different cards definitely get access more than others.
 
@@ -461,7 +460,7 @@ Et voila, a pretty compact setup if I say so myself!
 
 I used to have various pairs of earbuds over the years that were good enough.
 
-[[/img/edc-2019/wired_earbuds.jpeg]]
+[[./img/edc-2019/wired_earbuds.jpeg][file:./img/edc-2019/wired_earbuds.jpeg]]
 
 I felt like I must have lost multiple hours of my life just untangling them over the years so I decided I might as well invest in a decent pair.
 
@@ -471,7 +470,7 @@ Given the price, I actually opted to pay them off over a period of time (might a
 
 That said, they've been a worthwhile investment for me. The battery life is great, considering they're properly wireless, and I'm always surprised how many charges I can get from putting them back in the case. When using them as a daily driver, back when walking to work was a thing, I would generally only need to recharge them once a week at most? More like once every 2 weeks I think.
 
-[[/img/edc-2019/wireless_earbuds.jpeg]]
+[[./img/edc-2019/wireless_earbuds.jpeg][file:./img/edc-2019/wireless_earbuds.jpeg]]
 
 Also, I've been pleasantly surprised at the software updates that still roll out. About 6 months after I bought them, they received support for Amazon Alexa, which was a nice surprise given they already support the Google Assistant. Not that I use either...
 
@@ -481,11 +480,11 @@ I believe that covers everything?
 
 I've reduced my wallet by probably 90%, moved my transit card to its own dedicated spot since it's on the "hot path" and I no longer have to spend any time untangling my headphones
 
-[[/img/edc-2019/all_three.jpeg]]
+[[./img/edc-2019/all_three.jpeg][file:./img/edc-2019/all_three.jpeg]]
 
 As I mentioned earlier, I've made some further changes which I'll likely cover in a 2020 edition of this post.
 
-[[/img/edc-2019/all_third_alt.jpeg]]
+[[./img/edc-2019/all_third_alt.jpeg][file:./img/edc-2019/all_third_alt.jpeg]]
 
 Mainly, I found that while the wallet served me well, it was a bit too heavy to take when I took up running earlier this year.
 
@@ -1052,7 +1051,7 @@ My site has gone through plenty of iterations, with the current being a static s
 
 Along the way, pages have disappeared. There used to be a projects page which never got filled in properly. There was also an archive of reviews I wrote years back. They're still there but not publically exposed anywhere.
 
-## Where I'd like to get to
+*** Where I'd like to get to
 
 I always seem to fumble around a lot with Markdown. It works great but there's always things missing I wish I had. Some markdown libraries support tables while some don't, or defer to extensions.
 
@@ -1155,27 +1154,27 @@ There's a sneaky way to get those credentials out of a Jenkins agent that requir
 
 Find the password you want to get your hands on
 
-[[/img/jenkins-credentials/credential-view.png]]
+[[./img/jenkins-credentials/credential-view.png][./img/jenkins-credentials/credential-view.png]]
 
 Click ~Update~ which will show you an obscured version of the secret
 
-[[/img/jenkins-credentials/credential-update.png]]
+[[./img/jenkins-credentials/credential-update.png][file:./img/jenkins-credentials/credential-update.png]]
 
 Right click on the ~Secret~ field and hit ~Inspect Element~ to bring up the developer tools for your browser
 
-[[/img/jenkins-credentials/inspect-element.png]]
+[[./img/jenkins-credentials/inspect-element.png][file:./img/jenkins-credentials/inspect-element.png]]
 
 Either right click on the ~value~ part of the input field, or double click on the value area and copy the wonky looking hash. It'll be surrounded with braces eg; ~{ABC123=}~
 
-[[/img/jenkins-credentials/credential-hash.png]]
+[[./img/jenkins-credentials/credential-hash.png][./img/jenkins-credentials/credential-hash.png]]
 
 With that value in your clipboard, go to ~/script~ eg; ~https://jenkins.example.com/script~ or from the homepage, visit ~Manage Jenkins -> Script Console~
 
-[[/img/jenkins-credentials/script-console.png]]
+[[./img/jenkins-credentials/script-console.png][file:./img/jenkins-credentials/script-console.png]]
 
 Enter the following into the script console: ~println(hudson.util.Secret.decrypt('<paste hash here>'))~. Make sure to include the braces and the single quotes. You should see your credential output as seen below
 
-[[/img/jenkins-credentials/final-result.png]]
+[[./img/jenkins-credentials/final-result.png][./img/jenkins-credentials/final-result.png]]
 
 It's a pretty handy trick, but quite obviously a borderline exploit at the same time. It's up to you to use it responsibly!
 
@@ -1321,15 +1320,15 @@ Towards the latter end of 2016, Twitter announced a new suite of tools for busin
 
 I used the latter but I also enabled "welcome messages": automated replies that would trigger when a "customer" opened your direct messages. In my case, I'm not a business so it was more just some silliness to add to my profile and it confused a few people along the way.
 
-[[/img/automation-right/confusion-one.png]]
+[[./img/automation-right/confusion-one.png][file:./img/automation-right/confusion-one.png]]
 
 Over time, I'd forget that I had it enabled and then someone else would get caught out by it a few months later
 
-[[/img/automation-right/confusion-two.png]]
+[[./img/automation-right/confusion-two.png][file:./img/automation-right/confusion-two.png]]
 
 and then it kept going at which point it started becoming a bit of a nuisance.
 
-[[/img/automation-right/confusion-three.png]]
+[[./img/automation-right/confusion-three.png][file:./img/automation-right/confusion-three.png]]
 
 At this point, I was particularly annoyed and attempted to turn it off. I clearly remembered that there was a dashboard but do you think I could find it? That would be too easy!
 
@@ -1349,7 +1348,7 @@ Finally I stumbled onto the Twitter Developer forum and... ah! [[https://twitter
 
 After a bit of confusion, it was cleared up that the Twitter API has a section for "welcome messages" which are these very same automated snippets. Using [[https://github.com/twitter/twurl][twurl]], a Twitter-modified version of curl, I could view those darn things finally.
 
-[[/img/automation-right/welcome-messages.png]]
+[[./img/automation-right/welcome-messages.png][file:./img/automation-right/welcome-messages.png]]
 
 There they were. Sitting within the API the whole time although I'd guess that feature was only documented as part of the recent overhaul of Twitter's developer APIs. Even the original URL, [[https://dashboard.twitter.com][dashboard.twitter.com]], doesn't resolve anymore which is all the proof I needed that I'd been left out in the cold.
 
@@ -1956,11 +1955,11 @@ Similar to our facial detection example from just before, deepfakes uses two [[h
 
 I struggled to understand the next step for quite some time as any mention of it was quite vague, however [[https://arxiv.org/pdf/1706.02932v2.pdf][this]] paper, mentioned by deepfakes [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl/][here (dead link)]] as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
 
-[[./img/deepfakes/celebs.png]]
+[[./img/deepfakes/celebs.png][file:./img/deepfakes/celebs.png]]
 
 This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
 
-[[./img/deepfakes/cats.png]]
+[[./img/deepfakes/cats.png][file:./img/deepfakes/cats.png]]
 
 Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [[https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o/][One explanation (dead link)]] suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve [...] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [[https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi/][their own creators (dead link)]] have no idea why decisions are being made.
 
@@ -1968,7 +1967,7 @@ So what happens with this representation? It actually just recreates the origina
 
 Once the user has determined that both models are sufficiently trained, the network is fed a video. Don't forget that videos are little more than a series of images. Each frame is cropped to just the face and fed into the network of the performer. As the encoders are shared, it's able to build an intermediate representation of any general face. The trick this time is that the decoders are switched midway. Since the celebrity decoder is uniquely trained, it can't help but reconstruct the representation into the face of the celebrity while still inheriting the details (expression, facial structure) of the performer. The result is that the performers face is morphed to look exactly like that of the celebrity.
 
-Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot]( https://en.wikipedia.org/wiki/Gal_Gadot) conversion posted by deepfakes himself. *As indicated earlier, the following is pornography and is definitely not safe for work*.
+Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [[https://en.wikipedia.org/wiki/Gal_Gadot][Gal Gadot]] conversion posted by deepfakes himself. *As indicated earlier, the following is pornography and is definitely not safe for work*.
 
 <Original link was [[https://www.pornhub.com/embed/ph5a27755783e28][https://www.pornhub.com/embed/ph5a27755783e28 (NSFW!!)]] but it has since died. The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!>
 

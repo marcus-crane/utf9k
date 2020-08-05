@@ -2,6 +2,7 @@
 title = "Uses"
 author = ["Marcus Crane"]
 draft = false
+hidedate = true
 +++
 
 See [here](https://uses.tech/) for context

@@ -5,6 +5,7 @@
 * Now
 :PROPERTIES:
 :EXPORT_FILE_NAME: /now
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :hidedate true
 :END:
 
 ** Moving
