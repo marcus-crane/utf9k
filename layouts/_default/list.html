@@ -1,5 +1,6 @@
 {{ define "main" }}
-<ul class="no-list-style">
+<h1>{{ .Title }}</h1>
+<ul>
   {{ range .Pages }}
   <li>
     <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>

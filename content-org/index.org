@@ -2,7 +2,7 @@
 #+hugo_base_dir: ../
 #+hugo_section: /
 
-* Home
+* utf9k
 :PROPERTIES:
 :EXPORT_FILE_NAME: _index
 :END:

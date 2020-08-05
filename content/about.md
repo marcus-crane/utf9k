@@ -2,6 +2,7 @@
 title = "About"
 author = ["Marcus Crane"]
 draft = false
+hidedate = true
 +++
 
 I never write as much as I wish I would but there's a handful of articles you can read.

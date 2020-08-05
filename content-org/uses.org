@@ -5,6 +5,7 @@
 * Uses
 :PROPERTIES:
 :EXPORT_FILE_NAME: /uses
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :hidedate true
 :END:
 
 See [[https://uses.tech/][here]] for context
