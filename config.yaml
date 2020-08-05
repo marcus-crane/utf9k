@@ -2,13 +2,6 @@ baseurl: "https://utf9k.net/"
 languageCode: "en-us"
 buildFuture: false
 
-params:
-  author: "Marcus Crane"
-  description: "I write here about things I find interesting!"
-  contentTypeName: "blog"
-  siteName: "utf9k"
-  paginate: 8
-
 markup:
   goldmark:
     renderer:
