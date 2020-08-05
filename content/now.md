@@ -2,6 +2,7 @@
 title = "Now"
 author = ["Marcus Crane"]
 draft = false
+hidedate = true
 +++
 
 ## Moving {#moving}
