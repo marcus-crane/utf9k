@@ -37,7 +37,7 @@ Before we get started, I should point out that this setup has actually be retire
 
 ## The original setup {#the-original-setup}
 
-{{< figure src="/img/edc-2019/original_carry.jpeg" >}}
+{{< figure src="/ox-hugo/original_carry.jpeg" link="/ox-hugo/original_carry.jpeg" >}}
 
 My EDC was already fairly compact and consisted of the following:
 
@@ -51,7 +51,7 @@ Let's have a look at these individually as we break down my setup and slowly reb
 
 ## Assessing my wallet {#assessing-my-wallet}
 
-{{< figure src="/img/edc-2019/wallet_old.jpeg" >}}
+{{< figure src="/ox-hugo/wallet_old.jpeg" link="/ox-hugo/wallet_old.jpeg" >}}
 
 There's quite a lot in my wallet that I don't use, and different cards definitely get access more than others.
 
@@ -139,7 +139,7 @@ Et voila, a pretty compact setup if I say so myself!
 
 I used to have various pairs of earbuds over the years that were good enough.
 
-{{< figure src="/img/edc-2019/wired_earbuds.jpeg" >}}
+{{< figure src="/ox-hugo/wired_earbuds.jpeg" link="/ox-hugo/wired_earbuds.jpeg" >}}
 
 I felt like I must have lost multiple hours of my life just untangling them over the years so I decided I might as well invest in a decent pair.
 
@@ -149,7 +149,7 @@ Given the price, I actually opted to pay them off over a period of time (might a
 
 That said, they've been a worthwhile investment for me. The battery life is great, considering they're properly wireless, and I'm always surprised how many charges I can get from putting them back in the case. When using them as a daily driver, back when walking to work was a thing, I would generally only need to recharge them once a week at most? More like once every 2 weeks I think.
 
-{{< figure src="/img/edc-2019/wireless_earbuds.jpeg" >}}
+{{< figure src="/ox-hugo/wireless_earbuds.jpeg" link="/ox-hugo/wireless_earbuds.jpeg" >}}
 
 Also, I've been pleasantly surprised at the software updates that still roll out. About 6 months after I bought them, they received support for Amazon Alexa, which was a nice surprise given they already support the Google Assistant. Not that I use either...
 
@@ -160,11 +160,11 @@ I believe that covers everything?
 
 I've reduced my wallet by probably 90%, moved my transit card to its own dedicated spot since it's on the "hot path" and I no longer have to spend any time untangling my headphones
 
-{{< figure src="/img/edc-2019/all_three.jpeg" >}}
+{{< figure src="/ox-hugo/all_three.jpeg" link="/ox-hugo/all_three.jpeg" >}}
 
 As I mentioned earlier, I've made some further changes which I'll likely cover in a 2020 edition of this post.
 
-{{< figure src="/img/edc-2019/all_third_alt.jpeg" >}}
+{{< figure src="/ox-hugo/all_third_alt.jpeg" link="/ox-hugo/all_third_alt.jpeg" >}}
 
 Mainly, I found that while the wallet served me well, it was a bit too heavy to take when I took up running earlier this year.
 
