@@ -8,6 +8,13 @@
 :END:
 
 ** 2020
+*** July
+**** 6th
+- Further polished up some elements of pages as well as changed the layout of the [[/notes][notes]] category
+- Pruned any notes that are just text dumps, in favour of only publishing crafted notes
+- Removed zettels section for now but I intend to revisit the idea. I don't use org-roam much these days.
+**** 5th
+- Redesigned the site to be much more minimal in design. No CSS framework this time although elements were mostly borrowed from [[https://tachyons.io][Tachyons]]
 *** June
 **** 15th
 
@@ -211,7 +218,7 @@
 
 **** 7th
 
-- Tried out [[phttps://forestry.io][forestry.io]] for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
+- Tried out [[https://forestry.io][forestry.io]] for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
 
 **** 3rd
 

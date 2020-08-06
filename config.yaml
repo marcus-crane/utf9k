@@ -1,6 +1,7 @@
 baseurl: "https://utf9k.net/"
 languageCode: "en-us"
 buildFuture: false
+enableGitInfo: true
 
 markup:
   goldmark:

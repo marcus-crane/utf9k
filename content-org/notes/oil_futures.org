@@ -1,7 +1,6 @@
 #+title: Oil Futures
 #+setupfile: ./hugo_setup.org
-#+hugo_slug: oil_futures
-#+roam_tag: oil economics trading
+#+hugo_tags: economics trading
 
 On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.
 

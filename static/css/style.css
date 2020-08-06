@@ -6,8 +6,17 @@ body {
     background-color: #fff;
     font-family: -apple-system,BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
     margin: 0;
+    max-width: 100%;
     padding: 3rem;
-    width: 100%;
+}
+
+a {
+    color: #7e0ecc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9A1DF0;
 }
 
 @media screen and (max-width: 500px) {
@@ -82,13 +91,13 @@ pre code {
 }
 
 blockquote {
-    border-color: #408bc9;
+    border-color: #7e0ecc;
     border-left-style: solid;
     border-left-width: 1px;
     border-width: .125rem;
     margin-left: 0;
     margin-top: 0;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 table {
@@ -125,4 +134,25 @@ tr td {
 
 tr:nth-child(2n+2) {
     background-color: #eee;
+}
+
+.tag-list {
+    float: right;
+}
+
+@media screen and (max-width: 950px) {
+    .tag-list {
+        display: block;
+        float: none;
+        margin-bottom: 1rem;
+    }
+
+    .notes-list a {
+        display: inline-block;
+    }
+}
+
+.tag-list a {
+    color: #777;
+    text-decoration: none;
 }
