@@ -1,4 +1,0 @@
-#+title: FOMO for messaging
-#+setupfile: ./hugo_setup.org
-#+hugo_slug: fomo_for_messaging
-#+roam_tag:
