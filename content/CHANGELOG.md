@@ -2,9 +2,38 @@
 title = "CHANGELOG"
 author = ["Marcus Crane"]
 draft = false
+hidedate = true
 +++
 
 ## 2020 {#2020}
+
+
+### July {#july}
+
+
+#### 6th {#6th}
+
+-   Further polished up some elements of pages as well as changed the layout of the [notes](/notes) category
+-   Pruned any notes that are just text dumps, in favour of only publishing crafted notes
+-   Removed zettels section for now but I intend to revisit the idea. I don't use org-roam much these days.
+
+
+#### 5th {#5th}
+
+-   Redesigned the site to be much more minimal in design. No CSS framework this time although elements were mostly borrowed from [Tachyons](https://tachyons.io)
+
+
+### June {#june}
+
+
+#### 15th {#15th}
+
+-   Finally completed a huge effort to port utf9k to be fully powered by orgmode. In particular, all of the posts you see on this site now exist within one massive file called `posts.org`. Surprisingly, it actually makes editing more convenient than having to jump around a bunch of files!
+
+
+#### 13th {#13th}
+
+-   Translated links and code comments within CHANGELOG to valid org-mode equivalents. Besides the actual blog posts which need a review, that should be the last of the static pages fully ported over
 
 
 ### May {#may}
@@ -233,7 +262,7 @@ draft = false
 
 #### 20th {#20th}
 
--   Added [foresty.io](<https://forestry.io>) configuration again. It wouldn't survive very long.
+-   Added [forestry.io](https://forestry.io) configuration again. It wouldn't survive very long.
 -   Added a post about fixing an issue with upgrading from WSL v1 to v2. I remember drinking a bit when I finally solved this probably so I drunkly wrote this post too :) [»](/blog/wsl2-vhd-issue)
 
 
@@ -269,18 +298,18 @@ draft = false
 
 #### 10th {#10th}
 
--   Uploaded \`vsreport.html\` which was a security review of sorts for a videogame I was playing. I had churned it out like an entire year prior but never hosted it anywhere. I think I was talking to someone about it and wanted to send them a link.
+-   Uploaded `vsreport.html` which was a security review of sorts for a videogame I was playing. I had churned it out like an entire year prior but never hosted it anywhere. I think I was talking to someone about it and wanted to send them a link.
 
 
 #### 7th {#7th}
 
--   Tried out [forestry.io](<https://forestry.io>) for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
+-   Tried out [forestry.io](https://forestry.io) for the first time and quickly discarded it. It's a cool project but I don't have much use for it myself.
 
 
 #### 3rd {#3rd}
 
 -   Wrote my first review in like 2 years. It wasn't a review at all, it was more just me gushing about Battle Angel Alita before the film adaption released. I never did go back and write an actual review... [»](/reviews/battle-angel-alita)
--   Added support for [utteranc.es](<https://utteranc.es/>), a neat little comment section powered by Github.
+-   Added support for [utteranc.es](https://utteranc.es/), a neat little comment section powered by Github.
 -   Revamed the site to move from tailwind.css to spectre.css
 -   Some of the layout changed as a result such as adding opengraph metatags and generally going for a more minimalist approach.
 
@@ -647,7 +676,7 @@ draft = false
 
 #### 26th {#26th}
 
--   I believe until this point, I had been writing a lot of closures for the stats portion of the site. I started writing some classes, for the sake of having classes, likely because I had seen them used in Django a bunch. Looking back, it's funny to me that I had a file called \`classes.py\`!
+-   I believe until this point, I had been writing a lot of closures for the stats portion of the site. I started writing some classes, for the sake of having classes, likely because I had seen them used in Django a bunch. Looking back, it's funny to me that I had a file called `classes.py`!
 
 
 #### 21st {#21st}

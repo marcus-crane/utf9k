@@ -1,9 +1,10 @@
 +++
 title = "Oil Futures"
 author = ["Marcus Crane"]
-lastmod = 2020-06-14T12:26:05+12:00
-slug = "oil_futures"
+lastmod = 2020-08-06T20:24:38+12:00
+tags = ["economics", "trading"]
 draft = false
+hidedate = true
 +++
 
 On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.

@@ -1,14 +1,11 @@
 +++
 title = "The Phoenix Project"
 author = ["Marcus Crane"]
-lastmod = 2020-06-14T12:46:25+12:00
-slug = "the_phoenix_project"
+lastmod = 2020-08-06T20:24:50+12:00
+tags = ["books", "devops"]
 draft = false
+hidedate = true
 +++
-
-goodreads
-: <https://www.goodreads.com/book/show/17255186-the-phoenix-project>
-
 
 ## Cast {#cast}
 
@@ -60,7 +57,7 @@ The introduction of tension ensures that positive habits are reinforced and trai
 
 Bill is initially baffled when Erik takes him on his first trip to MRP-8. What could a manufacturing plant possibly have to do with IT operations?!
 
-The plant used to be stack with orders in progress, from floor to ceiling. The original supervisor, Mark, was rubbish at releasing work into the system. As a result, work would be introduced before any actual tasks could be carried out, resulting in an increase of Work in Progress items\*.\*
+The plant used to be stack with orders in progress, from floor to ceiling. The original supervisor, Mark, was rubbish at releasing work into the system. As a result, work would be introduced before any actual tasks could be carried out, resulting in an increase of Work in Progress items.
 
 The Theory of Constraints, Lean and Toyota Production System all ultimately agree on one thing: WIP is the silent killer.
 
@@ -107,11 +104,11 @@ Let's say we have a delivery business whose primary performance indicator is the
 Setting an SLO around oil changes would seem odd at first, but ensures that preventative measures like maintenance are linked back to our business objectives and stay visible to the entire organisation.
 
 
-## Embed links {#embed-links}
+## Related links {#related-links}
 
-[The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
-[Accelerate](https://www.goodreads.com/book/show/35747076-accelerate)
-[Theory of constraints - Wikipedia](https://en.wikipedia.org/wiki/Theory%5Fof%5Fconstraints)
-[Lean manufacturing - Wikipedia](https://en.wikipedia.org/wiki/Lean%5Fmanufacturing)
-[Toyota Global Site | Production System](https://www.toyota-global.com/company/vision%5Fphilosophy/toyota%5Fproduction%5Fsystem/)
-[The Goal](https://www.goodreads.com/book/show/113934.The%5FGoal)
+-   [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
+-   [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate)
+-   [Theory of constraints - Wikipedia](https://en.wikipedia.org/wiki/Theory%5Fof%5Fconstraints)
+-   [Lean manufacturing - Wikipedia](https://en.wikipedia.org/wiki/Lean%5Fmanufacturing)
+-   [Toyota Global Site | Production System](https://www.toyota-global.com/company/vision%5Fphilosophy/toyota%5Fproduction%5Fsystem/)
+-   [The Goal](https://www.goodreads.com/book/show/113934.The%5FGoal)
