@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1>{{ if ne .Section "blog"}}{{ .Title }}{{ else }}Posts{{ end }}</h1>
 <ul>
   {{ range .Pages }}
   <li>

@@ -2,9 +2,7 @@
 <article>
     <header>
         <h1>{{ .Title }}</h1>
-        {{ if not .Params.hidedate }}
         <time>{{ .Date.Format "January 2, 2006" }}</time>
-        {{ end }}
     </header>
     <div id="post-body">
         {{ .Content }}
