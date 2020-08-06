@@ -6,8 +6,8 @@ body {
     background-color: #fff;
     font-family: -apple-system,BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
     margin: 0;
+    max-width: 100%;
     padding: 3rem;
-    width: 100%;
 }
 
 @media screen and (max-width: 500px) {

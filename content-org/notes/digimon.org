@@ -1,0 +1,8 @@
+#+title: Digimon World
+#+hugo_base_dir: ../../
+#+hugo_section: notes
+#+hugo_tags: digimon nice great
+
+Let's do some research
+* Cool
+Great
