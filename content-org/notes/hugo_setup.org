@@ -1,4 +1,0 @@
-#+hugo_base_dir: ../..
-#+hugo_auto_set_lastmod: t
-#+options: H:2
-#+hugo_section: notes
