@@ -1,0 +1,11 @@
+#+title: Hardware Questions
+#+setupfile: ./hugo_setup.org
+#+hugo_tags: hardware questions mobile
+
+* How does Bluetooth work?
+
+* How does WiFi work?
+
+* How does NFC work?
+
+* What is HID and/or what does it mean?
