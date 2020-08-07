@@ -1,0 +1,16 @@
+#+title: Emacs
+#+setupfile: ./hugo_setup.org
+#+hugo_tags: emacs lisp cheatsheet
+
+* How can I compile Emacs from scratch?
+
+#+begin_src shell
+git clone -b emacs-27 git://git.sv.gnu.org/emacs.git
+cd emacs
+sudo apt-get build-deps emacs
+./autogen.sh
+./configure --with-x-toolkit=lucid --with-mailutils
+make -j4
+./src/emacs // test that it's working
+sudo make install
+#+end_src
