@@ -1,0 +1,16 @@
+name: Generate and publish markdown from org-mode source files
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Emacs
+        uses: purcell/setup-emacs@v2.0
