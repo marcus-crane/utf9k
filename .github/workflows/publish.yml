@@ -18,4 +18,4 @@ jobs:
           version: 27.1
       - name: Install ox-hugo
         run: |
-          emacs --eval "(mapc 'package-install '(ox-hugo))"
+          emacs -Q --batch -L . --eval "(mapc 'package-install '(ox-hugo))"
