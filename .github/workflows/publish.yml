@@ -16,6 +16,11 @@ jobs:
         uses: purcell/setup-emacs@v2.0
         with:
           version: 27.1
+
+      - name: Initialise package
+        run: |
+          emacs -Q --batch -L . --eval "(progn (require 'package)(push '(\"melpa\" . \"https://melpa.org/packages/\") package-archives)(package-initialize)(unless package-archive-contents (package-refresh-contents))(dolist (pkg '(${NEEDED_PACKAGES}))(unless (package-installed-p pkg)(package-install pkg))))"
+
       - name: Install ox-hugo
         run: |
-          emacs -Q --batch -L . --eval "(mapc 'package-install '(ox-hugo))"
+          emacs -Q --batch -L . --eval "(use-package ox-hugo)"
