@@ -16,3 +16,6 @@ jobs:
         uses: purcell/setup-emacs@v2.0
         with:
           version: 27.1
+      - name: Install ox-hugo
+        run: |
+          emacs --eval "(mapc 'package-install '(ox-hugo))"
