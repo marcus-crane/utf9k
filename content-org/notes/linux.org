@@ -1,6 +1,6 @@
-#+title: Linux Questions
+#+title: Linux
 #+setupfile: ./hugo_setup.org
-#+hugo_tags: linux questions
+#+hugo_tags: linux faqs
 
 * Why are dot files a thing?
 
