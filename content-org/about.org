@@ -5,7 +5,7 @@
 * About
 :PROPERTIES:
 :EXPORT_FILE_NAME: /about
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :hidedate true
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :datetype "hidden"
 :END:
 
 I never write as much as I wish I would but there's a handful of articles you can read.

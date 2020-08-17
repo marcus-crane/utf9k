@@ -2,7 +2,13 @@
 <article>
     <header>
         <h1>{{ .Title }}</h1>
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <time>
+        {{ if eq .Params.datetype "modified" }}
+            {{ .Date.Format "January 2, 2006" }}
+        {{ else }}
+            Last modified on {{ .Lastmod.Format "January 2, 2006" }}
+        {{ end }}
+        </time>
     </header>
     <div id="post-body">
         {{ .Content }}
