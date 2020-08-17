@@ -23,4 +23,4 @@ jobs:
 
       - name: Install ox-hugo
         run: |
-          emacs -Q --batch -L . --eval "(use-package ox-hugo)"
+          emacs -Q --batch -L . --eval "'(use-package ox-hugo)"
