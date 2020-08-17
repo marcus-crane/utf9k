@@ -1,8 +1,8 @@
 +++
-title = "Linux Questions"
+title = "Linux"
 author = ["Marcus Crane"]
-lastmod = 2020-08-07T14:57:38+12:00
-tags = ["linux", "questions"]
+lastmod = 2020-08-18T00:05:59+12:00
+tags = ["linux", "faqs"]
 draft = false
 hidedate = true
 +++
