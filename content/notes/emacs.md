@@ -1,7 +1,7 @@
 +++
 title = "Emacs"
 author = ["Marcus Crane"]
-lastmod = 2020-08-07T14:31:46+12:00
+lastmod = 2020-08-17T15:05:56+12:00
 tags = ["emacs", "lisp", "cheatsheet"]
 draft = false
 hidedate = true
@@ -12,7 +12,7 @@ hidedate = true
 ```shell
 git clone -b emacs-27 git://git.sv.gnu.org/emacs.git
 cd emacs
-sudo apt-get build-deps emacs
+sudo apt-get build-dep emacs
 ./autogen.sh
 ./configure --with-x-toolkit=lucid --with-mailutils
 make -j4
