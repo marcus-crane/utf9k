@@ -15,12 +15,14 @@ My resume is hosted [here](/resume.pdf) if you want a better idea of what I've w
 
 You can find me on the web in a bunch of places:
 
+-   Discord (Sentry#7301)
 -   [Github](https://github.com/marcus-crane)
 -   [Hacker News](https://news.ycombinator.com/user?id=spondyl)
 -   [Instagram](https://instagram.com/sentryism)
 -   [Linkedin](https://linkedin.com/in/marcus-crane)
 -   [Lobsters](https://lobste.rs/u/sentry)
 -   [Steam](https://steamcommunity.com/id/sandtree)
+-   [Trakt](https://trakt.tv/user/sentry)
 -   [Twitter](https://twitter.com/sentreh)
 
 Finally, there's always trusty old email which is my first name @ this domain.
