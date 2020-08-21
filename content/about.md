@@ -21,6 +21,7 @@ You can find me on the web in a bunch of places:
 -   [Instagram](https://instagram.com/sentryism)
 -   [Linkedin](https://linkedin.com/in/marcus-crane)
 -   [Lobsters](https://lobste.rs/u/sentry)
+-   Nintendo Switch (SW-5686-4176-9692)
 -   [Steam](https://steamcommunity.com/id/sandtree)
 -   [Trakt](https://trakt.tv/user/sentry)
 -   [Twitter](https://twitter.com/sentreh)
