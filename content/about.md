@@ -11,8 +11,6 @@ I currently work at [Xero](https://xero.com/nz/), a cloud accounting software co
 
 In particular, I'm a [Site Reliability Engineer](https://en.wikipedia.org/wiki/Site%5FReliability%5FEngineering) based out of our office in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland).
 
-My resume is hosted [here](/resume.pdf) if you want a better idea of what I've worked on before.
-
 You can find me on the web in a bunch of places:
 
 -   Discord (Sentry#7301)
