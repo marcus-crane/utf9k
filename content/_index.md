@@ -10,6 +10,8 @@ I'm [Marcus Crane](/about), and this is my personal site
 
 A lot of things are being moved around at the moment but you can still read my content
 
+If you're wondering where to find me about the web, check my [about](/about) page
+
 Blog posts live [here](/blog) and I've started uploading various notes [here](/notes)
 
 The notes are a bit of a mess though so don't expect to gain too much from them
