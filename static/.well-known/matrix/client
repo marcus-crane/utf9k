@@ -6,4 +6,13 @@
 	"m.identity_server": {
 		"base_url": "https://matrix.utf9k.net"
 	}
+,
+	"m.integrations": {
+		"managers": [
+			{
+				"api_url": "https://dimension.utf9k.net/api/v1/scalar",
+				"ui_url": "https://dimension.utf9k.net/riot"
+			}
+		]
+	}
 }
