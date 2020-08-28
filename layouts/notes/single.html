@@ -2,6 +2,7 @@
 <article>
     <header>
         <h1>{{ .Title }}</h1>
+        <time>Last modified on {{ .Lastmod.Format "January 2, 2006" }}</time>
     </header>
     <div id="post-body">
       {{ .Content }}

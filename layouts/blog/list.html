@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>Blog</h1>
+<ul>
+  {{ $years := .Scratch }}
+  {{ range .Pages }}
+  {{ $year := .Date.Format "2006" }}
+  {{ if not (in ($years.Get "years") $year) }}
+    <h2>{{ .Date.Format "2006" }}</h2>
+    {{ $years.Add "years" (slice $year) }}
+  {{ end }}
+  <li class="notes-list">
+    <a href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+    <span class="tag-list">
+      <span id="list-date">{{ .Date.Format "Jan 02" }}</span>
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
