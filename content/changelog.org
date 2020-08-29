@@ -1,4 +1,6 @@
-#+title: CHANGELOG
+#+title: Changelog
+
+{{< toc >}}
 
 * 2020
 ** July

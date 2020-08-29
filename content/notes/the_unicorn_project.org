@@ -2,6 +2,8 @@
 #+date: 2020-08-07
 #+tags[]: books development devops
 
+{{< toc >}}
+
 * The First Ideal: Locality and Simplicity
 
 Locality means keeping systems loosely coupled, so that features can be delivered faster. Being able to develop, test and deploy value quickly to customers is only achievable if we aren't impeded by a complex nest of dependencies, or reliance on other teams who may potentially become blockers.

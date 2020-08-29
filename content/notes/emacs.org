@@ -2,6 +2,8 @@
 #+date: 2020-08-18
 #+tags[]: emacs lisp faq
 
+{{< toc >}}
+
 * How can I compile Emacs from scratch?
 
 #+begin_src shell
