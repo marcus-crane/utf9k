@@ -1,5 +1,7 @@
 #+title: Now
 
+{{< toc >}}
+
 * Moving
 
 At the moment, I'm in the process of getting ready to (at some point soon) move into a different place

@@ -2,6 +2,8 @@
 #+date: 2020-08-07
 #+tags[]: ps1 gaming cd iso
 
+{{< toc >}}
+
 The Playstation 1 uses CD-ROMs with the [[https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension][XA extension]].
 
 If you open a PS1 ISO within a hex editor, you'll want to scroll down to ~offset 37656~

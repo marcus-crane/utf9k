@@ -2,6 +2,8 @@
 #+date: 2020-08-07
 #+tags[]: development programming
 
+{{< toc >}}
+
 #+begin_quote
 The only way to stay fast, in the short term OR the long term, is to keep your code clean -- Uncle Bob Martin
 #+end_quote
