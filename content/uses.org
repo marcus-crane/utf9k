@@ -1,0 +1,27 @@
+#+title: Uses
+
+See [[https://uses.tech/][here]] for context
+
+* Development tools
+** Editor
+
+[[https://github.com/hlissner/doom-emacs][Doom Emacs]] is my current [[https://www.gnu.org/software/emacs/][Emacs]] distribution of choice
+
+I'm still relatively new to the ecosystem so if I find myself frustrated or want to make a quick edit, I'll generally reach for [[https://code.visualstudio.com/][VS Code]], [[https://www.sublimetext.com/][Sublime Text]] or [[https://neovim.io/][nvim]]
+
+** Terminal
+
+- macOS: Terminal with minimal configuration
+- Windows: Windows Terminal or stock Ubuntu WSL
+
+I use stock [[https://en.wikipedia.org/wiki/Z_shell][zsh]] (not oh-my-zsh) with a profile that is shared across all of my development environments via Git
+
+I'm looking at switching back to [[https://fishshell.com/][fish]] shortly and ideally having my configuration kept as a literate document ([[https://www.gnu.org/software/emacs/manual/html_node/org/Extracting-source-code.html][tangled]] by Emacs)
+
+For both of my Windows environments, I do all of my development using version 2 of the [[https://docs.microsoft.com/en-us/windows/wsl/faq][Windows Subsystem for Linux]]
+
+** Hardware
+
+- Work laptop: [[https://store.hp.com/us/en/pdp/hp-zbook-studio-g5-mobile-workstation-customizable-2yn59av-mb][HP ZBook Studio G5]] running Windows 10 Enterprise
+- Home laptop: [[https://support.apple.com/kb/sp715][Macbook Pro 13 (Early 2015)]] running [[https://www.apple.com/macos/big-sur-preview/][macOS Big Sur]] Developer Preview
+- Home desktop: Custom built running Windows 10 Pro Insiders
