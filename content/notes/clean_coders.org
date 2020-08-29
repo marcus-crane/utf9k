@@ -1,49 +1,42 @@
-+++
-title = "Clean Coders"
-author = ["Marcus Crane"]
-lastmod = 2020-08-07T14:57:47+12:00
-tags = ["development", "programming"]
-draft = false
-hidedate = true
-+++
+#+title: Clean Coders
+#+date: 2020-08-07
+#+tags[]: development programming
 
-> The only way to stay fast, in the short term OR the long term, is to keep your code clean - Uncle Bob Martin
+#+begin_quote
+The only way to stay fast, in the short term OR the long term, is to keep your code clean -- Uncle Bob Martin
+#+end_quote
 
+* Episode 2: Names
 
-## Episode 2: Names {#episode-2-names}
-
-
-### Intent {#intent}
+** Intent
 
 The name of a thing (variable/function etc) should reveal its intent. If a comment is required to reveal the intent, you need to choose a better name.
 
 Code should strive to be self documenting. For example, instead of
 
-```javascript
+#+begin_src javascript
 // You could do this
 const d; // elapsed time in days
 
 // But why not just have the name of your variable reveal its intent
 const elapsedTimeInDays;
-```
+#+end_src
 
 While this may end up being a bit more to write, you'll thank yourself as your code becomes easier to reason about, especially as you're jumping between files.
 
 Put simply, a name should say what it means, and mean what it says. If the meaning has changed, the name should be changed to reflect the new intent of the code.
 
+** Prefixes
 
-### Prefixes {#prefixes}
+It used to be popular to have prefixes that indicate types such as IAccount or m_Product and there were often good uses for them. Nowadays, modern IDEs can infer types automatically making their usage for the human coder somewhat redundant. It's more down to personal taste.
 
-It used to be popular to have prefixes that indicate types such as IAccount or m\_Product and there were often good uses for them. Nowadays, modern IDEs can infer types automatically making their usage for the human coder somewhat redundant. It's more down to personal taste.
-
-
-### Parts of Speech {#parts-of-speech}
+** Parts of Speech
 
 Classes and variables are nouns while methods are verbs.
 
 You should try to avoid "flavour" terms like Manager, Processor, Data or Info as they are vague and generic.
 
-```python
+#+begin_src python
 # Booleans should be predicates
 if isLoading:
     print("I am loading")
@@ -59,7 +52,7 @@ as they will likely be used within an if statement.
 if payment.isPostable():
     postPayment(payment)
     price = getPrice()
-```
+#+end_src
 
 The overall idea is to format code as if it were part of the English language and we can achieve this by using an appropriate mix of nouns, verbs and predicates.
 
@@ -70,7 +63,7 @@ Scopes
 
 The above is all good and well but it should be applied in moderation. It wouldn't make sense to call a function tryOpenFileAndIfErrorThrowException when it's going to be used often. Just calling it open is sufficient. Inside such a function, you might find longer, more descriptive names however.
 
-```python
+#+begin_src python
 function open(filename) {
     try {
         return getPropertiesOfFile(filename)
@@ -79,13 +72,13 @@ function open(filename) {
         throw error
     }
 }
-```
+#+end_src
 
 The actual purpose of the function isn't important, the level of usage is what matters here. For something used often, it's good to keep a name short and concise. Internally, the getPropertiesOfFile function is likely to be used rarely, if not only once. We can then give it a much longer, descriptive name since it won't be exposed outside of the open function.
 
 The same principle applies to the distance, or scope, of a function. Let's take a typed example to make things more clear
 
-\#+begin\_src javascript
+#+begin_src javascript
 const e = document.querySelector('body')
 
 // 20 lines later
@@ -93,7 +86,7 @@ const e = document.querySelector('body')
 function appendName(n: string) {
   e.append(n)
 }
-\#end\_src
+#end_src
 
 You'll have to use your imagination here but if you were in a 50 line file, seeing e with no context would be mighty frustrating. You'd need to look up, and possibly even scroll up, to find where e is defined, perhaps even among a number of other declarations.
 
@@ -109,5 +102,4 @@ The larger the scope, the shorter the name. The shorter the scope, the longer th
 
 Ottinger's Rules for Variable and Class Naming
 
-
-## Episode 3: Functions {#episode-3-functions}
+* Episode 3: Functions
