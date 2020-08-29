@@ -16,7 +16,7 @@ The name of a thing (variable/function etc) should reveal its intent. If a comme
 
 Code should strive to be self documenting. For example, instead of
 
-#+begin_src javascript
+#+begin_src js
 // You could do this
 const d; // elapsed time in days
 
@@ -80,7 +80,7 @@ The actual purpose of the function isn't important, the level of usage is what m
 
 The same principle applies to the distance, or scope, of a function. Let's take a typed example to make things more clear
 
-#+begin_src javascript
+#+begin_src js
 const e = document.querySelector('body')
 
 // 20 lines later
