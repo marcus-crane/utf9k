@@ -1,23 +1,18 @@
-+++
-title = "Powershell"
-author = ["Marcus Crane"]
-lastmod = 2020-08-07T14:24:27+12:00
-tags = ["powershell", "cheatsheet"]
-draft = false
-hidedate = true
-+++
+#+title: Powershell
+#+date: 2020-08-07
+#+tags[]: powershell cheatsheet
 
-## How can I view the methods associated with an object? {#how-can-i-view-the-methods-associated-with-an-object}
+* How can I view the methods associated with an object?
 
 Let's say that you have a variable that contains a string:
 
-```powershell
+#+begin_src powershell
 $a = "abc"
-```
+#+end_src
 
 That's neat but what if I want to view the possible methods that are available on the string object? You can use the Get-Member cmdlet. You can also use the shorthand version gm.
 
-```powershell
+#+begin_src powershell
 $a = "abc"
 $a | gm
 // Name | MemberType | Definition
@@ -26,29 +21,28 @@ $a | gm
 // Length | Property | int Length {get;}
 $a.Length
 // 3
-```
+#+end_src
 
 You can also view the static methods associated with an object too:
 
-```powershell
+#+begin_src powershell
 "abc" | gm - Static
 // Compare | Method | static int Compare(string strA, string strB)...
-```
+#+end_src
 
-
-## How can I perform a regex search? {#how-can-i-perform-a-regex-search}
+* How can I perform a regex search?
 
 You can check if a character contains a string by using the cmatch operator like so:
 
-```powershell
+#+begin_src powershell
 $word = "Hello"
 $word -cmatch "[A-Z]"
 // True
 Search ActiveDirectory
-```
+#+end_src
 
 Before you can query AD, you need to first import the Active Directory module
 
-```powershell
+#+begin_src powershell
 import-module activedirectory
-```
+#+end_src
