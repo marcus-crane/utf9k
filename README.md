@@ -1,6 +1,6 @@
 # utf9k
 
-This is my personal website, which is powered by [Hugo](https://gohugo.io).
+This is my personal website, which is powered by [Hugo](https://gohugo.io) and org.
 
 ## Getting setup
 
