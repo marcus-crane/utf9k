@@ -1,0 +1,47 @@
+#+title: Getting started with Home Manager and nix
+#+date: 2030-01-01
+#+draft: true
+
+{{< toc >}}
+
+* TODO Installation
+
+** Linux
+
+All you should need to do is the following:
+
+#+begin_src bash
+sh <(curl -L https://nixos.org/nix/install) --daemon
+#+end_src
+
+** macOS
+
+The installation steps for macOS are a little bit more involved due to some changes included with macOS Catalina.
+
+Here's how I got it working:
+
+#+begin_src bash
+sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume --daemon
+#+end_src
+
+This will install everything at ~/nix~ but a few things will likely not be working quite right
+
+Update your shell to source the following:
+
+#+begin_src bash
+. /nix/var/nix/profiles/default/etc/profile.d/nix.sh
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+# Only the latter may be required
+#+end_src
+
+You'll also want to check the value of ~$NIX_PATH~
+
+If you run ~nix-shell '<home-manager>' -A install~ and it says ~file 'home-manager' was not found~, check ~nix-channel --list~
+
+If it shows the Home Manager channel, try the following:
+
+#+begin_src bash
+export NIX_PATH="$HOME/.nix-defexpr/channels:nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs:$NIX_PATH"
+#+end_src
+
+Once that's done, running ~nix-shell '<home-manager>' -A install~ again should determine the required derivations
