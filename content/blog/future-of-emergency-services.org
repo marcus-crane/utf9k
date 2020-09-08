@@ -2,7 +2,7 @@
 #+date: 2019-03-20
 #+tags[]: future people
 
-Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [[https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline][Healthline]] who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.
+Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [[https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline][Healthline]] who recommended I see either my GP, or [[https://en.wikipedia.org/wiki/Emergency_department][A&E]] within the next 6 hours.
 
 Shortly after I hung up, I had a pain spike bad enough to make me burst into tears. I wasn't getting anywhere clutching my stomach on the floor so I called an ambulance.
 
