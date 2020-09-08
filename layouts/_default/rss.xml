@@ -9,7 +9,7 @@
     <description>Some things I've written</description>{{ with .Site.Author.email }}
     <managingEditor>marcus@utf9k.net</managingEditor>
     <webMaster>marcus@utf9k.net</webMaster>
-    <copyright>Marcus Crane [marcus@utf9k.net]</copyright>{{end}}{{ if not .Date.IsZero }}
+    <copyright>Marcus Crane [marcus@utf9k.net]</copyright>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{ with .OutputFormats.Get "RSS" }}
 	{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
