@@ -2,9 +2,12 @@
 <html>
 <head>
   {{ partial "head.html" . }}
+  {{ block "json+ld" . }}{{ end }}
 </head>
 <body>
   {{ block "main" . }}
+  {{ end }}
+  {{ block "test" . }}
   {{ end }}
 </body>
 </html>
