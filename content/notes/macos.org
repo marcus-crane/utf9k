@@ -1,5 +1,5 @@
 #+title: macOS
-#+date: 2020-09-05
+#+date: 2020-09-09
 #+tags[]: macos os cheatsheet
 
 {{< toc >}}
