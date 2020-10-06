@@ -1,6 +1,6 @@
 baseurl: "https://utf9k.net/"
 languageCode: "en-us"
-buildFuture: false
+buildFuture: true
 enableGitInfo: true
 title: utf9k
 
