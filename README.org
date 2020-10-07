@@ -14,7 +14,7 @@ HTML templates live in ~layouts~
 
 Images and other static content live in ~static~
 
-Deployment is handled automatically by [[https://netlify.com][Netlify]]
+Deployment is handled automatically to a cheap [[https://vultr.com][Vultr]] server using Github Actions
 
 ** Conventions
 
