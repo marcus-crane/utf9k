@@ -31,14 +31,13 @@ jobs:
       - name: Build
         run: hugo
 
-      - name: Deploy to server via SSH
-        uses: appleboy/ssh-action@master
+      - name: Deploy to server via SCP
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: |
-            rm -rf /var/www/html/utf9k
-            mkdir -p /var/www/html/utf9k
-            cp -R ./public /var/www/html/utf9k/
+          source: "public"
+          target: "/var/www/html/utf9k"
+          rm: true
