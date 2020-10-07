@@ -29,7 +29,7 @@ jobs:
           hugo-version: '0.75.1'
 
       - name: Build
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@master
@@ -38,4 +38,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: whoami
+          script: |
+            rm -rf /var/www/html/utf9k
+            mkdir -p /var/www/html/utf9k
+            cp -R public/* /var/www/html/utf9k/
