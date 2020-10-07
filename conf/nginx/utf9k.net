@@ -1,0 +1,27 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name utf9k.net www.utf9k.net;
+
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl;
+  listen [::]:443 ssl;
+
+  ssl_certificate     /etc/letsencrypt/live/utf9k.net/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
+  include             /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
+
+  root /var/www/html/utf9k;
+  index index.html;
+
+  server_name utf9k.net www.utf9k.net;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
