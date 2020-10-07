@@ -51,6 +51,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           source: "conf/nginx/utf9k.net"
-          target: "/etc/nginx/sites-available/utf9k.net"
+          target: "/etc/nginx/sites-available"
           rm: true
-          strip_components: 1
+          strip_components: 2
