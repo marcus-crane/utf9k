@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /var/www/html/utf9k;
+  index index.html;
+
+  server_name utf9k.net www.utf9k.net;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
