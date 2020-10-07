@@ -41,4 +41,4 @@ jobs:
           script: |
             rm -rf /var/www/html/utf9k
             mkdir -p /var/www/html/utf9k
-            cp -R public/* /var/www/html/utf9k/
+            cp -R ./public /var/www/html/utf9k/
