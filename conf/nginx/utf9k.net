@@ -2,7 +2,7 @@ server {
   listen 80;
   listen [::]:80;
 
-  server_name utf9k.net www.utf9k.net
+  server_name utf9k.net www.utf9k.net;
 
   return 301 https://$host$request_uri;
 }
