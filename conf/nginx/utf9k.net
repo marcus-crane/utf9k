@@ -31,6 +31,8 @@ server {
   ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
   
   add_header X-Frame-Options "SAMEORIGIN" always;
+  add_header X-Content-Type-Options "nosniff" always;
+  add_header Referrer-Policy "strict-origin";
 
   root /var/www/html/utf9k;
   index index.html;
