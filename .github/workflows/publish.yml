@@ -53,3 +53,12 @@ jobs:
           source: "conf/nginx/utf9k.net"
           target: "/etc/nginx/sites-available"
           strip_components: 2
+
+      - name: Restart nginx to propogate changes
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: sudo systemctl restart nginx
