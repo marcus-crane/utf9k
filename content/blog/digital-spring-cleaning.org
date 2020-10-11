@@ -8,7 +8,7 @@ It's spring here in New Zealand, and unfortunately I think I've spent more time 
 
 Part of my clean involved tidying up my password manager, since it tends to accumulate a lot of accounts that I don't need anymore.
 
-Normally I err more on the side of a digital hoarder but I decided to go [[ham][https://genius.com/Jay-z-and-kanye-west-ham-lyrics]] on all the "stuff" I have, and so that included digital "assets".
+Normally I err more on the side of a digital hoarder but I decided to go [[https://genius.com/Jay-z-and-kanye-west-ham-lyrics][ham]] on all the "stuff" I have, and so that included digital "assets".
 
 ** Cleaning up my own mess
 
@@ -22,13 +22,13 @@ Most sites were fine about it. Some would offer a discount or free credit for...
 
 There were a couple that asked me to provide the email for my account or username which was fine but it's the email address I'm emailing you from...
 
-Of the customer support request batch, [[Tile][https://downloadtile.com]] was perhaps the most confusing. They asked me what year I registered my account (uhh, this year? maybe last), how many tiles I had associated (1) and the names + activation dates of tiles associated with my account. I don't know about you but I don't keep track of these things so I just had to make a rough guess. That was yesterday so I'll see if they accept that before escalating things. This is only made weirder by the fact that before asking those questions, they linked me a reset page for the product I have that has a tile built into it. If the questions are meant to be a security measure, giving me the answer in the same breath is kind of missing the point but oh well.
+Of the customer support request batch, [[https://downloadtile.com][Tile]] was perhaps the most confusing. They asked me what year I registered my account (uhh, this year? maybe last), how many tiles I had associated (1) and the names + activation dates of tiles associated with my account. I don't know about you but I don't keep track of these things so I just had to make a rough guess. That was yesterday so I'll see if they accept that before escalating things. This is only made weirder by the fact that before asking those questions, they linked me a reset page for the product I have that has a tile built into it. If the questions are meant to be a security measure, giving me the answer in the same breath is kind of missing the point but oh well.
 
 ** Having to search for a human
 
 This category was thankfully quite small and perhaps the most fun to problem solve. Personally, I consider these to be one-off issues rather than being intentionally troubled.
 
-[[Dark][https://darklang.com]] was the first contender
+[[https://darklang.com][Dark]] was the first contender
 
 Looking at the site, there's no mention of who is behind the language. Inside the application(?), there's no profile page or anything like that.
 
@@ -36,7 +36,7 @@ Eventually, I discovered the Slack community where one of the co-founders inform
 
 We ended up having a conversation about Dark in general and I actually forgot what I was even there for. I was highly skeptical as to whether something like Dark would take off, and I still am, but I enjoyed chatting with 'em so I thought I might as well try it out again. Ironically, the only product/services I was convinced (or perhaps convinced myself) to retry was one of the few that made no attempt to retain users.
 
-The second contender, [[Autocode][https://autocode.com]] (previously +[[stdlib][https://stdlib]]+ by +[[polybit][https://polybit.com]]+) overlooked some email addresses that no longer existed.
+The second contender, [[https://autocode.com][Autocode]] (previously [[https://stdlib.com][stdlib]] by [[https://polybit.com][Polybit]]) overlooked some email addresses that no longer existed.
 
 It was pretty easy to infer the new support email by tacking ~support~ onto the end of their current domain, and they were super quick to fix it (and delete my account) so it wasn't much trouble at all.
 
@@ -58,7 +58,7 @@ Of course, it's all digital but I still can't help but feel like I'm generating 
 
 ** Handing my data back
 
-There were a couple of sites where I simply felt I had no choice but to exercise the [[nuclear option][https://en.wikipedia.org/wiki/Nuclear_option]].
+There were a couple of sites where I simply felt I had no choice but to exercise the [[https://en.wikipedia.org/wiki/Nuclear_option][nuclear option]].
 
 If I couldn't request my data to be deleted, or even contact anyone, I suppose the account isn't mine in any meaningful sense and I'm just leasing it so I gave the lease back.
 
@@ -86,7 +86,7 @@ I suppose it made me appreciate even more, the hard part of product management i
 
 There were some tools where I didn't use them, but I knew exactly why I didn't use them. There were others I rarely used and one of those asked if I'd like to join an interview session in exchange for X months of their subscription tier. It got me thinking that if there were more tools, especially the ones I did have specific criticisms of, that asked for user interviews, I'd probably do some of them. Arguably, I'd prefer to do them more if there was no incentive, rather than an incentive I don't have any use for. Personally, I just find those sorts of user interviews fun, both participating and having run a handful myself.
 
-I could mention how some sort of [[digital identity][https://en.wikipedia.org/wiki/Self-sovereign_identity]] would make any of the above redundant and so on but personally, I think it's wishful thinking, in my lifetime anyway.
+I could mention how some sort of [[https://en.wikipedia.org/wiki/Self-sovereign_identity][digital identity]] would make any of the above redundant and so on but personally, I think it's wishful thinking, in my lifetime anyway.
 
 Too many business and individuals like to unneccessarily complicate things in a variety of ways: using email addresses as later-unchangable IDs, abstracting themselves away from users so much that you can't find a real person or simply just viewing data as an asset to be kept, rather than a liability to be managed like any other risk.
 
