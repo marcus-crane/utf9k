@@ -64,20 +64,6 @@ server {
   ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
   include             /etc/letsencrypt/options-ssl-nginx.conf;
   ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
-
-  server_name stats.utf9k.net;
-
-  return 301 https://stats.utf9k.net$request_uri;
-}
-
-server {
-  listen 443 ssl;
-  listen [::]:443 ssl;
-
-  ssl_certificate     /etc/letsencrypt/live/utf9k.net/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
-  include             /etc/letsencrypt/options-ssl-nginx.conf;
-  ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
   
   add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval'; " always;
   add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
