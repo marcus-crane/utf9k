@@ -4,7 +4,7 @@
 <meta name="theme-color" content="#a463f2" />
 <meta name="author" content="Marcus Crane" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-<link href="/css/style.css" rel="stylesheet" type="text/css" />
 {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
+{{ partial "css.html" . }}
