@@ -29,7 +29,7 @@ jobs:
           hugo-version: '0.75.1'
 
       - name: Build
-        run: hugo
+        run: hugo --minify
 
       - name: Deploy to server via SCP
         uses: appleboy/scp-action@master
