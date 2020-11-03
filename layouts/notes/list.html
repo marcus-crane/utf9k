@@ -9,7 +9,7 @@
       </a>
       <span class="tag-list">
           {{ range .Params.tags }}
-          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
+          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
           {{ end }}
       </span>
     </li>
