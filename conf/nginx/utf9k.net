@@ -45,6 +45,10 @@ server {
   location / {
     try_files $uri $uri/ =404;
   }
+
+  location ~*  \.(jpg|jpeg|png|gif|ico|css|js)$ {
+    expires 365d;
+  }
 }
 
 server {
