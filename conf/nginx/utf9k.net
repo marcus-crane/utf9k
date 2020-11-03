@@ -37,7 +37,7 @@ server {
   add_header Referrer-Policy "strict-origin";
   add_header Permissions-Policy "microphone=(none)";
 
-  add_Header Content-Type "text/html; charset=UTF-8";
+  add_header Content-Type "text/html; charset=UTF-8";
 
   root /var/www/html/utf9k;
   index index.html;
