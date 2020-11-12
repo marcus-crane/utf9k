@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="item-list">
+	<h1>{{ section.title }}</h1>
+  <ul class="no-list-style">
+    {% for year, posts in section.pages | reverse | group_by(attribute="year") %}
+      <h2>{{ year }}</h2>
+      {% for post in posts %}
+        <li class="notes-list">
+          <a href="{{ post.permalink }}">
+            <span>{{ post.title }}</span>
+          </a>
+          <span class="tag-list">
+            <span id="list-date">{{ post.date }}</span>
+          </span>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+{% endblock content %}
