@@ -1,7 +1,0 @@
-#+title: About
-
-I never write as much as I wish I would but there's a handful of articles you can read.
-
-I currently work at [[https://www.mercedes-benz.co.nz/][Mercedes-Benz New Zealand]]. I think we make cars or something.
-
-In particular, I'm a [[https://en.wikipedia.org/wiki/Site_Reliability_Engineering][Site Reliability Engineer]] based out of our office in [[https://en.wikipedia.org/wiki/Mount_Wellington,_New_Zealand][Mount Wellington, New Zealand]].
