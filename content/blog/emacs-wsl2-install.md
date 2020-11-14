@@ -4,8 +4,6 @@ date = 2020-05-06
 #blog
 +++
 
-{{ toc }}
-
 I've never really dedicated myself to Emacs despite being interested in [org mode](https://orgmode.org/) for a little while now.
 
 One barrier to entry is that I had no idea how to install it on my desktop. The more places I have it installed, the quicker I can get comfortable enough to actually use it in my day to day life.
