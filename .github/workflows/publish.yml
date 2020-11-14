@@ -23,13 +23,10 @@ jobs:
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.75.1'
-
-      - name: Build
-        run: hugo --minify
+      - name: Build site with Zola
+        uses: shalzz/zola-deploy-action@master
+        env:
+          BUILD_ONLY: true
 
       - name: Deploy to server via SCP
         uses: appleboy/scp-action@master
