@@ -38,11 +38,11 @@ Similar to our facial detection example from just before, deepfakes uses two [au
 
 I struggled to understand the next step for quite some time as any mention of it was quite vague, however [this](https://arxiv.org/pdf/1706.02932v2.pdf) paper, mentioned by deepfakes [here (dead link)](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl/) as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
 
-[![./img/deepfakes/celebs.png](./img/deepfakes/celebs.png)](./img/deepfakes/celebs.png)
+[![/img/deepfakes/celebs.png](/img/deepfakes/celebs.png)](/img/deepfakes/celebs.png)
 
 This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
 
-[![./img/deepfakes/cats.png](./img/deepfakes/cats.png)](./img/deepfakes/cats.png)
+[![/img/deepfakes/cats.png](/img/deepfakes/cats.png)](/img/deepfakes/cats.png)
 
 Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [One explanation (dead link)](https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o/) suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve \[…\] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [their own creators (dead link)](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi/) have no idea why decisions are being made.
 
