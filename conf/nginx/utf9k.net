@@ -1,0 +1,89 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name utf9k.net www.utf9k.net;
+
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate     /etc/letsencrypt/live/utf9k.net/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
+  include             /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
+
+  server_name www.utf9k.net;
+
+  return 301 https://utf9k.net$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate     /etc/letsencrypt/live/utf9k.net/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
+  include             /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
+  
+  add_header Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" always;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+  add_header X-Frame-Options "SAMEORIGIN" always;
+  add_header X-Content-Type-Options "nosniff" always;
+  add_header Referrer-Policy "strict-origin";
+  add_header Permissions-Policy "microphone=(none)";
+
+  add_header Content-Type "text/html; charset=UTF-8";
+
+  root /var/www/html/utf9k;
+  index index.html;
+
+  server_name utf9k.net;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+
+  location ~*  \.(jpg|jpeg|png|gif|ico|css|js)$ {
+    expires 365d;
+  }
+}
+
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name stats.utf9k.net;
+
+  return 301 https://$host$request_uri;
+}
+
+server {
+  listen 443 ssl http2;
+  listen [::]:443 ssl http2;
+
+  ssl_certificate     /etc/letsencrypt/live/utf9k.net/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/utf9k.net/privkey.pem;
+  include             /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam         /etc/letsencrypt/ssl-dhparams.pem;
+  
+  add_header Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval';" always;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+  add_header X-Frame-Options "SAMEORIGIN" always;
+  add_header X-Content-Type-Options "nosniff" always;
+  add_header Referrer-Policy "strict-origin";
+  add_header Permissions-Policy "microphone=(none)";
+
+  root /var/www/html/stats;
+  index index.html;
+
+  server_name stats.utf9k.net;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}

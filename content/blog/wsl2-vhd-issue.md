@@ -34,6 +34,6 @@ You'd never know it but your WSL packages live under `%LOCALAPPDATA%/packages/<d
 
 The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under `Right Click -> Properties -> General -> Advanced`, I spotted `Compress contents to save disk space` was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion worked as you'd hope.
 
-[![../img/wsl2-vhd-issue/compressed.png](../img/wsl2-vhd-issue/compressed.png)](../img/wsl2-vhd-issue/compressed.png)
+[![/img/wsl2-vhd-issue/compressed.png](/img/wsl2-vhd-issue/compressed.png)](/img/wsl2-vhd-issue/compressed.png)
 
 So, if you run into this issue, have a poke around your packages and hopefully you'll be on your way to a nice, properly Linux-y home on Windows.
