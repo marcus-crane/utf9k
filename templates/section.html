@@ -3,16 +3,18 @@
 <div class="item-list">
 	<h1>{{ section.title }}</h1>
   <ul class="no-list-style">
-    {% for year, posts in section.pages | reverse | group_by(attribute="year") %}
-      <h2>{{ year }}</h2>
+    {% for year, posts in section.pages | group_by(attribute="year") %}
+      {% if "blog" in section.path %}<h2>{{ year }}</h2>{% endif %}
       {% for post in posts %}
         <li class="notes-list">
           <a href="{{ post.permalink }}">
             <span>{{ post.title }}</span>
           </a>
+          {% if "blog" in section.path %}
           <span class="tag-list">
             <span id="list-date">{{ post.date }}</span>
           </span>
+          {% endif %}
         </li>
       {% endfor %}
     {% endfor %}
