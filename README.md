@@ -1,10 +1,12 @@
 # utf9k
 
-This is my personal website, which is powered by [Zola]() and [Commonmark Markdown]().
+This is my personal website, which is powered by [Zola](https://www.getzola.org) and [CommonMark](https://commonmark.org).
 
 ## Getting setup
 
-TBA
+To get started, you'll want to install Zola using one of the variety of [officially supported installation methods](https://www.getzola.org/documentation/getting-started/installation/)
+
+Once you've got the `zola` binary, you should just be able to run `zola serve --open` to open my site in your browser
 
 ## Layout
 
