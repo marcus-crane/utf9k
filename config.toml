@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "utf9k.net"
+base_url = "https://utf9k.net"
 
 title = "utf9k"
 
