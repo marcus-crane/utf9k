@@ -7,7 +7,7 @@
       {% if "blog" in section.path %}<h2>{{ year }}</h2>{% endif %}
       {% for post in posts %}
         <li class="notes-list">
-          <a href="https://{{ post.permalink }}">
+          <a href="{{ post.path }}">
             <span>{{ post.title }}</span>
           </a>
           {% if "blog" in section.path %}
