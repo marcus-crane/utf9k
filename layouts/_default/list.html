@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>{{ if ne .Section "blog"}}{{ .Title }}{{ else }}Posts{{ end }}</h1>
+<ul>
+  {{ range .Pages }}
+  <li>
+    <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>
+    ~
+    <a href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+    <span class="tag-list">
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
