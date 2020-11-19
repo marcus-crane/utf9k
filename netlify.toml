@@ -1,0 +1,13 @@
+[build]
+publish = "public"
+command = "hugo"
+
+[context.production.environment]
+HUGO_VERSION = "0.78.2"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --buildFuture"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.78.2"
