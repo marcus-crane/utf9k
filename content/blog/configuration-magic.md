@@ -5,23 +5,64 @@ draft = "true"
 #blog
 +++
 
-I don't consider myself qualified enough to write much on the art of programming but I suppose here we are.
+I don't consider myself qualified enough to write much on the art of programming but I think this is probably the closest I've ever found myself.
 
-I'm currently looking at a repo for controlling infrastructure which is comprised of a lot of `yaml` files, without much documentation, at least as far as I can see.
+## The situation
 
-The specifics don't really matter but essentially, it defines a lot of resources.
+I'm currently looking at a repo for controlling infrastructure which is comprised of a lot of `yaml` files, and the documentation was a bit sparse, at least as far as I can see.
 
-As someone relatively new to this project and development environment, I haven't had to spin up any new resources until now, as I've been primarily refactoring things.
+While the specifics of the domain don't really matter too much, the repository mainly defines a lot of compute resources.
 
-There's a `Resources` folder with files named after each environment so imagine `dev.yaml`, `production.yaml` and so on.
+In order to make it easier to visualise, here's an example that roughly shows how it's laid out:
 
-I copied and pasted a `Postgres` block from one file to the other so supposedly this means I would get an equivalent database in a different environment, right?
+```bash
+> tree Resources
+Resources
+├── test
+│   ├── teamA.yaml
+│   ├── teamB.yaml
+├── staging
+│   └── teamB.yaml
+├── production
+│   ├── teamA.yaml
+│   ├── teamB.yaml
+│   └── teamC.yaml
+```
 
-Well, I have no idea given the actual inner workings are abstracted away from me, giving a magical quality to these `yaml` files.
+Each team has a `yaml` file per environment and each file defines a variety of resources such as databases, caches and so on.
 
----
+Let's look inside a file to see an example. Once again, I'm using entirely made up values but the idea is roughly the same.
 
-Now, I'm not a writer by any stretch of the imagination but quite some time ago, I must've have been binging some videos on storytelling.
+```bash
+> less Resources/test/teamA.yaml
+MySQL:
+	- Name: my-sturdy-database
+	  Group: TestResources
+	  Resource:
+	  	Size: PrettyBig
+		Purpose: EatingMemory
+		Replicas: 1
+
+Varnish:
+	- Name: cache-me-up-scotty
+	  Group: TestResources
+	  Resource:
+	  	Size: ModeratelyBeefy
+```
+
+I should note that we use neither `MySQL` or `Varnish` (to my knowledge) as they're just made up examples.
+
+Amongst that lot were also cloud resources and other things defined but the point is that there seemed to some sort of structure?
+
+As far as how I actually define anything, I have no idea.
+
+Surely, I can't just arbitrarily define a "Hadoop" block and get a [Hadoop cluster](https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html) out of thin air, that would be ridiculous!
+
+Wouldn't it? With no information to prove (or disprove) the idea that maybe it just magically works, I was reminded of an aspect of storytelling.
+
+## Fictional worldbuilding
+
+I'm not a writer by any stretch of the imagination but quite some time ago, I must've have been binging some videos on storytelling.
 
 I vaguely remember this idea that when creating a fiction world, you should [introduce the rules of the world](https://kidlit.com/breaking-the-rules-in-world-building/) as early as possible.
 
@@ -29,40 +70,40 @@ I believe it's best done within the first 15 minutes for a film but I had a hard
 
 The idea is that without rules to define your fictional world, anything and everything is possible. How can you have any sense of dramatic tension when your character could just arbitrarily become a superhuman when the story requires.
 
-Anyway, seeing that infrastructure repo reminded me of that. Perhaps to an extent, the "rules" of what is possible aren't clear.
+Anyway, seeing that infrastructure repo reminded me of that, as the "rules" of what is possible aren't clear.
 
-Reading a `yaml` file that is defining arbitrary resources makes me think "Ah, perhaps I can just define any type of cloud resource and it'll magically appear?"
+Just to be clear as well, I'd say this is only really a side effect of when someone creates their own language of sorts.
 
-I mean, why not? That seems very magical but so does this whole exercise.
+## Is text a good interface?
 
----
+To a developer or maintainer who is familiar with the repo in question, the idea that none of the above is completely obvious would probably make them laugh quite a bit.
 
-To a developer or maintainer who is familiar with the repo in question, that would seem very ridiculous of course.
+There is no such thing as magic when it comes to writing code, in so much as there are only more layers of code below the iceberg tip you're currently staring at.
 
-Code is written by people and can't just magically understand new code blocks or things like that.
+It only makes sense that there is machinery tucked away somewhere, likely a handful of scripts, which are parsing these files.
 
-There are plenty of scripts in other folders that I'm sure I'll open up and see that there are specific resources that have been defined as being valid inputs but as a "reader" so far, those "rules" are hidden away from me.
+After a bit of poking around, and some question asking, it turns out each of the keys defined are matched against a supplied template, and those parameters are baked into the template. The resulting output is then submitted to our cloud provider and creates/updates the defined resource.
 
-If we were to continue with the analogy a bit more, I suppose this is where having documentation serves as a ruleset.
+At this point, one could argue that the entire idea of creating an abstraction through yaml files has mostly broken down the second a user needs to poke behind the curtain.
 
-I think in particular as well, if it's purely just source code you're dealing with, this idea doesn't really apply.
+In a cruel twist of irony, some of those templates were actually deleted and so the keys supplied such as `MySQL` in our mock example, were doing nothing at all. You'd have no idea however because text can't really provide you feedback as a user like, say, a language with a linter might tell you about an unused variable.
 
-It's more if you're creating an abstraction for other people to use. In this case, it's abstracting the creation of cloud resources into `yaml` files.
+To be entirely clear, I have these same issues with most any `yaml` based format such as a Helm but I guess Helm has the begrudgingly awarded +1 of IDE support. Without it, I'd be tearing my hair out just as much.
 
----
+## What's the lesson here
 
-If I stop and think about it, it feels at first like the rules I'm trying to describe are just a schema specification which is probably about right.
+Well, I don't really have the vocabulary to do any meaningful criticisms or suggestions here. Once I get used to the repo in question, I'm sure I'll never think about it again and the cycle will repeat once more for whoever comes along next.
 
-In this case, the feeling I'm trying to describe arises from the lack of one so you're left to just try and make one up.
+Looking back, I must have missed something because there is a bit of documentation but still, it's fairly on explanation.
 
-If you were trying to infer how to use a web API, you'd pretty quickly have some feedback but with something like `yaml` files, there is no linting or feedback at all so that's probably what feeds the idea of just absolute chaos where you're totally lost.
+Most of the setup follows convention over configuration but it sort of assumes you just know the convention too.
 
-Perhaps those mechanisms exist upon a pull request but I haven't checked yet.
+I suppose to an extent, it's just to do with my lack of familiarity with our provider having only been a few months in.
 
----
+What I mainly wanted to capture was the feeling that arose from a lack of seeing a clear rule set. Not unlike a fictional rule set, without one, you're sort of left to infer the boundaries of the situation you're currently in.
 
-In a twist of irony, I later found out that those `yaml` files are applied to a set of templates. Some of those templates were deleted however so half of the defined blocks, weren't actually doing anything at all.
+I think at its core though, I don't like using text or configuration files for programmatic things, as there isn't a whole heap of feedback until you apply said file?
 
-My stab in the dark at casting magic would have worked not so long ago but it wouldn't nowadays.
+If I had to pick something that seems like a nice alternative, perhaps [Pulumi](https://www.pulumi.com/product/#sdk)? I can't say I've really used it but on paper, it sounds kind of appealing.
 
-it usually does
+Well, in so much as infrastructure is appealing which some days I'd rather just have a nap to be honest.
