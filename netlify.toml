@@ -10,5 +10,4 @@ HUGO_ENV = "production"
 
 [context.next]
 command = "hugo --buildFuture"
-base = "next"
 
