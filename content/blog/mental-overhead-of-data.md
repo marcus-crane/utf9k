@@ -1,6 +1,7 @@
 +++
 title = "Data hoarding seems like a large mental overhead"
-date = 2020-05-12
+date = "2020-05-12"
+tags = ["data", "overhead", "off-the-cuff"]
 #blog
 +++
 

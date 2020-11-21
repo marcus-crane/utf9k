@@ -1,6 +1,6 @@
 +++
 title = "Clean Coders"
-date = 2020-09-06
+date = "2020-09-06"
 +++
 
 > The only way to stay fast, in the short term OR the long term, is to keep your code clean – Uncle Bob Martin

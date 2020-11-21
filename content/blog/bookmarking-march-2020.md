@@ -1,6 +1,7 @@
 +++
 title = "My bookmarking categories in March 2020"
-date = 2020-03-08
+date = "2020-03-08"
+tags = ["bookmarks", "organisation"]
 #blog
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = "Humans don't come with lore tabs"
-date = 2018-02-28
+date = "2018-02-28"
+tags = ["people"]
 #blog
 +++
 

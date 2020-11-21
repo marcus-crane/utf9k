@@ -1,6 +1,7 @@
 +++
 title = "Some thoughts about running a wiki"
-date = 2017-12-18
+date = "2017-12-18"
+tags = ["community", "leadership", "wiki"]
 #blog
 +++
 
