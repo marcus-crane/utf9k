@@ -1,6 +1,7 @@
 +++
 title = "Recovering lost Python results in the REPL"
-date = 2018-12-12
+date = "2018-12-12"
+tags = ["python", "snippet"]
 #blog
 +++
 

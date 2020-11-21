@@ -1,6 +1,6 @@
 +++
 title = "Linux"
-date = 2020-09-18
+date = "2020-09-18"
 +++
 
 ## Why are dot files a thing?

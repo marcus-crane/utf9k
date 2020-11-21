@@ -1,6 +1,6 @@
 +++
 title = "Oil Futures"
-date = 2020-08-06
+date = "2020-08-06"
 +++
 
 On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.

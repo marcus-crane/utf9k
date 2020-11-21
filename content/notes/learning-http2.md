@@ -1,6 +1,6 @@
 +++
 title = "Learning HTTP/2: A Practical Guide for Beginners"
-date = 2020-09-06
+date = "2020-09-06"
 +++
 
 ## Why did HTTP/2 decide to only support HTTPS?

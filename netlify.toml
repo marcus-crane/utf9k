@@ -2,12 +2,12 @@
 publish = "public"
 command = "hugo"
 
-[context.production.environment]
+[build.environment]
 HUGO_VERSION = "0.78.2"
+
+[context.production.environment]
 HUGO_ENV = "production"
 
-[context.deploy-preview]
-command = "hugo --buildFuture"
+[context.next]
+command = "hugo --buildFuture --buildDrafts"
 
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.78.2"

@@ -1,6 +1,7 @@
 +++
 title = "When automation goes horribly right"
-date = 2018-12-03
+date = "2018-12-03"
+tags = ["automation", "microservices", "twitter"]
 #blog
 +++
 

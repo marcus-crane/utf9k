@@ -1,6 +1,7 @@
 +++
 title = "Retrieving credentials from Jenkins"
-date = 2019-07-29
+date = "2019-07-29"
+tags = ["cicd", "jenkins", "security"]
 #blog
 +++
 

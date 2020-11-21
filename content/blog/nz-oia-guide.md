@@ -1,6 +1,7 @@
 +++
 title = "A brief guide to OIAs in New Zealand"
-date = 2018-08-18
+date = "2018-08-18"
+tags = ["government", "guide", "nz", "oia"]
 #blog
 +++
 

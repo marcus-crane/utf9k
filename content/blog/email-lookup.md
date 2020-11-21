@@ -1,6 +1,7 @@
 +++
 title = "Double checking if an email address exists"
-date = 2019-09-26
+date = "2019-09-26"
+tags = ["email", "nslookup", "telnet", "tip"]
 #blog
 +++
 
