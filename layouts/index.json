@@ -8,7 +8,8 @@
   {{ if not .Site.IsServer }}"git": {
     "commit": "{{ .GitInfo.AbbreviatedHash }}",
     "commitURL": "https://github.com/marcus-crane/utf9k/commit/{{ .GitInfo.Hash }}",
-    "subject": "{{ .GitInfo.Subject }}"
+    "subject": "{{ .GitInfo.Subject }}"{{ if getenv "NETLIFY"}},
+    "branch": "{{ getenv "BRANCH" }}"{{ end }}
   },
   {{ end }}"site": {
     "buildingDrafts": "{{ .Site.BuildDrafts }}",
