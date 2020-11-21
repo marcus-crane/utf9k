@@ -1,6 +1,6 @@
 +++
 title = "Fruit Plate"
-date = 2020-11-02
+date = "2020-11-02"
 tags = ["work", "overhead", "productivity"]
 #blog
 +++

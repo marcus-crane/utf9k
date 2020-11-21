@@ -1,6 +1,6 @@
 +++
 title = "Emacs"
-date = 2020-08-29
+date = "2020-08-29"
 +++
 
 ## How can I compile Emacs from scratch?

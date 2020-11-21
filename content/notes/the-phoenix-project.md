@@ -1,6 +1,6 @@
 +++
 title = "The Phoenix Project"
-date = 2020-08-06
+date = "2020-08-06"
 +++
 
 ## Cast

@@ -1,6 +1,7 @@
 +++
 title = "Digital Spring Cleaning"
-date = 2020-10-11
+date = "2020-10-11"
+tags = ["internet", "cleaning", "data"]
 #blog
 +++
 

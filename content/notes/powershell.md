@@ -1,6 +1,6 @@
 +++
 title = "Powershell"
-date = 2020-08-29
+date = "2020-08-29"
 +++
 
 ## How can I view the methods associated with an object?

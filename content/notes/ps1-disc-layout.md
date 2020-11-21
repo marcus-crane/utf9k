@@ -1,6 +1,6 @@
 +++
 title = "PS1 Disc Layout"
-date = 2020-09-06
+date = "2020-09-06"
 +++
 
 The Playstation 1 uses CD-ROMs with the [XA extension](https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension).

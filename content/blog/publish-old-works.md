@@ -1,6 +1,7 @@
 +++
 title = "You should publish your older works"
-date = 2020-02-07
+date = "2020-02-07"
+tags = ["rambling", "portfolio"]
 #blog
 +++
 
