@@ -12,6 +12,6 @@
     "lastChange": "{{ .Site.LastChange }}",
     "pageCount": "{{ len .Site.AllPages }}",
     "lastDeployedUTC": "{{ .Lastmod }}",
-    "lastDeployedNZT": '{{ time .Lastmod "Pacific/Auckland" }}'
+    "lastDeployedNZT": '{{ time now "Pacific/Auckland" }}'
   }
 }
