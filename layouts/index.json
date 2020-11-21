@@ -5,13 +5,7 @@
     "environment": "{{ hugo.Environment }}",
     "buildDate": "{{ hugo.BuildDate }}"
   },
-  {{ if not .Site.IsServer }}"git": {
-    "commit": "{{ .GitInfo.Hash }}",
-    "commitURL": "https://github.com/marcus-crane/utf9k/commit/{{ .GitInfo.Hash }}",
-    "subject": "{{ .GitInfo.Subject }}"{{ if getenv "NETLIFY"}},
-    "branch": "{{ getenv "BRANCH" }}"{{ end }}
-  },
-  {{ end }}"site": {
+  "site": {
     "buildingDrafts": "{{ .Site.BuildDrafts }}",
     "baseURL": "{{ .Site.BaseURL }}",
     "localServer": "{{ .Site.IsServer }}",
