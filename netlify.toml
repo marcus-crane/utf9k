@@ -11,3 +11,8 @@ HUGO_ENV = "production"
 [context.next]
 command = "hugo --buildFuture --buildDrafts"
 
+[[redirects]]
+  from = "/version.json"
+  to = "/index.json"
+  status = 200
+  force = true
