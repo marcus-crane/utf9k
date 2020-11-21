@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --enableGitInfo"
 
 [build.environment]
 HUGO_VERSION = "0.78.2"
@@ -9,7 +9,7 @@ HUGO_VERSION = "0.78.2"
 HUGO_ENV = "production"
 
 [context.next]
-command = "hugo --buildFuture --buildDrafts"
+command = "hugo --buildFuture --buildDrafts --enableGitInfo"
 
 [[redirects]]
   from = "/version.json"
