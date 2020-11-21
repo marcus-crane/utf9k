@@ -10,6 +10,8 @@
     "baseURL": "{{ .Site.BaseURL }}",
     "localServer": "{{ .Site.IsServer }}",
     "lastChange": "{{ .Site.LastChange }}",
-    "pageCount": "{{ len .Site.AllPages }}"
+    "pageCount": "{{ len .Site.AllPages }}",
+    "lastDeployedUTC": "{{ .Lastmod }}",
+    "lastDeployedNZT": '{{ time .Lastmod "Pacific/Auckland" }}'
   }
 }
