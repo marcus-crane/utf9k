@@ -1,0 +1,16 @@
+{
+  "title": "{{ .Site.Title }}",
+  "hugo": {
+    "version": "{{ hugo.Version }}",
+    "environment": "{{ hugo.Environment }}",
+    "buildDate": "{{ hugo.BuildDate }}"
+  },
+  "site": {
+    "buildingDrafts": "{{ .Site.BuildDrafts }}",
+    "baseURL": "{{ .Site.BaseURL }}",
+    "localServer": "{{ .Site.IsServer }}",
+    "lastChange": "{{ .Site.LastChange }}",
+    "pageCount": "{{ len .Site.AllPages }}",
+    "lastDeployedUTC": '{{ now.Format "3:04 PM • 02 Jan 2006" }}'
+  }
+}
