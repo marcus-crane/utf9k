@@ -1,6 +1,7 @@
 +++
 title = "Relying on the internet as a business"
-date = 2020-10-06
+date = "2020-10-06"
+tags = ["internet", "business"]
 #blog
 +++
 

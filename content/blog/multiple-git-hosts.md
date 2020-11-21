@@ -1,6 +1,7 @@
 +++
 title = "Dealing with multiple git hosts"
-date = 2020-01-06
+date = "2020-01-06"
+tags = ["git", "github", "gitlab", "linux"]
 #blog
 +++
 

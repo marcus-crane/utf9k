@@ -9,5 +9,5 @@ HUGO_VERSION = "0.78.2"
 HUGO_ENV = "production"
 
 [context.next]
-command = "hugo --buildFuture"
+command = "hugo --buildFuture --buildDrafts"
 

@@ -1,6 +1,7 @@
 +++
 title = "Setting up Emacs inside of a WSL2 distribution"
-date = 2020-05-06
+date = "2020-05-06"
+tags = ["emacs", "linux", "unix", "windows", "wsl"]
 #blog
 +++
 

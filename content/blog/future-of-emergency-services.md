@@ -1,6 +1,7 @@
 +++
 title = "What is the future of emergency services?"
-date = 2019-03-20
+date = "2019-03-20"
+tags = ["future", "people"]
 #blog
 +++
 

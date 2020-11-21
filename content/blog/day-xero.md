@@ -1,6 +1,7 @@
 +++
 title = "Day Xero"
-date = 2018-02-15
+date = "2018-02-15"
+tags = ["anxiety", "work"]
 #blog
 +++
 

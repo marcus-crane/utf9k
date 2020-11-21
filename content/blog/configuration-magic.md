@@ -1,7 +1,7 @@
 +++
 title = "Configuration magic"
 date = "2020-11-20"
-draft = true
+draft = "true"
 #blog
 +++
 

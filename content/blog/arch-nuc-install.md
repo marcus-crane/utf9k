@@ -1,6 +1,7 @@
 +++
 title = "Installing Arch Linux on my Intel NUC"
-date = 2017-12-24
+date = "2017-12-24"
+tags = ["arch", "guide", "linux"]
 #blog
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = "Reducing my everyday carry during 2019"
-date = 2020-04-13
+date = "2020-04-13"
+tags = ["organisation"]
 #blog
 +++
 
