@@ -1,3 +1,4 @@
+{{ $loc := time.LoadLocation "Pacific/Auckland" }}
 {
   "title": "{{ .Site.Title }}",
   "hugo": {
@@ -11,7 +12,7 @@
     "localServer": "{{ .Site.IsServer }}",
     "lastChange": "{{ .Site.LastChange }}",
     "pageCount": "{{ len .Site.AllPages }}",
-    "lastDeployedUTC": "{{ .Lastmod }}",
-    "lastDeployedNZT": '{{ time now "Pacific/Auckland" }}'
+    "lastDeployedUTC": '{{ now.Format "3:04 PM • 02 Jan 2006" }}',
+    "lastDeployedNZT": '{{ now.Format "3:04 PM • 02 Jan 2006" (.Date.In $loc) }}'
   }
 }
