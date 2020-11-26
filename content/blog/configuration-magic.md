@@ -32,7 +32,7 @@ Each team has a `yaml` file per environment and each file defines a variety of r
 
 Let's look inside a file to see an example. Once again, I'm using entirely made up values but the idea is roughly the same.
 
-```bash
+```yaml
 > less Resources/test/teamA.yaml
 MySQL:
 	- Name: my-sturdy-database
