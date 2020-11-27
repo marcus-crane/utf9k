@@ -1,6 +1,6 @@
 +++
-title: "The Curse of Bigness Antitrust in the New Gilded Age"
-date: "2020-11-27"
+title = "The Curse of Bigness: Antitrust in the New Gilded Age"
+date = "2020-11-27"
 +++
 
 A fascinating book from [Tim Wu](https://en.wikipedia.org/wiki/Tim_Wu) about the troubles of massive corporations
