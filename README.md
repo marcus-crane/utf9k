@@ -1,5 +1,9 @@
 # utf9k
 
+![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
+![Netlify Build Status](https://img.shields.io/netlify/6c4341d4-b644-4fcb-ba4d-c67d63c92e9c)
+![Hugo version](https://img.shields.io/badge/hugo-v0.78.2-blue)
+
 This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
 
 ## Getting setup
