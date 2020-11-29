@@ -8,9 +8,6 @@ HUGO_VERSION = "0.78.2"
 [context.production.environment]
 HUGO_ENV = "production"
 
-[context.next]
-command = "hugo --gc --buildFuture --buildDrafts"
-
 [[redirects]]
   from = "/version.json"
   to = "/index.json"
