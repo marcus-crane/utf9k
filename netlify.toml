@@ -13,3 +13,6 @@ HUGO_ENV = "production"
   to = "/index.json"
   status = 200
   force = true
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
