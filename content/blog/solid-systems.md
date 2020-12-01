@@ -1,5 +1,5 @@
 +++
-title = "Will we ever get solid systems?
+title = "Will we ever get solid systems?"
 date = "2020-12-01"
 +++
 
