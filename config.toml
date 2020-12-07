@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "utf9k"
 
 [outputs]
-  home = ["HTML", "JSON"]
+  home = ["HTML", "JSON", "RSS"]
 
 [markup.goldmark.renderer]
   unsafe = true
