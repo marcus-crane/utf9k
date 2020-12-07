@@ -1,6 +1,6 @@
 +++
 title = "Enterprise Software"
-date = "2020-12-08"
+date = "2020-12-07"
 +++
 
 ## Monitoring JAMF downloads (macOS)
