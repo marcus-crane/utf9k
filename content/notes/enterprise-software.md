@@ -17,7 +17,7 @@ There are better tools like `watch` but eh, this works fine enough
 
 Here's the script I've been using but it requires `gnumfmt` which you can install with `brew install coreutils`
 
-```
+```bash
 > while (true) do echo $(sudo ls -l /Library/Application\ Support/JAMF/Downloads | grep macOS | awk '{ print $5 }' | gnumfmt --to iec --format "Downloaded: %8.1f"); sleep 15; done
 Downloaded: 6.9G
 Downloaded: 7.0G
@@ -28,7 +28,7 @@ Downloaded: 7.1G
 
 That's not particulary readable so here's a bit of an explainer:
 
-```
+```bash
 while (true)
 do
 	echo $(
