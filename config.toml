@@ -7,3 +7,7 @@ title = "utf9k"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[minify]
+  disableJSON = true
+  disableXML = true
