@@ -6,6 +6,7 @@
   
   html {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
   }
   
   /* Colour schemes */
@@ -39,17 +40,19 @@
     padding-bottom: 2rem;
   }
   
-  body > div, body > article {
+  body > div, body > article, img {
     width: 30.5rem;
+  }
+  
+  img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 85%;
   }
   
   span.status {
     display: inline-block;
-    width: 1rem;
-  }
-  
-  body li.fave:before {
-    content: "✨ "
+    width: 2rem;
   }
   
   @media only screen and (max-width: 500px) {
@@ -67,10 +70,6 @@
   
   li {
     list-style-type: none;
-  }
-  
-  li:before {
-    //content: "‣";
   }
   
   /* Typography */
@@ -95,6 +94,7 @@
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    white-space: break-spaces;
   }
   
   blockquote {
@@ -105,12 +105,25 @@
     width: 100%;
   }
   
-  article > code {
+  .highlight > pre {
     border: 1px solid;
     border-radius: 3px;
     margin-top: 1rem;
+    overflow: scroll;
     padding: 1rem;
   }
+  
+  @media only screen and (min-width: 500px) {
+    .highlight > pre {
+      /* margin-left: -3rem; */
+      /* padding-left: 3rem; */
+      /* padding-right: -3rem; */
+      /* min-width: 200%; */
+    }
+    
+    .highlight > pre > code > span {
+      //padding-right: 2rem;
+    }
   
   code {
     font-size: 1.15rem;
