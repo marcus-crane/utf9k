@@ -2,6 +2,7 @@
 title = "Deepfakes"
 date = "2017-02-05"
 tags = ["deepfakes", "future", "technology"]
+favourite = true
 #blog
 +++
 

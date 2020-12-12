@@ -1,23 +1,33 @@
 {{ define "main" }}
-<div>
-  <h1>Blog</h1>
-  <ul>
-    {{ $years := .Scratch }}
-    {{ range .Pages }}
-    {{ $year := .Date.Format "2006" }}
-    {{ if not (in ($years.Get "years") $year) }}
-      <h2>{{ .Date.Format "2006" }}</h2>
-      {{ $years.Add "years" (slice $year) }}
-    {{ end }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <span>{{ .Title }}</span>
-      </a>
-      <span>
-        <span>{{ .Date.Format "Jan 02" }}</span>
-      </span>
-    </li>
-    {{ end }}
-  </ul>
-</div>
+<h1>Blog</h1>
+<ul>
+  {{ $years := .Scratch }}
+  {{ range .Pages }}
+  {{ $year := .Date.Format "2006" }}
+  {{ if not (in ($years.Get "years") $year) }}
+    <h2>{{ .Date.Format "2006" }}</h2>
+    {{ $years.Add "years" (slice $year) }}
+  {{ end }}
+  <li>
+    <span class="status">
+      <div class="tooltip">
+      {{ if .Params.Favourite }}
+        <div class="tooltip">
+          😎
+          <span class="tooltiptext">I quite like this post</span>
+        </div>
+      {{ end }}
+      {{ if .Params.Popular }}
+        <div class="tooltip">
+          📈
+          <span class="tooltiptext">This post seems relatively popular!</span>
+        </div>
+      {{ end }}
+      </div>
+    </span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <time>{{ .Date.Format "Jan 02" }}</time>
+  </li>
+  {{ end }}
+</ul>
 {{ end }}

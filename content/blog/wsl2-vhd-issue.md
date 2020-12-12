@@ -2,6 +2,7 @@
 title = "Fixing a WSL2 VHD conversion issue"
 date = "2019-07-20"
 tags = ["beta", "linux", "windows", "wsl"]
+popular = true
 #blog
 +++
 

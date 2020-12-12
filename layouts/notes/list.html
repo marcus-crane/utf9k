@@ -1,19 +1,13 @@
 {{ define "main" }}
-<div class="item-list">
   <h1>Notes</h1>
-  <ul class="no-list-style">
-    {{ range .Pages.ByTitle }}
-    <li class="notes-list">
-      <a href="{{ .RelPermalink }}">
-        <span>{{ .Title }}</span>
-      </a>
-      <span class="tag-list">
-          {{ range .Params.tags }}
-          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
-          {{ end }}
-      </span>
-    </li>
+<ul>
+  {{ range .Pages.ByTitle }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ range .Params.tags }}
+    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
     {{ end }}
-  </ul>
-</div>
+  </li>
+  {{ end }}
+</ul>
 {{ end }}

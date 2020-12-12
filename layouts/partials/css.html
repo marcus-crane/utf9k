@@ -1,7 +1,7 @@
 <style>
   :root {
-    --blueish: #1f303e;
-    --greyish: #e0e1d9;
+    --blueish: hsl(207, 33%, 18%);
+    --greyish: hsl(67, 12%, 87%);
   }
   
   html {
@@ -34,7 +34,28 @@
   
   body {
     padding-left: 2rem; // TODO: make this the default level of indentation
+    padding-right: 2rem;
     padding-top: .5rem;
+    padding-bottom: 2rem;
+  }
+  
+  body > div, body > article {
+    width: 30.5rem;
+  }
+  
+  span.status {
+    display: inline-block;
+    width: 1rem;
+  }
+  
+  body li.fave:before {
+    content: "✨ "
+  }
+  
+  @media only screen and (max-width: 500px) {
+    body > div, body > article {
+      width: 100%;
+    }
   }
   
   /* Grouping items */
@@ -106,5 +127,29 @@
   
   time {
     font-size: .75rem;
+  }
+  
+  /* Helpers */
+  .tooltip {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+    background-color: black;
+    border-radius: 8px;
+    color: #fff;
+    left: 130%;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    visibility: hidden;
+    width: 150px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
   }
 </style>

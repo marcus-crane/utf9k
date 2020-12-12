@@ -2,6 +2,7 @@
 title = "Tidying up towing data with Pandas"
 date = "2020-11-23"
 tags = ["python", "pandas", "cleaning", "oia", "data"]
+favourite = true
 #blog
 +++
 

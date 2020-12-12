@@ -3,7 +3,7 @@ title = "Will we ever get solid systems?"
 date = "2020-12-01"
 +++
 
-If I had a crystal ball in front of me, one of the things I would like to ask is Will we, the human race, ever get solid systems?".
+If I had a crystal ball in front of me, one of the things I would like to ask is "Will we, the human race, ever get solid systems?".
 
 I don't mean [SOLID](https://en.wikipedia.org/wiki/SOLID), I don't even know what that means, but you know, robust and just generally not prone to letting the user fall right through the cracks by taking an unexpected route.
 
