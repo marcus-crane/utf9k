@@ -11,6 +11,6 @@
     "localServer": "{{ .Site.IsServer }}",
     "lastChange": "{{ .Site.LastChange }}",
     "pageCount": "{{ len .Site.AllPages }}",
-    "lastDeployedUTC": '{{ now.Format "3:04 PM • 02 Jan 2006" }}'
+    "lastDeployedUTC": "{{ now.Format "2006-01-02 3:04 PM" }}"
   }
 }
