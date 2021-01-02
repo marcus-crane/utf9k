@@ -1,0 +1,86 @@
+/***
+  COLOUR SCHEMES
+***/
+
+:root {
+  --blueish: hsl(207, 33%, 18%);
+  --greyish: hsl(67, 12%, 87%);
+}
+
+/* Look ma, dark mode! Not that I use dark mode mind you but it's nice to have */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--greyish);
+    color: var(--blueish);
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--blueish);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--blueish);
+    color: var(--greyish);
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--greyish);
+  }
+}
+
+/***
+  BASIC STYLING
+***/
+
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1:before {
+  content: "፡ "
+}
+
+/***
+  GRID LAYOUT
+***/
+
+/* We could just reuse article everywhere but it does have semantic meaning
+   A list of blog posts isn't really an article for example so main will do instead. */
+main, article {
+  display: grid;
+  grid-template-columns: 1fr 20em 650px 20em 1fr;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;
+}
+
+main *, article * {
+  grid-column: 3 / span 1;
+}
+
+/* Code blocks are often the longest content so we'll make them a full page length. */
+article .highlight, article table {
+  grid-column: 2 / span 3;
+}
+
+/***
+  CODE BLOCKS
+***/
+
+.highlight > pre {
+  margin-top: 1rem;
+  overflow: scroll;
+  padding: 2rem;
+}
+
+code {
+  font-size: 1rem;
+  font-family: monospace;
+}

@@ -1,7 +1,7 @@
 {{ define "main" }}
-<div class="item-list">
+<main>
   <h1>Blog</h1>
-  <ul class="no-list-style">
+  <ul>
     {{ $years := .Scratch }}
     {{ range .Pages }}
     {{ $year := .Date.Format "2006" }}
@@ -9,15 +9,11 @@
       <h2>{{ .Date.Format "2006" }}</h2>
       {{ $years.Add "years" (slice $year) }}
     {{ end }}
-    <li class="notes-list">
-      <a href="{{ .RelPermalink }}">
-        <span>{{ .Title }}</span>
-      </a>
-      <span class="tag-list">
-        <span id="list-date">{{ .Date.Format "Jan 02" }}</span>
-      </span>
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time>{{ .Date.Format "Jan 02" }}</time>
     </li>
     {{ end }}
   </ul>
-</div>
+</main>
 {{ end }}
