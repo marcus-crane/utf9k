@@ -1,6 +1,6 @@
 +++
 title = "Managing subscriptions with an extra debit card"
-date = "2021-01-11"
+date = "2021-01-11T23:40:00+13:00"
 tags = ["finance", "budgets", "subscriptions", "money", "tip"]
 +++
 
