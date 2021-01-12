@@ -26,7 +26,6 @@
     color: var(--blueish-headers);
   }
 
-
   #overview {
     border-bottom: 1px solid var(--greyish-border);
   }
@@ -44,7 +43,6 @@
   h1, h2, h3, h4, h5, h6 {
     color: var(--greyish-headers);
   }
-
 
   #overview {
     border-bottom: 1px solid var(--blueish-border);
@@ -108,8 +106,16 @@ article header {
 #overview a {
   align-items: center;
   display: flex;
+  flex: 1 1 auto;
   margin-left: 13px;
   text-decoration: none;
+}
+
+#overview .breadcrumbs {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  margin-right: 13px;
 }
 
 .favicon {
