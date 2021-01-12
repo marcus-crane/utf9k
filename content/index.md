@@ -7,9 +7,9 @@ I've just rolled out a decently sizable rewrite of my site so some things may st
 
 The bulk of it has rolled out but in an attempt to get the bulk of it out the door, I've decided to eject a little early.
 
-Realistically, I think it should be good to go but if you do notice anything a little wonky, feel free to reach out to me at [wonkiness@utf9k.net](mailto:wonkiness@utf9k.net?subject=I%20noticed%20something%20a%20little%20off)
+Realistically, I think it should be perfectly fine but if you do notice anything a little wonky, feel free to reach out to me at [wonkiness@utf9k.net](mailto:wonkiness@utf9k.net?subject=I%20noticed%20something%20a%20little%20off)
 
-For those interesting, I'm maintaining a list so I don't forget [here](/todo/)
+For those interested, I'm maintaining a list so I don't forget [here](/todo/)
 {{% /notice %}}
 
 My name is [Marcus Crane](/about) and you're currently logged on to my personal website.
