@@ -1,6 +1,9 @@
 +++
 title = "Elixir"
 date = "2020-08-29"
+aliases = [
+  "/notes/elixir/"
+]
 +++
 
 ## How can I view methods associated with an object?

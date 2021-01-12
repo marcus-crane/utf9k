@@ -1,9 +1,12 @@
 +++
-title = "DNS and Bind"
+title = "DNS"
 date = "2020-11-28"
+aliases = [
+  "/notes/dns-and-bind/"
+]
 +++
 
-## The original DNS system
+## How was DNS originally implemented?
 
 Back in the day, there was just one file: `HOSTS.TXT`.
 
@@ -17,7 +20,7 @@ It didn't scale for a number of reasons:
 - There was no way to enforce constraints eg; no duplicates on hostnames
 - It took a lot of resources to serve it up to every administrator
 
-## Interesting facts
+## What is the period you sometimes see at the end of a domain name?
 
 The root node of DNS has a `null` label
 

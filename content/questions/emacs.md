@@ -1,6 +1,9 @@
 +++
 title = "Emacs"
 date = "2020-08-29"
+aliases = [
+  "/notes/emacs/"
+]
 +++
 
 ## How can I compile Emacs from scratch?
@@ -12,7 +15,7 @@ sudo apt-get build-dep emacs
 ./autogen.sh
 ./configure --with-x-toolkit=lucid --with-mailutils
 make -j4
-./src/emacs // test that it's working
+./src/emacs // test that its working
 sudo make install
 ```
 

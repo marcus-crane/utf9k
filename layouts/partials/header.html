@@ -1,21 +1,31 @@
 <div id="overview">
-  <a href="/">
-    <span class="favicon">
-      <img src="/favicon.png" />
-    </span>
-    <sup class="sitename">utf9k</sup>
-    {{ if .Section }}
-      <sup class="section">{{ .Section }}</sup>
-    {{ end }}
-    {{ if .IsPage }}
-      {{ if eq .File.TranslationBaseName "index" }}
-        <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
-      {{ else }}
-        <sup class="slug">{{ .File.TranslationBaseName }}</sup>
-      {{ end }}
-    {{ end }}
-  </a>
   <div class="breadcrumbs">
+    <a href="/">
+      <span class="favicon">
+        <img src="/favicon.png" />
+      </span>
+      <sup class="sitename">utf9k</sup>
+    </a>
+    {{ if .Section }}
+      <a href="../">
+        <sup class="section">{{ .Section }}</sup>
+      </a>
+    {{ end }}
+    {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
+      {{ if eq .File.TranslationBaseName "index" }}
+        <a href="../">
+          <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
+        </a>
+      {{ else }}
+        <a href="../">
+          <sup class="slug">{{ .File.TranslationBaseName }}</sup>
+        </a>
+      {{ end }}
+      </a>
+    {{ end }}
+    </a>
+  </div>
+  <div class="links">
     <sup>
       <a href="/index.xml">
         <img src="/icons/rss-28x28.png" height="14" width="14" />

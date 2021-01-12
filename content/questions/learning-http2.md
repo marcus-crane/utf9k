@@ -1,6 +1,9 @@
 +++
-title = "Learning HTTP/2: A Practical Guide for Beginners"
+title = "HTTP2"
 date = "2020-11-27"
+aliases = [
+  "/notes/learning-http2/"
+]
 +++
 
 ## Why were domain splits common?

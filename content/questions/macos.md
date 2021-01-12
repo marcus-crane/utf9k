@@ -1,6 +1,9 @@
 +++
 title = "macOS"
 date = "2020-09-15"
+aliases = [
+  "/notes/macos/"
+]
 +++
 
 ## How can I view configured networks in my terminal?

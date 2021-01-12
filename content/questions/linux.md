@@ -1,6 +1,9 @@
 +++
 title = "Linux"
 date = "2020-09-18"
+aliases = [
+  "/notes/linux/"
+]
 +++
 
 ## Why are dot files a thing?

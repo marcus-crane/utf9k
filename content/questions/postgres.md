@@ -1,6 +1,9 @@
 +++
 title = "Postgres"
 date = "2020-11-27"
+aliases = [
+  "/notes/postgres"
+]
 +++
 
 ## How can I export a database?

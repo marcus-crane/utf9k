@@ -1,9 +1,12 @@
 +++
 title = "Enterprise Software"
 date = "2020-12-07"
+aliases = [
+	"/notes/enterprise-software/"
+]
 +++
 
-## Monitoring JAMF downloads (macOS)
+## How can I monitoring JAMF downloads on macOS?
 
 For large downloads, such as macOS updates, it can be annoying that tools like Self Service don't surface download metrics
 
