@@ -1,5 +1,8 @@
 +++
-title = "A whole bunch of places"
+title = "Contact"
+aliases = [
+  "/a-whole-bunch-of-places/"
+]
 +++
 
 ## Gaming
@@ -19,7 +22,6 @@ title = "A whole bunch of places"
 * [Instagram](https://instagram.com/sentryism)
 * [Linkedin](https://linkedin.com/in/marcus-crane)
 * [Twitter](https://twitter.com/sentreh)
-
 
 ## Tech
 
