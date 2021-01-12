@@ -208,7 +208,7 @@ I need the following bits:
 |----------------|---------------------------------------------------|
 | [dialog](http://invisible-island.net/dialog/)         | A library for console-based UIs like `wifi-menu`    |
 | [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data)    | Micro-code updates for Intel CPUs                 |
-| (wpa_supplicant)[https://w1.fi/wpa_supplicant/] | Used to connect to wireless networks (put simply) |
+| [wpa_supplicant](https://w1.fi/wpa_supplicant/) | Used to connect to wireless networks (put simply) |
 
 That should be everything for now. The other bits (`netctl` and `dhcpcd`) were already installed as part of the `base` group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
 
