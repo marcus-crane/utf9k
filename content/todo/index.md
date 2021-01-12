@@ -4,8 +4,9 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="1" max="23"></progress>
+Progress through this list: <progress id="todo" value="1" max="24"></progress>
 
+* [ ] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING
 * [ ] Review links since I know some are broken but don't remember where
 * [ ] Investigate if a link checker is possible
 * [ ] Add an identifier for links that knowing 404 but are shared for historical purposes
