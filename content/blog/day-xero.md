@@ -36,5 +36,3 @@ Ok, ok, my time is actually almost up and while I'm a bit freaked out that I'll 
 As someone else once told me:
 
 > Adults are just kids who got older
-
-**EDIT: This post was rushed and not planned out at all but I'll be posting it as is for historical reasons**
