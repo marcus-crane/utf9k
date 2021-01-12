@@ -2,7 +2,7 @@
 title = "Playstation 1"
 date = "2020-09-06"
 aliases = [
-  "/notes/ps1-disc-layout"
+  "/notes/ps1-disc-layout/"
 ]
 +++
 

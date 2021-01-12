@@ -11,24 +11,26 @@
         <sup class="section">{{ .Section }}</sup>
       </a>
     {{ end }}
-    {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
-      {{ if eq .File.TranslationBaseName "index" }}
-        <a href="../">
-          <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
-        </a>
-      {{ else }}
-        <a href="../">
-          <sup class="slug">{{ .File.TranslationBaseName }}</sup>
+    {{ if .File }}
+      {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
+        {{ if eq .File.TranslationBaseName "index" }}
+          <a href="../">
+            <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
+          </a>
+        {{ else }}
+          <a href="../">
+            <sup class="slug">{{ .File.TranslationBaseName }}</sup>
+          </a>
+        {{ end }}
         </a>
       {{ end }}
-      </a>
     {{ end }}
     </a>
   </div>
   <div class="links">
     <sup>
       <a href="/index.xml">
-        <img src="/icons/rss-28x28.png" height="14" width="14" />
+        <img class="rss" src="/icons/rss-28x28.png" />
       </a>
     </sup>
   </div>

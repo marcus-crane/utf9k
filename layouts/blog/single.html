@@ -4,8 +4,10 @@
     <h1>{{ .Title }}</h1>
     <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
   </header>
-  {{ partial "toc.html" . }}
-  {{ .Content }}
+  <div id="post-body">
+    {{ partial "toc.html" . }}
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}
 

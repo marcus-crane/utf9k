@@ -5,11 +5,17 @@ tags = ["arch", "guide", "linux"]
 #blog
 +++
 
+{{% notice title="Is this up to date?" %}}
+While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.
+
+If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide and expect that it should be fairly seemless.
+
+While I don't expect much has changed, you should know that I'm not actively verifying that these steps haven't changed or anything like that.
+{{% /notice %}}
+
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
-
-**2019 Update**: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
 
 ## Getting online
 

@@ -23,11 +23,23 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--blueish-headers);
+    color: var(--blueish-border);
+  }
+
+  th, tr:nth-child(2n+2) {
+    background-color: var(--greyish-text);
   }
 
   #overview {
     border-bottom: 1px solid var(--greyish-border);
+  }
+
+  .notice {
+    background-color: var(--greyish-text);
+  }
+
+  p > code {
+    background-color: var(--greyish-text);
   }
 }
 
@@ -44,8 +56,20 @@
     color: var(--greyish-headers);
   }
 
+  th, tr:nth-child(2n+2) {
+    background-color: var(--blueish-text);
+  }
+
   #overview {
     border-bottom: 1px solid var(--blueish-border);
+  }
+
+  .notice {
+    background-color: var(--blueish-text)
+  }
+
+  p > code {
+    background-color: var(--blueish-text);
   }
 }
 
@@ -68,24 +92,30 @@ article {
   margin-bottom: 2.5rem;
 }
 
-article header {
-  margin-bottom: 2rem;
+article #post-body {
+  margin-top: 2rem;
 }
 
-article p {
+article #post-body > p {
   font-size: 1.3rem;
   line-height: 1.5;
   margin: 1rem 0;
   white-space: break-spaces;
 }
 
-article p:first-of-type {
-  margin-top: 2rem;
-}
+/* article #post-body > p:first-child:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+} */
 
-article a {
-  font-size: 1.2rem;
-  font-weight: 700;
+article .toc {
+  margin-bottom: 2rem;
 }
 
 article h1 {
@@ -152,6 +182,24 @@ main ul {
   font-size: .8rem;
 }
 
+.notice {
+  border-radius: 8px;
+  padding: .5rem 1.2rem;
+}
+
+.notice h3:last-of-type {
+  margin-top: .7rem;
+}
+
+.notice p:last-of-type {
+  margin-bottom: .7rem;
+}
+
+img.rss {
+  height: 14px;
+  width: 14px;
+}
+
 /***
   GRID LAYOUT
 ***/
@@ -173,21 +221,21 @@ main *, article * {
   LIST PAGES
 ***/
 
-ul {
+main ul {
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
 }
 
-ul li {
+main ul li {
   margin: .25rem 0;
 }
 
 /* Code blocks are currently the width of the post itself but I intend to allow resizing shortly.
    I'd prefer that the user has formatting controls to determine their favourite style
 */
-article .highlight, article table {
+article .highlight {
   grid-column: 3 / span 1;
   /* grid-column: 2 / span 3; */
 }
@@ -205,4 +253,77 @@ article .highlight, article table {
 code {
   font-size: 1rem;
   font-family: monospace;
+}
+
+code {
+  background-color: rgba(27, 31, 35, .05);
+  border-radius: 4px;
+  margin: 0;
+}
+
+p > code {
+  padding: .2rem .4rem;
+}
+
+pre {
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+pre code {
+  font-size: 1rem;
+}
+
+/***
+  BLOCKQUOTES
+***/
+
+blockquote {
+  border-color: #7e0ecc;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-width: .2rem;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+/***
+  TABLES
+***/
+
+article table {
+  border-collapse: collapse;
+  border-radius: .25rem;
+  border-spacing: 0;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  width: 100%;
+}
+
+tr th {
+  font-size: .875rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+
+tr td {
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+}
+
+/***
+  IMAGES
+***/
+
+img {
+  width: 100%;
 }
