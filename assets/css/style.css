@@ -3,8 +3,10 @@
 ***/
 
 :root {
-  --blueish: hsl(207, 33%, 18%);
-  --greyish: hsl(67, 12%, 87%);
+  --blueish: hsl(207, 33%, 18%, 1);
+  --border-blueish: hsl(207, 10%, 10%, 1);
+  --greyish: hsl(44, 35%, 94%, 1);
+  --border-greyish: hsl(40, 12%, 86%, 1);
 }
 
 /* Look ma, dark mode! Not that I use dark mode mind you but it's nice to have */
