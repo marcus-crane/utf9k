@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+    <header>
+        <h1>404 Not Found</h1>
+    </header>
+    <div id="post-body">
+      <p>Sorry folks but it seems that <code>{{ .RelPermalink }}</code> is not a valid page?</p>
+      <p>Perhaps you'd like to go back <a href="/">to the beginning?</a></p>
+      <p>Alternatively, check this out:</p>
+      <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/C7xyoPqYkYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</article>
+{{ end }}

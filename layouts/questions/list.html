@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+  <h1>Answers to questions I'll soon forget</h1>
+  <div class="notice" style="margin-bottom: 1rem;">
+    <h3>Looking for the notes section?</h3>
+    <p>This area used to be called <code>notes</code> and the wishy washy nature of it reflected that</p>
+    <p>I realised that the best elements of it were when I would ask a question and then go and answer it so I've decided to make this a collection of FAQs to myself</p>
+    <p>You'll notice that I've aliased all of the posts so the original links will work but I've also removed some posts that were just arbitrary literature notes.</p>
+    <p>If there were some you wanted to read through, you can find them <a href="https://github.com/marcus-crane/utf9k/tree/74d0bbb2078ed0b02b200461c4b84da5747bf88d/content/notes">on Github.</a></p>
+  </div>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

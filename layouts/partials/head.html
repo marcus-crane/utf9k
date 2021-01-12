@@ -6,4 +6,11 @@
 <meta name="theme-color" content="#a463f2" />
 <meta name="author" content="Marcus Crane" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-{{ partial "css.html" . }}
+{{ $styles := resources.Get "css/style.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+{{ $minStyles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ end }}

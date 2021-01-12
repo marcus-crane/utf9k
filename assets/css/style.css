@@ -1,0 +1,342 @@
+/***
+  COLOUR SCHEMES
+***/
+
+:root {
+  --blueish-headers: hsl(207, 33%, 18%, 1);
+  --blueish-text: hsl(207, 29%, 22%, 1);
+  --blueish-border: hsl(207, 10%, 10%, 1);
+  --greyish-headers: hsl(44, 35%, 94%, 1);
+  --greyish-text: hsl(40, 12%, 86%, 1);
+  --greyish-border: hsl(40, 12%, 86%, 1);
+}
+
+/* Look ma, dark mode! Not that I use dark mode mind you but it's nice to have */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--greyish-headers);
+    
+  }
+
+  body, p, a, time {
+    color: var(--blueish-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--blueish-border);
+  }
+
+  th, tr:nth-child(2n+2) {
+    background-color: var(--greyish-text);
+  }
+
+  #overview {
+    border-bottom: 1px solid var(--greyish-border);
+  }
+
+  .notice {
+    background-color: var(--greyish-text);
+  }
+
+  p > code {
+    background-color: var(--greyish-text);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--blueish-headers);
+  }
+
+  body, p, a, time {
+    color: var(--greyish-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--greyish-headers);
+  }
+
+  th, tr:nth-child(2n+2) {
+    background-color: var(--blueish-text);
+  }
+
+  #overview {
+    border-bottom: 1px solid var(--blueish-border);
+  }
+
+  .notice {
+    background-color: var(--blueish-text)
+  }
+
+  p > code {
+    background-color: var(--blueish-text);
+  }
+}
+
+/***
+  BASIC STYLING
+***/
+
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  margin-bottom: 2.5rem;
+}
+
+article #post-body {
+  margin-top: 2rem;
+}
+
+article #post-body > p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+  white-space: break-spaces;
+}
+
+/* article #post-body > p:first-child:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+} */
+
+article .toc {
+  margin-bottom: 2rem;
+}
+
+article h1 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: .25rem;
+}
+
+article header {
+  font-size: 1.3rem;
+}
+
+#overview {
+  display: flex;
+  height: 3rem;
+}
+
+main ul {
+  margin-top: 2rem;
+}
+
+#overview .breadcrumbs {
+  display: flex;
+  flex: 1 1 auto;
+  margin-left: 13px;
+}
+
+#overview .breadcrumbs a {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+#overview .links {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  margin-right: 13px;
+}
+
+.favicon {
+  height: 20px;
+  width: 20px;
+}
+
+.favicon img {
+  height: 16px;
+  width: 16px;
+}
+
+#overview .sitename, #overview .section, #overview .slug {
+  padding-left: .3rem;
+}
+
+#overview .section:before, #overview .slug:before {
+  content: "↝ "
+}
+
+.toc summary {
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: .8rem;
+}
+
+.notice {
+  border-radius: 8px;
+  padding: .5rem 1.2rem;
+}
+
+.notice h3:last-of-type {
+  margin-top: .7rem;
+}
+
+.notice p:last-of-type {
+  margin-bottom: .7rem;
+}
+
+img.rss {
+  height: 14px;
+  width: 14px;
+}
+
+/***
+  GRID LAYOUT
+***/
+
+/* We could just reuse article everywhere but it does have semantic meaning
+   A list of blog posts isn't really an article for example so main will do instead. */
+main, article {
+  display: grid;
+  grid-template-columns: 1fr 20em 630px 20em 1fr;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  main, article {
+    grid-template-columns: 1fr 5em 600px 5em 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main, article {
+    display: block;
+    padding: 2rem;
+  }
+}
+
+main *, article * {
+  grid-column: 3 / span 1;
+}
+
+/***
+  LIST PAGES
+***/
+
+main ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+main ul li {
+  margin: .25rem 0;
+}
+
+/* Code blocks are currently the width of the post itself but I intend to allow resizing shortly.
+   I'd prefer that the user has formatting controls to determine their favourite style
+*/
+article .highlight {
+  grid-column: 3 / span 1;
+  /* grid-column: 2 / span 3; */
+}
+
+/***
+  CODE BLOCKS
+***/
+
+.highlight > pre {
+  margin-top: 1rem;
+  overflow: scroll;
+  padding: 2rem;
+}
+
+code {
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+code {
+  background-color: rgba(27, 31, 35, .05);
+  border-radius: 4px;
+  margin: 0;
+}
+
+p > code {
+  padding: .2rem .4rem;
+}
+
+pre {
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+pre code {
+  font-size: 1rem;
+}
+
+/***
+  BLOCKQUOTES
+***/
+
+blockquote {
+  border-color: #7e0ecc;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-width: .2rem;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+/***
+  TABLES
+***/
+
+article table {
+  border-collapse: collapse;
+  border-radius: .25rem;
+  border-spacing: 0;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  width: 100%;
+}
+
+tr th {
+  font-size: .875rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+
+tr td {
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+}
+
+/***
+  IMAGES
+***/
+
+img {
+  width: 100%;
+}

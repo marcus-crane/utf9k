@@ -5,6 +5,7 @@
   {{ block "json+ld" . }}{{ end }}
 </head>
 <body>
+  {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
 </body>
 </html>
