@@ -110,6 +110,21 @@ main *, article * {
   grid-column: 3 / span 1;
 }
 
+/***
+  LIST PAGES
+***/
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+ul li {
+  margin: .25rem 0;
+}
+
 /* Code blocks are currently the width of the post itself but I intend to allow resizing shortly.
    I'd prefer that the user has formatting controls to determine their favourite style
 */
