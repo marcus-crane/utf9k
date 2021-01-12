@@ -1,0 +1,18 @@
+<div id="overview">
+  <a href="/">
+    <span class="favicon">
+      <img src="/favicon.png" />
+    </span>
+    <sup class="sitename">utf9k</sup>
+    {{ if .Section }}
+      <sup class="section">{{ .Section }}</sup>
+    {{ end }}
+    {{ if .IsPage }}
+      {{ if eq .File.TranslationBaseName "index" }}
+        <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
+      {{ else }}
+        <sup class="slug">{{ .File.TranslationBaseName }}</sup>
+      {{ end }}
+    {{ end }}
+  </a>
+</div>
