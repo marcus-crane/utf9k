@@ -213,6 +213,19 @@ main, article {
   grid-auto-rows: auto;
 }
 
+@media screen and (max-width: 1000px) {
+  main, article {
+    grid-template-columns: 1fr 5em 600px 5em 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main, article {
+    display: block;
+    padding: 2rem;
+  }
+}
+
 main *, article * {
   grid-column: 3 / span 1;
 }
