@@ -57,5 +57,3 @@ package = "netlify-plugin-checklinks"
   ]
 
   skipPatterns = []
-
-  checkExternal = true
