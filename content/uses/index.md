@@ -36,8 +36,8 @@ Everything else is stock and unconfigured.
 
 ## Desktop apps
 
-* [Opera](https://opera.com) for browsing
-* [Todoist](https://todoist.com) for task lists
+* [Safari](https://www.apple.com/safari/) for browsing
+* [Things](https://culturedcode.com/things/) for task lists
 * [Agenda](https://agenda.com) for notes
 * [ReadKit](https://readkitapp.com) for RSS feeds at my desktop
 * [Feedbin](https://feedbin.com) for RSS feeds on the web/mobile
