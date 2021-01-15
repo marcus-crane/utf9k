@@ -14,3 +14,5 @@
 {{ $minStyles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
+
+<link rel="stylesheet" href="/css/littlefoot.css" />

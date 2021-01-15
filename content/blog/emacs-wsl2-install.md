@@ -194,9 +194,9 @@ sudo apt-get update
 sudo apt-get install emacs26`
 ```
 
-Very nice, you should be all good to go. If you'd like to use Doom Emacs as I am, you'll need some extra packages which you can find more info about [via the handy documentation](https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#ubuntu)
+Very nice, you should be all good to go. If you would like to use Doom Emacs as I am, you will need some extra packages which you can find more info about [via the handy documentation](https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#ubuntu)
 
-If you'd like to run Emacs in your terminal, just simply fire up `emacs` . If you'd like to run it on your Windows host, and have your X server running and set up, you can run `emacs &` to spawn it, and keep it open as a background process.
+If you would like to run Emacs in your terminal, just simply fire up `emacs` . If you wouldd like to run it on your Windows host, and have your X server running and set up, you can run `emacs &` to spawn it, and keep it open as a background process.
 
 Happy text manipulation!
 

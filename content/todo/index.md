@@ -4,7 +4,7 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="3" max="27"></progress>
+Progress through this list: <progress id="todo" value="4" max="27"></progress>
 
 * [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 * [ ] Review links since I know some are broken but don't remember where
@@ -27,9 +27,9 @@ Progress through this list: <progress id="todo" value="3" max="27"></progress>
 * [ ] Double check that files all end with a newline
 * [ ] Double check that I haven't mixed up tabs and spaces. Why is this still a thing
 * [ ] Refresh layout for contact page
-* [ ] Use CSS grid for mobile layout
+* [x] Use CSS grid for mobile layout
 * [ ] Update README to reflect current build
 * [ ] Figure out how to edit tags overview without breaking the tag lists themselves (ie modify /tags/ but not /tags/linux/)
-* [ ] Can I disable list items when using markdown checklists?
+* [x] Can I disable list items when using markdown checklists?
 * [ ] Is the font too big? I should ask some people. I feel like it might be too big...
 * [ ] Add a proper navigation for mobile (perhaps in general too)
