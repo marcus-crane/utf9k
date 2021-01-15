@@ -20,7 +20,7 @@ So far, I'm pretty happy with it but there's always more to do
 
 ## Computers
 
-I don't want to think about computers right now. My head hurts.
+I fixed my computer troubles. It was something stupid of course.
 
 ## Videogames
 

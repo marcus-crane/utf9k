@@ -4,7 +4,7 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="4" max="27"></progress>
+Progress through this list: <progress id="todo" value="8" max="26"></progress>
 
 * [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 * [ ] Review links since I know some are broken but don't remember where
@@ -14,7 +14,7 @@ Progress through this list: <progress id="todo" value="4" max="27"></progress>
 * [ ] Add an identifier for links that knowing 404 but are shared for historical purposes
 * [ ] Fiddle around with CSS drop caps
 * [ ] Add ability for users to customise the text formatting a little bit
-* [ ] Add support for inline footnotes (I believe Hugo added this in a recent version)
+* [x] Add support for inline footnotes (I believe Hugo added this in a recent version)
 * [x] Mobile responsiveness (good enough for now)
 * [ ] Convert blog posts into page bundles
 * [ ] Create a side projects page for showing stuff I've worked on
@@ -25,7 +25,7 @@ Progress through this list: <progress id="todo" value="4" max="27"></progress>
 * [ ] Surface table names
 * [ ] Surface code block names + types
 * [ ] Double check that files all end with a newline
-* [ ] Double check that I haven't mixed up tabs and spaces. Why is this still a thing
+* [x] Double check that I haven't mixed up tabs and spaces. Why is this still a thing
 * [ ] Refresh layout for contact page
 * [x] Use CSS grid for mobile layout
 * [ ] Update README to reflect current build
