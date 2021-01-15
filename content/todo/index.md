@@ -4,11 +4,13 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="1" max="24"></progress>
+Progress through this list: <progress id="todo" value="3" max="27"></progress>
 
-* [ ] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING
+* [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 * [ ] Review links since I know some are broken but don't remember where
-* [ ] Investigate if a link checker is possible
+  * [x] Internal
+  * [ ] External
+* [x] Investigate if a link checker is possible
 * [ ] Add an identifier for links that knowing 404 but are shared for historical purposes
 * [ ] Fiddle around with CSS drop caps
 * [ ] Add ability for users to customise the text formatting a little bit
@@ -30,3 +32,4 @@ Progress through this list: <progress id="todo" value="1" max="24"></progress>
 * [ ] Figure out how to edit tags overview without breaking the tag lists themselves (ie modify /tags/ but not /tags/linux/)
 * [ ] Can I disable list items when using markdown checklists?
 * [ ] Is the font too big? I should ask some people. I feel like it might be too big...
+* [ ] Add a proper navigation for mobile (perhaps in general too)
