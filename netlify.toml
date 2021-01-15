@@ -57,3 +57,10 @@ package = "netlify-plugin-checklinks"
   ]
 
   skipPatterns = []
+
+[[plugins]]
+package = "netlify-plugin-a11y"
+
+  [plugins.inputs]
+
+  checkPaths = ['/']
