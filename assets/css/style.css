@@ -218,7 +218,7 @@ main *, article * {
   grid-column: 3 / span 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   main, article {
     grid-template-columns: 15% 1fr 15%;
   }
