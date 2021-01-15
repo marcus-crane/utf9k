@@ -201,6 +201,34 @@ img.rss {
   width: 14px;
 }
 
+a:hover {
+  color: #a463f2;
+}
+
+h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  font-size: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+h2 > a::before, h3 > a::before, h4 > a::before, h5 > a::before, h6 > a::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 1px;
+  position: absolute;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  width: 100%;
+}
+
+h2 > a:hover::before, h3 > a:hover::before, h4 > a:hover::before, h5 > a:hover::before, h6 > a:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
 /***
   GRID LAYOUT
 ***/
