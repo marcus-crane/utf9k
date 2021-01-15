@@ -52,7 +52,9 @@ I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware
 
 The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
 
-****NOTE****: The following WILL wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+{{% notice title="⚠️ Consider yourself warned" %}}
+The following *WILL* wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+{{% /notice %}}
 
 ## Partitioning
 
