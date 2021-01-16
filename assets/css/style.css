@@ -88,7 +88,7 @@ body {
   padding: 0;
 }
 
-article {
+main, article {
   margin-bottom: 2.5rem;
 }
 
@@ -375,4 +375,93 @@ tr td {
 
 img {
   width: 100%;
+}
+
+/***
+  CONTACT - Liberally inspired by https://discord.com/branding
+***/
+
+main.contact-page {
+  grid-template-columns: 10% 1fr 10%;
+}
+
+main.contact-page > h1, main.contact-page > .social-category {
+  grid-column: 2 / span 1;
+}
+
+.social-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 3 / span 3;
+  gap: 0 20px;
+}
+
+.social-row a {
+  grid-column: unset;
+}
+
+.checkerbox {
+  background-position: 0 0,45px 45px;
+  background-size: 30px 30px;
+}
+
+@media (prefers-color-scheme: light) {
+  .checkerbox {
+    background-color: #fff;
+    background-image: linear-gradient(45deg,#f6f6f6 25%,transparent 0,transparent 75%,#f6f6f6 0,#f6f6f6),linear-gradient(45deg,#f6f6f6 25%,transparent 0,transparent 75%,#f6f6f6 0,#f6f6f6);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .checkerbox {
+    background-color: #2C2F33;
+    background-image: linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427),linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427);
+  }
+}
+
+.social-logo {
+  align-items: center;
+  background-clip: padding-box;
+  border: 2px solid hsla(0,0%,100%,.05);
+  display: flex;
+  grid-column: span 1;
+  height: 10rem;
+  justify-content: center;
+}
+
+.social-logo img {
+  max-height: 4rem;
+  width: auto;
+}
+
+.social-link {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.social-link > p, .social-link > a {
+  display: block;
+  font-size: 1.25rem;
+  margin: .5rem;
+}
+
+.image-box {
+  align-items: center;
+  background-clip: padding-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .social-row {
+    grid-auto-flow: row;
+  }
+  
+  .social-logo {
+    grid-column: span 3;
+  }
 }
