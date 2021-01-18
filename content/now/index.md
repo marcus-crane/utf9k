@@ -2,28 +2,30 @@
 title = "Now"
 +++
 
-## Stuck in bed
+## Trying not to enter a coma
 
-I recently, foolishly, acquired a massive sunburn on my right foot.
+I didn't have much time off during the holiday season, and the time that I did have felt like I mostly just slept or was trying not to sleep so I haven't felt "refreshed" in a while.
 
-It's to the extent that I can't really walk so I end up requiring crutches.
+Speaking of refreshed
 
-Thankfully I can work from home, and I have been for the past week.
+## Site refresh
 
-## Emacs
+As you'll have spotted from the large sign on the "front door", I finally got around to refreshing my site design.
 
-I don't really use Emacs much these days, as I found it became a bit too much high friction.
+I've had this on the back burner for a little while and while not complete, I finally managed to push out the bulk of something that I can continue to mould over time.
 
-I've been porting my site back to using Markdown, given its universality.
+In hindsight, it feels like a remix of all of the various layouts I've had over time, including some old sites.
 
-That's not to say I don't greatly appreciate the power of `org` of course!
+So far, I'm pretty happy with it but there's always more to do
 
-## Reading
+## Computers
 
-I'm slowly reading through [In the Plex: How Google Thinks, Works, and Shapes Our Lives](https://www.amazon.com/Plex-Google-Thinks-Works-Shapes/dp/1416596585) which is a pretty fascinating insight to the early days of Google.
+I fixed my computer troubles. It was something stupid of course.
 
-I really expected it'd be just obvious stuff that's already known but Steven Levy really was in the trenches, floating around the office and seeing the behemoth as it was built one line at a time.
+## Videogames
 
-He doesn't glorify Larry, Sergei and Eric either thankfully as I expected the author might feel obliged to, given the amount of access.
+I haven't actually played much for quite a while but I got back into [Digimon Story: Cyber Sleuth](https://en.wikipedia.org/wiki/Digimon_Story:_Cyber_Sleuth) over the holiday season.
 
-One thing about Google is the willingness to constantly shut down services that they're "institutionally bored" with and I feel like I got that sense of culture to a certain extent.
+I'm only on Chapter 9 but I've managed to grind my way to 2 [PlatinumNumemon](https://digimon.fandom.com/wiki/PlatinumNumemon) equipped with a bunch of tactician USBs. Put simply, you can get a game breaking amount of EXP.
+
+I also started playing through [Kingdom Hearts III](https://en.wikipedia.org/wiki/Kingdom_Hearts_III) properly. I won't spoil anything.

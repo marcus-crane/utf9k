@@ -5,9 +5,13 @@ tags = ["deepfakes", "future", "technology"]
 #blog
 +++
 
-I dug this post up from an older version of my site. It was written two years ago during the emergence of deepfakes. Any mention of machine learning may not be accurate but I've left them as is. In all likehood, I would know less now then I did back then when I had much more time to follow ML trends.
+{{% notice title="This post has been remastered due to its age" %}}
+I've made some slight rewordings, fixed typos and revived any links I could using the [Wayback Machine](https://web.archive.org/) but otherwise, the post is 99% intact from when I first wrote it.
 
-I've made some slight rewordings, fixed typos and revived any links I could using the [Wayback Machine](https://web.archive.org/) but otherwise, the post is 99% intact from when I first wrote it. I didn't realise just how much I had written about this at the time. I'm kind of glad since this was before the subreddit was banned. A lot of it is now lost to time.
+I didn't realise just how much I had written about this at the time.
+
+I'm kind of glad since this was before the subreddit was banned. A lot of it is now lost to time.
+{{% /notice %}}
 
 ## An overview
 

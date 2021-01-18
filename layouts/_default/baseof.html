@@ -5,6 +5,9 @@
   {{ block "json+ld" . }}{{ end }}
 </head>
 <body>
+  {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
+  <script src="/js/littlefoot.js" type="application/javascript"></script>
+  <script type="application/javascript">littlefoot.default()</script>
 </body>
 </html>

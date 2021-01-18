@@ -24,13 +24,13 @@ Before we get started, I should point out that this setup has actually be retire
 My EDC was already fairly compact and consisted of the following:
 
 *   Google Pixel 3a (very lightweight!)
-    
+
 *   Wallet packed with cards (slow to sort through + a lot of unused cards)
-    
+
 *   A carabiner with a bunch of keys (which key is which?!)
-    
+
 *   A pair of wired earbuds (represented by a placeholder + easily gets tangled)
-    
+
 
 Let's have a look at these individually as we break down my setup and slowly rebuild it
 
@@ -49,15 +49,15 @@ Let's start by taking a closer look at those cards
 There's a variety of different cards here:
 
 *   Business cards
-    
+
 *   Gift cards
-    
+
 *   Loyalty cards
-    
+
 *   Membership cards (plastic + NFC)
-    
+
 *   Bank cards
-    
+
 
 [![/img/edc-2019/business_cards.jpeg](/img/edc-2019/business_cards.jpeg)](/img/edc-2019/business_cards.jpeg)
 
@@ -67,7 +67,7 @@ Business cards are pretty easy to get rid of as a first step. They just went str
 
 I don't use loyalty cards often enough, to make the space they take up worth it. Thankfully, it's easy to digitise them nowadays (if they have a barcode) and carry them on my phone instead.
 
-[\[file:/img/edc-2019/gpay\_cards.jpeg](/img/edc-2019/gpay_cards.jpeg)\]
+[[file:/img/edc-2019/gpay_cards.jpeg](/img/edc-2019/gpay_cards.jpeg)]
 
 Last but not least, I can reduce the amount of time I'm pulling bank cards out of my wallet by adding them to Google Pay. I still need them on hand for larger purchases due to paywave limits.
 

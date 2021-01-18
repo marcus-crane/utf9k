@@ -5,11 +5,17 @@ tags = ["arch", "guide", "linux"]
 #blog
 +++
 
+{{% notice title="Is this up to date?" %}}
+While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.
+
+If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide and expect that it should be fairly seemless.
+
+While I don't expect much has changed, you should know that I'm not actively verifying that these steps haven't changed or anything like that.
+{{% /notice %}}
+
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.
-
-**2019 Update**: [Manjaro](https://manjaro.org/) is nice. I use it these days instead of going through the whole ordeal of manually setting things up. I would still recommend doing a manual install at least once though. It'll teach you a lot!
 
 ## Getting online
 
@@ -46,7 +52,9 @@ I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware
 
 The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
 
-****NOTE****: The following WILL wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+{{% notice title="⚠️ Consider yourself warned" %}}
+The following *WILL* wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+{{% /notice %}}
 
 ## Partitioning
 
@@ -202,7 +210,7 @@ I need the following bits:
 |----------------|---------------------------------------------------|
 | [dialog](http://invisible-island.net/dialog/)         | A library for console-based UIs like `wifi-menu`    |
 | [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data)    | Micro-code updates for Intel CPUs                 |
-| (wpa_supplicant)[https://w1.fi/wpa_supplicant/] | Used to connect to wireless networks (put simply) |
+| [wpa_supplicant](https://w1.fi/wpa_supplicant/) | Used to connect to wireless networks (put simply) |
 
 That should be everything for now. The other bits (`netctl` and `dhcpcd`) were already installed as part of the `base` group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
 

@@ -1,0 +1,37 @@
+<div id="overview">
+  <div class="breadcrumbs">
+    <a href="/">
+      <span class="favicon">
+        <img src="/favicon.png" alt="The utf9k logo which is a cartoon robot" />
+      </span>
+      <sup class="sitename">utf9k</sup>
+    </a>
+    {{ if .Section }}
+      <a href="../">
+        <sup class="section">{{ .Section }}</sup>
+      </a>
+    {{ end }}
+    {{ if .File }}
+      {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
+        {{ if eq .File.TranslationBaseName "index" }}
+          <a href="../">
+            <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
+          </a>
+        {{ else }}
+          <a href="../">
+            <sup class="slug">{{ .File.TranslationBaseName }}</sup>
+          </a>
+        {{ end }}
+        </a>
+      {{ end }}
+    {{ end }}
+    </a>
+  </div>
+  <div class="links">
+    <sup>
+      <a href="/index.xml">
+        <img class="rss" src="/icons/rss-28x28.png" alt="An icon symbolising an RSS feed" />
+      </a>
+    </sup>
+  </div>
+</div>

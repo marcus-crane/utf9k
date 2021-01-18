@@ -1,6 +1,6 @@
 {{ $headerCount := .TableOfContents | strings.Count "<li>" }}
 {{ if and (gt $headerCount 5) }}
-<details>
+<details class="toc">
   <summary>Table of contents</summary>
   {{ .TableOfContents }}
 </details>

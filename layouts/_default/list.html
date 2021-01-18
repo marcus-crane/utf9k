@@ -1,16 +1,19 @@
 {{ define "main" }}
-<h1>{{ if ne .Section "blog"}}{{ .Title }}{{ else }}Posts{{ end }}</h1>
-<ul>
-  {{ range .Pages }}
-  <li>
-    <span id="list-date">{{ .Date.Format "2006-01-02" }}</span>
-    ~
-    <a href="{{ .RelPermalink }}">
-      <span>{{ .Title }}</span>
-    </a>
-    <span class="tag-list">
-    </span>
-  </li>
-  {{ end }}
-</ul>
+<main>
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ $years := .Scratch }}
+    {{ range .Pages }}
+    {{ $year := .Date.Format "2006" }}
+    {{ if not (in ($years.Get "years") $year) }}
+      <h2>{{ .Date.Format "2006" }}</h2>
+      {{ $years.Add "years" (slice $year) }}
+    {{ end }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time>{{ .Date.Format "Jan 02" }}</time>
+    </li>
+    {{ end }}
+  </ul>
+</main>
 {{ end }}

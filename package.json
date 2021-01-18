@@ -1,0 +1,15 @@
+{
+  "name": "utf9k",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "main": "index.js",
+  "repository": "git@github.com:marcus-crane/utf9k",
+  "author": "Marcus Crane <marcus@utf9k.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0"
+  }
+}

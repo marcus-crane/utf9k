@@ -1,21 +1,12 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "yarn install && hugo --gc --minify"
 
 [build.environment]
 HUGO_VERSION = "0.78.2"
 
 [context.production.environment]
 HUGO_ENV = "production"
-
-[[redirects]]
-  from = "/version.json"
-  to = "/index.json"
-  status = 200
-  force = true
-
-[[plugins]]
-  package = "netlify-plugin-hugo-cache-resources"
 
 [[headers]]
 for = "/*.jpg"
@@ -56,3 +47,20 @@ X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
 Referrer-Policy = "no-referrer"
 Content-Security-Policy = "script-src 'self' 'unsafe-inline'"
+
+[[plugins]]
+package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+  entryPoints = [
+    "*.html",
+  ]
+
+  skipPatterns = []
+
+[[plugins]]
+package = "netlify-plugin-a11y"
+
+  [plugins.inputs]
+
+  checkPaths = ['/']

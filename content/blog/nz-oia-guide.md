@@ -23,7 +23,11 @@ Ah yes, right. Maybe you've heard of the term FOIA or OIA but haven't really got
 
 The Official Information Act of 1982, readable [here](http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html), is actually a replacement for the [Official Secrets Act 1951](http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183/). I can't say I was aware of it before writing this post but sharing government information was a criminal offense! Wikipedia only mentions this in passing but after digging a bit, I believe the particular section that applied was 6(1)(a). You can see it below although I've cut out some bits so it's not just a huge wall of text.
 
-> 6 (1) If any person, having in his possession or control … any sketch, plan, model, article, note, document, or information … which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position … (a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it … he commits an offence against this Act. — Section 6 (1), New Zealand Official Secrets Act 1951
+> (1) If any person, having in his possession or control … any sketch, plan, model, article, note, document, or information … which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position
+>
+>(a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it … he commits an offence against this Act.
+>
+> — Section 6 (1), New Zealand Official Secrets Act 1951
 
 The idea of information belonging to "the Queen and her advisors" slowly seemed like a bunch of nonsense and as a result, the Official Information Act was born. In short, it allows anyone present in New Zealand (citizen or visitor) to request, surprise, information from any government Minister, department or organization. That's basically all it boils down to.
 
@@ -34,14 +38,30 @@ Generally speaking, there's no limit on what you can request but as with most pa
 There are some cases where the requestee can deny your request but it has to be justified. Specifically, Section 6(a) through (e) outlines acceptable reasons for dismissing your request:
 
 > (a) to prejudice the security or defence of New Zealand or the international relations of the Government of New Zealand; or
-
-> (b) to prejudice the entrusting of information to the Government of New Zealand on a basis of confidence by— (i) the Government of any other country or any agency of such a Government; or (ii) any international organisation; or
-
+>
+> (b) to prejudice the entrusting of information to the Government of New Zealand on a basis of confidence by
+>
+> — (i) the Government of any other country or any agency of such a Government; or
+>
+> — (ii) any international organisation; or
+>
 > (c) to prejudice the maintenance of the law, including the prevention, investigation, and detection of offences, and the right to a fair trial; or
-
+>
 > (d) to endanger the safety of any person; or
-
-> (e) to damage seriously the economy of New Zealand by disclosing prematurely decisions to change or continue government economic or financial policies relating to— (i) exchange rates or the control of overseas exchange transactions: (ii) the regulation of banking or credit: (iii) taxation: (iv) the stability, control, and adjustment of prices of goods and services, rents, and other costs, and rates of wages, salaries, and other incomes: (v) the borrowing of money by the Government of New Zealand: (vi) the entering into of overseas trade agreements.
+>
+> (e) to damage seriously the economy of New Zealand by disclosing prematurely decisions to change or continue government economic or financial policies relating to—
+>
+> — (i) exchange rates or the control of overseas exchange transactions:
+>
+> — (ii) the regulation of banking or credit:
+>
+> — (iii) taxation:
+>
+> — (iv) the stability, control, and adjustment of prices of goods and services, rents, and other costs, and rates of wages, salaries, and other incomes:
+>
+> — (v) the borrowing of money by the Government of New Zealand:
+>
+> — (vi) the entering into of overseas trade agreements.
 
 ## Where to make a request (the hard, secret way)
 
