@@ -95,6 +95,7 @@ main, article {
 article #post-body {
   height: 100%; /* Ensure Safari uses as much space as it needs, similar to other browsers */
   margin-top: 2rem;
+  overflow-x: scroll;
 }
 
 article #post-body > p {
