@@ -248,7 +248,7 @@ main *, article * {
 
 @media screen and (max-width: 1200px) {
   main, article {
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 15% 70% 15%;
   }
   
   main *, article * {
@@ -256,13 +256,16 @@ main *, article * {
   }
 }
 
+@media screen and (max-width: 900px) {
+  main, article {
+		grid-template-columns: 10% 80% 10%;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   main, article {
-    grid-template-columns: 5% 1fr 5%;
-  }
-  
-  main *, article * {
-    grid-column: 2 / span 1;
+    grid-template-columns: 5% 90% 5%;
   }
 }
 
@@ -405,10 +408,23 @@ main.contact-page > h1, main.contact-page > .social-category {
   background-size: 30px 30px;
 }
 
+.social-logo {
+  align-items: center;
+  background-clip: padding-box;
+  display: flex;
+  grid-column: span 1;
+  height: 10rem;
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: light) {
   .checkerbox {
     background-color: #fff;
     background-image: linear-gradient(45deg,#f6f6f6 25%,transparent 0,transparent 75%,#f6f6f6 0,#f6f6f6),linear-gradient(45deg,#f6f6f6 25%,transparent 0,transparent 75%,#f6f6f6 0,#f6f6f6);
+  }
+
+  .social-logo {
+    border: 2px solid var(--greyish-border);
   }
 }
 
@@ -417,16 +433,14 @@ main.contact-page > h1, main.contact-page > .social-category {
     background-color: #2C2F33;
     background-image: linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427),linear-gradient(45deg,#222427 25%,transparent 0,transparent 75%,#222427 0,#222427);
   }
-}
 
-.social-logo {
-  align-items: center;
-  background-clip: padding-box;
-  border: 2px solid hsla(0,0%,100%,.05);
-  display: flex;
-  grid-column: span 1;
-  height: 10rem;
-  justify-content: center;
+  .social-logo {
+    border: 2px solid var(--blueish-border);
+  }
+
+  .invert-when-dark {
+    filter: invert(95%);
+  }
 }
 
 .social-logo img {

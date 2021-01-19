@@ -1,4 +1,5 @@
 +++
+slug = "thanks"
 title = "Thanks"
 +++
 

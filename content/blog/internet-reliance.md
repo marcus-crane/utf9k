@@ -1,8 +1,8 @@
 +++
 title = "Relying on the internet as a business"
 date = "2020-10-06"
+slug = "internet-reliance"
 tags = ["internet", "business"]
-#blog
 +++
 
 I went to get a haircut about 45 minutes before writing this post, and the internet went out briefly. I overheard one of the hair stylists say

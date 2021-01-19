@@ -13,19 +13,12 @@
     {{ end }}
     {{ if .File }}
       {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
-        {{ if eq .File.TranslationBaseName "index" }}
           <a href="../">
-            <sup class="slug">{{ replace .RelPermalink "/" "" }}</sup>
+            <sup class="slug">{{ .Slug }}</sup>
           </a>
-        {{ else }}
-          <a href="../">
-            <sup class="slug">{{ .File.TranslationBaseName }}</sup>
-          </a>
-        {{ end }}
         </a>
       {{ end }}
     {{ end }}
-    </a>
   </div>
   <div class="links">
     <sup>

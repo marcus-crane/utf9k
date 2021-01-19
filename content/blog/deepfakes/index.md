@@ -1,8 +1,8 @@
 +++
 title = "Deepfakes"
 date = "2017-02-05"
+slug = "deepfakes"
 tags = ["deepfakes", "future", "technology"]
-#blog
 +++
 
 {{% notice title="This post has been remastered slightly due to its age." %}}
@@ -88,11 +88,16 @@ While it's easy to think one man has started this all, he does [have a point](ht
 This post has already gone on long enough so here's a few proof of concepts off the top of my head that give an indication of where we're headed
 
 *   [Face2Face](https://youtu.be/ohmajJTcpNk?t=160)
-    
+
 *   [Disney's FaceDirector](https://youtu.be/o-nJpaCXL0k?t=212)
-    
+
 *   [Adobe VoCo](https://youtu.be/I3l4XLZ59iw?t=199)
+<<<<<<< HEAD:content/blog/deepfakes/index.md
     
 *   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
 
 [^deadlink]: This link has been dead since the /r/deepfakes subreddit was banned and no backup could be found using the Internet Archive's Wayback Machine. Rather than remove it, I've decided to preserve this URL in the event that an archive ever reappears.
+=======
+
+*   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
+>>>>>>> master:content/blog/deepfakes.md

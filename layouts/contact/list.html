@@ -7,7 +7,7 @@
       <div class="social-row">
         {{ range .entries }}
         <div class="checkerbox image-box social-logo">
-          {{ if .logo }}<img src="/contact/logos/{{ .logo }}" />{{ end }}
+          {{ if .logo }}<img {{ if .forceInvert }}class="invert-when-dark"{{ end }} src="/contact/logos/{{ .logo }}" />{{ end }}
           <span class="social-link">
             {{ if .link }}
               <a href="{{ .link }}">{{ .username }}</a>

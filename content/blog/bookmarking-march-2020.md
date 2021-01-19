@@ -1,8 +1,8 @@
 +++
 title = "My bookmarking categories in March 2020"
 date = "2020-03-08"
+slug = "bookmarking-march-2020"
 tags = ["bookmarks", "organisation"]
-#blog
 +++
 
 For no particular reason, other than I figured it might help me make better sense of how I organise articles, here's a fairly detailed breakdown of my bookmarking setup.

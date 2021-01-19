@@ -18,13 +18,15 @@
         "service": "Playstation",
         "logo": "playstation.svg",
         "username": "Spondyl",
-        "link": null
+        "link": null,
+        "forceInvert": true
       },
       {
         "service": "Steam",
         "logo": "steam.svg",
         "username": "Sentry",
-        "link": "https://steamcommunity.com/id/sandtree"
+        "link": "https://steamcommunity.com/id/sandtree",
+        "forceInvert": true
       }
     ]
   },
@@ -99,7 +101,8 @@
         "service": "Github",
         "logo": "github.svg",
         "username": "marcus-crane",
-        "link": "https://github.com/marcus-crane"
+        "link": "https://github.com/marcus-crane",
+        "forceInvert": true
       },
       {
         "service": "Hacker News",

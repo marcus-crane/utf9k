@@ -1,8 +1,8 @@
 +++
 title = "Fruit Plate"
 date = "2020-11-02"
+slug = "fruit-plate"
 tags = ["work", "overhead", "productivity"]
-#blog
 +++
 
 I ordered a fruit plate about 15 minutes ago.
