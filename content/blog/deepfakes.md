@@ -1,8 +1,8 @@
 +++
 title = "Deepfakes"
 date = "2017-02-05"
+slug = "deepfakes"
 tags = ["deepfakes", "future", "technology"]
-#blog
 +++
 
 {{% notice title="This post has been remastered due to its age" %}}
@@ -76,9 +76,9 @@ While it's easy to think one man has started this all, he does [have a point (de
 This post has already gone on long enough so here's a few proof of concepts off the top of my head that give an indication of where we're headed
 
 *   [Face2Face](https://youtu.be/ohmajJTcpNk?t=160)
-    
+
 *   [Disney's FaceDirector](https://youtu.be/o-nJpaCXL0k?t=212)
-    
+
 *   [Adobe VoCo](https://youtu.be/I3l4XLZ59iw?t=199)
-    
+
 *   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)

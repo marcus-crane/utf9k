@@ -1,8 +1,8 @@
 +++
 title = "What is the future of emergency services?"
 date = "2019-03-20"
+slug = "future-of-emergency-services"
 tags = ["future", "people"]
-#blog
 +++
 
 Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [Healthline](https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline) who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.

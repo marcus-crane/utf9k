@@ -1,6 +1,7 @@
 +++
 title = "Enterprise Software"
 date = "2020-12-07"
+slug = "enterprise-software"
 aliases = [
 	"/notes/enterprise-software/"
 ]

@@ -1,8 +1,8 @@
 +++
 title = "Reducing my everyday carry during 2019"
 date = "2020-04-13"
+slug = "reducing-my-edc-2019"
 tags = ["organisation"]
-#blog
 +++
 
 During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.

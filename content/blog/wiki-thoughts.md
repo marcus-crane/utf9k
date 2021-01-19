@@ -1,8 +1,8 @@
 +++
 title = "Some thoughts about running a wiki"
 date = "2017-12-18"
+slug = "wiki-thoughts"
 tags = ["community", "leadership", "wiki"]
-#blog
 +++
 
 Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.

@@ -1,8 +1,8 @@
 +++
 title = "Tidying up towing data with Pandas"
 date = "2020-11-23"
+slug = "tidying-towing-data"
 tags = ["python", "pandas", "cleaning", "oia", "data"]
-#blog
 +++
 
 {{% notice title="I am not a lawyer! Oh, I meant to say data scientist" %}}

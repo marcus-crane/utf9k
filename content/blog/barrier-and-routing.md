@@ -2,6 +2,7 @@
 title = "Barrier (and routing tables)"
 date = "2020-12-29"
 draft = true
+slug = "barrier-and-routing"
 +++
 
 ## Using Barrier while using a VPN

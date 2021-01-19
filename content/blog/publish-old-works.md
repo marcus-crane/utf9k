@@ -1,8 +1,8 @@
 +++
 title = "You should publish your older works"
 date = "2020-02-07"
+slug = "publish-old-works"
 tags = ["rambling", "portfolio"]
-#blog
 +++
 
 If you haven't seen it, [Ira Glass on Storytelling 3](https://www.youtube.com/watch?v=X2wLP0izeJE) is a video worth watching.
