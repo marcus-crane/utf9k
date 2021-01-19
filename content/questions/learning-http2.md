@@ -1,6 +1,7 @@
 +++
 title = "HTTP2"
 date = "2020-11-27"
+slug = "learning-http2"
 aliases = [
   "/notes/learning-http2/"
 ]

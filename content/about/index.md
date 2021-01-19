@@ -1,4 +1,5 @@
 +++
+slug = "about"
 title = "About"
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = "DNS"
 date = "2020-11-28"
+slug = "dns"
 aliases = [
   "/notes/dns-and-bind/"
 ]

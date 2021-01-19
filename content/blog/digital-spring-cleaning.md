@@ -1,8 +1,8 @@
 +++
 title = "Digital Spring Cleaning"
 date = "2020-10-11"
+slug = "digital-spring-cleaning"
 tags = ["internet", "cleaning", "data"]
-#blog
 +++
 
 It's spring here in New Zealand, and unfortunately I think I've spent more time decluttering digital items instead of physical, but I've still had an interesting time as a result

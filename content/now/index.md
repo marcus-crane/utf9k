@@ -1,4 +1,5 @@
 +++
+slug = "now"
 title = "Now"
 +++
 

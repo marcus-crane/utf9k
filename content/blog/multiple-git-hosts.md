@@ -1,8 +1,8 @@
 +++
 title = "Dealing with multiple git hosts"
 date = "2020-01-06"
+slug = "multiple-git-hosts"
 tags = ["git", "github", "gitlab", "linux"]
-#blog
 +++
 
 {{% notice title="Some things have changed since I first wrote this" %}}

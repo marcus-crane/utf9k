@@ -1,8 +1,8 @@
 +++
 title = "Fixing a WSL2 VHD conversion issue"
 date = "2019-07-20"
+slug = "wsl2-vhd-issue"
 tags = ["beta", "linux", "windows", "wsl"]
-#blog
 +++
 
 I recently started running the Windows Insider builds on my desktop so that I could play around with the new Windows Subsystem for Linux but I ran into some trouble. Before I get into the fix, here's a little bit of history

@@ -1,3 +1,4 @@
 +++
+slug = "contact"
 title = "Contact"
 +++

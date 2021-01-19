@@ -1,6 +1,7 @@
 +++
 title = "Postgres"
 date = "2020-11-27"
+slug = "postgres"
 aliases = [
   "/notes/postgres/"
 ]

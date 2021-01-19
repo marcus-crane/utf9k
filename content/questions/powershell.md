@@ -1,6 +1,7 @@
 +++
 title = "Powershell"
 date = "2020-08-29"
+slug = "powershell"
 aliases = [
   "/notes/powershell/"
 ]

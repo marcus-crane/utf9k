@@ -1,8 +1,8 @@
 +++
 title = "Installing Arch Linux on my Intel NUC"
 date = "2017-12-24"
+slug = "arch-nuc-install"
 tags = ["arch", "guide", "linux"]
-#blog
 +++
 
 {{% notice title="Is this up to date?" %}}

@@ -1,10 +1,11 @@
 +++
+slug = "todo"
 title = "Todo"
 +++
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="11" max="28"></progress>
+Progress through this list: <progress id="todo" value="12" max="28"></progress>
 
 * [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 	* Review Markdown image links as they should support descriptions that I know aren't filled in
@@ -19,7 +20,7 @@ Progress through this list: <progress id="todo" value="11" max="28"></progress>
 * [ ] Add ability for users to customise the text formatting a little bit
 * [x] Add support for inline footnotes (I believe Hugo added this in a recent version)
 * [x] Mobile responsiveness (good enough for now)
-* [ ] Convert blog posts into page bundles
+* [x] Convert blog posts into page bundles
 * [ ] Create a side projects page for showing stuff I've worked on
 * [ ] Update `manifest.json` colour scheme
 	* Maybe not, it's a nice colour
