@@ -4,7 +4,7 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="9" max="26"></progress>
+Progress through this list: <progress id="todo" value="11" max="28"></progress>
 
 * [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 	* Review Markdown image links as they should support descriptions that I know aren't filled in
@@ -30,9 +30,9 @@ Progress through this list: <progress id="todo" value="9" max="26"></progress>
 * [ ] Surface table source for download (I swear I did this already... maybe it was in a different branch)
 * [ ] Surface table names
 * [ ] Surface code block names + types
-* [ ] Double check that files all end with a newline
+* [x] Double check that files all end with a newline
 * [x] Double check that I haven't mixed up tabs and spaces. Why is this still a thing
-* [ ] Refresh layout for contact page
+* [x] Refresh layout for contact page
 * [x] Use CSS grid for mobile layout
 * [ ] Update README to reflect current build
 * [ ] Figure out how to edit tags overview without breaking the tag lists themselves (ie modify /tags/ but not /tags/linux/)
