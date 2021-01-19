@@ -4,7 +4,7 @@ title = "Todo"
 
 A list of things I've still got left to do for the "revamp" of my site
 
-Progress through this list: <progress id="todo" value="8" max="26"></progress>
+Progress through this list: <progress id="todo" value="9" max="26"></progress>
 
 * [x] ADD ARIA ACCESSIBILITY TAGS TO EVERYTHING (allegedly)
 	* Review Markdown image links as they should support descriptions that I know aren't filled in
@@ -12,7 +12,7 @@ Progress through this list: <progress id="todo" value="8" max="26"></progress>
   * [x] Internal
   * [ ] External
 * [x] Investigate if a link checker is possible
-* [ ] Add an identifier for links that knowing 404 but are shared for historical purposes
+* [x] Add an identifier for links that knowing 404 but are shared for historical purposes
 	* Can just use footnotes for this given how littlefoot looks
 * [ ] Fiddle around with CSS drop caps
 	* Might be reserved for certain articles or it just looks ugly
