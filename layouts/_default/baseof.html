@@ -7,7 +7,13 @@
 <body>
   {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
-  <script src="/js/littlefoot.js" type="application/javascript"></script>
-  <script type="application/javascript">littlefoot.default()</script>
+  {{ $littleFootJs := resources.Get "js/littlefoot.js" }}
+  {{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $littleFootJs.RelPermalink }}"></script>
+  {{ else }}
+  {{ $minLittleFootJs := $littleFootJs | minify | fingerprint "sha512" }}
+  <script type="text/javascript" src="{{ $minLittleFootJs.RelPermalink }}" integrity="{{ $minLittleFootJs.Data.Integrity }}"></script>
+  {{ end }}
+  <script type="text/javascript">littlefoot.default()</script>
 </body>
 </html>
