@@ -19,7 +19,9 @@ Before we get started, I should point out that this setup has actually be retire
 
 ## The original setup
 
-[![original_carry.jpeg](original_carry.jpeg)](original_carry.jpeg)
+{{< figure
+	src="/blog/reducing-my-edc-2019/original_carry.jpeg"
+	link="/blog/reducing-my-edc-2019/original_carry.jpeg" >}}
 
 My EDC was already fairly compact and consisted of the following:
 
@@ -36,7 +38,9 @@ Let's have a look at these individually as we break down my setup and slowly reb
 
 ## Assessing my wallet
 
-[![wallet_old.jpeg](wallet_old.jpeg)](wallet_old.jpeg)
+{{< figure
+src="/blog/reducing-my-edc-2019/wallet_old.jpeg"
+link="/blog/reducing-my-edc-2019/wallet_old.jpeg" >}}
 
 There's quite a lot in my wallet that I don't use, and different cards definitely get access more than others.
 
@@ -44,7 +48,9 @@ Let's start by taking a closer look at those cards
 
 ### Regular cards
 
-[![cards_scattered.jpeg](cards_scattered.jpeg)](cards_scattered.jpeg)
+{{< figure
+src="/blog/reducing-my-edc-2019/cards_scattered.jpeg"
+link="/blog/reducing-my-edc-2019/cards_scattered.jpeg" >}}
 
 There's a variety of different cards here:
 
@@ -59,7 +65,9 @@ There's a variety of different cards here:
 *   Bank cards
 
 
-[![business_cards.jpeg](business_cards.jpeg)](business_cards.jpeg)
+{{< figure
+src="/blog/reducing-my-edc-2019/business_cards.jpeg"
+link="/blog/reducing-my-edc-2019/business_cards.jpeg" >}}
 
 Business cards are pretty easy to get rid of as a first step. They just went straight into my contacts list. I don't have any need to carry them and should have digitised them a long time ago.
 
