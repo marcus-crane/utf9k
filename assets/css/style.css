@@ -95,7 +95,6 @@ main, article {
 article #post-body {
   height: 100%; /* Ensure Safari uses as much space as it needs, similar to other browsers */
   margin-top: 2rem;
-  overflow-x: scroll;
 }
 
 article #post-body > p {
@@ -249,7 +248,7 @@ main *, article * {
 
 @media screen and (max-width: 1200px) {
   main, article {
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 15% 70% 15%;
   }
   
   main *, article * {
@@ -257,13 +256,16 @@ main *, article * {
   }
 }
 
+@media screen and (max-width: 900px) {
+  main, article {
+		grid-template-columns: 10% 80% 10%;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   main, article {
-    grid-template-columns: 5% 1fr 5%;
-  }
-  
-  main *, article * {
-    grid-column: 2 / span 1;
+    grid-template-columns: 5% 90% 5%;
   }
 }
 
