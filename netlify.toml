@@ -49,16 +49,6 @@ Referrer-Policy = "no-referrer"
 Content-Security-Policy = "script-src 'self' 'unsafe-inline'"
 
 [[plugins]]
-package = "netlify-plugin-checklinks"
-
-  [plugins.inputs]
-  entryPoints = [
-    "*.html",
-  ]
-
-  skipPatterns = []
-
-[[plugins]]
 package = "netlify-plugin-a11y"
 
   [plugins.inputs]
