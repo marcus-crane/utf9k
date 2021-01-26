@@ -1,6 +1,8 @@
 +++
 title = "Latency as a forcing function"
-date = "2020-01-21"
+date = "2021-01-26"
+draft = true
+slug = "latency-as-a-forcing-function"
 +++
 
 Something I've fallen victim to in the past is flicking through applications without realising it.
@@ -13,7 +15,7 @@ For reference, here is what I see on the desktop for about 30 seconds if I were 
 
 Normally, the API calls under the hood are around 5 - 10 seconds but that is still jarring enough to not actually want to sit and wait.
 
-In addition, sometimes the client will be quite flaky and not actually float so you tend to force reload, which clears the cache and... well, you can see how unpleasant this is.
+In addition, sometimes the client will be quite flaky and not actually load so as a user, you tend to force reload, which clears the cache and... well, you can see how unpleasant this is.
 
 Oh, in addition, there are no CDNs so I'm having to make all of these numerous Javascript requests to a server halfway across the globe, and often through a proxy no less which adds a bit of latency to boot.
 
