@@ -24,7 +24,7 @@ sudo make install
 
 As an example of what I mean, `org-roam` had seemingly the same function names at one point, despite the only difference being some double dashes
 
-[Here is an example of what I mean](https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el#L236)
+[Here is an example](https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el#L236)
 
 At first glance, the naming differences between `org-roam-capture--get-point` and `org-roam--capture-get-point` seems completely arbitrary
 
