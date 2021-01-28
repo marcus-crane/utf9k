@@ -118,45 +118,4 @@ Destination        Gateway            Flags        Netif Expire
 111.0.0            link#1             UmCS           lo0
 ```
 
-I've changed the last entry since I don't actually know if it's an internet work address. As we can see, we first try to resolve domain names against IP addresses internally.
-
-Let's look at a more complex example. I've changed the addresses again but this is pulled from my route table while connected to a somewhat funky work VPN:
-
-```shell
-> netstat -nr -f inet
-Routing tables
-
-Internet:
-Destination        Gateway            Flags        Netif Expire
-default            203.0.113.4       UGSc           en6
-203.0.113/24       link#9             UCS            en6      !
-203.0.113.4/32     link#9             UCS            en6      !
-203.0.113.4        a0:e0:af:25:ec:e7  UHLWIir        en6   1043
-203.0.113.116/32   link#9             UCS            en6      !
-203.0.113.255      ff:ff:ff:ff:ff:ff  UHLWbI         en6      !
-127                127.0.0.1          UCS            lo0
-127.0.0.1          127.0.0.1          UH             lo0
-169.254            link#9             UCS            en6      !
-224.0.0/4          link#9             UmCS           en6      !
-224.0.0.251        1:0:5e:0:0:fb      UHmLWI         en6
-255.255.255.255/32 link#9             UCS            en6      !
-255.255.255.255    ff:ff:ff:ff:ff:ff  UHLWbI         en6      !
-```
-
-This might look quite confusing at first and it took me a bit of time to actually figure out what I was even looking at so let's walk through it step by step.
-
-Let's say we're trying to resolve `localhost`, which resolves to the IP address `127.0.0.1`.
-
-We step through the list from top to bottom, so we ask "Is anything running at 127.0.0.1 when accessing through the gateway `53.248.101.14`?" No? Ok, keep going.
-
-One thing that can be annoying is the following scenario:
-
-Let's say we have a domain that exists beyond the gateway `203.0.113.4` which is `https://blah.corporate.net`.
-
-Similarly, we have an `/etc/hosts` entry to forward traffic from `blah.corporate.net` to `127.0.0.1`
-
-For starters, `/etc/hosts` won't be honoured anyway but `blah.corporate.net` would first be checked against the first entry in the route table, find a match and then serve that. It wouldn't continue on to check and see that a response also exists when resolving the address locally.
-
-The way around this would be to add a route entry to check `localhost` first or similarly, run a tool like `dnsmasq` as your primary DNS server that then forwards upstream for matches that can't be found.
-
-Well, something like that in theory. I haven't delved into it too much and you should take the above with a grain of salt as far as correctness.
+I've changed the last entry since I don't actually know if it's an internet work address.
