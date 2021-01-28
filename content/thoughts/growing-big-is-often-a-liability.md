@@ -2,7 +2,7 @@
 title = "Growing big is often a liability"
 slug = "growing-big-is-often-a-liability"
 aliases = [
-  "/notes/the-curse-of-bigness"
+  "/notes/the-curse-of-bigness/"
 ]
 +++
 
