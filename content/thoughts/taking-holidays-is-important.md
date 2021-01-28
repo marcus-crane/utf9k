@@ -1,5 +1,5 @@
 +++
-title = "Taking holidays is important
+title = "Taking holidays is important"
 slug = "taking-holidays-is-important"
 +++
 
