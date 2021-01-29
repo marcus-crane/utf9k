@@ -10,7 +10,7 @@ At my previous job, we used Slack and partly due to the cozy nature of some thre
 
 I've witnessed colleagues do this too, often at social events, where they suddenly snap back to reality and realise "Wait, what the hell am I doing?"
 
-Not Slack isn't the super snappiest application but compared to one of the current chat mediums at my workplace, it may as well be a bullet train in terms of latency.
+Not that Slack isn't the super snappiest application but compared to one of the current chat mediums at my workplace, it may as well be a bullet train in terms of latency.
 
 I'll give you a glimpse into what you could be enjoying.
 
@@ -28,7 +28,7 @@ Here's what I usually end up staring at a number of times
 
 As a user, I would hope for at least a loading spinner but that spinner is contained in the Javascript bundle which... the server is sometimes too flaky to serve it seems.
 
-Anyway, when this happens, I usually read for the View menu and click the following
+Anyway, when this happens, I usually reach for the View menu and click the following
 
 [![A screenshot of the View menu for Mattermost. It shows a number of options with "Clear cache and Reload" being highlighted. This menu also contained an item called "Developer Tools for Current Server" which we will be accessing later.](clear-cache.png)](clear-cache.png)
 
@@ -46,11 +46,11 @@ Arguably, it gets even worse once we dig into some of the culprits. Here is one 
 
 [![A screenshot of the Network tab that has been cropped to just a couple of network transfers. One for a plugin called Standup Raven has been selected which took a total of 19 seconds to download!](standup-raven.png)](standup-raven.png)
 
-A whopping 1/3 of the download time appears to be used up for a single plugin! To make matters worse, this plugins appear to be parsed first before any of the actual chat content is fetched so the Mattermost window sits unusable until all plugins are downloaded and loaded before progressing to fetch messages and channels.
+A whopping 1/3 of the download time appears to be used up for a single plugin! To make matters worse, these plugins appear to be parsed first before any of the actual chat content is fetched so the Mattermost window sits unusable until all plugins are downloaded before progressing to fetch messages and channels.
 
 According to the network request, the bundle is *a whopping 1.8MB* and that's after being gzipped. That's bigger than the actual client bundle itself!
 
-My browser reported that the plugin was 7MB uncompressed so concerned that I was horribly misinterpreting this information, I looked up the [Github repository](https://github.com/standup-raven/standup-raven) for Standup Raven and took a look at the latest release which is [v3.2.0](https://github.com/standup-raven/standup-raven/releases/tag/v3.2.0).
+My browser reported that the plugin was 7MB uncompressed so I was concerned that I was horribly misinterpreting this information, I looked up the [Github repository](https://github.com/standup-raven/standup-raven) for Standup Raven and took a look at the latest release which is [v3.2.0](https://github.com/standup-raven/standup-raven/releases/tag/v3.2.0).
 
 Sure enough, the plugin on offer was distributed as part of an 11.1MB `tar.gz` archive and the bundle itself weighs in at `7.4MB`.
 
@@ -71,15 +71,15 @@ and
 
 b) My other non-European colleagues tend to have the same troubles
 
-Now these might seem negative but funnily enough, it has actually delivered some pretty solid value as a quirk.
+Now these points might seem negative but funnily enough, it has actually delivered some pretty solid value as a quirk.
 
-Given how much latency is sometimes involved, with messages taking a couple of seconds to send at times, the amount of traffic is often quite slow.
+Given how much latency is sometimes involved, with messages taking a couple of seconds to send at times, the amount of user traffic at any given time is often quite low.
 
-There's no constant stream of discussion and emojis flooding into my laptop over websockets. It's pure quiet bliss.
+There isn't a constant stream of discussions and emojis flooding into my laptop over websockets. It's pure quiet bliss.
 
 A large part of that is due to timezones mind you but that only adds to the asychronous nature of Mattermost within our team.
 
-It feels more akin to a notice board or an old school forum where you can back and check your thread the next day and despite your first thoughts, it doesn't really have any effect on efficiency that I've noticed.
+It feels more akin to a notice board or an old school forum where you can back and check your thread the next day, and despite what you might think, it doesn't really have any effect on efficiency that I've noticed.
 
 If anything, I spend much less time checking Mattermost than I used to pouring over Slack due to FoMo or whatever.
 
@@ -91,7 +91,7 @@ Admittedly, I did contact the administrators of our Mattermost instance but I th
 
 The response I got was akin to "It works on my machine. Have you tried Google Chrome?"
 
-After a bit of fiddling, I realised that simply adding the plugin configuration API endpoint to the ruleset for [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) means that Mattermost never learns what plugins exist, and so just skips on to fetching actual content.
+After a bit of fiddling, I realised that simply adding a [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) block rule for the plugin configuration API endpoint means that Mattermost never learns what plugins exist, and so just skips on to fetching actual content.
 
 While this restricts you to using the browser, it shaves a decent 20 seconds off the startup time.
 
