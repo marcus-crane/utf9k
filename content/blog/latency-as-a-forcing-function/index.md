@@ -1,7 +1,6 @@
 +++
 title = "Latency as a forcing function"
 date = "2021-01-29"
-draft = true
 slug = "latency-as-a-forcing-function"
 +++
 
