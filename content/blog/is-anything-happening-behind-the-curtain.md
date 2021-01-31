@@ -44,4 +44,4 @@ I've mentioned the series before, which just outlines how much I appreciate the 
 
 For a company that has been understood as having [fallen by the wayside](https://usefyi.com/evernote-history/), I think this is one of the more innovative things I've seen which genuinely makes me want to see them succeed.
 
-Actually, innovate isn't even the right word like it's not a new or particularly amazing idea but it takes a lot of guts to actually do so props to them and honestly I kind of aspire to do something like that one day.
+Actually, innovative isn't even the right word like it's not a new or particularly amazing idea but it takes a lot of guts to actually do so props to them and honestly I kind of aspire to do something like that one day.
