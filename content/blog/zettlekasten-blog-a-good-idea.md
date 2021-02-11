@@ -1,8 +1,11 @@
 +++
 title = "Using a blog like a zettelkasten seems like a good idea"
 date = "2021-02-11T17:00:00+1300"
-slug = "zettlekasten-blog-a-good-idea"
-tags = ["zettlekasten", "blogging", "meta"]
+slug = "zettelkasten-blog-a-good-idea"
+tags = ["zettelkasten", "blogging", "meta"]
+aliases = [
+  "/blog/zettelekasten-blog-a-good-idea/"
+]
 +++
 
 Having recently gotten back into the swing of reading via [RSS](https://en.wikipedia.org/wiki/RSS), I spotted a post from [Mike Crittenden](https://critter.blog) called [Blogging as a Zettelkasten](https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/).
@@ -13,7 +16,7 @@ The very blog post [I just linked](https://critter.blog/2021/02/10/blogging-as-a
 
 It is said that new insights should just sort of "fall out" by putting ideas in close proximity where your brain can make all the connections it likes. Your brain already works this way for the most part, like when you have a eureka moment in the shower, and so the idea is to basically make that process as easy as possible. While most examples seem to have degenerated into YouTube productivity clickbait, ["How to Use Roam to Outline a New Article in Under 20 Minutes"](https://www.youtube.com/watch?v=RvWic15iXjk) is still a golden example of what this process looks like. That was probably the single most thing that made me raise an eyebrow in interest.
 
-Now then, while I've already generated enough content for a "What I don't like about zettelkasten software" type post later on, this post is best kept succinct and in line with the title so let's touch briefly on why I think using a blog as a zettlekasten seems like a good idea.
+Now then, while I've already generated enough content for a "What I don't like about zettelkasten software" type post later on, this post is best kept succinct and in line with the title so let's touch briefly on why I think using a blog as a zettelkasten seems like a good idea.
 
 ## 1) Longevity
 
@@ -41,23 +44,23 @@ I also remember Roam Research used to suffer from some site troubles back in the
 
 ## 4) It's hidden in plain sight (a secret rant)
 
-Part of me has come to associate "zettlekasten" with the whole "Productivity Porn" movement. The idea is nice but the wider fanbase often gives me pause. To be clear though, I think a lot of that ecosystem floats around YouTube and Reddit rather than say, the [home](https://github.com/org-roam/org-roam) of [Jethro Kuan](https://jethro.dev)'s [elisp](https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html#Introduction) [child](https://www.orgroam.com).
+Part of me has come to associate "zettelkasten" with the whole "Productivity Porn" movement. The idea is nice but the wider fanbase often gives me pause. To be clear though, I think a lot of that ecosystem floats around YouTube and Reddit rather than say, the [home](https://github.com/org-roam/org-roam) of [Jethro Kuan](https://jethro.dev)'s [elisp](https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html#Introduction) [child](https://www.orgroam.com).
 
 Also, who the hell is [Tiago Forte](https://fortelabs.co/)? He's like a bargain bin Elon Musk who just appeared out of thin air one day and no one seems to know why. Why are people paying this man [$5000](https://web.archive.org/web/20210101170747/https://www.buildingasecondbrain.com/) to go *right click* ➡ "New text file"? I don't understand.
 
-Anyway, in that vein, blogging feels like a zettlekasten hidden in plain sight. It carries all of the benefits of one without having to think about the wider ecosystem and that sounds pretty comforting.
+Anyway, in that vein, blogging feels like a zettelkasten hidden in plain sight. It carries all of the benefits of one without having to think about the wider ecosystem and that sounds pretty comforting.
 
 Having convinced myself that reducing the scope of each blog post is probably a good idea while writing this post, I've now got an entire scrawl of at least 5 different topics on my normally empty whiteboard.
 
 I haven't even done anything yet and so far, it seems pretty promising!
 
-[^not-succinct]: Can I just take a second to say that it feels massively ironic that most of the literature around zettlekasten topics are so dense to the point of giving me a brain aneurysm. 
+[^not-succinct]: Can I just take a second to say that it feels massively ironic that most of the literature around zettelkasten topics are so dense to the point of giving me a brain aneurysm. 
 <span></span>
-Like, just go back and have a look at that [earlier link for zettlekasten](https://zettelkasten.de/introduction/). What the hell is that?! That's a thesis, not an introduction!
+Like, just go back and have a look at that [earlier link for zettelkasten](https://zettelkasten.de/introduction/). What the hell is that?! That's a thesis, not an introduction!
 <span></span>
 It's almost as bad as that [New York Times recipe](https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars) that starts off by referencing 9/11.
 
-[^internet]: Wait a minute, the internet is basically just one big zettlekasten?!
+[^internet]: Wait a minute, the internet is basically just one big zettelkasten?!
 
 [^gatsby]: I've recently been stuck in a dilemma with [Gatsby](https://gatsbyjs.com) between "Oooh, looks shiny" and "This is going to erode in like 2 years, isn't it".
 <span></span>
