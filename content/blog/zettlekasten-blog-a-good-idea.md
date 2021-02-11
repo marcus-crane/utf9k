@@ -4,7 +4,7 @@ date = "2021-02-11T17:00:00+1300"
 slug = "zettelkasten-blog-a-good-idea"
 tags = ["zettelkasten", "blogging", "meta"]
 aliases = [
-  "/blog/zettelekasten-blog-a-good-idea/"
+  "/blog/zettlekasten-blog-a-good-idea/"
 ]
 +++
 
