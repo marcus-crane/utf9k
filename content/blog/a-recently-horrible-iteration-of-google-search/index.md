@@ -1,7 +1,7 @@
 +++
 title = "Google recently surfaced awful results for movies and tv"
 slug = "a-recently-horrible-iteration-of-google-search"
-date = "2021-02-13T12:49:00+1300"
+date = "2021-02-13T1:11:00+1300"
 +++
 
 I don't know about you but whenever I have just watched a movie, or tv series, I like to look it up on Wikipedia to read about the development behind the scenes and how it was received upon release.

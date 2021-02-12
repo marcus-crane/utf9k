@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "yarn install && hugo --gc --minify"
+command = "yarn install && hugo --gc --minify --buildFuture"
 
 [build.environment]
 HUGO_VERSION = "0.78.2"
