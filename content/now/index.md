@@ -1,7 +1,7 @@
-+++
-slug = "now"
-title = "Now"
-+++
+---
+title: "Now"
+slug: "now"
+---
 
 ## Trying not to enter a coma
 

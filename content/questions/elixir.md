@@ -1,11 +1,10 @@
-+++
-title = "Elixir"
-date = "2020-08-29"
-slug = "elixir"
-aliases = [
-  "/notes/elixir/"
-]
-+++
+---
+title: "Elixir"
+date: "2020-08-29"
+slug: "elixir"
+aliases:
+  - /notes/elixir/
+---
 
 ## How can I view methods associated with an object?
 

@@ -1,7 +1,7 @@
-+++
-slug = "about"
-title = "About"
-+++
+---
+title: "About"
+slug: "about"
+---
 
 I never write as much as I wish I would but there's a handful of articles you can read.
 

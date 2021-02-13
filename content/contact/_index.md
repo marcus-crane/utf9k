@@ -1,4 +1,4 @@
-+++
-slug = "contact"
-title = "Contact"
-+++
+---
+title: "Contact"
+slug: "contact"
+---

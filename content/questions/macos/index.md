@@ -1,11 +1,10 @@
-+++
-title = "macOS"
-date = "2020-09-15"
-slug = "macos"
-aliases = [
-  "/notes/macos/"
-]
-+++
+---
+title: "macOS"
+date: "2020-09-15"
+slug: "macos"
+aliases:
+  - /notes/macos/
+---
 
 ## How can I view configured networks in my terminal?
 

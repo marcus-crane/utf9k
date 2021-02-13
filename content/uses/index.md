@@ -1,7 +1,7 @@
-+++
-slug = "uses"
-title = "Uses"
-+++
+---
+title: "Uses"
+slug: "uses"
+---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
 
