@@ -92,12 +92,7 @@ This post has already gone on long enough so here's a few proof of concepts off 
 *   [Disney's FaceDirector](https://youtu.be/o-nJpaCXL0k?t=212)
 
 *   [Adobe VoCo](https://youtu.be/I3l4XLZ59iw?t=199)
-<<<<<<< HEAD:content/blog/deepfakes/index.md
     
 *   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
 
 [^deadlink]: This link has been dead since the /r/deepfakes subreddit was banned and no backup could be found using the Internet Archive's Wayback Machine. Rather than remove it, I've decided to preserve this URL in the event that an archive ever reappears.
-=======
-
-*   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
->>>>>>> master:content/blog/deepfakes.md
