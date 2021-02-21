@@ -3,8 +3,8 @@ title: "Address book sorting"
 slug: "address-book-sorting"
 date: "2021-02-21T22:48:00+13:00"
 tags:
-	- "people"
-	- "software"
+- "people"
+- "software"
 ---
 
 When I boot up an Apple device for the first time, it always strikes me as annoying to find that the address book is sorted by last name first.
