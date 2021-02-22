@@ -1,9 +1,14 @@
-+++
-title = "Managing subscriptions with an extra debit card"
-date = "2021-01-11 23:40:00 +1300"
-slug = "subscription-management"
-tags = ["finance", "budgets", "subscriptions", "money", "tip"]
-+++
+---
+title: "Managing subscriptions with an extra debit card"
+date: "2021-01-11 23:40:00 +1300"
+slug: "subscription-management"
+tags:
+- "finance"
+- "budgets"
+- "subscriptions"
+- "money"
+- "tip"
+---
 
 The title says it all really but I'll go into detail a little more.
 

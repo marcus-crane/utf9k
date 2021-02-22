@@ -1,9 +1,12 @@
-+++
-title = "Installing Arch Linux on my Intel NUC"
-date = "2017-12-24"
-slug = "arch-nuc-install"
-tags = ["arch", "guide", "linux"]
-+++
+---
+title: "Installing Arch Linux on my Intel NUC"
+date: "2017-12-24"
+slug: "arch-nuc-install"
+tags:
+- "arch"
+- "guide"
+- "linux"
+---
 
 {{% notice title="Is this up to date?" %}}
 While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.

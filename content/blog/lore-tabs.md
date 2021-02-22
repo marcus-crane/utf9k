@@ -1,9 +1,10 @@
-+++
-title = "Humans don't come with lore tabs"
-date = "2018-02-28"
-slug = "lore-tabs"
-tags = ["people"]
-+++
+---
+title: "Humans don't come with lore tabs"
+date: "2018-02-28"
+slug: "lore-tabs"
+tags:
+- "people"
+---
 
 This post has been a long time coming because I've never really known how to express it. I'm not even sure I can write it properly anyway but I'm going to at least try.
 

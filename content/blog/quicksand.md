@@ -1,9 +1,12 @@
-+++
-title = "Quicksand"
-date = "2020-07-01"
-slug = "quicksand"
-tags = ["rambling", "depression", "frustration"]
-+++
+---
+title: "Quicksand"
+date: "2020-07-01"
+slug: "quicksand"
+tags:
+- "rambling"
+- "depression"
+- "frustration"
+---
 
 I think one of the worst feelings is that of being stuck in quicksand.
 

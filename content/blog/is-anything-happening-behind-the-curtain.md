@@ -1,8 +1,8 @@
-+++
-title = "Is anything happening behind the curtain?"
-slug = "is-anything-happening-behind-the-curtain"
-date = "2021-01-31 15:41:00 +13:00"
-+++
+---
+title: "Is anything happening behind the curtain?"
+slug: "is-anything-happening-behind-the-curtain"
+date: "2021-01-31 15:41:00 +13:00"
+---
 
 This week has definitely been one of the more interesting ones I can remember.
 

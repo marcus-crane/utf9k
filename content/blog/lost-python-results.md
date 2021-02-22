@@ -1,9 +1,11 @@
-+++
-title = "Recovering lost Python results in the REPL"
-date = "2018-12-12"
-slug = "lost-python-results"
-tags = ["python", "snippet"]
-+++
+---
+title: "Recovering lost Python results in the REPL"
+date: "2018-12-12"
+slug: "lost-python-results"
+tags:
+- "python"
+- "snippet"
+---
 
 I was messing around with some queuing earlier today in order to try out the [Kombu](https://github.com/celery/kombu) library. It works pretty nicely but I goofed up while playing with it.
 

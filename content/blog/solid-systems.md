@@ -1,8 +1,8 @@
-+++
-title = "Will we ever get solid systems?"
-date = "2020-12-01"
-slug = "solid-systems"
-+++
+---
+title: "Will we ever get solid systems?"
+date: "2020-12-01"
+slug: "solid-systems"
+---
 
 If I had a crystal ball in front of me, one of the things I would like to ask is "Will we, the human race, ever get solid systems?".
 

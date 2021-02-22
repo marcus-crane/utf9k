@@ -1,9 +1,10 @@
-+++
-title = "Day One"
-date = "2020-08-30"
-slug = "day-one"
-tags = ["work"]
-+++
+---
+title: "Day One"
+date: "2020-08-30"
+slug: "day-one"
+tags:
+- "work"
+---
 
 It's the night before my first day with Mercedes-Benz as a Site Reliability Engineer. This post is a sequel to [Day Xero](https://utf9k.net/blog/day-xero), written a few years back.
 

@@ -3,7 +3,7 @@ title: "Powershell"
 date: "2020-08-29"
 slug: "powershell"
 aliases:
-  - /notes/powershell/
+- "/notes/powershell/"
 ---
 
 ## How can I view the methods associated with an object?

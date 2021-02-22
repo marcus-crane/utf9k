@@ -1,8 +1,8 @@
-+++
-title = "Emacs probably isn't right for me"
-slug = "emacs-probably-isnt-right-for-me"
-date = "2021-02-13T17:41:00+1300"
-+++
+---
+title: "Emacs probably isn't right for me"
+slug: "emacs-probably-isnt-right-for-me"
+date: "2021-02-13T17:41:00+1300"
+---
 
 I'm not someone who tends to wear my text editor on my sleeve, probably because I don't stick to just one anyway, but I've probably mentioned Emacs more than most in the last year or two.
 

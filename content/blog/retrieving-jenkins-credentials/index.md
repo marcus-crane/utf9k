@@ -1,9 +1,12 @@
-+++
-title = "Retrieving credentials from Jenkins"
-date = "2019-07-29"
-slug = "retrieving-jenkins-credentials"
-tags = ["cicd", "jenkins", "security"]
-+++
+---
+title: "Retrieving credentials from Jenkins"
+date: "2019-07-29"
+slug: "retrieving-jenkins-credentials"
+tags:
+- "cicd"
+- "jenkins"
+- "security"
+---
 
 Have you ever stored a password in Jenkins, only to forget later on what the value is? You might try logging it from inside an existing job, but you'll find that Jenkins goes out of its way to mask that value from you (and any potential attackers!)
 

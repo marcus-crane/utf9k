@@ -1,9 +1,12 @@
-+++
-title = "When automation goes horribly right"
-date = "2018-12-03"
-slug = "automation-right"
-tags = ["automation", "microservices", "twitter"]
-+++
+---
+title: "When automation goes horribly right"
+date: "2018-12-03"
+slug: "automation-right"
+tags:
+- "automation"
+- "microservices"
+- "twitter"
+---
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
 

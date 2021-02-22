@@ -1,9 +1,13 @@
-+++
-title = "Dealing with multiple git hosts"
-date = "2020-01-06"
-slug = "multiple-git-hosts"
-tags = ["git", "github", "gitlab", "linux"]
-+++
+---
+title: "Dealing with multiple git hosts"
+date: "2020-01-06"
+slug: "multiple-git-hosts"
+tags:
+- "git"
+- "github"
+- "gitlab"
+- "linux"
+---
 
 {{% notice title="Some things have changed since I first wrote this" %}}
 At the time of writing, I was using Gitlab so you'll see references to my dotfiles living there.

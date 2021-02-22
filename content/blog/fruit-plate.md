@@ -1,9 +1,12 @@
-+++
-title = "Fruit Plate"
-date = "2020-11-02"
-slug = "fruit-plate"
-tags = ["work", "overhead", "productivity"]
-+++
+---
+title: "Fruit Plate"
+date: "2020-11-02"
+slug: "fruit-plate"
+tags:
+- "work"
+- "overhead"
+- "productivity"
+---
 
 I ordered a fruit plate about 15 minutes ago.
 

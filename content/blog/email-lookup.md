@@ -1,9 +1,13 @@
-+++
-title = "Double checking if an email address exists"
-date = "2019-09-26"
-slug = "email-lookup"
-tags = ["email", "nslookup", "telnet", "tip"]
-+++
+---
+title: "Double checking if an email address exists"
+date: "2019-09-26"
+slug: "email-lookup"
+tags:
+- "email"
+- "nslookup"
+- "telnet"
+- "tip"
+---
 
 Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
 

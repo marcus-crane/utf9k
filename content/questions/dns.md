@@ -3,7 +3,7 @@ title: "DNS"
 date: "2020-11-28"
 slug: "dns"
 aliases:
-  - /notes/dns-and-bind/
+- "/notes/dns-and-bind/"
 ---
 
 ## How was DNS originally implemented?

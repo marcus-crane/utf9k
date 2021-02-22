@@ -1,9 +1,14 @@
-+++
-title = "Setting up Emacs inside of a WSL2 distribution"
-date = "2020-05-06"
-slug = "emacs-wsl2-install"
-tags = ["emacs", "linux", "unix", "windows", "wsl"]
-+++
+---
+title: "Setting up Emacs inside of a WSL2 distribution"
+date: "2020-05-06"
+slug: "emacs-wsl2-install"
+tags:
+- "emacs"
+- "linux"
+- "unix"
+- "windows"
+- "wsl"
+---
 
 I've never really dedicated myself to Emacs despite being interested in [org mode](https://orgmode.org/) for a little while now.
 
