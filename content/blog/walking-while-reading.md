@@ -1,6 +1,6 @@
 ---
 title: "We are all that person who reads a book while walking"
-date: "2020-03-03T13:02:46+1300"
+date: "2021-03-03T13:02:46+1300"
 slug: "walking-while-reading"
 tags:
 - people
