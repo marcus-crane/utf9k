@@ -71,6 +71,10 @@
   p > code {
     background-color: var(--blueish-text);
   }
+
+  .littlefoot-footnote__wrapper {
+    background-color: var(--blueish-headers);
+  }
 }
 
 /***
