@@ -17,11 +17,11 @@
 {{ $littleFoot := resources.Get "css/littlefoot.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 
 {{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $littleFoot.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
 {{ $minStyles := $styles | minify | fingerprint | resources.PostProcess }}
 {{ $minLittleFoot := $littleFoot | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $minStyles.RelPermalink }}" integrity="{{ $minStyles.Data.Integrity }}" />
 <link rel="stylesheet" href="{{ $minLittleFoot.RelPermalink }}" integrity="{{ $minLittleFoot.Data.Integrity }}" />
+<link rel="stylesheet" href="{{ $minStyles.RelPermalink }}" integrity="{{ $minStyles.Data.Integrity }}" />
 {{ end }}
