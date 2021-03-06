@@ -72,7 +72,7 @@
     background-color: var(--blueish-text);
   }
 
-  .littlefoot-footnote__wrapper {
+  .littlefoot-footnote__content {
     background-color: var(--blueish-headers);
   }
 }
