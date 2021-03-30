@@ -1,6 +1,6 @@
 ---
 title: "25"
-date: "2019-08-19"
+date: "2019-08-19T00:00:00+1300"
 slug: "25"
 category: "blog"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Installing Arch Linux on my Intel NUC"
-date: "2017-12-24"
+date: "2017-12-24T00:00:00+1300"
 slug: "arch-nuc-install"
 category: "blog"
 tags:

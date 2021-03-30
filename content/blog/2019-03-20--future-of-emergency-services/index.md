@@ -1,6 +1,6 @@
 ---
 title: "What is the future of emergency services?"
-date: "2019-03-20"
+date: "2019-03-20T00:00:00+1300"
 slug: "future-of-emergency-services"
 category: "blog"
 tags:

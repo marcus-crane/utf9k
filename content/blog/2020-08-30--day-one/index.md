@@ -1,6 +1,6 @@
 ---
 title: "Day One"
-date: "2020-08-30"
+date: "2020-08-30T00:00:00+1300"
 slug: "day-one"
 category: "blog"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Fruit Plate"
-date: "2020-11-02"
+date: "2020-11-02T00:00:00+1300"
 slug: "fruit-plate"
 category: "blog"
 tags:

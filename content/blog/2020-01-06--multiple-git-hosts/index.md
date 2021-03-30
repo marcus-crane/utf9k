@@ -1,6 +1,6 @@
 ---
 title: "Dealing with multiple git hosts"
-date: "2020-01-06"
+date: "2020-01-06T00:00:00+1300"
 slug: "multiple-git-hosts"
 category: "blog"
 tags:

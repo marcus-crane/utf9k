@@ -1,6 +1,6 @@
 ---
 title: "Quicksand"
-date: "2020-07-01"
+date: "2020-07-01T00:00:00+1300"
 slug: "quicksand"
 category: "blog"
 tags:

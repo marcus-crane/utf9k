@@ -1,6 +1,6 @@
 ---
 title: "Relying on the internet as a business"
-date: "2020-10-06"
+date: "2020-10-06T00:00:00+1300"
 slug: "internet-reliance"
 category: "blog"
 tags:

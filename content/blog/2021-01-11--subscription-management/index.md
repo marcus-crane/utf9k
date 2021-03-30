@@ -1,6 +1,6 @@
 ---
 title: "Managing subscriptions with an extra debit card"
-date: "2021-01-11 23:40:00 +1300"
+date: "2021-01-11T23:40:00+1300"
 slug: "subscription-management"
 category: "blog"
 tags:

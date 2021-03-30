@@ -1,6 +1,6 @@
 ---
 title: "My bookmarking categories in March 2020"
-date: "2020-03-08"
+date: "2020-03-08T00:00:00+1300"
 slug: "bookmarking-march-2020"
 category: "blog"
 tags:

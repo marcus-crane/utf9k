@@ -1,6 +1,6 @@
 ---
 title: "Tidying up towing data with Pandas"
-date: "2020-11-23"
+date: "2020-11-23T00:00:00+1300"
 slug: "tidying-towing-data"
 category: "blog"
 tags:

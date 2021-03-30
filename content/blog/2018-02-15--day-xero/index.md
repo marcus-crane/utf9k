@@ -1,6 +1,6 @@
 ---
 title: "Day Xero"
-date: "2018-02-15"
+date: "2018-02-15T00:00:00+1300"
 slug: "day-xero"
 category: "blog"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Recovering lost Python results in the REPL"
-date: "2018-12-12"
+date: "2018-12-12T00:00:00+1300"
 slug: "lost-python-results"
 category: "blog"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Is anything happening behind the curtain?"
-date: "2021-01-31 15:41:00 +13:00"
+date: "2021-01-31T15:41:00+1300"
 slug: "is-anything-happening-behind-the-curtain"
 category: "blog"
 ---

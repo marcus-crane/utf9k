@@ -1,6 +1,6 @@
 ---
 title: "Configuration magic"
-date: "2020-11-20"
+date: "2020-11-20T00:00:00+1300"
 slug: "configuration-magic"
 category: "blog"
 ---

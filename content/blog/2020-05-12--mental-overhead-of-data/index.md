@@ -1,6 +1,6 @@
 ---
 title: "Data hoarding seems like a large mental overhead"
-date: "2020-05-12"
+date: "2020-05-12T00:00:00+1300"
 slug: "mental-overhead-of-data"
 category: "blog"
 tags:

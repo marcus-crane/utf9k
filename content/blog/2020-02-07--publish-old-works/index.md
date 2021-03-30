@@ -1,6 +1,6 @@
 ---
 title: "You should publish your older works"
-date: "2020-02-07"
+date: "2020-02-07T00:00:00+1300"
 slug: "publish-old-works"
 category: "blog"
 tags:

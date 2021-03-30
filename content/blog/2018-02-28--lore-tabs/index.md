@@ -1,6 +1,6 @@
 ---
 title: "Humans don't come with lore tabs"
-date: "2018-02-28"
+date: "2018-02-28T00:00:00+1300"
 slug: "lore-tabs"
 category: "blog"
 tags:

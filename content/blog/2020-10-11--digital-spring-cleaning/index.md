@@ -1,6 +1,6 @@
 ---
 title: "Digital Spring Cleaning"
-date: "2020-10-11"
+date: "2020-10-11T00:00:00+1300"
 slug: "digital-spring-cleaning"
 category: "blog"
 tags:

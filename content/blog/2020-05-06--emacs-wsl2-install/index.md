@@ -1,6 +1,6 @@
 ---
 title: "Setting up Emacs inside of a WSL2 distribution"
-date: "2020-05-06"
+date: "2020-05-06T00:00:00+1300"
 slug: "emacs-wsl2-install"
 category: "blog"
 tags:
