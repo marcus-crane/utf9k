@@ -3,6 +3,11 @@ title: "Latency as a forcing function"
 date: "2021-01-29T14:53:00+1300"
 slug: "latency-as-a-forcing-function"
 category: "blog"
+tags:
+- "bugs"
+- "latency"
+- "patience"
+- "people"
 ---
 
 I'm probably not alone in admitting that sometimes *not* checking work apps can be pretty hard.

@@ -4,6 +4,9 @@ date: "2099-12-29T00:00:00+1300"
 slug: "barrier-and-routing"
 category: "blog"
 draft: true
+tags:
+- "convenience"
+- "networking"
 ---
 
 ## Using Barrier while using a VPN

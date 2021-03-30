@@ -4,6 +4,10 @@ date: "2099-11-26T00:00:00+1300"
 slug: "bad-bluetooth-audio"
 category: "blog"
 draft: true
+tags:
+- "audio"
+- "bluetooth"
+- "mysteries"
 ---
 
 This post baffles me a little bit because I'm seriously getting a case of the

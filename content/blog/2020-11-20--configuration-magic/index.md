@@ -3,6 +3,9 @@ title: "Configuration magic"
 date: "2020-11-20T00:00:00+1300"
 slug: "configuration-magic"
 category: "blog"
+tags:
+- "complexity"
+- "configuration"
 ---
 
 I don't consider myself qualified enough to write much on the art of programming but I think this is probably the closest I've ever found myself.

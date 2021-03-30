@@ -3,6 +3,10 @@ title: "Google recently surfaced awful results for movies and tv"
 date: "2021-02-13T01:11:00+1300"
 slug: "a-recently-horrible-iteration-of-google-search"
 category: "blog"
+tags:
+- "google"
+- "media"
+- "search"
 ---
 
 I don't know about you but whenever I have just watched a movie, or tv series, I like to look it up on Wikipedia to read about the development behind the scenes and how it was received upon release.
