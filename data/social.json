@@ -40,12 +40,6 @@
         "link": "https://www.goodreads.com/utf9k"
       },
       {
-        "service": "Kitsu",
-        "logo": "kitsu.png",
-        "username": "sentry",
-        "link": "https://kitsu.io/users/sentry"
-      },
-      {
         "service": "Trakt",
         "logo": "trakt.svg",
         "username": "Sentry",
