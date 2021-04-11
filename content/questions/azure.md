@@ -1,4 +1,12 @@
-# Azure
+---
+title: "Azure"
+slug: "dns"
+category: "questions"
+tags:
+- "azure"
+- "cloud"
+- "microsoft"
+---
 
 ## Are all regions alike?
 
