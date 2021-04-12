@@ -37,7 +37,7 @@
         "service": "Goodreads",
         "logo": "goodreads.png",
         "username": "utf9k",
-        "link": "https://www.goodreads.com/utf9k"
+        "link": "https://www.goodreads.com/user/show/76423177-marcus"
       },
       {
         "service": "Trakt",
@@ -60,7 +60,7 @@
         "service": "Instagram",
         "logo": "instagram.svg",
         "username": "sentryism",
-        "link": "https://instagram.com/sentryism"
+        "link": "https://instagram.com/sentryism/"
       },
       {
         "service": "Line",
@@ -72,7 +72,7 @@
         "service": "Linkedin",
         "logo": "linkedin.svg",
         "username": "marcus-crane",
-        "link": "https://linkedin.com/in/marcus-crane"
+        "link": "https://www.linkedin.com/in/marcus-crane/"
       },
       {
         "service": "Spotify",
