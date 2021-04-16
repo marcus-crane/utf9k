@@ -58,7 +58,7 @@ Enter the following into the script console: `println(hudson.util.Secret.decrypt
 {{< figure
   src="final-result.png"
   link="final-result.png"
-  alt='A screenshot of the Jenkins Script Console UI. The user has pasted the copied input from the Firefox browser tools that was open in an earlier screenshot. This input has been wrapped in some Jenkins functions. Below the Script Console is an output area with the actual password of the credential that was previously redacted.'
+  alt="A screenshot of the Jenkins Script Console UI. The user has pasted the copied input from the Firefox browser tools that was open in an earlier screenshot. This input has been wrapped in some Jenkins functions. Below the Script Console is an output area with the actual password of the credential that was previously redacted."
 >}}
 
 It's a pretty handy trick, but quite obviously a borderline exploit at the same time. It's up to you to use it responsibly!
