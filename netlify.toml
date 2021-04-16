@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "yarn install && hugo --gc --minify --buildFuture"
+command = "yarn install && hugo --gc --buildFuture"
 
 [build.environment]
 HUGO_VERSION = "0.78.2"
@@ -58,6 +58,7 @@ X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
 Referrer-Policy = "no-referrer"
+Permissions-Policy = "interest-cohort=()"
 
 [[plugins]]
 package = "netlify-plugin-a11y"
