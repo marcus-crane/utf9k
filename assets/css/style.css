@@ -293,6 +293,7 @@ main ul li {
 */
 article .highlight {
   grid-column: 3 / span 1;
+  overflow: scroll;
   /* grid-column: 2 / span 3; */
 }
 
@@ -301,8 +302,8 @@ article .highlight {
 ***/
 
 .highlight > pre {
+  display: inline-block;
   margin-top: 1rem;
-  overflow: scroll;
   padding: 2rem;
 }
 
