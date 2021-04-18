@@ -9,3 +9,7 @@
 .lg\:prose-xl .notice p {
 	@apply mb-0
 }
+
+.prose code::before, .prose code::after {
+	content: none;
+}
