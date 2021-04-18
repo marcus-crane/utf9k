@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article>
+<article class="prose lg:prose-xl dark:prose-dark">
   <header>
     <h1>{{ .Title }}</h1>
     <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time> · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}

@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "yarn install && hugo --gc --buildFuture"
+command = "yarn install && yarn run build"
 
 [build.environment]
 HUGO_VERSION = "0.78.2"

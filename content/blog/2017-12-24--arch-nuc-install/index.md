@@ -9,7 +9,7 @@ tags:
 - "linux"
 ---
 
-{{% notice title="Is this up to date?" %}}
+{{% notice title="⚰️ Is this up to date?" %}}
 While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.
 
 If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide and expect that it should be fairly seemless.
@@ -54,7 +54,7 @@ My hard drive will end up looking as follows once I've set it up:
 
 I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) BIOS so we'll be using [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table) for our partition table.
 
-The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde ({tilde}}) indicate resources where you can read further information if you're the curious sort.
+The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde (\~) indicate resources where you can read further information if you're the curious sort.
 
 {{% notice title="⚠️ Consider yourself warned" %}}
 The following *WILL* wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS

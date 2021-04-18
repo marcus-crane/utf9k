@@ -9,7 +9,7 @@ tags:
 - "technology"
 ---
 
-{{% notice title="This post has been remastered slightly due to its age." %}}
+{{% notice title="💿 This post has been remastered slightly due to its age." %}}
 I've made some slight rewordings, fixed typos and revived any links I could using the [Wayback Machine](https://web.archive.org/) but otherwise, the post is 99% intact from when I first wrote it.
 
 I didn't realise just how much I had written about this at the time.
