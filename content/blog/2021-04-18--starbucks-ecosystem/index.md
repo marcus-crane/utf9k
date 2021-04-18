@@ -28,13 +28,13 @@ While I won't go into it too much, nor am I particularly qualified to, there are
 
 A condensed version of those characteristics is roughly that:
 
-* It should be neutral: No one is required to be there for any reason. You can come and go as you like.
-* Status should not matter: Whether you're an executive or a retail assistant, you get the same treatment.
-* The main activity is conversation: Assuming you're with friends or feel comfortable meeting strangers, the primary activity you'll be doing is talking. Starbucks has a bit of an asterisk here as people also come to work in a solo capacity
-* There tend to be regulars: The presence of regulars sets the tone and their presence also attracts newcomers.
-* The location has a low profile: It never feels intentionally pretentious or exclusive to any particular section of society.
-* It has a light tone: There's never a sense of tension or seriousness.
-* It feels like a second home: You feel like you belong, or perhaps more accurately, like you're not unwanted given it is a business after all.
+* **It should be neutral**: No one is required to be there for any reason. You can come and go as you like.
+* **Status should not matter**: Whether you're an executive or a retail assistant, you get the same treatment.
+* **The main activity is conversation**: Assuming you're with friends or feel comfortable meeting strangers, the primary activity you'll be doing is talking. Starbucks has a bit of an asterisk here as people also come to work in a solo capacity
+* **There tend to be regulars**: The presence of regulars sets the tone and their presence also attracts newcomers.
+* **The location has a low profile**: It never feels intentionally pretentious or exclusive to any particular section of society.
+* **It has a light tone**: There's never a sense of tension or seriousness.
+* **It feels like a second home**: You feel like you belong, or perhaps more accurately, like you're not unwanted given it is a business after all.
 
 At this point, I've also forgotten what I was writing about but this is a long winded way of saying that I consider Starbucks to be a third place for some, whether they realise it or not.
 
