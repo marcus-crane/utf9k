@@ -1,27 +1,8 @@
-<div id="overview">
-  <div class="breadcrumbs">
-    <a href="/">
-      <span class="favicon">
-        <img src="/favicon.png" alt="The utf9k logo which is a cartoon robot" />
-      </span>
-      <sup class="sitename">utf9k</sup>
-    </a>
-    {{ if .Section }}
-      <a href="../">
-        <sup class="section">{{ .Section }}</sup>
-      </a>
-    {{ end }}
-    {{ if .File }}
-      {{ if and (ne .File.TranslationBaseName "_index") (ne .RelPermalink "/") }}
-        <a href="../">
-          <sup class="slug">{{ .Slug }}</sup>
-        </a>
-      {{ end }}
-    {{ end }}
-  </div>
-  <div class="links breadcrumbs">
-    <a href="/index.xml">
-      <sup class="sitename">rss</sup>
+<header class="text-gray-600 dark:text-gray-400 dark:text-white body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 dark:text-gray-200 mb-4 md:mb=0" href="/">
+      <img src="/favicon.png" alt="The utf9k logo which is a cartoon robot" />
+      <span class="ml-3 text-xl">utf9k</span>
     </a>
   </div>
-</div>
+</header>
