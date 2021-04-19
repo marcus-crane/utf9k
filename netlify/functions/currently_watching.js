@@ -1,3 +1,5 @@
+const fetch = require("node-fetch")
+
 const API_ENDPOINT = "https://api.trakt.tv/users/sentry/watching"
 
 exports.handler = async function(event, context) {
@@ -11,7 +13,7 @@ exports.handler = async function(event, context) {
 
   let response
   try {
-    response = await fetch(API_ENDPOINT, headers=headers)
+    response = await fetch(API_ENDPOINT, { headers: headers })
   } catch (err) {
     return {
       statusCode: err.statusCode || 500,
@@ -24,7 +26,7 @@ exports.handler = async function(event, context) {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      data: response
+      data: response.json()
     })
   }
 }
