@@ -15,7 +15,7 @@
 
 {{ define "script" }}
 <script type="text/javascript">
-  fetch("http://localhost:8888/.netlify/functions/currently_watching")
+  fetch("/.netlify/functions/currently_watching")
     .then(res => res.json())
     .then(data => {
       let showSentence = document.querySelector("#showsentence")
