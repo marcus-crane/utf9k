@@ -7,7 +7,7 @@ exports.handler = async function(event, context) {
 
   headers = {
     "Content-Type": "application/json",
-    "trakt-api-version": 2,
+    "trakt-api-version": "2",
     "trakt-api-key": clientID
   }
 
@@ -15,10 +15,10 @@ exports.handler = async function(event, context) {
     .then(response => response.json())
     .then(data => ({
       statusCode: 200,
-      body: data
+      body: JSON.stringify(data)
     }))
     .catch(error => ({
-      statusCode: error.statusCode || 500,
+      statusCode: 500,
       body: JSON.stringify({ error: error.message })
     }))
 }
