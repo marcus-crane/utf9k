@@ -2,7 +2,7 @@ const fetch = require("node-fetch")
 
 const API_ENDPOINT = "https://api.trakt.tv/users/sentry/watching"
 
-exports.handler = async function(event, context) {
+exports.handler = async function(event, context) => {
   const clientID = process.env.CLIENT_ID
 
   headers = {
@@ -11,21 +11,14 @@ exports.handler = async function(event, context) {
     "trakt-api-key": clientID
   }
 
-  let response
-  try {
-    response = await fetch(API_ENDPOINT, { headers: headers })
-    data = response.json()
-  } catch (err) {
-    return {
-      statusCode: err.statusCode || 500,
-      body: JSON.stringify({
-        error: err.message
-      })
-    }
-  }
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify(data)
-  }
+  return fetch(API_ENDPOINT, { headers })
+    .then(response => response.json())
+    .then(data => ({
+      statusCode: 200,
+      body: data
+    }))
+    .catch(error => ({
+      statusCode: error.statusCode || 500,
+      body: JSON.stringify({ error: error.message })
+    }))
 }
