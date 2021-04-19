@@ -27,7 +27,3 @@ Images and other static content lives in `static` (for now)
 ## Deployment
 
 Deployment is handled automatically by [Netlify](https://netlify.com) upon a merge to master
-
-I also use a `next` branch, which renders pushes to [next.utf9k.net](https://next.utf9k.net). Future and draft posts are visible to allow easier proof reading that mirrors the final result.
-
-I might also try splitting traffic to test out layout tweaks or something but honestly, I have no idea how I'd meaningfully measure the success of such a thing.
