@@ -4,4 +4,5 @@ exports.handler = async function(event, context) {
     body: JSON.stringify({
       "hi": 123
     })
+  }
 }
