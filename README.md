@@ -4,17 +4,19 @@
 ![Netlify Build Status](https://img.shields.io/netlify/6c4341d4-b644-4fcb-ba4d-c67d63c92e9c)
 ![Hugo version](https://img.shields.io/badge/hugo-v0.78.2-blue)
 
-This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
+This is my personal website, which is powered by [Hugo](https://www.gohugo.io), [Tailwind](https://tailwindcss.com/) and [CommonMark](https://commonmark.org).
 
 ## Getting setup
 
-To get started, you'll want to install Hugo using one of the variety of [officially supported installation methods](https://gohugo.io/getting-started/installing/)
+To get started, you'll want to install Hugo using one of the variety of [officially supported installation methods](https://gohugo.io/getting-started/installing/).
 
-Once you've got the `hugo` binary, you should just be able to run `hugo server` to open my site in your browser
+You'll also need to have [npm](https://www.npmjs.com/get-npm) installed.
 
-I find that some of the pages render differently locally, such as the blog post list not chunking by year.
+I recommend using [yarn](https://yarnpkg.com/) as a package manager but nom works fine.
 
-Running `hugo server --disableFastRender` seems to fix this but I haven't looked into it too deeply just yet
+Once you've got both of those set up, running `yarn start` will do everything required to start up a local server.
+
+You should be able to access the development version of the site at http://localhost:1313
 
 ## Layout
 
