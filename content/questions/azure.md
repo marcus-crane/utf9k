@@ -1,6 +1,6 @@
 ---
 title: "Azure"
-slug: "dns"
+slug: "azure"
 category: "questions"
 tags:
 - "azure"

@@ -1,13 +1,6 @@
 {{ define "main" }}
 <main class="prose lg:prose-xl dark:prose-dark">
   <h1>Answers to questions I'll soon forget</h1>
-  <div class="flex rounded-lg bg-gray-100 dark:bg-gray-800 p-8 flex-col notice">
-    <h3 class="text-gray-900 text-lg title-font font-medium">📚 Looking for the notes section?</h3>
-    <p>This area used to be called notes and the wishy washy nature of it reflected that.</p>
-    <p>I realised that the best elements of it were when I would ask a question and then go and answer it so I've decided to make this a collection of FAQs to myself.</p>
-    <p>You'll notice that I've aliased all of the posts so the original links will work but I've also removed some posts that were just arbitrary literature notes.</p>
-    <p>If there were some you wanted to read through, you can find them <a href="https://github.com/marcus-crane/utf9k/tree/74d0bbb2078ed0b02b200461c4b84da5747bf88d/content/notes">on Github.</a></p>
-  </div>
   <ul>
     {{ range sort .Pages "Title" "asc" }}
     <li>
