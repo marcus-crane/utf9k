@@ -14,6 +14,7 @@ exports.handler = async function(event, context) {
   let response
   try {
     response = await fetch(API_ENDPOINT, { headers: headers })
+    data = response.json()
   } catch (err) {
     return {
       statusCode: err.statusCode || 500,
@@ -25,8 +26,6 @@ exports.handler = async function(event, context) {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({
-      data: response.json()
-    })
+    body: JSON.stringify(data)
   }
 }
