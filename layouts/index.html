@@ -7,7 +7,37 @@
     <p>My name is <a href="/about/">Marcus Crane</a> and you’re currently logged on to my personal website.</p>
     <p>I maintain a <a href="/blog/">blog</a> and also keep a running lists of <a href="/questions/">questions</a> regarding topics I often want to remember things about for later.</p>
     <p>If you want to know what I’m up to, or realistically what I was up to like two weeks ago, there’s a <a href="/now/">page</a> for that.</p>
+    <p id="showsentence" class="hidden">On a more recent note, I'm currently watching <span id="shownumber"></span> of <span id="showname"></span> as you're reading this very sentence. Isn't technology cool?</p>
     <p>Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.</p>
   </div>
 </article>
+{{ end }}
+
+{{ define "script" }}
+<script type="text/javascript">
+  fetch("http://localhost:8888/.netlify/functions/currently_watching")
+    .then(res => res.json())
+    .then(data => {
+      let showSentence = document.querySelector("#showsentence")
+      if (Object.values(data).length !== 0) {
+        let showNum = document.querySelector('#shownumber')
+        let showName = document.querySelector('#showname')
+
+        const seasonNumber = data['episode']['season']
+        const episodeNumber = data['episode']['number']
+        const episodeIMDB = data['episode']['ids']['imdb']
+        const show = data['show']['title']
+        const showYear = data['show']['year']
+        const showIMDB = data['episode']['ids']['imdb']
+
+        showNum.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${episodeIMDB}/">S${seasonNumber}E${episodeNumber}</a>`
+        showName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${showIMDB}/">${show} (${showYear})</a>`
+
+        showSentence.className = 'visible'
+      } else {
+        showSentence.className = 'hidden'
+      }
+    })
+    .catch(err => console.error(`Hmm, something went wrong: ${err}`))
+</script>
 {{ end }}

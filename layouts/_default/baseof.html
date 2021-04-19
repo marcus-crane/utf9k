@@ -8,5 +8,6 @@
   {{ partial "header.html" . }}
   <div class="container px-5 py-8 mx-auto ">{{ block "main" . }}{{ end }}</div>
   {{ partial "footer.html" . }}
+  {{ block "script" . }}{{ end }}
 </body>
 </html>
