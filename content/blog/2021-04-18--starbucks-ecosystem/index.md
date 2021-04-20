@@ -2,6 +2,7 @@
 title: "Starbucks Rewards or: Whether a Coffee Shop Can Be a Third Place"
 date: "2021-04-18T13:21:00+1300"
 slug: "starbucks-rewards-third-place"
+description: "A post in which I ramble about Starbucks and how if you squint, it's a place that some people treat as their second home."
 category: "blog"
 tags:
 - "apps"
