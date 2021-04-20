@@ -28,7 +28,7 @@
         const episodeIMDB = data['episode']['ids']['imdb']
         const show = data['show']['title']
         const showYear = data['show']['year']
-        const showIMDB = data['episode']['ids']['imdb']
+        const showIMDB = data['show']['ids']['imdb']
 
         showNum.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${episodeIMDB}/">S${seasonNumber}E${episodeNumber}</a>`
         showName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${showIMDB}/">${show} (${showYear})</a>`
