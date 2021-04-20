@@ -7,7 +7,7 @@ aliases = [
 ]
 +++
 
-## How can I monitoring JAMF downloads on macOS?
+## How can I monitor JAMF downloads on macOS?
 
 For large downloads, such as macOS updates, it can be annoying that tools like Self Service don't surface download metrics
 
@@ -52,3 +52,11 @@ done
 5. We just run this script continually until `Ctrl-C` is invoked. Over a average speed proxy, it takes about 45 seconds to download 100MB so there's no value personally in setting something like `sleep 5`
 
 Enjoy your window into frustration as you realise just how long waiting will take
+
+## How can I use my local certificate store with Firefox
+
+From time to time, I have troubles with Firefox since it seems to clash with a corporate proxy we use.
+
+Using the built-in certificate store rather than Firefox's own managed store seemed to "fix" this issue.
+
+To do this, you'll want to navigate to `about:config` and then toggle `security.enterprise_roots.enabled` to `true`.
