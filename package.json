@@ -6,10 +6,17 @@
   "repository": "git@github.com:marcus-crane/utf9k",
   "author": "Marcus Crane <marcus@utf9k.net>",
   "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.1.0",
-    "postcss": "^8.2.2",
+  "scripts": {
+    "start": "hugo server --disableFastRender --buildDrafts --buildFuture",
+    "build": "NODE_ENV=production hugo --gc --buildFuture"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "node-fetch": "^2.6.1",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.0"
+    "tailwindcss": "^2.1.1"
   }
 }

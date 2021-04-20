@@ -4,16 +4,10 @@
   {{ partial "head.html" . }}
   {{ block "json+ld" . }}{{ end }}
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
   {{ partial "header.html" . }}
-  {{ block "main" . }}{{ end }}
-  {{ $littleFootJs := resources.Get "js/littlefoot.js" }}
-  {{ if .Site.IsServer }}
-  <script type="text/javascript" src="{{ $littleFootJs.RelPermalink }}"></script>
-  {{ else }}
-  {{ $minLittleFootJs := $littleFootJs | minify | fingerprint "sha512" }}
-  <script type="text/javascript" src="{{ $minLittleFootJs.RelPermalink }}" integrity="{{ $minLittleFootJs.Data.Integrity }}"></script>
-  {{ end }}
-  <script type="text/javascript">littlefoot.default()</script>
+  <div class="container px-5 py-8 mx-auto ">{{ block "main" . }}{{ end }}</div>
+  {{ partial "footer.html" . }}
+  {{ block "script" . }}{{ end }}
 </body>
 </html>

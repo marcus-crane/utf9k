@@ -1,11 +1,10 @@
-+++
-title = "Emacs"
-date = "2020-08-29"
-slug = "emacs"
-aliases = [
-  "/notes/emacs/"
-]
-+++
+---
+title: "Emacs"
+date: "2020-08-29"
+slug: "emacs"
+aliases:
+- "/notes/emacs/"
+---
 
 ## How can I compile Emacs from scratch?
 

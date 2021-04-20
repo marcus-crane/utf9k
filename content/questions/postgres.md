@@ -1,11 +1,10 @@
-+++
-title = "Postgres"
-date = "2020-11-27"
-slug = "postgres"
-aliases = [
-  "/notes/postgres/"
-]
-+++
+---
+title: "Postgres"
+date: "2020-11-27"
+slug: "postgres"
+aliases:
+- "/notes/postgres/"
+---
 
 ## How can I export a database?
 

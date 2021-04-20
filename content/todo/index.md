@@ -1,7 +1,7 @@
-+++
-slug = "todo"
-title = "Todo"
-+++
+---
+title: "Todo"
+slug: "todo"
+---
 
 A list of things I've still got left to do for the "revamp" of my site
 

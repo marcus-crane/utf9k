@@ -1,11 +1,10 @@
-+++
-title = "Enterprise Software"
-date = "2020-12-07"
-slug = "enterprise-software"
-aliases = [
-	"/notes/enterprise-software/"
-]
-+++
+---
+title: "Enterprise Software"
+date: "2020-12-07"
+slug: "enterprise-software"
+aliases:
+- "/notes/enterprise-software/"
+---
 
 ## How can I monitor JAMF downloads on macOS?
 

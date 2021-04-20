@@ -1,7 +1,6 @@
-+++
-title = "Questions"
-sort_by = "title"
-aliases = [
-  "/notes/"
-]
-+++
+---
+title: "Questions"
+sort_by: "title"
+aliases:
+- "/notes/"
+---

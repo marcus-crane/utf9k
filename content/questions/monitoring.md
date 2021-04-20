@@ -1,11 +1,10 @@
-+++
-title = "Monitoring"
-date = "2020-12-15"
-slug = "monitoring"
-aliases = [
-  "/notes/prometheus-up-and-running/"
-]
-+++
+---
+title: "Monitoring"
+date: "2020-12-15"
+slug: "monitoring"
+aliases:
+- "/notes/prometheus-up-and-running/"
+---
 
 ## What is profiling?
 

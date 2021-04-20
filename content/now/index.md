@@ -1,32 +1,30 @@
-+++
-slug = "now"
-title = "Now"
-+++
+---
+title: "Now"
+slug: "now"
+---
 
-## Trying not to enter a coma
+## Writing more often
 
-I didn't have much time off during the holiday season, and the time that I did have felt like I mostly just slept or was trying not to sleep so I haven't felt "refreshed" in a while.
+As alluded to in my post about how [using an blog as a zettlekasten is probably a good idea](/blog/zettelkasten-blog-a-good-idea), I'm intending to blog more often about topics I find interesting.
 
-Speaking of refreshed
+Usually, I'd have an undefined barrier that if a post wasn't interesting or long enough, then I wouldn't attempt to invest any time into it but there isn't really much correlation between how interesting a post is and how long it is.
 
-## Site refresh
+It's actually pretty handy too just being able to link to a post that sums up an idea, rather than just effectively retyping it from scratch.
 
-As you'll have spotted from the large sign on the "front door", I finally got around to refreshing my site design.
+## Maintenance mode
 
-I've had this on the back burner for a little while and while not complete, I finally managed to push out the bulk of something that I can continue to mould over time.
+While I haven't made any huge changes to my site, I'm generally intended for site configuration changes to be put on pause for the foreseeable future.
 
-In hindsight, it feels like a remix of all of the various layouts I've had over time, including some old sites.
+I'll still be writing content, and probably making some small fixes here and there (images don't render in the RSS feed for example) but as far as technical changes, I'm intending to be hands off, at least for the first half of this year or so.
 
-So far, I'm pretty happy with it but there's always more to do
-
-## Computers
-
-I fixed my computer troubles. It was something stupid of course.
+Basically just because that time is better spent focusing on other things worth dedicating time to. Once those new time investments start to feel like second nature, then it'll probably be fine to start tinkering again (and falling down the time sink rabbit hole).
 
 ## Videogames
 
-I haven't actually played much for quite a while but I got back into [Digimon Story: Cyber Sleuth](https://en.wikipedia.org/wiki/Digimon_Story:_Cyber_Sleuth) over the holiday season.
+I recently finished Kingdom Hearts III, which feels almost embarassing to say given how long I've been waiting for it to come out and then life happened I guess.
 
-I'm only on Chapter 9 but I've managed to grind my way to 2 [PlatinumNumemon](https://digimon.fandom.com/wiki/PlatinumNumemon) equipped with a bunch of tactician USBs. Put simply, you can get a game breaking amount of EXP.
+Personally, I'm a sucker for the core Kingdom Hearts story compared to visiting Disney worlds so while some of them were pretty cool, the back half of the game was way better once it moves away from the worlds and into pure Kingdom Hearts lore dumping.
 
-I also started playing through [Kingdom Hearts III](https://en.wikipedia.org/wiki/Kingdom_Hearts_III) properly. I won't spoil anything.
+I picked up ReMind so I'll either start getting into that or maybe even firing up Resident Evil 4.
+
+As I had mentioned on Twitter not too long ago, I probably don't have a good understanding of how I should approach the game (ie aggressively taking out every enemy or doing tactical retreats) and as such, I've never made it more than 30 minutes or so (when you read the first village which is apparently just a "run out the timer" sequence? I never knew)

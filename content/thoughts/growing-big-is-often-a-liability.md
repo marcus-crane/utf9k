@@ -1,10 +1,9 @@
-+++
-title = "Growing big is often a liability"
-slug = "growing-big-is-often-a-liability"
-aliases = [
-  "/notes/the-curse-of-bigness/"
-]
-+++
+---
+title: "Growing big is often a liability"
+slug: "growing-big-is-often-a-liability"
+aliases:
+  - /notes/the-curse-of-bigness/
+---
 
 Sometimes big isn't always better 
 
