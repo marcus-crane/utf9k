@@ -13,7 +13,6 @@ exports.handler = async function(event, context) {
 
   return fetch(API_ENDPOINT, { headers })
     .then(response => {
-      console.log(response)
       if (response.status == 204) {
         return {}
       }
