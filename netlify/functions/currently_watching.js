@@ -3,7 +3,7 @@ const fetch = require("node-fetch")
 const API_ENDPOINT = "https://api.trakt.tv/users/sentry/watching"
 
 exports.handler = async function(event, context) {
-  const clientID = process.env.CLIENT_ID
+  const clientID = process.env.TRAKT_CLIENT_ID
 
   headers = {
     "Content-Type": "application/json",
