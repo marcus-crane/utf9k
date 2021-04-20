@@ -28,17 +28,28 @@
         const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
         const verb = document.querySelector('#verb')
 
-        const seasonNumber = data['episode']['season']
-        const episodeNumber = data['episode']['number']
-        const episodeIMDB = data['episode']['ids']['imdb']
-        const show = data['show']['title']
-        const showYear = data['show']['year']
-        const showIMDB = data['show']['ids']['imdb']
+        if (data.type == "movie") {
+          const movieName = data['movie']['title']
+          const movieYear = data['movie']['year']
+          const movieSlug = data['movie']['ids']['slug']
+
+          contentSource.innerText = ''
+          contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/movies/${movieSlug}/">${movieName} (${movieYear})</a>`
+        }
 
         verb.innerText = "watching"
 
-        contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${episodeIMDB}/">S${seasonNumber}E${episodeNumber}</a> of`
-        contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${showIMDB}/">${show} (${showYear})</a>`
+        if (data.type == "episode") {
+          const seasonNumber = data['episode']['season']
+          const episodeNumber = data['episode']['number']
+          const episodeSlug = data['episode']['ids']['slug']
+          const show = data['show']['title']
+          const showYear = data['show']['year']
+          const showSlug = data['show']['ids']['slug']
+
+          contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/shows/${showSlug}/seasons/${seasonNumber}/episodes/${episodeNumber}/">S${seasonNumber}E${episodeNumber}</a> of`
+          contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/shows/${showSlug}/">${show} (${showYear})</a>`
+        }
 
         liveStatusBar.style.background = "#C47828"
         liveSentence.style.opacity = 1
@@ -54,10 +65,7 @@
     })
     .then(data => {
       const liveSentence = document.querySelector("#livesentence")
-      if (!data || !data.is_playing) {
-        liveSentence.style.opacity = 0
-        return
-      }
+      if (!data || !data.is_playing) return
       if (data.is_playing) {
         const contentName = document.querySelector('#contentname')
         const contentSource = document.querySelector('#contentsource')
