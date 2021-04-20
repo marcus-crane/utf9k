@@ -13,3 +13,15 @@
 .prose code::before, .prose code::after {
 	content: none;
 }
+
+#statusbar {
+  border-radius: 0 0 3px 30px;
+  background: #a463f2;
+  transition: background 1.5s linear;
+  width: 100%;
+}
+
+#livesentence {
+  opacity: 0;
+  transition: opacity 1.5s linear;
+}

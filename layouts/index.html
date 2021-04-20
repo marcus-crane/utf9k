@@ -1,14 +1,17 @@
 {{ define "main" }}
 <article class="prose lg:prose-xl dark:prose-dark">
-  <header>
-    <h1>{{ .Title }}</h1>
+  <header class="w-min">
+    <h1>
+      {{ .Title }}
+      <div id="statusbar" class="w-100 h-2"></div>
+    </h1>
   </header>
   <div>
     <p>My name is <a href="/about/">Marcus Crane</a> and you’re currently logged on to my personal website.</p>
     <p>I maintain a <a href="/blog/">blog</a> and also keep a running lists of <a href="/questions/">questions</a> regarding topics I often want to remember things about for later.</p>
     <p>If you want to know what I’m up to, or realistically what I was up to like two weeks ago, there’s a <a href="/now/">page</a> for that.</p>
-    <p id="showsentence" class="hidden">On a more recent note, I'm currently watching <span id="shownumber"></span> of <span id="showname"></span> as you're reading this very sentence. Isn't technology cool?</p>
     <p>Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.</p>
+    <p id="livesentence">P.S. on a more recent note, I'm <span id="livestatus"><span id="verb">currently experiencing</span> <span id="contentname">some technical troubles with</span> <span id="contentsource">my site</span></span> as you're reading this very sentence. Isn't technology cool?</p>
   </div>
 </article>
 {{ end }}
@@ -18,10 +21,11 @@
   fetch("/.netlify/functions/currently_watching")
     .then(res => res.json())
     .then(data => {
-      let showSentence = document.querySelector("#showsentence")
       if (Object.values(data).length !== 0) {
-        let showNum = document.querySelector('#shownumber')
-        let showName = document.querySelector('#showname')
+        const liveSentence = document.querySelector("#livesentence")
+        const contentName = document.querySelector('#contentname')
+        const contentSource = document.querySelector('#contentsource')
+        const verb = document.querySelector('#verb')
 
         const seasonNumber = data['episode']['season']
         const episodeNumber = data['episode']['number']
@@ -30,14 +34,52 @@
         const showYear = data['show']['year']
         const showIMDB = data['show']['ids']['imdb']
 
-        showNum.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${episodeIMDB}/">S${seasonNumber}E${episodeNumber}</a>`
-        showName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${showIMDB}/">${show} (${showYear})</a>`
+        verb.innerText = "watching"
 
-        showSentence.className = 'visible'
-      } else {
-        showSentence.className = 'hidden'
+        contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${episodeIMDB}/">S${seasonNumber}E${episodeNumber}</a> of`
+        contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://www.imdb.com/title/${showIMDB}/">${show} (${showYear})</a>`
+
+        liveStatusBar.style.background = "#C47828"
+        liveSentence.style.opacity = 1
       }
     })
     .catch(err => console.error(`Hmm, something went wrong: ${err}`))
 </script>
+<script type="text/javascript">
+  fetch("/.netlify/functions/currently_listening")
+    .then(res => {
+      if (res.status === 204) return
+      return res.json()
+    })
+    .then(data => {
+      const liveSentence = document.querySelector("#livesentence")
+      if (!data || !data.is_playing) {
+        liveSentence.style.opacity = 0
+        return
+      }
+      if (data.is_playing) {
+        const contentName = document.querySelector('#contentname')
+        const contentSource = document.querySelector('#contentsource')
+        const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
+        const verb = document.querySelector('#verb')
+
+        const timestamp = data.timestamp
+        const progressPercent = (data.progress_ms / data.item.duration_ms * 100).toFixed(2)
+        const duration = data.item.duration_ms
+        const artistName = data.item.album.artists[0].name
+        const artistLink = data.item.album.artists[0].external_urls.spotify
+        const songName = data.item.name
+        const songLink = data.item.external_urls.spotify
+
+        verb.innerText = "currently listening to"
+
+        contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="${songLink}">${songName}</a> by`
+        contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="${artistLink}">${artistName}</a>`
+
+        liveStatusBar.style.background = "#1DB954"
+        liveSentence.style.opacity = 1
+      }
+    })
+    .catch(err => console.error(`Hmm, something went wrong: ${err}`))
+  </script>
 {{ end }}
