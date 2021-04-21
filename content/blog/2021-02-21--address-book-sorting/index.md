@@ -28,4 +28,4 @@ Autocorrection is another one where I find that I need to toggle off all the ass
 
 Perhaps there's a committee of address book creators too, who uphold the guidelines of what makes a good address book. I'm just speculating at this point.
 
-I'd be interested to know what other default settings bug you! You can let me know through [a variety of different mediums](/contact).
+I'd be interested to know what other default settings bug you! You can let me know through the variety of different mediums in the footer below.

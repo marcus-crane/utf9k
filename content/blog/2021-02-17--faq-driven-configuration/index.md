@@ -169,6 +169,6 @@ In this case, I remembered the essence of the question, but not the specific wor
 
 At worst, the structure makes for an easier time parsing when you want to answer someone's question by linking them a pseudo-question answer session that lives within your configuration.
 
-[Let me know](/contact) if you end up making use of it, or if you already do! I've been meaning to move more of my setup into sometihng similar so perhaps I'll do a status report down the line.
+[Let me know](mailto:hello@utf9k.net) if you end up making use of it, or if you already do! I've been meaning to move more of my setup into sometihng similar so perhaps I'll do a status report down the line.
 
 [^dropbox]: I often do this as Dropbox might live at `~/marcus/Dropbox` on one computer while living at `/mnt/c/Users/marcus/Dropbox` on another. The latter would be if I wanted to access my Dropbox from within [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
