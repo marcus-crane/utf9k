@@ -155,7 +155,7 @@ That and it's just less mentally taxing to read in my opinion. With a nicely for
 
 Not at all! While I'm a fan of [org-mode](https://orgmode.org/) for literate configuration, despite my [recent struggles with its parent](https://utf9k.net/blog/emacs-probably-isnt-right-for-me/), you can achieve this with presumably any configuration files that support comments.
 
-While I infrequently touch most of my dotfiles, I took a crack at converting my small [neovim](https://neovim.io) configuration to follow this style, as viewable [here](https://github.com/marcus-crane/dotfiles/blob/37840b8/nvim/.config/nvim/init.vim)
+While I infrequently touch most of my dotfiles, I took a crack at converting my small [neovim](https://github.com/neovim/neovim) configuration to follow this style, as viewable [here](https://github.com/marcus-crane/dotfiles/blob/37840b8/nvim/.config/nvim/init.vim)
 
 As someone still relatively new, I actually find it handy given I've long forgotten what lives in there and most of it looks like gibberish to me at this point in time.
 

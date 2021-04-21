@@ -16,7 +16,7 @@ I don't even know if I actually slept last night because it felt like most of it
 
 Excuse me, you silly voice, I'll have you know that I've used and/or fiddled with ahem
 
-[doc](https://docker.com/)hi[ask](http://flask.pocoo.org/)ydd4h[py](https://www.python.org/)[dja](https://www.djangoproject.com/)22hf[nod](https://nodejs.org/en/)j2ve[n](https://www.npmjs.com/)a43[rea](https://reactjs.org/)f[we](https://webpack.js.org/)tex[abe](https://babeljs.io/)gdd0r g[neov](https://neovim.io/)1fuh[ith](https://github.com/)u[ist](https://github.com/lepture/mistune)fh[rc](https://www.archlinux.org/)8gzvf[tow](https://www.gnu.org/software/stow/)fi[med](https://www.mediawiki.org/wiki/MediaWiki)uwh[tab](https://www.mediawiki.org/wiki/Extension:Tabber)f2[do](https://github.com/marcus-crane/dotfiles)fq[tmu](https://github.com/tmux/tmux)d[mu](https://www.neomutt.org/)
+[doc](https://docker.com/)hi[ask](http://flask.pocoo.org/)ydd4h[py](https://www.python.org/)[dja](https://www.djangoproject.com/)22hf[nod](https://nodejs.org/en/)j2ve[n](https://www.npmjs.com/)a43[rea](https://reactjs.org/)f[we](https://webpack.js.org/)tex[abe](https://babeljs.io/)gdd0r g[neov](https://github.com/neovim/neovim)1fuh[ith](https://github.com/)u[ist](https://github.com/lepture/mistune)fh[rc](https://www.archlinux.org/)8gzvf[tow](https://www.gnu.org/software/stow/)fi[med](https://www.mediawiki.org/wiki/MediaWiki)uwh[tab](https://www.mediawiki.org/wiki/Extension:Tabber)f2[do](https://github.com/marcus-crane/dotfiles)fq[tmu](https://github.com/tmux/tmux)d[mu](https://www.neomutt.org/)
 
 and let me tell you, MediaWiki is something… special alright but it's solid!
 
