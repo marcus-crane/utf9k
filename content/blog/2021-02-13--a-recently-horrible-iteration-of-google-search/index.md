@@ -64,7 +64,7 @@ Ah, sorry! It looks like your browser either hates the h264 codec or it just doe
 
 Not only was that much easier, it actually inlined a bunch of links you might want to look at, rather than unrolling them for you into a massive information dump.
 
-I was also trying out [Ecosia](https://ecosia.org) at the time too:
+I was also trying out [Ecosia](https://www.ecosia.org) at the time too:
 
 <video style="display: inherit; margin: 0 auto;" width="50%" controls>
 <source preload src="ecosia-search-the-sopranos.mp4" type="video/mp4">
