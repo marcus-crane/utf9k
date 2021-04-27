@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "hugo server --disableFastRender --buildDrafts --buildFuture",
-    "build": "NODE_ENV=production hugo --gc --buildFuture"
+    "build": "NODE_ENV=production hugo --gc --buildFuture",
+    "build-next": "NODE_ENV=production hugo --gc --buildDrafts --buildFuture"
   },
   "devDependencies": {},
   "dependencies": {
