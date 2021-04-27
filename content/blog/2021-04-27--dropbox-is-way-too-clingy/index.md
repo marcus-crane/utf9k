@@ -88,8 +88,6 @@ You can't even see the cancel button on this page. You have to scroll right to t
   A tightly cropped screenshot of a green banner that reads "Account downgraded. Thanks for your feedback."
 {{< /image >}}
 
----
-
 Now originally, this is where I had ended the blog post but I actually went back to Dropbox months later and just discovered this process hadn't even deleted my account. All I accomplished was that I downgraded my plan?!
 
 {{< image src="/blog/dropbox-is-way-too-clingy/08-banner.png" >}}
