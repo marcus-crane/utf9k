@@ -44,21 +44,21 @@ We're just getting started.
   A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they'll lose a bunch of storage and lists some consequences such as "Dropbox will stop syncing". At the bottom are two buttons, one in blue that reads "I changed my mind, take me back to Dropbox" and one in white that reads "I still want to downgrade". The downgrade button is clearly what the user is after but the colour coding makes it tricky since the "I don't want to cancel" one is more prominent.
 {{< /image >}}
 
-If we really have to, I can handle putting up with one of these pages but come on, the colour coding of these buttons is clearly a [dark pattern](https://www.darkpatterns.org/). I clearly clicked a button called "Delete account" and now the primary action on this page is "I changed my mind".
+If we really have to, I can handle putting up with one of these pages but come on, the colour coding of these buttons is clearly a [dark pattern](https://www.darkpatterns.org/). I clicked a button called "Delete account" and now the primary action on this page is "I changed my mind".
 
-Additionally, the wording suggesting that I need to cancel my subscription is odd, in that deleting an account inherently is the same act as cancelling a subscription. Yes, I realise I'm not using a thing I paid for. I don't care.
+Additionally, the wording that suggests I need to cancel my subscription is odd, in that deleting an account is surely the same act as cancelling a subscription.[^1] Yes, I realise I'm not using this service I paid for. I don't care.
 
-So anyway, we resist the urge and click on "I still want to downgrade", which weirdly does not say "Complete downgrade". You know what this means... (**Fourth click**)
+So anyway, we resist the urge and click on "I still want to downgrade", which weirdly does not say "Complete downgrade". You know what that means... (**Fourth click**)
 
 {{< image src="/blog/dropbox-is-way-too-clingy/04-second-screen.png" >}}
   A pop up modal asking if the author still wants to cancel. It has a bunch of radio buttons with reasons for cancellation, with the author having selected one that reads "I found another product I liked better". There is a button labelled "Skip" in the bottom left and two buttons on the bottom right. They read "Don't cancel" and "Continue cancelling". Strangely, "Continue cancelling" is the more prominent of the two, unlike the previous page.
 {{< /image >}}
 
-God, yes! I'm two screens deep already, I'm pretty fucking sure I would like to cancel. I'm not "thinking" of leaving, I already decided that when you started degrading the UI instead of literally just doing nothing and continuing to make bank through word of mouth and technological advantages.
+God, yes! I'm two screens deep already so I'm pretty fucking sure I would like to cancel. I'm not "thinking" of leaving, I already decided that when you started degrading the UI. You could have just shipped nothing for the next 5 years and continued to make bank through word of mouth and the quality of your sync engine.
 
 Hell, even just the lock-in from existing applications already does most of the convincing for me.
 
-Interesting, the colour coding has switched once again to suggest that "Continue canceling" is now the primary action again. Is this to trick me into not cancelling? I also didn't notice that sneaky Skip option in the bottom left.
+Interesting, the colour coding has switched once again to suggest that "Continue canceling" is now the primary action. Is this to trick me into not cancelling? I also didn't notice that "Skip" option in the bottom left until now.
 
 (**Fifth and sixth clicks**)
 
@@ -88,7 +88,7 @@ You can't even see the cancel button on this page. You have to scroll right to t
   A tightly cropped screenshot of a green banner that reads "Account downgraded. Thanks for your feedback."
 {{< /image >}}
 
-Now originally, this is where I had ended the blog post but I actually went back to Dropbox months later and just discovered this process hadn't even deleted my account. All I accomplished was that I downgraded my plan?!
+Now originally, this is where I had ended the blog post but I actually went back to Dropbox a few weeks later[^2] and just discovered this process hadn't even deleted my account. All I accomplished was that I downgraded my plan which is obvious in hindsight but also, why this much friction just to downgrade a plan then? Just what sort of nightmare will it take to delete my account and do businesses have to go through this hell if you purchase an enterprise plan?!
 
 {{< image src="/blog/dropbox-is-way-too-clingy/08-banner.png" >}}
   A tightly cropped screenshot of a red banner that reads "You are scheduled to downgrade."
@@ -121,3 +121,7 @@ Why would I ever come back here? No company that did this sort of shit ever made
 Anyway, there's one really one thing I have to say to Dropbox after all this:
 
 {{<youtube id="HhnUK1YmMEU" >}}
+
+[^1]: Apparently not as I later found out.
+
+[^2]: By which I mean, just now.
