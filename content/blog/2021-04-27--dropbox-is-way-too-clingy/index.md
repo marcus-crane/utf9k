@@ -124,7 +124,9 @@ Six[^3] more clicks to fill in this shitty form and that brings us up to **seven
 
 Finally, I'm free.
 
-No company that did this sort of shit ever made me feel excited or even curious about coming back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York. Why would anyone do this? It's just cringey.
+No company that did this sort of shit ever made me feel excited or even curious about coming back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York.
+
+Why would anyone do this sort of thing? It just screams disbelief in your own product. If you're so scared of people leaving, it makes me wonder just what kind of mess you're hiding under the rug.
 
 Anyway, there's only one thing I have to say to Dropbox after all this:
 
