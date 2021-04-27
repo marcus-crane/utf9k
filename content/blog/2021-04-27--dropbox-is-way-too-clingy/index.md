@@ -108,7 +108,7 @@ Once more, hit the "Delete account" button at the bottom
   A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.
 {{< /image >}}
 
-Five more clicks to fill in this shitty form, not including typing a message and that brings us up to **Sixteen clicks**
+Five more clicks to fill in this shitty form, not including a message, and that brings us up to **Sixteen clicks**
 
 Finally, **seventeen clicks** later, I'm free.
 
@@ -118,7 +118,7 @@ Finally, **seventeen clicks** later, I'm free.
 
 Why would I ever come back here? No company that did this sort of shit ever made me feel welcome back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York.
 
-Anyway, there's one really one thing I have to say to Dropbox after all this:
+Anyway, there's only one thing I have to say to Dropbox after all this:
 
 {{<youtube id="HhnUK1YmMEU" >}}
 
