@@ -22,7 +22,7 @@ Recently I went through the process of deleting my account (again) out of frustr
 
 Let's walk through the deletion process as it stands in April 2021 and see how many clicks it takes.
 
-From your file view, you'll want to click on your avatar (**First click**)
+From the file viewer area, you'll want to click on your profile picture (**First click**)
 
 {{< image src="/blog/dropbox-is-way-too-clingy/01-settings.png" >}}
   A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.
@@ -124,7 +124,7 @@ Six[^3] more clicks to fill in this shitty form and that brings us up to **seven
 
 Finally, I'm free.
 
-Why would I ever come back here? No company that did this sort of shit ever made me feel welcome back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York.
+No company that did this sort of shit ever made me feel excited or even curious about coming back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York. Why would anyone do this? It's just cringey.
 
 Anyway, there's only one thing I have to say to Dropbox after all this:
 
@@ -134,4 +134,4 @@ Anyway, there's only one thing I have to say to Dropbox after all this:
 
 [^2]: By which I mean, just now.
 
-[^3]: Once on the password field, a second on a popup to autofill from my password manager, a third to open the "Reasons for leaving" dropdown, a fourth to select a reason, a fifth to start entering "More details" and sixth is hit "Permanently delete"
+[^3]: Once on the password field, a second on a popup to autofill from my password manager, a third to open the "Reasons for leaving" dropdown, a fourth to select a reason, a fifth to start entering "More details" and the sixth is when I hit "Permanently delete"
