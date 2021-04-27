@@ -104,7 +104,7 @@ Once more, hit the "Delete account" button at the bottom
 
 (**Eleventh click**)
 
-{{< image src="/blog/dropbox-is-way-too-clingy/07-done.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/09-delete.png" >}}
   A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.
 {{< /image >}}
 
