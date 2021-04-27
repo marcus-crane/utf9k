@@ -14,7 +14,7 @@ tags:
 - "software"
 ---
 
-As much as Dropbox is great on a technical level, the user experience keeps degrading all the time.
+As much as [Dropbox](https://www.dropbox.com) is great on a technical level, the user experience keeps degrading all the time.
 
 Installing it is a complete nightmare of clicking through super slow window transitions and banners begging you to upgrade your account.
 
@@ -36,15 +36,15 @@ From the dropbown, click on Settings (**Second click**)
 
 Now that we're inside the Settings menu, click on Delete account (**Third click**)
 
-That should be it... right? Done. Simple.
+That should be it... right? Done. Simple?
 
-We're just getting started
+We're just getting started.
 
 {{< image src="/blog/dropbox-is-way-too-clingy/03-first-screen.png" >}}
   A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they'll lose a bunch of storage and lists some consequences such as "Dropbox will stop syncing". At the bottom are two buttons, one in blue that reads "I changed my mind, take me back to Dropbox" and one in white that reads "I still want to downgrade". The downgrade button is clearly what the user is after but the colour coding makes it tricky since the "I don't want to cancel" one is more prominent.
 {{< /image >}}
 
-One of these pages I can handle but the colour coding of the buttons is a dark pattern if you ask me. I clearly clicked a button called "Delete account" and now the primary action on this page is "I changed my mind".
+If we really have to, I can handle putting up with one of these pages but come on, the colour coding of these buttons is clearly a [dark pattern](https://www.darkpatterns.org/). I clearly clicked a button called "Delete account" and now the primary action on this page is "I changed my mind".
 
 Additionally, the wording suggesting that I need to cancel my subscription is odd, in that deleting an account inherently is the same act as cancelling a subscription. Yes, I realise I'm not using a thing I paid for. I don't care.
 
@@ -85,7 +85,41 @@ You can't even see the cancel button on this page. You have to scroll right to t
 (**Eighth click**)
 
 {{< image src="/blog/dropbox-is-way-too-clingy/07-done.png" >}}
-  A tightly cropped screenshot of a green pop up that reads "Account downgraded. Thanks for your feedback."
+  A tightly cropped screenshot of a green banner that reads "Account downgraded. Thanks for your feedback."
 {{< /image >}}
+
+---
+
+Now originally, this is where I had ended the blog post but I actually went back to Dropbox months later and just discovered this process hadn't even deleted my account. All I accomplished was that I downgraded my plan?!
+
+{{< image src="/blog/dropbox-is-way-too-clingy/08-banner.png" >}}
+  A tightly cropped screenshot of a red banner that reads "You are scheduled to downgrade."
+{{< /image >}}
+
+So, let's finish this thing off for real.
+
+Back to the home page, we once again click on the user profile and then on Settings
+
+(**Ninth and tenth clicks**)
+
+Once more, hit the "Delete account" button at the bottom
+
+(**Eleventh click**)
+
+{{< image src="/blog/dropbox-is-way-too-clingy/07-done.png" >}}
+  A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.
+{{< /image >}}
+
+Five more clicks to fill in this shitty form, not including typing a message and that brings us up to **Sixteen clicks**
+
+Finally, **seventeen clicks** later, I'm free.
+
+{{< image src="/blog/dropbox-is-way-too-clingy/10-free.png" >}}
+  A tightly cropped screenshot of a black banner that reads "Your account has been deleted. We're sorry to see you go."
+{{< /image >}}
+
+Why would I ever come back here? No company that did this sort of shit ever made me feel welcome back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York.
+
+Anyway, there's one really one thing I have to say to Dropbox after all this:
 
 {{<youtube id="HhnUK1YmMEU" >}}
