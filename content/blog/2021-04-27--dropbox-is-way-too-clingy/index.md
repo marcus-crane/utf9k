@@ -24,13 +24,13 @@ Let's walk through the deletion process as it stands in April 2021 and see how m
 
 From your file view, you'll want to click on your avatar (**First click**)
 
-{{< image src="/blog/dropbox-is-too-clingy/01-settings.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/01-settings.png" >}}
   A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.
 {{< /image >}}
 
 From the dropbown, click on Settings (**Second click**)
 
-{{< image src="/blog/dropbox-is-too-clingy/02-inside-settings.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/02-inside-settings.png" >}}
   A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".
 {{< /image >}}
 
@@ -40,7 +40,7 @@ That should be it... right? Done. Simple.
 
 We're just getting started
 
-{{< image src="/blog/dropbox-is-too-clingy/03-first-screen.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/03-first-screen.png" >}}
   A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they'll lose a bunch of storage and lists some consequences such as "Dropbox will stop syncing". At the bottom are two buttons, one in blue that reads "I changed my mind, take me back to Dropbox" and one in white that reads "I still want to downgrade". The downgrade button is clearly what the user is after but the colour coding makes it tricky since the "I don't want to cancel" one is more prominent.
 {{< /image >}}
 
@@ -50,7 +50,7 @@ Additionally, the wording suggesting that I need to cancel my subscription is od
 
 So anyway, we resist the urge and click on "I still want to downgrade", which weirdly does not say "Complete downgrade". You know what this means... (**Fourth click**)
 
-{{< image src="/blog/dropbox-is-too-clingy/04-second-screen.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/04-second-screen.png" >}}
   A pop up modal asking if the author still wants to cancel. It has a bunch of radio buttons with reasons for cancellation, with the author having selected one that reads "I found another product I liked better". There is a button labelled "Skip" in the bottom left and two buttons on the bottom right. They read "Don't cancel" and "Continue cancelling". Strangely, "Continue cancelling" is the more prominent of the two, unlike the previous page.
 {{< /image >}}
 
@@ -62,7 +62,7 @@ Interesting, the colour coding has switched once again to suggest that "Continue
 
 (**Fifth and sixth clicks**)
 
-{{< image src="/blog/dropbox-is-too-clingy/05-third-screen.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/05-third-screen.png" >}}
   Another page with the title "Dropbox Plus is so much more than just space" and presents some alleged reasons to stay like "Easy sharing" and "Large storage volume". These are the same bullet points, roughly, as the earlier page. At the bottom are two buttons, a prominent blue one on the left titled "Keep Dropbox Plus" and a transparent, less obvious one on the right titled "I still want to downgrade".
 {{< /image >}}
 
@@ -74,7 +74,7 @@ The colour coding has changed yet again to suggest "Keep Dropbox Plus" is the pr
 
 (**Seventh click**)
 
-{{< image src="/blog/dropbox-is-too-clingy/06-final-screen.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/06-final-screen.png" >}}
   Yet another page titled "Before you go, Marcus...", addressed to the author. It has a large blue button in the middle of the screen that reads "I changed my mind, take me back to Dropbox". There is another button for cancelling somewhere off screen that is not visible to the reader. The rest of the page just roughly lists the same claimed features as previous pages.
 {{< /image >}}
 
@@ -84,7 +84,7 @@ You can't even see the cancel button on this page. You have to scroll right to t
 
 (**Eighth click**)
 
-{{< image src="/blog/dropbox-is-too-clingy/07-done.png" >}}
+{{< image src="/blog/dropbox-is-way-too-clingy/07-done.png" >}}
   A tightly cropped screenshot of a green pop up that reads "Account downgraded. Thanks for your feedback."
 {{< /image >}}
 
