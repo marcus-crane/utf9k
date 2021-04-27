@@ -98,9 +98,17 @@ So, let's finish this thing off for real.
 
 Back to the home page, we once again click on the user profile and then on Settings
 
+{{< image src="/blog/dropbox-is-way-too-clingy/01-settings.png" >}}
+  A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.
+{{< /image >}}
+
 (**Ninth and tenth clicks**)
 
 Once more, hit the "Delete account" button at the bottom
+
+{{< image src="/blog/dropbox-is-way-too-clingy/02-inside-settings.png" >}}
+  A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".
+{{< /image >}}
 
 (**Eleventh click**)
 
