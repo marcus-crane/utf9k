@@ -116,13 +116,13 @@ Once more, hit the "Delete account" button at the bottom
   A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.
 {{< /image >}}
 
-Five more clicks to fill in this shitty form, not including a message, and that brings us up to **Sixteen clicks**
-
-Finally, **seventeen clicks** later, I'm free.
+Six[^3] more clicks to fill in this shitty form and that brings us up to **seventeen clicks** when I hit "Permanently delete"
 
 {{< image src="/blog/dropbox-is-way-too-clingy/10-free.png" >}}
   A tightly cropped screenshot of a black banner that reads "Your account has been deleted. We're sorry to see you go."
 {{< /image >}}
+
+Finally, I'm free.
 
 Why would I ever come back here? No company that did this sort of shit ever made me feel welcome back. To this day, I have never resubscribed to [The New York Times](https://www.nytimes.com) purely because their cancellation policy requires you to ring a human person in New York.
 
@@ -133,3 +133,5 @@ Anyway, there's only one thing I have to say to Dropbox after all this:
 [^1]: Apparently not as I later found out.
 
 [^2]: By which I mean, just now.
+
+[^3]: Once on the password field, a second on a popup to autofill from my password manager, a third to open the "Reasons for leaving" dropdown, a fourth to select a reason, a fifth to start entering "More details" and sixth is hit "Permanently delete"
