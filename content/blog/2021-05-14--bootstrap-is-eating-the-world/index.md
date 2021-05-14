@@ -1,9 +1,8 @@
 ---
 title: "Has Bootstrap eaten the world yet?"
-date: "2021-05-13T18:52:00+1300"
+date: "2021-05-14T20:48:00+1300"
 slug: "has-bootstrap-eaten-the-world-yet"
 category: "blog"
-draft: true
 tags:
 - "css"
 - "design"
