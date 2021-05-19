@@ -12,7 +12,7 @@ To get started, you'll want to install Hugo using one of the variety of [officia
 
 You'll also need to have [npm](https://www.npmjs.com/get-npm) installed.
 
-I recommend using [yarn](https://yarnpkg.com/) as a package manager but nom works fine.
+I recommend using [yarn](https://yarnpkg.com/) as a package manager but npm works fine.
 
 Once you've got both of those set up, running `yarn start` will do everything required to start up a local server.
 
@@ -28,4 +28,12 @@ Images and other static content lives in `static` (for now)
 
 ## Deployment
 
-Deployment is handled automatically by [Netlify](https://netlify.com) upon a merge to master
+Deployment is handled automatically by [Netlify](https://netlify.com)
+
+The default branch is called `next` and pushes to it will render at [next.utf9k.net](https://next.utf9k.net).
+
+This acts as a staging environment so I can push changes and drafts to the repo, without worry about them being live. At the same time, I can preview how they will look when deployed so it makes reviewing easier, and nicer to read. A bit of dogfooding goes a long way.
+
+To make changes live, you just simply merge the `next` branch into `live` and they will automatically roll out to [utf9k.net](https://utf9k.net) in a few minutes.
+
+Drafts are only visible under `next` so don't forget to remove any `draft: true` key:value pairs from blog posts that are ready to publish.
