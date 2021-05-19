@@ -1,6 +1,6 @@
 ---
 title: "Ride the curve"
-date: "2021-05-17T21:34:00+1300"
+date: "2099-05-17T21:34:00+1300"
 slug: "ride-the-curve"
 category: "blog"
 draft: true
