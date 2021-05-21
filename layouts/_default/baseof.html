@@ -8,6 +8,10 @@
   {{ partial "header.html" . }}
   <div class="container px-5 py-8 mx-auto ">{{ block "main" . }}{{ end }}</div>
   {{ partial "footer.html" . }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" "main.js" "defines" $defines }}
+  {{ $built := resources.Get "js/main.js" | js.Build $opts }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
   {{ block "script" . }}{{ end }}
 </body>
 </html>
