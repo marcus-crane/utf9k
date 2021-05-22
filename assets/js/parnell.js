@@ -1,16 +1,25 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY3VzLWNyYW5lIiwiYSI6ImNqN3loaHNvdzQ0YzAzM3FyNW1mMndrMXoifQ.b7E6hbK1eDrXOQVrwnc8zQ'
 
+const lightStyle = "mapbox://styles/mapbox/light-v9"
+const darkStyle = "mapbox://styles/mapbox/dark-v9"
+
+let defaultStyle = lightStyle
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  defaultStyle = darkStyle
+}
+
 let map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/light-v9",
+  style: defaultStyle,
   center: [174.789296, -36.860538],
   zoom: 14
 })
 
-map.on('load', function() {
+function buildMapLayer() {
   let filterHour = ['==', ['number', ['get', 'hour']], 12]
   let filterDay = ['!=', ['string', ['get', 'day']], 'placeholder']
-  map.addLayer({
+  const parkingLayer = {
     id: 'tickets',
     type: 'line',
     source: {
@@ -36,7 +45,9 @@ map.on('load', function() {
       'line-cap': 'round'
     },
     filter: ['all', filterHour, filterDay]
-  }, 'admin-2-boundaries-dispute')
+  }
+
+  map.addLayer(parkingLayer, 'admin-2-boundaries-dispute')
 
   document.getElementById('slider').addEventListener('input', function(e) {
     let hour = parseInt(e.target.value)
@@ -61,4 +72,13 @@ map.on('load', function() {
     }
     map.setFilter('tickets', ['all', filterHour, filterDay])
   })
+}
+
+map.on('load', function() {
+  buildMapLayer()
+})
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+  const newColorScheme = e.matches ? "dark" : "light"
+  location.reload()
 })
