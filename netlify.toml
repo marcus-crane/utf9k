@@ -57,6 +57,7 @@ Cache-Control = "public, max-age=604800"
 for = "/*"
 
 [headers.values]
+Content-Security-Policy-Report-Only = "default-src 'self'; img-src *; media-src *;"
 X-Frame-Options = "SAMEORIGIN"
 X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
