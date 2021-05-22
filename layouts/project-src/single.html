@@ -1,4 +1,11 @@
 {{ define "style" }}
+  {{ if .Params.extra_css }}
+    {{ with .Params.extra_css }}
+      {{ range . }}
+      <link rel="stylesheet" href="{{ . }}" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
   {{ if .Params.includes_css }}
     {{ $targetPath := (print "css/" .Slug ".css") }}
     {{ $extraStyles := resources.Get $targetPath | postCSS }}
@@ -11,10 +18,18 @@
   {{ end }}
 {{ end }}
 
-{{ define "main" }}
+{{ define "body" }}
+  {{ .Content }}
 {{ end }}
 
 {{ define "script" }}
+  {{ if .Params.extra_js }}
+    {{ with .Params.extra_js }}
+      {{ range . }}
+      <script type="text/javascript" src="{{ . }}" defer></script>
+      {{ end }}
+    {{ end }}
+  {{ end }}
   {{ if .Params.includes_js }}
     {{ $targetPath := (print "js/" .Slug ".js") }}
     {{ $defines := dict "process.env.NODE_ENV" `"production"` }}

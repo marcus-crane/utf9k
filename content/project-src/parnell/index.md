@@ -1,8 +1,12 @@
 ---
-title: "Hmm"
+title: "Parnell"
 slug: "parnell"
 includes_js: true
+extra_js:
+  - "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"
 includes_css: true
+extra_css:
+  - "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
 ---
 
 <div id="map"></div>
@@ -46,5 +50,4 @@ includes_css: true
   </div>
 </div>
 
-{{ define "main" }}
-{{ end }}
+
