@@ -9,7 +9,7 @@
   <div>
     <p>My name is <a href="/about/">Marcus Crane</a> and you’re currently logged on to my personal website.</p>
     <p>I maintain a <a href="/blog/">blog</a> and also keep a running lists of <a href="/questions/">questions</a> regarding topics I often want to remember things about for later.</p>
-    <p>If you want to know what I’m up to, or realistically what I was up to like two weeks ago, there’s a <a href="/now/">page</a> for that.</p>
+    <p>There's also a <a href="/now/">now</a> page for, realistically, what I was up to two weeks ago and a <a href="/projects/">projects</a> page documenting my small experiments.</p>
     <p>Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.</p>
     <p id="livesentence">P.S. on a more recent note, I'm <span id="livestatus"><span id="verb">currently experiencing</span> <span id="contentname">some technical troubles with</span> <span id="contentsource">my site</span></span> as you're reading this very sentence. Isn't technology cool?</p>
   </div>
@@ -17,78 +17,9 @@
 {{ end }}
 
 {{ define "script" }}
-<script type="text/javascript">
-  fetch("/.netlify/functions/currently_watching")
-    .then(res => res.json())
-    .then(data => {
-      if (Object.values(data).length !== 0) {
-        const liveSentence = document.querySelector("#livesentence")
-        const contentName = document.querySelector('#contentname')
-        const contentSource = document.querySelector('#contentsource')
-        const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
-        const verb = document.querySelector('#verb')
-
-        if (data.type == "movie") {
-          const movieName = data['movie']['title']
-          const movieYear = data['movie']['year']
-          const movieSlug = data['movie']['ids']['slug']
-
-          contentSource.innerText = ''
-          contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/movies/${movieSlug}/">${movieName} (${movieYear})</a>`
-        }
-
-        verb.innerText = "watching"
-
-        if (data.type == "episode") {
-          const seasonNumber = data['episode']['season']
-          const episodeNumber = data['episode']['number']
-          const episodeSlug = data['episode']['ids']['slug']
-          const show = data['show']['title']
-          const showYear = data['show']['year']
-          const showSlug = data['show']['ids']['slug']
-
-          contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/shows/${showSlug}/seasons/${seasonNumber}/episodes/${episodeNumber}/">S${seasonNumber}E${episodeNumber}</a> of`
-          contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="https://trakt.tv/shows/${showSlug}/">${show} (${showYear})</a>`
-        }
-
-        liveStatusBar.style.background = "#C47828"
-        liveSentence.style.opacity = 1
-      }
-    })
-    .catch(err => console.error(`Hmm, something went wrong: ${err}`))
-</script>
-<script type="text/javascript">
-  fetch("/.netlify/functions/currently_listening")
-    .then(res => {
-      if (res.status === 204) return
-      return res.json()
-    })
-    .then(data => {
-      const liveSentence = document.querySelector("#livesentence")
-      if (!data || !data.is_playing) return
-      if (data.is_playing) {
-        const contentName = document.querySelector('#contentname')
-        const contentSource = document.querySelector('#contentsource')
-        const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
-        const verb = document.querySelector('#verb')
-
-        const timestamp = data.timestamp
-        const progressPercent = (data.progress_ms / data.item.duration_ms * 100).toFixed(2)
-        const duration = data.item.duration_ms
-        const artistName = data.item.album.artists[0].name
-        const artistLink = data.item.album.artists[0].external_urls.spotify
-        const songName = data.item.name
-        const songLink = data.item.external_urls.spotify
-
-        verb.innerText = "currently listening to"
-
-        contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="${songLink}">${songName}</a> by`
-        contentSource.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="${artistLink}">${artistName}</a>`
-
-        liveStatusBar.style.background = "#1DB954"
-        liveSentence.style.opacity = 1
-      }
-    })
-    .catch(err => console.error(`Hmm, something went wrong: ${err}`))
-  </script>
+  {{ $targetPath := "js/main.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 {{ end }}
