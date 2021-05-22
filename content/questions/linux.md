@@ -1,7 +1,10 @@
 ---
 title: "Linux"
-date: "2020-09-18"
 slug: "linux"
+category: "questions"
+tags:
+- "historical"
+- "linux"
 aliases:
 - "/notes/linux/"
 ---

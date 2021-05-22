@@ -1,7 +1,11 @@
 ---
 title: "HTTP2"
-date: "2020-11-27"
 slug: "learning-http2"
+category: "questions"
+tags:
+- "historical"
+- "http"
+- "networking"
 aliases:
 - "/notes/learning-http2/"
 ---

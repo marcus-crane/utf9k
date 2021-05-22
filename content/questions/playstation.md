@@ -1,7 +1,11 @@
 ---
 title: "Playstation 1"
-date: "2020-09-06"
 slug: "playstation"
+category: "questions"
+tags:
+- "playstation"
+- "sony"
+- "videogames"
 aliases:
 - "/notes/ps1-disc-layout/"
 ---

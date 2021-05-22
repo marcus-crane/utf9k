@@ -1,7 +1,11 @@
 ---
 title: "DNS"
-date: "2020-11-28"
 slug: "dns"
+category: "questions"
+tags:
+- "dns"
+- "historical"
+- "networking"
 aliases:
 - "/notes/dns-and-bind/"
 ---

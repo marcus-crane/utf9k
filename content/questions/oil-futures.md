@@ -1,7 +1,10 @@
 ---
 title: "Oil Futures"
-date: "2020-08-06"
 slug: "oil-futures"
+category: "questions"
+tags:
+- "finance"
+- "futures"
 aliases:
 - "/notes/oil-futures/"
 ---

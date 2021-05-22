@@ -1,7 +1,11 @@
 ---
 title: "Enterprise Software"
-date: "2020-12-07"
 slug: "enterprise-software"
+category: "questions"
+tags:
+- "business"
+- "enterprise"
+- "software"
 aliases:
 - "/notes/enterprise-software/"
 ---

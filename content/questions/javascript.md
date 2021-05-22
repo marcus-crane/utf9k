@@ -1,6 +1,10 @@
 ---
 title: "Javascript"
 slug: "javascript"
+category: "questions"
+tags:
+- "darkmode"
+- "javascript"
 ---
 
 ## How can I listen for user changes to their colour scheme (ie dark mode)?
