@@ -1,5 +1,5 @@
 ---
-title: "HTTP2"
+title: "HTTP/2"
 slug: "learning-http2"
 category: "questions"
 tags:
