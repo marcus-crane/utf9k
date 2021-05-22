@@ -80,5 +80,7 @@ map.on('load', function() {
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
   const newColorScheme = e.matches ? "dark" : "light"
+   // Changing the map style would clear the actual data and I had no luck resolving it.
+   // Let me know if you have any idea how I can fix this!
   location.reload()
 })
