@@ -12,7 +12,7 @@ extra_css:
 <div id="map"></div>
 <div id="console" class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
   <h1>Issued Parking tickets (Parnell)</h1>
-  <p>Source: <a href="https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area">Auckland Transport</a></p>
+  <p>Source: <a target="_blank" rel="noopener noreferrer" href="https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area">Auckland Transport</a></p>
   <div class="session">
     <h2>Tickets</h2>
     <div class="row colors"></div>
