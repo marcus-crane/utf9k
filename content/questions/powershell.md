@@ -1,7 +1,12 @@
 ---
 title: "Powershell"
-date: "2020-08-29"
 slug: "powershell"
+category: "questions"
+tags:
+- "microsoft"
+- "powershell"
+- "programming"
+- "scripting"
 aliases:
 - "/notes/powershell/"
 ---

@@ -1,7 +1,10 @@
 ---
 title: "Emacs"
-date: "2020-08-29"
 slug: "emacs"
+category: "questions"
+tags:
+- "emacs"
+- "texteditor"
 aliases:
 - "/notes/emacs/"
 ---

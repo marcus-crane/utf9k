@@ -1,7 +1,10 @@
 ---
 title: "Postgres"
-date: "2020-11-27"
 slug: "postgres"
+category: "questions"
+tags:
+- "databases"
+- "postgres"
 aliases:
 - "/notes/postgres/"
 ---

@@ -1,7 +1,10 @@
 ---
 title: "Kubernetes"
-date: "2021-04-28"
 slug: "kubernetes"
+category: "questions"
+tags:
+- "cicd"
+- "deployment"
 ---
 
 ## How can I pause a recurring cronjob?

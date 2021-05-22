@@ -1,7 +1,10 @@
 ---
 title: "Elixir"
-date: "2020-08-29"
 slug: "elixir"
+category: "questions"
+tags:
+- "elixir"
+- "programming"
 aliases:
 - "/notes/elixir/"
 ---

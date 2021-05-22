@@ -3,7 +3,7 @@ publish = "public"
 command = "yarn install && yarn run build"
 
 [build.environment]
-HUGO_VERSION = "0.78.2"
+HUGO_VERSION = "0.83.1"
 
 [context.production.environment]
 HUGO_ENV = "production"
@@ -57,6 +57,7 @@ Cache-Control = "public, max-age=604800"
 for = "/*"
 
 [headers.values]
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src data: blob: *; media-src data: *; script-src 'self' https://api.mapbox.com; connect-src 'self' https://api.mapbox.com https://events.mapbox.com https://*.tiles.mapbox.com ; worker-src 'self' blob: ; child-src blob: ;"
 X-Frame-Options = "SAMEORIGIN"
 X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
