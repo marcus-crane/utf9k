@@ -51,11 +51,21 @@ Promise.all([spotifyPromise, traktPromise])
   })
 
 function renderSpotifyData(data) {
+  const listeningType = data.currently_playing_type
   const timestamp = data.timestamp
   const progressPercent = (data.progress_ms / data.item.duration_ms * 100).toFixed(2)
   const duration = data.item.duration_ms
-  const artistName = data.item.album.artists[0].name
-  const artistLink = data.item.album.artists[0].external_urls.spotify
+  let artistName = ''
+  let artistLink = ''
+  
+  if (listeningType === 'episode') {
+    artistName = data.item.show.name
+    artistLink = data.item.show.external_urls.spotify
+  } else {
+    artistName = data.item.album.artists[0].name
+    artistLink = data.item.album.artists[0].external_urls.spotify
+  }
+
   const songName = data.item.name
   const songLink = data.item.external_urls.spotify
 

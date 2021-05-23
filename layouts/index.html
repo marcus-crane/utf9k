@@ -20,6 +20,6 @@
   {{ $targetPath := "js/main.js" }}
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
-  {{ $built := resources.Get $targetPath | js.Build $opts }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
 {{ end }}

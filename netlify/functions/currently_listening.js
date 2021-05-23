@@ -2,7 +2,7 @@ const fetch = require("node-fetch")
 const { URLSearchParams } = require("url")
 
 const REFRESH_ENDPOINT = "https://accounts.spotify.com/api/token"
-const PLAYER_ENDPOINT = "https://api.spotify.com/v1/me/player/currently-playing?market=NZ"
+const PLAYER_ENDPOINT = "https://api.spotify.com/v1/me/player/currently-playing?market=NZ&additional_types=episode"
 const USER_AGENT = "Now Playing/1.0 (utf9k.net)"
 
 exports.handler = async function(event, context) {
