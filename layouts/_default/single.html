@@ -1,6 +1,8 @@
 {{ define "main" }}
-<article class="prose lg:prose-xl dark:prose-dark">
-  <h1>{{ .Title }}</h1>
+<article class='{{ if not (isset .Params "noproseclass") }}prose lg:prose-xl dark:prose-dark{{ end }}'>
+  <div class='{{ if isset .Params "noproseclass" }}prose lg:prose-xl dark:prose-dark mb-12{{ end }}'>
+    <h1>{{ .Title }}</h1>
+  </div>
   {{ .Content }}
 </article>
 {{ end }}
