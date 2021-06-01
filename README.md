@@ -34,6 +34,6 @@ The default branch is called `next` and pushes to it will render at [next.utf9k.
 
 This acts as a staging environment so I can push changes and drafts to the repo, without worry about them being live. At the same time, I can preview how they will look when deployed so it makes reviewing easier, and nicer to read. A bit of dogfooding goes a long way.
 
-To make changes live, you just simply merge the `next` branch into `live` and they will automatically roll out to [utf9k.net](https://utf9k.net) in a few minutes.
+To make changes live, you just need to merge the `next` branch into `live` and the latest updates will automatically roll out to [utf9k.net](https://utf9k.net) in a few minutes.
 
 Drafts are only visible under `next` so don't forget to remove any `draft: true` key:value pairs from blog posts that are ready to publish.
