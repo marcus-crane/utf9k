@@ -10,6 +10,12 @@
 	@apply mb-0
 }
 
+@layer base {
+  .prose img {
+    @apply shadow-md
+  }
+}
+
 .prose code::before, .prose code::after {
 	content: none;
 }
