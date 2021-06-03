@@ -9,7 +9,7 @@ HUGO_VERSION = "0.83.1"
 HUGO_ENV = "production"
 
 [context.branch-deploy]
-command = "yarn install && yarn run build-next"
+command = "python scripts/generate-fancylinks.py && yarn install && yarn run build-next"
 
 [[headers]]
 for = "/*.jpg"

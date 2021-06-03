@@ -1,0 +1,25 @@
+{{ $inner := string .Inner }}
+{{ $metadata := (index .Site.Data.fancylinks $inner) }}</p>
+
+{{ if $metadata }}
+<div class="bg-white dark:bg-gray-800 p-2">
+  <a style="text-decoration: none;" href="{{ .Inner }}" class="no-underline">
+    <div class="flex items-center">
+      <img src="{{ $metadata.favicon_url }}" width="16" height="16" class="flex-none rounded-lg bg-gray-100 mr-4 h-auto mt-0 mb-0" />
+      <div class="min-w-0 flex-auto space-y-0.5">
+        <p style="margin: 0;" class="leading-3 text-lime-600 text-sm font-semibold">
+          {{ $inner }}
+        </p>
+        <p style="margin: 0;" class="text-black dark:text-white text-sm truncate font-semibold">
+          {{ $metadata.title }}
+        </p>
+        <p style="margin: 0;" class="text-gray-500 dark:text-gray-400 text-sm font-medium">
+          {{ $metadata.description }}
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+{{ else }}
+<a href="{{ .Inner }}">{{ .Inner }}</a>
+{{ end }}
