@@ -9,7 +9,8 @@
   "scripts": {
     "start": "hugo server --disableFastRender --buildDrafts --buildFuture",
     "build": "NODE_ENV=production hugo --gc --buildFuture",
-    "build-next": "NODE_ENV=production hugo --gc --buildDrafts --buildFuture"
+    "build-next": "NODE_ENV=production hugo --gc --buildDrafts --buildFuture",
+    "generate-fancy-links": "pip install -r scripts/requirements.txt && python scripts/generate-fancylinks.py"
   },
   "devDependencies": {},
   "dependencies": {

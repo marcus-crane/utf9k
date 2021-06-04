@@ -9,7 +9,7 @@ library:
       link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
       date_finished: N/A
       rating: N/A
-      progress: 24
+      progress: 29
     - title: Street Fighters
       author: Kate Kelly
       cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
@@ -17,6 +17,13 @@ library:
       date_finished: N/A
       rating: N/A
       progress: 9
+    - title: How to Take Smart Notes
+      author: Sönke Ahrens
+      cover: https://covers.openlibrary.org/b/id/8362230-L.jpg
+      link: https://openlibrary.org/books/OL26697312M/How_to_Take_Smart_Notes_One_Simple_Technique_to_Boost_Writing_Learning_and_Thinking_%E2%80%93_for_Students_A
+      date_finished: N/A
+      rating: N/A
+      progress: 19
 
   - list: Finished
     priority: 2
@@ -27,11 +34,13 @@ library:
       link: https://openlibrary.org/books/OL30597006M/The_Big_Four
       date_finished: 2021-05-30
       rating: 4
+      progress: 100
     - title: Little Rice
       author: Clay Shirky
       cover: https://covers.openlibrary.org/b/id/7984442-L.jpg
       link: https://openlibrary.org/works/OL17709914W/Little_Rice
       date_finished: 2021-05-05
       rating: 3
+      progress: 100
 
 

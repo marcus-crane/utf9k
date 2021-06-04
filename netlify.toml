@@ -1,15 +1,16 @@
 [build]
 publish = "public"
-command = "yarn install && yarn run build"
+command = "yarn run generate-fancy-links && yarn install && yarn run build"
 
 [build.environment]
 HUGO_VERSION = "0.83.1"
+PYTHON_VERSION = "3.7"
 
 [context.production.environment]
 HUGO_ENV = "production"
 
 [context.branch-deploy]
-command = "yarn install && yarn run build-next"
+command = "yarn run generate-fancy-links && yarn install && yarn run build-next"
 
 [[headers]]
 for = "/*.jpg"

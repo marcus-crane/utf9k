@@ -10,3 +10,4 @@ node_modules
 resources
 .cache
 .netlify
+data/fancylinks.json
