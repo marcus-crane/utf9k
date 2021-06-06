@@ -1,5 +1,7 @@
 <figure>
   <a href='{{ .Get "src" }}'>
-    <img src='{{ .Get "src" }}' alt='{{ trim .Inner "\n" }}' />
+    {{ $.Scratch.Set "hideDropShadow" (.Get "noshadow") }}
+    {{ $hideDropShadow := $.Scratch.Get "hideDropShadow" }}
+    <img src='{{ .Get "src" }}' class="{{ if eq $hideDropShadow false }}shadow-md{{ end }}" alt='{{ trim .Inner "\n" }}' loading="lazy" />
   </a>
 </figure>
