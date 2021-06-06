@@ -4,20 +4,24 @@ library:
     priority: 1
     books:
     - title: Crossing the Chasm, 3rd Edition
+      subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
       author: Geoffrey A. Moore
       cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
-      link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
+      link: https://openlibrary.org/books/OL27526249M/Crossing_the_Chasm_3rd_Edition
       date_finished: N/A
       rating: N/A
       progress: 29
     - title: Street Fighters
+      subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
+
       author: Kate Kelly
       cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
-      link: https://openlibrary.org/works/OL14990223W/Street_Fighters
+      link: https://openlibrary.org/books/OL24089567M/Street_Fighters
       date_finished: N/A
       rating: N/A
       progress: 9
     - title: How to Take Smart Notes
+      subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
       author: Sönke Ahrens
       cover: https://covers.openlibrary.org/b/id/8362230-L.jpg
       link: https://openlibrary.org/books/OL26697312M/How_to_Take_Smart_Notes_One_Simple_Technique_to_Boost_Writing_Learning_and_Thinking_%E2%80%93_for_Students_A
@@ -29,6 +33,7 @@ library:
     priority: 2
     books:
     - title: The Big Four
+      subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
       author: Ian D. Gow
       cover: https://covers.openlibrary.org/b/id/11194303-L.jpg
       link: https://openlibrary.org/books/OL30597006M/The_Big_Four
@@ -36,11 +41,46 @@ library:
       rating: 4
       progress: 100
     - title: Little Rice
+      subtitle: Smartphones, Xiaomi, and The Chinese Dream
       author: Clay Shirky
       cover: https://covers.openlibrary.org/b/id/7984442-L.jpg
       link: https://openlibrary.org/works/OL17709914W/Little_Rice
       date_finished: 2021-05-05
       rating: 3
       progress: 100
-
-
+    - title: The Waxman Report
+      subtitle: How Congress Really Works
+      author: Henry Waxman
+      cover: https://covers.openlibrary.org/b/id/6421143-L.jpg
+      link: https://openlibrary.org/books/OL24271655M/The_Waxman_Report
+      date_finished: 2021-04-24
+      rating: 4
+      progress: 100
+    - title: In the Beginning ...Was the Command Line
+      subtitle: null
+      author: Neal Stephenson
+      cover: https://covers.openlibrary.org/b/id/6396549-L.jpg
+      link: https://openlibrary.org/books/OL24249207M/In_the_Beginning...Was_the_Command_Line
+      rating: 2
+      progress: 100
+    - title: The Dip
+      subtitle: A Little Book That Teaches You When to Quit
+      author: Seth Godin
+      cover: https://covers.openlibrary.org/b/id/6405017-L.jpg
+      link: https://openlibrary.org/books/OL24257214M/The_Dip
+      rating: 3
+      progress: 100
+    - title: Propaganda
+      subtitle: null
+      author: Edward Bernays
+      cover: https://covers.openlibrary.org/b/id/10413643-L.jpg
+      link: https://openlibrary.org/works/OL21948057W/Propaganda
+      rating: 4
+      progress: 100
+    - title: In the Plex
+      subtitle: How Google Thinks, Works, and Shapes Our Lives
+      author: Steven Levy
+      cover: https://covers.openlibrary.org/b/id/11220620-L.jpg
+      link: https://openlibrary.org/books/OL26318641M/In_the_Plex
+      rating: 5
+      progress: 100
