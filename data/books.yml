@@ -61,6 +61,7 @@ library:
       author: Neal Stephenson
       cover: https://covers.openlibrary.org/b/id/6396549-L.jpg
       link: https://openlibrary.org/books/OL24249207M/In_the_Beginning...Was_the_Command_Line
+      date_finished: 2021-02-20
       rating: 2
       progress: 100
     - title: The Dip
@@ -68,6 +69,7 @@ library:
       author: Seth Godin
       cover: https://covers.openlibrary.org/b/id/6405017-L.jpg
       link: https://openlibrary.org/books/OL24257214M/The_Dip
+      date_finished: 2021-02-13
       rating: 3
       progress: 100
     - title: Propaganda
@@ -75,6 +77,7 @@ library:
       author: Edward Bernays
       cover: https://covers.openlibrary.org/b/id/10413643-L.jpg
       link: https://openlibrary.org/works/OL21948057W/Propaganda
+      date_finished: 2021-02-12
       rating: 4
       progress: 100
     - title: In the Plex
@@ -82,5 +85,6 @@ library:
       author: Steven Levy
       cover: https://covers.openlibrary.org/b/id/11220620-L.jpg
       link: https://openlibrary.org/books/OL26318641M/In_the_Plex
+      date_finished: 2020-12-28
       rating: 5
       progress: 100
