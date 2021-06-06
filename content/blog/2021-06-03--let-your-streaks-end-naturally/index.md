@@ -3,7 +3,6 @@ title: "Let your streaks end naturally"
 date: "2021-06-03T12:50:00+1300"
 slug: "let-your-streaks-end-naturally"
 category: "blog"
-draft: true
 tags:
 - "health"
 - "longterm"
