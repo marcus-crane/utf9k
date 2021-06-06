@@ -68,6 +68,10 @@ def get_link_metadata(url):
                 opengraph['description'] = meta_desc.attrs.get('content')
         if opengraph['title'] is None:
             opengraph['title'] = soup.head.title.text
+        if opengraph['favicon_url'] is not None and 'http://' in opengraph['favicon_url']:
+            upgraded_favicon_url = opengraph['favicon_url'].replace('http://', 'https://')
+            if requests.get(upgraded_favicon_url, headers=headers).ok:
+                opengraph['favicon_url'] = upgraded_favicon_url
         if opengraph['favicon_url'] is None:
             r = requests.get(f"{url}/favicon.ico", headers=headers)
             if r.ok:
