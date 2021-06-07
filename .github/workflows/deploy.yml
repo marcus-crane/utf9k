@@ -14,19 +14,19 @@ jobs:
         python-version: '3.7'
         architecture: 'x64'
 
-    - uses: peaceiris/actions-hugo@v2
+    - uses: peaceiris/actions-hugo@master
       with:
         hugo-version: '0.83.1'
 
-    - uses: bolares/actions-yarn@v2.0.0
+    - uses: bolares/actions-yarn@master
       with:
         cmd: generate-fancy-links
 
-    - uses: bolares/actions-yarn@v2.0.0
+    - uses: bolares/actions-yarn@master
       with:
         cmd: install
 
-    - uses: bolares/actions-yarn@v2.0.0
+    - uses: bolares/actions-yarn@master
       with:
         cmd: build
 
