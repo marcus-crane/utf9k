@@ -1,11 +1,6 @@
 name: Publish changes
 
-on:
-  push:
-    branches:
-      - live
-      - next
-  pull_request:
+on: push
 
 jobs:
   publish:
@@ -13,6 +8,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+        architecture: 'x64'
+
+    - uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.83.1'
+
+    - uses: bolares/actions-yarn@v2.0.0
+      with:
+        cmd: generate-fancy-links
+
+    - uses: bolares/actions-yarn@v2.0.0
+      with:
+        cmd: install
+
+    - uses: bolares/actions-yarn@v2.0.0
+      with:
+        cmd: build
 
     - name: Publish
       uses: netlify/actions/build@master
