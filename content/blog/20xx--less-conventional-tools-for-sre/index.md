@@ -25,7 +25,9 @@ I'll be demoing this using [Feedbin](https://feedbin.com) but any RSS reader wil
 
 One very useful aspect of most non-custom status pages is that they come equipped with an RSS feed. Here's how my setup looks.
 
-[![A screenshot of the Feedbin UI showing a status page category. A number of popular services such as Azure, Google Cloud Platform and Amazon Web Services are visible.](statuspages.png)](statuspages.png)
+{{< image src="statuspages.png" >}}
+  A screenshot of the Feedbin UI showing a status page category. A number of popular services such as Azure, Google Cloud Platform and Amazon Web Services are visible.
+{{< /image >}}
 
 This in itself may not seem very useful but once you start to follow enough status pages, you can infer some interesting information.
 
