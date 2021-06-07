@@ -18,7 +18,7 @@ jobs:
       with:
         hugo-version: '0.83.1'
 
-    - uses: bolares/actions-yarn@master
+    - uses: Bolares/actions-yarn@2.3.0
       with:
         cmd: generate-fancy-links
 
