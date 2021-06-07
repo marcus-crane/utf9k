@@ -12,7 +12,7 @@ HUGO_ENV = "production"
 [context.branch-deploy]
 command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
 
-[context.branch-deploy]
+[context.deploy-preview]
 command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
 
 [[headers]]
