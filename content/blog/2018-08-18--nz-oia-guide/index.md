@@ -92,18 +92,8 @@ At this point, the guide itself is over but I have a bit of a fun story that you
 
 It occured to me one day. While I can't even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It's an interesting list, and probably about what I would guess to.
 
-{{< metaoiatable >}}
-
-Sources: [^1] [^2] [^3] [^4]
+You can view a table I keep updated with these requests [here](/projects/meta-oia-requests).
 
 A quick glance tells that the majority of rejected/redacted requests were on the grounds of defense or ensuring international relations which is understandable. Additionally, the NZ government have been entrusted with information from Australian officials regarding social security and from the US administration. None of those are particularly surprising but it's still interesting nonetheless.
 
 I'd love to hear what those US Film Industry interactions were about myself. Perhaps with time, I can "FOIA the fuck out of it" to quote a tweet I saw earlier today.
-
-[^1]: [FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz](https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960)
-
-[^2]: [Withheld / Rejected OIA Filings - fyi.govt.nz](https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439)
-
-[^3]: [FOIA Sections S6(a) and S(6)b(i) - Oct 2018 - Oct 2019]https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019)
-
-[^4]: [FOIA Sections S6(a) and S(6)b(i) - Nov 2019 - Aug 2020](https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020)
