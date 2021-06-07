@@ -30,27 +30,37 @@ That in itself I don't have any trouble with but gosh, can it be slow!
 
 Here's what I usually end up staring at a number of times
 
-[![A screenshot of a dead Mattermost client. It's an electron desktop app but all it is rendering is a single tab and the rest of the screen is blank. There are no loading indicators at all.](empty-frame.png)](empty-frame.png)
+{{< image src="empty-frame.png" noshadow=true >}}
+  A screenshot of a dead Mattermost client. It's an electron desktop app but all it is rendering is a single tab and the rest of the screen is blank. There are no loading indicators at all.
+{{< /image >}}
 
 As a user, I would hope for at least a loading spinner but that spinner is contained in the Javascript bundle which... the server is sometimes too flaky to serve it seems.
 
 Anyway, when this happens, I usually reach for the View menu and click the following
 
-[![A screenshot of the View menu for Mattermost. It shows a number of options with "Clear cache and Reload" being highlighted. This menu also contained an item called "Developer Tools for Current Server" which we will be accessing later.](clear-cache.png)](clear-cache.png)
+{{< image src="clear-cache.png" noshadow=true >}}
+  A screenshot of the View menu for Mattermost. It shows a number of options with "Clear cache and Reload" being highlighted. This menu also contained an item called "Developer Tools for Current Server" which we will be accessing later.
+{{< /image >}}
 
 The previously mentioned flakiness still causes troubles from time to time so it takes a couple of tries. I often click the "Developer Tools for Current Server" option seen above to see what exactly is happening under the hood.
 
 Here's what a dead request usually gives me, and is generally the cause of the blank frame you saw earlier
 
-[![A screenshot of the previously mentioned developer tools. They look identical to the usual browser developer tools. The Network tab is selected which shows a single HTTP request for a document that returned the status code 200 OK. It took 300 milliseconds but despite that, the frame is still blank. The browser tools give the impression that the application has finished loading despite that not being the case.](loading-stuck.png)](loading-stuck.png)
+{{< image src="loading-stuck.png" noshadow=true >}}
+  A screenshot of the previously mentioned developer tools. They look identical to the usual browser developer tools. The Network tab is selected which shows a single HTTP request for a document that returned the status code 200 OK. It took 300 milliseconds but despite that, the frame is still blank. The browser tools give the impression that the application has finished loading despite that not being the case.
+{{< /image >}}
 
 After a few retries, we're able to fully load the application but only after an entire minute has passed!
 
-[![A screenshot of the Network tab which contains 87 requests. That's a lot! The network transfer waterfall spans 65 seconds which is crazy for a website. A number of the requests span anywhere between 300ms and 5 seconds.](total-load-time.png)](total-load-time.png)
+{{< image src="total-load-time.png" noshadow=true >}}
+  A screenshot of the Network tab which contains 87 requests. That's a lot! The network transfer waterfall spans 65 seconds which is crazy for a website. A number of the requests span anywhere between 300ms and 5 seconds.
+{{< /image >}}
 
 Arguably, it gets even worse once we dig into some of the culprits. Here is one which is a Mattermost plugin called [Standup Raven](https://integrations.mattermost.com/standup-raven/).
 
-[![A screenshot of the Network tab that has been cropped to just a couple of network transfers. One for a plugin called Standup Raven has been selected which took a total of 19 seconds to download!](standup-raven.png)](standup-raven.png)
+{{< image src="standup-raven.png" >}}
+  A screenshot of the Network tab that has been cropped to just a couple of network transfers. One for a plugin called Standup Raven has been selected which took a total of 19 seconds to download!
+{{< /image >}}
 
 A whopping 1/3 of the download time appears to be used up for a single plugin! To make matters worse, these plugins appear to be parsed first before any of the actual chat content is fetched so the Mattermost window sits unusable until all plugins are downloaded before progressing to fetch messages and channels.
 
@@ -60,8 +70,9 @@ My browser reported that the plugin was 7MB uncompressed so I was concerned that
 
 Sure enough, the plugin on offer was distributed as part of an 11.1MB `tar.gz` archive and the bundle itself weighs in at `7.4MB`.
 
-[![A screenshot showing the Javascript bundle for Standup Raven open in the authors Downloads directory using macOS finder. This finder window is sitting open over the top of the latest Github release. The Github release shown distributes tar.gz bundles for Windows, macOS and Linux. Each tar.gz is 11MB with the downloaded bundle while the main.js bundle the author downloaded is 7.4MB. This lines up with the download size mentioned before.](plugin-installation-size.png)](plugin-installation-size.png)
-
+{{< image src="plugin-installation-size.png" >}}
+  A screenshot showing the Javascript bundle for Standup Raven open in the authors Downloads directory using macOS finder. This finder window is sitting open over the top of the latest Github release. The Github release shown distributes tar.gz bundles for Windows, macOS and Linux. Each tar.gz is 11MB with the downloaded bundle while the main.js bundle the author downloaded is 7.4MB. This lines up with the download size mentioned before.
+{{< /image >}}
 
 ## What's the forcing function here?
 
