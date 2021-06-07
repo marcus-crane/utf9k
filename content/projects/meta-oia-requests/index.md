@@ -27,7 +27,7 @@ I'm due to file my next update sometime around August or September 2021
 
 {{< metaoiatable >}}
 
-[Spotted something wrong with the table or just want a copy of the data?](https://github.com/marcus-crane/utf9k/blob/next/data/metaoia.yml)
+[Spotted something wrong with the table or just want a copy of the data?](https://github.com/marcus-crane/utf9k/blob/live/data/metaoia.yml)
 
 ---
 
