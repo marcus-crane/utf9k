@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      {{ range $.Site.Data.metaoia.headings }}
+      <th>{{ . }}</th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $.Site.Data.metaoia.entries }}
+      <tr>
+        <td>{{ .RequestDate }}</td>
+        <td>{{ .Subject }}</td>
+        <td>{{ .DeniedUnder }}</td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>

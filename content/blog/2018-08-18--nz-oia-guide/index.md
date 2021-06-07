@@ -92,32 +92,7 @@ At this point, the guide itself is over but I have a bit of a fun story that you
 
 It occured to me one day. While I can't even know what that redacted information was, I can at least know what the information related to. A sort of metadata if you like so I did exactly that. Below is a table of topics. The NZ government has had requests for information that surrounded those topics. The requests were either rejected, or more likely redacted. It's an interesting list, and probably about what I would guess to.
 
-| Request Date | Subject                                                                                                                                             | Denied Under  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| 09/02/2016   | Detention and deporation of New Zealanders from Australia                                                                                           | 6(a)          |
-| 30/03/2016   | Prime Minister's recent visit to Sri Lanka                                                                                                          | 6(a)          |
-| 06/04/2016   | Communications regarding the 2016 US Presidential Election                                                                                          | 6(a)          |
-| 25/05/2016   | Britain possibly leaving the European Union                                                                                                         | 6(a)          |
-| 07/06/2016   | Panama Papers                                                                                                                                       | 6(a)          |
-| 16/08/2016   | Decision to extend New Zealand's training mission to Iraq                                                                                           | 6(a)          |
-| 2016 - 2017  | Intelligence and advice to the NZ government related to the 9/11 event                                                                              | 6(a)          |
-| 2016 - 2017  | Record of OIAs from February 2017                                                                                                                   | 6             |
-| 2016 - 2017  | Preparation for Trump Administration                                                                                                                | 6(a), 6(b)    |
-| 2016 - 2017  | NSS handbook examples of 1080 and domestic incident                                                                                                 | 6(a)          |
-| 2016 - 2017  | The steel industry and trade issues                                                                                                                 | 6(a)          |
-| 2016 - 2017  | Meetings with Australian officials on social security                                                                                               | 6(a), 6(b)    |
-| 2016 - 2017  | Interactions with United States Film Industry representatives                                                                                       | 6(a)          |
-| 13/04/2018   | Advice relating to Labour Party summer schools                                                                                                      | 6(c)          |
-| 18/04/2018   | Weekly reports provided to the Minister for National Security and Intelligence                                                                      | 6(a), 6(b)(i) |
-| 20/04/2018   | Correspondence with the Office of the President of the United States                                                                                | 6(a)          |
-| 18/05/2018   | Information including individual costs of gifts given during visit to Europe and the UK                                                             | 6(a)          |
-| 28/06/2018   | Prime Minister's diary                                                                                                                              | 6(a)          |
-| 03/07/2018   | Records of meeting with former President of the United States                                                                                       | 6(a)          |
-| 13/07/2018   | Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence | 6(a), 6(b)(i) |
-| 24/07/2018   | Records relating to visit to NZ by former US Secretary of State Hillary Clinton                                                                     | 6(a), 6(c)    |
-| 30/07/2018   | Correspondence with the President of the United States                                                                                              | 6(a)          |
-| 11/09/2018   | Inquiry into the appointment process for the Deputy Police Commissioner                                                                             | 6(c)          |
-| 03/10/2018   | Phone calls to heads of state                                                                                                                       | 6(a)          |
+{{< metaoiatable >}}
 
 Sources: [^1] [^2]
 

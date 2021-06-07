@@ -1,0 +1,108 @@
+headings:
+  - Request Date
+  - Subject
+  - Denied Under
+
+entries:
+  - RequestDate: 09/02/2016
+    Subject: Detention and deporation of New Zealanders from Australia  
+    DeniedUnder: 6(a)
+
+  - RequestDate: 30/03/2016
+    Subject: Prime Minister’s recent visit to Sri Lanka
+    DeniedUnder: 6(a)
+
+  - RequestDate: 06/04/2016
+    Subject: Communications regarding the 2016 US Presidential Election 
+    DeniedUnder: 6(a)
+
+  - RequestDate: 25/05/2016
+    Subject: Britain possibly leaving the European Union
+    DeniedUnder: 6(a)
+
+  - RequestDate: 07/06/2016
+    Subject: Panama Papers
+    DeniedUnder: 6(a)
+
+  - RequestDate: 16/08/2016
+    Subject: Decision to extend New Zealand’s training mission to Iraq
+    DeniedUnder: 6(a)
+
+  - RequestDate: 2016 - 2017
+    Subject: Intelligence and advice to the NZ government related to the 9/11 event
+    DeniedUnder: 6(a)
+
+  - RequestDate: 2016 - 2017
+    Subject: Record of OIAs from February 2017
+    DeniedUnder: 6
+
+  - RequestDate: 2016 - 2017
+    Subject: Preparation for Trump Administration 
+    DeniedUnder: 6(a), 6(b)
+
+  - RequestDate: 2016 - 2017
+    Subject: NSS handbook examples of 1080 and domestic incident
+    DeniedUnder: 6(a)
+
+  - RequestDate: 2016 - 2017
+    Subject: The steel industry and trade issues
+    DeniedUnder: 6(a)
+
+  - RequestDate: 2016 - 2017
+    Subject: Meetings with Australian officials on social security
+    DeniedUnder: 6(a), 6(b)
+
+  - RequestDate: 2016 - 2017
+    Subject: Interactions with United States Film Industry representatives
+    DeniedUnder: 6(a)
+
+  - RequestDate: 13/04/2018
+    Subject: Advice relating to Labour Party summer schools
+    DeniedUnder: 6(c)
+
+  - RequestDate: 18/04/2018
+    Subject: Weekly reports provided to the Minister for National Security and Intelligence
+    DeniedUnder: 6(a), 6(b)(i)
+
+  - RequestDate: 20/04/2018
+    Subject: Correspondence with the Office of the President of the United States
+    DeniedUnder: 6(a)
+
+  - RequestDate: 18/05/2018
+    Subject: Information including individual costs of gifts given during visit to Europe and the UK
+    DeniedUnder: 6(a)
+
+  - RequestDate: 28/06/2018
+    Subject: Prime Minister's diary
+    DeniedUnder: 6(a)
+
+  - RequestDate: 03/07/2018
+    Subject: Records of meeting with former President of the United States
+    DeniedUnder: 6(a)
+
+  - RequestDate: 13/07/2018
+    Subject: Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence  
+    DeniedUnder: 6(b)(i)
+
+  - RequestDate: 24/07/2018
+    Subject: Records relating to visit to NZ by former US Secretary of State Hillary Clinton  
+    DeniedUnder: 6(a), 6(c)
+
+  - RequestDate: 30/07/2018
+    Subject: Correspondence with the President of the United States 
+    DeniedUnder: 6(a)
+
+  - RequestDate: 11/09/2018
+    Subject: Inquiry into the appointment process for the Deputy Police Commissioner  
+    DeniedUnder: 6(c)
+  
+  - RequestDate: 03/10/2018
+    Subject: Phone calls to heads of state  
+    DeniedUnder: 6(a)
+
+Sources:
+  - SourceURL: https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960
+    SourceTitle: FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz
+
+  - SourceURL: https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439
+    SourceTitle: Withheld / Rejected OIA Filings - fyi.govt.nz
