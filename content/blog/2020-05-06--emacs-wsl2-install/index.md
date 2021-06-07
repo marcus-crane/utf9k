@@ -197,7 +197,7 @@ If you'd like to run a more up to date version, you can do the following to fetc
 ```shell
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt-get update
-sudo apt-get install emacs26`
+sudo apt-get install emacs26
 ```
 
 Very nice, you should be all good to go. If you would like to use Doom Emacs as I am, you will need some extra packages which you can find more info about [via the handy documentation](https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#ubuntu)
