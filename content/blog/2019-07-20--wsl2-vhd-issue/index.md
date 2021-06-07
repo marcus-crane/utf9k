@@ -40,10 +40,8 @@ You'd never know it but your WSL packages live under `%LOCALAPPDATA%/packages/<d
 
 The terms "uncompressed and unencrypted" tipped me off to check those blasted "advanced settings". Under `Right Click -> Properties -> General -> Advanced`, I spotted `Compress contents to save disk space` was ticked for some reason. Unchecking it, then rerunning the WSL 1 -> 2 conversion worked as you'd hope.
 
-{{< figure
-	src="compressed.png"
-	link="compressed.png"
-  alt="A screenshot showing Windows Explorer. It is open to C:/Users/Marcus/AppData/Local/Packages. A folder is highlighted to indicate it was recently clicked on. The properties window for that folder is visible showing metadata. Overlaying the properties window is the Advanced Attributes window where a checkbox labelled 'Compress contents to save disk space' is checked. The author is showing that you should uncheck that box to fix the issue described in this post."
->}}
+{{< image src="compressed.png" >}}
+  A screenshot showing Windows Explorer. It is open to C:/Users/Marcus/AppData/Local/Packages. A folder is highlighted to indicate it was recently clicked on. The properties window for that folder is visible showing metadata. Overlaying the properties window is the Advanced Attributes window where a checkbox labelled 'Compress contents to save disk space' is checked. The author is showing that you should uncheck that box to fix the issue described in this post.
+{{< /image >}}
 
 So, if you run into this issue, have a poke around your packages and hopefully you'll be on your way to a nice, properly Linux-y home on Windows.
