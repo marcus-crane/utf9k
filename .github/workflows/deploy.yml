@@ -14,21 +14,19 @@ jobs:
         python-version: '3.7'
         architecture: 'x64'
 
-    - uses: peaceiris/actions-hugo@master
+    - uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.83.1'
-
-    - uses: Bolares/actions-yarn@2.3.0
+    
+    - uses: actions/setup-node@v2
       with:
-        cmd: generate-fancy-links
+        node-version: '16'
 
-    - uses: bolares/actions-yarn@master
-      with:
-        cmd: install
+    - run: npm install -g yarn
 
-    - uses: bolares/actions-yarn@master
-      with:
-        cmd: build
+    - run: yarn run generate-fancy-links
+    - run: yarn install
+    - run: build
 
     - name: Publish
       uses: netlify/actions/build@master
