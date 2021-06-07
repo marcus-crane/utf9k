@@ -21,9 +21,9 @@ Before we get started, I should point out that this setup has actually be retire
 
 ## The original setup
 
-{{< figure
-	src="/blog/reducing-my-edc-2019/original_carry.jpeg"
-	link="/blog/reducing-my-edc-2019/original_carry.jpeg" >}}
+{{< image src="01-original-carry.jpeg" >}}
+
+{{< /image >}}  
 
 My EDC was already fairly compact and consisted of the following:
 
@@ -40,9 +40,9 @@ Let's have a look at these individually as we break down my setup and slowly reb
 
 ## Assessing my wallet
 
-{{< figure
-src="/blog/reducing-my-edc-2019/wallet_old.jpeg"
-link="/blog/reducing-my-edc-2019/wallet_old.jpeg" >}}
+{{< image src="02-wallet-old.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 There's quite a lot in my wallet that I don't use, and different cards definitely get access more than others.
 
@@ -50,9 +50,9 @@ Let's start by taking a closer look at those cards
 
 ### Regular cards
 
-{{< figure
-src="/blog/reducing-my-edc-2019/cards_scattered.jpeg"
-link="/blog/reducing-my-edc-2019/cards_scattered.jpeg" >}}
+{{< image src="03-cards-scattered.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 There's a variety of different cards here:
 
@@ -66,18 +66,21 @@ There's a variety of different cards here:
 
 *   Bank cards
 
-
-{{< figure
-src="/blog/reducing-my-edc-2019/business_cards.jpeg"
-link="/blog/reducing-my-edc-2019/business_cards.jpeg" >}}
+{{< image src="04-business-cards.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Business cards are pretty easy to get rid of as a first step. They just went straight into my contacts list. I don't have any need to carry them and should have digitised them a long time ago.
 
-[![loyalty_cards.jpeg](loyalty_cards.jpeg)](loyalty_cards.jpeg)
+{{< image src="05-loyalty-cards.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 I don't use loyalty cards often enough, to make the space they take up worth it. Thankfully, it's easy to digitise them nowadays (if they have a barcode) and carry them on my phone instead.
 
-[[file:gpay_cards.jpeg](gpay_cards.jpeg)]
+{{< image src="06-gpay-cards.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Last but not least, I can reduce the amount of time I'm pulling bank cards out of my wallet by adding them to Google Pay. I still need them on hand for larger purchases due to paywave limits.
 
@@ -93,7 +96,9 @@ This is my most used card, given I use it at least once a day on weekdays and so
 
 What I ended up doing was taking it and replacing it with one of the [limited edition HOP tags](https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag/) that Auckland Transport occasionally releases.
 
-[![hop.jpeg](hop.jpeg)](hop.jpeg)
+{{< image src="07-hop.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 They're designed to live with your keys, coming with a metallic keychain, but I removed that for reasons which will be a little clearer as we continue on.
 
@@ -101,7 +106,9 @@ They're designed to live with your keys, coming with a metallic keychain, but I 
 
 After all of that reduction, my wallet is slimmed down to just the following essentials
 
-[![cards.jpeg](cards.jpeg)](cards.jpeg)
+{{< image src="08-cards.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Nowadays, I wouldn't even carry the gift card around, instead just opting to either digitise it (if possible) or remembering to bring it whenever I decide to go in store or order online.
 
@@ -109,33 +116,47 @@ My wallet has served me well for quite some time but it's really easy for just t
 
 I was browsing the web one day for unique takes on wallets and I came across this thing. It looks a bit confusing at first but having used it for the better part of a year, I really enjoyed it. Here's what it looks like disassembled.
 
-[![wallet_disassembled.jpeg](wallet_disassembled.jpeg)](wallet_disassembled.jpeg)
+{{< image src="09-wallet-disassembled.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 It probably doesn't look like much at the moment so let's add some keys and accessories
 
-[![wallet_setup.jpeg](wallet_setup.jpeg)](wallet_setup.jpeg)
+{{< image src="10-wallet-setup.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 I've got my three house keys, a bottle opener (under the blue key) and a USB drive all sitting snuggly in there.
 
-[![wallet_underside.jpeg](wallet_underside.jpeg)](wallet_underside.jpeg)
+{{< image src="11-wallet-underside.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 That's not all. We can stick those remaining cards in the bottom card holder too.
 
-[![wallet_underside_full.jpeg](wallet_underside_full.jpeg)](wallet_underside_full.jpeg)
+{{< image src="12-wallet-underside-full.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 To top it all off, I had some spare 3M wall hanger strips floating around so I repurposed one to affix my travel tag to the top of this contraption using velcro
 
-[![wallet_top.jpeg](wallet_top.jpeg)](wallet_top.jpeg)
+{{< image src="13-wallet-top.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Et voila, a pretty compact setup if I say so myself!
 
-[![wallet_side.jpeg](wallet_side.jpeg)](wallet_side.jpeg)
+{{< image src="14-wallet-side.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 ## Untangling my headphones
 
 I used to have various pairs of earbuds over the years that were good enough.
 
-[![wired_earbuds.jpeg](wired_earbuds.jpeg)](wired_earbuds.jpeg)
+{{< image src="15-wired-earbuds.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 I felt like I must have lost multiple hours of my life just untangling them over the years so I decided I might as well invest in a decent pair.
 
@@ -145,7 +166,9 @@ Given the price, I actually opted to pay them off over a period of time (might a
 
 That said, they've been a worthwhile investment for me. The battery life is great, considering they're properly wireless, and I'm always surprised how many charges I can get from putting them back in the case. When using them as a daily driver, back when walking to work was a thing, I would generally only need to recharge them once a week at most? More like once every 2 weeks I think.
 
-[![wireless_earbuds.jpeg](wireless_earbuds.jpeg)](wireless_earbuds.jpeg)
+{{< image src="16-wireless-earbuds.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Also, I've been pleasantly surprised at the software updates that still roll out. About 6 months after I bought them, they received support for Amazon Alexa, which was a nice surprise given they already support the Google Assistant. Not that I use either…
 
@@ -155,11 +178,15 @@ I believe that covers everything?
 
 I've reduced my wallet by probably 90%, moved my transit card to its own dedicated spot since it's on the "hot path" and I no longer have to spend any time untangling my headphones
 
-[![all_three.jpeg](all_three.jpeg)](all_three.jpeg)
+{{< image src="17-all-three.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 As I mentioned earlier, I've made some further changes which I'll likely cover in a 2020 edition of this post.
 
-[![all_third_alt.jpeg](all_third_alt.jpeg)](all_third_alt.jpeg)
+{{< image src="18-all-third-alt.jpeg" >}}
+  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+{{< /image >}}
 
 Mainly, I found that while the wallet served me well, it was a bit too heavy to take when I took up running earlier this year.
 
