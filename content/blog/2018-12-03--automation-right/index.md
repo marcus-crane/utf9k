@@ -7,6 +7,8 @@ tags:
 - "automation"
 - "microservices"
 - "twitter"
+aliases:
+- "/blog/when-automation-goes-horribly-right"
 ---
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
