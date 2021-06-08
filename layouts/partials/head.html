@@ -6,7 +6,10 @@
 <meta name="theme-color" content="#a463f2" />
 <meta name="author" content="Marcus Crane" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+{{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />{{ end }}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
 <link rel="canonical" href="{{ .Permalink | safeURL }}" />
 <link rel="me" href="mailto:hello@utf9k.net" />
 <link rel="me" href="https://twitter.com/sentreh" />
