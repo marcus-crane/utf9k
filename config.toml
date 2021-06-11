@@ -2,12 +2,12 @@ baseURL = "https://utf9k.net/"
 languageCode = "en-us"
 title = "utf9k"
 
+[taxonomies]
+  category = "categories"
+
 [params]
   description = "Is this thing even on? I just put some text here to test out link previews. There's real site content though, I swear!"
   title = "utf9k"
-
-[outputs]
-  home = ["HTML", "RSS"]
 
 [markup.goldmark.renderer]
   unsafe = true
