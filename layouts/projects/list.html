@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main class="prose lg:prose-xl dark:prose-dark">
+  <h1>{{ .Title }}</h1>
+  <ul>
+    <h2>Ongoing</h2>
+    {{ range where .Pages "Params.ongoing" true }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    <h2>Archived</h2>
+    {{ range where .Pages "Params.ongoing" false }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

@@ -10,7 +10,10 @@ PYTHON_VERSION = "3.7"
 HUGO_ENV = "production"
 
 [context.branch-deploy]
-command = "yarn run generate-fancy-links && yarn install && yarn run build-next"
+command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview]
+command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
 
 [[headers]]
 for = "/*.jpg"

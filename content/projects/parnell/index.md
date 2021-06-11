@@ -1,8 +1,8 @@
 ---
 title: "Most ticketed parking spots in Parnell, Auckland"
-date: "2019-01-15T00:00:00+13:00"
 category: "projects"
 slug: "parnell"
+ongoing: false
 ---
 
 This little project was written back when I worked at [Xero](https://xero.com/nz/), in one of our older Auckland offices.
