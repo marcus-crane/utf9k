@@ -1,0 +1,9 @@
+{{ if hugo.IsProduction -}}
+User-agent: *
+Allow: /
+
+Sitemap: https://utf9k.net/sitemap.xml
+{{ else -}}
+User-agent: *
+Disallow: /
+{{ end }}
