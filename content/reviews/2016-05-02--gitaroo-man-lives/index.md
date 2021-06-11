@@ -1,6 +1,6 @@
 ---
 title: "Gitaroo Man Lives!"
-date: "2016-05-02T00:00:00+13:00"
+date: "2016-05-02T12:58:43+13:00"
 slug: "gitaroo-man-lives"
 category: "reviews"
 tags:
@@ -26,9 +26,9 @@ So, what’s a rhythm game without music? The soundtrack for Gitaroo Man is perh
 
 Personally, I’ve only ever played the PSP version which boasts the additional of local multiplayer, added difficulty options and a Duet Mode with two exclusive songs. I haven’t actually tried any of the multiplayer options but they’re more like icing on the cake if you ask me. I highly, highly recommend picking up a copy if you can find one for a reasonable price. The PSP version seems to be cheaper, mainly since so few of the original PS2 version were printed and I actually prefer the game in its portable format. Either way, if you like rhythm games or even if you just want a unique game to try out, you can’t go wrong with good ol’ Gitaroo Man!
 
-Developer: iNiS
-Publisher: Koei
-Released in 2001 (PS2) and 2006 (PSP)
+Developer: iNiS \
+Publisher: Koei \
+Released in 2001 (PS2) and 2006 (PSP) \
 Platforms: Playstation 2 and Playstation Portable
 
 {{< tweet 726840026177269760 >}}
