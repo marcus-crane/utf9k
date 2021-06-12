@@ -11,17 +11,9 @@ I flip flop a lot in this area.
 
 For quick edits, including this page, I pop out [nvim](https://neovim.io) although I'm not proficient enough to know many of the keyboard shortcuts.
 
-For larger projects, I've been trying out [Nova](https://www.nova.app) recently in place of [Sublime Text](https://www.sublimetext.com)
+For Python and Golang projects, [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) has been really interesting and is convincing me to take up neovim as my full time editor.
 
-For [Go](https://golang.org) projects, I prefer to use JetBrain's [GoLand](https://www.jetbrains.com/go/) IDE.
-
-For [Python](https://python.org) projects, I occasionally use JetBrain's [PyCharm](https://www.jetbrains.com/pycharm/) IDE but not as much as I could.
-
-Earlier last year, I used [Emacs](https://gnu.org/software/emacs) for a bit, specifically [Doom Emacs](https://github.com/hlissner/doom-emacs), and I'd like to get back there.
-
-If I can figure out how to get [LSP](https://en.wikipedia.org/wiki/Language_Server_Protocol) working nicely, and on the same level as say; PyCharm or GoLand, then I'd happily make the jump.
-
-I just haven't simply invested in it is all.
+For larger projects, I tend to reach for [Sublime Text](https://www.sublimetext.com) although I haven't gotten around to setting up any shared configuration across my devices.
 
 ## Terminal
 
@@ -35,11 +27,14 @@ Everything else is stock and unconfigured.
 * mac Mini 2018 as my home workstation
 * Macbook Air M1 as my remote workstation
 
-## Desktop apps
+Everything except my work laptop is currently running the 2021 Beta (iOS 15, macOS Monterey etc) because I thought notification grouping and built in focus seemed like killer features I didn't want to wait for!
 
-* [Safari](https://www.apple.com/safari/) for browsing
-* [Things](https://culturedcode.com/things/) for task lists
-* [Agenda](https://agenda.com) for notes
-* [ReadKit](https://readkitapp.com) for RSS feeds at my desktop
-* [Feedbin](https://feedbin.com) for RSS feeds on the web/mobile
+## Applications
+
+* [Brave](https://brave.com/) for browsing (I turn off all the crypto crap)
+* [TickTick](https://ticktick.com) for tasks and habit tracking
+* [Apple Calendar](https://en.wikipedia.org/wiki/Calendar_(Apple)) powered by [Fastmail](https://fastmail.com) for tracking events
+* [Craft](https://craft.do) for notes
+* [ReadKit](https://readkitapp.com) powered by [Feedbin](https://feedbin.com) for RSS feeds
 * [Pocket Casts](https://pocketcasts.com) for podcasts
+* [MoneyCoach](https://moneycoach.ai) for tracking finances
