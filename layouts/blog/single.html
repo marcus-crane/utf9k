@@ -8,6 +8,10 @@
     {{ partial "toc.html" . }}
     {{ .Content }}
   </div>
+  <hr />
+  <span id="plusone" class="text-sm">
+    Did you like this post? <a id="saythanks" href="#liked">Click here</a> to let me know anonymously or <a href="/privacy">see for yourself</a> if you don't believe me. Either way, thanks for reading!
+  </span>
 </article>
 {{ end }}
 
@@ -20,4 +24,12 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-00:00" }}"
 }
 </script>
+{{ end }}
+
+{{ define "script" }}
+  {{ $targetPath := "js/thanks.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
 {{ end }}
