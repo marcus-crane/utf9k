@@ -1,29 +1,14 @@
 {{ define "main" }}
-<article class="prose lg:prose-xl dark:prose-dark">
-  <header>
+<article class='{{ if not (isset .Params "noproseclass") }}prose lg:prose-xl dark:prose-dark{{ end }}'>
+  <div class='{{ if isset .Params "noproseclass" }}prose lg:prose-xl dark:prose-dark mb-12{{ end }}'>
     <h1>{{ .Title }}</h1>
-    <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time> · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
-  </header>
-  <div id="post-body">
-    {{ partial "toc.html" . }}
-    {{ .Content }}
   </div>
+  {{ .Content }}
   <hr />
   <span id="plusone" class="text-sm">
     Did you like this post? <a id="saythanks" href="#liked">Click here</a> to let me know anonymously or <a href="/privacy">see some proof of anonymity</a> first. 
   </span>
 </article>
-{{ end }}
-
-{{ define "json+ld" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ .Title }}",
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-00:00" }}"
-}
-</script>
 {{ end }}
 
 {{ define "script" }}

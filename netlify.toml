@@ -61,7 +61,7 @@ Cache-Control = "public, max-age=604800"
 for = "/*"
 
 [headers.values]
-Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src data: blob: *; media-src data: *; script-src 'self' https://api.mapbox.com; connect-src 'self' https://api.mapbox.com https://events.mapbox.com https://*.tiles.mapbox.com ; worker-src 'self' blob: ; child-src 'self' blob: ;"
+Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src data: blob: *; media-src data: *; script-src 'self' https://api.mapbox.com; connect-src 'self' https://api.mapbox.com https://events.mapbox.com https://*.tiles.mapbox.com https://gunslinger.utf9k.net ; worker-src 'self' blob: ; child-src 'self' blob: ;"
 X-Frame-Options = "SAMEORIGIN"
 X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
