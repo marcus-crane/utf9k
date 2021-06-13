@@ -1,0 +1,25 @@
+on:
+  issue_comment:
+    types:
+      - created
+permissions:
+  issues: read
+env:
+  PROJECT_ID: "60bd47375f18116ffb7ca876"
+  TASK_ID: "60c58d2b263fce7827cacffd"
+jobs:
+  issue_sync:
+    runs-on: ubuntu-latest
+    name: Syncs issue changes to TickTick
+    steps:
+      - name: Dump event context
+        env:
+          EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: echo "$EVENT_CONTEXT"
+      - name: Add comment
+        uses: fjogeleit/http-request-action@master
+        with:
+          url: 'https://api.ticktick.com/api/v2/project/${{ env.PROJECT_ID }}/task/${{ env.TASK_ID }}/comment'
+          method: 'POST'
+          customHeaders: '{"Cookie": "${{ secrets.TICKTICK_COOKIE }}", "Content-Type": "application/json"}'
+          data: '{"isNew": true, "projectId": "${{ env.PROJECT_ID }}", "taskId": "${{ env.TASK_ID }}", "title": "{{ github.event.comment.body }}", "userProfile": {"isMyself": true}}'
