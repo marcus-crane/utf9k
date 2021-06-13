@@ -5,7 +5,9 @@ slug: "privacy"
 
 Curious about how the anonymous feedback function works? It's all open source so you can be assured I'm not interested in your data.
 
-The client side script can be found [here](https://github.com/marcus-crane/utf9k/blob/next/assets/js/thanks.js) and is visible below the footer upon inspecting most content pages. I'd link it here directly but it has a random fingerprint [so if it changes, you get the new version](https://www.keycdn.com/support/what-is-cache-busting).
+The client side script can be found [here](https://github.com/marcus-crane/utf9k/blob/next/assets/js/thanks.js) and is visible below the footer upon inspecting [blog](/blog/) and [question](/questions/) pages.
+
+I'd link it here directly but it has a random fingerprint [that changes with each deploy to ensure you get the latest version](https://www.keycdn.com/support/what-is-cache-busting).
 
 Upon closer inspection, you can see that all it does is send the current URL. I did make an attempt at even concealing your [User-Agent](https://en.wikipedia.org/wiki/User_agent) but for the life of me, I can't get it to change? I guess browsers just hardcode it basically.
 
