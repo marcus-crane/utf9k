@@ -15,7 +15,7 @@ The backend server I use is open source as well and the relevant code all lives 
 
 If you click the button from a valid (ie; on the utf9k.net domain) page, then I use [Pushover](https://pushover.net) to forward a message to my iPhone.
 
-At no point do I find out who you are. You can verify for yourself that I don't run any tracker or store any cookies.
+At no point do I find out who you are. You can verify for yourself that I don't run any tracker or store any cookies. You can also verify that the frontend code only sends a URL to the backend by reading the deployed version.
 
 I should mention that [Netlify](https://netlify.com) does store server logs of course, as does basically every website. The closest it gets to anything "identifying" is the country you're browsing from. Not the city or the town, just the country.
 
