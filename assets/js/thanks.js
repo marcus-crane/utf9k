@@ -13,6 +13,7 @@ function sayThanksAnonymously() {
     .then(resp => {
       const thanksParagraph = document.querySelector("#plusone")
       thanksParagraph.innerText = resp.data
+      thanksButton.removeEventListener('click', sayThanksAnonymously)
     })
     .catch(err => {
       console.log(err)
