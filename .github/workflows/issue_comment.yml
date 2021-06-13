@@ -22,4 +22,4 @@ jobs:
           url: 'https://api.ticktick.com/api/v2/project/${{ env.PROJECT_ID }}/task/${{ env.TASK_ID }}/comment'
           method: 'POST'
           customHeaders: '{"Cookie": "${{ secrets.TICKTICK_COOKIE }}", "Content-Type": "application/json"}'
-          data: '{"isNew": true, "projectId": "${{ env.PROJECT_ID }}", "taskId": "${{ env.TASK_ID }}", "title": "{{ github.event.comment.body }}", "userProfile": {"isMyself": true}}'
+          data: '{"isNew": true, "projectId": "${{ env.PROJECT_ID }}", "taskId": "${{ env.TASK_ID }}", "title": "${{ github.event.comment.body }}", "userProfile": {"isMyself": true}}'
