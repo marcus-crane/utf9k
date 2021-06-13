@@ -1,0 +1,23 @@
+on:
+  issues:
+    types:
+      - opened
+      - edited
+jobs:
+  issue_sync:
+    runs-on: ubuntu-latest
+    name: Syncs issue changes to TickTick
+    steps:
+      - name: Dump Github context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJSON(runner) }}
+        run: echo "$RUNNER_CONTEXT"
+      - name: Dump event context
+        env:
+          EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: echo "$EVENT_CONTEXT"
+
