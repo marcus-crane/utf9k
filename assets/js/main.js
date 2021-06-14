@@ -5,10 +5,13 @@ const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
 const verb = document.querySelector('#verb')
 
 const traktColor = "#C47828"
-const traktVerb = "watching"
+const traktVerb = "currently watching"
 
 const spotifyColor = "#1DB954"
 const spotifyVerb = "currently listening to"
+
+const gamingColor = "#003087"
+const gamingVerb = "currently playing"
 
 const traktPromise = new Promise((resolve, reject) => {
   fetch("https://gunslinger.utf9k.net/api/v1/media")
@@ -32,12 +35,26 @@ const spotifyPromise = new Promise((resolve, reject) => {
     .catch(err => reject(err))
 })
 
-Promise.all([spotifyPromise, traktPromise])
+const videogamePromise = new Promise((resolve, reject) => {
+  fetch("https://gunslinger.utf9k.net/api/v1/videogames")
+    .then(res => res.json())
+    .then(game => {
+      const data = game.data
+      if (!data.title) return resolve("I'm not currently playing any videogames.")
+      return resolve({ 'provider': 'gaming', data })
+    })
+    .catch(err => reject(err))
+})
+
+Promise.all([spotifyPromise, traktPromise, videogamePromise])
   .then(values => {
     for (let value of values) {
       console.log(value)
       if (typeof(value) === "string") continue
       switch(value.provider) {
+        case 'gaming':
+          renderGamingData(value.data)
+          break
         case 'spotify':
           renderSpotifyData(value.data)
           break
@@ -49,6 +66,19 @@ Promise.all([spotifyPromise, traktPromise])
       }
     }
   })
+
+function renderGamingData(data) {
+  const title = data.title
+  const url = data.url
+
+  verb.innerText = gamingVerb
+  liveStatusBar.style.background = gamingColor
+
+  contentSource.innerText = ''
+  contentName.innerHTML = `<a rel="noopener noreferrer" target="_blank" href="${url}">${title}</a>`
+
+  liveSentence.style.opacity = 1
+}
 
 function renderSpotifyData(data) {
   const listeningType = data.currently_playing_type
