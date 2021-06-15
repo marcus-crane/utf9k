@@ -11,15 +11,16 @@ library:
       date_finished: N/A
       rating: N/A
       progress: 38
+
     - title: Street Fighters
       subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
-
       author: Kate Kelly
       cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
       link: https://openlibrary.org/books/OL24089567M/Street_Fighters
       date_finished: N/A
       rating: N/A
       progress: 9
+
     - title: How to Take Smart Notes
       subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
       author: Sönke Ahrens
@@ -28,6 +29,15 @@ library:
       date_finished: N/A
       rating: N/A
       progress: 19
+
+    - title: Resilient Management
+      subtitle: null
+      author: Lara Hogan
+      cover: https://covers.openlibrary.org/b/id/11270402-L.jpg
+      link: https://openlibrary.org/books/OL28070185M/Resilient_Management
+      date_finished: N/A
+      rating: N/A
+      progress: 29
 
   - list: Finished
     priority: 2
