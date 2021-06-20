@@ -232,3 +232,65 @@ Power:
 This is just an excerpt of what is otherwise a whole bunch of information.
 
 Particularly interesting is the `SPAirPortDataType` which can be queried to see a list of SSIDs in the environment.
+
+## How can I find out why my Mac has restarted?
+
+This is arguably one of the more obscure commands I've come across. At the time, a coworker of mine was having issues where his laptop would restart seemingly at random.
+
+We were able to find out a bit more with the following command:
+
+```bash
+log show -predicate 'eventMessage contains "Previous shutdown cause"' -last 24h
+```
+
+It may take a minute or so to actually find some logs but it should reveal a shutdown code.
+
+I don't remember where I dug it up but you can see a list of shutdown causes and their meanings [in this PDF](shutdown-causes.pdf).
+
+Here's how the results looks on my machine where I had performed a normal shutdown as a test
+
+{{< image src="normal-shutdown.png" noshadow=true >}}
+  An iTerm2 window showing the results of the command mentioned above. There is one result for a previous shutdown with the cause code of 5. This indicates a normal shutdown.
+{{< /image >}}
+
+If we compare the shutdown code to the PDF above, we can see the description is `Correct shut down` which lines up exactly.
+
+Now let's take this information and use it to see what was potentially happening to my coworkers laptop.
+
+Here's a screenshot of his terminal window with the same command:
+
+{{< image src="abnormal-shutdown.png" noshadow=true >}}
+  A macOS Terminal window showing the results of the previous command on a different machine. There are seven results for a cause code of -128. This indicates an abnormal shutdown.
+{{< /image >}}
+
+Going back to the PDF again, we can see that `-128` is an alias for `-112`. Checking `-112` tells us that it is "Probably memory related" which at least narrows it down.
+
+I won't know it since some of the most authoritative information can often be found in PDF randomly floating around the internet and it's better than nothing!
+
+For anyone wonder, my coworker has a new laptop on the way regardless since he can't work with it constantly rebooting.
+
+## How can I use my clipboard contents in my terminal?
+
+I've known about this tool for some time now but I'm writing about it because I ALWAYS forget to use it.
+
+`pbcopy`, and as I just discovered, `pbpaste` are two tools that are built into macOS.
+
+You can pipe data into the former to add it to your clipboard and similarly, you can use the latter as input into a unix pipeline.
+
+Let's look at an example:
+
+```bash
+> echo "see you on the other side" | pbcopy
+```
+
+You can now use `Ctrl+V` to paste this text into any GUI application. Saves you having to mouse over to the terminal and highlight text but I still do it every darn time.
+
+We can also use our clipboard contents too as mentioned. You could have copied some text from a GUI application and you want to use it in your terminal.
+
+```bash
+# Clipboard contains "utf9k.net" that I copied from my browser
+> pbpaste | xargs dig TXT | grep "I see"
+utf9k.net.		3444	IN	TXT	"I see you snoopin' around ;) If you're after something, you can feel fr\010ee to email me at marcus@utf9k.net"
+```
+
+What I'm trying to say is that I have all of the tools at my disposal to avoid [RSI](https://en.wikipedia.org/wiki/Repetitive_strain_injury) but I just need to remember they exist...
