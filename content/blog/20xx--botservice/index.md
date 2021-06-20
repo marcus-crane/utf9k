@@ -37,3 +37,7 @@ curl -k -X POST https://login.microsoftonline.com/botframework.com/oauth2/v2.0/t
 ```
 
 For example, I've gotten 403 Forbidden for an app registration and it turns out that the client ID isn't registered
+
+In order for your application to reach botframework.com, you need to make sure that your application is set up for multi tenancy
+
+You can check this under <Azure AD Application> -> Authentication and then scroll down to "Supported account types". "Accounts in any organizational directory (Any Azure AD directory - Multitenant)" is what you want
