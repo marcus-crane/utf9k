@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "utf9k"
 enableRobotsTxt = true
 enableGitInfo = true
+buildDrafts = true
+buildFuture = true
 
 [taxonomies]
   category = "categories"
