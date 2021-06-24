@@ -1,10 +1,10 @@
 ---
-title: "Playstation 1"
-slug: "playstation"
+title: "Why do Playstation 1 discs start at offset 37656?"
+slug: "ps1-disc-offset"
 category: "questions"
 tags:
+- "hexedit"
 - "playstation"
-- "sony"
 - "videogames"
 aliases:
 - "/notes/ps1-disc-layout/"
@@ -13,8 +13,6 @@ aliases:
 The Playstation 1 uses CD-ROMs with the [XA extension](https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension).
 
 If you open a PS1 ISO within a hex editor, you'll want to scroll down to `offset 37656`
-
-## Why do PS1 discs start at offset 37656?
 
 Within a normal CD (or ISO), it will have a header offset size of `2048`.
 

@@ -1,13 +1,11 @@
 ---
-title: "SAML"
-slug: "saml"
+title: "How can I inspect a SAML request?"
+slug: "saml-inspect-request"
 category: "questions"
 tags:
 - "authentication"
 - "saml"
 ---
-
-## How can I inspect a SAML request?
 
 Until recently, I never had to go near SAML with a 10 foot pole but I was recently helping out a coworker with adding SAML authentication to an Elasticsearch cluster.
 

@@ -1,20 +1,9 @@
 {{ define "main" }}
-<article class='{{ if not (isset .Params "noproseclass") }}prose lg:prose-xl dark:prose-dark{{ end }}'>
-  <div class='{{ if isset .Params "noproseclass" }}prose lg:prose-xl dark:prose-dark mb-12{{ end }}'>
+<article class="prose lg:prose-xl dark:prose-dark">
+  <header>
     <h1>{{ .Title }}</h1>
-  </div>
+    <time>Last modified on {{ .Lastmod.Format "January 2, 2006" }}</time>
+  </header>
   {{ .Content }}
-  <hr />
-  <span id="plusone" class="text-sm">
-    Did you like this post? <a id="saythanks" href="#liked">Click here</a> to let me know anonymously or <a href="/privacy">see some proof of anonymity</a> first. 
-  </span>
 </article>
-{{ end }}
-
-{{ define "script" }}
-  {{ $targetPath := "js/thanks.js" }}
-  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
-  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
-  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
 {{ end }}

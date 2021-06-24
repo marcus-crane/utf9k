@@ -1,14 +1,13 @@
 ---
-title: "Azure"
-slug: "azure"
+title: "Are all Azure regions alike?"
+slug: "azure-regions-alike"
 category: "questions"
 tags:
+- "availability"
 - "azure"
 - "cloud"
 - "microsoft"
 ---
-
-## Are all regions alike?
 
 No! As I learned recently, only a handful of regions feature multiple availability zones.
 

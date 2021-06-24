@@ -1,15 +1,10 @@
 ---
-title: "Elixir"
-slug: "elixir"
+title: "How can I view methods associated with an Elixir object?"
+slug: "elixir-object-methods"
 category: "questions"
 tags:
 - "elixir"
-- "programming"
-aliases:
-- "/notes/elixir/"
 ---
-
-## How can I view methods associated with an object?
 
 Let's say we have the following module
 
@@ -28,12 +23,3 @@ Reminder.__info__(:functions)
 ```
 
 As we can see, this Reminder module has an alarm method, with an arity of 2.
-
-## How can I view help documentation for a module
-
-The iex interpreter includes a function called h which can be used to show documentation for a module
-
-```elixir
-h String
-# h/1
-```
