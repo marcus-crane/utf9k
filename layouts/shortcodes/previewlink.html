@@ -1,3 +1,4 @@
+{{ if .Site.Data.fancylinks }}
 {{ $inner := string .Inner }}
 {{ $metadata := (index .Site.Data.fancylinks $inner) }}</p>
 
@@ -20,6 +21,7 @@
     </div>
   </a>
 </div>
+{{ end }}
 {{ else }}
 <a href="{{ .Inner }}">{{ .Inner }}</a>
 {{ end }}
