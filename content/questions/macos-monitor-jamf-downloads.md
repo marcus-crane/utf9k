@@ -7,8 +7,6 @@ tags:
 - "jamf"
 - "macos"
 - "software"
-aliases:
-- "/notes/enterprise-software/"
 ---
 
 ## How can I monitor JAMF downloads on macOS?
