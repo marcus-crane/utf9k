@@ -9,7 +9,6 @@
   "scripts": {
     "start": "hugo server --disableFastRender --buildDrafts --buildFuture --enableGitInfo",
     "build": "hugo --gc --buildDrafts --buildFuture --environment production --enableGitInfo",
-    "build-next": "hugo --gc --buildDrafts --buildFuture --enableGitInfo",
     "generate-fancy-links": "pip install -r scripts/requirements.txt && python scripts/generate-fancylinks.py"
   },
   "devDependencies": {},

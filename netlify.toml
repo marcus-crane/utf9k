@@ -12,9 +12,6 @@ HUGO_ENV = "production"
 [context.branch-deploy]
 command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
 
-[context.deploy-preview]
-command = "yarn run generate-fancy-links && yarn install && yarn run build-next -b $DEPLOY_PRIME_URL"
-
 [[headers]]
 for = "/*.jpg"
 
@@ -67,10 +64,3 @@ X-XSS-Protection = "1; mode=block"
 X-Content-Type-Options = "nosniff"
 Referrer-Policy = "no-referrer"
 Permissions-Policy = "interest-cohort=()"
-
-[[plugins]]
-package = "netlify-plugin-a11y"
-
-  [plugins.inputs]
-
-  checkPaths = ['/']
