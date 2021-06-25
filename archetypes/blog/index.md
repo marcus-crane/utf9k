@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: "{{ .Date }}"
+date: "20xx-xx-xxT00:00:00+1300"
 slug: "{{ .Name }}"
 category: "blog"
 draft: true

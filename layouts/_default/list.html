@@ -24,7 +24,6 @@
     {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <time>Last modified on {{ .Lastmod.Format "Jan 02, 2006" }}
       </li>
     {{ end }}
     </ul>
