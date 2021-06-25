@@ -2,6 +2,10 @@ baseURL = "https://utf9k.net/"
 languageCode = "en-us"
 title = "utf9k"
 enableRobotsTxt = true
+enableGitInfo = true
+enableInlineShortcodes = true
+buildDrafts = true
+buildFuture = true
 
 [taxonomies]
   category = "categories"

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.lg\:prose-xl .notice h3 {
+.notice h3 {
 	@apply mt-0
 }
 
-.lg\:prose-xl .notice p {
+.notice p {
 	@apply mb-0
 }
 
@@ -24,4 +24,12 @@
 #livesentence {
   opacity: 0;
   transition: opacity 1.5s linear;
+}
+
+.prose .fake-regular-width * {
+  @apply max-w-prose
+}
+
+.prose .fake-regular-width table {
+  @apply max-w-full
 }
