@@ -3,7 +3,7 @@
   <h1>{{ .Title }}</h1>
   <ul>
     {{ $years := .Scratch }}
-    {{ range where (where .Pages "Section" "questions") "Draft" false }}
+    {{ range (where .Pages "Draft" false) }}
     {{ $year := .Date.Format "2006" }}
     {{ if not (in ($years.Get "years") $year) }}
       <h2>{{ .Date.Format "2006" }}</h2>
