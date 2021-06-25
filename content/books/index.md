@@ -8,7 +8,7 @@ noproseclass: true
 {{ range $.Site.Data.books.library }}
   {{ $listName := .list }}
   <div id="book-list" class="pb-12">
-    <div class="prose lg:prose-xl dark:prose-dark pb-2">
+    <div class="prose dark:prose-dark pb-2">
       <h4>{{ $listName }}</h4>
       <hr />
     </div>
