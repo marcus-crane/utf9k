@@ -7,8 +7,6 @@ tags:
 - "emacs"
 ---
 
-## Why do some lists start with a backtick (`` ` ``) instead of a comma (`'`)
-
 Lists that start with a `` ` `` end up having values interpolated.
 
 Compare the following two examples:

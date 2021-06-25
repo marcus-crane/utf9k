@@ -7,8 +7,6 @@ tags:
 - "monitoring"
 ---
 
-## What is profiling?
-
 An initial thought might be that it would help to capture all context about everything, all of the time but that would soon get very expensive to store.
 
 Profiling takes the approach of capturing as much context as possible for a certain period of time, generally for use in debugging.

@@ -9,8 +9,6 @@ tags:
 - "software"
 ---
 
-## How can I monitor JAMF downloads on macOS?
-
 For large downloads, such as macOS updates, it can be annoying that tools like Self Service don't surface download metrics
 
 Thankfully, we can find the download on disk and watch as the file size increases

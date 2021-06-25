@@ -7,8 +7,6 @@ tags:
 - "nodejs"
 ---
 
-## Where can I determine my NODE_MODULE_VERSION
-
 This error is usually pretty cryptic and I often forget how to debug it so let's look at a sample error:
 
 ```bash

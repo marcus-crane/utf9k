@@ -7,8 +7,6 @@ tags:
 - "monitoring"
 ---
 
-## What is worth instrumenting?
-
 Services and libraries have different needs. Further, not all services are alike in the types of work they perform or what types of work are important to measure
 
 ### Online-serving systems

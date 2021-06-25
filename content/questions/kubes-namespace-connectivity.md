@@ -1,55 +1,13 @@
 ---
-title: "Kubernetes"
-slug: "kubernetes"
+title: "How can I test connectivity within my Kube namespace?"
+slug: "kubes-namespace-connectivity"
 category: "questions"
 tags:
-- "cicd"
-- "deployment"
-keywords:
-- "kubernetes"
-- "cronjobs"
-- "cronjob"
-- "create cronjob"
-- "pause cronjob"
-- "suspend cronjob"
-- "set namespace"
-- "read secret"
 - "curl"
-- "networkpolicy"
-- "security"
+- "debugging"
+- "kubernetes"
+- "networking"
 ---
-
-## How can I read a Kubernetes secret?
-
-Often times, it can be useful to check the value of a Kubernetes secret, to check that it lines up with what an application is receiving. An example might be a randomly generated secret that is shared between multiple Kubernetes resources.
-
-Let's have a look at a mock secret:
-
-```bash
-> kubectl describe secret dummy-secret
-Name:         dummy-secret
-Namespace:    sports
-Labels:       app.kubernetes.io/managed-by=Helm
-Annotations:  meta.helm.sh/release-name: sports
-              meta.helm.sh/release-namespace: sports
-
-Type:  Opaque
-
-Data
-====
-MY_FAVOURITE_FRUIT:  12 bytes
-```
-
-So here we have a secret called `dummy-secret` and one of the values within it has the name `MY_FAVOURITE_FRUIT`.
-
-We can fetch it like so:
-
-```bash
-> kubectl get secret dummy-secret -o jsonpath="{.data.MY_FAVOURITE_FRUIT}" | base64 --decode
-strawberries
-```
-
-## How can I test connectivity within my namespace?
 
 Often times, you might want to test connectivity to a container but without doing so from within the container itself. You could just into a neighbouring pod but it may not have networking tools (ie tools) or even potentially network connectively if there's a [network policy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) in the mix.
 
@@ -151,71 +109,3 @@ This could be anything from protocol (TCP/UDP), port number, whitelisted namespa
 Doing a search for "kind: NetworkPolicy" should help narrow down which files are relevant and/or if they even exist in the first place.
 
 Happy debugging!
-
-## How can I restrict an ingress to only receive traffic from a specific IP range?
-
-This one had my scratching my head a bit as I wasn't quite sure if Kubernetes was the right place to do this.
-
-Depending on your use case, it might make sense to terminate traffic before it reaches your cluster but that may have the effect of filtering traffic to other applications if not done properly.
-
-In this instance, the Kubernetes cluster in question makes use of the [NGINX Ingress Controller](https://www.nginx.com/products/nginx-ingress-controller/) and as such, honours a whole bunch of flags.
-
-Before we get into the details, let's set up a small example.
-
-We'll pretend our desktop has an IP address is `192.0.2.3` exactly. We want to allow only a network range of 1 single address so that say; our mobile device with the address `192.0.2.2` can't connect but our desktop can.
-
-In CIDR notation, this would be represented as `192.0.2.3/32`, with the `32` effectively meaning "Just this one address" instead of any other devices on the `192.0.2` range, or broader.
-
-With our address block defined, let's look at an ingress:
-
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: my-cool-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/whitelist-source-range: "192.0.2.3/24"
-spec:
-  rules:
-  - host: example.com
-    http:
-      paths:
-        - path: /
-          backend:
-            service:
-              name: example-docs
-              port:
-                name: http-example-docs
-```
-
-Ok, we've whitelisted our desktop but let's try connecting to this ingress from a device we know isn't whitelisted such as our laptop on `192.0.2.6`:
-
-```bash
-> curl https://example.com/
-<html>
-<head><title>403 Forbidden</title></head>
-<body>
-<center><h1>403 Forbidden</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
-```
-
-Alright, and now from our desktop at `192.0.2.3/24`, which we whitelisted explicitly:
-
-```bash
-> curl example.com
-<!doctype html>
-<html>
-<head>
-    <title>Example Domain</title>
-[...]
-```
-
-Success! We've managed to use nothing but an ingress to block specific traffic but you might wonder, why would I ever use this?
-
-One use case may be exposing applications that require the use of a public endpoint, such as [Microsoft Teams](https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software) or [Slack](https://slack.com).
-
-Often, you can't make use of OAuth but you want to protect against random internet traffic so you can explicitly whitelist only those IP address ranges that you know should be allowed.
-
-With [Azure](https://azure.microsoft.com) for example, they publish a [full list of their active IP ranges](https://www.microsoft.com/en-us/download/details.aspx?id=56519) so if you can't simply make use of a [VNet](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview), this may be the next best thing.
