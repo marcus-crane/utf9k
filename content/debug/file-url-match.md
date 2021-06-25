@@ -16,7 +16,7 @@ maxwidth: true
   <tr>
     <td>{{ .Title }}</td>
     <td>{{ .Slug }}</td>
-    <td>{{ .File.BaseFileName }}</td>
+    <td>{{ with .File }}{{ .BaseFileName }}{{ end }}</td>
     <td>{{ .Params.category }}
   </tr>
   {{ end }}

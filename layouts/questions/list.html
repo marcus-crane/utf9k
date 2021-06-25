@@ -1,9 +1,13 @@
 {{ define "main" }}
 <main class="prose dark:prose-dark max-w-full">
   <h1>Answers to questions I'll soon forget</h1>
+  <form id="search" class="search" role="search">
+    <label for="search-input">I'm curious about </label>
+    <input type="search" id="search-input" class="search-input" placeholder="kubernetes">
+  </form>
   <ul>
     {{ range sort .Pages "Lastmod" "desc" }}
-    <li>
+    <li id="{{ .Slug }}" class="question">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ range .Params.tags }}
         {{ $colours := slice "red" "yellow" "green" "blue" "indigo" "purple" "pink" }}
@@ -20,4 +24,12 @@
     {{ end }}
   </ul>
 </main>
+{{ end }}
+
+{{ define "script" }}
+  {{ $targetPath := (print "js/question-search.js") }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
 {{ end }}
