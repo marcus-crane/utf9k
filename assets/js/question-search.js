@@ -1,3 +1,6 @@
+// Inspired by https://palant.info/2020/06/04/the-easier-way-to-use-lunr-search-with-hugo
+// Adapted to have no dependency on lunr.js though
+// It works good enough for now
 window.addEventListener("DOMContentLoaded", function(event) {
   let lookup = null
   let query = null
