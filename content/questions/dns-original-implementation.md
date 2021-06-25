@@ -11,7 +11,7 @@ aliases:
 
 Back in the day, there was just one file: `HOSTS.TXT`.
 
-It contained a name-to-address mapping for every entity within ARPANET.
+It contained a name-to-address mapping for every entity within [ARPANET](https://en.wikipedia.org/wiki/ARPANET).
 
 `/etc/hosts` used to be compiled from `HOSTS.TXT`
 
