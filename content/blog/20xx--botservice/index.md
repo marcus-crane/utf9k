@@ -1,6 +1,6 @@
 ---
 title: "Azure Bot Service guide"
-date: "2099-06-21T11:37:27+12:00"
+date: "20xx-xx-xxT00:00:00+1300"
 slug: "azure-bot-service-guide"
 category: "blog"
 draft: true

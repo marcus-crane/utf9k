@@ -1,6 +1,6 @@
 ---
 title: "Barrier (and routing tables)"
-date: "2099-12-29T00:00:00+1300"
+date: "20xx-xx-xxT00:00:00+1300"
 slug: "barrier-and-routing"
 category: "blog"
 draft: true

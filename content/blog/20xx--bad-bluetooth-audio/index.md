@@ -1,6 +1,6 @@
 ---
 title: "Using my bluetooth mic degrades my audio quality"
-date: "2099-11-26T00:00:00+1300"
+date: "20xx-xx-xxT00:00:00+1300"
 slug: "bad-bluetooth-audio"
 category: "blog"
 draft: true

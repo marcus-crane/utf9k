@@ -1,7 +1,7 @@
 ---
 title: "One possible death for Discord"
+date: "20xx-xx-xxT00:00:00+1300"
 slug: "one-possible-death-for-discord"
-date: "2099-03-28T15:02:00+1300"
 category: "blog"
 draft: true
 tags:

@@ -2,7 +2,7 @@
 <article class="prose lg:prose-xl dark:prose-dark">
   <header>
     <h1>{{ .Title }}</h1>
-    <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time> · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
+    <time datetime="{{ .Date }}">{{ if .Draft }}This is an unpublished draft{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}</time> {{ if .Draft }} · <time datetime="{{ .Date }}">Last modified {{ .Lastmod.Format "January 2, 2006" }}{{ end }} · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
   </header>
   <div id="post-body">
     {{ partial "toc.html" . }}
@@ -12,6 +12,7 @@
 {{ end }}
 
 {{ define "json+ld" }}
+{{ if eq .Draft false }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

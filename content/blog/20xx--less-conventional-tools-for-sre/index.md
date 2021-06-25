@@ -1,7 +1,7 @@
 ---
 title: "Less conventional tools for SRE"
 slug: "less-conventional-tools-for-sre"
-date: "2099-06-01T22:00:00+1300"
+date: "20xx-xx-xxT00:00:00+1300"
 category: "blog"
 draft: true
 tags:

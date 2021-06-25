@@ -30,10 +30,8 @@ Images and other static content lives in `static` (for now)
 
 Deployment is handled automatically by [Netlify](https://netlify.com)
 
-The default branch is called `next` and pushes to it will render at [next.utf9k.net](https://next.utf9k.net).
+Pushes to `main` will update [utf9k.net](https://utf9k.net) while any pull requests will be deployed at a temporary URL.
 
-This acts as a staging environment so I can push changes and drafts to the repo, without worry about them being live. At the same time, I can preview how they will look when deployed so it makes reviewing easier, and nicer to read. A bit of dogfooding goes a long way.
+Drafts are visible in all environments, as seen in the [blog](https://utf9k.net/blog) section at the bottom.
 
-To make changes live, you just need to merge the `next` branch into `live` and the latest updates will automatically roll out to [utf9k.net](https://utf9k.net) in a few minutes.
-
-Drafts are only visible under `next` so don't forget to remove any `draft: true` key:value pairs from blog posts that are ready to publish.
+I just push straight to main. It's all visible in the repo anyway so might as well render it in production too.
