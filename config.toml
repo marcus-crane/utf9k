@@ -14,8 +14,13 @@ buildFuture = true
   description = "Is this thing even on? I just put some text here to test out link previews. There's real site content though, I swear!"
   title = "utf9k"
 
+[outputFormats]
+  [outputFormats.SearchIndex]
+    baseName = "search"
+    mediaType = "application/json"
+
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "SearchIndex"]
 
 [markup.goldmark.renderer]
   unsafe = true
