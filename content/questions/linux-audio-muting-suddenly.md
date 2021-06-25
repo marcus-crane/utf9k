@@ -1,6 +1,6 @@
 ---
 title: "Why do some of my applications suddenly get muted on Linux?"
-slug: "linux"
+slug: "linux-audio-muting-suddenly"
 category: "questions"
 tags:
 - "audio"

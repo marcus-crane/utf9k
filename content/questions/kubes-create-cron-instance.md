@@ -1,6 +1,6 @@
 ---
 title: "How can I create an instance of a Kube cronjob?"
-slug: "kubernetes"
+slug: "kubes-create-cron-instance"
 category: "questions"
 tags:
 - "cronjob"
