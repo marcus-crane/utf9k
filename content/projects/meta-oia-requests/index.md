@@ -3,6 +3,7 @@ title: "Yearly review of OIAs redacted or declined by the NZ government"
 category: "projects"
 slug: "meta-oia-requests"
 ongoing: true
+maxwidth: true
 ---
 
 This one probably needs a bit of explanation, more than most of my projects.
@@ -25,7 +26,26 @@ At some point, I may file a request to backfill some data prior to when this lis
 
 I'm due to file my next update sometime around August or September 2021
 
-{{< metaoiatable >}}
+{{< metaoiatable.inline >}}
+<table>
+  <thead>
+    <tr>
+      {{ range $.Site.Data.metaoia.headings }}
+      <th>{{ . }}</th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $.Site.Data.metaoia.entries }}
+      <tr>
+        <td>{{ .RequestDate }}</td>
+        <td>{{ .Subject }}</td>
+        <td>{{ .DeniedUnder }}</td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{< /metaoiatable.inline >}}
 
 [Spotted something wrong with the table or just want a copy of the data?](https://github.com/marcus-crane/utf9k/blob/live/data/metaoia.yml)
 
