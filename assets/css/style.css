@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.lg\:prose-xl .notice h3 {
+.notice h3 {
 	@apply mt-0
 }
 
-.lg\:prose-xl .notice p {
+.notice p {
 	@apply mb-0
 }
 

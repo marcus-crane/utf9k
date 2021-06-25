@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "utf9k"
 enableRobotsTxt = true
 enableGitInfo = true
+enableInlineShortcodes = true
 buildDrafts = true
 buildFuture = true
 
