@@ -1,12 +1,12 @@
 ---
-title: "macOS"
-date: "2020-09-15"
-slug: "macos"
-aliases:
-- "/notes/macos/"
+title: "How can I find out why my Mac has restarted?"
+slug: "macos-check-shutdown-cause"
+category: "questions"
+tags:
+- "crashes"
+- "logging"
+- "macos"
 ---
-
-## How can I find out why my Mac has restarted?
 
 This is arguably one of the more obscure commands I've come across. At the time, a coworker of mine was having issues where his laptop would restart seemingly at random.
 

@@ -3,7 +3,7 @@ title: "How can I get rid of the default application folders that ship with my L
 slug: "linux-disable-stock-folders"
 category: "questions"
 tags:
-- "config"
+- "housekeeping"
 - "linux"
 - "xdg"
 ---
