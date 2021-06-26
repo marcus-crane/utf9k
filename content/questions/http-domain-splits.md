@@ -1,6 +1,6 @@
 ---
 title: "Why did sites split their assets across multiple domains back in the day?"
-slug: "learning-http2"
+slug: "http-domain-splits"
 category: "questions"
 tags:
 - "cookies"

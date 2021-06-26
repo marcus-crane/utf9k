@@ -1,6 +1,6 @@
 ---
 title: "What is profiling?"
-slug: "monitoring-profiling-overview"
+slug: "monitoring-what-is-profiling"
 category: "questions"
 tags:
 - "instrumentation"
