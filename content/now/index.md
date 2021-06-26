@@ -1,6 +1,7 @@
 ---
 title: "Now"
 slug: "now"
+category: "now"
 ---
 
 Last updated: 13 June 2021

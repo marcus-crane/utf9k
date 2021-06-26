@@ -7,8 +7,6 @@ maxwidth: true
 
 A list of reports that would be useful to have
 
-* Pages missing a description
-* Pages missing tags
 * Internal links that don't have a trailing slash
 * External links (can be manually audited or run curl against using Github Actions)
   * Check for 302/404/500

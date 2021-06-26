@@ -1,6 +1,7 @@
 ---
 title: "Uses"
 slug: "uses"
+category: "uses"
 ---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea

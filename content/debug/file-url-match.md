@@ -14,6 +14,8 @@ This can cause a lot of trouble:
 * It's just confusing to navigate around the site when files map differently to what has been deployed
 
 {{< fileurlmatch.inline >}}
+{{ $correct := 0 }}
+{{ $incorrect := 0 }}
 <table>
   <tr>
     <th>Location</th>
@@ -25,6 +27,11 @@ This can cause a lot of trouble:
       {{ $file := "" }}
       {{ with .File }}{{ $file = . }}{{ end }}
       {{ if and (ne $file.BaseFileName "index") (ne $file.BaseFileName "_index") }}
+        {{ if (eq $file.BaseFileName .Slug) }}
+          {{ $correct = (add $correct 1) }}
+        {{ else }}
+          {{ $incorrect = (add $incorrect 1) }}
+        {{ end }}
         <tr class="{{ if (eq $file.BaseFileName .Slug) }}bg-green-200{{ else }}bg-red-200{{ end }}">
           <td>{{ $file.Path }}</td>
           <td>{{ .Slug }}</td>
@@ -34,4 +41,5 @@ This can cause a lot of trouble:
     {{ end }}
   {{ end }}
 </table>
+Remaining items to be fixed: {{ $incorrect }} / {{ add $incorrect $correct }}
 {{< /fileurlmatch.inline >}}

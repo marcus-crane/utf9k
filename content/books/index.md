@@ -1,6 +1,7 @@
 ---
 title: "Books"
 slug: "books"
+category: "books"
 noproseclass: true
 ---
 

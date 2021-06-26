@@ -1,6 +1,7 @@
 ---
 title: "Thanks"
 slug: "thanks"
+category: "thanks"
 ---
 
 There's no requirement on the internet to say thanks but I'd have absolutely no inspiration (or site) without the following.

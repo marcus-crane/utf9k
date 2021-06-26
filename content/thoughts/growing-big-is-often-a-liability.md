@@ -1,6 +1,7 @@
 ---
 title: "Growing big is often a liability"
 slug: "growing-big-is-often-a-liability"
+category: "thoughts"
 aliases:
   - /notes/the-curse-of-bigness/
 ---

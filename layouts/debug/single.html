@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class='{{ if isset .Params "maxwidth" }}max-w-full{{ end }} {{ if not (isset .Params "noproseclass") }}prose dark:prose-dark{{ end }}'>
+  <div class='{{ if isset .Params "maxwidth" }}fake-regular-width{{ end }}'>
+    <div class='{{ if isset .Params "noproseclass" }}prose dark:prose-dark mb-12{{ end }}'>
+      <h1>{{ .Title }}</h1>
+    </div>
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

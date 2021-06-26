@@ -15,7 +15,6 @@ Sometimes these aliases may not map 1:1 to a piece of content, such as if a post
     <th>Title</th>
     <th>URL</th>
     <th>Aliases</th>
-    <th>Category</th>
   </tr>
   {{ range .Site.Pages }}
     {{ if isset .Params "aliases" }}

@@ -1,6 +1,7 @@
 ---
 title: "Privacy"
 slug: "privacy"
+category: "privacy"
 ---
 
 Curious about how the anonymous feedback function works? It's all open source so you can be assured I'm not interested in your data.

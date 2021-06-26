@@ -1,3 +1,4 @@
 ---
 title: "Welcome!"
+category: "home"
 ---
