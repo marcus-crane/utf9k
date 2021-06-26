@@ -3,20 +3,59 @@
 // It works good enough for now
 window.addEventListener("DOMContentLoaded", function(event) {
   let lookup = null
-  let query = null
+  let firstInputReceived = false
 
   const form = document.getElementById("search")
   const input = document.getElementById("search-input")
+  const errorMsg = document.getElementById("error-output")
+
+  function getNextSuggestion(tags) {
+    let newSuggestion = getRandomSearchSuggestion(tags)
+    while (newSuggestion === input.placeholder) {
+      // We'll likely get the same item twice or more so reroll
+      newSuggestion = getRandomSearchSuggestion(tags)
+    }
+    animatePlaceholderInput(newSuggestion, tags)
+  }
+
+  function getRandomSearchSuggestion(tags) {
+    const randomIndex = Math.floor(
+      Math.random() * tags.length
+    )
+    return tags[randomIndex]
+  }
+
+  async function animatePlaceholderInput(word, tags) {
+    input.placeholder = ''
+    contents = ''
+    const chars = word.split('')
+    for (let char of chars) {
+      await new Promise(r => setTimeout(r, 100));
+      contents += char
+      input.placeholder = contents
+    }
+    await new Promise(r => setTimeout(r, 2000));
+    for (let char of contents) {
+      await new Promise(r => setTimeout(r, 100));
+      contents = contents.slice(0, -1)
+      input.placeholder = contents
+    }
+    getNextSuggestion(tags)
+  }
 
   if (lookup === null) {
     fetch("/search.json")
       .then(res => res.json())
       .then(pages => {
         lookup = pages
+        input.disabled = false
+        input.className = "search-input"
+        getNextSuggestion(getTags(lookup))
       })
-      .catch(err => console.error(
-        `Oh no, there was an error getting the search index: ${err}`)
-      )
+      .catch(err => {
+        console.error(`Error fetching search index: ${err}`)
+        errorMsg.innerText = 'Hmm, something broke trying to load search!'
+      })
   }
 
   form.addEventListener("submit", function(event) {
@@ -41,7 +80,16 @@ window.addEventListener("DOMContentLoaded", function(event) {
     return false
   }
 
+  function getTags(lookup) {
+    tags = []
+    for (let page of lookup) {
+      tags = [...page.tags, ...tags]
+    }
+    return tags
+  }
+
   function handleInput(event) {
+    if (lookup === null) return
     const searchTerm = input.value.trim().toLowerCase()
     if (!searchTerm) {
       resetQuestionVisibility()
