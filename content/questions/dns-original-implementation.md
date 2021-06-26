@@ -5,8 +5,6 @@ category: "questions"
 tags:
 - "dns"
 - "historical"
-aliases:
-- "/notes/dns-and-bind/"
 ---
 
 Back in the day, there was just one file: `HOSTS.TXT`.

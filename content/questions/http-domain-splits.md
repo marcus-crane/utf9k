@@ -7,8 +7,6 @@ tags:
 - "headers"
 - "historical"
 - "http"
-aliases:
-- "/notes/learning-http2/"
 ---
 
 It was common to have images on a subdomain and the bulk of the site at the root of a domain such as `nytimes.com` and `img.nytimes.com`
