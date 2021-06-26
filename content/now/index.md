@@ -4,8 +4,6 @@ slug: "now"
 category: "now"
 ---
 
-Last updated: 13 June 2021
-
 ## Continuing with some decent habits
 
 The last month or two has been [a little bumpy](/blog/let-your-streaks-end-naturally/) so I've been trying to make sure that I keep up with a reasonable routine.

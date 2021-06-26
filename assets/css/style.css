@@ -33,3 +33,7 @@
 .prose .fake-regular-width table {
   @apply max-w-full
 }
+
+.prose h1 {
+  @apply mb-0
+}
