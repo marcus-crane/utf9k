@@ -11,13 +11,39 @@
     <p>I maintain a <a href="/blog/">blog</a> and also keep a running lists of <a href="/questions/">questions</a> regarding topics I often want to remember things about for later.</p>
     <p>There's also a <a href="/now/">now</a> page for, realistically, what I was up to two weeks ago and a <a href="/projects/">projects</a> page documenting my small experiments.</p>
     <p>Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.</p>
-    <p id="livesentence">P.S. on a more recent note, I'm <span id="livestatus"><span id="verb">currently experiencing</span> <span id="contentname">some technical troubles with</span> <span id="contentsource">my site</span></span> as you're reading this very sentence. Isn't technology cool?</p>
-  </div>
+    <div id="liveplayer">
+      <h4 class="pb-2">Currently listening to</h4>
+      <div class="rounded-xl space-y-6 border-8 p-6">
+        <div class="player flex items-center space-x-3.5">
+          <img src="https://i.scdn.co/image/ab67616d0000b27308ad1a5dc5b3ee3eac60ec94" width="640" height="640" class="flex-none w-24 h-24 rounded-lg bg-gray-200" id="cover" />
+          <div class="player min-w-0 flex-auto space-y-0.5">
+            <p class="text-sm font-semibold uppercase" id="album">
+              A very cool album
+            </p>
+            <h2 class="text-base font-semibold truncate" id="track">
+              An interesting song
+            </h2>
+            <p class="text-base font-medium" id="artist">
+              A great artist
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="bg-gray-200 transition-colors duration-500 dark:bg-black rounded-full overflow-hidden">
+            <div class="bg-green-500 transition-colors duration-500 dark:bg-lime-400 w-0 h-1.5" role="progressbar" aria-valuenow="1456" aria-valuemin="0" aria-valuemax="4550" id="progress"></div>
+          </div>
+          <div class="flex justify-between text-sm font-medium tabular-nums">
+            <div id="elapsed">24:16</div>
+            <div id="duration">75:50</div>
+          </div>
+        </div>
+      </div>
+    </div>
 </article>
 {{ end }}
 
 {{ define "script" }}
-  {{ $targetPath := "js/main.js" }}
+  {{ $targetPath := "js/live-player.js" }}
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
   {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}

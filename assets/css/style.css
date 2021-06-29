@@ -21,9 +21,8 @@
   width: 100%;
 }
 
-#livesentence {
+#liveplayer {
   opacity: 0;
-  transition: opacity 1.5s linear;
 }
 
 .prose .fake-regular-width * {
@@ -37,3 +36,9 @@
 .prose h1 {
   @apply mb-0
 }
+
+.prose .player img, .prose .player h2, .prose .player p {
+  @apply mb-0 mt-0
+}
+
+
