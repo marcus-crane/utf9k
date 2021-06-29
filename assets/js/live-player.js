@@ -106,9 +106,9 @@ function renderSpotifyData(data) {
       progression = currentDuration
       console.log("The track should have finished. Refreshing in 6 seconds")
       setTimeout(function() {
-        // API should have refreshed after 5 seconds
+        // API should have refreshed after 1 second
         return refreshData()
-      }, 5500)
+      }, 1500)
     }
   }, 1000)
 }
