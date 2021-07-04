@@ -37,4 +37,4 @@ ENV NGINX_PORT=8080
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
-COPY --from=builder /utf9k/nginx.conf /etc/nginx/sites-enabled/default.conf
+COPY --from=builder /utf9k/nginx.conf /etc/nginx/nginx.conf
