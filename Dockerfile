@@ -44,6 +44,6 @@ WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
 COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
-COPY --from-builder /utf9k/deploy/config.hcl /tmp/config.hcl
+COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
 
 CMD ["bash", "/tmp/startup.sh"]
