@@ -40,6 +40,7 @@ FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
 
+RUN apk update && apk add --no-cache procps
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
@@ -48,4 +49,4 @@ COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
 COPY --from=builder /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
 
-CMD ["bash", "/tmp/startup.sh"]
+#CMD ["bash", "/tmp/startup.sh"]
