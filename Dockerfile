@@ -40,7 +40,7 @@ FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
 
-RUN apk update && apk add --no-cache procps
+RUN apt update && apt install -y procps
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
