@@ -20,9 +20,9 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${H
     mv /tmp/hugo/hugo /usr/bin
 
 # Download nginx-prometheus-exporter (to be started in non-builder container)
-RUN wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.9.0/nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz --output-document /tmp/nginx-exporter.tar.gz && \
-    mkdir /tmp/nginx-exporter && \
-    tar -xvzf /tmp/nginx-exporter.tar.gz -C /tmp/nginx-exporter
+RUN wget https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases/download/v1.9.0/prometheus-nginxlog-exporter_1.9.0_linux_amd64.tar.gz --output-document /tmp/prometheus-nginxlog-exporter.tar.gz && \
+    mkdir /tmp/prometheus-nginxlog-exporter && \
+    tar -xvzf /tmp/prometheus-nginxlog-exporter.tar.gz -C /tmp/prometheus-nginxlog-exporter
 
 # Set up Python
 RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && pip3 install --no-cache --upgrade pip setuptools
@@ -47,6 +47,6 @@ COPY --from=builder /utf9k/public .
 COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
-COPY --from=builder /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
+COPY --from=builder /tmp/prometheus-nginxlog-exporter/prometheus-nginxlog-exporter /usr/bin
 
 #CMD ["bash", "/tmp/startup.sh"]
