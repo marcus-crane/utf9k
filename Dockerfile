@@ -19,6 +19,11 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${H
     tar -xvzf /tmp/${HUGO_FILE} -C /tmp/hugo && \
     mv /tmp/hugo/hugo /usr/bin
 
+# Download nginx-prometheus-exporter (to be started in non-builder container)
+RUN wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.9.0/nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz --output-document /tmp/nginx-exporter.tar.gz && \
+    mkdir /tmp/nginx-exporter && \
+    tar -xvzf /tmp/nginx-exporter.tar.gz -C /tmp/nginx-exporter
+
 # Set up Python
 RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && pip3 install --no-cache --upgrade pip setuptools
 
@@ -35,15 +40,12 @@ FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
 
-RUN wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.9.0/nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz --output-document /tmp/nginx-exporter.tar.gz && \
-    mkdir /tmp/nginx-exporter && \
-    tar -xvzf /tmp/nginx-exporter.tar.gz -C /tmp/nginx-exporter && \
-    mv /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
 COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
+COPY --from=builder /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
 
 CMD ["bash", "/tmp/startup.sh"]
