@@ -145,11 +145,15 @@ function renderTraktData(data) {
 
   if (data.type === "movie") {
     title.innerText = `${data.movie.title} (${data.movie.year})`
-    category.innerText = ""
+    category.className = "hidden"
+    source.className = "hidden"
 
     cover.src = data.movie.movie_posters[0].file_path
     cover.width = data.movie.movie_posters[0].width
-    cover.className += " w-48"
+    cover.className += " w-48 sm:w-36"
+
+    synopsis.className = "text-xs pt-4"
+    synopsis.innerText = data.movie.overview
   }
 
   if (data.type === "episode") {
@@ -157,9 +161,12 @@ function renderTraktData(data) {
     category.innerText = `Season ${data.episode.season}, Episode ${data.episode.number}`
     source.innerText = data.show.title
 
-    cover.src = data.episode.episode_stills[0].file_path
-    cover.width = data.episode.episode_stills[0].width
-    cover.className += " w-48"
+    cover.src = data.episode.season_posters[0].file_path
+    cover.width = data.episode.season_posters[0].width
+    cover.className += " w-48 sm:w-36"
+
+    synopsis.className = "text-xs pt-4"
+    synopsis.innerText = data.show.overview
   }
 
   livePlayer.style.opacity = 1
