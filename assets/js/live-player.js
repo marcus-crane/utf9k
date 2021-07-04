@@ -1,15 +1,22 @@
 const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
 const livePlayer = document.querySelector(".prose #liveplayer")
 
+const action = document.querySelector(".prose #action")
 const cover = document.querySelector(".prose #cover")
-const album = document.querySelector(".prose #album")
-const artist = document.querySelector(".prose #artist")
-const track = document.querySelector(".prose #track")
+const category = document.querySelector(".prose #category")
+const source = document.querySelector(".prose #source")
+const title = document.querySelector(".prose #title")
+const synopsis = document.querySelector(".prose #synopsis")
 const elapsed = document.querySelector(".prose #elapsed")
 const duration = document.querySelector(".prose #duration")
 const progressBar = document.querySelector(".prose #progress")
+const playback = document.querySelector(".prose #playback")
 
 const spotifyColor = "#1DB954"
+const spotifyVerb = "I'm currently listening to:"
+
+const traktColor = "#C47828"
+const traktVerb = "I'm currently watching:"
 
 function querySpotify() {
   return new Promise((resolve, reject) => {
@@ -24,8 +31,21 @@ function querySpotify() {
   })
 }
 
+function queryTrakt() {
+  return new Promise((resolve, reject) => {
+    fetch("https://gunslinger.utf9k.net/api/v1/media")
+      .then(res => res.json())
+      .then(media => {
+        const data = media.data
+        if (data.type === "") return resolve("I'm not currently watching anything.")
+        return resolve({ 'provider': 'trakt', data })
+      })
+      .catch(err => reject(err))
+  })
+}
+
 function refreshData() {
-  Promise.all([querySpotify()])
+  Promise.all([querySpotify(), queryTrakt()])
     .then(values => {
       for (let value of values) {
         console.log(value)
@@ -33,7 +53,8 @@ function refreshData() {
         switch(value.provider) {
           case 'spotify':
             return renderSpotifyData(value.data)
-            break
+          case 'trakt':
+            return renderTraktData(value.data)
           default:
             return
         }
@@ -56,8 +77,9 @@ function formatMsToHumanTimestamp(ms) {
 
 function renderSpotifyData(data) {
   liveStatusBar.style.background = spotifyColor
-  livePlayer.className += "transition-opacity duration-1000"
+  livePlayer.className += " transition-opacity duration-1000"
   progressBar.style.transition = "width 1s"
+  action.innerText = spotifyVerb
 
   const listeningType = data.currently_playing_type
   const timestamp = data.timestamp
@@ -66,15 +88,15 @@ function renderSpotifyData(data) {
   let firstPaintComplete = false
 
   if (listeningType === 'episode') {
-    artist.innerText = data.item.show.name
+    source.innerText = data.item.show.name
   } else {
-    artist.innerText = data.item.album.artists[0].name
+    source.innerText = data.item.album.artists[0].name
   }
 
   let progression = data.progress_ms
 
-  track.innerText = data.item.name
-  album.innerText = data.item.album.name
+  title.innerText = data.item.name
+  category.innerText = data.item.album.name
 
   elapsed.innerText = formatMsToHumanTimestamp(progression)
 
@@ -84,6 +106,7 @@ function renderSpotifyData(data) {
   cover.src = data.item.album.images[0].url
   cover.height = data.item.album.images[0].height
   cover.width = data.item.album.images[0].width
+  cover.className += " w-24 h-24"
 
   livePlayer.style.opacity = 1
 
@@ -111,4 +134,40 @@ function renderSpotifyData(data) {
       }, 1500)
     }
   }, 1000)
+}
+
+function renderTraktData(data) {
+  liveStatusBar.style.background = traktColor
+  livePlayer.className += " transition-opacity duration-1000"
+  progressBar.className += " hidden"
+  playback.className += " hidden"
+  action.innerText = traktVerb
+
+  if (data.type === "movie") {
+    title.innerText = `${data.movie.title} (${data.movie.year})`
+    category.className = "hidden"
+    source.className = "hidden"
+
+    cover.src = data.movie.movie_posters[0].file_path
+    cover.width = data.movie.movie_posters[0].width
+    cover.className += " w-48 sm:w-36"
+
+    synopsis.className = "text-xs pt-4"
+    synopsis.innerText = data.movie.overview
+  }
+
+  if (data.type === "episode") {
+    title.innerText = data.episode.title
+    category.innerText = `Season ${data.episode.season}, Episode ${data.episode.number}`
+    source.innerText = data.show.title
+
+    cover.src = data.episode.season_posters[0].file_path
+    cover.width = data.episode.season_posters[0].width
+    cover.className += " w-48 sm:w-36"
+
+    synopsis.className = "text-xs pt-4"
+    synopsis.innerText = data.show.overview
+  }
+
+  livePlayer.style.opacity = 1
 }
