@@ -49,4 +49,4 @@ COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
 COPY --from=builder /tmp/prometheus-nginxlog-exporter/prometheus-nginxlog-exporter /usr/bin
 
-#CMD ["bash", "/tmp/startup.sh"]
+CMD ["bash", "/tmp/startup.sh"]
