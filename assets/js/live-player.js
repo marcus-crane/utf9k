@@ -77,7 +77,7 @@ function formatMsToHumanTimestamp(ms) {
 
 function renderSpotifyData(data) {
   liveStatusBar.style.background = spotifyColor
-  livePlayer.className += "transition-opacity duration-1000"
+  livePlayer.className += " transition-opacity duration-1000"
   progressBar.style.transition = "width 1s"
   action.innerText = spotifyVerb
 
@@ -94,8 +94,6 @@ function renderSpotifyData(data) {
   }
 
   let progression = data.progress_ms
-
-  synopsis.className += "hidden"
 
   title.innerText = data.item.name
   category.innerText = data.item.album.name
@@ -140,7 +138,7 @@ function renderSpotifyData(data) {
 
 function renderTraktData(data) {
   liveStatusBar.style.background = traktColor
-  livePlayer.className += "transition-opacity duration-1000"
+  livePlayer.className += " transition-opacity duration-1000"
   progressBar.className += " hidden"
   playback.className += " hidden"
   action.innerText = traktVerb
@@ -148,6 +146,10 @@ function renderTraktData(data) {
   if (data.type === "movie") {
     title.innerText = `${data.movie.title} (${data.movie.year})`
     category.innerText = ""
+
+    cover.src = data.movie.movie_posters[0].file_path
+    cover.width = data.movie.movie_posters[0].width
+    cover.className += " w-48"
   }
 
   if (data.type === "episode") {
