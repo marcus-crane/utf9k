@@ -35,6 +35,15 @@ FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
 
+RUN wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.9.0/nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz --output-document /tmp/nginx-exporter.tar.gz && \
+    mkdir /tmp/nginx-exporter && \
+    tar -xvzf /tmp/nginx-exporter.tar.gz -C /tmp/nginx-exporter && \
+    mv /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
+
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
-COPY --from=builder /utf9k/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
+COPY --from-builder /utf9k/deploy/config.hcl /tmp/config.hcl
+
+CMD ["bash", "/tmp/startup.sh"]
