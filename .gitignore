@@ -11,3 +11,4 @@ resources
 .cache
 .netlify
 data/fancylinks.json
+data/filesizes.json
