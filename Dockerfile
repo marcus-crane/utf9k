@@ -1,4 +1,4 @@
-FROM alpine AS builder
+FROM debian AS builder
 ENV PYTHONUNBUFFERED=1
 
 ENV HUGO_VERSION=0.83.1
@@ -8,7 +8,7 @@ ENV PYTHON_VERSION=3.9.5
 ENV HUGO_FILE=hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 # Ideally install Node and Python from source to pin packages
-RUN apk update && apk add --no-cache curl gnupg nodejs npm python3 git
+RUN apt update && apt install -y curl gnupg nodejs npm python3 git
 WORKDIR /tmp
 
 ## TODO: Add checksum validation (tried but it's fiddly)
@@ -25,7 +25,7 @@ RUN wget https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases
     tar -xvzf /tmp/prometheus-nginxlog-exporter.tar.gz -C /tmp/prometheus-nginxlog-exporter
 
 # Set up Python
-RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && pip3 install --no-cache --upgrade pip setuptools
+RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && python3 -m pip install --no-cache --upgrade pip setuptools
 
 WORKDIR /utf9k
 COPY . /utf9k
