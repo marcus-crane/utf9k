@@ -8,7 +8,7 @@
 <body class="flex flex-col min-h-full bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
   {{ block "body" . }}
   {{ partial "header.html" . }}
-  <div class="flex-grow container px-5 py-8 mx-auto ">{{ block "main" . }}{{ end }}</div>
+  <div class="flex-grow container px-5 mx-auto ">{{ block "main" . }}{{ end }}</div>
   {{ partial "footer.html" . }}
   {{ end }}
   {{ block "script" . }}{{ end }}
