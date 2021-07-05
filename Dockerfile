@@ -7,8 +7,12 @@ ENV PYTHON_VERSION=3.9.5
 
 ENV HUGO_FILE=hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
-# Ideally install Node and Python from source to pin packages
-RUN apt-get update && apt-get install -y curl gnupg nodejs npm python3 python3-pip git wget
+
+## Ideally Node.js and Python will be installed from source to pin the exact version in future
+RUN curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - && \
+    sudo apt-get update && \
+    sudo apt-get install -y nodejs curl gnupg python3 python3-pip git wget
+
 WORKDIR /tmp
 
 ## TODO: Add checksum validation (tried but it's fiddly)
