@@ -7,7 +7,7 @@ maxwidth: true
 
 These are pieces of content that are missing tags.
 
-{{< categorymissing.inline >}}
+{{< tagsmissing.inline >}}
 {{ $correct := 0 }}
 {{ $incorrect := 0 }}
 <table>
@@ -40,4 +40,4 @@ These are pieces of content that are missing tags.
   {{ end }}
 </table>
 Remaining items to be fixed: {{ $incorrect }} / {{ add $incorrect $correct }}
-{{< /categorymissing.inline >}}
+{{< /tagsmissing.inline >}}
