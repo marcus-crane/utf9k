@@ -47,7 +47,7 @@ FROM nginx:1.21.0-alpine
 
 ENV NGINX_PORT=8080
 
-RUN apk update && apk add --no-cache procps
+RUN apk update && apk add --no-cache procps bash
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
