@@ -7,9 +7,8 @@ ENV PYTHON_VERSION=3.9.5
 
 ENV HUGO_FILE=hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
-
 ## Ideally Node.js and Python will be installed from source to pin the exact version in future
-RUN curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - && \
+RUN curl -fsSL https://deb.nodesource.com/setup_current.x | -E bash - && \
     apt-get update && \
     apt-get install -y nodejs curl gnupg python3 python3-pip git wget
 
