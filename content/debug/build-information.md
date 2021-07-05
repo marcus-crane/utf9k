@@ -54,7 +54,23 @@ It isn't the end of the world since they'll inherit a category from their parent
     <td>
       <ul>
         <li>Hugo: {{ hugo.Version }}</li>
-        <li>Node: {{ getenv "NODE_VERSION" }}
-        <li>Python: {{ getenv "PYTHON_VERSION" }}
+        <li>Node: {{ getenv "NODE_VERSION" }}</li>
+        <li>Python: {{ getenv "PYTHON_VERSION" }}</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Deployment info (<a href="https://fly.io">fly.io</a>)</td>
+    <td>
+      <ul>
+        <li>FLY_APP_NAME: {{ getenv "FLY_APP_NAME" }}</li>
+        <li>FLY_ALLOC_ID: {{ getenv "FLY_ALLOC_ID" }}</li>
+        <li>FLY_REGION: {{ getenv "FLY_REGION" }}</li>
+      </ul>
+    </td>
+  </tr>
+  </tr>
+  </tr>
+
 </table>
 {{< /buildinformation.inline >}}
