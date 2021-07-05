@@ -1,4 +1,8 @@
-FROM debian AS builder
+###
+# Builder image
+###
+
+FROM alpine:3.14.0 AS builder
 ENV PYTHONUNBUFFERED=1
 
 ENV HUGO_VERSION=0.83.1
@@ -7,13 +11,8 @@ ENV PYTHON_VERSION=3.9.5
 
 ENV HUGO_FILE=hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
-RUN apt-get update && apt-get install -y curl gnupg python3 python3-pip git wget
-
-## Ideally Node.js and Python will be installed from source to pin the exact version in future
-RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash - && \
-    apt-get update && \
-    apt-get install -y nodejs
-
+# Ideally install Node and Python from source to pin packages
+RUN apk update && apk add --no-cache curl gnupg nodejs npm python3 git
 WORKDIR /tmp
 
 ## TODO: Add checksum validation (tried but it's fiddly)
@@ -30,7 +29,7 @@ RUN wget https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases
     tar -xvzf /tmp/prometheus-nginxlog-exporter.tar.gz -C /tmp/prometheus-nginxlog-exporter
 
 # Set up Python
-RUN ln -sf python3 /usr/bin/python && python3 -m pip install --no-cache --upgrade pip setuptools
+RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && pip3 install --no-cache --upgrade pip setuptools
 
 WORKDIR /utf9k
 COPY . /utf9k
@@ -41,7 +40,10 @@ RUN npm install -g yarn && yarn install
 RUN yarn run generate-fancy-links
 RUN yarn build
 
-FROM nginx:1.21.0
+###
+# Deployment image
+###
+FROM nginx:1.21.0-alpine
 
 ENV NGINX_PORT=8080
 
