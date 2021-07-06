@@ -1,4 +1,8 @@
-FROM alpine AS builder
+###
+# Builder image
+###
+
+FROM alpine:3.14.0 AS builder
 ENV PYTHONUNBUFFERED=1
 
 ENV HUGO_VERSION=0.83.1
@@ -20,9 +24,9 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${H
     mv /tmp/hugo/hugo /usr/bin
 
 # Download nginx-prometheus-exporter (to be started in non-builder container)
-RUN wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.9.0/nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz --output-document /tmp/nginx-exporter.tar.gz && \
-    mkdir /tmp/nginx-exporter && \
-    tar -xvzf /tmp/nginx-exporter.tar.gz -C /tmp/nginx-exporter
+RUN wget https://github.com/martin-helmich/prometheus-nginxlog-exporter/releases/download/v1.9.0/prometheus-nginxlog-exporter_1.9.0_linux_amd64.tar.gz --output-document /tmp/prometheus-nginxlog-exporter.tar.gz && \
+    mkdir /tmp/prometheus-nginxlog-exporter && \
+    tar -xvzf /tmp/prometheus-nginxlog-exporter.tar.gz -C /tmp/prometheus-nginxlog-exporter
 
 # Set up Python
 RUN ln -sf python3 /usr/bin/python && python3 -m ensurepip && pip3 install --no-cache --upgrade pip setuptools
@@ -36,17 +40,20 @@ RUN npm install -g yarn && yarn install
 RUN yarn run generate-fancy-links
 RUN yarn build
 
-FROM nginx:1.21.0
+###
+# Deployment image
+###
+FROM nginx:1.21.0-alpine
 
 ENV NGINX_PORT=8080
 
-RUN apt update && apt install -y procps
+RUN apk update && apk add --no-cache procps bash
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
 COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
-COPY --from=builder /tmp/nginx-exporter/nginx-prometheus-exporter /usr/bin
+COPY --from=builder /tmp/prometheus-nginxlog-exporter/prometheus-nginxlog-exporter /usr/bin
 
-#CMD ["bash", "/tmp/startup.sh"]
+CMD ["bash", "/tmp/startup.sh"]

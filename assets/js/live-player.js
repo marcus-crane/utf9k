@@ -77,7 +77,7 @@ function formatMsToHumanTimestamp(ms) {
 
 function renderSpotifyData(data) {
   liveStatusBar.style.background = spotifyColor
-  livePlayer.className += " transition-opacity duration-1000"
+  livePlayer.className = "transition-opacity duration-1000"
   progressBar.style.transition = "width 1s"
   action.innerText = spotifyVerb
 
@@ -138,7 +138,7 @@ function renderSpotifyData(data) {
 
 function renderTraktData(data) {
   liveStatusBar.style.background = traktColor
-  livePlayer.className += " transition-opacity duration-1000"
+  livePlayer.className = "transition-opacity duration-1000"
   progressBar.className += " hidden"
   playback.className += " hidden"
   action.innerText = traktVerb
