@@ -1,7 +1,6 @@
 # utf9k
 
 ![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
-![Netlify Build Status](https://img.shields.io/netlify/6c4341d4-b644-4fcb-ba4d-c67d63c92e9c)
 ![Hugo version](https://img.shields.io/badge/hugo-v0.83.1-blue)
 
 This is my personal website, which is powered by [Hugo](https://www.gohugo.io), [Tailwind](https://tailwindcss.com/) and [CommonMark](https://commonmark.org).
@@ -28,10 +27,10 @@ Images and other static content lives in `static` (for now)
 
 ## Deployment
 
-Deployment is handled automatically by [Netlify](https://netlify.com)
+Deployment is done via Github Actions, which deploys a Docker image to [fly.io](https://fly.io)
 
-Pushes to `main` will update [utf9k.net](https://utf9k.net) while any pull requests will be deployed at a temporary URL.
+Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
 
 Drafts are visible in all environments, as seen in the [blog](https://utf9k.net/blog) section at the bottom.
 
-I just push straight to main. It's all visible in the repo anyway so might as well render it in production too.
+I just push straight to main. It's all visible in the repo anyway so might as well render it in "production" too.
