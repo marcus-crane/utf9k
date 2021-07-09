@@ -1,5 +1,9 @@
 name: Deploy via fly.io
-on: [push]
+on:
+  push:
+    paths:
+      - '!.github'
+      - '!README.md'
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 jobs:
