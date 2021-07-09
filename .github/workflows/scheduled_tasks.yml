@@ -30,6 +30,6 @@ jobs:
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.GH_TOKEN }}
-          gist_id: 77b36845948f1565197e4b914e56a919
+          gist_id: ${{ secrets.GIST_ID }}
           gist_file_name: sync.json
           file_path: ./sync.json
