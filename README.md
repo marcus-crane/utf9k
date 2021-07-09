@@ -19,11 +19,11 @@ You should be able to access the development version of the site at http://local
 
 ## Layout
 
-Pages and posts live in `content`
+Pages, posts and related images live in `content`
 
 HTML templates live in `layouts`
 
-Images and other static content lives in `static` (for now)
+A handful of static files live in `static` with most images living with their respective posts.
 
 ## Deployment
 
