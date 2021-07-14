@@ -24,3 +24,14 @@ buildFuture = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[privacy]
+  [privacy.twitter]
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[services]
+  [services.twitter]
+    disableInlineCSS = true

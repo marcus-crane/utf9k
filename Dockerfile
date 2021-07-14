@@ -47,12 +47,16 @@ FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
 
+# Install Vector to ship logs
+RUN curl -1sLf 'https://repositories.timber.io/public/vector/cfg/setup/bash.deb.sh' | bash && \
+    apt-get update && apt-get install vector
+
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
 COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
 COPY --from=builder /tmp/prometheus-nginxlog-exporter/prometheus-nginxlog-exporter /usr/bin
-COPY --from=builder /utf9k/deploy/filebeat.yml /tmp/filebeat.yml
+COPY --from=builder /utf9k/deploy/vector.toml /etc/vector/vector.toml
 
 CMD ["bash", "/tmp/startup.sh"]
