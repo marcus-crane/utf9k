@@ -43,11 +43,9 @@ RUN yarn build
 ###
 # Deployment image
 ###
-FROM nginx:1.21.0-alpine
+FROM nginx:1.21.0
 
 ENV NGINX_PORT=8080
-
-RUN apk update && apk add --no-cache procps bash
 
 WORKDIR /var/www/utf9k
 COPY --from=builder /utf9k/public .
@@ -55,5 +53,6 @@ COPY --from=builder /utf9k/deploy/nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /utf9k/deploy/startup.sh /tmp/startup.sh
 COPY --from=builder /utf9k/deploy/config.hcl /tmp/config.hcl
 COPY --from=builder /tmp/prometheus-nginxlog-exporter/prometheus-nginxlog-exporter /usr/bin
+COPY --from=builder /utf9k/deploy/filebeat.yml /tmp/filebeat.yml
 
 CMD ["bash", "/tmp/startup.sh"]

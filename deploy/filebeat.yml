@@ -1,0 +1,12 @@
+filebeat.modules:
+- module: nginx
+  access:
+    enabled: true
+    var.paths: ["/var/log/nginx/access.log*"]
+  error:
+    enabled: true
+    var.paths: ["/var/log/nginx/error.log*"]
+output.elasticsearch:
+  hosts: ["fdaa:0:2d9f:a7b:d6b:0:a:2:9200"]
+  username: "elastic"
+  password: "changeme"
