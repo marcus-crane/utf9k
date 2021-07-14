@@ -2,12 +2,9 @@
 title: "Build information"
 slug: "build-information"
 category: "debug"
-maxwidth: true
 ---
 
-These are pieces of content that are missing an explicitly defined category.
-
-It isn't the end of the world since they'll inherit a category from their parent folder, but it's always nice to have consistency with post frontmatter.
+Sometimes it's handy to check when my site was last built, and with what variables especially if I'm transitioning things behind the scenes such as DNS records or static hosting.
 
 {{< buildinformation.inline >}}
 <table>

@@ -2,6 +2,8 @@ name: Deploy via fly.io
 on: [push]
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+  PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+  PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
 jobs:
   deploy:
     name: Deploy utf9k
@@ -11,3 +13,12 @@ jobs:
       - uses: superfly/flyctl-actions@1.1
         with:
           args: "deploy"
+      - name: Send build status via Pushover
+        if: ${{ always() }}
+        with:
+          status: ${{ job.status }}
+          title: "Update on the latest utf9k build"
+          message: "Your most recent push has finished building."
+          url: "https://github.com/${{ env.GITHUB_REPOSITORY }}"
+          device: "iPhone12Pro"
+
