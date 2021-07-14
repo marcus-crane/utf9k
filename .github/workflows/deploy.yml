@@ -14,6 +14,7 @@ jobs:
         with:
           args: "deploy"
       - name: Send build status via Pushover
+        uses: umahmood/pushover-actions@main
         if: ${{ always() }}
         with:
           status: ${{ job.status }}
