@@ -20,5 +20,7 @@ A list of reports that would be useful to have
 * Reviews to port over
   * Manually define list and check against non-existent files
 * Comparison of `folder/index.md` to `file.md` distribution
+* Detection for smart quotes
+* Places where the word here contains a link (as that's usually a rubbish way to do links)
 
 Ideally, there'd be alerting on these pages too
