@@ -12,11 +12,28 @@ const duration = document.querySelector(".prose #duration")
 const progressBar = document.querySelector(".prose #progress")
 const playback = document.querySelector(".prose #playback")
 
+const gamingColor = "#003087"
+const gamingVerb = "I'm currently playing:"
+
 const spotifyColor = "#1DB954"
 const spotifyVerb = "I'm currently listening to:"
 
 const traktColor = "#C47828"
 const traktVerb = "I'm currently watching:"
+
+
+function queryGames() {
+  return new Promise((resolve, reject) => {
+    fetch("https://gunslinger.utf9k.net/api/v1/videogames")
+      .then(res => res.json())
+      .then(games => {
+        const data = games.data
+        if (!data) return resolve("I;m not currently playing anything.")
+        return resolve({ 'provider': 'gaming', data })
+      })
+      .catch(err => reject(err))
+  })
+}
 
 function querySpotify() {
   return new Promise((resolve, reject) => {
@@ -45,12 +62,14 @@ function queryTrakt() {
 }
 
 function refreshData() {
-  Promise.all([querySpotify(), queryTrakt()])
+  Promise.all([queryGames(), querySpotify(), queryTrakt()])
     .then(values => {
       for (let value of values) {
         console.log(value)
         if (typeof(value) === "string") continue
         switch(value.provider) {
+          case 'gaming':
+            return renderGamingData(value.data)
           case 'spotify':
             return renderSpotifyData(value.data)
           case 'trakt':
@@ -73,6 +92,25 @@ function formatMsToHumanTimestamp(ms) {
     (minutes + 1) + ":00" :
     minutes + ":" + (seconds < 10 ? "0" : "") + seconds
   )
+}
+
+function renderGamingData(data) {
+  liveStatusBar.style.background = gamingColor
+  livePlayer.className = "transition-opacity duration-1000"
+  progressBar.className += " hidden"
+  playback.className += " hidden"
+  synopsis.className += " hidden"
+  category.className = "hidden"
+  source.className = "hidden"
+  action.innerText = gamingVerb
+
+  title.innerText = data.title
+
+  cover.src = data.cover.image_url
+  cover.width = data.cover.width
+  cover.className += " w-48 sm:w-36"
+
+  livePlayer.style.opacity = 1
 }
 
 function renderSpotifyData(data) {
