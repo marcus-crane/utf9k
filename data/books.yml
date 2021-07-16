@@ -10,6 +10,7 @@
     date_finished: N/A
     rating: N/A
     progress: 38
+    height: 109
 
   - title: Street Fighters
     subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
@@ -19,6 +20,7 @@
     date_finished: N/A
     rating: N/A
     progress: 9
+    height: 110
 
   - title: How to Take Smart Notes
     subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
@@ -28,6 +30,7 @@
     date_finished: N/A
     rating: N/A
     progress: 19
+    height: 110
 
   - title: Resilient Management
     subtitle: null
@@ -37,6 +40,7 @@
     date_finished: N/A
     rating: N/A
     progress: 71
+    height: 111
 
   - title: The Big Four
     subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
@@ -46,6 +50,7 @@
     date_finished: 2021-05-30
     rating: 4
     progress: 100
+    height: 110
 
   - title: Little Rice
     subtitle: Smartphones, Xiaomi, and The Chinese Dream
@@ -55,6 +60,7 @@
     date_finished: 2021-05-05
     rating: 3
     progress: 100
+    height: 108
 
   - title: The Waxman Report
     subtitle: How Congress Really Works
@@ -64,6 +70,7 @@
     date_finished: 2021-04-24
     rating: 4
     progress: 100
+    height: 96
 
   - title: In the Beginning ...Was the Command Line
     subtitle: null
@@ -73,6 +80,7 @@
     date_finished: 2021-02-20
     rating: 2
     progress: 100
+    height: 96
 
   - title: The Dip
     subtitle: A Little Book That Teaches You When to Quit
@@ -82,6 +90,7 @@
     date_finished: 2021-02-13
     rating: 3
     progress: 100
+    height: 96
 
   - title: Propaganda
     subtitle: null
@@ -91,6 +100,7 @@
     date_finished: 2021-02-12
     rating: 4
     progress: 100
+    height: 108
 
 - list: 2020
   goal: 12
@@ -104,3 +114,4 @@
     date_finished: 2020-12-28
     rating: 5
     progress: 100
+    height: 109
