@@ -28,7 +28,7 @@ function queryGames() {
       .then(res => res.json())
       .then(games => {
         const data = games.data
-        if (!data) return resolve("I;m not currently playing anything.")
+        if (!data || !data.title) return resolve("I;m not currently playing anything.")
         return resolve({ 'provider': 'gaming', data })
       })
       .catch(err => reject(err))
