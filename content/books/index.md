@@ -5,7 +5,7 @@ category: "books"
 noproseclass: true
 ---
 
-{{< library.inline >}}
+{{< books.inline >}}
 {{ range $.Site.Data.books }}
   {{ $listName := .list }}
   {{ $goalProgress := 0 }}
@@ -22,7 +22,7 @@ noproseclass: true
       <img class="flex-none w-18 h-18 rounded-lg object-cover bg-gray-100" src="{{ .cover }}" width="72" height="{{ .height }}" />
       <div class="min-w-0 relative flex-auto sm:pr-20 lg:pr-0 xl:pr-20">
         <a class="noopener noreferer" href="{{ .link }}">
-          <h2 class="text-base sm:text-lg lg:text-base xl:text-lg font-semibold text-black mb-0.5 truncate underline">
+          <h2 class="text-base sm:text-lg lg:text-base xl:text-lg font-semibold mb-0.5 truncate underline">
             {{ .title }}
           </h2>
         </a>
@@ -39,7 +39,7 @@ noproseclass: true
           {{ end }}
           <div class="flex-none w-full mt-0.5 font-normal">
             <dt class="inline">By</dt>
-            <dd class="inline text-black">{{ .author }}</dd>
+            <dd class="inline">{{ .author }}</dd>
           </div>
           {{ if ne .progress 100 }}
           <div class="flex-none w-1/2 md:w-1/6 xl:w-1/6 mt-0.5 font-normal">
@@ -59,4 +59,4 @@ noproseclass: true
     {{ end }}
   </div>
 {{ end }}
-{{< /library.inline >}}
+{{< /books.inline >}}

@@ -1,0 +1,179 @@
+- list: Played recently
+  games:
+
+  - title: "Digimon Story: Cyber Sleuth"
+    platform: "Nintendo Switch"
+    id: 15705
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
+    link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
+
+  - title: "Ratchet & Clank: Rift Apart"
+    platform: "Playstation 5"
+    id: 134582
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
+    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
+
+  - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
+    platform: "Nintendo 3DS"
+    id: 1428
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
+    replay: true
+  
+  - title: "The Legend of Zelda: Breath of the Wild"
+    platform: "Nintendo Switch"
+    id: 7346
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg"
+    link: "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild"
+
+- list: Last played a while ago
+  games:
+
+  - title: "Bayonetta"
+    platform: "Nintendo Switch"
+    id: 2136
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p92.jpg"
+    link: "https://www.igdb.com/games/bayonetta"
+
+  - title: "Grandia"
+    platform: "Nintendo Switch"
+    id: 4127
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
+    link: "https://www.igdb.com/games/grandia"
+
+  - title: "Marvel's Spider-Man"
+    platform: "Playstation 4"
+    id: 19565
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg"
+    link: "https://www.igdb.com/games/marvels-spider-man"
+
+  - title: "NieR Replicant ver.1.22474487139..."
+    platform: "Playstation 5"
+    id: 131999
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg"
+    link: "https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot"
+  
+  - title: "Pokémon Black"
+    platform: "Nintendo DS"
+    id: 1521
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg"
+    link: "https://www.igdb.com/games/pokemon-black"
+
+  - title: "Pokémon Omega Ruby and Alpha Sapphire"
+    platform: "Nintendo 3DS"
+    id: 6898
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co4.jpg"
+    link: "https://www.igdb.com/games/pokemon-alpha-sapphire"
+
+  - title: "The Witcher 2: Assassins of Kings"
+    platform: "PC"
+    id: 478
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wy4.jpg"
+    link: "https://www.igdb.com/games/the-witcher-2-assassins-of-kings"
+
+- list: Completed
+  games:
+
+  - title: "Super Mario Odyssey"
+    platform: "Nintendo Switch"
+    id: 26758
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxf.jpg"
+    link: "https://www.igdb.com/games/super-mario-odyssey"
+    date_finished: 2021-05-12
+
+  - title: "Kingdom Hearts III"
+    platform: "Playstation 4"
+    id: 2933
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tpy.jpg"
+    link: "https://www.igdb.com/games/kingdom-hearts-iii"
+    date_finished: 2021-02-18
+
+  - title: "Kingdom Hearts 0.2: Birth by Sleep - A Fragmentary Passage"
+    platform: "Playstation 4"
+    id: 26676
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xdk.jpg"
+    link: "https://www.igdb.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage"
+    date_finished: 2020-12-21
+
+  - title: "Half-Life: Alyx"
+    platform: "PC"
+    id: 26676
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xdk.jpg"
+    link: "https://www.igdb.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage"
+    date_finished: 2020-03-29
+
+  - title: "The Witcher"
+    platform: "PC"
+    id: 80
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xrx.jpg"
+    link: "https://www.igdb.com/games/the-witcher"
+    date_finished: 2020-01-27
+
+  - title: "Pokémon Sword"
+    platform: "Nintendo Switch"
+    id: 37382
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk2.jpg"
+    link: "https://www.igdb.com/games/pokemon-sword"
+    date_finished: 2020-01-18
+
+  - title: "Death Stranding"
+    platform: "Playstation 4"
+    id: 19564
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co316v.jpg"
+    link: "https://www.igdb.com/games/death-stranding"
+    date_finished: 2019-11-11
+
+  - title: "Hotline Miami"
+    platform: "PC"
+    id: 1384
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vqp.jpg"
+    link: "https://www.igdb.com/games/hotline-miami"
+
+  - title: "Final Fantasy XV"
+    platform: "Playstation 4"
+    id: 359
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tr2.jpg"
+    link: "https://www.igdb.com/games/final-fantasy-xv"
+
+  - title: "Destiny 2"
+    platform: "Playstation 4"
+    id: 25657
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n6x.jpg"
+    link: "https://www.igdb.com/games/destiny-2"
+
+  - title: "Metal Gear Solid V: Ground Zeroes"
+    platform: "PC"
+    replay: true
+    id: 5328
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg"
+    link: "https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes"
+
+  - title: "Metal Gear Solid V: Ground Zeroes"
+    platform: "Playstation 4"
+    id: 5328
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg"
+    link: "https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes"
+
+  - title: "HITMAN (2016)"
+    platform: "Playstation 4"
+    id: 11157
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fgr.jpg"
+    link: "https://www.igdb.com/games/hitman"
+
+  - title: "Titanfall 2"
+    platform: "PC"
+    id: 17447
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/fhbeilnghyhhmjqhinqa.jpg"
+    link: "https://www.igdb.com/games/titanfall-2"
+
+  - title: "Uncharted 4: A Thief's End"
+    platform: "Playstation 4"
+    id: 7331
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg"
+    link: "https://www.igdb.com/games/uncharted-4-a-thief-s-end"
+
+  - title: "Iconoclasts"
+    platform: "Nintendo Switch"
+    id: 34705
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ug9.jpg"
+    link: "https://www.igdb.com/games/iconoclasts"
