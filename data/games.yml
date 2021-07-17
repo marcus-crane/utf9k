@@ -7,18 +7,18 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
     link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
 
-  - title: "Ratchet & Clank: Rift Apart"
-    platform: "Playstation 5"
-    id: 134582
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
-    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
-
   - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
     platform: "Nintendo 3DS"
     id: 1428
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg"
     link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
     replay: true
+
+  - title: "Ratchet & Clank: Rift Apart"
+    platform: "Playstation 5"
+    id: 134582
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
+    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
   
   - title: "The Legend of Zelda: Breath of the Wild"
     platform: "Nintendo Switch"
