@@ -19,10 +19,10 @@ noproseclass: true
     </div>
     {{ range .books }}
     <article class="flex p-2 pl-0 space-x-4">
-      <img class="flex-none w-18 h-18 rounded-lg object-cover bg-gray-100" src="{{ .cover }}" width="72" height="{{ .height }}" />
+      <img class="flex-none lg:w-24 w-18 rounded-lg object-cover bg-gray-100" src="{{ .cover }}" width="72" />
       <div class="min-w-0 relative flex-auto sm:pr-20 lg:pr-0 xl:pr-20">
         <a class="noopener noreferer" href="{{ .link }}">
-          <h2 class="text-base sm:text-lg lg:text-base xl:text-lg font-semibold mb-0.5 truncate underline">
+          <h2 class="text-base sm:text-lg lg:text-base xl:text-lg font-semibold mb-0.5 underline">
             {{ .title }}
           </h2>
         </a>
