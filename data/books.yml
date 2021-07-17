@@ -6,7 +6,7 @@
     subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
     author: Geoffrey A. Moore
     cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
-    link: https://openlibrary.org/books/OL27526249M/Crossing_the_Chasm_3rd_Edition
+    link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
     date_finished: N/A
     rating: N/A
     progress: 38
@@ -16,7 +16,7 @@
     subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
     author: Kate Kelly
     cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
-    link: https://openlibrary.org/books/OL24089567M/Street_Fighters
+    link: https://openlibrary.org/works/OL14990223W/Street_Fighters
     date_finished: N/A
     rating: N/A
     progress: 9
@@ -26,7 +26,7 @@
     subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
     author: Sönke Ahrens
     cover: https://covers.openlibrary.org/b/id/8362230-L.jpg
-    link: https://openlibrary.org/books/OL26697312M/How_to_Take_Smart_Notes_One_Simple_Technique_to_Boost_Writing_Learning_and_Thinking_%E2%80%93_for_Students_A
+    link: https://openlibrary.org/works/OL18635700W/How_to_Take_Smart_Notes
     date_finished: N/A
     rating: N/A
     progress: 19
@@ -36,7 +36,7 @@
     subtitle: null
     author: Lara Hogan
     cover: https://covers.openlibrary.org/b/id/11270402-L.jpg
-    link: https://openlibrary.org/books/OL28070185M/Resilient_Management
+    link: https://openlibrary.org/works/OL20750525W/Resilient_Management
     date_finished: N/A
     rating: N/A
     progress: 71
@@ -46,7 +46,7 @@
     subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
     author: Ian D. Gow
     cover: https://covers.openlibrary.org/b/id/11194303-L.jpg
-    link: https://openlibrary.org/books/OL30597006M/The_Big_Four
+    link: https://openlibrary.org/works/OL19762252W/The_Big_Four
     date_finished: 2021-05-30
     rating: 4
     progress: 100
@@ -66,7 +66,7 @@
     subtitle: How Congress Really Works
     author: Henry Waxman
     cover: https://covers.openlibrary.org/b/id/6421143-L.jpg
-    link: https://openlibrary.org/books/OL24271655M/The_Waxman_Report
+    link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
     date_finished: 2021-04-24
     rating: 4
     progress: 100
@@ -76,7 +76,7 @@
     subtitle: null
     author: Neal Stephenson
     cover: https://covers.openlibrary.org/b/id/6396549-L.jpg
-    link: https://openlibrary.org/books/OL24249207M/In_the_Beginning...Was_the_Command_Line
+    link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
     date_finished: 2021-02-20
     rating: 2
     progress: 100
@@ -86,7 +86,7 @@
     subtitle: A Little Book That Teaches You When to Quit
     author: Seth Godin
     cover: https://covers.openlibrary.org/b/id/6405017-L.jpg
-    link: https://openlibrary.org/books/OL24257214M/The_Dip
+    link: https://openlibrary.org/works/OL2329204W/The_Dip
     date_finished: 2021-02-13
     rating: 3
     progress: 100
@@ -110,8 +110,232 @@
     subtitle: How Google Thinks, Works, and Shapes Our Lives
     author: Steven Levy
     cover: https://covers.openlibrary.org/b/id/11220620-L.jpg
-    link: https://openlibrary.org/books/OL26318641M/In_the_Plex
+    link: https://openlibrary.org/works/OL17717287W/In_the_Plex
     date_finished: 2020-12-28
     rating: 5
     progress: 100
     height: 109
+
+  - title: Naked Pictures of Famous People
+    subtitle: null
+    author: Jon Stewart
+    cover: https://covers.openlibrary.org/b/id/8345799-L.jpg
+    link: https://openlibrary.org/works/OL1959419W/Naked_Pictures_of_Famous_People
+    date_finished: 2020-12-05
+    rating: 3
+    progress: 100
+    height: 108
+
+  - title: The Checklist Manifesto
+    subtitle: How to Get Things Right
+    author: Atul Gawande
+    cover: https://covers.openlibrary.org/b/id/11442271-L.jpg
+    link: https://openlibrary.org/works/OL15436462W/The_Checklist_Manifesto
+    date_finished: 2020-12-04
+    rating: 4
+    progress: 100
+    height: 108
+
+  - title: Greenlights
+    subtitle: null
+    author: Matthew McConaughey
+    cover: https://covers.openlibrary.org/b/id/11442301-L.jpg
+    link: https://openlibrary.org/works/OL23520310W/Greenlights
+    date_finished: 2020-11-09
+    rating: 2
+    progress: 100
+    height: 104
+
+  - title: The Death of Ivan Ilych
+    subtitle: null
+    author: Leo Tolstoy
+    cover: https://covers.openlibrary.org/b/id/8939341-L.jpg
+    link: https://openlibrary.org/works/OL20281370W/The_Death_of_Ivan_Ilych
+    date_finished: 2020-10-24
+    rating: 3
+    progress: 100
+    height: 111
+
+  - title: As We May Think
+    subtitle: null
+    author: Vannevar Bush
+    cover: https://covers.openlibrary.org/b/id/11442310-L.jpg
+    link: https://openlibrary.org/works/OL5098582W/As_We_May_Think
+    date_finished: 2020-09-30
+    rating: 4
+    progress: 100
+    height: 99
+
+  - title: Talking to My Daughter About the Economy
+    subtitle: or, How Capitalism Works - and How It Fails
+    author: Yanis Varoufakis
+    cover: https://covers.openlibrary.org/b/id/8866724-L.jpg
+    link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
+    date_finished: 2020-09-30
+    rating: 5
+    progress: 100
+    height: 118
+
+  - title: The Miracle of Mindfulness
+    subtitle: An Introduction to the Practice of Meditation
+    author: Thich Nhat Hanh
+    cover: https://covers.openlibrary.org/b/id/11442319-L.jpg
+    link: https://openlibrary.org/works/OL12381026W/The_Miracle_of_Mindfulness
+    date_finished: 2020-09-19
+    rating: 3
+    progress: 100
+    height: 109
+
+  - title: The Curse of Bigness
+    subtitle: Antitrust in the New Gilded Age
+    author: Tim Wu
+    cover: https://covers.openlibrary.org/b/id/11442329-L.jpg
+    link: https://openlibrary.org/works/OL19764853W/The_Curse_of_Bigness
+    date_finished: 2020-09-14
+    rating: 4
+    progress: 100
+    height: 108
+
+  - title: Memos from the Chairman
+    subtitle: null
+    author: Alan C. Greenberg
+    cover: https://covers.openlibrary.org/b/id/11442346-L.jpg
+    link: https://openlibrary.org/works/OL2646874W/Memos_from_the_Chairman
+    date_finished: 2020-09-11
+    rating: 3
+    progress: 100
+    height: 97
+
+  - title: Learning HTTP/2
+    subtitle: A Practical Guide for Beginners
+    author: Stephen Ludin and Javier Garza
+    cover: https://covers.openlibrary.org/b/id/11442379-L.jpg
+    link: https://openlibrary.org/works/OL20055086W/Learning_HTTP_2
+    date_finished: 2020-09-04
+    rating: 3
+    progress: 100
+    height: 94
+
+  - title: The Master Switch
+    subtitle: The Rise and Fall of Information Empires
+    author: Tim Wu
+    cover: https://covers.openlibrary.org/b/id/11442411-L.jpg
+    link: https://openlibrary.org/works/OL15118227W/The_Master_Switch
+    date_finished: 2020-08-09
+    rating: 4
+    progress: 100
+    height: 107
+
+  - title: Atomic Habits
+    subtitle: An Easy & Proven Way to Build Good Habits & Break Bad Ones
+    author: James Clear
+    cover: https://covers.openlibrary.org/b/id/10958382-L.jpg
+    link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
+    date_finished: 2020-07-12
+    rating: 4
+    progress: 100
+    height: 93
+
+  - title: The Inner Game of Tennis
+    subtitle: The Classic Guide to the Mental Side of Peak Performance
+    author: Timothy W. Gallwey
+    cover: https://covers.openlibrary.org/b/id/11442494-L.jpg
+    link: https://openlibrary.org/works/OL20307725W/The_Inner_Game_of_Tennis
+    date_finished: 2020-06-06
+    rating: 4
+    progress: 100
+    height: 111
+
+  - title: Zen in the Art of Writing
+    subtitle: null
+    author: Ray Bradbury
+    cover: https://covers.openlibrary.org/b/id/369269-L.jpg
+    link: https://openlibrary.org/works/OL103179W/Zen_in_The_Art_of_Writing
+    date_finished: 2020-05-11
+    rating: 3
+    progress: 100
+    height: 121
+
+  - title: Red Tape
+    subtitle: Its Origins, Uses, and Abuses
+    author: Herbert Kaufman
+    cover: https://covers.openlibrary.org/b/id/613854-L.jpg
+    link: https://openlibrary.org/works/OL3479766W/Red_Tape
+    date_finished: 2020-03-23
+    rating: 3
+    progress: 100
+    height: 111
+
+  - title: Why I Write
+    subtitle: null
+    author: George Orwell
+    cover: https://covers.openlibrary.org/b/id/11442618-L.jpg
+    link: https://openlibrary.org/works/OL1168147W/Why_I_Write
+    date_finished: 2020-02-25
+    rating: 4
+    progress: 100
+    height: 120
+
+  - title: Dirty Politics
+    subtitle: How Attack Politics is Poisoning New Zealand's Political Environment
+    author: Nicky Hager
+    cover: https://covers.openlibrary.org/b/id/7286103-L.jpg
+    link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
+    date_finished: 2020-02-09
+    rating: 4
+    progress: 100
+    height: 104
+
+  - title: Getting Things Done
+    subtitle: The Art of Stress-Free Productivity
+    author: David Allen
+    cover: https://covers.openlibrary.org/b/id/10434117-L.jpg
+    link: https://openlibrary.org/works/OL20777755W/Getting_Things_Done
+    date_finished: 2020-02-07
+    rating: 4
+    progress: 100
+    height: 110
+
+  - title: The Information Diet
+    subtitle: A Case for Conscious Consumption
+    author: Clay A. Johnson
+    cover: https://covers.openlibrary.org/b/id/7089729-L.jpg
+    link: https://openlibrary.org/works/OL16538242W/The_Information_Diet
+    date_finished: 2020-01-30
+    rating: 3
+    progress: 100
+    height: 108
+
+  - title: The Myth of Sisyphus
+    subtitle: null
+    author: Albert Camus
+    cover: https://covers.openlibrary.org/b/id/8824673-L.jpg
+    link: https://openlibrary.org/works/OL20177521W/The_Myth_of_Sisyphus
+    date_finished: 2020-01-26
+    rating: 3
+    progress: 100
+    height: 111
+
+- list: 2019
+  goal: null
+  books:
+
+  - title: The Unicorn Project
+    subtitle: null
+    author: Gene Kim
+    cover: https://covers.openlibrary.org/b/id/9398045-L.jpg
+    link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
+    date_finished: 2019-12-25
+    rating: 3
+    progress: 100
+    height: 107
+
+  - title: Super Pumped
+    subtitle: The Battle for Uber
+    author: Mike Isaac
+    cover: https://covers.openlibrary.org/b/id/8777999-L.jpg
+    link: https://openlibrary.org/works/OL20125074W/Super_Pumped
+    date_finished: 2019-11-26
+    rating: 4
+    progress: 100
+    height: 108
