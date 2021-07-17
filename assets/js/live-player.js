@@ -29,7 +29,7 @@ function queryGames() {
       .then(games => {
         const data = games.data
         if (!data || !data.title) return resolve("I;m not currently playing anything.")
-        return resolve({ 'provider': 'gaming', data })
+        return resolve({ "provider": "gaming", data })
       })
       .catch(err => reject(err))
   })
@@ -42,7 +42,7 @@ function querySpotify() {
       .then(audio => {
         const data = audio.data
         if (!data || !data.is_playing) return resolve("I'm not currently listening to anything.")
-        return resolve({ 'provider': 'spotify', data })
+        return resolve({ "provider": "spotify", data })
       })
       .catch(err => reject(err))
   })
@@ -55,7 +55,7 @@ function queryTrakt() {
       .then(media => {
         const data = media.data
         if (data.type === "") return resolve("I'm not currently watching anything.")
-        return resolve({ 'provider': 'trakt', data })
+        return resolve({ "provider": "trakt", data })
       })
       .catch(err => reject(err))
   })
@@ -68,14 +68,14 @@ function refreshData() {
         console.log(value)
         if (typeof(value) === "string") continue
         switch(value.provider) {
-          case 'gaming':
-            return renderGamingData(value.data)
-          case 'spotify':
-            return renderSpotifyData(value.data)
-          case 'trakt':
-            return renderTraktData(value.data)
-          default:
-            return
+        case "gaming":
+          return renderGamingData(value.data)
+        case "spotify":
+          return renderSpotifyData(value.data)
+        case "trakt":
+          return renderTraktData(value.data)
+        default:
+          return
         }
       }
     })
@@ -89,8 +89,8 @@ function formatMsToHumanTimestamp(ms) {
   const seconds = ((ms % 60000) / 1000).toFixed(0)
   return (
     seconds == 60 ?
-    (minutes + 1) + ":00" :
-    minutes + ":" + (seconds < 10 ? "0" : "") + seconds
+      (minutes + 1) + ":00" :
+      minutes + ":" + (seconds < 10 ? "0" : "") + seconds
   )
 }
 
@@ -120,12 +120,10 @@ function renderSpotifyData(data) {
   action.innerText = spotifyVerb
 
   const listeningType = data.currently_playing_type
-  const timestamp = data.timestamp
-  const playing = data.item.is_playing
   const currentDuration = data.item.duration_ms
   let firstPaintComplete = false
 
-  if (listeningType === 'episode') {
+  if (listeningType === "episode") {
     source.innerText = data.item.show.name
   } else {
     source.innerText = data.item.album.artists[0].name

@@ -1,9 +1,8 @@
 // Inspired by https://palant.info/2020/06/04/the-easier-way-to-use-lunr-search-with-hugo
 // Adapted to have no dependency on lunr.js though
 // It works good enough for now
-window.addEventListener("DOMContentLoaded", function(event) {
+window.addEventListener("DOMContentLoaded", function() {
   let lookup = null
-  let firstInputReceived = false
 
   const form = document.getElementById("search")
   const input = document.getElementById("search-input")
@@ -26,17 +25,17 @@ window.addEventListener("DOMContentLoaded", function(event) {
   }
 
   async function animatePlaceholderInput(word, tags) {
-    input.placeholder = ''
-    contents = ''
-    const chars = word.split('')
+    input.placeholder = ""
+    let contents = ""
+    const chars = word.split("")
     for (let char of chars) {
-      await new Promise(r => setTimeout(r, 100));
+      await new Promise(r => setTimeout(r, 100))
       contents += char
       input.placeholder = contents
     }
-    await new Promise(r => setTimeout(r, 2000));
-    for (let char of contents) {
-      await new Promise(r => setTimeout(r, 100));
+    await new Promise(r => setTimeout(r, 2000))
+    for (let char of contents) {  // eslint-disable-line
+      await new Promise(r => setTimeout(r, 100))
       contents = contents.slice(0, -1)
       input.placeholder = contents
     }
@@ -54,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
       })
       .catch(err => {
         console.error(`Error fetching search index: ${err}`)
-        errorMsg.innerText = 'Hmm, something broke trying to load search!'
+        errorMsg.innerText = "Hmm, something broke trying to load search!"
       })
   }
 
@@ -64,9 +63,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
   })
 
   function resetQuestionVisibility() {
-    const questions = document.querySelectorAll('.question')
+    const questions = document.querySelectorAll(".question")
     for (let question of questions) {
-      question.className = 'question'
+      question.className = "question"
     }
   }
 
@@ -81,14 +80,14 @@ window.addEventListener("DOMContentLoaded", function(event) {
   }
 
   function getTags(lookup) {
-    tags = []
+    let tags = []
     for (let page of lookup) {
       tags = [...page.tags, ...tags]
     }
     return tags
   }
 
-  function handleInput(event) {
+  function handleInput() {
     if (lookup === null) return
     const searchTerm = input.value.trim().toLowerCase()
     if (!searchTerm) {
