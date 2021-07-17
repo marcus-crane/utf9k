@@ -186,6 +186,16 @@
     progress: 100
     height: 109
 
+  - title: On Bullshit
+    subtitle: null
+    author: Harry G. Frankfurt
+    cover: https://covers.openlibrary.org/b/id/10919760-L.jpg
+    link: https://openlibrary.org/works/OL1829528W/On_Bullshit
+    date_finished: 2020-09-15
+    rating: 4
+    progress: 100
+    height:
+
   - title: The Curse of Bigness
     subtitle: Antitrust in the New Gilded Age
     author: Tim Wu
@@ -339,3 +349,127 @@
     rating: 4
     progress: 100
     height: 108
+
+- list: 2018
+  goal: null
+  books:
+
+  - title: How To Win Friends And Influence People
+    subtitle: null
+    author: Dale Carnegie
+    cover: https://covers.openlibrary.org/b/id/404390-L.jpg
+    link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
+    date_finished: 2018-12-23
+    rating: 3
+    progress: 100
+    height: 112
+
+  - title: The Phoenix Project
+    subtitle: A Novel About IT, DevOps, and Helping Your Business Win
+    author: Gene Kim
+    cover: https://covers.openlibrary.org/b/id/9151976-L.jpg
+    link: https://openlibrary.org/works/OL16806686W/The_Phoenix_Project
+    date_finished: 2018-12-23
+    rating: 5
+    progress: 100
+    height: 96
+
+  - title: The Fifth Discipline
+    subtitle: The Art & Practice of The Learning Organization
+    author: Peter M. Senge
+    cover: https://covers.openlibrary.org/b/id/7018044-L.jpg
+    link: https://openlibrary.org/works/OL4440692W/The_Fifth_Discipline
+    date_finished: 2018-08-05
+    rating: 3
+    progress: 100
+    height: 115
+
+  - title: The Flinch
+    subtitle: null
+    author: Julien Smith
+    cover: https://covers.openlibrary.org/b/id/11443316-L.jpg
+    link: https://openlibrary.org/works/OL24137194W/The_Flinch
+    date_finished: 2018-05-11
+    rating: 3
+    progress: 100
+    height: 72
+
+  - title: Twin Peaks
+    subtitle: The Final Dossier
+    author: Mark Frost
+    cover: https://covers.openlibrary.org/b/id/8289411-L.jpg
+    link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
+    date_finished: 2018-04-28
+    rating: 4
+    progress: 100
+    height: 89
+
+  - title: Site Reliability Engineering
+    subtitle: How Google Runs Production Systems
+    author: Betsy Beyer
+    cover: https://covers.openlibrary.org/b/id/9196728-L.jpg
+    link: https://openlibrary.org/works/OL20028554W/Site_Reliability_Engineering
+    date_finished: 2018-02-24
+    rating: 4
+    progress: 100
+    height: 94
+
+  - title: Tales from the Loop
+    subtitle: null
+    author: Simon Stålenhag
+    cover: https://covers.openlibrary.org/b/id/10866158-L.jpg
+    link: https://openlibrary.org/works/OL20040484W/Tales_from_the_Loop
+    date_finished: 2018-02-06
+    rating: 4
+    progress: 100
+    height: 71
+
+  - title: Shit London
+    subtitle: Snapshots of a City on the Edge
+    author: Patrick Dalton
+    cover: https://covers.openlibrary.org/b/id/7799604-L.jpg
+    link: https://openlibrary.org/works/OL17548993W/Shit_London
+    date_finished: 2018-01-24
+    rating: 3
+    progress: 100
+    height: 68
+
+  - title: Japanese Game Graphics
+    subtitle: Behind the Scenes of Your Favorite Games
+    author: Works Corporation
+    cover: https://covers.openlibrary.org/b/id/29998-L.jpg
+    link: https://openlibrary.org/works/OL274966W/Japanese_Game_Graphics
+    date_finished: 2018-01-14
+    rating: 5
+    progress: 100
+    height: 97
+
+  - title: Show Stopper!
+    subtitle: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft
+    author: G. Pascal Zachary
+    cover: https://covers.openlibrary.org/b/id/7885313-L.jpg
+    link: https://openlibrary.org/books/OL1096174M/Show_Stopper%21
+    date_finished: 2018-01-14
+    rating: 4
+    progress: 100
+    height: 108
+
+  - title: Half-Life 2
+    subtitle: Raising the Bar
+    author: David Hodgson
+    cover: https://covers.openlibrary.org/b/id/510697-L.jpg
+    link: https://openlibrary.org/works/OL8010203W/Half-Life_2
+    date_finished: 2018-01-14
+    rating: 4
+    progress: 100
+    height: 90
+
+  - title: Pendulum
+    subtitle: How Past Generations Shape Our Present and Predict Our Future
+    author: Roy H. Williams
+    cover: https://covers.openlibrary.org/b/id/11443428-L.jpg
+    link: https://openlibrary.org/works/OL22646312W/Pendulum
+    date_finished: 2018-01-13
+    rating: 4
+    progress: 100
+    height: 111
