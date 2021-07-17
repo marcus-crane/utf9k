@@ -13,7 +13,9 @@ noproseclass: true
   <div id="book-list" class="pb-12">
     <div class="prose dark:prose-dark pb-2">
       <h4>{{ $listName }}</h4>
-      <span>Yearly goal: {{ $goalProgress }} / {{ .goal }} books completed</span>
+      {{ if .goal }}
+        <span>Yearly goal: {{ $goalProgress }} / {{ .goal }} books completed ({{ div (mul $goalProgress 100) .goal }}%)</span>
+      {{ end }}
     </div>
     {{ range .books }}
     <article class="flex p-2 pl-0 space-x-4">
