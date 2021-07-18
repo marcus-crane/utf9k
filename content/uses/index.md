@@ -32,10 +32,12 @@ Everything except my work laptop is currently running the 2021 Beta (iOS 15, mac
 
 ## Applications
 
-* [Brave](https://brave.com/) for browsing (I turn off all the crypto crap)
-* [TickTick](https://ticktick.com) for tasks and habit tracking
+* [Brave](https://brave.com/) for browsing (once you turn off all the crypto crap, it's a solid browser)
+* A generic notebook for tasks and day planning
 * [Apple Calendar](https://en.wikipedia.org/wiki/Calendar_(Apple)) powered by [Fastmail](https://fastmail.com) for tracking events
 * [Craft](https://craft.do) for notes
-* [ReadKit](https://readkitapp.com) powered by [Feedbin](https://feedbin.com) for RSS feeds
+* [Feedbin](https://feedbin.com) for RSS feeds
 * [Pocket Casts](https://pocketcasts.com) for podcasts
 * [MoneyCoach](https://moneycoach.ai) for tracking finances
+* [1Password](https://1password.com/) for password management
+* [Bookly](https://getbookly.com/) for tracking reading progress
