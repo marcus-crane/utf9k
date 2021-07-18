@@ -20,6 +20,6 @@ In no particular order, shout outs to:
 
 * [MDN](https://developer.mozilla.org/en-US/) is the only thing saving me from homelessness. I'd be hosed without this internet bible.
 
-* [Netlify] hasn't had a hiccup since the day I joined from memory.
+* [Netlify](https://www.netlify.com/) hadn't a hiccup since the day I joined from memory and made it really easy to host this site for a long time.
 
 * [owlspace](https://owlspace.xyz) inspired me to get back into my redesign again. It has a nice homey, handcrafted feeling to it and makes me want to improve my own site much more.
