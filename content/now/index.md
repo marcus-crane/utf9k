@@ -4,48 +4,66 @@ slug: "now"
 category: "now"
 ---
 
-## Continuing with some decent habits
+## Throwing away my to do list
 
-The last month or two has been [a little bumpy](/blog/let-your-streaks-end-naturally/) so I've been trying to make sure that I keep up with a reasonable routine.
+I noticed recently that not only do I dread the thought of opening up my electronic to do list but realistically, I never action much off of it anyway.
 
-Apparently I'm 41 days into using [Ten Percent Happier](https://www.tenpercent.com/) and the name is pretty accurate. It isn't my first run in with meditation but generally I tend to be skeptical about these sorts of things. Having said that, I'm definitely invested.
+I decided to experiment with throwing it away completely and relying on my calendar. Things that **must** be done should go on my calendar regardless.
 
-I had tried out Headspace and I didn't really get it? It felt like each day was just the same thing every time. In hindsight, that is the practice of course but the nice thing about Ten Percent is that they present a mix of video and audio.
+Now don't get me wrong, I still have *things to do* in some form or another but they're not explicitly a list. The thing I'm trying to avoid here is subsciously mistaking any such list as a *things i must do* list as opposed to a *things i could do* list.
 
-The video portion is a sort of meta discussion around meditation while the audio is an actual guided session, sometimes related to the discussion that just occurred. I think that has definitely helped me "get it" more but of course, there's no end state or anything to win.
+The other aspect is that being electronic means I'm tether to my computer. Basically what I'm doing instead is carrying a notebook. If there's something I need to do at a certain time, it goes on my calendar. If it's wishy washy or not important, I just write a note but I don't expect that note means "It will happen" as there isn't any period of time attached.
 
-It's a bit expensive but the production quality and library is sizable so I ended up buying a yearly subscription. I can issue guest passes that let you try it for 30 days (no credit card required!) which is cool. If you'd like one, you can reach me via any of the contact methods at the bottom of this page, and to the right.
+Most projects I do are relatively ad hoc, or in the case of this site, I file Github Issues so I'm relying on "I'll just do a couple minutes" as my driver to determine what I find interesting at any given moment.
 
-Beyond that, I've still been going to the gym every few days (over a year now!) so that's cool.
+If I don't feel like doing something, I just simply won't do it and I try to pay no attention to whether streaks happen or not.
 
-## nix
+This might go too far the other way for sure but it's an experiment so who knows, maybe I'll end up getting more done in an attempt to *not* be explicitly productive!
 
-Looks cool but I still haven't gotten around to sitting down and figuring out how to integrate it into my tools.
+## Octowise
 
-## tmux
+I haven't talked about it publically but I've got a [side project for viewing Kobo highlights](https://github.com/marcus-crane/octowise) that has been on and off the backburner for some time.
 
-Looks cool but I still haven't gotten around to sitting down and figuring out how to integrate it into my tools.
+[Electron](https://www.electronjs.org/) gave me a lot of troubles between native module compilation and trying to work within the expected [security model](https://www.electronjs.org/docs/latest/security/context-isolation). Most every comment would simply say "disable security" while I couldn't get modules I needed to work within sandboxing. Agh, it felt extremely kafkaesque and I got no real work done on that side project.
 
-## My site
+Recently I discovered a project called [wails](https://github.com/wailsapp/wails) which allows you to write most of your codebase in Go while crafting a UI in Javascript. This works by providing a bridge between Go and JS so you can call Go functions from within JSland.
 
-I can feel myself getting itchy for a redesign again. The site text is too huge if you ask me and is mostly just the [tailwind typography](https://github.com/tailwindlabs/tailwindcss-typography) default settings rather than having its own unique flare. It's too generic!
+While I'm not too far into using it, my tests so far have been [very promising](https://twitter.com/sentreh/status/1416558765340446724)!
 
-Odds are that I'll end up going for a center column style again but I'd like to give the reader some "progressively enhanced" options to change text alignment and so on if they wish. I can feel the scope creep in my bones.
+I'm glad to finally start making progress on the actual problem rather than all the stuff surrounding the problem itself.
 
-Beyond that, I've been pretty happy with the amount of content I've churned so far. There's still plenty more to go of course.
+## Static libraries
 
-A handy trick seems to be "just working on a post for 5 minutes" and then the completionist part of your brain is like "No, it's not time to stop yet" and then hours go by.
+Currently, I have both [books](/books/) and [games](/games/) pages which show the things I'm working through.
 
-This very update is the result of that principle!
+They aren't explicitly linked anywhere (besides here) but in future, I intend to surface them to users and provide a sort of gallery of sorts.
 
-## Videogames
+My goal here is to try and use my site as a data store rather than relying on third parties so much.
 
-Hah! What's a videogame?
+For me, books and games are probably the two most at risk I would say.
 
-I actually finished off [Final Fantasy XIV: Shadowbringers](https://en.wikipedia.org/wiki/Final_Fantasy_XIV:_Shadowbringers) recently. I'm now currently up to date as far as the main scenario goes and I'm all aboard the [Endwalker](https://en.wikipedia.org/wiki/Final_Fantasy_XIV:_Endwalker) hype train.
+With books, [Goodreads](https://goodreads.com) is still widely used but is effectively neglected by their corporate overlords at Amazon.
 
-I purchased [Ratchet & Clank: Rift Apart](https://en.wikipedia.org/wiki/Ratchet_%26_Clank:_Rift_Apart) and it's downloading remotely but I'm not home at the time of writing so I've yet to crack it open. As someone who has played almost every Ratchet & Clank title[^1] since the Playstation 2 era, it's really nice to see the series is still going strong. I just wish I could say the same about [Jak and Daxter](https://en.wikipedia.org/wiki/Jak_and_Daxter) 😔
+With games, [How Long To Beat](https://howlongtobeat.com/user?n=Sentry), there's still an active community and I've been a member of the side for 10 years now but I noticed recently that the site was bought by [Ziff Davis](https://www.ziffdavis.com/). I don't know that I consider them as bad as some large entities but in my lifetime, I've seen them shut down 1UP.com, GameSpy, GameTrailers, Official U.S. Playstation Magazine and UGO. I didn't necessarily visit any of those sites aside from GameTrailers but I don't see why a small ex-indie site like HLTB would be any different in future.
 
-While away from home, I have been getting back into [Phoenix Wright: Ace Attorney - Trials and Tribulations](https://en.wikipedia.org/wiki/Phoenix_Wright:_Ace_Attorney_%E2%88%92_Trials_and_Tribulations) on Nintendo 3DS. I already played the original trilogy back on DS but I intended to replay the trilogy as a refresher for [Apollo Justice](https://en.wikipedia.org/wiki/Apollo_Justice:_Ace_Attorney). I started that journey like 5 years ago now and the series has been ported multiple times... At this point, I'm so close that I can't give up (Near the end of Case 2) but it's been so long that I might as well just watch the anime for a re-refresher...
+On a more general note as well, neither of these sites make money off of me so I don't exactly know what keeps them running? Publisher deals? Beats me.
 
-[^1]: I've finished almost every entry, often multiple times. I tried out [Into the Nexus](https://en.wikipedia.org/wiki/Ratchet_%26_Clank:_Into_the_Nexus), [All 4 One](https://en.wikipedia.org/wiki/Ratchet_%26_Clank:_All_4_One) and [QForce](https://en.wikipedia.org/wiki/Ratchet_%26_Clank:_Full_Frontal_Assault) but I never got too far into them. I don't think I ever played [Going Mobile](https://en.wikipedia.org/wiki/Ratchet_%26_Clank:_Going_Mobile) or [Secret Agent Clank](https://en.wikipedia.org/wiki/Secret_Agent_Clank).
+Anyway, both pages are powered by `yaml` files currently that are manually curated. I'll probably write more about it in future but for now, you can [check out the data folder](https://github.com/marcus-crane/utf9k/tree/main/data) if you'd like to see more.
+
+## This site in general
+
+While I like to think I'm still pretty active writing posts for my [blog](/blog), the large majority of changes I've made recently aren't particularly user facing.
+
+Here's a short list of recent changes:
+
+* Addition of [games](/games/)
+* Addition of [debug](/debug/) to help tidy up metadata
+* Wrote V2 of the homepage live player. It now features playback progress and cover art for games, movies, tv shows and music.
+* Added live searching to [questions](/questions/) and split up all of the content into one "post" per question.
+* Moved from [Netlify](https://www.netlify.com/) to [Fly.io](https://fly.io/). Besides just liking the latter, I've also started forwarding server logs to an [Intel NUC](https://www.intel.com/content/www/us/en/products/details/nuc/mini-pcs.html) at my house. My next step will be to surface anonymous stats back here on my site.
+
+At some point, hopefully soon, I'll be doing a revamp of the layout. Nothing huge in terms of formatting but tidying up the design.
+
+My main goals will be trying to reduce the number of external requests (ideally caching everything locally) and creating nice, static cards for showing eg; tweets rather than straight serving the embed widgets as they tend to look out of place.
+
+Beyond that, life stuff is busy! Lotta irons in various fires but nothing to talk about just yet.
