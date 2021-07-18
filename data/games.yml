@@ -19,6 +19,12 @@
     id: 134582
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
     link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
+
+  - title: "Scarlet Nexus"
+    platform: "Playstation 5"
+    id: 133302
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
+    link: "https://www.igdb.com/games/scarlet-nexus"
   
   - title: "The Legend of Zelda: Breath of the Wild"
     platform: "Nintendo Switch"
