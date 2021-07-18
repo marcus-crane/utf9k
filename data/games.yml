@@ -14,12 +14,6 @@
     link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
     replay: true
 
-  - title: "Ratchet & Clank: Rift Apart"
-    platform: "Playstation 5"
-    id: 134582
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
-    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
-
   - title: "Scarlet Nexus"
     platform: "Playstation 5"
     id: 133302
@@ -79,6 +73,13 @@
 
 - list: Completed
   games:
+
+  - title: "Ratchet & Clank: Rift Apart"
+    platform: "Playstation 5"
+    id: 134582
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
+    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
+    date_finished: 2021-05-18
 
   - title: "Super Mario Odyssey"
     platform: "Nintendo Switch"
