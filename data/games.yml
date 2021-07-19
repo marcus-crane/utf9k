@@ -35,6 +35,12 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p92.jpg"
     link: "https://www.igdb.com/games/bayonetta"
 
+  - title: "Control"
+    platform: "Playstation 5"
+    id: 103329
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg"
+    link: "https://www.igdb.com/games/control"
+
   - title: "Grandia"
     platform: "Nintendo Switch"
     id: 4127
@@ -104,9 +110,9 @@
 
   - title: "Half-Life: Alyx"
     platform: "PC"
-    id: 26676
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xdk.jpg"
-    link: "https://www.igdb.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage"
+    id: 126098
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tq3.jpg"
+    link: "https://www.igdb.com/games/half-life-alyx"
     date_finished: 2020-03-29
 
   - title: "The Witcher"
