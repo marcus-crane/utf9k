@@ -11,15 +11,6 @@
     rating: N/A
     progress: 38
 
-  - title: Street Fighters
-    subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
-    author: Kate Kelly
-    cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
-    link: https://openlibrary.org/works/OL14990223W/Street_Fighters
-    date_finished: N/A
-    rating: N/A
-    progress: 9
-
   - title: How to Take Smart Notes
     subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
     author: Sönke Ahrens
@@ -29,14 +20,32 @@
     rating: N/A
     progress: 19
 
+  - title: Street Fighters
+    subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
+    author: Kate Kelly
+    cover: https://covers.openlibrary.org/b/id/6300727-L.jpg
+    link: https://openlibrary.org/works/OL14990223W/Street_Fighters
+    date_finished: N/A
+    rating: N/A
+    progress: 9
+
+  - title: The Usefulness of Useless Knowledge
+    subtitle: null
+    author: Abraham Flexner
+    cover: https://covers.openlibrary.org/b/id/11456656-L.jpg
+    link: https://openlibrary.org/works/OL24725948W/The_Usefulness_of_Useless_Knowledge
+    date_finished: N/A
+    rating: N/A
+    progress: 59
+
   - title: Resilient Management
     subtitle: null
     author: Lara Hogan
     cover: https://covers.openlibrary.org/b/id/11270402-L.jpg
     link: https://openlibrary.org/works/OL20750525W/Resilient_Management
-    date_finished: N/A
-    rating: N/A
-    progress: 71
+    date_finished: 2021-07-19
+    rating: 3
+    progress: 100
 
   - title: The Big Four
     subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
