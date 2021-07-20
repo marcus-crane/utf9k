@@ -28,7 +28,7 @@ function queryGames() {
       .then(res => res.json())
       .then(games => {
         const data = games.data
-        if (!data || !data.title) return resolve("I;m not currently playing anything.")
+        if (!data || !data.title) return resolve("I'm not currently playing anything.")
         return resolve({ "provider": "gaming", data })
       })
       .catch(err => reject(err))
@@ -117,6 +117,7 @@ function renderSpotifyData(data) {
   liveStatusBar.style.background = spotifyColor
   livePlayer.className = "transition-opacity duration-1000"
   progressBar.style.transition = "width 1s"
+  category.className = "hidden"
   action.innerText = spotifyVerb
 
   const listeningType = data.currently_playing_type
@@ -132,16 +133,21 @@ function renderSpotifyData(data) {
   let progression = data.progress_ms
 
   title.innerText = data.item.name
-  category.innerText = data.item.album.name
 
   elapsed.innerText = formatMsToHumanTimestamp(progression)
 
   duration.innerText = formatMsToHumanTimestamp(currentDuration)
   progressBar.ariaValueMax = currentDuration
 
-  cover.src = data.item.album.images[0].url
-  cover.height = data.item.album.images[0].height
-  cover.width = data.item.album.images[0].width
+  if (listeningType === "episode") {
+    category_type = data.item.show
+  } else {
+    category_type = data.item.album
+  }
+
+  cover.src = category_type.images[0].url
+  cover.height = category_type.images[0].height
+  cover.width = category_type.images[0].width
   cover.className += " w-24 h-24"
 
   livePlayer.style.opacity = 1
