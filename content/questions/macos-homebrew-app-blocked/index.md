@@ -1,6 +1,5 @@
 ---
 title: "How can I run a Homebrew application being blocked by Gatekeeper?"
-title: "How can I monitor JAMF downloads on macOS?"
 slug: "macos-homebrew-app-blocked"
 category: "questions"
 tags:
