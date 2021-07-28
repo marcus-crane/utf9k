@@ -1,11 +1,8 @@
-# YAML 1.2
----
+cff-version: "1.1.0"
+message: "If you use this software, please cite it using this metadata."
 authors: 
   - family-names: Crane
     given-names: Marcus
-cff-version: "1.1.0"
 license: MIT
-message: "If you use this software, please cite it using this metadata."
 repository-code: "https://github.com/marcus-crane/utf9k"
 title: utf9k
-...
