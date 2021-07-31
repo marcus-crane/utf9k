@@ -36,9 +36,9 @@ COPY . /utf9k
 
 RUN export PATH=$PATH:/usr/bin
 
-RUN npm install -g yarn && yarn install
-RUN yarn run generate-fancy-links
-RUN yarn build
+RUN npm install -g pnpm && pnpm install
+RUN pnpm run generate-fancy-links
+RUN pnpm build
 
 ###
 # Deployment image

@@ -12,3 +12,4 @@ resources
 .netlify
 data/fancylinks.json
 data/filesizes.json
+.pnpm-debug.log
