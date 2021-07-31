@@ -7,13 +7,6 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
     link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
 
-  - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
-    platform: "Nintendo 3DS"
-    id: 1428
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
-    replay: true
-
   - title: "Scarlet Nexus"
     platform: "Playstation 5"
     id: 133302
@@ -79,6 +72,14 @@
 
 - list: Completed
   games:
+
+  - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
+    platform: "Nintendo 3DS"
+    id: 1428
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
+    replay: true
+    date_finished: 2021-07-31
 
   - title: "Ratchet & Clank: Rift Apart"
     platform: "Playstation 5"
