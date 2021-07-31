@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "hugo server --disableFastRender",
-    "build": "yarn run gather-files && hugo --gc",
+    "build": "pnpm run gather-files && hugo --gc",
     "lint": "eslint assets/js",
     "gather-files": "python scripts/gather-filesizes.py",
     "generate-fancy-links": "pip install -U pip && pip install -r scripts/requirements.txt && python scripts/generate-fancylinks.py"
