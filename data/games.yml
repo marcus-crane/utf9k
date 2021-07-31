@@ -1,25 +1,13 @@
-- list: Playing recently
+- list: Actively playing
   games:
-
-  - title: "Digimon Story: Cyber Sleuth"
-    platform: "Nintendo Switch"
-    id: 15705
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
-    link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
 
   - title: "Scarlet Nexus"
     platform: "Playstation 5"
     id: 133302
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
     link: "https://www.igdb.com/games/scarlet-nexus"
-  
-  - title: "The Legend of Zelda: Breath of the Wild"
-    platform: "Nintendo Switch"
-    id: 7346
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg"
-    link: "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild"
 
-- list: Last played a while ago
+- list: Stalled but occasionally progress is made
   games:
 
   - title: "Bayonetta"
@@ -33,6 +21,12 @@
     id: 103329
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg"
     link: "https://www.igdb.com/games/control"
+
+  - title: "Digimon Story: Cyber Sleuth"
+    platform: "Nintendo Switch"
+    id: 15705
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
+    link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
 
   - title: "Grandia"
     platform: "Nintendo Switch"
@@ -63,6 +57,12 @@
     id: 6898
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co4.jpg"
     link: "https://www.igdb.com/games/pokemon-alpha-sapphire"
+
+  - title: "The Legend of Zelda: Breath of the Wild"
+    platform: "Nintendo Switch"
+    id: 7346
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg"
+    link: "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild"
 
   - title: "The Witcher 2: Assassins of Kings"
     platform: "PC"
