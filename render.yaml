@@ -5,4 +5,8 @@ services:
     buildCommand: npm install -g pnpm && pnpm build
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true
+    routes:
+      - type: redirect
+        source: /example
+        destination: https://example.com
   
