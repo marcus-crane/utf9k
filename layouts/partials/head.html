@@ -30,5 +30,5 @@
 {{ end }}
 
 {{ if ne .Site.IsServer }}
-<script defer data-api='{{ getenv "RENDER_EXTERNAL_URL" }}/api/event' data-domain='{{ getenv "RENDER_EXTERNAL_HOSTNAME" }}' src='{{ getenv "RENDER_EXTERNAL_URL" }}/pageview.js'></script>
+<script defer data-api='{{ getenv "RENDER_EXTERNAL_URL" }}/api/event' data-domain='{{ getenv "RENDER_EXTERNAL_HOSTNAME" }}' src='{{ getenv "RENDER_EXTERNAL_URL" }}/statistician.js'></script>
 {{ end }}

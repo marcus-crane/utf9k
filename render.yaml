@@ -29,7 +29,7 @@ services:
         value: "interest-cohort=()"
     routes:
       - type: rewrite
-        source: /pageview.js
+        source: /statistician.js
         destination: https://plausible.io/js/plausible.js
       - type: rewrite
         source: /api/event
