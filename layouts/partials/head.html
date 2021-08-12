@@ -29,5 +29,6 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
 
-<script defer data-domain="utf9k.net" src="https://plausible.io/js/plausible.js"></script>
-<script defer data-api="https://utf9k.net/api/event" data-domain="utf9k.net" src="https://utf9k.net/pageview.js"></script>
+{{ if ne .Site.IsServer }}
+<script defer data-api='{{ getenv "RENDER_EXTERNAL_URL" }}/api/event' data-domain='{{ getenv "RENDER_EXTERNAL_HOSTNAME" }}' src='{{ getenv "RENDER_EXTERNAL_URL" }}/pageview.js'></script>
+{{ end }}
