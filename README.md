@@ -27,7 +27,7 @@ A handful of static files live in `static` with most images living with their re
 
 ## Deployment
 
-Deployment is done via Github Actions, which deploys a Docker image to [fly.io](https://fly.io)
+Deployment is done via [Render](https://render.com).
 
 Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
 
