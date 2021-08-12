@@ -2,7 +2,7 @@ services:
   - type: web
     name: utf9k
     env: static
-    buildCommand: npm install -g pnpm && pnpm build
+    buildCommand: yarn build
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true
     headers:
