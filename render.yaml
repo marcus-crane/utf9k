@@ -5,8 +5,15 @@ services:
     buildCommand: npm install -g pnpm && pnpm build
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-XSS-Protection
+        value: "1; mode=block"
     routes:
-      - type: redirect
-        source: /example
-        destination: https://example.com
+      - type: rewrite
+        source: /pageview.js
+        destination: https://plausible.io/js/plausible.js
   
