@@ -1,5 +1,11 @@
 - list: Actively playing
   games:
+  
+  - title: "Apollo Justice: Ace Attorney"
+    platform: "Nintendo 3DS"
+    id: 0000
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pke.jpg"
+    link: "https://www.igdb.com/games/apollo-justice-ace-attorney"
 
   - title: "Scarlet Nexus"
     platform: "Playstation 5"

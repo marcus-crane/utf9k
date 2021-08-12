@@ -2,15 +2,6 @@
   goal: 20
   books:
 
-  - title: Crossing the Chasm, 3rd Edition
-    subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
-    author: Geoffrey A. Moore
-    cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
-    link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
-    date_finished: N/A
-    rating: N/A
-    progress: 44
-
   - title: How to Take Smart Notes
     subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
     author: Sönke Ahrens
@@ -18,7 +9,7 @@
     link: https://openlibrary.org/works/OL18635700W/How_to_Take_Smart_Notes
     date_finished: N/A
     rating: N/A
-    progress: 19
+    progress: 24
 
   - title: Street Fighters
     subtitle: The Last 72 Hours of Bear Stearns, the Toughest Firm on Wall Street
@@ -28,6 +19,15 @@
     date_finished: N/A
     rating: N/A
     progress: 9
+    
+  - title: Crossing the Chasm, 3rd Edition
+    subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
+    author: Geoffrey A. Moore
+    cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
+    link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
+    date_finished: 2021-08-09
+    rating: 5
+    progress: 100
 
   - title: The Usefulness of Useless Knowledge
     subtitle: null
