@@ -34,4 +34,6 @@ services:
       - type: rewrite
         source: /api/event
         destination: https://plausible.io/api/event
-  
+      - type: redirect
+        source: /analytics
+        destination: https://plausible.io/utf9k.net
