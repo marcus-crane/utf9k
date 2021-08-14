@@ -1,12 +1,6 @@
 - list: Actively playing
   games:
   
-  - title: "Apollo Justice: Ace Attorney"
-    platform: "Nintendo 3DS"
-    id: 0000
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pke.jpg"
-    link: "https://www.igdb.com/games/apollo-justice-ace-attorney"
-
   - title: "Scarlet Nexus"
     platform: "Playstation 5"
     id: 133302
@@ -78,6 +72,13 @@
 
 - list: Completed
   games:
+  
+  - title: "Apollo Justice: Ace Attorney"
+    platform: "Nintendo 3DS"
+    id: 0000
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pke.jpg"
+    link: "https://www.igdb.com/games/apollo-justice-ace-attorney"
+    date_finished: 2021-08-15
 
   - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
     platform: "Nintendo 3DS"
