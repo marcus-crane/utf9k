@@ -147,8 +147,8 @@ function renderSpotifyData(data) {
   }
 
   cover.src = category_type.images[0].url
-  cover.height = category_type.images[0].height
-  cover.width = category_type.images[0].width
+  cover.height = 96
+  cover.width = 96
   cover.className += " w-24 h-24"
 
   livePlayer.style.opacity = 1
