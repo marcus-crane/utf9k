@@ -123,6 +123,7 @@ function renderSpotifyData(data) {
   const listeningType = data.currently_playing_type
   const currentDuration = data.item.duration_ms
   let firstPaintComplete = false
+  let category_type = null
 
   if (listeningType === "episode") {
     source.innerText = data.item.show.name
