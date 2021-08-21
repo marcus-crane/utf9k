@@ -199,8 +199,876 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg"
     link: "https://www.igdb.com/games/uncharted-4-a-thief-s-end"
 
+  - title: "Borderlands 2"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Portal"
+    platform: "PC"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "NieR: Automata"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
   - title: "Iconoclasts"
     platform: "Nintendo Switch"
     id: 34705
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ug9.jpg"
     link: "https://www.igdb.com/games/iconoclasts"
+
+  - title: "Phoenix Wright: Ace Attorney: Justice for All"
+    platform: "Nintendo 3DS"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Dragon Ball Xenoverse 2"
+    platform: "Nintendo Switch"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Last Guardian"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "God of War (2018)"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ratchet & Clank (2016)"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Yakuza 4"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Phoenix Wright: Ace Attorney"
+    platform: "Nintendo 3DS"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Horizon Zero Dawn"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Just Cause 3"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Gravity Rush 2"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kingdom Hearts II"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Assassin's Creed: Brotherhood"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "God of War III"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Zero Time Dilemma"
+    platform: "Playstation Vita"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Zero Escape: Virtue's Last Reward"
+    platform: "Playstation Vita"
+    replay: true
+    id: 0000
+    cover: ""
+
+  - title: "999: Nine Hours, Nine Persons, Nine Doors"
+    platform: "Nintendo DS"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Wanted: Weapons of Fate"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Yakuza 3"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Batman: Arkham Asylum"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Tom Clancy's The Division"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Metal Gear Solid 2: Sons of Liberty"
+    platform: "Playstation Vita"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Walking Dead"
+    platform: "Playstation Vita"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Tales from the Borderlands"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Back to the Future: The Game"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Destiny"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Until Dawn"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Shadow of the Colossus"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Halo: Combat Evolved - Anniversary"
+    platform: "Xbox One"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Gravity Rush: Remastered"
+    platform: "Playstation 4"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kingdom Hearts HD 1.5 Remix"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kingdom of Heaven"
+    platform: "Playstation Portable"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Fatal Frame"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Liberation Maiden"
+    platform: "Nintendo 3DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Weapon Shop de Omasse"
+    platform: "Nintendo 3DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Asura's Wrath"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "P.N.03"
+    platform: "Nintendo Gamecube"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Onimusha: Warlords"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "D"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Evangelion Shin Gekijoban: 3nd Impact"
+    platform: "Playstation Portable"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Tail Concerto"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Lili: Child of Geos"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Zone of the Enders"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Danganronpa 2: Goodbye Despair"
+    platform: "Playstation Vita"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Danganronpa: Trigger Happy Havoc"
+    platform: "Playstation Vita"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Goat Simulator"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Hitman: Blood Money"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "P.T."
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Final Fantasy XV: Episode Duscae"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Uncharted 3: Drake's Deception"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Yakuza 2"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Life Is Strange"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Fallout 4"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Half-Life 2"
+    platform: "PC"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Uncharted 2: Among Thieves"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Wanted: Weapons of Fate"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "inFAMOUS: First Light"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "inFAMOUS: Second Son"
+    platform: "Playstation 4"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "inFAMOUS 2"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "inFAMOUS"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kenka Bancho: Badass Rumble"
+    platform: "Playstation Portable"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Call of Duty: Advanced Warfare"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Borderlands"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Borderlands 2"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Battlefield: Bad Company 2"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Batman: Arkham City"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Anna: Extended Edition"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Jak 3"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Killing Floor"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Killer Is Dead"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kane and Lynch: Dead Men"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Kane and Lynch: Dog Days"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Final Fantasy XIV: A Realm Reborn"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Metal Gear Solid V: The Phantom Pain"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Zero Escape: Virtue's Last Reward"
+    platform: "Playstation Vita"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Jumping Flash!"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Magrunner: Dark Pulse"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Metal Gear Rising: Revengeance"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Mafia II"
+    platform: "PC"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Left 4 Dead 2"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Left 4 Dead"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Last Tinker: City of Colors"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Homefront"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Hitman: Blood Money"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Grand Theft Auto: San Andreas"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Grand Theft Auto: Episodes From Liberty City"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Fallout: New Vegas"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Company of Heroes"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Dark Souls"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Call of Juarez: Gunslinger"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Beat Hazard: Ultra"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "999: Nine Hours, Nine Persons, Nine Doors"
+    platform: "Nintendo DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Gungrave"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Deus Ex: Human Revolution"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Lost Planet 2"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Mass Effect 2"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Dead Space 3"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Alan Wake"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Call of Duty: Black Ops II"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Metal Gear Rising: Revengeance"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Binary Domain"
+    platform: "PC"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Tomb Raider (2013)"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Yakuza"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Time Hollow"
+    platform: "Nintendo DS"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Stanley Parable (2011)"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Stanley Parable (2013)"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Saints Row: The Third"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Vanquish"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Mafia II"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Far Cry 4"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Far Cry 3"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Vanishing of Ethan Carter"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Broken Sword: The Shadow of the Templars"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Bioshock Infinite"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Bioshock"
+    platform: "Xbox 360"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Binary Domain"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Wolfenstein: The New Order"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ratchet & Clank: Going Commando"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ratchet & Clank"
+    platform: "Playstation 3"
+    replay: true
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "The Wonderful End of the World"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Trauma Center: Under the Knife"
+    platform: "Nintendo DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Elite Beat Agents"
+    platform: "Nintendo DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Spider-Man (2000)"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Spider-Man 2: Enter Electro"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Custom Robo Arena"
+    platform: "Nintendo DS"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Family Guy Video Game!"
+    platform: "Playstation Portable"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Sly Cooper and the Thievius Raccoonus"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Crysis"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ghost Trick"
+    platform: "Phantom Detective"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Destroy All Humans! 2"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Destroy All Humans!"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Shadow of the Colossus"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Battle Engine Aquila"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Heavy Rain"
+    platform: "Playstation 3"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ape Escape 3"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ape Escape 2"
+    platform: "Playstation 2"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Ape Escape"
+    platform: "Playstation"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Just Cause"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""
+
+  - title: "Far Cry"
+    platform: "PC"
+    id: 0000
+    cover: ""
+    link: ""

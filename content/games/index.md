@@ -14,7 +14,7 @@ noproseclass: true
       {{ range .games }}
       <li class="relative">
         <div class="group block aspect-w-3 aspect-h-4 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
-          <img src="{{ .cover }}" alt="" class="object-cover pointer-events-none w-full group-hover:opacity-75">
+          <img src="{{ if .cover }}{{ .cover }}{{ else }}https://via.placeholder.com/264x352{{ end }}" alt="" class="object-cover pointer-events-none w-full group-hover:opacity-75">
           <a href="{{ .link }}" target="_blank" rel="noopener noreferer" class="absolute inset-0 focus:outline-none">
             <span class="sr-only">View details for {{ .title }}</span>
           </a>
