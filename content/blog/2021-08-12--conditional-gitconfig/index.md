@@ -28,7 +28,7 @@ Let's look at an example. For example purposes, let's say that my code lives in 
   signingkey = ABC123
 [commit]
   gpgSign = true
-[includeIf "gitdir:~/work"]
+[includeIf "gitdir:~/work/"]
   path = ~/.work.gitconfig
 ```
 
