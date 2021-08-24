@@ -12,14 +12,14 @@ While you can delete stock folders such as `Templates`, `Public` and so on, they
 
 The good news is that they're pretty easy to disable.
 
-Referring to the [xdg-user-dirs](https://freedesktop.org/wiki/Software/xdg-user-dirs/#settings) manual shows us that there is a configuration file of "well known" user directories that lives at `$HOME/config/user-dirs.dirs` by default
+Referring to the [xdg-user-dirs](https://freedesktop.org/wiki/Software/xdg-user-dirs/#settings) manual shows us that there is a configuration file of "well known" user directories that lives at `$HOME/.config/user-dirs.dirs` by default
 
 Simply deleting the various entries inside might break a number of things but if you look closely, you'll spot that changing a directory to point to your home directory will disable it
 
 For example:
 
 ```shell
-> cat $HOME/.config/user-dirs/dirs
+> cat $HOME/.config/user-dirs.dirs
 XDG_TEMPLATES_DIR="$HOME" # templates is now disabled
 ```
 
