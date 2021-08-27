@@ -7,16 +7,20 @@
 </head>
 <body>
   <div class="relative h-full bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-    <div class="flex">
+    <div class="flex flex-col min-h-screen">
       {{ block "body" . }}
-      {{ partial "header.html" . }}
-      <div class="p-12 container">
-      {{ block "main" . }}{{ end }}
+      <div class="flex flex-row flex-grow">
+        {{ partial "header.html" . }}
+        <div class="p-12 container">
+        {{ block "main" . }}{{ end }}
+        </div>
       </div>
+      <div class="flex flex-col">
+      {{ partial "footer.html" . }}
+      </div>
+      {{ end }}
+      {{ block "script" . }}{{ end }}
     </div>
-    {{ partial "footer.html" . }}
-    {{ end }}
-    {{ block "script" . }}{{ end }}
   </div>
 </body>
 </html>
