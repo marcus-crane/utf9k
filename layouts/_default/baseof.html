@@ -6,11 +6,11 @@
   {{ block "json+ld" . }}{{ end }}
 </head>
 <body>
-  <div class="relative h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <div class="relative h-full bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
     <div class="flex">
       {{ block "body" . }}
       {{ partial "header.html" . }}
-      <div class="p-8 container">
+      <div class="p-12 container">
       {{ block "main" . }}{{ end }}
       </div>
     </div>
