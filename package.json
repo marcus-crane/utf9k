@@ -6,10 +6,8 @@
   "author": "Marcus Crane <marcus@utf9k.net>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tailwind.css -o ./assets/css/style.css --jit -w",
     "start": "hugo server --disableFastRender",
-    "build-css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tailwind.css -o ./assets/css/style.css --jit --minify",
-    "build": "yarn run gather-files && yarn run build-css && hugo --gc",
+    "build": "yarn run gather-files && hugo --gc",
     "lint": "eslint assets/js",
     "gather-files": "python scripts/gather-filesizes.py",
     "generate-fancy-links": "pip install -U pip && pip install -r scripts/requirements.txt && python scripts/generate-fancylinks.py"
