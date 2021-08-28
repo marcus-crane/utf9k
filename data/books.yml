@@ -1,6 +1,15 @@
 - list: 2021
   goal: 20
   books:
+  
+  - title: How to Do Nothing
+    subtitle: Resisting the Attention Economy
+    author: Jenny Odell
+    cover: https://covers.openlibrary.org/b/id/10081711-L.jpg
+    link: https://openlibrary.org/works/OL20730900W/How_to_Do_Nothing
+    date_finished: N/A
+    rating: N/A
+    progress: 12
 
   - title: How to Take Smart Notes
     subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
