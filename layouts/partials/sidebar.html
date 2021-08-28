@@ -28,7 +28,7 @@
 
   Off-canvas menu for mobile, show/hide based on off-canvas menu state.
 -->
-<div class="fixed inset-0 z-40 flex md:hidden" role="dialog" aria-modal="true">
+<div class="hidden fixed inset-0 z-40 flex md:hidden" role="dialog" aria-modal="true">
   <!--
     Off-canvas menu overlay, show/hide based on off-canvas menu state.
 
@@ -74,46 +74,22 @@
 
     <div class="flex-shrink-0 px-4 flex items-center">
       <img class="h-6 w-auto mr-2" src="/favicon.png" alt="Workflow">
-      <span class="text-md font-medium title-font">utf9k</span>
+      <span class="text-indigo-100 text-md font-medium title-font">utf9k</span>
     </div>
     <div class="mt-5 flex-1 h-0 px-2 overflow-y-auto">
       <nav class="h-full flex flex-col">
-        <div class="space-y-1">
-          <!-- Current: "bg-indigo-800 text-white", Default: "text-indigo-100 hover:bg-indigo-800 hover:text-white" -->
-          <a href="#" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium">
-            <!--
-              Heroicon name: outline/home
-
-              Current: "text-white", Default: "text-indigo-300 group-hover:text-white"
-            -->
-            <span>Home</span>
-          </a>
-
-          <a href="#" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium">
-            <!-- Heroicon name: outline/view-grid -->
-            <span>All Files</span>
-          </a>
-
-          <a href="#" class="bg-indigo-800 text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium" aria-current="page">
-            <!-- Heroicon name: outline/photograph -->
-            <span>Photos</span>
-          </a>
-
-          <a href="#" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium">
-            <!-- Heroicon name: outline/user-group -->
-            <span>Shared</span>
-          </a>
-
-          <a href="#" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium">
-            <!-- Heroicon name: outline/collection -->
-            <span>Albums</span>
-          </a>
-
-          <a href="#" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium">
-            <!-- Heroicon name: outline/cog -->
-            <span>Settings</span>
-          </a>
-        </div>
+        <ul>
+          {{ range .Site.Menus }}
+            {{ range . }}
+              <li>
+                <a href="{{ .URL }}" class="text-indigo-100 hover:bg-indigo-800 hover:text-white group py-2 px-3 rounded-md flex items-center text-sm font-medium" aria-current="page">
+                <span>{{ .Name }}</span>
+                </a>
+              </li>
+            {{ end }}
+            <div class="w-full border-t border-gray-300"></div>
+          {{ end }}
+        </ul>
       </nav>
     </div>
   </div>
