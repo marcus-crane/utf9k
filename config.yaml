@@ -1,0 +1,60 @@
+baseURL: "https://utf9k.net/"
+languageCode: "en-us"
+title: "utf9k"
+enableRobotsTxt: true
+enableGitInfo: true
+enableInlineShortcodes: true
+buildDrafts: true
+buildFuture: true
+
+taxonomies:
+  category: categories
+
+params:
+  description: "Is this thing even on? I just put some text here to test out link previews. There's real site content though, I swear!"
+  title: "utf9k"
+
+menu:
+  frequent:
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog"
+  whoami:
+    - identifier: "about"
+      name: "About"
+      url: "/about"
+
+headers:
+  - for: /**.html
+    values:
+      Referrer-Policy: strict-origin-when-cross-origin
+      X-Content-Type-Options: nosniff
+      X-Frame-Options: DENY
+      X-XSS-Protection: 1; mode=block
+
+outputFormats:
+  SearchIndex:
+    baseName: "search"
+    mediaType: "application/json"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "SearchIndex"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+privacy:
+  twitter:
+    enableDNT: true
+    simple: true
+  youtube:
+    privacyEnhanced: true
+
+services:
+  twitter:
+    disableInlineCSS: true
