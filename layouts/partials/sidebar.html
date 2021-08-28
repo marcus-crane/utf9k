@@ -8,61 +8,16 @@
     <div class="flex-1 mt-6 w-full space-y-1">
       <!-- Current: "bg-indigo-800 text-white", Default: "text-indigo-100 hover:bg-indigo-800 hover:text-white" -->
       <ul>
-        <li>
-          <a href="/blog" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium">
-            <span>Blog</span>
-          </a>
-        </li>
-
-        <a href="/projects" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Projects</span>
-        </a>
-
-        <a href="/questions" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium">
-          <span>Questions</span>
-        </a>
-
-        <div class="w-full border-t border-gray-300"></div>
-
-        <a href="/about" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium">
-          <span>About</span>
-        </a>
-
-        <a href="/now" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium">
-          <span>Now</span>
-        </a>
-
-        <a href="/uses" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Uses</span>
-        </a>
-
-        <div class="w-full border-t border-gray-300"></div>
-
-        <a href="/books" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Books</span>
-        </a>
-
-        <a href="/games" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Games</span>
-        </a>
-
-        <div class="w-full border-t border-gray-300"></div>
-
-        <a href="/thanks" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Thanks</span>
-        </a>
-
-        <a href="/experiments" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Experiments</span>
-        </a>
-
-        <a href="/reviews" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-          <span>Reviews</span>
-        </a>
-
-        <a href="/debug" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium">
-          <span>Debug</span>
-        </a>
+        {{ range .Site.Menus }}
+          {{ range . }}
+            <li>
+              <a href="{{ .URL }}" class="text-gray-500 dark:text-gray-400 hover:bg-indigo-800 hover:text-white group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
+              <span>{{ .Name }}</span>
+              </a>
+            </li>
+          {{ end }}
+          <div class="w-full border-t border-gray-300"></div>
+        {{ end }}
       </ul>
     </div>
   </div>
