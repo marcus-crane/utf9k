@@ -28,7 +28,7 @@
 
   Off-canvas menu for mobile, show/hide based on off-canvas menu state.
 -->
-<div class="hidden fixed inset-0 z-40 flex md:hidden" role="dialog" aria-modal="true">
+<div id="offCanvasMobileMenu" class="hidden fixed inset-0 z-40 flex md:hidden" role="dialog" aria-modal="true">
   <!--
     Off-canvas menu overlay, show/hide based on off-canvas menu state.
 
@@ -62,7 +62,7 @@
         From: "opacity-100"
         To: "opacity-0"
     -->
-    <div class="absolute top-1 right-0 -mr-14 p-1">
+    <div id="offCanvasCloseButton" class="absolute top-1 right-0 -mr-14 p-1">
       <button type="button" class="h-12 w-12 rounded-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white">
         <!-- Heroicon name: outline/x -->
         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
