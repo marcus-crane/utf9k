@@ -2,9 +2,6 @@
   <div class="px-5 py-4 mx-auto flex items-center md:flex-row flex-col">
     <img class="md:pr-4" src="/favicon.png" alt="The utf9k logo which is a cartoon robot">
     <p id="speech-bubble" class="relative p-3 bg-blue-100 rounded-lg shadow-sm text-sm text-gray-500 dark:text-gray-400 md:mt-0 mt-4">{{ range $.Site.Data.gags.lines | shuffle | first 1 }}{{ . }}{{ end }}</p>
-    <div class="mx-auto px-6 pb-2 text-center text-xs text-gray-400 mt-4 md:mt-0">
-      <a class="text-purple-400" href="https://github.com/marcus-crane/utf9k/commit/{{ with .GitInfo }}{{ .Hash }}{{ end }}">{{ with .GitInfo }}{{ .AbbreviatedHash }}{{ end }}</a>
-    </div>
     <span class="inline-flex md:ml-auto md:mt-0 mt-4 justify-center md:justify-start">
       <a class="ml-3 text-gray-500 dark:text-gray-400" href="mailto:hello@utf9k.net">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5">
