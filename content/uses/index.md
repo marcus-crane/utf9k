@@ -38,6 +38,6 @@ Everything except my work laptop is currently running the 2021 Beta (iOS 15, mac
 * [Craft](https://craft.do) for notes
 * [Feedbin](https://feedbin.com) for RSS feeds
 * [Pocket Casts](https://pocketcasts.com) for podcasts
-* [MoneyCoach](https://moneycoach.ai) for tracking finances
+* [Pocketsmith](https://pocketsmith.com) for tracking finances
 * [1Password](https://1password.com/) for password management
 * [Bookly](https://getbookly.com/) for tracking reading progress
