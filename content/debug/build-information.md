@@ -57,12 +57,13 @@ Sometimes it's handy to check when my site was last built, and with what variabl
     </td>
   </tr>
   <tr>
-    <td>Deployment info (<a href="https://fly.io">fly.io</a>)</td>
+    <td>Deployment info (<a href="https://render.com">render</a>)</td>
     <td>
       <ul>
-        <li>FLY_APP_NAME: {{ getenv "FLY_APP_NAME" }}</li>
-        <li>FLY_ALLOC_ID: {{ getenv "FLY_ALLOC_ID" }}</li>
-        <li>FLY_REGION: {{ getenv "FLY_REGION" }}</li>
+        <li>NODE_ENV: {{ getenv "NODE_ENV" }}</li>
+        <li>RENDER: {{ getenv "RENDER" }}</li>
+        <li>RENDER_SERVICE_TYPE: {{ getenv "RENDER_SERVICE_TYPE" }}</li>
+        <li>IS_PULL_REQUEST: {{ getenv "IS_PULL_REQUEST" }}</li>
       </ul>
     </td>
   </tr>
