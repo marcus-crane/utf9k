@@ -21,7 +21,7 @@ Definitely not what I expected.
 
 We can use the `lsof` utility to figure out what's holding on to Port 5000. You'll see in the screenshot below that I use a shell function called `whomport` but under the hood, it's running `lsof -nP i4TCP:5000 | grep LISTEN`. Let's see what the output looks like.
 
-{{< image src="whomport.png" noshadow=true >}}
+{{< image src="whomport.png" >}}
   A screenshot showing two windows. One is a Terminal with the output of a command called whomport. It shows Control Center listening on Port 5000 with the Process ID 2273. Behind the Terminal is Activity Monitor. Control Center is highlighted and indeed has the same Process ID of 2273.
 {{< /image >}}
 
