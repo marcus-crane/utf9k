@@ -13,7 +13,9 @@ You'll also need to have [npm](https://www.npmjs.com/get-npm) installed.
 
 I recommend using [yarn](https://yarnpkg.com/) as a package manager but npm works fine.
 
-Once you've got both of those set up, running `yarn start` will do everything required to start up a local server.
+You'll also need to install [Overmind](https://github.com/DarthSim/overmind) as I use a `Procfile` to run both the Tailwind JIT dev server and the Hugo dev server at the same time with one command.
+
+Once you've got all of that set up, running `yarn start` will do everything required to start up a local server.
 
 You should be able to access the development version of the site at http://localhost:1313
 
