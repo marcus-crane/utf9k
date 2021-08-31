@@ -1,5 +1,5 @@
 ---
-title: "How can I disable the "Try the new Safari" notification?"
+title: "How can I disable the 'Try the new Safari' notification?"
 slug: "macos-disable-safari-recommendation"
 category: "questions"
 tags:
