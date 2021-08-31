@@ -6,8 +6,6 @@ ongoing: true
 maxwidth: true
 ---
 
-**Job offers lost partly due to this project**: 1
-
 This one probably needs a bit of explanation, more than most of my projects.
 
 The short version is that here in New Zealand, we have the [Official Information Act of 1982](https://en.wikipedia.org/wiki/Official_Information_Act_1982) or OIA for short.
