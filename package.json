@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "overmind s",
-    "build": "yarn run gather-files && yarn run build-css && NODE_ENV=production hugo --gc",
+    "build": "yarn run gather-files && yarn run build:css && NODE_ENV=production hugo --gc",
     "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tailwind.css -o ./assets/css/style.css --jit --minify",
     "lint": "eslint assets/js",
     "gather-files": "python scripts/gather-filesizes.py",
