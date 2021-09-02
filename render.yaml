@@ -2,7 +2,7 @@ services:
   - type: web
     name: utf9k
     env: static
-    buildCommand: yarn build
+    buildCommand: yarn build:prod
     staticPublishPath: ./public
     pullRequestPreviewsEnabled: true
     headers:
