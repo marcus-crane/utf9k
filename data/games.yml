@@ -202,22 +202,22 @@
   - title: "Borderlands 2"
     platform: "Playstation 3"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1011
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tn.jpg"
+    link: "https://www.igdb.com/games/borderlands-2"
 
   - title: "Portal"
     platform: "PC"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 71
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg"
+    link: "https://www.igdb.com/games/portal"
 
   - title: "NieR: Automata"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 11208
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g48.jpg"
+    link: "https://www.igdb.com/games/nier-automata"
 
   - title: "Iconoclasts"
     platform: "Nintendo Switch"
@@ -228,102 +228,103 @@
   - title: "Phoenix Wright: Ace Attorney: Justice for All"
     platform: "Nintendo 3DS"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1427
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25v7.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-justice-for-all"
 
   - title: "Dragon Ball Xenoverse 2"
     platform: "Nintendo Switch"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 19449
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u95.jpg"
+    link: "https://www.igdb.com/games/dragon-ball-xenoverse-2"
 
   - title: "The Last Guardian"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 117
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co271e.jpg"
+    link: "https://www.igdb.com/games/the-last-guardian"
 
   - title: "God of War (2018)"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 19560
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg"
+    link: "https://www.igdb.com/games/god-of-war--1"
 
   - title: "Ratchet & Clank (2016)"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 11065
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co230k.jpg"
+    link: "https://www.igdb.com/games/ratchet-and-clank"
 
   - title: "Yakuza 4"
     platform: "Playstation 3"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 2062
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w7p.jpg"
+    link: "https://www.igdb.com/games/yakuza-4"
 
   - title: "Phoenix Wright: Ace Attorney"
     platform: "Nintendo 3DS"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1426
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1obg.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney"
 
   - title: "Horizon Zero Dawn"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 11156
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2una.jpg"
+    link: "https://www.igdb.com/games/horizon-zero-dawn"
 
   - title: "Just Cause 3"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 8187
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co24o5.jpg"
+    link: "https://www.igdb.com/games/just-cause-3"
 
   - title: "Gravity Rush 2"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 12528
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2q9u.jpg"
+    link: "https://www.igdb.com/games/gravity-rush-2"
 
   - title: "Kingdom Hearts II"
     platform: "Playstation 3"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1221
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30t1.jpg"
+    link: "https://www.igdb.com/games/kingdom-hearts-ii"
 
   - title: "Assassin's Creed: Brotherhood"
     platform: "Playstation 3"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 113
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxz.jpg"
+    link: "https://www.igdb.com/games/assassin-s-creed-brotherhood"
 
   - title: "God of War III"
     platform: "Playstation 3"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 499
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3koi.jpg"
+    link: "https://www.igdb.com/games/god-of-war-iii"
 
-  - title: "Zero Time Dilemma"
+  - title: "Zero Escape: Zero Time Dilemma"
     platform: "Playstation Vita"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 11549
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260k.jpg"
+    link: "https://www.igdb.com/games/zero-escape-zero-time-dilemma"
 
   - title: "Zero Escape: Virtue's Last Reward"
     platform: "Playstation Vita"
     replay: true
-    id: 0000
-    cover: ""
+    id: 6614
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg"
+    link: "https://www.igdb.com/games/zero-escape-virtue-s-last-reward"
 
   - title: "999: Nine Hours, Nine Persons, Nine Doors"
     platform: "Nintendo DS"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 9543
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mmv.jpg"
+    link: "https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors"
 
   - title: "Wanted: Weapons of Fate"
     platform: "Playstation 3"
