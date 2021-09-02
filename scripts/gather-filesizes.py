@@ -1,7 +1,7 @@
 import json
 import os
 
-exclude = set(['resources', 'public', 'node_modules', '.github', '.cache', '.git', '.DS_Store', 'venv'])
+exclude = set(['resources', 'public', 'node_modules', '.github', '.cache', '.git', '.DS_Store', 'venv', '.venv'])
 file_metadata = []
 
 # Taken from https://stackoverflow.com/questions/1094841/get-human-readable-version-of-file-size
