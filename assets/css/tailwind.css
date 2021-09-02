@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notice h3 {
+	@apply mt-0
+}
+
+.notice p {
+	@apply mb-0
+}
+
+#speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top:  0%;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #DBEAFE;
+  border-top: 0;
+  margin-top: -6px;
+  margin-left: -8px;
+}
+
+@media only screen and (min-width: 640px) {
+  #speech-bubble::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top:  50%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: #DBEAFE;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -4px;
+    margin-left: -6px;
+  }
+}
+
+.prose code::before, .prose code::after {
+	content: none;
+}
+
+#statusbar {
+  border-radius: 0 0 3px 30px;
+  background: #a463f2;
+  transition: background 1.2s linear;
+  width: 100%;
+}
+
+#liveplayer {
+  opacity: 0;
+}
+
+.prose .fake-regular-width * {
+  @apply max-w-prose
+}
+
+.prose .fake-regular-width table {
+  @apply max-w-full
+}
+
+.prose h1 {
+  @apply mb-0
+}
+
+.prose .player img, .prose .player h2, .prose .player p {
+  @apply mb-0 mt-0
+}
+
+
