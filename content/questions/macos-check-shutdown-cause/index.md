@@ -38,6 +38,6 @@ Here's a screenshot of his terminal window with the same command:
 
 Going back to the PDF again, we can see that `-128` is an alias for `-112`. Checking `-112` tells us that it is "Probably memory related" which at least narrows it down.
 
-I won't know it since some of the most authoritative information can often be found in PDF randomly floating around the internet and it's better than nothing!
+I don't doubt that result since some of the most authoritative information can often be found in PDFs randomly floating around the internet!
 
-For anyone wondering, my coworker has a new laptop on the way regardless since he can't work with it constantly rebooting.
+For anyone wondering, my coworker has a new laptop on the way regardless, since he can't work with it constantly rebooting.
