@@ -16,12 +16,6 @@
 - list: Stalled but occasionally progress is made
   games:
 
-  - title: "Bayonetta"
-    platform: "Nintendo Switch"
-    id: 2136
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p92.jpg"
-    link: "https://www.igdb.com/games/bayonetta"
-
   - title: "Control"
     platform: "Playstation 5"
     id: 103329
@@ -34,17 +28,17 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
     link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
 
+  - title: "Final Fantasy XIV: A Realm Reborn"
+    platform: "PC"
+    id: 386
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
+    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
+
   - title: "Grandia"
     platform: "Nintendo Switch"
     id: 4127
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
     link: "https://www.igdb.com/games/grandia"
-
-  - title: "Marvel's Spider-Man"
-    platform: "Playstation 4"
-    id: 19565
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg"
-    link: "https://www.igdb.com/games/marvels-spider-man"
 
   - title: "NieR Replicant ver.1.22474487139..."
     platform: "Playstation 5"
@@ -58,23 +52,11 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg"
     link: "https://www.igdb.com/games/pokemon-black"
 
-  - title: "Pokémon Alpha Sapphire"
-    platform: "Nintendo 3DS"
-    id: 6898
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co4.jpg"
-    link: "https://www.igdb.com/games/pokemon-alpha-sapphire"
-
   - title: "The Legend of Zelda: Breath of the Wild"
     platform: "Nintendo Switch"
     id: 7346
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg"
     link: "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild"
-
-  - title: "The Witcher 2: Assassins of Kings"
-    platform: "PC"
-    id: 478
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wy4.jpg"
-    link: "https://www.igdb.com/games/the-witcher-2-assassins-of-kings"
 
 - list: Completed
   games:
@@ -358,11 +340,11 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co29pl.jpg"
     link: "https://www.igdb.com/games/metal-gear-solid-2-sons-of-liberty"
 
-  - title: "The Walking Dead"
+  - title: "The Walking Dead: Season One"
     platform: "Playstation Vita"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1871
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2j1g.jpg"
+    link: "https://www.igdb.com/games/the-walking-dead-season-one"
 
   - title: "Tales from the Borderlands"
     platform: "Playstation 4"
@@ -384,9 +366,9 @@
 
   - title: "Until Dawn"
     platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 7609
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg"
+    link: "https://www.igdb.com/games/until-dawn"
 
   - title: "Shadow of the Colossus"
     platform: "Playstation 3"
@@ -416,17 +398,17 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co319i.jpg"
     link: "https://www.igdb.com/games/kingdom-hearts-hd-1-dot-5-remix"
 
-  - title: "Kingdom of Heaven"
+  - title: "Kingdom of Paradise"
     platform: "Playstation Portable"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 42878
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1png.jpg"
+    link: "https://www.igdb.com/games/kingdom-of-paradise"
 
   - title: "Fatal Frame"
     platform: "Playstation 2"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 5106
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ouz.jpg"
+    link: "https://www.igdb.com/games/fatal-frame"
 
   - title: "Liberation Maiden"
     platform: "Nintendo 3DS"
@@ -454,21 +436,21 @@
 
   - title: "Onimusha: Warlords"
     platform: "Playstation 2"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 5845
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2daw.jpg"
+    link: "https://www.igdb.com/games/onimusha-warlords"
 
   - title: "D"
     platform: "Playstation"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 4319
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30vf.jpg"
+    link: "https://www.igdb.com/games/d"
 
-  - title: "Evangelion Shin Gekijoban: 3nd Impact"
+  - title: "Evangelion Shin Gekijouban: 3nd Impact"
     platform: "Playstation Portable"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 56810
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wlx.jpg"
+    link: "https://www.igdb.com/games/evangelion-shin-gekijouban-3nd-impact"
 
   - title: "Tail Concerto"
     platform: "Playstation"
@@ -508,21 +490,15 @@
 
   - title: "Hitman: Blood Money"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1048
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg"
+    link: "https://www.igdb.com/games/hitman-blood-money"
 
   - title: "P.T."
     platform: "Playstation 4"
     id: 11654
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyw.jpg"
     link: "https://www.igdb.com/games/pt"
-
-  - title: "Final Fantasy XV: Episode Duscae"
-    platform: "Playstation 4"
-    id: 0000
-    cover: ""
-    link: ""
 
   - title: "Uncharted 3: Drake's Deception"
     platform: "Playstation 4"
@@ -664,12 +640,6 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2crk.jpg"
     link: "https://www.igdb.com/games/kane-lynch-2-dog-days"
 
-  - title: "Final Fantasy XIV: A Realm Reborn"
-    platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
-
   - title: "Metal Gear Solid V: The Phantom Pain"
     platform: "PC"
     id: 1985
@@ -727,16 +697,16 @@
 
   - title: "Homefront"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1885
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2j9b.jpg"
+    link: "https://www.igdb.com/games/homefront"
 
   - title: "Hitman: Blood Money"
     platform: "Playstation 3"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1048
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg"
+    link: "https://www.igdb.com/games/hitman-blood-money"
 
   - title: "Grand Theft Auto: San Andreas"
     platform: "PC"
@@ -843,15 +813,15 @@
 
   - title: "Tomb Raider (2013)"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1164
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbu.jpg"
+    link: "https://www.igdb.com/games/tomb-raider--2"
 
   - title: "Yakuza"
     platform: "Playstation 2"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 2059
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co29tp.jpg"
+    link: "https://www.igdb.com/games/yakuza"
 
   - title: "Time Hollow"
     platform: "Nintendo DS"
@@ -862,15 +832,15 @@
 
   - title: "The Stanley Parable (2011)"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 18453
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25ck.jpg"
+    link: "https://www.igdb.com/games/the-stanley-parable-mod"
 
   - title: "The Stanley Parable (2013)"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 3035
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg"
+    link: "https://www.igdb.com/games/the-stanley-parable"
 
   - title: "Saints Row: The Third"
     platform: "Playstation 3"
@@ -881,9 +851,9 @@
 
   - title: "Vanquish"
     platform: "Playstation 3"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 3218
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co24l9.jpg"
+    link: "https://www.igdb.com/games/vanquish"
 
   - title: "Mafia II"
     platform: "Playstation 3"
@@ -893,9 +863,9 @@
 
   - title: "Far Cry 4"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 6801
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2npa.jpg"
+    link: "https://www.igdb.com/games/far-cry-4"
 
   - title: "Far Cry 3"
     platform: "PC"
@@ -923,9 +893,9 @@
 
   - title: "Bioshock"
     platform: "Xbox 360"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 20
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.jpg"
+    link: "https://www.igdb.com/games/bioshock"
 
   - title: "Binary Domain"
     platform: "Playstation 3"
@@ -949,9 +919,9 @@
   - title: "Ratchet & Clank"
     platform: "Playstation 3"
     replay: true
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1289
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1oym.jpg"
+    link: "https://www.igdb.com/games/ratchet-clank"
 
   - title: "The Wonderful End of the World"
     platform: "PC"
@@ -961,21 +931,21 @@
 
   - title: "Trauma Center: Under the Knife"
     platform: "Nintendo DS"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 1523
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwx.jpg"
+    link: "https://www.igdb.com/games/trauma-center-under-the-knife"
 
   - title: "Elite Beat Agents"
     platform: "Nintendo DS"
     id: 9109
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dyd.jpg s"
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dyd.jpg"
     link: "https://www.igdb.com/games/elite-beat-agents"
 
   - title: "Spider-Man (2000)"
     platform: "Playstation"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 3603
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2xxq.jpg"
+    link: "https://www.igdb.com/games/spider-man--5"
 
   - title: "Spider-Man 2: Enter Electro"
     platform: "Playstation"
@@ -1069,6 +1039,6 @@
 
   - title: "Far Cry"
     platform: "PC"
-    id: 0000
-    cover: ""
-    link: ""
+    id: 306
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpf.jpg"
+    link: "https://www.igdb.com/games/far-cry"
