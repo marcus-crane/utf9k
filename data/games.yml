@@ -1042,3 +1042,21 @@
     id: 306
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpf.jpg"
     link: "https://www.igdb.com/games/far-cry"
+
+  - title: "Zoids: Legacy"
+    platform: "Gameboy Advance"
+    id: 49203
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/fe7db3cu88oxajxapiem.jpg"
+    link: "https://www.igdb.com/games/zoids-legacy"
+
+  - title: "Tokobot"
+    platform: "Playstation Portable"
+    id: 19692
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y1u.jpg"
+    link: "https://www.igdb.com/games/tokobot"
+
+  - title: "Sands of Destruction"
+    platform: "Nintendo DS"
+    id: 24331
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg" 
+    link: "https://www.igdb.com/games/sands-of-destruction"
