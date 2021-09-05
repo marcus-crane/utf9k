@@ -7,6 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "overmind s",
+    "dev": "hugo server --disableFastRender",
+    "dev:css": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tailwind.css -o ./assets/css/style.css --jit -w",
     "build": "yarn run gather-files && yarn run build:css && NODE_ENV=production hugo --gc",
     "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/tailwind.css -o ./assets/css/style.css --jit --minify",
     "build:prod": "yarn run generate-fancy-links && yarn run build",
