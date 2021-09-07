@@ -16,7 +16,7 @@ There is believed to be an inflection point where size in itself becomes a liabi
 
 This has been proven time and time again that the prerequisites for a great product aren't specifically restricted to those who have major resources
 
-In fact, often times, a lack of resources encourages ome very competitive yet compelling solutions
+In fact, often times, a lack of resources encourages some very competitive yet compelling solutions
 
 > One is that as the size of the operation increases, “dis-economies” of scale begin to creep in, as economists since Alfred Marshall in the 1920s have suggested. For example, as a firm adds more and more employees, it needs to add more managers, and ever-more complex systems of internal control.
 
