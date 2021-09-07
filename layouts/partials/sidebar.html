@@ -19,8 +19,9 @@
           <div class="w-full border-t border-gray-300"></div>
         {{ end }}
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/marcus-crane/utf9k/commit/{{ with .GitInfo }}{{ .Hash }}{{ end }}" class="text-purple-500 dark:text-purple-400 group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
-            <span>{{ with .GitInfo }}{{ .AbbreviatedHash }}{{ end }}</span>
+          {{ $commitSha := getenv "COMMIT_SHA" }}
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/marcus-crane/utf9k/commit/{{ $commitSha }}" class="text-purple-500 dark:text-purple-400 group w-full p-2 flex flex-col items-center text-xs font-medium" aria-current="page">
+            <span>{{ $commitSha }}</span>
           </a>
         </li>
       </ul>
