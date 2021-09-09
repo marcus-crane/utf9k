@@ -4,195 +4,243 @@ headings:
   - Denied Under
 
 entries:
-  - RequestDate: 09/02/2016
+  - ID: 1
+    RequestDate: 09/02/2016
     Subject: Detention and deporation of New Zealanders from Australia  
     DeniedUnder: 6(a)
 
-  - RequestDate: 30/03/2016
+  - ID: 2
+    RequestDate: 30/03/2016
     Subject: Prime Minister’s recent visit to Sri Lanka
     DeniedUnder: 6(a)
 
-  - RequestDate: 06/04/2016
+  - ID: 3
+    RequestDate: 06/04/2016
     Subject: Communications regarding the 2016 US Presidential Election 
     DeniedUnder: 6(a)
 
-  - RequestDate: 25/05/2016
+  - ID: 4
+    RequestDate: 25/05/2016
     Subject: Britain possibly leaving the European Union
     DeniedUnder: 6(a)
 
-  - RequestDate: 07/06/2016
+  - ID: 5
+    RequestDate: 07/06/2016
     Subject: Panama Papers
     DeniedUnder: 6(a)
 
-  - RequestDate: 16/08/2016
+  - ID: 6
+    RequestDate: 16/08/2016
     Subject: Decision to extend New Zealand’s training mission to Iraq
     DeniedUnder: 6(a)
 
-  - RequestDate: 2016 - 2017
+  - ID: 7
+    RequestDate: 2016 - 2017
     Subject: Intelligence and advice to the NZ government related to the 9/11 event
     DeniedUnder: 6(a)
 
-  - RequestDate: 2016 - 2017
+  - ID: 8
+    RequestDate: 2016 - 2017
     Subject: Record of OIAs from February 2017
     DeniedUnder: 6
 
-  - RequestDate: 2016 - 2017
+  - ID: 9
+    RequestDate: 2016 - 2017
     Subject: Preparation for Trump Administration 
     DeniedUnder: 6(a), 6(b)
 
-  - RequestDate: 2016 - 2017
+  - ID: 10
+    RequestDate: 2016 - 2017
     Subject: NSS handbook examples of 1080 and domestic incident
     DeniedUnder: 6(a)
 
-  - RequestDate: 2016 - 2017
+  - ID: 11
+    RequestDate: 2016 - 2017
     Subject: The steel industry and trade issues
     DeniedUnder: 6(a)
 
-  - RequestDate: 2016 - 2017
+  - ID: 12
+    RequestDate: 2016 - 2017
     Subject: Meetings with Australian officials on social security
     DeniedUnder: 6(a), 6(b)
 
-  - RequestDate: 2016 - 2017
+  - ID: 13
+    RequestDate: 2016 - 2017
     Subject: Interactions with United States Film Industry representatives
     DeniedUnder: 6(a)
 
-  - RequestDate: 13/04/2018
+  - ID: 14
+    RequestDate: 13/04/2018
     Subject: Advice relating to Labour Party summer schools
     DeniedUnder: 6(c)
 
-  - RequestDate: 18/04/2018
+  - ID: 15
+    RequestDate: 18/04/2018
     Subject: Weekly reports provided to the Minister for National Security and Intelligence
     DeniedUnder: 6(a), 6(b)(i)
 
-  - RequestDate: 20/04/2018
+  - ID: 16
+    RequestDate: 20/04/2018
     Subject: Correspondence with the Office of the President of the United States
     DeniedUnder: 6(a)
 
-  - RequestDate: 18/05/2018
+  - ID: 17
+    RequestDate: 18/05/2018
     Subject: Information including individual costs of gifts given during visit to Europe and the UK
     DeniedUnder: 6(a)
 
-  - RequestDate: 28/06/2018
+  - ID: 18
+    RequestDate: 28/06/2018
     Subject: Prime Minister's diary
     DeniedUnder: 6(a)
 
-  - RequestDate: 03/07/2018
+  - ID: 19
+    RequestDate: 03/07/2018
     Subject: Records of meeting with former President of the United States
     DeniedUnder: 6(a)
 
-  - RequestDate: 13/07/2018
+  - ID: 20
+    RequestDate: 13/07/2018
     Subject: Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence  
     DeniedUnder: 6(b)(i)
 
-  - RequestDate: 24/07/2018
+  - ID: 21
+    RequestDate: 24/07/2018
     Subject: Records relating to visit to NZ by former US Secretary of State Hillary Clinton  
     DeniedUnder: 6(a), 6(c)
 
-  - RequestDate: 30/07/2018
+  - ID: 22
+    RequestDate: 30/07/2018
     Subject: Correspondence with the President of the United States 
     DeniedUnder: 6(a)
 
-  - RequestDate: 11/09/2018
+  - ID: 23
+    RequestDate: 11/09/2018
     Subject: Inquiry into the appointment process for the Deputy Police Commissioner  
     DeniedUnder: 6(c)
   
-  - RequestDate: 03/10/2018
+  - ID: 24
+    RequestDate: 03/10/2018
     Subject: Phone calls to heads of state  
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 25
+    RequestDate: 2018 - 2019
     Subject: Request relating to F-16 Lease Arrangement ERD Papers 14 March 2000
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 26
+    RequestDate: 2018 - 2019
     Subject: Request relating to information held by the Department of the Prime Minister and Cabinet concerning extending NZ Iraq deployment
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 27
+    RequestDate: 2018 - 2019
     Subject: Request about the Government's desire for greater transparency regarding military deployments
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 28
+    RequestDate: 2018 - 2019
     Subject: Request about the status of information that was subject to previous Official Information Act requests (that's me!)
     DeniedUnder: 6
 
-  - RequestDate: 2018 - 2019
+  - ID: 29
+    RequestDate: 2018 - 2019
     Subject: Request relating to discussions referred to in published Aide Memoire about possible NZDF contribution to counter-ISIS coalition
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 30
+    RequestDate: 2018 - 2019
     Subject: Request for a Government report into the hijacking of Air New Zealand TE24
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 31
+    RequestDate: 2018 - 2019
     Subject: Request relating to telecommunication issues associated with Huawei between 1 October 2017 and 30 September 2018
     DeniedUnder: 6(a), 6(b)(i)
 
-  - RequestDate: 2018 - 2019
+  - ID: 32
+    RequestDate: 2018 - 2019
     Subject: Request relating to the Cyber Credentials Scheme
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 33
+    RequestDate: 2018 - 2019
     Subject: Request relating to discussions referred to in published Aide Memoire about possible NZDF contribution to counter-ISIS coalition (follow up request)
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 34
+    RequestDate: 2018 - 2019
     Subject: Request for briefings provided to Attorney-General in relation to the Five Country Ministerial and Quintet Meeting
     DeniedUnder: 6(a), 6(b)
 
-  - RequestDate: 2018 - 2019
+  - ID: 35
+    RequestDate: 2018 - 2019
     Subject: Request for information relating to white nationalism, and meetings with the Islamic Women's Council
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 36
+    RequestDate: 2018 - 2019
     Subject: Request relating to DPMC policy advice and the Policy Project
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 37
+    RequestDate: 2018 - 2019
     Subject: Request on various matters relating to national security and counter-terrorism
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 38
+    RequestDate: 2018 - 2019
     Subject: Request relating to advice provided to the Prime Minister on camps in Xinjiang, China
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 39
+    RequestDate: 2018 - 2019
     Subject: Request for the number of National Assessment Bureau Employees, the number who speak Mandarin and Cantonese and the number with a security clearance
     DeniedUnder: 6(a)
 
-  - RequestDate: 2018 - 2019
+  - ID: 40
+    RequestDate: 2018 - 2019
     Subject: Request relating to the July inter-agency cyber meeting
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 41
+    RequestDate: 2019 - 2020
     Subject: Request relating to Moonshot CVE
     DeniedUnder: 6(a), 6(b)
 
-  - RequestDate: 2019 - 2020
+  - ID: 42
+    RequestDate: 2019 - 2020
     Subject: Request relating to Y2K
     DeniedUnder: 6(a), 6(b)
 
-  - RequestDate: 2019 - 2020
+  - ID: 43
+    RequestDate: 2019 - 2020
     Subject: Request for information relating to the Whakaari/White Island eruption on 9 December 2019 and the subsequent recovery operation
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 44
+    RequestDate: 2019 - 2020
     Subject: Request regarding Zoom conference clearance
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 45
+    RequestDate: 2019 - 2020
     Subject: Request for titles and dates of formal reports relating to COVID-19
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 46
+    RequestDate: 2019 - 2020
     Subject: Request relating to women's involvement in Radical-extremist groups
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 47
+    RequestDate: 2019 - 2020
     Subject: Request relating to Asian organised crime
     DeniedUnder: 6(a)
 
-  - RequestDate: 2019 - 2020
+  - ID: 48
+    RequestDate: 2019 - 2020
     Subject: Request relating to the Trans-Tasman bubble
     DeniedUnder: 6(a)
 

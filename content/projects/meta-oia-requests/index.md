@@ -36,7 +36,7 @@ I'm due to file my next update sometime around August or September 2021
     </tr>
   </thead>
   <tbody>
-    {{ range $.Site.Data.metaoia.entries }}
+    {{ range sort $.Site.Data.metaoia.entries "ID" "desc" }}
       <tr>
         <td>{{ .RequestDate }}</td>
         <td>{{ .Subject }}</td>
