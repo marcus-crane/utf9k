@@ -1,27 +1,24 @@
 {{ if .Site.Data.fancylinks }}
-{{ $inner := string .Inner }}
-{{ $metadata := (index .Site.Data.fancylinks $inner) }}</p>
+  {{ $inner := string .Inner }}
+  {{ $metadata := (index .Site.Data.fancylinks $inner) }}</p>
 
-{{ if $metadata }}
-<div class="bg-white dark:bg-gray-800 p-2">
-  <a style="text-decoration: none;" href="{{ .Inner }}" class="no-underline">
-    <div class="flex items-center">
-      <img src="{{ $metadata.favicon_url }}" width="16" height="16" class="flex-none rounded-lg bg-gray-100 mr-4 h-auto mt-0 mb-0" />
-      <div class="min-w-0 flex-auto space-y-0.5">
-        <p style="margin: 0;" class="leading-3 text-lime-600 text-sm font-semibold">
-          {{ $inner }}
-        </p>
-        <p style="margin: 0;" class="text-black dark:text-white text-sm truncate font-semibold">
-          {{ $metadata.title }}
-        </p>
-        <p style="margin: 0;" class="text-gray-500 dark:text-gray-400 text-sm font-medium">
-          {{ $metadata.description }}
-        </p>
+  {{ if $metadata }}
+  <div class="rounded-xl space-y-2 border-4 dark:border-black py-4 px-6">
+    <a style="text-decoration: none;" href="{{ .Inner }}" class="no-underline">
+      <div class="flex items-center">
+        <img src="{{ $metadata.favicon_url }}" style="min-width: 64px; max-width: 64px; margin-top: 1em; margin-bottom: 1em;" height="64" width="64" class="rounded-lg inline-block bg-gray-100 mr-6" />
+        <div class="min-w-0 flex-auto space-y-0.5">
+          <p style="margin: 0;" class="text-lime-600 text-md font-semibold">
+            {{ $inner }}
+          </p>
+          <p class="text-black dark:text-white text-md font-semibold">
+            {{ $metadata.title }}
+          </p>
+        </div>
       </div>
-    </div>
-  </a>
-</div>
-{{ end }}
-{{ else }}
-<a href="{{ .Inner }}">{{ .Inner }}</a>
+    </a>
+  </div>
+  {{ else }}
+  <a href="{{ .Inner }}">{{ .Inner }}</a>
+  {{ end }}
 {{ end }}

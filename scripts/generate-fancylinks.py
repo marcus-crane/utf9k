@@ -57,7 +57,7 @@ def get_link_instances(file_path):
     return links
 
 def get_link_metadata(url):
-    headers = {"User-Agent": "utf9k.net (crawler@utf9k.net)"}
+    headers = {"User-Agent": "utf9k.net link previewer (crawler@utf9k.net)"}
     try:
         r = requests.get(url, headers=headers)
         soup = BeautifulSoup(r.text, 'html.parser')
