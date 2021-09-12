@@ -2,7 +2,7 @@ baseURL: "https://utf9k.net/"
 languageCode: "en-us"
 title: "utf9k"
 enableRobotsTxt: true
-enableGitInfo: true
+enableGitInfo: false
 enableInlineShortcodes: true
 buildDrafts: true
 buildFuture: true
