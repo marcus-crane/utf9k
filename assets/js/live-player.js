@@ -205,8 +205,8 @@ function renderTraktData(data) {
     source.innerText = data.show.title
 
     cover.src = data.episode.season_posters[0].file_path
-    cover.width = data.episode.season_posters[0].width
-    cover.className += " w-48 sm:w-36"
+    cover.width = 250
+    cover.height = 375
 
     synopsis.className = "text-xs pt-4"
     synopsis.innerText = data.show.overview
