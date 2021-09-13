@@ -9,7 +9,9 @@ noproseclass: true
 {{ range $.Site.Data.games }}
   {{ $listName := .list }}
   <div id="game-list" class="pb-12">
-    <h2 class="text-gray-500 text-xs font-medium uppercase tracking-wide">{{ $listName }}</h2>
+    {{ if eq $listName "Stalled but occasionally progress is made" }}<details><summary>{{ end }}
+    <span class="text-gray-500 text-xs font-medium uppercase tracking-wide">{{ $listName }}</span>
+    {{ if eq $listName "Stalled but occasionally progress is made" }}</summary>{{ end }}
     <ul role="list" class="grid grid-cols-2 pt-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 sm:gap-x-6 xl:grid-cols-6 xl:gap-x-8">
       {{ range .games }}
       <li class="relative">
@@ -25,6 +27,7 @@ noproseclass: true
       </li>
       {{ end }}
     </ul>
+    {{ if eq $listName "Stalled but occasionally progress is made" }}</details>{{ end }}
   </div>
 {{ end }}
 {{< /gaming.inline >}}
