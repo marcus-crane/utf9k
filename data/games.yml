@@ -13,6 +13,12 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
     link: "https://www.igdb.com/games/scarlet-nexus"
 
+  - title: "Tales of Arise"
+    platform: "Playstation 5"
+    id: 119270
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png"
+    link: "https://www.igdb.com/games/tales-of-arise"
+
 - list: Stalled but occasionally progress is made
   games:
 
