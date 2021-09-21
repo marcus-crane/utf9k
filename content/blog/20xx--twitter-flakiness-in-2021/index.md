@@ -32,4 +32,10 @@ Intermittently, an image or two will fail to load. They upload file but they don
 {{< image src="twitter-dm-huge-l.png" >}}
 {{< /image >}}
 
+{{< tweet 1439536308326645767 >}}
+
+{{< tweet 1436092048914796545 >}}
+
+{{< tweet 1440428582308757507 >}}
+
 [^1]: In a few years, I'll have been on Twitter longer than I've been off it (ie; before I registered/before it existed)
