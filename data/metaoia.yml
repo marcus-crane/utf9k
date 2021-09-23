@@ -244,11 +244,78 @@ entries:
     Subject: Request relating to the Trans-Tasman bubble
     DeniedUnder: 6(a)
 
+  - ID: 49
+    RequestDate: 2020 - 2021
+    Subject: Request relating to Five Country Ministerial meetings
+    DeniedUnder: 6(a), 6(b), 6(c)
+
+  - ID: 50
+    RequestDate: 2020 - 2021
+    Subject: Request relating to foreign interference in the 2020 New Zealand
+General Election
+    DeniedUnder: 6(a)
+
+  - ID: 51
+    RequestDate: 2020 - 2021
+    Subject: Request relating to counter terrorism and the Royal Commission of
+Inquiry into the Terrorist Attack on Christchurch mosques
+    DeniedUnder: 6(a), 6(b)(i)
+
+  - ID: 52
+    RequestDate: 2020 - 2021
+    Subject: Request relating to the Arotake Report
+    DeniedUnder: 6(a), 6(c)
+
+  - ID: 53
+    RequestDate: 2020 - 2021
+    Subject: Request for a copy of a briefing relating to 5G Security
+    DeniedUnder: 6(a)
+
+  - ID: 54
+    RequestDate: 2020 - 2021
+    Subject: Request for briefings relating to Cyber Ransom and strengthening
+NZ’s resilience to disinformation
+    DeniedUnder: 6(a), 6(b)(i)
+
+  - ID: 55
+    RequestDate: 2020 - 2021
+    Subject: Request relating to ODESC governance boards and sub
+committees
+    DeniedUnder: 6(a)
+
+  - ID: 56
+    RequestDate: 2020 - 2021
+    Subject: Request relating to briefing papers prepared for the Prime Minister
+on the sources of a book
+    DeniedUnder: 6(a)
+
+  - ID: 57
+    RequestDate: 2020 - 2021
+    Subject: Request relating to documents on the governments COVID-19
+response in 2020
+    DeniedUnder: 6(a), 6(c)
+
+  - ID: 58
+    RequestDate: 2020 - 2021
+    Subject: Request for briefings and Cabinet papers relating to New Zealand’s
+involvement in Afghanistan
+    DeniedUnder: 6(a)
+
+  - ID: 59
+    RequestDate: 2020 - 2021
+    Subject: Request for information relating to the Whaakari Event
+    DeniedUnder: 6(a)
+
+  - ID: 60
+    RequestDate: 2020 - 2021
+    Subject: Request for correspondence with COVID-19 advertisers
+    DeniedUnder: 6(c)
+
 Sources:
-  - SourceURL: https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i#incoming-14960
+  - SourceURL: https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i
     SourceTitle: FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz
 
-  - SourceURL: https://fyi.org.nz/request/6763-withheld-rejected-oia-filings#incoming-22439
+  - SourceURL: https://fyi.org.nz/request/6763-withheld-rejected-oia-filings
     SourceTitle: Withheld / Rejected OIA Filings - fyi.govt.nz
 
   - SourceURL: https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019
@@ -256,3 +323,6 @@ Sources:
 
   - SourceURL: https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020
     SourceTitle: FOIA Sections S6(a) and S(6)b(i) - Nov 2019 - Aug 2020
+
+  - SourceURL: https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021
+    SourceTitle: [DPMC] OIAs affected by Section 6 | Aug 2020 - Aug 2021
