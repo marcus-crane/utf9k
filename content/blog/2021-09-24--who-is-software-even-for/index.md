@@ -1,6 +1,6 @@
 ---
 title: "Who is software even for?"
-date: "2021-07-24T21:00:00+1300"
+date: "2021-09-24T21:00:00+1300"
 slug: "who-is-software-even-for"
 category: "blog"
 tags:
