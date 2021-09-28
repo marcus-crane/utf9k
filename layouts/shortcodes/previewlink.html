@@ -5,16 +5,14 @@
   {{ if $metadata }}
   <div class="rounded-xl space-y-2 border-4 dark:border-black py-4 px-6">
     <a style="text-decoration: none;" href="{{ .Inner }}" class="no-underline">
-      <div class="flex items-center">
-        <img src="{{ $metadata.favicon_url }}" style="min-width: 64px; max-width: 64px; margin-top: 1em; margin-bottom: 1em;" height="64" width="64" class="rounded-lg inline-block bg-gray-100 mr-6" />
-        <div class="min-w-0 flex-auto space-y-0.5">
-          <p style="margin: 0;" class="text-lime-600 text-md font-semibold">
-            {{ $inner }}
-          </p>
-          <p class="text-black dark:text-white text-md font-semibold">
-            {{ $metadata.title }}
-          </p>
-        </div>
+      <div class="min-w-0 flex-auto space-y-0.5">
+        <p style="margin: 0;" class="text-lime-600 text-sm font-light">
+          <img src="{{ $metadata.favicon_url }}" style="min-width: 16px; max-width: 16px; margin-top: 0; margin-bottom: 0;" height="16" width="16" class="inline-block bg-gray-100 mr-1" />
+          {{ $inner }}
+        </p>
+        <p class="text-black dark:text-white text-md font-semibold">
+          {{ $metadata.title }}
+        </p>
       </div>
     </a>
   </div>
