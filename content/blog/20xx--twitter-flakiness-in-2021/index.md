@@ -9,33 +9,80 @@ tags:
 - "twitter"
 ---
 
-For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've also had my fair share of [run-ins with internal services](/blog/automation-right/).
+For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've fallen into more [technical rabbit holes](/blog/automation-right/) than I care to.
 
-As a Twitter user who is Very Online, I love to theorise about why services go wrong and talk shit about corporations but as an SRE myself, I find it very difficult to direct blame at people.
+As a Twitter user who is Very Online, I love to theorise about why services go wrong and poke fun at corporations but as an [SRE](https://en.wikipedia.org/wiki/Site_reliability_engineering) myself, I find it very difficult to direct blame at people.
 
-To be clear, I'll be talking about Twitter in the brand/persona sense and not as a reflection of the many people who work tirelessly behind the scenes.
+To be clear, I'll be talking about Twitter in the brand/persona sense and not as a reflection of the many people who I'm sure work tirelessly behind the scenes.
 
 Some might say they're one in the same but my general principle is that taking aim at the marketing facade is fair game while the people themselves are off limits.
 
-With that clarified, I feel like the Twitter "experience" has been degraded for a couple of months now with no real acknowledgement that I can see. In short, I've seen Twitter DMs intermittently fail to load, images being corrupted upon upload and recently Twitter replies failing to load.
+Not that we've addressed that, I feel like the Twitter "experience" has been degraded for a couple of months now with no real acknowledgement that I can see. In short, I've seen Twitter DMs intermittently fail to load, images being corrupted upon upload and recently even [Twitter replies failing to load](https://twitter.com/wongmjane/status/1440428582308757507?ref_src=twsrc%5Etfw).
 
-I'll be walking through each one with examples but I have no insight into what's going on here. More than anything, I'm just interested to know if others have spotted these or further symptoms.
+I'll be walking through the former two issues as they've been plaguing both myself and some friends the most.
 
-I honestly have no idea how to figure out if any of this stuff is being actioned or not besides tooting the social media frustration horn!
+When it comes down to it, I'm nothing but a simple armchair critic who doesn't really have any recourse in this abstract digital "customer support" hell we've constructed for ourselves.
+
+Besides trying to raise awareness publically, I have absolutely no idea if this is on anyone's radar internally or if I'm being elaborately gaslight.
+
+With all that out of the way, let's have a look at what has been going on.
 
 ## Twitter DM images failing to load
 
 This one has been bugging me and some Twitter mutuals for at least a couple of months now.
 
-Intermittently, an image or two will fail to load. They upload file but they don't render properly for the other person, as if they've gotten stuck in a processing pipeline or something to that effect.
+What happens is that intermittently, images will fail to load. Often times, it isn't that every image fails to load but one or two that have been recently uploaded. In hindsight, it may be that they all fail to load but prior images are loaded from cache now that I think of it.
+
+It leads to frustrating discussions like this
 
 {{< image src="twitter-dm-huge-l.png" >}}
 {{< /image >}}
 
+and this
+
+{{< image src="twitter-dm-alt-text.png" >}}
+{{< /image >}}
+
+and this
+
+{{< image src="twitter-dm-revenue.png" >}}
+{{< /image >}}
+
+It happened again just the other day and I did a little poking around. It seems that `ton.twitter.com`, the image server used for DMs at least, times out.
+
+{{< image noshadow=true src="timeout.png" >}}
+{{< /image >}}
+
+Upon closer inspection, only Port 80 appears to be open with redirects to Port 443 failing as there is no such port open based on a quick scan using `nmap`.
+
+Frustrating and I've actually resorted to DMing on other platforms because of how unstable this can get at times!
+
+## Images being mulched
+
+For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely destroyed upon upload.
+
 {{< tweet 1439536308326645767 >}}
+
+You'll see it looks like someone took the spray paint brush from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
 {{< tweet 1436092048914796545 >}}
 
-{{< tweet 1440428582308757507 >}}
+While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.
+
+## Closing thoughts
+
+It doesn't take too much to conclude that these issues are both related to images which is interesting but not enough to conclude that there is any relation between the image processing pipeline and the image server (used for DMs at least).
+
+As I mentioned before, I don't want to point fingers at any people but I will say that it frustrated me to see if there was any acknowledgement of these issues.
+
+Right in the middle of those two transparency mulched images, I noticed [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards
+
+{{< tweet https://twitter.com/TwitterEng/status/1437857022444138496 >}}
+
+I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, optics do matter I think!
+
+Anyway, really all I want is to be able to use DMs again reliably!
+
+Instead, we're probably sooner going to get the ability to use [an NFT as an avatar](https://twitter.com/TheSmarmyBum/status/1443259893411049475) or whatever else is cooking over there :(
 
 [^1]: In a few years, I'll have been on Twitter longer than I've been off it (ie; before I registered/before it existed)
