@@ -1,10 +1,10 @@
 ---
 title: "Twitter, could you please fix your image servers?"
-date: "2021-09-22T11:00:00+1300"
+date: "2021-10-01T12:08:00+1300"
 slug: "twitter-image-servers-2021"
-draft: true
 category: "blog"
 tags:
+- "reliability"
 - "sre"
 - "twitter"
 ---
