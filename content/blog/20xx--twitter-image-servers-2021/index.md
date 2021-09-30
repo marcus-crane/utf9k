@@ -77,7 +77,7 @@ As I mentioned before, I don't want to point fingers at any people but I will sa
 
 Right in the middle of those two transparency mulched images, I noticed [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards
 
-{{< tweet https://twitter.com/TwitterEng/status/1437857022444138496 >}}
+{{< tweet 1437857022444138496 >}}
 
 I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, optics do matter I think!
 
