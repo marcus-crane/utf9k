@@ -1,7 +1,7 @@
 ---
-title: "Has Twitter been flaky for anyone else lately?"
+title: "Twitter, could you please fix your image servers?"
 date: "2021-09-22T11:00:00+1300"
-slug: "twitter-flakiness-in-2021"
+slug: "twitter-image-servers-2021"
 draft: true
 category: "blog"
 tags:
