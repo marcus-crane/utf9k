@@ -95,7 +95,6 @@ markup:
 privacy:
   twitter:
     enableDNT: true
-    simple: true
   youtube:
     privacyEnhanced: true
 
