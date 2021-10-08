@@ -16,4 +16,4 @@ data/filesizes.json
 assets/css/style.css
 scripts/venv
 dotfiles
-!content/dotfiles
+!content/dotfiles/.gitkeep

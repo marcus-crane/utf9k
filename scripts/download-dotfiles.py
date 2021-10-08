@@ -5,8 +5,8 @@ import shutil
 import git
 
 REPO_URL = "https://github.com/marcus-crane/dotfiles"
-CLONE_PATH = os.getcwd() + '/../dotfiles'
-DOTFILE_CONTENT = os.getcwd() + '/../content/dotfiles/'
+CLONE_PATH = os.getcwd() + '/dotfiles'
+DOTFILE_CONTENT = os.getcwd() + '/content/dotfiles/'
 
 repo = git.Repo.clone_from(REPO_URL, CLONE_PATH, branch='main')
 
