@@ -36,4 +36,4 @@ After the release of D2, WARP officially left the game industry, rebranding thei
 Developer: WARP \
 Publisher: Acclaim Entertainment \
 Released in 1995 \
-Platforms: 3DO, MS-DOS, Playstation 1, Sega Saturn \
+Platforms: 3DO, MS-DOS, Playstation 1, Sega Saturn
