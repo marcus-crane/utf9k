@@ -15,4 +15,5 @@ data/filesizes.json
 .pnpm-debug.log
 assets/css/style.css
 scripts/venv
-./dotfiles
+dotfiles
+!content/dotfiles
