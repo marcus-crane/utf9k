@@ -3,6 +3,7 @@ title: "Call of Juarez: Gunslinger"
 date: "2015-02-22T18:13:25+13:00"
 slug: "call-of-juarez-gunslinger"
 category: "reviews"
+description: "Giddy up for some of the most enjoyable Wild West action since, well, the Wild West I suppose!"
 tags:
 - "2013"
 - "pc"

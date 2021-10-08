@@ -3,6 +3,7 @@ title: "Picross"
 date: "2015-03-20T23:05:17+13:00"
 slug: "picross-3d"
 category: "reviews"
+description: "A simple yet enjoyable puzzle game that all Nintendo DS owners should check out."
 tags:
 - "2009"
 - "2010"

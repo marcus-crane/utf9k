@@ -3,6 +3,7 @@ title: "Friends: The One with All the Trivia"
 date: "2015-04-01T17:00:58+13:00"
 slug: "friends-for-real"
 category: "reviews"
+description: "Help me! I'm trapped in this eternal hell!"
 tags:
 - "2005"
 - "pc"

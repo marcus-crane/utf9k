@@ -3,6 +3,7 @@ title: "inFamous"
 date: "2014-10-10T10:24:43+13:00"
 slug: "infamous"
 category: "reviews"
+description: "I have a few mostly minor complaints about inFamous but I liked it enough that I can recommend picking it up."
 tags:
 - "2009"
 - "ps3"

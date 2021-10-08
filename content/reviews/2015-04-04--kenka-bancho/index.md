@@ -3,6 +3,7 @@ title: "Kenka Bancho: Badass Rumble"
 date: "2015-04-04T23:39:05+13:00"
 slug: "kenka-bancho"
 category: "reviews"
+description: "Get ready to ignite your fighting spirit as you participate in a full scale rumble to see who will win the title of toughest guy in all of Japan."
 tags:
 - "2008"
 - "2009"
