@@ -1,6 +1,6 @@
 ---
 title: "inFamous 2"
-date: "2014-10-10T21:44:35"
+date: "2014-10-10T21:44:35+13:00"
 slug: "infamous-2"
 category: "reviews"
 description: "I felt inFamous 2 did a great job patching up the issues of the original game and enhancing the systems that already worked well!"
