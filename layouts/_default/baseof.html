@@ -12,9 +12,12 @@
       {{ block "body" . }}
       <div class="flex flex-row flex-grow">
         {{ partial "sidebar.html" . }}
-        <div class="p-9 container">
+        <div class="p-9 pl-12">
         {{ block "main" . }}{{ end }}
         </div>
+        <aside class="flex hidden xl:block pl-12">
+          {{ partial "toc.html" . }}
+        </aside>
       </div>
       <div class="flex flex-col">
       {{ partial "footer.html" . }}
