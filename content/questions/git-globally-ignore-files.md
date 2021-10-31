@@ -1,6 +1,6 @@
 ---
 title: "How can I globally ignore files?"
-slug: "git-globally-ignore-files.md"
+slug: "git-globally-ignore-files"
 category: "questions"
 tags:
 - "git"
