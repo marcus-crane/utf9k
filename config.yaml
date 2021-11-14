@@ -76,16 +76,28 @@ headers:
       X-Frame-Options: DENY
       X-XSS-Protection: 1; mode=block
 
+mediaTypes:
+  text/plain:
+    suffixes:
+    - ast
+
 outputFormats:
   SearchIndex:
     baseName: "search"
     mediaType: "application/json"
+  MarkdownAST:
+    baseName: "index"
+    isPlainText: true
+    mediaType: "text/plain"
 
 outputs:
   home:
     - "HTML"
     - "RSS"
     - "SearchIndex"
+  page:
+    - "HTML"
+    - "MarkdownAST"
 
 markup:
   goldmark:
