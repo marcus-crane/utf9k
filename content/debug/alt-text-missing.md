@@ -5,9 +5,7 @@ category: "debug"
 maxwidth: true
 ---
 
-These are pieces of content that are missing an explicitly defined category.
-
-It isn't the end of the world since they'll inherit a category from their parent folder, but it's always nice to have consistency with post frontmatter.
+This table contains all of the images on this website and reflects whether or not they have defined proper alt text for those who use a screen reader or even just fans of text-only RSS readers.
 
 {{< alttextmissing.inline >}}
 {{ $correct := 0 }}
