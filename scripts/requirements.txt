@@ -7,7 +7,9 @@ docopt==0.6.2
 gitdb==4.0.7
 GitPython==3.1.24
 idna==2.10
+mistune==2.0.0rc1
 Pillow==8.3.2
+PyYAML==6.0
 requests==2.25.1
 smmap==4.0.0
 soupsieve==2.2.1
