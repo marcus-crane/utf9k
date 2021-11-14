@@ -6,10 +6,9 @@ import re
 from bs4 import BeautifulSoup
 import requests
 
-CUR_DIR = os.path.dirname(os.path.realpath(__file__))
+from common import CONTENT_FILES, CUR_DIR, walk_content_folder
 
 DATA_FILE = f"{CUR_DIR}/../data/fancylinks.json"
-CONTENT_FILES = f"{CUR_DIR}/../content"
 FANCYLINK_SHORTCODE = "{% previewlink"
 SHORTCODE_REGEX = r"{{% previewlink ?(.*?) ?%}}(https?:\/\/.*){{% \/previewlink %}}"
 
@@ -30,15 +29,6 @@ def main():
     with open(DATA_FILE, 'w') as link_file:
         meta_content = json.dumps(link_metadata, sort_keys=True, indent=2)
         link_file.write(meta_content)
-
-def walk_content_folder(path: str, ext: str):
-    matches = set()
-    for dir, _, files in os.walk(path):
-        for file in files:
-            if Path(file).suffix == ext:
-                file_path = str(Path(dir, file))
-                matches.add(file_path)
-    return matches
 
 def check_for_preview_links(file_path:str):
     with open(file_path, 'r') as file:
@@ -108,3 +98,4 @@ def build_link_entry(domain: str, **kwargs):
     return { domain: kwargs }
 
 main()
+print("~ Fancy links generated")
