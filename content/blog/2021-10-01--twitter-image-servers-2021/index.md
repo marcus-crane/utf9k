@@ -55,7 +55,7 @@ and this
 
 It happened again just the other day and I did a little poking around. It seems that `ton.twitter.com`, the image server used for DMs[^2] times out.
 
-{{< image noshadow=true src="timeout.png" >}}
+{{< image src="timeout.png" noshadow=true >}}
   A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.
 {{< /image >}}
 
