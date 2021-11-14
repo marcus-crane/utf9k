@@ -30,3 +30,5 @@ for file in file_metadata:
 
 with open('data/filesizes.json', 'w') as file:
     json.dump(file_metadata, file, indent=2)
+
+print("~ Filesize data generated")

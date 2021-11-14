@@ -21,4 +21,4 @@ for doc in literate_dotfiles:
 
 shutil.rmtree(CLONE_PATH)
 
-print("Successfully imported dotfiles")
+print("~ Successfully imported dotfiles")
