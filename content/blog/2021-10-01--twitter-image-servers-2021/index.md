@@ -67,11 +67,11 @@ It's pretty frustrating and I've actually resorted to DMing on other platforms b
 
 For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely destroyed upon upload.
 
-{{< tweet 1439536308326645767 >}}
+{{< tweet user="benedictevans" id="1439536308326645767" >}}
 
 You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
-{{< tweet 1436092048914796545 >}}
+{{< tweet user="sentreh" id="1436092048914796545" >}}
 
 While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.
 
@@ -83,7 +83,7 @@ As I mentioned before, I don't want to point fingers at any people but I will sa
 
 Instead, right in the middle of those two transparency mulched images, what I experienced was [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards.
 
-{{< tweet 1437857022444138496 >}}
+{{< tweet user="TwitterEng" id="1437857022444138496" >}}
 
 I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, the optics of it don't look great as someone experiencing this.
 

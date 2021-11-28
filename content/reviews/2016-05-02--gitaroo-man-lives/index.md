@@ -31,4 +31,4 @@ Publisher: Koei \
 Released in 2001 (PS2) and 2006 (PSP) \
 Platforms: Playstation 2 and Playstation Portable
 
-{{< tweet 726840026177269760 >}}
+{{< tweet user="lennehardt" id="726840026177269760" >}}

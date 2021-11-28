@@ -15,7 +15,7 @@ Recently I discovered that [Hugo](https://gohugo.io) added support for [inline s
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
 
-{{< tweet 1408348824083615745 >}}
+{{< tweet user="bepsays" id="1408348824083615745" >}}
 
 ## A shortcode refresher
 
