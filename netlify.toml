@@ -4,7 +4,7 @@ command = "yarn build:prod"
 
 [build.environment]
 HUGO_VERSION = "0.89.4"
-PYTHON_VERSION = "3.9"
+PYTHON_VERSION = "3.8"
 
 [context.production.environment]
 HUGO_ENV = "production"
