@@ -9,6 +9,24 @@ PYTHON_VERSION = "3.9"
 [context.production.environment]
 HUGO_ENV = "production"
 
+[[redirects]]
+	from = "/statistician.js"
+	to = "https://plausible.io/js/plausible.js"
+	status = 200
+	force = true
+
+[[redirects]]
+	from = "/api/event"
+	to = "https://plausible.io/api/event"
+	status = 200
+	force = true
+
+[[redirects]]
+	from = "/analytics"
+	to = "https://plausible.io/utf9k.net"
+	status = 301
+	force = false
+
 [[headers]]
 for = "/*.jpg"
 
