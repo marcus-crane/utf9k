@@ -29,7 +29,7 @@ A handful of static files live in `static` with most images living with their re
 
 ## Deployment
 
-Deployment is done via [Render](https://render.com).
+Deployment is done via [Netlify](https://netlify.com).
 
 Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
 
