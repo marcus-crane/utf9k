@@ -1,6 +1,12 @@
 - list: Actively playing
   games:
 
+  - title: "Phoenix Wright: Ace Attorney − Spirit of Justice"
+    platform: "Nintendo 3DS"
+    id: 12077
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
+
   - title: "Final Fantasy XIV: A Realm Reborn"
     platform: "PC"
     id: 386
