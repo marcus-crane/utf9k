@@ -1,23 +1,11 @@
 - list: Actively playing
   games:
-  
-  - title: "Phoenix Wright: Ace Attorney − Dual Destinies"
-    platform: "Nintendo 3DS"
-    id: 1432
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies"
-  
-  - title: "Scarlet Nexus"
-    platform: "Playstation 5"
-    id: 133302
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
-    link: "https://www.igdb.com/games/scarlet-nexus"
 
-  - title: "Tales of Arise"
-    platform: "Playstation 5"
-    id: 119270
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png"
-    link: "https://www.igdb.com/games/tales-of-arise"
+  - title: "Final Fantasy XIV: A Realm Reborn"
+    platform: "PC"
+    id: 386
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
+    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
 
 - list: Stalled but occasionally progress is made
   games:
@@ -33,12 +21,6 @@
     id: 15705
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
     link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
-
-  - title: "Final Fantasy XIV: A Realm Reborn"
-    platform: "PC"
-    id: 386
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
-    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
 
   - title: "Grandia"
     platform: "Nintendo Switch"
@@ -58,6 +40,18 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg"
     link: "https://www.igdb.com/games/pokemon-black"
 
+  - title: "Scarlet Nexus"
+    platform: "Playstation 5"
+    id: 133302
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
+    link: "https://www.igdb.com/games/scarlet-nexus"
+
+  - title: "Tales of Arise"
+    platform: "Playstation 5"
+    id: 119270
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png"
+    link: "https://www.igdb.com/games/tales-of-arise"
+
   - title: "The Legend of Zelda: Breath of the Wild"
     platform: "Nintendo Switch"
     id: 7346
@@ -66,6 +60,13 @@
 
 - list: Completed
   games:
+
+  - title: "Phoenix Wright: Ace Attorney − Dual Destinies"
+    platform: "Nintendo 3DS"
+    id: 1432
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies"
+    date_finished: 2021-12-10
   
   - title: "Apollo Justice: Ace Attorney"
     platform: "Nintendo 3DS"
