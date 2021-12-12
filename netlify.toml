@@ -10,6 +10,12 @@ PYTHON_VERSION = "3.8"
 HUGO_ENV = "production"
 
 [[redirects]]
+	from = "/*.md"
+	to = "/:splat/index.md"
+	status = 200
+	force = true
+
+[[redirects]]
 	from = "/statistician.js"
 	to = "https://plausible.io/js/plausible.js"
 	status = 200
