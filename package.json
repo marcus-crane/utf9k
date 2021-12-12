@@ -8,7 +8,7 @@
   "scripts": {
     "start": "COMMIT_SHA=main hugo server --disableFastRender",
     "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
-    "build:prod": "yarn run setup-python && yarn run gather-files && yarn run download-dotfiles && yarn run generate-fancy-links && yarn run gather-image-metadata && yarn run build",
+    "build:prod": "pnpm run setup-python && pnpm run gather-files && pnpm run download-dotfiles && pnpm run generate-fancy-links && pnpm run gather-image-metadata && pnpm run build",
     "lint": "eslint assets/js",
     "setup-python": "pip install -U pip && pip install -r scripts/requirements.txt",
     "gather-files": "python scripts/gather-filesizes.py",
