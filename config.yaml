@@ -79,16 +79,16 @@ headers:
 mediaTypes:
   text/plain:
     suffixes:
-    - ast
+    - md
 
 outputFormats:
   SearchIndex:
     baseName: "search"
     mediaType: "application/json"
-  # MarkdownAST:
-  #   baseName: "index"
-  #   isPlainText: true
-  #   mediaType: "text/plain"
+  MarkdownAST:
+    baseName: "index"
+    isPlainText: true
+    mediaType: "text/plain"
 
 outputs:
   home:
@@ -97,7 +97,7 @@ outputs:
     - "SearchIndex"
   page:
     - "HTML"
-    # - "MarkdownAST"
+    - "MarkdownAST"
 
 markup:
   goldmark:
