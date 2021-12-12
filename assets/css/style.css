@@ -25,7 +25,7 @@ html, body {
 }
 
 body {
-  padding: 4rem 2rem;
+  padding: 4rem clamp(3rem, 1rem, 5rem);
   min-height: 100vh;
   display: grid;
   line-height: 1.5;
@@ -94,9 +94,42 @@ svg {
   width:  1.25rem;
 }
 
+/* Homepage */
+
+#home-wrapper {
+  display: grid;
+  gap: clamp(3rem, 1rem, 6rem);
+}
+
+#welcome-message {
+  grid-column: 1;
+}
+
+#welcome-message p {
+  padding-bottom: 1rem;
+  max-width: 20rem;
+}
+
+#recent-updates {
+  grid-column: 2;
+  text-align: center;
+}
+
+#recent-updates #cover {
+  border-radius: 5px;
+  margin: .3rem auto;
+  width: 9.4rem;
+  height: auto;
+}
+
 /* Live player */
 
 #liveplayer {
   opacity: 0;
 }
 
+/* Footer */
+
+footer, footer img, footer p, footer svg {
+  display: inline-block;
+}

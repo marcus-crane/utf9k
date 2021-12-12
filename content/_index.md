@@ -10,5 +10,3 @@ I maintain a [blog](/blog/) and also keep a running list of [questions](/questio
 There's also a [now](/now/) page for, realistically, what I was up to two weeks ago and a [projects](/projects/) page documenting my small experiments.
 
 Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.
-
-{{< liveplayer >}}

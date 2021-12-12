@@ -1,13 +1,22 @@
 {{ define "main" }}
-<article class="mx-auto prose dark:prose-dark">
-  <header class="w-min">
-    <h1>
-      {{ .Title }}
-      <div id="statusbar" class="w-100 h-2"></div>
-    </h1>
-  </header>
-  <div>
+<article>
+  <div id="home-wrapper">
+    <div id="welcome-message">
+    <h1>Welcome!</h1>
     {{ .Content }}
+    </div>
+    <div id="recent-updates">
+      <div id="liveplayer">
+        <h3 id="action"></h3>
+        <img src="https://i.scdn.co/image/ab67616d0000b273a1a897ee5e642da6d945bcd7" id="cover">
+        <strong id="source"></strong>
+        <br />
+        <i id="title"></i>
+        <br />
+        <i id="elapsed"></i> / <i id="duration"></i>
+      </div>
+    </div>
+  </div>
 </article>
 {{ end }}
 
