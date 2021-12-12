@@ -3,7 +3,7 @@ publish = "public"
 command = "yarn build:prod"
 
 [build.environment]
-HUGO_VERSION = "0.89.4"
+HUGO_VERSION = "0.90.1"
 PYTHON_VERSION = "3.8"
 
 [context.production.environment]
