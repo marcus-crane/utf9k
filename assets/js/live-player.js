@@ -147,11 +147,6 @@ function renderSpotifyData(data) {
 
   // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
   const interval = setInterval(function() {
-    if (progression <= currentDuration) {
-      // It can take a bit to refresh so don't increment once at the end
-      progression += 1000
-    }
-    elapsed.innerText = formatMsToHumanTimestamp(progression)
     if (progression >= currentDuration) {
       clearInterval(interval)
       progression = currentDuration
@@ -160,7 +155,13 @@ function renderSpotifyData(data) {
         // API should have refreshed after 1 second
         return refreshData()
       }, 1500)
+      return
     }
+    if (progression <= currentDuration) {
+      // It can take a bit to refresh so don't increment once at the end
+      progression += 1000
+    }
+    elapsed.innerText = formatMsToHumanTimestamp(progression)
   }, 1000)
 }
 

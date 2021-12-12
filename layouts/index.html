@@ -14,6 +14,17 @@
         <i id="title"></i>
         <br />
         <i id="elapsed"></i> / <i id="duration"></i>
+        <hr />
+      </div>
+      <div id="post-stream">
+        <h3>Recent updates</h3>
+        <ul>
+        {{ range first 5 .Site.RegularPages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </ul>
       </div>
     </div>
   </div>
