@@ -77,15 +77,22 @@ headers:
       X-XSS-Protection: 1; mode=block
 
 mediaTypes:
-  text/plain:
+  text/markdown:
     suffixes:
     - md
+  text/plain:
+    suffixes:
+    - txt
 
 outputFormats:
   SearchIndex:
     baseName: "search"
     mediaType: "application/json"
   MarkdownAST:
+    baseName: "index"
+    isPlainText: true
+    mediaType: "text/markdown"
+  PlainText:
     baseName: "index"
     isPlainText: true
     mediaType: "text/plain"
@@ -98,6 +105,7 @@ outputs:
   page:
     - "HTML"
     - "MarkdownAST"
+    - "PlainText"
 
 markup:
   goldmark:
