@@ -46,6 +46,12 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
 input, button, textarea, select {
   font: inherit;
 }
@@ -122,12 +128,6 @@ svg {
   border-width: 1.7px;
   margin: 1.2rem auto;
   width: 10rem;
-}
-
-#post-stream ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }
 
 #post-stream li {
