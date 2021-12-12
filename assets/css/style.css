@@ -1,4 +1,4 @@
-/* Some items adapted from https://www.joshwcomeau.com/css/custom-css-reset */
+/* General resets */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,33 +13,32 @@
   font-size: 1rem;
   --user-font-scale: 1rem - 16px;
   font-size: clamp(0.875rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1.125rem);
-  --color-light: #f3f4f6;
+  --text-light: #d0d1c7;
+  --text-dark: #1e1e1e;
+  --bg-light: #eaebe3;
+  --bg-dark: #1f2738;
 }
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
   padding: 4rem 2rem;
-  width: 100%;
   min-height: 100vh;
   display: grid;
   line-height: 1.5;
   justify-content: center;
-  background: #f9fafb;
-  color: #111827;
+  background: var(--bg-light);
+  color: var(--text-dark);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #111827;
-    color: #fff;
+    background: var(--bg-dark);
+    color: var(--text-light);
   }
-}
-
-a {
-  color: inherit;
 }
 
 img, picture, video, canvas, svg {
@@ -49,6 +48,12 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+}
+
+/* Typography */
+
+a {
+  color: inherit;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -89,74 +94,9 @@ svg {
   width:  1.25rem;
 }
 
-.notice h3 {
-	@apply mt-0
-}
-
-.notice p {
-	@apply mb-0
-}
-
-#speech-bubble::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top:  0%;
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-bottom-color: #DBEAFE;
-  border-top: 0;
-  margin-top: -6px;
-  margin-left: -8px;
-}
-
-@media only screen and (min-width: 640px) {
-  #speech-bubble::after {
-    content: '';
-    position: absolute;
-    left: 0%;
-    top:  50%;
-    width: 0;
-    height: 0;
-    border: 8px solid transparent;
-    border-right-color: #DBEAFE;
-    border-left: 0;
-    border-bottom: 0;
-    margin-top: -4px;
-    margin-left: -6px;
-  }
-}
-
-.prose code::before, .prose code::after {
-	content: none;
-}
-
-#statusbar {
-  border-radius: 0 0 3px 30px;
-  background: #a463f2;
-  transition: background 1.2s linear;
-  width: 100%;
-}
+/* Live player */
 
 #liveplayer {
   opacity: 0;
 }
-
-.prose .fake-regular-width * {
-  @apply max-w-prose
-}
-
-.prose .fake-regular-width table {
-  @apply max-w-full
-}
-
-.prose h1 {
-  @apply mb-0
-}
-
-.prose .player img, .prose .player h2, .prose .player p {
-  @apply mb-0 mt-0
-}
-
 
