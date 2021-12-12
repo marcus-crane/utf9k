@@ -14,7 +14,6 @@ data/fancylinks.json
 data/filesizes.json
 data/imagemetadata.json
 .pnpm-debug.log
-assets/css/style.css
 scripts/venv
 venv
 dotfiles
