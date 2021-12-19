@@ -143,6 +143,7 @@ function renderSpotifyData(data) {
   cover.height = 96
   cover.width = 96
 
+  progressBar.style.display = 'show'
   livePlayer.style.opacity = 1
 
   // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
@@ -166,9 +167,6 @@ function renderSpotifyData(data) {
 }
 
 function renderTraktData(data) {
-  livePlayer.className = "transition-opacity duration-1000"
-  progressBar.className += " hidden"
-  playback.className += " hidden"
   action.innerText = traktVerb
 
   if (data.type === "movie") {
@@ -178,24 +176,27 @@ function renderTraktData(data) {
 
     cover.src = data.movie.movie_posters[0].file_path
     cover.width = data.movie.movie_posters[0].width
-    cover.className += " w-48 sm:w-36"
 
-    synopsis.className = "text-xs pt-4"
-    synopsis.innerText = data.movie.overview
+    // synopsis.innerText = data.movie.overview
   }
 
   if (data.type === "episode") {
-    title.innerText = data.episode.title
-    category.innerText = `Season ${data.episode.season}, Episode ${data.episode.number}`
+    title.innerText = `${zeroPadNumber(data.episode.season)}x${zeroPadNumber(data.episode.number)} ${data.episode.title}`
     source.innerText = data.show.title
 
     cover.src = data.episode.season_posters[0].file_path
     cover.width = 250
     cover.height = 375
 
-    synopsis.className = "text-xs pt-4"
-    synopsis.innerText = data.show.overview
+    // synopsis.innerText = data.show.overview
   }
 
   livePlayer.style.opacity = 1
+}
+
+function zeroPadNumber(number) {
+  if (number.toString().length == 1) {
+    return `0${number}`
+  }
+  return number
 }

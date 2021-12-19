@@ -4,7 +4,7 @@
     <div id="welcome-message">
     <h1>Welcome!</h1>
     {{ .Content }}
-    <hr />
+    <!-- <hr /> -->
     </div>
     <div id="recent-updates">
       <div id="liveplayer">
@@ -14,7 +14,9 @@
         <br />
         <i id="title"></i>
         <br />
-        <i id="elapsed"></i> / <i id="duration"></i>
+          <div id="progress">
+            <i id="elapsed"></i> / <i id="duration"></i>
+          </div>
       </div>
       <hr />
       <div id="post-stream">

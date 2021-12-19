@@ -33,7 +33,7 @@ body {
 #content {
   display: grid;
   justify-content: center;
-  padding: 4rem clamp(3rem, 1rem, 5rem);
+  padding: 2rem clamp(3rem, 1rem, 5rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -175,6 +175,10 @@ svg {
 
 #liveplayer {
   opacity: 0;
+}
+
+#liveplayer #progress {
+  display: none;
 }
 
 /* Posts */
