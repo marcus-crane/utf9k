@@ -7,7 +7,10 @@
 </head>
 <body>
   {{ block "body" . }}
+    {{ partial "header.html" . }}
+    <div id="content">
     {{ block "main" . }}{{ end }}
+    </div>
     {{ partial "footer.html" . }}
   {{ end }}
   {{ block "script" . }}{{ end }}

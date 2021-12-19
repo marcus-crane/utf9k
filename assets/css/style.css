@@ -25,13 +25,16 @@ html, body {
 }
 
 body {
-  padding: 4rem clamp(3rem, 1rem, 5rem);
-  min-height: 100vh;
-  display: grid;
   line-height: 1.5;
-  justify-content: center;
   background: var(--bg-light);
   color: var(--text-dark);
+}
+
+#content {
+  display: grid;
+  justify-content: center;
+  padding: 4rem clamp(3rem, 1rem, 5rem);
+  min-height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,14 +69,48 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-header h1 {
-  font-size: 1em;
-  font-weight: 500;
+header {
+  display: flex;
+  padding: .8rem;
 }
 
-header img {
-  width: 2em;
-  height: 2.667em;
+header a {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  text-decoration: none;
+  width: 100%;
+}
+
+header a span {
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: .5rem;
+}
+
+header a img {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+}
+
+header nav a {
+  padding-left: 0.rem;
+}
+
+header nav span {
+  color: var(--text-light);
+  padding: 0 0.3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  header nav span {
+    color: var(--text-dark);
+  }
 }
 
 h2 {
