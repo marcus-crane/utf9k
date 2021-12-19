@@ -34,7 +34,6 @@ body {
   display: grid;
   justify-content: center;
   padding: 4rem clamp(3rem, 1rem, 5rem);
-  min-height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -159,7 +158,7 @@ svg {
   margin-top: 1rem;
 }
 
-#recent-updates hr {
+#home-wrapper hr {
   border-radius: 10px;
   border-style: solid;
   border-width: 1.7px;
@@ -176,6 +175,56 @@ svg {
 
 #liveplayer {
   opacity: 0;
+}
+
+/* Posts */
+article #post-body {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+article #post-body p,
+article #post-body img,
+article #post-body #heading {
+  margin-bottom: 1.5rem;
+}
+
+article #post-body img {
+  border-radius: 3px;
+}
+
+article .heading-2 {
+  margin-left: -2rem;
+}
+
+article .heading-3 {
+  margin-left: -2.6rem;
+}
+
+article .heading-4 {
+  margin-left: -3.2rem;
+}
+
+article .heading a {
+  font-size: 1rem;
+  opacity: 0;
+  padding-right: 0.8rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+article .heading:hover a {
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+article .heading h2,
+article .heading h3,
+article .heading h4,
+article .heading h5,
+article .heading h6 {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Footer */
