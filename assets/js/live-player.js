@@ -143,7 +143,7 @@ function renderSpotifyData(data) {
   cover.height = 96
   cover.width = 96
 
-  progressBar.style.display = 'show'
+  progressBar.style.display = 'block'
   livePlayer.style.opacity = 1
 
   // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
