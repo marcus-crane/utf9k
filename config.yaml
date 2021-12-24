@@ -121,3 +121,25 @@ privacy:
 services:
   twitter:
     disableInlineCSS: true
+
+security:
+  enableInlineShortcodes: true
+  exec:
+    allow:
+      - ^dart-sass-embedded$
+      - ^go$
+      - ^npx$
+      - ^postcss$
+  funcs:
+    getenv:
+      - ^HUGO_
+      - LANG
+      - LC_ALL
+      - NODE_ENV
+      - NODE_VERSION
+      - PYTHON_VERSION
+  htto:
+    methods:
+      - (?i)GET|POST
+    urls:
+        - .*
