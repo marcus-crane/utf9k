@@ -1,25 +1,24 @@
-const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
-const livePlayer = document.querySelector(".prose #liveplayer")
+const livePlayer = document.querySelector("#liveplayer")
 
-const action = document.querySelector(".prose #action")
-const cover = document.querySelector(".prose #cover")
-const category = document.querySelector(".prose #category")
-const source = document.querySelector(".prose #source")
-const title = document.querySelector(".prose #title")
-const synopsis = document.querySelector(".prose #synopsis")
-const elapsed = document.querySelector(".prose #elapsed")
-const duration = document.querySelector(".prose #duration")
-const progressBar = document.querySelector(".prose #progress")
-const playback = document.querySelector(".prose #playback")
+const action = document.querySelector("#action")
+const cover = document.querySelector("#cover")
+const category = document.querySelector("#category")
+const source = document.querySelector("#source")
+const title = document.querySelector("#title")
+const synopsis = document.querySelector("#synopsis")
+const elapsed = document.querySelector("#elapsed")
+const duration = document.querySelector("#duration")
+const progressBar = document.querySelector("#progress")
+const playback = document.querySelector("#playback")
 
 const gamingColor = "#003087"
-const gamingVerb = "I'm currently playing:"
+const gamingVerb = "Currently playing 🕹"
 
 const spotifyColor = "#1DB954"
-const spotifyVerb = "I'm currently listening to:"
+const spotifyVerb = "Currently listening 🎧"
 
 const traktColor = "#C47828"
-const traktVerb = "I'm currently watching:"
+const traktVerb = "Currently watching 📺"
 
 
 function queryGames() {
@@ -95,7 +94,6 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderGamingData(data) {
-  liveStatusBar.style.background = gamingColor
   livePlayer.className = "transition-opacity duration-1000"
   progressBar.className += " hidden"
   playback.className += " hidden"
@@ -114,10 +112,6 @@ function renderGamingData(data) {
 }
 
 function renderSpotifyData(data) {
-  liveStatusBar.style.background = spotifyColor
-  livePlayer.className = "transition-opacity duration-1000"
-  progressBar.style.transition = "width 1s"
-  category.className = "hidden"
   action.innerText = spotifyVerb
 
   const listeningType = data.currently_playing_type
@@ -138,7 +132,6 @@ function renderSpotifyData(data) {
   elapsed.innerText = formatMsToHumanTimestamp(progression)
 
   duration.innerText = formatMsToHumanTimestamp(currentDuration)
-  progressBar.ariaValueMax = currentDuration
 
   if (listeningType === "episode") {
     category_type = data.item.show
@@ -149,24 +142,12 @@ function renderSpotifyData(data) {
   cover.src = category_type.images[0].url
   cover.height = 96
   cover.width = 96
-  cover.className += " w-24 h-24"
 
+  progressBar.style.display = 'block'
   livePlayer.style.opacity = 1
 
   // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
   const interval = setInterval(function() {
-    if (progression <= currentDuration) {
-      // It can take a bit to refresh so don't increment once at the end
-      progression += 1000
-    }
-    progressBar.style.width = `${(progression / currentDuration * 100).toFixed(2)}%`
-    progressBar.ariaValueNow = progression
-    if (firstPaintComplete) {
-      progressBar.style.transition = "none"
-    } else {
-      firstPaintComplete = true
-    }
-    elapsed.innerText = formatMsToHumanTimestamp(progression)
     if (progression >= currentDuration) {
       clearInterval(interval)
       progression = currentDuration
@@ -175,15 +156,17 @@ function renderSpotifyData(data) {
         // API should have refreshed after 1 second
         return refreshData()
       }, 1500)
+      return
     }
+    if (progression <= currentDuration) {
+      // It can take a bit to refresh so don't increment once at the end
+      progression += 1000
+    }
+    elapsed.innerText = formatMsToHumanTimestamp(progression)
   }, 1000)
 }
 
 function renderTraktData(data) {
-  liveStatusBar.style.background = traktColor
-  livePlayer.className = "transition-opacity duration-1000"
-  progressBar.className += " hidden"
-  playback.className += " hidden"
   action.innerText = traktVerb
 
   if (data.type === "movie") {
@@ -193,24 +176,27 @@ function renderTraktData(data) {
 
     cover.src = data.movie.movie_posters[0].file_path
     cover.width = data.movie.movie_posters[0].width
-    cover.className += " w-48 sm:w-36"
 
-    synopsis.className = "text-xs pt-4"
-    synopsis.innerText = data.movie.overview
+    // synopsis.innerText = data.movie.overview
   }
 
   if (data.type === "episode") {
-    title.innerText = data.episode.title
-    category.innerText = `Season ${data.episode.season}, Episode ${data.episode.number}`
+    title.innerText = `${zeroPadNumber(data.episode.season)}x${zeroPadNumber(data.episode.number)} ${data.episode.title}`
     source.innerText = data.show.title
 
     cover.src = data.episode.season_posters[0].file_path
     cover.width = 250
     cover.height = 375
 
-    synopsis.className = "text-xs pt-4"
-    synopsis.innerText = data.show.overview
+    // synopsis.innerText = data.show.overview
   }
 
   livePlayer.style.opacity = 1
+}
+
+function zeroPadNumber(number) {
+  if (number.toString().length == 1) {
+    return `0${number}`
+  }
+  return number
 }

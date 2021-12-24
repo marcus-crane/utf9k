@@ -1,39 +1,36 @@
 {{ define "main" }}
-<article class="mx-auto prose dark:prose-dark">
-  <header class="w-min">
-    <h1>
-      {{ .Title }}
-      <div id="statusbar" class="w-100 h-2"></div>
-    </h1>
-  </header>
-  <div>
-    <p>My name is <a href="/about/">Marcus Crane</a> and you're currently logged on to my personal website.</p>
-    <p>I maintain a <a href="/blog/">blog</a> and also keep a running lists of <a href="/questions/">questions</a> regarding topics I often want to remember things about for later.</p>
-    <p>There's also a <a href="/now/">now</a> page for, realistically, what I was up to two weeks ago and a <a href="/projects/">projects</a> page documenting my small experiments.</p>
-    <p>Finally, if you have any questions or just want to drop a comment, you can pick your poison down in the bottom right of the footer.</p>
-    <div class="hidden" id="liveplayer">
-      <h4 class="pb-2" id="action">Currently doing some action</h4>
-      <div class="rounded-xl space-y-6 border-4 dark:border-black p-6">
-        <div class="player flex items-center space-x-3.5">
-          <img src="" width="640" height="640" class="flex-none rounded-lg bg-gray-200" id="cover" />
-          <div class="player min-w-0 flex-auto space-y-0.5">
-            <p class="text-sm font-semibold uppercase" id="category"></p>
-            <h2 class="text-base font-semibold" id="title"></h2>
-            <p class="text-base font-medium" id="source"></p>
-            <p class="text-base hidden" id="synopsis"></p>
+<article>
+  <div id="home-wrapper">
+    <div id="welcome-message">
+    <h1>Welcome!</h1>
+    {{ .Content }}
+    <!-- <hr /> -->
+    </div>
+    <div id="recent-updates">
+      <div id="liveplayer">
+        <h3 id="action">This is fine 🔥</h3>
+        <img src="/cover.png" id="cover">
+        <strong id="source">Hmm</strong>
+        <br />
+        <i id="title">You shouldn't be able to see this!</i>
+        <br />
+          <div id="progress">
+            <i id="elapsed">00:00</i> / <i id="duration">59:59</i>
           </div>
-        </div>
-        <div id="playback" class="space-y-2">
-          <div class="bg-gray-200 transition-colors duration-500 dark:bg-black rounded-full overflow-hidden">
-            <div class="bg-green-500 transition-colors duration-500 dark:bg-lime-400 w-0 h-1.5" role="progressbar" aria-valuenow="1456" aria-valuemin="0" aria-valuemax="4550" id="progress"></div>
-          </div>
-          <div class="flex justify-between text-sm font-medium tabular-nums">
-            <div id="elapsed">24:16</div>
-            <div id="duration">75:50</div>
-          </div>
-        </div>
+      </div>
+      <hr />
+      <div id="post-stream">
+        <h3>Recent updates</h3>
+        <ul>
+        {{ range first 5 .Site.RegularPages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </ul>
       </div>
     </div>
+  </div>
 </article>
 {{ end }}
 
