@@ -3,7 +3,7 @@
   <div class='{{ if isset .Params "maxwidth" }}fake-regular-width{{ end }}'>
     <div id="post-body" class='{{ if isset .Params "noproseclass" }}prose dark:prose-dark mb-12{{ end }}'>
       <h1>{{ .Title }}</h1>
-      <div class="text-gray-500 text-xs font-medium uppercase tracking-wide pt-2">
+      <div id="post-meta">
         {{ if (eq .Slug "now") }}<time>Last updated on {{ .Lastmod.Format "02 January 2006" }}</time>{{ end }}
       </div>
       {{ .Content }}

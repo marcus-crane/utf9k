@@ -1,10 +1,40 @@
 {{ define "main" }}
-<article>
+<article class="full">
   <div id="home-wrapper">
     <div id="welcome-message">
-    <h1>Welcome!</h1>
-    {{ .Content }}
-    <!-- <hr /> -->
+      <center>
+        <header>
+          <h1>Welcome!</h1>
+        </header>
+        {{ .Content }}
+      </center>
+      <hr />
+      <center>
+        <header>
+          <h3>Here's a random(ly generated) thought</h3>
+        </header>
+        <p>{{ range $.Site.Data.gags.lines | shuffle | first 1 }}{{ . }}{{ end }}</p>
+      </center>
+      <hr />
+      <div id="post-stream">
+        <center>
+          <header>
+            <h3>Books I'm *ahem* paging through</h3>
+          </header>
+          <ul>
+          {{ range first 1 $.Site.Data.books }}
+            {{ range where .books "progress" "!=" 100 }}
+              <li style="display: inline-block;">
+                <a href="{{ .link }}">
+                  <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
+        </center>
+      </div>
+      <hr />
     </div>
     <div id="recent-updates">
       <div id="liveplayer">
@@ -20,7 +50,7 @@
       </div>
       <hr />
       <div id="post-stream">
-        <h3>Recent updates</h3>
+        <h3>Recently updated pages</h3>
         <ul>
         {{ range first 5 .Site.RegularPages }}
           <li>
@@ -29,6 +59,26 @@
         {{ end }}
         </ul>
       </div>
+      <hr />
+      <center>
+        <div id="post-stream">
+          <header>
+            <h3>Games I'm (slowly) progressing through</h3>
+          </header>
+          <ul>
+          {{ range first 1 $.Site.Data.games }}
+            {{ range .games }}
+              <li style="display: inline-block;">
+                <a href="{{ .link }}">
+                  <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
+        </div>
+      </center>
+      <hr />
     </div>
   </div>
 </article>
