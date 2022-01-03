@@ -142,6 +142,7 @@ security:
     - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
   funcs:
     getenv:
+      - ^COMMIT_SHA$
       - ^HUGO_
       - ^LANG$
       - ^LANGUAGE$

@@ -193,16 +193,6 @@ pre {
   text-align: center;
 }
 
-/* Live player */
-
-#liveplayer {
-  /*opacity: 0;*/
-}
-
-#liveplayer #progress {
-  display: none;
-}
-
 /* Posts */
 article:not(.full) {
   margin: 0 auto;

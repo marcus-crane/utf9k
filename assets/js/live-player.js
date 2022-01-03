@@ -2,82 +2,37 @@ const livePlayer = document.querySelector("#liveplayer")
 
 const action = document.querySelector("#action")
 const cover = document.querySelector("#cover")
-const category = document.querySelector("#category")
-const source = document.querySelector("#source")
 const title = document.querySelector("#title")
-const synopsis = document.querySelector("#synopsis")
+const subtitle = document.querySelector("#subtitle")
 const elapsed = document.querySelector("#elapsed")
 const duration = document.querySelector("#duration")
-const progressBar = document.querySelector("#progress")
-const playback = document.querySelector("#playback")
+const progressArea = document.querySelector("#progress")
 
 const gamingColor = "#003087"
-const gamingVerb = "Currently playing 🕹"
+const gamingVerb = "🕹 I'm currently playing"
+const gamingVerbPastTense = "🕹 I was recently playing"
 
 const spotifyColor = "#1DB954"
-const spotifyVerb = "Currently listening 🎧"
+const spotifyVerb = "🎧 I'm currently listening to"
+const spotifyVerbPastTense = "🎧 I was recently listening to"
 
 const traktColor = "#C47828"
-const traktVerb = "Currently watching 📺"
-
-
-function queryGames() {
-  return new Promise((resolve, reject) => {
-    fetch("https://gunslinger.utf9k.net/api/v1/videogames")
-      .then(res => res.json())
-      .then(games => {
-        const data = games.data
-        if (!data || !data.title) return resolve("I'm not currently playing anything.")
-        return resolve({ "provider": "gaming", data })
-      })
-      .catch(err => reject(err))
-  })
-}
-
-function querySpotify() {
-  return new Promise((resolve, reject) => {
-    fetch("https://gunslinger.utf9k.net/api/v1/audio")
-      .then(res => res.json())
-      .then(audio => {
-        const data = audio.data
-        if (!data || !data.is_playing) return resolve("I'm not currently listening to anything.")
-        return resolve({ "provider": "spotify", data })
-      })
-      .catch(err => reject(err))
-  })
-}
-
-function queryTrakt() {
-  return new Promise((resolve, reject) => {
-    fetch("https://gunslinger.utf9k.net/api/v1/media")
-      .then(res => res.json())
-      .then(media => {
-        const data = media.data
-        if (data.type === "") return resolve("I'm not currently watching anything.")
-        return resolve({ "provider": "trakt", data })
-      })
-      .catch(err => reject(err))
-  })
-}
+const traktVerb = "📺 I'm currently watching"
+const traktVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
-  Promise.all([queryGames(), querySpotify(), queryTrakt()])
-    .then(values => {
-      for (let value of values) {
-        console.log(value)
-        if (typeof(value) === "string") continue
-        switch(value.provider) {
-        case "gaming":
-          return renderGamingData(value.data)
-        case "spotify":
-          return renderSpotifyData(value.data)
-        case "trakt":
-          return renderTraktData(value.data)
-        default:
-          return
+  return fetch("https://gunslinger.utf9k.net/api/v2/playing")
+      .then(res => res.json())
+      .then(data => {
+        if (data.started_at < 0) {
+          // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
+          // in the meantime, we'll just bail out and the user won't know
+          throw("Encountered a bug so we won't render the live player")
         }
-      }
-    })
+        return data
+      })
+      .then(data => renderLivePlayer(data))
+      .catch(err => console.log(err))
 }
 
 refreshData()
@@ -93,110 +48,68 @@ function formatMsToHumanTimestamp(ms) {
   )
 }
 
-function renderGamingData(data) {
+function renderLivePlayer(data) {
+  let progression = data.elapsed_ms
+  let currentDuration = data.duration_ms
+  let showProgression = false
+  switch(data.category) {
+    case "tv":
+    case "movie":
+      // liveStatusBar.style.background = traktColor
+      if (data.is_active) {
+        action.innerText = traktVerb
+      } else {
+        action.innerText = traktVerbPastTense
+      }
+      break
+    case "music":
+    case "podcast":
+      // liveStatusBar.style.background = spotifyColor
+      if (data.is_active) {
+        action.innerText = spotifyVerb
+        showProgression = true
+      } else {
+        action.innerText = spotifyVerbPastTense
+      }
+      break
+    default:
+      break
+  }
   livePlayer.className = "transition-opacity duration-1000"
-  progressBar.className += " hidden"
-  playback.className += " hidden"
-  synopsis.className += " hidden"
-  category.className = "hidden"
-  source.className = "hidden"
-  action.innerText = gamingVerb
+
+  if (showProgression) {
+    elapsed.innerText = formatMsToHumanTimestamp(progression)
+    duration.innerText = formatMsToHumanTimestamp(currentDuration)
+  } else {
+    progressArea.style.display = 'none'
+  }
 
   title.innerText = data.title
+  subtitle.innerText = data.subtitle
 
-  cover.src = data.cover.image_url
-  cover.width = data.cover.width
-  cover.className += " w-48 sm:w-36"
-
-  livePlayer.style.opacity = 1
-}
-
-function renderSpotifyData(data) {
-  action.innerText = spotifyVerb
-
-  const listeningType = data.currently_playing_type
-  const currentDuration = data.item.duration_ms
-  let firstPaintComplete = false
-  let category_type = null
-
-  if (listeningType === "episode") {
-    source.innerText = data.item.show.name
-  } else {
-    source.innerText = data.item.album.artists[0].name
-  }
-
-  let progression = data.progress_ms
-
-  title.innerText = data.item.name
-
-  elapsed.innerText = formatMsToHumanTimestamp(progression)
-
-  duration.innerText = formatMsToHumanTimestamp(currentDuration)
-
-  if (listeningType === "episode") {
-    category_type = data.item.show
-  } else {
-    category_type = data.item.album
-  }
-
-  cover.src = category_type.images[0].url
-  cover.height = 96
-  cover.width = 96
-
-  progressBar.style.display = 'block'
-  livePlayer.style.opacity = 1
-
-  // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
-  const interval = setInterval(function() {
-    if (progression >= currentDuration) {
-      clearInterval(interval)
-      progression = currentDuration
-      console.log("The track should have finished. Refreshing shortly!")
-      setTimeout(function() {
-        // API should have refreshed after 1 second
-        return refreshData()
-      }, 1500)
-      return
-    }
-    if (progression <= currentDuration) {
-      // It can take a bit to refresh so don't increment once at the end
-      progression += 1000
-    }
-    elapsed.innerText = formatMsToHumanTimestamp(progression)
-  }, 1000)
-}
-
-function renderTraktData(data) {
-  action.innerText = traktVerb
-
-  if (data.type === "movie") {
-    title.innerText = `${data.movie.title} (${data.movie.year})`
-    category.className = "hidden"
-    source.className = "hidden"
-
-    cover.src = data.movie.movie_posters[0].file_path
-    cover.width = data.movie.movie_posters[0].width
-
-    // synopsis.innerText = data.movie.overview
-  }
-
-  if (data.type === "episode") {
-    title.innerText = `${zeroPadNumber(data.episode.season)}x${zeroPadNumber(data.episode.number)} ${data.episode.title}`
-    source.innerText = data.show.title
-
-    cover.src = data.episode.season_posters[0].file_path
-    cover.width = 250
-    cover.height = 375
-
-    // synopsis.innerText = data.show.overview
-  }
+  cover.src = data.images[0].url
+  cover.width = data.images[0].width
+  cover.height = data.images[0].height
 
   livePlayer.style.opacity = 1
-}
 
-function zeroPadNumber(number) {
-  if (number.toString().length == 1) {
-    return `0${number}`
+  if (showProgression) {
+    // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
+    const interval = setInterval(function() {
+      if (progression <= currentDuration) {
+        // It can take a bit to refresh so don't increment once at the end
+        progression += 1000
+      }
+      elapsed.innerText = formatMsToHumanTimestamp(progression)
+      if (progression >= currentDuration) {
+        clearInterval(interval)
+        progression = currentDuration
+        console.log("The track should have finished. Refreshing shortly!")
+        setTimeout(function() {
+          // API should have refreshed after 1 second
+          return refreshData()
+        }, 1500)
+      }
+    }, 1000)
   }
-  return number
 }

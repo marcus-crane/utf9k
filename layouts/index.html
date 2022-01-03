@@ -38,11 +38,11 @@
     </div>
     <div id="recent-updates">
       <div id="liveplayer">
-        <h3 id="action">This is fine 🔥</h3>
+        <h3 id="action">😵‍💫 This widget should load shortly!</h3>
         <img src="/cover.png" id="cover">
-        <strong id="source">Hmm</strong>
+        <strong id="title">Fingers Crossed</strong>
         <br />
-        <i id="title">You shouldn't be able to see this!</i>
+        <i id="subtitle">It should update if things aren't broken</i>
         <br />
           <div id="progress">
             <i id="elapsed">00:00</i> / <i id="duration">59:59</i>
@@ -89,5 +89,5 @@
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
   {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}" defer></script>
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
 {{ end }}
