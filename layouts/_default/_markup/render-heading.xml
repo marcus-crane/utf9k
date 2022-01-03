@@ -1,0 +1,4 @@
+<!-- We create a normal heading for RSS readers -->
+<div class="heading heading-{{ .Level }}">
+  <h{{ .Level }}>{{ .Text | safeHTML }}</h{{ .Level }}>
+</div>
