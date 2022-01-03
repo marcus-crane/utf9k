@@ -85,6 +85,13 @@ mediaTypes:
     - txt
 
 outputFormats:
+  RSS:
+    baseName: "rss"
+    mediaType: "application/rss+xml"
+  # Support readers who subscribed to the "old" feed at /index.xml
+  RSSBackwardsCompat:
+    baseName: "index"
+    mediaType: "application/rss+xml"
   SearchIndex:
     baseName: "search"
     mediaType: "application/json"
@@ -101,6 +108,7 @@ outputs:
   home:
     - "HTML"
     - "RSS"
+    - "RSSBackwardsCompat"
     - "SearchIndex"
   page:
     - "HTML"
@@ -121,3 +129,29 @@ privacy:
 services:
   twitter:
     disableInlineCSS: true
+
+security:
+  enableInlineShortcodes: true
+  exec:
+    allow:
+    - ^dart-sass-embedded$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+    osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+  funcs:
+    getenv:
+      - ^COMMIT_SHA$
+      - ^HUGO_
+      - ^LANG$
+      - ^LANGUAGE$
+      - ^LC_ALL$
+      - ^NODE_ENV$
+      - ^NODE_VERSION$
+      - ^PYTHON_VERSION$
+  http:
+    methods:
+    - (?i)GET|POST
+    urls:
+    - .*

@@ -57,13 +57,10 @@ Sometimes it's handy to check when my site was last built, and with what variabl
     </td>
   </tr>
   <tr>
-    <td>Deployment info (<a href="https://render.com">render</a>)</td>
+    <td>Deployment info (<a href="https://netlify.com">netlify</a>)</td>
     <td>
       <ul>
         <li>NODE_ENV: {{ getenv "NODE_ENV" }}</li>
-        <li>RENDER: {{ getenv "RENDER" }}</li>
-        <li>RENDER_SERVICE_TYPE: {{ getenv "RENDER_SERVICE_TYPE" }}</li>
-        <li>IS_PULL_REQUEST: {{ getenv "IS_PULL_REQUEST" }}</li>
       </ul>
     </td>
   </tr>
