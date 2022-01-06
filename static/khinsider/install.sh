@@ -11,7 +11,7 @@ if [[ $arch == "x86_64" ]]; then
 fi
 version=${1:-latest}
 
-khinsider_uri=$(curl -s https://github.com/marcus-crane/khinsider/releases/download/$version/khinsider_$version_$os_$arch.tar.gz)
+khinsider_uri=$(curl -s https://github.com/marcus-crane/khinsider/releases/download/${version}/khinsider_${version:1}_${os}_${arch}.tar.gz)
 if [ ! "$khinsider_uri" ]; then
 	echo "Error: Unable to find a khinsider release for $os/$arch/$version - see github.com/marcus-crane/khinsider/releases for all versions" 1>&2
 	exit 1
