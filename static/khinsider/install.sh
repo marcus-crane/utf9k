@@ -8,7 +8,6 @@ os=$(uname -s)
 arch=$(uname -m)
 version=${1:-latest}
 
-https://github.com/marcus-crane/khinsider/releases/download/v2.0.0-beta1/khinsider_2.0.0-beta1_darwin_amd64.tar.gz
 khinsider_uri=$(curl -s https://github.com/marcus-crane/khinsider/releases/download/$version/khinsider_$version_$os_$arch.tar.gz)
 if [ ! "$khinsider_uri" ]; then
 	echo "Error: Unable to find a khinsider release for $os/$arch/$version - see github.com/marcus-crane/khinsider/releases for all versions" 1>&2
