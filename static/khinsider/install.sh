@@ -4,8 +4,11 @@
 
 set -e
 
-os=$(uname -s)
+os=$(uname -s | tr '[:upper:]' '[:lower:]')
 arch=$(uname -m)
+if [[ $arch == "x86_64" ]]; then
+	arch="amd64"
+fi
 version=${1:-latest}
 
 khinsider_uri=$(curl -s https://github.com/marcus-crane/khinsider/releases/download/$version/khinsider_$version_$os_$arch.tar.gz)
