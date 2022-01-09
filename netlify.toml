@@ -27,6 +27,12 @@ HUGO_ENV = "production"
 	status = 301
 	force = false
 
+[[redirects]]
+  from = "/index.xml"
+  to = "/rss.xml"
+  status = 301
+  force = false
+
 [[headers]]
 for = "/*.jpg"
 
