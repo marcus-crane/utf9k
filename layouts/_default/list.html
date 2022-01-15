@@ -1,6 +1,8 @@
 {{ define "main" }}
-<main class="mx-auto prose dark:prose-dark">
-  <h1>{{ .Title }}</h1>
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
   <ul>
     {{ $years := .Scratch }}
     {{ range (where .Pages "Draft" false) }}
@@ -11,23 +13,23 @@
     {{ end }}
     <li>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <time class="pl-1 text-gray-500 text-xs font-medium uppercase tracking-wide">{{ .Date.Format "Jan 02" }}</time>
+      <time>{{ .Date.Format "Jan 02" }}</time>
     </li>
     {{ end }}
-  </ul>
-  {{ $draftsExist := (where .Pages "Draft" true) }}
-  {{ if $draftsExist }}
-  <h2>Drafts</h2>
-  <details>
-    <summary>You should prod me to finish these!</summary>
-    <ul>
-    {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
+    {{ $draftsExist := (where .Pages "Draft" true) }}
+    {{ if $draftsExist }}
+    <h2>Drafts</h2>
+    <details>
+      <summary>You should prod me to finish these!</summary>
+      <ul>
+      {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </details>
     {{ end }}
-    </ul>
-  </details>
-  {{ end }}
+  </ul>
 </main>
 {{ end }}

@@ -6,22 +6,12 @@
   {{ block "json+ld" . }}{{ end }}
 </head>
 <body>
-  <div class="relative h-full bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-    <div class="flex flex-col min-h-screen">
-      {{ partial "mobilemenu.html" . }}
-      {{ block "body" . }}
-      <div class="flex flex-row flex-grow">
-        {{ partial "sidebar.html" . }}
-        <div class="p-9 container">
-        {{ block "main" . }}{{ end }}
-        </div>
-      </div>
-      <div class="flex flex-col">
-      {{ partial "footer.html" . }}
-      </div>
-      {{ end }}
-      {{ block "script" . }}{{ end }}
+  {{ block "body" . }}
+    {{ partial "header.html" . }}
+    <div id="content">
+    {{ block "main" . }}{{ end }}
     </div>
-  </div>
+  {{ end }}
+  {{ block "script" . }}{{ end }}
 </body>
 </html>

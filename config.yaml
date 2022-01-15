@@ -1,11 +1,15 @@
 baseURL: "https://utf9k.net/"
-languageCode: "en-us"
+languageCode: "en"
 title: "utf9k"
 enableRobotsTxt: true
 enableGitInfo: false
 enableInlineShortcodes: true
 buildDrafts: true
 buildFuture: true
+
+author:
+  name: Marcus Crane
+  email: marcus@utf9k.net
 
 taxonomies:
   category: categories
@@ -15,58 +19,22 @@ params:
   title: "utf9k"
 
 menu:
-  a:
-    - identifier: "blog"
-      name: "Blog"
-      url: "/blog"
-      weight: 1
-    - identifier: "projects"
-      name: "Projects"
-      url: "/projects"
-      weight: 2
-    - identifier: "questions"
-      name: "Questions"
-      url: "/questions"
-      weight: 3
-  b:
-    - identifier: "about"
-      name: "About"
-      url: "/about"
-      weight: 1
-    - identifier: "now"
-      name: "Now"
-      url: "/now"
-      weight: 2
-    - identifier: "uses"
-      name: "Uses"
-      url: "/uses"
-      weight: 3
-  c:
-    - identifier: "books"
-      name: "Books"
-      url: "/books"
-      weight: 1
-    - identifier: "games"
-      name: "Games"
-      url: "/games"
-      weight: 2
-  d:
-    - identifier: "thanks"
-      name: "Thanks"
-      url: "/thanks"
-      weight: 1
-    - identifier: "experiments"
-      name: "Experiments"
-      url: "/experiments"
-      weight: 2
-    - identifier: "reviews"
-      name: "Reviews"
-      url: "/reviews"
-      weight: 3
-    - identifier: "debug"
-      name: "Debug"
-      url: "/debug"
-      weight: 4
+  main:
+  - name: "Blog"
+    url: "/blog"
+    weight: 1
+  - name: "Projects"
+    url: "/projects"
+    weight: 2
+  - name: "About"
+    url: "/about"
+    weight: 3
+  - name: "Questions"
+    url: "/questions"
+    weight: 4
+  - name: "RSS"
+    url: "/rss.xml"
+    weight: 5
 
 headers:
   - for: /**.html

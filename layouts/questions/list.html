@@ -1,25 +1,19 @@
 {{ define "main" }}
-<main class="mx-auto prose dark:prose-dark">
-  <h1>Answers to questions I'll soon forget</h1>
-  <form id="search" class="search pt-4" role="search">
-    <label for="search-input">I'm curious about </label>
-    <input disabled type="search" id="search-input" class="search-input bg-gray-100">
-    <label class="text-red-500" id="error-output"></label>
-  </form>
+<main>
+  <header>
+    <h1>Answers to questions I'll soon forget</h1>
+    <form id="search" role="search">
+      <label for="search-input">I'm curious about </label>
+      <input disabled type="search" id="search-input" class="search-input bg-gray-100">
+      <label class="text-red-500" id="error-output"></label>
+    </form>
+  </header>
   <ul>
     {{ range sort .Pages "Lastmod" "desc" }}
     <li id="{{ .Slug }}" class="question">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ range .Params.tags }}
-        {{ $colours := slice "red" "yellow" "green" "blue" "indigo" "purple" "pink" }}
-        {{ $lightFriendlyNumbers := slice "200" "300" "400" }}
-        {{ $darkFriendlyNumbers := slice "700" "800" "900" }}
-        {{ $tagMd5Numbers := md5 . | replaceRE "[A-Za-z|7|8|9]" "$1" }}
-        {{ $numberMd5Range := $tagMd5Numbers | replaceRE "[3|4|5|6|7]" "$1" }}
-        {{ $randomColour := index $colours (int (substr $tagMd5Numbers -1)) }}
-        {{ $lightNumber := index $lightFriendlyNumbers (int (substr $numberMd5Range -1)) }}
-        {{ $darkNumber := index $darkFriendlyNumbers (int (substr $numberMd5Range -1)) }}
-        <span class="rounded-full py-1 px-2 bg-{{ $randomColour }}-{{ $lightNumber }} dark:bg-{{ $randomColour }}-{{ $darkNumber }} text-gray-800 dark:text-gray-100 font-bold text-xs text-white">{{ . }}</span>
+        <span>#{{ . }}</span>
       {{ end }}
     </li>
     {{ end }}

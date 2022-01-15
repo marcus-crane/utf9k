@@ -1,26 +1,24 @@
-const liveStatusBar = document.querySelector(".prose header h1 #statusbar")
-const livePlayer = document.querySelector(".prose #liveplayer")
+const livePlayer = document.querySelector("#liveplayer")
 
-const action = document.querySelector(".prose #action")
-const cover = document.querySelector(".prose #cover")
-const title = document.querySelector(".prose #title")
-const subtitle = document.querySelector(".prose #subtitle")
-const elapsed = document.querySelector(".prose #elapsed")
-const duration = document.querySelector(".prose #duration")
-const progressBar = document.querySelector(".prose #progress")
-const playback = document.querySelector(".prose #playback")
+const action = document.querySelector("#action")
+const cover = document.querySelector("#cover")
+const title = document.querySelector("#title")
+const subtitle = document.querySelector("#subtitle")
+const elapsed = document.querySelector("#elapsed")
+const duration = document.querySelector("#duration")
+const progressArea = document.querySelector("#progress")
 
 const gamingColor = "#003087"
-const gamingVerb = "I'm currently playing"
-const gamingVerbPastTense = "I was recently playing"
+const gamingVerb = "🕹 I'm currently playing"
+const gamingVerbPastTense = "🕹 I was recently playing"
 
 const spotifyColor = "#1DB954"
-const spotifyVerb = "I'm currently listening to"
-const spotifyVerbPastTense = "I was recently listening to"
+const spotifyVerb = "🎧 I'm currently listening to"
+const spotifyVerbPastTense = "🎧 I was recently listening to"
 
 const traktColor = "#C47828"
-const traktVerb = "I'm currently watching"
-const traktVerbPastTense = "I was recently watching"
+const traktVerb = "📺 I'm currently watching"
+const traktVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
   return fetch("https://gunslinger.utf9k.net/api/v2/playing")
@@ -53,11 +51,11 @@ function formatMsToHumanTimestamp(ms) {
 function renderLivePlayer(data) {
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
-  let enableProgressBar = false
+  let showProgression = false
   switch(data.category) {
     case "tv":
     case "movie":
-      liveStatusBar.style.background = traktColor
+      // liveStatusBar.style.background = traktColor
       if (data.is_active) {
         action.innerText = traktVerb
       } else {
@@ -66,10 +64,10 @@ function renderLivePlayer(data) {
       break
     case "music":
     case "podcast":
-      liveStatusBar.style.background = spotifyColor
+      // liveStatusBar.style.background = spotifyColor
       if (data.is_active) {
         action.innerText = spotifyVerb
-        enableProgressBar = true
+        showProgression = true
       } else {
         action.innerText = spotifyVerbPastTense
       }
@@ -78,19 +76,12 @@ function renderLivePlayer(data) {
       break
   }
   livePlayer.className = "transition-opacity duration-1000"
-  if (!enableProgressBar) {
-    progressBar.className += " hidden"
-    playback.className += " hidden"
-  }
 
-  let firstPaintComplete = false
-
-  if (enableProgressBar) {
-    progressBar.style.transition = "width 1s"
+  if (showProgression) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
-
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
-    progressBar.ariaValueMax = currentDuration
+  } else {
+    progressArea.style.display = 'none'
   }
 
   title.innerText = data.title
@@ -101,20 +92,13 @@ function renderLivePlayer(data) {
   cover.height = data.images[0].height
 
   livePlayer.style.opacity = 1
-  
-  if (enableProgressBar) {
+
+  if (showProgression) {
     // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
     const interval = setInterval(function() {
       if (progression <= currentDuration) {
         // It can take a bit to refresh so don't increment once at the end
         progression += 1000
-      }
-      progressBar.style.width = `${(progression / currentDuration * 100).toFixed(2)}%`
-      progressBar.ariaValueNow = progression
-      if (firstPaintComplete) {
-        progressBar.style.transition = "none"
-      } else {
-        firstPaintComplete = true
       }
       elapsed.innerText = formatMsToHumanTimestamp(progression)
       if (progression >= currentDuration) {
