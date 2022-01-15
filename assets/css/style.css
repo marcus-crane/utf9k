@@ -202,7 +202,8 @@ article .hidden { /* TODO: Change this to rss-only */
 
 article #post-body p,
 article #post-body img,
-article #post-body #heading {
+article #post-body #heading,
+article blockquote {
   margin-bottom: 1.5rem;
 }
 
@@ -265,6 +266,17 @@ article p code {
     background-color: var(--bg-light);
     color: var(--text-dark);
   }
+}
+
+/* Blockquotes */
+#post-body blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--text-light);
+  padding-left: 1em;
+  border-radius: 5px;
 }
 
 /* Notices */
