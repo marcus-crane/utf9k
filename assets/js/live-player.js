@@ -55,7 +55,6 @@ function renderLivePlayer(data) {
   switch(data.category) {
     case "tv":
     case "movie":
-      // liveStatusBar.style.background = traktColor
       if (data.is_active) {
         action.innerText = traktVerb
       } else {
@@ -64,7 +63,6 @@ function renderLivePlayer(data) {
       break
     case "music":
     case "podcast":
-      // liveStatusBar.style.background = spotifyColor
       if (data.is_active) {
         action.innerText = spotifyVerb
         showProgression = true
