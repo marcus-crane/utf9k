@@ -1,11 +1,15 @@
 baseURL: "https://utf9k.net/"
-languageCode: "en-us"
+languageCode: "en"
 title: "utf9k"
 enableRobotsTxt: true
 enableGitInfo: false
 enableInlineShortcodes: true
 buildDrafts: true
 buildFuture: true
+
+author:
+  name: Marcus Crane
+  email: marcus@utf9k.net
 
 taxonomies:
   category: categories
@@ -29,7 +33,7 @@ menu:
     url: "/questions"
     weight: 4
   - name: "RSS"
-    url: "/rss"
+    url: "/rss.xml"
     weight: 5
 
 headers:
