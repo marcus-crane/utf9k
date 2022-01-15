@@ -1,0 +1,83 @@
+---
+title: "Requester window"
+slug: "requester-window"
+category: "experiments"
+---
+
+<p>This experiment prints out the contents of the <code>window</code> variable for anyone requesting this page</p>
+
+<div id="environment"></div>
+
+<script type="application/javascript">
+  let environmentBlock = document.getElementById("environment")
+
+  let navigatorBlock = document.createElement("div")
+  let navigatorHeading = document.createElement("h2")
+  navigatorHeading.innerText = "Navigator"
+  navigatorBlock.insertAdjacentElement('beforeend', navigatorHeading)
+  let navi = document.createElement("ul")
+  for (let item of Object.keys(window.navigator.__proto__)) {
+    if (typeof(window.navigator[item]) !== "function" && typeof(window.navigator[item]) !== "object") {
+      let naviEntry = document.createElement("li")
+      naviEntry.innerText = `${item}=${window.navigator[item]}`
+      navi.insertAdjacentElement('beforeend', naviEntry)
+    }
+  }
+  navigatorBlock.append(navi)
+  environmentBlock.insertAdjacentElement('beforeend', navigatorBlock)
+
+  const localStorage = JSON.stringify(window.localStorage)
+  const lsBlock = document.createElement("div")
+  let lsHeading = document.createElement("h2")
+  lsHeading.innerText = "Local Storage (JSON serialised)"
+  lsBlock.insertAdjacentElement('beforeend', lsHeading)
+  const lsCode = document.createElement("code")
+  lsCode.innerText = localStorage
+  lsBlock.insertAdjacentElement('beforeend', lsCode)
+  environmentBlock.insertAdjacentElement('beforeend', lsBlock)
+
+  let locationBlock = document.createElement("div")
+  let locationHeading = document.createElement("h2")
+  locationHeading.innerText = "Location"
+  locationBlock.insertAdjacentElement('beforeend', locationHeading)
+  let loc = document.createElement("ul")
+  for (let item of Object.keys(window.location)) {
+    if (typeof(window.location[item]) !== "function" && typeof(window.location[item]) !== "object") {
+      let locEntry = document.createElement("li")
+      locEntry.innerText = `${item}=${window.location[item]}`
+      loc.insertAdjacentElement('beforeend', locEntry)
+    }
+  }
+  locationBlock.append(loc)
+  environmentBlock.insertAdjacentElement('beforeend', locationBlock)
+
+  let screenBlock = document.createElement("div")
+  let screenHeading = document.createElement("h2")
+  screenHeading.innerText = "Screen"
+  screenBlock.insertAdjacentElement('beforeend', screenHeading)
+  let s = document.createElement("ul")
+  for (let item of Object.keys(window.screen.__proto__)) {
+    if (typeof(window.screen[item]) !== "function" && typeof(window.screen[item]) !== "object") {
+      let screenEntry = document.createElement("li")
+      screenEntry.innerText = `${item}=${window.screen[item]}`
+      s.insertAdjacentElement('beforeend', screenEntry)
+    }
+  }
+  screenBlock.append(s)
+  environmentBlock.insertAdjacentElement('beforeend', screenBlock)
+
+  let ipBlock = document.createElement("div")
+  let ipHeading = document.createElement("h2")
+  ipHeading.innerText = "IP Info"
+  ipBlock.insertAdjacentElement('beforeend', ipHeading)
+  let i = document.createElement("code")
+  fetch("https://api.ipinfodb.com/v3/ip-city/?key=402383f5158c20d3af9b1694f85d0aa2e6067727537dc9f9d741e0b1f3c9f1d5&format=json")
+    .then(res => res.json())
+    .then(data => {
+      i.innerText = JSON.stringify(data)
+    })
+    .catch(err => console.log(err))
+  ipBlock.append(i)
+  environmentBlock.insertAdjacentElement('beforeend', ipBlock)
+
+</script>

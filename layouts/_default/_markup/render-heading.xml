@@ -1,4 +1,2 @@
-<!-- We create a normal heading for RSS readers -->
-<div class="heading heading-{{ .Level }}">
-  <h{{ .Level }}>{{ .Text | safeHTML }}</h{{ .Level }}>
-</div>
+<!-- We want to generate a normal heading for RSS readers -->
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ .Level }}>
