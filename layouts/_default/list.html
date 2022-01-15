@@ -16,20 +16,20 @@
       <time>{{ .Date.Format "Jan 02" }}</time>
     </li>
     {{ end }}
-  </ul>
-  {{ $draftsExist := (where .Pages "Draft" true) }}
-  {{ if $draftsExist }}
-  <h2>Drafts</h2>
-  <details>
-    <summary>You should prod me to finish these!</summary>
-    <ul>
-    {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
+    {{ $draftsExist := (where .Pages "Draft" true) }}
+    {{ if $draftsExist }}
+    <h2>Drafts</h2>
+    <details>
+      <summary>You should prod me to finish these!</summary>
+      <ul>
+      {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </details>
     {{ end }}
-    </ul>
-  </details>
-  {{ end }}
+  </ul>
 </main>
 {{ end }}

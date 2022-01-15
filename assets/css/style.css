@@ -321,10 +321,10 @@ ul > li:before {
   }
 }
 
-
 ul > h2 {
   font-weight: 700;
   font-size: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -332,6 +332,10 @@ li > time {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 700;
+}
+
+details > ul {
+  margin-top: .75em;
 }
 
 /* Questions */
