@@ -295,16 +295,22 @@ article #post-body .notice p {
 
 /* Lists */
 ol, ul {
-  list-style: none;
+  padding-inline-start: 0;
 }
 
-ul > li {
+main ol, main ul {
+  list-style: none;
+  margin-top: .75em;
+  padding-inline-start: 0;
+}
+
+main ul > li, main ol > li {
   position: relative;
   padding-left: 1.75em;
   margin-bottom: 0.5em;
 }
 
-ul > li:before {
+main ul > li:before, main ol > li:before {
   content: "";
   position: absolute;
   background-color: #d1d5db;
@@ -316,12 +322,12 @@ ul > li:before {
 }
 
 @media (prefers-color-scheme: dark) {
-  ul > li:before {
+  main ul > li:before, main ol > li:before {
     background-color: #374151;
   }
 }
 
-ul > h2 {
+main ul > h2, main ol > h2 {
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 1em;
@@ -334,8 +340,8 @@ li > time {
   font-weight: 700;
 }
 
-details > ul {
-  margin-top: .75em;
+details {
+  margin-bottom: 1em;
 }
 
 /* Questions */
@@ -343,6 +349,16 @@ form#search {
   margin-top: 1rem;
 }
 
+/* Footnotes */
+section.footnotes hr {
+  width: 60%;
+  margin: 0 auto;
+  border-color: #cd7ea6;
+  border-width: 1.4rem;
+  background: transparent;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
 
 /* Footer */
 
