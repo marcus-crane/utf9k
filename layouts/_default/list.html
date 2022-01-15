@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="mx-auto prose dark:prose-dark">
+<main>
   <header>
     <h1>{{ .Title }}</h1>
   </header>
@@ -13,7 +13,7 @@
     {{ end }}
     <li>
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <time class="pl-1 text-gray-500 text-xs font-medium uppercase tracking-wide">{{ .Date.Format "Jan 02" }}</time>
+      <time>{{ .Date.Format "Jan 02" }}</time>
     </li>
     {{ end }}
   </ul>

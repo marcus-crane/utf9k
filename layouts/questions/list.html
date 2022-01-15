@@ -1,11 +1,13 @@
 {{ define "main" }}
-<main class="mx-auto prose dark:prose-dark">
-  <h1>Answers to questions I'll soon forget</h1>
-  <form id="search" class="search pt-4" role="search">
-    <label for="search-input">I'm curious about </label>
-    <input disabled type="search" id="search-input" class="search-input bg-gray-100">
-    <label class="text-red-500" id="error-output"></label>
-  </form>
+<main>
+  <header>
+    <h1>Answers to questions I'll soon forget</h1>
+    <form id="search" role="search">
+      <label for="search-input">I'm curious about </label>
+      <input disabled type="search" id="search-input" class="search-input bg-gray-100">
+      <label class="text-red-500" id="error-output"></label>
+    </form>
+  </header>
   <ul>
     {{ range sort .Pages "Lastmod" "desc" }}
     <li id="{{ .Slug }}" class="question">

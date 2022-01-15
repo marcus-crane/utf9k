@@ -1,13 +1,11 @@
 {{ define "main" }}
-<article class='{{ if isset .Params "maxwidth" }}max-w-full{{ end }} {{ if not (isset .Params "noproseclass") }}mx-auto prose dark:prose-dark{{ end }}'>
-  <div class='{{ if isset .Params "maxwidth" }}fake-regular-width{{ end }}'>
-    <div id="post-body" class='{{ if isset .Params "noproseclass" }}prose dark:prose-dark mb-12{{ end }}'>
-      <h1>{{ .Title }}</h1>
-      <div id="post-meta">
-        {{ if (eq .Slug "now") }}<time>Last updated on {{ .Lastmod.Format "02 January 2006" }}</time>{{ end }}
-      </div>
-      {{ .Content }}
-    </div>
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div id="post-body">
+    {{ partial "toc.html" . }}
+    {{ .Content }}
   </div>
 </article>
 {{ end }}

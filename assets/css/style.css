@@ -287,7 +287,58 @@ article #post-body .notice p {
   .notice {
     background-color: var(--text-dark);
   }
+
+  ul > li:before {
+    background-color: #374151;
+  }
 }
+
+/* Lists */
+ol, ul {
+  list-style: none;
+}
+
+ul > li {
+  position: relative;
+  padding-left: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+ul > li:before {
+  content: "";
+  position: absolute;
+  background-color: #d1d5db;
+  width: .375em;
+  height: .375em;
+  border-radius: 50%;
+  top: .6875em;
+  left: .25em;
+}
+
+@media (prefers-color-scheme: dark) {
+  ul > li:before {
+    background-color: #374151;
+  }
+}
+
+
+ul > h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+li > time {
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 700;
+}
+
+/* Questions */
+form#search {
+  margin-top: 1rem;
+}
+
 
 /* Footer */
 
