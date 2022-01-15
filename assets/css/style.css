@@ -75,7 +75,6 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: clamp(1.5rem, 1rem + 1.25vw, 2rem);
 }
 
 header.navigation {
@@ -124,6 +123,7 @@ header.navigation nav span {
   letter-spacing: .025em;
   line-height: 1rem;
   text-transform: uppercase;
+  padding-top: .6em;
 }
 
 #content header {
@@ -242,6 +242,7 @@ article .heading h5,
 article .heading h6 {
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: .25em;
 }
 
 article .highlight {
@@ -287,10 +288,11 @@ article #post-body .notice p {
   .notice {
     background-color: var(--text-dark);
   }
+}
 
-  ul > li:before {
-    background-color: #374151;
-  }
+video {
+  border-radius: 5px;
+  margin: 0 auto 1em !important;
 }
 
 /* Lists */
@@ -298,19 +300,20 @@ ol, ul {
   padding-inline-start: 0;
 }
 
-main ol, main ul {
+main ol, main ul, #post-body ul, #post-body > ol {
   list-style: none;
   margin-top: .75em;
   padding-inline-start: 0;
 }
 
-main ul > li, main ol > li {
+main ul > li, main ol > li, #post-body ul > li, #post-body > ol > li {
   position: relative;
   padding-left: 1.75em;
   margin-bottom: 0.5em;
 }
 
-main ul > li:before, main ol > li:before {
+main ul > li:before, main ol > li:before,
+#post-body ul > li:before, #post-body > ol > li:before {
   content: "";
   position: absolute;
   background-color: #d1d5db;
@@ -322,12 +325,14 @@ main ul > li:before, main ol > li:before {
 }
 
 @media (prefers-color-scheme: dark) {
-  main ul > li:before, main ol > li:before {
+  main ul > li:before, main ol > li:before,
+  #post-body ul > li:before, #post-body > ol > li:before {
     background-color: #374151;
   }
 }
 
-main ul > h2, main ol > h2 {
+main ul > h2, main ol > h2,
+#post-body ul > h2, #post-body > ol > h2 {
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 1em;
@@ -342,6 +347,24 @@ li > time {
 
 details {
   margin-bottom: 1em;
+  padding-bottom: .5em;
+}
+
+/* Code + Tables get extra width */
+table, .highlight {
+  width: 110%;
+  margin-left: -5%;
+}
+
+
+/* Tables */
+table, thead, th, tr, td {
+  border: 1px solid black;
+  padding: .1em;
+}
+
+table {
+  margin-bottom: 1em;
 }
 
 /* Questions */
@@ -350,12 +373,12 @@ form#search {
 }
 
 /* Footnotes */
-section.footnotes hr {
-  width: 60%;
+#post-body hr {
+  height: 16px;
+  width: 48px;
+  background-image: url("/favicon.png");
   margin: 0 auto;
-  border-color: #cd7ea6;
-  border-width: 1.4rem;
-  background: transparent;
+  border: 0px;
   margin-bottom: 4em;
   margin-top: 4em;
 }
