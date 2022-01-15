@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", function() {
   function resetQuestionVisibility() {
     const questions = document.querySelectorAll(".question")
     for (let question of questions) {
-      question.className = "question"
+      question.style.display = "list-item"
     }
   }
 
@@ -90,7 +90,9 @@ window.addEventListener("DOMContentLoaded", function() {
   function handleInput() {
     if (lookup === null) return
     const searchTerm = input.value.trim().toLowerCase()
+    console.log(!searchTerm)
     if (!searchTerm) {
+      console.log('reset')
       resetQuestionVisibility()
       return
     }
@@ -102,9 +104,9 @@ window.addEventListener("DOMContentLoaded", function() {
         page.title.toLowerCase().includes(searchTerm) ||
         page.slug.toLowerCase().includes(searchTerm)
       ) {
-        question.className = "question"
+        question.style.display = "list-item"
       } else {
-        question.className = "question hidden"
+        question.style.display = "none"
       }
     }
   }

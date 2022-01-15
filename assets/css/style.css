@@ -77,12 +77,12 @@ h2 {
   font-weight: 500;
 }
 
-header.navigation {
+.navigation {
   display: flex;
   padding: .8rem;
 }
 
-header.navigation a {
+.navigation a {
   display: flex;
   height: fit-content;
   flex-direction: row;
@@ -90,29 +90,29 @@ header.navigation a {
   width: 100%;
 }
 
-header.navigation a span {
+.navigation a span {
   font-size: 1em;
   font-weight: 500;
   margin-left: .5rem;
 }
 
-header.navigation a img {
+.navigation a img {
   height: 1.4rem;
   width: 1.4rem;
 }
 
-header.navigation nav {
+.navigation nav {
   display: flex;
   list-style: none;
 }
 
-header.navigation nav span {
+.navigation nav span {
   color: var(--text-light);
   padding: 0 0.3rem;
 }
 
 @media (prefers-color-scheme: dark) {
-  header.navigation nav span {
+  .navigation nav span {
     color: var(--text-dark);
   }
 }
@@ -345,6 +345,11 @@ li > time {
   font-weight: 700;
 }
 
+li > span {
+  font-size: .7em;
+  font-weight: 600;
+}
+
 details {
   margin-bottom: 1em;
   padding-bottom: .5em;
@@ -384,7 +389,7 @@ form#search {
 }
 
 /* Footer */
-
-footer, footer img, footer p, footer svg {
-  opacity: 0;
+footer {
+  width: 75%;
+  margin: 0 auto;
 }

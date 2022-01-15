@@ -4,20 +4,10 @@
     <span>utf9k</span>
   </a>
   <nav>
-    <li>
-      <a href="/blog">Blog</a>
-    </li>
-    <span>//</span>
-    <li>
-      <a href="/projects">Projects</a>
-    </li>
-    <span>//</span>
-    <li>
-      <a href="/about">About</a>
-    </li>
-    <span>//</span>
-    <li>
-      <a href="/rss">RSS</a>
-    </li>
+    {{ $lastIndex := sub (len .Site.Menus.main) 1 }}
+    {{ range $i, $item := .Site.Menus.main }}
+    <li><a href="{{ $item.URL }}">{{ $item.Name }}</a></li>
+    {{ if ne $i $lastIndex }}<span>//</span>{{ end }}
+    {{ end }}
   </nav>
 </header>
