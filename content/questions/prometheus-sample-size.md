@@ -12,13 +12,13 @@ According to the [Storage](https://prometheus.io/docs/prometheus/latest/storage/
 
 You can roughly calculate how much storage you'll need with the following formulae:
 
-```math
+```text
 disk_space = retention_time_in_seconds * samples_ingested_per_second * 2 bytes (take the upper to be safe)
 ```
 
 By that logic, if we were ingesting 4000 samples per second and we were retaining them for 15 days (the default), it would look something like this:
 
-```math
+```text
 disk_space = 1296000 * 4000 * 2
 disk_space // 10368000000 bytes
 disk_space in gigabytes // 10.37 gigabytes

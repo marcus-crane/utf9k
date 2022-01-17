@@ -97,7 +97,7 @@ We don't want to allow just anyone to connect to our display server so under the
 
 Under `Local IP Address` , select `These IP addresses` , click `Add` -> `This IP address range` and then enter the following:
 
-```
+```text
 From: 172.16.0.0
 To  : 172.31.255.255
 ```
