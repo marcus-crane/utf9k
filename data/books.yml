@@ -1,5 +1,5 @@
-- list: 2021
-  goal: 20
+- list: 2022
+  goal: 12
   books:
   
   - title: How to Do Nothing
@@ -28,6 +28,18 @@
     date_finished: N/A
     rating: N/A
     progress: 27
+
+  - title: Ruined by Design
+    subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
+    cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
+    link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
+    date_finished: N/A
+    rating: N/A
+    progress: 23
+
+- list: 2021
+  goal: 20
+  books:
     
   - title: Four Thousand Weeks
     subtitle: Time Management for Mortals
