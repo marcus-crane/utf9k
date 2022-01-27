@@ -8,22 +8,23 @@ noproseclass: true
 {{< gaming.inline >}}
 {{ range $.Site.Data.games }}
   {{ $listName := .list }}
-  <div id="game-list">
+  <div class="grid-list">
     {{ if eq $listName "Stalled but occasionally progress is made" }}<details><summary>{{ end }}
     <span>{{ $listName }}</span>
     {{ if eq $listName "Stalled but occasionally progress is made" }}</summary>{{ end }}
-    <ul role="list">
+    <ul {{ if eq $listName "Actively playing" }}class="partial-list"{{ end }} role="list">
       {{ range .games }}
       <li>
         <div>
           <img src="{{ if .cover }}{{ .cover }}{{ else }}https://via.placeholder.com/264x352{{ end }}">
           <a href="{{ .link }}" target="_blank" rel="noopener noreferer">
-            <span>View details for {{ .title }}</span>
+            <span>{{ .title }}</span>
           </a>
         </div>
-        <p>{{ .title }}</p>
-        <p>{{ .platform }} {{ if .replay }}· Replay{{ end }}</p>
-        {{ if .date_finished }}<p>Completed on {{ .date_finished }}</p>{{ end }}
+        <div>
+          <dd>{{ .platform }} {{ if .replay }}· Replay{{ end }}</dd>
+          {{ if .date_finished }}<dd>Finished: {{ .date_finished }}</dd>{{ end }}
+        </div>
       </li>
       {{ end }}
     </ul>
