@@ -16,7 +16,7 @@ It's handy to know what files are large, in order to see what might be good to c
     <th>Extension</th>
   </tr>
   {{ range $.Site.Data.filesizes }}
-  <tr class='{{ if in .path ".DS_Store" }}bg-yellow-500{{ end }}'>
+  <tr {{ if in .path ".DS_Store" }}style="background-color: yellow"{{ end }}>
     <td>{{ .path }}</td>
     <td>{{ .size }}</td>
     <td>{{ .type }}</td>

@@ -27,8 +27,8 @@ It isn't the end of the world since they'll inherit a category from their parent
       {{ else }}
         {{ $incorrect = (add $incorrect 1) }}
       {{ end }}
-      <tr class='{{ if (isset .Params "category") }}bg-green-200{{ else }}bg-red-200{{ end }}'>
-        <td class="my-6 py-6">{{ .Title }}</td>
+      <tr style="background-color: {{ if (isset .Params "category") }}lightgreen{{ else }}lightgreen{{ end }}">
+        <td>{{ .Title }}</td>
         <td>{{ $file.Path }}</td>
         <td><a href="/{{ .Params.category }}">/{{ .Params.category }}</td>
       </tr>

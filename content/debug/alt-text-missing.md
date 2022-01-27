@@ -23,12 +23,12 @@ This table contains all of the images on this website and reflects whether or no
     {{ else }}
       {{ $incorrect = (add $incorrect 1) }}
     {{ end }}
-  <tr class='{{ if .alt_text_present }}bg-green-200{{ else }}bg-red-200{{ end }}'>
-    <td>{{ .title }}</td>
-    <td><a href="{{ .post_path }}">{{ .slug }}</a></td>
-    <td><a href="{{ .image_path }}">{{ .image_name }}</a></td>
-    <td>{{ .alt_text }}</td>
-  </tr>
+    <tr style="background-color: {{ if .alt_text_present }}lightgreen{{ else }}lightgreen{{ end }}">
+      <td>{{ .title }}</td>
+      <td><a href="{{ .post_path }}">{{ .slug }}</a></td>
+      <td><a href="{{ .image_path }}">{{ .image_name }}</a></td>
+      <td>{{ .alt_text }}</td>
+    </tr>
   {{ end }}
 </table>
 Remaining items to be fixed: {{ $incorrect }} / {{ add $incorrect $correct }}

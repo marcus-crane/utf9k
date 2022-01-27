@@ -32,7 +32,7 @@ This can cause a lot of trouble:
         {{ else }}
           {{ $incorrect = (add $incorrect 1) }}
         {{ end }}
-        <tr class="{{ if (eq $file.BaseFileName .Slug) }}bg-green-200{{ else }}bg-red-200{{ end }}">
+        <tr style="background-color: {{ if (eq $file.BaseFileName .Slug) }}lightgreen{{ else }}lightpink{{ end }}">
           <td>{{ $file.Path }}</td>
           <td>{{ .Slug }}</td>
           <td>{{ $file.BaseFileName }}</td>

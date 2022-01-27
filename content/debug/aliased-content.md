@@ -19,7 +19,7 @@ Sometimes these aliases may not map 1:1 to a piece of content, such as if a post
   {{ range .Site.Pages }}
     {{ if isset .Params "aliases" }}
       <tr>
-        <td class="my-6 py-6">{{ .Title }}</td>
+        <td>{{ .Title }}</td>
         <td><a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a></td>
         <td>
           {{ range .Params.aliases }}

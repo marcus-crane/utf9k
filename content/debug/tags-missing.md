@@ -25,8 +25,8 @@ These are pieces of content that are missing tags.
       {{ else }}
         {{ $incorrect = (add $incorrect 1) }}
       {{ end }}
-      <tr class='{{ if (isset .Params "tags") }}bg-green-200{{ else }}bg-red-200{{ end }}'>
-        <td class="my-6 py-6">{{ .Title }}</td>
+      <tr style="background-color: {{ if (isset .Params "tags") }}lightgreen{{ else }}lightpink{{ end }}">
+        <td>{{ .Title }}</td>
         <td><a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a></td>
         <td>
           <ul>
