@@ -2,23 +2,45 @@
 title: "Now"
 slug: "now"
 category: "now"
-lastmod: "2021-10-08T22:15:00+13:00"
+lastmod: "2022-01-19T20:50:00+13:00"
 ---
 
-## Lockdown
+## Holiday
 
-Here in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland), we've been in lockdown since Tuesday 17th August 2021.
+During the Christmas period, I didn't take any leave besides the normal public holidays.
 
-Currently, we are at [Alert Level 3](https://covid19.govt.nz/alert-levels-and-updates/about-the-alert-system/#alert-level-3-%E2%80%94-restrict) although we're being phased out in [3 steps](https://covid19.govt.nz/alert-levels-and-updates/regional-advice/auckland/).
+There was nothing stopping me of course but historically my family hasn't made a big fuss about doing anything for the holiday period.
 
-Admittely, this second level of tiered restrictions has added complexity that wasn't required but it's mainly to ease the itchiness that Aucklanders started having after being at Level 4 for about 5 weeks.
+I also figured it'd be neat to help out those who are on call which I was able to do as an SRE. I even got to wrangle a particularly nasty event and run an incident review which was good practice.
 
-Currently we can meet one other household (at a time) outside to socialise which is an improvement over no interaction with other bubbles.
+Having said that, I've decided to take leave and sort of spontaneously booked a trip to [Queenstown](https://en.wikipedia.org/wiki/Queenstown,_New_Zealand), which is where I am now as I write this update.
 
-## Holiday period
+I've never been to the [South Island](https://en.wikipedia.org/wiki/South_Island) before now so it's a first as well!
 
-I'm about to start a new position as a Senior Site Reliability Engineer with [Vend by Lightspeed](https://www.vendhq.com/nz/) but before then, I've got about 10 days in between where I'm technically unemployed.
+I'm planning on stopping off in [Wellington](https://en.wikipedia.org/wiki/Wellington) on my way back to catch up with a few people too.
 
-August 19th was by birthday so I was going to take some time off but instead I spent it in Level 4 lockdown and self isolating in my bedroom while I waited for a COVID test to come back.
+## Work
 
-It might be some time before I can travel as I intended to for my birthday but ah well.
+I've already reached 90 days with [Lightspeed](https://www.lightspeedhq.com) (working on [Vend](https://www.vendhq.com/nz/)) and I've been enjoying it a lot.
+
+Hands on is definitely a way to describe it, in a good way, so the new experiences and learnings are really cool!
+
+I'm hoping to publish a few things that we've been working on too, whether here or on the official tech blog. Some of it is useful and other bits are just generally interesting to talk about.
+
+Of course, I also need to writing practice ;)
+
+## Reading
+
+I can't say it's a habit at all but between working on [October](https://github.com/marcus-crane/october) and getting a new Kobo Libra 2, I've been trying to get back into a reading habit.
+
+I had been enjoying Bookly for a bit but I think it became a bit too much of [the measure becoming the target](https://en.wikipedia.org/wiki/Goodhart%27s_law) where it'd be cool to rack up points and reading hours as opposed to actually reading a book for enjoyment.
+
+I'm currently reading [Ruined by Design](https://www.ruinedby.design) which does a good job summing up a lot of the ethical concerns about Silicon Valley. Nothing new but a good tour for the uninitiated.
+
+Perhaps a bit hyperbolic at points but overall, I can't complain. I don't think I'd be putting it on my best of year list though.
+
+## utf9k
+
+Ah, how could I forget! I recently redesigned the site so if you see anything out of sorts, definitely let me know. As always, I can be reached at [hello@utf9k.net](mailto:hello@utf9k.net).
+
+There are probably a few more bits to polish since I wanted to get the bulk out the door first. I find it a lot easier to look at something with fresh eyes when you get it deployed and all the existing context about the current state of affairs can be wiped from your mind.
