@@ -21,7 +21,7 @@ const traktVerb = "📺 I'm currently watching"
 const traktVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
-  return fetch("https://gunslinger.utf9k.net/api/v2/playing")
+  return fetch("https://gunslinger.utf9k.net/api/v3/playing")
       .then(res => res.json())
       .then(data => {
         if (data.started_at < 0) {
