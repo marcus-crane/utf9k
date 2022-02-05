@@ -21,7 +21,7 @@ const traktVerb = "📺 I'm currently watching"
 const traktVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
-  return fetch("https://gunslinger.utf9k.net/api/v2/playing")
+  return fetch("https://gunslinger.utf9k.net/api/v3/playing")
       .then(res => res.json())
       .then(data => {
         if (data.started_at < 0) {
@@ -61,8 +61,7 @@ function renderLivePlayer(data) {
         action.innerText = traktVerbPastTense
       }
       break
-    case "music":
-    case "podcast":
+    case "track":
       if (data.is_active) {
         action.innerText = spotifyVerb
         showProgression = true
@@ -85,9 +84,7 @@ function renderLivePlayer(data) {
   title.innerText = data.title
   subtitle.innerText = data.subtitle
 
-  cover.src = data.images[0].url
-  cover.width = data.images[0].width
-  cover.height = data.images[0].height
+  cover.src = data.image
 
   livePlayer.style.opacity = 1
 
