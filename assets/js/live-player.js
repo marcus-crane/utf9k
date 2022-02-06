@@ -64,6 +64,7 @@ function renderLivePlayer(data) {
     case "movie":
       if (data.is_active) {
         action.innerText = tvVerb
+        showProgression = true
       } else {
         action.innerText = tvVerbPastTense
       }
