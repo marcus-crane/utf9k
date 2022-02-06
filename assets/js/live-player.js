@@ -12,13 +12,13 @@ const gamingColor = "#003087"
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
-const spotifyColor = "#1DB954"
-const spotifyVerb = "🎧 I'm currently listening to"
-const spotifyVerbPastTense = "🎧 I was recently listening to"
+const musicColor = "#1DB954"
+const musicVerb = "🎧 I'm currently listening to"
+const musicVerbPastTense = "🎧 I was recently listening to"
 
-const traktColor = "#C47828"
-const traktVerb = "📺 I'm currently watching"
-const traktVerbPastTense = "📺 I was recently watching"
+const tvColor = "#C47828"
+const tvVerb = "📺 I'm currently watching"
+const tvVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
   return fetch("https://gunslinger.utf9k.net/api/v3/playing")
@@ -53,20 +53,27 @@ function renderLivePlayer(data) {
   let currentDuration = data.duration_ms
   let showProgression = false
   switch(data.category) {
+    case "gaming":
+      if (data.is_active) {
+        action.innerText = gamingVerb
+      } else {
+        action.innerText = gamingVerbPastTense
+      }
+      break
     case "tv":
     case "movie":
       if (data.is_active) {
-        action.innerText = traktVerb
+        action.innerText = tvVerb
       } else {
-        action.innerText = traktVerbPastTense
+        action.innerText = tvVerbPastTense
       }
       break
     case "track":
       if (data.is_active) {
-        action.innerText = spotifyVerb
+        action.innerText = musicVerb
         showProgression = true
       } else {
-        action.innerText = spotifyVerbPastTense
+        action.innerText = musicVerbPastTense
       }
       break
     default:
