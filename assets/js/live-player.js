@@ -60,7 +60,7 @@ function renderLivePlayer(data) {
         action.innerText = gamingVerbPastTense
       }
       break
-    case "tv":
+    case "episode":
     case "movie":
       if (data.is_active) {
         action.innerText = tvVerb
