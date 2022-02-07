@@ -3,7 +3,21 @@
 ![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
 ![Hugo version](https://img.shields.io/badge/hugo-v0.87.0-blue)
 
-This is my personal website, which is powered by [Hugo](https://www.gohugo.io), [Tailwind](https://tailwindcss.com/) and [CommonMark](https://commonmark.org).
+This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
+
+It also has some live, progressive enhancement elements powered by [gunslinger](https://github.com/marcus-crane/gunslinger).
+
+Of particular interest is the live player on the homepage which surfaces metadata when I'm watching the following types of media:
+
+* anime/tv series
+  * powered by plex apis
+* movies
+  * powered by plex apis
+* music
+  * local music powered by plex apis
+  * streaming music powered by tidal but surfaced via plex apis
+* gaming
+  * powered by playstation apis to surface ps4/ps5 games being played
 
 ## Getting setup
 
@@ -11,9 +25,7 @@ To get started, you'll want to install Hugo using one of the variety of [officia
 
 You'll also need to have [npm](https://www.npmjs.com/get-npm) installed.
 
-I recommend using [yarn](https://yarnpkg.com/) as a package manager but npm works fine.
-
-You'll also need to install [Overmind](https://github.com/DarthSim/overmind) as I use a `Procfile` to run both the Tailwind JIT dev server and the Hugo dev server at the same time with one command.
+I personally use [pnpm](https://pnpm.io/) as a package manager but npm works fine.
 
 Once you've got all of that set up, running `yarn start` will do everything required to start up a local server.
 
