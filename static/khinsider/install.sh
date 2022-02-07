@@ -35,7 +35,7 @@ tar xzf "$exe.tar.gz"
 chmod +x "$exe"
 rm "$exe.tar.gz"
 
-"$exe" --version &> /dev/null
+KHINSIDER_NO_UPDATE=true "$exe" --version &> /dev/null
 
 echo "khinsider was installed successfully to $exe"
 if command -v khinsider &> /dev/null; then
