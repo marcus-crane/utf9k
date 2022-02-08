@@ -22,37 +22,40 @@ const tvVerbPastTense = "📺 I was recently watching"
 
 function refreshData() {
   return fetch("https://gunslinger.utf9k.net/api/v3/playing")
-      .then(res => res.json())
-      .then(data => {
-        if (data.started_at < 0) {
-          // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
-          // in the meantime, we'll just bail out and the user won't know
-          throw("Encountered a bug so we won't render the live player")
-        }
-        return data
-      })
-      .then(data => renderLivePlayer(data))
-      .catch(err => console.log(err))
+    .then(res => res.json())
+    .then(data => {
+      if (data.started_at < 0) {
+        // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
+        // in the meantime, we'll just bail out and the user won't know
+        throw ("Encountered a bug so we won't render the live player")
+      }
+      return data
+    })
+    .then(data => renderLivePlayer(data))
+    .catch(err => console.log(err))
 }
 
 refreshData()
 
-// Adapted from https://stackoverflow.com/questions/21294302/converting-milliseconds-to-minutes-and-seconds-with-javascript
+// Adapted from https://stackoverflow.com/a/69126766
 function formatMsToHumanTimestamp(ms) {
-  const minutes = Math.floor(ms / 60000)
-  const seconds = ((ms % 60000) / 1000).toFixed(0)
-  return (
-    seconds == 60 ?
-      (minutes + 1) + ":00" :
-      minutes + ":" + (seconds < 10 ? "0" : "") + seconds
-  )
+  const d = new Date(Date.UTC(0, 0, 0, 0, 0, 0, ms))
+  const parts = [
+    d.getUTCHours(),
+    d.getUTCMinutes(),
+    d.getUTCSeconds()
+  ]
+  if (d.getUTCHours() === 0) {
+    parts.shift() 
+  }
+  return parts.map(s => String(s).padStart(2, '0')).join(":")
 }
 
 function renderLivePlayer(data) {
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
   let showProgression = false
-  switch(data.category) {
+  switch (data.category) {
     case "gaming":
       if (data.is_active) {
         action.innerText = gamingVerb
