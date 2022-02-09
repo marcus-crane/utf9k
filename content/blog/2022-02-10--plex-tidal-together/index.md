@@ -88,6 +88,18 @@ I also ran into this fun popup when poking around and this won't be the last tim
 
 While looking into whether I could pull session information out of Tidal to address the API point, I realised that it doesn't really have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop client has no knowledge of it unlike Spotify. This doesn't reflect in the API either, at least from the calls I could see it making.
 
+### Artists I like
+
+This basically boils down to Failure who I previously mentioned and [Ed Harrison](https://edharrison.bandcamp.com/) given I listen to the Neotokyo OST a lot. Apparently Ed was my #1 artist in 2020 (according to Spotify Wrapped) with just over 2000 minutes (33.3 hours) which is... pretty bad.
+
+### Apple Music
+
+It has both Failure and Ed Harrison's catalogue.
+
+### Tidal
+
+It has Failure and some of Ed Harrison's catalogue but not NeoTokyo. Honestly, this was a bit of a death blow for me with Tidal.
+
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
 [^cafe]: Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify's free version. I'm not entirely sure that's legal but damn, those ads really are annoying.
