@@ -94,11 +94,27 @@ This basically boils down to Failure who I previously mentioned and [Ed Harrison
 
 ### Apple Music
 
-It has both Failure and Ed Harrison's catalogue.
+It has both Failure and Ed Harrison's catalogue. I'm happy.
 
 ### Tidal
 
 It has Failure and some of Ed Harrison's catalogue but not NeoTokyo. Honestly, this was a bit of a death blow for me with Tidal.
+
+Tidal did have Jay-Z content as an exclusive which also included the Jay x Kanye West crossover album [Watch the Throne](https://en.wikipedia.org/wiki/Watch_the_Throne) which I like a lot but this is no longer the case as Jigga released his catalogue on Spotify to celebrate his 50th birthday apparently.
+
+Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
+
+{{< tweet "jack" 1367460921937817602 >}}
+
+Jack Dorsey mentioned his vision for the future of Tidal:
+
+> We’ll work on entirely new listening experiences to bring fans closer together, simple integrations for merch sales, modern collaboration tools, and new complementary revenue streams.
+
+That basically means nothing to me but whatever. The Carter Administration is still on the board of <strike>Square</strike> Block and that can only mean one thing.
+
+<img src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" />
+
+Beautiful.
 
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
