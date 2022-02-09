@@ -68,6 +68,22 @@ Other times, I might be in the middle of a long podcast on mobile and I can't be
 
 #### Apple Music
 
+This... sort of works on a technical level but still not really. I was kind of disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
+
+{{< image src="apple-music-session.jpg" noshadow=true >}}
+{{< /image >}}
+
+As you can see, Apple Music on my laptop is aware that I'm playing a song on an Airpod. I can then select the Airpod and pause the track which then reflects instantly on my phone as well.
+
+So basically, you can have sessions but only when the playing device is not an Apple Music client itself.
+
+I also ran into this fun popup when poking around and this won't be the last time we see something like it in this post
+
+<center>
+{{< image src="apple-music-too-many-devices.jpg" noshadow=true >}}
+{{< /image >}}
+</center>
+
 #### Tidal
 
 While looking into whether I could pull session information out of Tidal to address the API point, I realised that it doesn't really have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop client has no knowledge of it unlike Spotify. This doesn't reflect in the API either, at least from the calls I could see it making.
