@@ -116,6 +116,29 @@ That basically means nothing to me but whatever. The Carter Administration is st
 
 Beautiful.
 
+## An annoying compromise
+
+At this point, neither Tidal or Apple Music are hugely appealing based on the features I've mentioned so far.
+
+They're perfectly fine as streaming services but there's another aspect I haven't mentioned up to this point: Music stored on my Plex server.
+
+I have a few rips[^khinsider] from various videogames that don't have official albums but that [I like listening to](https://www.youtube.com/watch?v=e7Zn5I1xutE) that I've kept floating around my Plex server for a few years now.
+
+That said, I generally never get around to listening to them since my daily driver has been Spotify which doesn't support local files in any useful way[^localfiles] but it would be nice if there was a way to have both things in the same place.
+
+My plan at this point was going to be trying out Tidal since it had a relatively nice UI. To get around the lack of Neotokyo, I could just purchase Ed's work from [Bandcamp](https://bandcamp.com) and load it onto Plex and just deal with that annoying UX.
+
+## The perfect candidate appears
+
+I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea what the specifics were at all.
+
+I actually overlooked the key feature of this integration which is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) in their documentation. I'm pretty sure I even read this article at the time but I didn't really get it so let me demonstrate.
+
+{{< image src="plexamp-add-to-library.jpg" noshadow=true >}}
+{{< /image >}}
+
+You'll see that there are two buttons at the bottom of the screen: Add to My TIDAL and Add to Library.
+
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
 [^cafe]: Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify's free version. I'm not entirely sure that's legal but damn, those ads really are annoying.
@@ -127,3 +150,7 @@ Beautiful.
 [^vpn]: Especially given all of the traffic would transit through Germany while I lived in New Zealand.
 
 [^eardrums]: But for real though, nothing gets me in the mood to review software like having my eardrums blown out at 11:30pm while in bed :)
+
+[^localfiles]: The feature has degraded over the years so I'm not sure of the current state but last I checked, you can add local files to the Desktop client. This doesn't actually sync them like with the short lived Google Music but instead just dumps them all into a basic list that you can play while using that device.
+
+[^khinsider]: [*cough*](https://github.com/marcus-crane/khinsider)
