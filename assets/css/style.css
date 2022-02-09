@@ -367,8 +367,8 @@ details {
   padding-bottom: .5em;
 }
 
-/* Code + Tables get extra width */
-table, .highlight {
+/* Code blocks, table and images get extra width */
+table, .highlight, figure {
   width: 110%;
   margin-left: -5%;
 }
