@@ -79,10 +79,8 @@ So basically, you can have sessions but only when the playing device is not an A
 
 I also ran into this fun popup when poking around and this won't be the last time we see something like it in this post
 
-<center>
 {{< image src="apple-music-too-many-devices.jpg" noshadow=true >}}
 {{< /image >}}
-</center>
 
 #### Tidal
 
@@ -112,7 +110,9 @@ Jack Dorsey mentioned his vision for the future of Tidal:
 
 That basically means nothing to me but whatever. The Carter Administration is still on the board of <strike>Square</strike> Block and that can only mean one thing.
 
-<img src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" />
+{{< image src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" >}}
+{{< /image >}}
+
 
 Beautiful.
 
@@ -132,12 +132,73 @@ My plan at this point was going to be trying out Tidal since it had a relatively
 
 I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea what the specifics were at all.
 
-I actually overlooked the key feature of this integration which is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) in their documentation. I'm pretty sure I even read this article at the time but I didn't really get it so let me demonstrate.
+I actually overlooked the key feature of this integration which is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) in their documentation. While I could have sworn I read the page, perhaps it's easier to demonstrate with some screenshots.
 
-{{< image src="plexamp-add-to-library.jpg" noshadow=true >}}
+{{< image style="height: 500px" src="plexamp-add-to-library.jpg" noshadow=true >}}
 {{< /image >}}
 
-You'll see that there are two buttons at the bottom of the screen: Add to My TIDAL and Add to Library.
+You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
+
+When I figure used this feature, I would do *Add to My TIDAL*.
+
+Ok, great, it adds albums to my TIDAL library. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
+
+{{< image src="plexamp-jak-jay.png" >}}
+{{< /image >}}
+
+You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands!
+
+At this point, I was sold. The ability to add virtual streaming items right next to my "local" (streaming from across the living room) items is basically what I wished Spotify offered.
+
+I suppose Google Play Music somewhat offered that but using a Google product is about as attracted as [preordering my own coffin](https://music.youtube.com/googleplaymusic).
+
+Anyway, with this, we can tick one piece of criteria off the list:
+
+✅ Artists I like
+
+The big takeaway here is that I can add any artists that are able to stream on Tidal while being able to purchase content and stream that side by side without any obvious way to distinguish between entries.
+
+While Spotify had local files, it was very clearly a second class citizen. Here, both local and remote items are almost identical both in terms of UI and behind the scenes as we'll find out a bit later.
+
+## A quick note on Plexamp
+
+Before we continue, I should note that I mostly interface with my Plex library (and Tidal) through [Plexamp](https://plexamp.com/).
+
+For an audio player that [started life back in 2017](https://medium.com/plexlabs/introducing-plexamp-9493a658847a) as a [Plex Labs](https://medium.com/plexlabs) experiment, it certainly evolved into a full ecosystem complete with mobile and desktop apps.
+
+To be clear, it's just streaming content from your plex server rather than being something you deploy standalone. You can also listen to Podcasts (via Plex) on it too although I don't do that myself.
+
+The Tidal integration works perfectly fine with the regular Plex apps as well but the music section in general shines brightest when using Plexamp if you ask me.
+
+## Ok but how well does it actually integrate with Tidal
+
+At this point in our tour, you might be thinking "Ok, sure but it's just all ducktaped together and the illusion will fall apart the second you touch something" and I thought this might be the case.
+
+Thankfully, it really is this cool and I'll show you some cool features.
+
+### Cross-platform search
+
+Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated
+
+{{< image style="height: 500px" src="plexamp-cross-search.jpg" >}}
+{{< /image >}}
+
+### An lively home screen
+
+The home screen is a great example of how Tidal content is interweaved with your local content pretty seamlessly.
+
+The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
+
+{{< image style="height: 500px" src="plexamp-home.jpg" >}}
+{{< /image >}}
+
+There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
+
+{{< image src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif" >}}
+{{< /image >}}
+
+
+For example, 
 
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
