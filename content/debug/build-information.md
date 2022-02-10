@@ -60,7 +60,17 @@ Sometimes it's handy to check when my site was last built, and with what variabl
     <td>Deployment info (<a href="https://netlify.com">netlify</a>)</td>
     <td>
       <ul>
-        <li>NODE_ENV: {{ getenv "NODE_ENV" }}</li>
+        <li>Branch: {{ getenv "BRANCH" }}</li>
+        <li>Build ID: {{ getenv "BUILD_ID" }}</li>
+        <li>CI: {{ getenv "CI" }}</li>
+        <li>Context: {{ getenv "CONTEXT" }}</li>
+        <li>Deploy Prime URL: {{ getenv "DEPLOY_PRIME_URL" }}</li>
+        <li>Deploy URL: {{ getenv "DEPLOY_URL" }}</li>
+        <li>Git LFS: {{ getenv "GIT_LFS_ENABLED" }}</li>
+        <li>Netlify Build Debug: {{ getenv "NETLIFY_BUILD_DEBUG" }}</li>
+        <li>Netlify Image CDN: {{ getenv "NETLIFY_IMAGES_CDN_DOMAIN" }}</li>
+        <li>Pull request: {{ getenv "PULL_REQUEST" }}</li>
+        <li>URL: {{ getenv "URL" }}</li>
       </ul>
     </td>
   </tr>
