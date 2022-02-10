@@ -113,7 +113,6 @@ That basically means nothing to me but whatever. The Carter Administration is st
 {{< image src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" >}}
 {{< /image >}}
 
-
 Beautiful.
 
 ## An annoying compromise
@@ -154,7 +153,7 @@ I suppose Google Play Music somewhat offered that but using a Google product is 
 
 Anyway, with this, we can tick one piece of criteria off the list:
 
-✅ Artists I like
+✅ for **Artists I like**
 
 The big takeaway here is that I can add any artists that are able to stream on Tidal while being able to purchase content and stream that side by side without any obvious way to distinguish between entries.
 
@@ -197,8 +196,365 @@ There's much more that isn't illustrated here too. My library is still pretty em
 {{< image src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif" >}}
 {{< /image >}}
 
+There's also a feature for surfacing what happened "On This Day" in music history:
 
-For example, 
+{{< image src="https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png" >}}
+{{< /image >}}
+
+It would have said that today is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 29th debut next year.
+
+### Viewing albums by mood
+
+There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the more interesting.
+
+{{< image src="plexamp-mood.jpg" >}}
+{{< /image >}}
+
+I haven't taken it for a spin just yet but the premise of it is really cool and another example of the two track sources (local and tidal) playing nicely together.
+
+With that, let's take a look at what makes this possible
+
+## How's the API though?
+
+If you remember, something I wanted was to continue powering the "Now playing" widget on the front of my website.
+
+{{< image src="utf9k-nowplaying.jpg" >}}
+{{< /image >}}
+
+✅ for **A good API**
+
+Initially playing Tidal content through Plex (there's a separate "music source") didn't surface anything in the API but by virtue of adding items to our library, we get full metadata available via the `/status/sessions` endpoint.
+
+<details><summary>Here's the absolute mountain of information available for you to play with</summary>
+
+```json
+{
+  "MediaContainer": {
+    "size": 1,
+    "Metadata": [
+      {
+        "addedAt": "1064275200",
+        "allowSync": "0",
+        "art": "/library/metadata/9560/art/1644407944",
+        "attribution": "com.tidal",
+        "duration": "369573",
+        "grandparentArt": "/library/metadata/9560/art/1644407944",
+        "grandparentGuid": "plex://artist/5d07bbfc403c6402904a6105",
+        "grandparentKey": "/library/metadata/9560",
+        "grandparentRatingKey": "9560",
+        "grandparentThumb": "/library/metadata/9560/thumb/1644407944",
+        "grandparentTitle": "OutKast",
+        "guid": "plex://track/5d07cebf403c6402900cd0d9",
+        "index": "10",
+        "key": "/library/metadata/9590",
+        "lastViewedAt": "1644480645",
+        "librarySectionID": "4",
+        "librarySectionKey": "/library/sections/4",
+        "librarySectionTitle": "Music",
+        "oneShot": "1",
+        "originallyAvailableAt": "2003-09-23",
+        "parentGuid": "plex://album/5d07c173403c640290846b36",
+        "parentIndex": "2",
+        "parentKey": "/library/metadata/9561",
+        "parentRatingKey": "9561",
+        "parentStudio": "Arista",
+        "parentThumb": "/library/metadata/9561/thumb/1644407962",
+        "parentTitle": "Speakerboxxx / The Love Below",
+        "parentYear": "2003",
+        "ratingKey": "9590",
+        "remoteMedia": "1",
+        "sessionKey": "453",
+        "sourceKey": "/library/metadata/5c038b3e48a2d2001de6a1a6",
+        "summary": "",
+        "thumb": "/library/metadata/9561/thumb/1644407962",
+        "title": "Roses",
+        "type": "track",
+        "updatedAt": "1644407920",
+        "viewCount": "1",
+        "viewOffset": "258",
+        "Media": [
+          {
+            "audioCodec": "aac",
+            "container": "mp4",
+            "duration": "369000",
+            "id": "12075",
+            "optimizedForStreaming": "1",
+            "source": "provider://tv.plex.provider.music",
+            "Part": [
+              {
+                "container": "mp4",
+                "duration": "369000",
+                "id": "12156",
+                "key": "/library/parts/1772296-HIGH",
+                "Stream": [
+                  {
+                    "albumGain": "-9.71",
+                    "albumPeak": "0.998444",
+                    "albumRange": "10.019548",
+                    "bitrate": "320",
+                    "codec": "aac",
+                    "displayTitle": "AAC",
+                    "duration": "369000",
+                    "extendedDisplayTitle": "AAC",
+                    "gain": "-10.6",
+                    "id": "25488",
+                    "index": "0",
+                    "peak": "0.988556",
+                    "selected": "1",
+                    "streamType": "2"
+                  },
+                  {
+                    "codec": "lrc",
+                    "displayTitle": "LRC (External)",
+                    "extendedDisplayTitle": "LRC (External)",
+                    "format": "lrc",
+                    "id": "26578",
+                    "key": "/library/streams/26578",
+                    "minLines": "3",
+                    "provider": "com.plexapp.agents.lyricfind",
+                    "streamType": "4",
+                    "timed": "1"
+                  },
+                  {
+                    "codec": "txt",
+                    "displayTitle": "TXT (External)",
+                    "extendedDisplayTitle": "TXT (External)",
+                    "format": "txt",
+                    "id": "26579",
+                    "key": "/library/streams/26579",
+                    "provider": "com.plexapp.agents.lyricfind",
+                    "streamType": "4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "audioCodec": "aac",
+            "container": "mp4",
+            "duration": "369000",
+            "id": "12076",
+            "optimizedForStreaming": "1",
+            "source": "provider://tv.plex.provider.music",
+            "Part": [
+              {
+                "container": "mp4",
+                "duration": "369000",
+                "id": "12157",
+                "key": "/library/parts/1772296-LOW",
+                "Stream": [
+                  {
+                    "albumGain": "-9.71",
+                    "albumPeak": "0.998444",
+                    "albumRange": "10.019548",
+                    "bitrate": "96",
+                    "codec": "aac",
+                    "displayTitle": "AAC",
+                    "duration": "369000",
+                    "extendedDisplayTitle": "AAC",
+                    "gain": "-10.6",
+                    "id": "25489",
+                    "index": "0",
+                    "peak": "0.988556",
+                    "selected": "1",
+                    "streamType": "2"
+                  },
+                  {
+                    "codec": "lrc",
+                    "displayTitle": "LRC (External)",
+                    "extendedDisplayTitle": "LRC (External)",
+                    "format": "lrc",
+                    "id": "26580",
+                    "key": "/library/streams/26580",
+                    "minLines": "3",
+                    "provider": "com.plexapp.agents.lyricfind",
+                    "streamType": "4",
+                    "timed": "1"
+                  },
+                  {
+                    "codec": "txt",
+                    "displayTitle": "TXT (External)",
+                    "extendedDisplayTitle": "TXT (External)",
+                    "format": "txt",
+                    "id": "26581",
+                    "key": "/library/streams/26581",
+                    "provider": "com.plexapp.agents.lyricfind",
+                    "streamType": "4"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "User": {
+          "id": "1",
+          "thumb": "https://plex.tv/users/<me>/avatar?c=1643535847",
+          "title": "Sentryism"
+        },
+        "Player": {
+          "address": "172.17.0.1",
+          "device": "macOS",
+          "machineIdentifier": "<my machine>",
+          "model": "",
+          "platform": "macOS",
+          "platformVersion": "21.4.0",
+          "product": "Plexamp",
+          "remotePublicAddress": "172.17.0.1",
+          "state": "playing",
+          "title": "skeith",
+          "vendor": "",
+          "version": "3.9.1",
+          "local": false,
+          "relayed": false,
+          "secure": true,
+          "userID": 1
+        }
+      }
+    ]
+  }
+}
+```
+
+</details>
+
+We can definitely work with that!
+
+It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate upon closing the app but I just sidestep that by filtering for any sessions that aren't paused.
+
+I'll also point out that this is metadata about a third party playing track, in a world that would love to choke you out with Widevine. Relatively speaking, it's pretty refreshing.
+
+What's really going on here is that Plex's own metadata providers are doing the heavy lifting which works for us. When playing your local music, you get the exact same payload except for the `"attribution": "com.tidal"` pairing at the start.
+
+## What about cross-platform sessions?
+
+Kind of but not really?
+
+At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
+
+{{< tweet "plexamp" "1489024846033915908" >}}
+
+❌ but 👀 for **Cross-platform sessions**
+
+## Ok but what's the catch here
+
+In the spirit of fairness, nothing is perfect and there are few things I've stumbled across while using this setup as my daily driver.
+
+Most of these are either fine in moderation or things that I'm sure the [Plexamp team](https://twitter.com/plexamp) are aiming to address. If not, this is my bug report/feature request list!
+
+### Hard dependency on the authentication server
+
+I had the misfortune of having this integration go down briefly due to an outage with the Plex authentication server.
+
+{{< image src="plex-status-page.jpg" >}}
+{{< /image >}}
+
+As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
+
+{{% notice title="🔑 A tip for Plex server owners" %}}
+[Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
+
+They're relatively stable but it's inevitable that the authentication server will fail again one day.
+
+That isn't a slight towards Plex, it's just an unavoidable reality about computers.
+
+Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
+{{% /notice %}}
+
+While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there like nothing happened. If you remember, Plex has an "Add to My Tidal" button and this where it can be useful as a backup.
+
+Anyway, as an [SRE](https://sre.google/), if I'm going to talk about availability, I should bring some data and so I did a brief skim of the [Plex status page](https://status.plex.tv/).
+
+Basically, I added up the number of minutes elapsed for every publically listed outage for the year of 2021 and got something just under 9 hours. That's almost bang on 99.9% (three nines) which is a pretty standard expectation for services.
+
+Arguably you'd hope for something closer to 99.99% (four nines) for a critical piece of infrastructure like that but eh, I'm not exactly doing math out here.
+
+Some of those incidents aren't even attributed to authentication outages but I threw them in there just to look at the worst case scenario.
+
+These outages, when they do happen, are generally about an hour long. The odds of hitting the same hour period in the same month is pretty slim. I've used Plex for years prior to this and only run into them a couple of times although I will admit that music streaming is something that I do a lot more than visual media.
+
+Anyway, whatever, it's fine. I don't care and I'm not overly concerned :) I have too many local tracks to listen to anyway so I'll just take it as an excuse to go through my back catalogue of unplayed content instead of consuming the same 5 Outkast albums on a loop until I die.
+
+Also, every service has outages. This isn't unique to Plex.
+
+### DRM...? Maybe yes, maybe no?
+
+I stumbled onto this purely by accident but I guess you can't stream Tidal content if you access your Plex server via your local network (ie; instead of via https://app.plex.net)
+
+Trying to do so gave me an error dialogue with this message:
+
+> An error occured trying to play this item. Please make sure content from TIDAL is not already playing on another device.
+
+Despite the message, nothing else was playing and despite my best effort, I couldn't get this to go away.
+
+The exact same track would work via the hosted Plex app and I'm not entirely sure.
+
+Given mixed content only works one way (http can load https but not vice versa), I'm guessing it's some arbitrary legalese that says "You must only load our content over an SSL connection" or something.
+
+It could also just be a bug 🤷‍♀️
+
+Despite the error, it's perfectly possible to play multiple tracks from Tidal at the same time
+
+{{< image src="tool-trio.jpg" >}}
+{{< /image >}}
+
+If you're curious, here's how the aural mashup shown above sounded[^riaa]
+
+<center>
+  <audio controls>
+    <source src="tool-trio.mp3" type="audio/mpeg">
+    Your browser doesn't support the audio tag :(
+  </audio>
+</center>
+
+### You can't remove Tidal albums
+
+This one seems like a weirdly obvious oversight so I'm going to give the benefit of the doubt here and assume there was some weird technical limitation that resulting in this being deferred.
+
+The team are definitely aware of it
+
+{{< tweet "plexamp" "1491494752327372801" >}}
+
+It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
+
+### Plexamp session are weirdly long lived
+
+Interestingly, Plexamp sessions are not cancelled by the owner of a Plex server.
+
+With most streaming content, you can force stop a session but here, you can't even kill your own sessions for some reason.
+
+{{< image src="plexamp-not-pausing.jpg" >}}
+{{< /image >}}
+
+In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal. The green padlock indicates that I can't touch the session so I just sort of need to wait for it to expire on its own.
+
+My fingers are crossed that this will probably be handled by the refactor that gives us controllability between platforms.
+
+## Closing thoughts
+
+Believe or not, I actually cut this post short because I could gush about Plexamp for quite a while longer.
+
+Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.
+
+{{< image src="plexamp-upnext.jpg" >}}
+{{< /image >}}
+
+I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.
+
+The main thing that Plexamp offers me is the removal of friction between handling multiple applications (in this case, Plex and Spotify) since the one I use heaviest will always dominate my focus.
+
+With this setup, I don't have to think because everything is in one place. Usually that feels like a red flag but I think the integration has been handled really elegantly here. It's basically just another provider for Plex with no more or less attention than every other provider. It just kinda worksTM.
+
+I will reiterate though that if you don't care about local content, just use Spotify.
+
+If you balk at the thought of paying for both Plex and Tidal, maybe this isn't for you. I don't think I've mentioned it yet but I've subscribed for Plex's annual plan so many years in a row that I just invested in a lifetime subscription.
+
+If you like tinkering with APIs or you want to consolidate your library in one place, while not being enough of a macochist to source your entire library as local files, then maybe you'll find something to really enjoy with this setup.
+
+Plexamp definitely feels like a labour of love and all of the little gags in the form of UI strings tucked in the app definitely promote that feeling.
+
+Perhaps the only question left now is whether I can bear to sully my library with [untaggable content](https://www.youtube.com/watch?v=kJunmC9YKQA).
+
+Enjoy!
 
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
@@ -215,3 +571,5 @@ For example,
 [^localfiles]: The feature has degraded over the years so I'm not sure of the current state but last I checked, you can add local files to the Desktop client. This doesn't actually sync them like with the short lived Google Music but instead just dumps them all into a basic list that you can play while using that device.
 
 [^khinsider]: [*cough*](https://github.com/marcus-crane/khinsider)
+
+[^riaa]: Do three audio fingerprints make a unique fingerprint? I hope the RIAA doesn't destroy my blog or I might have to use one of those shady Swiss bulletproof hosts going forward...
