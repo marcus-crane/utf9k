@@ -24,7 +24,7 @@ These are pieces of content that are missing a description, which is handy for l
       {{ else }}
         {{ $incorrect = (add $incorrect 1) }}
       {{ end }}
-      <tr style="background-color: {{ if (isset .Params "description") }}lightgreen{{ else }}lightgreen{{ end }}">
+      <tr style="background-color: {{ if (isset .Params "description") }}lightgreen{{ else }}lightpink{{ end }}">
         <td>{{ .Title }}</td>
         <td>{{ $file.Path }}</td>
       </tr>

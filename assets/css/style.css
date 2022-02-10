@@ -373,6 +373,13 @@ table, .highlight, figure {
   margin-left: -5%;
 }
 
+article.full table {
+  width: 100%;
+  margin-left: 0;
+  table-layout: fixed;
+  word-break: break-word;
+}
+
 
 /* Tables */
 table, thead, th, tr, td {

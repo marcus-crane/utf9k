@@ -133,7 +133,7 @@ I had been vaguely aware for a while that Plex touted some sort of integration w
 
 I actually overlooked the key feature of this integration which is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) in their documentation. While I could have sworn I read the page, perhaps it's easier to demonstrate with some screenshots.
 
-{{< image style="height: 500px" src="plexamp-add-to-library.jpg" noshadow=true >}}
+{{< image src="plexamp-add-to-library.jpg" style="height: 500px" noshadow=true >}}
 {{< /image >}}
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
@@ -179,7 +179,7 @@ Thankfully, it really is this cool and I'll show you some cool features.
 
 Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated
 
-{{< image style="height: 500px" src="plexamp-cross-search.jpg" >}}
+{{< image src="plexamp-cross-search.jpg" style="height: 500px" >}}
 {{< /image >}}
 
 ### An lively home screen
@@ -188,7 +188,7 @@ The home screen is a great example of how Tidal content is interweaved with your
 
 The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
 
-{{< image style="height: 500px" src="plexamp-home.jpg" >}}
+{{< image src="plexamp-home.jpg" style="height: 500px"  >}}
 {{< /image >}}
 
 There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
