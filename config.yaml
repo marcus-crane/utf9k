@@ -114,14 +114,25 @@ security:
     - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
   funcs:
     getenv:
+      - ^BRANCH$
+      - ^BUILD_ID$
+      - ^CI$
       - ^COMMIT_SHA$
+      - ^CONTEXT$
+      - ^DEPLOY_PRIME_URL$
+      - ^DEPLOY_URL$
+      - ^GIT_LFS_ENABLED$
       - ^HUGO_
       - ^LANG$
       - ^LANGUAGE$
       - ^LC_ALL$
+      - ^NETLIFY_BUILD_DEBUG$
+      - ^NETLIFY_IMAGES_CDN_DOMAIN$
       - ^NODE_ENV$
       - ^NODE_VERSION$
+      - ^PULL_REQUEST$
       - ^PYTHON_VERSION$
+      - ^URL$
   http:
     methods:
     - (?i)GET|POST
