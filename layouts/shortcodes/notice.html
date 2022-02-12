@@ -1,9 +1,11 @@
-<hr class="hidden" />
-<div class="flex rounded-lg bg-gray-200 dark:bg-gray-800 p-8 mb-8 flex-col notice">
-  <h3 class="text-gray-900 text-lg title-font font-medium">
-    {{ if (.Get "emoji") }}<span>{{ .Get "emoji" }}</span>{{ end }}
-    {{ .Get "title" }}
-  </h3>
-  {{ .Inner }}
+<div id="notice-wrapper">
+  <hr class="hidden" />
+  <div class="flex rounded-lg bg-gray-200 dark:bg-gray-800 p-8 mb-8 flex-col notice">
+    <h3 class="text-gray-900 text-lg title-font font-medium">
+      {{ if (.Get "emoji") }}<span>{{ .Get "emoji" }}</span>{{ end }}
+      {{ .Get "title" }}
+    </h3>
+    {{ .Inner }}
+  </div>
+  <hr class="hidden" />
 </div>
-<hr class="hidden" />

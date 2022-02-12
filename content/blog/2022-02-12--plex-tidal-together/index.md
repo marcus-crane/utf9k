@@ -1,6 +1,7 @@
 ---
 title: "Plex + Tidal = A Nice Match"
 date: "2022-02-12T13:20:00+1300"
+description: "A lengthy post in which I gush about how I like Plexamp a lot due to how it integrates nicely with Tidal"
 slug: "plex-tidal-together"
 category: "blog"
 tags:
