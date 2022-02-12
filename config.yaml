@@ -20,6 +20,8 @@ taxonomies:
 params:
   description: "Is this thing even on? I just put some text here to test out link previews. There's real site content though, I swear!"
   title: "utf9k"
+  images:
+    - favicon.png
 
 menu:
   main:
