@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-env': ^7.14.8
   autoprefixer: ^10.3.1
   eslint: ^7.32.0
+  littlefoot: ^3.4.1
   node-fetch: ^2.6.1
   postcss: ^8.3.6
   postcss-cli: ^8.3.1
@@ -13,6 +14,7 @@ dependencies:
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.4_@babel+core@7.16.0
   autoprefixer: 10.4.0_postcss@8.4.4
+  littlefoot: 3.4.1
   node-fetch: 2.6.6
   postcss: 8.4.4
   postcss-cli: 8.3.1_postcss@8.4.4
@@ -1192,6 +1194,20 @@ packages:
       fastq: 1.13.0
     dev: false
 
+  /@pacote/get-style/1.1.7:
+    resolution: {integrity: sha512-TGg2mrHvLtQC/d9dPy/GpVDIdvCT1PfYvbjsOQR0nU8o4ofuPy4NHRsPDUYjZXXbpMC5uPK6N/yitHO0Pon/lA==}
+    dev: false
+
+  /@pacote/pixels/1.1.7:
+    resolution: {integrity: sha512-yztATcpzvQR4Y1iflLKQybTc/pr31LfAUAX2y2EE+62nqf9Q2gir5fcnVSSDYcEIONHAQHN+Pbb/V95Pg/fi7Q==}
+    dependencies:
+      '@pacote/get-style': 1.1.7
+    dev: false
+
+  /@pacote/throttle/1.0.7:
+    resolution: {integrity: sha512-7iO/ehc4UFeBcdwRjS5gxJwB/SSbeCzrUVR+R0R2Dxxz96TE2KpKN32UdRuv/4WNc+oRgu1g0Jyq/+U6/mr01A==}
+    dev: false
+
   /acorn-jsx/5.3.2_acorn@7.4.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -1484,6 +1500,12 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       object-keys: 1.1.1
+    dev: false
+
+  /delegated-events/1.1.2:
+    resolution: {integrity: sha512-PjEw4Z5mrvXimyf60HGqMJ3BMcqqWZpBqSDGnEMBdkAtF4P7ltoa6N+UJXhbMMUxPLYFtykCmRs6Ra8I8pwzPQ==}
+    dependencies:
+      selector-set: 1.1.5
     dev: false
 
   /dependency-graph/0.9.0:
@@ -1974,6 +1996,15 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /littlefoot/3.4.1:
+    resolution: {integrity: sha512-P5gVZCqRLWPn5WndTQT+bTiGtWv6cEuhTYjDaDAH2vwLvRIK4q2WoD10SuI8NytRKgGdR3vUIW2G7vLUHJR5jQ==}
+    dependencies:
+      '@pacote/get-style': 1.1.7
+      '@pacote/pixels': 1.1.7
+      '@pacote/throttle': 1.0.7
+      delegated-events: 1.1.2
+    dev: false
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=}
     dev: false
@@ -2342,6 +2373,10 @@ packages:
 
   /safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
+    dev: false
+
+  /selector-set/1.1.5:
+    resolution: {integrity: sha512-6SQw6yMew5iOZ8/cDHDEnJWRM4ot2mxP6szZyF5ptrBogw4AcS4EXRj/8BUfgAMwVfdL84qpModlBMOl2NVrsQ==}
     dev: false
 
   /semver/6.3.0:
