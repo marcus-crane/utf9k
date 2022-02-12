@@ -1,6 +1,6 @@
 ---
 title: "Plex + Tidal = A Nice Match"
-date: "2022-02-12T13:00:00+1300"
+date: "2022-02-12T13:10:00+1300"
 slug: "plex-tidal-together"
 category: "blog"
 tags:
