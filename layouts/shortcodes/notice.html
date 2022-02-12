@@ -1,7 +1,10 @@
 <p class="hidden">Hello there. If you can see this, you're likely using an RSS reader and so this post may appear a bit confusing if the visual styling is missing. After the first horizontal line is a notice. Think of it like a brief directors commentary that provides some context about the post. After the second horizontal line is the actual post itself. Enjoy!</p>
 <hr class="hidden" />
 <div class="flex rounded-lg bg-gray-200 dark:bg-gray-800 p-8 mb-8 flex-col notice">
-  <h3 class="text-gray-900 text-lg title-font font-medium">{{ .Get "title" }}</h3>
+  <h3 class="text-gray-900 text-lg title-font font-medium">
+    {{ if (.Get "emoji") }}<span>{{ .Get "emoji" }}</span>{{ end }}
+    {{ .Get "title" }}
+  </h3>
   {{ .Inner }}
 </div>
 <hr class="hidden" />

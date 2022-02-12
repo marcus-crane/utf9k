@@ -27,7 +27,7 @@ It isn't the end of the world since they'll inherit a category from their parent
       {{ else }}
         {{ $incorrect = (add $incorrect 1) }}
       {{ end }}
-      <tr style="background-color: {{ if (isset .Params "category") }}lightgreen{{ else }}lightgreen{{ end }}">
+      <tr style="background-color: {{ if (isset .Params "category") }}lightgreen{{ else }}lightpink{{ end }}">
         <td>{{ .Title }}</td>
         <td>{{ $file.Path }}</td>
         <td><a href="/{{ .Params.category }}">/{{ .Params.category }}</td>

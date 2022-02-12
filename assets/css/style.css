@@ -290,6 +290,10 @@ blockquote {
   padding: 1rem 1.6rem;
 }
 
+.notice span {
+  padding-right: .5rem;
+}
+
 article #post-body .notice h2,
 article #post-body .notice h3,
 article #post-body .notice p {
@@ -367,10 +371,17 @@ details {
   padding-bottom: .5em;
 }
 
-/* Code + Tables get extra width */
-table, .highlight {
+/* Code blocks, table and images get extra width */
+table, .highlight, figure {
   width: 110%;
   margin-left: -5%;
+}
+
+article.full table {
+  width: 100%;
+  margin-left: 0;
+  table-layout: fixed;
+  word-break: break-word;
 }
 
 
