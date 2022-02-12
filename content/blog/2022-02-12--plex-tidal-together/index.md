@@ -1,6 +1,6 @@
 ---
 title: "Plex + Tidal = A Nice Match"
-date: "2022-02-10T02:00:00+1300"
+date: "2022-02-12T13:00:00+1300"
 slug: "plex-tidal-together"
 category: "blog"
 tags:
@@ -12,11 +12,29 @@ tags:
 - "tidal"
 ---
 
+{{% notice emoji="🖼" title="Look at this photograph" %}}
+Due to the nature of this post, it's pretty image heavy.
+
+Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
+{{% /notice %}}
+
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
-As a result, the band [Failure](https://en.wikipedia.org/wiki/Failure_(band)) announced that [they're pulling their music from Spotify](https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537) in part because the [streaming payouts are supposed to be some of the worst in the industry](https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation).
+As a result, the band [Failure](https://en.wikipedia.org/wiki/Failure_(band)) announced[^pulling] that they are going to [pull their music from Spotify](https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537) in part because the [streaming payouts are supposed to be some of the worst in the industry](https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation).
 
-I can't speak to any of the above with accuracy nor is this a post about the ethics of streaming. That said, I am a fan of Failure so I figured I'd take this opportunity to review the other streaming services and see how they fare.
+I can't speak to any of the above with accuracy nor is this a post about the ethics of the streaming model for artists.
+
+Instead, I'm just a fan of Failure who figured they would take this opportunity to review other streaming services and see how they fare.
+
+The goal here is to find a setup that lets me listen to everything I enjoy, with as little friction, while still supporting the artists I care about.
+
+The solution I've found that works for me, and that I'll be covering in this post, is to stream most things via [Plexamp](https://plexamp.com/).
+
+It supports both streaming from [Tidal](https://tidal.com/) and playing content stored locally on my [Plex](https://www.plex.tv/) server, such as rips from games that never released official soundtracks.
+
+For everything else, I can purchase albums from [Bandcamp](https://bandcamp.com), including content that was [never streamable](https://failureband.bandcamp.com/album/fantastic-planet-live) in the first place, plus I can feel better that I'm better compensating the artists I enjoy.
+
+From here, you can either save yourself a solid 15 - 20 minutes and close the tab or if you'd like to read a deep dive into the bits and pieces that sold me on this setup, then I hope you enjoy what is now the longest post on this site to date 😮‍💨
 
 ## My history with Spotify
 
@@ -26,29 +44,37 @@ On their highest data plan, Spotify Premium is entirely free while lower plans g
 
 While I've discovered a lot of new tracks over the years with Spotify, my general usage pattern is that I replay the last 10 - 20 songs on my Liked Songs playlist and occasionally I'll use the Song Radio feature on one of them.
 
-This cycle repeats as I add more songs to Liked Songs and my "play window" slides up to include the new song and ignore the song which has dropped out of the window as a result.
+This cycle repeats as I add more songs to Liked Songs and my "play window" slides up to include the new song and as a result, the last song dropped "outside" of the window.
 
-Given that, I'm not hugely worried about being able to use all of the custom playlists[^discover]. Even so, I can still view them in the free version of Spotify if I decide to downgrade.
+Given my usage pattern, I'm not hugely worried about giving up custom playlists[^discover] like "Discover Weekly" that I know a lot of people swear by. Worst case, I can still view them in the free version of Spotify if I decide to move on.
 
 ## My ideal criteria for a replacement
 
-This post isn't intended to be a comparison of different streaming services as I'd already made a decision but here's a brief rundown of what I was interested in personally.
+This post was never meant to be a comprehensive comparison of different services and what they offer but in saying that, it got a bit out of hand.
 
-That said, this has somewhat evolved into a brief comparison between Spotify, [Apple Music](https://music.apple.com/) and [Tidal](https://tidal.com)  since those were the three main contenders I compared based on the (arguably niche) criteria I cared about.
+Spotify, [Apple Music](https://music.apple.com/) and [Tidal](https://tidal.com) were the three main contenders that I compared based on the (arguably niche) criteria I care about.
+
+Let's break down of those bits of criteria and how each service matches up against them, at least in my experience.
 
 ### A good API
 
 For anyone who has seen the little "Now Playing" widget on the front page of my site[^nowplaying], it was [powered by the Spotify API](https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go#L61) by polling every few seconds for what I'm currently listening to. I'd definitely want to recreate that functionality if I can.
 
-Spotify also has probably the [most fleshed out API](https://developer.spotify.com/documentation/web-api/reference/#/) of any of its competitors, even including the ability to control playback via the API which could make for some really cool projects.
+As far as I know, Spotify has the [most comprehensive API](https://developer.spotify.com/documentation/web-api/reference/#/) of any streaming platform, even exposing the ability to control playback programatically which could make for some really cool projects.
 
 #### Apple Music
 
 Apple Music is mostly ruled out here given their [API](https://developer.apple.com/documentation/applemusicapi/) is pretty lacking in general, especially when it comes to interacting with the current user.
 
+I dunno what it is about APple but reading their API documentation makes me feel like I've been teleported back to 2006 with a bucket full of XML.
+
+Maybe it's just a cultural artefact from when they only dealt with desktop applications because all of their web offerings feel extremely bizarre.
+
 #### Tidal
 
-Tidal is also out as they [don't even have a public API at all](https://twitter.com/TIDAL/status/699726946817679360). There are a couple of unofficial API clients on Github but some of them haven't seen much activity in recent times.
+Tidal is also out as they [don't even have a public API at all](https://twitter.com/TIDAL/status/699726946817679360).
+
+There are a couple of unofficial API clients on Github but some of them haven't seen much activity in recent times.
 
 I did consider trying to hack something together myself but that'll be addressed in the next section.
 
@@ -56,24 +82,24 @@ I did consider trying to hack something together myself but that'll be addressed
 
 This is something that Spotify really excels at.
 
-If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up right where the track had played up to, or you could continue on mobile while controlling the session (ie; changing volume, pausing, switching song) from your desktop.
+If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
 
 {{< image src="spotify-remote-session.jpg" noshadow=true >}}
   A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
 {{< /image >}}
 
-This was really handy at my previous job where I might not want to even try streaming while on a VPN[^vpn].
+This was really handy at my previous job where trying to stream over a VPN[^vpn] was just asking for trouble.
 
 Other times, I might be in the middle of a long podcast on mobile and I can't be bothered transferring as I sit down at my desktop.
 
 #### Apple Music
 
-This... sort of works on a technical level but still not really. I was kind of disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
+This... sort of works on a technical level but still not really. I was disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
 
 {{< image src="apple-music-session.jpg" noshadow=true >}}
 {{< /image >}}
 
-As you can see, Apple Music on my laptop is aware that I'm playing a song on an Airpod. I can then select the Airpod and pause the track which then reflects instantly on my phone as well.
+As you can see, Apple Music on my laptop is aware that I'm playing a song on an [HomePod](https://www.apple.com/nz/homepod-mini/). I can then select the HomePod and pause the track which then reflects instantly on my phone as well.
 
 So basically, you can have sessions but only when the playing device is not an Apple Music client itself.
 
@@ -84,7 +110,7 @@ I also ran into this fun popup when poking around and this won't be the last tim
 
 #### Tidal
 
-While looking into whether I could pull session information out of Tidal to address the API point, I realised that it doesn't really have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop client has no knowledge of it unlike Spotify. This doesn't reflect in the API either, at least from the calls I could see it making.
+While looking into whether I could pull session information out of Tidal, I realised that it doesn't really have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop client has no idea about any other clients. This doesn't reflect in the API either, at least from the calls I could see it making.
 
 ### Artists I like
 
@@ -96,9 +122,9 @@ It has both Failure and Ed Harrison's catalogue. I'm happy.
 
 ### Tidal
 
-It has Failure and some of Ed Harrison's catalogue but not NeoTokyo. Honestly, this was a bit of a death blow for me with Tidal.
+It has Failure and some of Ed Harrison's catalogue but not NeoTokyo. Honestly, this was a bit of a death blow for me as far as using Tidal by itself.
 
-Tidal did have Jay-Z content as an exclusive which also included the Jay x Kanye West crossover album [Watch the Throne](https://en.wikipedia.org/wiki/Watch_the_Throne) which I like a lot but this is no longer the case as Jigga released his catalogue on Spotify to celebrate his 50th birthday apparently.
+Tidal did have Jay-Z content as an exclusive in the past, which also included the Jay x Kanye West crossover album [Watch the Throne](https://en.wikipedia.org/wiki/Watch_the_Throne) which I like a lot. This is no longer the case as Jigga released his catalogue on Spotify to [celebrate his 50th birthday](https://twitter.com/Spotify/status/1202090253839937536).
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
@@ -121,63 +147,59 @@ At this point, neither Tidal or Apple Music are hugely appealing based on the fe
 
 They're perfectly fine as streaming services but there's another aspect I haven't mentioned up to this point: Music stored on my Plex server.
 
-I have a few rips[^khinsider] from various videogames that don't have official albums but that [I like listening to](https://www.youtube.com/watch?v=e7Zn5I1xutE) that I've kept floating around my Plex server for a few years now.
+I have a few rips[^khinsider] from various videogames that [don't have official albums](https://www.youtube.com/watch?v=e7Zn5I1xutE) that I've kept floating around my Plex server for a few years now.
 
-That said, I generally never get around to listening to them since my daily driver has been Spotify which doesn't support local files in any useful way[^localfiles] but it would be nice if there was a way to have both things in the same place.
+I aspire to listen to them more but I never get around to listening to them with Spotify as my daily driver as it doesn't support local files in any useful way[^localfiles]. It would be nice if there was a way to have both things in the same place.
 
-My plan at this point was going to be trying out Tidal since it had a relatively nice UI. To get around the lack of Neotokyo, I could just purchase Ed's work from [Bandcamp](https://bandcamp.com) and load it onto Plex and just deal with that annoying UX.
+My plan at this point was going to be trying out Tidal since it had a relatively nice UI. To get around the lack of Neotokyo, I could just purchase Ed's work from [Bandcamp](https://bandcamp.com) and load it onto Plex and just deal with the UX hassle of constantly switching between apps.
 
 ## The perfect candidate appears
 
-I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea what the specifics were at all.
+I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea what form it took.
 
-I actually overlooked the key feature of this integration which is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) in their documentation. While I could have sworn I read the page, perhaps it's easier to demonstrate with some screenshots.
+I had even read up on integration, where the killer feature is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) but apparently I did a rubbish job at reading since I entirely overlooked it.
 
 {{< image src="plexamp-add-to-library.jpg" style="height: 500px" noshadow=true >}}
 {{< /image >}}
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
 
-When I figure used this feature, I would do *Add to My TIDAL*.
+When I first hooked up Tidal to Plex, I would just press *Add to My TIDAL*.
 
-Ok, great, it adds albums to my TIDAL library. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
+Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
 
-{{< image src="plexamp-jak-jay.png" >}}
+{{< image src="plexamp-jak-jay.jpg" >}}
 {{< /image >}}
 
-You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands!
+You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands! At this point, I was sold.
 
-At this point, I was sold. The ability to add virtual streaming items right next to my "local" (streaming from across the living room) items is basically what I wished Spotify offered.
+The ability to add virtual streaming items right next to my "local" (streaming from across the living room) items is pretty much the ideal outcome.
 
-I suppose Google Play Music somewhat offered that but using a Google product is about as attracted as [preordering my own coffin](https://music.youtube.com/googleplaymusic).
+In fairness, Google Play Music offered something like this in the past but the idea of investing effort into a Google product is about as attractive as [preordering a coffin](https://music.youtube.com/googleplaymusic).
 
 Anyway, with this, we can tick one piece of criteria off the list:
 
-✅ for **Artists I like**
-
-The big takeaway here is that I can add any artists that are able to stream on Tidal while being able to purchase content and stream that side by side without any obvious way to distinguish between entries.
-
-While Spotify had local files, it was very clearly a second class citizen. Here, both local and remote items are almost identical both in terms of UI and behind the scenes as we'll find out a bit later.
+✅ for **Artists I like** (1/3)
 
 ## A quick note on Plexamp
 
 Before we continue, I should note that I mostly interface with my Plex library (and Tidal) through [Plexamp](https://plexamp.com/).
 
-For an audio player that [started life back in 2017](https://medium.com/plexlabs/introducing-plexamp-9493a658847a) as a [Plex Labs](https://medium.com/plexlabs) experiment, it certainly evolved into a full ecosystem complete with mobile and desktop apps.
+For an audio player that [started life back in 2017](https://medium.com/plexlabs/introducing-plexamp-9493a658847a) as a [Plex Labs](https://medium.com/plexlabs) experiment, it has grown into an entire ecosystem, complete with mobile and desktop apps.
 
-To be clear, it's just streaming content from your plex server rather than being something you deploy standalone. You can also listen to Podcasts (via Plex) on it too although I don't do that myself.
+To be clear, it's just streaming content from your plex server through a music-focused client. It doesn't require deploying any additional software. You can also listen to Podcasts (via Plex) on it too although I don't do that myself.
 
 The Tidal integration works perfectly fine with the regular Plex apps as well but the music section in general shines brightest when using Plexamp if you ask me.
 
 ## Ok but how well does it actually integrate with Tidal
 
-At this point in our tour, you might be thinking "Ok, sure but it's just all ducktaped together and the illusion will fall apart the second you touch something" and I thought this might be the case.
+At this point in our tour, you might be thinking "Ok, sure but I bet under the hood, it's just duct tape and chewing gum" which is definitely what I expected going in.
 
-Thankfully, it really is this cool and I'll show you some cool features.
+Thankfully, it really is a first class Plex citizen and I'll even give you a whirlwind tour of my favourite features.
 
 ### Cross-platform search
 
-Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated
+Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated.
 
 {{< image src="plexamp-cross-search.jpg" style="height: 500px" >}}
 {{< /image >}}
@@ -196,12 +218,15 @@ There's much more that isn't illustrated here too. My library is still pretty em
 {{< image src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif" >}}
 {{< /image >}}
 
+To enable automatic mixes, and other features, you'll want to enable [Sonic Analysis](https://support.plex.tv/articles/sonic-analysis-music/). I did a bit of a facepalm when I realised I didn't have this enabled yet. I even read the blog post for it when it launched!
+
 There's also a feature for surfacing what happened "On This Day" in music history:
 
 {{< image src="https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png" >}}
 {{< /image >}}
 
-It would have said that today is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 29th debut next year.
+It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 
+29th debut next year.
 
 ### Viewing albums by mood
 
@@ -210,9 +235,9 @@ There are a couple of cool groups like this such as albums by record labels and 
 {{< image src="plexamp-mood.jpg" >}}
 {{< /image >}}
 
-I haven't taken it for a spin just yet but the premise of it is really cool and another example of the two track sources (local and tidal) playing nicely together.
+I haven't taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It also demonstrates yet again how nicely the two sources (local and tidal) can play together.
 
-With that, let's take a look at what makes this possible
+It's about time that we look at why they play nicely together so let's take a peek under the hood.
 
 ## How's the API though?
 
@@ -221,9 +246,9 @@ If you remember, something I wanted was to continue powering the "Now playing" w
 {{< image src="utf9k-nowplaying.jpg" >}}
 {{< /image >}}
 
-✅ for **A good API**
+✅ for **A good API** (2/3)
 
-Initially playing Tidal content through Plex (there's a separate "music source") didn't surface anything in the API but by virtue of adding items to our library, we get full metadata available via the `/status/sessions` endpoint.
+Initially playing Tidal content through the dedicated "Music On TIDAL" library[^source] didn't surface anything in the API but by virtue of adding items to our regular music library instead, we get full metadata available via the `/status/sessions` endpoint.
 
 <details><summary>Here's the absolute mountain of information available for you to play with</summary>
 
@@ -419,11 +444,11 @@ Initially playing Tidal content through Plex (there's a separate "music source")
 
 We can definitely work with that!
 
-It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate upon closing the app but I just sidestep that by filtering for any sessions that aren't paused.
+It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate upon closing the app but I just sidestep that by filtering for any sessions that aren't paused. Don't worry, there'll be a section for gotchas like this later on.
 
-I'll also point out that this is metadata about a third party playing track, in a world that would love to choke you out with Widevine. Relatively speaking, it's pretty refreshing.
+I'll also put it into perspective that we're accessing metadata about a third party playing track, in a world that would love to choke you out with Widevine gloves on the mat. Relatively speaking, it's pretty refreshing to see.
 
-What's really going on here is that Plex's own metadata providers are doing the heavy lifting which works for us. When playing your local music, you get the exact same payload except for the `"attribution": "com.tidal"` pairing at the start.
+As far as how this is possible, what's really going on here is that Plex's own metadata providers are doing the heavy lifting. When playing your local music, you get the exact same payload except for the `"attribution": "com.tidal"` entry at the start.
 
 ## What about cross-platform sessions?
 
@@ -433,13 +458,13 @@ At this point, I'll take 2 out of 3 happily but we're apparently getting somethi
 
 {{< tweet "plexamp" "1489024846033915908" >}}
 
-❌ but 👀 for **Cross-platform sessions**
+❌ but 👀 for **Cross-platform sessions** (2/3)
 
 ## Ok but what's the catch here
 
 In the spirit of fairness, nothing is perfect and there are few things I've stumbled across while using this setup as my daily driver.
 
-Most of these are either fine in moderation or things that I'm sure the [Plexamp team](https://twitter.com/plexamp) are aiming to address. If not, this is my bug report/feature request list!
+Most of these are either fine in moderation or things that I'm sure the [Plexamp team](https://twitter.com/plexamp) are aiming to address. If not, the team can consider this post as my bug report/feature request list!
 
 ### Hard dependency on the authentication server
 
@@ -450,7 +475,7 @@ I had the misfortune of having this integration go down briefly due to an outage
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
-{{% notice title="🔑 A tip for Plex server owners" %}}
+{{% notice emoji="🔑" title="A tip for Plex server owners" %}}
 [Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
 
 They're relatively stable but it's inevitable that the authentication server will fail again one day.
@@ -460,21 +485,21 @@ That isn't a slight towards Plex, it's just an unavoidable reality about compute
 Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
 {{% /notice %}}
 
-While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there like nothing happened. If you remember, Plex has an "Add to My Tidal" button and this where it can be useful as a backup.
+While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and this is where it can be useful as a backup.
 
-Anyway, as an [SRE](https://sre.google/), if I'm going to talk about availability, I should bring some data and so I did a brief skim of the [Plex status page](https://status.plex.tv/).
+As an [SRE](https://sre.google/), albeit one currently off the clock, if I'm going to talk shit about availability then I should bring some data and so I did a brief skim of the [Plex status page](https://status.plex.tv/).
 
-Basically, I added up the number of minutes elapsed for every publically listed outage for the year of 2021 and got something just under 9 hours. That's almost bang on 99.9% (three nines) which is a pretty standard expectation for services.
+Basically, I added up the number of minutes elapsed for every publicly listed outage for the year of 2021 and got something just under 9 hours. That's almost bang on 99.9% (three nines) which is a pretty standard expectation for services.
 
 Arguably you'd hope for something closer to 99.99% (four nines) for a critical piece of infrastructure like that but eh, I'm not exactly doing math out here.
 
 Some of those incidents aren't even attributed to authentication outages but I threw them in there just to look at the worst case scenario.
 
-These outages, when they do happen, are generally about an hour long. The odds of hitting the same hour period in the same month is pretty slim. I've used Plex for years prior to this and only run into them a couple of times although I will admit that music streaming is something that I do a lot more than visual media.
+These outages, when they do happen, are generally about an hour long. The odds of hitting the same hour period in the same month is [pretty slim... right?](https://rachelbythebay.com/w/2019/07/15/giant/). I've used Plex for years prior to this and only run into them a couple of times although I will admit that music streaming is something that I do a lot more than visual media.
 
-Anyway, whatever, it's fine. I don't care and I'm not overly concerned :) I have too many local tracks to listen to anyway so I'll just take it as an excuse to go through my back catalogue of unplayed content instead of consuming the same 5 Outkast albums on a loop until I die.
+My personal opinion is that it's fine. I'm not overly concerned! I have too many local tracks in my backlog to listen to so I'll just take it as an excuse to go through unplayed content instead of consuming the same 5 Outkast albums on a loop until I die.
 
-Also, every service has outages. This isn't unique to Plex.
+Besides, every service has outages. This problem isn't unique to Plex.
 
 ### DRM...? Maybe yes, maybe no?
 
@@ -482,13 +507,13 @@ I stumbled onto this purely by accident but I guess you can't stream Tidal conte
 
 Trying to do so gave me an error dialogue with this message:
 
-> An error occured trying to play this item. Please make sure content from TIDAL is not already playing on another device.
+> An error occurred trying to play this item. Please make sure content from TIDAL is not already playing on another device.
 
 Despite the message, nothing else was playing and despite my best effort, I couldn't get this to go away.
 
 The exact same track would work via the hosted Plex app and I'm not entirely sure.
 
-Given mixed content only works one way (http can load https but not vice versa), I'm guessing it's some arbitrary legalese that says "You must only load our content over an SSL connection" or something.
+I'm guessing there is some arbitrary legalese in the deal between Tidal and Plex that says "You must only load our content over an SSL connection" or something to that effect.
 
 It could also just be a bug 🤷‍♀️
 
@@ -508,9 +533,9 @@ If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
 ### You can't remove Tidal albums
 
-This one seems like a weirdly obvious oversight so I'm going to give the benefit of the doubt here and assume there was some weird technical limitation that resulting in this being deferred.
+This one seems like a weirdly obvious oversight so I'm going to give the benefit of the doubt here and assume there was some weird technical limitation that mean this was deferred to the backlog.
 
-The team are definitely aware of it
+The team are definitely aware of it:
 
 {{< tweet "plexamp" "1491494752327372801" >}}
 
@@ -518,14 +543,18 @@ It's a little annoying though because I have added one or two albums accidentall
 
 ### Plexamp session are weirdly long lived
 
-Interestingly, Plexamp sessions are not cancelled by the owner of a Plex server.
+Interestingly, Plexamp sessions can't be cancelled by the owner of a Plex server?
 
 With most streaming content, you can force stop a session but here, you can't even kill your own sessions for some reason.
 
 {{< image src="plexamp-not-pausing.jpg" >}}
 {{< /image >}}
 
-In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal. The green padlock indicates that I can't touch the session so I just sort of need to wait for it to expire on its own.
+In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal.
+
+The green padlock indicates that I can't touch the session so I just sort of need to wait for it to expire on its own.
+
+When the track reaches the end, the progress bar just jumps back to where I had gotten up to before closing the player.
 
 My fingers are crossed that this will probably be handled by the refactor that gives us controllability between platforms.
 
@@ -540,23 +569,27 @@ Suffice to say, I was sold from the minute I was able to weave Tidal tracks alon
 
 I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.
 
-The main thing that Plexamp offers me is the removal of friction between handling multiple applications (in this case, Plex and Spotify) since the one I use heaviest will always dominate my focus.
+The main thing that Plexamp offers me is the removal of friction between juggling multiple applications (in this case, Plex and Spotify) since the one I use heaviest will always dominate my focus.
 
-With this setup, I don't have to think because everything is in one place. Usually that feels like a red flag but I think the integration has been handled really elegantly here. It's basically just another provider for Plex with no more or less attention than every other provider. It just kinda worksTM.
+With this setup, I don't have to worry about it because everything is in one place!
+
+Usually that feels like a red flag but I think the integration has been handled really elegantly here. It's simply another provider for Plex with no more or less attention than every other provider. It just kinda works™.
 
 I will reiterate though that if you don't care about local content, just use Spotify.
 
-If you balk at the thought of paying for both Plex and Tidal, maybe this isn't for you. I don't think I've mentioned it yet but I've subscribed for Plex's annual plan so many years in a row that I just invested in a lifetime subscription.
+If you balk at the thought of paying for both Plex and Tidal, maybe this also isn't for you. Personally I've subscribed to [Plex Pass](https://www.plex.tv/plex-pass/) so many years in a row that I ended up just investing in a lifetime subscription.
 
-If you like tinkering with APIs or you want to consolidate your library in one place, while not being enough of a macochist to source your entire library as local files, then maybe you'll find something to really enjoy with this setup.
+However, you like tinkering with APIs or you want to consolidate your library in one place, while not being enough of a masochist to build 100% of your library through local files, then maybe you'll enjoy this setup as much as I have.
 
-Plexamp definitely feels like a labour of love and all of the little gags in the form of UI strings tucked in the app definitely promote that feeling.
+Plexamp definitely feels like a labour of love and all of the little UI string gag planted throughout the app promote that feeling.
 
 Perhaps the only question left now is whether I can bear to sully my library with [untaggable content](https://www.youtube.com/watch?v=kJunmC9YKQA).
 
 Enjoy!
 
-[^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an addon to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
+[^pulling]: It seems that these claims are starting to take effect. I didn't have any doubt but if I had to guess, I figure there's probably some process where Spotify waits out the calendar month in order to calculate compensation. It seems that Neil's entire catalogue has disappeared at the time of publishing. Prior to this, he pulled his catalogue [back in 2015](https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338/) due to "my music [being] devalued by the worst quality in the history of broadcasting or any other form of distribution"
+
+[^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an add-on to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
 
 [^cafe]: Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify's free version. I'm not entirely sure that's legal but damn, those ads really are annoying.
 
@@ -564,12 +597,16 @@ Enjoy!
 
 [^nowplaying]: Currently, it shows TV shows, movies and music via Plex and even what I'm playing on my PS5 via the Playstation Network APIs. I'll probably write about it in a future blog post. It was previously powered by both Spotify and [Trakt](https://trakt.tv) before my switch though.
 
-[^vpn]: Especially given all of the traffic would transit through Germany while I lived in New Zealand.
+[^vpn]: Especially given all of the traffic would transit through Germany while I lived in New Zealand. It wasn't really the VPN though, more that the traffic passed through two or three different [NATs](https://en.wikipedia.org/wiki/Network_address_translation).
 
 [^eardrums]: But for real though, nothing gets me in the mood to review software like having my eardrums blown out at 11:30pm while in bed :)
 
-[^localfiles]: The feature has degraded over the years so I'm not sure of the current state but last I checked, you can add local files to the Desktop client. This doesn't actually sync them like with the short lived Google Music but instead just dumps them all into a basic list that you can play while using that device.
+[^localfiles]: The feature has degraded over the years so I'm not sure of the current state but last I checked, you can add local files to the desktop client. This doesn't actually sync them like a la Google Music but instead just dumps them all into a basic list that you can play. If you open Spotify on a different desktop, you have to do the same process again from scratch.
 
 [^khinsider]: [*cough*](https://github.com/marcus-crane/khinsider)
+
+[^feb]: The first draft of this post was written on Feb 10th but I didn't get around to editing it until Feb 12th hence this doesn't really line up with the publication date.
+
+[^source]: There are two sources in Plex: One shows your Tidal library by itself and streams direct from Tidal. Given this, Tidal content doesn't show up in the API, as the stream doesn't transit via Plex. The other source is when you add Tidal content to your music library. This does transit via Plex so it shows up via the API.
 
 [^riaa]: Do three audio fingerprints make a unique fingerprint? I hope the RIAA doesn't destroy my blog or I might have to use one of those shady Swiss bulletproof hosts going forward...

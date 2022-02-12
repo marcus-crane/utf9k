@@ -290,6 +290,10 @@ blockquote {
   padding: 1rem 1.6rem;
 }
 
+.notice span {
+  padding-right: .5rem;
+}
+
 article #post-body .notice h2,
 article #post-body .notice h3,
 article #post-body .notice p {
