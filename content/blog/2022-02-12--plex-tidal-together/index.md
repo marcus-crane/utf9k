@@ -67,7 +67,7 @@ As far as I know, Spotify has the [most comprehensive API](https://developer.spo
 
 Apple Music is mostly ruled out here given their [API](https://developer.apple.com/documentation/applemusicapi/) is pretty lacking in general, especially when it comes to interacting with the current user.
 
-I dunno what it is about APple but reading their API documentation makes me feel like I've been teleported back to 2006 with a bucket full of XML.
+I dunno what it is about Apple but reading their API documentation makes me feel like I've been teleported back to 2006 with a bucket full of XML.
 
 Maybe it's just a cultural artefact from when they only dealt with desktop applications because all of their web offerings feel extremely bizarre.
 
@@ -205,7 +205,7 @@ Whether finding something new or something existing, you can search across your 
 {{< image src="plexamp-cross-search.jpg" style="height: 500px" >}}
 {{< /image >}}
 
-### An lively home screen
+### A lively home screen
 
 The home screen is a great example of how Tidal content is interweaved with your local content pretty seamlessly.
 
