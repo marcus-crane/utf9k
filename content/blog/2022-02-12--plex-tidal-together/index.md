@@ -461,6 +461,21 @@ At this point, I'll take 2 out of 3 happily but we're apparently getting somethi
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
+**UPDATE**: For Valentines Day, we got [a lofty 4.0 update](https://forums.plex.tv/t/plexamp-release-notes/221280/38) which includes, among other things, the ability to control your playback on another device!
+
+{{< image src="plex-remote-sessions.jpg" >}}
+{{< /image >}}
+
+What you're seeing here is my phone controlling a session that's playing on my laptop.
+
+Given this was part of a larger refactor that unlocked a lot of capabilities, I assume we'll see this fleshed out even more going forward.
+
+I'll be updating this to:
+
+✅ for **Cross-platform sessions** (3/3)
+
+although my fingers are crossed that it gets to be even more seamless than it is in the first release!
+
 ## Ok but what's the catch here
 
 In the spirit of fairness, nothing is perfect and there are few things I've stumbled across while using this setup as my daily driver.
