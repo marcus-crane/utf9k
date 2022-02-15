@@ -463,7 +463,7 @@ At this point, I'll take 2 out of 3 happily but we're apparently getting somethi
 
 **UPDATE**: For Valentines Day, we got [a lofty 4.0 update](https://forums.plex.tv/t/plexamp-release-notes/221280/38) which includes, among other things, the ability to control your playback on another device!
 
-{{< image src="plex-remote-sessions.jpg" >}}
+{{< image src="plex-remote-session.jpg" >}}
 {{< /image >}}
 
 What you're seeing here is my phone controlling a session that's playing on my laptop.
