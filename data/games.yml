@@ -7,12 +7,6 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
     link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
 
-  - title: "Final Fantasy XIV: A Realm Reborn"
-    platform: "PC"
-    id: 386
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
-    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
-
 - list: Stalled but occasionally progress is made
   games:
 
@@ -27,6 +21,12 @@
     id: 15705
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
     link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
+
+  - title: "Final Fantasy XIV: A Realm Reborn"
+    platform: "PC"
+    id: 386
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
+    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
 
   - title: "Grandia"
     platform: "Nintendo Switch"
