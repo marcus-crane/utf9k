@@ -8,8 +8,10 @@
 <meta name="author" content="Marcus Crane" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-{{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />{{ end }}
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
+{{ if .Params.keywords }}
+<meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />{{ end }}
+<meta name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
 <link rel="canonical" href="{{ .Permalink | safeURL }}" />
@@ -25,14 +27,15 @@
 {{ $styles := resources.Get "css/style.css" | postCSS }}
 
 {{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
 
-{{ if ne .Site.IsServer }}
-<script defer data-api='https://utf9k.net/api/event' data-domain='utf9k.net' src='https://utf9k.net/statistician.js'></script>
+{{ if ne .Site.IsServer true }}
+<script defer data-api='https://utf9k.net/api/event' data-domain='utf9k.net'
+  src='https://utf9k.net/statistician.js'></script>
 {{ end }}
 
 <link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
