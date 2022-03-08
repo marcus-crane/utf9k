@@ -57,6 +57,7 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderLivePlayer(data) {
+  clearInterval(window.currentInterval)
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
   let showProgression = false
@@ -93,6 +94,7 @@ function renderLivePlayer(data) {
   if (showProgression) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
+    progressArea.style.display = 'block'
   } else {
     progressArea.style.display = 'none'
   }
@@ -105,7 +107,6 @@ function renderLivePlayer(data) {
   livePlayer.style.opacity = 1
 
   if (showProgression) {
-    clearInterval(window.currentInterval)
     // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
     window.currentInterval = setInterval(function() {
       if (progression <= currentDuration) {
