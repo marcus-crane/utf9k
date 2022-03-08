@@ -20,10 +20,20 @@ const tvColor = "#C47828"
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
 
+// Because the eventSource clears itself with each update (we only care about the latest event)
+// a user may hit the side in between updates at which point, there are no events sent to them
+// until the server state changes. This can take a while or maybe even never if nothing
+// is playing. We'll do an initial population of the site before calling out event source
+// and pretty quickly get brought up to date by the event stream
+fetch("https://gunslinger.utf9k.net/api/v3/playing")
+  .then(res => res.json())
+  .then(data => renderLivePlayer(data))
+  .catch(err => console.error(`Failed to initialise player state: ${err}`))
+
 const eventSource = new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
 
 eventSource.onmessage = function(event) {
-  const data = JSON.parse(event)
+  const data = JSON.parse(event.data)
   if (data.started_at < 0) {
     // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
     // in the meantime, we'll just bail out and the user won't know
@@ -95,21 +105,18 @@ function renderLivePlayer(data) {
   livePlayer.style.opacity = 1
 
   if (showProgression) {
+    clearInterval(window.currentInterval)
     // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
-    const interval = setInterval(function() {
+    window.currentInterval = setInterval(function() {
       if (progression <= currentDuration) {
         // It can take a bit to refresh so don't increment once at the end
         progression += 1000
       }
       elapsed.innerText = formatMsToHumanTimestamp(progression)
       if (progression >= currentDuration) {
-        clearInterval(interval)
+        clearInterval(window.currentInterval)
         progression = currentDuration
         console.log("The track should have finished. Refreshing shortly!")
-        setTimeout(function() {
-          // API should have refreshed after 1 second
-          return refreshData()
-        }, 1500)
       }
     }, 1000)
   }
