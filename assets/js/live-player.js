@@ -20,22 +20,17 @@ const tvColor = "#C47828"
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
 
-function refreshData() {
-  return fetch("https://gunslinger.utf9k.net/api/v3/playing")
-    .then(res => res.json())
-    .then(data => {
-      if (data.started_at < 0) {
-        // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
-        // in the meantime, we'll just bail out and the user won't know
-        throw ("Encountered a bug so we won't render the live player")
-      }
-      return data
-    })
-    .then(data => renderLivePlayer(data))
-    .catch(err => console.log(err))
-}
+const eventSource = new EventSource("https://gunslinger.utf9k.net/events")
 
-refreshData()
+eventSource.onmessage = function(event) {
+  const data = JSON.parse(event)
+  if (data.started_at < 0) {
+    // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
+    // in the meantime, we'll just bail out and the user won't know
+    throw ("Encountered a bug so we won't render the live player")
+  }
+  renderLivePlayer(data)
+}
 
 // Adapted from https://stackoverflow.com/a/69126766
 function formatMsToHumanTimestamp(ms) {
@@ -46,7 +41,7 @@ function formatMsToHumanTimestamp(ms) {
     d.getUTCSeconds()
   ]
   if (d.getUTCHours() === 0) {
-    parts.shift() 
+    parts.shift()
   }
   return parts.map(s => String(s).padStart(2, '0')).join(":")
 }
