@@ -20,7 +20,7 @@ const tvColor = "#C47828"
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
 
-const eventSource = new EventSource("https://gunslinger.utf9k.net/events")
+const eventSource = new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
 
 eventSource.onmessage = function(event) {
   const data = JSON.parse(event)
