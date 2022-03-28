@@ -2,12 +2,6 @@
   goal: 12
   books:
   
-  - title: Deep Work
-    subtitle: Rules for Focused Success in a Distracted World
-    cover: https://covers.openlibrary.org/b/id/8895559-L.jpg
-    link: https://openlibrary.org/works/OL17713267W/Deep_Work
-    progress: 10
-
   - title: Ruined by Design
     subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
     cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
