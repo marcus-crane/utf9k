@@ -8,15 +8,12 @@ const elapsed = document.querySelector("#elapsed")
 const duration = document.querySelector("#duration")
 const progressArea = document.querySelector("#progress")
 
-const gamingColor = "#003087"
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
-const musicColor = "#1DB954"
 const musicVerb = "🎧 I'm currently listening to"
 const musicVerbPastTense = "🎧 I was recently listening to"
 
-const tvColor = "#C47828"
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
 
@@ -53,7 +50,7 @@ function formatMsToHumanTimestamp(ms) {
   if (d.getUTCHours() === 0) {
     parts.shift()
   }
-  return parts.map(s => String(s).padStart(2, '0')).join(":")
+  return parts.map(s => String(s).padStart(2, "0")).join(":")
 }
 
 function renderLivePlayer(data) {
@@ -62,41 +59,41 @@ function renderLivePlayer(data) {
   let currentDuration = data.duration_ms
   let showProgression = false
   switch (data.category) {
-    case "gaming":
-      if (data.is_active) {
-        action.innerText = gamingVerb
-      } else {
-        action.innerText = gamingVerbPastTense
-      }
-      break
-    case "episode":
-    case "movie":
-      if (data.is_active) {
-        action.innerText = tvVerb
-        showProgression = true
-      } else {
-        action.innerText = tvVerbPastTense
-      }
-      break
-    case "track":
-      if (data.is_active) {
-        action.innerText = musicVerb
-        showProgression = true
-      } else {
-        action.innerText = musicVerbPastTense
-      }
-      break
-    default:
-      break
+  case "gaming":
+    if (data.is_active) {
+      action.innerText = gamingVerb
+    } else {
+      action.innerText = gamingVerbPastTense
+    }
+    break
+  case "episode":
+  case "movie":
+    if (data.is_active) {
+      action.innerText = tvVerb
+      showProgression = true
+    } else {
+      action.innerText = tvVerbPastTense
+    }
+    break
+  case "track":
+    if (data.is_active) {
+      action.innerText = musicVerb
+      showProgression = true
+    } else {
+      action.innerText = musicVerbPastTense
+    }
+    break
+  default:
+    break
   }
   livePlayer.className = "transition-opacity duration-1000"
 
   if (showProgression) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
-    progressArea.style.display = 'block'
+    progressArea.style.display = "block"
   } else {
-    progressArea.style.display = 'none'
+    progressArea.style.display = "none"
   }
 
   title.innerText = data.title
