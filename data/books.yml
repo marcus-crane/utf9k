@@ -1,9 +1,19 @@
 - list: 2022
   goal: 12
   books:
+
+  - title: High Output Management
+    subtitle: null
+    author: Andrew S. Grove
+    cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
+    link: https://openlibrary.org/works/OL2355834W
+    date_finished: null
+    rating: null
+    progress: 25
   
   - title: Ruined by Design
     subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
+    author: Mike Monteiro
     cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
     link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
     date_finished: 2022-02-24
