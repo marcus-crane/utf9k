@@ -4,6 +4,8 @@ set -e
 
 echo "Cue Validation"
 
+export PATH="$(go env GOPATH)/bin:$PATH"
+
 cue vet data/books.yml validation/books.cue
 echo "~ All book entries are semantically valid"
 
