@@ -2,6 +2,15 @@
   goal: 12
   books:
 
+  - title: Build
+    subtitle: An Unorthodox Guide to Making Things Worth Making
+    author: Tony Fadell
+    cover: https://covers.openlibrary.org/b/id/12742378-L.jpg
+    link: https://openlibrary.org/works/OL27739453W/Build
+    date_finished: null
+    rating: null
+    progress: 10
+
   - title: High Output Management
     subtitle: null
     author: Andrew S. Grove
