@@ -18,3 +18,7 @@ echo "~ Cue installed"
 
 export PATH="$(go env GOPATH)/bin:$PATH"
 echo "~ Add GOPATH to PATH"
+
+go env
+
+ls "$(go env GOPATH/bin)"
