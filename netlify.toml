@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "npm install -g pnpm && pnpm run build:prod"
+command = "pnpm run build:deps && pnpm run test && pnpm run build:metadata && pnpm run build"
 
 [build.environment]
 HUGO_VERSION = "0.91.2"

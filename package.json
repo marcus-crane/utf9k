@@ -8,12 +8,10 @@
   "scripts": {
     "start": "COMMIT_SHA=main hugo server --disableFastRender",
     "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
-    "build:prod": "pnpm run setup-python && pnpm run gather-files && pnpm run generate-fancy-links && pnpm run gather-image-metadata && pnpm run build",
+    "build:deps": "./ci/install.sh",
+    "build:metadata": "./ci/genmetadata.sh",
     "lint": "eslint assets/js",
-    "setup-python": "pip install -U pip && pip install -r scripts/requirements.txt",
-    "gather-files": "python scripts/gather-filesizes.py",
-    "generate-fancy-links": "python scripts/generate-fancylinks.py",
-    "gather-image-metadata": "python scripts/gather-image-metadata.py"
+    "test": "./ci/test.sh"
   },
   "devDependencies": {
     "eslint": "^7.32.0"
