@@ -51,7 +51,7 @@ Check out some of these funny gags I wrote:
 
 {{ readfile.inline }}
 <ul>
-{{ range $.Site.Data.gags.lines }}
+{{ range $.Site.Data.gags }}
 <li>{{ . }}</li>
 {{ end }}
 </ul>
@@ -65,7 +65,7 @@ Don't believe me? Here's that same inline shortcode embedded in this very post:
   <summary>Check out these fun gag lines I wrote</summary>
   {{< readfile.inline >}}
   <ul>
-  {{ range $.Site.Data.gags.lines }}
+  {{ range $.Site.Data.gags }}
   <li>{{ . }}</li>
   {{ end }}
   </ul>

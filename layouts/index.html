@@ -13,7 +13,7 @@
         <header>
           <h3>Here's a random(ly generated) thought</h3>
         </header>
-        <p>{{ range $.Site.Data.gags.lines | shuffle | first 1 }}{{ . }}{{ end }}</p>
+        <p>{{ range $.Site.Data.gags | shuffle | first 1 }}{{ . }}{{ end }}</p>
       </center>
       <hr />
       <div id="post-stream">
