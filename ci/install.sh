@@ -16,5 +16,8 @@ echo "~ Python dependencies installed"
 go install cuelang.org/go/cmd/cue@latest
 echo "~ Cue installed"
 
+export PATH="$(go env GOPATH)/bin:$PATH"
 export PATH="$(go env GOTOOLDIR):$PATH"
 echo "~ Add GOTOOLDIR to PATH"
+
+echo "$(which cue)"
