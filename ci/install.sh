@@ -21,4 +21,5 @@ echo "~ Add GOPATH to PATH"
 
 go env
 
-ls "$(go env GOPATH/bin)"
+ls "$(go env GOPATH)/bin"
+ls "$(go env GOTOOLDIR)"
