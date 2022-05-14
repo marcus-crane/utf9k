@@ -1,7 +1,7 @@
 - list: Actively playing
   games:
 
-  - title: "Phoenix Wright: Ace Attorney − Spirit of Justice"
+  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
     platform: "Nintendo 3DS"
     id: 12077
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
@@ -67,7 +67,7 @@
 - list: Completed
   games:
 
-  - title: "Phoenix Wright: Ace Attorney − Dual Destinies"
+  - title: "Phoenix Wright: Ace Attorney - Dual Destinies"
     platform: "Nintendo 3DS"
     id: 1432
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg"
