@@ -15,4 +15,4 @@ smmap==4.0.0
 soupsieve==2.2.1
 specktre==0.3.0
 typing-extensions==3.10.0.2
-urllib3==1.26.5
+urllib3==1.26.9
