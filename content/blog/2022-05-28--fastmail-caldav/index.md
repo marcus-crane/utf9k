@@ -46,16 +46,11 @@ Why does this work exactly? Well, I'm no expert here but I gave a brief overview
 
 For completeness, I've quoted it verbatim:
 
+> For anyone interested, Fastmail uses [Cyrus IMAP](https://www.cyrusimap.org/) which is an all-in-one IMAP, CalDAV and CardDAV server. As I understand it, it [represents calendars as mailboxes under the hood](https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html) hence why you use your Fastmail address as the identifier. That is, you have a single "calendar" in the UI but you can have multiple calendars on it eg; one for Events, one for Work and so on.
+>
+> In fact, we can prove this by requesting a bogus calendar:
 
-<blockquote>
-
-For anyone interested, Fastmail uses [Cyrus IMAP](https://www.cyrusimap.org/) which is an all-in-one IMAP, CalDAV and CardDAV server. As I understand it, it [represents calendars as mailboxes under the hood](https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html) hence why you use your Fastmail address as the identifier. That is, you have a single "calendar" in the UI but you can have multiple calendars on it eg; one for Events, one for Work and so on.
-
-In fact, we can prove this by requesting a bogus calendar:
-
-</blockquote>
-
-```shell {hl_lines=[9]}
+```shell
 $ curl -u <fastmail-email>:<fastmail-app-password> https://caldav.fastmail.com/dav/calendars/user/<fastmail-email>/blah
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -73,10 +68,6 @@ $ curl -u <fastmail-email>:<fastmail-app-password> https://caldav.fastmail.com/d
 
 *Note how it is looking for a mailbox despite being a caldav server*
 
-<blockquote>
-
-So yeah, your calendars are just email inboxes under the hood with Fastmail!
-
-More specifically, there is a mailbox per calendar (I think) and that mailbox is full of [ics](https://en.wikipedia.org/wiki/ICalendar) files
-
-</blockquote>
+> So yeah, your calendars are just email inboxes under the hood with Fastmail!
+> 
+> More specifically, there is a mailbox per calendar (I think) and that mailbox is full of [ics](https://en.wikipedia.org/wiki/ICalendar) files
