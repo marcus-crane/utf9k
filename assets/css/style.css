@@ -332,7 +332,7 @@ main ul > li:before, main ol > li:before,
 #post-body ul > li:before, #post-body > ol > li:before {
   content: "";
   position: absolute;
-  background-color: #d1d5db;
+  background-color: #23262b;
   width: .375em;
   height: .375em;
   border-radius: 50%;
@@ -343,7 +343,7 @@ main ul > li:before, main ol > li:before,
 @media (prefers-color-scheme: dark) {
   main ul > li:before, main ol > li:before,
   #post-body ul > li:before, #post-body > ol > li:before {
-    background-color: #374151;
+    background-color: #d1d5db;
   }
 }
 
