@@ -1,7 +1,7 @@
 # utf9k
 
 ![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
-![Hugo version](https://img.shields.io/badge/hugo-v0.87.0-blue)
+![Hugo version](https://img.shields.io/badge/hugo-v0.91.2-blue)
 
 This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
 
