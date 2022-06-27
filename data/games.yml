@@ -1,6 +1,12 @@
 - list: Actively playing
   games:
 
+  - title: "Grand Theft Auto V"
+    platform: "PC"
+    id: 1020
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png"
+    link: "https://www.igdb.com/games/grand-theft-auto-v"
+
   - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
     platform: "Nintendo 3DS"
     id: 12077
