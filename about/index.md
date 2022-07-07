@@ -1,7 +1,6 @@
 ---
 title: "About"
-slug: "about"
-category: "about"
+layout: layouts/post.njk
 ---
 
 I never write as much as I wish I would but there's a handful of articles you can read.

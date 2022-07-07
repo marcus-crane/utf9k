@@ -1,3 +1,0 @@
-#GagList: [...string]
-
-#GagList & [...]
