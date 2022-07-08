@@ -1,0 +1,7 @@
+<ul>
+{% for post in postslist | reverse %}
+  <li>
+    <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
+  </li>
+{% endfor %}
+</ul>
