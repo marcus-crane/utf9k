@@ -1,4 +1,8 @@
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 module.exports = function (eleventyConfig) {
   // Passthroughs
@@ -6,8 +10,49 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "static": "." })
 
+  const cacheBusterOptions = {};
+
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
+
+  let markdownLibrary = markdownIt({
+    html: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      class: "direct-link",
+      symbol: "#"
+    }),
+    level: [1,2,3,4],
+    slugify: eleventyConfig.getFilter("slugify")
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.addFilter("dateFmt", function(date, formatting) {
+    console.log(date, formatting)
+    return 'nice'
+  })
+
+  // Taken from https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407
+  eleventyConfig.addCollection("blogPostsByYear", (collection) => {
+    const posts = collection.getFilteredByTag('blog').reverse();
+    const years = posts.map(post => post.date.getFullYear());
+    const uniqueYears = [...new Set(years)];
+
+    const postsByYear = uniqueYears.reduce((prev, year) => {
+      const filteredPosts = posts.filter(post => post.date.getFullYear() === year);
+
+      return [
+        ...prev,
+        [year, filteredPosts]
+      ]
+    }, []);
+
+    return postsByYear;
+  });
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid

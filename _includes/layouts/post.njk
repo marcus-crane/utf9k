@@ -2,26 +2,12 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
 
-{{ collection }}
-
-<time datetime="{{ page.date }}">{{ page.date }}</time>
-{%- for tag in tags %}
-{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
-
-{{ content | safe }}
-
-{%- if collections.blog %}
-{%- set nextPost = collections.blog | getNextCollectionItem(page) %}
-{%- set previousPost = collections.blog | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-<hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
+  <div id="post-body">
+    {{ content | safe }}
+  </div>
+</div>
