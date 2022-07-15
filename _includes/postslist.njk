@@ -1,5 +1,5 @@
 <ul>
-{% for post in postslist | reverse %}
+{% for post in collections.recentPostsHomepage %}
   <li>
     <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
   </li>

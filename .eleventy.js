@@ -53,6 +53,11 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
+  eleventyConfig.addCollection("recentPostsHomepage", (collection) => {
+    const posts = collection.getFilteredByTag('blog').reverse()
+    return posts.slice(0, 5)
+  })
+
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
