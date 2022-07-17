@@ -4,11 +4,15 @@ specifiers:
   '@11ty/eleventy': ^1.0.1
   '@11ty/eleventy-img': ^2.0.1
   '@11ty/eleventy-plugin-rss': ^1.2.0
+  '@jamshop/eleventy-plugin-esbuild': ^1.0.2
   '@mightyplow/eleventy-plugin-cache-buster': ^1.1.3
   '@types/markdown-it': ^12.2.3
   bench: ^0.3.6
+  littlefoot: ^3.4.1
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.4
+  markdown-it-footnote: ^3.0.3
+  prettier: ^2.7.1
 
 dependencies:
   '@11ty/eleventy': 1.0.1
@@ -16,11 +20,15 @@ dependencies:
 
 devDependencies:
   '@11ty/eleventy-img': 2.0.1
+  '@jamshop/eleventy-plugin-esbuild': 1.0.2
   '@mightyplow/eleventy-plugin-cache-buster': 1.1.3
   '@types/markdown-it': 12.2.3
   bench: 0.3.6
+  littlefoot: 3.4.1
   markdown-it: 13.0.1
   markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-footnote: 3.0.3
+  prettier: 2.7.1
 
 packages:
 
@@ -141,6 +149,12 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: false
 
+  /@jamshop/eleventy-plugin-esbuild/1.0.2:
+    resolution: {integrity: sha512-N0nCxExDVVYslq1jUFqLEweuVOuHPziK352AW1BXVgu5fWXAf/elsdLcfzJLbgFlf4+tU+vJt/pb4fB4A27aqQ==}
+    dependencies:
+      esbuild: 0.7.22
+    dev: true
+
   /@mightyplow/eleventy-plugin-cache-buster/1.1.3:
     resolution: {integrity: sha512-jM+gZkxQDuGCHlNnLRxvx5YRnLQG8NK6TLNhXkCwi8m0s+Yzt7YMlNLQ9CRLLpZiNJsn7/q59K885O4G2E0GHw==}
     dependencies:
@@ -170,6 +184,20 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: false
+
+  /@pacote/get-style/1.1.7:
+    resolution: {integrity: sha512-TGg2mrHvLtQC/d9dPy/GpVDIdvCT1PfYvbjsOQR0nU8o4ofuPy4NHRsPDUYjZXXbpMC5uPK6N/yitHO0Pon/lA==}
+    dev: true
+
+  /@pacote/pixels/1.1.7:
+    resolution: {integrity: sha512-yztATcpzvQR4Y1iflLKQybTc/pr31LfAUAX2y2EE+62nqf9Q2gir5fcnVSSDYcEIONHAQHN+Pbb/V95Pg/fi7Q==}
+    dependencies:
+      '@pacote/get-style': 1.1.7
+    dev: true
+
+  /@pacote/throttle/1.0.7:
+    resolution: {integrity: sha512-7iO/ehc4UFeBcdwRjS5gxJwB/SSbeCzrUVR+R0R2Dxxz96TE2KpKN32UdRuv/4WNc+oRgu1g0Jyq/+U6/mr01A==}
+    dev: true
 
   /@sindresorhus/slugify/1.1.2:
     resolution: {integrity: sha512-V9nR/W0Xd9TSGXpZ4iFUcFGhuOJtZX82Fzxj1YISlbSgKvIiNa7eLEZrT0vAraPOt++KHauIVNYgGRgjc13dXA==}
@@ -727,6 +755,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /delegated-events/1.1.2:
+    resolution: {integrity: sha512-PjEw4Z5mrvXimyf60HGqMJ3BMcqqWZpBqSDGnEMBdkAtF4P7ltoa6N+UJXhbMMUxPLYFtykCmRs6Ra8I8pwzPQ==}
+    dependencies:
+      selector-set: 1.1.5
+    dev: true
+
   /depd/1.1.2:
     resolution: {integrity: sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==}
     engines: {node: '>= 0.6'}
@@ -896,6 +930,12 @@ packages:
     dependencies:
       prr: 1.0.1
     dev: false
+
+  /esbuild/0.7.22:
+    resolution: {integrity: sha512-B43SYg8LGWYTCv9Gs0RnuLNwjzpuWOoCaZHTWEDEf5AfrnuDMerPVMdCEu7xOdhFvQ+UqfP2MGU9lxEy0JzccA==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -1415,6 +1455,15 @@ packages:
     resolution: {integrity: sha512-+dAZZ2mM+/m+vY9ezfoueVvrgnHIGi5FvgSymbIgJOFwiznWyA59mav95L+Mc6xPtL3s9gm5eNTlNtxJLbNM1g==}
     dev: false
 
+  /littlefoot/3.4.1:
+    resolution: {integrity: sha512-P5gVZCqRLWPn5WndTQT+bTiGtWv6cEuhTYjDaDAH2vwLvRIK4q2WoD10SuI8NytRKgGdR3vUIW2G7vLUHJR5jQ==}
+    dependencies:
+      '@pacote/get-style': 1.1.7
+      '@pacote/pixels': 1.1.7
+      '@pacote/throttle': 1.0.7
+      delegated-events: 1.1.2
+    dev: true
+
   /localtunnel/2.0.2:
     resolution: {integrity: sha512-n418Cn5ynvJd7m/N1d9WVJISLJF/ellZnfsLnx8WBWGzxv/ntNcFkJ1o6se5quUhCplfLGBNL5tYHiq5WF3Nug==}
     engines: {node: '>=8.3.0'}
@@ -1466,6 +1515,10 @@ packages:
     dependencies:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
+    dev: true
+
+  /markdown-it-footnote/3.0.3:
+    resolution: {integrity: sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==}
     dev: true
 
   /markdown-it/12.3.2:
@@ -1821,6 +1874,12 @@ packages:
       tunnel-agent: 0.6.0
     dev: true
 
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /pretty/2.0.0:
     resolution: {integrity: sha512-G9xUchgTEiNpormdYBl+Pha50gOUovT18IvAe7EYMZ1/f9W/WWMPRn+xI68yXNMUk3QXHDwo/1wV/4NejVNe1w==}
     engines: {node: '>=0.10.0'}
@@ -2101,6 +2160,10 @@ packages:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
     dev: false
+
+  /selector-set/1.1.5:
+    resolution: {integrity: sha512-6SQw6yMew5iOZ8/cDHDEnJWRM4ot2mxP6szZyF5ptrBogw4AcS4EXRj/8BUfgAMwVfdL84qpModlBMOl2NVrsQ==}
+    dev: true
 
   /semver-compare/1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}

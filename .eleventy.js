@@ -1,9 +1,16 @@
+const path = require('path')
+
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require('markdown-it-footnote');
 
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
+
+const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
+
+const prettier = require('prettier')
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -25,7 +32,7 @@ async function imageShortcode(src, alt, sizes) {
 module.exports = function (eleventyConfig) {
   // Passthroughs
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
+  // eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy({ "static": "." })
 
@@ -36,9 +43,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
+  eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
+
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
+  eleventyConfig.addPlugin(pluginESbuild, {
+    entryPoints: {
+      "footnotes": "js/footnotes.js",
+      "live-player": "js/live-player.js"
+    },
+    output: "_site/js"
+  })
 
   let markdownLibrary = markdownIt({
     html: true,
@@ -51,7 +67,7 @@ module.exports = function (eleventyConfig) {
     }),
     level: [1,2,3,4],
     slugify: eleventyConfig.getFilter("slugify")
-  });
+  }).use(markdownItFootnote);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("dateFmt", function(date, formatting) {
@@ -81,6 +97,23 @@ module.exports = function (eleventyConfig) {
     const posts = collection.getFilteredByTag('blog').reverse()
     return posts.slice(0, 5)
   })
+
+  // Transforms
+
+  // Shoutouts to @pdehaan: https://github.com/11ty/eleventy/issues/1314#issuecomment-657999759
+  eleventyConfig.addTransform("prettier", function (content, outputPath) {
+    const extname = path.extname(outputPath);
+    switch (extname) {
+      case ".html":
+      case ".json":
+        // Strip leading period from extension and use as the Prettier parser.
+        const parser = extname.replace(/^./, "");
+        return prettier.format(content, { parser });
+
+      default:
+        return content;
+    }
+  });
 
   return {
     // Control which files Eleventy will process
