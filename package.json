@@ -27,6 +27,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@jamshop/eleventy-plugin-esbuild": "^1.0.2",

@@ -26,6 +26,16 @@ layout: layouts/base.njk
             <h3>Books I'm *ahem* paging through</h3>
           </header>
           <ul>
+            {% for book in books[0].books %}
+              {% if book.progress != 100 %}
+              <li style="display: inline-block">
+                <a href="{{ book.link }}">
+                  {% set alt = "A cover photo of the book titled " + book.title %}
+                  <img src="{{ book.cover }}" alt="{{ alt }}" height="180px" style="border-radius: 3px;" />
+                </a>
+              </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </center>
       </div>
@@ -56,6 +66,14 @@ layout: layouts/base.njk
             <h3>Games I'm (slowly) progressing through</h3>
           </header>
           <ul>
+            {% for game in games[0].games %}
+            <li style="display: inline-block">
+              <a href="{{ game.link }}">
+                {% set alt = "Box art for the game called " + book.title %}
+                <img src="{{ game.cover }}" alt="{{ alt }}" height="180px" style="border-radius: 3px;" />
+              </a>
+            </li>
+            {% endfor %}
           </ul>
         </div>
       </center>

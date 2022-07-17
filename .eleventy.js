@@ -15,7 +15,7 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function imageShortcode(src, sizes) {
+async function imageShortcode(src, sizes, alt = "") {
   let metadata = await Image(src, {
     widths: [300, 600, 900, 1200],
     formats: ["avif", "jpeg"]
@@ -26,11 +26,13 @@ async function imageShortcode(src, sizes) {
   // to port around in the long term too (or process for other purposes) I suppose too. I don't
   // bother with error handling since I'd rather have the pipeline crash than render bad
   // alt text.
-  const imagePath = path.parse(src);
-  const captionPath = path.join(imagePath.dir, "alt.yml")
-  const captionFile = fs.readFileSync(captionPath, "utf-8")
-  const captionText = YAML.parse(captionFile)
-  const alt = captionText[imagePath.base].replaceAll("\n", "")
+  if (!src.includes('http')) {
+    const imagePath = path.parse(src);
+    const captionPath = path.join(imagePath.dir, "alt.yml")
+    const captionFile = fs.readFileSync(captionPath, "utf-8")
+    const captionText = YAML.parse(captionFile)
+    const alt = captionText[imagePath.base].replaceAll("\n", "")
+  }
 
   let imageAttributes = {
     alt,
