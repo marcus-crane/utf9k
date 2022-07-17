@@ -1,5 +1,6 @@
 const fs = require("fs")
-const path = require('path')
+const path = require("path")
+const YAML = require("yaml")
 
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -19,16 +20,16 @@ async function imageShortcode(src, sizes) {
     formats: ["avif", "jpeg"]
   });
 
-  // To keep Markdown relatively clean, I keep alt text for images as single line text files
+  // To keep Markdown relatively clean, I keep alt text for images in a yaml file per post
   // as this lets me write longer captions without shortcodes being unwieldy. Makes things easier
   // to port around in the long term too (or process for other purposes) I suppose too. I don't
   // bother with error handling since I'd rather have the pipeline crash than render bad
   // alt text.
   const imagePath = path.parse(src);
-  const captionFile = `${imagePath.name}.txt`
-  const captionPath = path.join(imagePath.dir, captionFile)
-  const captionText = fs.readFileSync(captionPath)
-  const alt = captionText.toString('utf-8').replaceAll("\n", " ")
+  const captionPath = path.join(imagePath.dir, "alt.yml")
+  const captionFile = fs.readFileSync(captionPath, "utf-8")
+  const captionText = YAML.parse(captionFile)
+  const alt = captionText[imagePath.base].replaceAll("\n", "")
 
   let imageAttributes = {
     alt,
