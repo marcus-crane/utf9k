@@ -8,6 +8,7 @@ const markdownItFootnote = require('markdown-it-footnote');
 
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
@@ -61,6 +62,7 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
+  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
       "footnotes": "js/footnotes.js",
