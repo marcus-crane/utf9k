@@ -27,6 +27,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
     "@mightyplow/eleventy-plugin-cache-buster": "^1.1.3",
     "@types/markdown-it": "^12.2.3",
     "bench": "^0.3.6",
