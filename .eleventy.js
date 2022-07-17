@@ -28,7 +28,7 @@ async function imageShortcode(src, sizes) {
   const captionFile = `${imagePath.name}.txt`
   const captionPath = path.join(imagePath.dir, captionFile)
   const captionText = fs.readFileSync(captionPath)
-  const alt = captionText.toString('utf-8')
+  const alt = captionText.toString('utf-8').replaceAll("\n", " ")
 
   let imageAttributes = {
     alt,
