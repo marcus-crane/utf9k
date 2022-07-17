@@ -101,6 +101,8 @@ module.exports = function (eleventyConfig) {
   // Transforms
 
   // Shoutouts to @pdehaan: https://github.com/11ty/eleventy/issues/1314#issuecomment-657999759
+  // Not only does this prettify HTML and JSON, it has the added side effect of choking
+  // if anything is not semantically correct HTML ie; tags are not closed properly
   eleventyConfig.addTransform("prettier", function (content, outputPath) {
     const extname = path.extname(outputPath);
     switch (extname) {
