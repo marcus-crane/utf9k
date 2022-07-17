@@ -1,3 +1,4 @@
+const fs = require("fs")
 const path = require('path')
 
 const markdownIt = require("markdown-it");
@@ -10,13 +11,24 @@ const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
-const prettier = require('prettier')
+const prettier = require('prettier');
 
-async function imageShortcode(src, alt, sizes) {
+async function imageShortcode(src, sizes) {
   let metadata = await Image(src, {
     widths: [300, 600, 900, 1200],
     formats: ["avif", "jpeg"]
   });
+
+  // To keep Markdown relatively clean, I keep alt text for images as single line text files
+  // as this lets me write longer captions without shortcodes being unwieldy. Makes things easier
+  // to port around in the long term too (or process for other purposes) I suppose too. I don't
+  // bother with error handling since I'd rather have the pipeline crash than render bad
+  // alt text.
+  const imagePath = path.parse(src);
+  const captionFile = `${imagePath.name}.txt`
+  const captionPath = path.join(imagePath.dir, captionFile)
+  const captionText = fs.readFileSync(captionPath)
+  const alt = captionText.toString('utf-8')
 
   let imageAttributes = {
     alt,
