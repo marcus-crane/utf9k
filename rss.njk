@@ -3,13 +3,13 @@
   "permalink": "rss.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "My Blog about Boats",
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "url": "https://example.com/",
-    "feedUrl": "https://example.com/feed.xml",
+    "title": "utf9k,
+    "subtitle": "Posts about technology and other bits and pieces",
+    "url": "https://utf9k.net/",
+    "feedUrl": "https://utf9k.net/feed.xml",
     "author": {
-      "name": "Boaty McBoatFace",
-      "email": "me@example.com"
+      "name": "Marcus Crane",
+      "email": "marcus@utf9k.net"
     }
   }
 }
@@ -26,10 +26,11 @@
         <item>
             <title>{{ post.data.title }}</title>
             <link>{{ absolutePostUrl }}</link>
-            <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+            <description>{{ post.description }}</description>
             <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
             <dc:creator>{{ metadata.author.name }}</dc:creator>
             <guid>{{ absolutePostUrl }}</guid>
+            <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
         </item>
     {%- endfor %}
   </channel>
