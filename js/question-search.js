@@ -90,7 +90,6 @@ window.addEventListener("DOMContentLoaded", function() {
   function handleInput() {
     if (lookup === null) return
     const searchTerm = input.value.trim().toLowerCase()
-    console.log(!searchTerm)
     if (!searchTerm) {
       resetQuestionVisibility()
       return

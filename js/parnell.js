@@ -68,7 +68,6 @@ function buildMapLayer() {
       filterDay = ["!=", ["string", ["get", "day"]], "placeholder"]
     } else {
       filterDay = ["==", ["string", ["get", "day"]], day]
-      console.log(filterDay)
     }
     map.setFilter("tickets", ["all", filterHour, filterDay])
   })

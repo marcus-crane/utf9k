@@ -46,9 +46,9 @@ async function imageShortcode(src, sizes, alt = "") {
 }
 
 module.exports = function (eleventyConfig) {
-  // Passthroughs
-  eleventyConfig.addPassthroughCopy("css");
+  // // Passthroughs
   // eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("css")
   eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy({ "static": "." })
 
