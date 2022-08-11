@@ -63,7 +63,7 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
+  // eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
