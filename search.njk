@@ -1,0 +1,18 @@
+---
+permalink: '/search.json'
+---
+[
+  {%- for post in collections.questions | reverse %}
+    {
+      "slug": "{{ post.data.slug }}",
+      "content": "{{ post.template.frontMatter.content | dump(2) }}",
+      "tags": [
+        {%- for tag in post.data.tags %}
+        "{{ tag }}"
+        {% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ],
+      "title": "{{ post.data.title }}"
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+]

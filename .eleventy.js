@@ -8,7 +8,6 @@ const markdownItFootnote = require('markdown-it-footnote');
 
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
@@ -47,13 +46,13 @@ async function imageShortcode(src, sizes, alt = "") {
 }
 
 module.exports = function (eleventyConfig) {
-  // // Passthroughs
+  // Passthroughs
+  eleventyConfig.addPassthroughCopy("css");
   // eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("css")
   eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy({ "static": "." })
 
-  // const cacheBusterOptions = {};
+  const cacheBusterOptions = {};
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
@@ -61,14 +60,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
-  eleventyConfig.addPairedShortcode("loadFile", function(path) {
-    return fs.readFileSync(path, "utf-8")
-  })
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
-  // eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
+  eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
@@ -96,14 +91,6 @@ module.exports = function (eleventyConfig) {
     console.log(date, formatting)
     return 'nice'
   })
-
-  // Collections
-  const collections = ["blog", "projects", "questions", "reviews"]
-  for (const collection of collections) {
-    eleventyConfig.addCollection(collection, function(collectionApi) {
-      return collectionApi.getFilteredByGlob(`${collection}/*.md`);
-    })
-  }
 
   // Taken from https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407
   eleventyConfig.addCollection("blogPostsByYear", (collection) => {
