@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy({ "static": "." })
 
-  const cacheBusterOptions = {};
+  // const cacheBusterOptions = {};
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
