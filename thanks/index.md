@@ -1,7 +1,7 @@
 ---
 title: "Thanks"
 slug: "thanks"
-category: "thanks"
+layout: layouts/post.njk
 ---
 
 There's no requirement on the internet to say thanks but I'd have absolutely no inspiration (or site) without the following.

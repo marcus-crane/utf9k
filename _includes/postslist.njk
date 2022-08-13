@@ -1,5 +1,5 @@
 <ul>
-{%- for post in (collections.recentPostsHomepage | reverse).slice(0, 5) %}
+{%- for post in (collections.blog | reverse).slice(0, 5) %}
   <li>
     <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
   </li>

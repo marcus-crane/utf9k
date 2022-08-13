@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+permalink: /projects/
+---
+
+<main>
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <ul>
+    {%- for post in (collections.projects | reverse) %}
+      <li>
+        <a href="{{ post.url | url }}">
+          {% if post.data.title %}{{ post.data.title }}
+          {% endif %}
+        </a>
+      </li>
+    {%- endfor %}
+  </ul>
+</main>

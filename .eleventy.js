@@ -68,7 +68,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
       "footnotes": "js/footnotes.js",
-      "live-player": "js/live-player.js"
+      "live-player": "js/live-player.js",
+      "question-search": "js/question-search.js"
     },
     output: "_site/js"
   })
@@ -110,9 +111,9 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
-  eleventyConfig.addCollection("recentPostsHomepage", (collection) => {
-    return collection.getFilteredByGlob('blog/**/*.md')
-  })
+  eleventyConfig.addCollection("blog", c => c.getFilteredByGlob('blog/**/*.md'))
+  eleventyConfig.addCollection("projects", c => c.getFilteredByGlob('projects/**/*.md'))
+  eleventyConfig.addCollection("questions", c => c.getFilteredByGlob('questions/**/*.md'))
 
   // Transforms
 
