@@ -11,6 +11,7 @@ specifiers:
   '@types/markdown-it': ^12.2.3
   bench: ^0.3.6
   littlefoot: ^3.4.1
+  luxon: ^3.0.1
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.4
   markdown-it-footnote: ^3.0.3
@@ -20,6 +21,7 @@ specifiers:
 dependencies:
   '@11ty/eleventy': 1.0.1
   '@11ty/eleventy-plugin-rss': 1.2.0
+  luxon: 3.0.1
 
 devDependencies:
   '@11ty/eleventy-fetch': 3.0.0
@@ -1548,6 +1550,11 @@ packages:
 
   /luxon/2.4.0:
     resolution: {integrity: sha512-w+NAwWOUL5hO0SgwOHsMBAmZ15SoknmQXhSO0hIbJCAmPKSsGeK8MlmhYh2w6Iib38IxN2M+/ooXWLbeis7GuA==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /luxon/3.0.1:
+    resolution: {integrity: sha512-hF3kv0e5gwHQZKz4wtm4c+inDtyc7elkanAsBq+fundaCdUBNJB1dHEGUZIM6SfSBUlbVFduPwEtNjFK8wLtcw==}
     engines: {node: '>=12'}
     dev: false
 

@@ -2,6 +2,7 @@ const fs = require("fs")
 const path = require("path")
 const yaml = require("yaml")
 
+const { DateTime } = require('luxon')
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require('markdown-it-footnote');
@@ -9,29 +10,29 @@ const markdownItFootnote = require('markdown-it-footnote');
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function imageShortcode(src, sizes, alt = "") {
+async function imageShortcode(imageMetadata, filename, sizes) {
+  const { imagePath, altTags } = imageMetadata
+  const src = path.join(imagePath, filename)
+  if (!fs.existsSync(src)) {
+    console.error(`Tried to load image at ${src} which does not exist`)
+    return
+  }
   let metadata = await Image(src, {
-    widths: [300, 600, 900, 1200],
-    formats: ["avif", "jpeg"]
+    widths: [300, 600, 900],
+    formats: ["avif", "jpeg"],
+    outputDir: '_site/img'
   });
 
-  // To keep Markdown relatively clean, I keep alt text for images in a yaml file per post
-  // as this lets me write longer captions without shortcodes being unwieldy. Makes things easier
-  // to port around in the long term too (or process for other purposes) I suppose too. I don't
-  // bother with error handling since I'd rather have the pipeline crash than render bad
-  // alt text.
-  if (!src.includes('http')) {
-    const imagePath = path.parse(src);
-    const captionPath = path.join(imagePath.dir, "alt.yml")
-    const captionFile = fs.readFileSync(captionPath, "utf-8")
-    const captionText = yaml.parse(captionFile)
-    const alt = captionText[imagePath.base].replaceAll("\n", "")
+  let alt = ''
+  if (Object.keys(altTags).includes(filename)) {
+    alt = altTags[filename]
+  } else {
+    console.error(`Missing alt description for ${src}`)
   }
 
   let imageAttributes = {
@@ -53,13 +54,13 @@ async function videoShortcode(src) {
 }
 
 module.exports = function (eleventyConfig) {
+  // Silence file writes in order to see my own warnings
+  // eg; when an image is referenced that does not exist
+  eleventyConfig.setQuietMode(true)
+
   // Passthroughs
   eleventyConfig.addPassthroughCopy("css");
-  // eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("img")
   eleventyConfig.addPassthroughCopy({ "static": "." })
-
-  const cacheBusterOptions = {};
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
@@ -75,7 +76,6 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
@@ -100,9 +100,8 @@ module.exports = function (eleventyConfig) {
   }).use(markdownItFootnote);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addFilter("dateFmt", function(date, formatting) {
-    console.log(date, formatting)
-    return 'nice'
+  eleventyConfig.addFilter("dateFmt", function(date, formatting = 'DDD') {
+    return DateTime.fromJSDate(date).toFormat(formatting)
   })
 
   // Taken from https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407

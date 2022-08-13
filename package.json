@@ -24,7 +24,8 @@
   "homepage": "https://github.com/marcus-crane/utf9k#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.2.0"
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "luxon": "^3.0.1"
   },
   "devDependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",

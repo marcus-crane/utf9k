@@ -1,6 +1,6 @@
 ---
 title: "Using Fastmail with CalDAV libraries"
-date: "2022-05-28T20:20:00+1300"
+date: "2022-05-28"
 description: "A guide to using Fastmail with CalDAV libraries which are often fiddly and struggle to find your calendars"
 slug: "fastmail-caldav"
 category: "blog"
@@ -36,7 +36,7 @@ You can confirm that by navigating to your Fastmail inbox and seeing what addres
 
 Alternatively, you could also navigate to `Settings` → `Calendars` → `Export` (on one of the calendars) and copy most of the section from `CalDAV URL`.
 
-{% image "./blog/2022-05-28--fastmail-caldav/calendar-settings.png", "1682", "1074" %}
+{% image imageMetadata, "calendar-settings.png", "1682", "1074" %}
 
 Putting the whole URL will only load one calendar but odds are, whatever CalDAV client you're struggling with will load all of your calendars by removing the calendar ID at the end.
 

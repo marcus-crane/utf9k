@@ -18,7 +18,7 @@ permalink: /blog/
             {% if post.data.title %}{{ post.data.title }}
             {% endif %}
           </a>
-          <time>{{ post.date | dateFmt }}</time>
+          <time>{{ post.date | dateFmt("MMM dd") }}</time>
         </li>
       {% endfor %}
     {% endfor %}
