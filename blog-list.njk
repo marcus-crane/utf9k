@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+title: Blog
 permalink: /blog/
 ---
 
@@ -7,5 +8,33 @@ permalink: /blog/
   <header>
     <h1>Posts</h1>
   </header>
-  {% include "bloglist.njk" %}
+  <ul>
+    {% for year, yearPosts in collections.blogPostsByYear | reverse %}
+      <h2>{{ year }}</h2>
+      {# TODO: Replace this with a Nunjucks filter #}
+      {% for post in yearPosts | reverse %}
+        <li>
+          <a href="{{ post.url | url }}">
+            {% if post.data.title %}{{ post.data.title }}
+            {% endif %}
+          </a>
+          <time>{{ post.date | dateFmt }}</time>
+        </li>
+      {% endfor %}
+    {% endfor %}
+    <h2>Drafts</h2>
+    <details>
+      <summary>You should prod me to finish these!</summary>
+      <ul>
+        {# TODO: Bring back unless statement #}
+        {% for post in collections.post | reverse %}
+        {% if post.data.draft %}
+        <li>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+    </details>
+</ul>
 </main>

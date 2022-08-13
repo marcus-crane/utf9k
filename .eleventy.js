@@ -94,8 +94,8 @@ module.exports = function (eleventyConfig) {
   })
 
   // Taken from https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407
-  eleventyConfig.addCollection("blogPostsByYear", (collection) => {
-    const posts = collection.getFilteredByGlob('blog/**/*.md');
+  eleventyConfig.addCollection("blogPostsByYear", (collectionApi) => {
+    const posts = collectionApi.getFilteredByTag('post');
     const years = posts.map(post => post.date.getFullYear());
     const uniqueYears = [...new Set(years)];
 
@@ -111,18 +111,10 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
-  eleventyConfig.addCollection("projectsByStatus", collection => {
-    const projects = collection.getFilteredByGlob('projects/**/*.md')
-    
-    return {
-      'Ongoing': projects.filter(p => p.data.ongoing),
-      'Archived': projects.filter(p => !p.data.ongoing)
-    }
-  })
-
-  eleventyConfig.addCollection("blog", c => c.getFilteredByGlob('blog/**/*.md'))
-  eleventyConfig.addCollection("projects", c => c.getFilteredByGlob('projects/**/*.md'))
-  eleventyConfig.addCollection("questions", c => c.getFilteredByGlob('questions/**/*.md'))
+  eleventyConfig.addCollection("projectsByStatus", collectionApi => ({
+    'Ongoing': collectionApi.getFilteredByTag('project').filter(p => p.data.ongoing),
+    'Archived': collectionApi.getFilteredByTag('project').filter(p => !p.data.ongoing)
+  }))
 
   // Transforms
 

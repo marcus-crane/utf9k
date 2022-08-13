@@ -372,9 +372,15 @@ details {
 }
 
 /* Code blocks, table and images get extra width */
-table, .highlight, figure {
-  width: 110%;
-  margin-left: -5%;
+/* TODO: Don't use important, this is dumb but temporary while I do a migration */
+table, .highlight, pre[class*=language-], figure, #post-body img {
+  width: 120% !important;
+  margin-left: -10% !important;
+}
+
+#post-body img {
+  height: auto;
+  max-width: none;
 }
 
 article.full table {

@@ -2,7 +2,6 @@
 title: "Lili: Child of Geos"
 date: "2015-05-04T22:31:12+13:00"
 slug: "lili-child-of-geos"
-category: "reviews"
 tags:
 - "2012"
 - "2014"

@@ -2,7 +2,6 @@
 title: "Conditionally setting your gitconfig"
 date: "2021-08-12T20:17:00+1300"
 slug: "conditional-gitconfig"
-category: "blog"
 tags:
 - "dotfiles"
 - "git"

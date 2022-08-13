@@ -2,7 +2,6 @@
 title: "Some thoughts about running a wiki"
 date: "2017-12-18T00:00:00+1300"
 slug: "wiki-thoughts"
-category: "blog"
 tags:
 - "community"
 - "leadership"

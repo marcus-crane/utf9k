@@ -21,20 +21,20 @@
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.blog | reverse %}
-  {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <content xml:lang="{{ metadata.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-  </entry>
+  {%- for post in collections.post | reverse %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content xml:lang="{{ metadata.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
   {%- endfor %}
 </feed>
