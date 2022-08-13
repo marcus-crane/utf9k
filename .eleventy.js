@@ -94,7 +94,7 @@ module.exports = function (eleventyConfig) {
 
   // Taken from https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407
   eleventyConfig.addCollection("blogPostsByYear", (collection) => {
-    const posts = collection.getFilteredByTag('blog').reverse();
+    const posts = collection.getFilteredByGlob('blog/**/*.md');
     const years = posts.map(post => post.date.getFullYear());
     const uniqueYears = [...new Set(years)];
 
@@ -111,8 +111,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("recentPostsHomepage", (collection) => {
-    const posts = collection.getFilteredByTag('blog').reverse()
-    return posts.slice(0, 5)
+    return collection.getFilteredByGlob('blog/**/*.md')
   })
 
   // Transforms

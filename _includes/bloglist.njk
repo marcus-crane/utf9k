@@ -1,5 +1,5 @@
 <ul>
-{% for year, yearPosts in collections.blogPostsByYear %}
+{% for year, yearPosts in collections.blogPostsByYear | reverse %}
   <h2>{{ year }}</h2>
   {% for post in yearPosts | reverse %}
     <li>
