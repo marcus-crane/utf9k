@@ -111,6 +111,15 @@ module.exports = function (eleventyConfig) {
     return postsByYear;
   });
 
+  eleventyConfig.addCollection("projectsByStatus", collection => {
+    const projects = collection.getFilteredByGlob('projects/**/*.md')
+    
+    return {
+      'Ongoing': projects.filter(p => p.data.ongoing),
+      'Archived': projects.filter(p => !p.data.ongoing)
+    }
+  })
+
   eleventyConfig.addCollection("blog", c => c.getFilteredByGlob('blog/**/*.md'))
   eleventyConfig.addCollection("projects", c => c.getFilteredByGlob('projects/**/*.md'))
   eleventyConfig.addCollection("questions", c => c.getFilteredByGlob('questions/**/*.md'))
