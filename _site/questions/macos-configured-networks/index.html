@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How can I view configured networks in my macOS terminal? | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I view configured networks in my macOS terminal?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            Let's assume you have multiple networks set up under
+            <code>System Preferences > Networks</code>.
+          </p>
+          <p>
+            You might have "Work" which has a bunch of proxy configuration
+            specified and "Home" which just disabled proxy configuration.
+          </p>
+          <p>
+            If you left the former "Work" network selected, then went to a place
+            that can't access the proxy server, you wouldn't be able to access
+            the internet and vice versa.
+          </p>
+          <p>
+            To make automating this a little bit easier, there's a command line
+            tool called <code>scselect</code>
+          </p>
+          <p>Here's an example of what it looks like in action:</p>
+          <pre><code class="language-bash">> scselect
+Defined sets include: (* == current set)
+ * &#x3C;guid> (Work)
+   &#x3C;guid> (Home)
+</code></pre>
+          <p>
+            In this example, we can see the <code>Work</code> network is
+            selected.
+          </p>
+          <p>
+            Now we wanted to change to the Home network, you could do so
+            manually in <code>System Preferences</code> or you can run
+            <code>scselect</code> with the name of the network you want to
+            change to like so:
+          </p>
+          <pre><code class="language-bash">> scselect Home
+CurrentSet updated to &#x3C;guid> (Home)
+> scselect
+Defined sets include: (* == current set)
+   &#x3C;guid> (Work)
+ * &#x3C;guid> (Home)
+</code></pre>
+          <p>As you can see, the <code>Home</code> network is now selected.</p>
+          <p>
+            I only recently discovered this tool so I haven't automated it yet
+            but it's probably feasible to have a file with your working hours
+            and then if it's within those hours, toggle on the
+            <code>Work</code> network (and all of the proxy configuration that
+            comes with it)
+          </p>
+          <p>
+            The reason you might want to use a schedule and not eg; WiFi name is
+            that you might be working from home over a VPN for example.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

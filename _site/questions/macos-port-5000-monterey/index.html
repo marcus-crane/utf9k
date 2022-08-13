@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is using Port 5000 on macOS Monterey? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>What is using Port 5000 on macOS Monterey?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            I've been fiddling a bit with
+            <a href="https://github.com/wailsapp/wails">Wails</a> recently and I
+            gave the unreleased v2 alpha a try.
+          </p>
+          <p>
+            Out of the box, it binds to Port 5000 and I was surprised to receive
+            a <code>403 Forbidden</code>.
+          </p>
+          <p>Definitely not what I expected.</p>
+          <p>
+            We can use the <code>lsof</code> utility to figure out what's
+            holding on to Port 5000. You'll see in the screenshot below that I
+            use a shell function called <code>whomport</code> but under the
+            hood, it's running <code>lsof -nP i4TCP:5000 | grep LISTEN</code>.
+            Let's see what the output looks like.
+          </p>
+          <p>
+            This doesn't really help us much since Control Centre could be
+            anything but a bit of searching brings up that this change was
+            introduced in macOS Monterey.
+          </p>
+          <p>
+            In particular, there's a new setting under
+            <code>System Preferences</code> -> <code>Sharing</code> called
+            <code>Airplay Receiver</code>. Let's toggle it off.
+          </p>
+          <p>
+            Once this is done, you should find Port 5000 instantly freed up.
+            It's weird that Apple would pick such a commonly used port,
+            especially for developers!
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

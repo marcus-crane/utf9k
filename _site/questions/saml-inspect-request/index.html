@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How can I inspect a SAML request? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I inspect a SAML request?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            Until recently, I never had to go near SAML with a 10 foot pole but
+            I was recently helping out a coworker with adding SAML
+            authentication to an Elasticsearch cluster.
+          </p>
+          <p>
+            I had never seen one before but a SAML request looks a little like
+            this:
+          </p>
+          <pre><code class="language-text">https://idp.example.org/SAML2/SSO/Redirect?SAMLRequest=fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3%2FA15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr%2FRbRp63K3pL5rPhYOpkVdYib%2FCon%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9%2FfCR7GorYGTWFK8pu6DknnwKL%2FWEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2%2FBK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P%2FAXv4C
+</code></pre>
+          <p>
+            I took
+            <a href="https://en.wikipedia.org/wiki/SAML_2.0">this example</a>
+            from Wikipedia and it's a pretty good illustration of where the
+            juicy part of the request probably is.
+          </p>
+          <p>
+            A basic way to inspect this request in Python would look like the
+            following. I don't claim that this will work on all requests. For
+            that, try something like
+            <a href="https://github.com/onelogin/python3-saml">python3-saml</a>.
+          </p>
+          <pre><code class="language-python">from base64 import b64decode
+from urllib.parse import unquote
+import zlib
+
+url = "fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3%2FA15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr%2FRbRp63K3pL5rPhYOpkVdYib%2FCon%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9%2FfCR7GorYGTWFK8pu6DknnwKL%2FWEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2%2FBK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P%2FAXv4C"
+urldecoded_url = unquote(url)
+b64decoded_url = b64decode(url)
+request = zlib.decompress(b64decoded_url, -15).decode()
+print(request) // '&#x3C;?xml version="1.0" encoding="UTF-8"?>\r\n&#x3C;samlp:AuthnRequest\r\n  xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"\r\n  xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"\r\n  ID="aaf23196-1773-2113-474a-fe114412ab72"\r\n  Version="2.0"\r\n  IssueInstant="2004-12-05T09:21:59Z"\r\n  AssertionConsumerServiceIndex="0"\r\n  AttributeConsumingServiceIndex="0">\r\n  &#x3C;saml:Issuer>https://sp.example.com/SAML2&#x3C;/saml:Issuer>\r\n  &#x3C;samlp:NameIDPolicy\r\n    AllowCreate="true"\r\n    Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/>\r\n&#x3C;/samlp:AuthnRequest>\r\n'
+</code></pre>
+          <p>
+            If you're feeling a bit lazy, like I often am, you can use any of
+            the online decoders, such as
+            <a
+              href="https://developer.pingidentity.com/en/tools/saml-decoder.html"
+              >this one by PingID</a
+            >.
+          </p>
+          <p>
+            If you're dealing with sensitive credentials however, it's best to
+            decode it locally rather than trusting a third party.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

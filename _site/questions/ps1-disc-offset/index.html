@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why do Playstation 1 discs start at offset 37656? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>Why do Playstation 1 discs start at offset 37656?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            The Playstation 1 uses CD-ROMs with the
+            <a href="https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension"
+              >XA extension</a
+            >.
+          </p>
+          <p>
+            If you open a PS1 ISO within a hex editor, you'll want to scroll
+            down to <code>offset 37656</code>
+          </p>
+          <p>
+            Within a normal CD (or ISO), it will have a header offset size of
+            <code>2048</code>.
+          </p>
+          <p>
+            It seems a little arbitrary but you can read the table of contents
+            by multiplying the header offset by 16.
+          </p>
+          <p>For a normal CD, this would be <code>2048 * 16 = 32768</code></p>
+          <p>
+            In the case of PS1 discs, the header offset size is
+            <code>2352</code> for reasons I don't understand so they start at
+            <code>2352 * 16 = 37632</code>
+          </p>
+          <p>
+            Lastly, and somewhat arbitrarily, you'll want to jump forward by an
+            additional <code>24</code> bytes in order to come to the starting
+            point of <code>37565 points</code>
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

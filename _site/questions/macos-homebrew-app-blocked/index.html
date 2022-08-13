@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How can I run a Homebrew application being blocked by Gatekeeper? | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>
+            How can I run a Homebrew application being blocked by Gatekeeper?
+          </h1>
+        </header>
+        <div id="post-body">
+          <p>
+            This issue is particularly annoying and I only just discovered it
+            today for the first time.
+          </p>
+          <p>Here's an example of what it looks like</p>
+          <p>
+            In order to install the application so that it bypasses Gatekeeper,
+            you can rerun <code>brew cask install</code> like so:
+          </p>
+          <pre><code class="language-shell">> brew cask install --no-quarantine blah
+> brew reinstall --no-quarantine blah
+</code></pre>
+          <p>
+            If you'd like to keep this flag enabled all the time, and honestly
+            you might as well, you can also do the following:
+          </p>
+          <pre><code class="language-shell">> export HOMEBREW_CASK_OPTS="--no-quarantine"
+> brew cask install blah
+</code></pre>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

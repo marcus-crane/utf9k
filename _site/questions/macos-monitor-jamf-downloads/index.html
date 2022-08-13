@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How can I monitor JAMF downloads on macOS? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I monitor JAMF downloads on macOS?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            For large downloads, such as macOS updates, it can be annoying that
+            tools like Self Service don't surface download metrics
+          </p>
+          <p>
+            Thankfully, we can find the download on disk and watch as the file
+            size increases
+          </p>
+          <p>
+            In the case of macOS, downloads live at
+            <code>/Library/Application\ Support/JAMF/Downloads</code>
+          </p>
+          <p>
+            I'm no shell scripting master but the following is a quick hack to
+            view the progress in real time
+          </p>
+          <p>
+            There are better tools like <code>watch</code> but eh, this works
+            fine enough
+          </p>
+          <p>
+            Here's the script I've been using but it requires
+            <code>gnumfmt</code> which you can install with
+            <code>brew install coreutils</code>
+          </p>
+          <pre><code class="language-bash">> while (true) do echo $(sudo ls -l /Library/Application\ Support/JAMF/Downloads | grep macOS | awk '{ print $5 }' | gnumfmt --to iec --format "Downloaded: %8.1f"); sleep 15; done
+Downloaded: 6.9G
+Downloaded: 7.0G
+Downloaded: 7.0G
+Downloaded: 7.1G
+Downloaded: 7.1G
+</code></pre>
+          <p>
+            That's not particulary readable so here's a bit of an explainer:
+          </p>
+          <pre><code class="language-bash">while (true)
+do
+  echo $(
+    sudo ls -l /Library/Application\ Support/JAMF/Downloads | # (1)
+    grep macOS | # (2)
+    awk '{ print $5 }' | # (3)
+    gnumfmt --to iec --format "Downloaded: %8.1f" # (4)
+  );
+  sleep 15; # (5)
+done
+</code></pre>
+          <ol>
+            <li>
+              Annoyingly, <code>JAMF/Downloads</code> is a restricted directory
+              so we have to be a superuser in order to operate within that
+              folder
+            </li>
+            <li>
+              We're only concerned with one column in particular, in my case
+              it's the macOS Big Sur DMG
+            </li>
+            <li>
+              Let's fetch the current file size but just seeing
+              <code>8466481152</code> is not particularly useful
+            </li>
+            <li>
+              We can use <code>gnumfmt</code>, a GNU utils implementation of
+              <code>numfmt</code> given the latter only exists on Linux systems.
+              <code>gnumfmt</code> is available via Homebrew as mentioned above
+            </li>
+            <li>
+              We just run this script continually until <code>Ctrl-C</code> is
+              invoked. Over a average speed proxy, it takes about 45 seconds to
+              download 100MB so there's no value personally in setting something
+              like <code>sleep 5</code>
+            </li>
+          </ol>
+          <p>
+            Enjoy your window into frustration as you realise just how long
+            waiting will take
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

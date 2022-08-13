@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is tracing? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>What is tracing?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            In the same vein that it's not often feasible to capture all data,
+            all of the time, tracing is concerned with sampling a subset of
+            events such as every 50th incoming request.
+          </p>
+          <p>
+            Generally most tracing implementations will show you how much time
+            is spent at each step of the way from establishing an SSL connection
+            through to how long is spent talking with any given database.
+          </p>
+          <p>Distributed tracing is this same idea but... well, distributed.</p>
+          <p>
+            More specifically, interactions are "tagged", whether it be an HTTP
+            header or an attribute within an RPC call. While those interactions
+            may pass the boundaries of any one service, they can be "stitched"
+            back together by matching up the associated request IDs.
+          </p>
+          <p>
+            The idea here being that you can trace a request through a system
+            oriented around microservices, as if it were just one regular
+            application.
+          </p>
+          <p>
+            Given that only a subset of interactions (ie 1 in 100) are sampled,
+            this solves the storage issues presented by full on profiling all of
+            the time.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

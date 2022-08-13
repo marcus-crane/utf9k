@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How can I find my current NODE_MODULE_VERSION? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I find my current NODE_MODULE_VERSION?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            This error is usually pretty cryptic and I often forget how to debug
+            it so let's look at a sample error:
+          </p>
+          <pre><code class="language-bash">Error: The module '/Users/marcus/Code/octowise/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+was compiled against a different Node.js version using
+NODE_MODULE_VERSION 83. This version of Node.js requires
+NODE_MODULE_VERSION 89.
+</code></pre>
+          <p>
+            I often remember that I need to possibly use a different version of
+            nodejs but I never remember how to tell which one.
+          </p>
+          <p>
+            The official NodeJS site has a table with version numbers and their
+            corresponding <code>NODE_MODULE_VERSION</code>
+            <a href="https://nodejs.org/en/download/releases/">available here</a
+            >.
+          </p>
+          <p>
+            In the case of this error, I think I probably want to downgrade to
+            <code>Node.js 14.x</code>? It's all very confusing.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

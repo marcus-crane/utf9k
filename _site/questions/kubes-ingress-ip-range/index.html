@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How can I restrict which traffic is allowed to pass through a Kube
+      ingress? | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>
+            How can I restrict which traffic is allowed to pass through a Kube
+            ingress?
+          </h1>
+        </header>
+        <div id="post-body">
+          <p>
+            This one had my scratching my head a bit as I wasn't quite sure if
+            Kubernetes was the right place to do this.
+          </p>
+          <p>
+            Depending on your use case, it might make sense to terminate traffic
+            before it reaches your cluster but that may have the effect of
+            filtering traffic to other applications if not done properly.
+          </p>
+          <p>
+            In this instance, the Kubernetes cluster in question makes use of
+            the
+            <a href="https://www.nginx.com/products/nginx-ingress-controller/"
+              >NGINX Ingress Controller</a
+            >
+            and as such, honours a whole bunch of flags.
+          </p>
+          <p>Before we get into the details, let's set up a small example.</p>
+          <p>
+            We'll pretend our desktop has an IP address is
+            <code>192.0.2.3</code> exactly. We want to allow only a network
+            range of 1 single address so that say; our mobile device with the
+            address <code>192.0.2.2</code> can't connect but our desktop can.
+          </p>
+          <p>
+            In CIDR notation, this would be represented as
+            <code>192.0.2.3/32</code>, with the <code>32</code> effectively
+            meaning "Just this one address" instead of any other devices on the
+            <code>192.0.2</code> range, or broader.
+          </p>
+          <p>With our address block defined, let's look at an ingress:</p>
+          <pre><code class="language-yaml">apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-cool-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/whitelist-source-range: "192.0.2.3/24"
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+        - path: /
+          backend:
+            service:
+              name: example-docs
+              port:
+                name: http-example-docs
+</code></pre>
+          <p>
+            Ok, we've allowed our desktop to connect but let's try connecting to
+            this ingress from a device we know isn't allowed, such as our laptop
+            on <code>192.0.2.6</code>:
+          </p>
+          <pre><code class="language-bash">> curl https://example.com/
+&#x3C;html>
+&#x3C;head>&#x3C;title>403 Forbidden&#x3C;/title>&#x3C;/head>
+&#x3C;body>
+&#x3C;center>&#x3C;h1>403 Forbidden&#x3C;/h1>&#x3C;/center>
+&#x3C;hr>&#x3C;center>nginx&#x3C;/center>
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+          <p>
+            Alright, and now from our desktop at <code>192.0.2.3/24</code>,
+            which we allowed explicitly:
+          </p>
+          <pre><code class="language-bash">> curl example.com
+&#x3C;!doctype html>
+&#x3C;html>
+&#x3C;head>
+    &#x3C;title>Example Domain&#x3C;/title>
+[...]
+</code></pre>
+          <p>
+            Success! We've managed to use nothing but an ingress to block
+            specific traffic but you might wonder, why would I ever use this?
+          </p>
+          <p>
+            One use case may be exposing applications that require the use of a
+            public endpoint, such as
+            <a
+              href="https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software"
+              >Microsoft Teams</a
+            >
+            or <a href="https://slack.com">Slack</a>.
+          </p>
+          <p>
+            Often, you can't make use of OAuth but you want to protect against
+            random internet traffic so you can explicitly allow known IP ranges.
+          </p>
+          <p>
+            With <a href="https://azure.microsoft.com">Azure</a> for example,
+            they publish a
+            <a
+              href="https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+              >full list of their active IP ranges</a
+            >
+            so if you can't simply make use of a
+            <a
+              href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+              >VNet</a
+            >, this may be the next best thing.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

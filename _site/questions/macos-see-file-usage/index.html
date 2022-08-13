@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How can I see what applications are making my shell commands slow? | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>
+            How can I see what applications are making my shell commands slow?
+          </h1>
+        </header>
+        <div id="post-body">
+          <p>
+            Recently I had noticed that some shell commands on my laptop were
+            executing surprisingly slow.
+          </p>
+          <p>
+            Like most things in the tech world, it was due to a piece of
+            <a href="https://www.jamf.com">jamf</a> software locking up anything
+            that was being read.
+          </p>
+          <p>
+            I managed to validate this assumption using the command
+            <code>fs_usage</code> which requires sudo. Here's an example of it
+            in action.
+          </p>
+          <pre><code class="language-shell">> sudo fs_usage | grep zshrc
+Password:
+16:19:22  open              /Users/marcus/dotfiles/zsh/zshrc.md                                              0.000021   lugh
+16:19:22  open              /Users/marcus/dotfiles/zsh/.zshrc                                                0.000137   lugh
+16:19:22    WrData[A]       /Users/marcus/dotfiles/zsh/.zshrc                                                0.000324 W lugh
+16:19:22  lstat64           /System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc                            0.000015   fseventsd
+16:19:22  lstat64           dotfiles/zsh/.zshrc                                                              0.000005   perl5.28
+16:19:22  lstat64           .zshrc                                                                           0.000007   perl5.28
+16:19:22  lstat64           .zshrc                                                                           0.000004   perl5.28
+16:19:22  readlink          .zshrc                                                                           0.000004   perl5.28
+16:19:22  stat64            dotfiles/zsh/.zshrc/.stow                                                        0.000002   perl5.28
+16:19:22  stat64            dotfiles/zsh/.zshrc/.nonstow                                                     0.000001   perl5.28
+16:19:22  stat64            dotfiles/zsh/.zshrc                                                              0.000004   perl5.28
+16:19:22  fsgetpath         /Users/marcus/dotfiles/zsh/.zshrc                                                0.000005   Finder
+16:19:22  getattrlist       /Users/marcus/dotfiles/zsh/.zshrc                                                0.000014   Finder
+16:19:22  fsgetpath         /Users/marcus/dotfiles/zsh/.zshrc                                                0.000005   Finder
+16:19:22  fsgetpath         /Users/marcus/dotfiles/zsh/zshrc.md                                              0.000005   Finder
+16:19:22  getattrlist       /Users/marcus/dotfiles/zsh/zshrc.md                                              0.000012   Finder
+16:19:22  fsgetpath         /Users/marcus/.zshrc                                                             0.000005   Finder
+16:19:22  getattrlist       /Users/marcus/.zshrc                                                             0.000015   Finder
+16:19:22  fsgetpath         /Users/marcus/zshrc.md                                                           0.000005   Finder
+16:19:22  getattrlist       /Users/marcus/zshrc.md                                                           0.000014   Finder
+16:19:22  fsgetpath         /Users/marcus/zshrc.md                                                           0.000003   Finder
+16:19:22  getxattr          dotfiles/zsh/zshrc.md                                                            0.000014   Finder
+16:19:22  fsgetpath         /Users/marcus/zshrc.md                                                           0.000004   Finder
+16:19:22  fsgetpath         /Users/marcus/zshrc.md                                                           0.000003   Finder
+16:19:23  lstat64           /System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc                            0.000005   fseventsd
+</code></pre>
+          <p>
+            Now this output doesn't actually come from my work computer so you
+            won't see the mentioned JamfAgent but we can walk through this
+            anyway.
+          </p>
+          <p>
+            First is <a href="https://github.com/marcus-crane/lugh">lugh</a>, a
+            custom and possibly temporary literate markdown tool I use on my
+            dotfiles. Next is <code>perl</code>, in the form of
+            <a href="https://www.gnu.org/software/stow/">GNU Stow</a> followed
+            by macOS Finder doing some things. This gives a really nice
+            breakdown of what is going on.
+          </p>
+          <p>
+            You can even use it to better understand applications, like if you
+            run <code>git status</code> and see all the files that were touched
+            within the <code>.git</code> folder.
+          </p>
+          <p>
+            I actually spotted that Yet Another Daemon was touching some of my
+            <code>.git</code> files on my work laptop too. Shoo!
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

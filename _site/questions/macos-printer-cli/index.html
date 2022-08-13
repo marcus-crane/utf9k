@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How can I configure my printer via terminal on macOS? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I configure my printer via terminal on macOS?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            Recently, a coworker of mine got a new laptop and needed to connect
+            to the printer at work. One of the dialog boxes asked for the "print
+            queue".
+          </p>
+          <p>
+            For the unfamiliar, here's what the macOS printer settings look
+            like.
+          </p>
+          <p>I can't see any queue settings so let's dive a little deeper.</p>
+          <p>
+            Nothing here either but surely there must be something under the
+            hood. Thankfully, there's a built in command called
+            <code>lpstat</code> that allows all sorts of printer configuration.
+          </p>
+          <pre><code class="language-bash">> man lpstat | grep lpstat
+lpstat(1)                          Apple Inc.                          lpstat(1)
+       lpstat - print cups status information
+26 April 2019                         CUPS                             lpstat(1)
+</code></pre>
+          <p>
+            In order to find the printer queue name, I was able to make use of
+            <code>lpstat -s</code> like so:
+          </p>
+          <pre><code class="language-bash">> lpstat -s
+system default destination: example_printer
+device for example_printer: ipp://example-printer/my-fake-queue
+</code></pre>
+          <p>
+            Ah, so the queue name is <code>my-fake-queue</code>. I wish the
+            System Preferences pane had just said so earlier.
+          </p>
+          <p>
+            While there, I also discovered a bunch of my old print jobs as well!
+          </p>
+          <pre><code>> lpstat -W completed -l
+example_printer-3 marcus          59392   Wed 28 Apr 09:40:30 2021
+    Status: The printer is not responding.
+    Alerts: processing-to-stop-point
+    queued for example_printer
+example_printer-2 marcus         113664   Wed 17 Mar 15:36:56 2021
+    Status: The printer is unreachable at this time.
+    Alerts: job-canceled-by-user
+    queued for example_printer
+example_printer-1 marcus          51200   Thu  8 Oct 11:14:01 2020
+    Status:
+    Alerts: processing-to-stop-point
+    queued for example_printer
+</code></pre>
+          <p>
+            Hopefully this makes your printing life easier, or at least gives
+            you some closure on why those months old jobs refused to print.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

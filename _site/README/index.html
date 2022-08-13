@@ -1,0 +1,104 @@
+<h1 id="utf9k" tabindex="-1">
+  utf9k <a class="direct-link" href="#utf9k" aria-hidden="true">#</a>
+</h1>
+<p>
+  <img
+    src="https://img.shields.io/github/license/marcus-crane/utf9k"
+    alt="MIT License"
+  />
+  <img
+    src="https://img.shields.io/badge/hugo-v0.91.2-blue"
+    alt="Hugo version"
+  />
+</p>
+<p>
+  This is my personal website, which is powered by
+  <a href="https://www.gohugo.io">Hugo</a> and
+  <a href="https://commonmark.org">CommonMark</a>.
+</p>
+<p>
+  It also has some live, progressive enhancement elements powered by
+  <a href="https://github.com/marcus-crane/gunslinger">gunslinger</a>.
+</p>
+<p>
+  Of particular interest is the live player on the homepage which surfaces
+  metadata when I'm watching the following types of media:
+</p>
+<ul>
+  <li>
+    anime/tv series
+    <ul>
+      <li>powered by plex apis</li>
+    </ul>
+  </li>
+  <li>
+    movies
+    <ul>
+      <li>powered by plex apis</li>
+    </ul>
+  </li>
+  <li>
+    music
+    <ul>
+      <li>local music powered by plex apis</li>
+      <li>streaming music powered by tidal but surfaced via plex apis</li>
+    </ul>
+  </li>
+  <li>
+    gaming
+    <ul>
+      <li>powered by playstation apis to surface ps4/ps5 games being played</li>
+    </ul>
+  </li>
+</ul>
+<h2 id="getting-setup" tabindex="-1">
+  Getting setup
+  <a class="direct-link" href="#getting-setup" aria-hidden="true">#</a>
+</h2>
+<p>
+  To get started, you'll want to install Hugo using one of the variety of
+  <a href="https://gohugo.io/getting-started/installing/"
+    >officially supported installation methods</a
+  >.
+</p>
+<p>
+  You'll also need to have
+  <a href="https://www.npmjs.com/get-npm">npm</a> installed.
+</p>
+<p>
+  I personally use <a href="https://pnpm.io/">pnpm</a> as a package manager but
+  npm works fine.
+</p>
+<p>
+  Once you've got all of that set up, running <code>yarn start</code> will do
+  everything required to start up a local server.
+</p>
+<p>
+  You should be able to access the development version of the site at
+  <a href="http://localhost:1313">http://localhost:1313</a>
+</p>
+<h2 id="layout" tabindex="-1">
+  Layout <a class="direct-link" href="#layout" aria-hidden="true">#</a>
+</h2>
+<p>Pages, posts and related images live in <code>content</code></p>
+<p>HTML templates live in <code>layouts</code></p>
+<p>
+  A handful of static files live in <code>static</code> with most images living
+  with their respective posts.
+</p>
+<h2 id="deployment" tabindex="-1">
+  Deployment <a class="direct-link" href="#deployment" aria-hidden="true">#</a>
+</h2>
+<p>Deployment is done via <a href="https://netlify.com">Netlify</a>.</p>
+<p>
+  Pushes to <code>main</code> will update
+  <a href="https://utf9k.net">utf9k.net</a> automatically.
+</p>
+<p>
+  Drafts are visible in all environments, as seen in the
+  <a href="https://utf9k.net/blog">blog</a> section at the bottom.
+</p>
+<p>
+  I just push straight to main. It's all visible in the repo anyway so might as
+  well render it in &quot;production&quot; too.
+</p>

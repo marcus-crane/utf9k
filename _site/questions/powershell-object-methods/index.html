@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How can I view the methods associated with an object? | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I view the methods associated with an object?</h1>
+        </header>
+        <div id="post-body">
+          <p>Let's say that you have a variable that contains a string:</p>
+          <pre><code class="language-powershell">$a = "abc"
+</code></pre>
+          <p>
+            That's neat but what if I want to view the possible methods that are
+            available on the string object? You can use the Get-Member cmdlet.
+            You can also use the shorthand version gm.
+          </p>
+          <pre><code class="language-powershell">$a = "abc"
+$a | gm
+// Name | MemberType | Definition
+// Clone | Method | System.Object Clone() [...]
+// ...
+// Length | Property | int Length {get;}
+$a.Length
+// 3
+</code></pre>
+          <p>
+            You can also view the static methods associated with an object too:
+          </p>
+          <pre><code class="language-powershell">"abc" | gm - Static
+// Compare | Method | static int Compare(string strA, string strB)...
+</code></pre>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

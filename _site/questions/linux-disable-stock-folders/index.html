@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      How can I get rid of the default application folders that ship with my
+      Linux distro? | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>
+            How can I get rid of the default application folders that ship with
+            my Linux distro?
+          </h1>
+        </header>
+        <div id="post-body">
+          <p>
+            While you can delete stock folders such as <code>Templates</code>,
+            <code>Public</code> and so on, they'll still appear in the sidebar
+            of your file explorer.
+          </p>
+          <p>The good news is that they're pretty easy to disable.</p>
+          <p>
+            Referring to the
+            <a
+              href="https://freedesktop.org/wiki/Software/xdg-user-dirs/#settings"
+              >xdg-user-dirs</a
+            >
+            manual shows us that there is a configuration file of "well known"
+            user directories that lives at
+            <code>$HOME/.config/user-dirs.dirs</code> by default
+          </p>
+          <p>
+            Simply deleting the various entries inside might break a number of
+            things but if you look closely, you'll spot that changing a
+            directory to point to your home directory will disable it
+          </p>
+          <p>For example:</p>
+          <pre><code class="language-shell">> cat $HOME/.config/user-dirs.dirs
+XDG_TEMPLATES_DIR="$HOME" # templates is now disabled
+</code></pre>
+          <p>
+            This should cause the Templates folder to disappear from the sidebar
+            of Nautilus although you might need to restart first.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

@@ -6,22 +6,12 @@
   "author": "Marcus Crane <marcus@utf9k.net>",
   "license": "MIT",
   "scripts": {
-    "start": "COMMIT_SHA=main hugo server --disableFastRender",
-    "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
-    "build:deps": "./ci/install.sh",
-    "build:metadata": "./ci/genmetadata.sh",
-    "lint": "eslint assets/js",
-    "test": "./ci/test.sh"
-  },
-  "devDependencies": {
-    "@babel/core": "7.18.2",
-    "@babel/preset-env": "7.18.2",
-    "autoprefixer": "10.4.7",
-    "eslint": "7.32.0",
-    "postcss": "8.4.14",
-    "postcss-cli": "8.3.1"
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "littlefoot": "3.4.1"
+    "@astrojs/rss": "^1.0.0",
+    "astro": "^1.0.3"
   }
 }

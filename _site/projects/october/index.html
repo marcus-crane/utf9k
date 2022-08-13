@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>October | utf9k</title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>October</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            I'm a user of <a href="https://readwise.io">Readwise</a> which is a
+            service that allows you to import all sorts of highlights from books
+            and <a href="https://readwise.io/read">articles</a> through to
+            tweets and even
+            <a
+              href="https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp"
+              >comments</a
+            >[^1].
+          </p>
+          <p>
+            There is unofficial official support for Kindle and iBooks, by which
+            I mean Readwise supports those sources but they are still not
+            officially sanctioned (or known!) by Amazon and Apple respectively.
+          </p>
+          <p>
+            Kobo, which is the primary competitor to Kindle, has lots of nice
+            eReaders but historically Readwise has had no support for them as
+            they don't have a web UI to scrape.
+          </p>
+          <p>
+            The other part of the problem is that getting your highlights off of
+            your device is very fiddly for technical users, and
+            nigh-on-impossible for non-technical users as it requires performing
+            SQL queries against a
+            <a href="https://www.sqlite.org/index.html">SQLite</a> database.
+          </p>
+          <p>
+            This is where October comes in. It was created primarily to scratch
+            my own itch. While I'm perfectly capable of extracting highlights
+            from my device, I also aspire to do as little work as possible.
+          </p>
+          <p>
+            This first version is very sparse and gives the user very little
+            option besides syncing their highlights. It works well for myself,
+            and has helped a few users but it doesn't provide much ability to
+            introspect the upload process or control eg; which books are
+            uploaded.
+          </p>
+          <p>
+            I've begun work on a rewrite from the ground up which provides more
+            control and insight to the end user.
+          </p>
+          <p>
+            At the time of writing, October is promoted within Readwise itself
+            as the only option for uploading Kobo highlights. Previously, the
+            Readwise team had released an integration for uploading store-bought
+            highlights via Kobo APIs but this was unfortunately shut down.
+          </p>
+          <p>
+            On a technical level, October is comprised of a
+            <a href="https://reactjs.org/">React</a> frontend with the backend
+            being powered by <a href="https://wails.io/">Wails</a>, a relatively
+            new Golang framework for creating applications.
+          </p>
+          <p>
+            As the React frontend is bundled up into minimised HTML, this
+            results in October weighing in at a measly 12 megabytes.
+          </p>
+          <p>
+            It features a Windows build, a fully code signed macOS version and a
+            Linux version works experimentally[^2] but is not currently
+            distributed.
+          </p>
+          <p>
+            Funnily enough, most of the reading I have done over the duration of
+            this project has been making random highlights as a
+            pseudo-integration test.
+          </p>
+          <p>
+            If I look at things from a big picture view, I would probably read a
+            lot more if I just deleted this project and resorted to manually
+            uploading my highlights!
+          </p>
+          <p>Links:</p>
+          <ul>
+            <li>
+              <a href="https://github.com/marcus-crane/october">Github</a>
+            </li>
+            <li><a href="https://october.utf9k.net/">Website</a></li>
+          </ul>
+          <p>
+            [^1]: There are lots of comments that I want to make notes on but
+            Readwise doesn't support importing these. It makes sense of course
+            since every website layout is arbitrary but to scratch my own itch,
+            I made a Chrome extension that sends Hacker News and Reddit comments
+            to Readwise.
+          </p>
+          <p>
+            [^2]: You're welcome to compile it if this is useful to you! I
+            haven't looked into distribution and packaging plus last I checked,
+            Linux support for Wails was solid but technically still marked as
+            experimental.
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

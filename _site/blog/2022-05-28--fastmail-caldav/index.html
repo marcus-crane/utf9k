@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Fastmail with CalDAV libraries | utf9k</title>
+    <meta
+      name="description"
+      content="A guide to using Fastmail with CalDAV libraries which are often fiddly and struggle to find your calendars"
+    />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>Using Fastmail with CalDAV libraries</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            I've been a subscriber to
+            <a href="https://fastmail.com">Fastmail</a> now for probably a good
+            five years at least, if not more at this point.
+          </p>
+          <p>
+            It's a really nice service, not just for email but also email and
+            contact hosting and for most clients, it all basically works out of
+            the box as you might hope.
+          </p>
+          <p>
+            A number of services that integration with calendars tend to only
+            offer
+            <a href="https://en.wikipedia.org/wiki/Google_Calendar"
+              >Google Calendar</a
+            >
+            integration but thankfully CalDAV integration pops up from time to
+            time.
+          </p>
+          <p>
+            One thing that I think can be a little bit confusing for people is
+            the Fastmail documentation.
+          </p>
+          <p>
+            If we visit the
+            <a
+              href="https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports#calendar"
+              >Server names and ports</a
+            >
+            page, it mentions <code>https://caldav.fastmail.com/</code> as the
+            default server for clients with auto-discovery with
+            <a href="https://www.fastmail.help/hc/en-us/articles/360058752834"
+              >a support page</a
+            >
+            for other clients.
+          </p>
+          <p>
+            That's perfectly correct but a number of CalDAV libraries I've seen
+            around the place tend to complain about that base URL.
+          </p>
+          <p>
+            Most recently, I ran into this with
+            <a href="https://github.com/davish/obsidian-full-calendar/issues/87"
+              >obsidian-full-calendar</a
+            >
+            where Fastmail integration was considered not working but really,
+            the wrong server name was being used.
+          </p>
+          <p>
+            If <code>https://caldav.fastmail.com/</code> doesn't work, odds are
+            you'll get what you're after by using the following server name:
+          </p>
+          <pre><code class="language-text">https://caldav.fastmail.com/dav/principals/user/user@example.com/
+</code></pre>
+          <p>
+            <em
+              ><strong>user@example.com</strong> is the email address that you
+              use for Fastmail.</em
+            >
+          </p>
+          <p>
+            You can confirm that by navigating to your Fastmail inbox and seeing
+            what address in the top left corner if you really need to.
+          </p>
+          <p>
+            Alternatively, you could also navigate to <code>Settings</code> →
+            <code>Calendars</code> → <code>Export</code> (on one of the
+            calendars) and copy most of the section from
+            <code>CalDAV URL</code>.
+          </p>
+          <p></p>
+          <p>
+            Putting the whole URL will only load one calendar but odds are,
+            whatever CalDAV client you're struggling with will load all of your
+            calendars by removing the calendar ID at the end.
+          </p>
+          <p>
+            Why does this work exactly? Well, I'm no expert here but I gave a
+            brief overview of my understanding by way of
+            <a
+              href="https://github.com/davish/obsidian-full-calendar/pull/106#issuecomment-1120536933"
+              >this Github comment</a
+            >.
+          </p>
+          <p>For completeness, I've quoted it verbatim:</p>
+          <blockquote>
+            <p>
+              For anyone interested, Fastmail uses
+              <a href="https://www.cyrusimap.org/">Cyrus IMAP</a> which is an
+              all-in-one IMAP, CalDAV and CardDAV server. As I understand it, it
+              <a
+                href="https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html"
+                >represents calendars as mailboxes under the hood</a
+              >
+              hence why you use your Fastmail address as the identifier. That
+              is, you have a single "calendar" in the UI but you can have
+              multiple calendars on it eg; one for Events, one for Work and so
+              on.
+            </p>
+            <p>In fact, we can prove this by requesting a bogus calendar:</p>
+          </blockquote>
+          <pre><code class="language-shell">$ curl -u &#x3C;fastmail-email>:&#x3C;fastmail-app-password> https://caldav.fastmail.com/dav/calendars/user/&#x3C;fastmail-email>/blah
+&#x3C;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+&#x3C;html>
+  &#x3C;head>
+    &#x3C;title>404 Not Found&#x3C;/title>
+  &#x3C;/head>
+  &#x3C;body>
+    &#x3C;h1>Not Found&#x3C;/h1>
+    &#x3C;p>Mailbox does not exist&#x3C;/p>
+    &#x3C;hr>
+    &#x3C;address>Cyrus-HTTP/3.7.0-alpha0-591-gfe6c3a2700-fm-20220427.001-gfe6c3a27 Cyrus-SASL/2.1.27 Lib/XML2.9.10 Jansson/2.13.1 OpenSSL/1.1.1n Wslay/1.1.1 Zlib/1.2.11 Brotli/1.0.9 Xapian/1.5.0 LibiCal/3.0 ICU4C/69.1 SQLite/3.34.1 Server at caldav.fastmail.com Port 2075&#x3C;/address>
+  &#x3C;/body>
+&#x3C;/html>
+</code></pre>
+          <p>
+            <em
+              >Note how it is looking for a mailbox despite being a caldav
+              server</em
+            >
+          </p>
+          <blockquote>
+            <p>
+              So yeah, your calendars are just email inboxes under the hood with
+              Fastmail!
+            </p>
+            <p>
+              More specifically, there is a mailbox per calendar (I think) and
+              that mailbox is full of
+              <a href="https://en.wikipedia.org/wiki/ICalendar">ics</a> files
+            </p>
+          </blockquote>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>

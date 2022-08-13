@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Why did sites split their assets across multiple domains back in the day?
+      | utf9k
+    </title>
+    <meta name="description" content="" />
+
+    <meta name="generator" content="Eleventy v1.0.1" />
+
+    <link rel="stylesheet" href="/css/style.css?v=0f5173967331d211bf92401b586ff5f2">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/questions">Questions</a>
+        </li>
+        <span>//</span>
+        <li>
+          <a href="/rss.xml">RSS</a>
+        </li>
+      </nav>
+    </header>
+
+    <div id="content">
+      <article>
+        <header>
+          <h1>
+            Why did sites split their assets across multiple domains back in the
+            day?
+          </h1>
+        </header>
+        <div id="post-body">
+          <p>
+            It was common to have images on a subdomain and the bulk of the site
+            at the root of a domain such as <code>nytimes.com</code> and
+            <code>img.nytimes.com</code>
+          </p>
+          <p>
+            Caching is widely understood as the current value but it doesn't
+            capture the historical context behind the introduction of this
+            tactic.
+          </p>
+          <p>
+            Another aspect is that the size of headers bloated significantly,
+            sometimes to where cookies associated with a request would be larger
+            than a single TCP packet, which is about 1.5kb.
+          </p>
+          <p>
+            In order to reduce latency, it made sense to move resources that
+            didn't require cookies to a separate domain, so that those requests
+            didn't inherit excess headers. While not large on a single request,
+            requests for multiple assets would balloon exponentially.
+          </p>
+          <p>
+            This practice was colloquially referred to as a "cookie-less
+            domain".
+          </p>
+        </div>
+      </article>
+
+      <script type="text/javascript" src="/js/footnotes.js?v=bda9ae29e0e8466b471e106418aba1a8"></script>
+    </div>
+  </body>
+</html>
