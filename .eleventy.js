@@ -1,6 +1,6 @@
 const fs = require("fs")
 const path = require("path")
-const YAML = require("yaml")
+const yaml = require("yaml")
 
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -30,7 +30,7 @@ async function imageShortcode(src, sizes, alt = "") {
     const imagePath = path.parse(src);
     const captionPath = path.join(imagePath.dir, "alt.yml")
     const captionFile = fs.readFileSync(captionPath, "utf-8")
-    const captionText = YAML.parse(captionFile)
+    const captionText = yaml.parse(captionFile)
     const alt = captionText[imagePath.base].replaceAll("\n", "")
   }
 
@@ -43,6 +43,13 @@ async function imageShortcode(src, sizes, alt = "") {
 
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return Image.generateHTML(metadata, imageAttributes);
+}
+
+async function videoShortcode(src) {
+  return `<video style="display: inherit; margin: 0 auto;" width="50%" controls>
+  <source preload src="${src}" type="video/mp4">
+  Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
+  </video>`
 }
 
 module.exports = function (eleventyConfig) {
@@ -59,7 +66,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
+  eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
+
   eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
+
+  // Custom file formats
+  eleventyConfig.addDataExtension("yml", contents => yaml.parse(contents))
 
   // Plugins
   eleventyConfig.addPlugin(pluginRss);

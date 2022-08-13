@@ -25,10 +25,7 @@ Having said that, the fact that someone at Google signed off on what was, until 
 
 I just happen to have taken a screen recording of this mess which was live at least as recently as early December and so that's what I'd like to present to you now:
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="google-search-the-sopranos.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "/google-search-the-sopranos.mp4" %}
 
 What is all this?! There's so much going on visually here. We've got:
 
@@ -57,19 +54,13 @@ I don't understand though. Is this what the data showed that users were craving?
 
 For comparison, here is what the equivalent search in [DuckDuckGo](https://duckduckgo.com) looked like on that same day:
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="ddg-search-the-sopranos.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "/ddg-search-the-sopranos.mp4" %}
 
 Not only was that much easier, it actually inlined a bunch of links you might want to look at, rather than unrolling them for you into a massive information dump.
 
 I was also trying out [Ecosia](https://www.ecosia.org) at the time too:
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="ecosia-search-the-sopranos.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "/ecosia-search-the-sopranos.mp4" %}
 
 I think Ecosia uses [Bing](https://bing.com) under the hood but it also surfaces Wikipedia as the first result without any troubles.
 
