@@ -6,7 +6,6 @@
     "title": "utf9k",
     "subtitle": "Posts about technology and other bits and pieces",
     "language": "en",
-    "url": "https://utf9k.net/",
     "feedUrl": "https://utf9k.net/feed.xml",
     "author": {
       "name": "Marcus Crane",
@@ -16,19 +15,19 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ deploy.url }}">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
+  <link href="{{ permalink | absoluteUrl(deploy.url) }}" rel="self"/>
+  <link href="{{ deploy.url }}"/>
   <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}</id>
+  <id>{{ deploy.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in collections.post | reverse %}
-    {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+    {%- set absolutePostUrl = post.url | absoluteUrl(deploy.url) %}
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
