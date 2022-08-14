@@ -9,19 +9,20 @@ const yaml = require("yaml");
 // bother with error handling since I'd rather have the pipeline crash than render bad
 // alt text.
 module.exports = {
-  imageMetadata: function (data) {
+  staticExtras: function (data) {
     const imagePath = path.join("img", data.page.url);
+    const videoPath = path.join("video", data.page.url);
     const altPath = path.join(imagePath, "alt.yml");
-    if (!fs.existsSync(altPath)) {
-      return {
-        altTags: {},
-        imagePath,
-      };
+    const extras = {
+      imagePath,
+      videoPath,
+      altTags: {},
     }
+    if (!fs.existsSync(altPath)) return extras;
     const captionFile = fs.readFileSync(altPath, "utf-8");
     return {
+      ...extras,
       altTags: yaml.parse(captionFile),
-      imagePath,
     };
   },
 };

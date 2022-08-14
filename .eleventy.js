@@ -15,8 +15,8 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function imageShortcode(imageMetadata, filename, sizes) {
-  const { imagePath, altTags } = imageMetadata
+async function imageShortcode(staticExtras, filename, sizes) {
+  const { imagePath, altTags } = staticExtras
   const src = path.join(imagePath, filename)
   if (!fs.existsSync(src)) {
     console.error(`Tried to load image at ${src} which does not exist`)
@@ -46,7 +46,13 @@ async function imageShortcode(imageMetadata, filename, sizes) {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
-async function videoShortcode(src) {
+async function videoShortcode(staticExtras, filename) {
+  const { videoPath } = staticExtras
+  const src = path.join(videoPath, filename)
+  if (!fs.existsSync(src)) {
+    console.error(`Tried to load video at ${src} which does not exist`)
+    return
+  }
   return `<video style="display: inherit; margin: 0 auto;" width="50%" controls>
   <source preload src="${src}" type="video/mp4">
   Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
@@ -61,6 +67,7 @@ module.exports = function (eleventyConfig) {
   // Passthroughs
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy({ "static": "." })
+  eleventyConfig.addPassthroughCopy("video")
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

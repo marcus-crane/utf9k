@@ -36,7 +36,7 @@ You can confirm that by navigating to your Fastmail inbox and seeing what addres
 
 Alternatively, you could also navigate to `Settings` → `Calendars` → `Export` (on one of the calendars) and copy most of the section from `CalDAV URL`.
 
-{% image imageMetadata, "calendar-settings.png", "1682", "1074" %}
+{% image staticExtras, "calendar-settings.png", "1682", "1074" %}
 
 Putting the whole URL will only load one calendar but odds are, whatever CalDAV client you're struggling with will load all of your calendars by removing the calendar ID at the end.
 
