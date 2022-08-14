@@ -7,12 +7,6 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png"
     link: "https://www.igdb.com/games/grand-theft-auto-v"
 
-  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
-    platform: "Nintendo 3DS"
-    id: 12077
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
-
 - list: Stalled but occasionally progress is made
   games:
 
@@ -72,6 +66,13 @@
 
 - list: Completed
   games:
+
+  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
+    platform: "Nintendo 3DS"
+    id: 12077
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
+    date_finished: 2022-08-14
 
   - title: "Call of Duty: Modern Warfare (2019)"
     platform: "PC"
