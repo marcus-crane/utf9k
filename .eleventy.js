@@ -15,25 +15,12 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function imageShortcode(staticExtras, filename, sizes) {
-  const { imagePath, altTags } = staticExtras
-  const src = path.join(imagePath, filename)
-  if (!fs.existsSync(src)) {
-    console.error(`Tried to load image at ${src} which does not exist`)
-    return
-  }
+async function imageShortcode(alt, src, sizes = "100vw") {
   let metadata = await Image(src, {
-    widths: [300, 600, 900],
+    widths: [300, 600],
     formats: ["avif", "jpeg"],
-    outputDir: '_site/img'
+    outputDir: "./_site/img"
   });
-
-  let alt = ''
-  if (Object.keys(altTags).includes(filename)) {
-    alt = altTags[filename]
-  } else {
-    console.error(`Missing alt description for ${src}`)
-  }
 
   let imageAttributes = {
     alt,
@@ -41,9 +28,10 @@ async function imageShortcode(staticExtras, filename, sizes) {
     loading: "lazy",
     decoding: "async",
   };
-
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes);
+  return Image.generateHTML(metadata, imageAttributes, {
+    whitespaceMode: "inline"
+  });
 }
 
 async function videoShortcode(staticExtras, filename) {
@@ -70,8 +58,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("video")
 
   // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  eleventyConfig.addPairedNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addPairedLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
