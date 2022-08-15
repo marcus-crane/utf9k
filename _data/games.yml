@@ -7,12 +7,6 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png"
     link: "https://www.igdb.com/games/grand-theft-auto-v"
 
-  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
-    platform: "Nintendo 3DS"
-    id: 12077
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
-
 - list: Stalled but occasionally progress is made
   games:
 
@@ -45,7 +39,7 @@
     id: 131999
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg"
     link: "https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot"
-
+  
   - title: "Pokémon Black"
     platform: "Nintendo DS"
     id: 1521
@@ -73,6 +67,13 @@
 - list: Completed
   games:
 
+  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
+    platform: "Nintendo 3DS"
+    id: 12077
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
+    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
+    date_finished: 2022-08-14
+
   - title: "Call of Duty: Modern Warfare (2019)"
     platform: "PC"
     id: 119177
@@ -86,7 +87,7 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg"
     link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies"
     date_finished: 2021-12-10
-
+  
   - title: "Apollo Justice: Ace Attorney"
     platform: "Nintendo 3DS"
     id: 1429
@@ -1084,5 +1085,5 @@
   - title: "Sands of Destruction"
     platform: "Nintendo DS"
     id: 24331
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg"
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg" 
     link: "https://www.igdb.com/games/sands-of-destruction"

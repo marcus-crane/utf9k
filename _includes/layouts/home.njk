@@ -57,7 +57,7 @@ layout: layouts/base.njk
       <div id="post-stream">
         <h3>Recently updated pages</h3>
         <ul>
-          {%- for post in (collections.blog | reverse).slice(0, 5) %}
+          {%- for post in (collections.post | reverse).slice(0, 5) %}
           <li>
             <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
           </li>
