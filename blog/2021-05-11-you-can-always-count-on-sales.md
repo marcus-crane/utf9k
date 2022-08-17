@@ -34,7 +34,7 @@ I captured some footage following the dialogue path of these three options durin
 
 You might imagine that this would be the most important option when it comes to resiliency during any major outages. Of course, if you're an enterprise then you should really have an enterprise support plan but if you're a startup or an indie, this might be well outside your budget.
 
-{% video "./video/blog/you-can-always-count-on-sales/01-technical.mp4" %}
+{% video "./content/blog/you-can-always-count-on-sales/01-technical.mp4" %}
 
 Hmm, I don't know about you but it looked like nothing happened and our request just disappeared into the ether!
 
@@ -42,7 +42,7 @@ Hmm, I don't know about you but it looked like nothing happened and our request 
 
 Now surely if a technical person can't get through, business support is much more likely to make it. Nothing says importance like an executive with a credit card after all.
 
-{% video "./video/blog/you-can-always-count-on-sales/02-business.mp4" %}
+{% video "./content/blog/you-can-always-count-on-sales/02-business.mp4" %}
 
 No dice, basically the same exact outcome. I expected better! Pssh.
 
@@ -54,7 +54,7 @@ In any sane business, all attention should be directed towards supporting paying
 
 It'd be ridiculous to focus on some potentially unrealised future revenues!
 
-{% video "./video/blog/you-can-always-count-on-sales/03-sales.mp4" %}
+{% video "./content/blog/you-can-always-count-on-sales/03-sales.mp4" %}
 
 Hmm, perhaps I was wrong.
 
