@@ -34,10 +34,7 @@ I captured some footage following the dialogue path of these three options durin
 
 You might imagine that this would be the most important option when it comes to resiliency during any major outages. Of course, if you're an enterprise then you should really have an enterprise support plan but if you're a startup or an indie, this might be well outside your budget.
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="01-technical.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "./video/blog/you-can-always-count-on-sales/01-technical.mp4" %}
 
 Hmm, I don't know about you but it looked like nothing happened and our request just disappeared into the ether!
 
@@ -45,10 +42,7 @@ Hmm, I don't know about you but it looked like nothing happened and our request 
 
 Now surely if a technical person can't get through, business support is much more likely to make it. Nothing says importance like an executive with a credit card after all.
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="02-business.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "./video/blog/you-can-always-count-on-sales/02-business.mp4" %}
 
 No dice, basically the same exact outcome. I expected better! Pssh.
 
@@ -60,10 +54,7 @@ In any sane business, all attention should be directed towards supporting paying
 
 It'd be ridiculous to focus on some potentially unrealised future revenues!
 
-<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-<source preload src="03-sales.mp4" type="video/mp4">
-Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-</video>
+{% video "./video/blog/you-can-always-count-on-sales/03-sales.mp4" %}
 
 Hmm, perhaps I was wrong.
 

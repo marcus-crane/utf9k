@@ -28,9 +28,7 @@ These requests won't even reach you so they won't even show up in your tracing.
 
 ## Application sampling
 
-{% image "./img/blog/sampling-all-the-way-down/apps.jpg" %}
-A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.
-{% endimage %}
+![A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.](./img/blog/sampling-all-the-way-down/apps.jpg)
 
 So we've got requests hitting our application so we capture 100% of those requests as traces and life is easy right?
 
@@ -46,9 +44,7 @@ The above also assumes that your application is configured properly as well to e
 
 ## Agent sampling
 
-{% image "./img/blog/sampling-all-the-way-down/apps.jpg" %}
-The same Datadog ingestion pipeline shown in the previous image with no changes.
-{% endimage %}
+![The same Datadog ingestion pipeline shown in the previous image with no changes.](./img/blog/sampling-all-the-way-down/apps.jpg)
 
 Now we go a level high to the process that receives all of your traces.
 

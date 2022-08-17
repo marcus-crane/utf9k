@@ -6,8 +6,9 @@ const { DateTime } = require('luxon')
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItFootnote = require('markdown-it-footnote');
+const markdownItAttrs = require('markdown-it-attrs')
+const markdownItEleventyImg = require('markdown-it-eleventy-img')
 
-const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -15,28 +16,7 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function imageShortcode(alt, src, sizes = "100vw") {
-  let metadata = await Image(src, {
-    widths: [300, 600],
-    formats: ["avif", "jpeg"],
-    outputDir: "./_site/img"
-  });
-
-  let imageAttributes = {
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes, {
-    whitespaceMode: "inline"
-  });
-}
-
-async function videoShortcode(staticExtras, filename) {
-  const { videoPath } = staticExtras
-  const src = path.join(videoPath, filename)
+async function videoShortcode(src) {
   if (!fs.existsSync(src)) {
     console.error(`Tried to load video at ${src} which does not exist`)
     return
@@ -58,10 +38,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("video")
 
   // Shortcodes
-  eleventyConfig.addPairedNunjucksAsyncShortcode("image", imageShortcode);
-  eleventyConfig.addPairedLiquidShortcode("image", imageShortcode);
-  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
-
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
 
   eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
@@ -81,10 +57,7 @@ module.exports = function (eleventyConfig) {
     output: "_site/js"
   })
 
-  let markdownLibrary = markdownIt({
-    html: true,
-    linkify: true
-  }).use(markdownItAnchor, {
+  const markdownItAnchorConfig = {
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: "after",
       class: "direct-link",
@@ -92,7 +65,53 @@ module.exports = function (eleventyConfig) {
     }),
     level: [1,2,3,4],
     slugify: eleventyConfig.getFilter("slugify")
-  }).use(markdownItFootnote);
+  }
+
+  const markdownItEleventyImgConfig = {
+    imgOptions: {
+      widths: [800, 500, 300],
+      outputDir: path.join("_site", "img")
+    },
+    globalAttributes: {
+      class: "markdown-image",
+      decoding: "async",
+      loading: "lazy",
+      sizes: "100vw"
+    },
+    renderImage(image, attributes) {
+      const [ Image, options ] = image;
+      const [ src, attrs ] = attributes;
+
+      Image(src, options)
+
+      // const fileTypes = Object.keys(img)
+      // const firstType = fileTypes[0]
+      // const largestImage = img[firstType].length - 1
+      // const { height, width } = img[firstType][largestImage]
+
+      if (!Image.Util.isRemoteUrl(src)) {
+        metadata = Image.statsSync(src, options)
+
+        const imageMarkup = Image.generateHTML(metadata, attrs, {
+          whitespaceMode: "inline"
+        })
+
+        return imageMarkup
+      }
+      return `<img src="${src}" alt="${attrs.alt}">`;
+    }
+  }
+
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  })
+  .use(markdownItAnchor, markdownItAnchorConfig)
+  .use(markdownItFootnote)
+  .use(markdownItEleventyImg, markdownItEleventyImgConfig)
+  .use(markdownItAttrs)
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("dateFmt", function(date, formatting = 'DDD') {
