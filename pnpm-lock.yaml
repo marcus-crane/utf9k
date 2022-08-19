@@ -14,7 +14,7 @@ specifiers:
   markdown-it: ^13.0.1
   markdown-it-anchor: ^8.6.4
   markdown-it-attrs: ^4.1.4
-  markdown-it-eleventy-img: ^0.6.0
+  markdown-it-eleventy-img: ^0.7.0
   markdown-it-footnote: ^3.0.3
   prettier: ^2.7.1
   yaml: ^2.1.1
@@ -35,7 +35,7 @@ devDependencies:
   markdown-it: 13.0.1
   markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
   markdown-it-attrs: 4.1.4_markdown-it@13.0.1
-  markdown-it-eleventy-img: 0.6.0_markdown-it@13.0.1
+  markdown-it-eleventy-img: 0.7.0_markdown-it@13.0.1
   markdown-it-footnote: 3.0.3
   prettier: 2.7.1
   yaml: 2.1.1
@@ -1126,7 +1126,7 @@ packages:
     dev: false
 
   /github-from-package/0.0.0:
-    resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
+    resolution: {integrity: sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=}
     dev: true
 
   /glob-parent/5.1.2:
@@ -1570,8 +1570,8 @@ packages:
       markdown-it: 13.0.1
     dev: true
 
-  /markdown-it-eleventy-img/0.6.0_markdown-it@13.0.1:
-    resolution: {integrity: sha512-uQ8xzxC7wF9SpglhjGaOfNSEm5lViB3Vgd68uT++vqhLHSLpB7mia4AAa39HiXkR0Gc8WRiUXD+7r5L7fx9igA==}
+  /markdown-it-eleventy-img/0.7.0_markdown-it@13.0.1:
+    resolution: {integrity: sha512-NndHFqERA6F2zVqMyNUNzANGtrm3Oee0LZs6zmplFWgMB7oMdbErzY+++c73uWXNZQ78LnNprrtjmbsp+7vmug==}
     engines: {node: '>=12'}
     peerDependencies:
       markdown-it: '>= 9.0.0'
