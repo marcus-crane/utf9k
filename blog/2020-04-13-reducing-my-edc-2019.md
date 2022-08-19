@@ -21,9 +21,7 @@ Before we get started, I should point out that this setup has actually be retire
 
 ## The original setup
 
-{{< image src="01-original-carry.jpeg" >}}
-  An aerial photo of a table containing items I carry each day, with pieces of paper beside each item describing the problems with each. The photo contains my phone, wallet, keys and wired earbuds. I didn't actually have the wired earbuds anymore so I've just drawn a picture to represent them.
-{{< /image >}}  
+![An aerial photo of a table containing items I carry each day, with pieces of paper beside each item describing the problems with each. The photo contains my phone, wallet, keys and wired earbuds. I didn't actually have the wired earbuds anymore so I've just drawn a picture to represent them.](./content/blog/reducing-my-edc-2019/01-original-carry.jpeg)
 
 My EDC was already fairly compact and consisted of the following:
 

@@ -9,7 +9,7 @@ tags:
 - "technology"
 ---
 
-{{% notice title="💿 This post has been remastered slightly due to its age." %}}
+{% notice "💿 This post has been remastered slightly due to its age." %}
 I've made some slight rewordings, fixed typos and revived any links I could using the [Wayback Machine](https://web.archive.org/) but otherwise, the post is 99% intact from when I first wrote it.
 
 I didn't realise just how much I had written about this at the time.
@@ -17,7 +17,7 @@ I didn't realise just how much I had written about this at the time.
 I'm kind of glad since this was written before the subreddit was banned.
 
 A lot of the content discussed is now lost to time.
-{{% /notice %}}
+{% endnotice %}
 
 ## An overview
 
@@ -49,15 +49,11 @@ Similar to our facial detection example from just before, deepfakes uses two [au
 
 I struggled to understand the next step for quite some time as any mention of it was quite vague, however [this](https://arxiv.org/pdf/1706.02932v2.pdf) paper, mentioned by deepfakes [here](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl/)[^deadlink] as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
 
-{{< image src="celebs.png" >}}
-  An diagram depicting how faces can be mapped to one another. The diagram shows photos of 6 celebrities and then shows how they look when transformed into a spherical shape. Various facial features such as eyes and nose roughly share the same positions, unlike in the regular photos used in the comparison.
-{{< /image >}}
+![An diagram depicting how faces can be mapped to one another. The diagram shows photos of 6 celebrities and then shows how they look when transformed into a spherical shape. Various facial features such as eyes and nose roughly share the same positions, unlike in the regular photos used in the comparison.](./content/blog/deepfakes/celebs.png)
 
 This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
 
-{{< image src="cats.png" >}}
-  Similar to the previous image, this diagram shows the process of transforming six photos of various cats into more spherical representations.
-{{< /image >}}
+![Similar to the previous image, this diagram shows the process of transforming six photos of various cats into more spherical representations.](./content/blog/deepfakes/cats.png)
 
 Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [One explanation](https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o/)[^deadlink] suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve \[…\] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [their own creators](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi/)[^deadlink] have no idea why decisions are being made.
 
@@ -67,7 +63,7 @@ Once the user has determined that both models are sufficiently trained, the netw
 
 Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot](https://en.wikipedia.org/wiki/Gal_Gadot) conversion posted by deepfakes himself. **As indicated earlier, the following is pornography and is definitely not safe for work**.
 
-{{% notice title="There's nothing here anymore!" %}}
+{% notice "There's nothing here anymore!" %}
 
 This portion originally linked to an extremely [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) deepfake video for archival purposes.
 
@@ -77,7 +73,7 @@ The original caption I provided read as follows:
 
 > "The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!"
 
-{{% /notice %}}
+{% endnotice %}
 
 I chose the clip above because it provides a good indication of what works but also what can go wrong. There's a number of instances where the result is miserable, such as 1:09 where multiple facial expressions flash one after the other. Often times, the edges of the overlaid face can clearly be seen, giving an idea of which elements have been replaced. All in all though, the result can be frighteningly accurate, just with the small amount of code that the creator referred to as ["embarassingly simple"](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e/)[^deadlink].
 

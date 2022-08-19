@@ -27,6 +27,10 @@ async function videoShortcode(src) {
   </video>`
 }
 
+async function noticeShortcode(content, title) {
+  return `<div><h5>${title}</h5><p>${content}</p></div>`
+}
+
 module.exports = function (eleventyConfig) {
   // Silence file writes in order to see my own warnings
   // eg; when an image is referenced that does not exist
@@ -40,6 +44,7 @@ module.exports = function (eleventyConfig) {
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
 
+  eleventyConfig.addPairedShortcode("notice", noticeShortcode)
   eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
 
   // Custom file formats
