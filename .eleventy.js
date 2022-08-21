@@ -16,6 +16,19 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
+async function audioShortcode(src) {
+  if (!fs.existsSync(src)) {
+    console.error(`Tried to load audio at ${src} which does not exist`)
+    return
+  }
+  return `<center>
+  <audio controls>
+    <source src="${src}" type="audio/mpeg">
+    Your browser doesn't support the audio tag :(
+  </audio>
+  </center>`
+}
+
 async function videoShortcode(src) {
   if (!fs.existsSync(src)) {
     console.error(`Tried to load video at ${src} which does not exist`)
@@ -47,11 +60,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setQuietMode(true)
 
   // Passthroughs
+  eleventyConfig.addPassthroughCopy("content")
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy({ "static": "." })
-  eleventyConfig.addPassthroughCopy("video")
 
   // Shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("audio", audioShortcode)
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
   eleventyConfig.addNunjucksAsyncShortcode("tweet", twitterShortcode)
   eleventyConfig.addNunjucksAsyncShortcode("youtube", youtubeShortcode)

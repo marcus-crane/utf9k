@@ -524,12 +524,7 @@ Despite the error, it's perfectly possible to play multiple tracks from Tidal at
 
 If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
-<center>
-  <audio controls>
-    <source src="./content/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg">
-    Your browser doesn't support the audio tag :(
-  </audio>
-</center>
+{% audio "./content/blog/plex-tidal-together/tool-trio.mp3" %}
 
 ### You can't remove Tidal albums
 
