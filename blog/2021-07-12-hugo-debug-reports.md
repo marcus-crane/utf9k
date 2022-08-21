@@ -15,13 +15,14 @@ Recently I discovered that [Hugo](https://gohugo.io) added support for [inline s
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
 
-{{< tweet user="bepsays" id="1408348824083615745" >}}
+{% tweet "bepsays", "1408348824083615745" %}
 
 ## A shortcode refresher
 
 To give an idea of what this means, here's a reminder on how you were required to use shortcodes in the past:
 
 ```html
+{% raw %}
 <!-- layouts/shortcodes/notice.html -->
 <div class="notice">
   <h3>{{ .Get "title" }}</h3>
@@ -34,6 +35,7 @@ To give an idea of what this means, here's a reminder on how you were required t
 {{ notice title="This is a notice" }}
 This is the content inside of a notice shortcode
 {{ /notice }}
+{% endraw %}
 ```
 <sup>Minor caveat with shortcode syntax[^syntax]</sup>
 
@@ -44,6 +46,7 @@ Now to be clear, there's absolutely nothing wrong with doing this. In principle,
 In saying that, the introduction of inline shortcodes allows us to do some fun things:
 
 ```html
+{% raw %}
 <!-- content/blog/example-post.md -->
 # This is an example post
 
@@ -56,6 +59,7 @@ Check out some of these funny gags I wrote:
 {{ end }}
 </ul>
 {{ /readfile.inline }}
+{% endraw %}
 ```
 <sup>Minor caveat with shortcode syntax[^syntax]</sup>
 
@@ -63,13 +67,11 @@ Don't believe me? Here's that same inline shortcode embedded in this very post:
 
 <details>
   <summary>Check out these fun gag lines I wrote</summary>
-  {{< readfile.inline >}}
   <ul>
-  {{ range $.Site.Data.gags }}
-  <li>{{ . }}</li>
-  {{ end }}
+  {% for gag in gags %}
+  <li>{{ gag }}</li>
+  {% endfor %}
   </ul>
-  {{< /readfile.inline >}}
 </details>
 
 If any of these look familiar, I just used an inline shortcode to read from the same file that powers the footer.

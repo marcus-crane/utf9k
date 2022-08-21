@@ -27,8 +27,18 @@ async function videoShortcode(src) {
   </video>`
 }
 
+async function youtubeShortcode(id) {
+  return `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+}
+
 async function noticeShortcode(content, title) {
   return `<div><h5>${title}</h5><p>${content}</p></div>`
+}
+
+// https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-statuses-oembed
+// https://publish.twitter.com/oembed?url=https://twitter.com/bepsays/status/1408348824083615745&hide_thread=true&dnt=true
+async function twitterShortcode(user, id) {
+  return `<p>Tweet here</p>`
 }
 
 module.exports = function (eleventyConfig) {
@@ -43,6 +53,8 @@ module.exports = function (eleventyConfig) {
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode("tweet", twitterShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode("youtube", youtubeShortcode)
 
   eleventyConfig.addPairedShortcode("notice", noticeShortcode)
   eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
@@ -151,19 +163,19 @@ module.exports = function (eleventyConfig) {
   // Shoutouts to @pdehaan: https://github.com/11ty/eleventy/issues/1314#issuecomment-657999759
   // Not only does this prettify HTML and JSON, it has the added side effect of choking
   // if anything is not semantically correct HTML ie; tags are not closed properly
-  eleventyConfig.addTransform("prettier", function (content, outputPath) {
-    const extname = path.extname(outputPath);
-    switch (extname) {
-      case ".html":
-      case ".json":
-        // Strip leading period from extension and use as the Prettier parser.
-        const parser = extname.replace(/^./, "");
-        return prettier.format(content, { parser });
+  // eleventyConfig.addTransform("prettier", function (content, outputPath) {
+  //   const extname = path.extname(outputPath);
+  //   switch (extname) {
+  //     case ".html":
+  //     case ".json":
+  //       // Strip leading period from extension and use as the Prettier parser.
+  //       const parser = extname.replace(/^./, "");
+  //       return prettier.format(content, { parser });
 
-      default:
-        return content;
-    }
-  });
+  //     default:
+  //       return content;
+  //   }
+  // });
 
   return {
     // Control which files Eleventy will process

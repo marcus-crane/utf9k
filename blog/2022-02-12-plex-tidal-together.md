@@ -13,11 +13,11 @@ tags:
 - "tidal"
 ---
 
-{{% notice emoji="🖼" title="Look at this photograph" %}}
+{% notice "🖼 Look at this photograph" %}
 Due to the nature of this post, it's pretty image heavy.
 
 Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
-{{% /notice %}}
+{% endnotice %}
 
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
@@ -85,9 +85,7 @@ This is something that Spotify really excels at.
 
 If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
 
-{{< image src="spotify-remote-session.jpg" noshadow=true >}}
-  A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
-{{< /image >}}
+![A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.](./content/blog/plex-tidal-together/spotify-remote-session.jpg)
 
 This was really handy at my previous job where trying to stream over a VPN[^vpn] was just asking for trouble.
 
@@ -97,8 +95,7 @@ Other times, I might be in the middle of a long podcast on mobile and I can't be
 
 This... sort of works on a technical level but still not really. I was disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
 
-{{< image src="apple-music-session.jpg" noshadow=true >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/apple-music-session.jpg)
 
 As you can see, Apple Music on my laptop is aware that I'm playing a song on an [HomePod](https://www.apple.com/nz/homepod-mini/). I can then select the HomePod and pause the track which then reflects instantly on my phone as well.
 
@@ -106,8 +103,7 @@ So basically, you can have sessions but only when the playing device is not an A
 
 I also ran into this fun popup when poking around and this won't be the last time we see something like it in this post
 
-{{< image src="apple-music-too-many-devices.jpg" noshadow=true >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/apple-music-too-many-devices.jpg)
 
 #### Tidal
 
@@ -129,7 +125,7 @@ Tidal did have Jay-Z content as an exclusive in the past, which also included th
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
-{{< tweet "jack" 1367460921937817602 >}}
+{% tweet "jack", "1367460921937817602" %}
 
 Jack Dorsey mentioned his vision for the future of Tidal:
 
@@ -137,8 +133,7 @@ Jack Dorsey mentioned his vision for the future of Tidal:
 
 That basically means nothing to me but whatever. The Carter Administration is still on the board of <strike>Square</strike> Block and that can only mean one thing.
 
-{{< image src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" >}}
-{{< /image >}}
+![](https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png)
 
 Beautiful.
 
@@ -160,8 +155,7 @@ I had been vaguely aware for a while that Plex touted some sort of integration w
 
 I had even read up on integration, where the killer feature is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) but apparently I did a rubbish job at reading since I entirely overlooked it.
 
-{{< image src="plexamp-add-to-library.jpg" style="height: 500px" noshadow=true >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-add-to-library.jpg)
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
 
@@ -169,8 +163,7 @@ When I first hooked up Tidal to Plex, I would just press *Add to My TIDAL*.
 
 Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
 
-{{< image src="plexamp-jak-jay.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-jak-jay.jpg)
 
 You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands! At this point, I was sold.
 
@@ -202,8 +195,7 @@ Thankfully, it really is a first class Plex citizen and I'll even give you a whi
 
 Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated.
 
-{{< image src="plexamp-cross-search.jpg" style="height: 500px" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-cross-search.jpg)
 
 ### A lively home screen
 
@@ -211,20 +203,17 @@ The home screen is a great example of how Tidal content is interweaved with your
 
 The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
 
-{{< image src="plexamp-home.jpg" style="height: 500px"  >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-home.jpg)
 
 There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
 
-{{< image src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif" >}}
-{{< /image >}}
+![](https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif)
 
 To enable automatic mixes, and other features, you'll want to enable [Sonic Analysis](https://support.plex.tv/articles/sonic-analysis-music/). I did a bit of a facepalm when I realised I didn't have this enabled yet. I even read the blog post for it when it launched!
 
 There's also a feature for surfacing what happened "On This Day" in music history:
 
-{{< image src="https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png" >}}
-{{< /image >}}
+![](https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png)
 
 It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 
 29th debut next year.
@@ -233,8 +222,7 @@ It would have said that February 10th[^feb] is the 28th anniversary of [The Coll
 
 There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the more interesting.
 
-{{< image src="plexamp-mood.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-mood.jpg)
 
 I haven't taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It also demonstrates yet again how nicely the two sources (local and tidal) can play together.
 
@@ -244,8 +232,7 @@ It's about time that we look at why they play nicely together so let's take a pe
 
 If you remember, something I wanted was to continue powering the "Now playing" widget on the front of my website.
 
-{{< image src="utf9k-nowplaying.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/utf9k-nowplaying.jpg)
 
 ✅ for **A good API** (2/3)
 
@@ -457,14 +444,13 @@ Kind of but not really?
 
 At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
 
-{{< tweet "plexamp" "1489024846033915908" >}}
+{% tweet "plexamp", "1489024846033915908" %}
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
 **UPDATE**: For Valentines Day, we got [a lofty 4.0 update](https://forums.plex.tv/t/plexamp-release-notes/221280/38) which includes, among other things, the ability to control your playback on another device!
 
-{{< image src="plex-remote-session.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plex-remote-session.jpg)
 
 What you're seeing here is my phone controlling a session that's playing on my laptop.
 
@@ -486,12 +472,11 @@ Most of these are either fine in moderation or things that I'm sure the [Plexamp
 
 I had the misfortune of having this integration go down briefly due to an outage with the Plex authentication server.
 
-{{< image src="plex-status-page.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plex-status-page.jpg)
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
-{{% notice emoji="🔑" title="A tip for Plex server owners" %}}
+{% notice "🔑 A tip for Plex server owners" %}
 [Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
 
 They're relatively stable but it's inevitable that the authentication server will fail again one day.
@@ -499,7 +484,7 @@ They're relatively stable but it's inevitable that the authentication server wil
 That isn't a slight towards Plex, it's just an unavoidable reality about computers.
 
 Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
-{{% /notice %}}
+{% endnotice %}
 
 While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and this is where it can be useful as a backup.
 
@@ -535,14 +520,13 @@ It could also just be a bug 🤷‍♀️
 
 Despite the error, it's perfectly possible to play multiple tracks from Tidal at the same time
 
-{{< image src="tool-trio.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/tool-trio.jpg)
 
 If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
 <center>
   <audio controls>
-    <source src="tool-trio.mp3" type="audio/mpeg">
+    <source src="./content/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg">
     Your browser doesn't support the audio tag :(
   </audio>
 </center>
@@ -553,7 +537,7 @@ This one seems like a weirdly obvious oversight so I'm going to give the benefit
 
 The team are definitely aware of it:
 
-{{< tweet "plexamp" "1491494752327372801" >}}
+{% tweet "plexamp", "1491494752327372801" %}
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 
@@ -563,8 +547,7 @@ Interestingly, Plexamp sessions can't be cancelled by the owner of a Plex server
 
 With most streaming content, you can force stop a session but here, you can't even kill your own sessions for some reason.
 
-{{< image src="plexamp-not-pausing.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-not-pausing.jpg)
 
 In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal.
 
@@ -580,8 +563,7 @@ Believe or not, I actually cut this post short because I could gush about Plexam
 
 Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.
 
-{{< image src="plexamp-upnext.jpg" >}}
-{{< /image >}}
+![](./content/blog/plex-tidal-together/plexamp-upnext.jpg)
 
 I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.
 

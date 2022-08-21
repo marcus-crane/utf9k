@@ -37,27 +37,19 @@ Often times, it isn't that every image fails to load but one or two that have be
 
 It leads to frustrating discussions like this
 
-{{< image src="twitter-dm-huge-l.png" >}}
-  A Twitter direct message where the author posts an image that fails to load and the recipient says "huge L the image isn't loading".
-{{< /image >}}
+![A Twitter direct message where the author posts an image that fails to load and the recipient says "huge L the image isn't loading".](./content/blog/twitter-image-servers-2021/twitter-dm-huge-l.png)
 
 and this
 
-{{< image src="twitter-dm-alt-text.png" >}}
-  A Twitter direct message where the author receives an image that fails to load, asks "got any alt text?" and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour.
-{{< /image >}}
+![A Twitter direct message where the author receives an image that fails to load, asks "got any alt text?" and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour.](./content/blog/twitter-image-servers-2021/twitter-dm-alt-text.png)
 
 and this
 
-{{< image src="twitter-dm-revenue.png" >}}
-  A Twitter direct message where the author receives an image that fails to load and responds with "Guess who has $3 billion in revenue but still can't display photos in DMs :)"
-{{< /image >}}
+![A Twitter direct message where the author receives an image that fails to load and responds with "Guess who has $3 billion in revenue but still can't display photos in DMs :)"](./content/blog/twitter-image-servers-2021/twitter-dm-revenue.png)
 
 It happened again just the other day and I did a little poking around. It seems that `ton.twitter.com`, the image server used for DMs[^2] times out.
 
-{{< image src="timeout.png" noshadow=true >}}
-  A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.
-{{< /image >}}
+![A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.](./content/blog/twitter-image-servers-2021/timeout.png)
 
 Upon closer inspection, only Port 80 (http) appears to be open with redirects to Port 443 (https) failing as there is no such port open based on a quick scan using `nmap`.
 
@@ -67,11 +59,11 @@ It's pretty frustrating and I've actually resorted to DMing on other platforms b
 
 For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely destroyed upon upload.
 
-{{< tweet user="benedictevans" id="1439536308326645767" >}}
+{% tweet "benedictevans", "1439536308326645767" %}
 
 You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
-{{< tweet user="sentreh" id="1436092048914796545" >}}
+{% tweet "sentreh", "1436092048914796545" %}
 
 While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.
 
@@ -83,7 +75,7 @@ As I mentioned before, I don't want to point fingers at any people but I will sa
 
 Instead, right in the middle of those two transparency mulched images, what I experienced was [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards.
 
-{{< tweet user="TwitterEng" id="1437857022444138496" >}}
+{% tweet "TwitterEng", "1437857022444138496" %}
 
 I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, the optics of it don't look great as someone experiencing this.
 
