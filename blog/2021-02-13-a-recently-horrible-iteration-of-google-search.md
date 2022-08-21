@@ -25,7 +25,7 @@ Having said that, the fact that someone at Google signed off on what was, until 
 
 I just happen to have taken a screen recording of this mess which was live at least as recently as early December and so that's what I'd like to present to you now:
 
-{% video "./content/blog/a-recently-horrible-iteration-of-google-search/google-search-the-sopranos.mp4" %}
+{% video "/video/a-recently-horrible-iteration-of-google-search/google-search-the-sopranos.mp4" %}
 
 What is all this?! There's so much going on visually here. We've got:
 
@@ -54,13 +54,13 @@ I don't understand though. Is this what the data showed that users were craving?
 
 For comparison, here is what the equivalent search in [DuckDuckGo](https://duckduckgo.com) looked like on that same day:
 
-{% video "./content/blog/a-recently-horrible-iteration-of-google-search/ddg-search-the-sopranos.mp4" %}
+{% video "/video/a-recently-horrible-iteration-of-google-search/ddg-search-the-sopranos.mp4" %}
 
 Not only was that much easier, it actually inlined a bunch of links you might want to look at, rather than unrolling them for you into a massive information dump.
 
 I was also trying out [Ecosia](https://www.ecosia.org) at the time too:
 
-{% video "./content/blog/a-recently-horrible-iteration-of-google-search/ecosia-search-the-sopranos.mp4" %}
+{% video "/video/a-recently-horrible-iteration-of-google-search/ecosia-search-the-sopranos.mp4" %}
 
 I think Ecosia uses [Bing](https://bing.com) under the hood but it also surfaces Wikipedia as the first result without any troubles.
 

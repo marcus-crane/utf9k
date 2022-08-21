@@ -85,7 +85,7 @@ This is something that Spotify really excels at.
 
 If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
 
-![A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.](./content/blog/plex-tidal-together/spotify-remote-session.jpg)
+![A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.](./img/blog/plex-tidal-together/spotify-remote-session.jpg)
 
 This was really handy at my previous job where trying to stream over a VPN[^vpn] was just asking for trouble.
 
@@ -95,7 +95,7 @@ Other times, I might be in the middle of a long podcast on mobile and I can't be
 
 This... sort of works on a technical level but still not really. I was disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
 
-![](./content/blog/plex-tidal-together/apple-music-session.jpg)
+![](./img/blog/plex-tidal-together/apple-music-session.jpg)
 
 As you can see, Apple Music on my laptop is aware that I'm playing a song on an [HomePod](https://www.apple.com/nz/homepod-mini/). I can then select the HomePod and pause the track which then reflects instantly on my phone as well.
 
@@ -103,7 +103,7 @@ So basically, you can have sessions but only when the playing device is not an A
 
 I also ran into this fun popup when poking around and this won't be the last time we see something like it in this post
 
-![](./content/blog/plex-tidal-together/apple-music-too-many-devices.jpg)
+![](./img/blog/plex-tidal-together/apple-music-too-many-devices.jpg)
 
 #### Tidal
 
@@ -155,7 +155,7 @@ I had been vaguely aware for a while that Plex touted some sort of integration w
 
 I had even read up on integration, where the killer feature is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) but apparently I did a rubbish job at reading since I entirely overlooked it.
 
-![](./content/blog/plex-tidal-together/plexamp-add-to-library.jpg)
+![](./img/blog/plex-tidal-together/plexamp-add-to-library.jpg)
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
 
@@ -163,7 +163,7 @@ When I first hooked up Tidal to Plex, I would just press *Add to My TIDAL*.
 
 Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
 
-![](./content/blog/plex-tidal-together/plexamp-jak-jay.jpg)
+![](./img/blog/plex-tidal-together/plexamp-jak-jay.jpg)
 
 You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands! At this point, I was sold.
 
@@ -195,7 +195,7 @@ Thankfully, it really is a first class Plex citizen and I'll even give you a whi
 
 Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated.
 
-![](./content/blog/plex-tidal-together/plexamp-cross-search.jpg)
+![](./img/blog/plex-tidal-together/plexamp-cross-search.jpg)
 
 ### A lively home screen
 
@@ -203,7 +203,7 @@ The home screen is a great example of how Tidal content is interweaved with your
 
 The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
 
-![](./content/blog/plex-tidal-together/plexamp-home.jpg)
+![](./img/blog/plex-tidal-together/plexamp-home.jpg)
 
 There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
 
@@ -222,7 +222,7 @@ It would have said that February 10th[^feb] is the 28th anniversary of [The Coll
 
 There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the more interesting.
 
-![](./content/blog/plex-tidal-together/plexamp-mood.jpg)
+![](./img/blog/plex-tidal-together/plexamp-mood.jpg)
 
 I haven't taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It also demonstrates yet again how nicely the two sources (local and tidal) can play together.
 
@@ -232,7 +232,7 @@ It's about time that we look at why they play nicely together so let's take a pe
 
 If you remember, something I wanted was to continue powering the "Now playing" widget on the front of my website.
 
-![](./content/blog/plex-tidal-together/utf9k-nowplaying.jpg)
+![](./img/blog/plex-tidal-together/utf9k-nowplaying.jpg)
 
 ✅ for **A good API** (2/3)
 
@@ -450,7 +450,7 @@ At this point, I'll take 2 out of 3 happily but we're apparently getting somethi
 
 **UPDATE**: For Valentines Day, we got [a lofty 4.0 update](https://forums.plex.tv/t/plexamp-release-notes/221280/38) which includes, among other things, the ability to control your playback on another device!
 
-![](./content/blog/plex-tidal-together/plex-remote-session.jpg)
+![](./img/blog/plex-tidal-together/plex-remote-session.jpg)
 
 What you're seeing here is my phone controlling a session that's playing on my laptop.
 
@@ -472,7 +472,7 @@ Most of these are either fine in moderation or things that I'm sure the [Plexamp
 
 I had the misfortune of having this integration go down briefly due to an outage with the Plex authentication server.
 
-![](./content/blog/plex-tidal-together/plex-status-page.jpg)
+![](./img/blog/plex-tidal-together/plex-status-page.jpg)
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
@@ -520,11 +520,11 @@ It could also just be a bug 🤷‍♀️
 
 Despite the error, it's perfectly possible to play multiple tracks from Tidal at the same time
 
-![](./content/blog/plex-tidal-together/tool-trio.jpg)
+![](./img/blog/plex-tidal-together/tool-trio.jpg)
 
 If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
-{% audio "./content/blog/plex-tidal-together/tool-trio.mp3" %}
+{% audio "/audio/plex-tidal-together/tool-trio.mp3" %}
 
 ### You can't remove Tidal albums
 
@@ -542,7 +542,7 @@ Interestingly, Plexamp sessions can't be cancelled by the owner of a Plex server
 
 With most streaming content, you can force stop a session but here, you can't even kill your own sessions for some reason.
 
-![](./content/blog/plex-tidal-together/plexamp-not-pausing.jpg)
+![](./img/blog/plex-tidal-together/plexamp-not-pausing.jpg)
 
 In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal.
 
@@ -558,7 +558,7 @@ Believe or not, I actually cut this post short because I could gush about Plexam
 
 Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.
 
-![](./content/blog/plex-tidal-together/plexamp-upnext.jpg)
+![](./img/blog/plex-tidal-together/plexamp-upnext.jpg)
 
 I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.
 

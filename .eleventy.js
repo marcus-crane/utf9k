@@ -17,7 +17,7 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 const prettier = require('prettier');
 
 async function audioShortcode(src) {
-  if (!fs.existsSync(src)) {
+  if (!fs.existsSync('.' + src)) {
     console.error(`Tried to load audio at ${src} which does not exist`)
     return
   }
@@ -30,7 +30,7 @@ async function audioShortcode(src) {
 }
 
 async function videoShortcode(src) {
-  if (!fs.existsSync(src)) {
+  if (!fs.existsSync('.' + src)) {
     console.error(`Tried to load video at ${src} which does not exist`)
     return
   }
@@ -60,9 +60,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setQuietMode(true)
 
   // Passthroughs
-  eleventyConfig.addPassthroughCopy("content")
+  eleventyConfig.addPassthroughCopy("audio")
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy({ "static": "." })
+  eleventyConfig.addPassthroughCopy("video")
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("audio", audioShortcode)
