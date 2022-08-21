@@ -5,11 +5,10 @@ permalink: '/search.json'
   {%- for post in collections.question | reverse %}
     {
       "slug": "{{ post.data.slug }}",
-      "content": "{{ post.template.frontMatter.content | dump(2) }}",
+      "content": "{{ post.template.frontMatter.content | striptags(true) | dump(2) | replace('"', '') | replace('\\', '') | safe }}",
       "tags": [
         {%- for tag in post.data.tags %}
-        "{{ tag }}"
-        {% if not loop.last %},{% endif %}
+        "{{ tag }}"{% if not loop.last %},{% endif %}
         {%- endfor %}
       ],
       "title": "{{ post.data.title }}"
