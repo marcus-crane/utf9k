@@ -32,6 +32,20 @@ command = "npm run build"
   status = 301
   force = false
 
+# Post aliases
+[[redirects]]
+  from = "/blog/when-automation-goes-horribly-right"
+  to = "/blog/automation-right"
+  status = 301
+  force = false
+  
+[[redirects]]
+  from = "/notes/"
+  to = "/questions/"
+  status = 301
+  force = false
+
+
 [[headers]]
 for = "/*.jpg"
 
