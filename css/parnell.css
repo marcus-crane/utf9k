@@ -33,6 +33,21 @@ a {
   width: 300px;
   margin: 10px;
   padding: 10px 20px;
+  background-color: #f3f4f6;
+  color: #111827;
+  opacity: 0.5
+}
+
+#console:hover {
+  opacity: 1;
+  transition: linear .2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  #console {
+    background-color: #111827;
+    color: #f3f4f6;
+  }
 }
   
 .session {

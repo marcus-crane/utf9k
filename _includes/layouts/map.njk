@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+  <head>
+    {% include 'partials/head-map.njk' %}
+  </head>
+  <body>
+    <div id="content">
+      {{ content | safe }}
+    </div>
+  </body>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+  <script type="text/javascript" src="{{ '/js/parnell.js' | url }}"></script>
+</html>

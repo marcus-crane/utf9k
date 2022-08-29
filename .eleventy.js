@@ -84,6 +84,7 @@ module.exports = function (eleventyConfig) {
     entryPoints: {
       "footnotes": "js/footnotes.js",
       "live-player": "js/live-player.js",
+      "parnell": "js/parnell.js",
       "question-search": "js/question-search.js"
     },
     output: "_site/js"
