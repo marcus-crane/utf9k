@@ -25,6 +25,12 @@ command = "npm run build"
   to = "/rss.xml"
   status = 301
   force = false
+  
+[[redirects]]
+  from = "/blog/index.xml"
+  to = "/rss.xml"
+  status = 301
+  force = false
 
 [[headers]]
 for = "/*.jpg"
