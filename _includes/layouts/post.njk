@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <div id="post-meta">
+      <time datetime="{{ page.date }}">{%- if page.draft %}This is an unpublished draft{% else %}{{ page.date | dateFmt("DDD") }}{%- endif %}</time> · TIME TO READ
+    </div>
+  </header>
+  <div id="post-body">
+    {{ content | safe }}
+  </div>
+</article>
+
+<script src="/js/footnotes.js"></script>

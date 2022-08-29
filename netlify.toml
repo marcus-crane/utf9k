@@ -1,13 +1,6 @@
 [build]
-publish = "public"
-command = "npm run build:deps && pnpm run test && pnpm run build:metadata && pnpm run build"
-
-[build.environment]
-HUGO_VERSION = "0.91.2"
-PYTHON_VERSION = "3.8"
-
-[context.production.environment]
-HUGO_ENV = "production"
+publish = "_site"
+command = "npm run build"
 
 [[redirects]]
 	from = "/statistician.js"

@@ -1,0 +1,14 @@
+README.md
+node_modules
+.eslintrc.js
+pnpm-lock.yaml
+package.json
+CITATION.cff
+netlify.toml
+LICENSE
+.editorconfig
+.gitignore
+.git
+.github
+validation
+blog/2021-04-27-dropbox-is-way-too-clingy.md

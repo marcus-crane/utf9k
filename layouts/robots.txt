@@ -1,8 +1,0 @@
-# Index whatever you like although you probably don't want to crawl drafts, since they're not complete after all.
-User-agent: *
-Allow: /
-{{- range (where .Site.Pages "Draft" true) }}
-Disallow: {{ .RelPermalink }}
-{{- end }}
-
-Sitemap: https://utf9k.net/sitemap.xml

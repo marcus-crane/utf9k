@@ -1,0 +1,13 @@
+---
+permalink: '/robots.txt'
+---
+User-agent: *
+Allow: /
+
+{%- for post in (collections.all | reverse) %}
+{%- if post.data.draft %}
+Disallow: {{ post.url | url }}
+{%- endif %}
+{%- endfor %}
+
+Sitemap: {{ deploy.url }}/sitemap.xml

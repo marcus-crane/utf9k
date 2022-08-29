@@ -2,26 +2,45 @@
   "name": "utf9k",
   "version": "1.0.0",
   "description": "My personal site",
-  "repository": "git@github.com:marcus-crane/utf9k",
-  "author": "Marcus Crane <marcus@utf9k.net>",
-  "license": "MIT",
   "scripts": {
-    "start": "COMMIT_SHA=main hugo server --disableFastRender",
-    "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
-    "build:deps": "./ci/install.sh",
-    "build:metadata": "./ci/genmetadata.sh",
-    "lint": "eslint assets/js",
-    "test": "./ci/test.sh"
+    "build": "npx @11ty/eleventy",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcus-crane/utf9k.git"
+  },
+  "author": {
+    "name": "Marcus Crane",
+    "email": "marcus@utf9k.net",
+    "url": "https://utf9k.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcus-crane/utf9k/issues"
+  },
+  "homepage": "https://github.com/marcus-crane/utf9k#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.2",
-    "@babel/preset-env": "7.18.2",
-    "autoprefixer": "10.4.7",
-    "eslint": "7.32.0",
-    "postcss": "8.4.14",
-    "postcss-cli": "8.3.1"
-  },
-  "dependencies": {
-    "littlefoot": "3.4.1"
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@jamshop/eleventy-plugin-esbuild": "^1.0.2",
+    "@types/markdown-it": "^12.2.3",
+    "@types/markdown-it-attrs": "^4.1.0",
+    "bench": "^0.3.6",
+    "littlefoot": "^3.4.1",
+    "luxon": "^3.0.1",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-eleventy-img": "^0.7.0",
+    "markdown-it-footnote": "^3.0.3",
+    "prettier": "^2.7.1",
+    "yaml": "^2.1.1"
   }
 }
