@@ -11,23 +11,23 @@
     rating: null
     progress: 36
 
-  - title: Building a Second Brain
-    subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
-    author: Tiago Forte
-    cover: https://covers.openlibrary.org/b/id/12372866-L.jpg
-    link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
-    date_finished: null
-    rating: null
-    progress: 16
+#   - title: Building a Second Brain
+#     subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
+#     author: Tiago Forte
+#     cover: https://covers.openlibrary.org/b/id/12372866-L.jpg
+#     link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
+#     date_finished: null
+#     rating: null
+#     progress: 16
 
-  - title: High Output Management
-    subtitle: null
-    author: Andrew S. Grove
-    cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
-    link: https://openlibrary.org/works/OL2355834W
-    date_finished: null
-    rating: null
-    progress: 40
+#   - title: High Output Management
+#     subtitle: null
+#     author: Andrew S. Grove
+#     cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
+#     link: https://openlibrary.org/works/OL2355834W
+#     date_finished: null
+#     rating: null
+#     progress: 40
 
   - title: Slow Horses
     subtitle: null
