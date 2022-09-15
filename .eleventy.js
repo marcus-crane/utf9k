@@ -11,6 +11,7 @@ const markdownItEleventyImg = require('markdown-it-eleventy-img')
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
@@ -33,6 +34,7 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(pluginESbuild, {
     entryPoints: {
       "footnotes": "js/footnotes.js",

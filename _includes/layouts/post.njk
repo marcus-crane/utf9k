@@ -6,7 +6,7 @@ layout: layouts/base.njk
   <header>
     <h1>{{ title }}</h1>
     <div id="post-meta">
-      <time datetime="{{ page.date }}">{%- if page.draft %}This is an unpublished draft{% else %}{{ page.date | dateFmt("DDD") }}{%- endif %}</time> · TIME TO READ
+      <time datetime="{{ page.date }}">{%- if page.draft %}This is an unpublished draft{% else %}{{ page.date | dateFmt("DDD") }}{%- endif %}</time> · {{ content | timeToRead }} long
     </div>
   </header>
   <div id="post-body">

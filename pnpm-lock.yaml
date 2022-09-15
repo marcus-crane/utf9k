@@ -9,6 +9,7 @@ specifiers:
   '@types/markdown-it': ^12.2.3
   '@types/markdown-it-attrs': ^4.1.0
   bench: ^0.3.6
+  eleventy-plugin-time-to-read: ^1.2.0
   littlefoot: ^3.4.1
   luxon: ^3.0.1
   markdown-it: ^13.0.1
@@ -21,6 +22,7 @@ specifiers:
 
 dependencies:
   '@11ty/eleventy': 1.0.1
+  eleventy-plugin-time-to-read: 1.2.0_@11ty+eleventy@1.0.1
 
 devDependencies:
   '@11ty/eleventy-fetch': 3.0.0
@@ -884,6 +886,18 @@ packages:
     hasBin: true
     dependencies:
       jake: 10.8.5
+    dev: false
+
+  /eleventy-plugin-time-to-read/1.2.0_@11ty+eleventy@1.0.1:
+    resolution: {integrity: sha512-6LZZTqwRlirzRQOXEXjGbjinwNnVvEGe6BzIGWJIC3cNtngJ+xnqTeyVjARoN+OU0WDd+QAqSHGy513sf0vB/g==}
+    engines: {node: '>=13.0.0'}
+    peerDependencies:
+      '@11ty/eleventy': '*'
+    peerDependenciesMeta:
+      '@11ty/eleventy':
+        optional: true
+    dependencies:
+      '@11ty/eleventy': 1.0.1
     dev: false
 
   /emoji-regex/8.0.0:
