@@ -16,44 +16,6 @@ const pluginESbuild = require("@jamshop/eleventy-plugin-esbuild");
 
 const prettier = require('prettier');
 
-async function audioShortcode(src) {
-  if (!fs.existsSync('.' + src)) {
-    console.error(`Tried to load audio at ${src} which does not exist`)
-    return
-  }
-  return `<center>
-  <audio controls>
-    <source src="${src}" type="audio/mpeg">
-    Your browser doesn't support the audio tag :(
-  </audio>
-  </center>`
-}
-
-async function videoShortcode(src) {
-  if (!fs.existsSync('.' + src)) {
-    console.error(`Tried to load video at ${src} which does not exist`)
-    return
-  }
-  return `<video style="display: inherit; margin: 0 auto;" width="50%" controls>
-  <source preload src="${src}" type="video/mp4">
-  Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
-  </video>`
-}
-
-async function youtubeShortcode(id) {
-  return `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-}
-
-async function noticeShortcode(content, title) {
-  return `<div><h5>${title}</h5><p>${content}</p></div>`
-}
-
-// https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-statuses-oembed
-// https://publish.twitter.com/oembed?url=https://twitter.com/bepsays/status/1408348824083615745&hide_thread=true&dnt=true
-async function twitterShortcode(user, id) {
-  return `<p>Tweet here</p>`
-}
-
 module.exports = function (eleventyConfig) {
   // Silence file writes in order to see my own warnings
   // eg; when an image is referenced that does not exist
@@ -64,15 +26,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy({ "static": "." })
   eleventyConfig.addPassthroughCopy("video")
-
-  // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode("audio", audioShortcode)
-  eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
-  eleventyConfig.addNunjucksAsyncShortcode("tweet", twitterShortcode)
-  eleventyConfig.addNunjucksAsyncShortcode("youtube", youtubeShortcode)
-
-  eleventyConfig.addPairedShortcode("notice", noticeShortcode)
-  eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
 
   // Custom file formats
   eleventyConfig.addDataExtension("yml", contents => yaml.parse(contents))
@@ -173,6 +126,54 @@ module.exports = function (eleventyConfig) {
     'Ongoing': collectionApi.getFilteredByTag('project').filter(p => p.data.ongoing),
     'Archived': collectionApi.getFilteredByTag('project').filter(p => !p.data.ongoing)
   }))
+
+  function noticeShortcode(content, title) {
+    return `<div class="notice"><h3>${title}</h3>${markdownLibrary.render(content)}</div>`
+  }
+
+
+async function audioShortcode(src) {
+  if (!fs.existsSync('.' + src)) {
+    console.error(`Tried to load audio at ${src} which does not exist`)
+    return
+  }
+  return `<center>
+  <audio controls>
+    <source src="${src}" type="audio/mpeg">
+    Your browser doesn't support the audio tag :(
+  </audio>
+  </center>`
+}
+
+async function videoShortcode(src) {
+  if (!fs.existsSync('.' + src)) {
+    console.error(`Tried to load video at ${src} which does not exist`)
+    return
+  }
+  return `<video style="display: inherit; margin: 0 auto;" width="50%" controls>
+  <source preload src="${src}" type="video/mp4">
+  Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
+  </video>`
+}
+
+async function youtubeShortcode(id) {
+  return `<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+}
+
+// https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-statuses-oembed
+// https://publish.twitter.com/oembed?url=https://twitter.com/bepsays/status/1408348824083615745&hide_thread=true&dnt=true
+async function twitterShortcode(user, id) {
+  return `<p>Tweet here</p>`
+}
+
+  // Shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("audio", audioShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode("tweet", twitterShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode("youtube", youtubeShortcode)
+
+  eleventyConfig.addPairedShortcode("notice", noticeShortcode)
+  eleventyConfig.addPairedShortcode("javascript", pluginESbuild.esBuildShortcode)
 
   // Transforms
 
