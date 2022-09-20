@@ -1,6 +1,7 @@
 [build]
 publish = "_site"
 command = "npm install -g pnpm && pnpm install && pnpm build"
+environment = { NODE_ENV = "production" }
 
 [[redirects]]
 	from = "/statistician.js"

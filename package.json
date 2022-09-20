@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/marcus-crane/utf9k#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^1.0.2",
     "eleventy-plugin-time-to-read": "^1.2.0"
   },
   "devDependencies": {
