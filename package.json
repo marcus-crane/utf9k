@@ -43,6 +43,5 @@
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-attrs": "^4.1.0",
     "bench": "^0.3.6"
-  },
-  "packageManager": "yarn@3.2.3"
+  }
 }
