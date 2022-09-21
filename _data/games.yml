@@ -1,17 +1,17 @@
 - list: Actively playing
   games:
   
-  - title: "Digimon Story: Cyber Sleuth"
+  - title: "Grandia"
     platform: "Nintendo Switch"
-    id: 15705
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
-    link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
-  
-  - title: "Final Fantasy XIV: A Realm Reborn"
-    platform: "PC"
-    id: 386
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
-    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
+    id: 4127
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
+    link: "https://www.igdb.com/games/grandia"
+
+  - title: "Katamari Damacy REROLL"
+    platform: "Nintendo Switch"
+    id: 109458
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png"
+    link: "https://www.igdb.com/games/katamari-damacy-reroll"
 
 - list: Stalled but occasionally progress is made
   games:
@@ -33,12 +33,6 @@
     id: 386
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
     link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
-
-  - title: "Grandia"
-    platform: "Nintendo Switch"
-    id: 4127
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
-    link: "https://www.igdb.com/games/grandia"
 
   - title: "Grand Theft Auto V"
     platform: "PC"
