@@ -19,19 +19,5 @@ permalink: /blog/
         </li>
       {% endfor %}
     {% endfor %}
-    <h2>Drafts</h2>
-    <details>
-      <summary>You should prod me to finish these!</summary>
-      <ul>
-        {# TODO: Bring back unless statement #}
-        {% for post in collections.post | reverse %}
-        {% if post.data.draft %}
-        <li>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </li>
-        {%- endif %}
-        {%- endfor %}
-      </ul>
-    </details>
 </ul>
 </main>
