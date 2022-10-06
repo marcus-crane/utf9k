@@ -203,6 +203,7 @@ article .hidden { /* TODO: Change this to rss-only */
 article #post-body p,
 article #post-body img,
 article #post-body #heading,
+article #post-body pre,
 article blockquote {
   margin-bottom: 1.5rem;
 }
