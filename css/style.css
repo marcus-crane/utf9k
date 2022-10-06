@@ -202,7 +202,12 @@ article .hidden { /* TODO: Change this to rss-only */
 
 article #post-body p,
 article #post-body img,
-article #post-body #heading,
+article #post-body h1,
+article #post-body h2,
+article #post-body h3,
+article #post-body h4,
+article #post-body h5,
+article #post-body h6,
 article #post-body pre,
 article blockquote {
   margin-bottom: 1.5rem;
