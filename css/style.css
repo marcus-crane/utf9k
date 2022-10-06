@@ -382,8 +382,15 @@ details {
 /* Code blocks, table and images get extra width */
 /* TODO: Don't use important, this is dumb but temporary while I do a migration */
 table, .highlight, pre[class*=language-], figure, #post-body img {
-  width: 120% !important;
-  margin-left: -10% !important;
+  width: 110% !important;
+  margin-left: -5% !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  table, .highlight, pre[class*=language-], figure, #post-body img {
+    width: 120% !important;
+    margin-left: -10% !important;
+  }
 }
 
 #post-body img {
