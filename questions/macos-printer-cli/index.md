@@ -34,7 +34,7 @@ Ah, so the queue name is `my-fake-queue`. I wish the System Preferences pane had
 
 While there, I also discovered a bunch of my old print jobs as well!
 
-```
+```bash
 > lpstat -W completed -l
 example_printer-3 marcus          59392   Wed 28 Apr 09:40:30 2021
     Status: The printer is not responding.

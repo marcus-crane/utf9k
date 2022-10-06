@@ -7,8 +7,6 @@ tags:
 - "macos"
 ---
 
-## 
-
 While there's the classic `Apple menu -> About This Mac -> System Report`, a terminal based alternative is the `system_profiler` command.
 
 You can use a list of queryable types like so:

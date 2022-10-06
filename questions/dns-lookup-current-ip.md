@@ -13,7 +13,7 @@ While there are a myriad of HTTP servers for seeing your external IP address, yo
 
 These will give you an IPv4 flag. The `-4` flag isn't necessarily required but without explicitly providing it, you'll be gambling on the return type.
 
-```
+```shell
 > dig @resolver3.opendns.com myip.opendns.com +short -4
 > dig @resolver4.opendns.com myip.opendns.com +short -4
 > dig @ns1-1.akamaitech.net ANY whoami.akamai.net +short -4
@@ -22,7 +22,7 @@ These will give you an IPv4 flag. The `-4` flag isn't necessarily required but w
 
 and likewise, for IPv6
 
-```
+```shell
 > dig @resolver1.ipv6-sandbox.opendns.com AAAA myip.opendns.com +short -6
 > dig @ns1.google.com TXT o-o.myaddr.l.google.com +short -6
 ```
