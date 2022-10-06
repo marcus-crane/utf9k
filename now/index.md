@@ -2,7 +2,7 @@
 title: "Now"
 slug: "now"
 lastmod: "2022-01-19T20:50:00+13:00"
-layout: layouts/post.njk
+layout: layouts/plain.njk
 ---
 
 ## Holiday

@@ -1,7 +1,7 @@
 ---
 title: "Uses"
 slug: "uses"
-layout: layouts/post.njk
+layout: layouts/plain.njk
 ---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea

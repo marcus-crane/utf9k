@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: layouts/post.njk
+layout: layouts/plain.njk
 ---
 
 I currently work at [Lightspeed](https://www.lightspeedhq.com/) on our X-Series product, formerly known as [Vend](https://www.vendhq.com/nz/).
