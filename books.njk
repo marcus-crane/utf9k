@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Books
+permalink: /books/
+---
+
+<main>
+  <header>
+    <h1>Books</h1>
+  </header>
+  <div>
+    {% for year in books %}
+      {% set progress = 0 %}
+      {% for book in year.books %}
+        {% if book.progress == 100 %}
+          {% set progress = (progress + 1) %}
+        {% endif %}
+      {% endfor %}
+      {% set goalPercentage = ((progress * 100) / year.goal) %}
+      <div class="grid-list">
+        <h2>{{ year.list }}</h2>
+        {% if year.goal %}
+          <span>Yearly Goal: {{ progress }} / {{ year.goal }} books completed ({{ goalPercentage | round }}%)</span>
+        {% endif %}
+      </div>
+      <ul role="list">
+      {% for book in year.books %}
+        <p>{{ book.title }}</p>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</main>
