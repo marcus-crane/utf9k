@@ -14,10 +14,7 @@ permalink: /blog/
       {# TODO: Replace this with a Nunjucks filter #}
       {% for post in yearPosts | reverse %}
         <li>
-          <a href="{{ post.url | url }}">
-            {% if post.data.title %}{{ post.data.title }}
-            {% endif %}
-          </a>
+          <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
           <time>{{ post.date | dateFmt("MMM dd") }}</time>
         </li>
       {% endfor %}

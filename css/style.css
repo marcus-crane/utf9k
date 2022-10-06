@@ -359,6 +359,7 @@ li > time {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 700;
+  padding-left: 3px;
 }
 
 li > span {
