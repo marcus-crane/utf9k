@@ -21,7 +21,7 @@ permalink: /books/
       {% if year.goal %}
         <span>Yearly Goal: {{ progress }} / {{ year.goal }} books completed ({{ goalPercentage | round }}%)</span>
       {% endif %}
-      <ul {% if year.list == "2022" %}class="almost-full-list"{% endif %} role="list">
+      <ul role="list">
       {% for book in year.books %}
       <li>
         <div>

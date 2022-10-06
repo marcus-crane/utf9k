@@ -422,33 +422,53 @@ form#search {
 }
 
 /* Grid lists */
+@media only screen and (min-width: 1200px) {
+  main .grid-list {
+    padding-bottom: 3rem;
+  }
+}
+
 main .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3,minmax(40px,auto));
   grid-gap: 20px;
+  padding-top: 2rem;
+}
+
+main .grid-list img {
+  max-height: 200px;
+}
+
+@media only screen and (min-width: 1200px) {
+  main .grid-list img {
+    max-height: none;
+    max-width: none;
+    height: 15rem;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-  main .grid-list ul:not(.partial-list) {
+  main .grid-list ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4,minmax(40px,auto));
-    margin-left: -25%;
+    margin: 0 auto;
     width: 150%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  main .grid-list ul:not(.partial-list):not(.almost-full-list) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6,minmax(40px,auto));
-    margin-left: -50%;
-    width: 200%;
+  main .grid-list ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    max-width: fit-content;
   }
 }
 
 main > .grid-list ul > li {
-  padding-left: 0;
+  padding: 0 1rem;
 }
 
 main > .grid-list ul > li:before {
