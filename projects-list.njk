@@ -13,7 +13,6 @@ permalink: /projects/
       {% for post in statusProjects | reverse %}
         <li>
           <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% endif %}</a>
-          <time>{{ post.date | dateFmt }}</time>
         </li>
       {% endfor %}
     {% endfor %}

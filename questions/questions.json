@@ -1,5 +1,5 @@
 {
-    "layout": "layouts/question.njk",
+    "layout": "layouts/plain.njk",
     "tags": "question"
 }
   
