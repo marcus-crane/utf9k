@@ -8,26 +8,41 @@ permalink: /books/
   <header>
     <h1>Books</h1>
   </header>
-  <div>
-    {% for year in books %}
-      {% set progress = 0 %}
+  {% for year in books %}
+    {% set progress = 0 %}
+    {% for book in year.books %}
+      {% if book.progress == 100 %}
+        {% set progress = (progress + 1) %}
+      {% endif %}
+    {% endfor %}
+    {% set goalPercentage = ((progress * 100) / year.goal) %}
+    <div class="grid-list">
+      <h2>{{ year.list }}</h2>
+      {% if year.goal %}
+        <span>Yearly Goal: {{ progress }} / {{ year.goal }} books completed ({{ goalPercentage | round }}%)</span>
+      {% endif %}
+      <ul {% if year.list == "2022" %}class="almost-full-list"{% endif %} role="list">
       {% for book in year.books %}
-        {% if book.progress == 100 %}
-          {% set progress = (progress + 1) %}
-        {% endif %}
-      {% endfor %}
-      {% set goalPercentage = ((progress * 100) / year.goal) %}
-      <div class="grid-list">
-        <h2>{{ year.list }}</h2>
-        {% if year.goal %}
-          <span>Yearly Goal: {{ progress }} / {{ year.goal }} books completed ({{ goalPercentage | round }}%)</span>
-        {% endif %}
-      </div>
-      <ul role="list">
-      {% for book in year.books %}
-        <p>{{ book.title }}</p>
+      <li>
+        <div>
+          <img src="{{ book.cover }}">
+          <a href="{{ book.link }}" target="_blank" rel="noopener noreferer">
+            <span>{{ book.title }}</span>
+          </a>
+        </div>
+        <dl>
+          {% if book.progress == 100 %}
+          <div>
+            <dd>Finished: {{ book.date_finished }}</dd>
+            <dd>Rating: {% for i in range(0, book.rating) %}★{% endfor %}</dd>
+          </div>
+          {% else %}
+            <p>{{ book.progress }}% read</p>
+          {% endif %}
+        </dl>
+      </li>
       {% endfor %}
       </ul>
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
 </main>

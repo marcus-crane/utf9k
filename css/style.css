@@ -422,7 +422,7 @@ form#search {
 }
 
 /* Grid lists */
-#post-body .grid-list ul {
+main .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3,minmax(40px,auto));
@@ -430,7 +430,7 @@ form#search {
 }
 
 @media only screen and (min-width: 1000px) {
-  #post-body .grid-list ul:not(.partial-list) {
+  main .grid-list ul:not(.partial-list) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4,minmax(40px,auto));
     margin-left: -25%;
@@ -439,7 +439,7 @@ form#search {
 }
 
 @media only screen and (min-width: 1200px) {
-  #post-body .grid-list ul:not(.partial-list):not(.almost-full-list) {
+  main .grid-list ul:not(.partial-list):not(.almost-full-list) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6,minmax(40px,auto));
     margin-left: -50%;
@@ -447,11 +447,11 @@ form#search {
   }
 }
 
-#post-body > .grid-list ul > li {
+main > .grid-list ul > li {
   padding-left: 0;
 }
 
-#post-body > .grid-list ul > li:before {
+main > .grid-list ul > li:before {
   content: none;
 }
 
