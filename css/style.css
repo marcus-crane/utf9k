@@ -101,7 +101,7 @@ h2 {
   width: 1.4rem;
 }
 
-.navigation nav {
+.navigation nav ul {
   display: flex;
   list-style: none;
 }
