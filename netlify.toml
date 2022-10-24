@@ -33,6 +33,12 @@ environment = { NODE_ENV = "production" }
   status = 301
   force = false
 
+[[redirects]]
+  from = "towing.xlsx"
+  to = "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/towing.xlsx"
+  status = 301
+  force = false
+
 # Post aliases
 [[redirects]]
   from = "/blog/when-automation-goes-horribly-right"
