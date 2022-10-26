@@ -209,7 +209,9 @@ article #post-body h4,
 article #post-body h5,
 article #post-body h6,
 article #post-body pre,
-article blockquote {
+article blockquote,
+article #post-body > ul,
+article #post-body > ol {
   margin-bottom: 1.5rem;
 }
 
@@ -321,17 +323,21 @@ video {
 /* Lists */
 ol, ul {
   padding-inline-start: 0;
+  list-style: none;
 }
 
-main ol, main ul, #post-body ul, #post-body > ol {
+main ol, main ul, #post-body > ul, #post-body > ol {
   list-style: none;
   margin-top: .75em;
   padding-inline-start: 0;
 }
 
-main ul > li, main ol > li, #post-body ul > li, #post-body > ol > li {
+.content > main ul > li, .content > main ol > li, #post-body ul > li, #post-body > ol > li {
   position: relative;
   padding-left: 1.75em;
+}
+
+.content > main ul > li, .content > main ol > li {
   margin-bottom: 0.5em;
 }
 
