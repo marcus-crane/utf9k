@@ -63,6 +63,22 @@ a {
   color: inherit;
 }
 
+a.jumplink {
+  margin-left: -1.25rem;
+  font-size: 1.5rem;
+  opacity: 0.25;
+  transition: opacity 0.25s;
+  text-decoration: none;
+}
+
+/* If the user has a mouse, we'll serve up some nice hover links */
+@media (pointer: fine) {
+  a.jumplink:hover {
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
