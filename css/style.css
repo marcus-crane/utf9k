@@ -332,12 +332,12 @@ main ol, main ul, #post-body > ul, #post-body > ol {
   padding-inline-start: 0;
 }
 
-.content > main ul > li, .content > main ol > li, #post-body ul > li, #post-body > ol > li {
+#content > main ul > li, #content > main ol > li, #post-body ul > li, #post-body > ol > li {
   position: relative;
   padding-left: 1.75em;
 }
 
-.content > main ul > li, .content > main ol > li {
+#content > main ul > li, #content > main ol > li {
   margin-bottom: 0.5em;
 }
 
