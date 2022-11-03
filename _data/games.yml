@@ -1,23 +1,5 @@
 - list: Actively playing
   games:
-  
-  - title: "Cyberpunk 2077"
-    platform: "PC"
-    id: 1877
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4hk8.png"
-    link: "https://www.igdb.com/games/cyberpunk-2077"
-  
-  - title: "Grandia"
-    platform: "Nintendo Switch"
-    id: 4127
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
-    link: "https://www.igdb.com/games/grandia"
-
-  - title: "Katamari Damacy REROLL"
-    platform: "Nintendo Switch"
-    id: 109458
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png"
-    link: "https://www.igdb.com/games/katamari-damacy-reroll"
 
 - list: Stalled but occasionally progress is made
   games:
@@ -45,6 +27,18 @@
     id: 1020
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png"
     link: "https://www.igdb.com/games/grand-theft-auto-v"
+
+  - title: "Grandia"
+    platform: "Nintendo Switch"
+    id: 4127
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
+    link: "https://www.igdb.com/games/grandia"
+
+  - title: "Katamari Damacy REROLL"
+    platform: "Nintendo Switch"
+    id: 109458
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png"
+    link: "https://www.igdb.com/games/katamari-damacy-reroll"
 
   - title: "NieR Replicant ver.1.22474487139..."
     platform: "Playstation 5"
@@ -78,6 +72,20 @@
 
 - list: Completed
   games:
+  
+  - title: "Alba: A Wildlife Adventure"
+    platform: "PC"
+    id: 135919
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3uyi.png"
+    link: "https://www.igdb.com/games/alba-a-wildlife-adventure"
+    date_finished: 2022-11-03
+  
+  - title: "Cyberpunk 2077"
+    platform: "PC"
+    id: 1877
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4hk8.png"
+    link: "https://www.igdb.com/games/cyberpunk-2077"
+    date_finished: 2022-11-02
 
   - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
     platform: "Nintendo 3DS"
