@@ -1,5 +1,11 @@
 - list: Actively playing
   games:
+  
+  - title: "Red Dead Redemption 2"
+    platform: "PC"
+    id: 25076
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png"
+    link: "https://www.igdb.com/games/red-dead-redemption-2"
 
 - list: Stalled but occasionally progress is made
   games:
