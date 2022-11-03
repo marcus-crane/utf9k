@@ -73,6 +73,13 @@
 - list: Completed
   games:
   
+  - title: "Donut County"
+    platform: "PC"
+    id: 55080
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qv8.png"
+    link: "https://www.igdb.com/games/donut-county"
+    date_finished: 2022-11-03
+  
   - title: "Alba: A Wildlife Adventure"
     platform: "PC"
     id: 135919
