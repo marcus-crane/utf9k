@@ -37,8 +37,9 @@ eventSource.onmessage = function(event) {
     throw ("Encountered a bug so we won't render the live player")
   }
   renderLivePlayer(data)
-  if (data.is_active) {
-    // If a track is already active, the re-rendered state will match what already exists
+  if (data.is_active && data.title !== title.innerText) {
+    // If a track is already active but changes to inactive, the re-rendered state will match what already exists
+    // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
     fetchHistory()
   }
 }
