@@ -217,13 +217,7 @@ pre {
   font-weight: 800;
 }
 
-#played-items li:first-child {
-  color: blue;
-  transition: font-size 1000ms;
-}
-
-#played-items li:last-child {
-  color: red;
+#played-items li:first-child, #played-items li:last-child {
   transition: font-size 1000ms;
 }
 
