@@ -213,7 +213,7 @@ To enable automatic mixes, and other features, you'll want to enable [Sonic Anal
 
 There's also a feature for surfacing what happened "On This Day" in music history:
 
-![](https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png)
+![](./img/blog/plex-tidal-together/on-this-day.jpg)
 
 It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 
 29th debut next year.
