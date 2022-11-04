@@ -206,6 +206,27 @@ pre {
   text-align: center;
 }
 
+/* Player history */
+.player-history {
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.player-history p {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#played-items li:first-child {
+  color: blue;
+  transition: font-size 1000ms;
+}
+
+#played-items li:last-child {
+  color: red;
+  transition: font-size 1000ms;
+}
+
 /* Posts */
 article:not(.full) {
   margin: 0 auto;

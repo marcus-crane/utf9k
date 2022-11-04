@@ -37,6 +37,10 @@ eventSource.onmessage = function(event) {
     throw ("Encountered a bug so we won't render the live player")
   }
   renderLivePlayer(data)
+  if (data.is_active) {
+    // If a track is already active, the re-rendered state will match what already exists
+    fetchHistory()
+  }
 }
 
 // Adapted from https://stackoverflow.com/a/69126766
@@ -119,3 +123,51 @@ function renderLivePlayer(data) {
     }, 1000)
   }
 }
+
+/* History */
+const playerHistory = document.querySelector("#played-items")
+
+function fetchHistory() {
+  fetch("https://gunslinger.utf9k.net/api/v3/history")
+    .then(res => res.json())
+    .then(data => renderHistory(data))
+    .catch(err => console.error(`Failed to initialise player history: ${err}`))
+}
+
+function renderHistory(data) {
+  if (playerHistory.textContent.trim() !== "") {
+    playerHistory.textContent = ""
+  }
+  let count = 0
+  for (const item of data) {
+    if (item.title === title.innerText) continue
+    startingFontSize = 10
+    if (count === 0) {
+      startingFontSize = 0
+    }
+    let emoji = ''
+    switch (item.category) {
+      case 'gaming':
+        emoji = '🕹'
+        break
+      case 'episoide':
+        emoji = '📺'
+        break
+      case 'movie':
+        emoji = '🎬'
+        break
+      case 'track':
+        emoji = '🎧'
+        break
+      default:
+        emoji = ''
+    }
+    playerHistory.insertAdjacentHTML("beforeend", `<li class="history-entry" style="font-size: ${startingFontSize}px;">${emoji} ${item.title} - ${item.subtitle}</li>`)
+    count += 1
+  }
+   // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
+  setTimeout(() => playerHistory.children[0].style = "font-size: 10px;", 1000)
+  setTimeout(() => playerHistory.children[playerHistory.children.length-1].style = "font-size: 0px;", 3000)
+}
+
+fetchHistory()
