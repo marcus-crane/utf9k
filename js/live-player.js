@@ -150,7 +150,7 @@ function renderHistory(data) {
       case 'gaming':
         emoji = '🕹'
         break
-      case 'episoide':
+      case 'episode':
         emoji = '📺'
         break
       case 'movie':
