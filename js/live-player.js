@@ -36,8 +36,9 @@ eventSource.onmessage = function(event) {
     // in the meantime, we'll just bail out and the user won't know
     throw ("Encountered a bug so we won't render the live player")
   }
+  const previousTitle = title.innerText
   renderLivePlayer(data)
-  if (data.is_active && data.title !== title.innerText) {
+  if (data.is_active && data.title !== previousTitle) {
     // If a track is already active but changes to inactive, the re-rendered state will match what already exists
     // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
     fetchHistory()
