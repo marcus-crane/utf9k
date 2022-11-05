@@ -142,7 +142,9 @@ function renderHistory(data) {
   }
   let count = 0
   for (const item of data) {
-    if (item.title === title.innerText) continue
+    // We only want to skip the newest history entry if it happens to match what is in the live player
+    // or else we'll skip items where I've played something many times in a row
+    if (item.title === title.innerText && count == 0) continue
     startingFontSize = 10
     if (count === 0) {
       startingFontSize = 0
