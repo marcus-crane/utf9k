@@ -8,6 +8,8 @@ const elapsed = document.querySelector("#elapsed")
 const duration = document.querySelector("#duration")
 const progressArea = document.querySelector("#progress")
 
+const rotatingBorder = document.querySelector("#rotating-border")
+
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
@@ -64,6 +66,7 @@ function renderLivePlayer(data) {
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
   let showProgression = false
+  rotatingBorder.className = "rotating-border-hidden"
   switch (data.category) {
   case "gaming":
     if (data.is_active) {
@@ -98,6 +101,14 @@ function renderLivePlayer(data) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
     progressArea.style.display = "block"
+    if (data.category === "track") {
+      if (data.dominant_colours) {
+        rotatingBorder.className = "rotating-border-hidden"
+        rotatingBorder.style = ""
+        buildAnimatedBorder(data.dominant_colours)
+        rotatingBorder.className = ""
+      }
+    }
   } else {
     progressArea.style.display = "none"
   }
@@ -124,6 +135,21 @@ function renderLivePlayer(data) {
       }
     }, 1000)
   }
+}
+
+function buildAnimatedBorder(dominantColours) {
+  const fullColours = [...dominantColours, ...dominantColours, ...dominantColours]
+  const gradientLen = dominantColours.length * 3
+  const stepInterval = 1 / gradientLen
+  let previousStep = 0.0
+  let gradientVal = "conic-gradient("
+  for (const colour of fullColours) {
+    gradientVal += `${colour} ${previousStep}turn ${previousStep+stepInterval}turn,`
+    previousStep += stepInterval
+  }
+  gradientVal += ")"
+  gradientVal = gradientVal.replace(",)", ")") // Lazy
+  rotatingBorder.style.setProperty('--border-bg', gradientVal);
 }
 
 /* History */

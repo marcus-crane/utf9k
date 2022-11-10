@@ -185,7 +185,7 @@ pre {
 
 #recent-updates #cover {
   border-radius: 5px;
-  margin: .3rem auto;
+  margin: 0rem auto;
   width: 15rem;
   height: auto;
 }
@@ -218,6 +218,61 @@ pre {
 
 #played-items li:first-child, #played-items li:last-child {
   transition: font-size 1000ms;
+}
+
+/* Player spinning gradient */
+/* Adapted from https://codepen.io/MauriciAbad/pen/WNrpmPr */
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.rotating-border-hidden {
+  --border-size: 0 !important;
+}
+
+#rotating-border {
+  --border-radius: 0.5rem;
+  --border-size: 0.3rem;
+  --border-bg: conic-gradient(
+    #ea4335 0.0turn 0.125turn, 
+    #4285f4 0.125turn 0.25turn, 
+    #fbbc05 0.25turn 0.375turn, 
+    #34a853 0.375turn 0.5turn, 
+    #ea4335 0.5turn 0.625turn, 
+    #4285f4 0.625turn 0.75turn, 
+    #fbbc05 0.75turn 0.875turn, 
+    #34a853 0.875turn 1.0turn
+  );
+  --padding: .1rem;
+  
+  position: relative;
+
+  transition-duration: 1s;
+  overflow: hidden;
+  padding: calc(var(--padding) + var(--border-size));
+  border-radius: var(--border-radius);
+  display: inline-block;
+}
+  
+#rotating-border::before {
+  content: '';
+  display: block;
+  background: var(--border-bg);
+  width: calc(100% * 1.41421356237);
+  padding-bottom: calc(100% * 1.41421356237);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  z-index: -2;
+  animation: spin 45s linear infinite;
 }
 
 /* Posts */
