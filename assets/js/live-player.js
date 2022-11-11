@@ -8,6 +8,8 @@ const elapsed = document.querySelector("#elapsed")
 const duration = document.querySelector("#duration")
 const progressArea = document.querySelector("#progress")
 
+const rotatingBorder = document.querySelector("#rotating-border")
+
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
@@ -36,7 +38,13 @@ eventSource.onmessage = function(event) {
     // in the meantime, we'll just bail out and the user won't know
     throw ("Encountered a bug so we won't render the live player")
   }
+  const previousTitle = title.innerText
   renderLivePlayer(data)
+  if (data.is_active && data.title !== previousTitle) {
+    // If a track is already active but changes to inactive, the re-rendered state will match what already exists
+    // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
+    fetchHistory()
+  }
 }
 
 // Adapted from https://stackoverflow.com/a/69126766
@@ -58,6 +66,7 @@ function renderLivePlayer(data) {
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
   let showProgression = false
+  rotatingBorder.className = "rotating-border-hidden"
   switch (data.category) {
   case "gaming":
     if (data.is_active) {
@@ -92,6 +101,14 @@ function renderLivePlayer(data) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
     progressArea.style.display = "block"
+    if (data.category === "track") {
+      if (data.dominant_colours) {
+        rotatingBorder.className = "rotating-border-hidden"
+        rotatingBorder.style = ""
+        buildAnimatedBorder(data.dominant_colours)
+        rotatingBorder.className = ""
+      }
+    }
   } else {
     progressArea.style.display = "none"
   }
@@ -119,3 +136,68 @@ function renderLivePlayer(data) {
     }, 1000)
   }
 }
+
+function buildAnimatedBorder(dominantColours) {
+  const fullColours = [...dominantColours, ...dominantColours, ...dominantColours]
+  const gradientLen = dominantColours.length * 3
+  const stepInterval = 1 / gradientLen
+  let previousStep = 0.0
+  let gradientVal = "conic-gradient("
+  for (const colour of fullColours) {
+    gradientVal += `${colour} ${previousStep}turn ${previousStep+stepInterval}turn,`
+    previousStep += stepInterval
+  }
+  gradientVal += ")"
+  gradientVal = gradientVal.replace(",)", ")") // Lazy
+  rotatingBorder.style.setProperty('--border-bg', gradientVal);
+}
+
+/* History */
+const playerHistory = document.querySelector("#played-items")
+
+function fetchHistory() {
+  fetch("https://gunslinger.utf9k.net/api/v3/history")
+    .then(res => res.json())
+    .then(data => renderHistory(data))
+    .catch(err => console.error(`Failed to initialise player history: ${err}`))
+}
+
+function renderHistory(data) {
+  if (playerHistory.textContent.trim() !== "") {
+    playerHistory.textContent = ""
+  }
+  let count = 0
+  for (const item of data) {
+    // We only want to skip the newest history entry if it happens to match what is in the live player
+    // or else we'll skip items where I've played something many times in a row
+    if (item.title === title.innerText && count == 0) continue
+    startingFontSize = 10
+    if (count === 0) {
+      startingFontSize = 0
+    }
+    let emoji = ''
+    switch (item.category) {
+      case 'gaming':
+        emoji = '🕹'
+        break
+      case 'episode':
+        emoji = '📺'
+        break
+      case 'movie':
+        emoji = '🎬'
+        break
+      case 'track':
+        emoji = '🎧'
+        break
+      default:
+        emoji = ''
+    }
+    playerHistory.insertAdjacentHTML("beforeend", `<li class="history-entry" style="font-size: ${startingFontSize}px;">${emoji} ${item.title} - ${item.subtitle}</li>`)
+    count += 1
+  }
+   // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
+  setTimeout(() => playerHistory.children[0].style = "font-size: 10px;", 1000)
+  setTimeout(() => playerHistory.children[playerHistory.children.length-1].style = "font-size: 0px;", 3000)
+}
+
+fetchHistory()

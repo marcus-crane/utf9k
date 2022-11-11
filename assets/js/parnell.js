@@ -24,7 +24,7 @@ function buildMapLayer() {
     type: "line",
     source: {
       type: "geojson",
-      data: "./streets.geojson"
+      data: "/streets.geojson"
     },
     paint: {
       "line-color": [
@@ -68,7 +68,6 @@ function buildMapLayer() {
       filterDay = ["!=", ["string", ["get", "day"]], "placeholder"]
     } else {
       filterDay = ["==", ["string", ["get", "day"]], day]
-      console.log(filterDay)
     }
     map.setFilter("tickets", ["all", filterHour, filterDay])
   })
