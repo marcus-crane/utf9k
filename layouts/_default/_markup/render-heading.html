@@ -1,0 +1,3 @@
+<div class="heading heading-{{ .Level }}">
+  <a href="#{{ .Anchor | safeURL }}">{{ $header := "" }}{{ range (seq .Level) }}{{ add $header "#" }}{{ end }}</a><h{{ .Level }} id="{{ .Anchor | safeURL }}"> {{ .Text | safeHTML }}</h{{ .Level }}>
+</div>

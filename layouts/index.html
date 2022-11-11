@@ -1,0 +1,93 @@
+{{ define "main" }}
+<article class="full">
+  <div id="home-wrapper">
+    <div id="welcome-message">
+      <center>
+        <header>
+          <h1>Welcome!</h1>
+        </header>
+        {{ .Content }}
+      </center>
+      <hr />
+      <center>
+        <header>
+          <h3>Here's a random(ly generated) thought</h3>
+        </header>
+        <p>{{ range $.Site.Data.gags | shuffle | first 1 }}{{ . }}{{ end }}</p>
+      </center>
+      <hr />
+      <div id="post-stream">
+        <center>
+          <header>
+            <h3>Books I'm *ahem* paging through</h3>
+          </header>
+          <ul>
+          {{ range first 1 $.Site.Data.books }}
+            {{ range where .books "progress" "!=" 100 }}
+              <li style="display: inline-block;">
+                <a href="{{ .link }}">
+                  <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
+        </center>
+      </div>
+      <hr />
+    </div>
+    <div id="recent-updates">
+      <div id="liveplayer">
+        <h3 id="action">😵‍💫 This widget should load shortly!</h3>
+        <img src="/cover.png" id="cover">
+        <strong id="title">Fingers Crossed</strong>
+        <br />
+        <i id="subtitle">It should update if things aren't broken</i>
+        <br />
+          <div id="progress">
+            <i id="elapsed">00:00</i> / <i id="duration">59:59</i>
+          </div>
+      </div>
+      <hr />
+      <div id="post-stream">
+        <h3>Recently updated pages</h3>
+        <ul>
+        {{ range first 5 .Site.RegularPages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </ul>
+      </div>
+      <hr />
+      <center>
+        <div id="post-stream">
+          <header>
+            <h3>Games I'm (slowly) progressing through</h3>
+          </header>
+          <ul>
+          {{ range first 1 $.Site.Data.games }}
+            {{ range .games }}
+              <li style="display: inline-block;">
+                <a href="{{ .link }}">
+                  <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
+        </div>
+      </center>
+      <hr />
+    </div>
+  </div>
+</article>
+{{ end }}
+
+{{ define "script" }}
+  {{ $targetPath := "js/live-player.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
+{{ end }}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{ partial "head.html" . }}
+  {{ block "style" . }}{{ end }}
+  {{ block "json+ld" . }}{{ end }}
+</head>
+<body>
+  {{ block "body" . }}
+    {{ partialCached "header.html" . }}
+    <div id="content">
+    {{ block "main" . }}{{ end }}
+    </div>
+  {{ end }}
+  {{ block "script" . }}{{ end }}
+
+  {{ $targetPath := "js/footnotes.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
+
+</body>
+</html>

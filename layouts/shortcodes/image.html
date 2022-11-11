@@ -1,0 +1,17 @@
+<center>
+  <figure>
+    {{ $.Scratch.Set "externalLink" false }}
+    {{ if in (.Get "src") "://" }}{{ $.Scratch.Set "externalLink" true }}{{ end }}
+    {{ $externalLink := $.Scratch.Get "externalLink" }}
+    <a href='{{ if ne $externalLink true }}{{ .Page.Permalink }}{{ end }}{{ .Get "src" }}'>
+      {{ $.Scratch.Set "hideDropShadow" (.Get "noshadow") }}
+      {{ $hideDropShadow := $.Scratch.Get "hideDropShadow" }}
+      <img
+        {{ if (.Get "style") }}style='{{ .Get "style" }}'{{ end }}
+        src='{{ if ne $externalLink true }}{{ .Page.Permalink }}{{ end }}{{ .Get "src" }}'
+        {{ if (trim .Inner "\n") }}alt='{{ trim .Inner "\n" }}'{{ end }}
+        loading="lazy"
+      />
+    </a>
+  </figure>
+</center>

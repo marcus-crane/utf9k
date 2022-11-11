@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <ul>
+    <h2>Ongoing</h2>
+    {{ range where .Pages "Params.ongoing" true }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    <h2>Archived</h2>
+    {{ range where .Pages "Params.ongoing" false }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

@@ -1,0 +1,13 @@
+<header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    {{ $lastIndex := sub (len .Site.Menus.main) 1 }}
+    {{ range $i, $item := .Site.Menus.main }}
+    <li><a href="{{ $item.URL }}">{{ $item.Name }}</a></li>
+    {{ if ne $i $lastIndex }}<span>//</span>{{ end }}
+    {{ end }}
+  </nav>
+</header>

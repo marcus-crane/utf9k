@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <ul>
+    {{ $years := .Scratch }}
+    {{ range (where .Pages "Draft" false) }}
+    {{ $year := .Date.Format "2006" }}
+    {{ if not (in ($years.Get "years") $year) }}
+      <h2>{{ .Date.Format "2006" }}</h2>
+      {{ $years.Add "years" (slice $year) }}
+    {{ end }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time>{{ .Date.Format "Jan 02" }}</time>
+    </li>
+    {{ end }}
+    {{ $draftsExist := (where .Pages "Draft" true) }}
+    {{ if $draftsExist }}
+    <h2>Drafts</h2>
+    <details>
+      <summary>You should prod me to finish these!</summary>
+      <ul>
+      {{ range sort (where .Pages "Draft" true) "Title" "asc" }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+      </ul>
+    </details>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
