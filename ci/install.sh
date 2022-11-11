@@ -9,7 +9,7 @@ echo "Installing CI tools"
 npm install -g pnpm
 echo "~ pnpm installed"
 
-pip install -U pip
+pip install -U pip wheel
 pip install -r "$TOPLEVEL/scripts/requirements.txt"
 echo "~ Python dependencies installed"
 
