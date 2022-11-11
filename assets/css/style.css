@@ -63,6 +63,22 @@ a {
   color: inherit;
 }
 
+a.jumplink {
+  margin-left: -1.25rem;
+  font-size: 1.5rem;
+  opacity: 0.25;
+  transition: opacity 0.25s;
+  text-decoration: none;
+}
+
+/* If the user has a mouse, we'll serve up some nice hover links */
+@media (pointer: fine) {
+  a.jumplink:hover {
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
@@ -141,8 +157,7 @@ svg {
 
 pre {
   border-radius: 0.375rem;
-  font-size: .875em;
-  line-height: 1.7;
+  font-size: .75em;
   overflow-x: auto;
   padding: 0.8rem 1.1rem;
 }
@@ -170,7 +185,7 @@ pre {
 
 #recent-updates #cover {
   border-radius: 5px;
-  margin: .3rem auto;
+  margin: 0rem auto;
   width: 15rem;
   height: auto;
 }
@@ -190,6 +205,76 @@ pre {
   text-align: center;
 }
 
+/* Player history */
+.player-history {
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.player-history p {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#played-items li:first-child, #played-items li:last-child {
+  transition: font-size 1000ms;
+}
+
+/* Player spinning gradient */
+/* Adapted from https://codepen.io/MauriciAbad/pen/WNrpmPr */
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.rotating-border-hidden {
+  --border-size: 0 !important;
+}
+
+#rotating-border {
+  --border-radius: 0.5rem;
+  --border-size: 0.3rem;
+  --border-bg: conic-gradient(
+    #ea4335 0.0turn 0.125turn, 
+    #4285f4 0.125turn 0.25turn, 
+    #fbbc05 0.25turn 0.375turn, 
+    #34a853 0.375turn 0.5turn, 
+    #ea4335 0.5turn 0.625turn, 
+    #4285f4 0.625turn 0.75turn, 
+    #fbbc05 0.75turn 0.875turn, 
+    #34a853 0.875turn 1.0turn
+  );
+  --padding: .1rem;
+  
+  position: relative;
+
+  transition-duration: 1s;
+  overflow: hidden;
+  padding: calc(var(--padding) + var(--border-size));
+  border-radius: var(--border-radius);
+  display: inline-block;
+}
+  
+#rotating-border::before {
+  content: '';
+  display: block;
+  background: var(--border-bg);
+  width: calc(100% * 1.41421356237);
+  padding-bottom: calc(100% * 1.41421356237);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  z-index: -2;
+  animation: spin 45s linear infinite;
+}
+
 /* Posts */
 article:not(.full) {
   margin: 0 auto;
@@ -202,8 +287,16 @@ article .hidden { /* TODO: Change this to rss-only */
 
 article #post-body p,
 article #post-body img,
-article #post-body #heading,
-article blockquote {
+article #post-body h1,
+article #post-body h2,
+article #post-body h3,
+article #post-body h4,
+article #post-body h5,
+article #post-body h6,
+article #post-body pre,
+article blockquote,
+article #post-body > ul,
+article #post-body > ol {
   margin-bottom: 1.5rem;
 }
 
@@ -251,14 +344,14 @@ article .highlight {
 }
 
 article p code {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  font-family: inherit;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: PT Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace; /* Matches prism config */
   font-size: .75rem;
   font-weight: 500;
-  letter-spacing: .025em;
-  line-height: 1rem;
   padding: 0.2rem 0.3rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -314,29 +407,28 @@ video {
 /* Lists */
 ol, ul {
   padding-inline-start: 0;
+  list-style: none;
 }
 
-main ol, main ul, #post-body ul, #post-body > ol {
+main ol, main ul, #post-body > ul, #post-body > ol {
   list-style: none;
   margin-top: .75em;
   padding-inline-start: 0;
 }
 
-main ul > li, main ol > li, #post-body ul > li, #post-body > ol > li {
+#content > main ul > li, #content > main ol > li, #post-body ul > li, #post-body > ol > li {
   position: relative;
-  padding-left: 1.75em;
+  padding-left: 1.5em;
+}
+
+#content > main ul > li, #content > main ol > li {
   margin-bottom: 0.5em;
 }
 
 main ul > li:before, main ol > li:before,
 #post-body ul > li:before, #post-body > ol > li:before {
-  content: "";
+  content: "»";
   position: absolute;
-  background-color: #23262b;
-  width: .375em;
-  height: .375em;
-  border-radius: 50%;
-  top: .6875em;
   left: .25em;
 }
 
@@ -359,6 +451,7 @@ li > time {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 700;
+  padding-left: 3px;
 }
 
 li > span {
@@ -372,9 +465,22 @@ details {
 }
 
 /* Code blocks, table and images get extra width */
-table, .highlight, figure {
-  width: 110%;
-  margin-left: -5%;
+/* TODO: Don't use important, this is dumb but temporary while I do a migration */
+table, .highlight, pre[class*=language-], figure, #post-body img {
+  width: 110% !important;
+  margin-left: -5% !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  table, .highlight, pre[class*=language-], figure, #post-body img {
+    width: 120% !important;
+    margin-left: -10% !important;
+  }
+}
+
+#post-body img {
+  height: auto;
+  max-width: none;
 }
 
 article.full table {
@@ -401,36 +507,56 @@ form#search {
 }
 
 /* Grid lists */
-#post-body .grid-list ul {
+@media only screen and (min-width: 1200px) {
+  main .grid-list {
+    padding-bottom: 3rem;
+  }
+}
+
+main .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3,minmax(40px,auto));
   grid-gap: 20px;
+  padding-top: 2rem;
+}
+
+main .grid-list img {
+  max-height: 200px;
+}
+
+@media only screen and (min-width: 1200px) {
+  main .grid-list img {
+    max-height: none;
+    max-width: none;
+    height: 15rem;
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-  #post-body .grid-list ul:not(.partial-list) {
+  main .grid-list ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4,minmax(40px,auto));
-    margin-left: -25%;
+    margin: 0 auto;
     width: 150%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #post-body .grid-list ul:not(.partial-list):not(.almost-full-list) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6,minmax(40px,auto));
-    margin-left: -50%;
-    width: 200%;
+  main .grid-list ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    max-width: fit-content;
   }
 }
 
-#post-body > .grid-list ul > li {
-  padding-left: 0;
+main > .grid-list ul > li {
+  padding: 0 1rem;
 }
 
-#post-body > .grid-list ul > li:before {
+main > .grid-list ul > li:before {
   content: none;
 }
 
