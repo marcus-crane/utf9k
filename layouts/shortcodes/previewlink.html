@@ -1,6 +1,6 @@
 {{ if .Site.Data.fancylinks }}
   {{ $inner := string .Inner }}
-  {{ $metadata := (index .Site.Data.fancylinks $inner) }}</p>
+  {{ $metadata := (index .Site.Data.fancylinks $inner) }}
 
   {{ if $metadata }}
   <div class="rounded-xl space-y-2 border-4 dark:border-black py-4 px-6">
