@@ -19,4 +19,4 @@ The idea was that if you invert this information, you can find the spot least li
 
 You can play around with the project just below but if you'd like to see a full screen version, or you have iframes disabled, then you can [check it out here](/project-src/parnell/).
 
-<iframe src="/project-src/parnell" style="width: 100%; height: 500px;" allowfullscreen></iframe>
+<iframe src="/project-src/parnell" style="height: 500px;" allowfullscreen></iframe>

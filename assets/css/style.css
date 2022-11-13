@@ -474,21 +474,21 @@ details {
   padding-bottom: .5em;
 }
 
-table, .highlight, pre[class*=language-], figure, #post-body img {
+table, .highlight, pre[class*=language-], figure, #post-body img, iframe {
   width: 100%;
 }
 
 
 /* Code blocks, table and images get extra width but no elements are special on mobile */
 @media only screen and (min-width: 500px) {
-  table, .highlight, pre[class*=language-], figure, #post-body img {
+  table, .highlight, pre[class*=language-], figure, #post-body img, iframe {
     width: 110%;
     margin-left: -5%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  table, .highlight, pre[class*=language-], figure {
+  table, .highlight, pre[class*=language-], figure, iframe {
     width: 150%;
     margin-left: -25%;
   }
