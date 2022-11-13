@@ -11,6 +11,15 @@
     rating: null
     progress: 5
 
+  - title: Wrong Way
+    subtitle: How Privatisation & Economic Reform Backfired
+    author: Damien Cahill and Phillip Toner
+    cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
+    link: https://openlibrary.org/books/OL40280589M/Wrong_Way_How_Privatisation_Economic_Reform_Backfired
+    date_finished: null
+    rating: null
+    progress: 5
+
   - title: Build
     subtitle: An Unorthodox Guide to Making Things Worth Making
     author: Tony Fadell
