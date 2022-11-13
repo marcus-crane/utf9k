@@ -13,7 +13,7 @@
     "deploy": "./ci/deploy.sh",
     "lint": "eslint assets/js",
     "test": "./ci/test.sh",
-    "prettify": "prettier -w public/**/**/**/*.html",
+    "prettify": "prettier --write --print-width 120 public/**/**/**/*.html",
     "syntax": "prettier -c public/**/**/**/*.html"
   },
   "devDependencies": {
