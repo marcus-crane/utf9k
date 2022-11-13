@@ -30,7 +30,7 @@ It isn't the end of the world since they'll inherit a category from their parent
       <tr style="background-color: {{ if (isset .Params "category") }}lightgreen{{ else }}lightpink{{ end }}">
         <td>{{ .Title }}</td>
         <td>{{ $file.Path }}</td>
-        <td><a href="/{{ .Params.category }}">/{{ .Params.category }}</td>
+        <td><a href="/{{ .Params.category }}">/{{ .Params.category }}</a></td>
       </tr>
     {{ end }}
   {{ end }}

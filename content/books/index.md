@@ -36,8 +36,9 @@ noproseclass: true
         {{ if ne .progress 100 }}
           <p>{{ .progress }}% read</p>
         {{ end }}
-      </li>
-      {{ end }}
+      </dl>
+    </li>
+    {{ end }}
     </ul>
   </div>
 {{ end }}

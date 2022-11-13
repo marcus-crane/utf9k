@@ -3,7 +3,7 @@
   <header>
     <h1>{{ .Title }}</h1>
     <div id="post-meta">
-      <time datetime="{{ .Date }}">{{ if .Draft }}This is an unpublished draft{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}</time> {{ if .Draft }} · <time datetime="{{ .Date }}">Last modified {{ .Lastmod.Format "January 2, 2006" }}{{ end }}</time> · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
+      <time datetime="{{ .Date }}">{{ if .Draft }}This is an unpublished draft{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}</time> {{ if .Draft }} · <time datetime="{{ .Date }}">Last modified {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }} · Around {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
     </div>
   </header>
   <div id="post-body">

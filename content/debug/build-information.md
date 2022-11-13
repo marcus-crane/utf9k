@@ -74,8 +74,5 @@ Sometimes it's handy to check when my site was last built, and with what variabl
       </ul>
     </td>
   </tr>
-  </tr>
-  </tr>
-
 </table>
 {{< /buildinformation.inline >}}

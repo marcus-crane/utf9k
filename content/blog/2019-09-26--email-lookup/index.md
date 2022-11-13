@@ -14,7 +14,7 @@ Sometimes I'll want to email someone but I don't know if their email address is 
 
 I'll take you through a recent example where I wanted to email Ian Small, the CEO of Evernote, to thank him and the Evernote team for their wonderful Behind the Scenes videos. You can see them [here](https://www.youtube.com/watch?v=5rNUpXYCcrA) and I think they're worth a peek.
 
-Anyway, if I had to take a blind guess, ian<at>evernote.com would be a valid email. Well, it is indeed and so that's why I've picked it since it's such an obvious format. For the sake of learning, let's just pretend we're trying to find a valid email from scratch. Naturally, if you have a particular domain you're interested in, just swap out evernote.com for your domain of choice. Going forward however, I'll be using evernote.com.
+Anyway, if I had to take a blind guess, ian[at]evernote.com would be a valid email. Well, it is indeed and so that's why I've picked it since it's such an obvious format. For the sake of learning, let's just pretend we're trying to find a valid email from scratch. Naturally, if you have a particular domain you're interested in, just swap out evernote.com for your domain of choice. Going forward however, I'll be using evernote.com.
 
 ## Finding the mail server (macOS / Linux)
 
