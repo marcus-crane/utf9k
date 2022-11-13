@@ -348,15 +348,20 @@ article .highlight {
   margin-bottom: 1.3rem;
 }
 
+/* Same colours as Dracula Prism loaded via Hugo config */
 article p code {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: #282a36;
+  color: #f8f8f2;
   font-family: PT Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace; /* Matches prism config */
-  font-size: .75rem;
-  font-weight: 500;
+  font-size: 0.95rem;
   padding: 0.2rem 0.3rem;
   border-radius: 0.3rem;
   white-space: nowrap;
+  vertical-align: text-top;
+}
+
+pre code {
+  font-family: PT Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace; /* Matches prism config */
 }
 
 @media (prefers-color-scheme: dark) {
