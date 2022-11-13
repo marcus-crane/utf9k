@@ -86,7 +86,7 @@ This is something that Spotify really excels at.
 If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
 
 {{< image src="spotify-remote-session.jpg" noshadow=true >}}
-  A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
+A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
 {{< /image >}}
 
 This was really handy at my previous job where trying to stream over a VPN[^vpn] was just asking for trouble.

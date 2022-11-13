@@ -50,7 +50,7 @@ Take all this with a grain of salt mind you since a comparison to Slack would be
 To some extent, Discord can be [thought of as a meta-layer](https://kwokchain.com/2019/08/16/the-arc-of-collaboration/). That's just a fancy way of saying that when you're in a game, you don't necessarily "leave" Discord because there is an overlay that appears within the game.
 
 {{< image src="discord-overlay.jpg" >}}
-  A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called #pallet-town.
+A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called #pallet-town.
 {{< /image >}}
 
 If you hit whatever the key combination is, the game UI dims as a Discord window pops up and you can chat with your friends. Whether it's text or voice chat, you don't have to leave the game to interact with Discord as a whole.
@@ -60,7 +60,7 @@ This concept isn't new by the way. Valve[^valve] have offered an overlay for tit
 This idea of a "meta-layer" isn't strictly related to just gaming. If you view the profile for someone on your friends list, you might see that their presence spans beyond just gaming.[^profiles]
 
 {{< image src="profiles.png" noshadow=true >}}
-  A screenshot showing the Discord client. It's a regular macOS window with extremely dim, unreadable text in the background with a green modal in the forefront. It shows the authors Discord profile name at the top. In the middle is a block that reads "Listening to Spotify". It depicts the author is currently listening to the song "Imbrium - 0edit Remix" by "Ed Harrison" on Spotify. The user is provided a link to listen along with the author, adding to the idea of Discord being a meta-layer between users and a music streaming service in this case. At the bottom is a two column grid showing a variety of links to profiles such as Battle.NET, Github, Spotify and Steam.
+A screenshot showing the Discord client. It's a regular macOS window with extremely dim, unreadable text in the background with a green modal in the forefront. It shows the authors Discord profile name at the top. In the middle is a block that reads "Listening to Spotify". It depicts the author is currently listening to the song "Imbrium - 0edit Remix" by "Ed Harrison" on Spotify. The user is provided a link to listen along with the author, adding to the idea of Discord being a meta-layer between users and a music streaming service in this case. At the bottom is a two column grid showing a variety of links to profiles such as Battle.NET, Github, Spotify and Steam.
 {{< /image >}}
 
 While initially focused on gaming, Discord has some integrations with more widely used platforms such as Spotify and Github. For Spotify, you can see what friends are listening to, and even listen alongside them. For Github, it's merely just a vanity thing but as a reminder, Microsoft does own Github now. Just something to keep in mind.

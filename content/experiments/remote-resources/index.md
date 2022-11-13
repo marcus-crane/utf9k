@@ -5,7 +5,7 @@ category: "experiments"
 ---
 
 {{< remoteresources.inline >}}
-  {{ with resources.GetRemote "https://example.com" }}
+{{ with resources.GetRemote "https://example.com" }}
     {{ with .Err }}
       {{ warnf "%s" . }}
     {{ end }}

@@ -50,13 +50,13 @@ Similar to our facial detection example from just before, deepfakes uses two [au
 I struggled to understand the next step for quite some time as any mention of it was quite vague, however [this](https://arxiv.org/pdf/1706.02932v2.pdf) paper, mentioned by deepfakes [here](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl/)[^deadlink] as his inspiration seems to shed some light. The rough version seems to be that the input faces are encoded into a compressed representation. The image below helps to illustrate this.
 
 {{< image src="celebs.png" >}}
-  An diagram depicting how faces can be mapped to one another. The diagram shows photos of 6 celebrities and then shows how they look when transformed into a spherical shape. Various facial features such as eyes and nose roughly share the same positions, unlike in the regular photos used in the comparison.
+An diagram depicting how faces can be mapped to one another. The diagram shows photos of 6 celebrities and then shows how they look when transformed into a spherical shape. Various facial features such as eyes and nose roughly share the same positions, unlike in the regular photos used in the comparison.
 {{< /image >}}
 
 This isn't an accurate depiction of how deepfakes goes about its encoding, but serves as a useful mental model to understand how a representation may look. Notice how despite the celebrities above being different shapes and sizes, they can all be deconstructed into a spherical texture with eyes, nose and mouth roughly in the same positions.
 
 {{< image src="cats.png" >}}
-  Similar to the previous image, this diagram shows the process of transforming six photos of various cats into more spherical representations.
+Similar to the previous image, this diagram shows the process of transforming six photos of various cats into more spherical representations.
 {{< /image >}}
 
 Similarly, here is another example with cats. Despite the large variation in not only fur colour, but even the directions they're facing, they all map fairly equally into a spherical structure. For a computer, this isn't a useful visualisation so instead these representations will all just be stored as data points. [One explanation](https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o/)[^deadlink] suggests that eg; a right eyebrow might be interpreted as "a line from X to Y" for one celebrity while another may see the right eyebrow as "a curve \[…\] along points W, X, Y and Z". One of the biggest annoyances with networks is that it can be quite confusing to understand how they're working and sometimes even [their own creators](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi/)[^deadlink] have no idea why decisions are being made.

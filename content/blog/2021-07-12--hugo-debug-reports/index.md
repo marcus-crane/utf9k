@@ -64,7 +64,7 @@ Don't believe me? Here's that same inline shortcode embedded in this very post:
 <details>
   <summary>Check out these fun gag lines I wrote</summary>
   {{< readfile.inline >}}
-  <ul>
+<ul>
   {{ range $.Site.Data.gags }}
   <li>{{ . }}</li>
   {{ end }}

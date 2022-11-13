@@ -23,7 +23,7 @@ The actual fix is just to include a one liner like "Smergen - the app that lets 
 To really drive it home, here's a masterclass in retaining the user from [nvUltra](https://nvultra.com)
 
 {{< image src="nvultra.png" >}}
-  An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
+An email snippet from nvUltra explaning how they have been infrequent with updates and then providing a detailed reminder on what nvUltra actually is, in simple english.
 {{< /image >}}
 
 If you can't take a few seconds to provide some context for what your announcement is about, I can't get excited or even bring myself to care.
