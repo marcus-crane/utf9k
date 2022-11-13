@@ -1,6 +1,8 @@
 /* General resets */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -9,16 +11,22 @@
 }
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  --user-font-scale: .9rem - 16px;
-  font-size: clamp(0.6rem, 0.4626rem + 1.0309vw + var(--user-font-scale), .85rem);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --user-font-scale: 0.9rem - 16px;
+  font-size: clamp(
+    0.6rem,
+    0.4626rem + 1.0309vw + var(--user-font-scale),
+    0.85rem
+  );
   --text-light: #d0d1c7;
   --text-dark: #1e1e1e;
   --bg-light: #eaebe3;
   --bg-dark: #1f2738;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -42,7 +50,11 @@ body {
   }
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
@@ -53,7 +65,10 @@ ul {
   padding-inline-start: 0;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -79,7 +94,13 @@ a.jumplink {
   }
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -95,7 +116,7 @@ h2 {
 
 .navigation {
   display: flex;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 .navigation a {
@@ -109,7 +130,7 @@ h2 {
 .navigation a span {
   font-size: 1em;
   font-weight: 500;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .navigation a img {
@@ -134,12 +155,12 @@ h2 {
 }
 
 #content header #post-meta {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   line-height: 1rem;
   text-transform: uppercase;
-  padding-top: .6em;
+  padding-top: 0.6em;
 }
 
 #content header {
@@ -152,7 +173,7 @@ footer a {
 
 svg {
   height: 1.25rem;
-  width:  1.25rem;
+  width: 1.25rem;
 }
 
 pre {
@@ -216,7 +237,8 @@ pre {
   font-weight: 800;
 }
 
-#played-items li:first-child, #played-items li:last-child {
+#played-items li:first-child,
+#played-items li:last-child {
   transition: font-size 1000ms;
 }
 
@@ -240,17 +262,17 @@ pre {
   --border-radius: 0.5rem;
   --border-size: 0.3rem;
   --border-bg: conic-gradient(
-    #ea4335 0.0turn 0.125turn, 
-    #4285f4 0.125turn 0.25turn, 
-    #fbbc05 0.25turn 0.375turn, 
-    #34a853 0.375turn 0.5turn, 
-    #ea4335 0.5turn 0.625turn, 
-    #4285f4 0.625turn 0.75turn, 
-    #fbbc05 0.75turn 0.875turn, 
-    #34a853 0.875turn 1.0turn
+    #ea4335 0turn 0.125turn,
+    #4285f4 0.125turn 0.25turn,
+    #fbbc05 0.25turn 0.375turn,
+    #34a853 0.375turn 0.5turn,
+    #ea4335 0.5turn 0.625turn,
+    #4285f4 0.625turn 0.75turn,
+    #fbbc05 0.75turn 0.875turn,
+    #34a853 0.875turn 1turn
   );
-  --padding: .1rem;
-  
+  --padding: 0.1rem;
+
   position: relative;
 
   transition-duration: 1s;
@@ -259,9 +281,9 @@ pre {
   border-radius: var(--border-radius);
   display: inline-block;
 }
-  
+
 #rotating-border::before {
-  content: '';
+  content: "";
   display: block;
   background: var(--border-bg);
   width: calc(100% * 1.41421356237);
@@ -281,7 +303,8 @@ article:not(.full) {
   max-width: 60ch;
 }
 
-article .hidden { /* TODO: Change this to rss-only */
+article .hidden {
+  /* TODO: Change this to rss-only */
   display: none;
 }
 
@@ -331,7 +354,7 @@ article .heading a {
 
 article .heading:hover a {
   opacity: 1;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 article .heading h2,
@@ -341,7 +364,7 @@ article .heading h5,
 article .heading h6 {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 article .highlight {
@@ -352,7 +375,8 @@ article .highlight {
 article p code {
   background-color: #282a36;
   color: #f8f8f2;
-  font-family: PT Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace; /* Matches prism config */
+  font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace; /* Matches prism config */
   font-size: 0.95rem;
   padding: 0.2rem 0.3rem;
   border-radius: 0.3rem;
@@ -361,7 +385,8 @@ article p code {
 }
 
 pre code {
-  font-family: PT Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace; /* Matches prism config */
+  font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace; /* Matches prism config */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -394,13 +419,13 @@ blockquote {
 }
 
 .notice span {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 article #post-body .notice h2,
 article #post-body .notice h3,
 article #post-body .notice p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -415,42 +440,56 @@ video {
 }
 
 /* Lists */
-ol, ul {
+ol,
+ul {
   padding-inline-start: 0;
   list-style: none;
 }
 
-main ol, main ul, #post-body > ul, #post-body > ol {
+main ol,
+main ul,
+#post-body > ul,
+#post-body > ol {
   list-style: none;
-  margin-top: .75em;
+  margin-top: 0.75em;
   padding-inline-start: 0;
 }
 
-#content > main ul > li, #content > main ol > li, #post-body ul > li, #post-body > ol > li {
+#content > main ul > li,
+#content > main ol > li,
+#post-body ul > li,
+#post-body > ol > li {
   position: relative;
   padding-left: 1.5em;
 }
 
-#content > main ul > li, #content > main ol > li {
+#content > main ul > li,
+#content > main ol > li {
   margin-bottom: 0.5em;
 }
 
-main ul > li:before, main ol > li:before,
-#post-body ul > li:before, #post-body > ol > li:before {
+main ul > li:before,
+main ol > li:before,
+#post-body ul > li:before,
+#post-body > ol > li:before {
   content: "»";
   position: absolute;
-  left: .25em;
+  left: 0.25em;
 }
 
 @media (prefers-color-scheme: dark) {
-  main ul > li:before, main ol > li:before,
-  #post-body ul > li:before, #post-body > ol > li:before {
+  main ul > li:before,
+  main ol > li:before,
+  #post-body ul > li:before,
+  #post-body > ol > li:before {
     background-color: #d1d5db;
   }
 }
 
-main ul > h2, main ol > h2,
-#post-body ul > h2, #post-body > ol > h2 {
+main ul > h2,
+main ol > h2,
+#post-body ul > h2,
+#post-body > ol > h2 {
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 1em;
@@ -459,36 +498,49 @@ main ul > h2, main ol > h2,
 
 li > time {
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 700;
   padding-left: 3px;
 }
 
 li > span {
-  font-size: .7em;
+  font-size: 0.7em;
   font-weight: 600;
 }
 
 details {
   margin-bottom: 1em;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
-table, .highlight, pre[class*=language-], figure, #post-body img, iframe {
+table,
+.highlight,
+pre[class*="language-"],
+figure,
+#post-body img,
+iframe {
   width: 100%;
 }
 
-
 /* Code blocks, table and images get extra width but no elements are special on mobile */
 @media only screen and (min-width: 500px) {
-  table, .highlight, pre[class*=language-], figure, #post-body img, iframe {
+  table,
+  .highlight,
+  pre[class*="language-"],
+  figure,
+  #post-body > img,
+  iframe {
     width: 110%;
     margin-left: -5%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  table, .highlight, pre[class*=language-], figure, iframe {
+  table,
+  .highlight,
+  pre[class*="language-"],
+  figure,
+  iframe {
     width: 150%;
     margin-left: -25%;
   }
@@ -506,11 +558,14 @@ article.full table {
   word-break: break-word;
 }
 
-
 /* Tables */
-table, thead, th, tr, td {
+table,
+thead,
+th,
+tr,
+td {
   border: 1px solid black;
-  padding: .1em;
+  padding: 0.1em;
 }
 
 table {
@@ -523,56 +578,36 @@ form#search {
 }
 
 /* Grid lists */
-@media only screen and (min-width: 1200px) {
-  main .grid-list {
-    padding-bottom: 3rem;
-  }
-}
-
-main .grid-list ul {
+#post-body .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3,minmax(40px,auto));
+  grid-template-rows: repeat(3, minmax(40px, auto));
   grid-gap: 20px;
-  padding-top: 2rem;
-}
-
-main .grid-list img {
-  max-height: 200px;
-}
-
-@media only screen and (min-width: 1200px) {
-  main .grid-list img {
-    max-height: none;
-    max-width: none;
-    height: 15rem;
-    width: auto;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
-  main .grid-list ul {
+  #post-body .grid-list ul:not(.partial-list) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4,minmax(40px,auto));
-    margin: 0 auto;
+    grid-template-rows: repeat(4, minmax(40px, auto));
+    margin-left: -25%;
     width: 150%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  main .grid-list ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 0 auto;
-    max-width: fit-content;
+  #post-body .grid-list ul:not(.partial-list):not(.almost-full-list) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, minmax(40px, auto));
+    margin-left: -50%;
+    width: 200%;
   }
 }
 
-main > .grid-list ul > li {
-  padding: 0 1rem;
+#post-body > .grid-list ul > li {
+  padding-left: 0;
 }
 
-main > .grid-list ul > li:before {
+#post-body > .grid-list ul > li:before {
   content: none;
 }
 
