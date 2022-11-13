@@ -91,6 +91,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: dracula
 
 privacy:
   twitter:
