@@ -4,7 +4,7 @@ command = "npm run build:deps && pnpm run test && pnpm run build:metadata && pnp
 
 [build.environment]
 HUGO_VERSION = "0.105.0"
-PYTHON_VERSION = "3.9.9"
+PYTHON_VERSION = "3.8"
 
 [[redirects]]
 	from = "/statistician.js"
