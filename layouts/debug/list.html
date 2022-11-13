@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="mx-auto prose dark:prose-dark max-w-full">
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ range sort .Pages }}
+    <li id="{{ .Slug }}" class="question">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

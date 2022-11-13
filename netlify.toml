@@ -1,7 +1,10 @@
 [build]
-publish = "_site"
-command = "yarn build"
-environment = { NODE_ENV = "production" }
+publish = "public"
+command = "npm run build:deps && pnpm run test && pnpm run build:metadata && pnpm run build"
+
+[build.environment]
+HUGO_VERSION = "0.105.0"
+PYTHON_VERSION = "3.8"
 
 [[redirects]]
 	from = "/statistician.js"
@@ -26,7 +29,7 @@ environment = { NODE_ENV = "production" }
   to = "/rss.xml"
   status = 301
   force = false
-  
+
 [[redirects]]
   from = "/blog/index.xml"
   to = "/rss.xml"
@@ -51,7 +54,6 @@ environment = { NODE_ENV = "production" }
   to = "/questions/"
   status = 301
   force = false
-
 
 [[headers]]
 for = "/*.jpg"

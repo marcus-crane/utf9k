@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div id="post-body">
+    {{ partial "toc.html" . }}
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

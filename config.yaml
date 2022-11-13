@@ -1,0 +1,142 @@
+baseURL: https://utf9k.net/
+languageCode: en
+title: utf9k
+enableRobotsTxt: true
+enableGitInfo: true
+enableInlineShortcodes: true
+timeZone: Pacific/Auckland
+
+author:
+  name: Marcus Crane
+  email: marcus@utf9k.net
+
+social:
+  twitter: sentreh
+
+params:
+  description: "Is this thing even on? I just put some text here to test out link previews. There's real site content though, I swear!"
+  images:
+    - favicon.png
+
+menu:
+  main:
+  - name: "Blog"
+    url: "/blog"
+    weight: 1
+  - name: "Projects"
+    url: "/projects"
+    weight: 2
+  - name: "About"
+    url: "/about"
+    weight: 3
+  - name: "Questions"
+    url: "/questions"
+    weight: 4
+  - name: "RSS"
+    url: "/rss.xml"
+    weight: 5
+
+headers:
+  - for: /**.html
+    values:
+      Referrer-Policy: strict-origin-when-cross-origin
+      X-Content-Type-Options: nosniff
+      X-Frame-Options: DENY
+      X-XSS-Protection: 1; mode=block
+
+mediaTypes:
+  text/markdown:
+    suffixes:
+    - md
+  text/plain:
+    suffixes:
+    - txt
+
+outputFormats:
+  RSS:
+    baseName: "rss"
+    mediaType: "application/rss+xml"
+  # Support readers who subscribed to the "old" feed at /index.xml
+  RSSBackwardsCompat:
+    baseName: "index"
+    mediaType: "application/rss+xml"
+  SearchIndex:
+    baseName: "search"
+    mediaType: "application/json"
+  MarkdownAST:
+    baseName: "index"
+    isPlainText: true
+    mediaType: "text/markdown"
+  PlainText:
+    baseName: "index"
+    isPlainText: true
+    mediaType: "text/plain"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "RSSBackwardsCompat"
+    - "SearchIndex"
+  page:
+    - "HTML"
+    - "MarkdownAST"
+    - "PlainText"
+
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: dracula
+
+privacy:
+  twitter:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
+
+services:
+  twitter:
+    disableInlineCSS: true
+
+security:
+  enableInlineShortcodes: true
+  exec:
+    allow:
+    - ^dart-sass-embedded$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+    osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+  funcs:
+    getenv:
+      - ^BRANCH$
+      - ^BUILD_ID$
+      - ^CI$
+      - ^COMMIT_SHA$
+      - ^CONTEXT$
+      - ^DEPLOY_PRIME_URL$
+      - ^DEPLOY_URL$
+      - ^GIT_LFS_ENABLED$
+      - ^HUGO_
+      - ^LANG$
+      - ^LANGUAGE$
+      - ^LC_ALL$
+      - ^NETLIFY_BUILD_DEBUG$
+      - ^NETLIFY_IMAGES_CDN_DOMAIN$
+      - ^NODE_ENV$
+      - ^NODE_VERSION$
+      - ^PULL_REQUEST$
+      - ^PYTHON_VERSION$
+      - ^URL$
+  http:
+    methods:
+    - (?i)GET|POST
+    urls:
+    - .*

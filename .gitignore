@@ -1,4 +1,4 @@
-.DS_Store
+resources
 node_modules
-.cache
-_site
+.hugo_build.lock
+.DS_Store
