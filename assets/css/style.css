@@ -294,10 +294,14 @@ article #post-body h4,
 article #post-body h5,
 article #post-body h6,
 article #post-body pre,
-article blockquote,
+article #post-body blockquote,
 article #post-body > ul,
 article #post-body > ol {
   margin-bottom: 1.5rem;
+}
+
+article #post-body .notice blockquote {
+  margin-bottom: 0;
 }
 
 article #post-body img {
