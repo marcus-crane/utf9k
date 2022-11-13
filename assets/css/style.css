@@ -300,7 +300,8 @@ article #post-body > ol {
   margin-bottom: 1.5rem;
 }
 
-article #post-body .notice blockquote {
+article #post-body .notice blockquote,
+article #post-body .littlefoot-footnote__host p {
   margin-bottom: 0;
 }
 
