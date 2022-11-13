@@ -3,8 +3,8 @@ publish = "public"
 command = "npm run build:deps && pnpm run test && pnpm run build:metadata && pnpm run build"
 
 [build.environment]
-HUGO_VERSION = "0.91.2"
-PYTHON_VERSION = "3.8"
+HUGO_VERSION = "0.105.0"
+PYTHON_VERSION = "3.9.9"
 
 [[redirects]]
 	from = "/statistician.js"
