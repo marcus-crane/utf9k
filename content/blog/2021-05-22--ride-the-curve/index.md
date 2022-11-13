@@ -10,7 +10,7 @@ tags:
 - "selfcare"
 ---
 
-{{% notice title="🚣‍♀️ It's rough seas out there!" %}}
+{{% notice emoji="🚣‍♀️" title="It's rough seas out there!" %}}
 Not so long ago, I was struggling with instances of <a href="https://en.wikipedia.org/wiki/Depersonalization">something very unfamiliar</a> , which scared the shit out of me.
 
 As one of many distractions, I popped open a text editor and started writing about my life so far and this is what came out.

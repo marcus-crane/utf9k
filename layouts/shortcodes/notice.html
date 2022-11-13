@@ -1,7 +1,8 @@
 <div class="notice">
   <hr class="hidden" />
   <h3>
-    {{ .Get "title" }}
+  {{ if (.Get "emoji") }}<span>{{ .Get "emoji" }}</span>{{ end }}
+  {{- .Get "title" -}}
   </h3>
   {{ .Inner }}
   <hr class="hidden" />

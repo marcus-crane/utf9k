@@ -11,7 +11,7 @@ tags:
 - "work"
 ---
 
-{{% notice title="🧪 This post is a sort of weird living document of sorts" %}}
+{{% notice emoji="🧪" title="This post is a sort of weird living document of sorts" %}}
 To be honest, I got kind of lazy towards the end so I'm pushing out what I wrote.
 
 That said, I also intend to add to the list of bullet points as time goes on.

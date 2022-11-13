@@ -86,7 +86,7 @@ This is something that Spotify really excels at.
 If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
 
 {{< image src="spotify-remote-session.jpg" noshadow=true >}}
-A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
+  A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track "Change (In the House of Flies)" is currently playing. At the bottom of the screen is a green banner that says "Listening on Marcus's iPhone". This indicates that the user is able to remotely control the session from their desktop.
 {{< /image >}}
 
 This was really handy at my previous job where trying to stream over a VPN[^vpn] was just asking for trouble.
@@ -160,7 +160,7 @@ I had been vaguely aware for a while that Plex touted some sort of integration w
 
 I had even read up on integration, where the killer feature is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) but apparently I did a rubbish job at reading since I entirely overlooked it.
 
-{{< image src="plexamp-add-to-library.jpg" style="height: 500px" noshadow=true >}}
+{{< image src="plexamp-add-to-library.jpg" noshadow=true >}}
 {{< /image >}}
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
@@ -202,7 +202,7 @@ Thankfully, it really is a first class Plex citizen and I'll even give you a whi
 
 Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated.
 
-{{< image src="plexamp-cross-search.jpg" style="height: 500px" >}}
+{{< image src="plexamp-cross-search.jpg" >}}
 {{< /image >}}
 
 ### A lively home screen
@@ -211,7 +211,7 @@ The home screen is a great example of how Tidal content is interweaved with your
 
 The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
 
-{{< image src="plexamp-home.jpg" style="height: 500px"  >}}
+{{< image src="plexamp-home.jpg"  >}}
 {{< /image >}}
 
 There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
