@@ -40,6 +40,7 @@
     </div>
     <div id="recent-updates">
       <div id="liveplayer">
+        {{ "<!-- Curious how my live player works? The unminified source code lives at https://github.com/marcus-crane/utf9k/blob/main/assets/js/live-player.js -->" | safeHTML }}
         <h3 id="action">😵‍💫 This widget should have loaded by now!</h3>
         <div>
           <div id="rotating-border" class="rotating-border-hidden">
@@ -100,7 +101,6 @@
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
   {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
-  <!-- TODO: Figure out how to retain comments -->
-  <!-- Curious how my live player works? Check out the unminified source here: https://github.com/marcus-crane/utf9k/blob/main/assets/js/live-player.js -->
+  {{ "<!-- Check out the unminified source here: https://github.com/marcus-crane/utf9k/blob/main/assets/js/live-player.js --> " | safeHTML }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
 {{ end }}
