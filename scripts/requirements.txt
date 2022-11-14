@@ -11,7 +11,7 @@ mistune==2.0.4
 Pillow==9.3.0
 PyYAML==6.0
 requests==2.27.1
-smmap==4.0.0
+smmap==5.0.0
 soupsieve==2.3.2.post1
 specktre==0.3.0
 typing-extensions==4.4.0
