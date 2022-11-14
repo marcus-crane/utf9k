@@ -97,18 +97,17 @@ function renderLivePlayer(data) {
   }
   livePlayer.className = "transition-opacity duration-1000"
 
+  if (data.dominant_colours && data.is_active) {
+    rotatingBorder.className = "rotating-border-hidden"
+    rotatingBorder.style = ""
+    buildAnimatedBorder(data.dominant_colours)
+    rotatingBorder.className = ""
+  }
+
   if (showProgression) {
     elapsed.innerText = formatMsToHumanTimestamp(progression)
     duration.innerText = formatMsToHumanTimestamp(currentDuration)
     progressArea.style.display = "block"
-    if (data.category === "track") {
-      if (data.dominant_colours) {
-        rotatingBorder.className = "rotating-border-hidden"
-        rotatingBorder.style = ""
-        buildAnimatedBorder(data.dominant_colours)
-        rotatingBorder.className = ""
-      }
-    }
   } else {
     progressArea.style.display = "none"
   }
