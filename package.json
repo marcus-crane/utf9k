@@ -17,7 +17,7 @@
     "syntax": "prettier -c public/**/**/**/*.html"
   },
   "devDependencies": {
-    "@babel/core": "7.18.2",
+    "@babel/core": "7.20.2",
     "@babel/preset-env": "7.18.2",
     "autoprefixer": "10.4.13",
     "eslint": "7.32.0",
