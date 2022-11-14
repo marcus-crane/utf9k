@@ -8,7 +8,7 @@ gitdb==4.0.9
 GitPython==3.1.27
 idna==2.10
 mistune==2.0.4
-Pillow==9.1.1
+Pillow==9.3.0
 PyYAML==6.0
 requests==2.27.1
 smmap==4.0.0
