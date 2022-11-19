@@ -1,5 +1,11 @@
 - list: Actively playing
   games:
+
+  - title: "Pokemon Violet"
+    platform: "Nintendo Switch"
+    id: 191930
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png"
+    link: "https://www.igdb.com/games/pokemon-violet"
   
   - title: "Red Dead Redemption 2"
     platform: "PC"
