@@ -98,6 +98,7 @@ Other times, I might be in the middle of a long podcast on mobile and I can't be
 This... sort of works on a technical level but still not really. I was disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.
 
 {{< image src="apple-music-session.jpg" noshadow=true >}}
+  A screenshot of the Apple Music client open to the artist page for Missy Elliot. A share icon in the top right of the navigation bar has been selected, with multiple Apple devices visible such as a laptop, Apple TV and Homepod. The song Work It by Missy Elliot has just started playing. Visible in the share switcher is the ability to switch to the "Lounge Room", in this case the Homepod, where ATM by J. Cole was previously playing.
 {{< /image >}}
 
 As you can see, Apple Music on my laptop is aware that I'm playing a song on an [HomePod](https://www.apple.com/nz/homepod-mini/). I can then select the HomePod and pause the track which then reflects instantly on my phone as well.
@@ -107,6 +108,7 @@ So basically, you can have sessions but only when the playing device is not an A
 I also ran into this fun popup when poking around and this won't be the last time we see something like it in this post
 
 {{< image src="apple-music-too-many-devices.jpg" noshadow=true >}}
+  Visible over a desktop wallpaper is a native macOS dialog popup. At the top of the popup is the Apple Music logo. The text reads "More than one device is trying to play music. With a Family plan, up to 5 other people can stream their music at once." with the ability to select Not Now or Upgrade.
 {{< /image >}}
 
 #### Tidal
@@ -138,6 +140,7 @@ Jack Dorsey mentioned his vision for the future of Tidal:
 That basically means nothing to me but whatever. The Carter Administration is still on the board of <strike>Square</strike> Block and that can only mean one thing.
 
 {{< image src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png" >}}
+  An image of Jay-Z from the Square website. More specifically, it is a 3D cube being displayed at an angle to the camera. Overlaid on the cube is an image of Jay-Z's face. This is supposed to be a play on the fact that investors in Block, the company previously known as Square, where employees are known as Blockheads. It's stupid.
 {{< /image >}}
 
 Beautiful.
@@ -161,6 +164,7 @@ I had been vaguely aware for a while that Plex touted some sort of integration w
 I had even read up on integration, where the killer feature is [clearly outlined](https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/) but apparently I did a rubbish job at reading since I entirely overlooked it.
 
 {{< image src="plexamp-add-to-library.jpg" noshadow=true >}}
+  A screenshot of the Plexamp iOS application. It is open to Jay-Z's artist page where a few of his albums are visible. A menu is open at the bottom with a number of options including "Add to Library" and "Add to My TIDAL".
 {{< /image >}}
 
 You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
@@ -170,6 +174,7 @@ When I first hooked up Tidal to Plex, I would just press *Add to My TIDAL*.
 Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
 
 {{< image src="plexamp-jak-jay.jpg" >}}
+  A cropped image of the Plexamp macOS application is visible. It is open to the albums page with displays the cover art for a number of albums. Visible are a few Jay-Z albums, the Kane & Lynch OST, the OSTs for Jak 2 and 3, a Pokemon OST and three Kanye West albums.
 {{< /image >}}
 
 You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands! At this point, I was sold.
@@ -203,6 +208,7 @@ Thankfully, it really is a first class Plex citizen and I'll even give you a whi
 Whether finding something new or something existing, you can search across your entire catalog and Tidal's at the same time which is really appreciated.
 
 {{< image src="plexamp-cross-search.jpg" >}}
+  Visible is a screenshot of the Plexamp iOS application. It is open to a search for the phrase "Bad Company". The results are split into sections. The first section called "Albums" contains one result which is the OST for Battlefield: Bad Company 2. The next two sections are "Tidal Artists" and "Tidal Albums" respectively which surface results relating to the phrase "Bad Company".
 {{< /image >}}
 
 ### A lively home screen
@@ -212,11 +218,13 @@ The home screen is a great example of how Tidal content is interweaved with your
 The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
 
 {{< image src="plexamp-home.jpg"  >}}
+  Visible is a screenshot of the Plexamp iOS application. It is open to the home screen which is broken into a two sections: "Recent Plays" and "Recently Added in Music". More sections exist off screen. At the bottom is a currently playing song "Empire State of Mind" by Jay-Z.
 {{< /image >}}
 
 There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:
 
 {{< image src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif" >}}
+  Visible is an animated GIF displaying a section of the Plexamp iOS homescreen. A "Mixes for You" section is being scrolled through, showing mixes for various artist. For example: a 2Pac Mix containing songs by various rap artists.
 {{< /image >}}
 
 To enable automatic mixes, and other features, you'll want to enable [Sonic Analysis](https://support.plex.tv/articles/sonic-analysis-music/). I did a bit of a facepalm when I realised I didn't have this enabled yet. I even read the blog post for it when it launched!
@@ -224,6 +232,7 @@ To enable automatic mixes, and other features, you'll want to enable [Sonic Anal
 There's also a feature for surfacing what happened "On This Day" in music history:
 
 {{< image src="https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png" >}}
+  Visible is the cover art for the album She's the One by Tom Petty within a section called "On this Day". It states that the album mentioned come out on this day 25 years ago.
 {{< /image >}}
 
 It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 
@@ -234,6 +243,7 @@ It would have said that February 10th[^feb] is the 28th anniversary of [The Coll
 There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the more interesting.
 
 {{< image src="plexamp-mood.jpg" >}}
+  Visible is a screenshot of a desktop with the Plexamp macOS application open. A list called "Belligerent" is open with a handful of albums that reflect that mood or feeling.
 {{< /image >}}
 
 I haven't taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It also demonstrates yet again how nicely the two sources (local and tidal) can play together.
@@ -245,6 +255,7 @@ It's about time that we look at why they play nicely together so let's take a pe
 If you remember, something I wanted was to continue powering the "Now playing" widget on the front of my website.
 
 {{< image src="utf9k-nowplaying.jpg" >}}
+  Visible is a screenshot of this website open in a small Safari window. Visible is a Now Playing widget showing Roses by Outkast. It reflects the song playing in Plexamp offscreen.
 {{< /image >}}
 
 ✅ for **A good API** (2/3)
@@ -464,6 +475,7 @@ At this point, I'll take 2 out of 3 happily but we're apparently getting somethi
 **UPDATE**: For Valentines Day, we got [a lofty 4.0 update](https://forums.plex.tv/t/plexamp-release-notes/221280/38) which includes, among other things, the ability to control your playback on another device!
 
 {{< image src="plex-remote-session.jpg" >}}
+  Visible in the background, but obscured by a popup, is the album Fantastic Planet by Failure. Overlaid is a widget asking the user to "Select Player". Visible are two different players: The author's iPhone and the desktop currently playing Fantastic Planet. The implication here is that it is possible to transfer the currently playing album to another device on the network.
 {{< /image >}}
 
 What you're seeing here is my phone controlling a session that's playing on my laptop.
@@ -487,6 +499,7 @@ Most of these are either fine in moderation or things that I'm sure the [Plexamp
 I had the misfortune of having this integration go down briefly due to an outage with the Plex authentication server.
 
 {{< image src="plex-status-page.jpg" >}}
+  Visible is a screenshot of the Plex status page cropped to show two sections: "Authentication and API server" and "Plex website". Visible for the first section a couple of outages over a 90 day period equally a total uptime of 99.81%.
 {{< /image >}}
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
@@ -536,6 +549,7 @@ It could also just be a bug 🤷‍♀️
 Despite the error, it's perfectly possible to play multiple tracks from Tidal at the same time
 
 {{< image src="tool-trio.jpg" >}}
+  Visible is a cropped screenshot of the Plex media server dashboard. Visible are three Tool albums playing on three different Plex/Plexamp instances.
 {{< /image >}}
 
 If you're curious, here's how the aural mashup shown above sounded[^riaa]
@@ -557,13 +571,14 @@ The team are definitely aware of it:
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 
-### Plexamp session are weirdly long lived
+### Plexamp sessions are weirdly long lived
 
 Interestingly, Plexamp sessions can't be cancelled by the owner of a Plex server?
 
 With most streaming content, you can force stop a session but here, you can't even kill your own sessions for some reason.
 
 {{< image src="plexamp-not-pausing.jpg" >}}
+  Visible is a cropped screenshot of the Plex media server dashboard. Visible are two Plexamp streams on different devices.
 {{< /image >}}
 
 In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it progressing as normal.
@@ -581,6 +596,7 @@ Believe or not, I actually cut this post short because I could gush about Plexam
 Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.
 
 {{< image src="plexamp-upnext.jpg" >}}
+  Visible is a plain screenshot of the Plexamp desktop application with the song "Praise the Lord (Da Shine)" by A$AP Rocky playing.
 {{< /image >}}
 
 I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.
