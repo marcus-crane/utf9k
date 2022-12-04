@@ -2,6 +2,7 @@
 title: "Now"
 slug: "now"
 category: "now"
+description: "Usually I am up to Stuff™️ and this page may hold the answers you seek"
 lastmod: "2022-01-19T20:50:00+13:00"
 ---
 

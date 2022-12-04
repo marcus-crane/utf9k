@@ -3,6 +3,7 @@ title: "Images that are missing alt text"
 slug: "alt-text-missing"
 category: "debug"
 maxwidth: true
+description: "This page contains metadata about all of the images on this site, such as if they have alt tags"
 ---
 
 This table contains all of the images on this website and reflects whether or not they have defined proper alt text for those who use a screen reader or even just fans of text-only RSS readers.
