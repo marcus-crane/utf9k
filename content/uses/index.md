@@ -2,6 +2,7 @@
 title: "Uses"
 slug: "uses"
 category: "uses"
+description: "In which I get on the bandwagon and list the various tools of my trade"
 ---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
@@ -10,21 +11,23 @@ For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
 
 I flip flop a lot in this area.
 
-For quick edits, including this page, I pop out [nvim](https://neovim.io) although I'm not proficient enough to know many of the keyboard shortcuts.
+For most things, I reach for [Visual Studio Code](https://code.visualstudio.com/) which I mostly have not set up properly.
 
-For Python and Golang projects, [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) has been really interesting and is convincing me to take up neovim as my full time editor.
+I aspire to get back to using [Doom Emacs](https://github.com/doomemacs/doomemacs) now that I have discovered the much improved [emacs-mac](https://bitbucket.org/mituharu/emacs-mac/src) distribution.
 
-For larger projects, I tend to reach for [Sublime Text](https://www.sublimetext.com) although I haven't gotten around to setting up any shared configuration across my devices.
+For Golang projects of a much larger size, I often reach for [GoLand](https://www.jetbrains.com/go/)
+
+When I need to view extremely large files or I just want to do a quick edit, I'll often reach for [Sublime Text](https://www.sublimetext.com) although it's just using the stock configuration.
 
 ## Terminal
 
-Currently, I use [iTerm2](https://iterm2.com) with [Hack](https://sourcefoundry.org/hack/) Italic 12 and the [Dracula](https://draculatheme.com/iterm/) colour scheme.
+Currently, I use [iTerm2](https://iterm2.com) with [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) Regular 14 and the [Dracula](https://draculatheme.com/iterm/) colour scheme.
 
 Everything else is stock and unconfigured.
 
 ## Computers
 
-* Macbook Pro 15-inch 2020 as my work... workstation
+* Macbook Pro 14-inch 2021 M1 as my work laptop
 * mac Mini 2018 as my home workstation
 * Macbook Air M1 as my remote workstation
 
@@ -32,12 +35,12 @@ Everything except my work laptop is currently running the 2021 Beta (iOS 15, mac
 
 ## Applications
 
-* [Brave](https://brave.com/) for browsing (once you turn off all the crypto crap, it's a solid browser)
-* A generic notebook for tasks and day planning
-* [Apple Calendar](https://en.wikipedia.org/wiki/Calendar_(Apple)) powered by [Fastmail](https://fastmail.com) for tracking events
-* [Craft](https://craft.do) for notes
-* [Feedbin](https://feedbin.com) for RSS feeds
+* [Arc](https://arc.net/) for browsing
+* [TickTick](https://ticktick.com) for task capturing
+* [Google Calendar](calendar.google.com) where I surface my personal calendar onto my work calendar
+* [Obsidian](https://obsidian.md) for notes
+* [Readwise Reader](https://readwise.io/read) for capturing things to read later (RSS, emails, articles, PDFs etc)
 * [Pocket Casts](https://pocketcasts.com) for podcasts
 * [Pocketsmith](https://pocketsmith.com) for tracking finances
 * [1Password](https://1password.com/) for password management
-* [Bookly](https://getbookly.com/) for tracking reading progress
+* [Book Track](https://booktrack.app/) for tracking reading progress
