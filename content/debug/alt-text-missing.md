@@ -25,7 +25,7 @@ This table contains all of the images on this website and reflects whether or no
     {{ end }}
     <tr style="background-color: {{ if .alt_text_present }}lightgreen{{ else }}lightpink{{ end }}">
       <td>{{ .title }}</td>
-      <td><a href="{{ .post_path }}">{{ .slug }}</a></td>
+      <td><a href="{{ .rendered_path }}">{{ .rendered_path }}</a></td>
       <td><a href='{{ if in .image_name "://" }}{{ .image_name }}{{ else }}{{ .image_path }}{{ end }}'>{{ .image_name }}</a></td>
       <td>{{ .alt_text }}</td>
     </tr>

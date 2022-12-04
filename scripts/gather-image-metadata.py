@@ -35,10 +35,12 @@ for post_path in posts_with_images:
     r = re.findall(IMAGECODE_REGEX, content)
     for match in r:
         image_name = get_image_name(match[0])
+        inferred_url = f"/{header.get('category')}/{header.get('slug')}"
         image_metadata.append({
             "title": header.get('title'),
             "slug": header.get('slug'),
             "post_path": rendered_path,
+            "rendered_path": inferred_url,
             "image_params": match[0],
             "alt_text_present": bool(match[1]),
             "alt_text": match[1],

@@ -10,7 +10,7 @@
     "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
     "build:deps": "./ci/install.sh",
     "build:metadata": "./ci/genmetadata.sh",
-    "watch:metadata": "git ls-files --directory content/**/**/*.md | entr yarn run build:metadata",
+    "watch:metadata": "git ls-files --directory content/**/**/*.md --directory scripts/*.py | entr yarn run build:metadata",
     "deploy": "./ci/deploy.sh",
     "lint": "eslint assets/js",
     "test": "./ci/test.sh",
