@@ -3,6 +3,7 @@ title: "Reports to create"
 slug: "reports-todo"
 category: "debug"
 maxwidth: true
+description: "This page lists the various debug reports that could be generated as a reminder to myself"
 ---
 
 A list of reports that would be useful to have

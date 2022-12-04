@@ -3,6 +3,7 @@ title: "Check whether file names match their defined slugs"
 slug: "file-url-match"
 category: "debug"
 maxwidth: true
+description: "This page lists all site content and whether they have an explicit slug defined"
 ---
 
 Sometimes when moving content around, it's easy to forget to update their slugs.

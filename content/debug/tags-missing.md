@@ -3,6 +3,7 @@ title: "Content that is missing tags"
 slug: "tags-missing"
 category: "debug"
 maxwidth: true
+description: "This page lists all site content and whether they have tags defined"
 ---
 
 These are pieces of content that are missing tags.

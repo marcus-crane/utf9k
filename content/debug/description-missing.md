@@ -3,6 +3,7 @@ title: "Content that is missing an explicit description"
 slug: "description-missing"
 category: "debug"
 maxwidth: true
+description: "This page lists all site content and whether they have a description provided"
 ---
 
 These are pieces of content that are missing a description, which is handy for link previews and general SEO.

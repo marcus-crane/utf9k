@@ -3,6 +3,7 @@ title: "Content that is missing an explicit category"
 slug: "category-missing"
 category: "debug"
 maxwidth: true
+description: "This page lists all site content and whether they have a category defined"
 ---
 
 These are pieces of content that are missing an explicitly defined category.

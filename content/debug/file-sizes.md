@@ -3,6 +3,7 @@ title: "Which files are the biggest?"
 slug: "file-sizes"
 category: "debug"
 maxwidth: true
+description: "This page lists all site content and their respective file sizes"
 ---
 
 It's handy to know what files are large, in order to see what might be good to compress.
