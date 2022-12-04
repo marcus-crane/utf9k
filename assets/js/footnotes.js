@@ -1,3 +1,3 @@
-const { littlefoot } = require('littlefoot')
+const { littlefoot } = require("littlefoot")
 
 littlefoot()

@@ -31,7 +31,7 @@ fetch("https://gunslinger.utf9k.net/api/v3/playing")
 
 const eventSource = new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
 
-eventSource.onmessage = function(event) {
+eventSource.onmessage = function (event) {
   const data = JSON.parse(event.data)
   if (data.started_at < 0) {
     // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
@@ -121,7 +121,7 @@ function renderLivePlayer(data) {
 
   if (showProgression) {
     // Time is linear so we just pretend the track keeps playing and refresh one second after the end, only to rinse and repeat
-    window.currentInterval = setInterval(function() {
+    window.currentInterval = setInterval(function () {
       if (progression <= currentDuration) {
         // It can take a bit to refresh so don't increment once at the end
         progression += 1000
@@ -143,12 +143,12 @@ function buildAnimatedBorder(dominantColours) {
   let previousStep = 0.0
   let gradientVal = "conic-gradient("
   for (const colour of fullColours) {
-    gradientVal += `${colour} ${previousStep}turn ${previousStep+stepInterval}turn,`
+    gradientVal += `${colour} ${previousStep}turn ${previousStep + stepInterval}turn,`
     previousStep += stepInterval
   }
   gradientVal += ")"
   gradientVal = gradientVal.replace(",)", ")") // Lazy
-  rotatingBorder.style.setProperty('--border-bg', gradientVal);
+  rotatingBorder.style.setProperty("--border-bg", gradientVal)
 }
 
 /* History */
@@ -170,33 +170,33 @@ function renderHistory(data) {
     // We only want to skip the newest history entry if it happens to match what is in the live player
     // or else we'll skip items where I've played something many times in a row
     if (item.title === title.innerText && count == 0) continue
-    startingFontSize = 10
+    let startingFontSize = 10
     if (count === 0) {
       startingFontSize = 0
     }
-    let emoji = ''
+    let emoji = ""
     switch (item.category) {
-      case 'gaming':
-        emoji = '🕹'
-        break
-      case 'episode':
-        emoji = '📺'
-        break
-      case 'movie':
-        emoji = '🎬'
-        break
-      case 'track':
-        emoji = '🎧'
-        break
-      default:
-        emoji = ''
+    case "gaming":
+      emoji = "🕹"
+      break
+    case "episode":
+      emoji = "📺"
+      break
+    case "movie":
+      emoji = "🎬"
+      break
+    case "track":
+      emoji = "🎧"
+      break
+    default:
+      emoji = ""
     }
     playerHistory.insertAdjacentHTML("beforeend", `<li class="history-entry" style="font-size: ${startingFontSize}px;">${emoji} ${item.title} - ${item.subtitle}</li>`)
     count += 1
   }
-   // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
+  // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
   setTimeout(() => playerHistory.children[0].style = "font-size: 10px;", 1000)
-  setTimeout(() => playerHistory.children[playerHistory.children.length-1].style = "font-size: 0px;", 3000)
+  setTimeout(() => playerHistory.children[playerHistory.children.length - 1].style = "font-size: 0px;", 3000)
 }
 
 fetchHistory()
