@@ -3,6 +3,7 @@ title: "One possible death for Discord"
 date: "20xx-xx-xxT00:00:00+1300"
 slug: "one-possible-death-for-discord"
 category: "blog"
+description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"
 draft: true
 tags:
 - "business"

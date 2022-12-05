@@ -3,6 +3,7 @@ title: "Some thoughts about running a wiki"
 date: "2017-12-18T00:00:00+1300"
 slug: "wiki-thoughts"
 category: "blog"
+description: "I ran a Wiki for a little while and here's what I learned"
 tags:
 - "community"
 - "leadership"
