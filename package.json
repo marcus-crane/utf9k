@@ -24,7 +24,8 @@
     "autoprefixer": "10.4.13",
     "eslint": "7.32.0",
     "postcss": "8.4.14",
-    "postcss-cli": "8.3.1"
+    "postcss-cli": "8.3.1",
+    "prettier": "^2.8.0"
   },
   "dependencies": {
     "littlefoot": "3.4.1"

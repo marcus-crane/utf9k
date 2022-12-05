@@ -8,6 +8,7 @@ specifiers:
   littlefoot: 3.4.1
   postcss: 8.4.14
   postcss-cli: 8.3.1
+  prettier: ^2.8.0
 
 dependencies:
   littlefoot: 3.4.1
@@ -19,6 +20,7 @@ devDependencies:
   eslint: 7.32.0
   postcss: 8.4.14
   postcss-cli: 8.3.1_postcss@8.4.14
+  prettier: 2.8.0
 
 packages:
 
@@ -2234,6 +2236,12 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier/2.8.0:
+    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /pretty-hrtime/1.0.3:
