@@ -21,5 +21,9 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.105.0'
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Install Node dependencies
+        run: pnpm install
       - name: Build site
         run: npm run deploy
