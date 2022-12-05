@@ -27,3 +27,11 @@ jobs:
         run: pnpm install
       - name: Build site
         run: npm run deploy
+      - name: Publish to Cloudflare Pages 
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 8e782a355544971b192db9e75d789dca
+          projectName: utf9k
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
