@@ -3,6 +3,7 @@ title: "Day Two"
 date: "2021-10-27T12:01:00+1300"
 slug: "day-two"
 category: "blog"
+description: "Thoughts as I enter the third job of my career in the software industry"
 tags:
 - "career"
 - "reliability"

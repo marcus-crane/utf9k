@@ -2,6 +2,7 @@
 title: "Time Dilation"
 date: "2021-07-04T22:53:00+1300"
 slug: "time-dilation"
+description: "Historically, I am often late to a bunch of things even though I plan ahead some of the time"
 category: "blog"
 tags:
 - "productivity"

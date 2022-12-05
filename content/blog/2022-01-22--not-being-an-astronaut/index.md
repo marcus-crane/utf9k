@@ -2,6 +2,7 @@
 title: "I didn't want to be an astronaut as a kid"
 date: "2022-01-22T16:40:00+1300"
 slug: "not-being-an-astronaut"
+description: "Some thoughts on what career I thought I might like as a kid"
 category: "blog"
 tags:
 - "career"

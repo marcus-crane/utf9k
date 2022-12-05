@@ -2,6 +2,7 @@
 title: "Brief thoughts on crypto"
 date: "2021-11-28T15:04:00+1300"
 slug: "brief-thoughts-on-crypto"
+description: "It really is what it says on the tin: I have some thoughts about crypto"
 category: "blog"
 tags:
 - "blockchain"
