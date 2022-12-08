@@ -49,6 +49,6 @@ for folder in include:
                 print(f"{url} at {full_path}")
 
 with open(DATA_FILE, 'w') as file:
-    json.dump(LINKS, file, indent=2)
+    json.dump(LINKS, file, indent=2, sort_keys=True)
 
 print("~ URLs validated")
