@@ -19,11 +19,11 @@
     "syntax": "prettier -c public/**/**/**/*.html"
   },
   "devDependencies": {
-    "@babel/core": "7.20.2",
-    "@babel/preset-env": "7.18.2",
+    "@babel/core": "7.20.5",
+    "@babel/preset-env": "7.20.2",
     "autoprefixer": "10.4.13",
     "eslint": "7.32.0",
-    "postcss": "8.4.14",
+    "postcss": "8.4.20",
     "postcss-cli": "8.3.1",
     "prettier": "^2.8.0"
   },
