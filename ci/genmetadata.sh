@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euxo pipefail
 
 TOPLEVEL=$(git rev-parse --show-toplevel)
 SCRIPTS="$TOPLEVEL/scripts"

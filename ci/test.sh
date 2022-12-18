@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euxo pipefail
 
 echo "Cue Validation"
 

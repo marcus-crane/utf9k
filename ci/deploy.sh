@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euxo pipefail
 
 npm run build:deps
 pnpm run test
