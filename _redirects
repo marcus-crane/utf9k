@@ -1,5 +1,5 @@
-/statistician.js https://plausible.io/js/plausible.js
-/api/event https://plausible.io/api/event
+/statistician.js https://plausible.io/js/plausible.js 200
+/api/event https://plausible.io/api/event 200
 /analytics https://plausible.io/utf9k.net 301
 /index.xml /rss.xml 301
 /blog/index.xml /rss.xml 301
