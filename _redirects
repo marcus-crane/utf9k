@@ -1,0 +1,8 @@
+/statistician.js https://plausible.io/js/plausible.js
+/api/event https://plausible.io/api/event
+/analytics https://plausible.io/utf9k.net 301
+/index.xml /rss.xml 301
+/blog/index.xml /rss.xml 301
+towing.xlsx https://github.com/marcus-crane/datasets/blob/main/auckland-towing/towing.xlsx 301
+/blog/when-automation-goes-horribly-right /blog/automation-right 301
+/notes/ /questions/ 301
