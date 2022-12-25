@@ -7,3 +7,6 @@ pnpm run test
 pnpm run build:metadata
 pnpm run build
 pnpm run prettify
+
+mv _headers public
+mv _redirects public
