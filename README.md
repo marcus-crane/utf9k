@@ -41,10 +41,8 @@ A handful of static files live in `static` with most images living with their re
 
 ## Deployment
 
-Deployment is done via [Netlify](https://netlify.com).
+Builds are executed using Github Actions with the resulting static output being deployed to [Cloudflare Pages](https://pages.cloudflare.com/).
 
-Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
+In short, pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
 
-Drafts are visible in all environments, as seen in the [blog](https://utf9k.net/blog) section at the bottom.
-
-I just push straight to main. It's all visible in the repo anyway so might as well render it in "production" too.
+All of the Pages setup is [configured via Terraform](https://github.com/marcus-crane/infrastructure/blob/main/cfpages-utf9k-net.tf).
