@@ -26,6 +26,7 @@
 {{ template "_internal/twitter_cards.html" . }}
 
 {{ $styles := resources.Get "css/style.css" | postCSS }}
+{{ $littlefoot := resources.GetRemote "https://unpkg.com/littlefoot/dist/littlefoot.css" | postCSS }}
 
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
@@ -38,4 +39,9 @@
 <script defer data-api='/api/event' data-domain='utf9k.net' src='/statistician.js'></script>
 {{ end }}
 
-<link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css" />
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $littlefoot.RelPermalink }}" />
+{{ else }}
+{{ $littlefoot := $littlefoot | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $littlefoot.RelPermalink }}" integrity="{{ $littlefoot.Data.Integrity }}" />
+{{ end }}
