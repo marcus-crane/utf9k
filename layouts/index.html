@@ -27,6 +27,7 @@
           {{ range first 1 $.Site.Data.books }}
             {{ range where .books "progress" "!=" 100 }}
               {{ $image := resources.GetRemote .cover }}
+              {{ $image := $image.Resize "x360 q100" }}
               <li style="display: inline-block;">
                 <a href="{{ .link }}">
                   <img alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
@@ -84,6 +85,7 @@
           {{ range first 1 $.Site.Data.games }}
             {{ range .games }}
               {{ $image := resources.GetRemote .cover }}
+              {{ $image := $image.Resize "x360 q100" }}
               <li style="display: inline-block;">
                 <a href="{{ .link }}">
                   <img alt="Box art for the game titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
