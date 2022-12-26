@@ -150,8 +150,6 @@ server:
         style-src 'self'
         'unsafe-inline'
         https://api.mapbox.com
-        https://unpkg.com/littlefoot/dist/littlefoot.css
-        https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css;
         img-src
         data:
         blob:
@@ -171,7 +169,6 @@ server:
         blob: ;
         script-src-elem 'self'
         'sha256-+XV7Bs0QypN9E6irhyz17UuREld+WSb4nmZgVxi6kD0='
-        https://unpkg.com/netlify-cms@%5E2.0.0/dist/netlify-cms.js
         https://api.mapbox.com
         https://platform.twitter.com;
         frame-src 'self'

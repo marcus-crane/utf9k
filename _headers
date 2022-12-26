@@ -1,24 +1,24 @@
 /*.jpg
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /*.png
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /*.mp4
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /*.css
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /*.js
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /webfonts/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=31622400
 
 /*
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://api.mapbox.com https://unpkg.com/littlefoot/dist/littlefoot.css https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css; img-src data: blob: *; media-src data: *; script-src 'self' https://api.mapbox.com; connect-src 'self' https://api.mapbox.com https://api.ipinfodb.com https://events.mapbox.com https://*.tiles.mapbox.com https://gunslinger.utf9k.net ; worker-src 'self' blob: ; script-src-elem 'self' 'sha256-+XV7Bs0QypN9E6irhyz17UuREld+WSb4nmZgVxi6kD0=' https://unpkg.com/netlify-cms@%5E2.0.0/dist/netlify-cms.js https://api.mapbox.com https://platform.twitter.com; frame-src 'self' https://www.youtube.com https://platform.twitter.com ; child-src 'self' blob: ;
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://api.mapbox.com ; img-src data: blob: *; media-src data: *; script-src 'self' https://api.mapbox.com; connect-src 'self' https://api.mapbox.com https://api.ipinfodb.com https://events.mapbox.com https://*.tiles.mapbox.com https://gunslinger.utf9k.net ; worker-src 'self' blob: ; script-src-elem 'self' 'sha256-+XV7Bs0QypN9E6irhyz17UuREld+WSb4nmZgVxi6kD0=' https://api.mapbox.com https://platform.twitter.com; frame-src 'self' https://www.youtube.com https://platform.twitter.com ; child-src 'self' blob: ;
+  Strict-Transport-Security: max-age=31622400; includeSubDomains
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
