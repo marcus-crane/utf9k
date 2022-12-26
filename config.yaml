@@ -116,25 +116,21 @@ security:
     - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
   funcs:
     getenv:
-      - ^BRANCH$
-      - ^BUILD_ID$
       - ^CI$
-      - ^COMMIT_SHA$
-      - ^CONTEXT$
-      - ^DEPLOY_PRIME_URL$
-      - ^DEPLOY_URL$
-      - ^GIT_LFS_ENABLED$
-      - ^HUGO_
+      - ^GITHUB_ACTION$
+      - ^GITHUB_ACTOR$
+      - ^GITHUB_JOB$
+      - ^GITHUB_REF$
+      - ^GITHUB_RUN_ATTEMPT$
+      - ^GITHUB_RUN_ID$
+      - ^GITHUB_RUN_NUMBER$
+      - ^GITHUB_SHA$
       - ^LANG$
-      - ^LANGUAGE$
-      - ^LC_ALL$
-      - ^NETLIFY_BUILD_DEBUG$
-      - ^NETLIFY_IMAGES_CDN_DOMAIN$
       - ^NODE_ENV$
       - ^NODE_VERSION$
-      - ^PULL_REQUEST$
       - ^PYTHON_VERSION$
-      - ^URL$
+      - ^RUNNER_ARCH$
+      - ^RUNNER_OS$
   http:
     methods:
     - (?i)GET|POST

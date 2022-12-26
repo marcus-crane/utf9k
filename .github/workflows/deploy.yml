@@ -10,24 +10,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Python
+        id: setup-python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11.0'
+          python-version: "3.11.0"
       - name: Setup Node
+        id: setup-node
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.105.0'
+          hugo-version: "0.105.0"
+        env:
+          NODE_VERSION: ${{ steps.setup-node.outputs.node-version }}
+          PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install Node dependencies
         run: pnpm install
       - name: Build site
         run: npm run deploy
-      - name: Publish to Cloudflare Pages 
+      - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -42,8 +42,6 @@ Sometimes it's handy to check when my site was last built, and with what variabl
     <td>
       <ul>
         <li>LANG: {{ getenv "LANG" }}</li>
-        <li>LANGUAGE: {{ getenv "LANGUAGE" }}</li>
-        <li>LC_ALL: {{ getenv "LC_ALL" }}</li>
       </ul>
     </td>
   </tr>
@@ -58,20 +56,20 @@ Sometimes it's handy to check when my site was last built, and with what variabl
     </td>
   </tr>
   <tr>
-    <td>Deployment info (<a href="https://netlify.com">netlify</a>)</td>
+    <td>CI Info (<a href="https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables">Github Actions</a>)</td>
     <td>
       <ul>
-        <li>Branch: {{ getenv "BRANCH" }}</li>
-        <li>Build ID: {{ getenv "BUILD_ID" }}</li>
         <li>CI: {{ getenv "CI" }}</li>
-        <li>Context: {{ getenv "CONTEXT" }}</li>
-        <li>Deploy Prime URL: {{ getenv "DEPLOY_PRIME_URL" }}</li>
-        <li>Deploy URL: {{ getenv "DEPLOY_URL" }}</li>
-        <li>Git LFS: {{ getenv "GIT_LFS_ENABLED" }}</li>
-        <li>Netlify Build Debug: {{ getenv "NETLIFY_BUILD_DEBUG" }}</li>
-        <li>Netlify Image CDN: {{ getenv "NETLIFY_IMAGES_CDN_DOMAIN" }}</li>
-        <li>Pull request: {{ getenv "PULL_REQUEST" }}</li>
-        <li>URL: {{ getenv "URL" }}</li>
+        <li>Github Action: {{ getenv "GITHUB_ACTION" }}</li>
+        <li>Github Actor: {{ getenv "GITHUB_ACTOR" }}</li>
+        <li>Github Job: {{ getenv "GITHUB_JOB" }}</li>
+        <li>Github Ref: {{ getenv "GITHUB_REF" }}</li>
+        <li>Github Run Attempt: {{ getenv "GITHUB_RUN_ATTEMPT" }}</li>
+        <li>Github Run ID: {{ getenv "GITHUB_RUN_ID" }}</li>
+        <li>Github Run Number: {{ getenv "GITHUB_RUN_NUMBER" }}</li>
+        <li>Github SHA: {{ getenv "GITHUB_SHA" }}</li>
+        <li>Runner Arch: {{ getenv "RUNNER_ARCH" }}</li>
+        <li>Runner OS: {{ getenv "RUNNER_OS" }}</li>
       </ul>
     </td>
   </tr>
