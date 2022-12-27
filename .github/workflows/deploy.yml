@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Setup Cue
+        uses: cue-lang/setup-cue@v0.0.1
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -33,6 +35,7 @@ jobs:
       - name: Build site
         run: npm run deploy
       - name: Publish to Cloudflare Pages
+        if: ${{ !env.ACT }}
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

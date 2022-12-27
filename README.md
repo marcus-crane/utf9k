@@ -46,3 +46,13 @@ Builds are executed using Github Actions with the resulting static output being 
 In short, pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
 
 All of the Pages setup is [configured via Terraform](https://github.com/marcus-crane/infrastructure/blob/main/cfpages-utf9k-net.tf).
+
+## Using Act
+
+This repo is also compatible with [act](https://github.com/nektos/act), a tool for running Github Actions locally.
+
+Running `act` will perform the entire build pipeline, aside from deployment to Cloudflare Pages.
+
+It is essentially the same workflow as `pnpm run deploy`, just that it will also install all prerequisite tools like Hugo, Cue and so on.
+
+In theory, you could also use `act -b` to build the site and output it from the container but I make no guarantees that it would work.
