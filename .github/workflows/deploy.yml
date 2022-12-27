@@ -33,7 +33,7 @@ jobs:
       - name: Build site
         run: npm run deploy
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 8e782a355544971b192db9e75d789dca
