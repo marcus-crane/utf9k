@@ -1,5 +1,11 @@
 - list: Actively playing
   games:
+  
+  - title: "Ace Combat 04: Shattered Skies"
+    platform: "Playstation 2"
+    id: 9763
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png"
+    link: "https://www.igdb.com/games/ace-combat-04-shattered-skies"
 
   - title: "Pokemon Violet"
     platform: "Nintendo Switch"
