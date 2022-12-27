@@ -18,6 +18,9 @@ params:
   images:
     - favicon.png
 
+build:
+  writeStats: true
+
 menu:
   main:
   - name: "Blog"
