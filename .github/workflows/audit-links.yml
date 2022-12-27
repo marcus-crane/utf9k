@@ -1,0 +1,39 @@
+name: Build and push
+on:
+  schedule:
+      - cron: "0 * * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11.0"
+      - name: Audit links
+        run: python scripts/validate-urls.py
+      - name: Commit index changes
+        env:
+          # We use a PAT in order to trigger other workflows on commit
+          # See https://github.community/t/push-from-action-does-not-trigger-subsequent-action/16854/2
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          set -eux
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [[ `git status --porcelain` ]]; then
+            git add .
+            git commit -a -m "Index has been updated"
+          else
+            exit 0
+          fi
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PAT_TOKEN }}
+          branch: ${{ github.ref }}
