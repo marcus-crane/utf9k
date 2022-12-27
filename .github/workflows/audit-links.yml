@@ -1,7 +1,8 @@
-name: Build and push
+name: Audit Links
 on:
   schedule:
-      - cron: "0 * * * *"
+    # 8pm UTC is roughly 8am NZT
+    - cron: '0 18 * * *'
   workflow_dispatch:
 jobs:
   build:
