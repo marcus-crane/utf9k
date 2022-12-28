@@ -1861,9 +1861,8 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
