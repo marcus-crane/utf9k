@@ -1,7 +1,7 @@
-- list: 2022
-  goal: 12
+- list: 2023
+  goal: 24
   books:
-   
+
   - title: Like, Comment, Subscribe
     subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
     author: Mark Bergen
@@ -9,7 +9,7 @@
     link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
     date_finished: null
     rating: null
-    progress: 5
+    progress: 25
 
   - title: Wrong Way
     subtitle: How Privatisation & Economic Reform Backfired
@@ -19,7 +19,12 @@
     date_finished: null
     rating: null
     progress: 5
+  
 
+- list: 2022
+  goal: 12
+  books:
+  
   - title: Build
     subtitle: An Unorthodox Guide to Making Things Worth Making
     author: Tony Fadell
