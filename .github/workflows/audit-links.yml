@@ -1,8 +1,8 @@
 name: Audit Links
 on:
   schedule:
-    # 8pm UTC is roughly 8am NZT
-    - cron: '0 18 * * *'
+    # Roughly 8am NZT each Sunday
+    - cron: '0 18 * * 6'
   workflow_dispatch:
 jobs:
   build:
