@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    permissions:
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -35,7 +37,8 @@ jobs:
       - name: Build site
         run: npm run deploy
       - name: Publish to Cloudflare Pages
-        if: ${{ !env.ACT && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        id: cloudflare-publish
+        if: ${{ !env.ACT }}
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -43,3 +46,8 @@ jobs:
           projectName: utf9k
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: mshick/add-pr-comment@v2
+        if: ${{ !env.ACT }}
+        with:
+          message: |
+            🚀 This branch can be previewed at ${{ steps.cloudflare-publish.outputs.url }}
