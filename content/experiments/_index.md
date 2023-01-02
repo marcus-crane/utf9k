@@ -4,6 +4,7 @@ slug: "experiments"
 category: "experiments"
 tags:
 - "experiments"
+- "index"
 - "hugo"
 - "meta"
 ---

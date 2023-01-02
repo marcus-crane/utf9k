@@ -3,6 +3,8 @@ title: "Uses"
 slug: "uses"
 category: "uses"
 description: "In which I get on the bandwagon and list the various tools of my trade"
+tags:
+- "meta"
 ---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea

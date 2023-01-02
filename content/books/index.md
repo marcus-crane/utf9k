@@ -4,6 +4,9 @@ slug: "books"
 category: "books"
 about: "Find out what books I have been reading lately"
 noproseclass: true
+tags:
+- "me"
+- "trackers"
 ---
 
 {{< books.inline >}}

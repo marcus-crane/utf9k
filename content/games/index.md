@@ -4,6 +4,9 @@ slug: "games"
 category: "games"
 description: "Check out what games I have been playing in recent times"
 noproseclass: true
+tags:
+- "me"
+- "trackers"
 ---
 
 {{< gaming.inline >}}

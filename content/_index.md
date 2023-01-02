@@ -1,6 +1,8 @@
 ---
 title: "Welcome!"
 category: "home"
+tags:
+- "me"
 ---
 
 My name is [Marcus Crane](/about/) and you're currently logged on to my personal website.

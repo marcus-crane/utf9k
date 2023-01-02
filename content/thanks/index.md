@@ -3,6 +3,8 @@ title: "Thanks"
 slug: "thanks"
 category: "thanks"
 description: "This website was built on the shoulders of giants. This page names a number of them."
+tags:
+- "meta"
 ---
 
 There's no requirement on the internet to say thanks but I'd have absolutely no inspiration (or site) without the following.
