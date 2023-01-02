@@ -2,6 +2,10 @@
 title: "Remote resources"
 slug: "remote-resources"
 category: "experiments"
+tags:
+- "experiments"
+- "hugo"
+- "meta"
 ---
 
 {{< remoteresources.inline >}}

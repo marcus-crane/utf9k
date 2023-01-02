@@ -3,6 +3,8 @@ title: "About"
 slug: "about"
 category: "about"
 description: "Learn a bit about me and what I do for a living"
+tags:
+- "me"
 ---
 
 I never write as much as I wish I would but there's a handful of articles you can read.

@@ -4,6 +4,10 @@ slug: "aliased-content"
 category: "debug"
 maxwidth: true
 description: "This page shows all pages of my website that act as redirects to other locations"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 These are pieces of content that contain alias entries eg; [/questions](/questions) used to live at [/notes](/notes) and a redirect is set up in the frontmatter for the category.

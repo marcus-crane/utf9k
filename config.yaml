@@ -167,7 +167,7 @@ server:
         ; worker-src 'self'
         blob:
         ; script-src-elem 'self'
-        'sha256-+XV7Bs0QypN9E6irhyz17UuREld+WSb4nmZgVxi6kD0='
+        'unsafe-inline'
         https://api.mapbox.com
         https://platform.twitter.com
         ; frame-src 'self'

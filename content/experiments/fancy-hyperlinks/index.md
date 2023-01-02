@@ -4,6 +4,10 @@ slug: "fancy-hyperlinks"
 category: "experiments"
 aliases:
 - "/playground/fancy-hyperlinks"
+tags:
+- "experiments"
+- "hugo"
+- "meta"
 ---
 
 {{% previewlink title="My interesting link" %}}https://utf9k.net{{% /previewlink %}}

@@ -4,6 +4,10 @@ slug: "reports-todo"
 category: "debug"
 maxwidth: true
 description: "This page lists the various debug reports that could be generated as a reminder to myself"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 A list of reports that would be useful to have

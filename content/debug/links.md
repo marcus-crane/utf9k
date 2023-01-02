@@ -3,6 +3,10 @@ title: "Links"
 slug: "links"
 category: "debug"
 description: "This page contains metadata about all of the links present on this site"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 There are many links present on this site that can slowly die over time.

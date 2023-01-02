@@ -2,9 +2,15 @@
 title: "Requester window"
 slug: "requester-window"
 category: "experiments"
+tags:
+- "experiments"
+- "hugo"
+- "meta"
 ---
 
-<p>This experiment prints out the contents of the <code>window</code> variable for anyone requesting this page</p>
+<p>This experiment prints out the contents of the <code>window</code> variable for anyone requesting this page.</p>
+  
+<p></p>It's a tool for myself so I can pop up my website on embedded devices and see what they surface.</p>
 
 <div id="environment"></div>
 
@@ -16,6 +22,7 @@ category: "experiments"
   navigatorHeading.innerText = "Navigator"
   navigatorBlock.insertAdjacentElement('beforeend', navigatorHeading)
   let navi = document.createElement("ul")
+  navi.style.marginBottom = '1.5rem'
   for (let item of Object.keys(window.navigator.__proto__)) {
     if (typeof(window.navigator[item]) !== "function" && typeof(window.navigator[item]) !== "object") {
       let naviEntry = document.createElement("li")
@@ -28,6 +35,7 @@ category: "experiments"
 
   const localStorage = JSON.stringify(window.localStorage)
   const lsBlock = document.createElement("div")
+  lsBlock.style.marginBottom = '1.5rem'
   let lsHeading = document.createElement("h2")
   lsHeading.innerText = "Local Storage (JSON serialised)"
   lsBlock.insertAdjacentElement('beforeend', lsHeading)
@@ -41,6 +49,7 @@ category: "experiments"
   locationHeading.innerText = "Location"
   locationBlock.insertAdjacentElement('beforeend', locationHeading)
   let loc = document.createElement("ul")
+  loc.style.marginBottom = '1.5rem'
   for (let item of Object.keys(window.location)) {
     if (typeof(window.location[item]) !== "function" && typeof(window.location[item]) !== "object") {
       let locEntry = document.createElement("li")
@@ -56,6 +65,7 @@ category: "experiments"
   screenHeading.innerText = "Screen"
   screenBlock.insertAdjacentElement('beforeend', screenHeading)
   let s = document.createElement("ul")
+  s.style.marginBottom = '1.5rem'
   for (let item of Object.keys(window.screen.__proto__)) {
     if (typeof(window.screen[item]) !== "function" && typeof(window.screen[item]) !== "object") {
       let screenEntry = document.createElement("li")

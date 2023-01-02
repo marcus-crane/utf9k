@@ -3,6 +3,10 @@ title: "Build information"
 slug: "build-information"
 category: "debug"
 description: "This page contains build information about this site and the tools that is uses"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 Sometimes it's handy to check when my site was last built, and with what variables especially if I'm transitioning things behind the scenes such as DNS records or static hosting.

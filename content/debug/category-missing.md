@@ -4,6 +4,10 @@ slug: "category-missing"
 category: "debug"
 maxwidth: true
 description: "This page lists all site content and whether they have a category defined"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 These are pieces of content that are missing an explicitly defined category.

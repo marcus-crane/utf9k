@@ -4,6 +4,10 @@ slug: "file-url-match"
 category: "debug"
 maxwidth: true
 description: "This page lists all site content and whether they have an explicit slug defined"
+tags:
+- "debug"
+- "hugo"
+- "meta"
 ---
 
 Sometimes when moving content around, it's easy to forget to update their slugs.
