@@ -4,6 +4,12 @@ category: "projects"
 slug: "parnell"
 ongoing: false
 description: "A previous project of mine that interactively mapped out parking tickets issued in the Parnell area over a period of a few years"
+tags:
+- "maps"
+- "nz"
+- "projects"
+- "traffic"
+- "visualisation"
 ---
 
 This little project was written back when I worked at [Xero](https://xero.com/nz/), in one of our older Auckland offices.

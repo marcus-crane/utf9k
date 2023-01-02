@@ -4,6 +4,14 @@ category: "projects"
 slug: "october"
 ongoing: true
 description: "A project of mine that allows Kobo users to sync their highlights to Readwise. It solves a problem in my workflow and I use it quite regularly."
+tags:
+- "ereader"
+- "golang"
+- "kobo"
+- "react"
+- "readwise"
+- "sqlite"
+- "wails"
 ---
 
 I'm a user of [Readwise](https://readwise.io) which is a service that allows you to import all sorts of highlights from books and [articles](https://readwise.io/read) through to tweets and even [comments](https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp)[^1].

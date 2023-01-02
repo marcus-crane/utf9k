@@ -5,6 +5,11 @@ slug: "meta-oia-requests"
 ongoing: true
 maxwidth: true
 description: "An ongoing project of mine where I ask some meta-questions about documents that are redacted each year in New Zealand"
+tags:
+- "government"
+- "nz"
+- "oia"
+- "projects"
 ---
 
 This one probably needs a bit of explanation, more than most of my projects.
