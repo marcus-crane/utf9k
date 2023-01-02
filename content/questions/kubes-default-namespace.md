@@ -1,6 +1,7 @@
 ---
 title: "How can I set a default kubectl namespace for a given cluster?"
 slug: "kubes-default-namespace"
+description: "In which I remind myself how to set a default namespace for Kubernetes"
 category: "questions"
 tags:
 - "defaults"

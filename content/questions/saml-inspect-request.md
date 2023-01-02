@@ -1,6 +1,7 @@
 ---
 title: "How can I inspect a SAML request?"
 slug: "saml-inspect-request"
+description: "In which I remind myself how to dig into a SAML payload"
 category: "questions"
 tags:
 - "authentication"

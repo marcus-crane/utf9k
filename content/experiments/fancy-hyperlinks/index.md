@@ -2,6 +2,7 @@
 title: "Fancy hyperlinks"
 slug: "fancy-hyperlinks"
 category: "experiments"
+description: "My extremely slow moving experiments with generating fancy links using plain HTML and CSS"
 aliases:
 - "/playground/fancy-hyperlinks"
 tags:

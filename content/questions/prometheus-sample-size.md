@@ -1,6 +1,7 @@
 ---
 title: "How large is a single Prometheus sample?"
 slug: "prometheus-sample-size"
+description: "In which I remind myself how to do napkin math for Prometheus"
 category: "questions"
 tags:
 - "monitoring"

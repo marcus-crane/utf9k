@@ -1,6 +1,7 @@
 ---
 title: "How can I use my local certificate store with Firefox?"
 slug: "firefox-local-cert-store"
+description: "In which I help an employer continue to be annoying"
 category: "questions"
 tags:
 - "browsers"

@@ -1,6 +1,7 @@
 ---
 title: "How can I export a Postgres database?"
 slug: "postgres-export-db"
+description: "In which I remind myself how to export a Postgres database"
 category: "questions"
 tags:
 - "databases"

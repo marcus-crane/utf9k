@@ -1,6 +1,7 @@
 ---
 title: "How can I read a Kubernetes secret?"
 slug: "kubes-read-secret"
+description: "In which I remind myself how to read the contents of a Kubernetes secret"
 category: "questions"
 tags:
 - "credentials"

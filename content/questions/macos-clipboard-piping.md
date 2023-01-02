@@ -1,6 +1,7 @@
 ---
 title: "How can I access my clipboard contents inside my terminal?"
 slug: "macos-clipboard-piping"
+description: "In which I remind myself how to pipe from the macOS clipboard into terminal applications"
 category: "questions"
 tags:
 - "clipboard"

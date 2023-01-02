@@ -1,6 +1,7 @@
 ---
 title: "Welcome!"
 category: "home"
+description: "Hello, you have reached the personal website of Marcus Crane. Please leave a message after the beep."
 tags:
 - "me"
 ---

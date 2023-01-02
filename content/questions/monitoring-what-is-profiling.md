@@ -1,6 +1,7 @@
 ---
 title: "What is profiling?"
 slug: "monitoring-what-is-profiling"
+description: "In which I remind myself what profiling is"
 category: "questions"
 tags:
 - "instrumentation"

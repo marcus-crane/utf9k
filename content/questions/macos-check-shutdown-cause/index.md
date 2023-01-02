@@ -1,6 +1,7 @@
 ---
 title: "How can I find out why my Mac has restarted?"
 slug: "macos-check-shutdown-cause"
+description: "In which I try to figure out why my coworkers Macbook crashed"
 category: "questions"
 tags:
 - "crashes"

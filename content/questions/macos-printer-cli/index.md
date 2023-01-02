@@ -1,6 +1,7 @@
 ---
 title: "How can I configure my printer via terminal on macOS?"
 slug: "macos-printer-cli"
+description: "Printing without a display seems counter-intuitive"
 category: "questions"
 tags:
 - "macos"

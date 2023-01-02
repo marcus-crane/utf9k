@@ -1,6 +1,7 @@
 ---
 title: "How can I compile Emacs from source?"
 slug: "emacs-compile-from-source"
+description: "In which I recall how to compile an operating system of a text editor"
 category: "questions"
 tags:
 - "emacs"

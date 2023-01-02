@@ -1,6 +1,7 @@
 ---
 title: "Why did sites split their assets across multiple domains back in the day?"
 slug: "http-domain-splits"
+description: "In which I capture a bit of history around domain splits"
 category: "questions"
 tags:
 - "cookies"

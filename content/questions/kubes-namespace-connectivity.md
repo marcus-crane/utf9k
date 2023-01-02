@@ -1,6 +1,7 @@
 ---
 title: "How can I test connectivity within my Kube namespace?"
 slug: "kubes-namespace-connectivity"
+description: "In which I remind myself how to quickly test network connectivity within a Kubernetes namespace"
 category: "questions"
 tags:
 - "curl"

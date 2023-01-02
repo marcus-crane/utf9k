@@ -1,6 +1,7 @@
 ---
 title: "How can I view the methods associated with an object?"
 slug: "powershell-object-methods"
+description: "In which I remind myself how to introspect objects in Powershell"
 category: "questions"
 tags:
 - "powershell"

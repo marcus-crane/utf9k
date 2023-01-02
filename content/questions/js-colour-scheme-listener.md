@@ -1,6 +1,7 @@
 ---
 title: "How can I listen for user changes to their colour scheme (ie dark mode)?"
 slug: "js-colour-scheme-listener"
+description: "A small Javascript snippet useful for dynamically changing colour schemes"
 category: "questions"
 tags:
 - "darkmode"

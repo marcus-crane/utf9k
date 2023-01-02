@@ -1,6 +1,7 @@
 ---
 title: "How can I try out x-callback-url commands on macOS?"
 slug: "macos-invoke-x-callback-url"
+description: "In which I remind myself how to test out callback commands"
 category: "questions"
 tags:
 - "macos"

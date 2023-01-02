@@ -1,6 +1,7 @@
 ---
 title: "How can I see what applications are making my shell commands slow?"
 slug: "macos-see-file-usage"
+description: "In which I remind myself how introspect filesystem usage on macOS"
 category: "questions"
 tags:
 - "enterprise"

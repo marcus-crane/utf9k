@@ -1,6 +1,7 @@
 ---
 title: "How can I restrict which traffic is allowed to pass through a Kube ingress?"
 slug: "kubes-ingress-ip-range"
+description: "In which I remind myself how to restrict a Kube ingress to a specific CIDR range"
 category: "questions"
 tags:
 - "allowlist"

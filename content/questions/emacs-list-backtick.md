@@ -1,6 +1,7 @@
 ---
 title: "Why do some Emacs lists start with a backtick instead of a comma?"
 slug: "emacs-list-backtick"
+description: "In which I squint harder at elisp gibberish"
 category: "questions"
 tags:
 - "elisp"

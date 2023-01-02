@@ -1,6 +1,7 @@
 ---
 title: "How can I globally ignore files?"
 slug: "git-globally-ignore-files"
+description: "In which I wage war against .DS_Store"
 category: "questions"
 tags:
 - "git"

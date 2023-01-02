@@ -2,6 +2,7 @@
 title: "Remote resources"
 slug: "remote-resources"
 category: "experiments"
+description: "Nothing interesting, just experimenting with Hugo's remote resource fetching"
 tags:
 - "experiments"
 - "hugo"

@@ -1,6 +1,7 @@
 ---
 title: "How can I find my current NODE_MODULE_VERSION?"
 slug: "nodejs-module-version"
+description: "In which I remind myself how to determine the value of NODE_MODULE_VERSION"
 category: "questions"
 tags:
 - "javascript"

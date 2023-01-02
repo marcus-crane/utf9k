@@ -1,6 +1,7 @@
 ---
 title: "How was DNS originally implemented?"
 slug: "dns-original-implementation"
+description: "In which I capture a bit of DNS history to remind myself"
 category: "questions"
 tags:
 - "dns"

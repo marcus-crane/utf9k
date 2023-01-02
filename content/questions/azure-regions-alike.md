@@ -1,6 +1,7 @@
 ---
 title: "Are all Azure regions alike?"
 slug: "azure-regions-alike"
+description: "In which I think about Azure, which is a mistake in itself"
 category: "questions"
 tags:
 - "availability"

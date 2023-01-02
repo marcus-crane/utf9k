@@ -1,6 +1,7 @@
 ---
 title: "What non-encryption benefits are provided by HTTPS?"
 slug: "http-non-encryption-benefits"
+description: "In which I capture a bit about the benefits of HTTPS that aren't related to security"
 category: "questions"
 tags:
 - "historical"

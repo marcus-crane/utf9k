@@ -1,6 +1,7 @@
 ---
 title: "How can I view help documentation for an Elixir module?"
 slug: "elixir-help-docs"
+description: "In which I help myself to help myself"
 category: "questions"
 tags:
 - "elixir"

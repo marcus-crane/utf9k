@@ -1,6 +1,7 @@
 ---
 title: "How can I view configured networks in my macOS terminal?"
 slug: "macos-configured-networks"
+description: "In which I remind myself how to configure macOS networks via the terminal"
 category: "questions"
 tags:
 - "macos"

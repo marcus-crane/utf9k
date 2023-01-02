@@ -1,6 +1,7 @@
 ---
 title: "How can I view methods associated with an Elixir object?"
 slug: "elixir-object-methods"
+description: "In which I remember how to introspect in Elixir"
 category: "questions"
 tags:
 - "elixir"

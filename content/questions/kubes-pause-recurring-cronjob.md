@@ -1,6 +1,7 @@
 ---
 title: "How can I pause a recurring Kube cronjob?"
 slug: "kubes-pause-recurring-cronjob"
+description: "In which I remind myself how to suspend a Kubernetes cronjob"
 category: "questions"
 tags:
 - "cronjob"

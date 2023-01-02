@@ -1,6 +1,7 @@
 ---
 title: "How can I find out more about the hardware inside my Mac?"
 slug: "macos-view-hardware"
+description: "In which I remind myself how to view system specs in the terminal"
 category: "questions"
 tags:
 - "hardware"

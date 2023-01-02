@@ -1,6 +1,7 @@
 ---
 title: "How can I determine if my code is inside of an iFrame?"
 slug: "js-detect-iframe-parent"
+description: "A small Javascript snippet useful for detecting if the host frame is an iframe"
 category: "questions"
 tags:
 - "iframe"

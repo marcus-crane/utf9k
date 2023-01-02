@@ -1,6 +1,7 @@
 ---
 title: "What is worth instrumenting?"
 slug: "monitoring-what-to-instrument"
+description: "In which I remind myself what is a good idea to instrument"
 category: "questions"
 tags:
 - "instrumentation"

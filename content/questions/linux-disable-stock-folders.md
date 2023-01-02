@@ -1,6 +1,7 @@
 ---
 title: "How can I get rid of the default application folders that ship with my Linux distro?"
 slug: "linux-disable-stock-folders"
+description: "In which I remind myself how to disable default application folders in Linux"
 category: "questions"
 tags:
 - "housekeeping"

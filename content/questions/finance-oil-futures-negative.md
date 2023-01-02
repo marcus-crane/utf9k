@@ -1,6 +1,7 @@
 ---
 title: "Why did oil futures go negative in April 2020?"
 slug: "finance-oil-futures-negative"
+description: "In which I write about something that is definitely not computers"
 category: "questions"
 tags:
 - "finance"

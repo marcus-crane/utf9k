@@ -1,6 +1,7 @@
 ---
 title: "How can I run a Homebrew application being blocked by Gatekeeper?"
 slug: "macos-homebrew-app-blocked"
+description: "In which I remind myself how to remove the quarantine flag"
 category: "questions"
 tags:
 - "gatekeeper"

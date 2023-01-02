@@ -1,6 +1,7 @@
 ---
 title: "How can I see my route table?"
 slug: "macos-view-route-table"
+description: "In which I remind myself how to check out where a request is likely to route"
 category: "questions"
 tags:
 - "macos"

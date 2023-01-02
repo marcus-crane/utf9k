@@ -1,6 +1,7 @@
 ---
 title: "How can I remotely connect to a Selenium cluster"
 slug: "selenium-remote-connection"
+description: "In which I remind myself how to connect to Selenium using Python"
 category: "questions"
 tags:
 - "python"

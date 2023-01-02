@@ -1,6 +1,7 @@
 ---
 title: "What is tracing?"
 slug: "monitoring-tracing-overview"
+description: "In which I remind myself about the difference between monitoring and tracing"
 category: "questions"
 tags:
 - "instrumentation"

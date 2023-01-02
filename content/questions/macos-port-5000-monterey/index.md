@@ -1,6 +1,7 @@
 ---
 title: "What is using Port 5000 on macOS Monterey?"
 slug: "macos-port-5000-monterey"
+description: "In which I recall how to evict an annoying gremlin"
 category: "questions"
 tags:
 - "airplay"

@@ -1,6 +1,7 @@
 ---
 title: "How can I monitor JAMF downloads on macOS?"
 slug: "macos-monitor-jamf-downloads"
+description: "In which I remind myself how to inspect JAMF progress"
 category: "questions"
 tags:
 - "enterprise"

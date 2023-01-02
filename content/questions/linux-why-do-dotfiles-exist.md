@@ -1,6 +1,7 @@
 ---
 title: "Why are dot files a thing?"
 slug: "linux-why-do-dotfiles-exist"
+description: "In which I capture a bit of history about the origin of dotfiles"
 category: "questions"
 tags:
 - "historical"

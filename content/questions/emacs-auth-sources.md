@@ -1,6 +1,7 @@
 ---
 title: "How can I find out where Emacs is checking for passwords?"
 slug: "emacs-auth-sources"
+description: "In which I try to retrieve my secrets using my text editor"
 category: "questions"
 tags:
 - "elisp"

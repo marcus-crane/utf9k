@@ -1,6 +1,7 @@
 ---
 title: "How can I hide folders in my Home directory?"
 slug: "macos-hide-home-folders"
+description: "In which I remind myself how to hide otherwise unused home folders"
 category: "questions"
 tags:
 - "housekeeping"

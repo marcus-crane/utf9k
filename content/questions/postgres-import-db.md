@@ -1,6 +1,7 @@
 ---
 title: "How can I import a dumped database into Postgres?"
 slug: "postgres-import-db"
+description: "In which I remind myself how to import a Postgres database"
 category: "questions"
 tags:
 - "databases"

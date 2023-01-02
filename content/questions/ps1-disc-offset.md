@@ -1,6 +1,7 @@
 ---
 title: "Why do Playstation 1 discs start at offset 37656?"
 slug: "ps1-disc-offset"
+description: "In which I remind myself how PS1 discs offset their contents"
 category: "questions"
 tags:
 - "hexedit"

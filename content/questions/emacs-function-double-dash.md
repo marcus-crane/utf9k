@@ -1,6 +1,7 @@
 ---
 title: "Why do some Emacs functions have double dashes?"
 slug: "emacs-function-double-dash"
+description: "In which I squint heavily to notice any difference"
 category: "questions"
 tags:
 - "elisp"

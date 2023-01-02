@@ -1,6 +1,7 @@
 ---
 title: "How can I look up my current external IP address?"
 slug: "dns-lookup-current-ip"
+description: "In which I remember how to use dig with alternative DNS"
 category: "questions"
 tags:
 - "dig"

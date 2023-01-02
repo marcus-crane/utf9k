@@ -1,6 +1,7 @@
 ---
 title: "What is the period you sometimes see at the end of a domain name?"
 slug: "dns-trailing-period"
+description: "In which I note the existence of a sneaky period"
 category: "questions"
 tags:
 - "dns"
