@@ -9,6 +9,7 @@ document.querySelectorAll("#content img").forEach(function(el) {
     imageViewer.appendChild(fullsizeImage)
 
     let imgViewContainer = document.getElementById("fullscreen")
+    let body = document.querySelector("body")
 
     imageViewer.className = "fullscreen"
     imgViewContainer.appendChild(imageViewer)
@@ -29,11 +30,21 @@ document.querySelectorAll("#content img").forEach(function(el) {
 
     let closeButton = document.createElement("button")
     closeButton.className = "closeBtn"
-    closeButton.onclick = function() {
+
+    function onCloseEvent() {
       imgViewContainer.classList.add("hide");
       imgViewContainer.addEventListener("animationend", closeViewer);
     }
-    
+
+    function listenForEscEvent(event) {
+      if (event.key === "Escape") {
+        onCloseEvent()
+      }
+      body.removeEventListener("keydown", listenForEscEvent)
+    }
+
+    closeButton.onclick = onCloseEvent
+    body.addEventListener("keydown", listenForEscEvent)
     imageViewer.appendChild(closeButton)
   })
 })
