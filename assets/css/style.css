@@ -657,13 +657,20 @@ footer {
   height: 100%;
 }
 
-.fullscreen img {
+.fullscreen img, .fullscreen p {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   opacity: 1;
   transition: opacity .3s ease;
+}
+
+.fullscreen p {
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 6rem;
+  padding-right: 12rem;
 }
 
 .closeBtn {
