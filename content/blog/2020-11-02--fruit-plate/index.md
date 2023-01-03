@@ -1,6 +1,7 @@
 ---
 title: "Fruit Plate"
 date: "2020-11-02T00:00:00+1300"
+description: "A minor tangent about... I don't remember, GTD and fruit?"
 slug: "fruit-plate"
 category: "blog"
 tags:

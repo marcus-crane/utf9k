@@ -1,6 +1,7 @@
 ---
 title: "When automation goes horribly right"
 date: "2018-12-03T00:00:00+1300"
+description: "What do you do when a UI element disappears but the service powering it still persists?"
 slug: "automation-right"
 category: "blog"
 tags:

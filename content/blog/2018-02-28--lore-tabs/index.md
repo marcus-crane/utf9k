@@ -1,6 +1,7 @@
 ---
 title: "Humans don't come with lore tabs"
 date: "2018-02-28T00:00:00+1300"
+description: "Stories are fascinating but speed running them is a recipe for trouble"
 slug: "lore-tabs"
 category: "blog"
 tags:

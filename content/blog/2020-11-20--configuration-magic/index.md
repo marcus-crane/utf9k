@@ -1,6 +1,7 @@
 ---
 title: "Configuration magic"
 date: "2020-11-20T00:00:00+1300"
+description: "Configuration is great! Magic... not so much!"
 slug: "configuration-magic"
 category: "blog"
 tags:

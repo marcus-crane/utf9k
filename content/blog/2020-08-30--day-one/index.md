@@ -1,6 +1,7 @@
 ---
 title: "Day One"
 date: "2020-08-30T00:00:00+1300"
+description: "Thoughts upon entering my second job in the industry"
 slug: "day-one"
 category: "blog"
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "Emacs probably isn't right for me"
 date: "2021-02-13T17:41:00+1300"
+description: "My confessions as a tooling alcoholic"
 slug: "emacs-probably-isnt-right-for-me"
 category: "blog"
 tags:

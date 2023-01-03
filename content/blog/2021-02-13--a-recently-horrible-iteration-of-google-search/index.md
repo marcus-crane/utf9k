@@ -1,6 +1,7 @@
 ---
 title: "Google recently surfaced awful results for movies and tv"
 date: "2021-02-13T01:11:00+1300"
+description: "How many widgets can you fit on a mobile webpage? More than should be legal"
 slug: "a-recently-horrible-iteration-of-google-search"
 category: "blog"
 tags:

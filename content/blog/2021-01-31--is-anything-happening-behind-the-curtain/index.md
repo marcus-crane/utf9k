@@ -1,6 +1,7 @@
 ---
 title: "Is anything happening behind the curtain?"
 date: "2021-01-31T15:41:00+1300"
+description: "The difference between nothing and something depends on whether the curtain has been raised yet"
 slug: "is-anything-happening-behind-the-curtain"
 category: "blog"
 tags:

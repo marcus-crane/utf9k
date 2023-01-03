@@ -1,6 +1,7 @@
 ---
 title: "We are all that person who reads a book while walking"
 date: "2021-03-03T13:02:46+1300"
+description: "Honestly, this post is weird and dumb. I wouldn't recommend it."
 slug: "walking-while-reading"
 category: "blog"
 tags:
