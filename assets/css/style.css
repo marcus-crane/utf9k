@@ -655,10 +655,11 @@ footer {
   height: 100vh;
 }
 
-
-
 .fullscreen img {
-  width: 80%;
+  max-width: 80%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .fullscreen img, .fullscreen p {

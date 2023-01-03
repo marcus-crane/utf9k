@@ -81,7 +81,7 @@
           <ul>
           {{ range first 1 $.Site.Data.games }}
             {{ range .games }}
-              {{ $image := resources.GetRemote .cover }}\
+              {{ $image := resources.GetRemote .cover }}
               <li style="display: inline-block;">
                 <img alttitle="IGDB" altsrc="{{ .link }}" alt="Box art for the game titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
               </li>
