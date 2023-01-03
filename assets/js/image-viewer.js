@@ -17,10 +17,10 @@ document.querySelectorAll("#content img").forEach(function(el) {
     let closeViewer = function(e) {
       if ("hide" === e.animationName) {
         imgViewContainer.classList.remove("show")
+        imgViewContainer.style.display = "none"
+        imgViewContainer.removeChild(imageViewer)
+        imgViewContainer.removeEventListener("animationend", closeViewer)
       }
-      imgViewContainer.style.display = "none"
-      imgViewContainer.removeChild(imageViewer)
-      imgViewContainer.removeEventListener("animationend", closeViewer)
     }
     imgViewContainer.addEventListener("animationend", closeViewer)
 
