@@ -2,7 +2,7 @@
 document.querySelectorAll("#content img").forEach(function(el) {
   el.addEventListener("click", function() {
     const imageViewer = document.createElement("div")
-    const fullsizeImage = document.createElement("img");
+    const fullsizeImage = document.createElement("img")
     
     fullsizeImage.src = el.src
 
@@ -15,10 +15,12 @@ document.querySelectorAll("#content img").forEach(function(el) {
     imgViewContainer.style.display = "block"
 
     let closeViewer = function(e) {
-      "hide" === e.animationName && (imgViewContainer.classList.remove("show"),
-      imgViewContainer.style.display = "none",
-      imgViewContainer.removeChild(imageViewer),
-      imgViewContainer.removeEventListener("animationend", closeViewer))
+      if ("hide" === e.animationName) {
+        imgViewContainer.classList.remove("show")
+      }
+      imgViewContainer.style.display = "none"
+      imgViewContainer.removeChild(imageViewer)
+      imgViewContainer.removeEventListener("animationend", closeViewer)
     }
     imgViewContainer.addEventListener("animationend", closeViewer)
 
@@ -34,7 +36,11 @@ document.querySelectorAll("#content img").forEach(function(el) {
 
     let isViewerOpen = !0;
     imgViewContainer.onclick = function(e) {
-      (isViewerOpen = !isViewerOpen) ? closeButton.classList.remove("hide") : closeButton.classList.add("hide")
+      if (isViewerOpen = !isViewerOpen) {
+        closeButton.classList.remove("hide")
+      } else {
+        closeButton.classList.add("hide")
+      } 
     }
     imageViewer.appendChild(closeButton)
   })
