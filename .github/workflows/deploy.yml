@@ -26,7 +26,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.105.0"
+          hugo-version: "0.109.0"
         env:
           NODE_VERSION: ${{ steps.setup-node.outputs.node-version }}
           PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}

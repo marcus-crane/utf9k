@@ -92,6 +92,10 @@ markup:
     ordered: false
     startLevel: 2
   goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
     renderer:
       unsafe: true
   highlight:
