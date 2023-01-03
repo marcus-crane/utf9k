@@ -25,4 +25,10 @@
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
   {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
   <script defer type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
+
+  {{ $targetPath := "js/image-viewer.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
+  <script defer type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
 {{ end }}
