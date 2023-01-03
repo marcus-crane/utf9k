@@ -172,6 +172,7 @@ server:
         https://platform.twitter.com
         ; frame-src 'self'
         https://www.youtube.com
+        https://www.youtube-nocookie.com
         https://platform.twitter.com;
         ; child-src 'self'
         blob:

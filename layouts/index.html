@@ -27,11 +27,8 @@
           {{ range first 1 $.Site.Data.books }}
             {{ range where .books "progress" "!=" 100 }}
               {{ $image := resources.GetRemote .cover }}
-              {{ $image := $image.Resize "x360 q100" }}
               <li style="display: inline-block;">
-                <a href="{{ .link }}">
-                  <img alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
-                </a>
+                <img alttitle="OpenLibrary" altsrc="{{ .link }}" alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
               </li>
             {{ end }}
           {{ end }}
@@ -85,11 +82,8 @@
           {{ range first 1 $.Site.Data.games }}
             {{ range .games }}
               {{ $image := resources.GetRemote .cover }}
-              {{ $image := $image.Resize "x360 q100" }}
               <li style="display: inline-block;">
-                <a href="{{ .link }}">
-                  <img alt="Box art for the game titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
-                </a>
+                <img alttitle="IGDB" altsrc="{{ .link }}" alt="Box art for the game titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
               </li>
             {{ end }}
           {{ end }}
@@ -108,5 +102,12 @@
   {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
   {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
   {{ "<!-- Check out the unminified source here: https://github.com/marcus-crane/utf9k/blob/main/assets/js/live-player.js --> " | safeHTML }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
+
+
+  {{ $targetPath := "js/image-viewer.js" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" $targetPath "defines" $defines }}
+  {{ $built := resources.Get $targetPath | js.Build $opts | fingerprint }}
   <script type="text/javascript" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
 {{ end }}
