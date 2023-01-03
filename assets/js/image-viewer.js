@@ -36,15 +36,27 @@ document.querySelectorAll("#content img").forEach(function(el) {
       imgViewContainer.addEventListener("animationend", closeViewer);
     }
 
-    function listenForEscEvent(event) {
+    // Keyboard controls
+    //
+    // Press O to open direct link to image
+    // Press ESCAPE to close viewer
+    function listenForKeyEvent(event) {
+      if (event.key === "o") {
+        window.open(fullsizeImage.src, "_blank")
+        return
+      }
+
       if (event.key === "Escape") {
         onCloseEvent()
       }
-      body.removeEventListener("keydown", listenForEscEvent)
+
+      // We only remove the event upon escaping or else you'd be stuck
+      // after doing any other shortcuts
+      body.removeEventListener("keydown", listenForKeyEvent)
     }
 
     closeButton.onclick = onCloseEvent
-    body.addEventListener("keydown", listenForEscEvent)
+    body.addEventListener("keydown", listenForKeyEvent)
     imageViewer.appendChild(closeButton)
   })
 })
