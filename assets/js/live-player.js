@@ -116,6 +116,7 @@ function renderLivePlayer(data) {
   subtitle.innerText = data.subtitle
 
   cover.src = data.image
+  cover.alt = `Cover art for the ${data.category} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
 

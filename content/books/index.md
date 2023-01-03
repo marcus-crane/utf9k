@@ -23,9 +23,11 @@ tags:
     </div>
     <ul {{ if eq $listName 2022 }}class="almost-full-list"{{ end }} role="list">
     {{ range .books }}
+    {{ $image := resources.GetRemote .cover }}
+    {{ $image := $image.Resize "x360 q100" }}
     <li>
       <div>
-        <img src="{{ .cover }}">
+        <img alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}">
         <a href="{{ .link }}" target="_blank" rel="noopener noreferer">
           <span>{{ .title }}</span>
         </a>

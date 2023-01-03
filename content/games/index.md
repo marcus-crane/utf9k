@@ -18,9 +18,14 @@ tags:
     {{ if eq $listName "Stalled but occasionally progress is made" }}</summary>{{ end }}
     <ul {{ if eq $listName "Actively playing" }}class="partial-list"{{ end }} role="list">
       {{ range .games }}
+      {{ $image := resources.GetRemote .cover }}
+      {{ $image := $image.Resize "x360 q100" }}
       <li>
         <div>
-          <img src="{{ if .cover }}{{ .cover }}{{ else }}https://via.placeholder.com/264x352{{ end }}">
+          <img
+            alt="Box art for the game titled {{ .title }}"
+            src="{{ if $image }}{{ $image.RelPermalink }}{{ else }}https://via.placeholder.com/264x352{{ end }}"
+          >
           <a href="{{ .link }}" target="_blank" rel="noopener noreferer">
             <span>{{ .title }}</span>
           </a>
