@@ -528,8 +528,7 @@ iframe {
   .highlight,
   pre[class*="language-"],
   figure,
-  #post-body > img,
-  iframe:not(#twitter-widget-0) {
+  #post-body > img {
     width: 110%;
     margin-left: -5%;
   }
@@ -539,8 +538,7 @@ iframe {
   table,
   .highlight,
   pre[class*="language-"],
-  figure,
-  iframe:not(#twitter-widget-0) {
+  figure {
     width: 150%;
     margin-left: -25%;
   }
