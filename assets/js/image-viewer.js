@@ -33,15 +33,7 @@ document.querySelectorAll("#content img").forEach(function(el) {
       imgViewContainer.classList.add("hide");
       imgViewContainer.addEventListener("animationend", closeViewer);
     }
-
-    let isViewerOpen = !0;
-    imgViewContainer.onclick = function(e) {
-      if (isViewerOpen = !isViewerOpen) {
-        closeButton.classList.remove("hide")
-      } else {
-        closeButton.classList.add("hide")
-      } 
-    }
+    
     imageViewer.appendChild(closeButton)
   })
 })
