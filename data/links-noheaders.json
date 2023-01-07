@@ -29,8 +29,9 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2017-12-18--wiki-thoughts/index.md",
+    "status": 200,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -1365,35 +1366,11 @@
     "status": 200,
     "url": "https://github.com/marcus-crane/netbox-plugin-azuread"
   },
-  "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/docs/netbox-login.png": {
-    "alive": true,
-    "source": "content/projects/netbox-plugin-azuread/index.md",
-    "status": 200,
-    "url": "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/docs/netbox-login.png"
-  },
-  "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/docs/netbox-profile.png": {
-    "alive": true,
-    "source": "content/projects/netbox-plugin-azuread/index.md",
-    "status": 200,
-    "url": "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/docs/netbox-profile.png"
-  },
   "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/github.com/netbox-community/netbox": {
     "alive": false,
     "source": "content/projects/netbox-plugin-azuread/index.md",
     "status": 404,
     "url": "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/github.com/netbox-community/netbox"
-  },
-  "https://github.com/marcus-crane/netbox-plugin-azuread/raw/main/docs/netbox-login.png": {
-    "alive": true,
-    "source": "content/projects/netbox-plugin-azuread/index.md",
-    "status": 200,
-    "url": "https://github.com/marcus-crane/netbox-plugin-azuread/raw/main/docs/netbox-login.png"
-  },
-  "https://github.com/marcus-crane/netbox-plugin-azuread/raw/main/docs/netbox-profile.png": {
-    "alive": true,
-    "source": "content/projects/netbox-plugin-azuread/index.md",
-    "status": 200,
-    "url": "https://github.com/marcus-crane/netbox-plugin-azuread/raw/main/docs/netbox-profile.png"
   },
   "https://github.com/marcus-crane/october": {
     "alive": true,
@@ -1558,9 +1535,9 @@
     "url": "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694"
   },
   "https://help.dayoneapp.com/en/articles/769055-book-printing": {
-    "alive": false,
+    "alive": true,
     "source": "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md",
-    "status": 429,
+    "status": 200,
     "url": "https://help.dayoneapp.com/en/articles/769055-book-printing"
   },
   "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu": {
@@ -1676,9 +1653,9 @@
     "url": "https://man.openbsd.org/ssh_config"
   },
   "https://manjaro.org": {
-    "alive": false,
+    "alive": true,
     "source": "content/questions/linux-audio-muting-suddenly.md",
-    "status": 502,
+    "status": 200,
     "url": "https://manjaro.org"
   },
   "https://medium.com/plexlabs": {
@@ -1861,9 +1838,8 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -2230,18 +2206,21 @@
     "url": "https://web.archive.org"
   },
   "https://web.archive.org/web/20071031080918/http": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2020-03-08--bookmarking-march-2020/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20071031080918/http"
   },
   "https://web.archive.org/web/20180206231055/https": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2017-02-05--deepfakes/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20180206231055/https"
   },
   "https://web.archive.org/web/20210101170747/https": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20210101170747/https"
   },
   "https://webpack.js.org": {
@@ -2557,8 +2536,9 @@
     "url": "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire"
   },
   "https://www.moonestates.com": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md",
+    "status": 200,
     "url": "https://www.moonestates.com"
   },
   "https://www.nasa.gov": {
@@ -2848,15 +2828,15 @@
     "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
   },
   "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696": {
-    "alive": true,
+    "alive": false,
     "source": "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md",
-    "status": 200,
+    "status": 403,
     "url": "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696"
   },
   "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164": {
-    "alive": true,
+    "alive": false,
     "source": "content/blog/20xx--one-possible-death-for-discord/index.md",
-    "status": 200,
+    "status": 403,
     "url": "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164"
   },
   "https://www.xero.com/nz": {
