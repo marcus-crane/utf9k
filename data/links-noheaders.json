@@ -94,20 +94,20 @@
     "url": "http://www.sitemaps.org/schemas/sitemap/0.9"
   },
   "http://www.w3.org/1999/xhtml": {
-    "alive": true,
+    "alive": false,
     "source": "layouts/sitemap.xml",
-    "status": 200,
+    "status": 522,
     "url": "http://www.w3.org/1999/xhtml"
   },
   "http://www.w3.org/2000/svg": {
-    "alive": true,
+    "alive": false,
     "source": "layouts/shortcodes/pullquote.html",
-    "status": 200,
+    "status": 522,
     "url": "http://www.w3.org/2000/svg"
   },
   "http://www.w3.org/2005/Atom": {
     "alive": true,
-    "source": "layouts/_default/index.xml",
+    "source": "layouts/_default/rss.xml",
     "status": 200,
     "url": "http://www.w3.org/2005/Atom"
   },
@@ -715,7 +715,7 @@
   },
   "https://en.wikipedia.org/wiki/Fear_of_missing_out": {
     "alive": true,
-    "source": "content/blog/2021-04-18--starbucks-ecosystem/index.md",
+    "source": "content/blog/2021-05-22--ride-the-curve/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Fear_of_missing_out"
   },
@@ -1057,7 +1057,7 @@
   },
   "https://en.wikipedia.org/wiki/Wellington": {
     "alive": true,
-    "source": "content/now/index.md",
+    "source": "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Wellington"
   },
@@ -1075,7 +1075,7 @@
   },
   "https://example.com": {
     "alive": true,
-    "source": "content/questions/kubes-ingress-ip-range.md",
+    "source": "content/experiments/remote-resources/index.md",
     "status": 200,
     "url": "https://example.com"
   },
@@ -1105,13 +1105,13 @@
   },
   "https://fastmail.com": {
     "alive": true,
-    "source": "content/blog/2022-05-28--fastmail-caldav/index.md",
+    "source": "content/thanks/index.md",
     "status": 200,
     "url": "https://fastmail.com"
   },
   "https://feedbin.com": {
     "alive": true,
-    "source": "content/blog/2021-09-24--who-is-software-even-for/index.md",
+    "source": "content/thanks/index.md",
     "status": 200,
     "url": "https://feedbin.com"
   },
@@ -1272,7 +1272,7 @@
   },
   "https://github.com/hlissner/doom-emacs": {
     "alive": true,
-    "source": "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md",
+    "source": "content/blog/2020-05-06--emacs-wsl2-install/index.md",
     "status": 200,
     "url": "https://github.com/hlissner/doom-emacs"
   },
@@ -1308,7 +1308,7 @@
   },
   "https://github.com/marcus-crane/dotfiles": {
     "alive": true,
-    "source": "content/blog/2018-02-15--day-xero/index.md",
+    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles"
   },
@@ -1374,7 +1374,7 @@
   },
   "https://github.com/marcus-crane/october": {
     "alive": true,
-    "source": "content/now/index.md",
+    "source": "content/projects/october/index.md",
     "status": 200,
     "url": "https://github.com/marcus-crane/october"
   },
@@ -1422,7 +1422,7 @@
   },
   "https://github.com/neovim/neovim": {
     "alive": true,
-    "source": "content/blog/2018-02-15--day-xero/index.md",
+    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
     "status": 200,
     "url": "https://github.com/neovim/neovim"
   },
@@ -1506,7 +1506,7 @@
   },
   "https://gohugo.io": {
     "alive": true,
-    "source": "content/blog/2021-07-12--hugo-debug-reports/index.md",
+    "source": "content/thanks/index.md",
     "status": 200,
     "url": "https://gohugo.io"
   },
@@ -1535,9 +1535,9 @@
     "url": "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694"
   },
   "https://help.dayoneapp.com/en/articles/769055-book-printing": {
-    "alive": true,
+    "alive": false,
     "source": "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md",
-    "status": 200,
+    "status": 429,
     "url": "https://help.dayoneapp.com/en/articles/769055-book-printing"
   },
   "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu": {
@@ -1708,13 +1708,13 @@
   },
   "https://news.ycombinator.com": {
     "alive": true,
-    "source": "content/questions/macos-disable-safari-recommendation.md",
+    "source": "content/blog/2021-05-22--ride-the-curve/index.md",
     "status": 200,
     "url": "https://news.ycombinator.com"
   },
   "https://news.ycombinator.com/item": {
     "alive": true,
-    "source": "content/questions/macos-disable-safari-recommendation.md",
+    "source": "content/blog/2020-03-08--bookmarking-march-2020/index.md",
     "status": 200,
     "url": "https://news.ycombinator.com/item"
   },
@@ -1756,7 +1756,7 @@
   },
   "https://orgmode.org": {
     "alive": true,
-    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
+    "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
     "status": 200,
     "url": "https://orgmode.org"
   },
@@ -1797,9 +1797,9 @@
     "url": "https://plexamp.com"
   },
   "https://pocketcasts.com": {
-    "alive": true,
+    "alive": false,
     "source": "content/uses/index.md",
-    "status": 200,
+    "status": 429,
     "url": "https://pocketcasts.com"
   },
   "https://pocketsmith.com": {
@@ -1838,8 +1838,9 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -1916,7 +1917,7 @@
   },
   "https://slack.com": {
     "alive": true,
-    "source": "content/questions/kubes-ingress-ip-range.md",
+    "source": "content/projects/parnell/index.md",
     "status": 200,
     "url": "https://slack.com"
   },
@@ -2028,7 +2029,7 @@
   },
   "https://tecosaur.github.io/emacs-config/config.html": {
     "alive": true,
-    "source": "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md",
+    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
     "status": 200,
     "url": "https://tecosaur.github.io/emacs-config/config.html"
   },
@@ -2112,7 +2113,7 @@
   },
   "https://twitter.com/sentreh": {
     "alive": true,
-    "source": "content/blog/2017-12-18--wiki-thoughts/index.md",
+    "source": "layouts/partials/head.html",
     "status": 200,
     "url": "https://twitter.com/sentreh"
   },
@@ -2423,7 +2424,7 @@
   },
   "https://www.gnu.org/software/stow": {
     "alive": true,
-    "source": "content/questions/macos-see-file-usage.md",
+    "source": "content/blog/2018-02-15--day-xero/index.md",
     "status": 200,
     "url": "https://www.gnu.org/software/stow"
   },
@@ -2477,7 +2478,7 @@
   },
   "https://www.lightspeedhq.com": {
     "alive": true,
-    "source": "content/about/index.md",
+    "source": "content/blog/2022-01-22--not-being-an-astronaut/index.md",
     "status": 200,
     "url": "https://www.lightspeedhq.com"
   },
@@ -2781,7 +2782,7 @@
   },
   "https://www.vendhq.com/nz": {
     "alive": true,
-    "source": "content/about/index.md",
+    "source": "content/blog/2022-01-22--not-being-an-astronaut/index.md",
     "status": 200,
     "url": "https://www.vendhq.com/nz"
   },
@@ -2828,15 +2829,15 @@
     "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
   },
   "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696": {
-    "alive": false,
+    "alive": true,
     "source": "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md",
-    "status": 403,
+    "status": 200,
     "url": "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696"
   },
   "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164": {
-    "alive": false,
+    "alive": true,
     "source": "content/blog/20xx--one-possible-death-for-discord/index.md",
-    "status": 403,
+    "status": 200,
     "url": "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164"
   },
   "https://www.xero.com/nz": {
@@ -2865,7 +2866,7 @@
   },
   "https://www.youtube.com/watch": {
     "alive": true,
-    "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
+    "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
     "status": 200,
     "url": "https://www.youtube.com/watch"
   },
