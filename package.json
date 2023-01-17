@@ -6,9 +6,9 @@
   "author": "Marcus Crane <marcus@utf9k.net>",
   "license": "MIT",
   "scripts": {
-    "start": "COMMIT_SHA=main hugo server --disableFastRender",
-    "start:wideband": "COMMIT_SHA=main hugo server --disableFastRender --bind 0.0.0.0 --baseURL http://$(ifconfig en1 | grep 'inet ' | awk '{ print $2 }')",
-    "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc",
+    "start": "COMMIT_SHA=main hugo server --disableFastRender --buildFuture",
+    "start:wideband": "COMMIT_SHA=main hugo server --disableFastRender  --buildFuture --bind 0.0.0.0 --baseURL http://$(ifconfig en1 | grep 'inet ' | awk '{ print $2 }')",
+    "build": "COMMIT_SHA=$(git rev-parse --short HEAD) NODE_ENV=production hugo --gc --buildFuture",
     "build:deps": "./ci/install.sh",
     "build:metadata": "./ci/genmetadata.sh",
     "watch:metadata": "git ls-files --directory content/**/**/*.md --directory scripts/*.py | entr yarn run build:metadata",
