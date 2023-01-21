@@ -94,15 +94,15 @@
     "url": "http://www.sitemaps.org/schemas/sitemap/0.9"
   },
   "http://www.w3.org/1999/xhtml": {
-    "alive": false,
+    "alive": true,
     "source": "layouts/sitemap.xml",
-    "status": 522,
+    "status": 200,
     "url": "http://www.w3.org/1999/xhtml"
   },
   "http://www.w3.org/2000/svg": {
-    "alive": false,
+    "alive": true,
     "source": "layouts/shortcodes/pullquote.html",
-    "status": 522,
+    "status": 200,
     "url": "http://www.w3.org/2000/svg"
   },
   "http://www.w3.org/2005/Atom": {
@@ -237,7 +237,7 @@
   },
   "https://azure.microsoft.com/en-us/services/active-directory": {
     "alive": true,
-    "source": "content/blog/2021-05-11--always-bet-on-sales/index.md",
+    "source": "content/projects/netbox-plugin-azuread/index.md",
     "status": 200,
     "url": "https://azure.microsoft.com/en-us/services/active-directory"
   },
@@ -542,7 +542,7 @@
   },
   "https://docs.microsoft.com/en-us/windows/wsl/about": {
     "alive": true,
-    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
+    "source": "content/blog/2020-05-06--emacs-wsl2-install/index.md",
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/windows/wsl/about"
   },
@@ -715,7 +715,7 @@
   },
   "https://en.wikipedia.org/wiki/Fear_of_missing_out": {
     "alive": true,
-    "source": "content/blog/2021-05-22--ride-the-curve/index.md",
+    "source": "content/blog/2021-04-18--starbucks-ecosystem/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Fear_of_missing_out"
   },
@@ -763,7 +763,7 @@
   },
   "https://en.wikipedia.org/wiki/ICalendar": {
     "alive": true,
-    "source": "content/blog/2022-05-28--fastmail-caldav/index.md",
+    "source": "content/blog/2022-06-03--ipad-canonical-owner/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/ICalendar"
   },
@@ -787,7 +787,7 @@
   },
   "https://en.wikipedia.org/wiki/Kumamon": {
     "alive": true,
-    "source": "content/blog/2021-10-26--day-two/index.md",
+    "source": "content/blog/2022-01-22--not-being-an-astronaut/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Kumamon"
   },
@@ -817,7 +817,7 @@
   },
   "https://en.wikipedia.org/wiki/Notes_": {
     "alive": true,
-    "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "source": "content/blog/2022-06-03--ipad-canonical-owner/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Notes_"
   },
@@ -1057,7 +1057,7 @@
   },
   "https://en.wikipedia.org/wiki/Wellington": {
     "alive": true,
-    "source": "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md",
+    "source": "content/now/index.md",
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Wellington"
   },
@@ -1075,7 +1075,7 @@
   },
   "https://example.com": {
     "alive": true,
-    "source": "content/experiments/remote-resources/index.md",
+    "source": "content/questions/kubes-ingress-ip-range.md",
     "status": 200,
     "url": "https://example.com"
   },
@@ -1153,7 +1153,7 @@
   },
   "https://fyi.org": {
     "alive": 0,
-    "source": "content/blog/2018-08-18--nz-oia-guide/index.md",
+    "source": "content/project-src/parnell/index.html",
     "url": "https://fyi.org"
   },
   "https://gatsbyjs.com": {
@@ -1272,7 +1272,7 @@
   },
   "https://github.com/hlissner/doom-emacs": {
     "alive": true,
-    "source": "content/blog/2020-05-06--emacs-wsl2-install/index.md",
+    "source": "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md",
     "status": 200,
     "url": "https://github.com/hlissner/doom-emacs"
   },
@@ -1308,7 +1308,7 @@
   },
   "https://github.com/marcus-crane/dotfiles": {
     "alive": true,
-    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
+    "source": "content/blog/2018-02-15--day-xero/index.md",
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles"
   },
@@ -1374,7 +1374,7 @@
   },
   "https://github.com/marcus-crane/october": {
     "alive": true,
-    "source": "content/projects/october/index.md",
+    "source": "content/now/index.md",
     "status": 200,
     "url": "https://github.com/marcus-crane/october"
   },
@@ -1422,7 +1422,7 @@
   },
   "https://github.com/neovim/neovim": {
     "alive": true,
-    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
+    "source": "content/blog/2018-02-15--day-xero/index.md",
     "status": 200,
     "url": "https://github.com/neovim/neovim"
   },
@@ -1535,9 +1535,9 @@
     "url": "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694"
   },
   "https://help.dayoneapp.com/en/articles/769055-book-printing": {
-    "alive": false,
+    "alive": true,
     "source": "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md",
-    "status": 429,
+    "status": 200,
     "url": "https://help.dayoneapp.com/en/articles/769055-book-printing"
   },
   "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu": {
@@ -1708,13 +1708,13 @@
   },
   "https://news.ycombinator.com": {
     "alive": true,
-    "source": "content/blog/2021-05-22--ride-the-curve/index.md",
+    "source": "content/questions/macos-disable-safari-recommendation.md",
     "status": 200,
     "url": "https://news.ycombinator.com"
   },
   "https://news.ycombinator.com/item": {
     "alive": true,
-    "source": "content/blog/2020-03-08--bookmarking-march-2020/index.md",
+    "source": "content/questions/macos-disable-safari-recommendation.md",
     "status": 200,
     "url": "https://news.ycombinator.com/item"
   },
@@ -1743,9 +1743,8 @@
     "url": "https://npmjs.com"
   },
   "https://nvultra.com": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2021-06-01--remind-the-user-what-your-service-does/index.md",
-    "status": 200,
     "url": "https://nvultra.com"
   },
   "https://opentelemetry.io": {
@@ -1756,7 +1755,7 @@
   },
   "https://orgmode.org": {
     "alive": true,
-    "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "source": "content/blog/2020-05-06--emacs-wsl2-install/index.md",
     "status": 200,
     "url": "https://orgmode.org"
   },
@@ -1797,9 +1796,9 @@
     "url": "https://plexamp.com"
   },
   "https://pocketcasts.com": {
-    "alive": false,
+    "alive": true,
     "source": "content/uses/index.md",
-    "status": 429,
+    "status": 200,
     "url": "https://pocketcasts.com"
   },
   "https://pocketsmith.com": {
@@ -1857,13 +1856,13 @@
   },
   "https://reactjs.org": {
     "alive": true,
-    "source": "content/blog/2018-02-15--day-xero/index.md",
+    "source": "content/projects/october/index.md",
     "status": 200,
     "url": "https://reactjs.org"
   },
   "https://readwise.io": {
     "alive": true,
-    "source": "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md",
+    "source": "content/projects/october/index.md",
     "status": 200,
     "url": "https://readwise.io"
   },
@@ -1917,7 +1916,7 @@
   },
   "https://slack.com": {
     "alive": true,
-    "source": "content/projects/parnell/index.md",
+    "source": "content/questions/kubes-ingress-ip-range.md",
     "status": 200,
     "url": "https://slack.com"
   },
@@ -2029,7 +2028,7 @@
   },
   "https://tecosaur.github.io/emacs-config/config.html": {
     "alive": true,
-    "source": "content/blog/2021-02-17--faq-driven-configuration/index.md",
+    "source": "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md",
     "status": 200,
     "url": "https://tecosaur.github.io/emacs-config/config.html"
   },
@@ -2113,7 +2112,7 @@
   },
   "https://twitter.com/sentreh": {
     "alive": true,
-    "source": "layouts/partials/head.html",
+    "source": "content/reviews/2015-05-12--hiatus/index.md",
     "status": 200,
     "url": "https://twitter.com/sentreh"
   },
@@ -2161,7 +2160,7 @@
   },
   "https://unpkg.com/littlefoot/dist/littlefoot.css": {
     "alive": true,
-    "source": "layouts/blog/single.html",
+    "source": "layouts/debug/single.html",
     "status": 200,
     "url": "https://unpkg.com/littlefoot/dist/littlefoot.css"
   },
@@ -2219,9 +2218,8 @@
     "url": "https://web.archive.org/web/20180206231055/https"
   },
   "https://web.archive.org/web/20210101170747/https": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
-    "status": 200,
     "url": "https://web.archive.org/web/20210101170747/https"
   },
   "https://webpack.js.org": {
@@ -2405,9 +2403,8 @@
     "url": "https://www.freecodecamp.org/news/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81"
   },
   "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
-    "status": 200,
     "url": "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html"
   },
   "https://www.gnu.org/software/parted/manual/html_node/set.html": {
@@ -2423,9 +2420,8 @@
     "url": "https://www.gnu.org/software/parted/manual/parted.html"
   },
   "https://www.gnu.org/software/stow": {
-    "alive": true,
-    "source": "content/blog/2018-02-15--day-xero/index.md",
-    "status": 200,
+    "alive": 0,
+    "source": "content/questions/macos-see-file-usage.md",
     "url": "https://www.gnu.org/software/stow"
   },
   "https://www.goodreads.com/book/show/4119.The_Great_Good_Place": {
@@ -2478,7 +2474,7 @@
   },
   "https://www.lightspeedhq.com": {
     "alive": true,
-    "source": "content/blog/2022-01-22--not-being-an-astronaut/index.md",
+    "source": "content/now/index.md",
     "status": 200,
     "url": "https://www.lightspeedhq.com"
   },
@@ -2735,7 +2731,7 @@
   },
   "https://www.sqlite.org/index.html": {
     "alive": true,
-    "source": "content/blog/2020-11-23--tidying-towing-data/index.md",
+    "source": "content/projects/october/index.md",
     "status": 200,
     "url": "https://www.sqlite.org/index.html"
   },
@@ -2782,7 +2778,7 @@
   },
   "https://www.vendhq.com/nz": {
     "alive": true,
-    "source": "content/blog/2022-01-22--not-being-an-astronaut/index.md",
+    "source": "content/now/index.md",
     "status": 200,
     "url": "https://www.vendhq.com/nz"
   },
@@ -2806,7 +2802,7 @@
   },
   "https://www.vgchartz.com/gamedb": {
     "alive": false,
-    "source": "content/reviews/2014-12-23--asuras-wrath/index.md",
+    "source": "content/reviews/2015-01-10--the-simpsons-hit-and-run/index.md",
     "status": 404,
     "url": "https://www.vgchartz.com/gamedb"
   },
@@ -2842,7 +2838,7 @@
   },
   "https://www.xero.com/nz": {
     "alive": true,
-    "source": "content/blog/2021-10-26--day-two/index.md",
+    "source": "content/blog/2018-02-15--day-xero/index.md",
     "status": 200,
     "url": "https://www.xero.com/nz"
   },
@@ -2866,7 +2862,7 @@
   },
   "https://www.youtube.com/watch": {
     "alive": true,
-    "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "source": "content/reviews/2015-03-28--jumping-flash/index.md",
     "status": 200,
     "url": "https://www.youtube.com/watch"
   },
