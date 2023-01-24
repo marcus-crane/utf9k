@@ -198,6 +198,7 @@ function renderHistory(data) {
   if (count === 0) return // Nothing to animate
   // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
   setTimeout(() => playerHistory.children[0].style = "font-size: 10px;", 1000)
+  if (count === 1) return // We have no items we want to hide yet
   setTimeout(() => playerHistory.children[playerHistory.children.length - 1].style = "font-size: 0px;", 3000)
 }
 
