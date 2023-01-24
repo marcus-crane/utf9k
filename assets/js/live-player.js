@@ -195,6 +195,7 @@ function renderHistory(data) {
     playerHistory.insertAdjacentHTML("beforeend", `<li class="history-entry" style="font-size: ${startingFontSize}px;">${emoji} ${item.title} - ${item.subtitle}</li>`)
     count += 1
   }
+  if (count === 0) return // Nothing to animate
   // Give the user enough time to grok what is happening (or else the animation will fly by too quickly)
   setTimeout(() => playerHistory.children[0].style = "font-size: 10px;", 1000)
   setTimeout(() => playerHistory.children[playerHistory.children.length - 1].style = "font-size: 0px;", 3000)
