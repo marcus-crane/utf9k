@@ -48,6 +48,11 @@ body {
     background: var(--bg-dark);
     color: var(--text-light);
   }
+
+  .littlefoot-footnote__content {
+    background: var(--bg-dark);
+    color: var(--text-light);
+  }
 }
 
 img,
