@@ -477,15 +477,6 @@ main ol > li:before,
   left: 0.25em;
 }
 
-@media (prefers-color-scheme: dark) {
-  main ul > li:before,
-  main ol > li:before,
-  #post-body ul > li:before,
-  #post-body > ol > li:before {
-    background-color: #d1d5db;
-  }
-}
-
 main ul > h2,
 main ol > h2,
 #post-body ul > h2,
