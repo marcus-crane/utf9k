@@ -558,8 +558,18 @@ thead,
 th,
 tr,
 td {
-  border: 1px solid black;
+  border: 1px solid var(--bg-dark);
   padding: 0.1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  table,
+  thead,
+  th,
+  tr,
+  td {
+    border: 1px solid var(--bg-light);
+  }
 }
 
 table {
