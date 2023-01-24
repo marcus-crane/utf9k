@@ -96,6 +96,10 @@
 </article>
 {{ end }}
 
+{{ define "style" }}
+<link rel="preconnect" href="https://gunslinger.utf9k.net" />
+{{ end }}
+
 {{ define "script" }}
   {{ $targetPath := "js/live-player.js" }}
   {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
