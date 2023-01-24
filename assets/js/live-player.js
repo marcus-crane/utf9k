@@ -115,7 +115,7 @@ function renderLivePlayer(data) {
   title.innerText = data.title
   subtitle.innerText = data.subtitle
 
-  cover.src = data.image
+  cover.src = "https://gunslinger.utf9k.net" + data.image
   cover.alt = `Cover art for the ${data.category} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
