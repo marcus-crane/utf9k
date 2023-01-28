@@ -1,7 +1,8 @@
 {
   "http://bs.visualshower.com": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2017-12-18--wiki-thoughts/index.md",
+    "status": 200,
     "url": "http://bs.visualshower.com"
   },
   "http://example.com": {
@@ -29,9 +30,9 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": true,
+    "alive": false,
     "source": "content/blog/2017-12-18--wiki-thoughts/index.md",
-    "status": 200,
+    "status": 503,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -1743,8 +1744,9 @@
     "url": "https://npmjs.com"
   },
   "https://nvultra.com": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2021-06-01--remind-the-user-what-your-service-does/index.md",
+    "status": 200,
     "url": "https://nvultra.com"
   },
   "https://opentelemetry.io": {
@@ -2183,9 +2185,9 @@
     "url": "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338"
   },
   "https://via.placeholder.com/264x352": {
-    "alive": false,
+    "alive": true,
     "source": "content/games/index.md",
-    "status": 403,
+    "status": 200,
     "url": "https://via.placeholder.com/264x352"
   },
   "https://vsfan.net/wiki": {
@@ -2206,15 +2208,13 @@
     "url": "https://web.archive.org"
   },
   "https://web.archive.org/web/20071031080918/http": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2020-03-08--bookmarking-march-2020/index.md",
-    "status": 200,
     "url": "https://web.archive.org/web/20071031080918/http"
   },
   "https://web.archive.org/web/20180206231055/https": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2017-02-05--deepfakes/index.md",
-    "status": 200,
     "url": "https://web.archive.org/web/20180206231055/https"
   },
   "https://web.archive.org/web/20210101170747/https": {
@@ -2403,8 +2403,9 @@
     "url": "https://www.freecodecamp.org/news/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81"
   },
   "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "status": 200,
     "url": "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html"
   },
   "https://www.gnu.org/software/parted/manual/html_node/set.html": {
@@ -2420,8 +2421,9 @@
     "url": "https://www.gnu.org/software/parted/manual/parted.html"
   },
   "https://www.gnu.org/software/stow": {
-    "alive": 0,
+    "alive": true,
     "source": "content/questions/macos-see-file-usage.md",
+    "status": 200,
     "url": "https://www.gnu.org/software/stow"
   },
   "https://www.goodreads.com/book/show/4119.The_Great_Good_Place": {
