@@ -25,7 +25,7 @@ Why wouldn't the same apply for a group where you're centre stage? It does I'm s
 
 It's a safe bet that it's a reflection of my time in school, doing English class speeches where students, myself included, would zone out while someone had to give their presentation, even if it didn't feel like it to the presenter.
 
-<br />
+<hr />
 
 Now, I should be overly clear here and say that this line of thought should not be taken seriously! It can be a useful tool but if you start to genuinely believe no one cares, that becomes dangerous the further you go.
 
@@ -33,7 +33,7 @@ The reality is that no one would turn up if they weren't interested, or wanting 
 
 In my mind, I put it in the same category as receiving complements where my initial reaction is to downplay them, partly out of embarrassment from receiving attention and partly because it doesn't happen regularly meaning it's not normalised for me. Feeling that way doesn't make it any less accurate or make you any less deserving of it however!
 
-<br />
+<hr />
 
 Back to our fantasy worldview where we falsely believe no one is paying attention.
 
