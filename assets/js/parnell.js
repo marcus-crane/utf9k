@@ -24,7 +24,7 @@ function buildMapLayer() {
     type: "line",
     source: {
       type: "geojson",
-      data: "/streets.geojson"
+      data: "/project-src/parnell/streets.geojson"
     },
     paint: {
       "line-color": [
