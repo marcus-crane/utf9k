@@ -1,23 +1,17 @@
 - list: Actively playing
   games:
-  
-  - title: "Ace Combat 04: Shattered Skies"
-    platform: "Playstation 2"
-    id: 9763
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png"
-    link: "https://www.igdb.com/games/ace-combat-04-shattered-skies"
 
-  - title: "Pokemon Violet"
-    platform: "Nintendo Switch"
-    id: 191930
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png"
-    link: "https://www.igdb.com/games/pokemon-violet"
-  
-  - title: "Red Dead Redemption 2"
+  - title: "Dragon Ball Z: Kakarot"
     platform: "PC"
-    id: 25076
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png"
-    link: "https://www.igdb.com/games/red-dead-redemption-2"
+    id: 114009
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.png"
+    link: "https://www.igdb.com/games/dragon-ball-z-kakarot"
+
+  - title: "Hi-Fi Rush"
+    platform: "PC"
+    id: 233585
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.png"
+    link: "https://www.igdb.com/games/hi-fi-rush"
 
 - list: Stalled but occasionally progress is made
   games:
@@ -70,6 +64,18 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg"
     link: "https://www.igdb.com/games/pokemon-black"
 
+  - title: "Pokemon Violet"
+    platform: "Nintendo Switch"
+    id: 191930
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png"
+    link: "https://www.igdb.com/games/pokemon-violet"
+  
+  - title: "Red Dead Redemption 2"
+    platform: "PC"
+    id: 25076
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png"
+    link: "https://www.igdb.com/games/red-dead-redemption-2"
+
   - title: "Scarlet Nexus"
     platform: "Playstation 5"
     id: 133302
@@ -90,7 +96,14 @@
 
 - list: Completed
   games:
-  
+
+  - title: "Ace Combat 04: Shattered Skies"
+    platform: "Playstation 2"
+    id: 9763
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png"
+    link: "https://www.igdb.com/games/ace-combat-04-shattered-skies"
+    date_finished: 2023-02-03
+
   - title: "Donut County"
     platform: "PC"
     id: 55080
