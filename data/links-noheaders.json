@@ -30,9 +30,9 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": false,
+    "alive": true,
     "source": "content/blog/2017-12-18--wiki-thoughts/index.md",
-    "status": 503,
+    "status": 200,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -1839,9 +1839,8 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -2114,7 +2113,7 @@
   },
   "https://twitter.com/sentreh": {
     "alive": true,
-    "source": "content/reviews/2015-05-12--hiatus/index.md",
+    "source": "layouts/partials/head.html",
     "status": 200,
     "url": "https://twitter.com/sentreh"
   },
@@ -2208,18 +2207,21 @@
     "url": "https://web.archive.org"
   },
   "https://web.archive.org/web/20071031080918/http": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2020-03-08--bookmarking-march-2020/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20071031080918/http"
   },
   "https://web.archive.org/web/20180206231055/https": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2017-02-05--deepfakes/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20180206231055/https"
   },
   "https://web.archive.org/web/20210101170747/https": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+    "status": 200,
     "url": "https://web.archive.org/web/20210101170747/https"
   },
   "https://webpack.js.org": {
