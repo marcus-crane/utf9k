@@ -2,15 +2,6 @@
   goal: 24
   books:
 
-  - title: Like, Comment, Subscribe
-    subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
-    author: Mark Bergen
-    cover: https://covers.openlibrary.org/b/id/12895071-L.jpg
-    link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
-    date_finished: null
-    rating: null
-    progress: 25
-
   - title: Wrong Way
     subtitle: How Privatisation & Economic Reform Backfired
     author: Damien Cahill and Phillip Toner
@@ -19,8 +10,16 @@
     date_finished: null
     rating: null
     progress: 5
-  
-
+    
+  - title: Like, Comment, Subscribe
+    subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
+    author: Mark Bergen
+    cover: https://covers.openlibrary.org/b/id/12895071-L.jpg
+    link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
+    date_finished: 2023-02-07
+    rating: 5
+    progress: 100
+ 
 - list: 2022
   goal: 12
   books:
