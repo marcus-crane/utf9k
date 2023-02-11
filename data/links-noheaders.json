@@ -1839,8 +1839,9 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "source": "content/blog/2022-02-12--plex-tidal-together/index.md",
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -2113,7 +2114,7 @@
   },
   "https://twitter.com/sentreh": {
     "alive": true,
-    "source": "layouts/partials/head.html",
+    "source": "content/reviews/2015-05-12--hiatus/index.md",
     "status": 200,
     "url": "https://twitter.com/sentreh"
   },
@@ -2537,9 +2538,8 @@
     "url": "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire"
   },
   "https://www.moonestates.com": {
-    "alive": true,
+    "alive": 0,
     "source": "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md",
-    "status": 200,
     "url": "https://www.moonestates.com"
   },
   "https://www.nasa.gov": {
