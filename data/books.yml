@@ -2,11 +2,20 @@
   goal: 24
   books:
 
+  - title: Seeing Like a State
+    subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+    author: James C. Scott
+    cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
+    link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+    date_finished: null
+    rating: null
+    progress: 11
+
   - title: Wrong Way
     subtitle: How Privatisation & Economic Reform Backfired
     author: Damien Cahill and Phillip Toner
     cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
-    link: https://openlibrary.org/books/OL40280589M/Wrong_Way_How_Privatisation_Economic_Reform_Backfired
+    link: https://openlibrary.org/works/OL29300070W/Wrong_Way
     date_finished: null
     rating: null
     progress: 5
@@ -37,7 +46,7 @@
     subtitle: null
     author: Andrew S. Grove
     cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
-    link: https://openlibrary.org/works/OL2355834W
+    link: https://openlibrary.org/works/OL2355834W/High_Output_Management
     date_finished: 2022-10-23
     rating: 4
     progress: 100
