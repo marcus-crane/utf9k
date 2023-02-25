@@ -2590,10 +2590,11 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3254,12 +3255,12 @@
     "url": "https://www.covingtonschool.org/ces/4740-About.html"
   },
   "https://www.cushingcitizen.com/news/oil-turns-red": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/questions/finance-oil-futures-negative.md",
       "content/questions/finance-oil-futures-negative.md"
     ],
-    "status": 200,
+    "status": 500,
     "url": "https://www.cushingcitizen.com/news/oil-turns-red"
   },
   "https://www.cyrusimap.org": {
