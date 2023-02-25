@@ -5,5 +5,11 @@
     ":assignee(marcus-crane)",
     "group:allNonMajor"
   ],
-  "prHourlyLimit": 10
+  "prHourlyLimit": 10,
+  "schedule": [
+    "every weekend"
+  ],
+  "npm": {
+    "stabilityDays": 3
+  }
 }
