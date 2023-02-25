@@ -9,7 +9,7 @@ from common import CUR_DIR
 DATA_FILE = "data/links.json"
 DATA_FILE_NO_HEADERS = "data/links-noheaders.json"
 STATIC_SITE = f"{CUR_DIR}/../content"
-URL_RE = r"((?<=[^a-zA-Z0-9])(?:https?\:\/\/|[a-zA-Z0-9]{1,}\.{1}|\b)(?:\w{1,}\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm){1}(?:\/[a-zA-Z0-9-_.]{1,})*)"
+URL_RE = r"((?<=[^a-zA-Z0-9])(?:https?\:\/\/|[a-zA-Z0-9]{1,}\.{1}|\b)(?:\w{1,}\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm|nz|ai){1}(?:\/[a-zA-Z0-9-_.]{1,})*)"
 include = set(['assets', 'content', 'layouts'])
 
 LINKS = {}
@@ -25,21 +25,25 @@ for folder in include:
                     data = file.read()
             except UnicodeDecodeError as Exception:
                 print(f"Skipping {full_path} which is probably a binary file like an image or PDF")
+                continue
             matches = re.finditer(URL_RE, data, re.MULTILINE)
             for num, match in enumerate(matches, start=1):
                 url = match.group()
                 if url in LINKS.keys():
-                    # don't scan duplicates
+                    LINKS[url]['sources'].append(full_path)
+                    LINKS[url]['sources'].sort()
+                    LINKS_NO_HEADERS[url]['sources'].append(full_path)
+                    LINKS_NO_HEADERS[url]['sources'].sort()
                     continue
                 if 'http' not in url or 'utf9k' in url:
                     # don't scan my own subdomains plus check that something seems URLish
                     continue
                 results = {
-                    'source': full_path,
+                    'sources': [full_path],
                     'url': url
                 }
                 results_no_headers = {
-                    'source': full_path,
+                    'sources': [full_path],
                     'url': url
                 }
                 try:
