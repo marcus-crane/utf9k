@@ -1563,11 +1563,10 @@
     "url": "https://fly.io"
   },
   "https://fly.io/blog": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/thanks/index.md"
     ],
-    "status": 200,
     "url": "https://fly.io/blog"
   },
   "https://freedesktop.org/wiki/Software/xdg-user-dirs": {
@@ -3255,12 +3254,12 @@
     "url": "https://www.covingtonschool.org/ces/4740-About.html"
   },
   "https://www.cushingcitizen.com/news/oil-turns-red": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/questions/finance-oil-futures-negative.md",
       "content/questions/finance-oil-futures-negative.md"
     ],
-    "status": 500,
+    "status": 200,
     "url": "https://www.cushingcitizen.com/news/oil-turns-red"
   },
   "https://www.cyrusimap.org": {
@@ -3563,19 +3562,18 @@
     "url": "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire"
   },
   "https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
     ],
-    "status": 403,
+    "status": 200,
     "url": "https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778"
   },
   "https://www.moonestates.com": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md"
     ],
-    "status": 200,
     "url": "https://www.moonestates.com"
   },
   "https://www.nasa.gov": {
