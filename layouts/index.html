@@ -29,6 +29,7 @@
               {{ $image := resources.GetRemote .cover }}
               <li style="display: inline-block;">
                 <img alttitle="OpenLibrary" altsrc="{{ .link }}" alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
+                <p>{{ .progress }}% read</p>
               </li>
             {{ end }}
           {{ end }}
@@ -91,6 +92,19 @@
         </div>
       </center>
       <hr />
+      <div id="post-stream">
+        <center>
+          <header>
+            <h3>Manga I'm churning through</h3>
+          </header>
+          <ul>
+          {{ range $.Site.Data.manga }}
+            <li style="display: inline-block;">
+              <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+              {{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}
+            </li>
+          {{ end }}
+        </center>
     </div>
   </div>
 </article>
