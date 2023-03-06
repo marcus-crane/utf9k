@@ -101,9 +101,10 @@
           {{ range $.Site.Data.manga }}
             <li style="display: inline-block;">
               <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
-              {{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}
+              <p>{{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}</p>
             </li>
           {{ end }}
+          </ul>
         </center>
       </div>
     </div>

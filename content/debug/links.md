@@ -22,7 +22,7 @@ This page helps me keep track of them and their latest checked status
     <th>Link</th>
     <th>Status</th>
     <th>Alive</th>
-    <th>Source</th>
+    <th>Sources</th>
   </tr>
   {{ range $.Site.Data.links }}
     {{ $bgColour := "lightgreen" }}
@@ -39,7 +39,7 @@ This page helps me keep track of them and their latest checked status
       <td><a href="{{ .url }}">{{ .url }}</a></td>
       <td>{{ .status }}</td>
       <td>{{ .alive }}</td>
-      <td>{{ .source }}</td>
+      <td><ul>{{ range .sources }}<li>{{ . }}</li>{{ end }}</ul></td>
     </tr>
   {{ end }}
 </table>
