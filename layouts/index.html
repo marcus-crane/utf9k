@@ -37,6 +37,21 @@
         </center>
       </div>
       <hr />
+      <div id="post-stream">
+        <center>
+          <header>
+            <h3>Manga I'm actively churning through</h3>
+          </header>
+          <ul>
+          {{ range $.Site.Data.manga }}
+            <li style="display: inline-block;">
+              <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+              <p>{{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}</p>
+            </li>
+          {{ end }}
+          </ul>
+        </center>
+      </div>
     </div>
     <div id="recent-updates">
       <div id="liveplayer">
@@ -92,21 +107,6 @@
         </div>
       </center>
       <hr />
-      <div id="post-stream">
-        <center>
-          <header>
-            <h3>Manga I'm actively churning through</h3>
-          </header>
-          <ul>
-          {{ range $.Site.Data.manga }}
-            <li style="display: inline-block;">
-              <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
-              <p>{{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}</p>
-            </li>
-          {{ end }}
-          </ul>
-        </center>
-      </div>
     </div>
   </div>
 </article>
