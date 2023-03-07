@@ -1,4 +1,4 @@
-name: Audit Links
+name: Manga Sync
 on:
   schedule:
     # Roughly 8am NZT each day
