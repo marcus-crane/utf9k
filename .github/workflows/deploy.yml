@@ -5,7 +5,7 @@ on:
       - '.github/**'
   workflow_dispatch:
   workflow_run:
-    workflows: [Audit Links]
+    workflows: [Audit Links, Manga Sync]
     types:
       - completed
 jobs:
