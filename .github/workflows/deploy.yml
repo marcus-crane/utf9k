@@ -1,6 +1,8 @@
 name: Build and push
 on:
   push:
+    paths-ignore:
+      - '.github/**'
   workflow_dispatch:
   workflow_run:
     workflows: [Audit Links]
