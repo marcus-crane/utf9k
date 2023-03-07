@@ -2,7 +2,10 @@ name: Build and push
 on:
   push:
   workflow_dispatch:
-  workflow_call:
+  workflow_run:
+    workflows: [Audit Links]
+    types:
+      - completed
 jobs:
   build:
     runs-on: ubuntu-20.04
