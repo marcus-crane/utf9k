@@ -19,6 +19,9 @@ const musicVerbPastTense = "🎧 I was recently listening to"
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
 
+const readingVerb = "📚 I'm currently reading"
+const readingVerbPastTense = "📚 I was recently reading"
+
 // Because the eventSource clears itself with each update (we only care about the latest event)
 // a user may hit the side in between updates at which point, there are no events sent to them
 // until the server state changes. This can take a while or maybe even never if nothing
@@ -47,6 +50,13 @@ eventSource.onmessage = function (event) {
   }
 }
 
+function formatMangaTitle(title) {
+  if (title.includes(" - ")) {
+    return `Chapters ${title.replace("-", "through")}`
+  }
+  return `Chapter ${title}`
+}
+
 // Adapted from https://stackoverflow.com/a/69126766
 function formatMsToHumanTimestamp(ms) {
   const d = new Date(Date.UTC(0, 0, 0, 0, 0, 0, ms))
@@ -68,6 +78,13 @@ function renderLivePlayer(data) {
   let showProgression = false
   rotatingBorder.className = "rotating-border-hidden"
   switch (data.category) {
+  case "manga":
+    data.title = formatMangaTitle(data.title)
+    if (data.is_active) {
+      action.innerText = readingVerb
+    } else {
+      action.innerText = readingVerbPastTense
+    }
   case "gaming":
     if (data.is_active) {
       action.innerText = gamingVerb
@@ -175,6 +192,9 @@ function renderHistory(data) {
     if (count === 0) {
       startingFontSize = 0
     }
+    if (item.category === "manga") {
+      item.title = formatMangaTitle(item.title)
+    }
     let emoji = ""
     switch (item.category) {
     case "gaming":
@@ -188,6 +208,9 @@ function renderHistory(data) {
       break
     case "track":
       emoji = "🎧"
+      break
+    case "manga":
+      emoji = "📚"
       break
     default:
       emoji = ""
