@@ -85,6 +85,7 @@ function renderLivePlayer(data) {
     } else {
       action.innerText = readingVerbPastTense
     }
+    break
   case "gaming":
     if (data.is_active) {
       action.innerText = gamingVerb
