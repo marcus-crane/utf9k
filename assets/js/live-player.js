@@ -30,6 +30,7 @@ const readingVerbPastTense = "📚 I was recently reading"
 fetch("https://gunslinger.utf9k.net/api/v3/playing")
   .then(res => res.json())
   .then(data => renderLivePlayer(data))
+  .then(_ => fetchHistory()) // We load history only once the live player is rendered to ensure the playing track is filtered from history
   .catch(err => console.error(`Failed to initialise player state: ${err}`))
 
 const eventSource = new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
@@ -226,5 +227,3 @@ function renderHistory(data) {
   if (count < 6) return // We have no items we want to hide yet
   setTimeout(() => playerHistory.children[playerHistory.children.length - 1].style = "font-size: 0px;", 3000)
 }
-
-fetchHistory()
