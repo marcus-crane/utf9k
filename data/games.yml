@@ -1153,36 +1153,69 @@
 
   - title: "Cave Story"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Phoenix Wright: Ace Attorney: Trials and Tribulations"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Phoenix Wright: Ace Attorney: Justice for All"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Phoenix Wright: Ace Attorney"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Professor Layton and the Diabolical Box"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Professor Layton and the Curious Village"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Kingdom Hearts: Chain of Memories"
     platform: "Game Boy Advance"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Kingdom Hearts II"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Kingdom Hearts 358/2 Days"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Kingdom Hearts"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Hotel Dusk: Room 215"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Tokobot"
     platform: "Playstation Portable"
@@ -1192,42 +1225,81 @@
   
   - title: "Pursuit Force: Extreme Justice"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Pursuit Force"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Daxter"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Dead Rising: Case Zero"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Prey"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Lost: Via Domus"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Halo 3: ODST"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Halo 3"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Halo: Combat Evolved"
     platform: "Xbox"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Halo 2"
     platform: "Xbox"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Gears of War"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Fracture"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Fallout 3"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Wanted: Weapons of Fate"
     platform: "Playstation 3"
@@ -1237,106 +1309,208 @@
   
   - title: "Uncharted: Drake's Fortune"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Red Dead Redemption"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Resistance 2"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Resistance: Fall of Man"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Metal Gear Solid 4: Guns of the Patriots"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Metal Gear Solid: Peace Walker"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Metal Gear Solid 3: Snake Eater"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Metal Gear Solid"
     platform: "Playstation"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Jak II"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Jak and Daxter: The Precursor Legacy"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "God of War: Origins Collection"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "God of War Collection"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Call of Duty: Modern Warfare 3"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Call of Duty: Modern Warfare 2"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Call of Duty: Modern Warfare 2"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Call of Duty: Black Ops"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Call of Duty 4: Modern Warfare"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Assassin's Creed II"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Assassin's Creed"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Diamond and Pearl"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Ruby and Sapphire"
     platform: "Game Boy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Red and Blue"
     platform: "Game Boy Color"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Ranger"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Platinum"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Mystery Dungeon: Blue/Red Rescue Team"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon HeartGold and SoulSilver"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Gold and Silver"
     platform: "Game Boy Color"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon FireRed and LeafGreen"
     platform: "Gameboy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Pokémon Emerald"
     platform: "Gameboy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Legend of Zelda: The Wind Waker"
     platform: "Nintendo GameCube"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Legend of Zelda: The Minish Cap"
     platform: "Gameboy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Legend of Zelda: Phantom Hourglass"
     platform: "Nintendo DS"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Legend of Zelda: Four Swords"
     platform: "Gameboy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Legend of Zelda: A Link to the Past"
     platform: "Gameboy Advance"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Zoids: Legacy"
     platform: "Gameboy Advance"
@@ -1346,142 +1520,274 @@
 
   - title: "Borderlands"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Battlefield: Bad Company 2"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "To the Moon"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Tiny and Big: Grandpa's Leftovers"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "The Tiny Bang Story"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Thirty Flights of Loving"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Star Wars: Battlefront II"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Star Wars: Battlefront II"
     platform: "Playstation 2"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Saints Row: The Third"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Saints Row 2"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Puzzle Agent 2"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Puzzle Agent"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Prototype"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Prototype"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Portal 2"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Nikopol: Secrets of the Immortals"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Mirror's Edge"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Medal of Honor: Airborne"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Max Payne 3"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Max Payne 2: The Fall of Max Payne"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Max Payne"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Max Payne"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Mass Effect 3"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Mass Effect"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Mass Effect"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Just Cause 2"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Half-Life 2: Episode Two"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Half-Life 2: Episode One"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Half-Life 2"
     platform: "Xbox 360"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Dinner Date"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Broken Sword II: The Smoking Mirror"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Brink"
     platform: "Playstation 3"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Brink"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet: Deadlocked"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet & Clank: Up Your Arsenal"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet & Clank: Size Matters"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet & Clank: Going Commando"
     platform: "Playstation 2"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet & Clank Future: Tools of Destruction"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Ratchet & Clank Future: Quest for Booty"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Ratchet & Clank Future: A Crack in Time"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Gitaroo Man Lives!"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Batman: Arkham Asylum"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Red Faction: Guerrilla"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Bastion"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Kane & Lynch: Dead Men"
     platform: "Xbox 360"
@@ -1492,12 +1798,21 @@
   - title: "Grand Theft Auto IV"
     platform: "PC"
     replay: true
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Grand Theft Auto IV"
     platform: "Playstation 3"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Grand Theft Auto: Vice City Stories"
     platform: "Playstation Portable"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Sands of Destruction"
     platform: "Nintendo DS"
@@ -1507,15 +1822,30 @@
 
   - title: "Red Faction: Guerrilla"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Dear Esther"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
 
   - title: "Dead Space 2"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "Dead Space"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
   
   - title: "The Graveyard"
     platform: "PC"
+    id: 0
+    cover: ""
+    link: ""
