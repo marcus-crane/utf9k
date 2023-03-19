@@ -229,6 +229,12 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tr2.jpg"
     link: "https://www.igdb.com/games/final-fantasy-xv"
 
+  - title: "Spec Ops: The Line"
+    platform: "PC"
+    id: 1377
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2acb.png"
+    link: "https://www.igdb.com/games/spec-ops-the-line"
+
   - title: "Destiny 2"
     platform: "Playstation 4"
     id: 25657
@@ -563,6 +569,13 @@
 
   - title: "Danganronpa: Trigger Happy Havoc"
     platform: "Playstation Vita"
+    replay: true
+    id: 7842
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg"
+    link: "https://www.igdb.com/games/danganronpa-trigger-happy-havoc"
+  
+  - title: "Danganronpa: Trigger Happy Havoc"
+    platform: "Playstation Portable"
     id: 7842
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg"
     link: "https://www.igdb.com/games/danganronpa-trigger-happy-havoc"
@@ -584,6 +597,8 @@
     id: 11654
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyw.jpg"
     link: "https://www.igdb.com/games/pt"
+
+  # Episode Duscae (not listed on IGDB)
 
   - title: "Uncharted 3: Drake's Deception"
     platform: "Playstation 4"
@@ -625,6 +640,7 @@
   - title: "Wanted: Weapons of Fate"
     platform: "Playstation 3"
     id: 7240
+    replay: true
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg"
     link: "https://www.igdb.com/games/wanted-weapons-of-fate"
 
@@ -666,6 +682,7 @@
 
   - title: "Borderlands"
     platform: "PC"
+    replay: true
     id: 498
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tx.jpg"
     link: "https://www.igdb.com/games/borderlands"
@@ -678,6 +695,7 @@
 
   - title: "Battlefield: Bad Company 2"
     platform: "PC"
+    replay: true
     id: 352
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xbi.jpg"
     link: "https://www.igdb.com/games/battlefield-bad-company-2"
@@ -713,13 +731,13 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3hj1.jpg"
     link: "https://www.igdb.com/games/killer-is-dead"
 
-  - title: "Kane and Lynch: Dead Men"
+  - title: "Kane & Lynch: Dead Men"
     platform: "PC"
     id: 7032
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg"
     link: "https://www.igdb.com/games/kane-lynch-dead-men"
 
-  - title: "Kane and Lynch: Dog Days"
+  - title: "Kane & Lynch 2: Dog Days"
     platform: "PC"
     id: 488
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2crk.jpg"
@@ -736,6 +754,8 @@
     id: 6614
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg"
     link: "https://www.igdb.com/games/zero-escape-virtue-s-last-reward"
+
+  # FFXIV: A Realm Reborn (base game)
 
   - title: "Jumping Flash!"
     platform: "Playstation"
@@ -804,6 +824,8 @@
     id: 7003
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbe.jpg"
     link: "https://www.igdb.com/games/grand-theft-auto-episodes-from-liberty-city"
+
+  # Garry's Mod (Huh? It's a sandbox... Maybe imported from Steam?)
 
   - title: "Fallout: New Vegas"
     platform: "PC"
@@ -942,6 +964,7 @@
 
   - title: "Mafia II"
     platform: "Playstation 3"
+    replay: true
     id: 40
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n13.jpg"
     link: "https://www.igdb.com/games/mafia-ii"
@@ -1062,8 +1085,8 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2on1.jpg"
     link: "https://www.igdb.com/games/crysis"
 
-  - title: "Ghost Trick"
-    platform: "Phantom Detective"
+  - title: "Ghost Trick: Phantom Detective"
+    platform: "Nintendo DS"
     id: 1348
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yj9.jpg"
     link: "https://www.igdb.com/games/ghost-trick-phantom-detective"
@@ -1128,20 +1151,371 @@
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpf.jpg"
     link: "https://www.igdb.com/games/far-cry"
 
+  - title: "Cave Story"
+    platform: "PC"
+  
+  - title: "Phoenix Wright: Ace Attorney: Trials and Tribulations"
+    platform: "Nintendo DS"
+  
+  - title: "Phoenix Wright: Ace Attorney: Justice for All"
+    platform: "Nintendo DS"
+
+  - title: "Phoenix Wright: Ace Attorney"
+    platform: "Nintendo DS"
+  
+  - title: "Professor Layton and the Diabolical Box"
+    platform: "Nintendo DS"
+  
+  - title: "Professor Layton and the Curious Village"
+    platform: "Nintendo DS"
+  
+  - title: "Kingdom Hearts: Chain of Memories"
+    platform: "Game Boy Advance"
+  
+  - title: "Kingdom Hearts II"
+    platform: "Playstation 2"
+
+  - title: "Kingdom Hearts 358/2 Days"
+    platform: "Nintendo DS"
+  
+  - title: "Kingdom Hearts"
+    platform: "Playstation 2"
+  
+  - title: "Hotel Dusk: Room 215"
+    platform: "Nintendo DS"
+  
+  - title: "Tokobot"
+    platform: "Playstation Portable"
+    id: 19692
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y1u.jpg"
+    link: "https://www.igdb.com/games/tokobot"
+  
+  - title: "Pursuit Force: Extreme Justice"
+    platform: "Playstation Portable"
+  
+  - title: "Pursuit Force"
+    platform: "Playstation Portable"
+
+  - title: "Daxter"
+    platform: "Playstation Portable"
+  
+  - title: "Dead Rising: Case Zero"
+    platform: "Xbox 360"
+  
+  - title: "Prey"
+    platform: "Xbox 360"
+  
+  - title: "Lost: Via Domus"
+    platform: "Xbox 360"
+  
+  - title: "Halo 3: ODST"
+    platform: "Xbox 360"
+  
+  - title: "Halo 3"
+    platform: "Xbox 360"
+  
+  - title: "Halo: Combat Evolved"
+    platform: "Xbox"
+  
+  - title: "Halo 2"
+    platform: "Xbox"
+  
+  - title: "Gears of War"
+    platform: "PC"
+  
+  - title: "Fracture"
+    platform: "Xbox 360"
+  
+  - title: "Fallout 3"
+    platform: "Xbox 360"
+  
+  - title: "Wanted: Weapons of Fate"
+    platform: "Playstation 3"
+    id: 7240
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg"
+    link: "https://www.igdb.com/games/wanted-weapons-of-fate"
+  
+  - title: "Uncharted: Drake's Fortune"
+    platform: "Playstation 3"
+  
+  - title: "Red Dead Redemption"
+    platform: "Playstation 3"
+  
+  - title: "Resistance 2"
+    platform: "Playstation 3"
+  
+  - title: "Resistance: Fall of Man"
+    platform: "Playstation 3"
+
+  - title: "Metal Gear Solid 4: Guns of the Patriots"
+    platform: "Playstation 3"
+
+  - title: "Metal Gear Solid: Peace Walker"
+    platform: "Playstation Portable"
+
+  - title: "Metal Gear Solid 3: Snake Eater"
+    platform: "Playstation 2"
+
+  - title: "Metal Gear Solid"
+    platform: "Playstation"
+
+  - title: "Jak II"
+    platform: "Playstation 3"
+  
+  - title: "Jak and Daxter: The Precursor Legacy"
+    platform: "Playstation 3"
+
+  - title: "God of War: Origins Collection"
+    platform: "Playstation 3"
+
+  - title: "God of War Collection"
+    platform: "Playstation 3"
+
+  - title: "Call of Duty: Modern Warfare 3"
+    platform: "PC"
+
+  - title: "Call of Duty: Modern Warfare 2"
+    platform: "PC"
+    replay: true
+
+  - title: "Call of Duty: Modern Warfare 2"
+    platform: "Playstation 3"
+
+  - title: "Call of Duty: Black Ops"
+    platform: "PC"
+
+  - title: "Call of Duty 4: Modern Warfare"
+    platform: "PC"
+
+  - title: "Assassin's Creed II"
+    platform: "Playstation 3"
+
+  - title: "Assassin's Creed"
+    platform: "Xbox 360"
+
+  - title: "Pokémon Diamond and Pearl"
+    platform: "Nintendo DS"
+
+  - title: "Pokémon Ruby and Sapphire"
+    platform: "Game Boy Advance"
+
+  - title: "Pokémon Red and Blue"
+    platform: "Game Boy Color"
+
+  - title: "Pokémon Ranger"
+    platform: "Nintendo DS"
+
+  - title: "Pokémon Platinum"
+    platform: "Nintendo DS"
+
+  - title: "Pokémon Mystery Dungeon: Blue/Red Rescue Team"
+    platform: "Nintendo DS"
+
+  - title: "Pokémon HeartGold and SoulSilver"
+    platform: "Nintendo DS"
+
+  - title: "Pokémon Gold and Silver"
+    platform: "Game Boy Color"
+
+  - title: "Pokémon FireRed and LeafGreen"
+    platform: "Gameboy Advance"
+
+  - title: "Pokémon Emerald"
+    platform: "Gameboy Advance"
+
+  - title: "The Legend of Zelda: The Wind Waker"
+    platform: "Nintendo GameCube"
+
+  - title: "The Legend of Zelda: The Minish Cap"
+    platform: "Gameboy Advance"
+
+  - title: "The Legend of Zelda: Phantom Hourglass"
+    platform: "Nintendo DS"
+
+  - title: "The Legend of Zelda: Four Swords"
+    platform: "Gameboy Advance"
+
+  - title: "The Legend of Zelda: A Link to the Past"
+    platform: "Gameboy Advance"
+
   - title: "Zoids: Legacy"
     platform: "Gameboy Advance"
     id: 49203
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/fe7db3cu88oxajxapiem.jpg"
     link: "https://www.igdb.com/games/zoids-legacy"
 
-  - title: "Tokobot"
+  - title: "Borderlands"
+    platform: "Playstation 3"
+
+  - title: "Battlefield: Bad Company 2"
+    platform: "Playstation 3"
+
+  - title: "To the Moon"
+    platform: "PC"
+
+  - title: "Tiny and Big: Grandpa's Leftovers"
+    platform: "PC"
+
+  - title: "The Tiny Bang Story"
+    platform: "PC"
+
+  - title: "Thirty Flights of Loving"
+    platform: "PC"
+
+  - title: "Star Wars: Battlefront II"
+    platform: "PC"
+    replay: true
+
+  - title: "Star Wars: Battlefront II"
+    platform: "Playstation 2"
+    replay: true
+
+  - title: "Saints Row: The Third"
+    platform: "PC"
+
+  - title: "Saints Row 2"
+    platform: "PC"
+
+  - title: "Puzzle Agent 2"
+    platform: "PC"
+
+  - title: "Puzzle Agent"
+    platform: "PC"
+
+  - title: "Prototype"
+    platform: "PC"
+    replay: true
+
+  - title: "Prototype"
+    platform: "Xbox 360"
+
+  - title: "Portal 2"
+    platform: "PC"
+
+  - title: "Nikopol: Secrets of the Immortals"
+    platform: "PC"
+
+  - title: "Mirror's Edge"
+    platform: "PC"
+
+  - title: "Medal of Honor: Airborne"
+    platform: "PC"
+
+  - title: "Max Payne 3"
+    platform: "PC"
+  
+  - title: "Max Payne 2: The Fall of Max Payne"
+    platform: "PC"
+
+  - title: "Max Payne"
+    platform: "PC"
+    replay: true
+
+  - title: "Max Payne"
+    platform: "PC"
+
+  - title: "Mass Effect 3"
+    platform: "PC"
+  
+  - title: "Mass Effect"
+    platform: "PC"
+    replay: true
+
+  - title: "Mass Effect"
+    platform: "Xbox 360"
+
+  - title: "Just Cause 2"
+    platform: "PC"
+
+  - title: "Half-Life 2: Episode Two"
+    platform: "Xbox 360"
+  
+  - title: "Half-Life 2: Episode One"
+    platform: "Xbox 360"
+
+  - title: "Half-Life 2"
+    platform: "Xbox 360"
+
+  - title: "Dinner Date"
+    platform: "PC"
+
+  - title: "Broken Sword II: The Smoking Mirror"
+    platform: "PC"
+
+  - title: "Brink"
+    platform: "Playstation 3"
+    replay: true
+
+  - title: "Brink"
+    platform: "PC"
+
+  - title: "Ratchet: Deadlocked"
+    platform: "Playstation 2"
+
+  - title: "Ratchet & Clank: Up Your Arsenal"
+    platform: "Playstation 2"
+
+  - title: "Ratchet & Clank: Size Matters"
     platform: "Playstation Portable"
-    id: 19692
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y1u.jpg"
-    link: "https://www.igdb.com/games/tokobot"
+
+  - title: "Ratchet & Clank: Going Commando"
+    platform: "Playstation 2"
+
+  - title: "Ratchet & Clank Future: Tools of Destruction"
+    platform: "Playstation 3"
+  
+  - title: "Ratchet & Clank Future: Quest for Booty"
+    platform: "Playstation 3"
+
+  - title: "Ratchet & Clank Future: A Crack in Time"
+    platform: "Playstation 3"
+  
+  - title: "Gitaroo Man Lives!"
+    platform: "Playstation Portable"
+  
+  - title: "Batman: Arkham Asylum"
+    platform: "PC"
+  
+  - title: "Red Faction: Guerrilla"
+    platform: "PC"
+    replay: true
+  
+  - title: "Bastion"
+    platform: "PC"
+
+  - title: "Kane & Lynch: Dead Men"
+    platform: "Xbox 360"
+    id: 7032
+    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg"
+    link: "https://www.igdb.com/games/kane-lynch-dead-men"
+  
+  - title: "Grand Theft Auto IV"
+    platform: "PC"
+    replay: true
+  
+  - title: "Grand Theft Auto IV"
+    platform: "Playstation 3"
+  
+  - title: "Grand Theft Auto: Vice City Stories"
+    platform: "Playstation Portable"
 
   - title: "Sands of Destruction"
     platform: "Nintendo DS"
     id: 24331
     cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg" 
     link: "https://www.igdb.com/games/sands-of-destruction"
+
+  - title: "Red Faction: Guerrilla"
+    platform: "PC"
+
+  - title: "Dear Esther"
+    platform: "PC"
+
+  - title: "Dead Space 2"
+    platform: "PC"
+  
+  - title: "Dead Space"
+    platform: "PC"
+  
+  - title: "The Graveyard"
+    platform: "PC"
