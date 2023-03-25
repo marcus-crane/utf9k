@@ -1,1851 +1,1546 @@
-- list: Actively playing
-  games:
-
-  - title: "Dragon Ball Z: Kakarot"
-    platform: "PC"
+- games:
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.png
     id: 114009
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.png"
-    link: "https://www.igdb.com/games/dragon-ball-z-kakarot"
-
-  - title: "Hi-Fi Rush"
-    platform: "PC"
+    link: https://www.igdb.com/games/dragon-ball-z-kakarot
+    platform: PC
+    title: 'Dragon Ball Z: Kakarot'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.png
     id: 233585
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.png"
-    link: "https://www.igdb.com/games/hi-fi-rush"
-
-- list: Stalled but occasionally progress is made
-  games:
-
-  - title: "Control"
-    platform: "Playstation 5"
+    link: https://www.igdb.com/games/hi-fi-rush
+    platform: PC
+    title: Hi-Fi Rush
+  list: Actively playing
+- games:
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg
     id: 103329
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg"
-    link: "https://www.igdb.com/games/control"
-
-  - title: "Digimon Story: Cyber Sleuth"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/control
+    platform: Playstation 5
+    title: Control
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg
     id: 15705
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg"
-    link: "https://www.igdb.com/games/digimon-story-cyber-sleuth"
-
-  - title: "Final Fantasy XIV: A Realm Reborn"
-    platform: "PC"
+    link: https://www.igdb.com/games/digimon-story-cyber-sleuth
+    platform: Nintendo Switch
+    title: 'Digimon Story: Cyber Sleuth'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg
     id: 386
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30fd.jpg"
-    link: "https://www.igdb.com/games/final-fantasy-xiv-online--1"
-
-  - title: "Grand Theft Auto V"
-    platform: "PC"
+    link: https://www.igdb.com/games/final-fantasy-xiv-online--1
+    platform: PC
+    title: 'Final Fantasy XIV: A Realm Reborn'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png
     id: 1020
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png"
-    link: "https://www.igdb.com/games/grand-theft-auto-v"
-
-  - title: "Grandia"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/grand-theft-auto-v
+    platform: PC
+    title: Grand Theft Auto V
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg
     id: 4127
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg"
-    link: "https://www.igdb.com/games/grandia"
-
-  - title: "Katamari Damacy REROLL"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/grandia
+    platform: Nintendo Switch
+    title: Grandia
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png
     id: 109458
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png"
-    link: "https://www.igdb.com/games/katamari-damacy-reroll"
-
-  - title: "NieR Replicant ver.1.22474487139..."
-    platform: "Playstation 5"
+    link: https://www.igdb.com/games/katamari-damacy-reroll
+    platform: Nintendo Switch
+    title: Katamari Damacy REROLL
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg
     id: 131999
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg"
-    link: "https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot"
-  
-  - title: "Pokémon Black"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot
+    platform: Playstation 5
+    title: NieR Replicant ver.1.22474487139...
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg
     id: 1521
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg"
-    link: "https://www.igdb.com/games/pokemon-black"
-
-  - title: "Pokemon Violet"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/pokemon-black
+    platform: Nintendo DS
+    title: "Pok\xE9mon Black"
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png
     id: 191930
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png"
-    link: "https://www.igdb.com/games/pokemon-violet"
-  
-  - title: "Red Dead Redemption 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/pokemon-violet
+    platform: Nintendo Switch
+    title: Pokemon Violet
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png
     id: 25076
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png"
-    link: "https://www.igdb.com/games/red-dead-redemption-2"
-
-  - title: "Scarlet Nexus"
-    platform: "Playstation 5"
+    link: https://www.igdb.com/games/red-dead-redemption-2
+    platform: PC
+    title: Red Dead Redemption 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg
     id: 133302
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3b6l.jpg"
-    link: "https://www.igdb.com/games/scarlet-nexus"
-
-  - title: "Tales of Arise"
-    platform: "Playstation 5"
+    link: https://www.igdb.com/games/scarlet-nexus
+    platform: Playstation 5
+    title: Scarlet Nexus
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png
     id: 119270
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png"
-    link: "https://www.igdb.com/games/tales-of-arise"
-
-  - title: "The Legend of Zelda: Breath of the Wild"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/tales-of-arise
+    platform: Playstation 5
+    title: Tales of Arise
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
     id: 7346
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg"
-    link: "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild"
-
-- list: Completed
-  games:
-
-  - title: "Ace Combat 04: Shattered Skies"
-    platform: "Playstation 2"
-    id: 9763
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png"
-    link: "https://www.igdb.com/games/ace-combat-04-shattered-skies"
+    link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
+    platform: Nintendo Switch
+    title: 'The Legend of Zelda: Breath of the Wild'
+  list: Stalled but occasionally progress is made
+- games:
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png
     date_finished: 2023-02-03
-
-  - title: "Donut County"
-    platform: "PC"
+    id: 9763
+    link: https://www.igdb.com/games/ace-combat-04-shattered-skies
+    platform: Playstation 2
+    title: 'Ace Combat 04: Shattered Skies'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qv8.png
+    date_finished: 2022-11-03
     id: 55080
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qv8.png"
-    link: "https://www.igdb.com/games/donut-county"
+    link: https://www.igdb.com/games/donut-county
+    platform: PC
+    title: Donut County
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3uyi.png
     date_finished: 2022-11-03
-  
-  - title: "Alba: A Wildlife Adventure"
-    platform: "PC"
     id: 135919
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3uyi.png"
-    link: "https://www.igdb.com/games/alba-a-wildlife-adventure"
-    date_finished: 2022-11-03
-  
-  - title: "Cyberpunk 2077"
-    platform: "PC"
-    id: 1877
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4hk8.png"
-    link: "https://www.igdb.com/games/cyberpunk-2077"
+    link: https://www.igdb.com/games/alba-a-wildlife-adventure
+    platform: PC
+    title: 'Alba: A Wildlife Adventure'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co4hk8.png
     date_finished: 2022-11-02
-
-  - title: "Phoenix Wright: Ace Attorney - Spirit of Justice"
-    platform: "Nintendo 3DS"
-    id: 12077
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice"
+    id: 1877
+    link: https://www.igdb.com/games/cyberpunk-2077
+    platform: PC
+    title: Cyberpunk 2077
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9w.jpg
     date_finished: 2022-08-14
-
-  - title: "Call of Duty: Modern Warfare (2019)"
-    platform: "PC"
-    id: 119177
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rsg.png"
-    link: "https://www.igdb.com/games/call-of-duty-modern-warfare"
+    id: 12077
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-spirit-of-justice
+    platform: Nintendo 3DS
+    title: 'Phoenix Wright: Ace Attorney - Spirit of Justice'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rsg.png
     date_finished: 2022-06-13
-
-  - title: "Phoenix Wright: Ace Attorney - Dual Destinies"
-    platform: "Nintendo 3DS"
-    id: 1432
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies"
+    id: 119177
+    link: https://www.igdb.com/games/call-of-duty-modern-warfare
+    platform: PC
+    title: 'Call of Duty: Modern Warfare (2019)'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co27xe.jpg
     date_finished: 2021-12-10
-  
-  - title: "Apollo Justice: Ace Attorney"
-    platform: "Nintendo 3DS"
-    id: 1429
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pke.jpg"
-    link: "https://www.igdb.com/games/apollo-justice-ace-attorney"
+    id: 1432
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-dual-destinies
+    platform: Nintendo 3DS
+    title: 'Phoenix Wright: Ace Attorney - Dual Destinies'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1pke.jpg
     date_finished: 2021-08-15
-
-  - title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
-    platform: "Nintendo 3DS"
-    id: 1428
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations"
-    replay: true
+    id: 1429
+    link: https://www.igdb.com/games/apollo-justice-ace-attorney
+    platform: Nintendo 3DS
+    title: 'Apollo Justice: Ace Attorney'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2fff.jpg
     date_finished: 2021-07-31
-
-  - title: "Ratchet & Clank: Rift Apart"
-    platform: "Playstation 5"
-    id: 134582
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg"
-    link: "https://www.igdb.com/games/ratchet-and-clank-rift-apart"
+    id: 1428
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations
+    platform: Nintendo 3DS
+    replay: true
+    title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg
     date_finished: 2021-05-18
-
-  - title: "Super Mario Odyssey"
-    platform: "Nintendo Switch"
-    id: 26758
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxf.jpg"
-    link: "https://www.igdb.com/games/super-mario-odyssey"
+    id: 134582
+    link: https://www.igdb.com/games/ratchet-and-clank-rift-apart
+    platform: Playstation 5
+    title: 'Ratchet & Clank: Rift Apart'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxf.jpg
     date_finished: 2021-05-12
-
-  - title: "Kingdom Hearts III"
-    platform: "Playstation 4"
-    id: 2933
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tpy.jpg"
-    link: "https://www.igdb.com/games/kingdom-hearts-iii"
+    id: 26758
+    link: https://www.igdb.com/games/super-mario-odyssey
+    platform: Nintendo Switch
+    title: Super Mario Odyssey
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tpy.jpg
     date_finished: 2021-02-18
-
-  - title: "Kingdom Hearts 0.2: Birth by Sleep - A Fragmentary Passage"
-    platform: "Playstation 4"
-    id: 26676
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xdk.jpg"
-    link: "https://www.igdb.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage"
+    id: 2933
+    link: https://www.igdb.com/games/kingdom-hearts-iii
+    platform: Playstation 4
+    title: Kingdom Hearts III
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xdk.jpg
     date_finished: 2020-12-21
-
-  - title: "Half-Life: Alyx"
-    platform: "PC"
-    id: 126098
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tq3.jpg"
-    link: "https://www.igdb.com/games/half-life-alyx"
+    id: 26676
+    link: https://www.igdb.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage
+    platform: Playstation 4
+    title: 'Kingdom Hearts 0.2: Birth by Sleep - A Fragmentary Passage'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tq3.jpg
     date_finished: 2020-03-29
-
-  - title: "The Witcher"
-    platform: "PC"
-    id: 80
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xrx.jpg"
-    link: "https://www.igdb.com/games/the-witcher"
+    id: 126098
+    link: https://www.igdb.com/games/half-life-alyx
+    platform: PC
+    title: 'Half-Life: Alyx'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xrx.jpg
     date_finished: 2020-01-27
-
-  - title: "Pokémon Sword"
-    platform: "Nintendo Switch"
-    id: 37382
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk2.jpg"
-    link: "https://www.igdb.com/games/pokemon-sword"
+    id: 80
+    link: https://www.igdb.com/games/the-witcher
+    platform: PC
+    title: The Witcher
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk2.jpg
     date_finished: 2020-01-18
-
-  - title: "Death Stranding"
-    platform: "Playstation 4"
-    id: 19564
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co316v.jpg"
-    link: "https://www.igdb.com/games/death-stranding"
+    id: 37382
+    link: https://www.igdb.com/games/pokemon-sword
+    platform: Nintendo Switch
+    title: "Pok\xE9mon Sword"
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co316v.jpg
     date_finished: 2019-11-11
-
-  - title: "Hotline Miami"
-    platform: "PC"
+    id: 19564
+    link: https://www.igdb.com/games/death-stranding
+    platform: Playstation 4
+    title: Death Stranding
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vqp.jpg
     id: 1384
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vqp.jpg"
-    link: "https://www.igdb.com/games/hotline-miami"
-
-  - title: "Final Fantasy XV"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/hotline-miami
+    platform: PC
+    title: Hotline Miami
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tr2.jpg
     id: 359
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tr2.jpg"
-    link: "https://www.igdb.com/games/final-fantasy-xv"
-
-  - title: "Spec Ops: The Line"
-    platform: "PC"
+    link: https://www.igdb.com/games/final-fantasy-xv
+    platform: Playstation 4
+    title: Final Fantasy XV
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2acb.png
     id: 1377
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2acb.png"
-    link: "https://www.igdb.com/games/spec-ops-the-line"
-
-  - title: "Destiny 2"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/spec-ops-the-line
+    platform: PC
+    title: 'Spec Ops: The Line'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1n6x.jpg
     id: 25657
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n6x.jpg"
-    link: "https://www.igdb.com/games/destiny-2"
-
-  - title: "Metal Gear Solid V: Ground Zeroes"
-    platform: "PC"
+    link: https://www.igdb.com/games/destiny-2
+    platform: Playstation 4
+    title: Destiny 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg
+    id: 5328
+    link: https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes
+    platform: PC
     replay: true
+    title: 'Metal Gear Solid V: Ground Zeroes'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg
     id: 5328
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg"
-    link: "https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes"
-
-  - title: "Metal Gear Solid V: Ground Zeroes"
-    platform: "Playstation 4"
-    id: 5328
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg"
-    link: "https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes"
-
-  - title: "HITMAN (2016)"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/metal-gear-solid-v-ground-zeroes
+    platform: Playstation 4
+    title: 'Metal Gear Solid V: Ground Zeroes'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2fgr.jpg
     id: 11157
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fgr.jpg"
-    link: "https://www.igdb.com/games/hitman"
-
-  - title: "Titanfall 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/hitman
+    platform: Playstation 4
+    title: HITMAN (2016)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/fhbeilnghyhhmjqhinqa.jpg
     id: 17447
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/fhbeilnghyhhmjqhinqa.jpg"
-    link: "https://www.igdb.com/games/titanfall-2"
-
-  - title: "Uncharted 4: A Thief's End"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/titanfall-2
+    platform: PC
+    title: Titanfall 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg
     id: 7331
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg"
-    link: "https://www.igdb.com/games/uncharted-4-a-thief-s-end"
-
-  - title: "Borderlands 2"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/uncharted-4-a-thief-s-end
+    platform: Playstation 4
+    title: 'Uncharted 4: A Thief''s End'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20tn.jpg
     id: 1011
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tn.jpg"
-    link: "https://www.igdb.com/games/borderlands-2"
-
-  - title: "Portal"
-    platform: "PC"
+    link: https://www.igdb.com/games/borderlands-2
+    platform: Playstation 3
     replay: true
+    title: Borderlands 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg
     id: 71
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7d.jpg"
-    link: "https://www.igdb.com/games/portal"
-
-  - title: "NieR: Automata"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/portal
+    platform: PC
+    replay: true
+    title: Portal
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2g48.jpg
     id: 11208
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g48.jpg"
-    link: "https://www.igdb.com/games/nier-automata"
-
-  - title: "Iconoclasts"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/nier-automata
+    platform: Playstation 4
+    title: 'NieR: Automata'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2ug9.jpg
     id: 34705
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ug9.jpg"
-    link: "https://www.igdb.com/games/iconoclasts"
-
-  - title: "Phoenix Wright: Ace Attorney: Justice for All"
-    platform: "Nintendo 3DS"
-    replay: true
+    link: https://www.igdb.com/games/iconoclasts
+    platform: Nintendo Switch
+    title: Iconoclasts
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25v7.jpg
     id: 1427
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25v7.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney-justice-for-all"
-
-  - title: "Dragon Ball Xenoverse 2"
-    platform: "Nintendo Switch"
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-justice-for-all
+    platform: Nintendo 3DS
+    replay: true
+    title: 'Phoenix Wright: Ace Attorney: Justice for All'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1u95.jpg
     id: 19449
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u95.jpg"
-    link: "https://www.igdb.com/games/dragon-ball-xenoverse-2"
-
-  - title: "The Last Guardian"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/dragon-ball-xenoverse-2
+    platform: Nintendo Switch
+    title: Dragon Ball Xenoverse 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co271e.jpg
     id: 117
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co271e.jpg"
-    link: "https://www.igdb.com/games/the-last-guardian"
-
-  - title: "God of War (2018)"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/the-last-guardian
+    platform: Playstation 4
+    title: The Last Guardian
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg
     id: 19560
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg"
-    link: "https://www.igdb.com/games/god-of-war--1"
-
-  - title: "Ratchet & Clank (2016)"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/god-of-war--1
+    platform: Playstation 4
+    title: God of War (2018)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co230k.jpg
     id: 11065
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co230k.jpg"
-    link: "https://www.igdb.com/games/ratchet-and-clank"
-
-  - title: "Yakuza 4"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/ratchet-and-clank
+    platform: Playstation 4
+    title: Ratchet & Clank (2016)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1w7p.jpg
     id: 2062
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1w7p.jpg"
-    link: "https://www.igdb.com/games/yakuza-4"
-
-  - title: "Phoenix Wright: Ace Attorney"
-    platform: "Nintendo 3DS"
-    replay: true
+    link: https://www.igdb.com/games/yakuza-4
+    platform: Playstation 3
+    title: Yakuza 4
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1obg.jpg
     id: 1426
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1obg.jpg"
-    link: "https://www.igdb.com/games/phoenix-wright-ace-attorney"
-
-  - title: "Horizon Zero Dawn"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney
+    platform: Nintendo 3DS
+    replay: true
+    title: 'Phoenix Wright: Ace Attorney'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2una.jpg
     id: 11156
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2una.jpg"
-    link: "https://www.igdb.com/games/horizon-zero-dawn"
-
-  - title: "Just Cause 3"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/horizon-zero-dawn
+    platform: Playstation 4
+    title: Horizon Zero Dawn
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co24o5.jpg
     id: 8187
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co24o5.jpg"
-    link: "https://www.igdb.com/games/just-cause-3"
-
-  - title: "Gravity Rush 2"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/just-cause-3
+    platform: Playstation 4
+    title: Just Cause 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2q9u.jpg
     id: 12528
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2q9u.jpg"
-    link: "https://www.igdb.com/games/gravity-rush-2"
-
-  - title: "Kingdom Hearts II"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/gravity-rush-2
+    platform: Playstation 4
+    title: Gravity Rush 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co30t1.jpg
     id: 1221
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30t1.jpg"
-    link: "https://www.igdb.com/games/kingdom-hearts-ii"
-
-  - title: "Assassin's Creed: Brotherhood"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/kingdom-hearts-ii
+    platform: Playstation 3
+    replay: true
+    title: Kingdom Hearts II
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxz.jpg
     id: 113
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxz.jpg"
-    link: "https://www.igdb.com/games/assassin-s-creed-brotherhood"
-
-  - title: "God of War III"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/assassin-s-creed-brotherhood
+    platform: Playstation 3
+    title: 'Assassin''s Creed: Brotherhood'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3koi.jpg
     id: 499
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3koi.jpg"
-    link: "https://www.igdb.com/games/god-of-war-iii"
-
-  - title: "Zero Escape: Zero Time Dilemma"
-    platform: "Playstation Vita"
+    link: https://www.igdb.com/games/god-of-war-iii
+    platform: Playstation 3
+    title: God of War III
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co260k.jpg
     id: 11549
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260k.jpg"
-    link: "https://www.igdb.com/games/zero-escape-zero-time-dilemma"
-
-  - title: "Zero Escape: Virtue's Last Reward"
-    platform: "Playstation Vita"
-    replay: true
+    link: https://www.igdb.com/games/zero-escape-zero-time-dilemma
+    platform: Playstation Vita
+    title: 'Zero Escape: Zero Time Dilemma'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg
     id: 6614
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg"
-    link: "https://www.igdb.com/games/zero-escape-virtue-s-last-reward"
-
-  - title: "999: Nine Hours, Nine Persons, Nine Doors"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/zero-escape-virtue-s-last-reward
+    platform: Playstation Vita
     replay: true
+    title: 'Zero Escape: Virtue''s Last Reward'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1mmv.jpg
     id: 9543
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mmv.jpg"
-    link: "https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors"
-
-  - title: "Wanted: Weapons of Fate"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors
+    platform: Nintendo DS
     replay: true
+    title: '999: Nine Hours, Nine Persons, Nine Doors'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg
     id: 7240
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg"
-    link: "https://www.igdb.com/games/wanted-weapons-of-fate"
-
-  - title: "Yakuza 3"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/wanted-weapons-of-fate
+    platform: Playstation 3
+    replay: true
+    title: 'Wanted: Weapons of Fate'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3rej.jpg
     id: 2061
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3rej.jpg"
-    link: "https://www.igdb.com/games/yakuza-3"
-
-  - title: "Batman: Arkham Asylum"
-    platform: "PC"
+    link: https://www.igdb.com/games/yakuza-3
+    platform: Playstation 3
+    title: Yakuza 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1voj.jpg
     id: 500
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1voj.jpg"
-    link: "https://www.igdb.com/games/batman-arkham-asylum"
-
-  - title: "Tom Clancy's The Division"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/batman-arkham-asylum
+    platform: PC
+    title: 'Batman: Arkham Asylum'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1yvf.jpg
     id: 2114
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yvf.jpg"
-    link: "https://www.igdb.com/games/tom-clancy-s-the-division"
-
-  - title: "Metal Gear Solid 2: Sons of Liberty"
-    platform: "Playstation Vita"
-    replay: true
+    link: https://www.igdb.com/games/tom-clancy-s-the-division
+    platform: Playstation 4
+    title: Tom Clancy's The Division
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co29pl.jpg
     id: 376
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co29pl.jpg"
-    link: "https://www.igdb.com/games/metal-gear-solid-2-sons-of-liberty"
-
-  - title: "The Walking Dead: Season One"
-    platform: "Playstation Vita"
+    link: https://www.igdb.com/games/metal-gear-solid-2-sons-of-liberty
+    platform: Playstation Vita
+    replay: true
+    title: 'Metal Gear Solid 2: Sons of Liberty'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2j1g.jpg
     id: 1871
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2j1g.jpg"
-    link: "https://www.igdb.com/games/the-walking-dead-season-one"
-
-  - title: "Tales from the Borderlands"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/the-walking-dead-season-one
+    platform: Playstation Vita
+    title: 'The Walking Dead: Season One'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20tr.jpg
     id: 6707
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tr.jpg"
-    link: "https://www.igdb.com/games/tales-from-the-borderlands"
-
-  - title: "Back to the Future: The Game"
-    platform: "PC"
+    link: https://www.igdb.com/games/tales-from-the-borderlands
+    platform: Playstation 4
+    title: Tales from the Borderlands
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1t87.jpg
     id: 3232
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1t87.jpg"
-    link: "https://www.igdb.com/games/back-to-the-future-the-game"
-
-  - title: "Destiny"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/back-to-the-future-the-game
+    platform: PC
+    title: 'Back to the Future: The Game'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rco.jpg
     id: 21396
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rco.jpg"
-    link: "https://www.igdb.com/games/destiny"
-
-  - title: "Until Dawn"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/destiny
+    platform: Playstation 4
+    title: Destiny
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg
     id: 7609
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg"
-    link: "https://www.igdb.com/games/until-dawn"
-
-  - title: "Shadow of the Colossus"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/until-dawn
+    platform: Playstation 4
+    title: Until Dawn
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ozz.jpg
     id: 2207
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ozz.jpg"
-    link: "https://www.igdb.com/games/shadow-of-the-colossus"
-
-  - title: "Halo: Combat Evolved - Anniversary"
-    platform: "Xbox One"
+    link: https://www.igdb.com/games/shadow-of-the-colossus
+    platform: Playstation 3
     replay: true
+    title: Shadow of the Colossus
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhb.jpg
     id: 2640
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhb.jpg"
-    link: "https://www.igdb.com/games/halo-combat-evolved-anniversary"
-
-  - title: "Gravity Rush: Remastered"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/halo-combat-evolved-anniversary
+    platform: Xbox One
     replay: true
+    title: 'Halo: Combat Evolved - Anniversary'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1hus.jpg
     id: 12529
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1hus.jpg"
-    link: "https://www.igdb.com/games/gravity-rush-remastered"
-
-  - title: "Kingdom Hearts HD 1.5 Remix"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/gravity-rush-remastered
+    platform: Playstation 4
     replay: true
+    title: 'Gravity Rush: Remastered'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co319i.jpg
     id: 7356
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co319i.jpg"
-    link: "https://www.igdb.com/games/kingdom-hearts-hd-1-dot-5-remix"
-
-  - title: "Kingdom of Paradise"
-    platform: "Playstation Portable"
+    link: https://www.igdb.com/games/kingdom-hearts-hd-1-dot-5-remix
+    platform: Playstation 3
+    replay: true
+    title: Kingdom Hearts HD 1.5 Remix
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1png.jpg
     id: 42878
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1png.jpg"
-    link: "https://www.igdb.com/games/kingdom-of-paradise"
-
-  - title: "Fatal Frame"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/kingdom-of-paradise
+    platform: Playstation Portable
+    title: Kingdom of Paradise
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ouz.jpg
     id: 5106
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ouz.jpg"
-    link: "https://www.igdb.com/games/fatal-frame"
-
-  - title: "Liberation Maiden"
-    platform: "Nintendo 3DS"
+    link: https://www.igdb.com/games/fatal-frame
+    platform: Playstation 2
+    title: Fatal Frame
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/oevuv8jpcieauh2hscqw.jpg
     id: 21007
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/oevuv8jpcieauh2hscqw.jpg"
-    link: "https://www.igdb.com/games/liberation-maiden"
-
-  - title: "Weapon Shop de Omasse"
-    platform: "Nintendo 3DS"
+    link: https://www.igdb.com/games/liberation-maiden
+    platform: Nintendo 3DS
+    title: Liberation Maiden
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/lwkdxp4revsca6jz28zf.jpg
     id: 9639
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/lwkdxp4revsca6jz28zf.jpg"
-    link: "https://www.igdb.com/games/weapon-shop-de-omasse"
-
-  - title: "Asura's Wrath"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/weapon-shop-de-omasse
+    platform: Nintendo 3DS
+    title: Weapon Shop de Omasse
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2saq.jpg
     id: 5495
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2saq.jpg"
-    link: "https://www.igdb.com/games/asura-s-wrath"
-
-  - title: "P.N.03"
-    platform: "Nintendo Gamecube"
+    link: https://www.igdb.com/games/asura-s-wrath
+    platform: Playstation 3
+    title: Asura's Wrath
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe4.jpg
     id: 4060
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1pe4.jpg"
-    link: "https://www.igdb.com/games/p-dot-n-03"
-
-  - title: "Onimusha: Warlords"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/p-dot-n-03
+    platform: Nintendo Gamecube
+    title: P.N.03
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2daw.jpg
     id: 5845
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2daw.jpg"
-    link: "https://www.igdb.com/games/onimusha-warlords"
-
-  - title: "D"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/onimusha-warlords
+    platform: Playstation 2
+    title: 'Onimusha: Warlords'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co30vf.jpg
     id: 4319
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co30vf.jpg"
-    link: "https://www.igdb.com/games/d"
-
-  - title: "Evangelion Shin Gekijouban: 3nd Impact"
-    platform: "Playstation Portable"
+    link: https://www.igdb.com/games/d
+    platform: Playstation
+    title: D
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2wlx.jpg
     id: 56810
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2wlx.jpg"
-    link: "https://www.igdb.com/games/evangelion-shin-gekijouban-3nd-impact"
-
-  - title: "Tail Concerto"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/evangelion-shin-gekijouban-3nd-impact
+    platform: Playstation Portable
+    title: 'Evangelion Shin Gekijouban: 3nd Impact'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2o1w.jpg
     id: 38513
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2o1w.jpg"
-    link: "https://www.igdb.com/games/tail-concerto"
-
-  - title: "Lili: Child of Geos"
-    platform: "PC"
+    link: https://www.igdb.com/games/tail-concerto
+    platform: Playstation
+    title: Tail Concerto
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co21bf.jpg
     id: 12366
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co21bf.jpg"
-    link: "https://www.igdb.com/games/lili-child-of-geos"
-
-  - title: "Zone of the Enders"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/lili-child-of-geos
+    platform: PC
+    title: 'Lili: Child of Geos'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co260o.jpg
     id: 1472
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260o.jpg"
-    link: "https://www.igdb.com/games/zone-of-the-enders"
-
-  - title: "Danganronpa 2: Goodbye Despair"
-    platform: "Playstation Vita"
+    link: https://www.igdb.com/games/zone-of-the-enders
+    platform: Playstation 3
+    title: Zone of the Enders
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h6j.jpg
     id: 9694
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2h6j.jpg"
-    link: "https://www.igdb.com/games/danganronpa-2-goodbye-despair"
-
-  - title: "Danganronpa: Trigger Happy Havoc"
-    platform: "Playstation Vita"
+    link: https://www.igdb.com/games/danganronpa-2-goodbye-despair
+    platform: Playstation Vita
+    title: 'Danganronpa 2: Goodbye Despair'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg
+    id: 7842
+    link: https://www.igdb.com/games/danganronpa-trigger-happy-havoc
+    platform: Playstation Vita
     replay: true
+    title: 'Danganronpa: Trigger Happy Havoc'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg
     id: 7842
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg"
-    link: "https://www.igdb.com/games/danganronpa-trigger-happy-havoc"
-  
-  - title: "Danganronpa: Trigger Happy Havoc"
-    platform: "Playstation Portable"
-    id: 7842
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1w.jpg"
-    link: "https://www.igdb.com/games/danganronpa-trigger-happy-havoc"
-
-  - title: "Goat Simulator"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/danganronpa-trigger-happy-havoc
+    platform: Playstation Portable
+    title: 'Danganronpa: Trigger Happy Havoc'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dhr.jpg
     id: 5335
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dhr.jpg"
-    link: "https://www.igdb.com/games/goat-simulator"
-
-  - title: "Hitman: Blood Money"
-    platform: "PC"
+    link: https://www.igdb.com/games/goat-simulator
+    platform: Playstation 4
+    title: Goat Simulator
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg
     id: 1048
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg"
-    link: "https://www.igdb.com/games/hitman-blood-money"
-
-  - title: "P.T."
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/hitman-blood-money
+    platform: PC
+    title: 'Hitman: Blood Money'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyw.jpg
     id: 11654
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyw.jpg"
-    link: "https://www.igdb.com/games/pt"
-
-  # Episode Duscae (not listed on IGDB)
-
-  - title: "Uncharted 3: Drake's Deception"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/pt
+    platform: Playstation 4
+    title: P.T.
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp8.jpg
     id: 512
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp8.jpg"
-    link: "https://www.igdb.com/games/uncharted-3-drake-s-deception"
-
-  - title: "Yakuza 2"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/uncharted-3-drake-s-deception
+    platform: Playstation 4
+    title: 'Uncharted 3: Drake''s Deception'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2egu.jpg
     id: 2060
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2egu.jpg"
-    link: "https://www.igdb.com/games/yakuza-2"
-
-  - title: "Life Is Strange"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/yakuza-2
+    platform: Playstation 2
+    title: Yakuza 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg
     id: 7599
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg"
-    link: "https://www.igdb.com/games/life-is-strange"
-
-  - title: "Fallout 4"
-    platform: "PC"
+    link: https://www.igdb.com/games/life-is-strange
+    platform: Playstation 4
+    title: Life Is Strange
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1yc6.jpg
     id: 9630
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yc6.jpg"
-    link: "https://www.igdb.com/games/fallout-4"
-
-  - title: "Half-Life 2"
-    platform: "PC"
-    replay: true
+    link: https://www.igdb.com/games/fallout-4
+    platform: PC
+    title: Fallout 4
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg
     id: 233
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg"
-    link: "https://www.igdb.com/games/half-life-2"
-
-  - title: "Uncharted 2: Among Thieves"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/half-life-2
+    platform: PC
+    replay: true
+    title: Half-Life 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnb.jpg
     id: 565
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tnb.jpg"
-    link: "https://www.igdb.com/games/uncharted-2-among-thieves"
-
-  - title: "Wanted: Weapons of Fate"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/uncharted-2-among-thieves
+    platform: Playstation 4
+    title: 'Uncharted 2: Among Thieves'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg
     id: 7240
+    link: https://www.igdb.com/games/wanted-weapons-of-fate
+    platform: Playstation 3
     replay: true
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg"
-    link: "https://www.igdb.com/games/wanted-weapons-of-fate"
-
-  - title: "inFAMOUS: First Light"
-    platform: "Playstation 4"
+    title: 'Wanted: Weapons of Fate'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ygu.jpg
     id: 7328
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ygu.jpg"
-    link: "https://www.igdb.com/games/infamous-first-light"
-
-  - title: "inFAMOUS: Second Son"
-    platform: "Playstation 4"
+    link: https://www.igdb.com/games/infamous-first-light
+    platform: Playstation 4
+    title: 'inFAMOUS: First Light'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1izy.jpg
     id: 1941
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1izy.jpg"
-    link: "https://www.igdb.com/games/infamous-second-son"
-
-  - title: "inFAMOUS 2"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/infamous-second-son
+    platform: Playstation 4
+    title: 'inFAMOUS: Second Son'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2ido.jpg
     id: 515
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ido.jpg"
-    link: "https://www.igdb.com/games/infamous-2"
-
-  - title: "inFAMOUS"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/infamous-2
+    platform: Playstation 3
+    title: inFAMOUS 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2idj.jpg
     id: 523
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2idj.jpg"
-    link: "https://www.igdb.com/games/infamous"
-
-  - title: "Kenka Bancho: Badass Rumble"
-    platform: "Playstation Portable"
+    link: https://www.igdb.com/games/infamous
+    platform: Playstation 3
+    title: inFAMOUS
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2hiu.jpg
     id: 21891
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2hiu.jpg"
-    link: "https://www.igdb.com/games/kenka-bancho-badass-rumble"
-
-  - title: "Call of Duty: Advanced Warfare"
-    platform: "PC"
+    link: https://www.igdb.com/games/kenka-bancho-badass-rumble
+    platform: Playstation Portable
+    title: 'Kenka Bancho: Badass Rumble'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wky.jpg
     id: 6632
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wky.jpg"
-    link: "https://www.igdb.com/games/call-of-duty-advanced-warfare"
-
-  - title: "Borderlands"
-    platform: "PC"
-    replay: true
+    link: https://www.igdb.com/games/call-of-duty-advanced-warfare
+    platform: PC
+    title: 'Call of Duty: Advanced Warfare'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20tx.jpg
     id: 498
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tx.jpg"
-    link: "https://www.igdb.com/games/borderlands"
-
-  - title: "Borderlands 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/borderlands
+    platform: PC
+    replay: true
+    title: Borderlands
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20tn.jpg
     id: 1011
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tn.jpg"
-    link: "https://www.igdb.com/games/borderlands-2"
-
-  - title: "Battlefield: Bad Company 2"
-    platform: "PC"
-    replay: true
+    link: https://www.igdb.com/games/borderlands-2
+    platform: PC
+    title: Borderlands 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xbi.jpg
     id: 352
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xbi.jpg"
-    link: "https://www.igdb.com/games/battlefield-bad-company-2"
-
-  - title: "Batman: Arkham City"
-    platform: "PC"
+    link: https://www.igdb.com/games/battlefield-bad-company-2
+    platform: PC
+    replay: true
+    title: 'Battlefield: Bad Company 2'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1voh.jpg
     id: 501
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1voh.jpg"
-    link: "https://www.igdb.com/games/batman-arkham-city"
-
-  - title: "Anna: Extended Edition"
-    platform: "PC"
+    link: https://www.igdb.com/games/batman-arkham-city
+    platform: PC
+    title: 'Batman: Arkham City'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co21si.jpg
     id: 9977
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co21si.jpg"
-    link: "https://www.igdb.com/games/anna-extended-edition"
-
-  - title: "Jak 3"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/anna-extended-edition
+    platform: PC
+    title: 'Anna: Extended Edition'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2agg.jpg
     id: 1530
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2agg.jpg"
-    link: "https://www.igdb.com/games/jak-3"
-
-  - title: "Killing Floor"
-    platform: "PC"
+    link: https://www.igdb.com/games/jak-3
+    platform: Playstation 3
+    replay: true
+    title: Jak 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2sn9.jpg
     id: 2949
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2sn9.jpg"
-    link: "https://www.igdb.com/games/killing-floor"
-
-  - title: "Killer Is Dead"
-    platform: "PC"
+    link: https://www.igdb.com/games/killing-floor
+    platform: PC
+    title: Killing Floor
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3hj1.jpg
     id: 2940
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co3hj1.jpg"
-    link: "https://www.igdb.com/games/killer-is-dead"
-
-  - title: "Kane & Lynch: Dead Men"
-    platform: "PC"
+    link: https://www.igdb.com/games/killer-is-dead
+    platform: PC
+    title: Killer Is Dead
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg
     id: 7032
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg"
-    link: "https://www.igdb.com/games/kane-lynch-dead-men"
-
-  - title: "Kane & Lynch 2: Dog Days"
-    platform: "PC"
+    link: https://www.igdb.com/games/kane-lynch-dead-men
+    platform: PC
+    title: 'Kane & Lynch: Dead Men'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2crk.jpg
     id: 488
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2crk.jpg"
-    link: "https://www.igdb.com/games/kane-lynch-2-dog-days"
-
-  - title: "Metal Gear Solid V: The Phantom Pain"
-    platform: "PC"
+    link: https://www.igdb.com/games/kane-lynch-2-dog-days
+    platform: PC
+    title: 'Kane & Lynch 2: Dog Days'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1v85.jpg
     id: 1985
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v85.jpg"
-    link: "https://www.igdb.com/games/metal-gear-solid-v-the-phantom-pain"
-
-  - title: "Zero Escape: Virtue's Last Reward"
-    platform: "Playstation Vita"
+    link: https://www.igdb.com/games/metal-gear-solid-v-the-phantom-pain
+    platform: PC
+    title: 'Metal Gear Solid V: The Phantom Pain'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg
     id: 6614
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co260l.jpg"
-    link: "https://www.igdb.com/games/zero-escape-virtue-s-last-reward"
-
-  # FFXIV: A Realm Reborn (base game)
-
-  - title: "Jumping Flash!"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/zero-escape-virtue-s-last-reward
+    platform: Playstation Vita
+    title: 'Zero Escape: Virtue''s Last Reward'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2vls.jpg
     id: 7432
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vls.jpg"
-    link: "https://www.igdb.com/games/jumping-flash"
-
-  - title: "Magrunner: Dark Pulse"
-    platform: "PC"
+    link: https://www.igdb.com/games/jumping-flash
+    platform: Playstation
+    title: Jumping Flash!
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2egb.jpg
     id: 8286
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2egb.jpg"
-    link: "https://www.igdb.com/games/magrunner-dark-pulse"
-
-  - title: "Metal Gear Rising: Revengeance"
-    platform: "PC"
+    link: https://www.igdb.com/games/magrunner-dark-pulse
+    platform: PC
+    title: 'Magrunner: Dark Pulse'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg
     id: 378
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg"
-    link: "https://www.igdb.com/games/metal-gear-rising-revengeance"
-
-  - title: "Mafia II"
-    platform: "PC"
-    replay: true
+    link: https://www.igdb.com/games/metal-gear-rising-revengeance
+    platform: PC
+    title: 'Metal Gear Rising: Revengeance'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2n13.jpg
     id: 40
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n13.jpg"
-    link: "https://www.igdb.com/games/mafia-ii"
-
-  - title: "Left 4 Dead 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/mafia-ii
+    platform: PC
+    replay: true
+    title: Mafia II
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1y2f.jpg
     id: 124
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y2f.jpg"
-    link: "https://www.igdb.com/games/left-4-dead-2"
-
-  - title: "Left 4 Dead"
-    platform: "PC"
+    link: https://www.igdb.com/games/left-4-dead-2
+    platform: PC
+    title: Left 4 Dead 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qrm.jpg
     id: 122
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qrm.jpg"
-    link: "https://www.igdb.com/games/left-4-dead"
-
-  - title: "The Last Tinker: City of Colors"
-    platform: "PC"
+    link: https://www.igdb.com/games/left-4-dead
+    platform: PC
+    title: Left 4 Dead
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ijy.jpg
     id: 2346
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ijy.jpg"
-    link: "https://www.igdb.com/games/the-last-tinker-city-of-colors"
-
-  - title: "Homefront"
-    platform: "PC"
+    link: https://www.igdb.com/games/the-last-tinker-city-of-colors
+    platform: PC
+    title: 'The Last Tinker: City of Colors'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2j9b.jpg
     id: 1885
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2j9b.jpg"
-    link: "https://www.igdb.com/games/homefront"
-
-  - title: "Hitman: Blood Money"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/homefront
+    platform: PC
+    title: Homefront
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg
     id: 1048
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dm6.jpg"
-    link: "https://www.igdb.com/games/hitman-blood-money"
-
-  - title: "Grand Theft Auto: San Andreas"
-    platform: "PC"
+    link: https://www.igdb.com/games/hitman-blood-money
+    platform: Playstation 3
+    replay: true
+    title: 'Hitman: Blood Money'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb9.jpg
     id: 732
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb9.jpg"
-    link: "https://www.igdb.com/games/grand-theft-auto-san-andreas"
-
-  - title: "Grand Theft Auto: Episodes From Liberty City"
-    platform: "PC"
+    link: https://www.igdb.com/games/grand-theft-auto-san-andreas
+    platform: PC
+    title: 'Grand Theft Auto: San Andreas'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbe.jpg
     id: 7003
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbe.jpg"
-    link: "https://www.igdb.com/games/grand-theft-auto-episodes-from-liberty-city"
-
-  # Garry's Mod (Huh? It's a sandbox... Maybe imported from Steam?)
-
-  - title: "Fallout: New Vegas"
-    platform: "PC"
+    link: https://www.igdb.com/games/grand-theft-auto-episodes-from-liberty-city
+    platform: PC
+    title: 'Grand Theft Auto: Episodes From Liberty City'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1u60.jpg
     id: 16
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u60.jpg"
-    link: "https://www.igdb.com/games/fallout-new-vegas"
-
-  - title: "Company of Heroes"
-    platform: "PC"
+    link: https://www.igdb.com/games/fallout-new-vegas
+    platform: PC
+    title: 'Fallout: New Vegas'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2ht7.jpg
     id: 654
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ht7.jpg"
-    link: "https://www.igdb.com/games/company-of-heroes"
-
-  - title: "Dark Souls"
-    platform: "PC"
+    link: https://www.igdb.com/games/company-of-heroes
+    platform: PC
+    title: Company of Heroes
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg
     id: 2155
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg"
-    link: "https://www.igdb.com/games/dark-souls"
-
-  - title: "Call of Juarez: Gunslinger"
-    platform: "PC"
+    link: https://www.igdb.com/games/dark-souls
+    platform: PC
+    title: Dark Souls
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qqf.jpg
     id: 1976
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qqf.jpg"
-    link: "https://www.igdb.com/games/call-of-juarez-gunslinger"
-
-  - title: "Beat Hazard: Ultra"
-    platform: "PC"
+    link: https://www.igdb.com/games/call-of-juarez-gunslinger
+    platform: PC
+    title: 'Call of Juarez: Gunslinger'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1yfw.jpg
     id: 38882
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yfw.jpg"
-    link: "https://www.igdb.com/games/beat-hazard-ultra"
-
-  - title: "999: Nine Hours, Nine Persons, Nine Doors"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/beat-hazard-ultra
+    platform: PC
+    title: 'Beat Hazard: Ultra'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1mmv.jpg
     id: 9543
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mmv.jpg"
-    link: "https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors"
-
-  - title: "Gungrave"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/zero-escape-nine-hours-nine-persons-nine-doors
+    platform: Nintendo DS
+    title: '999: Nine Hours, Nine Persons, Nine Doors'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ovq.jpg
     id: 22072
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ovq.jpg"
-    link: "https://www.igdb.com/games/gungrave"
-
-  - title: "Deus Ex: Human Revolution"
-    platform: "PC"
+    link: https://www.igdb.com/games/gungrave
+    platform: Playstation 2
+    title: Gungrave
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rd2.jpg
     id: 43
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rd2.jpg"
-    link: "https://www.igdb.com/games/deus-ex-human-revolution"
-
-  - title: "Lost Planet 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/deus-ex-human-revolution
+    platform: PC
+    title: 'Deus Ex: Human Revolution'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2qlk.jpg
     id: 1915
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qlk.jpg"
-    link: "https://www.igdb.com/games/lost-planet-2"
-
-  - title: "Mass Effect 2"
-    platform: "PC"
+    link: https://www.igdb.com/games/lost-planet-2
+    platform: PC
+    title: Lost Planet 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg
     id: 74
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg"
-    link: "https://www.igdb.com/games/mass-effect-2"
-
-  - title: "Dead Space 3"
-    platform: "PC"
+    link: https://www.igdb.com/games/mass-effect-2
+    platform: PC
+    title: Mass Effect 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2int.jpg
     id: 1216
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2int.jpg"
-    link: "https://www.igdb.com/games/dead-space-3"
-
-  - title: "Alan Wake"
-    platform: "PC"
+    link: https://www.igdb.com/games/dead-space-3
+    platform: PC
+    title: Dead Space 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dft.jpg
     id: 1062
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dft.jpg"
-    link: "https://www.igdb.com/games/alan-wake"
-
-  - title: "Call of Duty: Black Ops II"
-    platform: "PC"
+    link: https://www.igdb.com/games/alan-wake
+    platform: PC
+    title: Alan Wake
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkv.jpg
     id: 1122
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkv.jpg"
-    link: "https://www.igdb.com/games/call-of-duty-black-ops-ii"
-
-  - title: "Metal Gear Rising: Revengeance"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/call-of-duty-black-ops-ii
+    platform: PC
+    title: 'Call of Duty: Black Ops II'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg
     id: 378
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg"
-    link: "https://www.igdb.com/games/metal-gear-rising-revengeance"
-
-  - title: "Binary Domain"
-    platform: "PC"
-    replay: true
+    link: https://www.igdb.com/games/metal-gear-rising-revengeance
+    platform: Playstation 3
+    title: 'Metal Gear Rising: Revengeance'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qu7.jpg
     id: 6913
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qu7.jpg"
-    link: "https://www.igdb.com/games/binary-domain"
-
-  - title: "Tomb Raider (2013)"
-    platform: "PC"
+    link: https://www.igdb.com/games/binary-domain
+    platform: PC
+    replay: true
+    title: Binary Domain
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbu.jpg
     id: 1164
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbu.jpg"
-    link: "https://www.igdb.com/games/tomb-raider--2"
-
-  - title: "Yakuza"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/tomb-raider--2
+    platform: PC
+    title: Tomb Raider (2013)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co29tp.jpg
     id: 2059
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co29tp.jpg"
-    link: "https://www.igdb.com/games/yakuza"
-
-  - title: "Time Hollow"
-    platform: "Nintendo DS"
-    replay: true
+    link: https://www.igdb.com/games/yakuza
+    platform: Playstation 2
+    title: Yakuza
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2sr4.jpg
     id: 21055
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2sr4.jpg"
-    link: "https://www.igdb.com/games/time-hollow"
-
-  - title: "The Stanley Parable (2011)"
-    platform: "PC"
+    link: https://www.igdb.com/games/time-hollow
+    platform: Nintendo DS
+    replay: true
+    title: Time Hollow
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25ck.jpg
     id: 18453
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co25ck.jpg"
-    link: "https://www.igdb.com/games/the-stanley-parable-mod"
-
-  - title: "The Stanley Parable (2013)"
-    platform: "PC"
+    link: https://www.igdb.com/games/the-stanley-parable-mod
+    platform: PC
+    title: The Stanley Parable (2011)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg
     id: 3035
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rc9.jpg"
-    link: "https://www.igdb.com/games/the-stanley-parable"
-
-  - title: "Saints Row: The Third"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/the-stanley-parable
+    platform: PC
+    title: The Stanley Parable (2013)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2634.jpg
     id: 873
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2634.jpg"
-    link: "https://www.igdb.com/games/saints-row-the-third"
-
-  - title: "Vanquish"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/saints-row-the-third
+    platform: Playstation 3
+    replay: true
+    title: 'Saints Row: The Third'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co24l9.jpg
     id: 3218
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co24l9.jpg"
-    link: "https://www.igdb.com/games/vanquish"
-
-  - title: "Mafia II"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/vanquish
+    platform: Playstation 3
+    title: Vanquish
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2n13.jpg
     id: 40
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n13.jpg"
-    link: "https://www.igdb.com/games/mafia-ii"
-
-  - title: "Far Cry 4"
-    platform: "PC"
+    link: https://www.igdb.com/games/mafia-ii
+    platform: Playstation 3
+    replay: true
+    title: Mafia II
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2npa.jpg
     id: 6801
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2npa.jpg"
-    link: "https://www.igdb.com/games/far-cry-4"
-
-  - title: "Far Cry 3"
-    platform: "PC"
+    link: https://www.igdb.com/games/far-cry-4
+    platform: PC
+    title: Far Cry 4
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpd.jpg
     id: 529
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpd.jpg"
-    link: "https://www.igdb.com/games/far-cry-3"
-
-  - title: "The Vanishing of Ethan Carter"
-    platform: "PC"
+    link: https://www.igdb.com/games/far-cry-3
+    platform: PC
+    title: Far Cry 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7q.jpg
     id: 2939
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7q.jpg"
-    link: "https://www.igdb.com/games/the-vanishing-of-ethan-carter"
-
-  - title: "Broken Sword: The Shadow of the Templars"
-    platform: "PC"
+    link: https://www.igdb.com/games/the-vanishing-of-ethan-carter
+    platform: PC
+    title: The Vanishing of Ethan Carter
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2mq5.jpg
     id: 616
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mq5.jpg"
-    link: "https://www.igdb.com/games/broken-sword-the-shadow-of-the-templars"
-
-  - title: "Bioshock Infinite"
-    platform: "PC"
+    link: https://www.igdb.com/games/broken-sword-the-shadow-of-the-templars
+    platform: PC
+    title: 'Broken Sword: The Shadow of the Templars'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2n12.jpg
     id: 538
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n12.jpg"
-    link: "https://www.igdb.com/games/bioshock-infinite"
-
-  - title: "Bioshock"
-    platform: "Xbox 360"
+    link: https://www.igdb.com/games/bioshock-infinite
+    platform: PC
+    title: Bioshock Infinite
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.jpg
     id: 20
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.jpg"
-    link: "https://www.igdb.com/games/bioshock"
-
-  - title: "Binary Domain"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/bioshock
+    platform: Xbox 360
+    title: Bioshock
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qu7.jpg
     id: 6913
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qu7.jpg"
-    link: "https://www.igdb.com/games/binary-domain"
-
-  - title: "Wolfenstein: The New Order"
-    platform: "PC"
+    link: https://www.igdb.com/games/binary-domain
+    platform: Playstation 3
+    title: Binary Domain
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co21c0.jpg
     id: 2031
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co21c0.jpg"
-    link: "https://www.igdb.com/games/wolfenstein-the-new-order"
-
-  - title: "Ratchet & Clank: Going Commando"
-    platform: "Playstation 3"
-    replay: true
+    link: https://www.igdb.com/games/wolfenstein-the-new-order
+    platform: PC
+    title: 'Wolfenstein: The New Order'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co230n.jpg
     id: 1770
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co230n.jpg"
-    link: "https://www.igdb.com/games/ratchet-clank-going-commando"
-
-  - title: "Ratchet & Clank"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/ratchet-clank-going-commando
+    platform: Playstation 3
     replay: true
+    title: 'Ratchet & Clank: Going Commando'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1oym.jpg
     id: 1289
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1oym.jpg"
-    link: "https://www.igdb.com/games/ratchet-clank"
-
-  - title: "The Wonderful End of the World"
-    platform: "PC"
+    link: https://www.igdb.com/games/ratchet-clank
+    platform: Playstation 3
+    replay: true
+    title: Ratchet & Clank
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/gn0bvn2yk1crbt7d6akt.jpg
     id: 14905
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/gn0bvn2yk1crbt7d6akt.jpg"
-    link: "https://www.igdb.com/games/the-wonderful-end-of-the-world"
-
-  - title: "Trauma Center: Under the Knife"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/the-wonderful-end-of-the-world
+    platform: PC
+    title: The Wonderful End of the World
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwx.jpg
     id: 1523
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dwx.jpg"
-    link: "https://www.igdb.com/games/trauma-center-under-the-knife"
-
-  - title: "Elite Beat Agents"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/trauma-center-under-the-knife
+    platform: Nintendo DS
+    title: 'Trauma Center: Under the Knife'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2dyd.jpg
     id: 9109
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dyd.jpg"
-    link: "https://www.igdb.com/games/elite-beat-agents"
-
-  - title: "Spider-Man (2000)"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/elite-beat-agents
+    platform: Nintendo DS
+    title: Elite Beat Agents
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2xxq.jpg
     id: 3603
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2xxq.jpg"
-    link: "https://www.igdb.com/games/spider-man--5"
-
-  - title: "Spider-Man 2: Enter Electro"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/spider-man--5
+    platform: Playstation
+    title: Spider-Man (2000)
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lab.jpg
     id: 4118
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lab.jpg"
-    link: "https://www.igdb.com/games/spider-man-2-enter-electro"
-
-  - title: "Custom Robo Arena"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/spider-man-2-enter-electro
+    platform: Playstation
+    title: 'Spider-Man 2: Enter Electro'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/cprslnio4n0rdqgc5jyd.jpg
     id: 3466
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/cprslnio4n0rdqgc5jyd.jpg"
-    link: "https://www.igdb.com/games/custom-robo-arena"
-
-  - title: "Family Guy Video Game!"
-    platform: "Playstation Portable"
+    link: https://www.igdb.com/games/custom-robo-arena
+    platform: Nintendo DS
+    title: Custom Robo Arena
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ouv.jpg
     id: 2846
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ouv.jpg"
-    link: "https://www.igdb.com/games/family-guy-video-game"
-
-  - title: "Sly Cooper and the Thievius Raccoonus"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/family-guy-video-game
+    platform: Playstation Portable
+    title: Family Guy Video Game!
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1p0r.jpg
     id: 1798
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1p0r.jpg"
-    link: "https://www.igdb.com/games/sly-cooper-and-the-thievius-raccoonus"
-
-  - title: "Crysis"
-    platform: "PC"
+    link: https://www.igdb.com/games/sly-cooper-and-the-thievius-raccoonus
+    platform: Playstation 3
+    title: Sly Cooper and the Thievius Raccoonus
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2on1.jpg
     id: 296
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2on1.jpg"
-    link: "https://www.igdb.com/games/crysis"
-
-  - title: "Ghost Trick: Phantom Detective"
-    platform: "Nintendo DS"
+    link: https://www.igdb.com/games/crysis
+    platform: PC
+    title: Crysis
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2yj9.jpg
     id: 1348
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2yj9.jpg"
-    link: "https://www.igdb.com/games/ghost-trick-phantom-detective"
-
-  - title: "Destroy All Humans! 2"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/ghost-trick-phantom-detective
+    platform: Nintendo DS
+    title: 'Ghost Trick: Phantom Detective'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2bav.jpg
     id: 2652
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2bav.jpg"
-    link: "https://www.igdb.com/games/destroy-all-humans-2"
-
-  - title: "Destroy All Humans!"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/destroy-all-humans-2
+    platform: Playstation 2
+    title: Destroy All Humans! 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1umj.jpg
     id: 2651
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1umj.jpg"
-    link: "https://www.igdb.com/games/destroy-all-humans"
-
-  - title: "Shadow of the Colossus"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/destroy-all-humans
+    platform: Playstation 2
+    title: Destroy All Humans!
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ozz.jpg
     id: 2207
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ozz.jpg"
-    link: "https://www.igdb.com/games/shadow-of-the-colossus"
-
-  - title: "Battle Engine Aquila"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/shadow-of-the-colossus
+    platform: Playstation 2
+    title: Shadow of the Colossus
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/nb1pucrkwbxx8pic1uoh.jpg
     id: 5741
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/nb1pucrkwbxx8pic1uoh.jpg"
-    link: "https://www.igdb.com/games/battle-engine-aquila"
-
-  - title: "Heavy Rain"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/battle-engine-aquila
+    platform: Playstation 2
+    title: Battle Engine Aquila
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lpl.jpg
     id: 493
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lpl.jpg"
-    link: "https://www.igdb.com/games/heavy-rain"
-
-  - title: "Ape Escape 3"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/heavy-rain
+    platform: Playstation 3
+    title: Heavy Rain
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xc6.jpg
     id: 6064
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xc6.jpg"
-    link: "https://www.igdb.com/games/ape-escape-3"
-
-  - title: "Ape Escape 2"
-    platform: "Playstation 2"
+    link: https://www.igdb.com/games/ape-escape-3
+    platform: Playstation 2
+    title: Ape Escape 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2zhl.jpg
     id: 6063
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2zhl.jpg"
-    link: "https://www.igdb.com/games/ape-escape-2"
-
-  - title: "Ape Escape"
-    platform: "Playstation"
+    link: https://www.igdb.com/games/ape-escape-2
+    platform: Playstation 2
+    title: Ape Escape 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2gzc.jpg
     id: 3762
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gzc.jpg"
-    link: "https://www.igdb.com/games/ape-escape"
-
-  - title: "Just Cause"
-    platform: "PC"
+    link: https://www.igdb.com/games/ape-escape
+    platform: Playstation
+    title: Ape Escape
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co23af.jpg
     id: 1042
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co23af.jpg"
-    link: "https://www.igdb.com/games/just-cause"
-
-  - title: "Far Cry"
-    platform: "PC"
+    link: https://www.igdb.com/games/just-cause
+    platform: PC
+    title: Just Cause
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpf.jpg
     id: 306
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vpf.jpg"
-    link: "https://www.igdb.com/games/far-cry"
-
-  - title: "Cave Story"
-    platform: "PC"
+    link: https://www.igdb.com/games/far-cry
+    platform: PC
+    title: Far Cry
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co4q30.jpg
+    id: 6189
+    link: https://www.igdb.com/games/cave-story
+    platform: PC
+    title: Cave Story
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8u.jpg
+    id: 1428
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-trials-and-tribulations
+    platform: Nintendo DS
+    title: 'Phoenix Wright: Ace Attorney: Trials and Tribulations'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8t.jpg
+    id: 1427
+    link: https://www.igdb.com/games/phoenix-wright-ace-attorney-justice-for-all
+    platform: Nintendo DS
+    title: 'Phoenix Wright: Ace Attorney: Justice for All'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Phoenix Wright: Ace Attorney: Trials and Tribulations"
-    platform: "Nintendo DS"
+    link: ''
+    platform: Nintendo DS
+    title: 'Phoenix Wright: Ace Attorney'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wtf.jpg
+    id: 1398
+    link: https://www.igdb.com/games/professor-layton-and-the-diabolical-box
+    platform: Nintendo DS
+    title: Professor Layton and the Diabolical Box
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wtd.jpg
+    id: 1397
+    link: https://www.igdb.com/games/professor-layton-and-the-curious-village
+    platform: Nintendo DS
+    title: Professor Layton and the Curious Village
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2wrx.jpg
+    id: 1220
+    link: https://www.igdb.com/games/kingdom-hearts-chain-of-memories
+    platform: Game Boy Advance
+    title: 'Kingdom Hearts: Chain of Memories'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co30t1.jpg
+    id: 1221
+    link: https://www.igdb.com/games/kingdom-hearts-ii
+    platform: Playstation 2
+    title: Kingdom Hearts II
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co31qj.jpg
+    id: 1223
+    link: https://www.igdb.com/games/kingdom-hearts-358-2-days
+    platform: Nintendo DS
+    title: Kingdom Hearts 358/2 Days
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Phoenix Wright: Ace Attorney: Justice for All"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Phoenix Wright: Ace Attorney"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Professor Layton and the Diabolical Box"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Professor Layton and the Curious Village"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Kingdom Hearts: Chain of Memories"
-    platform: "Game Boy Advance"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Kingdom Hearts II"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Kingdom Hearts 358/2 Days"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Kingdom Hearts"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Hotel Dusk: Room 215"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Tokobot"
-    platform: "Playstation Portable"
+    link: ''
+    platform: Playstation 2
+    title: Kingdom Hearts
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2xf0.jpg
+    id: 9249
+    link: https://www.igdb.com/games/hotel-dusk-room-215
+    platform: Nintendo DS
+    title: 'Hotel Dusk: Room 215'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1y1u.jpg
     id: 19692
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y1u.jpg"
-    link: "https://www.igdb.com/games/tokobot"
-  
-  - title: "Pursuit Force: Extreme Justice"
-    platform: "Playstation Portable"
+    link: https://www.igdb.com/games/tokobot
+    platform: Playstation Portable
+    title: Tokobot
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2nyz.jpg
+    id: 23055
+    link: https://www.igdb.com/games/pursuit-force-extreme-justice
+    platform: Playstation Portable
+    title: 'Pursuit Force: Extreme Justice'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2nyy.jpg
+    id: 26995
+    link: https://www.igdb.com/games/pursuit-force
+    platform: Playstation Portable
+    title: Pursuit Force
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1pn3.jpg
+    id: 1533
+    link: https://www.igdb.com/games/daxter
+    platform: Playstation Portable
+    title: Daxter
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2pvb.jpg
+    id: 20409
+    link: https://www.igdb.com/games/dead-rising-2-case-zero
+    platform: Xbox 360
+    title: 'Dead Rising: Case Zero'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Pursuit Force"
-    platform: "Playstation Portable"
+    link: ''
+    platform: Xbox 360
+    title: Prey
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2e8z.jpg
+    id: 7058
+    link: https://www.igdb.com/games/lost-via-domus
+    platform: Xbox 360
+    title: 'Lost: Via Domus'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhh.jpg
+    id: 989
+    link: https://www.igdb.com/games/halo-3-odst
+    platform: Xbox 360
+    title: 'Halo 3: ODST'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhc.jpg
+    id: 987
+    link: https://www.igdb.com/games/halo-3
+    platform: Xbox 360
+    title: Halo 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2r2r.jpg
+    id: 740
+    link: https://www.igdb.com/games/halo-combat-evolved
+    platform: Xbox
+    title: 'Halo: Combat Evolved'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x77.jpg
+    id: 986
+    link: https://www.igdb.com/games/halo-2
+    platform: Xbox
+    title: Halo 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co28gi.jpg
+    id: 547
+    link: https://www.igdb.com/games/gears-of-war
+    platform: PC
+    title: Gears of War
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Daxter"
-    platform: "Playstation Portable"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Dead Rising: Case Zero"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Prey"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Lost: Via Domus"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Halo 3: ODST"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Halo 3"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Halo: Combat Evolved"
-    platform: "Xbox"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Halo 2"
-    platform: "Xbox"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Gears of War"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Fracture"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Fallout 3"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Wanted: Weapons of Fate"
-    platform: "Playstation 3"
+    link: ''
+    platform: Xbox 360
+    title: Fracture
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ycw.jpg
+    id: 15
+    link: https://www.igdb.com/games/fallout-3
+    platform: Xbox 360
+    title: Fallout 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg
     id: 7240
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/mmapfevics19h8xjmxni.jpg"
-    link: "https://www.igdb.com/games/wanted-weapons-of-fate"
-  
-  - title: "Uncharted: Drake's Fortune"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/wanted-weapons-of-fate
+    platform: Playstation 3
+    title: 'Wanted: Weapons of Fate'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp7.jpg
+    id: 431
+    link: https://www.igdb.com/games/uncharted-drake-s-fortune
+    platform: Playstation 3
+    title: 'Uncharted: Drake''s Fortune'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lcv.jpg
+    id: 434
+    link: https://www.igdb.com/games/red-dead-redemption
+    platform: Playstation 3
+    title: Red Dead Redemption
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co39vd.jpg
+    id: 3205
+    link: https://www.igdb.com/games/resistance-2
+    platform: Playstation 3
+    title: Resistance 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2b4m.jpg
+    id: 1278
+    link: https://www.igdb.com/games/resistance-fall-of-man
+    platform: Playstation 3
+    title: 'Resistance: Fall of Man'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5eju.jpg
+    id: 380
+    link: https://www.igdb.com/games/metal-gear-solid-4-guns-of-the-patriots
+    platform: Playstation 3
+    title: 'Metal Gear Solid 4: Guns of the Patriots'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5ejw.jpg
+    id: 382
+    link: https://www.igdb.com/games/metal-gear-solid-peace-walker
+    platform: Playstation Portable
+    title: 'Metal Gear Solid: Peace Walker'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5ei5.jpg
+    id: 379
+    link: https://www.igdb.com/games/metal-gear-solid-3-snake-eater
+    platform: Playstation 2
+    title: 'Metal Gear Solid 3: Snake Eater'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Red Dead Redemption"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Resistance 2"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Resistance: Fall of Man"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Metal Gear Solid 4: Guns of the Patriots"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Metal Gear Solid: Peace Walker"
-    platform: "Playstation Portable"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Metal Gear Solid 3: Snake Eater"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Metal Gear Solid"
-    platform: "Playstation"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Jak II"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Jak and Daxter: The Precursor Legacy"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "God of War: Origins Collection"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "God of War Collection"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Call of Duty: Modern Warfare 3"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Call of Duty: Modern Warfare 2"
-    platform: "PC"
+    link: ''
+    platform: Playstation
+    title: Metal Gear Solid
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2agi.jpg
+    id: 1529
+    link: https://www.igdb.com/games/jak-ii
+    platform: Playstation 3
+    title: Jak II
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1w7q.jpg
+    id: 1528
+    link: https://www.igdb.com/games/jak-and-daxter-the-precursor-legacy
+    platform: Playstation 3
+    title: 'Jak and Daxter: The Precursor Legacy'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2ene.jpg
+    id: 20579
+    link: https://www.igdb.com/games/god-of-war-origins-collection
+    platform: Playstation 3
+    title: 'God of War: Origins Collection'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2enh.jpg
+    id: 20068
+    link: https://www.igdb.com/games/god-of-war-collection
+    platform: Playstation 3
+    title: God of War Collection
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkn.jpg
+    id: 979
+    link: https://www.igdb.com/games/call-of-duty-modern-warfare-3
+    platform: PC
+    title: 'Call of Duty: Modern Warfare 3'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/156701.png
+    id: 559
+    link: https://www.igdb.com/games/call-of-duty-modern-warfare-2
+    platform: PC
     replay: true
+    title: 'Call of Duty: Modern Warfare 2'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/156701.png
+    id: 559
+    link: https://www.igdb.com/games/call-of-duty-modern-warfare-2
+    platform: Playstation 3
+    title: 'Call of Duty: Modern Warfare 2'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Call of Duty: Modern Warfare 2"
-    platform: "Playstation 3"
+    link: ''
+    platform: PC
+    title: 'Call of Duty: Black Ops'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wko.jpg
+    id: 623
+    link: https://www.igdb.com/games/call-of-duty-4-modern-warfare
+    platform: PC
+    title: 'Call of Duty 4: Modern Warfare'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5j8y.jpg
+    id: 221822
+    link: https://www.igdb.com/games/assassins-creed-ii
+    platform: Playstation 3
+    title: Assassin's Creed II
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Call of Duty: Black Ops"
-    platform: "PC"
+    link: ''
+    platform: Xbox 360
+    title: Assassin's Creed
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Call of Duty 4: Modern Warfare"
-    platform: "PC"
+    link: ''
+    platform: Nintendo DS
+    title: "Pok\xE9mon Diamond and Pearl"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Assassin's Creed II"
-    platform: "Playstation 3"
+    link: ''
+    platform: Game Boy Advance
+    title: "Pok\xE9mon Ruby and Sapphire"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Assassin's Creed"
-    platform: "Xbox 360"
+    link: ''
+    platform: Game Boy Color
+    title: "Pok\xE9mon Red and Blue"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Diamond and Pearl"
-    platform: "Nintendo DS"
+    link: ''
+    platform: Nintendo DS
+    title: "Pok\xE9mon Ranger"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Ruby and Sapphire"
-    platform: "Game Boy Advance"
+    link: ''
+    platform: Nintendo DS
+    title: "Pok\xE9mon Platinum"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Red and Blue"
-    platform: "Game Boy Color"
+    link: ''
+    platform: Nintendo DS
+    title: "Pok\xE9mon Mystery Dungeon: Blue/Red Rescue Team"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Ranger"
-    platform: "Nintendo DS"
+    link: ''
+    platform: Nintendo DS
+    title: "Pok\xE9mon HeartGold and SoulSilver"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Platinum"
-    platform: "Nintendo DS"
+    link: ''
+    platform: Game Boy Color
+    title: "Pok\xE9mon Gold and Silver"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Mystery Dungeon: Blue/Red Rescue Team"
-    platform: "Nintendo DS"
+    link: ''
+    platform: Gameboy Advance
+    title: "Pok\xE9mon FireRed and LeafGreen"
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon HeartGold and SoulSilver"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Gold and Silver"
-    platform: "Game Boy Color"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon FireRed and LeafGreen"
-    platform: "Gameboy Advance"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Pokémon Emerald"
-    platform: "Gameboy Advance"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Legend of Zelda: The Wind Waker"
-    platform: "Nintendo GameCube"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Legend of Zelda: The Minish Cap"
-    platform: "Gameboy Advance"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Legend of Zelda: Phantom Hourglass"
-    platform: "Nintendo DS"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Legend of Zelda: Four Swords"
-    platform: "Gameboy Advance"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Legend of Zelda: A Link to the Past"
-    platform: "Gameboy Advance"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Zoids: Legacy"
-    platform: "Gameboy Advance"
+    link: ''
+    platform: Gameboy Advance
+    title: "Pok\xE9mon Emerald"
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3ohz.jpg
+    id: 1033
+    link: https://www.igdb.com/games/the-legend-of-zelda-the-wind-waker
+    platform: Nintendo GameCube
+    title: 'The Legend of Zelda: The Wind Waker'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3nsk.jpg
+    id: 1035
+    link: https://www.igdb.com/games/the-legend-of-zelda-the-minish-cap
+    platform: Gameboy Advance
+    title: 'The Legend of Zelda: The Minish Cap'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3ocu.jpg
+    id: 1037
+    link: https://www.igdb.com/games/the-legend-of-zelda-phantom-hourglass
+    platform: Nintendo DS
+    title: 'The Legend of Zelda: Phantom Hourglass'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5w9w.jpg
+    id: 163572
+    link: https://www.igdb.com/games/the-legend-of-zelda-four-swords
+    platform: Gameboy Advance
+    title: 'The Legend of Zelda: Four Swords'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5x34.jpg
+    id: 229416
+    link: https://www.igdb.com/games/the-legend-of-zelda-a-link-to-the-past--1
+    platform: Gameboy Advance
+    title: 'The Legend of Zelda: A Link to the Past'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/fe7db3cu88oxajxapiem.jpg
     id: 49203
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/fe7db3cu88oxajxapiem.jpg"
-    link: "https://www.igdb.com/games/zoids-legacy"
-
-  - title: "Borderlands"
-    platform: "Playstation 3"
+    link: https://www.igdb.com/games/zoids-legacy
+    platform: Gameboy Advance
+    title: 'Zoids: Legacy'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Battlefield: Bad Company 2"
-    platform: "Playstation 3"
+    link: ''
+    platform: Playstation 3
+    title: Borderlands
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xbi.jpg
+    id: 352
+    link: https://www.igdb.com/games/battlefield-bad-company-2
+    platform: Playstation 3
+    title: 'Battlefield: Bad Company 2'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "To the Moon"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Tiny and Big: Grandpa's Leftovers"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "The Tiny Bang Story"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Thirty Flights of Loving"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Star Wars: Battlefront II"
-    platform: "PC"
+    link: ''
+    platform: PC
+    title: To the Moon
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h2e.jpg
+    id: 3079
+    link: https://www.igdb.com/games/tiny-and-big-grandpa-s-leftovers
+    platform: PC
+    title: 'Tiny and Big: Grandpa''s Leftovers'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rk3.jpg
+    id: 15120
+    link: https://www.igdb.com/games/the-tiny-bang-story
+    platform: PC
+    title: The Tiny Bang Story
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2edo.jpg
+    id: 9013
+    link: https://www.igdb.com/games/thirty-flights-of-loving
+    platform: PC
+    title: Thirty Flights of Loving
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1nsg.jpg
+    id: 142
+    link: https://www.igdb.com/games/star-wars-battlefront-ii
+    platform: PC
     replay: true
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Star Wars: Battlefront II"
-    platform: "Playstation 2"
+    title: 'Star Wars: Battlefront II'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1nsg.jpg
+    id: 142
+    link: https://www.igdb.com/games/star-wars-battlefront-ii
+    platform: Playstation 2
     replay: true
+    title: 'Star Wars: Battlefront II'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2634.jpg
+    id: 873
+    link: https://www.igdb.com/games/saints-row-the-third
+    platform: PC
+    title: 'Saints Row: The Third'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1yt7.jpg
+    id: 826
+    link: https://www.igdb.com/games/saints-row-2
+    platform: PC
+    title: Saints Row 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2628.jpg
+    id: 6778
+    link: https://www.igdb.com/games/puzzle-agent-2
+    platform: PC
+    title: Puzzle Agent 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2628.jpg
+    id: 6778
+    link: https://www.igdb.com/games/puzzle-agent-2
+    platform: PC
+    title: Puzzle Agent
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Saints Row: The Third"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Saints Row 2"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Puzzle Agent 2"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Puzzle Agent"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Prototype"
-    platform: "PC"
+    link: ''
+    platform: PC
     replay: true
+    title: Prototype
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Prototype"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Portal 2"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Nikopol: Secrets of the Immortals"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Mirror's Edge"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Medal of Honor: Airborne"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Max Payne 3"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Max Payne 2: The Fall of Max Payne"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Max Payne"
-    platform: "PC"
+    link: ''
+    platform: Xbox 360
+    title: Prototype
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs4.jpg
+    id: 72
+    link: https://www.igdb.com/games/portal-2
+    platform: PC
+    title: Portal 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co21e2.jpg
+    id: 10601
+    link: https://www.igdb.com/games/nikopol-secrets-of-the-immortals
+    platform: PC
+    title: 'Nikopol: Secrets of the Immortals'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5gbw.jpg
+    id: 1051
+    link: https://www.igdb.com/games/mirror-s-edge
+    platform: PC
+    title: Mirror's Edge
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2qnx.jpg
+    id: 1314
+    link: https://www.igdb.com/games/medal-of-honor-airborne
+    platform: PC
+    title: 'Medal of Honor: Airborne'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2mjo.jpg
+    id: 960
+    link: https://www.igdb.com/games/max-payne-3
+    platform: PC
+    title: Max Payne 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lcl.jpg
+    id: 19
+    link: https://www.igdb.com/games/max-payne-2-the-fall-of-max-payne
+    platform: PC
+    title: 'Max Payne 2: The Fall of Max Payne'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3wb2.jpg
+    id: 18
+    link: https://www.igdb.com/games/max-payne
+    platform: PC
     replay: true
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Max Payne"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Mass Effect 3"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Mass Effect"
-    platform: "PC"
+    title: Max Payne
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3wb2.jpg
+    id: 18
+    link: https://www.igdb.com/games/max-payne
+    platform: PC
+    title: Max Payne
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7q.jpg
+    id: 75
+    link: https://www.igdb.com/games/mass-effect-3
+    platform: PC
+    title: Mass Effect 3
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7o.jpg
+    id: 73
+    link: https://www.igdb.com/games/mass-effect
+    platform: PC
     replay: true
+    title: Mass Effect
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7o.jpg
+    id: 73
+    link: https://www.igdb.com/games/mass-effect
+    platform: Xbox 360
+    title: Mass Effect
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qri.jpg
+    id: 558
+    link: https://www.igdb.com/games/just-cause-2
+    platform: PC
+    title: Just Cause 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2mw2.jpg
+    id: 247
+    link: https://www.igdb.com/games/half-life-2-episode-two
+    platform: Xbox 360
+    title: 'Half-Life 2: Episode Two'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2mw3.jpg
+    id: 338
+    link: https://www.igdb.com/games/half-life-2-episode-one
+    platform: Xbox 360
+    title: 'Half-Life 2: Episode One'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg
+    id: 233
+    link: https://www.igdb.com/games/half-life-2
+    platform: Xbox 360
+    title: Half-Life 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vmq.jpg
+    id: 9822
+    link: https://www.igdb.com/games/dinner-date
+    platform: PC
+    title: Dinner Date
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co4wsk.jpg
+    id: 1150
+    link: https://www.igdb.com/games/broken-sword-the-smoking-mirror
+    platform: PC
+    title: 'Broken Sword II: The Smoking Mirror'
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Mass Effect"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Just Cause 2"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Half-Life 2: Episode Two"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Half-Life 2: Episode One"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Half-Life 2"
-    platform: "Xbox 360"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Dinner Date"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Broken Sword II: The Smoking Mirror"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Brink"
-    platform: "Playstation 3"
+    link: ''
+    platform: Playstation 3
     replay: true
+    title: Brink
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Brink"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet: Deadlocked"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet & Clank: Up Your Arsenal"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet & Clank: Size Matters"
-    platform: "Playstation Portable"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet & Clank: Going Commando"
-    platform: "Playstation 2"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet & Clank Future: Tools of Destruction"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Ratchet & Clank Future: Quest for Booty"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Ratchet & Clank Future: A Crack in Time"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Gitaroo Man Lives!"
-    platform: "Playstation Portable"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Batman: Arkham Asylum"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Red Faction: Guerrilla"
-    platform: "PC"
+    link: ''
+    platform: PC
+    title: Brink
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1oyo.jpg
+    id: 1790
+    link: https://www.igdb.com/games/ratchet-deadlocked
+    platform: Playstation 2
+    title: 'Ratchet: Deadlocked'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1oyn.jpg
+    id: 1773
+    link: https://www.igdb.com/games/ratchet-clank-up-your-arsenal
+    platform: Playstation 2
+    title: 'Ratchet & Clank: Up Your Arsenal'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co230r.jpg
+    id: 1791
+    link: https://www.igdb.com/games/ratchet-clank-size-matters
+    platform: Playstation Portable
+    title: 'Ratchet & Clank: Size Matters'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co230n.jpg
+    id: 1770
+    link: https://www.igdb.com/games/ratchet-clank-going-commando
+    platform: Playstation 2
+    title: 'Ratchet & Clank: Going Commando'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x4g.jpg
+    id: 1792
+    link: https://www.igdb.com/games/ratchet-clank-future-tools-of-destruction
+    platform: Playstation 3
+    title: 'Ratchet & Clank Future: Tools of Destruction'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1x4h.jpg
+    id: 1794
+    link: https://www.igdb.com/games/ratchet-clank-future-quest-for-booty
+    platform: Playstation 3
+    title: 'Ratchet & Clank Future: Quest for Booty'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co230p.jpg
+    id: 1795
+    link: https://www.igdb.com/games/ratchet-clank-future-a-crack-in-time
+    platform: Playstation 3
+    title: 'Ratchet & Clank Future: A Crack in Time'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2zoc.jpg
+    id: 42813
+    link: https://www.igdb.com/games/gitaroo-man-lives
+    platform: Playstation Portable
+    title: Gitaroo Man Lives!
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1voj.jpg
+    id: 500
+    link: https://www.igdb.com/games/batman-arkham-asylum
+    platform: PC
+    title: 'Batman: Arkham Asylum'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9b.jpg
+    id: 846
+    link: https://www.igdb.com/games/red-faction-guerrilla
+    platform: PC
     replay: true
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Bastion"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Kane & Lynch: Dead Men"
-    platform: "Xbox 360"
+    title: 'Red Faction: Guerrilla'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qlj.jpg
+    id: 1983
+    link: https://www.igdb.com/games/bastion
+    platform: PC
+    title: Bastion
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg
     id: 7032
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/k96sllo1kdmbvpv8lisq.jpg"
-    link: "https://www.igdb.com/games/kane-lynch-dead-men"
-  
-  - title: "Grand Theft Auto IV"
-    platform: "PC"
+    link: https://www.igdb.com/games/kane-lynch-dead-men
+    platform: Xbox 360
+    title: 'Kane & Lynch: Dead Men'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbv.jpg
+    id: 731
+    link: https://www.igdb.com/games/grand-theft-auto-iv
+    platform: PC
     replay: true
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Grand Theft Auto IV"
-    platform: "Playstation 3"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Grand Theft Auto: Vice City Stories"
-    platform: "Playstation Portable"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Sands of Destruction"
-    platform: "Nintendo DS"
+    title: Grand Theft Auto IV
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbv.jpg
+    id: 731
+    link: https://www.igdb.com/games/grand-theft-auto-iv
+    platform: Playstation 3
+    title: Grand Theft Auto IV
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lc8.jpg
+    id: 3262
+    link: https://www.igdb.com/games/grand-theft-auto-vice-city-stories
+    platform: Playstation Portable
+    title: 'Grand Theft Auto: Vice City Stories'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg
     id: 24331
-    cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2w9y.jpg" 
-    link: "https://www.igdb.com/games/sands-of-destruction"
-
-  - title: "Red Faction: Guerrilla"
-    platform: "PC"
+    link: https://www.igdb.com/games/sands-of-destruction
+    platform: Nintendo DS
+    title: Sands of Destruction
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h9b.jpg
+    id: 846
+    link: https://www.igdb.com/games/red-faction-guerrilla
+    platform: PC
+    title: 'Red Faction: Guerrilla'
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2eez.jpg
+    id: 3082
+    link: https://www.igdb.com/games/dear-esther
+    platform: PC
+    title: Dear Esther
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co20xq.jpg
+    id: 38
+    link: https://www.igdb.com/games/dead-space-2
+    platform: PC
+    title: Dead Space 2
+  - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2g7w.jpg
+    id: 37
+    link: https://www.igdb.com/games/dead-space
+    platform: PC
+    title: Dead Space
+  - cover: ''
     id: 0
-    cover: ""
-    link: ""
-
-  - title: "Dear Esther"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-
-  - title: "Dead Space 2"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "Dead Space"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
-  
-  - title: "The Graveyard"
-    platform: "PC"
-    id: 0
-    cover: ""
-    link: ""
+    link: ''
+    platform: PC
+    title: The Graveyard
+  list: Completed
