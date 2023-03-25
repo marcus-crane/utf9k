@@ -16,8 +16,10 @@ Of particular interest is the live player on the homepage which surfaces metadat
 * music
   * local music powered by plex apis
   * streaming music powered by tidal but surfaced via plex apis
-* gaming
-  * powered by playstation apis to surface ps4/ps5 games being played
+* manga
+  * powered by anilist apis
+* games
+  * powered by steam apis
 
 ## Getting setup
 
