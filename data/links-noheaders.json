@@ -112,11 +112,11 @@
     "url": "http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183"
   },
   "http://www.ombudsman.parliament.nz": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2018-08-18--nz-oia-guide/index.md"
     ],
-    "status": 503,
+    "status": 200,
     "url": "http://www.ombudsman.parliament.nz"
   },
   "http://www.rodsbooks.com/efi-bootloaders/principles.html": {
@@ -1675,11 +1675,11 @@
     "url": "https://getpocket.com"
   },
   "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2020-03-08--bookmarking-march-2020/index.md"
     ],
-    "status": 200,
+    "status": 403,
     "url": "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011"
   },
   "https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in": {
