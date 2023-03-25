@@ -974,9 +974,9 @@
       link: https://www.igdb.com/games/phoenix-wright-ace-attorney-justice-for-all
       platform: Nintendo DS
       title: "Phoenix Wright: Ace Attorney: Justice for All"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/278956.png"
+      id: 1426
+      link: "https://www.igdb.com/games/phoenix-wright-ace-attorney"
       platform: Nintendo DS
       title: "Phoenix Wright: Ace Attorney"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wtf.jpg
@@ -1004,9 +1004,9 @@
       link: https://www.igdb.com/games/kingdom-hearts-358-2-days
       platform: Nintendo DS
       title: Kingdom Hearts 358/2 Days
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/141243.png"
+      id: 1219
+      link: "https://www.igdb.com/games/kingdom-hearts"
       platform: Playstation 2
       title: Kingdom Hearts
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2xf0.jpg
@@ -1039,9 +1039,9 @@
       link: https://www.igdb.com/games/dead-rising-2-case-zero
       platform: Xbox 360
       title: "Dead Rising: Case Zero"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/240575.png"
+      id: 546
+      link: "https://www.igdb.com/games/prey"
       platform: Xbox 360
       title: Prey
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2e8z.jpg
@@ -1074,9 +1074,9 @@
       link: https://www.igdb.com/games/gears-of-war
       platform: PC
       title: Gears of War
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/227031.png"
+      id: 6996
+      link: "https://www.igdb.com/games/fracture"
       platform: Xbox 360
       title: Fracture
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1ycw.jpg
@@ -1124,9 +1124,9 @@
       link: https://www.igdb.com/games/metal-gear-solid-3-snake-eater
       platform: Playstation 2
       title: "Metal Gear Solid 3: Snake Eater"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/240787.png"
+      id: 375
+      link: "https://www.igdb.com/games/metal-gear-solid"
       platform: Playstation
       title: Metal Gear Solid
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2agi.jpg
@@ -1165,9 +1165,9 @@
       link: https://www.igdb.com/games/call-of-duty-modern-warfare-2
       platform: Playstation 3
       title: "Call of Duty: Modern Warfare 2"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/88869.png"
+      id: 545
+      link: "https://www.igdb.com/games/call-of-duty-black-ops"
       platform: PC
       title: "Call of Duty: Black Ops"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1wko.jpg
@@ -1180,61 +1180,61 @@
       link: https://www.igdb.com/games/assassins-creed-ii
       platform: Playstation 3
       title: Assassin's Creed II
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/82652.png"
+      id: 128
+      link: "https://www.igdb.com/games/assassin-s-creed"
       platform: Xbox 360
       title: Assassin's Creed
     - cover: ""
       id: 0
       link: ""
       platform: Nintendo DS
-      title: "Pok\xE9mon Diamond and Pearl"
+      title: "Pokemon Diamond and Pearl"
     - cover: ""
       id: 0
       link: ""
       platform: Game Boy Advance
-      title: "Pok\xE9mon Ruby and Sapphire"
+      title: "Pokemon Ruby and Sapphire"
     - cover: ""
       id: 0
       link: ""
       platform: Game Boy Color
-      title: "Pok\xE9mon Red and Blue"
+      title: "Pokemon Red and Blue"
     - cover: ""
       id: 0
       link: ""
       platform: Nintendo DS
-      title: "Pok\xE9mon Ranger"
+      title: "Pokemon Ranger"
     - cover: ""
       id: 0
       link: ""
       platform: Nintendo DS
-      title: "Pok\xE9mon Platinum"
+      title: "Pokemon Platinum"
     - cover: ""
       id: 0
       link: ""
       platform: Nintendo DS
-      title: "Pok\xE9mon Mystery Dungeon: Blue/Red Rescue Team"
+      title: "Pokemon Mystery Dungeon: Blue/Red Rescue Team"
     - cover: ""
       id: 0
       link: ""
       platform: Nintendo DS
-      title: "Pok\xE9mon HeartGold and SoulSilver"
+      title: "Pokemon HeartGold and SoulSilver"
     - cover: ""
       id: 0
       link: ""
       platform: Game Boy Color
-      title: "Pok\xE9mon Gold and Silver"
+      title: "Pokemon Gold and Silver"
     - cover: ""
       id: 0
       link: ""
       platform: Gameboy Advance
-      title: "Pok\xE9mon FireRed and LeafGreen"
+      title: "Pokemon FireRed and LeafGreen"
     - cover: ""
       id: 0
       link: ""
       platform: Gameboy Advance
-      title: "Pok\xE9mon Emerald"
+      title: "Pokemon Emerald"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3ohz.jpg
       id: 1033
       link: https://www.igdb.com/games/the-legend-of-zelda-the-wind-waker
@@ -1265,9 +1265,9 @@
       link: https://www.igdb.com/games/zoids-legacy
       platform: Gameboy Advance
       title: "Zoids: Legacy"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/94389.png"
+      id: 498
+      link: "https://www.igdb.com/games/borderlands"
       platform: Playstation 3
       title: Borderlands
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1xbi.jpg
@@ -1275,9 +1275,9 @@
       link: https://www.igdb.com/games/battlefield-bad-company-2
       platform: Playstation 3
       title: "Battlefield: Bad Company 2"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/101047.png"
+      id: 5025
+      link: "https://www.igdb.com/games/to-the-moon"
       platform: PC
       title: To the Moon
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h2e.jpg
@@ -1327,15 +1327,15 @@
       link: https://www.igdb.com/games/puzzle-agent-2
       platform: PC
       title: Puzzle Agent
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/81110.png"
+      id: 570
+      link: "https://www.igdb.com/games/prototype"
       platform: PC
       replay: true
       title: Prototype
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/81110.png"
+      id: 570
+      link: "https://www.igdb.com/games/prototype"
       platform: Xbox 360
       title: Prototype
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1rs4.jpg
@@ -1425,15 +1425,15 @@
       link: https://www.igdb.com/games/broken-sword-the-smoking-mirror
       platform: PC
       title: "Broken Sword II: The Smoking Mirror"
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/80264.png"
+      id: 502
+      link: "https://www.igdb.com/games/brink"
       platform: Playstation 3
       replay: true
       title: Brink
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/80264.png"
+      id: 502
+      link: "https://www.igdb.com/games/brink"
       platform: PC
       title: Brink
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1oyo.jpg
@@ -1538,9 +1538,9 @@
       link: https://www.igdb.com/games/dead-space
       platform: PC
       title: Dead Space
-    - cover: ""
-      id: 0
-      link: ""
+    - cover: "https://images.igdb.com/igdb/image/upload/t_cover_big/78335.png"
+      id: 9255
+      link: "https://www.igdb.com/games/the-graveyard"
       platform: PC
       title: The Graveyard
   list: Completed
