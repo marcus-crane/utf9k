@@ -14,7 +14,7 @@
 {{ end }}
 
 {{ define "style" }}
-  {{ $littlefoot := resources.GetRemote "https://unpkg.com/littlefoot/dist/littlefoot.css" | postCSS }}
+  {{ $littlefoot := resources.GetRemote "https://unpkg.com/littlefoot@4.0.0-9/dist/littlefoot.css" | postCSS }}
   {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $littlefoot.RelPermalink }}" />
   {{ else }}

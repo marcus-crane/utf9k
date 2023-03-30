@@ -11,8 +11,6 @@
 }
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --user-font-scale: 0.9rem - 16px;
   font-size: clamp(
     0.6rem,
@@ -23,6 +21,10 @@
   --text-dark: #1e1e1e;
   --bg-light: #eaebe3;
   --bg-dark: #1f2738;
+}
+
+:root, .littlefoot__content {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 html,
@@ -49,7 +51,7 @@ body {
     color: var(--text-light);
   }
 
-  .littlefoot-footnote__content {
+  .littlefoot__content {
     background: var(--bg-dark);
     color: var(--text-light);
   }
@@ -329,7 +331,7 @@ article #post-body > ol {
 }
 
 article #post-body .notice blockquote,
-article #post-body .littlefoot-footnote__host p {
+article #post-body .littlefoot__content p {
   margin-bottom: 0;
 }
 
