@@ -2590,11 +2590,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3034,7 +3033,7 @@
     "status": 200,
     "url": "https://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-a-shell-script"
   },
-  "https://unpkg.com/littlefoot/dist/littlefoot.css": {
+  "https://unpkg.com/littlefoot": {
     "alive": true,
     "sources": [
       "layouts/_default/single.html",
@@ -3043,7 +3042,7 @@
       "layouts/reviews/single.html"
     ],
     "status": 200,
-    "url": "https://unpkg.com/littlefoot/dist/littlefoot.css"
+    "url": "https://unpkg.com/littlefoot"
   },
   "https://us.macmillan.com/books/9780374159122": {
     "alive": true,
