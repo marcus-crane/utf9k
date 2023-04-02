@@ -1,16 +1,17 @@
-- games:
+- list: Actively playing
+  games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.png
       id: 114009
       link: https://www.igdb.com/games/dragon-ball-z-kakarot
       platform: PC
       title: "Dragon Ball Z: Kakarot"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.png
-      id: 233585
-      link: https://www.igdb.com/games/hi-fi-rush
-      platform: PC
-      title: Hi-Fi Rush
-  list: Actively playing
-- games:
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
+      id: 7346
+      link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
+      platform: Nintendo Switch
+      title: "The Legend of Zelda: Breath of the Wild"
+- list: Stalled but occasionally progress is made
+  games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg
       id: 103329
       link: https://www.igdb.com/games/control
@@ -36,6 +37,11 @@
       link: https://www.igdb.com/games/grandia
       platform: Nintendo Switch
       title: Grandia
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co6219.png
+      id: 233585
+      link: https://www.igdb.com/games/hi-fi-rush
+      platform: PC
+      title: Hi-Fi Rush
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png
       id: 109458
       link: https://www.igdb.com/games/katamari-damacy-reroll
@@ -50,7 +56,7 @@
       id: 1521
       link: https://www.igdb.com/games/pokemon-black
       platform: Nintendo DS
-      title: "Pok\xE9mon Black"
+      title: "Pokemon Black"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png
       id: 191930
       link: https://www.igdb.com/games/pokemon-violet
@@ -71,13 +77,8 @@
       link: https://www.igdb.com/games/tales-of-arise
       platform: Playstation 5
       title: Tales of Arise
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
-      id: 7346
-      link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
-      platform: Nintendo Switch
-      title: "The Legend of Zelda: Breath of the Wild"
-  list: Stalled but occasionally progress is made
-- games:
+- list: Completed
+  games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png
       date_finished: 2023-02-03
       id: 9763
@@ -174,7 +175,7 @@
       id: 37382
       link: https://www.igdb.com/games/pokemon-sword
       platform: Nintendo Switch
-      title: "Pok\xE9mon Sword"
+      title: "Pokemon Sword"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co316v.jpg
       date_finished: 2019-11-11
       id: 19564
@@ -1543,4 +1544,3 @@
       link: https://www.igdb.com/games/the-graveyard
       platform: PC
       title: The Graveyard
-  list: Completed
