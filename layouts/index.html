@@ -28,7 +28,7 @@
             {{ range where .books "progress" "!=" 100 }}
               {{ $image := resources.GetRemote .cover }}
               <li style="display: inline-block;">
-                <img alttitle="OpenLibrary" altsrc="{{ .link }}" alt="A cover photo of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
+                <img alttitle="OpenLibrary" altsrc="{{ .link }}" alt="A cover image of the book titled {{ .title }}" src="{{ $image.RelPermalink }}" height="180px" style="border-radius: 3px;" />
                 <p>{{ .progress }}% read</p>
               </li>
             {{ end }}
@@ -45,7 +45,7 @@
           <ul>
           {{ range $.Site.Data.manga }}
             <li style="display: inline-block;">
-              <img src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
+              <img alttitle="AniList" altsrc="{{ .url }}" alt="A cover image of {{ .title }}, a manga series by {{ .author }}" src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
               <p>{{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}</p>
             </li>
           {{ end }}
