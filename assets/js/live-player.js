@@ -10,6 +10,12 @@ const progressArea = document.querySelector("#progress")
 
 const rotatingBorder = document.querySelector("#rotating-border")
 
+const MANGA = 'manga'
+const GAMING = 'gaming'
+const EPISODE = 'episode'
+const MOVIE = 'movie'
+const TRACK = 'track'
+
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
@@ -21,6 +27,18 @@ const tvVerbPastTense = "📺 I was recently watching"
 
 const readingVerb = "📚 I'm currently reading"
 const readingVerbPastTense = "📚 I was recently reading"
+
+// Not all categories are able to support "live" statuses so
+// for example, there's no use in inferring active changes
+// for say; manga so when that changes, we want to re-fetch
+// history instead of deferring
+const liveliness = {
+  MANGA: false,
+  GAMING: false,
+  EPISODE: true,
+  MOVIE: true,
+  TRACK: true
+}
 
 // Because the eventSource clears itself with each update (we only care about the latest event)
 // a user may hit the side in between updates at which point, there are no events sent to them
@@ -44,9 +62,15 @@ eventSource.onmessage = function (event) {
   }
   const previousTitle = title.innerText
   renderLivePlayer(data)
-  if (data.is_active && data.title !== previousTitle) {
-    // If a track is already active but changes to inactive, the re-rendered state will match what already exists
-    // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
+  // If a track is already active but changes to inactive, the re-rendered state will match what already exists
+  // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
+  // Lastly, not all categories have live updates so we should take any update as a hint to update history
+  // in order to properly show the effect of the current item dropping out of the player and into the history queue
+  const shouldUpdateHistory = !liveliness[data.category] || data.is_active
+  if (
+    shouldUpdateHistory &&
+    data.title !== previousTitle
+  ) {
     fetchHistory()
   }
 }
@@ -79,7 +103,7 @@ function renderLivePlayer(data) {
   let showProgression = false
   rotatingBorder.className = "rotating-border-hidden"
   switch (data.category) {
-  case "manga":
+  case MANGA:
     data.title = formatMangaTitle(data.title)
     if (data.is_active) {
       action.innerText = readingVerb
@@ -87,15 +111,15 @@ function renderLivePlayer(data) {
       action.innerText = readingVerbPastTense
     }
     break
-  case "gaming":
+  case GAMING:
     if (data.is_active) {
       action.innerText = gamingVerb
     } else {
       action.innerText = gamingVerbPastTense
     }
     break
-  case "episode":
-  case "movie":
+  case EPISODE:
+  case MOVIE:
     if (data.is_active) {
       action.innerText = tvVerb
       showProgression = true
@@ -103,7 +127,7 @@ function renderLivePlayer(data) {
       action.innerText = tvVerbPastTense
     }
     break
-  case "track":
+  case TRACK:
     if (data.is_active) {
       action.innerText = musicVerb
       showProgression = true
@@ -187,7 +211,7 @@ function renderHistory(data) {
   }
   let count = 0
   for (const item of data) {
-    if (item.category === "manga") {
+    if (item.category === MANGA) {
       item.title = formatMangaTitle(item.title)
     }
     // We only want to skip the newest history entry if it happens to match what is in the live player
@@ -200,19 +224,19 @@ function renderHistory(data) {
 
     let emoji = ""
     switch (item.category) {
-    case "gaming":
+    case GAMING:
       emoji = "🕹"
       break
-    case "episode":
+    case EPISODE:
       emoji = "📺"
       break
-    case "movie":
+    case MOVIE:
       emoji = "🎬"
       break
-    case "track":
+    case TRACK:
       emoji = "🎧"
       break
-    case "manga":
+    case MANGA:
       emoji = "📚"
       break
     default:
