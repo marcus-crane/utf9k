@@ -42,11 +42,6 @@
       link: https://www.igdb.com/games/hi-fi-rush
       platform: PC
       title: Hi-Fi Rush
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png
-      id: 109458
-      link: https://www.igdb.com/games/katamari-damacy-reroll
-      platform: Nintendo Switch
-      title: Katamari Damacy REROLL
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg
       id: 131999
       link: https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot
@@ -85,6 +80,12 @@
       link: https://www.igdb.com/games/ace-combat-04-shattered-skies
       platform: Playstation 2
       title: "Ace Combat 04: Shattered Skies"
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co25sm.png
+      date_finished: 2022-12-23
+      id: 109458
+      link: https://www.igdb.com/games/katamari-damacy-reroll
+      platform: Nintendo Switch
+      title: Katamari Damacy REROLL
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1qv8.png
       date_finished: 2022-11-03
       id: 55080
