@@ -1,4 +1,4 @@
-resources
+
 node_modules
 .hugo_build.lock
 .DS_Store
@@ -13,3 +13,7 @@ yarn.lock
 data/fancylinks.json
 data/filesizes.json
 data/imagemetadata.json
+
+# Images used in data files
+resources/_gen/*
+!resources/_gen/images/
