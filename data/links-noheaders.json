@@ -374,11 +374,10 @@
     "url": "https://bandcamp.com"
   },
   "https://beorgapp.com": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
     ],
-    "status": 200,
     "url": "https://beorgapp.com"
   },
   "https://berkeleygraphics.com/typefaces/berkeley-mono": {
@@ -2460,11 +2459,10 @@
     "url": "https://npmjs.com"
   },
   "https://nvultra.com": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2021-06-01--remind-the-user-what-your-service-does/index.md"
     ],
-    "status": 200,
     "url": "https://nvultra.com"
   },
   "https://opentelemetry.io": {
@@ -3601,11 +3599,10 @@
     "url": "https://www.neomutt.org"
   },
   "https://www.netlify.com": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/thanks/index.md"
     ],
-    "status": 200,
     "url": "https://www.netlify.com"
   },
   "https://www.nginx.com/products/nginx-ingress-controller": {
