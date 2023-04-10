@@ -1,6 +1,6 @@
 [
   {
-    "progress": 218,
+    "progress": 219,
     "title": "Jujutsu Kaisen",
     "chapters": null,
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
@@ -8,7 +8,7 @@
     "author": "Gege Akutami"
   },
   {
-    "progress": 1079,
+    "progress": 1080,
     "title": "ONE PIECE",
     "chapters": null,
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-6E3RDS36SsYk.png",
@@ -30,5 +30,21 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86508-QSahE7mTFEXl.png",
     "url": "https://anilist.co/manga/86508",
     "author": "Akira Toriyama"
+  },
+  {
+    "progress": 2,
+    "title": "SandLand",
+    "chapters": 14,
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30724-EIciYgxgyUqs.jpg",
+    "url": "https://anilist.co/manga/30724",
+    "author": "Akira Toriyama"
+  },
+  {
+    "progress": 1,
+    "title": "Tenmaku Cinema",
+    "chapters": null,
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163340-e1dtYc4svsri.png",
+    "url": "https://anilist.co/manga/163340",
+    "author": "Yuuto Tsukuda"
   }
 ]
