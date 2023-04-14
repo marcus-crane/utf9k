@@ -1,15 +1,11 @@
 - list: Actively playing
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.png
+      date_finished: 2023-04-14
       id: 114009
       link: https://www.igdb.com/games/dragon-ball-z-kakarot
       platform: PC
       title: "Dragon Ball Z: Kakarot"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
-      id: 7346
-      link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
-      platform: Nintendo Switch
-      title: "The Legend of Zelda: Breath of the Wild"
 - list: Stalled but occasionally progress is made
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg
@@ -42,6 +38,11 @@
       link: https://www.igdb.com/games/hi-fi-rush
       platform: PC
       title: Hi-Fi Rush
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
+      id: 7346
+      link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
+      platform: Nintendo Switch
+      title: "The Legend of Zelda: Breath of the Wild"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg
       id: 131999
       link: https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot
