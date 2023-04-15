@@ -219,6 +219,14 @@
     "status": 200,
     "url": "https://amazon.com"
   },
+  "https://apenwarr.ca/log/20171213": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://apenwarr.ca/log/20171213"
+  },
   "https://apenwarr.ca/log/20190926": {
     "alive": true,
     "sources": [
@@ -374,10 +382,11 @@
     "url": "https://bandcamp.com"
   },
   "https://beorgapp.com": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
     ],
+    "status": 200,
     "url": "https://beorgapp.com"
   },
   "https://berkeleygraphics.com/typefaces/berkeley-mono": {
@@ -975,6 +984,14 @@
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Entropy"
+  },
+  "https://en.wikipedia.org/wiki/Escitalopram": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Escitalopram"
   },
   "https://en.wikipedia.org/wiki/Failure_": {
     "alive": true,
@@ -2459,10 +2476,11 @@
     "url": "https://npmjs.com"
   },
   "https://nvultra.com": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2021-06-01--remind-the-user-what-your-service-does/index.md"
     ],
+    "status": 200,
     "url": "https://nvultra.com"
   },
   "https://opentelemetry.io": {
@@ -2498,6 +2516,14 @@
     ],
     "status": 200,
     "url": "https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity"
+  },
+  "https://oxsci.org/can-a-camera-capture-your-soul": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://oxsci.org/can-a-camera-capture-your-soul"
   },
   "https://pandas.pydata.org": {
     "alive": true,
@@ -3599,10 +3625,11 @@
     "url": "https://www.neomutt.org"
   },
   "https://www.netlify.com": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/thanks/index.md"
     ],
+    "status": 200,
     "url": "https://www.netlify.com"
   },
   "https://www.nginx.com/products/nginx-ingress-controller": {
