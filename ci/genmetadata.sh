@@ -8,6 +8,6 @@ SCRIPTS="$TOPLEVEL/scripts"
 echo "Generating site metadata"
 
 python "$SCRIPTS/gather-filesizes.py"
-python "$SCRIPTS/gather-image-metadata.py"
+# python "$SCRIPTS/gather-image-metadata.py" TODO: Fix
 python "$SCRIPTS/generate-fancylinks.py"
 python "$SCRIPTS/sync-manga.py"
