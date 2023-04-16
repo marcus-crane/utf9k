@@ -9,11 +9,35 @@
     </form>
   </header>
   <ul>
+    {{ $systemColors := slice
+      "lightpink"
+      "blueviolet"
+      "fuchsia"
+      "indigo"
+      "darkviolet"
+      "mediumvioletred"
+      "salmon"
+      "plum"
+      "tomato"
+      "orange"
+      "darkkhaki"
+      "royalblue"
+      "deepskyblue"
+      "lightseagreen"
+      "turquoise"
+      "chocolate"
+      "brown"
+      "goldenrod"
+      "burlywood"
+
+    }}
     {{ range sort .Pages "Lastmod" "desc" }}
     <li id="{{ .Slug }}" class="question">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ range .Params.tags }}
-        <span>#{{ . }}</span>
+        {{ $hash := (crypto.FNV32a .) }}
+        {{ $i := mod $hash (len $systemColors) }}
+        <span style="color: {{ index $systemColors $i }}">#{{ . }}</span>
       {{ end }}
     </li>
     {{ end }}
