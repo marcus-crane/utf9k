@@ -23,15 +23,11 @@ Let's walk through the deletion process as it stands in April 2021 and see how m
 
 From the file viewer area, you'll want to click on your profile picture (**First click**)
 
-{{< image src="01-settings.png" >}}
-A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.
-{{< /image >}}
+![A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.](01-settings.png)
 
 From the dropbown, click on Settings (**Second click**)
 
-{{< image src="02-inside-settings.png" >}}
-A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".
-{{< /image >}}
+![A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".](02-inside-settings.png)
 
 Now that we're inside the Settings menu, click on Delete account (**Third click**)
 
@@ -39,9 +35,7 @@ That should be it... right? Done. Simple?
 
 We're just getting started.
 
-{{< image src="03-first-screen.png" >}}
-A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they'll lose a bunch of storage and lists some consequences such as "Dropbox will stop syncing". At the bottom are two buttons, one in blue that reads "I changed my mind, take me back to Dropbox" and one in white that reads "I still want to downgrade". The downgrade button is clearly what the user is after but the colour coding makes it tricky since the "I don't want to cancel" one is more prominent.
-{{< /image >}}
+![A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they'll lose a bunch of storage and lists some consequences such as "Dropbox will stop syncing". At the bottom are two buttons, one in blue that reads "I changed my mind, take me back to Dropbox" and one in white that reads "I still want to downgrade". The downgrade button is clearly what the user is after but the colour coding makes it tricky since the "I don't want to cancel" one is more prominent.](03-first-screen.png)
 
 If we really have to, I can handle putting up with one of these pages but come on, the colour coding of these buttons is clearly a [dark pattern](https://www.darkpatterns.org/). I clicked a button called "Delete account" and now the primary action on this page is "I changed my mind".
 
@@ -49,9 +43,7 @@ Additionally, the wording that suggests I need to cancel my subscription is odd,
 
 So anyway, we resist the urge and click on "I still want to downgrade", which weirdly does not say "Complete downgrade". You know what that means... (**Fourth click**)
 
-{{< image src="04-second-screen.png" >}}
-A pop up modal asking if the author still wants to cancel. It has a bunch of radio buttons with reasons for cancellation, with the author having selected one that reads "I found another product I liked better". There is a button labelled "Skip" in the bottom left and two buttons on the bottom right. They read "Don't cancel" and "Continue cancelling". Strangely, "Continue cancelling" is the more prominent of the two, unlike the previous page.
-{{< /image >}}
+![A pop up modal asking if the author still wants to cancel. It has a bunch of radio buttons with reasons for cancellation, with the author having selected one that reads "I found another product I liked better". There is a button labelled "Skip" in the bottom left and two buttons on the bottom right. They read "Don't cancel" and "Continue cancelling". Strangely, "Continue cancelling" is the more prominent of the two, unlike the previous page.](04-second-screen.png)
 
 God, yes! I'm two screens deep already so I'm pretty fucking sure I would like to cancel. I'm not "thinking" of leaving, I already decided that when you started degrading the UI. You could have just shipped nothing for the next 5 years and continued to make bank through word of mouth and the quality of your sync engine.
 
@@ -61,9 +53,7 @@ Interesting, the colour coding has switched once again to suggest that "Continue
 
 (**Fifth and sixth clicks**)
 
-{{< image src="05-third-screen.png" >}}
-Another page with the title "Dropbox Plus is so much more than just space" and presents some alleged reasons to stay like "Easy sharing" and "Large storage volume". These are the same bullet points, roughly, as the earlier page. At the bottom are two buttons, a prominent blue one on the left titled "Keep Dropbox Plus" and a transparent, less obvious one on the right titled "I still want to downgrade".
-{{< /image >}}
+![Another page with the title "Dropbox Plus is so much more than just space" and presents some alleged reasons to stay like "Easy sharing" and "Large storage volume". These are the same bullet points, roughly, as the earlier page. At the bottom are two buttons, a prominent blue one on the left titled "Keep Dropbox Plus" and a transparent, less obvious one on the right titled "I still want to downgrade".](05-third-screen.png)
 
 How many fonts does Dropbox use? None of these screens are even consistent whatsoever.
 
@@ -73,9 +63,7 @@ The colour coding has changed yet again to suggest "Keep Dropbox Plus" is the pr
 
 (**Seventh click**)
 
-{{< image src="06-final-screen.png" >}}
-Yet another page titled "Before you go, Marcus...", addressed to the author. It has a large blue button in the middle of the screen that reads "I changed my mind, take me back to Dropbox". There is another button for cancelling somewhere off screen that is not visible to the reader. The rest of the page just roughly lists the same claimed features as previous pages.
-{{< /image >}}
+![Yet another page titled "Before you go, Marcus...", addressed to the author. It has a large blue button in the middle of the screen that reads "I changed my mind, take me back to Dropbox". There is another button for cancelling somewhere off screen that is not visible to the reader. The rest of the page just roughly lists the same claimed features as previous pages.](06-final-screen.png)
 
 WHAT DO YOU MEAN BEFORE I GO? THIS IS LITERALLY THE SAME INFORMATION PRESENTED FOR THE THIRD TIME. HOW IS THIS A CONVINCING ARGUMENT? I DON'T UNDERSTAND WHY YOU AREN'T EVEN TRYING.
 
@@ -83,43 +71,31 @@ You can't even see the cancel button on this page. You have to scroll right to t
 
 (**Eighth click**)
 
-{{< image src="07-done.png" >}}
-A tightly cropped screenshot of a green banner that reads "Account downgraded. Thanks for your feedback."
-{{< /image >}}
+![A tightly cropped screenshot of a green banner that reads "Account downgraded. Thanks for your feedback."](07-done.png)
 
 Now originally, this is where I had ended the blog post but I actually went back to Dropbox a few weeks later[^2] and just discovered this process hadn't even deleted my account. All I accomplished was that I downgraded my plan which is obvious in hindsight but also, why this much friction just to downgrade a plan then? Just what sort of nightmare will it take to delete my account and do businesses have to go through this hell if you purchase an enterprise plan?!
 
-{{< image src="08-banner.png" >}}
-A tightly cropped screenshot of a red banner that reads "You are scheduled to downgrade."
-{{< /image >}}
+![A tightly cropped screenshot of a red banner that reads "You are scheduled to downgrade."](08-banner.png)
 
 So, let's finish this thing off for real.
 
 Back to the home page, we once again click on the user profile and then on Settings
 
-{{< image src="01-settings.png" >}}
-A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.
-{{< /image >}}
+![A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.](01-settings.png)
 
 (**Ninth and tenth clicks**)
 
 Once more, hit the "Delete account" button at the bottom
 
-{{< image src="02-inside-settings.png" >}}
-A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".
-{{< /image >}}
+![A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled "Delete account".](02-inside-settings.png)
 
 (**Eleventh click**)
 
-{{< image src="09-delete.png" >}}
-A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.
-{{< /image >}}
+![A form that says "Permanently delete your Dropbox account" with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.](09-delete.png)
 
 Six[^3] more clicks to fill in this shitty form and that brings us up to **seventeen clicks** when I hit "Permanently delete"
 
-{{< image src="10-free.png" >}}
-A tightly cropped screenshot of a black banner that reads "Your account has been deleted. We're sorry to see you go."
-{{< /image >}}
+![A tightly cropped screenshot of a black banner that reads "Your account has been deleted. We're sorry to see you go."](10-free.png)
 
 Finally, I'm free.
 

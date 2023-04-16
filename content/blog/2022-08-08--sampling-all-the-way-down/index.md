@@ -16,9 +16,7 @@ To be clear, when I say accuracy here, I don't mean the accuracy of what each tr
 
 I thought it might be interesting, both for my own future reference but also just as a general discussion to go through some of the various ways that tracing may not reflect reality in its entirety.
 
-{{< image src="https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/apm_lifecycle_0.c5017c20b222d73a29b5a1a223f83eb4.png?auto=format" >}}
-A diagram showing various parts of the Datadog ingestion pipeline. The screenshot is just meant to reflect the sprawl of different bits involved in the pipeline. The actual elements of the pipeline itself aren't so important for this image.
-{{< /image >}}
+![A diagram showing various parts of the Datadog ingestion pipeline. The screenshot is just meant to reflect the sprawl of different bits involved in the pipeline. The actual elements of the pipeline itself aren't so important for this image.](https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/apm_lifecycle_0.c5017c20b222d73a29b5a1a223f83eb4.png?auto=format)
 
 ## The outer wall
 
@@ -30,9 +28,7 @@ These requests won't even reach you so they won't even show up in your tracing.
 
 ## Application sampling
 
-{{< image src="apps.jpg" >}}
-A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.
-{{< /image >}}
+![A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.](apps.jpg)
 
 So we've got requests hitting our application so we capture 100% of those requests as traces and life is easy right?
 
@@ -48,9 +44,7 @@ The above also assumes that your application is configured properly as well to e
 
 ## Agent sampling
 
-{{< image src="apps.jpg" >}}
-The same Datadog ingestion pipeline shown in the previous image with no changes.
-{{< /image >}}
+![The same Datadog ingestion pipeline shown in the previous image with no changes.](apps.jpg)
 
 Now we go a level high to the process that receives all of your traces.
 
@@ -58,9 +52,7 @@ It has its [own sampling](https://docs.datadoghq.com/tracing/trace_pipeline/inge
 
 You might also get rate limited, causing traces to probably be discarded, if you have [too many services connecting to a single agent](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1152), [your agent is using too much memory](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1082) or [your agent is using too much CPU](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1091).
 
-{{< image src="https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_traffic_breakdown.a0e421f3503064b7d03f1c3683a67fc4.png?auto=format" >}}
-A screenshot of the Datadog service ingestion screen showing a service that has <0.1% of traces sampled due to agent CPU or RAM usage
-{{< /image >}}
+![A screenshot of the Datadog service ingestion screen showing a service that has <0.1% of traces sampled due to agent CPU or RAM usage](https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_traffic_breakdown.a0e421f3503064b7d03f1c3683a67fc4.png?auto=format)
 
 On top of all this, there's further sampling beyond the "10 traces/second" which is a [max of 200 trace events per second](https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits/#maximum-events-per-second-limit). What is a trace event versus a trace you ask? I have no idea!
 
@@ -70,25 +62,19 @@ Once again, this too assumes that all of your agent instances are properly confi
 
 ## Ingestion Sampling
 
-{{< image src="https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/ingestion_sampling_rules.664739c275df2d563b782552d467422e.png?auto=format" >}}
-A version of the Datadog ingestion pipeline, with a section titled Ingestion sampling rules being selected. It reflects the part of the pipeline we are going to discuss in this section.
-{{< /image >}}
+![A version of the Datadog ingestion pipeline, with a section titled Ingestion sampling rules being selected. It reflects the part of the pipeline we are going to discuss in this section.](https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/ingestion_sampling_rules.664739c275df2d563b782552d467422e.png?auto=format)
 
 Oh, you thought we were done? We're just getting started because we've got more things to toggle.
 
 So you've configured your application and agent perfectly but you're still not perfectly reflecting reality. [Did you know upstream services can decide whether traces involving your service are discarded or retained?](https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_controls/#service-ingestion-summary).
 
-{{< image src="https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_ingestion_summary.fd43c5c59b2c9273cd84e8467b958194.png?auto=format" >}}
-A screenshot of the Service Ingestion Summary screen showing a service. Visible to the right side are all of the upstream services that have influence on the displayed services trace sampling decisions.
-{{< /image >}}
+![A screenshot of the Service Ingestion Summary screen showing a service. Visible to the right side are all of the upstream services that have influence on the displayed services trace sampling decisions.](https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_ingestion_summary.fd43c5c59b2c9273cd84e8467b958194.png?auto=format)
 
 You should probably go talk to your coworkers who maintain upstream services and argue the case for never sampling a single trace. Depending on who controls the credit card, it may not be quite as compelling when considering the huge bill that may be involved.
 
 ## Retention Filters
 
-{{< image src="https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/retention_filters.5e6f2b4eedbe790caf41a7e090048deb.png?auto=format" >}}
-A version of the Datadog ingestion pipeline, with a section titled Retention filters being selected. It reflects the part of the pipeline we are going to discuss in this section.
-{{< /image >}}
+![A version of the Datadog ingestion pipeline, with a section titled Retention filters being selected. It reflects the part of the pipeline we are going to discuss in this section.](https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/retention_filters.5e6f2b4eedbe790caf41a7e090048deb.png?auto=format)
 
 Ok, we're nearly through the gauntlet because all we've got left are retention filters.
 
@@ -128,9 +114,7 @@ Such a thing would get quite expensive which is where sketching comes in and it'
 
 Rather than perfectly calculating percentiles down to the very last decimal place, traces can be "bucketed" into rounded that are near enough to capture what they represent but we only need to store the bucket values and not every single value that is allocated to a bucket.
 
-{{< image src="https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png?auto=format&fit=max&w=847&dpr=2" >}}
-A screenshot showing latency buckets. There are three labelled 100 milliseconds, 102 milliseconds and 104 milliseconds. Traces that a few decimal places outside of each bucket are sampled into their closest buckets. For example, a trace that took 104.4 milliseconds is sampled into the 104 millisecond bucket.
-{{< /image >}}
+![A screenshot showing latency buckets. There are three labelled 100 milliseconds, 102 milliseconds and 104 milliseconds. Traces that a few decimal places outside of each bucket are sampled into their closest buckets. For example, a trace that took 104.4 milliseconds is sampled into the 104 millisecond bucket.](https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png?auto=format&fit=max&w=847&dpr=2)
 
 That is effectively the sketch in question and you can read more about the entire process [in this blog post](https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/).
 

@@ -164,9 +164,7 @@ As someone still relatively new, I actually find it handy given I've long forgot
 
 An unintended consequence of this layout, which may be a stretch to claim as I haven't made use of it myself, is that it can potentially lend itself quite well to search.
 
-{{< image src="search.png" >}}
-A screenshot of Github code search. The author has typed "what is listening on a port" into the code search against their dotfiles and found a matching file. The match isn't exactly what they typed in but close enough as if to suggest that searching for questions you've previously answered may be easier with this method.
-{{< /image >}}
+![A screenshot of Github code search. The author has typed "what is listening on a port" into the code search against their dotfiles and found a matching file. The match isn't exactly what they typed in but close enough as if to suggest that searching for questions you've previously answered may be easier with this method.](search.png)
 
 In this case, I remembered the essence of the question, but not the specific wording of the question itself. Likewise, I wouldn't remember to search for `lsof` so in this entirely staged example, there is possibly potential for having an easier time searching.
 

@@ -13,8 +13,8 @@ from common import (
 )
 
 DATA_FILE = "data/imagemetadata.json"
-IMAGE_SHORTCODE = "{{< image"
-IMAGECODE_REGEX = r"{{< image ?(.*?) ?>}}(?:\n?)(.*)(?:\n?){{< \/image >}}"
+IMAGE_SHORTCODE = "!["
+IMAGECODE_REGEX = r"!\[.*]\(.*\)"
 
 markdown_files = walk_content_folder(CONTENT_FILES, ".md")
 

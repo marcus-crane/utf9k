@@ -38,27 +38,19 @@ Often times, it isn't that every image fails to load but one or two that have be
 
 It leads to frustrating discussions like this
 
-{{< image src="twitter-dm-huge-l.png" >}}
-A Twitter direct message where the author posts an image that fails to load and the recipient says "huge L the image isn't loading".
-{{< /image >}}
+![A Twitter direct message where the author posts an image that fails to load and the recipient says "huge L the image isn't loading".](twitter-dm-huge-l.png)
 
 and this
 
-{{< image src="twitter-dm-alt-text.png" >}}
-A Twitter direct message where the author receives an image that fails to load, asks "got any alt text?" and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour.
-{{< /image >}}
+![A Twitter direct message where the author receives an image that fails to load, asks "got any alt text?" and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour.](twitter-dm-alt-text.png)
 
 and this
 
-{{< image src="twitter-dm-revenue.png" >}}
-A Twitter direct message where the author receives an image that fails to load and responds with "Guess who has $3 billion in revenue but still can't display photos in DMs :)"
-{{< /image >}}
+![A Twitter direct message where the author receives an image that fails to load and responds with "Guess who has $3 billion in revenue but still can't display photos in DMs :)"](twitter-dm-revenue.png)
 
 It happened again just the other day and I did a little poking around. It seems that `ton.twitter.com`, the image server used for DMs[^2] times out.
 
-{{< image src="timeout.png" noshadow=true >}}
-A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.
-{{< /image >}}
+![A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.](timeout.png)
 
 Upon closer inspection, only Port 80 (http) appears to be open with redirects to Port 443 (https) failing as there is no such port open based on a quick scan using `nmap`.
 

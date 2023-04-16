@@ -23,9 +23,7 @@ I don't remember where I dug it up but you can see a list of shutdown causes and
 
 Here's how the results looks on my machine where I had performed a normal shutdown as a test
 
-{{< image src="normal-shutdown.png" noshadow=true >}}
-An iTerm2 window showing the results of the command mentioned above. There is one result for a previous shutdown with the cause code of 5. This indicates a normal shutdown.
-{{< /image >}}
+![An iTerm2 window showing the results of the command mentioned above. There is one result for a previous shutdown with the cause code of 5. This indicates a normal shutdown.](normal-shutdown.png)
 
 If we compare the shutdown code to the PDF above, we can see the description is `Correct shut down` which lines up exactly.
 
@@ -33,9 +31,7 @@ Now let's take this information and use it to see what was potentially happening
 
 Here's a screenshot of his terminal window with the same command:
 
-{{< image src="abnormal-shutdown.png" noshadow=true >}}
-A macOS Terminal window showing the results of the previous command on a different machine. There are seven results for a cause code of -128. This indicates an abnormal shutdown.
-{{< /image >}}
+![A macOS Terminal window showing the results of the previous command on a different machine. There are seven results for a cause code of -128. This indicates an abnormal shutdown.](abnormal-shutdown.png)
 
 Going back to the PDF again, we can see that `-128` is an alias for `-112`. Checking `-112` tells us that it is "Probably memory related" which at least narrows it down.
 

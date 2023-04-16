@@ -12,15 +12,11 @@ Recently, a coworker of mine got a new laptop and needed to connect to the print
 
 For the unfamiliar, here's what the macOS printer settings look like.
 
-{{< image src="printer-overview.png" noshadow=true >}}
-  A screenshot of the macOS System Preferences pane for printing. It shows one registered printer on the left called example-printer which is sitting idle. It has the type Generic PostScript Printer. Nothing here indicates the queue name.
-{{< /image >}}
+![A screenshot of the macOS System Preferences pane for printing. It shows one registered printer on the left called example-printer which is sitting idle. It has the type Generic PostScript Printer. Nothing here indicates the queue name.](printer-overview.png)
 
 I can't see any queue settings so let's dive a little deeper.
 
-{{< image src="printer-settings.png" noshadow=true >}}
-  A screenshot of the macOS System Preferences pane. It has the settings window open for the printer from earlier called example-printer. There are only a few piece of information such as device name and driver version which are not helpful at all. There is only a single interactive checkbox with the label Use Generic Printer Features with no description of what that means. There is still nothing to indicate the queue name we are looking for.
-{{< /image >}}
+![A screenshot of the macOS System Preferences pane. It has the settings window open for the printer from earlier called example-printer. There are only a few piece of information such as device name and driver version which are not helpful at all. There is only a single interactive checkbox with the label Use Generic Printer Features with no description of what that means. There is still nothing to indicate the queue name we are looking for.](printer-settings.png)
 
 Nothing here either but surely there must be something under the hood. Thankfully, there's a built in command called `lpstat` that allows all sorts of printer configuration.
 

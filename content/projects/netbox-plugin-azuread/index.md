@@ -21,10 +21,6 @@ I mostly just scanned some existing AzureAD auth libraries and pieced together h
 
 You can view the plugin on [Github](https://github.com/marcus-crane/netbox-plugin-azuread) or [PyPI](https://pypi.org/project/netbox-plugin-azuread/).
 
-{{< image src="netbox-login.png" >}}
-A slightly modified version of the Netbox login screen that shows two buttons. One is labelled Azure AD while the other is labelled Password
-{{< /image >}}
+![A slightly modified version of the Netbox login screen that shows two buttons. One is labelled Azure AD while the other is labelled Password](netbox-login.png)
 
-{{< image src="netbox-profile.png" >}}
-The normal Netbox login screen showing a logged in user, who has been created via OAuth with Azure AD
-{{< /image >}}
+![The normal Netbox login screen showing a logged in user, who has been created via OAuth with Azure AD](netbox-profile.png)

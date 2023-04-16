@@ -24,9 +24,7 @@ The other part of the problem is that getting your highlights off of your device
 
 This is where October comes in. It was created primarily to scratch my own itch. While I'm perfectly capable of extracting highlights from my device, I also aspire to do as little work as possible.
 
-{{< image src="selector_main.png" noshadow=true >}}
-A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.
-{{< /image >}}
+![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](selector_main.png)
 
 This first version is very sparse and gives the user very little option besides syncing their highlights. It works well for myself, and has helped a few users but it doesn't provide much ability to introspect the upload process or control eg; which books are uploaded.
 

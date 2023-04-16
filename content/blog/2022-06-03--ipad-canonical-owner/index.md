@@ -16,9 +16,7 @@ It was a fully working iPad but it came preloaded with a number of dummy items s
 
 You can see these in any store but generally, you never get a chance to spend any length of time with them so making the most of this opportunity, I took a full backup of the device before resetting it.
 
-{{< image src="storedisplay.jpg" >}}
-A photo of an iPad Pro set up for display inside of a Noel Leeming store. Visible on the iPad is the Photos app set to the time period spanning 17 - 25th July 2019
-{{< /image >}}
+![A photo of an iPad Pro set up for display inside of a Noel Leeming store. Visible on the iPad is the Photos app set to the time period spanning 17 - 25th July 2019](storedisplay.jpg)
 
 A few days later, the store got in contact with me and requested that I return it back to them since it wasn't meant to be dispatched. They didn't have any other units on hand so I ended up getting a refund instead.
 
@@ -36,9 +34,7 @@ Some of the data is meaningless outside of the demo unit such as Photos which we
 
 We'll start with the juiciest of all the categories first since the rest are fairly light on detail. We can infer quite a bit from the calendar from the various locations attached to events.
 
-{{< image src="calendar.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. 11 events are visible across five different calendars.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. 11 events are visible across five different calendars.](calendar.jpg)
 
 Loaded onto the demo unit were 5 calendars which are available as [ICS](https://en.wikipedia.org/wiki/ICalendar) exports for browsing with any Calendar client.
 
@@ -52,9 +48,7 @@ We'll work through them in order:
 
 ### Kids
 
-{{< image src="kids.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. The Kids calendar is selected.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. The Kids calendar is selected.](kids.jpg)
 
 There are only 3 events on the kids calendar which are as follows:
 
@@ -72,9 +66,7 @@ Interestingly, Tiburon is apparently home to [St. Hilary School](https://en.wiki
 
 ### Personal
 
-{{< image src="personal.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. The Personal calendar is selected.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. The Personal calendar is selected.](personal.jpg)
 
 This calendar is home to a few generic events such as "Pay Bills" and "Doctor's Appointment".
 
@@ -88,9 +80,7 @@ There are some other catchups but none of them feature any locations
 
 ### Recreation
 
-{{< image src="recreation.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. The Recreation calendar is selected.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. The Recreation calendar is selected.](recreation.jpg)
 
 This calendar is what it says on the tin and features a number of locations as well:
 
@@ -105,9 +95,7 @@ This calendar is what it says on the tin and features a number of locations as w
 
 ### Training
 
-{{< image src="training.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. The Training calendar is selected.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. The Training calendar is selected.](training.jpg)
 
 I expected this calendar to be full of gym sessions but instead it's a work calendar.
 
@@ -126,9 +114,7 @@ From this, we can infer that this person is perhaps some sort of product manager
 
 ### Work
 
-{{< image src="work.jpg" >}}
-A screenshot of the macOS Calendar app visible on the author's computer. The Work calendar is selected.
-{{< /image >}}
+![A screenshot of the macOS Calendar app visible on the author's computer. The Work calendar is selected.](work.jpg)
 
 This is definitely the fullest calendar with a number of business meetings and catchups.
 
@@ -152,9 +138,7 @@ There's also a monthly entry for "Pancake Breakfast" at "St. Mary's" but I could
 
 There are 238 contact entries provided in two formats: [VCF](https://en.wikipedia.org/wiki/VCard) and [ABBU](https://fileinfo.com/extension/abbu)
 
-{{< image src="contacts.jpg" >}}
-A screenshot of the macOS Contacts app visible on the author's computer. A contact entry for Shota Aoyagi is selected. They have an iCloud email and allegedly live in Rochester, New York. Their contact card has a stock photo.
-{{< /image >}}
+![A screenshot of the macOS Contacts app visible on the author's computer. A contact entry for Shota Aoyagi is selected. They have an iCloud email and allegedly live in Rochester, New York. Their contact card has a stock photo.](contacts.jpg)
 
 The vast majority of contacts have addressed all across the United States of America with a handful that have addresses in Australia.
 
@@ -168,9 +152,7 @@ That said, I did google a number of the names and they all appear to be Apple em
 
 These were loaded as [Apple Notes](https://en.wikipedia.org/wiki/Notes_(Apple)) but there's no standard format so they were all exported as PDFs. They're mostly intact but some formatting got mangled in the process.
 
-{{< image src="notes.jpg" >}}
-A screenshot of the macOS Preview app showing a PDF. The PDF is an exported Apple Note showing a sketch for a treehouse. The note is titled "Jake's treehouse!!"
-{{< /image >}}
+![A screenshot of the macOS Preview app showing a PDF. The PDF is an exported Apple Note showing a sketch for a treehouse. The note is titled "Jake's treehouse!!"](notes.jpg)
 
 There's a note for `After-school activities for Jake` containing a checklist of sports so presumably this person is helping their son to decide on a sport. Interestingly, one of the entries is "Footy" which is a slang term for [Australian rules football](https://en.wikipedia.org/wiki/Australian_rules_football) so I guess this note is localised a little bit.
 
@@ -198,9 +180,7 @@ Beyond the above, most of the notes don't really tell us much about the author b
 
 There is a planning spreadsheet for a Summer Garden Party available as a [Numbers](https://en.wikipedia.org/wiki/Numbers_(spreadsheet)) file.
 
-{{< image src="numbers.jpg" >}}
-A screenshot of the macOS Preview app displaying a preview of a Number spreadsheet. Visible is a planning document for a garden party which lists a number of hosts and guests. A number of tasks are planned to be done between June and July. There are 4 sheets in total.
-{{< /image >}}
+![A screenshot of the macOS Preview app displaying a preview of a Number spreadsheet. Visible is a planning document for a garden party which lists a number of hosts and guests. A number of tasks are planned to be done between June and July. There are 4 sheets in total.](numbers.jpg)
 
 There isn't much to say about this other than it's a planning document for a party. I cross-referenced the names with the Contacts entries and while there were some shared names, I don't think they were the same people.
 
@@ -212,9 +192,7 @@ It lists a number of party-related businesses such as "Joe the Juggler" and "Tru
 
 This is a document on the [Leaning Tower of Pisa](https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa) created with [Pages](https://en.wikipedia.org/wiki/Pages_(word_processor)). It's available as a `.pages` file as well as a PDF export.
 
-{{< image src="pages.jpg" >}}
-A screenshot of the macOS Preview app displaying a preview of a Pages document. Visible is a page about the Leaning Tower of Pisa. It talks about the history of the tower and how it wasn't always leaning.
-{{< /image >}}
+![A screenshot of the macOS Preview app displaying a preview of a Pages document. Visible is a page about the Leaning Tower of Pisa. It talks about the history of the tower and how it wasn't always leaning.](pages.jpg)
 
 It appears to be a school report since it's relatively accessible and light on details. The cover page says that it's by "Mariana Lin".
 
@@ -224,9 +202,7 @@ There is a "Mariana Lin" in the Contacts list but I can't say whether there's an
 
 This is a presentation on [Yellowstone National Park](https://en.wikipedia.org/wiki/Yellowstone_National_Park) created with [Keynote](https://en.wikipedia.org/wiki/Keynote_(presentation_software)) and available as a `.key` file.
 
-{{< image src="slides.jpg" >}}
-A screenshot of the macOS Preview app displaying a preview of a Keynote slide. Visible is a picture of Old Faithful, a geyser at Yellowstone National Park. The slide talks about what makes geysers spew water.
-{{< /image >}}
+![A screenshot of the macOS Preview app displaying a preview of a Keynote slide. Visible is a picture of Old Faithful, a geyser at Yellowstone National Park. The slide talks about what makes geysers spew water.](slides.jpg)
 
 The presentation is attributed to Jamie Wong, Lauren Kerr and Greg Novick, none of whom appear in the Contacts listing.
 
@@ -238,9 +214,7 @@ Interestingly, running [`strings`](https://en.wikipedia.org/wiki/Strings_(Unix))
 
 The installed version of Apple Maps contained 25 locations saved which were exported as a [webloc](https://fileinfo.com/extension/webloc) file that can be imported into Apple Maps.
 
-{{< image src="maps.jpg" >}}
-A screenshot of the macOS Maps app. A map collection titled "iPad Demo Unit Places" is selected on the right. Visible in the main window is North America which depicts a number of bookmarked locations.
-{{< /image >}}
+![A screenshot of the macOS Maps app. A map collection titled "iPad Demo Unit Places" is selected on the right. Visible in the main window is North America which depicts a number of bookmarked locations.](maps.jpg)
 
 You can actually view all of the locations on the web [here](https://guides.apple.com/?ug=CglNeSBQbGFjZXMSDgiuTRCvqe7D1Ny%2B0c8BEg0Irk0Qz%2FvZ4ZWbx9tBEg4Irk0Q07KFg%2F%2FQ%2BrnQARIOCK5NEMeAvZu8zOeUtwESDQiuTRDI4rigp6nsmwoSDgiuTRDo%2Fqe%2FvObuqOkBEg0Irk0Q5K%2FmsO64yJlxEg0Irk0Q8ayI64Pohv4OEg0Irk0Q09rW7Kq%2BiJhkEg4Irk0Q4IWIktWzuN%2FrARIOCK5NEN%2FqnrONnc3%2FtQESDQiuTRDDnK%2Ffxefylm4SDgiuTRDO%2BLmCgoX4hIkBEg0Irk0QlqLPz%2B%2FCqu8kEg4Irk0Qxqnl%2FNTUhb3KARINCK5NEOjYh9WIyM7IQBINCK5NEMWgq%2BbIqN%2FzBBINCK5NELWBwaT3lZ7lFRINCK5NEOa0h4ye9qb3IhIOCK5NEL3vkc6h0JrS4wESDQiuTRCJidXtgZHQ4gQSDgiuTRCl45zH%2F5%2BYqfwBEg0Irk0Qs6KWyKqUs94NEg0Irk0Qy47O5vuQt5BgEg4Irk0Q8tnK55HulOvfARIOCK5NELKK3MOW3YeIhgE%3D) which is the link contained by the `webloc` file.
 
@@ -248,9 +222,7 @@ You can actually view all of the locations on the web [here](https://guides.appl
 
 As mentioned at the start, there are a great deal of photos but a lot of useful metadata requires them to be loaded into Photos.
 
-{{< image src="photos.jpg" >}}
-A screenshot of the macOS Finder app. Visible is a photo of a dog with metadata about the photo visible on the right side.
-{{< /image >}}
+![A screenshot of the macOS Finder app. Visible is a photo of a dog with metadata about the photo visible on the right side.](photos.jpg)
 
 They all have their original metadata which is interesting since there are a range of iOS devices used to take photos, not that I could ever take photos that nice with my own phone.
 
