@@ -57,7 +57,9 @@ for result in results:
         'author': result['media']['staff']['nodes'][0]['name']['full']
     })
 
+manga = sorted(manga, key=lambda x: x['title'])
+
 with open('data/manga.json', 'w') as file:
-    json.dump(manga, file, indent=2)
+    json.dump(manga, file, indent=2, sort_keys=True)
 
 print("~ Manga synced locally")
