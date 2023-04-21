@@ -43,10 +43,10 @@
             <h3>Manga I'm actively churning through</h3>
           </header>
           <ul>
-          {{ range $.Site.Data.manga }}
+          {{ range where $.Site.Data.manga "status" "FINISHED" }}
             <li style="display: inline-block;">
               <img alttitle="AniList" altsrc="{{ .url }}" alt="A cover image of {{ .title }}, a manga series by {{ .author }}" src="{{ .cover }}" height="180px" style="border-radius: 3px;" />
-              <p>{{ if .chapters }}{{ .progress }}% read{{ else }}Chapter {{ .progress }}{{ end }}</p>
+              <p>{{ sub .chapters .progress }} chapters left<p>
             </li>
           {{ end }}
           </ul>

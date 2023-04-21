@@ -24,8 +24,10 @@ query = """query {
           }
           siteUrl
           chapters
+          status
           coverImage {
             extraLarge
+            color
           }
           staff(page: 1, perPage: 1) {
 						nodes {
@@ -49,6 +51,8 @@ for result in results:
         'title': result['media']['title']['userPreferred'],
         'chapters': result['media']['chapters'],
         'cover': result['media']['coverImage']['extraLarge'],
+        'color': result['media']['coverImage']['color'],
+        'status': result['media']['status'],
         'url': result['media']['siteUrl'],
         'author': result['media']['staff']['nodes'][0]['name']['full']
     })
