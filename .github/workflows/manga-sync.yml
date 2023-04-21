@@ -1,10 +1,8 @@
 name: Manga Sync
 on:
   schedule:
-    # Roughly 8am NZT each day
-    # I've been reading a lot of One Piece lately so this changes
-    # daily but I'll bump it back down when I'm up to date
-    - cron: '0 18 * * *'
+    # Run hourly which is mostly a no-op
+    - cron: '0 * * * *'
   workflow_dispatch:
 jobs:
   sync:
