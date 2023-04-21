@@ -11,11 +11,6 @@
       link: https://www.igdb.com/games/one-piece-odyssey
       platform: PC
       title: "One Piece Odyssey"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2p3j.png
-      id: 19441
-      link: https://www.igdb.com/games/watch-dogs-2
-      platform: PC
-      title: "Watch Dogs 2"
 - list: Stalled but occasionally progress is made
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg
@@ -83,6 +78,11 @@
       link: https://www.igdb.com/games/tales-of-arise
       platform: Playstation 5
       title: Tales of Arise
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2p3j.png
+      id: 19441
+      link: https://www.igdb.com/games/watch-dogs-2
+      platform: PC
+      title: "Watch Dogs 2"
 - list: Completed
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png
