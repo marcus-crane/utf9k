@@ -1,15 +1,5 @@
 [
   {
-    "author": "Megane Kikuya",
-    "chapters": 12,
-    "color": "#f1a143",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx32935-XHcXh6fq9gVE.jpg",
-    "progress": 4,
-    "status": "FINISHED",
-    "title": ".hack//XXXX",
-    "url": "https://anilist.co/manga/32935"
-  },
-  {
     "author": "Tatsuki Fujimoto",
     "chapters": null,
     "color": "#f1c91a",
@@ -28,6 +18,16 @@
     "status": "RELEASING",
     "title": "Dragon Ball Super",
     "url": "https://anilist.co/manga/86508"
+  },
+  {
+    "author": "Yoshihisa Tagami",
+    "chapters": 18,
+    "color": "#e44328",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx32701-B44dbMi89MQH.png",
+    "progress": 1,
+    "status": "FINISHED",
+    "title": "GREY",
+    "url": "https://anilist.co/manga/32701"
   },
   {
     "author": "Yukito Kishiro",
