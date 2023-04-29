@@ -2614,11 +2614,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3683,11 +3682,11 @@
     "url": "https://www.nytimes.com"
   },
   "https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2019-03-20--future-of-emergency-services/index.md"
     ],
-    "status": 200,
+    "status": 500,
     "url": "https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html"
   },
   "https://www.nytimes.com/2019/01/26/business/against-hustle-culture-rise-and-grind-tgim.html": {
