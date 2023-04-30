@@ -22,7 +22,7 @@
     "@babel/core": "7.21.4",
     "@babel/preset-env": "7.21.4",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "eslint": "8.38.0",
+    "eslint": "8.39.0",
     "littlefoot": "4.0.0-9",
     "prettier": "^2.8.0"
   },
