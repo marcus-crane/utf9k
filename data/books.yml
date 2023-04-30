@@ -11,14 +11,22 @@
     rating: null
     progress: 11
 
-  - title: Wrong Way
-    subtitle: How Privatisation & Economic Reform Backfired
-    author: Damien Cahill and Phillip Toner
-    cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
-    link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+  - title: The Seven-Day Stress Prescription
+    subtitle: null
+    cover: https://covers.openlibrary.org/b/id/14304273-L.jpg
+    link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
     date_finished: null
     rating: null
-    progress: 5
+    progress: 10
+
+  # - title: Wrong Way
+  #   subtitle: How Privatisation & Economic Reform Backfired
+  #   author: Damien Cahill and Phillip Toner
+  #   cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
+  #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+  #   date_finished: null
+  #   rating: null
+  #   progress: 5
     
   - title: Like, Comment, Subscribe
     subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
