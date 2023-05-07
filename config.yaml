@@ -21,6 +21,11 @@ params:
 build:
   writeStats: true
 
+# Extended build timeout for image processing
+# Generated artifacts are committed to keep build times quick
+# but initial processing of new items can take a bit
+timeout: 60000
+
 menu:
   main:
   - name: "Blog"
