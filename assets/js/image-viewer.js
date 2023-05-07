@@ -101,7 +101,15 @@ function addOverlay(el) {
     }
 
     closeButton.onclick = onCloseEvent
-    fullsizeImage.onclick = onCloseEvent
+    imgViewContainer.addEventListener("mousedown", el => {
+    // We check for the clicked target because we only want to close
+    // when the background is hit, not eg; trying to copy text
+    // We also check if the click was a left click to allow
+    // those interested to access developer tools with the image viewer
+      if (el.target === imageViewer && el.button === 0) {
+        onCloseEvent()
+      }
+    })
     body.addEventListener("keydown", listenForKeyEvent)
     imageViewer.appendChild(closeButton)
   })
