@@ -148,6 +148,7 @@
   "http://www.w3.org/2000/svg": {
     "alive": true,
     "sources": [
+      "assets/js/image-viewer.js",
       "layouts/shortcodes/pullquote.html"
     ],
     "status": 200,
@@ -2444,11 +2445,11 @@
     "url": "https://news.ycombinator.com/item"
   },
   "https://news.ycombinator.com/y18.gif": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/questions/selenium-remote-connection.md"
     ],
-    "status": 200,
+    "status": 404,
     "url": "https://news.ycombinator.com/y18.gif"
   },
   "https://nodejs.org/en": {
