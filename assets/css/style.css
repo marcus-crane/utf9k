@@ -67,7 +67,6 @@ svg {
 }
 
 article img:hover {
-  background: red;
   filter: brightness(0.35);
   transition: .5s ease;
 }
