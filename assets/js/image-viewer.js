@@ -1,7 +1,6 @@
 // Largely adapted from image viewer code bundled with the Nintendo Switch
 document.querySelectorAll("article img").forEach(function(el) {
   const imageLoaded = el.complete && el.naturalHeight !== 0
-  console.log(imageLoaded)
 
   if (imageLoaded) {
     addOverlay(el)
