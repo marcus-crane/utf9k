@@ -180,6 +180,7 @@ server:
         https://api.mapbox.com
         https://platform.twitter.com
         ; frame-src 'self'
+        https://*.utf9k.net
         https://www.youtube.com
         https://www.youtube-nocookie.com
         https://platform.twitter.com;

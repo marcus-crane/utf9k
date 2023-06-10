@@ -14,6 +14,8 @@ tags:
 - "wails"
 ---
 
+![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](selector_main.png)
+
 I'm a user of [Readwise](https://readwise.io) which is a service that allows you to import all sorts of highlights from books and [articles](https://readwise.io/read) through to tweets and even [comments](https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp)[^1].
 
 There is unofficial official support for Kindle and iBooks, by which I mean Readwise supports those sources but they are still not officially sanctioned (or known!) by Amazon and Apple respectively.
@@ -23,8 +25,6 @@ Kobo, which is the primary competitor to Kindle, has lots of nice eReaders but h
 The other part of the problem is that getting your highlights off of your device is very fiddly for technical users, and nigh-on-impossible for non-technical users as it requires performing SQL queries against a [SQLite](https://www.sqlite.org/index.html) database.
 
 This is where October comes in. It was created primarily to scratch my own itch. While I'm perfectly capable of extracting highlights from my device, I also aspire to do as little work as possible.
-
-![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](selector_main.png)
 
 This first version is very sparse and gives the user very little option besides syncing their highlights. It works well for myself, and has helped a few users but it doesn't provide much ability to introspect the upload process or control eg; which books are uploaded.
 
