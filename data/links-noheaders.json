@@ -40,11 +40,11 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -407,11 +407,11 @@
     "url": "https://bing.com"
   },
   "https://bitbucket.org/mituharu/emacs-mac/src": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/uses/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://bitbucket.org/mituharu/emacs-mac/src"
   },
   "https://blog.discord.com/engineering-posts/home": {
@@ -2615,10 +2615,11 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3094,11 +3095,11 @@
     "url": "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338"
   },
   "https://via.placeholder.com/264x352": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/games/index.md"
     ],
-    "status": 200,
+    "status": 504,
     "url": "https://via.placeholder.com/264x352"
   },
   "https://vsfan.net/wiki": {
