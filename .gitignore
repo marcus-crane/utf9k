@@ -17,3 +17,5 @@ data/imagemetadata.json
 # Images used in data files
 resources/_gen/*
 !resources/_gen/images/
+
+.github/styles/dics/*

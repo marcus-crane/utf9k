@@ -1,7 +1,7 @@
 extends: spelling
 message: "'%s' is a typo!"
-dicpath: ../../fixtures/spelling/dics
+dicpath: /Users/marcus/utf9k/.github/styles/dics
 dictionaries:
   - en_US
-  - en_UK
-  - en_medical
+  - en_GB
+  - en_AU
