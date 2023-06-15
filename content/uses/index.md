@@ -30,16 +30,13 @@ Everything else is stock and unconfigured.
 ## Computers
 
 * Macbook Pro 14-inch 2021 M1 as my work laptop
-* mac Mini 2018 as my home workstation
-* Macbook Air M1 as my remote workstation
-
-Everything except my work laptop is currently running the 2021 Beta (iOS 15, macOS Monterey etc) because I thought notification grouping and built in focus seemed like killer features I didn't want to wait for!
+* Macbook Air M1 as my personal laptop
+* Custom built desktop running Windows 11 for games
 
 ## Applications
 
 * [Arc](https://arc.net/) for browsing
-* [TickTick](https://ticktick.com) for task capturing
-* [Google Calendar](calendar.google.com) where I surface my personal calendar onto my work calendar
+* [Fastmail](https://fastmail.com/) for email and calendaring
 * [Obsidian](https://obsidian.md) for notes
 * [Readwise Reader](https://readwise.io/read) for capturing things to read later (RSS, emails, articles, PDFs etc)
 * [Pocket Casts](https://pocketcasts.com) for podcasts
