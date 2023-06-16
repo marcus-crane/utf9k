@@ -26,5 +26,3 @@ In no particular order, shout outs to:
 * [MDN](https://developer.mozilla.org/en-US/) is the only thing saving me from homelessness. I'd be hosed without this internet bible.
 
 * [owlspace](https://archive.is/kD83O) inspired me to get back into my redesign again. It has a nice homey, handcrafted feeling to it and makes me want to improve my own site much more.
-
-* [Plausible](https://plausible.io) for providing easy to set up, hosted analytics that are privacy respecting for those who visit this site.
