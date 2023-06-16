@@ -29,16 +29,16 @@ timeout: "60s"
 menu:
   main:
   - name: "Blog"
-    url: "/blog"
+    url: "/blog/"
     weight: 1
   - name: "Projects"
-    url: "/projects"
+    url: "/projects/"
     weight: 2
   - name: "About"
-    url: "/about"
+    url: "/about/"
     weight: 3
   - name: "Questions"
-    url: "/questions"
+    url: "/questions/"
     weight: 4
   - name: "RSS"
     url: "/rss.xml"
