@@ -33,7 +33,3 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
-
-{{ if ne .Site.IsServer true }}
-<script defer data-api='/workers/api/event' data-domain='utf9k.net' src='/workers/statistician.js'></script>
-{{ end }}
