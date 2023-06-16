@@ -16,11 +16,11 @@
         <p>{{ range $.Site.Data.gags | shuffle | first 1 }}{{ . }}{{ end }}</p>
       </center>
       <hr />
-      <div id="post-stream">
+      <div class="post-stream">
         <center>
           <header>
             <h3>
-              <a href="/books">Books I'm *ahem* paging through</a>
+              <a href="/books/">Books I'm *ahem* paging through</a>
             </h3>
           </header>
           <ul>
@@ -37,7 +37,7 @@
         </center>
       </div>
       <hr />
-      <div id="post-stream">
+      <div class="post-stream">
         <center>
           <header>
             <h3>Manga I'm actively churning through</h3>
@@ -76,7 +76,7 @@
         </ul>
       </div>
       <hr />
-      <div id="post-stream">
+      <div class="post-stream">
         <h3>Recently updated pages</h3>
         <ul>
         {{ range first 5 .Site.RegularPages }}
@@ -88,10 +88,10 @@
       </div>
       <hr />
       <center>
-        <div id="post-stream">
+        <div class="post-stream">
           <header>
             <h3>
-              <a href="/games">Games I'm (slowly) progressing through</a>
+              <a href="/games/">Games I'm (slowly) progressing through</a>
             </h3>
           </header>
           <ul>

@@ -246,7 +246,7 @@ pre {
   height: auto;
 }
 
-#recent-updates #post-stream {
+#recent-updates .post-stream {
   margin-top: 1rem;
 }
 
@@ -256,7 +256,7 @@ pre {
   width: 10rem;
 }
 
-#post-stream li {
+.post-stream li {
   list-style: none;
   text-align: center;
 }
