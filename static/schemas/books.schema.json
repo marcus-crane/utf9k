@@ -1,0 +1,99 @@
+{
+  "$id": "https://utf9k.net/schemas/books.schema.json",
+  "description": "A list of books in various states",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "list",
+      "goal"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "list": {
+        "type": "integer",
+        "description": "The year that a list reflects. For example: 2023."
+      },
+      "goal": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "description": "A target number of books to complete relating to this list. Generally used when the list name reflects a particular year."
+      },
+      "books": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "The title of this book"
+            },
+            "subtitle": {
+              "description": "The subtitle of this book, if it has one. Set to null if there isn't one.",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "author": {
+              "type": "string",
+              "description": "The author of this book"
+            },
+            "cover": {
+              "type": "string",
+              "pattern": "^https://covers.openlibrary.org/b/id/.*-L.jpg$",
+              "description": "The URL for the OpenLibrary cover image used for this book"
+            },
+            "link": {
+              "type": "string",
+              "pattern" : "^https://openlibrary.org/works/.*$",
+              "description": "The URL for the OpenLibrary page for this book"
+            },
+            "date_finished": {
+              "description": "The date that you finished reading this book. Use null if you haven't finished reading this book yet.",
+              "format": "date",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "rating": {
+              "description": "The rating that you would give this book out of 5. Use null if you haven't finished reading this book yet.",
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "progress": {
+              "description": "Your current progress through the book between 0 and 100",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    }
+  }
+}
