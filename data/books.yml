@@ -3,14 +3,14 @@
   goal: 24
   books:
 
-  - title: Seeing Like a State
-    subtitle: How Certain Schemes to Improve the Human Condition Have Failed
-    author: James C. Scott
-    cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
-    link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
-    date_finished: null
-    rating: null
-    progress: 11
+  # - title: Seeing Like a State
+  #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+  #   author: James C. Scott
+  #   cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
+  #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+  #   date_finished: null
+  #   rating: null
+  #   progress: 11
 
   # - title: The Seven-Day Stress Prescription
   #   subtitle: null
@@ -30,11 +30,20 @@
   #   rating: null
   #   progress: 5
 
+  - title: What the CEO Wants You to Know
+    subtitle: How Your Company Really Works
+    author: Ram Charan
+    cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
+    link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
+    date_finished: null
+    rating: null
+    progress: 5
+
   - title: Hanging Out
     subtitle: The Radical Power of Killing Time
     author: Sheila Liming
     cover: https://covers.openlibrary.org/b/id/13847599-L.jpg
-    link: https://openlibrary.org/works/OL27939130W/Hanging_Out?edition=
+    link: https://openlibrary.org/works/OL27939130W/Hanging_Out
     date_finished: 2023-06-06
     rating: 3
     progress: 100
