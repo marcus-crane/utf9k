@@ -40,11 +40,11 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 503,
+    "status": 200,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -407,11 +407,11 @@
     "url": "https://bing.com"
   },
   "https://bitbucket.org/mituharu/emacs-mac/src": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/uses/index.md"
     ],
-    "status": 503,
+    "status": 200,
     "url": "https://bitbucket.org/mituharu/emacs-mac/src"
   },
   "https://blog.discord.com/engineering-posts/home": {
@@ -1533,7 +1533,8 @@
     "alive": true,
     "sources": [
       "content/blog/2022-05-28--fastmail-caldav/index.md",
-      "content/thanks/index.md"
+      "content/thanks/index.md",
+      "content/uses/index.md"
     ],
     "status": 200,
     "url": "https://fastmail.com"
@@ -2534,14 +2535,6 @@
     "status": 200,
     "url": "https://pandas.pydata.org"
   },
-  "https://plausible.io": {
-    "alive": true,
-    "sources": [
-      "content/thanks/index.md"
-    ],
-    "status": 200,
-    "url": "https://plausible.io"
-  },
   "https://play.google.com/store": {
     "alive": true,
     "sources": [
@@ -2615,11 +2608,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -2672,14 +2664,6 @@
     ],
     "status": 200,
     "url": "https://reddit.com/r/deepfakes"
-  },
-  "https://render.com": {
-    "alive": true,
-    "sources": [
-      "content/thanks/index.md"
-    ],
-    "status": 200,
-    "url": "https://render.com"
   },
   "https://roamresearch.com": {
     "alive": true,
@@ -2862,14 +2846,6 @@
     "status": 200,
     "url": "https://support.google.com/mail"
   },
-  "https://tailwindcss.com": {
-    "alive": true,
-    "sources": [
-      "content/thanks/index.md"
-    ],
-    "status": 200,
-    "url": "https://tailwindcss.com"
-  },
   "https://tailwindcss.com/docs/font-smoothing": {
     "alive": true,
     "sources": [
@@ -2886,14 +2862,6 @@
     ],
     "status": 200,
     "url": "https://tecosaur.github.io/emacs-config/config.html"
-  },
-  "https://ticktick.com": {
-    "alive": true,
-    "sources": [
-      "content/uses/index.md"
-    ],
-    "status": 200,
-    "url": "https://ticktick.com"
   },
   "https://tidal.com": {
     "alive": false,
@@ -3095,11 +3063,11 @@
     "url": "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338"
   },
   "https://via.placeholder.com/264x352": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/games/index.md"
     ],
-    "status": 504,
+    "status": 200,
     "url": "https://via.placeholder.com/264x352"
   },
   "https://vsfan.net/wiki": {
@@ -3441,6 +3409,14 @@
     "status": 200,
     "url": "https://www.goodreads.com/book/show/4119.The_Great_Good_Place"
   },
+  "https://www.google.com/maps": {
+    "alive": true,
+    "sources": [
+      "content/projects/towing/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.google.com/maps"
+  },
   "https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx": {
     "alive": true,
     "sources": [
@@ -3625,14 +3601,6 @@
     ],
     "status": 200,
     "url": "https://www.neomutt.org"
-  },
-  "https://www.netlify.com": {
-    "alive": true,
-    "sources": [
-      "content/thanks/index.md"
-    ],
-    "status": 200,
-    "url": "https://www.netlify.com"
   },
   "https://www.nginx.com/products/nginx-ingress-controller": {
     "alive": true,
