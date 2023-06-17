@@ -1,18 +1,13 @@
 # yaml-language-server: $schema=../static/schemas/games.schema.json
 - list: Actively playing
   games:
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5x13.png
-      id: 194837
-      link: https://www.igdb.com/games/one-piece-odyssey
-      platform: PC
-      title: "One Piece Odyssey"
+      - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co64ro.png
+        id: 236694
+        link: https://www.igdb.com/games/paranormasight-the-seven-mysteries-of-honjo
+        platform: PC
+        title: "Paranormasight: The Seven Mysteries of Honjo"
 - list: Stalled but occasionally progress is made
   games:
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg
-      id: 103329
-      link: https://www.igdb.com/games/control
-      platform: Playstation 5
-      title: Control
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg
       id: 15705
       link: https://www.igdb.com/games/digimon-story-cyber-sleuth
@@ -29,11 +24,6 @@
       link: https://www.igdb.com/games/final-fantasy-xiv-online--1
       platform: PC
       title: "Final Fantasy XIV: A Realm Reborn"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.png
-      id: 1020
-      link: https://www.igdb.com/games/grand-theft-auto-v
-      platform: PC
-      title: Grand Theft Auto V
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2w84.jpg
       id: 4127
       link: https://www.igdb.com/games/grandia
@@ -44,26 +34,6 @@
       link: https://www.igdb.com/games/hi-fi-rush
       platform: PC
       title: Hi-Fi Rush
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1vcp.jpg
-      id: 7346
-      link: https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild
-      platform: Nintendo Switch
-      title: "The Legend of Zelda: Breath of the Wild"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2h4f.jpg
-      id: 131999
-      link: https://www.igdb.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot
-      platform: Playstation 5
-      title: NieR Replicant ver.1.22474487139...
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg
-      id: 1521
-      link: https://www.igdb.com/games/pokemon-black
-      platform: Nintendo DS
-      title: "Pokemon Black"
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5sfa.png
-      id: 191930
-      link: https://www.igdb.com/games/pokemon-violet
-      platform: Nintendo Switch
-      title: Pokemon Violet
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.png
       id: 25076
       link: https://www.igdb.com/games/red-dead-redemption-2
@@ -74,11 +44,6 @@
       link: https://www.igdb.com/games/scarlet-nexus
       platform: Playstation 5
       title: Scarlet Nexus
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2yqz.png
-      id: 119270
-      link: https://www.igdb.com/games/tales-of-arise
-      platform: Playstation 5
-      title: Tales of Arise
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2p3j.png
       id: 19441
       link: https://www.igdb.com/games/watch-dogs-2
