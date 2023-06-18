@@ -1,11 +1,6 @@
 # yaml-language-server: $schema=../static/schemas/games.schema.json
 - list: Actively playing
   games:
-      - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co64ro.png
-        id: 236694
-        link: https://www.igdb.com/games/paranormasight-the-seven-mysteries-of-honjo
-        platform: PC
-        title: "Paranormasight: The Seven Mysteries of Honjo"
 - list: Stalled but occasionally progress is made
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg
@@ -51,6 +46,12 @@
       title: "Watch Dogs 2"
 - list: Completed
   games:
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co64ro.png
+      date_finished: 2023-06-18
+      id: 236694
+      link: https://www.igdb.com/games/paranormasight-the-seven-mysteries-of-honjo
+      platform: PC
+      title: "Paranormasight: The Seven Mysteries of Honjo"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2f34.png
       date_finished: 2023-02-03
       id: 9763
