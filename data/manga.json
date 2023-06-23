@@ -4,7 +4,7 @@
     "chapters": null,
     "color": "#f1c91a",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-82gwrvQV6OBc.png",
-    "progress": 132,
+    "progress": 133,
     "status": "RELEASING",
     "title": "Chainsaw Man",
     "url": "https://anilist.co/manga/105778"
@@ -14,7 +14,7 @@
     "chapters": null,
     "color": "#e4861a",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86508-QSahE7mTFEXl.png",
-    "progress": 93,
+    "progress": 94,
     "status": "RELEASING",
     "title": "Dragon Ball Super",
     "url": "https://anilist.co/manga/86508"
@@ -58,6 +58,16 @@
     "status": "RELEASING",
     "title": "Made in Abyss",
     "url": "https://anilist.co/manga/86551"
+  },
+  {
+    "author": "Kouta Kawae",
+    "chapters": null,
+    "color": "#e4bb35",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163497-Hiq5PsyafhRg.jpg",
+    "progress": 4,
+    "status": "RELEASING",
+    "title": "Nue no Onmyouji",
+    "url": "https://anilist.co/manga/163497"
   },
   {
     "author": "Eiichirou Oda",
