@@ -20,16 +20,6 @@
     "url": "https://anilist.co/manga/86508"
   },
   {
-    "author": "Hiroya Oku",
-    "chapters": 18,
-    "color": "#d6281a",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86637-BD5ILWB1ry4w.jpg",
-    "progress": 9,
-    "status": "FINISHED",
-    "title": "GANTZ:G",
-    "url": "https://anilist.co/manga/86637"
-  },
-  {
     "author": "Yukito Kishiro",
     "chapters": 124,
     "color": "#783528",
@@ -48,6 +38,16 @@
     "status": "RELEASING",
     "title": "Jujutsu Kaisen",
     "url": "https://anilist.co/manga/101517"
+  },
+  {
+    "author": "Naoki Urasawa",
+    "chapters": 162,
+    "color": "#50a1e4",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30001-Vft5PAKPrY1W.jpg",
+    "progress": 5,
+    "status": "FINISHED",
+    "title": "MONSTER",
+    "url": "https://anilist.co/manga/30001"
   },
   {
     "author": "Akihito Tsukushi",
