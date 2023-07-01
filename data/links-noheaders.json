@@ -40,11 +40,11 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 503,
+    "status": 200,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
