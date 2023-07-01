@@ -61,14 +61,16 @@
               "description": "The URL for the OpenLibrary page for this book"
             },
             "date_finished": {
-              "description": "The date that you finished reading this book. Use null if you haven't finished reading this book yet.",
-              "format": "date",
               "anyOf": [
                 {
-                  "type": "string"
+                  "type": "string",
+                  "description": "The date that you finished reading this book. Use null if you haven't finished reading this book yet.",
+                  "format": "date"
                 },
                 {
-                  "type": "null"
+                  "type": "null",
+                  "description": "The date that you finished reading this book. Use null if you haven't finished reading this book yet.",
+                  "format": "date"
                 }
               ]
             },
