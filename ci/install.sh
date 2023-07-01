@@ -6,8 +6,8 @@ TOPLEVEL=$(git rev-parse --show-toplevel)
 
 echo "Installing CI tools"
 
-if ! command -v pnpm &> /dev/null; then
-    npm install -g pnpm &> /dev/null
+if ! command -v yarn &> /dev/null; then
+    npm install -g yarn &> /dev/null
 fi
 echo "~ pnpm installed"
 

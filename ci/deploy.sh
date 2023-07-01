@@ -3,10 +3,10 @@
 set -euxo pipefail
 
 npm run build:deps
-pnpm run test
-pnpm run build:metadata
-pnpm run build
-pnpm run prettify
+yarn run test
+yarn run build:metadata
+yarn run build
+yarn run prettify
 
 mv _headers public
 mv _redirects public
