@@ -6,11 +6,6 @@ TOPLEVEL=$(git rev-parse --show-toplevel)
 
 echo "Installing CI tools"
 
-if ! command -v yarn &> /dev/null; then
-    npm install -g yarn &> /dev/null
-fi
-echo "~ pnpm installed"
-
 pip install -U pip wheel &> /dev/null
 pip install -r "$TOPLEVEL/scripts/requirements.txt" &> /dev/null
 echo "~ Python dependencies installed"
