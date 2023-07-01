@@ -36,9 +36,9 @@ jobs:
           NODE_VERSION: ${{ steps.setup-node.outputs.node-version }}
           PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
       - name: Install yarn
-        run: npm install -g yarn
+        run: npm install -g pnpm
       - name: Install Node dependencies
-        run: yarn install
+        run: pnpm install
       - name: Build site
         run: npm run deploy
       - name: Publish to Cloudflare Pages
