@@ -92,6 +92,10 @@
               "type": "integer",
               "minimum": 0,
               "maximum": 100
+            },
+            "reader_id": {
+              "description": "The alphanumeric ID for this item in Readwise Reader to sync progress from",
+              "type": "string"
             }
           }
         }
