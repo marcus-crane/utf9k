@@ -11,22 +11,27 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-RWSESSIONID = os.getenv("RWSESSIONID")
+READWISE_TOKEN = os.getenv("READWISE_TOKEN")
 
-if not RWSESSIONID:
-    print("rwsessionid missing")
+if not READWISE_TOKEN:
+    print("READWISE_TOKEN missing")
     exit(1)
 
 DATA_FILE = "data/books.yml"
 
-# This could be cut right down with timestamp querying but I'm being lazy for now
-READER_STATE_URL = "https://readwise.io/reader/api/state/?schemaVersion=6"
+READER_STATE_URL = "https://readwise.io/api/v3/list/"
 
-r = requests.get(READER_STATE_URL, headers={'Cookie': f"rwsessionid=7yllllti3oq9s9pzjlwkg2zgjv8k6dce", "User-Agent": "Reader Book Progress Sync <github.com/marcus-crane/utf9k>"})
-if not r.ok:
-    print(f"Got status code {r.status_code} from Readwise")
-    exit(1)
-state = r.json()
+def get_reading_progress(id):
+    url = f"{READER_STATE_URL}?id={id}"
+    r = requests.get(url, headers={'Authorization': f"Token {READWISE_TOKEN}", "User-Agent": "Reader Book Progress Sync <github.com/marcus-crane/utf9k>"})
+    if not r.ok:
+        print(f"Got status code {r.status_code} from Readwise")
+        exit(1)
+    resp = r.json()
+    print(resp)
+    if resp['count'] == 1:
+        return resp['results'][0].get('reading_progress', False)
+    return False
 
 with open("data/books.yml", "r") as file:
     data = yaml.load(file.read())
@@ -46,12 +51,14 @@ if len(queryable_books) == 0:
 for book in queryable_books:
     idx = book[0]
     rid = book[1]
-    if state['documents'].get(rid, {}).get('readingPosition', {}).get('scrollDepth', False):
-        progress = state['documents'][rid]['readingPosition']['scrollDepth']
+    progress = get_reading_progress(rid)
+    if progress:
         fmt_progress = int(progress * 100)
         if data[0]['books'][idx]['progress'] != 100:
             data[0]['books'][idx]['progress'] = fmt_progress
         print(f"Updated progress for {data[0]['books'][idx]['title']}")
+    else:
+        print('no progress')
 
 with open("data/books.yml", "w") as file:
     yaml.dump(data, file)
