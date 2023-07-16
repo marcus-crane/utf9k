@@ -30,7 +30,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if [[ `git status --porcelain` ]]; then
             git add .
-            git commit -a -m "Index has been updated"
+            git commit -a -m "Hyperlink index has been updated"
           else
             exit 0
           fi
