@@ -1,9 +1,10 @@
 {
   "http://bs.visualshower.com": {
-    "alive": 0,
+    "alive": false,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
+    "status": 503,
     "url": "http://bs.visualshower.com"
   },
   "http://example.com": {
@@ -87,11 +88,11 @@
     "url": "http://www.fudco.com/chip/lessons.html"
   },
   "http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2018-08-18--nz-oia-guide/index.md"
     ],
-    "status": 200,
+    "status": 403,
     "url": "http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html"
   },
   "http://www.linfo.org/etc_fstab.html": {
@@ -307,6 +308,14 @@
     "status": 200,
     "url": "https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag"
   },
+  "https://at.govt.nz/driving-parking/parking-rules/towing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://at.govt.nz/driving-parking/parking-rules/towing"
+  },
   "https://audiokarma.org/forums/index.php": {
     "alive": true,
     "sources": [
@@ -478,6 +487,14 @@
     "status": 401,
     "url": "https://caldav.fastmail.com/dav/principals/user/user"
   },
+  "https://catalogue.data.govt.nz/dataset": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://catalogue.data.govt.nz/dataset"
+  },
   "https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp": {
     "alive": true,
     "sources": [
@@ -573,6 +590,14 @@
     "status": 404,
     "url": "https://dashboard.twitter.com"
   },
+  "https://datasette.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://datasette.io"
+  },
   "https://dayoneapp.com": {
     "alive": true,
     "sources": [
@@ -614,6 +639,14 @@
     "status": 200,
     "url": "https://developer.apple.com/documentation/applemusicapi"
   },
+  "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html"
+  },
   "https://developer.mozilla.org/en-US": {
     "alive": true,
     "sources": [
@@ -637,6 +670,14 @@
     ],
     "status": 200,
     "url": "https://developer.spotify.com/documentation/web-api/reference"
+  },
+  "https://developers.google.com/maps/documentation/geocoding/overview": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://developers.google.com/maps/documentation/geocoding/overview"
   },
   "https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he": {
     "alive": true,
@@ -719,6 +760,14 @@
     ],
     "status": 200,
     "url": "https://docs.github.com/en/actions/learn-github-actions/environment-variables"
+  },
+  "https://docs.mapbox.com/api/search/geocoding": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.mapbox.com/api/search/geocoding"
   },
   "https://docs.microsoft.com/en-us/azure/availability-zones/az-region": {
     "alive": true,
@@ -839,6 +888,14 @@
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Active_Directory"
+  },
+  "https://en.wikipedia.org/wiki/Address_geocoding": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Address_geocoding"
   },
   "https://en.wikipedia.org/wiki/Apple_Park": {
     "alive": true,
@@ -1050,6 +1107,14 @@
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
   },
+  "https://en.wikipedia.org/wiki/Geographic_information_system": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Geographic_information_system"
+  },
   "https://en.wikipedia.org/wiki/Goodhart": {
     "alive": true,
     "sources": [
@@ -1204,6 +1269,14 @@
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Parnell"
+  },
+  "https://en.wikipedia.org/wiki/Python_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Python_"
   },
   "https://en.wikipedia.org/wiki/Queenstown": {
     "alive": true,
@@ -1606,7 +1679,8 @@
   "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts": {
     "alive": true,
     "sources": [
-      "content/blog/2020-11-23--tidying-towing-data/index.md"
+      "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts"
@@ -1725,6 +1799,14 @@
     ],
     "status": 200,
     "url": "https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml"
+  },
+  "https://github.com/GIScience/openrouteservice": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/GIScience/openrouteservice"
   },
   "https://github.com/LeonardSSH/coc-discord-rpc": {
     "alive": true,
@@ -1862,6 +1944,62 @@
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv"
+  },
+  "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh"
+  },
+  "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py"
   },
   "https://github.com/marcus-crane/dotfiles": {
     "alive": true,
@@ -2068,6 +2206,14 @@
     "status": 200,
     "url": "https://github.com/orgzly/orgzly-android"
   },
+  "https://github.com/pelias/pelias": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/pelias/pelias"
+  },
   "https://github.com/smokes/photoshop-rich-presence": {
     "alive": true,
     "sources": [
@@ -2123,6 +2269,14 @@
     ],
     "status": 200,
     "url": "https://github.com/twitter/twurl"
+  },
+  "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips"
   },
   "https://github.com/wailsapp/wails": {
     "alive": true,
@@ -2356,6 +2510,14 @@
     "status": 200,
     "url": "https://mastodon.nz"
   },
+  "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html"
+  },
   "https://medium.com/plexlabs": {
     "alive": true,
     "sources": [
@@ -2426,6 +2588,7 @@
       "content/blog/2018-08-18--nz-oia-guide/index.md",
       "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md",
       "content/blog/2021-05-22--ride-the-curve/index.md",
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md",
       "content/questions/macos-disable-safari-recommendation.md",
       "content/questions/selenium-remote-connection.md"
     ],
@@ -2529,7 +2692,8 @@
   "https://pandas.pydata.org": {
     "alive": true,
     "sources": [
-      "content/blog/2020-11-23--tidying-towing-data/index.md"
+      "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://pandas.pydata.org"
@@ -2935,6 +3099,14 @@
     ],
     "status": 200,
     "url": "https://twitter.com/element_hq/status/1355663753380032512"
+  },
+  "https://twitter.com/foiachap": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/foiachap"
   },
   "https://twitter.com/plexamp": {
     "alive": true,
@@ -3441,6 +3613,14 @@
     "status": 200,
     "url": "https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline"
   },
+  "https://www.here.com/get-started/pricing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.here.com/get-started/pricing"
+  },
   "https://www.iana.org": {
     "alive": true,
     "sources": [
@@ -3491,6 +3671,22 @@
     "status": 200,
     "url": "https://www.lightspeedhq.com"
   },
+  "https://www.linz.govt.nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.linz.govt.nz"
+  },
+  "https://www.linz.govt.nz/products-services/data/linz-data-service": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.linz.govt.nz/products-services/data/linz-data-service"
+  },
   "https://www.losaltosca.gov": {
     "alive": true,
     "sources": [
@@ -3506,6 +3702,14 @@
     ],
     "status": 404,
     "url": "https://www.losaltosca.gov/recreation/page/rosita-park"
+  },
+  "https://www.mapbox.com/pricing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.mapbox.com/pricing"
   },
   "https://www.mediawiki.org/wiki/Extension": {
     "alive": true,
@@ -3782,12 +3986,12 @@
     "url": "https://www.reddit.com/user/deepfakes"
   },
   "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/questions/finance-oil-futures-negative.md",
       "content/questions/finance-oil-futures-negative.md"
     ],
-    "status": 200,
+    "status": 404,
     "url": "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W"
   },
   "https://www.robustperception.io/how-much-space-does-the-wal-take-up": {
@@ -3841,6 +4045,7 @@
     "alive": true,
     "sources": [
       "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md",
       "content/projects/october/index.md"
     ],
     "status": 200,
@@ -3984,6 +4189,14 @@
     ],
     "status": 200,
     "url": "https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer"
+  },
+  "https://www.watercare.co.nz/Contact/Official-information-request": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.watercare.co.nz/Contact/Official-information-request"
   },
   "https://www.whatsapp.com": {
     "alive": true,
