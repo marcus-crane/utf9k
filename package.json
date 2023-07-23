@@ -19,8 +19,8 @@
     "syntax": "prettier -c public/**/**/**/*.html"
   },
   "devDependencies": {
-    "@babel/core": "7.22.6",
-    "@babel/preset-env": "7.22.6",
+    "@babel/core": "7.22.9",
+    "@babel/preset-env": "7.22.9",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "8.43.0",
     "littlefoot": "4.0.0-9",
