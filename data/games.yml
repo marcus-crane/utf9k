@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=../static/schemas/games.schema.json
 - list: Actively playing
   games:
-    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5w3k.png
-      id: 31551
-      link: https://www.igdb.com/games/final-fantasy-xvi
-      platform: Playstation 5
-      title: Final Fantasy XVI
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3m7k.png
+      id: 126120
+      link: https://www.igdb.com/games/say-no-more
+      platform: PC
+      title: "Say No! More"
 - list: Stalled but occasionally progress is made
   games:
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co2px6.jpg
@@ -51,6 +51,12 @@
       title: "Watch Dogs 2"
 - list: Completed
   games:
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co5w3k.png
+      date_finished: 2023-07-23
+      id: 31551
+      link: https://www.igdb.com/games/final-fantasy-xvi
+      platform: Playstation 5
+      title: Final Fantasy XVI
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co64ro.png
       date_finished: 2023-06-18
       id: 236694
