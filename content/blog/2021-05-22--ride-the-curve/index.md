@@ -27,7 +27,7 @@ Generally, I tend to worry a lot about what things might look like in the future
 
 If it all turns to custard, will I have transferrable skills that are sought after?
 
-My tendency is to frame the tech industry as a sort of gold rush that sooner or later will dry up. I imagine that maybe it will hit market saturation or be dismissed due to  intense distrust thanks to key/buzzwords like Surveillance and Algorithms that always seem poised to spiral out of control.
+My tendency is to frame the tech industry as a sort of gold rush that sooner or later will dry up. I imagine that maybe it will hit market saturation or be dismissed due to intense distrust thanks to key/buzzwords like Surveillance and Algorithms that always seem poised to spiral out of control.
 
 In ~~some~~ most ways, this is a ridiculous thing to worry about.
 
@@ -149,7 +149,7 @@ I don't feel like I have to do anything but at the same time, I get a bit itchy 
 
 I think I would actually hate the idea of being retired on a beach.
 
-I would like to be retired with [my videogame backlog](https://howlongtobeat.com/user?n=Sentry) however.
+I would like to be retired with [my videogame backlog](https://howlongtobeat.com/user/Sentry) however.
 
 I've got some personal (and mental) struggles to deal with and perhaps I'll share some of those.
 

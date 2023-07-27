@@ -21,5 +21,5 @@ Here's how you can quickly connect to a Selenium instance and do a basic request
 >>> driver = webdriver.Remote(command_executor=hub_url, desired_capabilities=DesiredCapabilities.CHROME)
 >>> driver.get("https://news.ycombinator.com")
 >>> driver.find_element_by_tag_name("img").get_attribute("src")
-'https://news.ycombinator.com/y18.gif'
+'https://news.ycombinator.com/y18.svg'
 ```
