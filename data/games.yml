@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=../static/schemas/games.schema.json
 - list: Actively playing
   games:
+    - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co1oub.png
+      id: 11807
+      link: https://www.igdb.com/games/dot-hack-slash-slash-infection
+      platform: Playstation 2
+      title: ".hack//Infection"
     - cover: https://images.igdb.com/igdb/image/upload/t_cover_big/co3m7k.png
       id: 126120
       link: https://www.igdb.com/games/say-no-more
