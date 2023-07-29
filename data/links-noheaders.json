@@ -2084,14 +2084,6 @@
     "status": 200,
     "url": "https://github.com/marcus-crane/netbox-plugin-azuread"
   },
-  "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/github.com/netbox-community/netbox": {
-    "alive": false,
-    "sources": [
-      "content/projects/netbox-plugin-azuread/index.md"
-    ],
-    "status": 404,
-    "url": "https://github.com/marcus-crane/netbox-plugin-azuread/blob/main/github.com/netbox-community/netbox"
-  },
   "https://github.com/marcus-crane/october": {
     "alive": true,
     "sources": [
@@ -2165,6 +2157,14 @@
     ],
     "status": 200,
     "url": "https://github.com/neovim/neovim"
+  },
+  "https://github.com/netbox-community/netbox": {
+    "alive": true,
+    "sources": [
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/netbox-community/netbox"
   },
   "https://github.com/npm/npm/issues/20791": {
     "alive": true,
@@ -2352,13 +2352,13 @@
     "status": 200,
     "url": "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu"
   },
-  "https://howlongtobeat.com/user": {
-    "alive": false,
+  "https://howlongtobeat.com/user/Sentry": {
+    "alive": true,
     "sources": [
       "content/blog/2021-05-22--ride-the-curve/index.md"
     ],
-    "status": 404,
-    "url": "https://howlongtobeat.com/user"
+    "status": 200,
+    "url": "https://howlongtobeat.com/user/Sentry"
   },
   "https://idp.example.org/SAML2/SSO/Redirect": {
     "alive": 0,
@@ -2607,13 +2607,13 @@
     "status": 200,
     "url": "https://news.ycombinator.com/item"
   },
-  "https://news.ycombinator.com/y18.gif": {
-    "alive": false,
+  "https://news.ycombinator.com/y18.svg": {
+    "alive": true,
     "sources": [
       "content/questions/selenium-remote-connection.md"
     ],
-    "status": 404,
-    "url": "https://news.ycombinator.com/y18.gif"
+    "status": 200,
+    "url": "https://news.ycombinator.com/y18.svg"
   },
   "https://nodejs.org/en": {
     "alive": true,
@@ -2771,11 +2771,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3986,12 +3985,12 @@
     "url": "https://www.reddit.com/user/deepfakes"
   },
   "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/questions/finance-oil-futures-negative.md",
       "content/questions/finance-oil-futures-negative.md"
     ],
-    "status": 404,
+    "status": 200,
     "url": "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W"
   },
   "https://www.robustperception.io/how-much-space-does-the-wal-take-up": {
