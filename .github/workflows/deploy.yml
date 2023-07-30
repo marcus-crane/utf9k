@@ -6,6 +6,8 @@ on:
     workflows: [Audit Links, Manga Sync, Reader Sync]
     types:
       - completed
+env:
+  READWISE_TOKEN: ${{ secrets.RWSESSIONID }}
 jobs:
   build:
     runs-on: ubuntu-20.04
