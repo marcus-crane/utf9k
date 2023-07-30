@@ -3,7 +3,7 @@ on:
   push:
   workflow_dispatch:
   workflow_run:
-    workflows: [Audit Links, Manga Sync, Reader Sync]
+    workflows: [Audit Links, External Sync]
     types:
       - completed
 env:
