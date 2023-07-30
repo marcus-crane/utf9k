@@ -13,10 +13,10 @@ tags:
 {{ range $.Site.Data.games }}
   {{ $listName := .list }}
   <div class="grid-list">
-    {{ if eq $listName "Stalled but occasionally progress is made" }}<details><summary>{{ end }}
-    <span>{{ $listName }}</span>
-    {{ if eq $listName "Stalled but occasionally progress is made" }}</summary>{{ end }}
-    <ul {{ if eq $listName "Actively playing" }}class="partial-list"{{ end }} role="list">
+    {{ if eq $listName "Stalled" }}<details><summary>{{ end }}
+    {{ if eq $listName "Stalled" }}<span>{{ $listName }}</span>{{ else }}<h3>{{ $listName }}</h3>{{ end }}
+    {{ if eq $listName "Stalled" }}</summary>{{ end }}
+    <ul {{ if eq $listName "Playing" }}class="partial-list"{{ end }} role="list">
       {{ range .games }}
       {{ $image := resources.GetRemote .cover }}
       {{ $image := $image.Resize "x360 q100" }}
@@ -32,12 +32,12 @@ tags:
         </div>
         <div>
           <dd>{{ .platform }} {{ if .replay }}· Replay{{ end }}</dd>
-          {{ if .date_finished }}<dd>Finished: {{ .date_finished }}</dd>{{ end }}
+          {{ if ne .completed "0000-00-00" }}<dd>Finished: {{ .completed }}</dd>{{ end }}
         </div>
       </li>
       {{ end }}
     </ul>
-    {{ if eq $listName "Stalled but occasionally progress is made" }}</details>{{ end }}
+    {{ if eq $listName "Stalled" }}</details>{{ end }}
   </div>
 {{ end }}
 {{< /gaming.inline >}}
