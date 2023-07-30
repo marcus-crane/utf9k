@@ -20,6 +20,15 @@
     completed: '0000-00-00'
 - list: Stalled
   games:
+  - id: 29275023
+    title: 'Call of Duty: Black Ops III'
+    link: https://howlongtobeat.com/game/27127
+    platform: ''
+    cover: https://howlongtobeat.com/games/COD_Black_Ops_3.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:17:36'
+    completed: '0000-00-00'
   - id: 29274874
     title: Watch Dogs 2
     link: https://howlongtobeat.com/game/37861
@@ -1156,6 +1165,24 @@
     notes: ''
     updated: '2012-12-26 07:08:08'
     completed: '0000-00-00'
+  - id: 29274988
+    title: 'Grand Theft Auto IV: The Ballad of Gay Tony'
+    link: https://howlongtobeat.com/game/4074
+    platform: PC
+    cover: https://howlongtobeat.com/games/252px-The_Ballad_of_Gay_Tony_cover.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:11:47'
+    completed: '0000-00-00'
+  - id: 29274987
+    title: 'Grand Theft Auto IV: The Lost and Damned'
+    link: https://howlongtobeat.com/game/4063
+    platform: PC
+    cover: https://howlongtobeat.com/games/256px-Grand_Theft_Auto_IV_coverart.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:11:33'
+    completed: '0000-00-00'
   - id: 18435
     title: 'Grand Theft Auto: Episodes From Liberty City'
     link: https://howlongtobeat.com/game/4067
@@ -1254,6 +1281,15 @@
     replay: false
     notes: ''
     updated: '2012-12-26 07:30:47'
+    completed: '0000-00-00'
+  - id: 29274990
+    title: 'Half-Life 2: Lost Coast'
+    link: https://howlongtobeat.com/game/4252
+    platform: PC
+    cover: https://howlongtobeat.com/games/250px-Lostcoastlogo.PNG
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:12:06'
     completed: '0000-00-00'
   - id: 18552
     title: Halo 2
@@ -2371,6 +2407,24 @@
     notes: ''
     updated: '2015-02-16 09:53:56'
     completed: '0000-00-00'
+  - id: 29274994
+    title: Sam & Max Beyond Time and Space
+    link: https://howlongtobeat.com/game/8111
+    platform: PC
+    cover: https://howlongtobeat.com/games/8111_Sam_&_Max_Beyond_Time_and_Space.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:13:50'
+    completed: '0000-00-00'
+  - id: 29274995
+    title: Sam & Max Save the World
+    link: https://howlongtobeat.com/game/8113
+    platform: PC
+    cover: https://howlongtobeat.com/games/Sam_and_Max_Save_the_World_artwork.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:14:03'
+    completed: '0000-00-00'
   - id: 18448
     title: Sands of Destruction
     link: https://howlongtobeat.com/game/8149
@@ -2829,6 +2883,24 @@
     replay: false
     notes: ''
     updated: '2017-07-13 03:41:15'
+    completed: '0000-00-00'
+  - id: 29274980
+    title: Zenonia
+    link: https://howlongtobeat.com/game/11549
+    platform: iOS
+    cover: https://howlongtobeat.com/games/250px-Zenonia_start_screen.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:07:18'
+    completed: '0000-00-00'
+  - id: 29274982
+    title: 'Zenonia 2: The Lost Memories'
+    link: https://howlongtobeat.com/game/11550
+    platform: iOS
+    cover: https://howlongtobeat.com/games/Zenonia2.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:07:35'
     completed: '0000-00-00'
   - id: 3037019
     title: "Zero Escape: Virtue's Last Reward"
