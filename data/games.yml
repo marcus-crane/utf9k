@@ -319,6 +319,15 @@
     notes: ''
     updated: '2019-11-11 05:17:19'
     completed: '2019-11-11'
+  - id: 29274970
+    title: .detuned
+    link: https://howlongtobeat.com/game/12687
+    platform: PlayStation 3
+    cover: https://howlongtobeat.com/games/Detuned.png
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:03:24'
+    completed: '0000-00-00'
   - id: 3037018
     title: '999: Nine Hours, Nine Persons, Nine Doors'
     link: https://howlongtobeat.com/game/111
@@ -345,6 +354,15 @@
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:30'
+    completed: '0000-00-00'
+  - id: 29274941
+    title: Alpha Protocol
+    link: https://howlongtobeat.com/game/401
+    platform: PlayStation 3
+    cover: https://howlongtobeat.com/games/Alpha_Protocol_cover.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:58:22'
     completed: '0000-00-00'
   - id: 1890570
     title: 'Anna: Extended Edition'
@@ -931,6 +949,15 @@
     notes: ''
     updated: '2016-01-09 04:13:26'
     completed: '0000-00-00'
+  - id: 29274972
+    title: 'Evangelion Shin Gekijouban: 3nd Impact'
+    link: https://howlongtobeat.com/game/47269
+    platform: PlayStation Portable
+    cover: https://howlongtobeat.com/games/47269_Evangelion_Shin_Gekijouban_3nd_Impact.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:04:43'
+    completed: '0000-00-00'
   - id: 18549
     title: Fallout 3
     link: https://howlongtobeat.com/game/3340
@@ -1155,6 +1182,15 @@
     replay: false
     notes: ''
     updated: '2012-12-26 07:07:30'
+    completed: '0000-00-00'
+  - id: 29274923
+    title: Gravity Rush
+    link: https://howlongtobeat.com/game/4087
+    platform: PlayStation Vita
+    cover: https://howlongtobeat.com/games/Gravity_rush_US_cover.png
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:55:18'
     completed: '0000-00-00'
   - id: 4080507
     title: Gravity Rush 2
@@ -1921,6 +1957,15 @@
     notes: ''
     updated: '2016-01-09 02:41:00'
     completed: '0000-00-00'
+  - id: 29274975
+    title: PaRappa the Rapper
+    link: https://howlongtobeat.com/game/6922
+    platform: PlayStation Portable
+    cover: https://howlongtobeat.com/games/USPaRappacover.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:05:20'
+    completed: '0000-00-00'
   - id: 4744134
     title: 'Phoenix Wright: Ace Attorney'
     link: https://howlongtobeat.com/game/7026
@@ -1965,6 +2010,15 @@
     replay: false
     notes: ''
     updated: '2012-12-27 03:08:13'
+    completed: '0000-00-00'
+  - id: 29274914
+    title: Pokémon Crystal
+    link: https://howlongtobeat.com/game/7146
+    platform: Game Boy Color
+    cover: https://howlongtobeat.com/games/189986-pokemoncrystal_large.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:52:52'
     completed: '0000-00-00'
   - id: 18525
     title: Pokémon Diamond and Pearl
@@ -2344,6 +2398,24 @@
     notes: ''
     updated: '2016-02-20 21:12:20'
     completed: '0000-00-00'
+  - id: 29274962
+    title: 'Sly 2: Band of Thieves'
+    link: https://howlongtobeat.com/game/8648
+    platform: PlayStation 3
+    cover: https://howlongtobeat.com/games/Sly_2_-_Band_of_Thieves_Coverart.png
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:02:01'
+    completed: '0000-00-00'
+  - id: 29274963
+    title: 'Sly 3: Honor Among Thieves'
+    link: https://howlongtobeat.com/game/8649
+    platform: PlayStation 3
+    cover: https://howlongtobeat.com/games/Sly_3.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 07:02:18'
+    completed: '0000-00-00'
   - id: 18597
     title: Sly Cooper and the Thievius Raccoonus
     link: https://howlongtobeat.com/game/8650
@@ -2443,14 +2515,14 @@
     notes: ''
     updated: '2015-02-26 12:36:35'
     completed: '0000-00-00'
-  - id: 18511
-    title: 'The Legend of Zelda: A Link to the Past'
-    link: https://howlongtobeat.com/game/10028
+  - id: 29274917
+    title: 'The Legend of Zelda: A Link to the Past and Four Swords'
+    link: https://howlongtobeat.com/game/52711
     platform: Game Boy Advance
-    cover: https://howlongtobeat.com/games/250px-Zelda_SNES.jpg
+    cover: https://howlongtobeat.com/games/52711_The_Legend_of_Zelda_A_Link_to_the_Past_and_Four_Swords.jpg
     replay: false
     notes: ''
-    updated: '2012-12-27 02:08:07'
+    updated: '2023-07-30 06:53:46'
     completed: '0000-00-00'
   - id: 18512
     title: 'The Legend of Zelda: Four Swords'
