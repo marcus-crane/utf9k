@@ -1,4 +1,4 @@
-name: Sync data from external sources
+name: External Sync
 on:
   schedule:
     # This is mostly a no-op which is why it runs so often
