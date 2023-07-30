@@ -103,6 +103,15 @@
     notes: ''
     updated: '2023-07-30 00:02:45'
     completed: '2023-07-23'
+  - id: 29274864
+    title: 'Dragon Ball Z: Kakarot'
+    link: https://howlongtobeat.com/game/68262
+    platform: PC
+    cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:34:35'
+    completed: '2023-04-14'
   - id: 9567047
     title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
     link: https://howlongtobeat.com/game/7029
@@ -768,6 +777,15 @@
     replay: false
     notes: ''
     updated: '2019-04-21 05:54:58'
+    completed: '0000-00-00'
+  - id: 29274862
+    title: 'Dragon Ball Z: Kakarot'
+    link: https://howlongtobeat.com/game/68262
+    platform: PC
+    cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
+    replay: false
+    notes: null
+    updated: '2023-07-30 06:34:08'
     completed: '0000-00-00'
   - id: 18605
     title: Elite Beat Agents
