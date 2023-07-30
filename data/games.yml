@@ -20,6 +20,42 @@
     completed: '0000-00-00'
 - list: Stalled
   games:
+  - id: 29274874
+    title: Watch Dogs 2
+    link: https://howlongtobeat.com/game/37861
+    platform: PC
+    cover: https://howlongtobeat.com/games/37861_Watch_Dogs_2.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:37:30'
+    completed: '0000-00-00'
+  - id: 29274871
+    title: Red Dead Redemption 2
+    link: https://howlongtobeat.com/game/27100
+    platform: PC
+    cover: https://howlongtobeat.com/games/27100_Red_Dead_Redemption_2.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:36:52'
+    completed: '0000-00-00'
+  - id: 29274869
+    title: Hi-Fi Rush
+    link: https://howlongtobeat.com/game/122891
+    platform: PC
+    cover: https://howlongtobeat.com/games/122891_Hi-Fi_Rush.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:36:28'
+    completed: '0000-00-00'
+  - id: 745959
+    title: 'Final Fantasy XIV: A Realm Reborn'
+    link: https://howlongtobeat.com/game/12654
+    platform: PC
+    cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
+    replay: false
+    notes: Completed the Endwalker expansion but haven't played post-6.0 content yet
+    updated: '2023-07-30 06:35:50'
+    completed: '0000-00-00'
   - id: 10893653
     title: Marvel's Spider-Man
     link: https://howlongtobeat.com/game/44852
@@ -112,6 +148,96 @@
     notes: ''
     updated: '2023-07-30 06:34:35'
     completed: '2023-04-14'
+  - id: 29274880
+    title: 'Paranormasight: The Seven Mysteries of Honjo'
+    link: https://howlongtobeat.com/game/124297
+    platform: PC
+    cover: https://howlongtobeat.com/games/124297_Paranormasight_The_Seven_Mysteries_of_Honjo.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:38:45'
+    completed: '2023-02-03'
+  - id: 29274876
+    title: 'Ace Combat 04: Shattered Skies'
+    link: https://howlongtobeat.com/game/166
+    platform: PlayStation 2
+    cover: https://howlongtobeat.com/games/Ac04box.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:38:15'
+    completed: '2022-12-23'
+  - id: 29274885
+    title: Katamari Damacy Reroll
+    link: https://howlongtobeat.com/game/62564
+    platform: Nintendo Switch
+    cover: https://howlongtobeat.com/games/62564_Katamari_Damacy_Reroll.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:40:04'
+    completed: '2022-12-23'
+  - id: 29274893
+    title: 'Alba: A Wildlife Adventure'
+    link: https://howlongtobeat.com/game/86015
+    platform: PC
+    cover: https://howlongtobeat.com/games/86015_Alba_A_Wildlife_Adventure.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:41:12'
+    completed: '2022-11-03'
+  - id: 29274883
+    title: Donut County
+    link: https://howlongtobeat.com/game/51323
+    platform: PC
+    cover: https://howlongtobeat.com/games/51323_Donut_County.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:39:25'
+    completed: '2022-11-03'
+  - id: 29274891
+    title: Cyberpunk 2077
+    link: https://howlongtobeat.com/game/2127
+    platform: PC
+    cover: https://howlongtobeat.com/games/Cyberpunk-2077-2.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:40:35'
+    completed: '2022-11-02'
+  - id: 29274894
+    title: 'Phoenix Wright: Ace Attorney - Spirit of Justice'
+    link: https://howlongtobeat.com/game/33836
+    platform: Nintendo 3DS
+    cover: https://howlongtobeat.com/games/33836_Phoenix_Wright_Ace_Attorney_-_Spirit_of_Justice.png
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:41:41'
+    completed: '2022-08-14'
+  - id: 29274899
+    title: 'Call of Duty: Modern Warfare'
+    link: https://howlongtobeat.com/game/63110
+    platform: PC
+    cover: https://howlongtobeat.com/games/63110_Call_of_Duty_Modern_Warfare.jpeg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:44:09'
+    completed: '2022-06-13'
+  - id: 29274896
+    title: 'Phoenix Wright: Ace Attorney - Dual Destinies'
+    link: https://howlongtobeat.com/game/12977
+    platform: Nintendo 3DS
+    cover: https://howlongtobeat.com/games/Ace_Attorney_5_cover.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:43:20'
+    completed: '2021-12-10'
+  - id: 29274895
+    title: 'Apollo Justice: Ace Attorney'
+    link: https://howlongtobeat.com/game/524
+    platform: Nintendo 3DS
+    cover: https://howlongtobeat.com/games/Apollo-justice-english-cover.jpg
+    replay: false
+    notes: ''
+    updated: '2023-07-30 06:42:43'
+    completed: '2021-08-15'
   - id: 9567047
     title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
     link: https://howlongtobeat.com/game/7029
@@ -876,15 +1002,6 @@
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:46'
-    completed: '0000-00-00'
-  - id: 745959
-    title: 'Final Fantasy XIV: A Realm Reborn'
-    link: https://howlongtobeat.com/game/12654
-    platform: PC
-    cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
-    replay: false
-    notes: ''
-    updated: '2015-09-21 08:35:54'
     completed: '0000-00-00'
   - id: 10893700
     title: Final Fantasy XV
