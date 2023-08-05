@@ -1,10 +1,9 @@
 {
   "http://bs.visualshower.com": {
-    "alive": false,
+    "alive": 0,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 503,
     "url": "http://bs.visualshower.com"
   },
   "http://example.com": {
@@ -2771,10 +2770,11 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -4206,11 +4206,11 @@
     "url": "https://www.whatsapp.com"
   },
   "https://www.wired.com/story/face-swap-porn-legal-limbo": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2017-02-05--deepfakes/index.md"
     ],
-    "status": 200,
+    "status": 504,
     "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
   },
   "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696": {
