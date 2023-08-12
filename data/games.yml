@@ -1,5 +1,14 @@
 - list: Playing
   games:
+  - id: 745959
+    title: 'Final Fantasy XIV: A Realm Reborn'
+    link: https://howlongtobeat.com/game/12654
+    platform: PC
+    cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
+    replay: false
+    notes: Playing post-6.0 content
+    updated: '2023-08-12 03:30:35'
+    completed: '0000-00-00'
   - id: 29266757
     title: .hack//Infection
     link: https://howlongtobeat.com/game/22
@@ -55,15 +64,6 @@
     replay: false
     notes: ''
     updated: '2023-07-30 06:36:28'
-    completed: '0000-00-00'
-  - id: 745959
-    title: 'Final Fantasy XIV: A Realm Reborn'
-    link: https://howlongtobeat.com/game/12654
-    platform: PC
-    cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
-    replay: false
-    notes: Completed the Endwalker expansion but haven't played post-6.0 content yet
-    updated: '2023-07-30 06:35:50'
     completed: '0000-00-00'
   - id: 10893653
     title: Marvel's Spider-Man
