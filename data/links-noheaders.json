@@ -4206,11 +4206,11 @@
     "url": "https://www.whatsapp.com"
   },
   "https://www.wired.com/story/face-swap-porn-legal-limbo": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2017-02-05--deepfakes/index.md"
     ],
-    "status": 504,
+    "status": 200,
     "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
   },
   "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696": {
