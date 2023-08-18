@@ -23,7 +23,12 @@ tags:
     </div>
     <ul {{ if eq $listName 2022 }}class="almost-full-list"{{ end }} role="list">
     {{ range .books }}
-    {{ $image := resources.GetRemote .cover }}
+    {{ $opts := dict
+      "headers" (dict
+        "User-Agent" "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/536.14 (KHTML, like Gecko) Chrome/32.0.2008.86 Safari/536.14)"
+      )
+    }}
+    {{ $image := resources.GetRemote .cover $opts }}
     {{ $image := $image.Resize "x360 q100" }}
     <li>
       <div>
