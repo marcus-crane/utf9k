@@ -38,7 +38,7 @@ tags:
         </a>
       </div>
       <dl>
-        {{ if eq .progress 100 }}
+        {{ if and (eq .progress 100) (.rating) }}
         <div>
           <dd>Finished: {{ .date_finished }}</dd>
           <dd>Rating: {{ range seq .rating  }}★{{ end }}</dd>
