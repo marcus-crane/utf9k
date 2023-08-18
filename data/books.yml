@@ -30,6 +30,16 @@
   #   rating: null
   #   progress: 5
 
+  - title: High Performance Browser Networking
+    subtitle: What Every Web Developer Should Know about Networking and Web Performance
+    author: Ilya Grigorik
+    cover: https://covers.openlibrary.org/b/id/14411035-L.jpg
+    link: https://openlibrary.org/works/OL17581297W/High_Performance_Browser_Networking
+    date_finished: null
+    rating: null
+    progress: 0
+    reader_id: 01ge8k8s1n1cjyq5wntaeq1nm4
+
   - title: Unscripted
     subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
     author: James B. Stewart and Rachel Abrams
