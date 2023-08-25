@@ -1,5 +1,14 @@
 - list: Playing
   games:
+  - id: 29819412
+    title: Judgment
+    link: https://howlongtobeat.com/game/60754
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
+    replay: false
+    notes: null
+    updated: '2023-08-25 10:13:37'
+    completed: '0000-00-00'
   - id: 745959
     title: 'Final Fantasy XIV: A Realm Reborn'
     link: https://howlongtobeat.com/game/12654
@@ -18,6 +27,8 @@
     notes: Exploring Expansive Haunted Sea of Sand next
     updated: '2023-07-30 00:56:53'
     completed: '0000-00-00'
+- list: Stalled
+  games:
   - id: 29267084
     title: Say No! More
     link: https://howlongtobeat.com/game/90104
@@ -25,10 +36,8 @@
     cover: https://howlongtobeat.com/games/90104_Say_No_More.jpg
     replay: false
     notes: ''
-    updated: '2023-07-30 00:50:09'
+    updated: '2023-08-25 10:13:53'
     completed: '0000-00-00'
-- list: Stalled
-  games:
   - id: 29275023
     title: 'Call of Duty: Black Ops III'
     link: https://howlongtobeat.com/game/27127
