@@ -59,6 +59,15 @@
     rating: null
     progress: 57
     reader_id: 01h2mpk1bwpwjpzr34mwmxw7rx
+    
+  - title: The PARA Method
+    subtitle: Simplify, Organize, and Master Your Digital Life
+    author: Tiago Forte
+    cover: https://covers.openlibrary.org/b/id/14417094-L.jpg
+    link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
+    date_finished: 2023-08-30
+    rating: 3
+    progress: 100
 
   - title: Hanging Out
     subtitle: The Radical Power of Killing Time
