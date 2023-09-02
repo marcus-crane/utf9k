@@ -3735,11 +3735,11 @@
     "url": "https://www.michaelmina.net/restaurants"
   },
   "https://www.microsoft.com/en-us/download/details.aspx": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/questions/kubes-ingress-ip-range.md"
     ],
-    "status": 200,
+    "status": 404,
     "url": "https://www.microsoft.com/en-us/download/details.aspx"
   },
   "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software": {
