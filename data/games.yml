@@ -18,6 +18,8 @@
     notes: Playing post-6.0 content
     updated: '2023-08-12 03:30:35'
     completed: '0000-00-00'
+- list: Stalled
+  games:
   - id: 29266757
     title: .hack//Infection
     link: https://howlongtobeat.com/game/22
@@ -25,10 +27,8 @@
     cover: https://howlongtobeat.com/games/668247-boxdothackinfection_l_large.jpg
     replay: false
     notes: Exploring Expansive Haunted Sea of Sand next
-    updated: '2023-07-30 00:56:53'
+    updated: '2023-09-07 08:19:13'
     completed: '0000-00-00'
-- list: Stalled
-  games:
   - id: 29267084
     title: Say No! More
     link: https://howlongtobeat.com/game/90104
