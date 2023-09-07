@@ -4,10 +4,20 @@
     "chapters": null,
     "color": "#e4ae1a",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144866-X9vSHu3RjM0S.jpg",
-    "progress": 4,
+    "progress": 5,
     "status": "RELEASING",
     "title": "Akane-banashi",
     "url": "https://anilist.co/manga/144866"
+  },
+  {
+    "author": "Shin Kibayashi",
+    "chapters": 68,
+    "color": "#f1ae50",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx44222-zRouYfqULtni.jpg",
+    "progress": 7,
+    "status": "FINISHED",
+    "title": "Bloody Monday Season 2",
+    "url": "https://anilist.co/manga/44222"
   },
   {
     "author": "Tatsuki Fujimoto",
@@ -64,7 +74,7 @@
     "chapters": null,
     "color": "#e4a15d",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
-    "progress": 233,
+    "progress": 234,
     "status": "RELEASING",
     "title": "Jujutsu Kaisen",
     "url": "https://anilist.co/manga/101517"
@@ -94,7 +104,7 @@
     "chapters": null,
     "color": "#e4bb35",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163497-Hiq5PsyafhRg.jpg",
-    "progress": 15,
+    "progress": 16,
     "status": "RELEASING",
     "title": "Nue no Onmyouji",
     "url": "https://anilist.co/manga/163497"
@@ -124,7 +134,7 @@
     "chapters": null,
     "color": "#e45d43",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163340-k0ozQOOlckcf.jpg",
-    "progress": 19,
+    "progress": 20,
     "status": "RELEASING",
     "title": "Tenmaku Cinema",
     "url": "https://anilist.co/manga/163340"
