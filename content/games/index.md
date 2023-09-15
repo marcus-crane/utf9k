@@ -18,7 +18,6 @@ tags:
     {{ if eq $listName "Stalled" }}</summary>{{ end }}
     <ul {{ if eq $listName "Playing" }}class="partial-list"{{ end }} role="list">
       {{ range .games }}
-      {{ if ne .cover "https://howlongtobeat.com/games/33836_Phoenix_Wright_Ace_Attorney_-_Spirit_of_Justice.png" }}
       {{ $opts := dict
         "headers" (dict
           "User-Agent" "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/536.14 (KHTML, like Gecko) Chrome/32.0.2008.86 Safari/536.14)"
@@ -41,7 +40,6 @@ tags:
           {{ if ne .completed "0000-00-00" }}<dd>Finished: {{ .completed }}</dd>{{ end }}
         </div>
       </li>
-      {{ end }}
       {{ end }}
     </ul>
     {{ if eq $listName "Stalled" }}</details>{{ end }}
