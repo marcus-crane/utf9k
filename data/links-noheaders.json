@@ -39,11 +39,11 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 200,
+    "status": 500,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -1769,7 +1769,7 @@
     "sources": [
       "content/blog/2020-03-08--bookmarking-march-2020/index.md"
     ],
-    "status": 404,
+    "status": 403,
     "url": "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011"
   },
   "https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in": {
@@ -2351,14 +2351,6 @@
     "status": 200,
     "url": "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu"
   },
-  "https://howlongtobeat.com/games/33836_Phoenix_Wright_Ace_Attorney_-_Spirit_of_Justice.png": {
-    "alive": false,
-    "sources": [
-      "content/games/index.md"
-    ],
-    "status": 403,
-    "url": "https://howlongtobeat.com/games/33836_Phoenix_Wright_Ace_Attorney_-_Spirit_of_Justice.png"
-  },
   "https://howlongtobeat.com/user/Sentry": {
     "alive": true,
     "sources": [
@@ -2778,10 +2770,11 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
