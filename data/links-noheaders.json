@@ -39,11 +39,11 @@
     "url": "http://serebii.net"
   },
   "http://visualshower.com": {
-    "alive": false,
+    "alive": true,
     "sources": [
       "content/blog/2017-12-18--wiki-thoughts/index.md"
     ],
-    "status": 500,
+    "status": 200,
     "url": "http://visualshower.com"
   },
   "http://wiki.linuxquestions.org/wiki/VFAT": {
@@ -2462,11 +2462,11 @@
     "url": "https://lightspeedhq.com"
   },
   "https://linux.die.net/man/8/hwclock": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2017-12-24--arch-nuc-install/index.md"
     ],
-    "status": 200,
+    "status": 403,
     "url": "https://linux.die.net/man/8/hwclock"
   },
   "https://login.microsoftonline.com/common/oauth2/authorize": {
@@ -2486,11 +2486,10 @@
     "url": "https://logseq.com"
   },
   "https://man.openbsd.org/ssh_config": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2020-01-06--multiple-git-hosts/index.md"
     ],
-    "status": 200,
     "url": "https://man.openbsd.org/ssh_config"
   },
   "https://manjaro.org": {
@@ -2770,11 +2769,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
