@@ -1,13 +1,13 @@
 - list: Playing
   games:
-  - id: 29819412
-    title: Judgment
-    link: https://howlongtobeat.com/game/60754
-    platform: PlayStation 5
-    cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
+  - id: 30499827
+    title: 'Cyberpunk 2077: Phantom Liberty'
+    link: https://howlongtobeat.com/game/113203
+    platform: PC
+    cover: https://howlongtobeat.com/games/113203_Cyberpunk_2077_Phantom_Liberty.jpg
     replay: false
-    notes: null
-    updated: '2023-08-25 10:13:37'
+    notes: Starting to explore Dogtown
+    updated: '2023-09-30 06:58:24'
     completed: '0000-00-00'
   - id: 745959
     title: 'Final Fantasy XIV: A Realm Reborn'
@@ -16,7 +16,25 @@
     cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
     replay: false
     notes: Playing post-6.0 content
-    updated: '2023-08-12 03:30:35'
+    updated: '2023-09-30 06:57:53'
+    completed: '0000-00-00'
+  - id: 30499829
+    title: Max Payne 3
+    link: https://howlongtobeat.com/game/5739
+    platform: PC
+    cover: https://howlongtobeat.com/games/256px-Maxpayne3.jpg
+    replay: true
+    notes: ''
+    updated: '2023-09-30 06:57:23'
+    completed: '0000-00-00'
+  - id: 29819412
+    title: Judgment
+    link: https://howlongtobeat.com/game/60754
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
+    replay: false
+    notes: null
+    updated: '2023-08-25 10:13:37'
     completed: '0000-00-00'
 - list: Stalled
   games:
