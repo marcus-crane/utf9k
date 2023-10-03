@@ -1668,68 +1668,68 @@
     "url": "https://freedesktop.org/wiki/Software/xdg-user-dirs"
   },
   "https://fyi.org.nz": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2018-08-18--nz-oia-guide/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz"
   },
   "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2020-11-23--tidying-towing-data/index.md",
       "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts"
   },
   "https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/projects/meta-oia-requests/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019"
   },
   "https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/projects/meta-oia-requests/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020"
   },
   "https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/projects/meta-oia-requests/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021"
   },
   "https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/projects/meta-oia-requests/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i"
   },
   "https://fyi.org.nz/request/6763-withheld-rejected-oia-filings": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/projects/meta-oia-requests/index.md"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/6763-withheld-rejected-oia-filings"
   },
   "https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/project-src/parnell/index.html"
     ],
-    "status": 200,
+    "status": 503,
     "url": "https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area"
   },
   "https://gatsbyjs.com": {
@@ -2462,11 +2462,11 @@
     "url": "https://lightspeedhq.com"
   },
   "https://linux.die.net/man/8/hwclock": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/blog/2017-12-24--arch-nuc-install/index.md"
     ],
-    "status": 200,
+    "status": 403,
     "url": "https://linux.die.net/man/8/hwclock"
   },
   "https://login.microsoftonline.com/common/oauth2/authorize": {
@@ -2770,11 +2770,10 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
-    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3735,11 +3734,11 @@
     "url": "https://www.michaelmina.net/restaurants"
   },
   "https://www.microsoft.com/en-us/download/details.aspx": {
-    "alive": true,
+    "alive": false,
     "sources": [
       "content/questions/kubes-ingress-ip-range.md"
     ],
-    "status": 200,
+    "status": 404,
     "url": "https://www.microsoft.com/en-us/download/details.aspx"
   },
   "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software": {
