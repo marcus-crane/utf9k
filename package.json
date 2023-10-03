@@ -24,7 +24,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "8.43.0",
     "littlefoot": "4.0.0-10",
-    "prettier": "^2.8.0"
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
