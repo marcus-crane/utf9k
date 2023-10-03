@@ -10,7 +10,7 @@ GitPython==3.1.35
 idna==3.4
 mistune==3.0.1
 pendulum==2.1.2
-Pillow==10.0.0
+Pillow==10.0.1
 python-dateutil==2.8.2
 pytzdata==2020.1
 PyYAML==6.0.1
