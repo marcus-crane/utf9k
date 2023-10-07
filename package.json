@@ -20,10 +20,10 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.17",
-    "@babel/preset-env": "7.22.15",
+    "@babel/preset-env": "7.22.20",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "8.50.0",
-    "littlefoot": "4.0.0-10",
+    "littlefoot": "4.0.1",
     "prettier": "^3.0.0"
   },
   "dependencies": {
