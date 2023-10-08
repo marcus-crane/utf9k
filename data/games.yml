@@ -18,6 +18,17 @@
     notes: Playing post-6.0 content
     updated: '2023-09-30 06:57:53'
     completed: '0000-00-00'
+- list: Stalled
+  games:
+  - id: 30640014
+    title: 'Final Fantasy XII: The Zodiac Age'
+    link: https://howlongtobeat.com/game/37832
+    platform: Nintendo Switch
+    cover: https://howlongtobeat.com/games/37832_Final_Fantasy_XII_The_Zodiac_Age.jfif
+    replay: false
+    notes: null
+    updated: '2023-10-08 07:58:51'
+    completed: '0000-00-00'
   - id: 30499829
     title: Max Payne 3
     link: https://howlongtobeat.com/game/5739
@@ -25,7 +36,7 @@
     cover: https://howlongtobeat.com/games/256px-Maxpayne3.jpg
     replay: true
     notes: ''
-    updated: '2023-09-30 06:57:23'
+    updated: '2023-10-08 07:57:54'
     completed: '0000-00-00'
   - id: 29819412
     title: Judgment
@@ -33,11 +44,9 @@
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
     replay: false
-    notes: null
-    updated: '2023-08-25 10:13:37'
+    notes: ''
+    updated: '2023-10-08 07:57:31'
     completed: '0000-00-00'
-- list: Stalled
-  games:
   - id: 29266757
     title: .hack//Infection
     link: https://howlongtobeat.com/game/22
