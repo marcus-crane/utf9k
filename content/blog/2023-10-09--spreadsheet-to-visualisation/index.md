@@ -3,7 +3,6 @@ title: "Spreadsheet to visualisation: How I created towing.utf9k.net"
 date: "2023-07-16T15:00:00+1300"
 description: "How I finished a project that was sitting on the backburner for years"
 slug: "spreadsheet-to-visualisation"
-draft: true
 category: "blog"
 tags:
 - "software"
