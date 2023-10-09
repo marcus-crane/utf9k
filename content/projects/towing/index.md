@@ -20,12 +20,12 @@ This is perfectly normal of course but after a few of these, it occurred to me t
 
 It took me quite a few years but I managed to go from this idea to a simulation that shows 3 years worth of vehicles, represented as orange lines, flowing throughout the city to their final destination.
 
-Eventually I intend to write up how it was done but suffice to say, there are a lot of moving pieces involved in getting all of this working.
-
 You can't just pluck out where a vehicle was picked up and taken to because that makes a straight line. To have the full effect, you need to figure out a likely route for every single instance and then plot a line across all of the streets in between for your simulated vehicle to follow.
 
 I'm pretty proud of the final result which is probably one of the more advanced side projects I've put together, considering it started with a big messy spreadsheet and ended up with an interactive visualisation.
 
 You can play around with the project just below but if you'd like to see a full screen version, or you have iframes disabled, then you can [check it out here](https://towing.utf9k.net).
+
+If you'd like to read a detailed write-up on how this was made, or follow along with creating your own version, you can find those details in [this blog post](/blog/spreadsheet-to-visualisation).
 
 <iframe src="https://towing.utf9k.net" style="height: 500px;" allowfullscreen></iframe>
