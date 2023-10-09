@@ -10,16 +10,6 @@
     "url": "https://anilist.co/manga/144866"
   },
   {
-    "author": "Shin Kibayashi",
-    "chapters": 68,
-    "color": "#f1ae50",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx44222-zRouYfqULtni.jpg",
-    "progress": 31,
-    "status": "FINISHED",
-    "title": "Bloody Monday Season 2",
-    "url": "https://anilist.co/manga/44222"
-  },
-  {
     "author": "Tatsuki Fujimoto",
     "chapters": null,
     "color": "#f1c91a",
@@ -44,7 +34,7 @@
     "chapters": 20,
     "color": "#e4a15d",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/10002.jpg",
-    "progress": 1,
+    "progress": 3,
     "status": "FINISHED",
     "title": "Final Fantasy XII",
     "url": "https://anilist.co/manga/40002"
@@ -74,7 +64,7 @@
     "chapters": null,
     "color": "#e4a15d",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101517-H3TdM3g5ZUe9.jpg",
-    "progress": 237,
+    "progress": 238,
     "status": "RELEASING",
     "title": "Jujutsu Kaisen",
     "url": "https://anilist.co/manga/101517"
@@ -82,9 +72,9 @@
   {
     "author": "Takeru Hokazono",
     "chapters": null,
-    "color": "#f1865d",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx169355-aLIPeq4iQfbK.jpg",
-    "progress": 3,
+    "color": "#e4ae86",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b169355-zdLoO4kDagR2.jpg",
+    "progress": 4,
     "status": "RELEASING",
     "title": "Kagurabachi",
     "url": "https://anilist.co/manga/169355"
@@ -114,7 +104,7 @@
     "chapters": null,
     "color": "#e4ae93",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163497-HNrC3KDTVxW5.jpg",
-    "progress": 20,
+    "progress": 21,
     "status": "RELEASING",
     "title": "Nue no Onmyouji",
     "url": "https://anilist.co/manga/163497"
@@ -124,7 +114,7 @@
     "chapters": null,
     "color": "#e48650",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-tZVlfBCHbrNL.jpg",
-    "progress": 1093,
+    "progress": 1094,
     "status": "RELEASING",
     "title": "ONE PIECE",
     "url": "https://anilist.co/manga/30013"
