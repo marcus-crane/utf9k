@@ -17,11 +17,11 @@ A few of these projects end up on the back burner and [towing.utf9k.net](https:/
 
 All up, it took me something like 4 or 5 years to finally consider it "complete", in large part because I would hit a wall and not really be sure where to go from there.
 
-In hindsight, such a project would be very quick to complete but for those starting out in the mapping space, taking a scenic walk through the creation process should hopefully serve as a nice jumping off point of how you might approach your own projects.
+With perfect 20/20 hindsight, such a project would be very quick to complete but for those starting out in the mapping space, taking a scenic walk through the creation process should hopefully serve as a nice jumping off point for how you might approach your own projects.
 
-Thankfully, I kept all of my "workings" such as my cobbled together Python scripts and intermediate datasets such that we can work through them from start to finish so you can have an idea of how this fun little visualisation was made.
+Thankfully, I kept all of my "workings" like as my cobbled together Python scripts and intermediate datasets, such that we can work through them from start to finish so you can have an idea of how this fun little visualisation was made.
 
-It's probably worth noting that I'm not a data scientist by any means and a lot of steps could probably be made redundant if I knew better but it's all a means to an end and the end is pretty neat so I don't really mind airing my dirty laundry.
+It's probably worth noting that I'm not a data scientist by any means and a lot of steps could probably be made redundant if I knew better but it's all a means to an end, and the end is pretty neat so I don't really mind airing my dirty laundry.
 
 ## Obtaining inspiration
 
@@ -37,7 +37,9 @@ Personally, most of what I've stumbled on has come by way of [Hacker News](https
 
 Looking back at it after all these years, and having a few pieces under my belt, I feel like there's even more to improve in my own process so writing this post in itself has already been a big win for me.
 
-Anyway, all this to say that as is usually the case, starting can be the hardest part more than anything. Once the ball is rolling, you may hit some hard problems but I find it's usually rare that they're difficult in the sense of an immovable object. It's more that it's just a lot of work or figuring out the right terminology that will get you a step closer to the right tool.
+Anyway, all this to say: As is usually the case, starting is often harder than any other part of the process.
+
+Once the ball is rolling, you may hit some hard problems but I find it's usually rare that they're difficult in the sense of an immovable object. It's more that it's just a lot of work or figuring out the right terminology to use in a search query that will get you a step closer to the right tool.
 
 Let's actually take a look at the project in more detail.
 
@@ -59,7 +61,7 @@ Initially, I did a search for `auckland transport towing` which surfaced [this p
 
 I figured contacting the New Zealand Police might be worth a shot in case they happened to hold more comprehensive information than Auckland Transport themselves.
 
-In the end, they transferred my request to [LGOIMA](https://www.watercare.co.nz/Contact/Official-information-request)[^lgoima] Business Partner
+In the end, they transferred my request to a [LGOIMA](https://www.watercare.co.nz/Contact/Official-information-request)[^lgoima] Business Partner which I wouldn't have known was the right place, but most agencies are pretty good at redirecting you where you should go like that.
 
 You can read [the full correspondence](https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts) to get an idea of how to structure a request, what some of the back and forth might look like, and to get a copy of the dataset.
 
@@ -73,15 +75,16 @@ Opening up `Marcus Aug 2016 Jul 2019.xlsx` certainly leaves a lot to be desired.
 
 With just an initial glance, we can already spot a bunch of pain points with this data set:
 
-- This dataset is will be hard to query programmatically. In the `Date and Time` column for instance, we have a mix of times and dates. If you were to take a random row, you would need to step back `n` number of rows to figure out the date.
+- This dataset will be hard to query programmatically. In the `Date and Time` column for instance, we have a mix of times and dates. If you were to take a random row, you would need to step back `n` number of rows to figure out the date and then apply that date to each row going forward, until you hit the next cell that resembles a date.
 - Addresses do not have much consistency.
-  - Some feature street numbers while others do not.
-  - Terms like `OPP` in the case of "Opposite 55 Ngapuhi Road" so not tell us anything about the actual location.
-- The file column contains numbers which we need to map to something meaningful
+  - Some addresses include street numbers while others do not.
+  - None of them contain suburbs so we may have address clashes with no way to know the "correct" one
+  - Terms like `OPP` in the case of "Opposite 55 Ngapuhi Road" which don't tell us anything useful.
+- The file column contains numbers that we need to map to something meaningful
 - At least two visible entries have a vehicle starting from the same street they end up in
   - Perhaps they were towed around the block or moved to unblock something? The data doesn't say so we can only assume.
 
-For the first iteration of this project, I decided to ignore any information that would be hard to interpret so missing street numbers and the like were all quickly junked.
+For the first iteration of this project, I decided to ignore any information that would be hard to interpret so missing street numbers and the like were put to one side just to get things moving.
 
 For this step, I reached for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Pandas](https://pandas.pydata.org/) to create a hacky script that brute forced this dataset into something nice and easy to play with.
 
@@ -112,7 +115,7 @@ count(*) = 49174
 
 If we look at [HERE Maps](https://www.here.com/get-started/pricing) as an example, our dataset falls within the `30,001 to 5,000,000` requests/month category giving us a cost of `0.830` USD per 1000 requests.
 
-We'll round it up to 50,000 to account for some API failures and network connectivity issues on our end and we're looking at around $40 USD. Admittedly, that is a lot cheaper than I remember. Perhaps the prices have come down a lot since I last looked.
+We'll round it up to 50,000 to account for some API failures and network connectivity issues on our end and we're looking at around $40 USD. Admittedly, that is a lot cheaper than I remember. Perhaps the prices have come down a lot since I last looked?
 
 In the case of Mapbox, it seems this would [even fall within their free tier](https://www.mapbox.com/pricing/#search) so I would probably just go that route if I was starting from scratch.
 
@@ -126,7 +129,7 @@ First, we need a dataset that will translate addresses to coordinates.
 
 Here in New Zealand, [Land Information New Zealand](https://www.linz.govt.nz/) provides this and many other datasets for free, by way of the [LINZ Data Service](https://www.linz.govt.nz/products-services/data/linz-data-service).
 
-![](./lds.png)
+![A screenshot of the LINZ Data Service, a web browser for viewing map layers and other types of data sets. In this image, the NZ Addresses dataset is selected and partly visible on the right side of the screen. On the left side is the LDS data set browser.](./lds.png)
 
 What we're looking at is one data point for each address in New Zealand that contains both the address broken into its component parts as well as the coordinates for that address.
 
@@ -138,7 +141,7 @@ These days, I would probably look at [Pelias](https://github.com/pelias/pelias) 
 
 With [a bit more data munging](https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py), we have a script that does exactly that.
 
-In order to improve the odds of a match occurring, I added in some basic checks to transform the most common abbreviations into their full names such as `st` becoming `street`.
+In order to improve the odds of a match occurring, I added in some brute force checks to transform the most common abbreviations into their full names such as `st` becoming `street`.
 
 This process was quite lossy, as seen by the number of addresses that I wrote out to [a text file containing failed translations](https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt).
 
@@ -146,15 +149,19 @@ Given the sheer number of originating data points, I didn't worry about this too
 
 Lastly, our matching pair of addresses were [output to a CSV file](https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv) for quick lookup in the next bit of the process.
 
-This probably isn't necessarily but I figured that it would allow for quicker lookups iterating through a CSV file than having to perform joins between our two tables for every event.
+This probably isn't necessary but I figured that it would allow for quicker lookups iterating through a CSV file than having to perform joins between our two tables for every event. As with all things in this messy process, as long as it gets us to our final destination, doing it "right" doesn't matter too much.
 
 ## Translating our coordinates into routes
 
 We now have a set of start and end coordinates that represent where a vehicle was towed from and where it ended up.
 
-Our end goal is to animate a line going from start to finish but with just two data points, all we can draw is a straight line cutting across the city.
+This is a good start but if we were to plot these on a map and then start simulating traffic between those two points, we would get something silly like this.
 
-It goes without saying that cars don't work this way in real life so we somehow need to simulate the route that a vehicle is most likely to take.
+![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are two numbered points on opposite sides of the map with a line going straight from one to the other.](./map-direct.png)
+
+It goes without saying that cars don't work this way in real life, just cutting through buildings and chunks of lands, so we somehow need to simulate the route that a vehicle is most likely to take so we have something more like this.
+
+![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are many numbered points, each at main intersections of the map with lines joining between them. It roughly follows the path that a car might drive.](./map-points.png)
 
 Figuring out how to generate routing data was a massive blocker for this project for a long time until I discovered the existence of [openrouteservice](https://github.com/GIScience/openrouteservice).
 
@@ -168,7 +175,7 @@ Part of this is because the routes are actually very detailed, even more so than
 
 With all this in mind, [we can put together another script](https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py) that slowly iterates through our dataset and saves the resulting output into a file called `routes.json`.
 
-We'll touch on the weird format you see next
+It has a bit of a weird format but don't read too much into it. It's just specific to the visualisation library that we're going to talk about next.
 
 ## Putting together our visualisation
 
@@ -188,11 +195,11 @@ Unfortunately, due to the sheer number of data points in the graph, the visualis
 
 it didn't stop me from publishing the project and sharing it around with some colleagues but I was never quite happy with it.
 
-Fast forward another year and I finally sat down to make some performance improvements
+Fast forward another year and I finally sat down to make some performance improvements.
 
-## Taking a machete to the dataset
+## Cutting through the acres of data points
 
-It goes without saying that there isn't much of a diagnosis to make other than "There's too much dang data".
+There wasn't much of a diagnosis to make other than "There's too much dang data".
 
 Rather than try anything fancy, I continued the theme of the brute force approach and took a machete to the dataset, slimming it down greatly.
 
@@ -201,5 +208,21 @@ Breaking from tradition, I [wrote a quick program in Go](https://github.com/marc
 At a high level, the script kept the first and last data points for each route taken and randomly deleted all of the points in between until just 10 were left.
 
 This seemed like it would break everything but it had the reverse effect. Not only did the performance greatly improve but the graph looked much cooler as well.
+
+## Lessons learned
+
+Doing this whole exercise exposed me to a lot of new mapping concepts such as geocoding, visualisation, route generation as well as some various tools for munging together data.
+
+I would say I'm glad I didn't give up but more than anything, this project was an open loop in my mind that had finally beaten me, and that will usually always be enough to keep me coming back for more punishment.
+
+Perhaps the coolest outcome is that because it's visual, you can pop up a project like this on your phone and show people who might think it's cool without necessarily having much background into what's going on.
+
+It's probably the one category of programming I do that's closest to art in any sense which always helps to keep the perpetual motion machine running.
+
+I just wish it was easier to come by good ideas!
+
+Anyway, hopefully you learned something useful reading this post and if you come across any better tools that I could have made use of earlier, please don't hesitate to let me know at `hello@utf9k.net`.
+
+Happy mapping!
 
 [^lgoima]: The Local Government Official Information and Meetings Act can be thought of as an Official Information Act for local city councils. Sometimes, councils will try to get out of their obligations 
