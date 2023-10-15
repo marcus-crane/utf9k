@@ -54,6 +54,17 @@ jobs:
           projectName: utf9k
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to Bunny Edge CDN
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
+        with:
+          source: "public"
+          storageZoneName: utf9k
+          storagePassword: "${{ secrets.BUNNY_API_TOKEN }}"
+          accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
+          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
+          upload: "true"
+          remove: "true"
+          purgePullZone: "true"
       - uses: mshick/add-pr-comment@v2
         if: ${{ !env.ACT }}
         with:
