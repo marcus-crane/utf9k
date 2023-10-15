@@ -310,7 +310,7 @@
   "https://at.govt.nz/driving-parking/parking-rules/towing": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://at.govt.nz/driving-parking/parking-rules/towing"
@@ -489,7 +489,7 @@
   "https://catalogue.data.govt.nz/dataset": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://catalogue.data.govt.nz/dataset"
@@ -592,7 +592,7 @@
   "https://datasette.io": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://datasette.io"
@@ -641,7 +641,7 @@
   "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html"
@@ -673,7 +673,7 @@
   "https://developers.google.com/maps/documentation/geocoding/overview": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://developers.google.com/maps/documentation/geocoding/overview"
@@ -763,7 +763,7 @@
   "https://docs.mapbox.com/api/search/geocoding": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://docs.mapbox.com/api/search/geocoding"
@@ -891,7 +891,7 @@
   "https://en.wikipedia.org/wiki/Address_geocoding": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Address_geocoding"
@@ -1109,7 +1109,7 @@
   "https://en.wikipedia.org/wiki/Geographic_information_system": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Geographic_information_system"
@@ -1272,7 +1272,7 @@
   "https://en.wikipedia.org/wiki/Python_": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Python_"
@@ -1679,7 +1679,7 @@
     "alive": true,
     "sources": [
       "content/blog/2020-11-23--tidying-towing-data/index.md",
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts"
@@ -1802,7 +1802,7 @@
   "https://github.com/GIScience/openrouteservice": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/GIScience/openrouteservice"
@@ -1947,7 +1947,7 @@
   "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt"
@@ -1955,7 +1955,7 @@
   "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py"
@@ -1963,7 +1963,7 @@
   "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go"
@@ -1971,7 +1971,7 @@
   "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py"
@@ -1979,7 +1979,7 @@
   "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv"
@@ -1987,7 +1987,7 @@
   "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh"
@@ -1995,7 +1995,7 @@
   "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py"
@@ -2208,7 +2208,7 @@
   "https://github.com/pelias/pelias": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/pelias/pelias"
@@ -2272,7 +2272,7 @@
   "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips"
@@ -2512,7 +2512,7 @@
   "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html"
@@ -2587,7 +2587,7 @@
       "content/blog/2018-08-18--nz-oia-guide/index.md",
       "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md",
       "content/blog/2021-05-22--ride-the-curve/index.md",
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md",
       "content/questions/macos-disable-safari-recommendation.md",
       "content/questions/selenium-remote-connection.md"
     ],
@@ -2692,7 +2692,7 @@
     "alive": true,
     "sources": [
       "content/blog/2020-11-23--tidying-towing-data/index.md",
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://pandas.pydata.org"
@@ -2770,10 +2770,11 @@
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
   "https://rachelbythebay.com/w/2019/07/15/giant": {
-    "alive": 0,
+    "alive": true,
     "sources": [
       "content/blog/2022-02-12--plex-tidal-together/index.md"
     ],
+    "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
   "https://raindrop.io": {
@@ -3101,7 +3102,7 @@
   "https://twitter.com/foiachap": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://twitter.com/foiachap"
@@ -3614,7 +3615,7 @@
   "https://www.here.com/get-started/pricing": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://www.here.com/get-started/pricing"
@@ -3672,7 +3673,7 @@
   "https://www.linz.govt.nz": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://www.linz.govt.nz"
@@ -3680,7 +3681,7 @@
   "https://www.linz.govt.nz/products-services/data/linz-data-service": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://www.linz.govt.nz/products-services/data/linz-data-service"
@@ -3704,7 +3705,7 @@
   "https://www.mapbox.com/pricing": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://www.mapbox.com/pricing"
@@ -3742,11 +3743,10 @@
     "url": "https://www.microsoft.com/en-us/download/details.aspx"
   },
   "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software": {
-    "alive": true,
+    "alive": 0,
     "sources": [
       "content/questions/kubes-ingress-ip-range.md"
     ],
-    "status": 200,
     "url": "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software"
   },
   "https://www.microsoft.com/store/productId/9NLP712ZMN9Q": {
@@ -4043,7 +4043,7 @@
     "alive": true,
     "sources": [
       "content/blog/2020-11-23--tidying-towing-data/index.md",
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md",
       "content/projects/october/index.md"
     ],
     "status": 200,
@@ -4191,7 +4191,7 @@
   "https://www.watercare.co.nz/Contact/Official-information-request": {
     "alive": true,
     "sources": [
-      "content/blog/2023-07-16--spreadsheet-to-visualisation/index.md"
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
     ],
     "status": 200,
     "url": "https://www.watercare.co.nz/Contact/Official-information-request"
