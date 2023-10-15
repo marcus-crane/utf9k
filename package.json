@@ -16,7 +16,11 @@
     "lint": "eslint assets/js",
     "test": "./ci/test.sh",
     "prettify": "prettier --write --print-width 120 public/**/**/**/*.html",
-    "syntax": "prettier -c public/**/**/**/*.html"
+    "syntax": "prettier -c public/**/**/**/*.html",
+    "astro:dev": "astro dev",
+    "astro:start": "astro dev",
+    "astro:build": "astro build",
+    "astro:preview": "astro preview"
   },
   "devDependencies": {
     "@babel/core": "7.23.0",
@@ -27,6 +31,10 @@
     "prettier": "^3.0.0"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.1.2",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.1",
+    "astro": "^3.3.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
     "postcss-cli": "^10.1.0"
