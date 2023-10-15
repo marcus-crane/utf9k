@@ -1,7 +1,7 @@
 # utf9k
 
 ![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
-![Hugo version](https://img.shields.io/badge/hugo-v0.91.2-blue)
+![Hugo version](https://img.shields.io/badge/hugo-v0.119.0-blue)
 
 This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
 
@@ -11,8 +11,10 @@ Of particular interest is the live player on the homepage which surfaces metadat
 
 * anime/tv series
   * powered by plex apis
+  * fallback checkins powered by trakt
 * movies
   * powered by plex apis
+  * fallback checkins powered by trakt
 * music
   * local music powered by plex apis
   * streaming music powered by tidal but surfaced via plex apis
@@ -58,3 +60,19 @@ Running `act` will perform the entire build pipeline, aside from deployment to C
 It is essentially the same workflow as `pnpm run deploy`, just that it will also install all prerequisite tools like Hugo, Cue and so on.
 
 In theory, you could also use `act -b` to build the site and output it from the container but I make no guarantees that it would work.
+
+## Astro
+
+I'm currently experimenting with a migration to [Astro](https://astro.build), to make it easier wrangling with image processing among other things.
+
+I might end up hating it but for now, I've embedded the contents of an Astro build in this repo.
+
+As a reminder to myself, it can be removed by deleting the following files/folders:
+
+```console
+$ rm -rf .astro
+$ rm -rf src
+$ rm -rf static/fonts
+$ rm astro.config.mjs
+$ rm tsconfig.json
+```
