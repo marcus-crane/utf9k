@@ -1,14 +1,16 @@
 - list: Playing
   games:
-  - id: 30499827
-    title: 'Cyberpunk 2077: Phantom Liberty'
-    link: https://howlongtobeat.com/game/113203
+  - id: 30797736
+    title: Disco Elysium
+    link: https://howlongtobeat.com/game/57335
     platform: PC
-    cover: https://howlongtobeat.com/games/113203_Cyberpunk_2077_Phantom_Liberty.jpg
+    cover: https://howlongtobeat.com/games/57335_Disco_Elysium.jpg
     replay: false
-    notes: Starting to explore Dogtown
-    updated: '2023-09-30 06:58:24'
+    notes: ''
+    updated: '2023-10-17 04:11:37'
     completed: '0000-00-00'
+- list: Stalled
+  games:
   - id: 745959
     title: 'Final Fantasy XIV: A Realm Reborn'
     link: https://howlongtobeat.com/game/12654
@@ -16,10 +18,26 @@
     cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
     replay: false
     notes: Playing post-6.0 content
-    updated: '2023-09-30 06:57:53'
+    updated: '2023-10-17 04:11:46'
     completed: '0000-00-00'
-- list: Stalled
-  games:
+  - id: 10893668
+    title: Transistor
+    link: https://howlongtobeat.com/game/17617
+    platform: Nintendo Switch
+    cover: https://howlongtobeat.com/games/250px-Transistor_art.jpg
+    replay: false
+    notes: ''
+    updated: '2023-10-17 04:10:31'
+    completed: '0000-00-00'
+  - id: 30499827
+    title: 'Cyberpunk 2077: Phantom Liberty'
+    link: https://howlongtobeat.com/game/113203
+    platform: PC
+    cover: https://howlongtobeat.com/games/113203_Cyberpunk_2077_Phantom_Liberty.jpg
+    replay: false
+    notes: Starting to explore Dogtown
+    updated: '2023-10-17 04:10:23'
+    completed: '0000-00-00'
   - id: 30640014
     title: 'Final Fantasy XII: The Zodiac Age'
     link: https://howlongtobeat.com/game/37832
@@ -2984,16 +3002,7 @@
     updated: '2016-01-09 04:01:37'
     completed: '0000-00-00'
 - list: Backlog
-  games:
-  - id: 10893668
-    title: Transistor
-    link: https://howlongtobeat.com/game/17617
-    platform: Nintendo Switch
-    cover: https://howlongtobeat.com/games/250px-Transistor_art.jpg
-    replay: false
-    notes: null
-    updated: '2020-01-27 05:40:41'
-    completed: '0000-00-00'
+  games: []
 - list: Retired
   games:
   - id: 11148373
