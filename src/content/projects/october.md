@@ -14,7 +14,7 @@ tags:
 - "wails"
 ---
 
-![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](selector_main.png)
+![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](../../../assets/img/projects/october/selector_main.png)
 
 I'm a user of [Readwise](https://readwise.io) which is a service that allows you to import all sorts of highlights from books and [articles](https://readwise.io/read) through to tweets and even [comments](https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp)[^1].
 
