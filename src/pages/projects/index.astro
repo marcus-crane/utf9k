@@ -4,10 +4,9 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+const posts = (await getCollection('projects')).sort(
+	(a, b) => a === b ? 0 : a.data.ongoing.valueOf() ? -1 : 1
 );
 ---
 
@@ -93,11 +92,9 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.slug}/`}>
+								<a href={`/projects/${post.slug}/`}>
 									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.date} />
-									</p>
+									<p class="status">{post.data.ongoing}</p>
 								</a>
 							</li>
 						))
