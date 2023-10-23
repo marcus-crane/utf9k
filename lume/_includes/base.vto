@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{# {{ block "style" . }}{{ end }}
+  {{ partial "head.html" . }}
+  {{ block "json+ld" . }}{{ end }} #}}
+  {{ include "head.vto" }}
+</head>
+<body>
+  <div id="content">
+    {{ content }}
+  </div>
+  <div id="fullscreen"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:3000/blog/-lost-python-results/">
+<meta name="twitter:card" content="summary">
+</head><body><p>I was messing around with some queuing earlier today in order to try out the <a href="https://github.com/celery/kombu">Kombu</a> library. It works pretty nicely but I goofed up while playing with it.</p>
+<p>To add a message to a queue, it looks a little like this:</p>
+<pre><code class="language-python hljs"><span class="hljs-keyword">from</span> kombu <span class="hljs-keyword">import</span> Connection, Queue
+
+conn = Connection() <span class="hljs-comment"># Defaults to a RabbitMQ Docker container I have running locally</span>
+queue = conn.SimpleQueue(<span class="hljs-string">'test'</span>)
+queue.put(<span class="hljs-string">'this is a message i want to put on the queue'</span>)
+</code></pre>
+<p>You may want to use a context manager instead but for a simple test, this works fine. Now then, how about getting a message off the queue? It's straight forward as well.</p>
+<pre><code class="language-python hljs">queue.get()
+<span class="hljs-comment"># &lt;Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}&gt;</span>
+</code></pre>
+<p>Cool, we've received a message now so next we need to acknowledge it with the ack function…</p>
+<p>Wait a minute, we forgot to save that message to a variable so how the hell can we acknowledge it?! Damn, it's totally just lost in memory, huh?</p>
+<p>This is a scenario I ran into and it got me wondering: Is it possible to retrieve a Python object by that hex/memory address? Well, it turns out that you can't. I haven't done a deep dive yet but if it's a continuously running application, it may soon exit memory and be lost forever.</p>
+<p>If you're just running in the Python REPL however, there is actually a way: The handy <code>_</code> operator.</p>
+<pre><code class="language-python hljs"><span class="hljs-comment"># &lt;Message object at 0x110a844c8 with details {'state': 'RECEIVED', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}&gt;</span>
+_.ack()
+<span class="hljs-comment"># &lt;Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}&gt;</span>
+message = _
+<span class="hljs-built_in">print</span>(message)
+<span class="hljs-comment"># &lt;Message object at 0x110a844c8 with details {'state': 'ACK', 'content_type': 'text/plain', 'delivery_tag': 1, 'body_length': 5, 'properties': {}, 'delivery_info': {'exchange': 'test', 'routing_key': 'test'}}&gt;</span>
+</code></pre>
+<p>As you can see, the interpreter actually binds the last result to the <code>_</code> character. If you were to do <code>1 + 1</code>, the value of <code>_</code> would be 2! You can also bind the value to a variable for use later on.</p>
+<p>I don't think I'd need it often but it's very handy to know.</p>
+</body></html>

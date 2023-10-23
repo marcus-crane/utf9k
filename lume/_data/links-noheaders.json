@@ -1,0 +1,4329 @@
+{
+  "http://bs.visualshower.com": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2017-12-18--wiki-thoughts/index.md"
+    ],
+    "url": "http://bs.visualshower.com"
+  },
+  "http://example.com": {
+    "alive": true,
+    "sources": [
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "http://example.com"
+  },
+  "http://go.microsoft.com/fwlink": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "http://go.microsoft.com/fwlink"
+  },
+  "http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html"
+  },
+  "http://serebii.net": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-18--wiki-thoughts/index.md"
+    ],
+    "status": 200,
+    "url": "http://serebii.net"
+  },
+  "http://visualshower.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-18--wiki-thoughts/index.md"
+    ],
+    "status": 200,
+    "url": "http://visualshower.com"
+  },
+  "http://wiki.linuxquestions.org/wiki/VFAT": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "http://wiki.linuxquestions.org/wiki/VFAT"
+  },
+  "http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt"
+  },
+  "http://www.brendangregg.com/usemethod.html": {
+    "alive": true,
+    "sources": [
+      "content/questions/monitoring-what-to-instrument.md"
+    ],
+    "status": 200,
+    "url": "http://www.brendangregg.com/usemethod.html"
+  },
+  "http://www.doublewide.net/passport.htm": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.doublewide.net/passport.htm"
+  },
+  "http://www.fudco.com/chip/lessons.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.fudco.com/chip/lessons.html"
+  },
+  "http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html": {
+    "alive": false,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 403,
+    "url": "http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html"
+  },
+  "http://www.linfo.org/etc_fstab.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.linfo.org/etc_fstab.html"
+  },
+  "http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183"
+  },
+  "http://www.ombudsman.parliament.nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.ombudsman.parliament.nz"
+  },
+  "http://www.rodsbooks.com/efi-bootloaders/principles.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.rodsbooks.com/efi-bootloaders/principles.html"
+  },
+  "http://www.sitemaps.org/schemas/sitemap/0.9": {
+    "alive": true,
+    "sources": [
+      "layouts/_default/sitemap.xml",
+      "layouts/sitemap.xml"
+    ],
+    "status": 200,
+    "url": "http://www.sitemaps.org/schemas/sitemap/0.9"
+  },
+  "http://www.w3.org/1999/xhtml": {
+    "alive": true,
+    "sources": [
+      "layouts/_default/sitemap.xml",
+      "layouts/sitemap.xml"
+    ],
+    "status": 200,
+    "url": "http://www.w3.org/1999/xhtml"
+  },
+  "http://www.w3.org/2000/svg": {
+    "alive": true,
+    "sources": [
+      "assets/js/image-viewer.js",
+      "layouts/shortcodes/pullquote.html"
+    ],
+    "status": 200,
+    "url": "http://www.w3.org/2000/svg"
+  },
+  "http://www.w3.org/2005/Atom": {
+    "alive": true,
+    "sources": [
+      "layouts/_default/index.xml",
+      "layouts/_default/rss.xml"
+    ],
+    "status": 200,
+    "url": "http://www.w3.org/2005/Atom"
+  },
+  "http://www.w3.org/TR/html4/loose.dtd": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "http://www.w3.org/TR/html4/loose.dtd"
+  },
+  "http://www2.ku.edu": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "http://www2.ku.edu"
+  },
+  "https://1password.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://1password.com"
+  },
+  "https://2ndstreetgym.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 404,
+    "url": "https://2ndstreetgym.com"
+  },
+  "https://a16z.com/author/marc-andreessen": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-14--bootstrap-is-eating-the-world/index.md"
+    ],
+    "status": 200,
+    "url": "https://a16z.com/author/marc-andreessen"
+  },
+  "https://abstrusegoose.com/389": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://abstrusegoose.com/389"
+  },
+  "https://amazon.com": {
+    "alive": true,
+    "sources": [
+      "content/questions/dns-trailing-period.md",
+      "content/questions/dns-trailing-period.md"
+    ],
+    "status": 200,
+    "url": "https://amazon.com"
+  },
+  "https://apenwarr.ca/log/20171213": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://apenwarr.ca/log/20171213"
+  },
+  "https://apenwarr.ca/log/20190926": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://apenwarr.ca/log/20190926"
+  },
+  "https://api.ipinfodb.com/v3/ip-city": {
+    "alive": true,
+    "sources": [
+      "content/experiments/requester-window/index.html"
+    ],
+    "status": 200,
+    "url": "https://api.ipinfodb.com/v3/ip-city"
+  },
+  "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css": {
+    "alive": true,
+    "sources": [
+      "content/project-src/parnell/index.html"
+    ],
+    "status": 200,
+    "url": "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
+  },
+  "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js": {
+    "alive": true,
+    "sources": [
+      "content/project-src/parnell/index.html"
+    ],
+    "status": 200,
+    "url": "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"
+  },
+  "https://app.plex.net": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "url": "https://app.plex.net"
+  },
+  "https://arc.net": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://arc.net"
+  },
+  "https://archive.org/details/i-pad-demo-backup": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md",
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://archive.org/details/i-pad-demo-backup"
+  },
+  "https://arxiv.org/pdf/1706.02932v2.pdf": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://arxiv.org/pdf/1706.02932v2.pdf"
+  },
+  "https://arxiv.org/pdf/1908.10693.pdf": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://arxiv.org/pdf/1908.10693.pdf"
+  },
+  "https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 200,
+    "url": "https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag"
+  },
+  "https://at.govt.nz/driving-parking/parking-rules/towing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://at.govt.nz/driving-parking/parking-rules/towing"
+  },
+  "https://audiokarma.org/forums/index.php": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://audiokarma.org/forums/index.php"
+  },
+  "https://autocode.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 403,
+    "url": "https://autocode.com"
+  },
+  "https://aws.amazon.com": {
+    "alive": true,
+    "sources": [
+      "content/questions/azure-regions-alike.md"
+    ],
+    "status": 200,
+    "url": "https://aws.amazon.com"
+  },
+  "https://azure.microsoft.com": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 200,
+    "url": "https://azure.microsoft.com"
+  },
+  "https://azure.microsoft.com/en-us/services/active-directory": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-11--always-bet-on-sales/index.md",
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://azure.microsoft.com/en-us/services/active-directory"
+  },
+  "https://azure.microsoft.com/en-us/services/bot-services": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-11--always-bet-on-sales/index.md"
+    ],
+    "status": 200,
+    "url": "https://azure.microsoft.com/en-us/services/bot-services"
+  },
+  "https://azure.microsoft.com/en-us/support/create-ticket": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-11--always-bet-on-sales/index.md"
+    ],
+    "status": 200,
+    "url": "https://azure.microsoft.com/en-us/support/create-ticket"
+  },
+  "https://babeljs.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://babeljs.io"
+  },
+  "https://bandcamp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md",
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://bandcamp.com"
+  },
+  "https://beorgapp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://beorgapp.com"
+  },
+  "https://berkeleygraphics.com/typefaces/berkeley-mono": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://berkeleygraphics.com/typefaces/berkeley-mono"
+  },
+  "https://bing.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--a-recently-horrible-iteration-of-google-search/index.md"
+    ],
+    "status": 200,
+    "url": "https://bing.com"
+  },
+  "https://bitbucket.org/mituharu/emacs-mac/src": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://bitbucket.org/mituharu/emacs-mac/src"
+  },
+  "https://blog.discord.com/engineering-posts/home": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://blog.discord.com/engineering-posts/home"
+  },
+  "https://blog.discord.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://blog.discord.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3"
+  },
+  "https://blog.pragmaticengineer.com/on-writing-well": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://blog.pragmaticengineer.com/on-writing-well"
+  },
+  "https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-12-03--automation-right/index.md"
+    ],
+    "status": 200,
+    "url": "https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html"
+  },
+  "https://brandur.org/fragments/graceful-degradation-time": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://brandur.org/fragments/graceful-degradation-time"
+  },
+  "https://caldav.fastmail.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md",
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 404,
+    "url": "https://caldav.fastmail.com"
+  },
+  "https://caldav.fastmail.com/dav/calendars/user": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 401,
+    "url": "https://caldav.fastmail.com/dav/calendars/user"
+  },
+  "https://caldav.fastmail.com/dav/principals/user/user": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 401,
+    "url": "https://caldav.fastmail.com/dav/principals/user/user"
+  },
+  "https://catalogue.data.govt.nz/dataset": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://catalogue.data.govt.nz/dataset"
+  },
+  "https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp": {
+    "alive": true,
+    "sources": [
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp"
+  },
+  "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-29--latency-as-a-forcing-function/index.md"
+    ],
+    "status": 200,
+    "url": "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
+  },
+  "https://cloud.google.com/beyondcorp": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-08-12--conditional-gitconfig/index.md"
+    ],
+    "status": 200,
+    "url": "https://cloud.google.com/beyondcorp"
+  },
+  "https://cloudflare.de": {
+    "alive": 0,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "url": "https://cloudflare.de"
+  },
+  "https://code.visualstudio.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://code.visualstudio.com"
+  },
+  "https://codepen.io/MauriciAbad/pen/WNrpmPr": {
+    "alive": false,
+    "sources": [
+      "assets/css/style.css"
+    ],
+    "status": 403,
+    "url": "https://codepen.io/MauriciAbad/pen/WNrpmPr"
+  },
+  "https://commonmark.org": {
+    "alive": true,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://commonmark.org"
+  },
+  "https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars"
+  },
+  "https://cooking.stackexchange.com/questions/105602/steak-dropped-in-soapy-dish-water": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://cooking.stackexchange.com/questions/105602/steak-dropped-in-soapy-dish-water"
+  },
+  "https://danluu.com/sounds-easy": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://danluu.com/sounds-easy"
+  },
+  "https://darklang.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 200,
+    "url": "https://darklang.com"
+  },
+  "https://dashboard.twitter.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2018-12-03--automation-right/index.md"
+    ],
+    "status": 404,
+    "url": "https://dashboard.twitter.com"
+  },
+  "https://datasette.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://datasette.io"
+  },
+  "https://dayoneapp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md"
+    ],
+    "status": 200,
+    "url": "https://dayoneapp.com"
+  },
+  "https://devacademy.co.nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md",
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
+    ],
+    "status": 200,
+    "url": "https://devacademy.co.nz"
+  },
+  "https://devblogs.microsoft.com/commandline/announcing-wsl-2": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
+    ],
+    "status": 200,
+    "url": "https://devblogs.microsoft.com/commandline/announcing-wsl-2"
+  },
+  "https://developer.android.com/guide/topics/connectivity/nfc/hce": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.android.com/guide/topics/connectivity/nfc/hce"
+  },
+  "https://developer.apple.com/documentation/applemusicapi": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.apple.com/documentation/applemusicapi"
+  },
+  "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.here.com/documentation/geocoding-search-api/dev_guide/index.html"
+  },
+  "https://developer.mozilla.org/en-US": {
+    "alive": true,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.mozilla.org/en-US"
+  },
+  "https://developer.pingidentity.com/en/tools/saml-decoder.html": {
+    "alive": true,
+    "sources": [
+      "content/questions/saml-inspect-request.md"
+    ],
+    "status": 200,
+    "url": "https://developer.pingidentity.com/en/tools/saml-decoder.html"
+  },
+  "https://developer.spotify.com/documentation/web-api/reference": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://developer.spotify.com/documentation/web-api/reference"
+  },
+  "https://developers.google.com/maps/documentation/geocoding/overview": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://developers.google.com/maps/documentation/geocoding/overview"
+  },
+  "https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he"
+  },
+  "https://discord.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://discord.com"
+  },
+  "https://discord.com/rich-presence": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://discord.com/rich-presence"
+  },
+  "https://discordstatus.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://discordstatus.com"
+  },
+  "https://docker.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://docker.com"
+  },
+  "https://docs.datadoghq.com/tracing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.datadoghq.com/tracing"
+  },
+  "https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_controls": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_controls"
+  },
+  "https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_mechanisms": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md",
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md",
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_mechanisms"
+  },
+  "https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits"
+  },
+  "https://docs.github.com/en/actions/learn-github-actions/environment-variables": {
+    "alive": true,
+    "sources": [
+      "content/debug/build-information.md"
+    ],
+    "status": 200,
+    "url": "https://docs.github.com/en/actions/learn-github-actions/environment-variables"
+  },
+  "https://docs.mapbox.com/api/search/geocoding": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.mapbox.com/api/search/geocoding"
+  },
+  "https://docs.microsoft.com/en-us/azure/availability-zones/az-region": {
+    "alive": true,
+    "sources": [
+      "content/questions/azure-regions-alike.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/azure/availability-zones/az-region"
+  },
+  "https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes"
+  },
+  "https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
+  },
+  "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup"
+  },
+  "https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top": {
+    "alive": true,
+    "sources": [
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top"
+  },
+  "https://docs.microsoft.com/en-us/windows/wsl/about": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md",
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://docs.microsoft.com/en-us/windows/wsl/about"
+  },
+  "https://downloadcenter.intel.com/search": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://downloadcenter.intel.com/search"
+  },
+  "https://downloadtile.com": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "url": "https://downloadtile.com"
+  },
+  "https://draculatheme.com/iterm": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://draculatheme.com/iterm"
+  },
+  "https://duckduckgo.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--a-recently-horrible-iteration-of-google-search/index.md"
+    ],
+    "status": 200,
+    "url": "https://duckduckgo.com"
+  },
+  "https://eager.io/blog/the-languages-which-almost-were-css": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://eager.io/blog/the-languages-which-almost-were-css"
+  },
+  "https://edharrison.bandcamp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://edharrison.bandcamp.com"
+  },
+  "https://emacs.stackexchange.com/questions/42286/double-hyphen-in-elisp-function-names": {
+    "alive": true,
+    "sources": [
+      "content/questions/emacs-function-double-dash.md"
+    ],
+    "status": 200,
+    "url": "https://emacs.stackexchange.com/questions/42286/double-hyphen-in-elisp-function-names"
+  },
+  "https://en.wikipedia.org/wiki/ARPANET": {
+    "alive": true,
+    "sources": [
+      "content/questions/dns-original-implementation.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/ARPANET"
+  },
+  "https://en.wikipedia.org/wiki/Active_Directory": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Active_Directory"
+  },
+  "https://en.wikipedia.org/wiki/Address_geocoding": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Address_geocoding"
+  },
+  "https://en.wikipedia.org/wiki/Apple_Park": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Apple_Park"
+  },
+  "https://en.wikipedia.org/wiki/Australian_rules_football": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Australian_rules_football"
+  },
+  "https://en.wikipedia.org/wiki/Autoencoder": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Autoencoder"
+  },
+  "https://en.wikipedia.org/wiki/Billy_Idol": {
+    "alive": true,
+    "sources": [
+      "content/experiments/fancy-hyperlinks/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Billy_Idol"
+  },
+  "https://en.wikipedia.org/wiki/CD-ROM": {
+    "alive": true,
+    "sources": [
+      "content/questions/ps1-disc-offset.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/CD-ROM"
+  },
+  "https://en.wikipedia.org/wiki/COVID-19_recession": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/COVID-19_recession"
+  },
+  "https://en.wikipedia.org/wiki/Capitol_Hill_Babysitting_Co-op": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Capitol_Hill_Babysitting_Co-op"
+  },
+  "https://en.wikipedia.org/wiki/Criticism_of_Spotify": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Criticism_of_Spotify"
+  },
+  "https://en.wikipedia.org/wiki/Cushing": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Cushing"
+  },
+  "https://en.wikipedia.org/wiki/Dave_Cutler": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-08-29--taking-holidays/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Dave_Cutler"
+  },
+  "https://en.wikipedia.org/wiki/Depersonalization": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Depersonalization"
+  },
+  "https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin"
+  },
+  "https://en.wikipedia.org/wiki/Dot-com_bubble": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+  },
+  "https://en.wikipedia.org/wiki/Dreaming_in_Code": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Dreaming_in_Code"
+  },
+  "https://en.wikipedia.org/wiki/EFTPOS": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-12-01--solid-systems/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/EFTPOS"
+  },
+  "https://en.wikipedia.org/wiki/Emacs_Lisp": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Emacs_Lisp"
+  },
+  "https://en.wikipedia.org/wiki/Emergency_department": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Emergency_department"
+  },
+  "https://en.wikipedia.org/wiki/Entropy": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Entropy"
+  },
+  "https://en.wikipedia.org/wiki/Escitalopram": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Escitalopram"
+  },
+  "https://en.wikipedia.org/wiki/Failure_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Failure_"
+  },
+  "https://en.wikipedia.org/wiki/Fear_of_missing_out": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md",
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Fear_of_missing_out"
+  },
+  "https://en.wikipedia.org/wiki/Financial_crisis_of_2007": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Financial_crisis_of_2007"
+  },
+  "https://en.wikipedia.org/wiki/G._K._Chesterton": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/G._K._Chesterton"
+  },
+  "https://en.wikipedia.org/wiki/GUID_Partition_Table": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/GUID_Partition_Table"
+  },
+  "https://en.wikipedia.org/wiki/Gal_Gadot": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Gal_Gadot"
+  },
+  "https://en.wikipedia.org/wiki/GameStop_short_squeeze": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/GameStop_short_squeeze"
+  },
+  "https://en.wikipedia.org/wiki/Geographic_information_system": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Geographic_information_system"
+  },
+  "https://en.wikipedia.org/wiki/Goodhart": {
+    "alive": true,
+    "sources": [
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Goodhart"
+  },
+  "https://en.wikipedia.org/wiki/Google_Calendar": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Google_Calendar"
+  },
+  "https://en.wikipedia.org/wiki/ICalendar": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md",
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/ICalendar"
+  },
+  "https://en.wikipedia.org/wiki/ISO/IEC_27001": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/ISO/IEC_27001"
+  },
+  "https://en.wikipedia.org/wiki/Juniper": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Juniper"
+  },
+  "https://en.wikipedia.org/wiki/Keynote_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Keynote_"
+  },
+  "https://en.wikipedia.org/wiki/Kumamon": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-26--day-two/index.md",
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Kumamon"
+  },
+  "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa"
+  },
+  "https://en.wikipedia.org/wiki/Network_address_translation": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Network_address_translation"
+  },
+  "https://en.wikipedia.org/wiki/Newmarket": {
+    "alive": true,
+    "sources": [
+      "content/about/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Newmarket"
+  },
+  "https://en.wikipedia.org/wiki/Not_safe_for_work": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Not_safe_for_work"
+  },
+  "https://en.wikipedia.org/wiki/Notes_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Notes_"
+  },
+  "https://en.wikipedia.org/wiki/Nuclear_option": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Nuclear_option"
+  },
+  "https://en.wikipedia.org/wiki/Numbers_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Numbers_"
+  },
+  "https://en.wikipedia.org/wiki/Oceania": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Oceania"
+  },
+  "https://en.wikipedia.org/wiki/Official_Information_Act_1982": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Official_Information_Act_1982"
+  },
+  "https://en.wikipedia.org/wiki/On_Exactitude_in_Science": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/On_Exactitude_in_Science"
+  },
+  "https://en.wikipedia.org/wiki/Pages_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Pages_"
+  },
+  "https://en.wikipedia.org/wiki/Parnell": {
+    "alive": true,
+    "sources": [
+      "content/projects/parnell/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Parnell"
+  },
+  "https://en.wikipedia.org/wiki/Python_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Python_"
+  },
+  "https://en.wikipedia.org/wiki/Queenstown": {
+    "alive": true,
+    "sources": [
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Queenstown"
+  },
+  "https://en.wikipedia.org/wiki/QuickTime_File_Format": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/QuickTime_File_Format"
+  },
+  "https://en.wikipedia.org/wiki/RSS": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/RSS"
+  },
+  "https://en.wikipedia.org/wiki/Repetitive_strain_injury": {
+    "alive": true,
+    "sources": [
+      "content/questions/macos-clipboard-piping.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Repetitive_strain_injury"
+  },
+  "https://en.wikipedia.org/wiki/Resting_bitch_face": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Resting_bitch_face"
+  },
+  "https://en.wikipedia.org/wiki/Robert_Parker_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Robert_Parker_"
+  },
+  "https://en.wikipedia.org/wiki/SAML_2.0": {
+    "alive": true,
+    "sources": [
+      "content/questions/saml-inspect-request.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/SAML_2.0"
+  },
+  "https://en.wikipedia.org/wiki/SOLID": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-12-01--solid-systems/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/SOLID"
+  },
+  "https://en.wikipedia.org/wiki/San_Francisco_Bay_Area": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/San_Francisco_Bay_Area"
+  },
+  "https://en.wikipedia.org/wiki/Seinfeld": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Seinfeld"
+  },
+  "https://en.wikipedia.org/wiki/Self-sovereign_identity": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Self-sovereign_identity"
+  },
+  "https://en.wikipedia.org/wiki/Sex_and_the_City": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Sex_and_the_City"
+  },
+  "https://en.wikipedia.org/wiki/Signalling_System_No._7": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Signalling_System_No._7"
+  },
+  "https://en.wikipedia.org/wiki/Site_Reliability_Engineering": {
+    "alive": true,
+    "sources": [
+      "content/about/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Site_Reliability_Engineering"
+  },
+  "https://en.wikipedia.org/wiki/Site_reliability_engineering": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Site_reliability_engineering"
+  },
+  "https://en.wikipedia.org/wiki/Skynet_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Skynet_"
+  },
+  "https://en.wikipedia.org/wiki/Software_as_a_service": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Software_as_a_service"
+  },
+  "https://en.wikipedia.org/wiki/South_Island": {
+    "alive": true,
+    "sources": [
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/South_Island"
+  },
+  "https://en.wikipedia.org/wiki/St_John_New_Zealand": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/St_John_New_Zealand"
+  },
+  "https://en.wikipedia.org/wiki/Strings_": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Strings_"
+  },
+  "https://en.wikipedia.org/wiki/System_and_Organization_Controls": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/System_and_Organization_Controls"
+  },
+  "https://en.wikipedia.org/wiki/The_College_Dropout": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/The_College_Dropout"
+  },
+  "https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience"
+  },
+  "https://en.wikipedia.org/wiki/The_Sopranos": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--a-recently-horrible-iteration-of-google-search/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/The_Sopranos"
+  },
+  "https://en.wikipedia.org/wiki/Third_place": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Third_place"
+  },
+  "https://en.wikipedia.org/wiki/Tiburon": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md",
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Tiburon"
+  },
+  "https://en.wikipedia.org/wiki/USS_Callister": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/USS_Callister"
+  },
+  "https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface"
+  },
+  "https://en.wikipedia.org/wiki/United_States_customary_units": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/United_States_customary_units"
+  },
+  "https://en.wikipedia.org/wiki/Universally_unique_identifier": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Universally_unique_identifier"
+  },
+  "https://en.wikipedia.org/wiki/VCard": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/VCard"
+  },
+  "https://en.wikipedia.org/wiki/Watch_the_Throne": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Watch_the_Throne"
+  },
+  "https://en.wikipedia.org/wiki/Wellington": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md",
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Wellington"
+  },
+  "https://en.wikipedia.org/wiki/X_Window_System": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/X_Window_System"
+  },
+  "https://en.wikipedia.org/wiki/Yellowstone_National_Park": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
+  },
+  "https://example.com": {
+    "alive": true,
+    "sources": [
+      "content/experiments/remote-resources/index.md",
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 200,
+    "url": "https://example.com"
+  },
+  "https://example.com/_oauth2/start": {
+    "alive": false,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "status": 404,
+    "url": "https://example.com/_oauth2/start"
+  },
+  "https://exist.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-12--mental-overhead-of-data/index.md"
+    ],
+    "status": 200,
+    "url": "https://exist.io"
+  },
+  "https://facebook.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://facebook.com"
+  },
+  "https://failureband.bandcamp.com/album/fantastic-planet-live": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://failureband.bandcamp.com/album/fantastic-planet-live"
+  },
+  "https://fastmail.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md",
+      "content/thanks/index.md",
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://fastmail.com"
+  },
+  "https://feedbin.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-09-24--who-is-software-even-for/index.md",
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://feedbin.com"
+  },
+  "https://fileinfo.com/extension/abbu": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://fileinfo.com/extension/abbu"
+  },
+  "https://fileinfo.com/extension/webloc": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://fileinfo.com/extension/webloc"
+  },
+  "https://flask.palletsprojects.com/en/2.0.x": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://flask.palletsprojects.com/en/2.0.x"
+  },
+  "https://fly.io": {
+    "alive": true,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://fly.io"
+  },
+  "https://fly.io/blog": {
+    "alive": true,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://fly.io/blog"
+  },
+  "https://freedesktop.org/wiki/Software/xdg-user-dirs": {
+    "alive": true,
+    "sources": [
+      "content/questions/linux-disable-stock-folders.md"
+    ],
+    "status": 200,
+    "url": "https://freedesktop.org/wiki/Software/xdg-user-dirs"
+  },
+  "https://fyi.org.nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz"
+  },
+  "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/11018-request-of-towing-data-for-three-tamaki-makaurau-police-districts"
+  },
+  "https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019"
+  },
+  "https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020"
+  },
+  "https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021"
+  },
+  "https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i"
+  },
+  "https://fyi.org.nz/request/6763-withheld-rejected-oia-filings": {
+    "alive": true,
+    "sources": [
+      "content/projects/meta-oia-requests/index.md"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/6763-withheld-rejected-oia-filings"
+  },
+  "https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area": {
+    "alive": true,
+    "sources": [
+      "content/project-src/parnell/index.html"
+    ],
+    "status": 200,
+    "url": "https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area"
+  },
+  "https://gatsbyjs.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://gatsbyjs.com"
+  },
+  "https://genius.com/Jay-z-and-kanye-west-ham-lyrics": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 403,
+    "url": "https://genius.com/Jay-z-and-kanye-west-ham-lyrics"
+  },
+  "https://getbootstrap.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-14--bootstrap-is-eating-the-world/index.md"
+    ],
+    "status": 200,
+    "url": "https://getbootstrap.com"
+  },
+  "https://getpocket.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://getpocket.com"
+  },
+  "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 403,
+    "url": "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011"
+  },
+  "https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in"
+  },
+  "https://github.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com"
+  },
+  "https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md",
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md",
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md",
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml"
+  },
+  "https://github.com/GIScience/openrouteservice": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/GIScience/openrouteservice"
+  },
+  "https://github.com/LeonardSSH/coc-discord-rpc": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/LeonardSSH/coc-discord-rpc"
+  },
+  "https://github.com/bep": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-07-12--hugo-debug-reports/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/bep"
+  },
+  "https://github.com/celery/kombu": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-12-12--lost-python-results/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/celery/kombu"
+  },
+  "https://github.com/davish/obsidian-full-calendar/issues/87": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/davish/obsidian-full-calendar/issues/87"
+  },
+  "https://github.com/davish/obsidian-full-calendar/pull/106": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/davish/obsidian-full-calendar/pull/106"
+  },
+  "https://github.com/dengste/org-caldav": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/dengste/org-caldav"
+  },
+  "https://github.com/discord": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/discord"
+  },
+  "https://github.com/doomemacs/doomemacs": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/doomemacs/doomemacs"
+  },
+  "https://github.com/facebook/react/issues/10191": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/facebook/react/issues/10191"
+  },
+  "https://github.com/falconindy/arch-install-scripts/blob/master/arch-chroot.in": {
+    "alive": false,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 404,
+    "url": "https://github.com/falconindy/arch-install-scripts/blob/master/arch-chroot.in"
+  },
+  "https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in": {
+    "alive": false,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 404,
+    "url": "https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in"
+  },
+  "https://github.com/hlissner/doom-emacs": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md",
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/hlissner/doom-emacs"
+  },
+  "https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org"
+  },
+  "https://github.com/imfunniee/youtube-discord-rpc": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/imfunniee/youtube-discord-rpc"
+  },
+  "https://github.com/jethrokuan": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/jethrokuan"
+  },
+  "https://github.com/lepture/mistune": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/lepture/mistune"
+  },
+  "https://github.com/marcus-crane": {
+    "alive": true,
+    "sources": [
+      "layouts/partials/head.html"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/failures.txt"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/match-events-to-addresses.py"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/slim-down-routes.go"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips-to-vis.py"
+  },
+  "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/765e97df94daa053f87970496d53ce9f50c21c39/auckland-towing/trips.csv"
+  },
+  "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/import_addresses.sh"
+  },
+  "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/datasets/blob/main/auckland-towing/sheet_to_db.py"
+  },
+  "https://github.com/marcus-crane/dotfiles": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md",
+      "content/blog/2020-01-06--multiple-git-hosts/index.md",
+      "content/blog/2021-02-17--faq-driven-configuration/index.md",
+      "content/blog/2021-08-12--conditional-gitconfig/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/dotfiles"
+  },
+  "https://github.com/marcus-crane/dotfiles/blob/37840b8/nvim/.config/nvim/init.vim": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/dotfiles/blob/37840b8/nvim/.config/nvim/init.vim"
+  },
+  "https://github.com/marcus-crane/dotfiles/blob/62813e09dc6d5127b0f25a5017ae23fd37ce180f/doom/.doom.d/config.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/dotfiles/blob/62813e09dc6d5127b0f25a5017ae23fd37ce180f/doom/.doom.d/config.org"
+  },
+  "https://github.com/marcus-crane/dotfiles/blob/6b6763a385b842b9dbdc3c883fe8bd0f13df60f2/doom/.doom.d/config.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/dotfiles/blob/6b6763a385b842b9dbdc3c883fe8bd0f13df60f2/doom/.doom.d/config.org"
+  },
+  "https://github.com/marcus-crane/dotfiles/blob/f14b4ebf86e41fa9cad3630355364eada11482f1/doom/.doom.d/config.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/dotfiles/blob/f14b4ebf86e41fa9cad3630355364eada11482f1/doom/.doom.d/config.org"
+  },
+  "https://github.com/marcus-crane/gunslinger": {
+    "alive": true,
+    "sources": [
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/gunslinger"
+  },
+  "https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go"
+  },
+  "https://github.com/marcus-crane/khinsider": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/khinsider"
+  },
+  "https://github.com/marcus-crane/lugh": {
+    "alive": true,
+    "sources": [
+      "content/questions/macos-see-file-usage.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/lugh"
+  },
+  "https://github.com/marcus-crane/netbox-plugin-azuread": {
+    "alive": true,
+    "sources": [
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/netbox-plugin-azuread"
+  },
+  "https://github.com/marcus-crane/october": {
+    "alive": true,
+    "sources": [
+      "content/now/index.md",
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/october"
+  },
+  "https://github.com/marcus-crane/site/blob/95ae742bbf33662f4dd4cf284e463d0f9320c8d1/site/posts/blog/2018/2018-02-12-day-xero.md": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/marcus-crane/site/blob/95ae742bbf33662f4dd4cf284e463d0f9320c8d1/site/posts/blog/2018/2018-02-12-day-xero.md"
+  },
+  "https://github.com/martinfinke/xcall": {
+    "alive": true,
+    "sources": [
+      "content/questions/macos-invoke-x-callback-url.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/martinfinke/xcall"
+  },
+  "https://github.com/microsoft/WSL/issues/1521": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/microsoft/WSL/issues/1521"
+  },
+  "https://github.com/microsoft/WSL/issues/2185": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/microsoft/WSL/issues/2185"
+  },
+  "https://github.com/microsoft/WSL/issues/2195": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/microsoft/WSL/issues/2195"
+  },
+  "https://github.com/myuhe/org-gcal.el": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/myuhe/org-gcal.el"
+  },
+  "https://github.com/ndw/org-mac-iCal": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/ndw/org-mac-iCal"
+  },
+  "https://github.com/neovim/neovim": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md",
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/neovim/neovim"
+  },
+  "https://github.com/netbox-community/netbox": {
+    "alive": true,
+    "sources": [
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/netbox-community/netbox"
+  },
+  "https://github.com/npm/npm/issues/20791": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/npm/npm/issues/20791"
+  },
+  "https://github.com/onelogin/python3-saml": {
+    "alive": true,
+    "sources": [
+      "content/questions/saml-inspect-request.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/onelogin/python3-saml"
+  },
+  "https://github.com/org-roam/org-roam": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/org-roam/org-roam"
+  },
+  "https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el": {
+    "alive": true,
+    "sources": [
+      "content/questions/emacs-function-double-dash.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el"
+  },
+  "https://github.com/orgzly/orgzly-android": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/orgzly/orgzly-android"
+  },
+  "https://github.com/pelias/pelias": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/pelias/pelias"
+  },
+  "https://github.com/smokes/photoshop-rich-presence": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/smokes/photoshop-rich-presence"
+  },
+  "https://github.com/standup-raven/standup-raven": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-29--latency-as-a-forcing-function/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/standup-raven/standup-raven"
+  },
+  "https://github.com/standup-raven/standup-raven/releases/tag/v3.2.0": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-29--latency-as-a-forcing-function/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/standup-raven/standup-raven/releases/tag/v3.2.0"
+  },
+  "https://github.com/tecosaur": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/tecosaur"
+  },
+  "https://github.com/terjesannum/org-mac-iCal": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/terjesannum/org-mac-iCal"
+  },
+  "https://github.com/tmux/tmux": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/tmux/tmux"
+  },
+  "https://github.com/twitter/twurl": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-12-03--automation-right/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/twitter/twurl"
+  },
+  "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/visgl/deck.gl/tree/8.9-release/examples/website/trips"
+  },
+  "https://github.com/wailsapp/wails": {
+    "alive": true,
+    "sources": [
+      "content/questions/macos-port-5000-monterey/index.md"
+    ],
+    "status": 200,
+    "url": "https://github.com/wailsapp/wails"
+  },
+  "https://gohugo.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-07-12--hugo-debug-reports/index.md",
+      "content/thanks/index.md"
+    ],
+    "status": 200,
+    "url": "https://gohugo.io"
+  },
+  "https://gohugo.io/templates/shortcode-templates": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-07-12--hugo-debug-reports/index.md",
+      "content/blog/2021-07-12--hugo-debug-reports/index.md"
+    ],
+    "status": 200,
+    "url": "https://gohugo.io/templates/shortcode-templates"
+  },
+  "https://gsuite.google.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "https://gsuite.google.com"
+  },
+  "https://guides.apple.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://guides.apple.com"
+  },
+  "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694"
+  },
+  "https://heartofthecity.co.nz/dining/coffee/starbucks-coffee": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 200,
+    "url": "https://heartofthecity.co.nz/dining/coffee/starbucks-coffee"
+  },
+  "https://help.dayoneapp.com/en/articles/769055-book-printing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md"
+    ],
+    "status": 200,
+    "url": "https://help.dayoneapp.com/en/articles/769055-book-printing"
+  },
+  "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu"
+  },
+  "https://howlongtobeat.com/user/Sentry": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://howlongtobeat.com/user/Sentry"
+  },
+  "https://idp.example.org/SAML2/SSO/Redirect": {
+    "alive": 0,
+    "sources": [
+      "content/questions/saml-inspect-request.md"
+    ],
+    "url": "https://idp.example.org/SAML2/SSO/Redirect"
+  },
+  "https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png"
+  },
+  "https://integrations.mattermost.com/standup-raven": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-29--latency-as-a-forcing-function/index.md"
+    ],
+    "status": 200,
+    "url": "https://integrations.mattermost.com/standup-raven"
+  },
+  "https://iterm2.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://iterm2.com"
+  },
+  "https://jenkins.example.com/script": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2019-07-29--retrieving-jenkins-credentials/index.md"
+    ],
+    "url": "https://jenkins.example.com/script"
+  },
+  "https://jethro.de": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://jethro.de"
+  },
+  "https://josephg.com/blog/electron-is-flash-for-the-desktop": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://josephg.com/blog/electron-is-flash-for-the-desktop"
+  },
+  "https://kidlit.com/breaking-the-rules-in-world-building": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-20--configuration-magic/index.md"
+    ],
+    "status": 200,
+    "url": "https://kidlit.com/breaking-the-rules-in-world-building"
+  },
+  "https://kubernetes.io/docs/concepts/services-networking/connect-applications-service": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "status": 200,
+    "url": "https://kubernetes.io/docs/concepts/services-networking/connect-applications-service"
+  },
+  "https://kubernetes.io/docs/concepts/services-networking/network-policies": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "status": 200,
+    "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies"
+  },
+  "https://kwokchain.com/2019/08/16/the-arc-of-collaboration": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://kwokchain.com/2019/08/16/the-arc-of-collaboration"
+  },
+  "https://larder.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://larder.io"
+  },
+  "https://lightspeedhq.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-26--day-two/index.md"
+    ],
+    "status": 200,
+    "url": "https://lightspeedhq.com"
+  },
+  "https://linux.die.net/man/8/hwclock": {
+    "alive": false,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 403,
+    "url": "https://linux.die.net/man/8/hwclock"
+  },
+  "https://login.microsoftonline.com/common/oauth2/authorize": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "status": 200,
+    "url": "https://login.microsoftonline.com/common/oauth2/authorize"
+  },
+  "https://logseq.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://logseq.com"
+  },
+  "https://man.openbsd.org/ssh_config": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-01-06--multiple-git-hosts/index.md"
+    ],
+    "status": 200,
+    "url": "https://man.openbsd.org/ssh_config"
+  },
+  "https://manjaro.org": {
+    "alive": true,
+    "sources": [
+      "content/questions/linux-audio-muting-suddenly.md"
+    ],
+    "status": 200,
+    "url": "https://manjaro.org"
+  },
+  "https://mastodon.nz": {
+    "alive": true,
+    "sources": [
+      "layouts/partials/head.html"
+    ],
+    "status": 200,
+    "url": "https://mastodon.nz"
+  },
+  "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html"
+  },
+  "https://medium.com/plexlabs": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://medium.com/plexlabs"
+  },
+  "https://medium.com/plexlabs/introducing-plexamp-9493a658847a": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://medium.com/plexlabs/introducing-plexamp-9493a658847a"
+  },
+  "https://melpa.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://melpa.org"
+  },
+  "https://messenger.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://messenger.com"
+  },
+  "https://music.apple.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://music.apple.com"
+  },
+  "https://music.youtube.com/googleplaymusic": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://music.youtube.com/googleplaymusic"
+  },
+  "https://nesslabs.com/jomo": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://nesslabs.com/jomo"
+  },
+  "https://news.xbox.com/en-us/2018/04/24/microsoft-discord-team-connect-gamers-across-xbox-live-discord": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://news.xbox.com/en-us/2018/04/24/microsoft-discord-team-connect-gamers-across-xbox-live-discord"
+  },
+  "https://news.ycombinator.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md",
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md",
+      "content/blog/2021-05-22--ride-the-curve/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md",
+      "content/questions/macos-disable-safari-recommendation.md",
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "https://news.ycombinator.com"
+  },
+  "https://news.ycombinator.com/item": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md",
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md",
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md",
+      "content/questions/macos-disable-safari-recommendation.md",
+      "content/questions/macos-disable-safari-recommendation.md"
+    ],
+    "status": 200,
+    "url": "https://news.ycombinator.com/item"
+  },
+  "https://news.ycombinator.com/y18.svg": {
+    "alive": true,
+    "sources": [
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "https://news.ycombinator.com/y18.svg"
+  },
+  "https://nodejs.org/en": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://nodejs.org/en"
+  },
+  "https://nodejs.org/en/download/releases": {
+    "alive": true,
+    "sources": [
+      "content/questions/nodejs-module-version.md"
+    ],
+    "status": 200,
+    "url": "https://nodejs.org/en/download/releases"
+  },
+  "https://npmjs.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-14--bootstrap-is-eating-the-world/index.md"
+    ],
+    "status": 200,
+    "url": "https://npmjs.com"
+  },
+  "https://nvultra.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-06-01--remind-the-user-what-your-service-does/index.md"
+    ],
+    "status": 200,
+    "url": "https://nvultra.com"
+  },
+  "https://opentelemetry.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://opentelemetry.io"
+  },
+  "https://orgmode.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md",
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://orgmode.org"
+  },
+  "https://origin.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://origin.com"
+  },
+  "https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity"
+  },
+  "https://oxsci.org/can-a-camera-capture-your-soul": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
+    ],
+    "status": 200,
+    "url": "https://oxsci.org/can-a-camera-capture-your-soul"
+  },
+  "https://pandas.pydata.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://pandas.pydata.org"
+  },
+  "https://play.google.com/store": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://play.google.com/store"
+  },
+  "https://plexamp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md",
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://plexamp.com"
+  },
+  "https://pocketcasts.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://pocketcasts.com"
+  },
+  "https://pocketsmith.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://pocketsmith.com"
+  },
+  "https://polybit.com": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "url": "https://polybit.com"
+  },
+  "https://prometheus.io/docs/prometheus/latest/storage": {
+    "alive": true,
+    "sources": [
+      "content/questions/prometheus-sample-size.md"
+    ],
+    "status": 200,
+    "url": "https://prometheus.io/docs/prometheus/latest/storage"
+  },
+  "https://pypi.org/project/netbox-plugin-azuread": {
+    "alive": true,
+    "sources": [
+      "content/projects/netbox-plugin-azuread/index.md"
+    ],
+    "status": 200,
+    "url": "https://pypi.org/project/netbox-plugin-azuread"
+  },
+  "https://pypi.org/project/selenium": {
+    "alive": true,
+    "sources": [
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "https://pypi.org/project/selenium"
+  },
+  "https://quoteinvestigator.com/2011/05/13/einstein-simple": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
+  },
+  "https://rachelbythebay.com/w/2019/07/15/giant": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://rachelbythebay.com/w/2019/07/15/giant"
+  },
+  "https://raindrop.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://raindrop.io"
+  },
+  "https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-11--always-bet-on-sales/index.md"
+    ],
+    "status": 200,
+    "url": "https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx"
+  },
+  "https://reactjs.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md",
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://reactjs.org"
+  },
+  "https://readwise.io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-06-03--let-your-streaks-end-naturally/index.md",
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://readwise.io"
+  },
+  "https://readwise.io/read": {
+    "alive": true,
+    "sources": [
+      "content/projects/october/index.md",
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://readwise.io/read"
+  },
+  "https://reddit.com/r/deepfakes": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://reddit.com/r/deepfakes"
+  },
+  "https://roamresearch.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://roamresearch.com"
+  },
+  "https://robinhood.com/us/en": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://robinhood.com/us/en"
+  },
+  "https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png"
+  },
+  "https://schema.org": {
+    "alive": true,
+    "sources": [
+      "layouts/blog/single.html"
+    ],
+    "status": 200,
+    "url": "https://schema.org"
+  },
+  "https://sender.office.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "https://sender.office.com"
+  },
+  "https://slack.com": {
+    "alive": true,
+    "sources": [
+      "content/projects/parnell/index.md",
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 200,
+    "url": "https://slack.com"
+  },
+  "https://slack.com/intl/en-nz/enterprise": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://slack.com/intl/en-nz/enterprise"
+  },
+  "https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry"
+  },
+  "https://sourceforge.net/projects/vcxsrv": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://sourceforge.net/projects/vcxsrv"
+  },
+  "https://sourceforge.net/projects/vcxsrv/files/vcxsrv": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://sourceforge.net/projects/vcxsrv/files/vcxsrv"
+  },
+  "https://sourceware.org/git": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md",
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://sourceware.org/git"
+  },
+  "https://sp.example.com/SAML2": {
+    "alive": 0,
+    "sources": [
+      "content/questions/saml-inspect-request.md"
+    ],
+    "url": "https://sp.example.com/SAML2"
+  },
+  "https://sports.example.com": {
+    "alive": 0,
+    "sources": [
+      "content/questions/kubes-namespace-connectivity.md",
+      "content/questions/kubes-namespace-connectivity.md",
+      "content/questions/kubes-namespace-connectivity.md"
+    ],
+    "url": "https://sports.example.com"
+  },
+  "https://sqlitebrowser.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-23--tidying-towing-data/index.md"
+    ],
+    "status": 200,
+    "url": "https://sqlitebrowser.org"
+  },
+  "https://sriramk.com/memos/goldberg-music.pdf": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://sriramk.com/memos/goldberg-music.pdf"
+  },
+  "https://stackoverflow.com/a/69126766": {
+    "alive": true,
+    "sources": [
+      "assets/js/live-player.js"
+    ],
+    "status": 200,
+    "url": "https://stackoverflow.com/a/69126766"
+  },
+  "https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses"
+  },
+  "https://status.azure.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-11--always-bet-on-sales/index.md"
+    ],
+    "status": 200,
+    "url": "https://status.azure.com"
+  },
+  "https://stdlib.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
+    ],
+    "status": 403,
+    "url": "https://stdlib.com"
+  },
+  "https://store.steampowered.com/about": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://store.steampowered.com/about"
+  },
+  "https://store.steampowered.com/app/221910": {
+    "alive": true,
+    "sources": [
+      "content/reviews/2014-10-11--the-stanley-parable/index.md"
+    ],
+    "status": 200,
+    "url": "https://store.steampowered.com/app/221910"
+  },
+  "https://support.google.com/mail": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md",
+      "content/blog/2019-09-26--email-lookup/index.md",
+      "content/blog/2019-09-26--email-lookup/index.md",
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "https://support.google.com/mail"
+  },
+  "https://tailwindcss.com/docs/font-smoothing": {
+    "alive": true,
+    "sources": [
+      "content/experiments/fancy-hyperlinks/index.md"
+    ],
+    "status": 200,
+    "url": "https://tailwindcss.com/docs/font-smoothing"
+  },
+  "https://tecosaur.github.io/emacs-config/config.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md",
+      "content/blog/2021-02-17--faq-driven-configuration/index.md"
+    ],
+    "status": 200,
+    "url": "https://tecosaur.github.io/emacs-config/config.html"
+  },
+  "https://tidal.com": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md",
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 403,
+    "url": "https://tidal.com"
+  },
+  "https://tools.ietf.org/html/rfc5545": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://tools.ietf.org/html/rfc5545"
+  },
+  "https://twitter.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com"
+  },
+  "https://twitter.com/McDonalds/status/1455174998264586243": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/McDonalds/status/1455174998264586243"
+  },
+  "https://twitter.com/Spotify/status/1202090253839937536": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/Spotify/status/1202090253839937536"
+  },
+  "https://twitter.com/TIDAL/status/699726946817679360": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/TIDAL/status/699726946817679360"
+  },
+  "https://twitter.com/TheSmarmyBum/status/1443259893411049475": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/TheSmarmyBum/status/1443259893411049475"
+  },
+  "https://twitter.com/TwitterEng": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/TwitterEng"
+  },
+  "https://twitter.com/element_hq/status/1355663753380032512": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/element_hq/status/1355663753380032512"
+  },
+  "https://twitter.com/foiachap": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/foiachap"
+  },
+  "https://twitter.com/plexamp": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/plexamp"
+  },
+  "https://twitter.com/plexamp/status/1491497134851428352": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/plexamp/status/1491497134851428352"
+  },
+  "https://twitter.com/sanityinc": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--emacs-probably-isnt-right-for-me/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/sanityinc"
+  },
+  "https://twitter.com/sentreh": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-18--wiki-thoughts/index.md",
+      "content/blog/2019-03-20--future-of-emergency-services/index.md",
+      "content/reviews/2015-05-12--hiatus/index.md",
+      "layouts/partials/head.html"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/sentreh"
+  },
+  "https://twitter.com/sentreh/status/1435772900917735425": {
+    "alive": true,
+    "sources": [
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/sentreh/status/1435772900917735425"
+  },
+  "https://twitter.com/wongmjane/status/1440428582308757507": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
+    ],
+    "status": 200,
+    "url": "https://twitter.com/wongmjane/status/1440428582308757507"
+  },
+  "https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561": {
+    "alive": false,
+    "sources": [
+      "content/blog/2018-12-03--automation-right/index.md"
+    ],
+    "status": 404,
+    "url": "https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561"
+  },
+  "https://ubisoftconnect.com/en-US": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://ubisoftconnect.com/en-US"
+  },
+  "https://unix.stackexchange.com/a/263731": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://unix.stackexchange.com/a/263731"
+  },
+  "https://unix.stackexchange.com/a/286325": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://unix.stackexchange.com/a/286325"
+  },
+  "https://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-a-shell-script": {
+    "alive": true,
+    "sources": [
+      "content/questions/dns-lookup-current-ip.md"
+    ],
+    "status": 200,
+    "url": "https://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-a-shell-script"
+  },
+  "https://unpkg.com/littlefoot": {
+    "alive": true,
+    "sources": [
+      "layouts/_default/single.html",
+      "layouts/blog/single.html",
+      "layouts/debug/single.html",
+      "layouts/reviews/single.html"
+    ],
+    "status": 200,
+    "url": "https://unpkg.com/littlefoot"
+  },
+  "https://us.macmillan.com/books/9780374159122": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-09-24--who-is-software-even-for/index.md"
+    ],
+    "status": 200,
+    "url": "https://us.macmillan.com/books/9780374159122"
+  },
+  "https://usefyi.com/evernote-history": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://usefyi.com/evernote-history"
+  },
+  "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338"
+  },
+  "https://via.placeholder.com/264x352": {
+    "alive": true,
+    "sources": [
+      "content/games/index.md"
+    ],
+    "status": 200,
+    "url": "https://via.placeholder.com/264x352"
+  },
+  "https://vsfan.net/wiki": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2017-12-18--wiki-thoughts/index.md"
+    ],
+    "url": "https://vsfan.net/wiki"
+  },
+  "https://wails.io": {
+    "alive": true,
+    "sources": [
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://wails.io"
+  },
+  "https://web.archive.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://web.archive.org"
+  },
+  "https://web.archive.org/web/20071031080918/http": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://web.archive.org/web/20071031080918/http"
+  },
+  "https://web.archive.org/web/20180206231055/https": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://web.archive.org/web/20180206231055/https"
+  },
+  "https://web.archive.org/web/20210101170747/https": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://web.archive.org/web/20210101170747/https"
+  },
+  "https://webpack.js.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://webpack.js.org"
+  },
+  "https://wiki.archlinux.org/index.php/mkinitcpio": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://wiki.archlinux.org/index.php/mkinitcpio"
+  },
+  "https://wiki.archlinux.org/index.php/systemd-boot": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://wiki.archlinux.org/index.php/systemd-boot"
+  },
+  "https://www.amazon.com/Show-Stopper-Breakneck-Generation-Microsoft/dp/0029356717": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-08-29--taking-holidays/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.amazon.com/Show-Stopper-Breakneck-Generation-Microsoft/dp/0029356717"
+  },
+  "https://www.apple.com/nz/education/k12/apple-distinguished-schools": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.apple.com/nz/education/k12/apple-distinguished-schools"
+  },
+  "https://www.apple.com/nz/homepod-mini": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.apple.com/nz/homepod-mini"
+  },
+  "https://www.archlinux.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.archlinux.org"
+  },
+  "https://www.bandainamcoid.com/banapassport/en": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 404,
+    "url": "https://www.bandainamcoid.com/banapassport/en"
+  },
+  "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2019/building-operational-resilience-impact-tolerances-for-important-business-services.pdf": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2019/building-operational-resilience-impact-tolerances-for-important-business-services.pdf"
+  },
+  "https://www.bbc.com/news/technology-34066941": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.bbc.com/news/technology-34066941"
+  },
+  "https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now"
+  },
+  "https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil"
+  },
+  "https://www.buzzfeednews.com/article/carolineodonovan/taking-uber-lyft-emergency-room-legal-liabilities": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.buzzfeednews.com/article/carolineodonovan/taking-uber-lyft-emergency-room-legal-liabilities"
+  },
+  "https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and"
+  },
+  "https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-20--configuration-magic/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html"
+  },
+  "https://www.covingtonschool.org/ces/4740-About.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.covingtonschool.org/ces/4740-About.html"
+  },
+  "https://www.cushingcitizen.com/news/oil-turns-red": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://www.cushingcitizen.com/news/oil-turns-red"
+  },
+  "https://www.cyrusimap.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.cyrusimap.org"
+  },
+  "https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-05-28--fastmail-caldav/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html"
+  },
+  "https://www.darkpatterns.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.darkpatterns.org"
+  },
+  "https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch"
+  },
+  "https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html"
+  },
+  "https://www.devever.net": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.devever.net"
+  },
+  "https://www.djangoproject.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.djangoproject.com"
+  },
+  "https://www.dropbox.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.dropbox.com"
+  },
+  "https://www.ebgames.co.nz": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 403,
+    "url": "https://www.ebgames.co.nz"
+  },
+  "https://www.ecosia.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-13--a-recently-horrible-iteration-of-google-search/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.ecosia.org"
+  },
+  "https://www.electronjs.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.electronjs.org"
+  },
+  "https://www.figma.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.figma.com"
+  },
+  "https://www.forbes.com/sites/zackomalleygreenburg/2012/10/03/inside-andreessen-horowitz-15-million-investment-in-rap-genius": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-14--bootstrap-is-eating-the-world/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.forbes.com/sites/zackomalleygreenburg/2012/10/03/inside-andreessen-horowitz-15-million-investment-in-rap-genius"
+  },
+  "https://www.freecodecamp.org/news/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.freecodecamp.org/news/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81"
+  },
+  "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html"
+  },
+  "https://www.gnu.org/software/parted/manual/html_node/set.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.gnu.org/software/parted/manual/html_node/set.html"
+  },
+  "https://www.gnu.org/software/parted/manual/parted.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-12-24--arch-nuc-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.gnu.org/software/parted/manual/parted.html"
+  },
+  "https://www.gnu.org/software/stow": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md",
+      "content/questions/macos-see-file-usage.md"
+    ],
+    "status": 200,
+    "url": "https://www.gnu.org/software/stow"
+  },
+  "https://www.goodreads.com/book/show/4119.The_Great_Good_Place": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.goodreads.com/book/show/4119.The_Great_Good_Place"
+  },
+  "https://www.google.com/maps": {
+    "alive": true,
+    "sources": [
+      "content/projects/towing/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.google.com/maps"
+  },
+  "https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx"
+  },
+  "https://www.health.govt.nz/new-zealand-health-system/key-health-sector-organisations-and-people/naso-national-ambulance-sector-office/emergency-ambulance-services-eas/performance-quality-and-safety/emergency-ambulance-service-national-performance-reports": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.health.govt.nz/new-zealand-health-system/key-health-sector-organisations-and-people/naso-national-ambulance-sector-office/emergency-ambulance-services-eas/performance-quality-and-safety/emergency-ambulance-service-national-performance-reports"
+  },
+  "https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline"
+  },
+  "https://www.here.com/get-started/pricing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.here.com/get-started/pricing"
+  },
+  "https://www.iana.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.iana.org"
+  },
+  "https://www.investopedia.com/articles/investing/082814/companies-succeeded-bootstrapping.asp": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.investopedia.com/articles/investing/082814/companies-succeeded-bootstrapping.asp"
+  },
+  "https://www.jamf.com": {
+    "alive": true,
+    "sources": [
+      "content/questions/macos-see-file-usage.md"
+    ],
+    "status": 200,
+    "url": "https://www.jamf.com"
+  },
+  "https://www.jetbrains.com/go": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.jetbrains.com/go"
+  },
+  "https://www.justice.govt.nz/about/official-information-act-requests": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.justice.govt.nz/about/official-information-act-requests"
+  },
+  "https://www.lightspeedhq.com": {
+    "alive": true,
+    "sources": [
+      "content/about/index.md",
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md",
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.lightspeedhq.com"
+  },
+  "https://www.linz.govt.nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.linz.govt.nz"
+  },
+  "https://www.linz.govt.nz/products-services/data/linz-data-service": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.linz.govt.nz/products-services/data/linz-data-service"
+  },
+  "https://www.losaltosca.gov": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.losaltosca.gov"
+  },
+  "https://www.losaltosca.gov/recreation/page/rosita-park": {
+    "alive": false,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 404,
+    "url": "https://www.losaltosca.gov/recreation/page/rosita-park"
+  },
+  "https://www.mapbox.com/pricing": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.mapbox.com/pricing"
+  },
+  "https://www.mediawiki.org/wiki/Extension": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.mediawiki.org/wiki/Extension"
+  },
+  "https://www.mediawiki.org/wiki/MediaWiki": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.mediawiki.org/wiki/MediaWiki"
+  },
+  "https://www.michaelmina.net/restaurants": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.michaelmina.net/restaurants"
+  },
+  "https://www.microsoft.com/en-us/download/details.aspx": {
+    "alive": false,
+    "sources": [
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 404,
+    "url": "https://www.microsoft.com/en-us/download/details.aspx"
+  },
+  "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software": {
+    "alive": 0,
+    "sources": [
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "url": "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software"
+  },
+  "https://www.microsoft.com/store/productId/9NLP712ZMN9Q": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.microsoft.com/store/productId/9NLP712ZMN9Q"
+  },
+  "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire"
+  },
+  "https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778": {
+    "alive": false,
+    "sources": [
+      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
+    ],
+    "status": 403,
+    "url": "https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778"
+  },
+  "https://www.moonestates.com": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2021-11-28--some-brief-thoughts-on-crypto/index.md"
+    ],
+    "url": "https://www.moonestates.com"
+  },
+  "https://www.nasa.gov": {
+    "alive": true,
+    "sources": [
+      "content/experiments/fancy-hyperlinks/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.nasa.gov"
+  },
+  "https://www.neogaf.com/threads/dead-franchises-almost-nobody-but-you-seems-to-want-back.1355948": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.neogaf.com/threads/dead-franchises-almost-nobody-but-you-seems-to-want-back.1355948"
+  },
+  "https://www.neomutt.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.neomutt.org"
+  },
+  "https://www.nginx.com/products/nginx-ingress-controller": {
+    "alive": true,
+    "sources": [
+      "content/questions/kubes-ingress-ip-range.md"
+    ],
+    "status": 200,
+    "url": "https://www.nginx.com/products/nginx-ingress-controller"
+  },
+  "https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537"
+  },
+  "https://www.npmjs.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.npmjs.com"
+  },
+  "https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation"
+  },
+  "https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil"
+  },
+  "https://www.nytimes.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.nytimes.com"
+  },
+  "https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.nytimes.com/2018/10/01/upshot/uber-lyft-and-the-urgency-of-saving-money-on-ambulances.html"
+  },
+  "https://www.nytimes.com/2019/01/26/business/against-hustle-culture-rise-and-grind-tgim.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.nytimes.com/2019/01/26/business/against-hustle-culture-rise-and-grind-tgim.html"
+  },
+  "https://www.okta.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.okta.com"
+  },
+  "https://www.oliverburkeman.com/books": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-10-26--day-two/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.oliverburkeman.com/books"
+  },
+  "https://www.orgroam.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.orgroam.com"
+  },
+  "https://www.pornhub.com/embed/ph5a27755783e28": {
+    "alive": false,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md",
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 404,
+    "url": "https://www.pornhub.com/embed/ph5a27755783e28"
+  },
+  "https://www.propublica.org/article/the-red-cross-secret-disaster": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.propublica.org/article/the-red-cross-secret-disaster"
+  },
+  "https://www.pulumi.com/product": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-20--configuration-magic/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.pulumi.com/product"
+  },
+  "https://www.python.org": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.python.org"
+  },
+  "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e"
+  },
+  "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi"
+  },
+  "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/drbv6io": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/drbv6io"
+  },
+  "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl"
+  },
+  "https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o"
+  },
+  "https://www.reddit.com/r/ffxiv/comments/6h4129/yoshida_acknowledging_glamour_importance/divdh85": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-05-22--ride-the-curve/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/r/ffxiv/comments/6h4129/yoshida_acknowledging_glamour_importance/divdh85"
+  },
+  "https://www.reddit.com/user/deepfakes": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.reddit.com/user/deepfakes"
+  },
+  "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W": {
+    "alive": true,
+    "sources": [
+      "content/questions/finance-oil-futures-negative.md",
+      "content/questions/finance-oil-futures-negative.md"
+    ],
+    "status": 200,
+    "url": "https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W"
+  },
+  "https://www.robustperception.io/how-much-space-does-the-wal-take-up": {
+    "alive": true,
+    "sources": [
+      "content/questions/prometheus-sample-size.md"
+    ],
+    "status": 200,
+    "url": "https://www.robustperception.io/how-much-space-does-the-wal-take-up"
+  },
+  "https://www.ruinedby.de": {
+    "alive": 0,
+    "sources": [
+      "content/now/index.md"
+    ],
+    "url": "https://www.ruinedby.de"
+  },
+  "https://www.santaritaschool.org/santaritaes/6993-Address-Directions.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.santaritaschool.org/santaritaes/6993-Address-Directions.html"
+  },
+  "https://www.selenium.de": {
+    "alive": true,
+    "sources": [
+      "content/questions/selenium-remote-connection.md"
+    ],
+    "status": 200,
+    "url": "https://www.selenium.de"
+  },
+  "https://www.site.uottawa.ca": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.site.uottawa.ca"
+  },
+  "https://www.spark.co.nz/getmore/spotify": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.spark.co.nz/getmore/spotify"
+  },
+  "https://www.sqlite.org/index.html": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-23--tidying-towing-data/index.md",
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md",
+      "content/projects/october/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.sqlite.org/index.html"
+  },
+  "https://www.starbucks.co.nz/rewards": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.starbucks.co.nz/rewards"
+  },
+  "https://www.stjohn.org.nz/News--Info/Our-Performance/Response-Times": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.stjohn.org.nz/News--Info/Our-Performance/Response-Times"
+  },
+  "https://www.stjohn.org.nz/What-we-do/St-John-Ambulance-Services": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.stjohn.org.nz/What-we-do/St-John-Ambulance-Services"
+  },
+  "https://www.stjohn.org.nz/globalassets/documents/publications/annual-report/stj-annual-report_2018_lq.pdf": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.stjohn.org.nz/globalassets/documents/publications/annual-report/stj-annual-report_2018_lq.pdf"
+  },
+  "https://www.stuff.co.nz/business/industries/106769552/restaurant-brands-sells-starbucks-coffee-in-nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.stuff.co.nz/business/industries/106769552/restaurant-brands-sells-starbucks-coffee-in-nz"
+  },
+  "https://www.sublimetext.com": {
+    "alive": true,
+    "sources": [
+      "content/uses/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.sublimetext.com"
+  },
+  "https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps"
+  },
+  "https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit"
+  },
+  "https://www.transparency.org/country/NZL": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-08-18--nz-oia-guide/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.transparency.org/country/NZL"
+  },
+  "https://www.uber.com/newsroom/uber-health": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-03-20--future-of-emergency-services/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.uber.com/newsroom/uber-health"
+  },
+  "https://www.uber.com/nz/en/u/rewards": {
+    "alive": false,
+    "sources": [
+      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
+    ],
+    "status": 406,
+    "url": "https://www.uber.com/nz/en/u/rewards"
+  },
+  "https://www.vendhq.com/nz": {
+    "alive": true,
+    "sources": [
+      "content/about/index.md",
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md",
+      "content/now/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.vendhq.com/nz"
+  },
+  "https://www.vgchartz.com/game/16779/time-hollow": {
+    "alive": true,
+    "sources": [
+      "content/reviews/2015-02-08--time-hollow/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.vgchartz.com/game/16779/time-hollow"
+  },
+  "https://www.vgchartz.com/game/2291/super-smash-bros-melee": {
+    "alive": true,
+    "sources": [
+      "content/reviews/2015-01-10--the-simpsons-hit-and-run/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.vgchartz.com/game/2291/super-smash-bros-melee"
+  },
+  "https://www.vgchartz.com/game/28733/uncharted-2-among-thieves": {
+    "alive": true,
+    "sources": [
+      "content/reviews/2015-01-10--the-simpsons-hit-and-run/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.vgchartz.com/game/28733/uncharted-2-among-thieves"
+  },
+  "https://www.vgchartz.com/gamedb": {
+    "alive": false,
+    "sources": [
+      "content/reviews/2014-12-23--asuras-wrath/index.md",
+      "content/reviews/2015-01-10--the-simpsons-hit-and-run/index.md"
+    ],
+    "status": 404,
+    "url": "https://www.vgchartz.com/gamedb"
+  },
+  "https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-02-12--plex-tidal-together/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer"
+  },
+  "https://www.watercare.co.nz/Contact/Official-information-request": {
+    "alive": true,
+    "sources": [
+      "content/blog/2023-10-09--spreadsheet-to-visualisation/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.watercare.co.nz/Contact/Official-information-request"
+  },
+  "https://www.whatsapp.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.whatsapp.com"
+  },
+  "https://www.wired.com/story/face-swap-porn-legal-limbo": {
+    "alive": true,
+    "sources": [
+      "content/blog/2017-02-05--deepfakes/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
+  },
+  "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696"
+  },
+  "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164": {
+    "alive": true,
+    "sources": [
+      "content/blog/20xx--one-possible-death-for-discord/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164"
+  },
+  "https://www.xero.com/nz": {
+    "alive": true,
+    "sources": [
+      "content/blog/2018-02-15--day-xero/index.md",
+      "content/blog/2021-10-26--day-two/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.xero.com/nz"
+  },
+  "https://www.xero.com/nz/about/graduate": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.xero.com/nz/about/graduate"
+  },
+  "https://www.youtube.com/embed/C7xyoPqYkYM": {
+    "alive": true,
+    "sources": [
+      "layouts/404.html"
+    ],
+    "status": 200,
+    "url": "https://www.youtube.com/embed/C7xyoPqYkYM"
+  },
+  "https://www.youtube.com/playlist": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-01-31--is-anything-happening-behind-the-curtain/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.youtube.com/playlist"
+  },
+  "https://www.youtube.com/watch": {
+    "alive": true,
+    "sources": [
+      "content/blog/2019-09-26--email-lookup/index.md",
+      "content/blog/2020-02-07--publish-old-works/index.md",
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+      "content/blog/2022-02-12--plex-tidal-together/index.md",
+      "content/blog/2022-02-12--plex-tidal-together/index.md",
+      "content/reviews/2015-02-08--time-hollow/index.md",
+      "content/reviews/2015-03-13--magrunner-dark-pulse/index.md",
+      "content/reviews/2015-03-28--jumping-flash/index.md",
+      "content/reviews/2015-03-28--jumping-flash/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.youtube.com/watch"
+  },
+  "https://www.zaziesf.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://www.zaziesf.com"
+  },
+  "https://x410.de": {
+    "alive": 0,
+    "sources": [
+      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
+    ],
+    "url": "https://x410.de"
+  },
+  "https://xero.com/nz": {
+    "alive": true,
+    "sources": [
+      "content/projects/parnell/index.md"
+    ],
+    "status": 200,
+    "url": "https://xero.com/nz"
+  },
+  "https://xlrd.readthedocs.io/en/latest": {
+    "alive": true,
+    "sources": [
+      "content/blog/2020-11-23--tidying-towing-data/index.md"
+    ],
+    "status": 200,
+    "url": "https://xlrd.readthedocs.io/en/latest"
+  },
+  "https://yanksing.com": {
+    "alive": true,
+    "sources": [
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md",
+      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
+    ],
+    "status": 200,
+    "url": "https://yanksing.com"
+  },
+  "https://zettelkasten.de/introduction": {
+    "alive": true,
+    "sources": [
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md",
+      "content/blog/2021-02-11--zettelkasten-blog-a-good-idea/index.md"
+    ],
+    "status": 200,
+    "url": "https://zettelkasten.de/introduction"
+  }
+}
