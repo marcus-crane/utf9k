@@ -6,6 +6,8 @@ import metas from "lume/plugins/metas.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import vento from "lume/plugins/vento.ts";
 
+import prettier from "npm:prettier"
+
 const site = lume();
 
 site.copy("css");
@@ -16,5 +18,11 @@ site.use(feed());
 site.use(metas());
 site.use(sitemap());
 site.use(vento());
+
+site.process(
+    [".html"],
+    async (page) => page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
+            
+)
 
 export default site;

@@ -7,7 +7,8 @@
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@13.0.2",
       "npm:markdown-it-deflist@2.1.0": "npm:markdown-it-deflist@2.1.0",
       "npm:markdown-it@13.0.2": "npm:markdown-it@13.0.2",
-      "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4"
+      "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
+      "npm:prettier": "npm:prettier@3.0.3"
     },
     "npm": {
       "@babel/runtime@7.23.2": {
@@ -83,6 +84,10 @@
           "asap": "asap@2.0.6",
           "commander": "commander@5.1.0"
         }
+      },
+      "prettier@3.0.3": {
+        "integrity": "sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==",
+        "dependencies": {}
       },
       "regenerator-runtime@0.14.0": {
         "integrity": "sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==",
@@ -720,6 +725,11 @@
     "https://deno.land/x/xml@2.1.2/utils/stream.ts": "056e2f368d47932d77e431bbc4a8292359171cc9ce881ea31ce0aae30d763e68",
     "https://deno.land/x/xml@2.1.2/utils/streamable.ts": "1603a5f10c859b95d4e9502365a0fba0b19d5d068356e20d5a6813cd37fee780",
     "https://deno.land/x/xml@2.1.2/utils/stringifier.ts": "c701b506835237c0c6c0a08fd94e0a012b644def3f4c819c64788daf2e649ea3",
-    "https://deno.land/x/xml@2.1.2/utils/types.ts": "ecaf7785e54a6f1da6f8e56da2bce9853407ceb7d5b3b70f0a60a0890151fe4c"
+    "https://deno.land/x/xml@2.1.2/utils/types.ts": "ecaf7785e54a6f1da6f8e56da2bce9853407ceb7d5b3b70f0a60a0890151fe4c",
+    "https://denolib.com/denolib/prettier/prettier.ts": "5af36940850d1e2be18bfb85814dfde7a8483b15a26bd34fd2f69c47299aed44",
+    "https://denolib.com/denolib/prettier/vendor/parser_babylon.js": "5a222b5be634ad8091d19d22c9cc99f16beaf0cf38b988e7773fedcfc4a72d4a",
+    "https://denolib.com/denolib/prettier/vendor/parser_markdown.js": "e7d0a8b4fba1ddfc9d6fe017f95dabb96d15796c1b821bbfe10c05962a93491f",
+    "https://denolib.com/denolib/prettier/vendor/parser_typescript.js": "6a667e1e2755b56a16e1298211acd1c12759256df9d2ac1d639305601507b9b8",
+    "https://denolib.com/denolib/prettier/vendor/standalone.js": "da7dff32d4d48beaa92ec1ac8341cb6192b99cc1f1683ca35d11fc10d6a43f01"
   }
 }
