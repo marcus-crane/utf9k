@@ -60,7 +60,7 @@ It's pretty frustrating and I've actually resorted to DMing on other platforms b
 
 For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely destroyed upon upload.
 
-{{< tweet user="benedictevans" id="1439536308326645767" >}}
+[@benedictevans has since set their account to private so here's a direct link if you follow them](https://twitter.com/benedictevans/status/1439536308326645767)
 
 You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
