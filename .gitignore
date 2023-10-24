@@ -42,3 +42,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Lume
+lume/_site
