@@ -2,11 +2,10 @@
 
 set -euxo pipefail
 
-npm run build:deps
-pnpm run test
-pnpm run build:metadata
-pnpm run build
-pnpm run prettify
+bun run build:deps
+bun run build:metadata
+bun run build
+bun run prettify
 
 mv _headers public
 mv _redirects public

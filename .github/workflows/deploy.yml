@@ -29,8 +29,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "21.0.0"
-      - name: Setup Cue
-        uses: cue-lang/setup-cue@v1.0.0
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
