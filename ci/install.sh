@@ -7,7 +7,7 @@ TOPLEVEL=$(git rev-parse --show-toplevel)
 echo "Installing CI tools"
 
 pip install -U pip wheel &> /dev/null
-pip install -r "$TOPLEVEL/scripts/requirements.txt" &> /dev/null
+pip install -r "$TOPLEVEL/scripts/requirements.txt"
 echo "~ Python dependencies installed"
 
 if ! command -v cue &> /dev/null; then
