@@ -1,4 +1,5 @@
 <title>{{ if ne .Title "" }}{{ .Title }} | {{ end }}utf9k</title>
+<link rel="preconnect" href="https://cdn.utf9k.net" />
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
