@@ -36,7 +36,7 @@ You can confirm that by navigating to your Fastmail inbox and seeing what addres
 
 Alternatively, you could also navigate to `Settings` → `Calendars` → `Export` (on one of the calendars) and copy most of the section from `CalDAV URL`.
 
-![A screenshot of the author's Fastmail account, showing the Settings page. The Calendars tab is highlighted in the left sidebar. Three calendars are visible in the background with a modal open in the foreground. The modal has two sections: One deals with exporting a calendar. The other has a text box with the CalDAV URL for the selected calendar. An arrow is pointing to the text box. The contents of the textbox is highlighted up to the end of the segment containing the author's email. The ID at the end is not selected although this is not visible as it is blurred out.](calendar-settings.png)
+![A screenshot of the author's Fastmail account, showing the Settings page. The Calendars tab is highlighted in the left sidebar. Three calendars are visible in the background with a modal open in the foreground. The modal has two sections: One deals with exporting a calendar. The other has a text box with the CalDAV URL for the selected calendar. An arrow is pointing to the text box. The contents of the textbox is highlighted up to the end of the segment containing the author's email. The ID at the end is not selected although this is not visible as it is blurred out.](https://cdn.utf9k.net/blog/fastmail-caldav/calendar-settings.png)
 
 Putting the whole URL will only load one calendar but odds are, whatever CalDAV client you're struggling with will load all of your calendars by removing the calendar ID at the end.
 

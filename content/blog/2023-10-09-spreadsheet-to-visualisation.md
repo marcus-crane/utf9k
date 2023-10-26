@@ -70,7 +70,7 @@ With our dataset on hand, let's fire it up and take a look at what we've got to 
 
 Opening up `Marcus Aug 2016 Jul 2019.xlsx` certainly leaves a lot to be desired.
 
-![A screenshot of an Excel spreadsheet. There are many workbooks which each contain data for a specific year between 2016 and 2019. The data is formatted visually but will be a huge pain to access programmatically.](./spreadsheet.png)
+![A screenshot of an Excel spreadsheet. There are many workbooks which each contain data for a specific year between 2016 and 2019. The data is formatted visually but will be a huge pain to access programmatically.](https://cdn.utf9k.net/blog/spreadsheet-to-visualisation/spreadsheet.png)
 
 With just an initial glance, we can already spot a bunch of pain points with this data set:
 
@@ -128,7 +128,7 @@ First, we need a dataset that will translate addresses to coordinates.
 
 Here in New Zealand, [Land Information New Zealand](https://www.linz.govt.nz/) provides this and many other datasets for free, by way of the [LINZ Data Service](https://www.linz.govt.nz/products-services/data/linz-data-service).
 
-![A screenshot of the LINZ Data Service, a web browser for viewing map layers and other types of data sets. In this image, the NZ Addresses dataset is selected and partly visible on the right side of the screen. On the left side is the LDS data set browser.](./lds.png)
+![A screenshot of the LINZ Data Service, a web browser for viewing map layers and other types of data sets. In this image, the NZ Addresses dataset is selected and partly visible on the right side of the screen. On the left side is the LDS data set browser.](https://cdn.utf9k.net/blog/spreadsheet-to-visualisation/lds.png)
 
 What we're looking at is one data point for each address in New Zealand that contains both the address broken into its component parts as well as the coordinates for that address.
 
@@ -156,11 +156,11 @@ We now have a set of start and end coordinates that represent where a vehicle wa
 
 This is a good start but if we were to plot these on a map and then start simulating traffic between those two points, we would get something silly like this.
 
-![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are two numbered points on opposite sides of the map with a line going straight from one to the other.](./map-direct.png)
+![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are two numbered points on opposite sides of the map with a line going straight from one to the other.](https://cdn.utf9k.net/blog/spreadsheet-to-visualisation/map-direct.png)
 
 It goes without saying that cars don't work this way in real life, just cutting through buildings and chunks of lands, so we somehow need to simulate the route that a vehicle is most likely to take so we have something more like this.
 
-![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are many numbered points, each at main intersections of the map with lines joining between them. It roughly follows the path that a car might drive.](./map-points.png)
+![A Mapbox map layer showing Newmarket, Auckland, New Zealand. There are many numbered points, each at main intersections of the map with lines joining between them. It roughly follows the path that a car might drive.](https://cdn.utf9k.net/blog/spreadsheet-to-visualisation/map-points.png)
 
 Figuring out how to generate routing data was a massive blocker for this project for a long time until I discovered the existence of [openrouteservice](https://github.com/GIScience/openrouteservice).
 

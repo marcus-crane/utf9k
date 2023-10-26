@@ -27,7 +27,7 @@ Specifically, it's targeted at an awkward gap at which I, and I'm sure many of u
 
 In particular, these are scenarios I've encountered in a work setting but I suppose they could apply just as equally in any sort of community from friend groups to event committees.
 
-I wouldn't know but I'll try to keep this whole thing general enough so as to leave it open for your own intepretation.
+I wouldn't know but I'll try to keep this whole thing general enough so as to leave it open for your own interpretation.
 
 I'll probably also make this a "living document" that I add things to as I think of them. It'll be pretty messy.
 

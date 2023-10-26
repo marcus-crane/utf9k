@@ -28,7 +28,7 @@ These requests won't even reach you so they won't even show up in your tracing.
 
 ## Application sampling
 
-![A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.](apps.jpg)
+![A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.](https://cdn.utf9k.net/blog/sampling-all-the-way-down/apps.jpg)
 
 So we've got requests hitting our application so we capture 100% of those requests as traces and life is easy right?
 
@@ -44,7 +44,7 @@ The above also assumes that your application is configured properly as well to e
 
 ## Agent sampling
 
-![The same Datadog ingestion pipeline shown in the previous image with no changes.](apps.jpg)
+![The same Datadog ingestion pipeline shown in the previous image with no changes.](https://cdn.utf9k.net/blog/sampling-all-the-way-down/apps.jpg)
 
 Now we go a level high to the process that receives all of your traces.
 
@@ -90,7 +90,7 @@ Assuming you're a rich lister however, you've made it to the end... right? All i
 
 ## The Secret Hidden Boss
 
-Even if you have every single trace ever generated, perfection is still out of reach because the insights into our traces themselves may be skewed, short of our combing through all of the data outselves which is likely not possible at scale.
+Even if you have every single trace ever generated, perfection is still out of reach because the insights into our traces themselves may be skewed, short of our combing through all of the data ourselves which is likely not possible at scale.
 
 To understand more, we need to briefly talk about [DDSketch](https://arxiv.org/pdf/1908.10693.pdf) which is Datadog's "sketching" algorithm.
 
@@ -132,7 +132,7 @@ I'm a big advocate of the same idea in software.
 
 Partly so I can be lazy but also because beyond a certain point, true accuracy doesn't really matter.
 
-What you want is just enough detail to know that things are happening but further detail is just diminshing returns.
+What you want is just enough detail to know that things are happening but further detail is just diminishing returns.
 
 Let's say that you want to reflect rate limits for a particular customer.
 

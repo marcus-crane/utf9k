@@ -56,10 +56,10 @@ I thought I'd tackle it normally. I had some more severe bouts that were exponen
 
 Perhaps I'll ask my doctor if I can go back to [what helped break me out last time](https://en.wikipedia.org/wiki/Escitalopram). I don't take any pride in fighting mental illness on hard mode. I don't wish it on anyone.
 
-I dunno, I'll go about my day and things are great. Great is a strong word. Things are fine. Maybe I need more novelty in my life. It's the remmebering that this whole ordeal exists that opens the door ever so slightly for doubt to creep in. It could happen again so why wouldn't it, right?
+I dunno, I'll go about my day and things are great. Great is a strong word. Things are fine. Maybe I need more novelty in my life. It's the remembering that this whole ordeal exists that opens the door ever so slightly for doubt to creep in. It could happen again so why wouldn't it, right?
 
 I've been even stronger in reassuring myself that there are so many possibilities and that it's just my brain playing tricks but it's exhausting. Trying to self-monitor your own thoughts is exhausting. Your brain is effectively playing dual roles where you're watching yourself in third person.
 
-Writing this has made me go up and down a bit where I'm a little jittery but who knows, that could just be the cold that's creeping in and I'm unintentionally feeding the nuclear fire with all these inputs that are unrelated. While things are quiet, I think I'll go to bed early. Napping is great. I wish I had more time this afternoon but I don't want to risk staying up. A thought creeped in that today was going to be one of the very bad ones. Let's hope it isn't true.
+Writing this has made me go up and down a bit where I'm a little jittery but who knows, that could just be the cold that's creeping in and I'm unintentionally feeding the nuclear fire with all these inputs that are unrelated. While things are quiet, I think I'll go to bed early. Napping is great. I wish I had more time this afternoon but I don't want to risk staying up. A thought crept in that today was going to be one of the very bad ones. Let's hope it isn't true.
 
 If you read this far, I appreciate the effort. I'm sure I'll be fine in the long run. While all these emotions were fresh, I wanted to capture them down since they're hard to explain. I don't even know if any of this makes sense since I write these sorts of posts off the cuff with no editing.
