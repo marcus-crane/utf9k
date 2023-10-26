@@ -12,7 +12,7 @@ tags:
 - "visualisation"
 ---
 
-![A screenshot of the towing.utf9k.net website. A map of the city of Auckland, New Zealand is visible with lots of little orange streaks visible on the map. Each streak represents a vehicle that was towed over a 3 year period. Each streak is in motion, heading to where they were towed to.](website.png)
+![A screenshot of the towing.utf9k.net website. A map of the city of Auckland, New Zealand is visible with lots of little orange streaks visible on the map. Each streak represents a vehicle that was towed over a 3 year period. Each streak is in motion, heading to where they were towed to.](https://cdn.utf9k.net/projects/towing/website.png)
 
 Quite a few years ago, I found myself sitting outside of a cafe. I was staring across the street at a carpark and noticed that every so often, [a tow truck would pull in, towing a car behind it.](https://www.google.com/maps/@-36.8647825,174.7607181,3a,75y,78.37h,86.35t/data=!3m6!1e1!3m4!1sJuwWzp4GFW4TPKe0zlGP1A!2e0!7i16384!8i8192?entry=ttu).
 
