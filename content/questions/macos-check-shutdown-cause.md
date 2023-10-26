@@ -19,11 +19,11 @@ log show -predicate 'eventMessage contains "Previous shutdown cause"' -last 24h
 
 It may take a minute or so to actually find some logs but it should reveal a shutdown code.
 
-I don't remember where I dug it up but you can see a list of shutdown causes and their meanings [in this PDF](shutdown-causes.pdf).
+I don't remember where I dug it up but you can see a list of shutdown causes and their meanings [in this PDF](https://cdn.utf9k.net/questions/macos-check-shutdown-cause/shutdown-causes.pdf).
 
 Here's how the results looks on my machine where I had performed a normal shutdown as a test
 
-![An iTerm2 window showing the results of the command mentioned above. There is one result for a previous shutdown with the cause code of 5. This indicates a normal shutdown.](normal-shutdown.png)
+![An iTerm2 window showing the results of the command mentioned above. There is one result for a previous shutdown with the cause code of 5. This indicates a normal shutdown.](https://cdn.utf9k.net/questions/macos-check-shutdown-cause/normal-shutdown.png)
 
 If we compare the shutdown code to the PDF above, we can see the description is `Correct shut down` which lines up exactly.
 
@@ -31,7 +31,7 @@ Now let's take this information and use it to see what was potentially happening
 
 Here's a screenshot of his terminal window with the same command:
 
-![A macOS Terminal window showing the results of the previous command on a different machine. There are seven results for a cause code of -128. This indicates an abnormal shutdown.](abnormal-shutdown.png)
+![A macOS Terminal window showing the results of the previous command on a different machine. There are seven results for a cause code of -128. This indicates an abnormal shutdown.](https://cdn.utf9k.net/questions/macos-check-shutdown-cause/abnormal-shutdown.png)
 
 Going back to the PDF again, we can see that `-128` is an alias for `-112`. Checking `-112` tells us that it is "Probably memory related" which at least narrows it down.
 
