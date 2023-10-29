@@ -28,7 +28,16 @@
     link: https://openlibrary.org/works/OL17581297W/High_Performance_Browser_Networking
     date_finished: null
     rating: null
-    progress: 36 
+    progress: 56
+  
+  - title: Taxtopia
+    subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
+    author: The Rebel Accountant
+    cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
+    link: https://openlibrary.org/works/OL28024085W/Taxtopia
+    date_finished: null
+    rating: null
+    progress: 18
 
   - title: Wrong Way
     subtitle: How Privatisation & Economic Reform Backfired
@@ -37,7 +46,7 @@
     link: https://openlibrary.org/works/OL29300070W/Wrong_Way
     date_finished: null
     rating: null
-    progress: 22
+    progress: 32
 
   # - title: Unscripted
   #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
