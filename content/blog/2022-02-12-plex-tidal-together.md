@@ -526,7 +526,7 @@ If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
 <center>
   <audio controls>
-    <source src="tool-trio.mp3" type="audio/mpeg">
+    <source src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg">
     Your browser doesn't support the audio tag :(
   </audio>
 </center>
