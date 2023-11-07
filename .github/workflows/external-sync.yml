@@ -1,8 +1,8 @@
 name: External Sync
 on:
-  schedule:
+  # schedule:
     # This is mostly a no-op which is why it runs so often
-    - cron: '*/15 * * * *'
+    # - cron: '*/15 * * * *'
   workflow_dispatch:
 env:
   ANILIST_TOKEN: ${{ secrets.ANILIST_TOKEN }}
