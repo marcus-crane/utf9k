@@ -64,7 +64,6 @@ jobs:
           accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
           pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
           upload: "true"
-          remove: "true"
           purgePullZone: "true"
       - uses: mshick/add-pr-comment@v2
         if: ${{ !env.ACT }}
