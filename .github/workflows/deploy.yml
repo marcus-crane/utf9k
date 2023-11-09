@@ -39,22 +39,10 @@ jobs:
         env:
           NODE_VERSION: ${{ steps.setup-node.outputs.node-version }}
           PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
-      - name: Install yarn
-        run: npm install -g pnpm
       - name: Install Node dependencies
-        run: pnpm install
+        run: bun install
       - name: Build site
-        run: npm run deploy
-      - name: Publish to Cloudflare Pages
-        id: cloudflare-publish
-        if: ${{ !env.ACT }}
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 8e782a355544971b192db9e75d789dca
-          projectName: utf9k
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        run: bun run deploy
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
         with:
