@@ -27,32 +27,7 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r scripts/requirements.txt
       - name: Sync manga from Anilist
-        run: python scripts/sync-manga.py
-      - name: Commit manga changes
-        run: |
-          set -eux
-          if [[ `git status --porcelain` ]]; then
-            git add .
-            git commit -m "Manga changes have been synced from Anilist"
-          fi
-      - name: Sync books from Readwise Reader
-        run: python scripts/sync-reader.py
-      - name: Commit book changes
-        run: |
-          set -eux
-          if [[ `git status --porcelain` ]]; then
-            git add .
-            git commit -m "Reading changes have been synced from Readwise Reader"
-          fi
-      - name: Sync games from HowLongToBeat
-        run: python scripts/sync-games.py
-      - name: Commit game changes
-        run: |
-          set -eux
-          if [[ `git status --porcelain` ]]; then
-            git add .
-            git commit -m "Game changes have been synced from HowLongToBeat"
-          fi
+        run: ./ci/externalsync.sh
       - name: Check for early exit
         run: |
           set -eux
