@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/Base.astro";
 import Nav from "../components/Nav.astro";
 
 // Data files
@@ -9,7 +9,7 @@ import games from "../data/games.yml";
 import manga from "../data/manga.json";
 ---
 
-<Layout title="Welcome to Astro.">
+<BaseLayout title="Welcome to Astro.">
   <article class="full">
     <div id="home-wrapper">
       <div id="welcome-message">
@@ -163,4 +163,4 @@ import manga from "../data/manga.json";
     </div>
   </article>
   <script src="../js/live-player.js"></script>
-</Layout>
+</BaseLayout>

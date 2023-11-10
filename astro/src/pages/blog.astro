@@ -1,13 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from "../layouts/Layout.astro";
-import Posts from '../components/Posts.astro'
+import BaseLayout from "../layouts/Base.astro";
+import Posts from '../components/PostList.astro'
 
 const blogEntries = await getCollection("blog")
-
 ---
 
-<Layout title="Welcome to Astro.">
+<BaseLayout title="Welcome to Astro.">
     <h1>Blog posts</h1>
     <Posts posts={blogEntries} />
-</Layout>
+</BaseLayout>
