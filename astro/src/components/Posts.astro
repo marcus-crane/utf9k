@@ -4,6 +4,6 @@ const { posts } = Astro.props;
 
 <div>
   <ul>
-    {posts.map(p => <li><a href={`/blog/${p.slug}`}>{p.data.title}</a></li>)}
+    {posts.map(p => <li><a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a></li>)}
   </ul>
 </div>

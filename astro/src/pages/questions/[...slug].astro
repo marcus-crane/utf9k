@@ -3,8 +3,8 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(entry => ({
+  const questions = await getCollection('questions');
+  return questions.map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
 }
@@ -15,7 +15,7 @@ const { Content } = await entry.render();
 
 <Layout title={entry.data.title}>
     <h1>{entry.data.title}</h1>
-    <h2>{entry.data.date}</h2>
+    <h2>{entry.data.description}</h2>
     <hr />
     <div>
         <Content />
