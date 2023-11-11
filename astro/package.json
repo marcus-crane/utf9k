@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.2.1",
+    "@astrojs/check": "^0.3.0",
     "astro": "^3.4.0",
     "littlefoot": "^4.0.1",
     "typescript": "^5.2.2"
