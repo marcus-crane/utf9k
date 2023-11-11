@@ -1,15 +1,36 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  posts: CollectionEntry<'blog'>[]
+  posts: CollectionEntry<"blog">[];
 }
 
 const { posts } = Astro.props;
+let seenYears: Set<string> = new Set()
 ---
 
-<div>
-  <ul>
-    {posts.map(p => <li><a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a></li>)}
-  </ul>
-</div>
+<ul>
+  {
+    // TODO: Invent something nicer
+    posts
+      .filter(p => !p.data.draft)
+      .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+      .reverse()
+      .map((p) => {
+        const currentYear = p.data.date.split("-")[0];
+        let header = null;
+        if (!seenYears.has(currentYear)) {
+          header = <h2>{currentYear}</h2>
+          seenYears.add(currentYear)
+        }
+        return (
+          <>
+            {header}
+            <li>
+              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+            </li>
+          </>
+        );
+      })
+  }
+</ul>
