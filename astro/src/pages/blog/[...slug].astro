@@ -14,10 +14,18 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title}>
-    <h1>{entry.data.title}</h1>
-    <h2>{entry.data.date}</h2>
-    <hr />
-    <div>
-        <Content />
+  <article>
+    <header>
+      <h1>{entry.data.title}</h1>
+    </header>
+    <div id="post-body">
+      <Content />
     </div>
+  </article>
 </Layout>
+
+<script>
+  import littlefoot from "littlefoot";
+
+  littlefoot()
+</script>

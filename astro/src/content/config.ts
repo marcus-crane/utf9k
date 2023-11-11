@@ -1,37 +1,43 @@
 import { z, defineCollection } from 'astro:content'
 
+const commonFields = {
+    title: z.string(),
+    description: z.string(),
+    category: z.string(),
+    tags: z.array(z.string())
+}
+
 // TODO: Consider moving schemas out: Using CollectionEntry type makes this a bit redundant at present
 // https://docs.astro.build/en/guides/content-collections/#defining-multiple-collections
 const blog = defineCollection({
     type: 'content',
     schema: z.object({
-        title: z.string(),
         date: z.string(),
-        draft: z.boolean().optional()
+        draft: z.boolean().optional(),
+        ...commonFields,
     })
 });
 
 const projects = defineCollection({
     type: 'content',
     schema: z.object({
-        title: z.string(),
-        date: z.string(),
+        ongoing: z.boolean(),
+        ...commonFields,
     })
 });
 
 const questions = defineCollection({
     type: 'content',
     schema: z.object({
-        title: z.string(),
-        date: z.string(),
+        ...commonFields,
     })
 });
 
 const reviews = defineCollection({
     type: 'content',
     schema: z.object({
-        title: z.string(),
         date: z.string(),
+        ...commonFields,
     })
 });
 
