@@ -4,8 +4,8 @@ slug: "saml-inspect-request"
 description: "In which I remind myself how to dig into a SAML payload"
 category: "questions"
 tags:
-- "authentication"
-- "saml"
+  - "authentication"
+  - "saml"
 ---
 
 Until recently, I never had to go near SAML with a 10 foot pole but I was recently helping out a coworker with adding SAML authentication to an Elasticsearch cluster.
@@ -35,5 +35,3 @@ print(request) // '<?xml version="1.0" encoding="UTF-8"?>\r\n<samlp:AuthnRequest
 If you're feeling a bit lazy, like I often am, you can use any of the online decoders, such as [this one by PingID](https://developer.pingidentity.com/en/tools/saml-decoder.html).
 
 If you're dealing with sensitive credentials however, it's best to decode it locally rather than trusting a third party.
-
-

@@ -5,12 +5,12 @@ description: "A review for Life is Strange"
 slug: "life-is-strange"
 category: "reviews"
 tags:
-- "2015"
-- "pc"
-- "ps3"
-- "ps4"
-- "xbox-360"
-- "xbox-one"
+  - "2015"
+  - "pc"
+  - "ps3"
+  - "ps4"
+  - "xbox-360"
+  - "xbox-one"
 ---
 
 Admittedly, I picked up Life is Strange to experience just how cringeworthy it is. I’d heard a bit of negativity regarding the game and its fans. While the concept of separating the art from the artist is debatable, I think this is a clear case of separating the game from its user base. It’s best experienced without any hype or misconceptions attached.

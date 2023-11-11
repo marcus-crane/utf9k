@@ -5,12 +5,12 @@ description: "Complete system downtime won't stop the sales team from making a b
 slug: "you-can-always-count-on-sales"
 category: "blog"
 tags:
-- "azure"
-- "business"
-- "microsoft"
-- "outages"
-- "reliability"
-- "sales"
+  - "azure"
+  - "business"
+  - "microsoft"
+  - "outages"
+  - "reliability"
+  - "sales"
 ---
 
 For any readers who weren't aware, [Microsoft Azure](https://status.azure.com) suffered from a [major Azure Active Directory outage](https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx) back in March 2021.

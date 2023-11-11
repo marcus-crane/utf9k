@@ -5,14 +5,14 @@ slug: "grand-theft-auto-v"
 category: "reviews"
 description: "This isn't really about GTA V. Just to say that I haven't been playing anything else!"
 tags:
-- "2013"
-- "2014"
-- "2015"
-- "pc"
-- "ps3"
-- "ps4"
-- "xbox-360"
-- "xbox-one"
+  - "2013"
+  - "2014"
+  - "2015"
+  - "pc"
+  - "ps3"
+  - "ps4"
+  - "xbox-360"
+  - "xbox-one"
 ---
 
 Well, sorta.

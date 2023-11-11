@@ -5,10 +5,10 @@ slug: "red-faction-guerilla"
 category: "reviews"
 description: "Oh geez, I’m super biased towards Red Faction: Guerilla! It’s one of my favourite games and I think you should check it out!"
 tags:
-- "2009"
-- "pc"
-- "ps3"
-- "xbox-360"
+  - "2009"
+  - "pc"
+  - "ps3"
+  - "xbox-360"
 ---
 
 Oh geez, I’m **super biased** towards Red Faction: Guerilla! **It’s one of my favourite games** and I think you should check it out toooooo!

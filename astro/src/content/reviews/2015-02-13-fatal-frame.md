@@ -5,10 +5,10 @@ slug: "fatal-frame"
 category: "reviews"
 description: "Developer Tecmo's take on Silent Hill franchise finds you battling ghosts in an abandoned mansion. Silly premise or unnerving title? Well, the second one."
 tags:
-- "2001"
-- "2002"
-- "ps2"
-- "xbox"
+  - "2001"
+  - "2002"
+  - "ps2"
+  - "xbox"
 ---
 
 Oh dear, how survival horror has changed. The later entries in popular survival horror franchises such as Resident Evil, Silent Hill, Dead Space and Alone in the Dark have all slowly started drifting towards more combat oriented gameplay. We’ve started to see a bit of an attempt at beating the genre back into shape with titles like Slender and Amnesia but I don’t think purely removing all combat is quite the right formula either. Enter Fatal Frame, developer Tecmo’s take on Silent Hill, when survival horror considered what your character couldn’t see to be just as important, if not more, than what you could see.

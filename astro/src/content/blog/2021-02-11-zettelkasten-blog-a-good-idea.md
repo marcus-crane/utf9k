@@ -5,16 +5,16 @@ description: "I mean, it's what it says on the tin!"
 slug: "zettelkasten-blog-a-good-idea"
 category: "blog"
 tags:
-- "zettelkasten"
-- "blogging"
-- "meta"
+  - "zettelkasten"
+  - "blogging"
+  - "meta"
 aliases:
-- "/blog/zettlekasten-blog-a-good-idea/"
+  - "/blog/zettlekasten-blog-a-good-idea/"
 ---
 
 Having recently gotten back into the swing of reading via [RSS](https://en.wikipedia.org/wiki/RSS), I spotted a post from [Mike Crittenden](https://critter.blog) called [Blogging as a Zettelkasten](https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/).
 
-It touches on the idea that a blog can act as a [zettelkasten](https://zettelkasten.de/introduction/). For the unfamiliar, a zettelkasten is nothing more than a big collection of notes. While you might imagine reams of snippets dumped into a tool like [Apple Notes](https://en.wikipedia.org/wiki/Notes_(Apple)), the difference is that each note (or "zettel") is generously interlinked with other notes so as to form a "web of knowledge" or a "second brain". Each note should address one standalone idea such as "English is an unproductive language" rather than a more generic "Notes on languages".[^not-succinct]
+It touches on the idea that a blog can act as a [zettelkasten](https://zettelkasten.de/introduction/). For the unfamiliar, a zettelkasten is nothing more than a big collection of notes. While you might imagine reams of snippets dumped into a tool like [Apple Notes](<https://en.wikipedia.org/wiki/Notes_(Apple)>), the difference is that each note (or "zettel") is generously interlinked with other notes so as to form a "web of knowledge" or a "second brain". Each note should address one standalone idea such as "English is an unproductive language" rather than a more generic "Notes on languages".[^not-succinct]
 
 The very blog post [I just linked](https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/) is a good example of what a zettelkasten note would look like. There are a number of hyperlinks scattered about and rather than reiterate previous ideas, you can just link to prior knowledge that has been expanded in detail elsewhere, should the reader choose to follow.[^internet] As time goes on, themes start to appear, not unlike one of those crazy pinboards you see detectives use.
 
@@ -50,7 +50,7 @@ I also remember Roam Research used to suffer from some site troubles back in the
 
 Part of me has come to associate "zettelkasten" with the whole "Productivity Porn" movement. The idea is nice but the wider fanbase often gives me pause. To be clear though, I think a lot of that ecosystem floats around YouTube and Reddit rather than say, the [home](https://github.com/org-roam/org-roam) of [Jethro Kuan](https://jethro.dev)'s [elisp](https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html#Introduction) [child](https://www.orgroam.com).
 
-Also, who the hell is [Tiago Forte](https://fortelabs.co/)? He's like a bargain bin Elon Musk who just appeared out of thin air one day and no one seems to know why. Why are people paying this man [$5000](https://web.archive.org/web/20210101170747/https://www.buildingasecondbrain.com/) to go *right click* ➡ "New text file"? I don't understand.
+Also, who the hell is [Tiago Forte](https://fortelabs.co/)? He's like a bargain bin Elon Musk who just appeared out of thin air one day and no one seems to know why. Why are people paying this man [$5000](https://web.archive.org/web/20210101170747/https://www.buildingasecondbrain.com/) to go _right click_ ➡ "New text file"? I don't understand.
 
 Anyway, in that vein, blogging feels like a zettelkasten hidden in plain sight. It carries all of the benefits of one without having to think about the wider ecosystem and that sounds pretty comforting.
 
@@ -58,20 +58,22 @@ Having convinced myself that reducing the scope of each blog post is probably a 
 
 I haven't even done anything yet and so far, it seems pretty promising!
 
-[^not-succinct]: Can I just take a second to say that it feels massively ironic that most of the literature around zettelkasten topics are so dense to the point of giving me a brain aneurysm. 
-<span></span>
-Like, just go back and have a look at that [earlier link for zettelkasten](https://zettelkasten.de/introduction/). What the hell is that?! That's a thesis, not an introduction!
-<span></span>
-It's almost as bad as that [New York Times recipe](https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars) that starts off by referencing 9/11.
+[^not-succinct]:
+    Can I just take a second to say that it feels massively ironic that most of the literature around zettelkasten topics are so dense to the point of giving me a brain aneurysm.
+    <span></span>
+    Like, just go back and have a look at that [earlier link for zettelkasten](https://zettelkasten.de/introduction/). What the hell is that?! That's a thesis, not an introduction!
+    <span></span>
+    It's almost as bad as that [New York Times recipe](https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars) that starts off by referencing 9/11.
 
 [^internet]: Wait a minute, the internet is basically just one big zettelkasten?!
+[^gatsby]:
+    I've recently been stuck in a dilemma with [Gatsby](https://gatsbyjs.com) between "Oooh, looks shiny" and "This is going to erode in like 2 years, isn't it".
+    <span></span>
+    It does actually have some nice functionality but whether it's worth the risk is an important question, not to mention the insanity that is `node_modules`.
 
-[^gatsby]: I've recently been stuck in a dilemma with [Gatsby](https://gatsbyjs.com) between "Oooh, looks shiny" and "This is going to erode in like 2 years, isn't it".
-<span></span>
-It does actually have some nice functionality but whether it's worth the risk is an important question, not to mention the insanity that is `node_modules`.
-
-[^funding]: While that might seem like an overly negative view, and congratulations to any business that survives the pitch meeting/incubator gauntlet, I can't help but believe it never ends well as you get deeper and deeper into funding, and the later investors also want their 40,000% return.
-<span></span>
-Slowly, the crushing expectations of higher profits cause you to reduce the feature set and raise the price or maybe you'll manage to IPO and jump ship with a nice bag of cash before the whole thing starts slowly sinking into the ocean.
-<span></span>
-The foundations feel unstable right from the second you sign the agreement."
+[^funding]:
+    While that might seem like an overly negative view, and congratulations to any business that survives the pitch meeting/incubator gauntlet, I can't help but believe it never ends well as you get deeper and deeper into funding, and the later investors also want their 40,000% return.
+    <span></span>
+    Slowly, the crushing expectations of higher profits cause you to reduce the feature set and raise the price or maybe you'll manage to IPO and jump ship with a nice bag of cash before the whole thing starts slowly sinking into the ocean.
+    <span></span>
+    The foundations feel unstable right from the second you sign the agreement."

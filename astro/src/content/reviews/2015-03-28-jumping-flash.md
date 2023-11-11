@@ -5,9 +5,9 @@ slug: "jumping-flash"
 category: "reviews"
 description: "Robbit, the Super De-Pester is probably one of the oddest choices for protagonist I've played so far."
 tags:
-- "1995"
-- "ps1"
-- "psn"
+  - "1995"
+  - "ps1"
+  - "psn"
 ---
 
 You’ve heard of Jumpman (Mario) and Rockman (Megaman) and now its time to get ready for Spring Man, the newest addition to the generic name trio. No, I’m not talking about the Mega Man 7 boss, I’m talking about Robbit, the robotic rabbit, star of the Playstation 1 tech demo, Jumping Flash!.

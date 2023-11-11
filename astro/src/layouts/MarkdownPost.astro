@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Base.astro';
+
+interface Props {
+	title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+    <article>
+      <header>
+        <h1>{title}</h1>
+      </header>
+      <div id="post-body">
+        <slot />
+      </div>
+    </article>
+  </Layout>

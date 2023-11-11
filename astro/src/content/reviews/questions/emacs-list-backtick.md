@@ -4,8 +4,8 @@ slug: "emacs-list-backtick"
 description: "In which I squint harder at elisp gibberish"
 category: "questions"
 tags:
-- "elisp"
-- "emacs"
+  - "elisp"
+  - "emacs"
 ---
 
 Lists that start with a `` ` `` end up having values interpolated.

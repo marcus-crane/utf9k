@@ -5,9 +5,9 @@ slug: "wiki-thoughts"
 category: "blog"
 description: "I ran a Wiki for a little while and here's what I learned"
 tags:
-- "community"
-- "leadership"
-- "wiki"
+  - "community"
+  - "leadership"
+  - "wiki"
 ---
 
 Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.

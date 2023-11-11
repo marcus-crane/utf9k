@@ -4,10 +4,10 @@ slug: "macos-monitor-jamf-downloads"
 description: "In which I remind myself how to inspect JAMF progress"
 category: "questions"
 tags:
-- "enterprise"
-- "jamf"
-- "macos"
-- "software"
+  - "enterprise"
+  - "jamf"
+  - "macos"
+  - "software"
 ---
 
 For large downloads, such as macOS updates, it can be annoying that tools like Self Service don't surface download metrics

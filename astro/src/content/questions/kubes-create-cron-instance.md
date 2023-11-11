@@ -4,8 +4,8 @@ slug: "kubes-create-cron-instance"
 description: "In which I remind myself how to trigger a Kubernetes cronjob on demand"
 category: "questions"
 tags:
-- "cronjob"
-- "kubernetes"
+  - "cronjob"
+  - "kubernetes"
 ---
 
 If you're trying to test out a job, and don't want to wait for however long, you can manually create a job instance.

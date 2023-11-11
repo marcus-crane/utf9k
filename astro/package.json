@@ -12,9 +12,11 @@
   "dependencies": {
     "@astrojs/check": "^0.2.1",
     "astro": "^3.4.0",
+    "littlefoot": "^4.0.1",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@rollup/plugin-yaml": "^4.1.2"
+    "@rollup/plugin-yaml": "^4.1.2",
+    "dayjs": "^1.11.10"
   }
 }

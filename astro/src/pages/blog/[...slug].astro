@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Base.astro';
+import MarkdownPost from '../../layouts/MarkdownPost.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -13,16 +13,9 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
-  <article>
-    <header>
-      <h1>{entry.data.title}</h1>
-    </header>
-    <div id="post-body">
-      <Content />
-    </div>
-  </article>
-</Layout>
+<MarkdownPost title={entry.data.title}>
+  <Content />
+</MarkdownPost>
 
 <script>
   import littlefoot from "littlefoot";

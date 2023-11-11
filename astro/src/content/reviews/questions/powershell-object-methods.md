@@ -4,7 +4,7 @@ slug: "powershell-object-methods"
 description: "In which I remind myself how to introspect objects in Powershell"
 category: "questions"
 tags:
-- "powershell"
+  - "powershell"
 ---
 
 Let's say that you have a variable that contains a string:

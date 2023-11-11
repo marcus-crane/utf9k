@@ -5,10 +5,10 @@ slug: "netbox-plugin-azuread"
 ongoing: false
 description: "A now-archived plugin that added Azure Active Directory authentication to Netbox"
 tags:
-- "archived"
-- "netbox"
-- "projects"
-- "python"
+  - "archived"
+  - "netbox"
+  - "projects"
+  - "python"
 ---
 
 A Python plugin for the [IPAM](https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top) tool [Netbox](https://github.com/netbox-community/netbox), `netbox-plugin-azuread` adds support for OAuth authentication with [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/).

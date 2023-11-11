@@ -5,8 +5,8 @@ description: "Not sure how to structure a config file? Try answering questions r
 slug: "faq-driven-configuration"
 category: "blog"
 tags:
-- "configuration"
-- "documentation"
+  - "configuration"
+  - "documentation"
 ---
 
 I'm sure this idea isn't new in the slightest but a handy trick I've been using is to define configuration as a series of questions, not unlike a FAQ.
@@ -150,7 +150,7 @@ It's too easy to let the flag for "Following symlinks" live in the same section 
 
 The beauty of this method is there's no thinking at all. You often quickly realise whether something is bleeding outside of the scope of the configuration and so perhaps it's time to pose a new question.
 
-That and it's just less mentally taxing to read in my opinion. With a nicely formed, FAQ style configuration file, 
+That and it's just less mentally taxing to read in my opinion. With a nicely formed, FAQ style configuration file,
 
 ## Is this strictly scoped to literate configuration?
 

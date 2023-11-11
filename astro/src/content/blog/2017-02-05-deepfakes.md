@@ -5,9 +5,9 @@ slug: "deepfakes"
 category: "blog"
 description: "An exploration of Deepfakes written up when the original subreddit (and creator) was still online"
 tags:
-- "deepfakes"
-- "future"
-- "technology"
+  - "deepfakes"
+  - "future"
+  - "technology"
 ---
 
 {{% notice title="💿 This post has been remastered slightly due to its age." %}}
@@ -36,7 +36,7 @@ Given my feelings on the matter, which can be summed up as "Oh fuck", this is my
 
 ## What is machine learning?
 
-While the term "machine learning" might invoke visions of [Skynet](https://en.wikipedia.org/wiki/Skynet_(Terminator)), it's worth noting that said machines aren't truly conscious like us humans. You'd think the ability to be self-aware and/or concious would be essential to learning, right? At its simplest, learning requires little more than a series of inputs (sound, sight, touch) which we then process in order to produce an output. When you first meet someone, you may forget their face but over time, you learn to recognise them as memories form. As time progresses, you can also identify them in different contexts such as an office, an airport or at a beach. In a rough sense, you've trained your brain to subconsciously identify their facial features so that it can recall which memories they've appeared in before.
+While the term "machine learning" might invoke visions of [Skynet](<https://en.wikipedia.org/wiki/Skynet_(Terminator)>), it's worth noting that said machines aren't truly conscious like us humans. You'd think the ability to be self-aware and/or concious would be essential to learning, right? At its simplest, learning requires little more than a series of inputs (sound, sight, touch) which we then process in order to produce an output. When you first meet someone, you may forget their face but over time, you learn to recognise them as memories form. As time progresses, you can also identify them in different contexts such as an office, an airport or at a beach. In a rough sense, you've trained your brain to subconsciously identify their facial features so that it can recall which memories they've appeared in before.
 
 Another crucial part of learning is the ability to weigh up how confident we are in our judgements. If we aren't confident enough in a decision, we'll opt either to do nothing or pursue an alternative choice. For instance, each time you meet a friend, your brain is thinking "Ah, I'm 99% sure that's my friend Sarah". On the flipside, I'm short sighted but silly enough to not wear my glasses. Because of that, I might recognise the general facial features of someone across the street but without moving closer, I don't have enough visual information to be sure. My own brain is thinking "I'm only 40% confident that's Pat" and decides to not call it a definite match.
 
@@ -92,12 +92,11 @@ While it's easy to think one man has started this all, he does [have a point](ht
 
 This post has already gone on long enough so here's a few proof of concepts off the top of my head that give an indication of where we're headed
 
-*   [Face2Face](https://youtu.be/ohmajJTcpNk?t=160)
+- [Face2Face](https://youtu.be/ohmajJTcpNk?t=160)
 
-*   [Disney's FaceDirector](https://youtu.be/o-nJpaCXL0k?t=212)
+- [Disney's FaceDirector](https://youtu.be/o-nJpaCXL0k?t=212)
 
-*   [Adobe VoCo](https://youtu.be/I3l4XLZ59iw?t=199)
-    
-*   [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
+- [Adobe VoCo](https://youtu.be/I3l4XLZ59iw?t=199)
+- [Synthesizing Obama: Learning Lip Sync from Audio](https://youtu.be/9Yq67CjDqvw?t=107)
 
 [^deadlink]: This link has been dead since the /r/deepfakes subreddit was banned and no backup could be found using the Internet Archive's Wayback Machine. Rather than remove it, I've decided to preserve this URL in the event that an archive ever reappears.

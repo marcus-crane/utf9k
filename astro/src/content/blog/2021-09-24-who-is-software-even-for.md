@@ -5,9 +5,9 @@ slug: "who-is-software-even-for"
 description: "Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!"
 category: "blog"
 tags:
-- "existential"
-- "productivity"
-- "software"
+  - "existential"
+  - "productivity"
+  - "software"
 ---
 
 This post is very much written spur of the moment, presumably with the idea that it will help contribute to treating my blog as a [zettlekasten](/blog/zettelkasten-blog-a-good-idea/) of ideas to think more about in future.

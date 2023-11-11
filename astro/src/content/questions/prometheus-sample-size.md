@@ -4,9 +4,9 @@ slug: "prometheus-sample-size"
 description: "In which I remind myself how to do napkin math for Prometheus"
 category: "questions"
 tags:
-- "monitoring"
-- "prometheus"
-- "timeseries"
+  - "monitoring"
+  - "prometheus"
+  - "timeseries"
 ---
 
 According to the [Storage](https://prometheus.io/docs/prometheus/latest/storage/#operational-aspects) part of the Prometheus documentation, a single sample is somewhere between 1 - 2 bytes.

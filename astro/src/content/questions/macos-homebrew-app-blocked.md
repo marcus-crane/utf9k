@@ -4,9 +4,9 @@ slug: "macos-homebrew-app-blocked"
 description: "In which I remind myself how to remove the quarantine flag"
 category: "questions"
 tags:
-- "gatekeeper"
-- "homebrew"
-- "macos"
+  - "gatekeeper"
+  - "homebrew"
+  - "macos"
 ---
 
 This issue is particularly annoying and I only just discovered it today for the first time.

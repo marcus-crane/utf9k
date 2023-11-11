@@ -4,10 +4,10 @@ slug: "kubes-namespace-connectivity"
 description: "In which I remind myself how to quickly test network connectivity within a Kubernetes namespace"
 category: "questions"
 tags:
-- "curl"
-- "debugging"
-- "kubernetes"
-- "networking"
+  - "curl"
+  - "debugging"
+  - "kubernetes"
+  - "networking"
 ---
 
 Often times, you might want to test connectivity to a container but without doing so from within the container itself. You could just into a neighbouring pod but it may not have networking tools (ie tools) or even potentially network connectively if there's a [network policy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) in the mix.
@@ -23,7 +23,7 @@ If you don't see a command prompt, try pressing enter.
 I think the output looks something like that but this is a bit more involved as my work makes use of [policies](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes) in our cluster.
 
 Now normally I just keep a file called `curl-debug.yml` sitting around my hard drive and deploy it using `kubectl apply -f curl-debug.yml`
- but you can also deploy it inline using a hideously log container override.
+but you can also deploy it inline using a hideously log container override.
 
 You may need more (or less) override fields depending on eg; if your network policy only allows pods with certain annotations or metadata to connect to what you're testing.
 
@@ -51,13 +51,13 @@ spec:
     seccompProfile:
       type: RuntimeDefault
   containers:
-  - name: "curl"
-    image: "radial/busyboxplus:curl"
-    command: [ "/bin/sh", "-c", "--" ]
-    args: [ "while true; do sleep 30; done;" ]
-    securityContext:
-      runAsNonRoot: true
-      allowPrivilegeEscalation: false
+    - name: "curl"
+      image: "radial/busyboxplus:curl"
+      command: ["/bin/sh", "-c", "--"]
+      args: ["while true; do sleep 30; done;"]
+      securityContext:
+        runAsNonRoot: true
+        allowPrivilegeEscalation: false
 ```
 
 Ah right, the actual point of the question. Once you have curl running, and you're inside the container, you can then use `curl` to test out the connectivity of things.

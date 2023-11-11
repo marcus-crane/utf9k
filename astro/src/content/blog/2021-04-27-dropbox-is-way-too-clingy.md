@@ -5,12 +5,12 @@ slug: "dropbox-is-way-too-clingy"
 description: "A post in which I post about how involved the Dropbox cancellation process is."
 category: "blog"
 tags:
-- "apps"
-- "cancellation"
-- "deletion"
-- "dropbox"
-- "hell"
-- "software"
+  - "apps"
+  - "cancellation"
+  - "deletion"
+  - "dropbox"
+  - "hell"
+  - "software"
 ---
 
 As much as [Dropbox](https://www.dropbox.com) is great on a technical level, the user experience keeps degrading all the time.
@@ -108,7 +108,5 @@ Anyway, there's only one thing I have to say to Dropbox after all this:
 {{<youtube id="HhnUK1YmMEU" >}}
 
 [^1]: Apparently not as I later found out.
-
 [^2]: By which I mean, just now.
-
 [^3]: Once on the password field, a second on a popup to autofill from my password manager, a third to open the "Reasons for leaving" dropdown, a fourth to select a reason, a fifth to start entering "More details" and the sixth is when I hit "Permanently delete"

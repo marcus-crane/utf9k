@@ -4,10 +4,10 @@ slug: "http-domain-splits"
 description: "In which I capture a bit of history around domain splits"
 category: "questions"
 tags:
-- "cookies"
-- "headers"
-- "historical"
-- "http"
+  - "cookies"
+  - "headers"
+  - "historical"
+  - "http"
 ---
 
 It was common to have images on a subdomain and the bulk of the site at the root of a domain such as `nytimes.com` and `img.nytimes.com`

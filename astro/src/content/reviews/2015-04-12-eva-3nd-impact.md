@@ -5,8 +5,8 @@ description: "A review for a pretty fun Evangelion rhythm game"
 slug: "eva-3nd-impact"
 category: "reviews"
 tags:
-- "2011"
-- "psp"
+  - "2011"
+  - "psp"
 ---
 
 I’m not a huge rhythm game player. I’ve played the odd bit of Osu! and Guitar Hero but obviously, the most important thing is soundtrack. I could try getting into Stepmania but drowning in a sea of nightcore anime remixes isn’t exactly my idea of fun. Despite having just said that, I do love me some Evangelion so I couldn’t resist when I learnt that Japan had received a music game adapted from the ongoing Rebuild of Evangelion project. Who would dare mix rhythm and Eva? Someone equally known for “crazy” titles, Goichi ‘Suda51’ Suda so this, I had to see.
@@ -38,4 +38,4 @@ Publishers: CyberFront and Bandai Namco Games \
 Released in 2011 \
 Platform: Playstation Portable
 
-*On a side note, please ignore any mistakes or “boring bits” that might have popped up in this weeks post. Due to a busy week, I ended up spending most of my time either at work or sleeping. Things should be back to normal next week though*
+_On a side note, please ignore any mistakes or “boring bits” that might have popped up in this weeks post. Due to a busy week, I ended up spending most of my time either at work or sleeping. Things should be back to normal next week though_

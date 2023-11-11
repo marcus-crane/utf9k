@@ -5,9 +5,9 @@ description: "Looking back on the idea of a quantified self"
 slug: "mental-overhead-of-data"
 category: "blog"
 tags:
-- "data"
-- "overhead"
-- "off-the-cuff"
+  - "data"
+  - "overhead"
+  - "off-the-cuff"
 ---
 
 This isn't a post that I've outlined before hand, or even really considered in any particular depth. I'm just making up this post, and it's structure as I type.

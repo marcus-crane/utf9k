@@ -4,9 +4,9 @@ slug: "macos-check-shutdown-cause"
 description: "In which I try to figure out why my coworkers Macbook crashed"
 category: "questions"
 tags:
-- "crashes"
-- "logging"
-- "macos"
+  - "crashes"
+  - "logging"
+  - "macos"
 ---
 
 This is arguably one of the more obscure commands I've come across. At the time, a coworker of mine was having issues where his laptop would restart seemingly at random.

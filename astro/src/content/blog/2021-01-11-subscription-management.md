@@ -5,11 +5,11 @@ description: "In which I save myself from financial hell by putting subscription
 slug: "subscription-management"
 category: "blog"
 tags:
-- "finance"
-- "budgets"
-- "subscriptions"
-- "money"
-- "tip"
+  - "finance"
+  - "budgets"
+  - "subscriptions"
+  - "money"
+  - "tip"
 ---
 
 The title says it all really but I'll go into detail a little more.

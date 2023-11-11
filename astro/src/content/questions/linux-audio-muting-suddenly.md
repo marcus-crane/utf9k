@@ -4,10 +4,10 @@ slug: "linux-audio-muting-suddenly"
 description: "In which I investigate multiple audio streams clashing with each other"
 category: "questions"
 tags:
-- "audio"
-- "bugs"
-- "linux"
-- "spotify"
+  - "audio"
+  - "bugs"
+  - "linux"
+  - "spotify"
 ---
 
 I recently ran into this issue when switching my distro to [Manjaro](https://manjaro.org).

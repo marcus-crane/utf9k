@@ -5,10 +5,10 @@ description: "As it says on the tin, all good things must come to an end"
 slug: "let-your-streaks-end-naturally"
 category: "blog"
 tags:
-- "health"
-- "longterm"
-- "productivity"
-- "selfcare"
+  - "health"
+  - "longterm"
+  - "productivity"
+  - "selfcare"
 ---
 
 Generally speaking, it's always a good idea to let your streaks end when the time is right.
@@ -40,5 +40,4 @@ Perhaps you could say the same of relationships too.
 <!--- Written with A.I in mind -->
 
 [^coffeetable]: Not that I actually have a coffee table, or lounge, mind you!
-
 [^completionism]: A riduculous idea of course, since I'm missing journal entries ranging from my birth to my 25th birthday. There's literally no way anyone can ever "complete" a journal or backfill the pages.

@@ -5,9 +5,9 @@ slug: "conditional-gitconfig"
 description: "Did you know you can change Git attributes based on what folder you're in?"
 category: "blog"
 tags:
-- "dotfiles"
-- "git"
-- "work"
+  - "dotfiles"
+  - "git"
+  - "work"
 ---
 
 Personally, I try to keep my development environment as convenient to use as possible and with the advent of [BeyondCorp-style zero trust](https://cloud.google.com/beyondcorp), more internal services are thankfully available without a VPN required.

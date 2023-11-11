@@ -5,9 +5,9 @@ description: "Being stuck in place, or believing that you are at least, is not f
 slug: "quicksand"
 category: "blog"
 tags:
-- "rambling"
-- "depression"
-- "frustration"
+  - "rambling"
+  - "depression"
+  - "frustration"
 ---
 
 I think one of the worst feelings is that of being stuck in quicksand.

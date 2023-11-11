@@ -5,9 +5,9 @@ slug: "arch-nuc-install"
 category: "blog"
 description: "My self help guide to installing Arch"
 tags:
-- "arch"
-- "guide"
-- "linux"
+  - "arch"
+  - "guide"
+  - "linux"
 ---
 
 {{% notice title="⚰️ Is this up to date?" %}}
@@ -47,7 +47,7 @@ You may see a few. In my case, my hard drive has a few `/dev/sda<number>` entrie
 My hard drive will end up looking as follows once I've set it up:
 
 | SIZE | PURPOSE        | LOCATION |
-|------|----------------|----------|
+| ---- | -------------- | -------- |
 | 500M | Boot Sector    | /boot    |
 | 20G  | System Root    | /        |
 | 8G   | Swap Space     | N/A      |
@@ -58,7 +58,7 @@ I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware
 The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde (\~) indicate resources where you can read further information if you're the curious sort.
 
 {{% notice emoji="⚠️" title="Consider yourself warned" %}}
-The following *WILL* wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
+The following _WILL_ wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
 {{% /notice %}}
 
 ## Partitioning
@@ -99,7 +99,7 @@ quit
 Now that are partitions are set up, running `fdisk -l` again should show the following:
 
 | DEVICE    | FORMAT | LOCATION |
-|-----------|--------|----------|
+| --------- | ------ | -------- |
 | /dev/sda1 | ESP    | /boot    |
 | /dev/sda2 | ext4   | /        |
 | /dev/sda4 | ext4   | /home    |
@@ -135,7 +135,7 @@ Now that our hard drive is completely set up, we're ready to mount our file syst
 Just as a reminder, here's where we want our partitions to end up
 
 | DEVICE    | FORMAT | LOCATION |
-|-----------|--------|----------|
+| --------- | ------ | -------- |
 | /dev/sda1 | ESP    | /boot    |
 | /dev/sda2 | ext4   | /        |
 | /dev/sda4 | ext4   | /home    |
@@ -211,11 +211,11 @@ I also need some extra bits and pieces for later at this point. We couldn't have
 
 I need the following bits:
 
-| PACKAGE        | PURPOSE                                           |
-|----------------|---------------------------------------------------|
-| [dialog](http://invisible-island.net/dialog/)         | A library for console-based UIs like `wifi-menu`    |
-| [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data)    | Micro-code updates for Intel CPUs                 |
-| [wpa_supplicant](https://w1.fi/wpa_supplicant/) | Used to connect to wireless networks (put simply) |
+| PACKAGE                                                                       | PURPOSE                                           |
+| ----------------------------------------------------------------------------- | ------------------------------------------------- |
+| [dialog](http://invisible-island.net/dialog/)                                 | A library for console-based UIs like `wifi-menu`  |
+| [intel-ucode](https://downloadcenter.intel.com/search?keyword=microcode+data) | Micro-code updates for Intel CPUs                 |
+| [wpa_supplicant](https://w1.fi/wpa_supplicant/)                               | Used to connect to wireless networks (put simply) |
 
 That should be everything for now. The other bits (`netctl` and `dhcpcd`) were already installed as part of the `base` group from earlier. If you're using Ethernet, you can basically skip this entire step hence why it's marked as optional.
 

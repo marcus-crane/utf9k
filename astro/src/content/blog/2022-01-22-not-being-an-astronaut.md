@@ -5,10 +5,10 @@ slug: "not-being-an-astronaut"
 description: "Some thoughts on what career I thought I might like as a kid"
 category: "blog"
 tags:
-- "career"
-- "childhood"
-- "dreams"
-- "work"
+  - "career"
+  - "childhood"
+  - "dreams"
+  - "work"
 ---
 
 For those who read my blog, you'll know that one of the long running arcs is documenting my thoughts as I enter each new job.
@@ -31,18 +31,13 @@ While I can't claim that it does or doesn't have any effect, I also like to thin
 
 Now if I still took the "skateboarding CEO" idea literally, I would be (and was!) quite disappointed because it would be years and years until I accomplish it but by looking at it from a different angle, I realised that I already kinda made it there. At a smaller scale to be sure, but once you come to terms with the idea that bigger isn't always better, it can be pretty comforting to have smaller, more achievable ambitions.
 
-Anyway, that's probably enough of that for now. I've only really mentioned the above to one person I can think of but I figure it'd be handy to write it out so [I can refer to it again in future](/blog/zettelkasten-blog-a-good-idea/). 
+Anyway, that's probably enough of that for now. I've only really mentioned the above to one person I can think of but I figure it'd be handy to write it out so [I can refer to it again in future](/blog/zettelkasten-blog-a-good-idea/).
 
 Perhaps it'll change over time and I'll believe in the idea of being a 20xer instead but either way, being able to review your trajectory through writing is a pretty neat idea and while I can't really enjoy it so much, I hope someone down the line can enjoy seeing my years of progress condensed into a handful of posts and possibly get some use out of it.
 
 [^1]: A bit of a misnomer on my part since I never went to university. Instead I went near insane from 3 years of retail before attending [Enspiral Dev Academy](https://devacademy.co.nz) as a last ditch effort before giving up. That was complimented by years of being a hobbyist prior and a couple more years of doing side projects and being rejected from jobs before I finally got my entrance into the industry.
-
 [^2]: Technically I work for [Lightspeed](https://www.lightspeedhq.com) but I work on Vend. The product is referred to as Vend by Lightspeed but eventually we'll just be part of Lightspeed. I don't know for a fact that has been explicitly mentioned but it's hardly a secret if you look at the trajectory on the public website.
-
 [^3]: I was actually rejected from a university computer science course for not having enough math credits. Probably because I found Statistics boring and would skip class to go fiddle with HTML in the school library instead. Nowadays I have my rejection letter (aka "diploma") framed on my desk at work.
-
 [^4]: Large companies, especially anything VC funded, are overrated. Keeping it manageable with little to no debt is where it's at if you ask me. Being propped up by large amounts of outside funding and becoming "planet scale" is just asking for a slow death in my book. Even worse is the idea of just bailing out at the IPO stage and leaving all of your employees holding the bag with a company that gets put into maintenance mode.
-
 [^5]: Which I myself held in the past to a solid extent!
-
 [^6]: To date, I've gotten two emails of thanks which is two more than I ever expected to get from this website. I also expect that [old posts may get dug up in future](/blog/publish-old-works/) without my knowledge at all which I look forward to. If not, that's perfectly fine because with my goldfish memory, I can enjoy my old posts. I once re-read [deepfakes](/blog/deepfakes) and thought "Damn, I never knew any of this.". Of course, I did know it at some point but entirely forgot it all...

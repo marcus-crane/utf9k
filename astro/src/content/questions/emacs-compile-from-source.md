@@ -4,7 +4,7 @@ slug: "emacs-compile-from-source"
 description: "In which I recall how to compile an operating system of a text editor"
 category: "questions"
 tags:
-- "emacs"
+  - "emacs"
 ---
 
 The following should roughly do it. Your mileage may vary!

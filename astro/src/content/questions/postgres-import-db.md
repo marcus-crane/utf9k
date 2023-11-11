@@ -4,8 +4,8 @@ slug: "postgres-import-db"
 description: "In which I remind myself how to import a Postgres database"
 category: "questions"
 tags:
-- "databases"
-- "postgres"
+  - "databases"
+  - "postgres"
 ---
 
 Using `pg_restore`, it's almost the same process as `pg_dump` but in reverse

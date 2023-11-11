@@ -5,11 +5,11 @@ description: "A step by step walkthrough on how I cleaned up some data as part o
 slug: "tidying-towing-data"
 category: "blog"
 tags:
-- "python"
-- "pandas"
-- "cleaning"
-- "oia"
-- "data"
+  - "python"
+  - "pandas"
+  - "cleaning"
+  - "oia"
+  - "data"
 ---
 
 {{% notice title="I am not a lawyer! Oh, I meant to say data scientist" %}}
@@ -44,7 +44,7 @@ First, we need to see what we've actually got to work with and then we can parse
 > ls
 Marcus Aug 2016 Jul 2019.xlsx
 > mv Marcus\ Aug\ 2016\ Jul\ 2019.xlsx towing.xlsx
-> head -n 1 towing.xlsx 
+> head -n 1 towing.xlsx
 P!??@?6??[Content_Types].xml ??(??YMo?@?W???Z?eM?&?C??m??R??+??YR??]/?Q"?)s?w?{??ߌ???F7?xT?̘??,S?J?????1:gi*?X3?d????7[???g??}?????:0???z-C????r%????????0aZ
                                                                            6?~??\7!???_??*ò??u-ՌI?U???;S=!??B?P?r?#t?΃??ɝW??_10d? ????????$
                                                            k??C
@@ -72,7 +72,7 @@ Time to import our Excel spreadsheet into a Pandas dataframe but there's a bit o
 
 ```python
 > python
-Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
+Python 3.8.0 (default, Dec  1 2019, 12:43:25)
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import pandas as pd
@@ -87,7 +87,7 @@ We still need to parse each sheet, one by one, in order to get a complete collec
 
 ```python
 > python
-Python 3.8.0 (default, Dec  1 2019, 12:43:25) 
+Python 3.8.0 (default, Dec  1 2019, 12:43:25)
 [Clang 10.0.1 (clang-1001.0.46.4)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import pandas as pd
@@ -96,7 +96,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> for sheet_name in workbook.sheet_names:
 ...     sheet = workbook.parse(sheet_name=sheet_name)
 ...     df = df.append(sheet, sort=False)
-... 
+...
 >>> df
      Unnamed: 0        Date and Time   ... Unnamed: 9 Unnamed: 10
 0           NaN                   NaN  ...        NaN         NaN
@@ -262,16 +262,16 @@ If the word `day` is in a column (as it would be in every heading), we can use t
 
 Here's a visual example of what I mean:
 
-| Before                             | After                                                 |
-| ---------------------- | -------------------------------- |
-| Monday, 01 Aug 2016  | Monday, 01 Aug 2016                   |
-| NaN                                 | NaN                                                  |
-| 8:34 a.m.                        | Monday, 01 Aug 2016 8:34 a.m. |
-| NaN                                 | NaN                                                   |
-| Tuesday, 23 Jul 2019   | Tuesday, 23 Jul 2019                     |
-| NaN                                 | NaN                                                   |
-| 4:00 a.m.                        | Tuesday, 23 Jul 2019 4:00 a.m.  |
-| 9:42 p.m.                        | Tuesday 23 Jul 2019 9:42 p.m.  |
+| Before               | After                          |
+| -------------------- | ------------------------------ |
+| Monday, 01 Aug 2016  | Monday, 01 Aug 2016            |
+| NaN                  | NaN                            |
+| 8:34 a.m.            | Monday, 01 Aug 2016 8:34 a.m.  |
+| NaN                  | NaN                            |
+| Tuesday, 23 Jul 2019 | Tuesday, 23 Jul 2019           |
+| NaN                  | NaN                            |
+| 4:00 a.m.            | Tuesday, 23 Jul 2019 4:00 a.m. |
+| 9:42 p.m.            | Tuesday 23 Jul 2019 9:42 p.m.  |
 
 The goal here isn't to get super accurate timestamps just yet, but rather something good enough that is consistent and therefore parsable. The rest of the mess, such as those `NaN` are trivial to get rid of later.
 
@@ -396,7 +396,7 @@ Given that a human is entering this data, I highly doubt any of our timestamps c
 >>> df = df.set_index('Date')
 >>> df
                               Vehicle          Origin            Destination   Suburb
-Date                                                                                 
+Date
 2016-08-01 08:34:00   TOYOTA FUNCARGO       33 PAH RD         2 PUKEHANA AVE  CENTRAL
 2016-08-01 10:06:00           AUDI A3  30 CROMWELL ST        30A CROMWELL ST  CENTRAL
 2016-08-01 10:42:00       MAZDA DEMIO       SULTAN LN         230 SYMONDS ST  CENTRAL
@@ -437,12 +437,12 @@ LIMIT 5
 
 We get the following table back:
 
-| Vehicle                          | Count |
-| --------------------- | ------ |
-| TOYOTA COROLLA    | 2103   |
-| SUZUKI SWIFT            | 1602   |
-| NISSAN TILDA             | 1251    |
-| VOLKSWAGEN GOLF | 1146   |
-| HONDA FIT                   | 1089  |
+| Vehicle         | Count |
+| --------------- | ----- |
+| TOYOTA COROLLA  | 2103  |
+| SUZUKI SWIFT    | 1602  |
+| NISSAN TILDA    | 1251  |
+| VOLKSWAGEN GOLF | 1146  |
+| HONDA FIT       | 1089  |
 
 Very cool. Personally, I'm rubbish at SQL so this should be a fun dataset to experiment with.

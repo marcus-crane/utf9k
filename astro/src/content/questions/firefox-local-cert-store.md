@@ -4,10 +4,10 @@ slug: "firefox-local-cert-store"
 description: "In which I help an employer continue to be annoying"
 category: "questions"
 tags:
-- "browsers"
-- "enterprise"
-- "firefox"
-- "software"
+  - "browsers"
+  - "enterprise"
+  - "firefox"
+  - "software"
 ---
 
 From time to time, I have troubles with Firefox since it seems to clash with a corporate proxy we use.

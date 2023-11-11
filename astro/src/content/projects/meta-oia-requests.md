@@ -6,10 +6,10 @@ ongoing: true
 maxwidth: true
 description: "An ongoing project of mine where I ask some meta-questions about documents that are redacted each year in New Zealand"
 tags:
-- "government"
-- "nz"
-- "oia"
-- "projects"
+  - "government"
+  - "nz"
+  - "oia"
+  - "projects"
 ---
 
 This one probably needs a bit of explanation, more than most of my projects.
@@ -33,6 +33,7 @@ At some point, I may file a request to backfill some data prior to when this lis
 I'm due to file my next update sometime around August or September 2021
 
 {{< metaoiatable.inline >}}
+
 <table>
   <thead>
     <tr>

@@ -5,10 +5,10 @@ slug: "killer-is-dead"
 category: "reviews"
 description: "A game that is very quirky, nonsensical even, with fairly average gameplay. Despite that, it can still be enjoyable."
 tags:
-- "2013"
-- "pc"
-- "ps3"
-- "xbox-360"
+  - "2013"
+  - "pc"
+  - "ps3"
+  - "xbox-360"
 ---
 
 This was **perhaps one of the most nonsensical games that I have played in a long time**. The story, for the most part, was barely comprehensible and even after having finished it, I still don’t understand a lot of what happened!

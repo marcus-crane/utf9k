@@ -4,8 +4,8 @@ slug: "kubes-ingress-ip-range"
 description: "In which I remind myself how to restrict a Kube ingress to a specific CIDR range"
 category: "questions"
 tags:
-- "allowlist"
-- "kubernetes"
+  - "allowlist"
+  - "kubernetes"
 ---
 
 This one had my scratching my head a bit as I wasn't quite sure if Kubernetes was the right place to do this.
@@ -31,15 +31,15 @@ metadata:
     nginx.ingress.kubernetes.io/whitelist-source-range: "192.0.2.3/24"
 spec:
   rules:
-  - host: example.com
-    http:
-      paths:
-        - path: /
-          backend:
-            service:
-              name: example-docs
-              port:
-                name: http-example-docs
+    - host: example.com
+      http:
+        paths:
+          - path: /
+            backend:
+              service:
+                name: example-docs
+                port:
+                  name: http-example-docs
 ```
 
 Ok, we've allowed our desktop to connect but let's try connecting to this ingress from a device we know isn't allowed, such as our laptop on `192.0.2.6`:

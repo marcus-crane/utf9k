@@ -4,8 +4,8 @@ slug: "monitoring-what-to-instrument"
 description: "In which I remind myself what is a good idea to instrument"
 category: "questions"
 tags:
-- "instrumentation"
-- "monitoring"
+  - "instrumentation"
+  - "monitoring"
 ---
 
 Services and libraries have different needs. Further, not all services are alike in the types of work they perform or what types of work are important to measure

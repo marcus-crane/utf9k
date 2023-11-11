@@ -4,8 +4,8 @@ slug: "macos-configured-networks"
 description: "In which I remind myself how to configure macOS networks via the terminal"
 category: "questions"
 tags:
-- "macos"
-- "networking"
+  - "macos"
+  - "networking"
 ---
 
 Let's assume you have multiple networks set up under `System Preferences > Networks`.

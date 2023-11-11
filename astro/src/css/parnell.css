@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 
 #map {
@@ -34,7 +34,7 @@ a {
   margin: 10px;
   padding: 10px 20px;
 }
-  
+
 .session {
   margin-bottom: 20px;
 }
@@ -45,7 +45,15 @@ a {
 }
 
 .colors {
-  background: linear-gradient(to right, #2dc4b2, #3bb3c3, #669ec4, #8b88b6, #a2719b, #aa5e79);
+  background: linear-gradient(
+    to right,
+    #2dc4b2,
+    #3bb3c3,
+    #669ec4,
+    #8b88b6,
+    #a2719b,
+    #aa5e79
+  );
   margin-bottom: 5px;
 }
 

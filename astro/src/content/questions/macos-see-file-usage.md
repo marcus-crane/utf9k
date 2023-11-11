@@ -4,11 +4,11 @@ slug: "macos-see-file-usage"
 description: "In which I remind myself how introspect filesystem usage on macOS"
 category: "questions"
 tags:
-- "enterprise"
-- "jamf"
-- "macos"
-- "performance"
-- "terminal"
+  - "enterprise"
+  - "jamf"
+  - "macos"
+  - "performance"
+  - "terminal"
 ---
 
 Recently I had noticed that some shell commands on my laptop were executing surprisingly slow.

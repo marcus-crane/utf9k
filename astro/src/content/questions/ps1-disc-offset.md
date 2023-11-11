@@ -4,11 +4,11 @@ slug: "ps1-disc-offset"
 description: "In which I remind myself how PS1 discs offset their contents"
 category: "questions"
 tags:
-- "hexedit"
-- "playstation"
-- "videogames"
+  - "hexedit"
+  - "playstation"
+  - "videogames"
 aliases:
-- "/notes/ps1-disc-layout/"
+  - "/notes/ps1-disc-layout/"
 ---
 
 The Playstation 1 uses CD-ROMs with the [XA extension](https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension).

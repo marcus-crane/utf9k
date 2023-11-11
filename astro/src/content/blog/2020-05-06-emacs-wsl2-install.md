@@ -5,11 +5,11 @@ description: "As if life wasn't already hard enough, we can add more Windows int
 slug: "emacs-wsl2-install"
 category: "blog"
 tags:
-- "emacs"
-- "linux"
-- "unix"
-- "windows"
-- "wsl"
+  - "emacs"
+  - "linux"
+  - "unix"
+  - "windows"
+  - "wsl"
 ---
 
 I've never really dedicated myself to Emacs despite being interested in [org mode](https://orgmode.org/) for a little while now.
@@ -164,7 +164,7 @@ and then use `awk` to get just the IP address by itself:
 ```shell
 marcus@corbenik:~/code/utf9k$ cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'
 172.31.96.1
-```                            
+```
 
 Voila! One IP address. What our above command ends up evaluating to, is the following:
 

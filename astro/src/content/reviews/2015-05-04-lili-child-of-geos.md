@@ -5,10 +5,10 @@ description: "A review for Lili: Child of Geos"
 slug: "lili-child-of-geos"
 category: "reviews"
 tags:
-- "2012"
-- "2014"
-- "ios"
-- "pc"
+  - "2012"
+  - "2014"
+  - "ios"
+  - "pc"
 ---
 
 Alrighty students, if you want to graduate then I’m looking for the best report possible. You’ve only a limited amount of time to complete your greatest challenge yet: pick me some really nice flowers! That’s one of the main things you’ll be doing in Lili: Child of Geos but there’s way more to this title than meets the eye. After all, there’s more to a game than its box art or err, digital screenshots.

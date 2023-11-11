@@ -5,11 +5,11 @@ slug: "the-simpsons-hit-and-run"
 category: "reviews"
 description: "Robot wasps? Strange black vans? New Buzz Cola? Something fishy is happening in Springfield. Find out in The Simpsons: Hit & Run."
 tags:
-- "2003"
-- "gamecube"
-- "pc"
-- "ps2"
-- "xbox"
+  - "2003"
+  - "gamecube"
+  - "pc"
+  - "ps2"
+  - "xbox"
 ---
 
 The Adventures of Rocky and Bullwinkle and Friends. The Terminator. Wayne’s World. Beavis and Butt-head, The Incredible Hulk. Even Scarface! What do they have in common? They were all popular franchises that received game adaptions from Radical Entertainment, founded in 1992. Most people would be more familiar with their latest work, Prototype.
@@ -36,5 +36,5 @@ I really have no idea what happened with this game. By some stroke of luck, Radi
 
 Developer: Radical Entertainment \
 Publisher: Vivendi Universal Games / Sierra Entertainment (EU) \
-Released in 2003  \
+Released in 2003 \
 Platforms: Gamecube, PC, Playstation 2 and Xbox

@@ -5,7 +5,7 @@ description: "For no particular reason, I documented all the crap I haul around 
 slug: "reducing-my-edc-2019"
 category: "blog"
 tags:
-- "organisation"
+  - "organisation"
 ---
 
 During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.
@@ -26,13 +26,13 @@ Before we get started, I should point out that this setup has actually be retire
 
 My EDC was already fairly compact and consisted of the following:
 
-*   Google Pixel 3a (very lightweight!)
+- Google Pixel 3a (very lightweight!)
 
-*   Wallet packed with cards (slow to sort through + a lot of unused cards)
+- Wallet packed with cards (slow to sort through + a lot of unused cards)
 
-*   A carabiner with a bunch of keys (which key is which?!)
+- A carabiner with a bunch of keys (which key is which?!)
 
-*   A pair of wired earbuds (represented by a placeholder + easily gets tangled)
+- A pair of wired earbuds (represented by a placeholder + easily gets tangled)
 
 Let's have a look at these individually as we break down my setup and slowly rebuild it
 
@@ -50,15 +50,15 @@ Let's start by taking a closer look at those cards
 
 There's a variety of different cards here:
 
-*   Business cards
+- Business cards
 
-*   Gift cards
+- Gift cards
 
-*   Loyalty cards
+- Loyalty cards
 
-*   Membership cards (plastic + NFC)
+- Membership cards (plastic + NFC)
 
-*   Bank cards
+- Bank cards
 
 ![A close up photo of two business cards. One is for stripe.com and another is for readme.com.](https://cdn.utf9k.net/blog/reducing-my-edc-2019/04-business-cards.jpeg)
 

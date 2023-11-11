@@ -5,8 +5,8 @@ description: "Instead of committing to a habit, why not torture yourself over lo
 slug: "inefficient-habit-forming"
 category: "blog"
 tags:
-- "habits"
-- "routines"
+  - "habits"
+  - "routines"
 ---
 
 If you were to ask me how good I am at habit forming, I would say "Not very".

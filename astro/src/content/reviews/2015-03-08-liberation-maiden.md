@@ -5,9 +5,9 @@ slug: "liberation-maiden"
 category: "reviews"
 description: "Jump into the Liberation Kamui for some fast-paced Suda51 style action as you fight to save New Japan!"
 tags:
-- "2012"
-- "3ds"
-- "ios"
+  - "2012"
+  - "3ds"
+  - "ios"
 ---
 
 Before talking about Liberation Maiden, it’s important to know where it came from. Originally, it was released in Japan as one of the titles that made up the Guild01 compilation. It was a physical cartridge that you could buy and enjoy four relatively small games, each from a well-known Japanese game designer, or in the case of [Weapon Shop de Omasse](/reviews/weapon-shop-de-omasse), a Japanese comedian. The actual compilation itself didn’t perform great, selling a lousy 20,000 copies in its first month but I get the feeling that it was meant to be more of a project for the fans rather than a money maker. Thanks to digital distribution, the collection did slowly make its way to the west although, rather than being bundled up, they were only made available as individual purchases.

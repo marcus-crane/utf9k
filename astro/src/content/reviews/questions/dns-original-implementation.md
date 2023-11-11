@@ -4,8 +4,8 @@ slug: "dns-original-implementation"
 description: "In which I capture a bit of DNS history to remind myself"
 category: "questions"
 tags:
-- "dns"
-- "historical"
+  - "dns"
+  - "historical"
 ---
 
 Back in the day, there was just one file: `HOSTS.TXT`.

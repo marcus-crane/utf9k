@@ -5,10 +5,10 @@ description: "My extremely brief crash course in the Official Information Act an
 slug: "nz-oia-guide"
 category: "blog"
 tags:
-- "government"
-- "guide"
-- "nz"
-- "oia"
+  - "government"
+  - "guide"
+  - "nz"
+  - "oia"
 ---
 
 I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin) and got me inspired to do some own data wrangling of my own.
@@ -31,7 +31,7 @@ The Official Information Act of 1982, readable [here](http://www.legislation.gov
 
 > (1) If any person, having in his possession or control … any sketch, plan, model, article, note, document, or information … which has been entrusted in confidence to him by any person holding office under His Majesty or under the Government of any other country, or which he has obtained or to which he has had access owing to his position
 >
->(a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it … he commits an offence against this Act.
+> (a) Communicates the code word, password, sketch, plan, model, article, note, document, or information to any person, other than a person to whom he is authorized to communicate it … he commits an offence against this Act.
 >
 > — Section 6 (1), New Zealand Official Secrets Act 1951
 

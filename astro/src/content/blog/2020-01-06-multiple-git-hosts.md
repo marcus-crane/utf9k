@@ -5,10 +5,10 @@ description: "Why setting for one gitconfig when you could have two or more"
 slug: "multiple-git-hosts"
 category: "blog"
 tags:
-- "git"
-- "github"
-- "gitlab"
-- "linux"
+  - "git"
+  - "github"
+  - "gitlab"
+  - "linux"
 ---
 
 {{% notice title="Some things have changed since I first wrote this" %}}

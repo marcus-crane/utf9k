@@ -4,9 +4,9 @@ slug: "linux-disable-stock-folders"
 description: "In which I remind myself how to disable default application folders in Linux"
 category: "questions"
 tags:
-- "housekeeping"
-- "linux"
-- "xdg"
+  - "housekeeping"
+  - "linux"
+  - "xdg"
 ---
 
 While you can delete stock folders such as `Templates`, `Public` and so on, they'll still appear in the sidebar of your file explorer.

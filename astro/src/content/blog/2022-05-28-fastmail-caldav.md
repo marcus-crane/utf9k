@@ -5,9 +5,9 @@ description: "A guide to using Fastmail with CalDAV libraries which are often fi
 slug: "fastmail-caldav"
 category: "blog"
 tags:
-- "caldav"
-- "calendar"
-- "fastmail"
+  - "caldav"
+  - "calendar"
+  - "fastmail"
 ---
 
 I've been a subscriber to [Fastmail](https://fastmail.com) now for probably a good five years at least, if not more at this point.
@@ -30,7 +30,7 @@ If `https://caldav.fastmail.com/` doesn't work, odds are you'll get what you're 
 https://caldav.fastmail.com/dav/principals/user/user@example.com/
 ```
 
-***user@example.com** is the email address that you use for Fastmail.*
+**\*user@example.com** is the email address that you use for Fastmail.\*
 
 You can confirm that by navigating to your Fastmail inbox and seeing what address in the top left corner if you really need to.
 
@@ -64,8 +64,8 @@ $ curl -u <fastmail-email>:<fastmail-app-password> https://caldav.fastmail.com/d
 </html>
 ```
 
-*Note how it is looking for a mailbox despite being a caldav server*
+_Note how it is looking for a mailbox despite being a caldav server_
 
 > So yeah, your calendars are just email inboxes under the hood with Fastmail!
-> 
+>
 > More specifically, there is a mailbox per calendar (I think) and that mailbox is full of [ics](https://en.wikipedia.org/wiki/ICalendar) files

@@ -1,25 +1,25 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 
-import Head from "../components/Head.astro"
-import Nav from "../components/Nav.astro"
-import "../css/style.css"
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import "../css/style.css";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<Head title={title} />
-</head>
-<body>
-	<Nav />
+  <head>
+    <Head title={title} />
+  </head>
+  <body>
+    <Nav />
     <div id="content">
-    <slot />
+      <slot />
     </div>
     <div id="fullscreen"></div>
-</body>
+  </body>
 </html>

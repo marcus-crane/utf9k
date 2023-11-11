@@ -5,10 +5,10 @@ description: "A series of questions that I would ask my past self in certain awk
 slug: "so-you-have-or-are-competition"
 category: "blog"
 tags:
-- "culture"
-- "people"
-- "social"
-- "work"
+  - "culture"
+  - "people"
+  - "social"
+  - "work"
 ---
 
 {{% notice emoji="🧪" title="This post is a sort of weird living document of sorts" %}}
@@ -69,41 +69,41 @@ So you've just created something and you've been informed that your idea already
 
 - How was the reaction that you received?
 - Was it welcoming to a newcomer into that space?
-    - If yes, great!
-    - If no, that's not very nice
-        - Why is that? Does this happen a lot?
-            - If yes, that sounds like a them problem right? Something keeps going wrong that people arrive at the conclusion that they need to start from scratch
+  - If yes, great!
+  - If no, that's not very nice
+    - Why is that? Does this happen a lot?
+      - If yes, that sounds like a them problem right? Something keeps going wrong that people arrive at the conclusion that they need to start from scratch
 
 ## I'm experiencing B
 
 So you've have or are actively creating something and you've been informed that someone has just stepped into your problem domain.
 
 - How are you feeling about this news right now?
-    - Are you excited for some new competition, regardless of whether you agree with the approach?
-        - If yes, great, that sounds healthy
-        - If no, why is that?
-            - Do you feel that it doesn't compare in terms of quality to your work?
-                - If yes, why does that matter?
-                    - Does a new offering existing somehow take away from your work?
-            - Is your work able to stand on its own merits?
-                - If no, should it exist if it can't support itself and needs ie; political cover to stay alive?
-                - Do you feel that people don't appreciate it fully?
-                    - Do you have solid documentation and announcements that people can discover on their own time?
-                    - If your approach communicated clearly?
-                    - Is the problem space too deep in the weeds for people who are not domain experts to "get it"?
-                        - Can you considered making use of metaphors, or just general storytelling to help bridge the communication gap
-                    - Has enough time actually passed for people to "have time" to learn about your offering and to "get it"?
-                    - Have you actually talked to anyone about your problem area?
-                        - How do you know that this problem area is actually a problem?
-                        - Do other people see this problem area as being a problem?
-                        - Do other people have this problem enough to "feel" that it is a problem?
-                        - Is the length of the problem only felt in short enough bursts that others are not motivated enough to seek out a solution?
-    - Did you feel an emotion reaction to this news?
-        - If yes, why is that?
-            - Do you consider yourself to be an expert in this particular domain?
-            - Do you spend a lot of time working in this particular domain?
-            - Is this particular domain just one that you spend time in or your core one?
-            - If you felt an overwhelming emotion reaction, is your identity and sense of self worth tied into this domain?
-                - Should it be? Maybe it is more than you realise?
-                - Do you feel that you could walk away from this problem domain and not feel a great loss?
-                    - Do you need to diversity your identity a bit more and find some different hobbies?
+  - Are you excited for some new competition, regardless of whether you agree with the approach?
+    - If yes, great, that sounds healthy
+    - If no, why is that?
+      - Do you feel that it doesn't compare in terms of quality to your work?
+        - If yes, why does that matter?
+          - Does a new offering existing somehow take away from your work?
+      - Is your work able to stand on its own merits?
+        - If no, should it exist if it can't support itself and needs ie; political cover to stay alive?
+        - Do you feel that people don't appreciate it fully?
+          - Do you have solid documentation and announcements that people can discover on their own time?
+          - If your approach communicated clearly?
+          - Is the problem space too deep in the weeds for people who are not domain experts to "get it"?
+            - Can you considered making use of metaphors, or just general storytelling to help bridge the communication gap
+          - Has enough time actually passed for people to "have time" to learn about your offering and to "get it"?
+          - Have you actually talked to anyone about your problem area?
+            - How do you know that this problem area is actually a problem?
+            - Do other people see this problem area as being a problem?
+            - Do other people have this problem enough to "feel" that it is a problem?
+            - Is the length of the problem only felt in short enough bursts that others are not motivated enough to seek out a solution?
+  - Did you feel an emotion reaction to this news?
+    - If yes, why is that?
+      - Do you consider yourself to be an expert in this particular domain?
+      - Do you spend a lot of time working in this particular domain?
+      - Is this particular domain just one that you spend time in or your core one?
+      - If you felt an overwhelming emotion reaction, is your identity and sense of self worth tied into this domain?
+        - Should it be? Maybe it is more than you realise?
+        - Do you feel that you could walk away from this problem domain and not feel a great loss?
+          - Do you need to diversity your identity a bit more and find some different hobbies?

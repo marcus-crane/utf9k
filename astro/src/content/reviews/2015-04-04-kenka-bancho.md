@@ -5,9 +5,9 @@ slug: "kenka-bancho"
 category: "reviews"
 description: "Get ready to ignite your fighting spirit as you participate in a full scale rumble to see who will win the title of toughest guy in all of Japan."
 tags:
-- "2008"
-- "2009"
-- "psp"
+  - "2008"
+  - "2009"
+  - "psp"
 ---
 
 Psst, hey punk, you think you’ve got what it takes be Japan’s toughest bancho, huh? Well, we’ll just see about that. Every school in the area will be arriving in Kyouto soon for some boring ass trip but who wants to visit some crusty old museum with those losers? We’re about to see who really has what it takes, y’hear? It’s time to separate the tough-talking shabazos from the banchos who can really handle the heat. **Get ready to ignite your fighting spirit and defend your honour in an full scale rumble between 47 other banchos vying for the title of "toughest guy in all of Japan".**

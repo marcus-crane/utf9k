@@ -5,8 +5,8 @@ description: "I think it's a good idea to publish your existing work, even if yo
 slug: "publish-old-works"
 category: "blog"
 tags:
-- "rambling"
-- "portfolio"
+  - "rambling"
+  - "portfolio"
 ---
 
 If you haven't seen it, [Ira Glass on Storytelling 3](https://www.youtube.com/watch?v=X2wLP0izeJE) is a video worth watching.

@@ -5,10 +5,10 @@ description: "A post from a darker time on how to better think about taking a br
 slug: "ride-the-curve"
 category: "blog"
 tags:
-- "career"
-- "health"
-- "longterm"
-- "selfcare"
+  - "career"
+  - "health"
+  - "longterm"
+  - "selfcare"
 ---
 
 {{% notice emoji="🚣‍♀️" title="It's rough seas out there!" %}}
@@ -65,7 +65,6 @@ Anyway, as for how I came up with the funding: Doing a lot of saving coupled wit
 
 ## Actually finding a job
 
-
 Going to [a bootcamp](https://devacademy.co.nz/) was a step in the right direction and a chance to understand the industry but I will never claim you can attend one and instantly become a fully fledged developer.
 
 Plenty of people were lucky and found side jobs or internships relatively quickly.
@@ -83,7 +82,6 @@ This inspired me to learn how to set up a [Discord](https://discord.com/) bot th
 In hindsight, I was probably pretty stressed during that time.
 
 ## Working to keep working
-
 
 With going into too much detail, I had the good fortune to work at one of New Zealand's largest tech companies and at present, I work for one of the largest car companies. Ironic, given I don't drive.[^license]
 
@@ -111,7 +109,6 @@ For the most part, I just imagine no one reads this anyway. I heard once from a 
 
 ## What's next?
 
-
 I had been meaning to write a post about my intentions with my blog. I'm still active and I have things on my list but mostly it feels like something driven by guilt and fear.
 
 A portfolio to say that I existed but not one with enough value to actually act as a portfolio!
@@ -133,7 +130,6 @@ This doesn't mean a story in the open is guaranteed to happen but adds a little 
 My tendency is to write them all in one sitting (like this post) with an optional review but it's probably a bit healthier to piece things out and not potentially feel so overwhelmed.
 
 ## Beyond the site
-
 
 Of course, this was just an excuse to shoe horn in some thoughts about this site into an otherwise fairly personal post.
 
@@ -158,5 +154,4 @@ Anyway, I gotta head off now.
 Until next time, happy travels!
 
 [^openness]: MMO developers seem to have a tendency to be more open than most, probably because subscriptions from the fans directly keep them going rather than publisher deals.
-
 [^license]: I have my restricted license but my flat is quite literally on a main road so we don't have any place to park.

@@ -5,9 +5,9 @@ description: "How many widgets can you fit on a mobile webpage? More than should
 slug: "a-recently-horrible-iteration-of-google-search"
 category: "blog"
 tags:
-- "google"
-- "media"
-- "search"
+  - "google"
+  - "media"
+  - "search"
 ---
 
 I don't know about you but whenever I have just watched a movie, or tv series, I like to look it up on Wikipedia to read about the development behind the scenes and how it was received upon release.
@@ -33,24 +33,24 @@ Ah, sorry! It looks like your browser either hates the h264 codec or it just doe
 
 What is all this?! There's so much going on visually here. We've got:
 
-* Some tabs to see cast photos, episode listings and other bits and pieces
-* A carousel of posters from the show
-* Some sort of watch list/show tracker functionality? I've never actually seen a UI so I wonder where your list is saved to?
-* A scoring round up which I assume is strictly critic scores. Is it a roundup of every score over the last 20 plus years? I assume so
-* An arbitrary block telling me that 89% of Google users liked the show. 89% of... people who clicked thumbs up when doing a Google search for the show? Can anyone just randomly vote?
-* An overview which reminds me of Wikipedia. Hey, speaking of, it's still nowhere to be seen.
-* Another carousel showing the cast. Wait, what were those earlier tabs for then if I don't have a choice?
+- Some tabs to see cast photos, episode listings and other bits and pieces
+- A carousel of posters from the show
+- Some sort of watch list/show tracker functionality? I've never actually seen a UI so I wonder where your list is saved to?
+- A scoring round up which I assume is strictly critic scores. Is it a roundup of every score over the last 20 plus years? I assume so
+- An arbitrary block telling me that 89% of Google users liked the show. 89% of... people who clicked thumbs up when doing a Google search for the show? Can anyone just randomly vote?
+- An overview which reminds me of Wikipedia. Hey, speaking of, it's still nowhere to be seen.
+- Another carousel showing the cast. Wait, what were those earlier tabs for then if I don't have a choice?
 
 Ok, now we're actually at the search results and... oh wait, not quite yet...
 
-* Shows other people searched for. Cool but I searched "The Sopranos", not "Shows like The Sopranos"
-* Some questions (who are these even from?) such as "Is it worth watching" (yes) and "Is there a Season 7" (no)
-* Episode listings. Always good to start from the last episode so I can get potentially spoiled on how characters develop. I know it probably has nothing to do with Google but the appearance of the words "FREE HBO" and "HD" feel really tacky. Even pirate sites have a little more taste in their naming schema.
-* Yet another carousel with videos. Great.
+- Shows other people searched for. Cool but I searched "The Sopranos", not "Shows like The Sopranos"
+- Some questions (who are these even from?) such as "Is it worth watching" (yes) and "Is there a Season 7" (no)
+- Episode listings. Always good to start from the last episode so I can get potentially spoiled on how characters develop. I know it probably has nothing to do with Google but the appearance of the words "FREE HBO" and "HD" feel really tacky. Even pirate sites have a little more taste in their naming schema.
+- Yet another carousel with videos. Great.
 
 Ok, now we're at the search results and you know what? The rest of it is all just crap I don't care about. All it has is derivative content like pop culture articles, streaming links and "related crime TV shows".
 
-That's great and all but I want to find out more *about* the show hence the search.
+That's great and all but I want to find out more _about_ the show hence the search.
 
 Eventually I just gave up and tacked "Wikipedia" on to the end of my query and got what I was after.
 

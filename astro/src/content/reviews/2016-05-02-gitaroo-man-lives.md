@@ -5,17 +5,17 @@ description: "A review for Gitaroo Man Lives!"
 slug: "gitaroo-man-lives"
 category: "reviews"
 tags:
-- "2001"
-- "2006"
-- "ps2"
-- "psp"
+  - "2001"
+  - "2006"
+  - "ps2"
+  - "psp"
 ---
 
 Sometimes you play a game and it’s like the developers passion is just oozing out of the screen. **You can just feel it when you play, that the team loved making the game and put their all into it.** Need I say anymore?
 
 If you mention rhythm games, quite a few people first think of PaRappa the Rapper but I don’t think it’s generally realised that PaRappa is actually regarded as one of, if not, the first modern rhythm game. It was only in 1996 with well known arcade titles like Beatmania and Dance Dance Revolution following shortly afterward. PaRappa and other titles that followed mainly focused on rhythm but designer Keiichi Yano was intent on making something fresh. **It was his belief that the people recognise songs they enjoy by their melodies and harmonies** rather than by their rhythms. Now, how do you go about incorporating that?
 
-Gitaroo Man’s gameplay is fairly lean but in a way that’s replayable time and time again.  For those of you who’ve played Guitar Hero or Rock Band, you’ll know that behind the gameplay, is a rendering of your band as they play along. The concept is somewhat similar except instead of just playing songs, **you’re engaged in musical battles against a wacky cast of colourful (gra)vill(i)ains.**
+Gitaroo Man’s gameplay is fairly lean but in a way that’s replayable time and time again. For those of you who’ve played Guitar Hero or Rock Band, you’ll know that behind the gameplay, is a rendering of your band as they play along. The concept is somewhat similar except instead of just playing songs, **you’re engaged in musical battles against a wacky cast of colourful (gra)vill(i)ains.**
 
 Each stage consists of a few phases: Charge, Battle (Attack/Guard) and Final. Most battles start with the initial charge phase in which you’re regenerating your health. The higher your accuracy, the more health you gain back! Battle has two versions: Attack and Guard. As you might guess, Attack has you matching prompts to attack, and lower your opponents HP bar while Guard has you defending your own HP. Stages cycle between two until you hit the Final phase, and generally, the musical climax of the track. It’s an aesthetic thing for the most part but for those on Master Mode, it can be tempting to think things are over when really, one slip up can spell out failure for the overconfident.
 

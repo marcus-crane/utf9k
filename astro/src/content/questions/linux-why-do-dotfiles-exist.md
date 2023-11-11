@@ -4,9 +4,9 @@ slug: "linux-why-do-dotfiles-exist"
 description: "In which I capture a bit of history about the origin of dotfiles"
 category: "questions"
 tags:
-- "historical"
-- "linux"
-- "macos"
+  - "historical"
+  - "linux"
+  - "macos"
 ---
 
 Rob Pike explained his understanding in a now-dead Google+ post back in 2012. The use of `.` and `..` had appeared in early versions of the Unix file system, as a quick way to navigate around. They would appear when using `ls` to view the contents of a directory so a line was added that ignored anything where the first character was a period.

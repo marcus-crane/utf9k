@@ -4,8 +4,8 @@ slug: "selenium-remote-connection"
 description: "In which I remind myself how to connect to Selenium using Python"
 category: "questions"
 tags:
-- "python"
-- "selenium"
+  - "python"
+  - "selenium"
 ---
 
 I [recently came across an unsecured Selenium instance](https://twitter.com/sentreh/status/1435772900917735425) but I wanted to confirm my findings by making a basic request.

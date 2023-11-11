@@ -5,8 +5,8 @@ description: "Configuration is great! Magic... not so much!"
 slug: "configuration-magic"
 category: "blog"
 tags:
-- "complexity"
-- "configuration"
+  - "complexity"
+  - "configuration"
 ---
 
 I don't consider myself qualified enough to write much on the art of programming but I think this is probably the closest I've ever found myself.

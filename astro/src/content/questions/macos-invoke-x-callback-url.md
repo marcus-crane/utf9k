@@ -4,8 +4,8 @@ slug: "macos-invoke-x-callback-url"
 description: "In which I remind myself how to test out callback commands"
 category: "questions"
 tags:
-- "macos"
-- "x-callback-url"
+  - "macos"
+  - "x-callback-url"
 ---
 
 There is a CLI tool called [xcall](https://github.com/martinfinke/xcall) which seems to be the only way I've seen to actually interact with `x-callback-url` outside of other applications.

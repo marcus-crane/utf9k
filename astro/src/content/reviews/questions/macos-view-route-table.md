@@ -4,9 +4,9 @@ slug: "macos-view-route-table"
 description: "In which I remind myself how to check out where a request is likely to route"
 category: "questions"
 tags:
-- "macos"
-- "networking"
-- "vpn"
+  - "macos"
+  - "networking"
+  - "vpn"
 ---
 
 For those of us who are subject to using corporate VPNs, all sorts of wackiness can occur such as `127.0.0.1` being routed first to another country before trying to resolve locally.

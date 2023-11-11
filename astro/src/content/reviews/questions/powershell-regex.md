@@ -4,7 +4,7 @@ slug: "powershell-regex"
 description: "In which I remind myself how to search using regexes in Powershell"
 category: "questions"
 tags:
-- "powershell"
+  - "powershell"
 ---
 
 ## How can I perform a regex search?

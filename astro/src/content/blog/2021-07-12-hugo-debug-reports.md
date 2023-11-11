@@ -5,11 +5,11 @@ slug: "hugo-debug-reports"
 description: "I teach you some tricks on introspecting your Hugo builds"
 category: "blog"
 tags:
-- "hugo"
-- "maintenance"
-- "meta"
-- "organisation"
-- "staticsites"
+  - "hugo"
+  - "maintenance"
+  - "meta"
+  - "organisation"
+  - "staticsites"
 ---
 
 Recently I discovered that [Hugo](https://gohugo.io) added support for [inline shortcodes](https://gohugo.io/templates/shortcode-templates/) like 30 versions ago.
@@ -30,12 +30,10 @@ To give an idea of what this means, here's a reminder on how you were required t
 </div>
 
 <!-- content/blog/example-post.md -->
-# This is an example post
-
-{{ notice title="This is a notice" }}
-This is the content inside of a notice shortcode
-{{ /notice }}
+# This is an example post {{ notice title="This is a notice" }} This is the
+content inside of a notice shortcode {{ /notice }}
 ```
+
 <sup>Minor caveat with shortcode syntax[^syntax]</sup>
 
 As you can see, the shortcode internals live in your `layouts` folder, and have access to your `page` context as well as all of the various Hugo functions. Your post is only able to pass parameters into the shortcode itself.
@@ -46,18 +44,16 @@ In saying that, the introduction of inline shortcodes allows us to do some fun t
 
 ```html
 <!-- content/blog/example-post.md -->
-# This is an example post
-
-Check out some of these funny gags I wrote:
-
-{{ readfile.inline }}
+# This is an example post Check out some of these funny gags I wrote: {{
+readfile.inline }}
 <ul>
-{{ range $.Site.Data.gags }}
-<li>{{ . }}</li>
-{{ end }}
+  {{ range $.Site.Data.gags }}
+  <li>{{ . }}</li>
+  {{ end }}
 </ul>
 {{ /readfile.inline }}
 ```
+
 <sup>Minor caveat with shortcode syntax[^syntax]</sup>
 
 Don't believe me? Here's that same inline shortcode embedded in this very post:

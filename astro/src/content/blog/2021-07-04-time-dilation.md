@@ -5,8 +5,8 @@ slug: "time-dilation"
 description: "Historically, I am often late to a bunch of things even though I plan ahead some of the time"
 category: "blog"
 tags:
-- "productivity"
-- "timemanagement"
+  - "productivity"
+  - "timemanagement"
 ---
 
 A more accurate title would probably be something like "Time Inflation" but I think "Time Dilation" sounds cooler.

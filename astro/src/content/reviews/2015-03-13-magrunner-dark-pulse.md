@@ -5,10 +5,10 @@ slug: "magrunner-dark-pulse"
 category: "reviews"
 description: "What begins as a simple competition to find the world's best Magrunner soon devolves into a nightmare as Cthulu and this spawn stop by for a visit."
 tags:
-- "2013"
-- "pc"
-- "ps3"
-- "xbox-360"
+  - "2013"
+  - "pc"
+  - "ps3"
+  - "xbox-360"
 ---
 
 Have you ever heard of Frogwares? They’re a medium sized independent studio with branches in both Ukraine and Ireland. I’d say hands down, their most known game is Sherlock Holmes versus Arsène Lupin which, for those in Australia and United Kingdom, was simply called Sherlock Holmes: Nemesis. Still not ringing any bells? Well, I’m sure most people just wrote them off as a studio who only produce licensed adventure games. That’s at least half true since 10 of their 11 titles released are based on novels from the 1800’s but they did also release one very interesting puzzle game: Magrunner: Dark Pulse.

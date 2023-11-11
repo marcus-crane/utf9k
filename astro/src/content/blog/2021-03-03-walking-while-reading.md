@@ -5,9 +5,9 @@ description: "Honestly, this post is weird and dumb. I wouldn't recommend it."
 slug: "walking-while-reading"
 category: "blog"
 tags:
-- "people"
-- "phones"
-- "internet"
+  - "people"
+  - "phones"
+  - "internet"
 ---
 
 There is a person who lives in my general area that I've spotted two or three times in the almost three years that I have lived at my flat.

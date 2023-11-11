@@ -1,11 +1,11 @@
 ---
-layout: '../layouts/Layout.astro'
+layout: "../layouts/GenericMarkdown.astro"
 title: "Uses"
 slug: "uses"
 category: "uses"
 description: "In which I get on the bandwagon and list the various tools of my trade"
 tags:
-- "meta"
+  - "meta"
 ---
 
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
@@ -30,17 +30,17 @@ Everything else is stock and unconfigured.
 
 ## Computers
 
-* Macbook Pro 14-inch 2021 M1 as my work laptop
-* Macbook Air M1 as my personal laptop
-* Custom built desktop running Windows 11 for games
+- Macbook Pro 14-inch 2021 M1 as my work laptop
+- Macbook Air M1 as my personal laptop
+- Custom built desktop running Windows 11 for games
 
 ## Applications
 
-* [Arc](https://arc.net/) for browsing
-* [Fastmail](https://fastmail.com/) for email and calendaring
-* [Obsidian](https://obsidian.md) for notes
-* [Readwise Reader](https://readwise.io/read) for capturing things to read later (RSS, emails, articles, PDFs etc)
-* [Pocket Casts](https://pocketcasts.com) for podcasts
-* [Pocketsmith](https://pocketsmith.com) for tracking finances
-* [1Password](https://1password.com/) for password management
-* [Book Track](https://booktrack.app/) for tracking reading progress
+- [Arc](https://arc.net/) for browsing
+- [Fastmail](https://fastmail.com/) for email and calendaring
+- [Obsidian](https://obsidian.md) for notes
+- [Readwise Reader](https://readwise.io/read) for capturing things to read later (RSS, emails, articles, PDFs etc)
+- [Pocket Casts](https://pocketcasts.com) for podcasts
+- [Pocketsmith](https://pocketsmith.com) for tracking finances
+- [1Password](https://1password.com/) for password management
+- [Book Track](https://booktrack.app/) for tracking reading progress

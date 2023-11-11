@@ -6,10 +6,10 @@ category: "blog"
 description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"
 draft: true
 tags:
-- "business"
-- "discord"
-- "microsoft"
-- "acquisition"
+  - "business"
+  - "discord"
+  - "microsoft"
+  - "acquisition"
 ---
 
 In this post, I'm going to be considering a "What if" scenario for fun regarding the idea of Microsoft buying Discord. For those unaware, [Microsoft is apparently talking with Discord about possibly buying them up](https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164) for at least $10 billion. As I'm writing this, it hasn't happened yet which is always the most fun time to speculate.
@@ -121,10 +121,6 @@ Socially, the idea that anyone could watch what you're up to during the day is a
 Security wise, you'd definitely want to make these accounts separate from your user account.
 
 [^profiles]: There's no reward for doing this but it helps bind together otherwise disconnected profiles. Some friends I have online tend to change username from time to time or use different names for each platform. One thing I often have trouble with is remembering the Twitter username for someone I know on Steam for example.
-
 [^valve]: Valve is the name of the game development company who distributes Steam. Often times, Valve are mistaken referred to as Steam or it's believed that Steam is a company unto itself. The reality is that Steam was created to distribute Valve games via the internet but has now been the largest digital PC gaming store for quite some time now.
-
 [^uplay]: For those who were vaguely familiar with uPlay, apparently Ubisoft rebranded uPlay to Ubisoft Connect sometime in 2020. News to me!
-
 [^slack-soc2]: Like a lot of companies, SOC 2 reports tend to be available upon request for enterprise companies but otherwise are not made public. Presumably because they contain confidential information but I've never read one personally.
-

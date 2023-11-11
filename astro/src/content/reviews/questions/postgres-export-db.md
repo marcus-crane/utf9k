@@ -4,8 +4,8 @@ slug: "postgres-export-db"
 description: "In which I remind myself how to export a Postgres database"
 category: "questions"
 tags:
-- "databases"
-- "postgres"
+  - "databases"
+  - "postgres"
 ---
 
 Using `pg_dump`, which ships with the `psql` executable, it's a pretty simple progress

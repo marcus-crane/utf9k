@@ -5,10 +5,10 @@ description: "You haven't emailed me for 2 years! Who are you again?"
 slug: "remind-the-user-what-your-service-does"
 category: "blog"
 tags:
-- "business"
-- "email"
-- "marketing"
-- "promotion"
+  - "business"
+  - "email"
+  - "marketing"
+  - "promotion"
 ---
 
 This goes out to anyone who does marketing for startups and businesses.

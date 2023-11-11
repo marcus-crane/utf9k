@@ -4,8 +4,8 @@ slug: "monitoring-tracing-overview"
 description: "In which I remind myself about the difference between monitoring and tracing"
 category: "questions"
 tags:
-- "instrumentation"
-- "monitoring"
+  - "instrumentation"
+  - "monitoring"
 ---
 
 In the same vein that it's not often feasible to capture all data, all of the time, tracing is concerned with sampling a subset of events such as every 50th incoming request.

@@ -5,8 +5,8 @@ description: "It's wild that you can couple a physical business to digital techn
 slug: "internet-reliance"
 category: "blog"
 tags:
-- "internet"
-- "business"
+  - "internet"
+  - "business"
 ---
 
 I went to get a haircut about 45 minutes before writing this post, and the internet went out briefly. I overheard one of the hair stylists say

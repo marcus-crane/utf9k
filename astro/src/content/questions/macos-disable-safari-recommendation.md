@@ -4,9 +4,9 @@ slug: "macos-disable-safari-recommendation"
 description: "In which I remind myself how to get rid of that pesky notification"
 category: "questions"
 tags:
-- "macos"
-- "safari"
-- "software"
+  - "macos"
+  - "safari"
+  - "software"
 ---
 
 This question [was trending](https://news.ycombinator.com/item?id=28361730) on [Hacker News](https://news.ycombinator.com) but the thread in question never addressed it.

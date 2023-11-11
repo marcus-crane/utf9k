@@ -1,12 +1,12 @@
 ---
-layout: '../layouts/Layout.astro'
+layout: "../layouts/GenericMarkdown.astro"
 title: "Now"
 slug: "now"
 category: "now"
 description: "Usually I am up to Stuff™️ and this page may hold the answers you seek"
 lastmod: "2023-10-15T20:40:00+13:00"
 tags:
-- "me"
+  - "me"
 ---
 
 ## 2023 is coming to an end

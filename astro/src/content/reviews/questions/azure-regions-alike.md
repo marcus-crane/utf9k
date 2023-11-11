@@ -4,10 +4,10 @@ slug: "azure-regions-alike"
 description: "In which I think about Azure, which is a mistake in itself"
 category: "questions"
 tags:
-- "availability"
-- "azure"
-- "cloud"
-- "microsoft"
+  - "availability"
+  - "azure"
+  - "cloud"
+  - "microsoft"
 ---
 
 No! As I learned recently, only a handful of regions feature multiple availability zones.

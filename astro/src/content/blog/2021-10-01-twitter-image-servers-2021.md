@@ -5,9 +5,9 @@ slug: "twitter-image-servers-2021"
 description: "Throughout the year of 2021, I have run into a number of issues with Twitter's image servers"
 category: "blog"
 tags:
-- "reliability"
-- "sre"
-- "twitter"
+  - "reliability"
+  - "sre"
+  - "twitter"
 ---
 
 For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've fallen into more [technical rabbit holes](/blog/automation-right/) than I care to.

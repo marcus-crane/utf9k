@@ -4,8 +4,8 @@ slug: "js-detect-iframe-parent"
 description: "A small Javascript snippet useful for detecting if the host frame is an iframe"
 category: "questions"
 tags:
-- "iframe"
-- "javascript"
+  - "iframe"
+  - "javascript"
 ---
 
 I suppose they aren't used too much anymore but I've started using them as a preview window for my [projects](/projects) page.
@@ -29,9 +29,9 @@ but you can use Javascript inside an iFrame and make the changes within the fram
 ```javascript
 function insideIframe() {
   try {
-    return window.self !== window.top
+    return window.self !== window.top;
   } catch (e) {
-    return true
+    return true;
   }
 }
 

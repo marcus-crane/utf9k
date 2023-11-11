@@ -5,9 +5,9 @@ description: "The difference between nothing and something depends on whether th
 slug: "is-anything-happening-behind-the-curtain"
 category: "blog"
 tags:
-- "doubts"
-- "finance"
-- "worldview"
+  - "doubts"
+  - "finance"
+  - "worldview"
 ---
 
 This week has definitely been one of the more interesting ones I can remember.

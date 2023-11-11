@@ -4,11 +4,11 @@ slug: "macos-view-hardware"
 description: "In which I remind myself how to view system specs in the terminal"
 category: "questions"
 tags:
-- "hardware"
-- "macos"
+  - "hardware"
+  - "macos"
 ---
 
-## 
+##
 
 While there's the classic `Apple menu -> About This Mac -> System Report`, a terminal based alternative is the `system_profiler` command.
 

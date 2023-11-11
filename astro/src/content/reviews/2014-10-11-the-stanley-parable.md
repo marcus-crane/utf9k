@@ -5,8 +5,8 @@ slug: "the-stanley-parable"
 category: "reviews"
 description: "Very much enjoyed this title and encourage anyone interested in playing it. It looks like a walking simulator at first glance but it's a bit more than that."
 tags:
-- "2013"
-- "pc"
+  - "2013"
+  - "pc"
 ---
 
 Hmm, let’s see here. How would I write about something like The Stanley Parable…

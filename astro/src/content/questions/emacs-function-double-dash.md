@@ -4,8 +4,8 @@ slug: "emacs-function-double-dash"
 description: "In which I squint heavily to notice any difference"
 category: "questions"
 tags:
-- "elisp"
-- "emacs"
+  - "elisp"
+  - "emacs"
 ---
 
 As an example of what I mean, `org-roam` had seemingly the same function names at one point, despite the only difference being some double dashes

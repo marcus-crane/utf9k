@@ -5,9 +5,9 @@ slug: "friends-for-real"
 category: "reviews"
 description: "Help me! I'm trapped in this eternal hell!"
 tags:
-- "2005"
-- "pc"
-- "ps2"
+  - "2005"
+  - "pc"
+  - "ps2"
 ---
 
 Videogame perfection. Move over Dork Souls because we have a new contender for world’s hardest game. Take all of the most minute, irrelevant details from across 236 episodes of Friends, compact it all into a single trivia game and the result is Friends: The One With All The Trivia.

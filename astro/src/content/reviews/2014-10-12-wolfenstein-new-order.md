@@ -5,12 +5,12 @@ slug: "wolfenstein-new-order"
 category: "reviews"
 description: "I was expecting a mediocre game but got something much, much better than expected!"
 tags:
-- "2014"
-- "pc"
-- "ps3"
-- "ps4"
-- "xbox-360"
-- "xbox-one"
+  - "2014"
+  - "pc"
+  - "ps3"
+  - "ps4"
+  - "xbox-360"
+  - "xbox-one"
 ---
 
 Oh gosh, I was going into this expecting something just alright but I was quite surprised by this latest entry into the Wolfenstein franchise. The last entry from 2009, just titled Wolfenstein, was pretty forgettable and before that, there had been no entries for 8 years before that so the franchise had, for the most part it seemed, fallen by the wayside.

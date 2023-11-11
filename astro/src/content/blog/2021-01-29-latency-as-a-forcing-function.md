@@ -5,13 +5,13 @@ description: "Sometimes latency is good?"
 slug: "latency-as-a-forcing-function"
 category: "blog"
 tags:
-- "bugs"
-- "latency"
-- "patience"
-- "people"
+  - "bugs"
+  - "latency"
+  - "patience"
+  - "people"
 ---
 
-I'm probably not alone in admitting that sometimes *not* checking work apps can be pretty hard.
+I'm probably not alone in admitting that sometimes _not_ checking work apps can be pretty hard.
 
 At my previous job, we used Slack and partly due to the cozy nature of some threads, I'd often find myself opening it without noticing.
 
@@ -55,7 +55,7 @@ Arguably, it gets even worse once we dig into some of the culprits. Here is one 
 
 A whopping 1/3 of the download time appears to be used up for a single plugin! To make matters worse, these plugins appear to be parsed first before any of the actual chat content is fetched so the Mattermost window sits unusable until all plugins are downloaded before progressing to fetch messages and channels.
 
-According to the network request, the bundle is *a whopping 1.8MB* and that's after being gzipped. That's bigger than the actual client bundle itself!
+According to the network request, the bundle is _a whopping 1.8MB_ and that's after being gzipped. That's bigger than the actual client bundle itself!
 
 My browser reported that the plugin was 7MB uncompressed so I was concerned that I was horribly misinterpreting this information, I looked up the [Github repository](https://github.com/standup-raven/standup-raven) for Standup Raven and took a look at the latest release which is [v3.2.0](https://github.com/standup-raven/standup-raven/releases/tag/v3.2.0).
 

@@ -5,8 +5,8 @@ description: "It works well for me but I don't recommend it!"
 slug: "miserable-presentation-tips"
 category: "blog"
 tags:
-- "presenting"
-- "tips"
+  - "presenting"
+  - "tips"
 ---
 
 When the thought of having to give a presentation comes up, my usual reaction is that it might be fun.
@@ -53,8 +53,7 @@ Getting a negative response is unlikely given the vast majority of people don't 
 
 This should all be taken with a large pinch of salt (and therapy?) but used in the right way, it can be a handy story to tell yourself.
 
-Merely saying "	Don't worry about it" is easy but getting to a place where you can believe it, even for a short while is the hardest part of all.
+Merely saying " Don't worry about it" is easy but getting to a place where you can believe it, even for a short while is the hardest part of all.
 
 [^1]: I haven't read enough self-help books yet to have the motivation to write a self-help book 😛
-
 [^2]: I'm assuming here that you've volunteered to give a presentation instead of a boring business thing.

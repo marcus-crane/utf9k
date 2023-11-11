@@ -4,7 +4,7 @@ slug: "git-globally-ignore-files"
 description: "In which I wage war against .DS_Store"
 category: "questions"
 tags:
-- "git"
+  - "git"
 ---
 
 This has been something that has plagued me for years and I've never sat down to properly fix it.

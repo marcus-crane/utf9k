@@ -5,8 +5,8 @@ description: "A weird one off post where I documented the various bookmarks I ha
 slug: "bookmarking-march-2020"
 category: "blog"
 tags:
-- "bookmarks"
-- "organisation"
+  - "bookmarks"
+  - "organisation"
 ---
 
 For no particular reason, other than I figured it might help me make better sense of how I organise articles, here's a fairly detailed breakdown of my bookmarking setup.
@@ -109,7 +109,7 @@ Resources provided by the news media (eg; a database containing financial entiti
 
 ### People
 
-This could be articles on [specific people](https://en.wikipedia.org/wiki/Robert_Parker_(wine_critic)) (biographies, news pieces) or ["people" in a broader sense](https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and) such as a story on a town or city.
+This could be articles on [specific people](<https://en.wikipedia.org/wiki/Robert_Parker_(wine_critic)>) (biographies, news pieces) or ["people" in a broader sense](https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and) such as a story on a town or city.
 
 ### Politics
 

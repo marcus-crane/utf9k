@@ -4,9 +4,9 @@ slug: "dns-trailing-period"
 description: "In which I note the existence of a sneaky period"
 category: "questions"
 tags:
-- "dns"
-- "historical"
-- "networking"
+  - "dns"
+  - "historical"
+  - "networking"
 ---
 
 The root node of DNS has a `null` label

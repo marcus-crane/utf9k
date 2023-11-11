@@ -5,9 +5,9 @@ slug: "brief-thoughts-on-crypto"
 description: "It really is what it says on the tin: I have some thoughts about crypto"
 category: "blog"
 tags:
-- "blockchain"
-- "cryptocurrency"
-- "nft"
+  - "blockchain"
+  - "cryptocurrency"
+  - "nft"
 ---
 
 It shouldn't come as any surprise that I don't consider myself a fan of blockchain derivatives such as cryptocurrencies and NFTs.
@@ -26,7 +26,7 @@ No one has the exact same artwork as you do, unlike say; buying rare sneakers be
 
 Yes, there's the whole right clicker component but that has already done to death so let's just put that aside for a minute.
 
-The thing that really confuses me is this uniqueness aspect. I mean, I *get it* like the idea of being the sole owner of something is appealing to an extent but I don't know where it ends.
+The thing that really confuses me is this uniqueness aspect. I mean, I _get it_ like the idea of being the sole owner of something is appealing to an extent but I don't know where it ends.
 
 Like, ok, hundreds of people have generated thousands of images, all of them slightly different in their own way but what gives it any value?
 

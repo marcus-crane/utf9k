@@ -5,11 +5,11 @@ description: "A review for Gravity Rush"
 slug: "gravity-rush"
 category: "reviews"
 tags:
-- "2012"
-- "2015"
-- "2016"
-- "ps4"
-- "psvita"
+  - "2012"
+  - "2015"
+  - "2016"
+  - "ps4"
+  - "psvita"
 ---
 
 What’s up, Gravity Shifters. It’s been a while, huh? We’re just days away from the release of Dark Souls 3 and what better way to celebrate than with a look back at a game that isn’t dark and forboding: Gravity Rush! For those of you who missed this favourite of mine, it was originally a Playstation Vita exclusive which pretty much says it all. Earlier this year, PS4 owners were treated to an HD re-release which stays true to the original while incorpating the DLC and upping the visuals to a nice 1080p at 60 FPS.

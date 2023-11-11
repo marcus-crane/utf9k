@@ -4,9 +4,9 @@ slug: "kubes-default-namespace"
 description: "In which I remind myself how to set a default namespace for Kubernetes"
 category: "questions"
 tags:
-- "defaults"
-- "kubectl"
-- "kubernetes"
+  - "defaults"
+  - "kubectl"
+  - "kubernetes"
 ---
 
 By default, kubectl will search the `default` namespace for any newly added clusters to your context, which can be quite annoying.

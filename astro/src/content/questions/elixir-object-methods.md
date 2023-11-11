@@ -4,7 +4,7 @@ slug: "elixir-object-methods"
 description: "In which I remember how to introspect in Elixir"
 category: "questions"
 tags:
-- "elixir"
+  - "elixir"
 ---
 
 Let's say we have the following module

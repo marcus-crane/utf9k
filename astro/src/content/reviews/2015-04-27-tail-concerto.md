@@ -5,8 +5,8 @@ description: "A review for Tail Concerto"
 slug: "tail-concerto"
 category: "reviews"
 tags:
-- "1998"
-- "ps1"
+  - "1998"
+  - "ps1"
 ---
 
 Oooh, yes, we’ve finally come full circle back to CyberConnect again who you might remember as the ones responsible for over-the-top cinematic brawler ‘thing’, Asura’s Wrath. They’re best known for the .hack franchise, perhaps one of my favourite series, two JoJo’s Bizarre Adventure games for the PS3/4 and the 16 different Naruto: Ultimate Ninja games that have been released so far. Under all of that hides the Little Tail Bronx series which has gone fairly under the radar. Much like the Xeno and Final Fantasy series, each release is a spiritual successor to the last rather than there being direct sequels.

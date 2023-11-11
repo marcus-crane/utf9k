@@ -4,10 +4,10 @@ slug: "macos-port-5000-monterey"
 description: "In which I recall how to evict an annoying gremlin"
 category: "questions"
 tags:
-- "airplay"
-- "macos"
-- "monterey"
-- "receiver"
+  - "airplay"
+  - "macos"
+  - "monterey"
+  - "receiver"
 ---
 
 I've been fiddling a bit with [Wails](https://github.com/wailsapp/wails) recently and I gave the unreleased v2 alpha a try.

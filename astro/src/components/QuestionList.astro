@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  questions: CollectionEntry<"questions">[];
+}
+
+const { questions } = Astro.props;
+
+for (let question of questions) {
+
+}
+
+const systemColours = [
+  "lightpink",
+  "blueviolet",
+  "fuchsia",
+  "indigo",
+  "darkviolet",
+  "mediumvioletred",
+  "salmon",
+  "plum",
+  "tomato",
+  "orange",
+  "darkkhaki",
+  "royalblue",
+  "deepskyblue",
+  "lightseagreen",
+  "turquoise",
+  "chocolate",
+  "brown",
+  "goldenrod",
+  "burlywood",
+];
+---
+
+<ul>
+    {
+        questions
+        .map(q => (
+            <li id={q.slug} class="question">
+            </li>
+        ))
+    }
+  <!-- {{ range sort .Pages "Lastmod" "desc" }}
+    <li id="{{ .Slug }}" class="question">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ range .Params.tags }}
+        {{ $hash := (crypto.FNV32a .) }}
+        {{ $i := mod $hash (len $systemColors) }}
+        <span style="color: {{ index $systemColors $i }}">#{{ . }}</span>
+      {{ end }}
+    </li>
+    {{ end }} -->
+</ul>

@@ -1,16 +1,16 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Base.astro";
-import Posts from '../components/PostList.astro'
+import Posts from "../components/PostList.astro";
 
-const blogEntries = await getCollection("blog")
+const posts = await getCollection("blog");
 ---
 
 <BaseLayout title="Welcome to Astro.">
-    <main>
-        <header>
-            <h1>Blog posts</h1>
-        </header>
-        <Posts posts={blogEntries} />
-    </main>
+  <main>
+    <header>
+      <h1>Blog posts</h1>
+    </header>
+    <Posts posts={posts} />
+  </main>
 </BaseLayout>

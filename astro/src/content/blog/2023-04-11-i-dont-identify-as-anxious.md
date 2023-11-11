@@ -5,9 +5,9 @@ description: "Here are some things that have been bothering me"
 slug: "i-dont-identify-as-anxious"
 category: "blog"
 tags:
-- "health"
-- "longterm"
-- "selfcare"
+  - "health"
+  - "longterm"
+  - "selfcare"
 ---
 
 This is my [epic treatise](https://apenwarr.ca/log/20171213) on the things that have been troubling me for some time now.
@@ -18,7 +18,7 @@ Admittedly, I thought I had written something a bit closer to home, as far as me
 
 On some level, I write this for myself with the naive thought that I can capture all these feelings in a bottle and discard them, not unlike a [camera stealing a soul](https://oxsci.org/can-a-camera-capture-your-soul/). Perhaps I'll read this in future but really, I take some small comfort that perhaps this will be a useful barrier break for anyone who has a false idea of me in their head.
 
-Whatever I may have been able to live up to so far, this is hopefully proof enough that "success" by whatever means you define it is built on top of a great deal of well, whatever *this* is, I don't enjoy it.
+Whatever I may have been able to live up to so far, this is hopefully proof enough that "success" by whatever means you define it is built on top of a great deal of well, whatever _this_ is, I don't enjoy it.
 
 Anyway, that should be enough of a pretentious introduction to shoo away anyone with a short attention span.
 
@@ -48,7 +48,7 @@ I'm single but I've always been happy with my own company. Haven't I? We had a l
 
 I can only imagine that these things are all in there somewhere contributing to this troubling period. You'll be great and things are normal but suddenly you remember that you remember that you remember and it's the darkest few hours of your waking existence. Why is this happening again? If I can just find the answer, will it leave me alone?
 
-The hardest answer, when I think over all the things that frighten me, is that I have to do all of this *waves hands* for the next 70 years or more. I think that only to rebut myself in the same sentence with "What's so bad about that? There are so many things to see and do!". It's the feeling of dread persisting at its core, I'm sure.
+The hardest answer, when I think over all the things that frighten me, is that I have to do all of this _waves hands_ for the next 70 years or more. I think that only to rebut myself in the same sentence with "What's so bad about that? There are so many things to see and do!". It's the feeling of dread persisting at its core, I'm sure.
 
 I'm not an anxious person? I don't identify as such but factually, that might be correct? I don't know, is it anxiety? It's irrational for sure. It's like I'm scared that I'm scared and I don't know where it starts and ends.
 

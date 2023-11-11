@@ -5,10 +5,10 @@ slug: "onimusha-warlords"
 category: "reviews"
 description: "Samanosuke fights to banish the demonic Gemna from an alternate history Feudal Japan where Nobunaga died 20 years too early."
 tags:
-- "2001"
-- "pc"
-- "ps2"
-- "xbox"
+  - "2001"
+  - "pc"
+  - "ps2"
+  - "xbox"
 ---
 
 Did you know that Onimusha was originally conceived as a Playstation 1 title? The Playstation 2’s launch was drawing near and the growing excitement within the development team led to the half-complete game being shifted. It was moved to the groundbreaking new console, leaving its original home behind in the dust.

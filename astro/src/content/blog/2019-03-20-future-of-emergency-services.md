@@ -5,8 +5,8 @@ description: "It's surprising that the idea of an emergency service is even viab
 slug: "future-of-emergency-services"
 category: "blog"
 tags:
-- "future"
-- "people"
+  - "future"
+  - "people"
 ---
 
 Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [Healthline](https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline) who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.

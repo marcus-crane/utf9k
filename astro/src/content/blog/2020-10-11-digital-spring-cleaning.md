@@ -5,9 +5,9 @@ description: "As I work through deleting a bunch of accounts, I note down the va
 slug: "digital-spring-cleaning"
 category: "blog"
 tags:
-- "internet"
-- "cleaning"
-- "data"
+  - "internet"
+  - "cleaning"
+  - "data"
 ---
 
 It's spring here in New Zealand, and unfortunately I think I've spent more time decluttering digital items instead of physical, but I've still had an interesting time as a result

@@ -4,8 +4,8 @@ slug: "dns-lookup-current-ip"
 description: "In which I remember how to use dig with alternative DNS"
 category: "questions"
 tags:
-- "dig"
-- "dns"
+  - "dig"
+  - "dns"
 ---
 
 DNS! It's always the answer for your woes :)

@@ -5,12 +5,12 @@ description: "A lengthy post in which I gush about how I like Plexamp a lot due 
 slug: "plex-tidal-together"
 category: "blog"
 tags:
-- "audio"
-- "music"
-- "plex"
-- "spotify"
-- "streaming"
-- "tidal"
+  - "audio"
+  - "music"
+  - "plex"
+  - "spotify"
+  - "streaming"
+  - "tidal"
 ---
 
 {{% notice emoji="🖼" title="Look at this photograph" %}}
@@ -21,7 +21,7 @@ Not all of the images are legible if you look at them inline so just a heads up 
 
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
-As a result, the band [Failure](https://en.wikipedia.org/wiki/Failure_(band)) announced[^pulling] that they are going to [pull their music from Spotify](https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537) in part because the [streaming payouts are supposed to be some of the worst in the industry](https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation).
+As a result, the band [Failure](<https://en.wikipedia.org/wiki/Failure_(band)>) announced[^pulling] that they are going to [pull their music from Spotify](https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537) in part because the [streaming payouts are supposed to be some of the worst in the industry](https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation).
 
 I can't speak to any of the above with accuracy nor is this a post about the ethics of the streaming model for artists.
 
@@ -157,11 +157,11 @@ I had even read up on integration, where the killer feature is [clearly outlined
 
 ![A screenshot of the Plexamp iOS application. It is open to Jay-Z's artist page where a few of his albums are visible. A menu is open at the bottom with a number of options including "Add to Library" and "Add to My TIDAL".](https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-add-to-library.jpg)
 
-You'll see that there are two buttons at the bottom of the screen: *Add to My TIDAL* and *Add to Library*.
+You'll see that there are two buttons at the bottom of the screen: _Add to My TIDAL_ and _Add to Library_.
 
-When I first hooked up Tidal to Plex, I would just press *Add to My TIDAL*.
+When I first hooked up Tidal to Plex, I would just press _Add to My TIDAL_.
 
-Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit *Add to Library* and oh my god.
+Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit _Add to Library_ and oh my god.
 
 ![A cropped image of the Plexamp macOS application is visible. It is open to the albums page with displays the cover art for a number of albums. Visible are a few Jay-Z albums, the Kane & Lynch OST, the OSTs for Jak 2 and 3, a Pokemon OST and three Kanye West albums.](https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-jak-jay.jpg)
 
@@ -215,7 +215,7 @@ There's also a feature for surfacing what happened "On This Day" in music histor
 
 ![Visible is the cover art for the album She's the One by Tom Petty within a section called "On this Day". It states that the album mentioned come out on this day 25 years ago.](https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png)
 
-It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's 
+It would have said that February 10th[^feb] is the 28th anniversary of [The College Dropout](https://en.wikipedia.org/wiki/The_College_Dropout) if not for a [pesky oversight](https://twitter.com/plexamp/status/1491497134851428352). Thankfully it should be addressed soon so we can appropriately celebrate ye's
 29th debut next year.
 
 ### Viewing albums by mood
@@ -586,25 +586,14 @@ Perhaps the only question left now is whether I can bear to sully my library wit
 Enjoy!
 
 [^pulling]: It seems that these claims are starting to take effect. I didn't have any doubt but if I had to guess, I figure there's probably some process where Spotify waits out the calendar month in order to calculate compensation. It seems that Neil's entire catalogue has disappeared at the time of publishing. Prior to this, he pulled his catalogue [back in 2015](https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338/) due to "my music [being] devalued by the worst quality in the history of broadcasting or any other form of distribution"
-
 [^subsidy]: On lower plans, they usually pay for half and you just pay the remainder. It shows as an add-on to your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you'd have purchased anyway.
-
 [^cafe]: Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify's free version. I'm not entirely sure that's legal but damn, those ads really are annoying.
-
 [^discover]: I know some people absolutely swear by Discover Weekly and while I think it is really good, I always forget to listen to it. I'm also not opposed to just viewing it once a week and listening to those songs via an alternative streaming plans. Hell, I might just be able to pull the playlist via an API endpoint and populate an identical playlist somewhere else?
-
 [^nowplaying]: Currently, it shows TV shows, movies and music via Plex and even what I'm playing on my PS5 via the Playstation Network APIs. I'll probably write about it in a future blog post. It was previously powered by both Spotify and [Trakt](https://trakt.tv) before my switch though.
-
 [^vpn]: Especially given all of the traffic would transit through Germany while I lived in New Zealand. It wasn't really the VPN though, more that the traffic passed through two or three different [NATs](https://en.wikipedia.org/wiki/Network_address_translation).
-
 [^eardrums]: But for real though, nothing gets me in the mood to review software like having my eardrums blown out at 11:30pm while in bed :)
-
 [^localfiles]: The feature has degraded over the years so I'm not sure of the current state but last I checked, you can add local files to the desktop client. This doesn't actually sync them like a la Google Music but instead just dumps them all into a basic list that you can play. If you open Spotify on a different desktop, you have to do the same process again from scratch.
-
-[^khinsider]: [*cough*](https://github.com/marcus-crane/khinsider)
-
+[^khinsider]: [_cough_](https://github.com/marcus-crane/khinsider)
 [^feb]: The first draft of this post was written on Feb 10th but I didn't get around to editing it until Feb 12th hence this doesn't really line up with the publication date.
-
 [^source]: There are two sources in Plex: One shows your Tidal library by itself and streams direct from Tidal. Given this, Tidal content doesn't show up in the API, as the stream doesn't transit via Plex. The other source is when you add Tidal content to your music library. This does transit via Plex so it shows up via the API.
-
 [^riaa]: Do three audio fingerprints make a unique fingerprint? I hope the RIAA doesn't destroy my blog or I might have to use one of those shady Swiss bulletproof hosts going forward...

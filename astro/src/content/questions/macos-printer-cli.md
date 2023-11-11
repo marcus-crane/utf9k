@@ -4,8 +4,8 @@ slug: "macos-printer-cli"
 description: "Printing without a display seems counter-intuitive"
 category: "questions"
 tags:
-- "macos"
-- "printers"
+  - "macos"
+  - "printers"
 ---
 
 Recently, a coworker of mine got a new laptop and needed to connect to the printer at work. One of the dialog boxes asked for the "print queue".

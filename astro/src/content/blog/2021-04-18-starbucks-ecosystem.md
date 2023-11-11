@@ -5,10 +5,10 @@ slug: "starbucks-rewards-third-place"
 description: "A post in which I ramble about Starbucks and how if you squint, it's a place that some people treat as their second home."
 category: "blog"
 tags:
-- "apps"
-- "coffee"
-- "ecosystems"
-- "starbucks"
+  - "apps"
+  - "coffee"
+  - "ecosystems"
+  - "starbucks"
 ---
 
 Like all non-technical blog posts I write, the ones that get published are often a spur of the moment reaction to something I just saw or experienced. In this case, I was visiting a Starbucks location here in New Zealand and learned an annoying qualifier about the recently introduced Starbucks Rewards system.
@@ -29,13 +29,13 @@ While I won't go into it too much, nor am I particularly qualified to, there are
 
 A condensed version of those characteristics is roughly:
 
-* **It should be neutral**: No one is required to be there for any reason. You can come and go as you like.
-* **Status should not matter**: Whether you're an executive or a retail assistant, you get the same treatment.
-* **The main activity is conversation**: Assuming you're with friends or feel comfortable meeting strangers, the primary activity you'll be doing is talking. Starbucks has a bit of an asterisk here as people also come to work in a solo capacity.
-* **There tend to be regulars**: The presence of regulars sets the tone and their presence also attracts newcomers.
-* **The location has a low profile**: It never feels intentionally pretentious or exclusive to any particular section of society.
-* **It has a light tone**: There's never a sense of tension or extreme seriousness.
-* **It feels like a second home**: You feel like you belong, or perhaps more accurately, like you're not unwanted given it is a business after all.
+- **It should be neutral**: No one is required to be there for any reason. You can come and go as you like.
+- **Status should not matter**: Whether you're an executive or a retail assistant, you get the same treatment.
+- **The main activity is conversation**: Assuming you're with friends or feel comfortable meeting strangers, the primary activity you'll be doing is talking. Starbucks has a bit of an asterisk here as people also come to work in a solo capacity.
+- **There tend to be regulars**: The presence of regulars sets the tone and their presence also attracts newcomers.
+- **The location has a low profile**: It never feels intentionally pretentious or exclusive to any particular section of society.
+- **It has a light tone**: There's never a sense of tension or extreme seriousness.
+- **It feels like a second home**: You feel like you belong, or perhaps more accurately, like you're not unwanted given it is a business after all.
 
 At this point, I've also forgotten what I was writing about in the first place but this is a long winded way of saying that I consider Starbucks to be a third place for some, whether they realise it or not.
 

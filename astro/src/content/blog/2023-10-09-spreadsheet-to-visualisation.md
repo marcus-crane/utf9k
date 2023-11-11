@@ -5,9 +5,9 @@ description: "How I finished a project that was sitting on the backburner for ye
 slug: "spreadsheet-to-visualisation"
 category: "blog"
 tags:
-- "software"
-- "tutorial"
-- "visualisation"
+  - "software"
+  - "tutorial"
+  - "visualisation"
 ---
 
 From time to time, I like to [submit requests under the Official Information Act](https://utf9k.net/blog/nz-oia-guide/) and see what fun datasets I can get my hands on.
@@ -85,7 +85,7 @@ With just an initial glance, we can already spot a bunch of pain points with thi
 
 For the first iteration of this project, I decided to ignore any information that would be hard to interpret so missing street numbers and the like were put to one side just to get things moving.
 
-For this step, I reached for [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Pandas](https://pandas.pydata.org/) to create a hacky script that brute forced this dataset into something nice and easy to play with.
+For this step, I reached for [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>) and [Pandas](https://pandas.pydata.org/) to create a hacky script that brute forced this dataset into something nice and easy to play with.
 
 Python is generally nice for these sorts of explorations, not only because it has a strong data science library but the lack of strong typing makes it easy to cludge together a project when your underlying data is a complete mess, structurally speaking.
 
@@ -224,4 +224,4 @@ Anyway, hopefully you learned something useful reading this post and if you come
 
 Happy mapping!
 
-[^lgoima]: The Local Government Official Information and Meetings Act can be thought of as an Official Information Act for local city councils. Sometimes, councils will try to get out of their obligations 
+[^lgoima]: The Local Government Official Information and Meetings Act can be thought of as an Official Information Act for local city councils. Sometimes, councils will try to get out of their obligations

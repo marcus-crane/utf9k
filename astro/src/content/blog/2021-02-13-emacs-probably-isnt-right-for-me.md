@@ -5,9 +5,9 @@ description: "My confessions as a tooling alcoholic"
 slug: "emacs-probably-isnt-right-for-me"
 category: "blog"
 tags:
-- "emacs"
-- "productivity"
-- "workflow"
+  - "emacs"
+  - "productivity"
+  - "workflow"
 ---
 
 I'm not someone who tends to wear my text editor on my sleeve, probably because I don't stick to just one anyway, but I've probably mentioned Emacs more than most in the last year or two.

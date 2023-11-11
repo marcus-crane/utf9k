@@ -5,9 +5,9 @@ description: "A minor tangent about... I don't remember, GTD and fruit?"
 slug: "fruit-plate"
 category: "blog"
 tags:
-- "work"
-- "overhead"
-- "productivity"
+  - "work"
+  - "overhead"
+  - "productivity"
 ---
 
 I ordered a fruit plate about 15 minutes ago.

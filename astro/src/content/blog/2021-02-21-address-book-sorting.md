@@ -5,8 +5,8 @@ description: "The macOS and iOS address book leaves a bit to be desired"
 slug: "address-book-sorting"
 category: "blog"
 tags:
-- "people"
-- "software"
+  - "people"
+  - "software"
 ---
 
 When I boot up an Apple device for the first time, it always strikes me as annoying to find that the address book is sorted by last name first.

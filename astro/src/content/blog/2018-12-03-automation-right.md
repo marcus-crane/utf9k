@@ -5,11 +5,11 @@ description: "What do you do when a UI element disappears but the service poweri
 slug: "automation-right"
 category: "blog"
 tags:
-- "automation"
-- "microservices"
-- "twitter"
+  - "automation"
+  - "microservices"
+  - "twitter"
 aliases:
-- "/blog/when-automation-goes-horribly-right"
+  - "/blog/when-automation-goes-horribly-right"
 ---
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
@@ -25,7 +25,6 @@ Over time, I'd forget that I had it enabled and then someone else would get caug
 ![A screenshot of a Twitter direct message, many months after the one just shown previously. On the left are some messages expressing surprise at having found an automated response. On the right is the author expressing confusion, due to having forgot any such automated messages exist.](https://cdn.utf9k.net/blog/automation-right/confusion-two.png)
 
 and then it kept going at which point it started becoming a bit of a nuisance.
-
 
 ![A screenshot of a Twitter direct message. On the left is a user saying that the automated messaging is still intact. On the right is the author, typing in full capital letters to express disbelief, stating that they have tried to turn off this automated feature but can't figure out how.](https://cdn.utf9k.net/blog/automation-right/confusion-three.png)
 

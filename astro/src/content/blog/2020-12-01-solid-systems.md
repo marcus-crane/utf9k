@@ -5,8 +5,8 @@ description: "Is software reliable? Probably not"
 slug: "solid-systems"
 category: "blog"
 tags:
-- "shopping"
-- "reliability"
+  - "shopping"
+  - "reliability"
 ---
 
 If I had a crystal ball in front of me, one of the things I would like to ask is "Will we, the human race, ever get solid systems?".

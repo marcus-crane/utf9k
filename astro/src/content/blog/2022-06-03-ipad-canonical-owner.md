@@ -5,9 +5,9 @@ description: "In which we investigate whether the demo content loaded onto iPads
 slug: "ipad-canonical-owner"
 category: "blog"
 tags:
-- "apple"
-- "mystery"
-- "ipad"
+  - "apple"
+  - "mystery"
+  - "ipad"
 ---
 
 A few years ago, I ordered a 4th generation Apple iPad Air and the store I purchased it from accidentally sent me a demo unit.
@@ -52,9 +52,9 @@ We'll work through them in order:
 
 There are only 3 events on the kids calendar which are as follows:
 
-* Adam's Piano lesson from 3:30pm - 4:30pm every Tuesday
-* Ellie's Soccer Game from 6:00pm - 8:00pm every Wednesday
-* Adam's Soccer Game from 11:00am - 2:00pm on every 5th Saturday
+- Adam's Piano lesson from 3:30pm - 4:30pm every Tuesday
+- Ellie's Soccer Game from 6:00pm - 8:00pm every Wednesday
+- Adam's Soccer Game from 11:00am - 2:00pm on every 5th Saturday
 
 We can infer that this person has two kids: Adam and Ellie. Both play Soccer and Adam plays the piano.
 
@@ -72,9 +72,9 @@ This calendar is home to a few generic events such as "Pay Bills" and "Doctor's 
 
 There are a number of lunch and coffee catchups and they tend to be at real places:
 
-* Lunch with Pablo at [Michael Mina](https://www.michaelmina.net/restaurants/) every 2 weeks
-* Lunch with Becky at [Yank Sing](https://yanksing.com/) every 7 weeks
-* Lunch with Mum at [Bistro - South Park](https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu/) every 4 weeks
+- Lunch with Pablo at [Michael Mina](https://www.michaelmina.net/restaurants/) every 2 weeks
+- Lunch with Becky at [Yank Sing](https://yanksing.com/) every 7 weeks
+- Lunch with Mum at [Bistro - South Park](https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu/) every 4 weeks
 
 There are some other catchups but none of them feature any locations
 
@@ -84,14 +84,14 @@ There are some other catchups but none of them feature any locations
 
 This calendar is what it says on the tin and features a number of locations as well:
 
-* Lunch with Lucy at [Yank Sing](https://yanksing.com/) every 3 weeks
-* Bowling at Biltmore Lanes every month.
-  * I couldn't find any information on Biltmore Lanes if that's a real place.
-* Neighbourhood Council at Community Centre on the 4th month of every Sunday
-  * The community centre in question is not named but perhaps you could triangulate one by cross-referencing the locations the calendar owner visits?
-* Yoga at [2nd Street Gym](https://2ndstreetgym.com/) every 3 weeks
-* Brunch with Mindy at [Zazie](https://www.zaziesf.com/) on the 1st Sunday of every month
-* Tennis with Katy at the 4th Street Courts every 3 weeks
+- Lunch with Lucy at [Yank Sing](https://yanksing.com/) every 3 weeks
+- Bowling at Biltmore Lanes every month.
+  - I couldn't find any information on Biltmore Lanes if that's a real place.
+- Neighbourhood Council at Community Centre on the 4th month of every Sunday
+  - The community centre in question is not named but perhaps you could triangulate one by cross-referencing the locations the calendar owner visits?
+- Yoga at [2nd Street Gym](https://2ndstreetgym.com/) every 3 weeks
+- Brunch with Mindy at [Zazie](https://www.zaziesf.com/) on the 1st Sunday of every month
+- Tennis with Katy at the 4th Street Courts every 3 weeks
 
 ### Training
 
@@ -103,10 +103,10 @@ I'm not sure who the training is in reference to, or if this calendar is even ac
 
 We've got the following events:
 
-* Design Team Staff Meeting: "To review designs for this week's exec meeting and discuss remaining designs needed."
-* Review Graphic Design
-* Review Presentation with Susan
-* Project Planning Meeting: "To discuss project plan and review milestones and deliverables"
+- Design Team Staff Meeting: "To review designs for this week's exec meeting and discuss remaining designs needed."
+- Review Graphic Design
+- Review Presentation with Susan
+- Project Planning Meeting: "To discuss project plan and review milestones and deliverables"
 
 None of this appears to be training unless it's training for design team members perhaps?
 
@@ -120,15 +120,15 @@ This is definitely the fullest calendar with a number of business meetings and c
 
 We've got the following:
 
-* Weekly Team Meeting: "To discuss project status and deliverables. Please bring status on each deliverable due this week."
-* Conference Call with Exec Team
-* Budget Review: "To review budget plans for upcoming projects"
-* Design Review
-* Team meeting
-* Contract Review with Allison
-* Executive Briefing
-* Expense Review: "To review this expenses to date and discuss plans for the next phase of the project."
-* Meeting with Sales Team
+- Weekly Team Meeting: "To discuss project status and deliverables. Please bring status on each deliverable due this week."
+- Conference Call with Exec Team
+- Budget Review: "To review budget plans for upcoming projects"
+- Design Review
+- Team meeting
+- Contract Review with Allison
+- Executive Briefing
+- Expense Review: "To review this expenses to date and discuss plans for the next phase of the project."
+- Meeting with Sales Team
 
 It's all very generic as to what this person's role is but of course, this is all stuff designed to be glanced at for a couple of seconds if at all.
 
@@ -150,7 +150,7 @@ That said, I did google a number of the names and they all appear to be Apple em
 
 ## Notes
 
-These were loaded as [Apple Notes](https://en.wikipedia.org/wiki/Notes_(Apple)) but there's no standard format so they were all exported as PDFs. They're mostly intact but some formatting got mangled in the process.
+These were loaded as [Apple Notes](<https://en.wikipedia.org/wiki/Notes_(Apple)>) but there's no standard format so they were all exported as PDFs. They're mostly intact but some formatting got mangled in the process.
 
 ![A screenshot of the macOS Preview app showing a PDF. The PDF is an exported Apple Note showing a sketch for a treehouse. The note is titled "Jake's treehouse!!"](https://cdn.utf9k.net/blog/ipad-canonical-owner/notes.jpg)
 
@@ -178,7 +178,7 @@ Beyond the above, most of the notes don't really tell us much about the author b
 
 ## Numbers
 
-There is a planning spreadsheet for a Summer Garden Party available as a [Numbers](https://en.wikipedia.org/wiki/Numbers_(spreadsheet)) file.
+There is a planning spreadsheet for a Summer Garden Party available as a [Numbers](<https://en.wikipedia.org/wiki/Numbers_(spreadsheet)>) file.
 
 ![A screenshot of the macOS Preview app displaying a preview of a Number spreadsheet. Visible is a planning document for a garden party which lists a number of hosts and guests. A number of tasks are planned to be done between June and July. There are 4 sheets in total.](https://cdn.utf9k.net/blog/ipad-canonical-owner/numbers.jpg)
 
@@ -190,7 +190,7 @@ It lists a number of party-related businesses such as "Joe the Juggler" and "Tru
 
 ## Pages
 
-This is a document on the [Leaning Tower of Pisa](https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa) created with [Pages](https://en.wikipedia.org/wiki/Pages_(word_processor)). It's available as a `.pages` file as well as a PDF export.
+This is a document on the [Leaning Tower of Pisa](https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa) created with [Pages](<https://en.wikipedia.org/wiki/Pages_(word_processor)>). It's available as a `.pages` file as well as a PDF export.
 
 ![A screenshot of the macOS Preview app displaying a preview of a Pages document. Visible is a page about the Leaning Tower of Pisa. It talks about the history of the tower and how it wasn't always leaning.](https://cdn.utf9k.net/blog/ipad-canonical-owner/pages.jpg)
 
@@ -200,7 +200,7 @@ There is a "Mariana Lin" in the Contacts list but I can't say whether there's an
 
 ## Slides
 
-This is a presentation on [Yellowstone National Park](https://en.wikipedia.org/wiki/Yellowstone_National_Park) created with [Keynote](https://en.wikipedia.org/wiki/Keynote_(presentation_software)) and available as a `.key` file.
+This is a presentation on [Yellowstone National Park](https://en.wikipedia.org/wiki/Yellowstone_National_Park) created with [Keynote](<https://en.wikipedia.org/wiki/Keynote_(presentation_software)>) and available as a `.key` file.
 
 ![A screenshot of the macOS Preview app displaying a preview of a Keynote slide. Visible is a picture of Old Faithful, a geyser at Yellowstone National Park. The slide talks about what makes geysers spew water.](https://cdn.utf9k.net/blog/ipad-canonical-owner/slides.jpg)
 
@@ -208,7 +208,7 @@ The presentation is attributed to Jamie Wong, Lauren Kerr and Greg Novick, none 
 
 I assume it's also meant to be a school presentation as it's pretty light on detail. I didn't check if there are any presenter notes but I'm guessing there probably aren't.
 
-Interestingly, running [`strings`](https://en.wikipedia.org/wiki/Strings_(Unix)) across the file throws up a reference to `Data/GettyImages-451901451-8851.mov` so it might include a video which would explain the beefy 236.5MB file size. I couldn't tell where it features from using Preview and I don't currently have Keynote installed.
+Interestingly, running [`strings`](<https://en.wikipedia.org/wiki/Strings_(Unix)>) across the file throws up a reference to `Data/GettyImages-451901451-8851.mov` so it might include a video which would explain the beefy 236.5MB file size. I couldn't tell where it features from using Preview and I don't currently have Keynote installed.
 
 ## Maps
 

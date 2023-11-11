@@ -4,8 +4,8 @@ slug: "monitoring-what-is-profiling"
 description: "In which I remind myself what profiling is"
 category: "questions"
 tags:
-- "instrumentation"
-- "monitoring"
+  - "instrumentation"
+  - "monitoring"
 ---
 
 An initial thought might be that it would help to capture all context about everything, all of the time but that would soon get very expensive to store.

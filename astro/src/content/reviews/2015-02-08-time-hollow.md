@@ -5,8 +5,8 @@ slug: "time-hollow"
 category: "reviews"
 description: "Time Hollow is a very enjoyable game about the consequences of time manipulation. I'd recommend it for those who like the concept of time travel!"
 tags:
-- "2008"
-- "nds"
+  - "2008"
+  - "nds"
 ---
 
 Protagonist, and timepiece connoisseur, Ethan Kairos lives with his parents. No, wait, that isn’t right. Living with his uncle after the disappearance of his parents, he attends Kako High. He likes to spend his time hanging out at the local Cafe Chronos with his friends Ben, Vin and Morris. Today is a rather special as it happens to be Ethan’s 18th birthday. Vin’s sister, Ashley and her best friend Emily even surprise him with a vintage alarm clock. Didn’t they? Hmm, that isn’t right either. What I meant to say was Ashley and Emily got into a fight over what gift to buy causing Ashley ran away. As the number of **alterations to the past start to spiral out of control**, it becomes obvious that Ethan’s history is being messed with big time, no pun intended.

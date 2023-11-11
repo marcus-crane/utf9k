@@ -4,9 +4,9 @@ slug: "macos-clipboard-piping"
 description: "In which I remind myself how to pipe from the macOS clipboard into terminal applications"
 category: "questions"
 tags:
-- "clipboard"
-- "macos"
-- "terminal"
+  - "clipboard"
+  - "macos"
+  - "terminal"
 ---
 
 I've known about this tool for some time now but I'm writing about it because I ALWAYS forget to use it.

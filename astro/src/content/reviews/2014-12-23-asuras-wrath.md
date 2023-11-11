@@ -5,8 +5,8 @@ slug: "asuras-wrath"
 category: "reviews"
 description: "Asura's Wrath was criticised back during release for having a DLC ending but don't let that affect what you think of the game! You might be surprised."
 tags:
-- "2012"
-- "ps3"
+  - "2012"
+  - "ps3"
 ---
 
 If you’ve heard of this title before but have yet to play it, I’m going to assume that the first thing that springs to mind is “Oh, wasn’t Asura’s Wrath that one game where the gameplay is just all QTEs?”. Well, you’re halfway correct. I’ve just recently finished it for the second time and I’ll likely be doing a third run through for 100% completion just because of how much I really enjoy the title. “But how! The ending was released as DLC!”, I hear you exclaim and yes, that did indeed happen but it’s not as bad as you probably think. We’ll get into all that shortly but until then, onwards to the premise of the game.
@@ -24,7 +24,7 @@ So, now that we’ve got that out of the way, **the gameplay consists primarily 
 I can’t really say I blame CyberConnect2 for releasing Act 4 as DLC. **This entire project was very much experimental and the sales reflect that.** In the 2 years since release, it only just barely passed [500K units moved](https://www.vgchartz.com/gamedb/?name=asura%27s+wrath) which really makes me sad. I’m guessing the IP will just be thrown back in the vault while Capcom pumps out more Street Fighter or whatever it is they’re doing nowdays. **I think that if I were ever asked to compile a list of my top 10 favourite anime, I’d genuinely consider having Asura’s Wrath on that list** despite the fact that it’s marketed and sold as a videogame first. It has everything I didn’t realise I wanted, from the gigantic enemies to the intriguing mix of religious imagery with science fiction right up to the insane levels of action that just kept me hooked for the entire playthrough. It’s definitely a game that a lot of people likely just won’t enjoy due to the gameplay but **gosh darnit Capcom, all I want for Christmas is Asura’s Wrath 2 or at least a PC port**
 
 _P.S. Check the download store for the platform of your choice, whether PS3 or Xbox 360 for a downloadable demo. Both fights give a good sense of the action in the game but also should be a good decider as to whether or not you like the gameplay._
-  
+
 Developer: CyberConnect2 \
 Publisher: Capcom \
 Released in 2012 \

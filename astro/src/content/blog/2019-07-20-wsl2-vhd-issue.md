@@ -5,10 +5,10 @@ description: "One night I had a bit to drink and debugged the hell out of a WSL2
 slug: "wsl2-vhd-issue"
 category: "blog"
 tags:
-- "beta"
-- "linux"
-- "windows"
-- "wsl"
+  - "beta"
+  - "linux"
+  - "windows"
+  - "wsl"
 ---
 
 I recently started running the Windows Insider builds on my desktop so that I could play around with the new Windows Subsystem for Linux but I ran into some trouble. Before I get into the fix, here's a little bit of history

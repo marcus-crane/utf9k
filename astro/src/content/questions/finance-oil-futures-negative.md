@@ -4,10 +4,10 @@ slug: "finance-oil-futures-negative"
 description: "In which I write about something that is definitely not computers"
 category: "questions"
 tags:
-- "finance"
-- "futures"
+  - "finance"
+  - "futures"
 aliases:
-- "/notes/oil-futures/"
+  - "/notes/oil-futures/"
 ---
 
 On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.
@@ -52,15 +52,11 @@ Not to mention, there was already an overabundance of oil for the foreseeable fu
 
 ## Sources
 
-* [https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now](https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now)
-    
-* [https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil](https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil)
-    
-* [https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W](https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W)
-  
-* [https://www.cushingcitizen.com/news/oil-turns-red](https://www.cushingcitizen.com/news/oil-turns-red)
-    
+- [https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now](https://www.bloomberg.com/opinion/articles/2020-04-22/nobody-wants-much-oil-right-now)
+- [https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil](https://www.bloomberg.com/opinion/articles/2020-04-28/oil-traders-not-sure-they-like-oil)
+- [https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W](https://www.reuters.com/article/us-global-oil-usa-storage/no-vacancy-main-us-oil-storage-in-cushing-is-all-booked-idUSKCN22332W)
+- [https://www.cushingcitizen.com/news/oil-turns-red](https://www.cushingcitizen.com/news/oil-turns-red)
 
 ## Further reading
 
-* [https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil](https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil)
+- [https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil](https://www.npr.org/sections/money/2016/08/26/491342091/planet-money-buys-oil)
