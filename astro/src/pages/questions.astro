@@ -3,11 +3,6 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Base.astro";
 import QuestionList from "../components/QuestionList.astro";
 
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-
-dayjs.extend(utc);
-
 const questions = await getCollection("questions");
 ---
 
@@ -29,3 +24,7 @@ const questions = await getCollection("questions");
     <QuestionList questions={questions} />
   </main>
 </BaseLayout>
+
+<script>
+  import "../js/question-search";
+</script>

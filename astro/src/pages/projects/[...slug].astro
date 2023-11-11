@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Base.astro';
+import MarkdownPost from '../../layouts/MarkdownPost.astro';
 
 export async function getStaticPaths() {
-  const projects = await getCollection('projects');
-  return projects.map(entry => ({
+  const posts = await getCollection('projects');
+  return posts.map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
 }
@@ -13,11 +13,12 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
-    <h1>{entry.data.title}</h1>
-    <h2>{entry.data.ongoing}</h2>
-    <hr />
-    <div>
-        <Content />
-    </div>
-</Layout>
+<MarkdownPost title={entry.data.title}>
+  <Content />
+</MarkdownPost>
+
+<script>
+  import littlefoot from "littlefoot";
+
+  littlefoot()
+</script>

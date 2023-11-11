@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  reviews: CollectionEntry<"reviews">[];
+}
+
+const { reviews } = Astro.props;
+---
+
+<ul>
+  {
+    // TODO: Invent something nicer
+    reviews
+      .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+      .reverse()
+      .map((p) => (
+        <li>
+          <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+        </li>
+      ))
+  }
+</ul>
