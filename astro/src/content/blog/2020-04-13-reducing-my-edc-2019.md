@@ -108,7 +108,7 @@ It probably doesn't look like much at the moment so let's add some keys and acce
 
 I've got my three house keys, a bottle opener (under the blue key) and a USB drive all sitting snuggly in there.
 
-![A close up photo of a table surface with the assembled metal wallet sitting on it. The wallet is upside down, with the keys and USB drive extended beyond the base plate. The bottom of the base plate is visible, as the wallet is upside down, and has a large clip at the bottom for slotting cards into.](11-wallet-underside.jpeg)
+![A close up photo of a table surface with the assembled metal wallet sitting on it. The wallet is upside down, with the keys and USB drive extended beyond the base plate. The bottom of the base plate is visible, as the wallet is upside down, and has a large clip at the bottom for slotting cards into.](https://cdn.utf9k.net/blog/reducing-my-edc-2019/11-wallet-underside.jpeg)
 
 That's not all. We can stick those remaining cards in the bottom card holder too.
 

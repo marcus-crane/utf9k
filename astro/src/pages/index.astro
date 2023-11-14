@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
 
+import type { BookList } from "../schemas/books"
+import type { GameList } from "../schemas/games";
+
 // Data files
 import books from "../data/books.yml";
 import gags from "../data/gags.yml";
@@ -52,18 +55,17 @@ import manga from "../data/manga.json";
             </header>
             <ul>
               {
-                books[0].books
+                (books as BookList[])[0].books
                   .filter((b) => b.progress !== 100)
                   .map((book) => (
                     <li style="display: inline-block;">
                       <img
-                        alttitle="OpenLibrary"
-                        altsrc={book.link}
                         alt={`A cover image of the book titled ${book.title}`}
                         src={book.cover}
                         height="180px"
                         style="border-radius: 3px;"
                       />
+                      <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={book.link}>OpenLibrary</a></figcaption>
                       <p>{book.progress}% read</p>
                     </li>
                   ))
@@ -84,13 +86,12 @@ import manga from "../data/manga.json";
                   .map((manga) => (
                     <li style="display: inline-block;">
                       <img
-                        alttitle="AniList"
-                        altsrc={manga.url}
                         alt={`A cover image of ${manga.title}, a manga series by ${manga.author}`}
                         src={manga.cover}
                         height="180px"
                         style="border-radius: 3px;"
                       />
+                      <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={manga.url}>Anilist</a></figcaption>
                       <p>{manga.chapters! - manga.progress} chapters left</p>
                     </li>
                   ))
@@ -141,16 +142,15 @@ import manga from "../data/manga.json";
             </header>
             <ul>
               {
-                games[0].games.map((game) => (
+                (games as GameList[])[0].games.map((game) => (
                   <li style="display: inline-block;">
                     <img
-                      alttitle="IGDB"
-                      altsrc={game.link}
                       alt={`Box art for the game titled ${game.title}`}
                       src={game.cover}
                       height="180px"
                       style="border-radius: 3px;"
                     />
+                    <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={game.link}>IGDB</a></figcaption>
                   </li>
                 ))
               }

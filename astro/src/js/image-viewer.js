@@ -26,18 +26,14 @@ function addOverlay(el) {
     const imageViewer = document.createElement("div");
     const fullsizeImage = document.createElement("img");
     const imageCaption = document.createElement("p");
-    // Used to surface links that would otherwise redirect the user on click to somewhere besides image src
-    const imageLink = el.getAttribute("altsrc");
-    const imageLinkTitle = el.getAttribute("alttitle");
 
     fullsizeImage.src = el.src;
 
     imageCaption.innerHTML = el.getAttribute("alt");
 
-    if (imageLink !== null) {
-      let imageTitle = imageLinkTitle === null ? imageLink : imageLinkTitle;
+    if (el.nextSibling !== null && el.nextSibling.tagName === "FIGCAPTION") {
       imageCaption.innerHTML += "<br /><br />";
-      imageCaption.innerHTML += `You can learn more by visiting <a target="_blank" href="${imageLink}">${imageTitle}</a>`;
+      imageCaption.innerHTML += el.nextSibling.innerHTML
     }
 
     imageViewer.appendChild(fullsizeImage);
