@@ -1,0 +1,45 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# Day Xero
+15 February 2018
+
+Technically it’s Day 1 of my new job, a Graduate Site Reliability Engineer at Xero but it hasn’t officially started since I’m still on my way to the airport.
+
+I told myself that when I finally got my first full time development position, I’d write a big post mortem about how long it took, how many times I was rejected and all that but since I haven’t (yet), this is my offering to the Content Overlords.
+
+I don’t even know if I actually slept last night because it felt like most of it was like “Oh no, what have I actually learnt over the last year” and other rude things from that pesky doubtful voice we all have.
+
+Excuse me, you silly voice, I’ll have you know that I’ve used and/or fiddled with ahem
+
+dochiaskydd4hpydja22hfnodj2vena43reafwetexabegdd0r gneov1fuhithuistfhrc8gzvftowfimeduwhtabf2dofqtmudmu
+
+and let me tell you, MediaWiki is something… special alright but it’s solid!
+
+I’d be silly of course to think that somehow knowing a bunch of frameworks and languages will somehow mean I’m set for life because that’s nonsense talk. It’s all about knowing picking the right tool for the right job, y’know?
+
+One of the things I’d like to do more this year is reading more about actual software stories. I started reading Dreaming in Code earlier this year which seems to be a “what not to do” manual.
+
+The author, Scott Rosenberg often veers so far into tangents that half the book feels more like a history lesson than development but that’s good! Software won’t save you, or the planet, on its own. You gotta focus on the people behind it and getting them working together as a proper team.
+
+This post isn’t actually about anything as you can tell. It’s the Seinfeld of posts. Well, that’s not true since Seinfeld isn’t actually about nothing, it’s just a show without drama. It’s supposed to just be regular life because your average person doesn’t live out Sex in the City on a daily basis. I’ve never actually seen that show though, it’s just used as a punchline a lot.
+
+I’m sure if I look back at today, I’ll wonder what I was even worried about. If you think about friends or coworkers, do you even really remember meeting them? It’s like as soon as you properly know someone, you just kinda forget any awkward moments before your first interaction. I suppose it’s like that with jobs. You just kinda turn up one day and, assuming you try your best, you just kinda slot in nicely as if you’d been there the whole time.
+
+Anyway, I better deploy this thing before my taxi gets here. It’s still kinda crazy to me that I can just give away the actual post file you’re reading with a few entries into a terminal. Yes, I had to manually make that link because this post even in the repo yet! That’s like some kinda preemptive sharing, whoaaa mannnnn.
+
+As someone who learnt piece by piece, pouring a bunch of hours into Right Click -&gt; View Page Source, it’s nice to give my own stuff back. I can’t remember who said it or when but someone once said something along the lines of “I don’t write code, I merely borrow it.” Their point wasn’t that they spend all day on Stack Overflow but rather that none of their ideas are truly original. Nothing is original because it’s all inspired by things that came before.
+
+Ok, ok, my time is actually almost up and while I’m a bit freaked out that I’ll be diving into my first full time software job after years of being a hobbyist, there’s one thing that I try to remind myself. I might not truly know what I’m doing but neither does anyone else.
+
+As someone else once told me:
+
+Adults are just kids who got older
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I inspect a SAML request? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/saml-inspect-request/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/saml-inspect-request/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="In which I remind myself how to dig into a SAML payload" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/saml-inspect-request/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I inspect a SAML request?" />
+<meta property="og:description" content="In which I remind myself how to dig into a SAML payload" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/saml-inspect-request/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-01-03T12:56:46+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I inspect a SAML request?"/>
+<meta name="twitter:description" content="In which I remind myself how to dig into a SAML payload"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I inspect a SAML request?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>Until recently, I never had to go near SAML with a 10 foot pole but I was recently helping out a coworker with adding SAML authentication to an Elasticsearch cluster.</p>
+<p>I had never seen one before but a SAML request looks a little like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://idp.example.org/SAML2/SSO/Redirect?SAMLRequest=fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3%2FA15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr%2FRbRp63K3pL5rPhYOpkVdYib%2FCon%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9%2FfCR7GorYGTWFK8pu6DknnwKL%2FWEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2%2FBK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P%2FAXv4C
+</span></span></code></pre></div><p>I took <a href="https://en.wikipedia.org/wiki/SAML_2.0">this example</a> from Wikipedia and it&rsquo;s a pretty good illustration of where the juicy part of the request probably is.</p>
+<p>A basic way to inspect this request in Python would look like the following. I don&rsquo;t claim that this will work on all requests. For that, try something like <a href="https://github.com/onelogin/python3-saml">python3-saml</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">from</span> base64 <span style="color:#ff79c6">import</span> b64decode
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">from</span> urllib.parse <span style="color:#ff79c6">import</span> unquote
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> zlib
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>url <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">A15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">RbRp63K3pL5rPhYOpkVdYib</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">Con%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">fCR7GorYGTWFK8pu6DknnwKL</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">WEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">BK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P</span><span style="color:#f1fa8c">%2F</span><span style="color:#f1fa8c">AXv4C&#34;</span>
+</span></span><span style="display:flex;"><span>urldecoded_url <span style="color:#ff79c6">=</span> unquote(url)
+</span></span><span style="display:flex;"><span>b64decoded_url <span style="color:#ff79c6">=</span> b64decode(url)
+</span></span><span style="display:flex;"><span>request <span style="color:#ff79c6">=</span> zlib<span style="color:#ff79c6">.</span>decompress(b64decoded_url, <span style="color:#ff79c6">-</span><span style="color:#bd93f9">15</span>)<span style="color:#ff79c6">.</span>decode()
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(request) <span style="color:#ff79c6">//</span> <span style="color:#f1fa8c">&#39;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">&lt;samlp:AuthnRequest</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  xmlns:samlp=&#34;urn:oasis:names:tc:SAML:2.0:protocol&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  xmlns:saml=&#34;urn:oasis:names:tc:SAML:2.0:assertion&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  ID=&#34;aaf23196-1773-2113-474a-fe114412ab72&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  Version=&#34;2.0&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  IssueInstant=&#34;2004-12-05T09:21:59Z&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  AssertionConsumerServiceIndex=&#34;0&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  AttributeConsumingServiceIndex=&#34;0&#34;&gt;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  &lt;saml:Issuer&gt;https://sp.example.com/SAML2&lt;/saml:Issuer&gt;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">  &lt;samlp:NameIDPolicy</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">    AllowCreate=&#34;true&#34;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">    Format=&#34;urn:oasis:names:tc:SAML:2.0:nameid-format:transient&#34;/&gt;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">&lt;/samlp:AuthnRequest&gt;</span><span style="color:#f1fa8c">\r\n</span><span style="color:#f1fa8c">&#39;</span>
+</span></span></code></pre></div><p>If you&rsquo;re feeling a bit lazy, like I often am, you can use any of the online decoders, such as <a href="https://developer.pingidentity.com/en/tools/saml-decoder.html">this one by PingID</a>.</p>
+<p>If you&rsquo;re dealing with sensitive credentials however, it&rsquo;s best to decode it locally rather than trusting a third party.</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

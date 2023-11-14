@@ -1,0 +1,18 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# Books
+01 January 0001
+
+ 2023 Yearly goal: 3 / 24 books completed (12%) High Performance Browser Networking 36% read
+
+Wrong Way 22% read
+
+The PARA Method Finished: 2023-08-30 Rating: ★★★ Hanging Out Finished: 2023-06-06 Rating: ★★★ Like, Comment, Subscribe Finished: 2023-02-07 Rating: ★★★★★ 2022 Yearly goal: 5 / 12 books completed (41%) Build Finished: 2022-10-29 Rating: ★★★★★ High Output Management Finished: 2022-10-23 Rating: ★★★★ Building a Second Brain Finished: 2022-09-20 Rating: ★★★★ Slow Horses Finished: 2022-09-18 Rating: ★★★★ Ruined by Design Finished: 2022-02-24 Rating: ★★★ 2021 Yearly goal: 10 / 20 books completed (50%) Four Thousand Weeks Finished: 2021-11-06 Rating: ★★★★★ Crossing the Chasm, 3rd Edition Finished: 2021-08-09 Rating: ★★★★★ The Usefulness of Useless Knowledge Finished: 2021-07-30 Rating: ★★★ Resilient Management Finished: 2021-07-19 Rating: ★★★ The Big Four Finished: 2021-05-30 Rating: ★★★★ Little Rice Finished: 2021-05-05 Rating: ★★★ The Waxman Report Finished: 2021-04-24 Rating: ★★★★ In the Beginning ...Was the Command Line Finished: 2021-02-20 Rating: ★★ The Dip Finished: 2021-02-13 Rating: ★★★ Propaganda Finished: 2021-02-12 Rating: ★★★★ 2020 Yearly goal: 22 / 12 books completed (183%) In the Plex Finished: 2020-12-28 Rating: ★★★★★ Naked Pictures of Famous People Finished: 2020-12-05 Rating: ★★★ The Checklist Manifesto Finished: 2020-12-04 Rating: ★★★★ Greenlights Finished: 2020-11-09 Rating: ★★ The Death of Ivan Ilych Finished: 2020-10-24 Rating: ★★★ As We May Think Finished: 2020-09-30 Rating: ★★★★ Talking to My Daughter About the Economy Finished: 2020-09-30 Rating: ★★★★★ The Miracle of Mindfulness Finished: 2020-09-19 Rating: ★★★ On Bullshit Finished: 2020-09-15 Rating: ★★★★ The Curse of Bigness Finished: 2020-09-14 Rating: ★★★★ Memos from the Chairman Finished: 2020-09-11 Rating: ★★★ Learning HTTP/2 Finished: 2020-09-04 Rating: ★★★ The Master Switch Finished: 2020-08-09 Rating: ★★★★ Atomic Habits Finished: 2020-07-12 Rating: ★★★★ The Inner Game of Tennis Finished: 2020-06-06 Rating: ★★★★ Zen in the Art of Writing Finished: 2020-05-11 Rating: ★★★ Red Tape Finished: 2020-03-23 Rating: ★★★ Why I Write Finished: 2020-02-25 Rating: ★★★★ Dirty Politics Finished: 2020-02-09 Rating: ★★★★ Getting Things Done Finished: 2020-02-07 Rating: ★★★★ The Information Diet Finished: 2020-01-30 Rating: ★★★ The Myth of Sisyphus Finished: 2020-01-26 Rating: ★★★ 2019 The Unicorn Project Finished: 2019-12-25 Rating: ★★★ Super Pumped Finished: 2019-11-26 Rating: ★★★★ 2018 How To Win Friends And Influence People Finished: 2018-12-23 Rating: ★★★ The Phoenix Project Finished: 2018-12-23 Rating: ★★★★★ The Fifth Discipline Finished: 2018-08-05 Rating: ★★★ The Flinch Finished: 2018-05-11 Rating: ★★★ Twin Peaks Finished: 2018-04-28 Rating: ★★★★ Site Reliability Engineering Finished: 2018-02-24 Rating: ★★★★ Tales from the Loop Finished: 2018-02-06 Rating: ★★★★ Shit London Finished: 2018-01-24 Rating: ★★★ Japanese Game Graphics Finished: 2018-01-14 Rating: ★★★★★ Show Stopper! Finished: 2018-01-14 Rating: ★★★★ Half-Life 2 Finished: 2018-01-14 Rating: ★★★★ Pendulum Finished: 2018-01-13 Rating: ★★★★ 

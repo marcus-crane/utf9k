@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/zettelkasten/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Thu, 11 Feb 2021 17:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/zettelkasten/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using a blog like a zettelkasten seems like a good idea</title>
+      <link>https://utf9k.net/blog/zettelkasten-blog-a-good-idea/</link>
+      <description>I mean, it&#39;s what it says on the tin!</description>
+      <pubDate>Thu, 11 Feb 2021 17:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/zettelkasten-blog-a-good-idea/</guid>
+      <content type="html">&lt;p&gt;Having recently gotten back into the swing of reading via &lt;a href=&#34;https://en.wikipedia.org/wiki/RSS&#34;&gt;RSS&lt;/a&gt;, I spotted a post from &lt;a href=&#34;https://critter.blog&#34;&gt;Mike Crittenden&lt;/a&gt; called &lt;a href=&#34;https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/&#34;&gt;Blogging as a Zettelkasten&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It touches on the idea that a blog can act as a &lt;a href=&#34;https://zettelkasten.de/introduction/&#34;&gt;zettelkasten&lt;/a&gt;. For the unfamiliar, a zettelkasten is nothing more than a big collection of notes. While you might imagine reams of snippets dumped into a tool like &lt;a href=&#34;https://en.wikipedia.org/wiki/Notes_(Apple)&#34;&gt;Apple Notes&lt;/a&gt;, the difference is that each note (or &amp;ldquo;zettel&amp;rdquo;) is generously interlinked with other notes so as to form a &amp;ldquo;web of knowledge&amp;rdquo; or a &amp;ldquo;second brain&amp;rdquo;. Each note should address one standalone idea such as &amp;ldquo;English is an unproductive language&amp;rdquo; rather than a more generic &amp;ldquo;Notes on languages&amp;rdquo;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;The very blog post &lt;a href=&#34;https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/&#34;&gt;I just linked&lt;/a&gt; is a good example of what a zettelkasten note would look like. There are a number of hyperlinks scattered about and rather than reiterate previous ideas, you can just link to prior knowledge that has been expanded in detail elsewhere, should the reader choose to follow.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; As time goes on, themes start to appear, not unlike one of those crazy pinboards you see detectives use.&lt;/p&gt;
+&lt;p&gt;It is said that new insights should just sort of &amp;ldquo;fall out&amp;rdquo; by putting ideas in close proximity where your brain can make all the connections it likes. Your brain already works this way for the most part, like when you have a eureka moment in the shower, and so the idea is to basically make that process as easy as possible. While most examples seem to have degenerated into YouTube productivity clickbait, &lt;a href=&#34;https://www.youtube.com/watch?v=RvWic15iXjk&#34;&gt;&amp;ldquo;How to Use Roam to Outline a New Article in Under 20 Minutes&amp;rdquo;&lt;/a&gt; is still a golden example of what this process looks like. That was probably the single most thing that made me raise an eyebrow in interest.&lt;/p&gt;
+&lt;p&gt;Now then, while I&amp;rsquo;ve already generated enough content for a &amp;ldquo;What I don&amp;rsquo;t like about zettelkasten software&amp;rdquo; type post later on, this post is best kept succinct and in line with the title so let&amp;rsquo;s touch briefly on why I think using a blog as a zettelkasten seems like a good idea.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-longevity&#34;&gt;1) Longevity&lt;/h2&gt;&lt;p&gt;The main issue that should concern anyone semi-serious about zettel software is that you&amp;rsquo;re inherently dealing with information that may be retained for quite some time, if not possibly an entire lifetime. In the grand scheme of things, software itself is not a very old medium and yet, it feels like &lt;a href=&#34;https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry/&#34;&gt;some&lt;/a&gt; ecosystems tend to degrade within mere months, if not years.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;The beauty of just using a blog, and particularly a static site backed by any text-based format, is that it&amp;hellip; I was going to say that it &lt;a href=&#34;https://brandur.org/fragments/graceful-degradation-time&#34;&gt;&amp;ldquo;degrades gracefully through time&amp;rdquo;&lt;/a&gt; only to realise that humans are incapable of original thought and there is no such thing as free will.&lt;/p&gt;
+&lt;p&gt;I also can&amp;rsquo;t help but notice that a lot of the attempts in this space are from relatively fresh startups, rather than long-term established companies. Not that either is necessarily more equipped but the idea that &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; has raised &lt;a href=&#34;https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps&#34;&gt;$200 million&lt;/a&gt; in funding, as opposed to &lt;a href=&#34;https://www.investopedia.com/articles/investing/082814/companies-succeeded-bootstrapping.asp&#34;&gt;bootstrapping&lt;/a&gt;, is absolutely horrifying to me.&lt;/p&gt;
+&lt;p&gt;On the face of it, I&amp;rsquo;m sure users are happy that Roam has the cash to make the app nice and crisp but the idea that you would entrust any amount of long term knowledge storage to a business that will inevitably be ripped apart by venture capitalists in 5 years when it doesn&amp;rsquo;t turn on a profit on &amp;ldquo;Joe Schmo&amp;rsquo;s 40,000 hyperlink sprawl regarding &lt;a href=&#34;https://en.wikipedia.org/wiki/Juniper&#34;&gt;himalayan pinecones&lt;/a&gt;&amp;rdquo; isn&amp;rsquo;t exactly comforting.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-one-system-to-rule-them-all&#34;&gt;2) One System To Rule Them All&lt;/h2&gt;&lt;p&gt;Trying to have just one way of doing things is often not ideal because you&amp;rsquo;re probably forcing unrelated things into one box.&lt;/p&gt;
+&lt;p&gt;In this case though, I find having multiple systems for writing is annoying. Blog posts are just text and &amp;ldquo;zettels&amp;rdquo; are just text so why not have one workflow for dealing with both. It may be that different software is required (whether web-based or desktop software) or even a unique plain text format such as &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; in the case of &lt;a href=&#34;https://www.orgroam.com&#34;&gt;org-roam&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Less software is always nice, right?&lt;/p&gt;
+
+&lt;h2 id=&#34;3-reliability&#34;&gt;3) Reliability&lt;/h2&gt;&lt;p&gt;There&amp;rsquo;s one piece of &amp;ldquo;zettel&amp;rdquo; software &lt;a href=&#34;https://logseq.com&#34;&gt;in particular&lt;/a&gt; that comes to mind where I fumbled some magical formatting code in the web editor and destroyed a post beyond recognition. While it was backed by Git, everything autosaves so I had to do some unwiring. I actually chalk it up to user error but if I can&amp;rsquo;t trust myself to not break the software (as has happened twice), then perhaps the UX unavoidably has to be called into question.&lt;/p&gt;
+&lt;p&gt;I also remember Roam Research used to suffer from some site troubles back in the early days. It isn&amp;rsquo;t hugely comforting knowing that your knowledge might be inaccessible whether it be &lt;a href=&#34;https://www.site.uottawa.ca/~lucia/courses/2131-02/A2/trythemsource.txt&#34;&gt;on a train or in a car&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-its-hidden-in-plain-sight-a-secret-rant&#34;&gt;4) It&amp;rsquo;s hidden in plain sight (a secret rant)&lt;/h2&gt;&lt;p&gt;Part of me has come to associate &amp;ldquo;zettelkasten&amp;rdquo; with the whole &amp;ldquo;Productivity Porn&amp;rdquo; movement. The idea is nice but the wider fanbase often gives me pause. To be clear though, I think a lot of that ecosystem floats around YouTube and Reddit rather than say, the &lt;a href=&#34;https://github.com/org-roam/org-roam&#34;&gt;home&lt;/a&gt; of &lt;a href=&#34;https://jethro.dev&#34;&gt;Jethro Kuan&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html#Introduction&#34;&gt;elisp&lt;/a&gt; &lt;a href=&#34;https://www.orgroam.com&#34;&gt;child&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, who the hell is &lt;a href=&#34;https://fortelabs.co/&#34;&gt;Tiago Forte&lt;/a&gt;? He&amp;rsquo;s like a bargain bin Elon Musk who just appeared out of thin air one day and no one seems to know why. Why are people paying this man &lt;a href=&#34;https://web.archive.org/web/20210101170747/https://www.buildingasecondbrain.com/&#34;&gt;$5000&lt;/a&gt; to go &lt;em&gt;right click&lt;/em&gt; ➡ &amp;ldquo;New text file&amp;rdquo;? I don&amp;rsquo;t understand.&lt;/p&gt;
+&lt;p&gt;Anyway, in that vein, blogging feels like a zettelkasten hidden in plain sight. It carries all of the benefits of one without having to think about the wider ecosystem and that sounds pretty comforting.&lt;/p&gt;
+&lt;p&gt;Having convinced myself that reducing the scope of each blog post is probably a good idea while writing this post, I&amp;rsquo;ve now got an entire scrawl of at least 5 different topics on my normally empty whiteboard.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t even done anything yet and so far, it seems pretty promising!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Can I just take a second to say that it feels massively ironic that most of the literature around zettelkasten topics are so dense to the point of giving me a brain aneurysm.
+&lt;span&gt;&lt;/span&gt;
+Like, just go back and have a look at that &lt;a href=&#34;https://zettelkasten.de/introduction/&#34;&gt;earlier link for zettelkasten&lt;/a&gt;. What the hell is that?! That&amp;rsquo;s a thesis, not an introduction!
+&lt;span&gt;&lt;/span&gt;
+It&amp;rsquo;s almost as bad as that &lt;a href=&#34;https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars&#34;&gt;New York Times recipe&lt;/a&gt; that starts off by referencing 9/11.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Wait a minute, the internet is basically just one big zettelkasten?!&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve recently been stuck in a dilemma with &lt;a href=&#34;https://gatsbyjs.com&#34;&gt;Gatsby&lt;/a&gt; between &amp;ldquo;Oooh, looks shiny&amp;rdquo; and &amp;ldquo;This is going to erode in like 2 years, isn&amp;rsquo;t it&amp;rdquo;.
+&lt;span&gt;&lt;/span&gt;
+It does actually have some nice functionality but whether it&amp;rsquo;s worth the risk is an important question, not to mention the insanity that is &lt;code&gt;node_modules&lt;/code&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;While that might seem like an overly negative view, and congratulations to any business that survives the pitch meeting/incubator gauntlet, I can&amp;rsquo;t help but believe it never ends well as you get deeper and deeper into funding, and the later investors also want their 40,000% return.
+&lt;span&gt;&lt;/span&gt;
+Slowly, the crushing expectations of higher profits cause you to reduce the feature set and raise the price or maybe you&amp;rsquo;ll manage to IPO and jump ship with a nice bag of cash before the whole thing starts slowly sinking into the ocean.
+&lt;span&gt;&lt;/span&gt;
+The foundations feel unstable right from the second you sign the agreement.&amp;quot;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

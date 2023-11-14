@@ -3,6 +3,7 @@ node_modules
 .hugo_build.lock
 .DS_Store
 public
+!astro/public
 __pycache__
 hugo_stats.json
 .vscode

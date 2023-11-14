@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I restrict which traffic is allowed to pass through a Kube ingress? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/kubes-ingress-ip-range/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/kubes-ingress-ip-range/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="In which I remind myself how to restrict a Kube ingress to a specific CIDR range" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/kubes-ingress-ip-range/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I restrict which traffic is allowed to pass through a Kube ingress?" />
+<meta property="og:description" content="In which I remind myself how to restrict a Kube ingress to a specific CIDR range" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/kubes-ingress-ip-range/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-01-03T12:56:46+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I restrict which traffic is allowed to pass through a Kube ingress?"/>
+<meta name="twitter:description" content="In which I remind myself how to restrict a Kube ingress to a specific CIDR range"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I restrict which traffic is allowed to pass through a Kube ingress?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>This one had my scratching my head a bit as I wasn&rsquo;t quite sure if Kubernetes was the right place to do this.</p>
+<p>Depending on your use case, it might make sense to terminate traffic before it reaches your cluster but that may have the effect of filtering traffic to other applications if not done properly.</p>
+<p>In this instance, the Kubernetes cluster in question makes use of the <a href="https://www.nginx.com/products/nginx-ingress-controller/">NGINX Ingress Controller</a> and as such, honours a whole bunch of flags.</p>
+<p>Before we get into the details, let&rsquo;s set up a small example.</p>
+<p>We&rsquo;ll pretend our desktop has an IP address is <code>192.0.2.3</code> exactly. We want to allow only a network range of 1 single address so that say; our mobile device with the address <code>192.0.2.2</code> can&rsquo;t connect but our desktop can.</p>
+<p>In CIDR notation, this would be represented as <code>192.0.2.3/32</code>, with the <code>32</code> effectively meaning &ldquo;Just this one address&rdquo; instead of any other devices on the <code>192.0.2</code> range, or broader.</p>
+<p>With our address block defined, let&rsquo;s look at an ingress:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">apiVersion</span>: networking.k8s.io/v1
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">kind</span>: Ingress
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">name</span>: my-cool-ingress
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">annotations</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">nginx.ingress.kubernetes.io/whitelist-source-range</span>: <span style="color:#f1fa8c">&#34;192.0.2.3/24&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">rules</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">host</span>: example.com
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">http</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">paths</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ff79c6">path</span>: /
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">backend</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">service</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#ff79c6">name</span>: example-docs
+</span></span><span style="display:flex;"><span>              <span style="color:#ff79c6">port</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">name</span>: http-example-docs
+</span></span></code></pre></div><p>Ok, we&rsquo;ve allowed our desktop to connect but let&rsquo;s try connecting to this ingress from a device we know isn&rsquo;t allowed, such as our laptop on <code>192.0.2.6</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; curl https://example.com/
+</span></span><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>&lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>&lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;
+</span></span><span style="display:flex;"><span>&lt;hr&gt;&lt;center&gt;nginx&lt;/center&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><p>Alright, and now from our desktop at <code>192.0.2.3/24</code>, which we allowed explicitly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; curl example.com
+</span></span><span style="display:flex;"><span>&lt;!doctype html&gt;
+</span></span><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>    &lt;title&gt;Example Domain&lt;/title&gt;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>Success! We&rsquo;ve managed to use nothing but an ingress to block specific traffic but you might wonder, why would I ever use this?</p>
+<p>One use case may be exposing applications that require the use of a public endpoint, such as <a href="https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software">Microsoft Teams</a> or <a href="https://slack.com">Slack</a>.</p>
+<p>Often, you can&rsquo;t make use of OAuth but you want to protect against random internet traffic so you can explicitly allow known IP ranges.</p>
+<p>With <a href="https://azure.microsoft.com">Azure</a> for example, they publish a <a href="https://www.microsoft.com/en-us/download/details.aspx?id=56519">full list of their active IP ranges</a> so if you can&rsquo;t simply make use of a <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview">VNet</a>, this may be the next best thing.</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/hell/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Tue, 27 Apr 2021 18:50:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/hell/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dropbox is way too clingy</title>
+      <link>https://utf9k.net/blog/dropbox-is-way-too-clingy/</link>
+      <description>A post in which I post about how involved the Dropbox cancellation process is.</description>
+      <pubDate>Tue, 27 Apr 2021 18:50:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/dropbox-is-way-too-clingy/</guid>
+      <content type="html">&lt;p&gt;As much as &lt;a href=&#34;https://www.dropbox.com&#34;&gt;Dropbox&lt;/a&gt; is great on a technical level, the user experience keeps degrading all the time.&lt;/p&gt;
+&lt;p&gt;Installing it is a complete nightmare of clicking through super slow window transitions and banners begging you to upgrade your account.&lt;/p&gt;
+&lt;p&gt;Recently I went through the process of deleting my account (again) out of frustration only to find that the already lengthy process had gotten even longer!&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s walk through the deletion process as it stands in April 2021 and see how many clicks it takes.&lt;/p&gt;
+&lt;p&gt;From the file viewer area, you&amp;rsquo;ll want to click on your profile picture (&lt;strong&gt;First click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;01-settings.png&#34; alt=&#34;A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.&#34;  /&gt;&lt;p&gt;From the dropbown, click on Settings (&lt;strong&gt;Second click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;02-inside-settings.png&#34; alt=&#34;A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled &amp;amp;ldquo;Delete account&amp;amp;rdquo;.&#34;  /&gt;&lt;p&gt;Now that we&amp;rsquo;re inside the Settings menu, click on Delete account (&lt;strong&gt;Third click&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;That should be it&amp;hellip; right? Done. Simple?&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re just getting started.&lt;/p&gt;
+&lt;img src=&#34;03-first-screen.png&#34; alt=&#34;A page asking the author if they would like to downgrade. It says that the author has to downgrade their account, that they&amp;amp;rsquo;ll lose a bunch of storage and lists some consequences such as &amp;amp;ldquo;Dropbox will stop syncing&amp;amp;rdquo;. At the bottom are two buttons, one in blue that reads &amp;amp;ldquo;I changed my mind, take me back to Dropbox&amp;amp;rdquo; and one in white that reads &amp;amp;ldquo;I still want to downgrade&amp;amp;rdquo;. The downgrade button is clearly what the user is after but the colour coding makes it tricky since the &amp;amp;ldquo;I don&amp;amp;rsquo;t want to cancel&amp;amp;rdquo; one is more prominent.&#34;  /&gt;&lt;p&gt;If we really have to, I can handle putting up with one of these pages but come on, the colour coding of these buttons is clearly a &lt;a href=&#34;https://www.darkpatterns.org/&#34;&gt;dark pattern&lt;/a&gt;. I clicked a button called &amp;ldquo;Delete account&amp;rdquo; and now the primary action on this page is &amp;ldquo;I changed my mind&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Additionally, the wording that suggests I need to cancel my subscription is odd, in that deleting an account is surely the same act as cancelling a subscription.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Yes, I realise I&amp;rsquo;m not using this service I paid for. I don&amp;rsquo;t care.&lt;/p&gt;
+&lt;p&gt;So anyway, we resist the urge and click on &amp;ldquo;I still want to downgrade&amp;rdquo;, which weirdly does not say &amp;ldquo;Complete downgrade&amp;rdquo;. You know what that means&amp;hellip; (&lt;strong&gt;Fourth click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;04-second-screen.png&#34; alt=&#34;A pop up modal asking if the author still wants to cancel. It has a bunch of radio buttons with reasons for cancellation, with the author having selected one that reads &amp;amp;ldquo;I found another product I liked better&amp;amp;rdquo;. There is a button labelled &amp;amp;ldquo;Skip&amp;amp;rdquo; in the bottom left and two buttons on the bottom right. They read &amp;amp;ldquo;Don&amp;amp;rsquo;t cancel&amp;amp;rdquo; and &amp;amp;ldquo;Continue cancelling&amp;amp;rdquo;. Strangely, &amp;amp;ldquo;Continue cancelling&amp;amp;rdquo; is the more prominent of the two, unlike the previous page.&#34;  /&gt;&lt;p&gt;God, yes! I&amp;rsquo;m two screens deep already so I&amp;rsquo;m pretty fucking sure I would like to cancel. I&amp;rsquo;m not &amp;ldquo;thinking&amp;rdquo; of leaving, I already decided that when you started degrading the UI. You could have just shipped nothing for the next 5 years and continued to make bank through word of mouth and the quality of your sync engine.&lt;/p&gt;
+&lt;p&gt;Hell, even just the lock-in from existing applications already does most of the convincing for me.&lt;/p&gt;
+&lt;p&gt;Interesting, the colour coding has switched once again to suggest that &amp;ldquo;Continue canceling&amp;rdquo; is now the primary action. Is this to trick me into not cancelling? I also didn&amp;rsquo;t notice that &amp;ldquo;Skip&amp;rdquo; option in the bottom left until now.&lt;/p&gt;
+&lt;p&gt;(&lt;strong&gt;Fifth and sixth clicks&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;05-third-screen.png&#34; alt=&#34;Another page with the title &amp;amp;ldquo;Dropbox Plus is so much more than just space&amp;amp;rdquo; and presents some alleged reasons to stay like &amp;amp;ldquo;Easy sharing&amp;amp;rdquo; and &amp;amp;ldquo;Large storage volume&amp;amp;rdquo;. These are the same bullet points, roughly, as the earlier page. At the bottom are two buttons, a prominent blue one on the left titled &amp;amp;ldquo;Keep Dropbox Plus&amp;amp;rdquo; and a transparent, less obvious one on the right titled &amp;amp;ldquo;I still want to downgrade&amp;amp;rdquo;.&#34;  /&gt;&lt;p&gt;How many fonts does Dropbox use? None of these screens are even consistent whatsoever.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a problem with the product, I have a problem with the marketing department so none of this is helping. If anything, it has the opposite effect of making me want to cancel even further.&lt;/p&gt;
+&lt;p&gt;The colour coding has changed yet again to suggest &amp;ldquo;Keep Dropbox Plus&amp;rdquo; is the primary action.&lt;/p&gt;
+&lt;p&gt;(&lt;strong&gt;Seventh click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;06-final-screen.png&#34; alt=&#34;Yet another page titled &amp;amp;ldquo;Before you go, Marcus&amp;amp;hellip;&amp;amp;rdquo;, addressed to the author. It has a large blue button in the middle of the screen that reads &amp;amp;ldquo;I changed my mind, take me back to Dropbox&amp;amp;rdquo;. There is another button for cancelling somewhere off screen that is not visible to the reader. The rest of the page just roughly lists the same claimed features as previous pages.&#34;  /&gt;&lt;p&gt;WHAT DO YOU MEAN BEFORE I GO? THIS IS LITERALLY THE SAME INFORMATION PRESENTED FOR THE THIRD TIME. HOW IS THIS A CONVINCING ARGUMENT? I DON&amp;rsquo;T UNDERSTAND WHY YOU AREN&amp;rsquo;T EVEN TRYING.&lt;/p&gt;
+&lt;p&gt;You can&amp;rsquo;t even see the cancel button on this page. You have to scroll right to the bottom (which I didn&amp;rsquo;t screenshot) and then click another cancel button.&lt;/p&gt;
+&lt;p&gt;(&lt;strong&gt;Eighth click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;07-done.png&#34; alt=&#34;A tightly cropped screenshot of a green banner that reads &amp;amp;ldquo;Account downgraded. Thanks for your feedback.&amp;amp;rdquo;&#34;  /&gt;&lt;p&gt;Now originally, this is where I had ended the blog post but I actually went back to Dropbox a few weeks later&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and just discovered this process hadn&amp;rsquo;t even deleted my account. All I accomplished was that I downgraded my plan which is obvious in hindsight but also, why this much friction just to downgrade a plan then? Just what sort of nightmare will it take to delete my account and do businesses have to go through this hell if you purchase an enterprise plan?!&lt;/p&gt;
+&lt;img src=&#34;08-banner.png&#34; alt=&#34;A tightly cropped screenshot of a red banner that reads &amp;amp;ldquo;You are scheduled to downgrade.&amp;amp;rdquo;&#34;  /&gt;&lt;p&gt;So, let&amp;rsquo;s finish this thing off for real.&lt;/p&gt;
+&lt;p&gt;Back to the home page, we once again click on the user profile and then on Settings&lt;/p&gt;
+&lt;img src=&#34;01-settings.png&#34; alt=&#34;A tightly cropped screenshot of the upper right corner of the Dropbox main view. The authors account is visible and the Settings button is highlighted.&#34;  /&gt;&lt;p&gt;(&lt;strong&gt;Ninth and tenth clicks&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Once more, hit the &amp;ldquo;Delete account&amp;rdquo; button at the bottom&lt;/p&gt;
+&lt;img src=&#34;02-inside-settings.png&#34; alt=&#34;A screenshot of the Dropbox account settings. There are a variety of radio buttons and tabs but the main item of interest is a link at the bottom titled &amp;amp;ldquo;Delete account&amp;amp;rdquo;.&#34;  /&gt;&lt;p&gt;(&lt;strong&gt;Eleventh click&lt;/strong&gt;)&lt;/p&gt;
+&lt;img src=&#34;09-delete.png&#34; alt=&#34;A form that says &amp;amp;ldquo;Permanently delete your Dropbox account&amp;amp;rdquo; with three inputs: one for your password, one for your reason for leaving and a third to enter in more details.&#34;  /&gt;&lt;p&gt;Six&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; more clicks to fill in this shitty form and that brings us up to &lt;strong&gt;seventeen clicks&lt;/strong&gt; when I hit &amp;ldquo;Permanently delete&amp;rdquo;&lt;/p&gt;
+&lt;img src=&#34;10-free.png&#34; alt=&#34;A tightly cropped screenshot of a black banner that reads &amp;amp;ldquo;Your account has been deleted. We&amp;amp;rsquo;re sorry to see you go.&amp;amp;rdquo;&#34;  /&gt;&lt;p&gt;Finally, I&amp;rsquo;m free.&lt;/p&gt;
+&lt;p&gt;No company that did this sort of shit ever made me feel excited or even curious about coming back. To this day, I have never resubscribed to &lt;a href=&#34;https://www.nytimes.com&#34;&gt;The New York Times&lt;/a&gt; purely because their cancellation policy requires you to ring a human person in New York.&lt;/p&gt;
+&lt;p&gt;Why would anyone do this sort of thing? It just screams disbelief in your own product. If you&amp;rsquo;re so scared of people leaving, it makes me wonder just what kind of mess you&amp;rsquo;re hiding under the rug.&lt;/p&gt;
+&lt;p&gt;Anyway, there&amp;rsquo;s only one thing I have to say to Dropbox after all this:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/HhnUK1YmMEU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Apparently not as I later found out.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;By which I mean, just now.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Once on the password field, a second on a popup to autofill from my password manager, a third to open the &amp;ldquo;Reasons for leaving&amp;rdquo; dropdown, a fourth to select a reason, a fifth to start entering &amp;ldquo;More details&amp;rdquo; and the sixth is when I hit &amp;ldquo;Permanently delete&amp;rdquo;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

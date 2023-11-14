@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I globally ignore files? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/git-globally-ignore-files/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/git-globally-ignore-files/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="In which I wage war against .DS_Store" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/git-globally-ignore-files/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I globally ignore files?" />
+<meta property="og:description" content="In which I wage war against .DS_Store" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/git-globally-ignore-files/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-01-03T12:56:46+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I globally ignore files?"/>
+<meta name="twitter:description" content="In which I wage war against .DS_Store"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I globally ignore files?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>This has been something that has plagued me for years and I&rsquo;ve never sat down to properly fix it.</p>
+<p>Instead, I&rsquo;ve just added <code>.DS_Store</code> to <code>.gitignore</code> files probably over one hundred times by over.</p>
+<p>Anyway, the <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreexcludesFile">git documentation</a> mentions the existence of a variable called <code>core.excludesFile</code>.</p>
+<p>If you don&rsquo;t set it, and <code>$XDG_CONFIG_HOME</code> isn&rsquo;t overridden, you can add global ignores to <code>$HOME/.config/git/ignore</code>.</p>
+<p>Let&rsquo;s see this in action. First we&rsquo;ll make a brand new Git repository and add a <code>.DS_Store</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; mkdir sports
+</span></span><span style="display:flex;"><span>&gt; <span style="color:#8be9fd;font-style:italic">cd</span> sports
+</span></span><span style="display:flex;"><span>&gt; git init
+</span></span><span style="display:flex;"><span>Initialized empty Git repository in /Users/marcus/Code/sports/.git/
+</span></span><span style="display:flex;"><span>&gt; touch .DS_Store
+</span></span><span style="display:flex;"><span>&gt; git status
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>No commits yet
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Untracked files:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">(</span>use <span style="color:#f1fa8c">&#34;git add &lt;file&gt;...&#34;</span> to include in what will be committed<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>	.DS_Store
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nothing added to commit but untracked files present <span style="color:#ff79c6">(</span>use <span style="color:#f1fa8c">&#34;git add&#34;</span> to track<span style="color:#ff79c6">)</span>
+</span></span></code></pre></div><p>Ah yes, the perpetual hell but let&rsquo;s try out our new trick.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;.DS_Store&#34;</span> &gt;&gt; ~/.config/git/ignore
+</span></span><span style="display:flex;"><span>&gt; git status
+</span></span><span style="display:flex;"><span>On branch main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>No commits yet
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nothing to commit <span style="color:#ff79c6">(</span>create/copy files and use <span style="color:#f1fa8c">&#34;git add&#34;</span> to track<span style="color:#ff79c6">)</span>
+</span></span></code></pre></div><p>Mwah, beautiful.</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

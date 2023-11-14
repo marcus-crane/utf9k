@@ -1,0 +1,23 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# netbox-plugin-azuread
+01 January 0001
+
+A Python plugin for the IPAM tool Netbox, netbox-plugin-azuread adds support for OAuth authentication with Azure Active Directory.
+
+By default, Netbox supports standard username/password logins, SAML logins and logins configured via a remote auth header.
+
+This plugin was my first real attempt at publishing a Python library and has been running for many months within a production deployment.
+
+I mostly just scanned some existing AzureAD auth libraries and pieced together how to transform it into a Netbox/Django plugin.
+
+You can view the plugin on Github or PyPI.
+

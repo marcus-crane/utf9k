@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I configure my printer via terminal on macOS? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/macos-printer-cli/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/macos-printer-cli/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="Printing without a display seems counter-intuitive" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/macos-printer-cli/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I configure my printer via terminal on macOS?" />
+<meta property="og:description" content="Printing without a display seems counter-intuitive" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/macos-printer-cli/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-04-16T21:59:14+12:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I configure my printer via terminal on macOS?"/>
+<meta name="twitter:description" content="Printing without a display seems counter-intuitive"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I configure my printer via terminal on macOS?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>Recently, a coworker of mine got a new laptop and needed to connect to the printer at work. One of the dialog boxes asked for the &ldquo;print queue&rdquo;.</p>
+<p>For the unfamiliar, here&rsquo;s what the macOS printer settings look like.</p>
+<center>
+  <figure>
+    <img src="printer-overview.png" alt="A screenshot of the macOS System Preferences pane for printing. It shows one registered printer on the left called example-printer which is sitting idle. It has the type Generic PostScript Printer. Nothing here indicates the queue name."  loading="lazy" />
+  </figure>
+</center><p>I can&rsquo;t see any queue settings so let&rsquo;s dive a little deeper.</p>
+<center>
+  <figure>
+    <img src="printer-settings.png" alt="A screenshot of the macOS System Preferences pane. It has the settings window open for the printer from earlier called example-printer. There are only a few piece of information such as device name and driver version which are not helpful at all. There is only a single interactive checkbox with the label Use Generic Printer Features with no description of what that means. There is still nothing to indicate the queue name we are looking for."  loading="lazy" />
+  </figure>
+</center><p>Nothing here either but surely there must be something under the hood. Thankfully, there&rsquo;s a built in command called <code>lpstat</code> that allows all sorts of printer configuration.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; man lpstat | grep lpstat
+</span></span><span style="display:flex;"><span>lpstat<span style="color:#ff79c6">(</span>1<span style="color:#ff79c6">)</span>                          Apple Inc.                          lpstat<span style="color:#ff79c6">(</span>1<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>       lpstat - print cups status information
+</span></span><span style="display:flex;"><span><span style="color:#bd93f9">26</span> April <span style="color:#bd93f9">2019</span>                         CUPS                             lpstat<span style="color:#ff79c6">(</span>1<span style="color:#ff79c6">)</span>
+</span></span></code></pre></div><p>In order to find the printer queue name, I was able to make use of <code>lpstat -s</code> like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; lpstat -s
+</span></span><span style="display:flex;"><span>system default destination: example_printer
+</span></span><span style="display:flex;"><span>device <span style="color:#ff79c6">for</span> example_printer: ipp://example-printer/my-fake-queue
+</span></span></code></pre></div><p>Ah, so the queue name is <code>my-fake-queue</code>. I wish the System Preferences pane had just said so earlier.</p>
+<p>While there, I also discovered a bunch of my old print jobs as well!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; lpstat -W completed -l
+</span></span><span style="display:flex;"><span>example_printer-3 marcus          <span style="color:#bd93f9">59392</span>   Wed <span style="color:#bd93f9">28</span> Apr 09:40:30 <span style="color:#bd93f9">2021</span>
+</span></span><span style="display:flex;"><span>    Status: The printer is not responding.
+</span></span><span style="display:flex;"><span>    Alerts: processing-to-stop-point
+</span></span><span style="display:flex;"><span>    queued <span style="color:#ff79c6">for</span> example_printer
+</span></span><span style="display:flex;"><span>example_printer-2 marcus         <span style="color:#bd93f9">113664</span>   Wed <span style="color:#bd93f9">17</span> Mar 15:36:56 <span style="color:#bd93f9">2021</span>
+</span></span><span style="display:flex;"><span>    Status: The printer is unreachable at this time.
+</span></span><span style="display:flex;"><span>    Alerts: job-canceled-by-user
+</span></span><span style="display:flex;"><span>    queued <span style="color:#ff79c6">for</span> example_printer
+</span></span><span style="display:flex;"><span>example_printer-1 marcus          <span style="color:#bd93f9">51200</span>   Thu  <span style="color:#bd93f9">8</span> Oct 11:14:01 <span style="color:#bd93f9">2020</span>
+</span></span><span style="display:flex;"><span>    Status:
+</span></span><span style="display:flex;"><span>    Alerts: processing-to-stop-point
+</span></span><span style="display:flex;"><span>    queued <span style="color:#ff79c6">for</span> example_printer
+</span></span></code></pre></div><p>Hopefully this makes your printing life easier, or at least gives you some closure on why those months old jobs refused to print.</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

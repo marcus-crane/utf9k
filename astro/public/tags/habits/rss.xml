@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/habits/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Tue, 17 Jan 2023 18:30:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/habits/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Habit forming in the least efficient way possible</title>
+      <link>https://utf9k.net/blog/inefficient-habit-forming/</link>
+      <description>Instead of committing to a habit, why not torture yourself over long spans of time?</description>
+      <pubDate>Tue, 17 Jan 2023 18:30:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/inefficient-habit-forming/</guid>
+      <content type="html">&lt;p&gt;If you were to ask me how good I am at habit forming, I would say &amp;ldquo;Not very&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Looking back over time, there are plenty of routines that I do at present but I wouldn&amp;rsquo;t call them formed habits since they still take some thinking (and remembering) that I should have done them.&lt;/p&gt;
+&lt;p&gt;You might say &amp;ldquo;Well, just put them in your task manager&amp;rdquo; and that is a very good idea except that would assume that I have successfully formed a habit of checking my task manager religiously.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably more accurate to say that my worse habits are much stronger and end up eating up the attention I should/would/could be dedicating to things that aren&amp;rsquo;t, I dunno, clearing out Slack notifications or opening Hacker News for the nth time today.&lt;/p&gt;
+&lt;p&gt;Now believe it or not, I&amp;rsquo;m actually here to some good things that might give a little hope to my fellow habit-forming dropouts.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;There are various habits that I&amp;rsquo;ve &lt;a href=&#34;https://youtu.be/itjmKlYjUak&#34;&gt;restarted over and over again&lt;/a&gt;, usually with extremely long gaps between them.&lt;/p&gt;
+&lt;p&gt;An example might be cleaning my apartment. I should do it daily but historically I might go for quite some time before I get around to it.&lt;/p&gt;
+&lt;p&gt;These days I&amp;rsquo;m down to like once a week or less which is really good and something I probably thought wouldn&amp;rsquo;t be possible but I also never committed to cleaning as some sort of core part of my identity that I&amp;rsquo;m highly focused on reinforcing.&lt;/p&gt;
+&lt;p&gt;I suppose the point here is even if you repeat the same routine over and over, with extremely large gaps between each iteration, you&amp;rsquo;ll probably find that without realising, the feedback loop gets every so slightly shorter, even if it&amp;rsquo;s over the period of literal years.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t to say you should try to form any habits this way but even if you fret over not picking up a habit you committed to, the act of fretting itself is still reinforcing the habit in some very meandering way.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

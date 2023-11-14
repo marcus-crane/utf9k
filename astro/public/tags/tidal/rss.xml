@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/tidal/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Sat, 12 Feb 2022 13:20:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/tidal/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plex &#43; Tidal = A Nice Match</title>
+      <link>https://utf9k.net/blog/plex-tidal-together/</link>
+      <description>A lengthy post in which I gush about how I like Plexamp a lot due to how it integrates nicely with Tidal</description>
+      <pubDate>Sat, 12 Feb 2022 13:20:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/plex-tidal-together/</guid>
+      <content type="html">&lt;div class=&#34;notice&#34;&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+  &lt;h3&gt;
+  &lt;span&gt;🖼&lt;/span&gt;Look at this photograph&lt;/h3&gt;
+&lt;p&gt;Due to the nature of this post, it&amp;rsquo;s pretty image heavy.&lt;/p&gt;
+&lt;p&gt;Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.&lt;/p&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+&lt;/div&gt;
+&lt;p&gt;As I&amp;rsquo;m sure you&amp;rsquo;re probably aware, Spotify has &lt;a href=&#34;https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation&#34;&gt;had a bit of news coverage lately&lt;/a&gt; regarding &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience&#34;&gt;The Joe Rogan Experience&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a result, the band &lt;a href=&#34;https://en.wikipedia.org/wiki/Failure_(band)&#34;&gt;Failure&lt;/a&gt; announced&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that they are going to &lt;a href=&#34;https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537&#34;&gt;pull their music from Spotify&lt;/a&gt; in part because the &lt;a href=&#34;https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation&#34;&gt;streaming payouts are supposed to be some of the worst in the industry&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t speak to any of the above with accuracy nor is this a post about the ethics of the streaming model for artists.&lt;/p&gt;
+&lt;p&gt;Instead, I&amp;rsquo;m just a fan of Failure who figured they would take this opportunity to review other streaming services and see how they fare.&lt;/p&gt;
+&lt;p&gt;The goal here is to find a setup that lets me listen to everything I enjoy, with as little friction, while still supporting the artists I care about.&lt;/p&gt;
+&lt;p&gt;The solution I&amp;rsquo;ve found that works for me, and that I&amp;rsquo;ll be covering in this post, is to stream most things via &lt;a href=&#34;https://plexamp.com/&#34;&gt;Plexamp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It supports both streaming from &lt;a href=&#34;https://tidal.com/&#34;&gt;Tidal&lt;/a&gt; and playing content stored locally on my &lt;a href=&#34;https://www.plex.tv/&#34;&gt;Plex&lt;/a&gt; server, such as rips from games that never released official soundtracks.&lt;/p&gt;
+&lt;p&gt;For everything else, I can purchase albums from &lt;a href=&#34;https://bandcamp.com&#34;&gt;Bandcamp&lt;/a&gt;, including content that was &lt;a href=&#34;https://failureband.bandcamp.com/album/fantastic-planet-live&#34;&gt;never streamable&lt;/a&gt; in the first place, plus I can feel better that I&amp;rsquo;m better compensating the artists I enjoy.&lt;/p&gt;
+&lt;p&gt;From here, you can either save yourself a solid 15 - 20 minutes and close the tab or if you&amp;rsquo;d like to read a deep dive into the bits and pieces that sold me on this setup, then I hope you enjoy what is now the longest post on this site to date 😮‍💨&lt;/p&gt;
+
+&lt;h2 id=&#34;my-history-with-spotify&#34;&gt;My history with Spotify&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve had Spotify Premium for a number of years as part of an offer with my &lt;a href=&#34;https://www.spark.co.nz/getmore/spotify/&#34;&gt;telco&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On their highest data plan, Spotify Premium is entirely free while lower plans give a partial subsidy&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; but I&amp;rsquo;ve never actually used the Spotify Free tier in any meaningful capacity.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;While I&amp;rsquo;ve discovered a lot of new tracks over the years with Spotify, my general usage pattern is that I replay the last 10 - 20 songs on my Liked Songs playlist and occasionally I&amp;rsquo;ll use the Song Radio feature on one of them.&lt;/p&gt;
+&lt;p&gt;This cycle repeats as I add more songs to Liked Songs and my &amp;ldquo;play window&amp;rdquo; slides up to include the new song and as a result, the last song dropped &amp;ldquo;outside&amp;rdquo; of the window.&lt;/p&gt;
+&lt;p&gt;Given my usage pattern, I&amp;rsquo;m not hugely worried about giving up custom playlists&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; like &amp;ldquo;Discover Weekly&amp;rdquo; that I know a lot of people swear by. Worst case, I can still view them in the free version of Spotify if I decide to move on.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-ideal-criteria-for-a-replacement&#34;&gt;My ideal criteria for a replacement&lt;/h2&gt;&lt;p&gt;This post was never meant to be a comprehensive comparison of different services and what they offer but in saying that, it got a bit out of hand.&lt;/p&gt;
+&lt;p&gt;Spotify, &lt;a href=&#34;https://music.apple.com/&#34;&gt;Apple Music&lt;/a&gt; and &lt;a href=&#34;https://tidal.com&#34;&gt;Tidal&lt;/a&gt; were the three main contenders that I compared based on the (arguably niche) criteria I care about.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s break down of those bits of criteria and how each service matches up against them, at least in my experience.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-good-api&#34;&gt;A good API&lt;/h3&gt;&lt;p&gt;For anyone who has seen the little &amp;ldquo;Now Playing&amp;rdquo; widget on the front page of my site&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, it was &lt;a href=&#34;https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go#L61&#34;&gt;powered by the Spotify API&lt;/a&gt; by polling every few seconds for what I&amp;rsquo;m currently listening to. I&amp;rsquo;d definitely want to recreate that functionality if I can.&lt;/p&gt;
+&lt;p&gt;As far as I know, Spotify has the &lt;a href=&#34;https://developer.spotify.com/documentation/web-api/reference/#/&#34;&gt;most comprehensive API&lt;/a&gt; of any streaming platform, even exposing the ability to control playback programatically which could make for some really cool projects.&lt;/p&gt;
+
+&lt;h4 id=&#34;apple-music&#34;&gt;Apple Music&lt;/h4&gt;&lt;p&gt;Apple Music is mostly ruled out here given their &lt;a href=&#34;https://developer.apple.com/documentation/applemusicapi/&#34;&gt;API&lt;/a&gt; is pretty lacking in general, especially when it comes to interacting with the current user.&lt;/p&gt;
+&lt;p&gt;I dunno what it is about Apple but reading their API documentation makes me feel like I&amp;rsquo;ve been teleported back to 2006 with a bucket full of XML.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s just a cultural artefact from when they only dealt with desktop applications because all of their web offerings feel extremely bizarre.&lt;/p&gt;
+
+&lt;h4 id=&#34;tidal&#34;&gt;Tidal&lt;/h4&gt;&lt;p&gt;Tidal is also out as they &lt;a href=&#34;https://twitter.com/TIDAL/status/699726946817679360&#34;&gt;don&amp;rsquo;t even have a public API at all&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are a couple of unofficial API clients on Github but some of them haven&amp;rsquo;t seen much activity in recent times.&lt;/p&gt;
+&lt;p&gt;I did consider trying to hack something together myself but that&amp;rsquo;ll be addressed in the next section.&lt;/p&gt;
+
+&lt;h3 id=&#34;cross-platform-sessions&#34;&gt;Cross-platform sessions&lt;/h3&gt;&lt;p&gt;This is something that Spotify really excels at.&lt;/p&gt;
+&lt;p&gt;If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could either transfer the track to your desktop, picking up exactly where you left off, or you could continue on mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).&lt;/p&gt;
+&lt;img src=&#34;spotify-remote-session.jpg&#34; alt=&#34;A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track &amp;amp;ldquo;Change (In the House of Flies)&amp;amp;rdquo; is currently playing. At the bottom of the screen is a green banner that says &amp;amp;ldquo;Listening on Marcus&amp;amp;rsquo;s iPhone&amp;amp;rdquo;. This indicates that the user is able to remotely control the session from their desktop.&#34;  /&gt;&lt;p&gt;This was really handy at my previous job where trying to stream over a VPN&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; was just asking for trouble.&lt;/p&gt;
+&lt;p&gt;Other times, I might be in the middle of a long podcast on mobile and I can&amp;rsquo;t be bothered transferring as I sit down at my desktop.&lt;/p&gt;
+
+&lt;h4 id=&#34;apple-music-1&#34;&gt;Apple Music&lt;/h4&gt;&lt;p&gt;This&amp;hellip; sort of works on a technical level but still not really. I was disappointed here given that Apple generally has a decent track record when it comes to devices talking with each other.&lt;/p&gt;
+&lt;img src=&#34;apple-music-session.jpg&#34; alt=&#34;A screenshot of the Apple Music client open to the artist page for Missy Elliot. A share icon in the top right of the navigation bar has been selected, with multiple Apple devices visible such as a laptop, Apple TV and Homepod. The song Work It by Missy Elliot has just started playing. Visible in the share switcher is the ability to switch to the &amp;amp;ldquo;Lounge Room&amp;amp;rdquo;, in this case the Homepod, where ATM by J. Cole was previously playing.&#34;  /&gt;&lt;p&gt;As you can see, Apple Music on my laptop is aware that I&amp;rsquo;m playing a song on an &lt;a href=&#34;https://www.apple.com/nz/homepod-mini/&#34;&gt;HomePod&lt;/a&gt;. I can then select the HomePod and pause the track which then reflects instantly on my phone as well.&lt;/p&gt;
+&lt;p&gt;So basically, you can have sessions but only when the playing device is not an Apple Music client itself.&lt;/p&gt;
+&lt;p&gt;I also ran into this fun popup when poking around and this won&amp;rsquo;t be the last time we see something like it in this post&lt;/p&gt;
+&lt;img src=&#34;apple-music-too-many-devices.jpg&#34; alt=&#34;Visible over a desktop wallpaper is a native macOS dialog popup. At the top of the popup is the Apple Music logo. The text reads &amp;amp;ldquo;More than one device is trying to play music. With a Family plan, up to 5 other people can stream their music at once.&amp;amp;rdquo; with the ability to select Not Now or Upgrade.&#34;  /&gt;
+&lt;h4 id=&#34;tidal-1&#34;&gt;Tidal&lt;/h4&gt;&lt;p&gt;While looking into whether I could pull session information out of Tidal, I realised that it doesn&amp;rsquo;t really have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop client has no idea about any other clients. This doesn&amp;rsquo;t reflect in the API either, at least from the calls I could see it making.&lt;/p&gt;
+
+&lt;h3 id=&#34;artists-i-like&#34;&gt;Artists I like&lt;/h3&gt;&lt;p&gt;This basically boils down to Failure who I previously mentioned and &lt;a href=&#34;https://edharrison.bandcamp.com/&#34;&gt;Ed Harrison&lt;/a&gt; given I listen to the Neotokyo OST a lot. Apparently Ed was my #1 artist in 2020 (according to Spotify Wrapped) with just over 2000 minutes (33.3 hours) which is&amp;hellip; pretty bad.&lt;/p&gt;
+
+&lt;h3 id=&#34;apple-music-2&#34;&gt;Apple Music&lt;/h3&gt;&lt;p&gt;It has both Failure and Ed Harrison&amp;rsquo;s catalogue. I&amp;rsquo;m happy.&lt;/p&gt;
+
+&lt;h3 id=&#34;tidal-2&#34;&gt;Tidal&lt;/h3&gt;&lt;p&gt;It has Failure and some of Ed Harrison&amp;rsquo;s catalogue but not NeoTokyo. Honestly, this was a bit of a death blow for me as far as using Tidal by itself.&lt;/p&gt;
+&lt;p&gt;Tidal did have Jay-Z content as an exclusive in the past, which also included the Jay x Kanye West crossover album &lt;a href=&#34;https://en.wikipedia.org/wiki/Watch_the_Throne&#34;&gt;Watch the Throne&lt;/a&gt; which I like a lot. This is no longer the case as Jigga released his catalogue on Spotify to &lt;a href=&#34;https://twitter.com/Spotify/status/1202090253839937536&#34;&gt;celebrate his 50th birthday&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, as I write this, I&amp;rsquo;m now learning that &lt;a href=&#34;https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer&#34;&gt;Hov sold the majority of his shares to &lt;strike&gt;Square&lt;/strike&gt; Block&lt;/a&gt; in 2021? What the fuck?&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I’m grateful for Jay’s vision, wisdom, and leadership. I knew TIDAL was something special as soon as I experienced it, and I’m inspired to work with him. He&amp;#39;ll now help lead our entire company, including Seller and the Cash App, as soon as the deal closes. &lt;a href=&#34;https://t.co/YRfYjcWJQx&#34;&gt;https://t.co/YRfYjcWJQx&lt;/a&gt; &lt;a href=&#34;https://t.co/xBtq2xfwue&#34;&gt;pic.twitter.com/xBtq2xfwue&lt;/a&gt;&lt;/p&gt;&amp;mdash; jack (@jack) &lt;a href=&#34;https://twitter.com/jack/status/1367460921937817602?ref_src=twsrc%5Etfw&#34;&gt;March 4, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Jack Dorsey mentioned his vision for the future of Tidal:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We’ll work on entirely new listening experiences to bring fans closer together, simple integrations for merch sales, modern collaboration tools, and new complementary revenue streams.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That basically means nothing to me but whatever. The Carter Administration is still on the board of &lt;strike&gt;Square&lt;/strike&gt; Block and that can only mean one thing.&lt;/p&gt;
+&lt;img src=&#34;https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png&#34; alt=&#34;An image of Jay-Z from the Square website. More specifically, it is a 3D cube being displayed at an angle to the camera. Overlaid on the cube is an image of Jay-Z&amp;amp;rsquo;s face. This is supposed to be a play on the fact that investors in Block, the company previously known as Square, where employees are known as Blockheads. It&amp;amp;rsquo;s stupid.&#34;  /&gt;&lt;p&gt;Beautiful.&lt;/p&gt;
+
+&lt;h2 id=&#34;an-annoying-compromise&#34;&gt;An annoying compromise&lt;/h2&gt;&lt;p&gt;At this point, neither Tidal or Apple Music are hugely appealing based on the features I&amp;rsquo;ve mentioned so far.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re perfectly fine as streaming services but there&amp;rsquo;s another aspect I haven&amp;rsquo;t mentioned up to this point: Music stored on my Plex server.&lt;/p&gt;
+&lt;p&gt;I have a few rips&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; from various videogames that &lt;a href=&#34;https://www.youtube.com/watch?v=e7Zn5I1xutE&#34;&gt;don&amp;rsquo;t have official albums&lt;/a&gt; that I&amp;rsquo;ve kept floating around my Plex server for a few years now.&lt;/p&gt;
+&lt;p&gt;I aspire to listen to them more but I never get around to listening to them with Spotify as my daily driver as it doesn&amp;rsquo;t support local files in any useful way&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. It would be nice if there was a way to have both things in the same place.&lt;/p&gt;
+&lt;p&gt;My plan at this point was going to be trying out Tidal since it had a relatively nice UI. To get around the lack of Neotokyo, I could just purchase Ed&amp;rsquo;s work from &lt;a href=&#34;https://bandcamp.com&#34;&gt;Bandcamp&lt;/a&gt; and load it onto Plex and just deal with the UX hassle of constantly switching between apps.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-perfect-candidate-appears&#34;&gt;The perfect candidate appears&lt;/h2&gt;&lt;p&gt;I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea what form it took.&lt;/p&gt;
+&lt;p&gt;I had even read up on integration, where the killer feature is &lt;a href=&#34;https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/&#34;&gt;clearly outlined&lt;/a&gt; but apparently I did a rubbish job at reading since I entirely overlooked it.&lt;/p&gt;
+&lt;img src=&#34;plexamp-add-to-library.jpg&#34; alt=&#34;A screenshot of the Plexamp iOS application. It is open to Jay-Z&amp;amp;rsquo;s artist page where a few of his albums are visible. A menu is open at the bottom with a number of options including &amp;amp;ldquo;Add to Library&amp;amp;rdquo; and &amp;amp;ldquo;Add to My TIDAL&amp;amp;rdquo;.&#34;  /&gt;&lt;p&gt;You&amp;rsquo;ll see that there are two buttons at the bottom of the screen: &lt;em&gt;Add to My TIDAL&lt;/em&gt; and &lt;em&gt;Add to Library&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;When I first hooked up Tidal to Plex, I would just press &lt;em&gt;Add to My TIDAL&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I accidentally hit &lt;em&gt;Add to Library&lt;/em&gt; and oh my god.&lt;/p&gt;
+&lt;img src=&#34;plexamp-jak-jay.jpg&#34; alt=&#34;A cropped image of the Plexamp macOS application is visible. It is open to the albums page with displays the cover art for a number of albums. Visible are a few Jay-Z albums, the Kane &amp;amp;amp; Lynch OST, the OSTs for Jak 2 and 3, a Pokemon OST and three Kanye West albums.&#34;  /&gt;&lt;p&gt;You&amp;rsquo;re telling me I can put Jay right next to Jak? Wrap it up, I think we&amp;rsquo;ve got a winner on our hands! At this point, I was sold.&lt;/p&gt;
+&lt;p&gt;The ability to add virtual streaming items right next to my &amp;ldquo;local&amp;rdquo; (streaming from across the living room) items is pretty much the ideal outcome.&lt;/p&gt;
+&lt;p&gt;In fairness, Google Play Music offered something like this in the past but the idea of investing effort into a Google product is about as attractive as &lt;a href=&#34;https://music.youtube.com/googleplaymusic&#34;&gt;preordering a coffin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Anyway, with this, we can tick one piece of criteria off the list:&lt;/p&gt;
+&lt;p&gt;✅ for &lt;strong&gt;Artists I like&lt;/strong&gt; (1/3)&lt;/p&gt;
+
+&lt;h2 id=&#34;a-quick-note-on-plexamp&#34;&gt;A quick note on Plexamp&lt;/h2&gt;&lt;p&gt;Before we continue, I should note that I mostly interface with my Plex library (and Tidal) through &lt;a href=&#34;https://plexamp.com/&#34;&gt;Plexamp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For an audio player that &lt;a href=&#34;https://medium.com/plexlabs/introducing-plexamp-9493a658847a&#34;&gt;started life back in 2017&lt;/a&gt; as a &lt;a href=&#34;https://medium.com/plexlabs&#34;&gt;Plex Labs&lt;/a&gt; experiment, it has grown into an entire ecosystem, complete with mobile and desktop apps.&lt;/p&gt;
+&lt;p&gt;To be clear, it&amp;rsquo;s just streaming content from your plex server through a music-focused client. It doesn&amp;rsquo;t require deploying any additional software. You can also listen to Podcasts (via Plex) on it too although I don&amp;rsquo;t do that myself.&lt;/p&gt;
+&lt;p&gt;The Tidal integration works perfectly fine with the regular Plex apps as well but the music section in general shines brightest when using Plexamp if you ask me.&lt;/p&gt;
+
+&lt;h2 id=&#34;ok-but-how-well-does-it-actually-integrate-with-tidal&#34;&gt;Ok but how well does it actually integrate with Tidal&lt;/h2&gt;&lt;p&gt;At this point in our tour, you might be thinking &amp;ldquo;Ok, sure but I bet under the hood, it&amp;rsquo;s just duct tape and chewing gum&amp;rdquo; which is definitely what I expected going in.&lt;/p&gt;
+&lt;p&gt;Thankfully, it really is a first class Plex citizen and I&amp;rsquo;ll even give you a whirlwind tour of my favourite features.&lt;/p&gt;
+
+&lt;h3 id=&#34;cross-platform-search&#34;&gt;Cross-platform search&lt;/h3&gt;&lt;p&gt;Whether finding something new or something existing, you can search across your entire catalog and Tidal&amp;rsquo;s at the same time which is really appreciated.&lt;/p&gt;
+&lt;img src=&#34;plexamp-cross-search.jpg&#34; alt=&#34;Visible is a screenshot of the Plexamp iOS application. It is open to a search for the phrase &amp;amp;ldquo;Bad Company&amp;amp;rdquo;. The results are split into sections. The first section called &amp;amp;ldquo;Albums&amp;amp;rdquo; contains one result which is the OST for Battlefield: Bad Company 2. The next two sections are &amp;amp;ldquo;Tidal Artists&amp;amp;rdquo; and &amp;amp;ldquo;Tidal Albums&amp;amp;rdquo; respectively which surface results relating to the phrase &amp;amp;ldquo;Bad Company&amp;amp;rdquo;.&#34;  /&gt;
+&lt;h3 id=&#34;a-lively-home-screen&#34;&gt;A lively home screen&lt;/h3&gt;&lt;p&gt;The home screen is a great example of how Tidal content is interweaved with your local content pretty seamlessly.&lt;/p&gt;
+&lt;p&gt;The only thing that differentiates the two is a little logo tucked away next to the last played indicator.&lt;/p&gt;
+&lt;img src=&#34;plexamp-home.jpg&#34; alt=&#34;Visible is a screenshot of the Plexamp iOS application. It is open to the home screen which is broken into a two sections: &amp;amp;ldquo;Recent Plays&amp;amp;rdquo; and &amp;amp;ldquo;Recently Added in Music&amp;amp;rdquo;. More sections exist off screen. At the bottom is a currently playing song &amp;amp;ldquo;Empire State of Mind&amp;amp;rdquo; by Jay-Z.&#34;  /&gt;&lt;p&gt;There&amp;rsquo;s much more that isn&amp;rsquo;t illustrated here too. My library is still pretty empty (relatively speaking) but Plexamp will generate mixes for you like this:&lt;/p&gt;
+&lt;img src=&#34;https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif&#34; alt=&#34;Visible is an animated GIF displaying a section of the Plexamp iOS homescreen. A &amp;amp;ldquo;Mixes for You&amp;amp;rdquo; section is being scrolled through, showing mixes for various artist. For example: a 2Pac Mix containing songs by various rap artists.&#34;  /&gt;&lt;p&gt;To enable automatic mixes, and other features, you&amp;rsquo;ll want to enable &lt;a href=&#34;https://support.plex.tv/articles/sonic-analysis-music/&#34;&gt;Sonic Analysis&lt;/a&gt;. I did a bit of a facepalm when I realised I didn&amp;rsquo;t have this enabled yet. I even read the blog post for it when it launched!&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also a feature for surfacing what happened &amp;ldquo;On This Day&amp;rdquo; in music history:&lt;/p&gt;
+&lt;img src=&#34;https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png&#34; alt=&#34;Visible is the cover art for the album She&amp;amp;rsquo;s the One by Tom Petty within a section called &amp;amp;ldquo;On this Day&amp;amp;rdquo;. It states that the album mentioned come out on this day 25 years ago.&#34;  /&gt;&lt;p&gt;It would have said that February 10th&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt; is the 28th anniversary of &lt;a href=&#34;https://en.wikipedia.org/wiki/The_College_Dropout&#34;&gt;The College Dropout&lt;/a&gt; if not for a &lt;a href=&#34;https://twitter.com/plexamp/status/1491497134851428352&#34;&gt;pesky oversight&lt;/a&gt;. Thankfully it should be addressed soon so we can appropriately celebrate ye&amp;rsquo;s
+29th debut next year.&lt;/p&gt;
+
+&lt;h3 id=&#34;viewing-albums-by-mood&#34;&gt;Viewing albums by mood&lt;/h3&gt;&lt;p&gt;There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the more interesting.&lt;/p&gt;
+&lt;img src=&#34;plexamp-mood.jpg&#34; alt=&#34;Visible is a screenshot of a desktop with the Plexamp macOS application open. A list called &amp;amp;ldquo;Belligerent&amp;amp;rdquo; is open with a handful of albums that reflect that mood or feeling.&#34;  /&gt;&lt;p&gt;I haven&amp;rsquo;t taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It also demonstrates yet again how nicely the two sources (local and tidal) can play together.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s about time that we look at why they play nicely together so let&amp;rsquo;s take a peek under the hood.&lt;/p&gt;
+
+&lt;h2 id=&#34;hows-the-api-though&#34;&gt;How&amp;rsquo;s the API though?&lt;/h2&gt;&lt;p&gt;If you remember, something I wanted was to continue powering the &amp;ldquo;Now playing&amp;rdquo; widget on the front of my website.&lt;/p&gt;
+&lt;img src=&#34;utf9k-nowplaying.jpg&#34; alt=&#34;Visible is a screenshot of this website open in a small Safari window. Visible is a Now Playing widget showing Roses by Outkast. It reflects the song playing in Plexamp offscreen.&#34;  /&gt;&lt;p&gt;✅ for &lt;strong&gt;A good API&lt;/strong&gt; (2/3)&lt;/p&gt;
+&lt;p&gt;Initially playing Tidal content through the dedicated &amp;ldquo;Music On TIDAL&amp;rdquo; library&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt; didn&amp;rsquo;t surface anything in the API but by virtue of adding items to our regular music library instead, we get full metadata available via the &lt;code&gt;/status/sessions&lt;/code&gt; endpoint.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;Here&#39;s the absolute mountain of information available for you to play with&lt;/summary&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;MediaContainer&amp;#34;&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;size&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Metadata&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;addedAt&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1064275200&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;allowSync&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;art&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9560/art/1644407944&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;attribution&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;com.tidal&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369573&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentArt&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9560/art/1644407944&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentGuid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;plex://artist/5d07bbfc403c6402904a6105&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9560&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentRatingKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;9560&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentThumb&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9560/thumb/1644407944&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;grandparentTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;OutKast&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;guid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;plex://track/5d07cebf403c6402900cd0d9&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;index&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;10&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9590&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;lastViewedAt&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1644480645&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;librarySectionID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;librarySectionKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/sections/4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;librarySectionTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Music&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;oneShot&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;originallyAvailableAt&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2003-09-23&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentGuid&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;plex://album/5d07c173403c640290846b36&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentIndex&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9561&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentRatingKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;9561&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentStudio&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Arista&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentThumb&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9561/thumb/1644407962&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Speakerboxxx / The Love Below&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;parentYear&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2003&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;ratingKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;9590&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;remoteMedia&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;sessionKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;453&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;sourceKey&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/5c038b3e48a2d2001de6a1a6&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;summary&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;thumb&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/metadata/9561/thumb/1644407962&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Roses&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;track&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;updatedAt&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1644407920&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;viewCount&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;viewOffset&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;258&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Media&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;audioCodec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;aac&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;mp4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;12075&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;optimizedForStreaming&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;source&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;provider://tv.plex.provider.music&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Part&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;mp4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;12156&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/parts/1772296-HIGH&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Stream&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumGain&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;-9.71&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumPeak&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0.998444&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumRange&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;10.019548&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;bitrate&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;320&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;aac&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;AAC&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;AAC&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;gain&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;-10.6&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;25488&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;index&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;peak&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0.988556&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;selected&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;lrc&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;LRC (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;LRC (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;format&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;lrc&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;26578&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/streams/26578&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;minLines&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;provider&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;com.plexapp.agents.lyricfind&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;timed&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;txt&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;TXT (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;TXT (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;format&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;txt&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;26579&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/streams/26579&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;provider&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;com.plexapp.agents.lyricfind&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;audioCodec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;aac&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;mp4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;12076&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;optimizedForStreaming&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;source&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;provider://tv.plex.provider.music&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Part&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;mp4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;12157&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/parts/1772296-LOW&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Stream&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumGain&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;-9.71&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumPeak&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0.998444&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;albumRange&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;10.019548&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;bitrate&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;96&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;aac&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;AAC&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;duration&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;369000&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;AAC&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;gain&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;-10.6&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;25489&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;index&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;peak&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;0.988556&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;selected&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;lrc&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;LRC (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;LRC (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;format&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;lrc&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;26580&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/streams/26580&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;minLines&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;3&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;provider&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;com.plexapp.agents.lyricfind&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;timed&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;codec&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;txt&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;displayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;TXT (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;extendedDisplayTitle&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;TXT (External)&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;format&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;txt&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;26581&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;key&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;/library/streams/26581&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;provider&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;com.plexapp.agents.lyricfind&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;streamType&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;4&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;User&amp;#34;&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;thumb&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;https://plex.tv/users/&amp;lt;me&amp;gt;/avatar?c=1643535847&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Sentryism&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;Player&amp;#34;&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;172.17.0.1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;device&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;macOS&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;machineIdentifier&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;lt;my machine&amp;gt;&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;model&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;platform&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;macOS&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;platformVersion&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;21.4.0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;product&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;Plexamp&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;remotePublicAddress&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;172.17.0.1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;state&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;playing&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;skeith&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;vendor&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;version&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;3.9.1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;local&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ff79c6&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;relayed&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ff79c6&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;secure&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ff79c6&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;#34;userID&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#bd93f9&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;We can definitely work with that!&lt;/p&gt;
+&lt;p&gt;It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate upon closing the app but I just sidestep that by filtering for any sessions that aren&amp;rsquo;t paused. Don&amp;rsquo;t worry, there&amp;rsquo;ll be a section for gotchas like this later on.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll also put it into perspective that we&amp;rsquo;re accessing metadata about a third party playing track, in a world that would love to choke you out with Widevine gloves on the mat. Relatively speaking, it&amp;rsquo;s pretty refreshing to see.&lt;/p&gt;
+&lt;p&gt;As far as how this is possible, what&amp;rsquo;s really going on here is that Plex&amp;rsquo;s own metadata providers are doing the heavy lifting. When playing your local music, you get the exact same payload except for the &lt;code&gt;&amp;quot;attribution&amp;quot;: &amp;quot;com.tidal&amp;quot;&lt;/code&gt; entry at the start.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-about-cross-platform-sessions&#34;&gt;What about cross-platform sessions?&lt;/h2&gt;&lt;p&gt;Kind of but not really?&lt;/p&gt;
+&lt;p&gt;At this point, I&amp;rsquo;ll take 2 out of 3 happily but we&amp;rsquo;re apparently getting something in this space very soon!&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;fyi, the next version of plexamp adds controllability.&lt;/p&gt;&amp;mdash; Plexamp (@plexamp) &lt;a href=&#34;https://twitter.com/plexamp/status/1489024846033915908?ref_src=twsrc%5Etfw&#34;&gt;February 2, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;❌ but 👀 for &lt;strong&gt;Cross-platform sessions&lt;/strong&gt; (2/3)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: For Valentines Day, we got &lt;a href=&#34;https://forums.plex.tv/t/plexamp-release-notes/221280/38&#34;&gt;a lofty 4.0 update&lt;/a&gt; which includes, among other things, the ability to control your playback on another device!&lt;/p&gt;
+&lt;img src=&#34;plex-remote-session.jpg&#34; alt=&#34;Visible in the background, but obscured by a popup, is the album Fantastic Planet by Failure. Overlaid is a widget asking the user to &amp;amp;ldquo;Select Player&amp;amp;rdquo;. Visible are two different players: The author&amp;amp;rsquo;s iPhone and the desktop currently playing Fantastic Planet. The implication here is that it is possible to transfer the currently playing album to another device on the network.&#34;  /&gt;&lt;p&gt;What you&amp;rsquo;re seeing here is my phone controlling a session that&amp;rsquo;s playing on my laptop.&lt;/p&gt;
+&lt;p&gt;Given this was part of a larger refactor that unlocked a lot of capabilities, I assume we&amp;rsquo;ll see this fleshed out even more going forward.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be updating this to:&lt;/p&gt;
+&lt;p&gt;✅ for &lt;strong&gt;Cross-platform sessions&lt;/strong&gt; (3/3)&lt;/p&gt;
+&lt;p&gt;although my fingers are crossed that it gets to be even more seamless than it is in the first release!&lt;/p&gt;
+
+&lt;h2 id=&#34;ok-but-whats-the-catch-here&#34;&gt;Ok but what&amp;rsquo;s the catch here&lt;/h2&gt;&lt;p&gt;In the spirit of fairness, nothing is perfect and there are few things I&amp;rsquo;ve stumbled across while using this setup as my daily driver.&lt;/p&gt;
+&lt;p&gt;Most of these are either fine in moderation or things that I&amp;rsquo;m sure the &lt;a href=&#34;https://twitter.com/plexamp&#34;&gt;Plexamp team&lt;/a&gt; are aiming to address. If not, the team can consider this post as my bug report/feature request list!&lt;/p&gt;
+
+&lt;h3 id=&#34;hard-dependency-on-the-authentication-server&#34;&gt;Hard dependency on the authentication server&lt;/h3&gt;&lt;p&gt;I had the misfortune of having this integration go down briefly due to an outage with the Plex authentication server.&lt;/p&gt;
+&lt;img src=&#34;plex-status-page.jpg&#34; alt=&#34;Visible is a screenshot of the Plex status page cropped to show two sections: &amp;amp;ldquo;Authentication and API server&amp;amp;rdquo; and &amp;amp;ldquo;Plex website&amp;amp;rdquo;. Visible for the first section a couple of outages over a 90 day period equally a total uptime of 99.81%.&#34;  /&gt;&lt;p&gt;As one might imagine, we&amp;rsquo;re still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.&lt;/p&gt;
+&lt;div class=&#34;notice&#34;&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+  &lt;h3&gt;
+  &lt;span&gt;🔑&lt;/span&gt;A tip for Plex server owners&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Entropy&#34;&gt;Entropy&lt;/a&gt; is a sad fact of life and Plex&amp;rsquo;s authentication servers are no different.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;re relatively stable but it&amp;rsquo;s inevitable that the authentication server will fail again one day.&lt;/p&gt;
+&lt;p&gt;That isn&amp;rsquo;t a slight towards Plex, it&amp;rsquo;s just an unavoidable reality about computers.&lt;/p&gt;
+&lt;p&gt;Anyway, to work around this in future, you can &lt;a href=&#34;https://support.plex.tv/articles/200890058-authentication-for-local-network-access/&#34;&gt;whitelist your local network&lt;/a&gt; so that you can still stream (locally stored) content while you wait for the authentication server to return.&lt;/p&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+&lt;/div&gt;
+&lt;p&gt;While this sounds bad on paper, it&amp;rsquo;s not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an &amp;ldquo;Add to My Tidal&amp;rdquo; button and this is where it can be useful as a backup.&lt;/p&gt;
+&lt;p&gt;As an &lt;a href=&#34;https://sre.google/&#34;&gt;SRE&lt;/a&gt;, albeit one currently off the clock, if I&amp;rsquo;m going to talk shit about availability then I should bring some data and so I did a brief skim of the &lt;a href=&#34;https://status.plex.tv/&#34;&gt;Plex status page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Basically, I added up the number of minutes elapsed for every publicly listed outage for the year of 2021 and got something just under 9 hours. That&amp;rsquo;s almost bang on 99.9% (three nines) which is a pretty standard expectation for services.&lt;/p&gt;
+&lt;p&gt;Arguably you&amp;rsquo;d hope for something closer to 99.99% (four nines) for a critical piece of infrastructure like that but eh, I&amp;rsquo;m not exactly doing math out here.&lt;/p&gt;
+&lt;p&gt;Some of those incidents aren&amp;rsquo;t even attributed to authentication outages but I threw them in there just to look at the worst case scenario.&lt;/p&gt;
+&lt;p&gt;These outages, when they do happen, are generally about an hour long. The odds of hitting the same hour period in the same month is &lt;a href=&#34;https://rachelbythebay.com/w/2019/07/15/giant/&#34;&gt;pretty slim&amp;hellip; right?&lt;/a&gt;. I&amp;rsquo;ve used Plex for years prior to this and only run into them a couple of times although I will admit that music streaming is something that I do a lot more than visual media.&lt;/p&gt;
+&lt;p&gt;My personal opinion is that it&amp;rsquo;s fine. I&amp;rsquo;m not overly concerned! I have too many local tracks in my backlog to listen to so I&amp;rsquo;ll just take it as an excuse to go through unplayed content instead of consuming the same 5 Outkast albums on a loop until I die.&lt;/p&gt;
+&lt;p&gt;Besides, every service has outages. This problem isn&amp;rsquo;t unique to Plex.&lt;/p&gt;
+
+&lt;h3 id=&#34;drm-maybe-yes-maybe-no&#34;&gt;DRM&amp;hellip;? Maybe yes, maybe no?&lt;/h3&gt;&lt;p&gt;I stumbled onto this purely by accident but I guess you can&amp;rsquo;t stream Tidal content if you access your Plex server via your local network (ie; instead of via &lt;a href=&#34;https://app.plex.net&#34;&gt;https://app.plex.net&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Trying to do so gave me an error dialogue with this message:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An error occurred trying to play this item. Please make sure content from TIDAL is not already playing on another device.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Despite the message, nothing else was playing and despite my best effort, I couldn&amp;rsquo;t get this to go away.&lt;/p&gt;
+&lt;p&gt;The exact same track would work via the hosted Plex app and I&amp;rsquo;m not entirely sure.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m guessing there is some arbitrary legalese in the deal between Tidal and Plex that says &amp;ldquo;You must only load our content over an SSL connection&amp;rdquo; or something to that effect.&lt;/p&gt;
+&lt;p&gt;It could also just be a bug 🤷‍♀️&lt;/p&gt;
+&lt;p&gt;Despite the error, it&amp;rsquo;s perfectly possible to play multiple tracks from Tidal at the same time&lt;/p&gt;
+&lt;img src=&#34;tool-trio.jpg&#34; alt=&#34;Visible is a cropped screenshot of the Plex media server dashboard. Visible are three Tool albums playing on three different Plex/Plexamp instances.&#34;  /&gt;&lt;p&gt;If you&amp;rsquo;re curious, here&amp;rsquo;s how the aural mashup shown above sounded&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;center&gt;
+  &lt;audio controls&gt;
+    &lt;source src=&#34;tool-trio.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+    Your browser doesn&#39;t support the audio tag :(
+  &lt;/audio&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&#34;you-cant-remove-tidal-albums&#34;&gt;You can&amp;rsquo;t remove Tidal albums&lt;/h3&gt;&lt;p&gt;This one seems like a weirdly obvious oversight so I&amp;rsquo;m going to give the benefit of the doubt here and assume there was some weird technical limitation that mean this was deferred to the backlog.&lt;/p&gt;
+&lt;p&gt;The team are definitely aware of it:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;1) On the roadmap, yeah, along with deletion of other things.&lt;br&gt;&lt;br&gt;2) Check in the web app when your release date is. &lt;a href=&#34;https://t.co/iPXAjvyAMe&#34;&gt;pic.twitter.com/iPXAjvyAMe&lt;/a&gt;&lt;/p&gt;&amp;mdash; Plexamp (@plexamp) &lt;a href=&#34;https://twitter.com/plexamp/status/1491494752327372801?ref_src=twsrc%5Etfw&#34;&gt;February 9, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;It&amp;rsquo;s a little annoying though because I have added one or two albums accidentally and now they&amp;rsquo;re just stuck with me forever but amongst an ocean of albums, it doesn&amp;rsquo;t feel so bad.&lt;/p&gt;
+
+&lt;h3 id=&#34;plexamp-sessions-are-weirdly-long-lived&#34;&gt;Plexamp sessions are weirdly long lived&lt;/h3&gt;&lt;p&gt;Interestingly, Plexamp sessions can&amp;rsquo;t be cancelled by the owner of a Plex server?&lt;/p&gt;
+&lt;p&gt;With most streaming content, you can force stop a session but here, you can&amp;rsquo;t even kill your own sessions for some reason.&lt;/p&gt;
+&lt;img src=&#34;plexamp-not-pausing.jpg&#34; alt=&#34;Visible is a cropped screenshot of the Plex media server dashboard. Visible are two Plexamp streams on different devices.&#34;  /&gt;&lt;p&gt;In this screenshot, I&amp;rsquo;ve actually paused &amp;ldquo;Praxis Palace&amp;rdquo; but the media server continues to show it progressing as normal.&lt;/p&gt;
+&lt;p&gt;The green padlock indicates that I can&amp;rsquo;t touch the session so I just sort of need to wait for it to expire on its own.&lt;/p&gt;
+&lt;p&gt;When the track reaches the end, the progress bar just jumps back to where I had gotten up to before closing the player.&lt;/p&gt;
+&lt;p&gt;My fingers are crossed that this will probably be handled by the refactor that gives us controllability between platforms.&lt;/p&gt;
+
+&lt;h2 id=&#34;closing-thoughts&#34;&gt;Closing thoughts&lt;/h2&gt;&lt;p&gt;Believe or not, I actually cut this post short because I could gush about Plexamp for quite a while longer.&lt;/p&gt;
+&lt;p&gt;Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.&lt;/p&gt;
+&lt;img src=&#34;plexamp-upnext.jpg&#34; alt=&#34;Visible is a plain screenshot of the Plexamp desktop application with the song &amp;amp;ldquo;Praise the Lord (Da Shine)&amp;amp;rdquo; by A$AP Rocky playing.&#34;  /&gt;&lt;p&gt;I&amp;rsquo;ve been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still some really niche ones I kick myself for not getting around to.&lt;/p&gt;
+&lt;p&gt;The main thing that Plexamp offers me is the removal of friction between juggling multiple applications (in this case, Plex and Spotify) since the one I use heaviest will always dominate my focus.&lt;/p&gt;
+&lt;p&gt;With this setup, I don&amp;rsquo;t have to worry about it because everything is in one place!&lt;/p&gt;
+&lt;p&gt;Usually that feels like a red flag but I think the integration has been handled really elegantly here. It&amp;rsquo;s simply another provider for Plex with no more or less attention than every other provider. It just kinda works™.&lt;/p&gt;
+&lt;p&gt;I will reiterate though that if you don&amp;rsquo;t care about local content, just use Spotify.&lt;/p&gt;
+&lt;p&gt;If you balk at the thought of paying for both Plex and Tidal, maybe this also isn&amp;rsquo;t for you. Personally I&amp;rsquo;ve subscribed to &lt;a href=&#34;https://www.plex.tv/plex-pass/&#34;&gt;Plex Pass&lt;/a&gt; so many years in a row that I ended up just investing in a lifetime subscription.&lt;/p&gt;
+&lt;p&gt;However, you like tinkering with APIs or you want to consolidate your library in one place, while not being enough of a masochist to build 100% of your library through local files, then maybe you&amp;rsquo;ll enjoy this setup as much as I have.&lt;/p&gt;
+&lt;p&gt;Plexamp definitely feels like a labour of love and all of the little UI string gag planted throughout the app promote that feeling.&lt;/p&gt;
+&lt;p&gt;Perhaps the only question left now is whether I can bear to sully my library with &lt;a href=&#34;https://www.youtube.com/watch?v=kJunmC9YKQA&#34;&gt;untaggable content&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;It seems that these claims are starting to take effect. I didn&amp;rsquo;t have any doubt but if I had to guess, I figure there&amp;rsquo;s probably some process where Spotify waits out the calendar month in order to calculate compensation. It seems that Neil&amp;rsquo;s entire catalogue has disappeared at the time of publishing. Prior to this, he pulled his catalogue &lt;a href=&#34;https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338/&#34;&gt;back in 2015&lt;/a&gt; due to &amp;ldquo;my music [being] devalued by the worst quality in the history of broadcasting or any other form of distribution&amp;rdquo;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;On lower plans, they usually pay for half and you just pay the remainder. It shows as an add-on to your mobile plan but it&amp;rsquo;s a little more fiddly to setup than the higher data plan which just pays for the whole thing. If you use Spotify (as I did), it&amp;rsquo;s easy to write off an upgrade to the highest plan as being the same plan + a Spotify sub which you&amp;rsquo;d have purchased anyway.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify&amp;rsquo;s free version. I&amp;rsquo;m not entirely sure that&amp;rsquo;s legal but damn, those ads really are annoying.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;I know some people absolutely swear by Discover Weekly and while I think it is really good, I always forget to listen to it. I&amp;rsquo;m also not opposed to just viewing it once a week and listening to those songs via an alternative streaming plans. Hell, I might just be able to pull the playlist via an API endpoint and populate an identical playlist somewhere else?&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;Currently, it shows TV shows, movies and music via Plex and even what I&amp;rsquo;m playing on my PS5 via the Playstation Network APIs. I&amp;rsquo;ll probably write about it in a future blog post. It was previously powered by both Spotify and &lt;a href=&#34;https://trakt.tv&#34;&gt;Trakt&lt;/a&gt; before my switch though.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
+&lt;p&gt;Especially given all of the traffic would transit through Germany while I lived in New Zealand. It wasn&amp;rsquo;t really the VPN though, more that the traffic passed through two or three different &lt;a href=&#34;https://en.wikipedia.org/wiki/Network_address_translation&#34;&gt;NATs&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/marcus-crane/khinsider&#34;&gt;&lt;em&gt;cough&lt;/em&gt;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34;&gt;
+&lt;p&gt;The feature has degraded over the years so I&amp;rsquo;m not sure of the current state but last I checked, you can add local files to the desktop client. This doesn&amp;rsquo;t actually sync them like a la Google Music but instead just dumps them all into a basic list that you can play. If you open Spotify on a different desktop, you have to do the same process again from scratch.&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34;&gt;
+&lt;p&gt;The first draft of this post was written on Feb 10th but I didn&amp;rsquo;t get around to editing it until Feb 12th hence this doesn&amp;rsquo;t really line up with the publication date.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34;&gt;
+&lt;p&gt;There are two sources in Plex: One shows your Tidal library by itself and streams direct from Tidal. Given this, Tidal content doesn&amp;rsquo;t show up in the API, as the stream doesn&amp;rsquo;t transit via Plex. The other source is when you add Tidal content to your music library. This does transit via Plex so it shows up via the API.&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34;&gt;
+&lt;p&gt;Do three audio fingerprints make a unique fingerprint? I hope the RIAA doesn&amp;rsquo;t destroy my blog or I might have to use one of those shady Swiss bulletproof hosts going forward&amp;hellip;&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

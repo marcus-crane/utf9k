@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/saml/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    
+	<atom:link href="https://utf9k.net/tags/saml/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

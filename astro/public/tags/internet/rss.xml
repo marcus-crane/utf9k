@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/internet/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Wed, 03 Mar 2021 13:02:46 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/internet/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>We are all that person who reads a book while walking</title>
+      <link>https://utf9k.net/blog/walking-while-reading/</link>
+      <description>Honestly, this post is weird and dumb. I wouldn&#39;t recommend it.</description>
+      <pubDate>Wed, 03 Mar 2021 13:02:46 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/walking-while-reading/</guid>
+      <content type="html">&lt;p&gt;There is a person who lives in my general area that I&amp;rsquo;ve spotted two or three times in the almost three years that I have lived at my flat.&lt;/p&gt;
+&lt;p&gt;He has a book open and reads it, while walking and for the most part, seemingly not paying any attention to where he is going.&lt;/p&gt;
+&lt;p&gt;It feels entirely ridiculous and comical so it&amp;rsquo;s definitely noticeable whenever I do spot him.&lt;/p&gt;
+&lt;p&gt;That behaviour is something I think I&amp;rsquo;ve seen before at school where you would have that one kid seemingly glued to a book.&lt;/p&gt;
+&lt;p&gt;How that knowledge is used is beyond me since they never seem to do much else besides reading but that&amp;rsquo;s besides the point.&lt;/p&gt;
+&lt;p&gt;As ridiculous as their actions seem, we&amp;rsquo;re effectively all that person now.&lt;/p&gt;
+&lt;p&gt;Anytime we get the urge to see what new chat message has arrived or whip out a device to flick through a music playlist.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s really just the same behaviour but without the persistence.&lt;/p&gt;
+&lt;p&gt;I probably never learned anything from quickly skimming my &amp;ldquo;Liked Songs&amp;rdquo; on Spotify while waiting for a traffic light though.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Digital Spring Cleaning</title>
+      <link>https://utf9k.net/blog/digital-spring-cleaning/</link>
+      <description>As I work through deleting a bunch of accounts, I note down the various issues that make it harder than it should be</description>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/digital-spring-cleaning/</guid>
+      <content type="html">&lt;p&gt;It&amp;rsquo;s spring here in New Zealand, and unfortunately I think I&amp;rsquo;ve spent more time decluttering digital items instead of physical, but I&amp;rsquo;ve still had an interesting time as a result&lt;/p&gt;
+
+&lt;h2 id=&#34;why-are-people-so-protective-of-my-data&#34;&gt;Why are people so protective of my data?&lt;/h2&gt;&lt;p&gt;Part of my clean involved tidying up my password manager, since it tends to accumulate a lot of accounts that I don&amp;rsquo;t need anymore.&lt;/p&gt;
+&lt;p&gt;Normally I err more on the side of a digital hoarder but I decided to go &lt;a href=&#34;https://genius.com/Jay-z-and-kanye-west-ham-lyrics&#34;&gt;ham&lt;/a&gt; on all the &amp;ldquo;stuff&amp;rdquo; I have, and so that included digital &amp;ldquo;assets&amp;rdquo;.&lt;/p&gt;
+
+&lt;h3 id=&#34;cleaning-up-my-own-mess&#34;&gt;Cleaning up my own mess&lt;/h3&gt;&lt;p&gt;For the most part, deleting accounts was pretty straight forward. Somewhere under Settings would be a big red delete button, easy enough.&lt;/p&gt;
+
+&lt;h3 id=&#34;contacting-customer-support&#34;&gt;Contacting customer support&lt;/h3&gt;&lt;p&gt;A little notch higher were those sites that I had to contact support. Some of that is understandable, for those who have data in disparate systems and/or just haven&amp;rsquo;t implemented the functionality to trigger a cascading delete.&lt;/p&gt;
+&lt;p&gt;Most sites were fine about it. Some would offer a discount or free credit for… an account I&amp;rsquo;m not using and clearly stated as much.&lt;/p&gt;
+&lt;p&gt;There were a couple that asked me to provide the email for my account or username which was fine but it&amp;rsquo;s the email address I&amp;rsquo;m emailing you from…&lt;/p&gt;
+&lt;p&gt;Of the customer support request batch, &lt;a href=&#34;https://downloadtile.com/&#34;&gt;Tile&lt;/a&gt; was perhaps the most confusing. They asked me what year I registered my account (uhh, this year? maybe last), how many tiles I had associated (1) and the names + activation dates of tiles associated with my account. I don&amp;rsquo;t know about you but I don&amp;rsquo;t keep track of these things so I just had to make a rough guess. That was yesterday so I&amp;rsquo;ll see if they accept that before escalating things. This is only made weirder by the fact that before asking those questions, they linked me a reset page for the product I have that has a tile built into it. If the questions are meant to be a security measure, giving me the answer in the same breath is kind of missing the point but oh well.&lt;/p&gt;
+
+&lt;h3 id=&#34;having-to-search-for-a-human&#34;&gt;Having to search for a human&lt;/h3&gt;&lt;p&gt;This category was thankfully quite small and perhaps the most fun to problem solve. Personally, I consider these to be one-off issues rather than being intentionally troubled.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://darklang.com/&#34;&gt;Dark&lt;/a&gt; was the first contender&lt;/p&gt;
+&lt;p&gt;Looking at the site, there&amp;rsquo;s no mention of who is behind the language. Inside the application(?), there&amp;rsquo;s no profile page or anything like that.&lt;/p&gt;
+&lt;p&gt;Eventually, I discovered the Slack community where one of the co-founders informed me that there isn&amp;rsquo;t a user-facing way to delete an account.&lt;/p&gt;
+&lt;p&gt;We ended up having a conversation about Dark in general and I actually forgot what I was even there for. I was highly skeptical as to whether something like Dark would take off, and I still am, but I enjoyed chatting with &amp;rsquo;em so I thought I might as well try it out again. Ironically, the only product/services I was convinced (or perhaps convinced myself) to retry was one of the few that made no attempt to retain users.&lt;/p&gt;
+&lt;p&gt;The second contender, &lt;a href=&#34;https://autocode.com/&#34;&gt;Autocode&lt;/a&gt; (previously &lt;a href=&#34;https://stdlib.com/&#34;&gt;stdlib&lt;/a&gt; by &lt;a href=&#34;https://polybit.com/&#34;&gt;Polybit&lt;/a&gt;) overlooked some email addresses that no longer existed.&lt;/p&gt;
+&lt;p&gt;It was pretty easy to infer the new support email by tacking support onto the end of their current domain, and they were super quick to fix it (and delete my account) so it wasn&amp;rsquo;t much trouble at all.&lt;/p&gt;
+&lt;p&gt;I suppose it&amp;rsquo;s easy to have happen as a startup changing things rapidly, including your name, combined with the number of people who go out of their way to &amp;ldquo;delete&amp;rdquo; an account probably being pretty low.&lt;/p&gt;
+&lt;p&gt;Anyway, ironically I probably spent the least amount of time on this section compared to sites that had gone out of their way to try and design an offboarding process.&lt;/p&gt;
+
+&lt;h3 id=&#34;having-to-sign-up-for-another-thing-in-order-to-leave&#34;&gt;Having to sign up for another thing, in order to leave&lt;/h3&gt;&lt;p&gt;Arguably, the former meets this but I consider that a lack of a process rather than a poorly designed process.&lt;/p&gt;
+&lt;p&gt;The name of the service escapes me (unfortunately) but there was one site where I had to make an account for their Zendesk-reskinned support system that was entirely different from the account I was trying to delete.&lt;/p&gt;
+&lt;p&gt;Yeah, I had to make an account to delete an account. How stupid is that.&lt;/p&gt;
+&lt;p&gt;I think I wrote in the ticket to &amp;ldquo;Please also delete this support account as well&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Of course, it&amp;rsquo;s all digital but I still can&amp;rsquo;t help but feel like I&amp;rsquo;m generating digital garbage.&lt;/p&gt;
+
+&lt;h3 id=&#34;handing-my-data-back&#34;&gt;Handing my data back&lt;/h3&gt;&lt;p&gt;There were a couple of sites where I simply felt I had no choice but to exercise the &lt;a href=&#34;https://en.wikipedia.org/wiki/Nuclear_option&#34;&gt;nuclear option&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If I couldn&amp;rsquo;t request my data to be deleted, or even contact anyone, I suppose the account isn&amp;rsquo;t mine in any meaningful sense and I&amp;rsquo;m just leasing it so I gave the lease back.&lt;/p&gt;
+&lt;p&gt;More specifically, I would generate an absurdly long password (ie 40+ characters), remove any PII and then change the email address to &lt;code&gt;postmaster@&amp;lt;domain&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To be clear, all of these services happened to have nothing in the way of invoices or anything of the sort.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not really ideal but I feel a little lighter having returned property which wasn&amp;rsquo;t really mind in the first place. It&amp;rsquo;s one more entry I can remove from my password manager.&lt;/p&gt;
+
+&lt;h3 id=&#34;all-hope-is-lost&#34;&gt;All hope is lost&lt;/h3&gt;&lt;p&gt;There were thankfully only about two sites where there was just no course of action I could find, such as no ability to change email address or seemingly contact support to get any sort of response.&lt;/p&gt;
+&lt;p&gt;For those sites, I just changed the password once again and logged out for the final time. I wasn&amp;rsquo;t using them anyway so they&amp;rsquo;ll just join the rest of the digital waste.&lt;/p&gt;
+&lt;p&gt;I still would have liked to have tidied up my own mess though.&lt;/p&gt;
+
+&lt;h2 id=&#34;remaining-thoughts&#34;&gt;Remaining thoughts&lt;/h2&gt;&lt;p&gt;I noticed a tendency of a few of the smaller services to apologise that the application/tool didn&amp;rsquo;t work for me.&lt;/p&gt;
+&lt;p&gt;In my case, I didn&amp;rsquo;t really view it as a failing? Often times, I viewed it more that I wasn&amp;rsquo;t a good fit for the tool. Sometimes I couldn&amp;rsquo;t even figure out how the tool &amp;ldquo;viewed the world&amp;rdquo; so I wasn&amp;rsquo;t sure if I was going against the grain of how it was intended to be used.&lt;/p&gt;
+&lt;p&gt;I suppose it made me appreciate even more, the hard part of product management in that I could easily provide some feedback like &amp;ldquo;I couldn&amp;rsquo;t do Y thing with this tool&amp;rdquo; but I should hope that some founders know when to just discard feedback and chalk it up to a user mismatch over arbitrarily forcing concepts into their tool.&lt;/p&gt;
+&lt;p&gt;There were some tools where I didn&amp;rsquo;t use them, but I knew exactly why I didn&amp;rsquo;t use them. There were others I rarely used and one of those asked if I&amp;rsquo;d like to join an interview session in exchange for X months of their subscription tier. It got me thinking that if there were more tools, especially the ones I did have specific criticisms of, that asked for user interviews, I&amp;rsquo;d probably do some of them. Arguably, I&amp;rsquo;d prefer to do them more if there was no incentive, rather than an incentive I don&amp;rsquo;t have any use for. Personally, I just find those sorts of user interviews fun, both participating and having run a handful myself.&lt;/p&gt;
+&lt;p&gt;I could mention how some sort of &lt;a href=&#34;https://en.wikipedia.org/wiki/Self-sovereign_identity&#34;&gt;digital identity&lt;/a&gt; would make any of the above redundant and so on but personally, I think it&amp;rsquo;s wishful thinking, in my lifetime anyway.&lt;/p&gt;
+&lt;p&gt;Too many business and individuals like to unneccessarily complicate things in a variety of ways: using email addresses as later-unchangable IDs, abstracting themselves away from users so much that you can&amp;rsquo;t find a real person or simply just viewing data as an asset to be kept, rather than a liability to be managed like any other risk.&lt;/p&gt;
+&lt;p&gt;I would say that much like smoking, the best way to quit is to never start, but even that doesn&amp;rsquo;t hold true with email addresses ending up in all sorts of third party systems you&amp;rsquo;ve never heard of.&lt;/p&gt;
+&lt;p&gt;The above exercise is kind of pointless in that light but I&amp;rsquo;m not really interested in entirely erasing my footprint so much as I&amp;rsquo;d just like my password manager to reflect the services that I&amp;rsquo;m actively using. I&amp;rsquo;m sure some services just have a deleted: true flag but that&amp;rsquo;s still deactivated as far as I&amp;rsquo;m concerned.&lt;/p&gt;
+&lt;p&gt;Maybe one day I&amp;rsquo;ll move to Europe and then I can rub my hands in glee as I fire out hundreds of pissy GDPR emails threatening vague legal action.&lt;/p&gt;
+&lt;p&gt;Actually, there&amp;rsquo;s an idea. I still have a few customer support requests I&amp;rsquo;m waiting on for accounts to be deactivated. If I don&amp;rsquo;t hear from them, I wonder if CCing Investor Relations would get me any sort of response?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll give it a try later this week.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Relying on the internet as a business</title>
+      <link>https://utf9k.net/blog/internet-reliance/</link>
+      <description>It&#39;s wild that you can couple a physical business to digital technology to the extent that one can&#39;t operate without the other</description>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/internet-reliance/</guid>
+      <content type="html">&lt;p&gt;I went to get a haircut about 45 minutes before writing this post, and the internet went out briefly. I overheard one of the hair stylists say&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s weird to think how much we rely on the internet, huh?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clearly, this isn&amp;rsquo;t a new thought, and this post is being made up as I write it but it&amp;rsquo;s always an interesting thought.&lt;/p&gt;
+&lt;p&gt;Anyway, the first thing I heard when I walked in the door was &amp;ldquo;I&amp;rsquo;ll be with you in 2 seconds, the internet has just gone out&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;To be quite clear, I like the hair stylist I go to. I hate haircuts so any observations are just that but naturally, I thought&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What does that have to do with haircuts&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;I thought about it a bit while I was there and realised it must be quite hard to be a non-technical business owner.&lt;/p&gt;
+&lt;p&gt;For starters, when the internet &amp;ldquo;goes out&amp;rdquo;, all sorts of things start breaking of course. You can&amp;rsquo;t reach your booking system. Perhaps people are booking still, and some managed service is confirming them automatically, but you have no visibility into your expected workflow for later that day.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re also not really giving proper attention to the people presently there either, since it&amp;rsquo;s in the back of your mind.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re non-technical after all, you don&amp;rsquo;t really have a mental model of all of the devices in your building and how many of them depend on ethernet or a wireless access point.&lt;/p&gt;
+&lt;p&gt;I mean, maybe you know roughly what does of course but there&amp;rsquo;s plenty of things that are easy to get about since they… always just work?&lt;/p&gt;
+&lt;p&gt;There wasn&amp;rsquo;t actually any music, or rather it stopped playing at one point. Personally, I wouldn&amp;rsquo;t have noticed but lo and behold, Spotify does indeed require the internet.&lt;/p&gt;
+&lt;p&gt;They have mobile EFTPOS terminals that have no cables too so I wonder if they&amp;rsquo;re running off of WiFi too. That makes them about as useful as a brick without those juicy packets.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Anyway, this post is partly me trying to sort through my spaghetti thoughts and I think there were two main things that popped into my head:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a business owner, just how many dependencies do you end up with that you don&amp;rsquo;t properly understand?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I wonder to what extent, slowly over time, you get introduced to the cooler, mobile EFTPOS terminal. Don&amp;rsquo;t be tied down with all those cables, you could be trendy.&lt;/p&gt;
+&lt;p&gt;Ok, ok, I&amp;rsquo;m being heavily sarcastic, no one actually drops however much on a whim for non-essentials but with the rise in internet-connected &amp;ldquo;things&amp;rdquo;, perhaps there ends up being an unavoidable Ship of Theseus type effect where one day, your entire business can be closed for the day if the internet goes out.&lt;/p&gt;
+&lt;p&gt;Even for business that seemingly have no real essential need for the internet, but get convinced about some cool new online booking system or whatever. I can imagine as &amp;ldquo;internet&amp;rdquo; niches dry up over time, ever more businesses will be convinced to dive into technology in order to create new niches.&lt;/p&gt;
+&lt;p&gt;The booking system that the hair stylist I used is some basic bootstrap thing with some dropdowns yet there&amp;rsquo;s an entire business that makes &amp;ldquo;premium hair salon booking systems&amp;rdquo;. Perhaps the wildest part is that time is the bottleneck here, right?&lt;/p&gt;
+&lt;p&gt;Surely booking can&amp;rsquo;t physically be any more complex than it was as a kid, when staff had paper-based agendas.&lt;/p&gt;
+&lt;p&gt;In this case, I&amp;rsquo;m just talking about places with a comparable number of staff of course. You&amp;rsquo;d want something a bit more scalable with tens or hundreds of staff but until we get hair stylists that rent out a warehouse for some sort of olympic hairdressing event, the problem space seems about the same to me as it ever did. What&amp;rsquo;s the problem we solved here exactly?&lt;/p&gt;
+&lt;p&gt;At this point I&amp;rsquo;m just ranting about technology but this does bring me around to my second question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is there, or should there be, such a thing as technology risk assessment/dependency modelling for businesses?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This goes back to the mention of mental models but for your average business owner, I imagine you might not really understand that technology isn&amp;rsquo;t a monolith? You&amp;rsquo;ve got disciplines ranging from wild west code slinging to &amp;ldquo;Just wrapped up a 7 month design trip visiting the wetlands of Croatia&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Bootstrap is fine, I don&amp;rsquo;t hate Javascript for keeping me hostage and Zuck can grill meats all he wants but I know for sure when I look at a barebones booking system and wonder &amp;ldquo;So what do they do all day? This seems like a grad project&amp;rdquo;, their customers most likely don&amp;rsquo;t have the same point of view.&lt;/p&gt;
+&lt;p&gt;Taste in design isn&amp;rsquo;t really a concern here but I can&amp;rsquo;t help but wish there was some sort of crash course where people could work through hypotheticals like the above situation I described.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not really sure what to say here other than you can&amp;rsquo;t really avoid engineering a single point of failure if you don&amp;rsquo;t even know what that is.&lt;/p&gt;
+&lt;p&gt;Also, if I was trying to run a business and focus on &amp;ldquo;what actually matters&amp;rdquo;, I&amp;rsquo;d probably just think &amp;ldquo;Sounds boring/complicated/nerd crap&amp;rdquo; which is ironic given, you know, I&amp;rsquo;m writing this post.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Realistically, none of this matters. No one else noticed, or even cared, especially not enough to spend their entire lunch break writing over 70 something lines on hair styling.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s perhaps something more to think about and I probably shouldn&amp;rsquo;t publish this given how it&amp;rsquo;s kind of half baked but maybe it&amp;rsquo;ll inspire you to write something actionable and coherent.&lt;/p&gt;
+&lt;p&gt;Personally, I think if we still had 3.5mm jacks, I could have just streamed Spotify via mobile for them until the internet came back on. How&amp;rsquo;s that for collective action?&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

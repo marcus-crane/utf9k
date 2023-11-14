@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/css/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Fri, 14 May 2021 20:48:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/css/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Has Bootstrap eaten the world yet?</title>
+      <link>https://utf9k.net/blog/has-bootstrap-eaten-the-world-yet/</link>
+      <description>The CSS framework that could</description>
+      <pubDate>Fri, 14 May 2021 20:48:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/has-bootstrap-eaten-the-world-yet/</guid>
+      <content type="html">&lt;p&gt;To quote everyone&amp;rsquo;s favourite &lt;a href=&#34;https://www.forbes.com/sites/zackomalleygreenburg/2012/10/03/inside-andreessen-horowitz-15-million-investment-in-rap-genius/?sh=7c7d895f4da2&#34;&gt;rap enthusiast&lt;/a&gt; &lt;a href=&#34;https://a16z.com/author/marc-andreessen/&#34;&gt;Marc Andreessen&lt;/a&gt;, &amp;ldquo;Software is eating the world&amp;rdquo; but I&amp;rsquo;d like to coin my own term in that vein: &amp;ldquo;Bootstrap is eating the world&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Well, perhaps it already has but it&amp;rsquo;s interesting seeing it pop up in real life from time to time.&lt;/p&gt;
+&lt;p&gt;In the past few days, I remember seeing it styling the backend calendar system for the gym that I go to and also powering the patient search when I went to get a blood test.&lt;/p&gt;
+&lt;p&gt;These are only two anecdotal instances of course but I wonder just how many systems are floating around the place that are plowing through work with that instantly recognisable basic Bootstrap template.&lt;/p&gt;
+&lt;p&gt;My assumption is that it has continued to succeed because it still primarily caters to getting started as quickly as possible.&lt;/p&gt;
+&lt;p&gt;If you go to the &lt;a href=&#34;https://getbootstrap.com&#34;&gt;homepage&lt;/a&gt;, the two links for CSS and JS are right there for use straight out of the box. Similarly, they still distribute single static files too.&lt;/p&gt;
+&lt;p&gt;It feels like most CSS frameworks are only accessible via &lt;a href=&#34;https://npmjs.com&#34;&gt;npm&lt;/a&gt; with CDN-hosted stylesheets going the way of the dodo so it makes sense that people who choose bootstrap would stick with it. Lack of complexity is effectively a feature after all!&lt;/p&gt;
+&lt;p&gt;Just imagine how much more productive the planet would be if we just doubled down on Bootstrap and threw away all of the other frontend tooling.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

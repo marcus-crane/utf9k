@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/git/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Thu, 12 Aug 2021 20:17:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/git/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conditionally setting your gitconfig</title>
+      <link>https://utf9k.net/blog/conditional-gitconfig/</link>
+      <description>Did you know you can change Git attributes based on what folder you&#39;re in?</description>
+      <pubDate>Thu, 12 Aug 2021 20:17:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/conditional-gitconfig/</guid>
+      <content type="html">&lt;p&gt;Personally, I try to keep my development environment as convenient to use as possible and with the advent of &lt;a href=&#34;https://cloud.google.com/beyondcorp&#34;&gt;BeyondCorp-style zero trust&lt;/a&gt;, more internal services are thankfully available without a VPN required.&lt;/p&gt;
+&lt;p&gt;This makes it easy to access tooling from your mobile device and other places but it can also mean the line between work and personal blurs a little bit.&lt;/p&gt;
+&lt;p&gt;A lot of my custom work-related configuration has been deprecated (utilities for wrangling VPNs and proxies) and I basically don&amp;rsquo;t maintain anything more than what was &lt;a href=&#34;https://github.com/marcus-crane/dotfiles&#34;&gt;already open sourced&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One last holdout has been my git configuration however, as I want to create work commits with my work email and vice versa for open source commits. It had been my impression that git had no way to support this but that hasn&amp;rsquo;t been true for some time.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://git-scm.com/docs/git-config#_conditional_includes&#34;&gt;conditional includes&lt;/a&gt;, you can dynamically switch instances of your &lt;code&gt;.gitconfig&lt;/code&gt; on the fly.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at an example. For example purposes, let&amp;rsquo;s say that my code lives in &lt;code&gt;$HOME/work&lt;/code&gt; and my personal code lives in &lt;code&gt;$HOME/projects&lt;/code&gt;. You can do something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;user&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;email&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; user@example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; User
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;signingkey&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; ABC123
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;commit&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;gpgSign&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;includeIf &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;gitdir:~/work/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;path&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; ~/.work.gitconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What we&amp;rsquo;re doing here is setting our default variables but upon interacting with a &lt;code&gt;.git&lt;/code&gt; initialised repository within the &lt;code&gt;~/work&lt;/code&gt; folder, we instead use our work-based config.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see an example of this in action:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;pwd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Users/person
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git config user.email
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user@example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;cd&lt;/span&gt; ~/work
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;pwd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Users/person/work
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git config user.email
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;business@work.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pretty cool, huh?&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Dealing with multiple git hosts</title>
+      <link>https://utf9k.net/blog/multiple-git-hosts/</link>
+      <description>Why setting for one gitconfig when you could have two or more</description>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/multiple-git-hosts/</guid>
+      <content type="html">&lt;div class=&#34;notice&#34;&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+  &lt;h3&gt;
+  Some things have changed since I first wrote this&lt;/h3&gt;
+&lt;p&gt;At the time of writing, I was using Gitlab so you&amp;rsquo;ll see references to my dotfiles living there.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve now moved back to Github but kept the references to Gitlab in this post intact.&lt;/p&gt;
+  &lt;hr class=&#34;hidden&#34; /&gt;
+&lt;/div&gt;
+&lt;p&gt;When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They &lt;a href=&#34;https://github.com/marcus-crane/dotfiles&#34;&gt;live in a Github repository&lt;/a&gt; under my personal account, and I use plain old git to sync changes.&lt;/p&gt;
+&lt;p&gt;In order to push and pull changes from Github, I use an SSH key rather than a password. It&amp;rsquo;s easy enough to generate one of course but I also have one for the internal repository at my work. Juggling the two can sometimes be annoying when setting up a fresh laptop without some proper configuration.&lt;/p&gt;
+&lt;p&gt;Usually I forget what that looks like so here&amp;rsquo;s a quick walkthrough on how you too can juggle multiple git hosts.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s have a look at a barebones ssh configuration file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cat ~/.ssh/config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host github.example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/work
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host gitlab.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/personal
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/personal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We&amp;rsquo;ve got three different hosts and two different SSH keys.&lt;/p&gt;
+&lt;p&gt;Whenever you use &lt;code&gt;ssh&lt;/code&gt;, it&amp;rsquo;ll check to see if you have any host blocks defined. If they match the host provided, it&amp;rsquo;ll use the corresponding configuration.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see how it looks in action:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ssh -T git@github.example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hi marcus! You&amp;#39;ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ssh -T git@gitlab.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Welcome to GitLab, @marcus-crane!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The connection to &lt;code&gt;github.example.com&lt;/code&gt; uses the key stored at &lt;code&gt;~/.ssh/work&lt;/code&gt;, while the connection to &lt;code&gt;gitlab.com&lt;/code&gt; has used the key stored at &lt;code&gt;~/.ssh/personal&lt;/code&gt;. Perfect!&lt;/p&gt;
+&lt;p&gt;You can also add additional configuration that is specific to just one host.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at an example with a few more options:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cat ~/.ssh/config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host github.example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/work
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host gitlab.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/personal
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  LogLevel VERBOSE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  HostName notarealuser
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  IdentityFile ~/.ssh/personal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s mostly the same with two new commands &lt;code&gt;LogLevel&lt;/code&gt; and &lt;code&gt;HostName&lt;/code&gt;. Let&amp;rsquo;s see it in action once again before we dive a bit deeper:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh: Could not resolve hostname notarealuser: Name or service not known
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ssh -T git@gitlab.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Authenticated to gitlab.com &lt;span style=&#34;color:#ff79c6&#34;&gt;([&lt;/span&gt;35.231.145.151&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;:22&lt;span style=&#34;color:#ff79c6&#34;&gt;)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Welcome to GitLab, @marcus-crane!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Transferred: sent 2036, received &lt;span style=&#34;color:#bd93f9&#34;&gt;3072&lt;/span&gt; bytes, in 0.5 seconds
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Bytes per second: sent 4366.6, received 6588.4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can see that we sent a request to &lt;code&gt;github.com&lt;/code&gt; and it interpreted the corresponding host block, attempting to log in as someone called &lt;code&gt;notarealuser&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For most git servers, the user will default to &lt;code&gt;git&lt;/code&gt; and is generally part of your remote anyway. You can see it whenever you run &lt;code&gt;git remote add origin git@github.com/user/blah&lt;/code&gt; or &lt;code&gt;git remote -v&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It can be quite handy for regular servers however. Instead of connecting with &lt;code&gt;ssh user@blah.net&lt;/code&gt;, you can add the username to a host block and shorten that command down to just &lt;code&gt;ssh blah.net&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;LogLevel&lt;/code&gt; command is fairly straight forward. You can set it to a higher level of logging, and see more details about what SSH is doing under the hood, but for a specific host.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re getting error messages from your internal git host, you could toggle on &lt;code&gt;LogLevel DEBUG&lt;/code&gt; and see if your requests are making their way to the host or not as an example.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure there&amp;rsquo;s all sorts of interesting stuff you could do but this post isn&amp;rsquo;t meant to be comprehensive by any means. It&amp;rsquo;s more of a reminder to myself on how to create an ssh config file.&lt;/p&gt;
+&lt;p&gt;You can see all of the various commands offline by running &lt;code&gt;man ssh_config&lt;/code&gt;. You can also read them online via the &lt;a href=&#34;https://man.openbsd.org/ssh_config&#34;&gt;OpenBSD manual page server&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy SSHing!&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

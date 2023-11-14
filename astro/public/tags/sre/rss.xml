@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/sre/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Fri, 01 Oct 2021 12:18:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/sre/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Twitter, could you please fix your image servers?</title>
+      <link>https://utf9k.net/blog/twitter-image-servers-2021/</link>
+      <description>Throughout the year of 2021, I have run into a number of issues with Twitter&#39;s image servers</description>
+      <pubDate>Fri, 01 Oct 2021 12:18:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/twitter-image-servers-2021/</guid>
+      <content type="html">&lt;p&gt;For anyone who knows me, it&amp;rsquo;s no surprise that I&amp;rsquo;m horribly addicted to &lt;a href=&#34;https://twitter.com&#34;&gt;Twitter&lt;/a&gt;. I joined back in 2009&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and I&amp;rsquo;ve fallen into more &lt;a href=&#34;https://utf9k.net/blog/automation-right/&#34;&gt;technical rabbit holes&lt;/a&gt; than I care to.&lt;/p&gt;
+&lt;p&gt;As a Twitter user who is Very Online, I love to theorise about why services go wrong and poke fun at corporations but as an &lt;a href=&#34;https://en.wikipedia.org/wiki/Site_reliability_engineering&#34;&gt;SRE&lt;/a&gt; myself, I find it very difficult to direct blame at people.&lt;/p&gt;
+&lt;p&gt;To be clear, I&amp;rsquo;ll be talking about Twitter in the brand/persona sense and not as a reflection of the many people who I&amp;rsquo;m sure work tirelessly behind the scenes.&lt;/p&gt;
+&lt;p&gt;Some might say they&amp;rsquo;re one in the same but my general principle is that taking aim at the marketing facade is fair game while the people themselves are off limits.&lt;/p&gt;
+&lt;p&gt;Not that we&amp;rsquo;ve addressed that, I feel like the Twitter &amp;ldquo;experience&amp;rdquo; has been degraded for a couple of months now with no real acknowledgement that I can see. In short, I&amp;rsquo;ve seen Twitter DMs intermittently fail to load, images being corrupted upon upload and &lt;a href=&#34;https://twitter.com/wongmjane/status/1440428582308757507&#34;&gt;replies failing to load&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be walking through the former two issues as they&amp;rsquo;ve been plaguing both myself and some friends the most.&lt;/p&gt;
+&lt;p&gt;When it comes down to it, I&amp;rsquo;m nothing but a simple armchair critic who doesn&amp;rsquo;t have any real recourse in this abstract digital &amp;ldquo;customer support&amp;rdquo; hell we&amp;rsquo;ve constructed for ourselves.&lt;/p&gt;
+&lt;p&gt;Besides trying to raise awareness publically by writing this post, I have absolutely no idea if this has any traction internally.&lt;/p&gt;
+&lt;p&gt;With all that out of the way, let&amp;rsquo;s have a look at what has been going on.&lt;/p&gt;
+
+&lt;h2 id=&#34;twitter-dm-images-failing-to-load&#34;&gt;Twitter DM images failing to load&lt;/h2&gt;&lt;p&gt;This one has been bugging me and some Twitter mutuals for at least a couple of months now.&lt;/p&gt;
+&lt;p&gt;What happens is that intermittently, images will fail to load inside of direct messages.&lt;/p&gt;
+&lt;p&gt;Often times, it isn&amp;rsquo;t that every image fails to load but one or two that have been recently uploaded. In hindsight, it may be that they all fail to load but prior images are loaded from cache now that I think about it.&lt;/p&gt;
+&lt;p&gt;It leads to frustrating discussions like this&lt;/p&gt;
+&lt;img src=&#34;twitter-dm-huge-l.png&#34; alt=&#34;A Twitter direct message where the author posts an image that fails to load and the recipient says &amp;amp;ldquo;huge L the image isn&amp;amp;rsquo;t loading&amp;amp;rdquo;.&#34;  /&gt;&lt;p&gt;and this&lt;/p&gt;
+&lt;img src=&#34;twitter-dm-alt-text.png&#34; alt=&#34;A Twitter direct message where the author receives an image that fails to load, asks &amp;amp;ldquo;got any alt text?&amp;amp;rdquo; and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour.&#34;  /&gt;&lt;p&gt;and this&lt;/p&gt;
+&lt;img src=&#34;twitter-dm-revenue.png&#34; alt=&#34;A Twitter direct message where the author receives an image that fails to load and responds with &amp;amp;ldquo;Guess who has $3 billion in revenue but still can&amp;amp;rsquo;t display photos in DMs :)&amp;amp;rdquo;&#34;  /&gt;&lt;p&gt;It happened again just the other day and I did a little poking around. It seems that &lt;code&gt;ton.twitter.com&lt;/code&gt;, the image server used for DMs&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; times out.&lt;/p&gt;
+&lt;img src=&#34;timeout.png&#34; alt=&#34;A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout.&#34;  /&gt;&lt;p&gt;Upon closer inspection, only Port 80 (http) appears to be open with redirects to Port 443 (https) failing as there is no such port open based on a quick scan using &lt;code&gt;nmap&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s pretty frustrating and I&amp;rsquo;ve actually resorted to DMing on other platforms because of how unstable this can get at times!&lt;/p&gt;
+
+&lt;h2 id=&#34;images-being-mulched&#34;&gt;Images being mulched&lt;/h2&gt;&lt;p&gt;For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely destroyed upon upload.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/benedictevans/status/1439536308326645767&#34;&gt;@benedictevans has since set their account to private so here&amp;rsquo;s a direct link if you follow them&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;well now, apparently the logitech client i installed has attempted to communicate with discord &lt;a href=&#34;https://t.co/Uq0T1jwMYQ&#34;&gt;pic.twitter.com/Uq0T1jwMYQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Marcus (@sentreh) &lt;a href=&#34;https://twitter.com/sentreh/status/1436092048914796545?ref_src=twsrc%5Etfw&#34;&gt;September 9, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.&lt;/p&gt;
+
+&lt;h2 id=&#34;closing-thoughts&#34;&gt;Closing thoughts&lt;/h2&gt;&lt;p&gt;It doesn&amp;rsquo;t take too much to conclude that these are both image related issues which is interesting but it would be a logical leap to conclude that there is any relation between the image processing pipeline and the DM image server so any further speculation would be just that.&lt;/p&gt;
+&lt;p&gt;As I mentioned before, I don&amp;rsquo;t want to point fingers at any people but I will say that it frustrated me to no end seeing no acknowlegement of this happening continually.&lt;/p&gt;
+&lt;p&gt;Instead, right in the middle of those two transparency mulched images, what I experienced was &lt;a href=&#34;https://twitter.com/TwitterEng&#34;&gt;@TwitterEng&lt;/a&gt; was talking about mechanical keyboards.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Today, we&amp;#39;re talking about switches... keyboard switches ⌨️&lt;br&gt;&lt;br&gt;Choose your fighter. When it comes to the best tactile response, which clickety-clack rules them all?&lt;br&gt;&lt;br&gt;We&amp;#39;re loving TTC Bluish Whites 👀&lt;/p&gt;&amp;mdash; Engineering (@XEng) &lt;a href=&#34;https://twitter.com/XEng/status/1437857022444138496?ref_src=twsrc%5Etfw&#34;&gt;September 14, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;I&amp;rsquo;m being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, the optics of it don&amp;rsquo;t look great as someone experiencing this.&lt;/p&gt;
+&lt;p&gt;Anyway, really all I want is to be able to use DMs again reliably!&lt;/p&gt;
+&lt;p&gt;Instead, I can&amp;rsquo;t help but feel that we&amp;rsquo;re probably going to get the ability to use &lt;a href=&#34;https://twitter.com/TheSmarmyBum/status/1443259893411049475&#34;&gt;an NFT as an avatar&lt;/a&gt; or whatever else is cooking over there sooner than a fix :(&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;In a few years, I&amp;rsquo;ll have been on Twitter longer than I&amp;rsquo;ve been off it (ie; before I registered/before it existed)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;As far as I can tell, &lt;code&gt;ton&lt;/code&gt; is used for DMs while &lt;code&gt;pbs&lt;/code&gt; is used for the public timeline?&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

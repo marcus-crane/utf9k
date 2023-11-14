@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/off-the-cuff/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Tue, 12 May 2020 00:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/off-the-cuff/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data hoarding seems like a large mental overhead</title>
+      <link>https://utf9k.net/blog/mental-overhead-of-data/</link>
+      <description>Looking back on the idea of a quantified self</description>
+      <pubDate>Tue, 12 May 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/mental-overhead-of-data/</guid>
+      <content type="html">&lt;p&gt;This isn&amp;rsquo;t a post that I&amp;rsquo;ve outlined before hand, or even really considered in any particular depth. I&amp;rsquo;m just making up this post, and it&amp;rsquo;s structure as I type.&lt;/p&gt;
+&lt;p&gt;Having said that, I&amp;rsquo;ve got a few points on my whiteboard that made something click, along with some thoughts that have been frustrating me for a little bit now.&lt;/p&gt;
+&lt;p&gt;I like to use &lt;a href=&#34;https://exist.io&#34;&gt;Exist&lt;/a&gt;, a service for collecting personal data. It&amp;rsquo;s run a nice Australian duo and I have no issues with the service. All of the data collection is automated, and is explicitly authorised using regular OAuth.&lt;/p&gt;
+&lt;p&gt;Having all of that data consolidated in one place is nice.&lt;/p&gt;
+&lt;p&gt;I still feel like I could be doing more with it.&lt;/p&gt;
+&lt;p&gt;I could easily too, since I can export all that data at any point, and play with it or fetch certain subsets via their API.&lt;/p&gt;
+&lt;p&gt;On a slightly different note, it has the ability to track my day manually. I can write a short note of how I&amp;rsquo;m feeling, a rating of my mood from 1 - 5, and also I can add tags to reflect what I did during that day.&lt;/p&gt;
+&lt;p&gt;Easy enough and I can observe trends over time as more data is gathered.&lt;/p&gt;
+&lt;p&gt;This post is not about data collection. Nothing here is malicious just to be clear.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t updated my mood, tags and so on for a few days now and I keep missing it. It&amp;rsquo;s an understandable side effect of being stuck inside due to a global pandemic.&lt;/p&gt;
+&lt;p&gt;The more I really think about it, I start to realise that there is a compounding effect that&amp;rsquo;s very subtle.&lt;/p&gt;
+&lt;p&gt;I start to feel back because I&amp;rsquo;m missing out on that data.&lt;/p&gt;
+&lt;p&gt;I feel guilty because the picture I&amp;rsquo;m trying to capture is now missing some snippets of data. It&amp;rsquo;s no longer a continuous streak. I could just input from today onwards but there&amp;rsquo;s a little bit of guilt that is prompting me to backfill those days.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a weird self guilt that I&amp;rsquo;m not maintaining a dataset that&amp;rsquo;s as close to perfect as I can manage.&lt;/p&gt;
+&lt;p&gt;Ironic since I&amp;rsquo;m missing that data since the first 24 years of my life but this would be the same feeling if I would journalling in a notebook and missed a day.&lt;/p&gt;
+&lt;p&gt;So, there&amp;rsquo;s two things here I think I&amp;rsquo;ve identified: I have a bunch of data and I could be doing more interesting things with it, and I have another bunch of data but I&amp;rsquo;m not keeping it &amp;ldquo;complete&amp;rdquo;… even though I&amp;rsquo;m not looking back at it.&lt;/p&gt;
+&lt;p&gt;I could though! In some hypothetical future where I stop being reactionary, actually relax and review what I&amp;rsquo;ve got collected.&lt;/p&gt;
+&lt;p&gt;At this point, I&amp;rsquo;m tempted to just throw away all that data and relieve myself of my self imposed burden to keep that dataset up to date, day after day.&lt;/p&gt;
+&lt;p&gt;The data is becoming a massive mental overhead, and arguably an emotional liability.&lt;/p&gt;
+&lt;p&gt;I suppose we expect, and hope that companies treat our data as a liability. While it&amp;rsquo;s obviously an asset to me, there&amp;rsquo;s no reason why upkeeping that data isn&amp;rsquo;t also incurring a debt of sorts. Generating data is easy but actually recording it and auditing it would of course be some sort of investment.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know if that last sentence actually reflects that I&amp;rsquo;m trying to say properly but I&amp;rsquo;m going to leave this as is, given I&amp;rsquo;m writing it purely off the cuff with no edits.&lt;/p&gt;
+&lt;p&gt;What else?&lt;/p&gt;
+&lt;p&gt;I think all of my filesystems are mental liabilities at this point.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s so much crap scattered across my home desktop, home laptop, work laptop, phone? Images, documents, text snippets?&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s all crap that slowly piles up in my mind.&lt;/p&gt;
+&lt;p&gt;I should be cleaning it all up.&lt;/p&gt;
+&lt;p&gt;Perhaps I should turn off my desktop icons for starters but that doesn&amp;rsquo;t really address my issue.&lt;/p&gt;
+&lt;p&gt;I just want to stop accumulating crap. How can I be a digital minimalist?&lt;/p&gt;
+&lt;p&gt;My work Google Drive is full of stuff I&amp;rsquo;ve just dumped in there and never looked at again.&lt;/p&gt;
+&lt;p&gt;There are shared drives I&amp;rsquo;ve been invited to, or requested access to, telling myself that I&amp;rsquo;ll make use of all of this wonderful information.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s wonderful, I don&amp;rsquo;t know. It&amp;rsquo;s too much information, that&amp;rsquo;s for sure.&lt;/p&gt;
+&lt;p&gt;What I&amp;rsquo;m getting out of this is that if I haven&amp;rsquo;t used something, or can&amp;rsquo;t justify keeping it, I need to just delete it?&lt;/p&gt;
+&lt;p&gt;There are plenty of data sets I&amp;rsquo;ve requested thinking I&amp;rsquo;ll use them for cool projects but I never get around to it. Traffic data, parking data, data for this, data for that. It all becomes more and more of a liability in the back of your mind because of all of the things you &amp;ldquo;could&amp;rdquo; have done or are sitting unfinished.&lt;/p&gt;
+&lt;p&gt;Bah!&lt;/p&gt;
+&lt;p&gt;My bookmarks are just the same. I&amp;rsquo;ve got a stockpile of articles which might be amazing or they might be a waste of time. The more that piles up too, geez, when I actually create stuff instead of consuming content, hahaha&lt;/p&gt;
+&lt;p&gt;Picking and choosing is very hard.&lt;/p&gt;
+&lt;p&gt;Dropping books is another thing I really need to learn how to do. I&amp;rsquo;ll start one, get partway in, get bored but still slog through it. Sometimes I&amp;rsquo;m pleasantly surprised but the idea of having it marked as &amp;ldquo;stalled&amp;rdquo; in my mind is almost a worse fate.&lt;/p&gt;
+&lt;p&gt;Open loops is probably the keyword here?&lt;/p&gt;
+&lt;p&gt;How do you close them?&lt;/p&gt;
+&lt;p&gt;Is just removing something off a list satisfactory? Tell yourself &amp;ldquo;I&amp;rsquo;m done with that book/show/codebase/movie/manga/article/course&amp;rdquo; and then move on? Seems easier said than done?&lt;/p&gt;
+&lt;p&gt;Perhaps another contributor to all of this is generally using internet tools to track backlogs.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://trakt.tv&#34;&gt;Trakt&lt;/a&gt; for example. No authority says &amp;ldquo;Thou must finish all movies or shows they intend to watch&amp;rdquo; but it&amp;rsquo;s hard to not look at a list and wish to complete it.&lt;/p&gt;
+&lt;p&gt;Finishing one list, in one medium alone is essentially impossible in a human lifetime, let alone all mediums you might appreciate.&lt;/p&gt;
+&lt;p&gt;Hmm.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t really have any good answers but hopefully writing all of this down means I can point to some words when I want to express my frustration.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d love to hear your thoughts, if you&amp;rsquo;ve got any suggestions. You can email me at marcus (at) utf9k.net.&lt;/p&gt;
+&lt;p&gt;You could of course use any other content method on my &lt;a href=&#34;https://utf9k.net/about&#34;&gt;about&lt;/a&gt; but just make sure the medium is enough to express your thoughts.&lt;/p&gt;
+&lt;p&gt;This post wouldn&amp;rsquo;t make a very good &amp;ldquo;tweetstorm&amp;rdquo; if you ask me.&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

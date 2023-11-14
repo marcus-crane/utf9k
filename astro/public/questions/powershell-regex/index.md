@@ -1,0 +1,12 @@
+# How can I perform a regex search in Powershell?
+01 January 0001
+
+## How can I perform a regex search?
+
+You can check if a character contains a string by using the cmatch operator like so:
+
+```powershell
+$word = &#34;Hello&#34;
+$word -cmatch &#34;[A-Z]&#34;
+// True
+```

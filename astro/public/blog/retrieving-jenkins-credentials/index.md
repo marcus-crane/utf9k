@@ -1,0 +1,32 @@
+# Retrieving credentials from Jenkins
+29 July 2019
+
+Have you ever stored a password in Jenkins, only to forget later on what the value is? You might try logging it from inside an existing job, but you&#39;ll find that Jenkins goes out of its way to mask that value from you (and any potential attackers!)
+
+There&#39;s a sneaky way to get those credentials out of a Jenkins agent that requires only a little bit of wrangling. It may be possible to lock this down, I haven&#39;t looked, so it&#39;s good to be aware of it, in order to consider the security implications too.
+
+Find the password you want to get your hands on
+
+![A screenshot of the Jenkins UI. It is showing the credentials section. It depicts a password entry called &#39;My super secret password&#39; although no actual credentials are visible.](01-credential-view.png)
+
+Click `Update` which will show you an obscured version of the secret
+
+![A screenshot of the Jenkins UI progressed from the previous image. Metadata about the selected credential are visible such as scope, ID and description. There is a secret field but it just contains dots like any normal password field does, rather than the actual password text.](02-credential-update.png)
+
+Right click on the `Secret` field and hit `Inspect Element` to bring up the developer tools for your browser
+
+![A screenshot of the Jenkins UI. The user has right clicked on the secret field of the credential metadata. Their browser context menu is visible, invoked by right clicking. The &#39;Inspect Element&#39; item is highlighted but not yet clicked.](03-inspect-element.png)
+
+Either right click on the `value` part of the input field, or double click on the value area and copy the wonky looking hash. It&#39;ll be surrounded with braces eg; `{ABC123=}`
+
+![A screenshot of the Firefox browser tools. The user has found the DOM node for the redacted input in the element selector pane. They have right clicked it, bringing up the browser context menu and have highlighted &#39;Copy attribute value&#39; under the &#39;Attributes&#39; submenu.](04-credential-hash.png)
+
+With that value in your clipboard, go to `/script` eg; `https://jenkins.example.com/script` or from the homepage, visit `Manage Jenkins -&gt; Script Console`
+
+![A screenshot of the Jenkins UI. It shows the &#39;Script Console&#39; page which lives under /script by default.](05-script-console.png)
+
+Enter the following into the script console: `println(hudson.util.Secret.decrypt(&#39;&lt;paste hash here&gt;&#39;))`. Make sure to include the braces and the single quotes. You should see your credential output as seen below
+
+![A screenshot of the Jenkins Script Console UI. The user has pasted the copied input from the Firefox browser tools that was open in an earlier screenshot. This input has been wrapped in some Jenkins functions. Below the Script Console is an output area with the actual password of the credential that was previously redacted.](06-final-result.png)
+
+It&#39;s a pretty handy trick, but quite obviously a borderline exploit at the same time. It&#39;s up to you to use it responsibly!

@@ -1,0 +1,16 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# How can I view help documentation for an Elixir module?
+01 January 0001
+
+The iex interpreter includes a function called h which can be used to show documentation for a module
+
+h String # h/1 

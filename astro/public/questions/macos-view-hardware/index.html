@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I find out more about the hardware inside my Mac? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/macos-view-hardware/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/macos-view-hardware/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="In which I remind myself how to view system specs in the terminal" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/macos-view-hardware/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I find out more about the hardware inside my Mac?" />
+<meta property="og:description" content="In which I remind myself how to view system specs in the terminal" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/macos-view-hardware/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-01-03T12:56:46+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I find out more about the hardware inside my Mac?"/>
+<meta name="twitter:description" content="In which I remind myself how to view system specs in the terminal"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I find out more about the hardware inside my Mac?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <h2 id="heading">
+  <a class="jumplink" href="#heading" aria-hidden="true">¶</a>
+  
+</h2><p>While there&rsquo;s the classic <code>Apple menu -&gt; About This Mac -&gt; System Report</code>, a terminal based alternative is the <code>system_profiler</code> command.</p>
+<p>You can use a list of queryable types like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; system_profiler -listDataTypes
+</span></span><span style="display:flex;"><span>Available Datatypes:
+</span></span><span style="display:flex;"><span>SPParallelATADataType
+</span></span><span style="display:flex;"><span>SPUniversalAccessDataType
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>Once you&rsquo;ve found one or more types, you&rsquo;re interested in then just append it after the command like so: <code>system_profiler &lt;type1&gt; &lt;type2&gt;</code></p>
+<p>Let&rsquo;s see how it looks in action:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; system_profiler SPPowerDataType
+</span></span><span style="display:flex;"><span>Power:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Battery Information:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      Model Information:
+</span></span><span style="display:flex;"><span>          Manufacturer: DSY
+</span></span><span style="display:flex;"><span>          Device Name: bq20z451
+</span></span><span style="display:flex;"><span>          Pack Lot Code: <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>          PCB Lot Code: <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>          Firmware Version: <span style="color:#bd93f9">1002</span>
+</span></span><span style="display:flex;"><span>          Hardware Revision: <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>          Cell Revision: <span style="color:#bd93f9">2400</span>
+</span></span><span style="display:flex;"><span>      Charge Information:
+</span></span><span style="display:flex;"><span>          Fully Charged: No
+</span></span><span style="display:flex;"><span>          Charging: Yes
+</span></span><span style="display:flex;"><span>          Full Charge Capacity <span style="color:#ff79c6">(</span>mAh<span style="color:#ff79c6">)</span>: <span style="color:#bd93f9">4569</span>
+</span></span><span style="display:flex;"><span>          State of Charge <span style="color:#ff79c6">(</span>%<span style="color:#ff79c6">)</span>: <span style="color:#bd93f9">74</span>
+</span></span><span style="display:flex;"><span>      Health Information:
+</span></span><span style="display:flex;"><span>          Cycle Count: <span style="color:#bd93f9">81</span>
+</span></span><span style="display:flex;"><span>          Condition: Normal
+</span></span></code></pre></div><p>This is just an excerpt of what is otherwise a whole bunch of information.</p>
+<p>Particularly interesting is the <code>SPAirPortDataType</code> which can be queried to see a list of SSIDs in the environment.</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# Build information
+01 January 0001
+
+Sometimes it’s handy to check when my site was last built, and with what variables especially if I’m transitioning things behind the scenes such as DNS records or static hosting.
+
+Name Value Build timestamp 2023-10-25 22:34:13.042405 &#43;1300 NZDT m=&#43;0.591138585 Number of pages 424 Number of sections 7 Hugo version 0.119.0 Hugo server running false Drafts visible false Shell language LANG: en_NZ.UTF-8 Build tools Hugo: 0.119.0 Node: Python: CI Info (Github Actions) CI: Github Action: Github Actor: Github Job: Github Ref: Github Run Attempt: Github Run ID: Github Run Number: Github SHA: Runner Arch: Runner OS: 

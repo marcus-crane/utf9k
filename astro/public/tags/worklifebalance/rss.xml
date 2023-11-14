@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/worklifebalance/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Sun, 29 Aug 2021 22:04:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/worklifebalance/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Taking holidays is important</title>
+      <link>https://utf9k.net/blog/taking-holidays/</link>
+      <description>Relaxing some of the time is a good idea. Who would have guessed?</description>
+      <pubDate>Sun, 29 Aug 2021 22:04:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/taking-holidays/</guid>
+      <content type="html">&lt;p&gt;I&amp;rsquo;m definitely not good at practicing this but while reading &lt;a href=&#34;https://www.amazon.com/Show-Stopper-Breakneck-Generation-Microsoft/dp/0029356717&#34;&gt;Show Stopper!&lt;/a&gt; a few years back, I noted that &lt;a href=&#34;https://en.wikipedia.org/wiki/Dave_Cutler&#34;&gt;Dave Cutler&lt;/a&gt; was big on always taking holidays on time.&lt;/p&gt;
+&lt;p&gt;I even tried to email him once to ask why but unfortunately I had no luck.&lt;/p&gt;
+&lt;p&gt;For someone who led the development of the NT kernel among many other projects at Microsoft, this was completely at odds with the workaholic stereotype so often associated with Silicon Valley &amp;ldquo;10xers&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;With that in mind, I try to take holidays more often. I&amp;rsquo;m absolutely rubbish at it but this post serves as a reminder to think about it even more.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

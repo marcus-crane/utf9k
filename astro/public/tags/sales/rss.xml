@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/sales/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Tue, 11 May 2021 18:23:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/sales/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>You can always count on sales</title>
+      <link>https://utf9k.net/blog/you-can-always-count-on-sales/</link>
+      <description>Complete system downtime won&#39;t stop the sales team from making a buck</description>
+      <pubDate>Tue, 11 May 2021 18:23:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/you-can-always-count-on-sales/</guid>
+      <content type="html">&lt;p&gt;For any readers who weren&amp;rsquo;t aware, &lt;a href=&#34;https://status.azure.com&#34;&gt;Microsoft Azure&lt;/a&gt; suffered from a &lt;a href=&#34;https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx&#34;&gt;major Azure Active Directory outage&lt;/a&gt; back in March 2021.&lt;/p&gt;
+&lt;p&gt;A great deal of services were degraded while I was at work so I mostly spent March 15th, 2021 monitoring the situation and broadcasting status updates for fellow affected teams internally.&lt;/p&gt;
+&lt;p&gt;Most of the updates were just synthesised from Microsoft&amp;rsquo;s various Twitter accounts which happened to be more up to date than the public status pages, but that&amp;rsquo;s a story for another blog post.&lt;/p&gt;
+&lt;p&gt;Towards the end of the day, it got me wondering how widely Microsoft&amp;rsquo;s own services were affected by this outage. I mean, they dogfood their product offerings after all, right? Apparently Sales doesn&amp;rsquo;t, at least for any incoming enquiries.&lt;/p&gt;
+&lt;p&gt;If you go to the &lt;a href=&#34;https://azure.microsoft.com/en-us/services/active-directory/&#34;&gt;marketing site for Azure Active Directory&lt;/a&gt;, you may notice a little &amp;ldquo;Chat with Sales&amp;rdquo; tab appear in the bottom right hand corner after all of the various scripts have loaded in the background.&lt;/p&gt;
+&lt;p&gt;Clicking on that tab reveals an &lt;a href=&#34;https://azure.microsoft.com/en-us/services/bot-services/&#34;&gt;Azure Chatbot&lt;/a&gt;. It&amp;rsquo;ll ask you which type of help you&amp;rsquo;d like and then you can select one of the follow categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical support&lt;/li&gt;
+&lt;li&gt;Business support&lt;/li&gt;
+&lt;li&gt;Sales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I captured some footage following the dialogue path of these three options during the ongoing Azure AD outage so let&amp;rsquo;s see what happens when selecting each of them.&lt;/p&gt;
+
+&lt;h2 id=&#34;technical-support&#34;&gt;Technical Support&lt;/h2&gt;&lt;p&gt;You might imagine that this would be the most important option when it comes to resiliency during any major outages. Of course, if you&amp;rsquo;re an enterprise then you should really have an enterprise support plan but if you&amp;rsquo;re a startup or an indie, this might be well outside your budget.&lt;/p&gt;
+&lt;video style=&#34;display: inherit; margin: 0 auto;&#34; width=&#34;50%&#34; controls&gt;
+&lt;source preload src=&#34;01-technical.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn&#39;t support the video tag.
+&lt;/video&gt;
+&lt;p&gt;Hmm, I don&amp;rsquo;t know about you but it looked like nothing happened and our request just disappeared into the ether!&lt;/p&gt;
+
+&lt;h2 id=&#34;business-support&#34;&gt;Business Support&lt;/h2&gt;&lt;p&gt;Now surely if a technical person can&amp;rsquo;t get through, business support is much more likely to make it. Nothing says importance like an executive with a credit card after all.&lt;/p&gt;
+&lt;video style=&#34;display: inherit; margin: 0 auto;&#34; width=&#34;50%&#34; controls&gt;
+&lt;source preload src=&#34;02-business.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn&#39;t support the video tag.
+&lt;/video&gt;
+&lt;p&gt;No dice, basically the same exact outcome. I expected better! Pssh.&lt;/p&gt;
+
+&lt;h2 id=&#34;sales&#34;&gt;Sales&lt;/h2&gt;&lt;p&gt;Now we know for sure that Sales isn&amp;rsquo;t going to work if the former two aren&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;In any sane business, all attention should be directed towards supporting paying customers and alleviating any of their concerns.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;d be ridiculous to focus on some potentially unrealised future revenues!&lt;/p&gt;
+&lt;video style=&#34;display: inherit; margin: 0 auto;&#34; width=&#34;50%&#34; controls&gt;
+&lt;source preload src=&#34;03-sales.mp4&#34; type=&#34;video/mp4&#34;&gt;
+Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn&#39;t support the video tag.
+&lt;/video&gt;
+&lt;p&gt;Hmm, perhaps I was wrong.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-it-supposed-to-look-like&#34;&gt;What is it supposed to look like?&lt;/h2&gt;&lt;p&gt;I actually went through this same dialog flow, now two months down the track, and I was under the impression that all three options put you into a live call.&lt;/p&gt;
+&lt;p&gt;It seems that both Technical and Business Support options simply redirect you to &lt;a href=&#34;https://azure.microsoft.com/en-us/support/create-ticket/&#34;&gt;submit a support ticket&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;That makes sense but it also begs the question &amp;ldquo;How was this unavailable?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Presumably the bot is querying for the support ticket URL in some backend every time you click on the button or something equally unnecessary.&lt;/p&gt;
+&lt;p&gt;I had a quick poke around the acres of websocket events using the developer tools in my browser but there are like 5 events fired off just from clicking a button. It seemed like it was going to be a mess to dig through so I didn&amp;rsquo;t even bother.&lt;/p&gt;
+&lt;p&gt;Anyway, there&amp;rsquo;s an old adage that&amp;rsquo;s probably relevant here. I don&amp;rsquo;t actually know how it goes but basically, if you ever need to get a hold of someone at a company, just call the Sales department because they always pick up the phone.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

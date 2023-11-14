@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/meta/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Mon, 12 Jul 2021 18:50:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/meta/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating debug reports with Hugo inline shortcodes</title>
+      <link>https://utf9k.net/blog/hugo-debug-reports/</link>
+      <description>I teach you some tricks on introspecting your Hugo builds</description>
+      <pubDate>Mon, 12 Jul 2021 18:50:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/hugo-debug-reports/</guid>
+      <content type="html">&lt;p&gt;Recently I discovered that &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; added support for &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/&#34;&gt;inline shortcodes&lt;/a&gt; like 30 versions ago.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://github.com/bep&#34;&gt;bep&lt;/a&gt;, the reason I had never heard about them was simple:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;You didn&amp;#39;t ask ... (we added that to get the &lt;a href=&#34;https://twitter.com/getbootstrap?ref_src=twsrc%5Etfw&#34;&gt;@getbootstrap&lt;/a&gt; site on Hugo, they had lots of inline scripting) ...&lt;/p&gt;&amp;mdash; Bjørn Erik Pedersen (@bepsays) &lt;a href=&#34;https://twitter.com/bepsays/status/1408348824083615745?ref_src=twsrc%5Etfw&#34;&gt;June 25, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+&lt;h2 id=&#34;a-shortcode-refresher&#34;&gt;A shortcode refresher&lt;/h2&gt;&lt;p&gt;To give an idea of what this means, here&amp;rsquo;s a reminder on how you were required to use shortcodes in the past:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- layouts/shortcodes/notice.html --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;notice&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;h3&lt;/span&gt;&amp;gt;{{ .Get &amp;#34;title&amp;#34; }}&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;h3&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {{ .Inner }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- content/blog/example-post.md --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# This is an example post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ notice title=&amp;#34;This is a notice&amp;#34; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This is the content inside of a notice shortcode
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ /notice }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;sup&gt;Minor caveat with shortcode syntax&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the shortcode internals live in your &lt;code&gt;layouts&lt;/code&gt; folder, and have access to your &lt;code&gt;page&lt;/code&gt; context as well as all of the various Hugo functions. Your post is only able to pass parameters into the shortcode itself.&lt;/p&gt;
+&lt;p&gt;Now to be clear, there&amp;rsquo;s absolutely nothing wrong with doing this. In principle, it&amp;rsquo;s a good idea for your content to not have any awareness of how it&amp;rsquo;s being rendered. If you were to change the internals of the notice shortcode once, all of the pages it appears in are instantly updated upon the next render.&lt;/p&gt;
+&lt;p&gt;In saying that, the introduction of inline shortcodes allows us to do some fun things:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- content/blog/example-post.md --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# This is an example post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Check out some of these funny gags I wrote:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ readfile.inline }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ range $.Site.Data.gags }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;li&lt;/span&gt;&amp;gt;{{ . }}&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ /readfile.inline }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;sup&gt;Minor caveat with shortcode syntax&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t believe me? Here&amp;rsquo;s that same inline shortcode embedded in this very post:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Check out these fun gag lines I wrote&lt;/summary&gt;
+  
+&lt;ul&gt;
+  
+  &lt;li&gt;Has anyone seen my keys? I dropped them in here somewhere...&lt;/li&gt;
+  
+  &lt;li&gt;My bluetooth is disabled but I only have bluetooth devices. How do I turn it back on?!&lt;/li&gt;
+  
+  &lt;li&gt;Is good software a myth? Perhaps we&#39;ll never know&lt;/li&gt;
+  
+  &lt;li&gt;The IETF announces BNS - Baby Name System&lt;/li&gt;
+  
+  &lt;li&gt;If text is sublime already, how can there be a sublime text 2?&lt;/li&gt;
+  
+  &lt;li&gt;Why is it called venture capital if you can just apply for it without walking anywhere?&lt;/li&gt;
+  
+  &lt;li&gt;What does the Y in YCombinator stand for?&lt;/li&gt;
+  
+  &lt;li&gt;The invention of sport was a mistake!&lt;/li&gt;
+  
+  &lt;li&gt;Besides Tele, how many other types of vision are there?&lt;/li&gt;
+  
+  &lt;li&gt;When are they going to air Who Wants To Be A Crypto Millionaire?&lt;/li&gt;
+  
+  &lt;li&gt;What if NASA was the result of a typo in a government memo proposing &#34;Spice exploration&#34;?&lt;/li&gt;
+  
+  &lt;li&gt;What does the &#34;work&#34; in network refer to? There&#39;s no such thing as a netrelax after all&lt;/li&gt;
+  
+  &lt;li&gt;You have 341 new emails.&lt;/li&gt;
+  
+  &lt;li&gt;What even is a TPS report?&lt;/li&gt;
+  
+  &lt;li&gt;Do you think anyone has ever been killed by a judge&#39;s gavel?&lt;/li&gt;
+  
+  &lt;li&gt;I haven&#39;t used a mailbox in quite a long time!&lt;/li&gt;
+  
+  &lt;li&gt;Thanks for reading this far! I guess you enjoyed the content, hmm?&lt;/li&gt;
+  
+  &lt;li&gt;I don&#39;t have any good fuel fun facts. I don&#39;t even drive!&lt;/li&gt;
+  
+  &lt;li&gt;Did you know solo camping is a thing? I should try it sometime.&lt;/li&gt;
+  
+  &lt;li&gt;Budgeting is hard. You should try to save a little more for that rainy day!&lt;/li&gt;
+  
+  &lt;li&gt;I only ever see baths in hotels. What if they end up becoming extinct?!&lt;/li&gt;
+  
+  &lt;li&gt;An internet connected sandwich maker wouldn&#39;t be so bad, would it?&lt;/li&gt;
+  
+  &lt;li&gt;Someone who is good at the economy please help me plan my startup runway&lt;/li&gt;
+  
+  &lt;li&gt;:wq!&lt;/li&gt;
+  
+  &lt;li&gt;Apparently you&#39;re supposed to feel rested after sleep but I haven&#39;t read the literature myself&lt;/li&gt;
+  
+  &lt;/ul&gt;
+  
+&lt;/details&gt;
+&lt;p&gt;If any of these look familiar, I just used an inline shortcode to read from the same file that powers the footer.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t used inline shortcodes to their full potential yet but I&amp;rsquo;d like to use it to add a bit more flavour to posts in future where having a dedicated shortcode would be a bit overkill.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;ll always have their place of course! Pick the right tool for the job and all that.&lt;/p&gt;
+&lt;p&gt;Anyway, that brings me to the actual topic at hand: debug reports.&lt;/p&gt;
+
+&lt;h2 id=&#34;let-hugo-debug-itself-for-you&#34;&gt;Let Hugo debug itself for you&lt;/h2&gt;&lt;p&gt;There are always some unknowns to any site like &amp;ldquo;Do any links throw a 404?&amp;rdquo; or &amp;ldquo;Are there posts without a description?&amp;rdquo; and to shed some light on the current situation, we can get a bit meta.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easiest if you just check out the &lt;a href=&#34;https://utf9k.net/debug&#34;&gt;debug&lt;/a&gt; section of my site for yourself but the short version is that I&amp;rsquo;ve been using inline shortcodes to write one off custom reports, that effectively answer these questions through introspection. That&amp;rsquo;s just a fancy way of saying I write Hugo content (reports) that show the status of other Hugo content.&lt;/p&gt;
+&lt;p&gt;There isn&amp;rsquo;t anything super complex at the moment but I used it to clean up posts where the &lt;a href=&#34;https://utf9k.net/debug/file-url-match/&#34;&gt;folder names didn&amp;rsquo;t match slugs&lt;/a&gt; as an example.&lt;/p&gt;
+&lt;p&gt;They automatically update every time the site rebuilds so while I could keep a spreadsheet, this is a nice way of keeping that useful information close to where the action happens.&lt;/p&gt;
+&lt;p&gt;I made &lt;a href=&#34;https://utf9k.net/debug/reports-todo/&#34;&gt;a list of various reports&lt;/a&gt; that I&amp;rsquo;ll consider generating going forward and some will be a bit more tricky than others.&lt;/p&gt;
+&lt;p&gt;In all likelihood, the most interesting ones will just be reading from data sources generated by external scripts running either locally or via a CI pipeline. It&amp;rsquo;s nicer to see all this information on one place even if I could just read the logs from my terminal or a pipeline run.&lt;/p&gt;
+&lt;p&gt;Ah, and before I forget, the actual source for the reports &lt;a href=&#34;https://github.com/marcus-crane/utf9k/tree/main/content/debug&#34;&gt;is visible on Github&lt;/a&gt; so feel free to borrow anything you&amp;rsquo;d like to use for your own site. They&amp;rsquo;re pretty naively written but they get the job done.&lt;/p&gt;
+&lt;p&gt;Hopefully I&amp;rsquo;ve given you something to consider and if you think of any interesting report types that aren&amp;rsquo;t on my list, &lt;a href=&#34;mailto:hello@utf9k.net&#34;&gt;I&amp;rsquo;d love to hear about them!&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above isn&amp;rsquo;t actual syntax but near enough. If I were to type it properly, the shortcode would really render, whereas I&amp;rsquo;m trying to demonstrate the shortcode internals themselves. To find some real shortcode syntax, check out &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/&#34;&gt;this&lt;/a&gt; section of the Hugo docs.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Using a blog like a zettelkasten seems like a good idea</title>
+      <link>https://utf9k.net/blog/zettelkasten-blog-a-good-idea/</link>
+      <description>I mean, it&#39;s what it says on the tin!</description>
+      <pubDate>Thu, 11 Feb 2021 17:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/zettelkasten-blog-a-good-idea/</guid>
+      <content type="html">&lt;p&gt;Having recently gotten back into the swing of reading via &lt;a href=&#34;https://en.wikipedia.org/wiki/RSS&#34;&gt;RSS&lt;/a&gt;, I spotted a post from &lt;a href=&#34;https://critter.blog&#34;&gt;Mike Crittenden&lt;/a&gt; called &lt;a href=&#34;https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/&#34;&gt;Blogging as a Zettelkasten&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It touches on the idea that a blog can act as a &lt;a href=&#34;https://zettelkasten.de/introduction/&#34;&gt;zettelkasten&lt;/a&gt;. For the unfamiliar, a zettelkasten is nothing more than a big collection of notes. While you might imagine reams of snippets dumped into a tool like &lt;a href=&#34;https://en.wikipedia.org/wiki/Notes_(Apple)&#34;&gt;Apple Notes&lt;/a&gt;, the difference is that each note (or &amp;ldquo;zettel&amp;rdquo;) is generously interlinked with other notes so as to form a &amp;ldquo;web of knowledge&amp;rdquo; or a &amp;ldquo;second brain&amp;rdquo;. Each note should address one standalone idea such as &amp;ldquo;English is an unproductive language&amp;rdquo; rather than a more generic &amp;ldquo;Notes on languages&amp;rdquo;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;The very blog post &lt;a href=&#34;https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/&#34;&gt;I just linked&lt;/a&gt; is a good example of what a zettelkasten note would look like. There are a number of hyperlinks scattered about and rather than reiterate previous ideas, you can just link to prior knowledge that has been expanded in detail elsewhere, should the reader choose to follow.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; As time goes on, themes start to appear, not unlike one of those crazy pinboards you see detectives use.&lt;/p&gt;
+&lt;p&gt;It is said that new insights should just sort of &amp;ldquo;fall out&amp;rdquo; by putting ideas in close proximity where your brain can make all the connections it likes. Your brain already works this way for the most part, like when you have a eureka moment in the shower, and so the idea is to basically make that process as easy as possible. While most examples seem to have degenerated into YouTube productivity clickbait, &lt;a href=&#34;https://www.youtube.com/watch?v=RvWic15iXjk&#34;&gt;&amp;ldquo;How to Use Roam to Outline a New Article in Under 20 Minutes&amp;rdquo;&lt;/a&gt; is still a golden example of what this process looks like. That was probably the single most thing that made me raise an eyebrow in interest.&lt;/p&gt;
+&lt;p&gt;Now then, while I&amp;rsquo;ve already generated enough content for a &amp;ldquo;What I don&amp;rsquo;t like about zettelkasten software&amp;rdquo; type post later on, this post is best kept succinct and in line with the title so let&amp;rsquo;s touch briefly on why I think using a blog as a zettelkasten seems like a good idea.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-longevity&#34;&gt;1) Longevity&lt;/h2&gt;&lt;p&gt;The main issue that should concern anyone semi-serious about zettel software is that you&amp;rsquo;re inherently dealing with information that may be retained for quite some time, if not possibly an entire lifetime. In the grand scheme of things, software itself is not a very old medium and yet, it feels like &lt;a href=&#34;https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry/&#34;&gt;some&lt;/a&gt; ecosystems tend to degrade within mere months, if not years.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;The beauty of just using a blog, and particularly a static site backed by any text-based format, is that it&amp;hellip; I was going to say that it &lt;a href=&#34;https://brandur.org/fragments/graceful-degradation-time&#34;&gt;&amp;ldquo;degrades gracefully through time&amp;rdquo;&lt;/a&gt; only to realise that humans are incapable of original thought and there is no such thing as free will.&lt;/p&gt;
+&lt;p&gt;I also can&amp;rsquo;t help but notice that a lot of the attempts in this space are from relatively fresh startups, rather than long-term established companies. Not that either is necessarily more equipped but the idea that &lt;a href=&#34;https://roamresearch.com&#34;&gt;Roam Research&lt;/a&gt; has raised &lt;a href=&#34;https://www.theinformation.com/articles/a-200-million-seed-valuation-for-roam-shows-investor-frenzy-for-note-taking-apps&#34;&gt;$200 million&lt;/a&gt; in funding, as opposed to &lt;a href=&#34;https://www.investopedia.com/articles/investing/082814/companies-succeeded-bootstrapping.asp&#34;&gt;bootstrapping&lt;/a&gt;, is absolutely horrifying to me.&lt;/p&gt;
+&lt;p&gt;On the face of it, I&amp;rsquo;m sure users are happy that Roam has the cash to make the app nice and crisp but the idea that you would entrust any amount of long term knowledge storage to a business that will inevitably be ripped apart by venture capitalists in 5 years when it doesn&amp;rsquo;t turn on a profit on &amp;ldquo;Joe Schmo&amp;rsquo;s 40,000 hyperlink sprawl regarding &lt;a href=&#34;https://en.wikipedia.org/wiki/Juniper&#34;&gt;himalayan pinecones&lt;/a&gt;&amp;rdquo; isn&amp;rsquo;t exactly comforting.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-one-system-to-rule-them-all&#34;&gt;2) One System To Rule Them All&lt;/h2&gt;&lt;p&gt;Trying to have just one way of doing things is often not ideal because you&amp;rsquo;re probably forcing unrelated things into one box.&lt;/p&gt;
+&lt;p&gt;In this case though, I find having multiple systems for writing is annoying. Blog posts are just text and &amp;ldquo;zettels&amp;rdquo; are just text so why not have one workflow for dealing with both. It may be that different software is required (whether web-based or desktop software) or even a unique plain text format such as &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; in the case of &lt;a href=&#34;https://www.orgroam.com&#34;&gt;org-roam&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Less software is always nice, right?&lt;/p&gt;
+
+&lt;h2 id=&#34;3-reliability&#34;&gt;3) Reliability&lt;/h2&gt;&lt;p&gt;There&amp;rsquo;s one piece of &amp;ldquo;zettel&amp;rdquo; software &lt;a href=&#34;https://logseq.com&#34;&gt;in particular&lt;/a&gt; that comes to mind where I fumbled some magical formatting code in the web editor and destroyed a post beyond recognition. While it was backed by Git, everything autosaves so I had to do some unwiring. I actually chalk it up to user error but if I can&amp;rsquo;t trust myself to not break the software (as has happened twice), then perhaps the UX unavoidably has to be called into question.&lt;/p&gt;
+&lt;p&gt;I also remember Roam Research used to suffer from some site troubles back in the early days. It isn&amp;rsquo;t hugely comforting knowing that your knowledge might be inaccessible whether it be &lt;a href=&#34;https://www.site.uottawa.ca/~lucia/courses/2131-02/A2/trythemsource.txt&#34;&gt;on a train or in a car&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-its-hidden-in-plain-sight-a-secret-rant&#34;&gt;4) It&amp;rsquo;s hidden in plain sight (a secret rant)&lt;/h2&gt;&lt;p&gt;Part of me has come to associate &amp;ldquo;zettelkasten&amp;rdquo; with the whole &amp;ldquo;Productivity Porn&amp;rdquo; movement. The idea is nice but the wider fanbase often gives me pause. To be clear though, I think a lot of that ecosystem floats around YouTube and Reddit rather than say, the &lt;a href=&#34;https://github.com/org-roam/org-roam&#34;&gt;home&lt;/a&gt; of &lt;a href=&#34;https://jethro.dev&#34;&gt;Jethro Kuan&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/elisp/Introduction.html#Introduction&#34;&gt;elisp&lt;/a&gt; &lt;a href=&#34;https://www.orgroam.com&#34;&gt;child&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, who the hell is &lt;a href=&#34;https://fortelabs.co/&#34;&gt;Tiago Forte&lt;/a&gt;? He&amp;rsquo;s like a bargain bin Elon Musk who just appeared out of thin air one day and no one seems to know why. Why are people paying this man &lt;a href=&#34;https://web.archive.org/web/20210101170747/https://www.buildingasecondbrain.com/&#34;&gt;$5000&lt;/a&gt; to go &lt;em&gt;right click&lt;/em&gt; ➡ &amp;ldquo;New text file&amp;rdquo;? I don&amp;rsquo;t understand.&lt;/p&gt;
+&lt;p&gt;Anyway, in that vein, blogging feels like a zettelkasten hidden in plain sight. It carries all of the benefits of one without having to think about the wider ecosystem and that sounds pretty comforting.&lt;/p&gt;
+&lt;p&gt;Having convinced myself that reducing the scope of each blog post is probably a good idea while writing this post, I&amp;rsquo;ve now got an entire scrawl of at least 5 different topics on my normally empty whiteboard.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t even done anything yet and so far, it seems pretty promising!&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Can I just take a second to say that it feels massively ironic that most of the literature around zettelkasten topics are so dense to the point of giving me a brain aneurysm.
+&lt;span&gt;&lt;/span&gt;
+Like, just go back and have a look at that &lt;a href=&#34;https://zettelkasten.de/introduction/&#34;&gt;earlier link for zettelkasten&lt;/a&gt;. What the hell is that?! That&amp;rsquo;s a thesis, not an introduction!
+&lt;span&gt;&lt;/span&gt;
+It&amp;rsquo;s almost as bad as that &lt;a href=&#34;https://cooking.nytimes.com/recipes/1017089-maple-shortbread-bars&#34;&gt;New York Times recipe&lt;/a&gt; that starts off by referencing 9/11.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Wait a minute, the internet is basically just one big zettelkasten?!&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve recently been stuck in a dilemma with &lt;a href=&#34;https://gatsbyjs.com&#34;&gt;Gatsby&lt;/a&gt; between &amp;ldquo;Oooh, looks shiny&amp;rdquo; and &amp;ldquo;This is going to erode in like 2 years, isn&amp;rsquo;t it&amp;rdquo;.
+&lt;span&gt;&lt;/span&gt;
+It does actually have some nice functionality but whether it&amp;rsquo;s worth the risk is an important question, not to mention the insanity that is &lt;code&gt;node_modules&lt;/code&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;While that might seem like an overly negative view, and congratulations to any business that survives the pitch meeting/incubator gauntlet, I can&amp;rsquo;t help but believe it never ends well as you get deeper and deeper into funding, and the later investors also want their 40,000% return.
+&lt;span&gt;&lt;/span&gt;
+Slowly, the crushing expectations of higher profits cause you to reduce the feature set and raise the price or maybe you&amp;rsquo;ll manage to IPO and jump ship with a nice bag of cash before the whole thing starts slowly sinking into the ocean.
+&lt;span&gt;&lt;/span&gt;
+The foundations feel unstable right from the second you sign the agreement.&amp;quot;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>25</title>
+      <link>https://utf9k.net/blog/25/</link>
+      <description>In which I turn 25 and look back over my writing hobby to date</description>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/25/</guid>
+      <content type="html">&lt;p&gt;It&amp;rsquo;s 6:30pm on my 25th birthday and I&amp;rsquo;ve been reflecting a bit on what I&amp;rsquo;ve managed to accomplish so far. While this isn&amp;rsquo;t a post about that, there&amp;rsquo;s no better time to assess the state of my personal site and where I&amp;rsquo;d like to go forward.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-current-state&#34;&gt;The current state&lt;/h2&gt;&lt;p&gt;At present, my blog isn&amp;rsquo;t really best effort. I&amp;rsquo;d like to write more things but I never really make it an actual goal. I&amp;rsquo;d say the biggest reason is that I&amp;rsquo;ve been wrapped up in work side projects instead of my own personal side projects so I&amp;rsquo;ll be looking to stop doing that.&lt;/p&gt;
+&lt;p&gt;My site has gone through plenty of iterations, with the current being a static site, built with Hugo and hosted on Netlify. It works but it&amp;rsquo;s not exactly how I&amp;rsquo;d like it.&lt;/p&gt;
+&lt;p&gt;Along the way, pages have disappeared. There used to be a projects page which never got filled in properly. There was also an archive of reviews I wrote years back. They&amp;rsquo;re still there but not publically exposed anywhere.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-id-like-to-get-to&#34;&gt;Where I&amp;rsquo;d like to get to&lt;/h2&gt;&lt;p&gt;I always seem to fumble around a lot with Markdown. It works great but there&amp;rsquo;s always things missing I wish I had. Some markdown libraries support tables while some don&amp;rsquo;t, or defer to extensions.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve come across Asciidoc recently and it seems to be exactly what I&amp;rsquo;d like. Even as a general document format, it seems pretty handy.&lt;/p&gt;
+&lt;p&gt;Hugo does have support for it, but it runs with some hardcoded flags that are annoying. It requires a Hugo heading block so you might get a mix like so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &lt;span style=&#34;color:#bd93f9&#34;&gt;25&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2019-08-19
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: &lt;span style=&#34;color:#ff79c6&#34;&gt;[&lt;/span&gt;meta&lt;span style=&#34;color:#ff79c6&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#bd93f9&#34;&gt;25&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Marcus Crane &amp;lt;marcus@utf9k.net&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;v1.0, 2019-08-19
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;It&amp;#39;s 6:30pm...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This works fine but I&amp;rsquo;d like to stick to just one single format. Mixing metadata just for Hugo and metadata just for Asciidoc is annoying so I&amp;rsquo;ll have a look into that. Asciidoc itself provides pretty much everything I&amp;rsquo;d want out the box for a static site. The remainder is just building the category pages and so on, which I don&amp;rsquo;t necessarily need a fully fledged framework for.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-topics-id-like-to-look-into&#34;&gt;Some topics I&amp;rsquo;d like to look into&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve got a list of topics I sometimes keep handy but I haven&amp;rsquo;t invested much time into exploring.&lt;/p&gt;
+&lt;p&gt;Off the top of my head, there&amp;rsquo;s some stuff I&amp;rsquo;d like to write about and others I&amp;rsquo;d have to research. In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A writeup of all the iterations of my site with pros and cons (eg; Django, Flask, Hugo, Jekyll etc)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A comparison of &amp;ldquo;Prepay SMS UIs&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A little while ago I changed cell providers (and then switched back). Topping up credit using SMS based menus was fascinating since it&amp;rsquo;s like this whole web.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;d be interesting to model the various states you can get into and just talk about text based UIs in general&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perhaps there&amp;rsquo;d be some lessons from there that could be reused in chat based UIs or whatever the flavour of the month is with Slack.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Donating to those who are homeless / on the streets in the future&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;With plenty of things moving to Paywave type technology, what will happen?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Personally, I rarely/never carry cash on me anymore so I couldn&amp;rsquo;t give spare change even if I wanted&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My own personal de-googlify post&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I recently deleted my Google account after finding a replacement for YouTube (exported my subscriptions as an RSS feed)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Most other services I had a replacement for, or never used them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Currently running LineageOS with a custom location provider so pretty much no reliance on Google stuff for Android&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;One missing piece then I&amp;rsquo;d be ready to write about how it&amp;rsquo;s worked for (quite well actually)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;m not hardline &amp;ldquo;my freedoms&amp;rdquo; so I still run eg; Instagram and what not. The idea isn&amp;rsquo;t to be pure but find a balance between convenience and privacy (as much as that&amp;rsquo;s a thing hah)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Github vs Gitlab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I recently imported some stuff to Gitlab. I haven&amp;rsquo;t invested much time into it but it seems promising given how many features they&amp;rsquo;ve developed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They could all just be quite shallow and not very reliable however.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reducing my &amp;ldquo;every day carry&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I recently managed to merge my keys, cards and public transport tag into one which has been working quite well&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;d always fancied the idea of not having a wallet but couldn&amp;rsquo;t really see how it would work&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Picking mediums&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Us humans seem to be bad at picking mediums. We do tweetstorms about political policy or complex issues rather than doing long form.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In some cases, shorter mediums are popular but the medium itself shapes the content&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To fit eg; Twitter&amp;rsquo;s message size, you&amp;rsquo;re going to simplify ideas as much as you can (but no more) but nuance may get lost in the process.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other-things-to-add&#34;&gt;Other things to add&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A proper projects page&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;ve got some stuff I can probably put up but it would also give me a reason to focus on personal projects more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bring back the reviews page&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;d like to have something (automation idk) embed cover art and what not for reviews so they look a bit more official&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perhaps a stats page&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I used to have this at one point which would pull information from various places&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was a nice excuse to play around with technology I wasn&amp;rsquo;t familiar with like Redis or Celery queues&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setting the whole dynamic vs static thing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Part of me wants to go back to dynamic all the time as an excuse to learn new technologies&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Maybe a mix of the two is would suit me best. Just use asciidoc (via a subprocess) to render pages / store them statically while dynamically building the list type pages&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-do-i-get-there&#34;&gt;How do I get there&lt;/h2&gt;&lt;p&gt;I just gotta start leaving my laptop at work or else I get tempted to work on work technologies honestly. None of the above is hard but it&amp;rsquo;s easy to get side tracked or want to finish off something.&lt;/p&gt;
+&lt;p&gt;In this case, there&amp;rsquo;s no requirement for me to do so. Things just happen to cross over with my interests.&lt;/p&gt;
+&lt;p&gt;Anyway, this post is me committing to changing that, and also having a list of things to look into before I forget.&lt;/p&gt;
+&lt;p&gt;Perhaps we&amp;rsquo;ll do a 26 this time next year. On that note.&lt;/p&gt;
+
+&lt;h2 id=&#34;some-final-thoughts&#34;&gt;Some final thoughts&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This site is essentially my portfolio but I don&amp;rsquo;t care to make it particularly professional. The style is &amp;ldquo;Things past me would enjoy stumbling upon&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;While there may be some posts about specialised topics, none of them should be sacred and should attempt to be readable by anyone.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s that scale that tells you if text is at a 3rd grade reading level etc. That could be an interesting thing to run over some posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I rarely look at analytics. They don&amp;rsquo;t have any bearing on what I write. Comments I don&amp;rsquo;t mind but they&amp;rsquo;re not really integrated well. Maybe I&amp;rsquo;ll get rid of them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;d like the site to be a bit more nice to look at. I tried the whole dark scheme for a bit and it&amp;rsquo;s good but not quite perfect. Maybe I even support both?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reference books seem to have some cool layouts. I could probably pull some inspiration from them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I think I&amp;rsquo;ve fallen out of love with menus. If I do have then, breadcrumb style things might be a way to go.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;d like to look back in a few years and see a bunch of stuff that reflects who I was, and how much I know, at that point in time. That&amp;rsquo;s partly why having a format that lasts is important since Hugo may disappear one day for all I know.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for reading&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# About
+01 January 0001
+
+I never write as much as I wish I would but there’s a handful of articles you can read.
+
+I currently work at Lightspeed, particularly working on Vend.
+
+In particular, I’m a Staff Site Reliability Engineer based out of our office in Newmarket, New Zealand.
+

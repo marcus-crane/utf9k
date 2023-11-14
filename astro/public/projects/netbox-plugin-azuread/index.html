@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>netbox-plugin-azuread | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/projects/netbox-plugin-azuread/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/projects/netbox-plugin-azuread/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="A now-archived plugin that added Azure Active Directory authentication to Netbox" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/projects/netbox-plugin-azuread/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="netbox-plugin-azuread" />
+<meta property="og:description" content="A now-archived plugin that added Azure Active Directory authentication to Netbox" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/projects/netbox-plugin-azuread/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="projects" />
+
+<meta property="article:modified_time" content="2023-07-27T21:22:08+12:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="netbox-plugin-azuread"/>
+<meta name="twitter:description" content="A now-archived plugin that added Azure Active Directory authentication to Netbox"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>netbox-plugin-azuread</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>A Python plugin for the <a href="https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top">IPAM</a> tool <a href="https://github.com/netbox-community/netbox">Netbox</a>, <code>netbox-plugin-azuread</code> adds support for OAuth authentication with <a href="https://azure.microsoft.com/en-us/services/active-directory/">Azure Active Directory</a>.</p>
+<p>By default, Netbox supports standard username/password logins, SAML logins and logins configured via a remote auth header.</p>
+<p>This plugin was my first real attempt at publishing a Python library and has been running for many months within a production deployment.</p>
+<p>I mostly just scanned some existing AzureAD auth libraries and pieced together how to transform it into a Netbox/Django plugin.</p>
+<p>You can view the plugin on <a href="https://github.com/marcus-crane/netbox-plugin-azuread">Github</a> or <a href="https://pypi.org/project/netbox-plugin-azuread/">PyPI</a>.</p>
+<center>
+  <figure>
+    <img src="netbox-login.png" alt="A slightly modified version of the Netbox login screen that shows two buttons. One is labelled Azure AD while the other is labelled Password"  loading="lazy" />
+  </figure>
+</center><center>
+  <figure>
+    <img src="netbox-profile.png" alt="The normal Netbox login screen showing a logged in user, who has been created via OAuth with Azure AD"  loading="lazy" />
+  </figure>
+</center>
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

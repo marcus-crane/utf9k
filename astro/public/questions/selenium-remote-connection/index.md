@@ -1,0 +1,18 @@
+# How can I remotely connect to a Selenium cluster
+01 January 0001
+
+I [recently came across an unsecured Selenium instance](https://twitter.com/sentreh/status/1435772900917735425) but I wanted to confirm my findings by making a basic request.
+
+While I opted to use the [Python bindings](https://pypi.org/project/selenium/) for [Selenium](https://www.selenium.dev/), there wasn&#39;t a quick start guide on how to remotely connect to an instance.
+
+Here&#39;s how you can quickly connect to a Selenium instance and do a basic request using Python:
+
+```python
+&gt;&gt;&gt; from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+&gt;&gt;&gt; from selenium import webdriver
+&gt;&gt;&gt; hub_url = &#34;http://example.com:4444/wd/hub&#34;
+&gt;&gt;&gt; driver = webdriver.Remote(command_executor=hub_url, desired_capabilities=DesiredCapabilities.CHROME)
+&gt;&gt;&gt; driver.get(&#34;https://news.ycombinator.com&#34;)
+&gt;&gt;&gt; driver.find_element_by_tag_name(&#34;img&#34;).get_attribute(&#34;src&#34;)
+&#39;https://news.ycombinator.com/y18.svg&#39;
+```

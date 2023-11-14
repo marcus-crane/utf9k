@@ -1,0 +1,16 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# Images that are missing alt text
+01 January 0001
+
+This table contains all of the images on this website and reflects whether or not they have defined proper alt text for those who use a screen reader or even just fans of text-only RSS readers.
+
+Title Slug Image path Alt text Remaining items to be fixed: 0 / 0 

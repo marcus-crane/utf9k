@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/organisation/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Mon, 12 Jul 2021 18:50:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/organisation/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating debug reports with Hugo inline shortcodes</title>
+      <link>https://utf9k.net/blog/hugo-debug-reports/</link>
+      <description>I teach you some tricks on introspecting your Hugo builds</description>
+      <pubDate>Mon, 12 Jul 2021 18:50:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/hugo-debug-reports/</guid>
+      <content type="html">&lt;p&gt;Recently I discovered that &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; added support for &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/&#34;&gt;inline shortcodes&lt;/a&gt; like 30 versions ago.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://github.com/bep&#34;&gt;bep&lt;/a&gt;, the reason I had never heard about them was simple:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-dnt=&#34;true&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;You didn&amp;#39;t ask ... (we added that to get the &lt;a href=&#34;https://twitter.com/getbootstrap?ref_src=twsrc%5Etfw&#34;&gt;@getbootstrap&lt;/a&gt; site on Hugo, they had lots of inline scripting) ...&lt;/p&gt;&amp;mdash; Bjørn Erik Pedersen (@bepsays) &lt;a href=&#34;https://twitter.com/bepsays/status/1408348824083615745?ref_src=twsrc%5Etfw&#34;&gt;June 25, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+&lt;h2 id=&#34;a-shortcode-refresher&#34;&gt;A shortcode refresher&lt;/h2&gt;&lt;p&gt;To give an idea of what this means, here&amp;rsquo;s a reminder on how you were required to use shortcodes in the past:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- layouts/shortcodes/notice.html --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;notice&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;h3&lt;/span&gt;&amp;gt;{{ .Get &amp;#34;title&amp;#34; }}&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;h3&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {{ .Inner }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- content/blog/example-post.md --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# This is an example post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ notice title=&amp;#34;This is a notice&amp;#34; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This is the content inside of a notice shortcode
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ /notice }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;sup&gt;Minor caveat with shortcode syntax&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the shortcode internals live in your &lt;code&gt;layouts&lt;/code&gt; folder, and have access to your &lt;code&gt;page&lt;/code&gt; context as well as all of the various Hugo functions. Your post is only able to pass parameters into the shortcode itself.&lt;/p&gt;
+&lt;p&gt;Now to be clear, there&amp;rsquo;s absolutely nothing wrong with doing this. In principle, it&amp;rsquo;s a good idea for your content to not have any awareness of how it&amp;rsquo;s being rendered. If you were to change the internals of the notice shortcode once, all of the pages it appears in are instantly updated upon the next render.&lt;/p&gt;
+&lt;p&gt;In saying that, the introduction of inline shortcodes allows us to do some fun things:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;&amp;lt;!-- content/blog/example-post.md --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# This is an example post
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Check out some of these funny gags I wrote:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ readfile.inline }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ range $.Site.Data.gags }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;li&lt;/span&gt;&amp;gt;{{ . }}&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ /readfile.inline }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;sup&gt;Minor caveat with shortcode syntax&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t believe me? Here&amp;rsquo;s that same inline shortcode embedded in this very post:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Check out these fun gag lines I wrote&lt;/summary&gt;
+  
+&lt;ul&gt;
+  
+  &lt;li&gt;Has anyone seen my keys? I dropped them in here somewhere...&lt;/li&gt;
+  
+  &lt;li&gt;My bluetooth is disabled but I only have bluetooth devices. How do I turn it back on?!&lt;/li&gt;
+  
+  &lt;li&gt;Is good software a myth? Perhaps we&#39;ll never know&lt;/li&gt;
+  
+  &lt;li&gt;The IETF announces BNS - Baby Name System&lt;/li&gt;
+  
+  &lt;li&gt;If text is sublime already, how can there be a sublime text 2?&lt;/li&gt;
+  
+  &lt;li&gt;Why is it called venture capital if you can just apply for it without walking anywhere?&lt;/li&gt;
+  
+  &lt;li&gt;What does the Y in YCombinator stand for?&lt;/li&gt;
+  
+  &lt;li&gt;The invention of sport was a mistake!&lt;/li&gt;
+  
+  &lt;li&gt;Besides Tele, how many other types of vision are there?&lt;/li&gt;
+  
+  &lt;li&gt;When are they going to air Who Wants To Be A Crypto Millionaire?&lt;/li&gt;
+  
+  &lt;li&gt;What if NASA was the result of a typo in a government memo proposing &#34;Spice exploration&#34;?&lt;/li&gt;
+  
+  &lt;li&gt;What does the &#34;work&#34; in network refer to? There&#39;s no such thing as a netrelax after all&lt;/li&gt;
+  
+  &lt;li&gt;You have 341 new emails.&lt;/li&gt;
+  
+  &lt;li&gt;What even is a TPS report?&lt;/li&gt;
+  
+  &lt;li&gt;Do you think anyone has ever been killed by a judge&#39;s gavel?&lt;/li&gt;
+  
+  &lt;li&gt;I haven&#39;t used a mailbox in quite a long time!&lt;/li&gt;
+  
+  &lt;li&gt;Thanks for reading this far! I guess you enjoyed the content, hmm?&lt;/li&gt;
+  
+  &lt;li&gt;I don&#39;t have any good fuel fun facts. I don&#39;t even drive!&lt;/li&gt;
+  
+  &lt;li&gt;Did you know solo camping is a thing? I should try it sometime.&lt;/li&gt;
+  
+  &lt;li&gt;Budgeting is hard. You should try to save a little more for that rainy day!&lt;/li&gt;
+  
+  &lt;li&gt;I only ever see baths in hotels. What if they end up becoming extinct?!&lt;/li&gt;
+  
+  &lt;li&gt;An internet connected sandwich maker wouldn&#39;t be so bad, would it?&lt;/li&gt;
+  
+  &lt;li&gt;Someone who is good at the economy please help me plan my startup runway&lt;/li&gt;
+  
+  &lt;li&gt;:wq!&lt;/li&gt;
+  
+  &lt;li&gt;Apparently you&#39;re supposed to feel rested after sleep but I haven&#39;t read the literature myself&lt;/li&gt;
+  
+  &lt;/ul&gt;
+  
+&lt;/details&gt;
+&lt;p&gt;If any of these look familiar, I just used an inline shortcode to read from the same file that powers the footer.&lt;/p&gt;
+&lt;p&gt;I haven&amp;rsquo;t used inline shortcodes to their full potential yet but I&amp;rsquo;d like to use it to add a bit more flavour to posts in future where having a dedicated shortcode would be a bit overkill.&lt;/p&gt;
+&lt;p&gt;They&amp;rsquo;ll always have their place of course! Pick the right tool for the job and all that.&lt;/p&gt;
+&lt;p&gt;Anyway, that brings me to the actual topic at hand: debug reports.&lt;/p&gt;
+
+&lt;h2 id=&#34;let-hugo-debug-itself-for-you&#34;&gt;Let Hugo debug itself for you&lt;/h2&gt;&lt;p&gt;There are always some unknowns to any site like &amp;ldquo;Do any links throw a 404?&amp;rdquo; or &amp;ldquo;Are there posts without a description?&amp;rdquo; and to shed some light on the current situation, we can get a bit meta.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easiest if you just check out the &lt;a href=&#34;https://utf9k.net/debug&#34;&gt;debug&lt;/a&gt; section of my site for yourself but the short version is that I&amp;rsquo;ve been using inline shortcodes to write one off custom reports, that effectively answer these questions through introspection. That&amp;rsquo;s just a fancy way of saying I write Hugo content (reports) that show the status of other Hugo content.&lt;/p&gt;
+&lt;p&gt;There isn&amp;rsquo;t anything super complex at the moment but I used it to clean up posts where the &lt;a href=&#34;https://utf9k.net/debug/file-url-match/&#34;&gt;folder names didn&amp;rsquo;t match slugs&lt;/a&gt; as an example.&lt;/p&gt;
+&lt;p&gt;They automatically update every time the site rebuilds so while I could keep a spreadsheet, this is a nice way of keeping that useful information close to where the action happens.&lt;/p&gt;
+&lt;p&gt;I made &lt;a href=&#34;https://utf9k.net/debug/reports-todo/&#34;&gt;a list of various reports&lt;/a&gt; that I&amp;rsquo;ll consider generating going forward and some will be a bit more tricky than others.&lt;/p&gt;
+&lt;p&gt;In all likelihood, the most interesting ones will just be reading from data sources generated by external scripts running either locally or via a CI pipeline. It&amp;rsquo;s nicer to see all this information on one place even if I could just read the logs from my terminal or a pipeline run.&lt;/p&gt;
+&lt;p&gt;Ah, and before I forget, the actual source for the reports &lt;a href=&#34;https://github.com/marcus-crane/utf9k/tree/main/content/debug&#34;&gt;is visible on Github&lt;/a&gt; so feel free to borrow anything you&amp;rsquo;d like to use for your own site. They&amp;rsquo;re pretty naively written but they get the job done.&lt;/p&gt;
+&lt;p&gt;Hopefully I&amp;rsquo;ve given you something to consider and if you think of any interesting report types that aren&amp;rsquo;t on my list, &lt;a href=&#34;mailto:hello@utf9k.net&#34;&gt;I&amp;rsquo;d love to hear about them!&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above isn&amp;rsquo;t actual syntax but near enough. If I were to type it properly, the shortcode would really render, whereas I&amp;rsquo;m trying to demonstrate the shortcode internals themselves. To find some real shortcode syntax, check out &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/&#34;&gt;this&lt;/a&gt; section of the Hugo docs.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Reducing my everyday carry during 2019</title>
+      <link>https://utf9k.net/blog/reducing-my-edc-2019/</link>
+      <description>For no particular reason, I documented all the crap I haul around and my plan to slim it down even further</description>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/reducing-my-edc-2019/</guid>
+      <content type="html">&lt;p&gt;During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.&lt;/p&gt;
+&lt;p&gt;I managed to reduce down the complexity by quite a large amount, and it&amp;rsquo;s probably one of the better investments I&amp;rsquo;ve made recently.&lt;/p&gt;
+&lt;p&gt;Given that I haven&amp;rsquo;t discarded my previous setup (just yet), I was able to recreate a bunch of before and after photos showing my progression over time.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not recommending you emulate my setup but it might serve as inspiration to make your own investment, into reducing or optimising your everyday carry (EDC going forward).&lt;/p&gt;
+&lt;p&gt;Before we get started, I should point out that this setup has actually be retired for something even more optimal (for me) but that&amp;rsquo;s a post for another time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can click on each photo to view a full size version&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-original-setup&#34;&gt;The original setup&lt;/h2&gt;&lt;img src=&#34;01-original-carry.jpeg&#34; alt=&#34;An aerial photo of a table containing items I carry each day, with pieces of paper beside each item describing the problems with each. The photo contains my phone, wallet, keys and wired earbuds. I didn&amp;amp;rsquo;t actually have the wired earbuds anymore so I&amp;amp;rsquo;ve just drawn a picture to represent them.&#34;  /&gt;&lt;p&gt;My EDC was already fairly compact and consisted of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Google Pixel 3a (very lightweight!)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wallet packed with cards (slow to sort through + a lot of unused cards)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A carabiner with a bunch of keys (which key is which?!)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A pair of wired earbuds (represented by a placeholder + easily gets tangled)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s have a look at these individually as we break down my setup and slowly rebuild it&lt;/p&gt;
+
+&lt;h2 id=&#34;assessing-my-wallet&#34;&gt;Assessing my wallet&lt;/h2&gt;&lt;img src=&#34;02-wallet-old.jpeg&#34; alt=&#34;A close up photo of a table with my wallet folded open on it. A piece of paper represents my transit card as I no longer had it at the time of writing this post.&#34;  /&gt;&lt;p&gt;There&amp;rsquo;s quite a lot in my wallet that I don&amp;rsquo;t use, and different cards definitely get access more than others.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start by taking a closer look at those cards&lt;/p&gt;
+
+&lt;h3 id=&#34;regular-cards&#34;&gt;Regular cards&lt;/h3&gt;&lt;img src=&#34;03-cards-scattered.jpeg&#34; alt=&#34;An aerial photo of a table with numerous cards scattered around. There are different types from loyalty cards to business cards, as described below.&#34;  /&gt;&lt;p&gt;There&amp;rsquo;s a variety of different cards here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Business cards&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gift cards&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Loyalty cards&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Membership cards (plastic + NFC)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bank cards&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;04-business-cards.jpeg&#34; alt=&#34;A close up photo of two business cards. One is for stripe.com and another is for readme.com.&#34;  /&gt;&lt;p&gt;Business cards are pretty easy to get rid of as a first step. They just went straight into my contacts list. I don&amp;rsquo;t have any need to carry them and should have digitised them a long time ago.&lt;/p&gt;
+&lt;img src=&#34;05-loyalty-cards.jpeg&#34; alt=&#34;A closeup photo of my phone with the table and cards in the background, although heavily blurred. The screen of my phone is open to an application that shows digital versions of the loyalty cards. More specifically, the barcodes for each of the physical cards has been captured onto my phone.&#34;  /&gt;&lt;p&gt;I don&amp;rsquo;t use loyalty cards often enough, to make the space they take up worth it. Thankfully, it&amp;rsquo;s easy to digitise them nowadays (if they have a barcode) and carry them on my phone instead.&lt;/p&gt;
+&lt;img src=&#34;06-gpay-cards.jpeg&#34; alt=&#34;A closeup photo of my phone with Google Pay open to show my digital bank card. Thankfully any identifying information has been removed. For effect, behind the phone to the side is the table again with my physical bank cards sitting on it, although blurred out for effect.&#34;  /&gt;&lt;p&gt;Last but not least, I can reduce the amount of time I&amp;rsquo;m pulling bank cards out of my wallet by adding them to Google Pay. I still need them on hand for larger purchases due to paywave limits.&lt;/p&gt;
+&lt;p&gt;One type of card I can&amp;rsquo;t simply digitise or reduce are my arcade cards. From what I remember, the arcade balance card itself is part of the &lt;a href=&#34;https://www.mifare.net/en/products/chip-card-ics/mifare-desfire/&#34;&gt;MIFARE DESFire&lt;/a&gt; family. Android does support &lt;a href=&#34;https://developer.android.com/guide/topics/connectivity/nfc/hce&#34;&gt;Host Emulation&lt;/a&gt; but from the little I&amp;rsquo;ve read, it isn&amp;rsquo;t possible to emulate MIFARE cards nor would a software emulation necessarily be secure anyway.&lt;/p&gt;
+&lt;p&gt;Similarly, I have a &lt;a href=&#34;https://www.bandainamcoid.com/banapassport/en/&#34;&gt;BANA Passport&lt;/a&gt; which I use to store my save progress with &lt;a href=&#34;https://wanganmaxi-official.com/wanganmaxi6/en/special/001.php&#34;&gt;Midnight Tune 6&lt;/a&gt;, a particular arcade game I quite enjoy.&lt;/p&gt;
+&lt;p&gt;I can live with carrying those two day to day, given that visiting the arcade is more of a spur of the moment thing, so it makes more sense to keep it on hand, than say an &lt;a href=&#34;https://www.ebgames.co.nz&#34;&gt;EB Games&lt;/a&gt; gift card&lt;/p&gt;
+
+&lt;h3 id=&#34;transit-card&#34;&gt;Transit card&lt;/h3&gt;&lt;p&gt;This is my most used card, given I use it at least once a day on weekdays and sometimes multiple times on the weekend. Having it lumped in with all of my other cards is fine but it&amp;rsquo;d be nice if it was easier to access given it&amp;rsquo;s part of the &amp;ldquo;hot path&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;What I ended up doing was taking it and replacing it with one of the &lt;a href=&#34;https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag/&#34;&gt;limited edition HOP tags&lt;/a&gt; that Auckland Transport occasionally releases.&lt;/p&gt;
+&lt;img src=&#34;07-hop.jpeg&#34; alt=&#34;A close up photo of a table surface containing three items: A piece of paper representing my physical transit card, an arrow pointing to the right and a smaller, badge sized transit card designed for keychains. The arrow is supposed to symbolise that I&amp;amp;rsquo;ve gone from one transit card to another.&#34;  /&gt;&lt;p&gt;They&amp;rsquo;re designed to live with your keys, coming with a metallic keychain, but I removed that for reasons which will be a little clearer as we continue on.&lt;/p&gt;
+
+&lt;h3 id=&#34;reviewing-our-progress-so-far&#34;&gt;Reviewing our progress so far&lt;/h3&gt;&lt;p&gt;After all of that reduction, my wallet is slimmed down to just the following essentials&lt;/p&gt;
+&lt;img src=&#34;08-cards.jpeg&#34; alt=&#34;A close up photo of a table surface showing the smaller transit card to the left, a few remaining physical cards that I like to keep around and a carabiner containing various house keys.&#34;  /&gt;&lt;p&gt;Nowadays, I wouldn&amp;rsquo;t even carry the gift card around, instead just opting to either digitise it (if possible) or remembering to bring it whenever I decide to go in store or order online.&lt;/p&gt;
+&lt;p&gt;My wallet has served me well for quite some time but it&amp;rsquo;s really easy for just these few cards to fall out, since it&amp;rsquo;s designed to hold a number of cards.&lt;/p&gt;
+&lt;p&gt;I was browsing the web one day for unique takes on wallets and I came across this thing. It looks a bit confusing at first but having used it for the better part of a year, I really enjoyed it. Here&amp;rsquo;s what it looks like disassembled.&lt;/p&gt;
+&lt;img src=&#34;09-wallet-disassembled.jpeg&#34; alt=&#34;A close up photo of a table surface containing a metal device that has been unscrewed. The base plate is on the right with three little stands to provide room in between itself and the top plate. The idea is that the cards sit in between the gap. The top plate is red and sitting to the left of the base plate with three small screws sitting just below it.&#34;  /&gt;&lt;p&gt;It probably doesn&amp;rsquo;t look like much at the moment so let&amp;rsquo;s add some keys and accessories&lt;/p&gt;
+&lt;img src=&#34;10-wallet-setup.jpeg&#34; alt=&#34;A close up photo of a table surface with just the metal base plate from the previous photo. Two of the little stands appear to have two keys sitting on them, tucked nicely so they don&amp;amp;rsquo;t extend beyond the base plate itself. The third stand has a small USB drive sitting on it.&#34;  /&gt;&lt;p&gt;I&amp;rsquo;ve got my three house keys, a bottle opener (under the blue key) and a USB drive all sitting snuggly in there.&lt;/p&gt;
+&lt;img src=&#34;11-wallet-underside.jpeg&#34; alt=&#34;A close up photo of a table surface with the assembled metal wallet sitting on it. The wallet is upside down, with the keys and USB drive extended beyond the base plate. The bottom of the base plate is visible, as the wallet is upside down, and has a large clip at the bottom for slotting cards into.&#34;  /&gt;&lt;p&gt;That&amp;rsquo;s not all. We can stick those remaining cards in the bottom card holder too.&lt;/p&gt;
+&lt;img src=&#34;12-wallet-underside-full.jpeg&#34; alt=&#34;A side photo of the assembled metal wallet, sitting on a table surface. The previously mentioned clip has been filled with about 8 to 10 physical cards at a glance. They seem to be tightly secured.&#34;  /&gt;&lt;p&gt;To top it all off, I had some spare 3M wall hanger strips floating around so I repurposed one to affix my travel tag to the top of this contraption using velcro&lt;/p&gt;
+&lt;img src=&#34;13-wallet-top.jpeg&#34; alt=&#34;An aerial photo of the assembled metal wallet sitting on a table surface. It is positioned right side up this time showing the red top plate. On top of the red plate is the small badge sized transit card, seemingly hovering in place. It&amp;amp;rsquo;s actually attached to a velcro strip although you can&amp;amp;rsquo;t visually tell that from the photo.&#34;  /&gt;&lt;p&gt;Et voila, a pretty compact setup if I say so myself!&lt;/p&gt;
+&lt;img src=&#34;14-wallet-side.jpeg&#34; alt=&#34;A side photo of the assembled metal wallet sitting on a table surface. It&amp;amp;rsquo;s positioned in the same way as the previous photo just with the angle being from the side. If the reader were to squint, they could make out the velcro strip mentioned before but no attention is drawn to it.&#34;  /&gt;
+&lt;h2 id=&#34;untangling-my-headphones&#34;&gt;Untangling my headphones&lt;/h2&gt;&lt;p&gt;I used to have various pairs of earbuds over the years that were good enough.&lt;/p&gt;
+&lt;img src=&#34;15-wired-earbuds.jpeg&#34; alt=&#34;A close up photo of a table surface with two pieces of paper. One on the left says &amp;amp;ldquo;Such a mess to untangle&amp;amp;rdquo; with a sad face and an arrow pointing to the right. The piece of paper on the right is a ridiculously bad drawing of wired earbuds with text at the top that reads &amp;amp;ldquo;Wired earbuds&amp;amp;rdquo;. I no longer had the them in my position so this is supposed to be a placeholder for the real thing.&#34;  /&gt;&lt;p&gt;I felt like I must have lost multiple hours of my life just untangling them over the years so I decided I might as well invest in a decent pair.&lt;/p&gt;
+&lt;p&gt;While they seem to be much more popular and acclaimed these days, I had taken a gamble at the time and invested in a pair of &lt;a href=&#34;https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778&#34;&gt;Sony WF-1000XM3 Wireless Earbuds&lt;/a&gt; during a period when the Apple Airpods were basically the only thing you were supposed to buy.&lt;/p&gt;
+&lt;p&gt;Given the price, I actually opted to pay them off over a period of time (might as well build my credit score after all!)&lt;/p&gt;
+&lt;p&gt;That said, they&amp;rsquo;ve been a worthwhile investment for me. The battery life is great, considering they&amp;rsquo;re properly wireless, and I&amp;rsquo;m always surprised how many charges I can get from putting them back in the case. When using them as a daily driver, back when walking to work was a thing, I would generally only need to recharge them once a week at most? More like once every 2 weeks I think.&lt;/p&gt;
+&lt;img src=&#34;16-wireless-earbuds.jpeg&#34; alt=&#34;A side view of a table with two pieces of paper and a red almost electronic pouch looking thing that has a red glowing light. It&amp;amp;rsquo;s actually a pair of Sony WF-1000XM3 Wireless Earbuds in their carry card but unfortunately, it&amp;amp;rsquo;s hard to make out in the photo. Maybe it&amp;amp;rsquo;s just hard to make out on my monitor. Anyway, the pieces of paper are the paper placeholder of my wired earbuds and an arrow pointing right to indicate they&amp;amp;rsquo;ve transformed into the new wireless earbuds.&#34;  /&gt;&lt;p&gt;Also, I&amp;rsquo;ve been pleasantly surprised at the software updates that still roll out. About 6 months after I bought them, they received support for Amazon Alexa, which was a nice surprise given they already support the Google Assistant. Not that I use either…&lt;/p&gt;
+
+&lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping up&lt;/h2&gt;&lt;p&gt;I believe that covers everything?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve reduced my wallet by probably 90%, moved my transit card to its own dedicated spot since it&amp;rsquo;s on the &amp;ldquo;hot path&amp;rdquo; and I no longer have to spend any time untangling my headphones&lt;/p&gt;
+&lt;img src=&#34;17-all-three.jpeg&#34; alt=&#34;A close up of three items on the table surface. To the right, and closest to the camera, is my phone. It&amp;amp;rsquo;s the Google Pixel 3a and it shows a almost purely black lock screen except for the time, some Japanese song playing on Spotify and the weather which is 19 degrees celcius at the time of the photo. To the right, also close to the camera is the carry case for the Sony wireless earbuds. At the back of the photo, and quite blurred, is the metallic wallet.&#34;  /&gt;&lt;p&gt;As I mentioned earlier, I&amp;rsquo;ve made some further changes which I&amp;rsquo;ll likely cover in a 2020 edition of this post.&lt;/p&gt;
+&lt;img src=&#34;18-all-third-alt.jpeg&#34; alt=&#34;A mid range shot of the same three items from the previous photo on a table surface. They are just sitting in a slightly different configuration but the details are all the same.&#34;  /&gt;&lt;p&gt;Mainly, I found that while the wallet served me well, it was a bit too heavy to take when I took up running earlier this year.&lt;/p&gt;
+&lt;p&gt;My fix was to just unscrew it, take out my two main house keys and keep them in my pocket but reassembling my wallet got kinda tedious pretty quickly.&lt;/p&gt;
+&lt;p&gt;Until next time, see what you&amp;rsquo;re able to pull off with a wallet reduction!&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>My bookmarking categories in March 2020</title>
+      <link>https://utf9k.net/blog/bookmarking-march-2020/</link>
+      <description>A weird one off post where I documented the various bookmarks I had captured</description>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/bookmarking-march-2020/</guid>
+      <content type="html">&lt;p&gt;For no particular reason, other than I figured it might help me make better sense of how I organise articles, here&amp;rsquo;s a fairly detailed breakdown of my bookmarking setup.&lt;/p&gt;
+&lt;p&gt;Currently I&amp;rsquo;m using &lt;a href=&#34;https://raindrop.io&#34;&gt;Raindrop.io&lt;/a&gt; but I&amp;rsquo;ve also used &lt;a href=&#34;https://pinboard.in&#34;&gt;Pinboard&lt;/a&gt;, &lt;a href=&#34;https://getpocket.com&#34;&gt;Pocket&lt;/a&gt; and &lt;a href=&#34;https://larder.io&#34;&gt;Larder&lt;/a&gt; happily in the past too.&lt;/p&gt;
+&lt;p&gt;At the moment, Raindrop seems like the most comprehensive of the bookmarking apps I&amp;rsquo;ve tried. It has a very nice UI, a consistent desktop/mobile experience, a (newly launched) API and supports syncing content to a storage provider (Dropbox or Google Drive) too.&lt;/p&gt;
+&lt;p&gt;Anyway, I&amp;rsquo;ve linked some articles that I&amp;rsquo;ve found interesting myself within a lot of the categories.&lt;/p&gt;
+&lt;p&gt;Most of them need some work, and I&amp;rsquo;ve got almost as many unsorted bookmarks as I do sorted since I write a custom title, description and apply tags for searching rather than just dumping them.&lt;/p&gt;
+&lt;p&gt;I had a lot of stuff from Pocket that I archived which makes up the bulk of it. Most things I had in Pinboard were tagged so they were easy to transition into Raindrop.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve got any feedback or want to share your own bookmarking categories, let me know! You can find my contact details on my &lt;a href=&#34;https://utf9k.net/about&#34;&gt;about&lt;/a&gt; page B)&lt;/p&gt;
+
+&lt;h2 id=&#34;heading&#34;&gt;???&lt;/h2&gt;&lt;p&gt;Anything that is generally quirky or surprising like &lt;a href=&#34;https://audiokarma.org/forums/index.php?threads/jerry-seinfelds-speakers.48414/&#34;&gt;this&lt;/a&gt;, &lt;a href=&#34;https://cooking.stackexchange.com/questions/105602/steak-dropped-in-soapy-dish-water&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity/&#34;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;behind-the-scenes&#34;&gt;Behind the Scenes&lt;/h2&gt;&lt;p&gt;Great stories or posts that reveal what goes on behind the scenes of various products and companies&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://news.ycombinator.com/item?id=20908168&#34;&gt;Generally trends towards game development&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;business&#34;&gt;Business&lt;/h2&gt;
+&lt;h3 id=&#34;economics&#34;&gt;Economics&lt;/h3&gt;&lt;p&gt;This tends to be anything related to the economy, &lt;a href=&#34;https://en.wikipedia.org/wiki/Capitol_Hill_Babysitting_Co-op&#34;&gt;the theory of economics&lt;/a&gt; or &lt;a href=&#34;https://abstrusegoose.com/389&#34;&gt;generally anything to do with money&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;marketing&#34;&gt;Marketing&lt;/h3&gt;&lt;p&gt;Lessons and resources related to marketing of products, or marketing as an art&lt;/p&gt;
+
+&lt;h3 id=&#34;reports&#34;&gt;Reports&lt;/h3&gt;&lt;p&gt;Various reports (shareholder, &lt;a href=&#34;https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2019/building-operational-resilience-impact-tolerances-for-important-business-services.pdf&#34;&gt;governmental&lt;/a&gt;, &lt;a href=&#34;https://sriramk.com/memos/goldberg-music.pdf&#34;&gt;memos&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;&lt;p&gt;General advice or reference material for going about conducting business and/or setting one up&lt;/p&gt;
+
+&lt;h3 id=&#34;strategy&#34;&gt;Strategy&lt;/h3&gt;&lt;p&gt;The art of &lt;a href=&#34;https://apenwarr.ca/log/20190926&#34;&gt;setting strategy&lt;/a&gt;, as it relates to business, and &lt;a href=&#34;https://danluu.com/sounds-easy/&#34;&gt;how business things get done, in spite of their sheer scale&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
+&lt;h3 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h3&gt;&lt;p&gt;Cool websites that have interesting designs in some form or another&lt;/p&gt;
+
+&lt;h3 id=&#34;resources-1&#34;&gt;Resources&lt;/h3&gt;&lt;p&gt;Design resources such as fonts, CSS frameworks, placeholder images or guides on how best to layout a design&lt;/p&gt;
+
+&lt;h3 id=&#34;ui--ux&#34;&gt;UI / UX&lt;/h3&gt;&lt;p&gt;Tips and tricks on providing a functional, accessible design. Generally just for web design but doesn&amp;rsquo;t strictly have to be.&lt;/p&gt;
+
+&lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he&#34;&gt;Anything that doesn&amp;rsquo;t have an obvious category&lt;/a&gt;. If there seems to be a grouping of related articles, it&amp;rsquo;d prompt the creation of a new category but I also don&amp;rsquo;t want to generate more categories that are useful.&lt;/p&gt;
+
+&lt;h2 id=&#34;postmortems&#34;&gt;Postmortems&lt;/h2&gt;&lt;p&gt;Reviews in what went wrong, whether it be &lt;a href=&#34;https://www.propublica.org/article/the-red-cross-secret-disaster&#34;&gt;business&lt;/a&gt;, &lt;a href=&#34;https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html&#34;&gt;software&lt;/a&gt; or &lt;a href=&#34;http://www.fudco.com/chip/lessons.html&#34;&gt;videogames&lt;/a&gt;. As this category grows, I&amp;rsquo;ll likely split them out into eg; Business/Postmortems but for now, I don&amp;rsquo;t have a big enough collection.&lt;/p&gt;
+
+&lt;h2 id=&#34;productivity&#34;&gt;Productivity&lt;/h2&gt;&lt;p&gt;Anything related to the art of productivity. It may also just be &lt;a href=&#34;https://nesslabs.com/jomo&#34;&gt;articles reminding you that sometimes less is more!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;recommendations&#34;&gt;Recommendations&lt;/h2&gt;&lt;p&gt;Things that I have been recommended but haven&amp;rsquo;t looked into yet. If they are part of a medium that I track somewhere else (eg; books into Goodreads, games into How Long To Beat), then I tend to just put them there straight away. &lt;a href=&#34;https://www.neogaf.com/threads/dead-franchises-almost-nobody-but-you-seems-to-want-back.1355948/&#34;&gt;There may be threads that have a wide range of recommendations&lt;/a&gt; eg; book recommendations so I generally scour them when I get time and put the interesting items into eg; Goodreads.&lt;/p&gt;
+
+&lt;h2 id=&#34;shopping&#34;&gt;Shopping&lt;/h2&gt;&lt;p&gt;Things that look cool and I might want to buy one day. I may also just want to keep them for reference to link to people too.&lt;/p&gt;
+
+&lt;h2 id=&#34;society&#34;&gt;Society&lt;/h2&gt;
+&lt;h3 id=&#34;discourse&#34;&gt;Discourse&lt;/h3&gt;&lt;p&gt;A bit of a wishy washy grouping but anything related to discussion of ideas and &lt;a href=&#34;https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton.27s_fence&#34;&gt;what can go wrong as a result&lt;/a&gt;. Perhaps communication is a clearer name for this category.&lt;/p&gt;
+
+&lt;h3 id=&#34;governments&#34;&gt;Governments&lt;/h3&gt;&lt;p&gt;Articles related to governments, whether it be their functions, warfare (from a political point of view, not an on-the-ground point of view) or just &lt;a href=&#34;https://web.archive.org/web/20071031080918/http://www.geocities.com/capecanaveral/4411/apollo13.htm&#34;&gt;&amp;ldquo;government related things&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;infrastructure&#34;&gt;Infrastructure&lt;/h3&gt;&lt;p&gt;This can be &lt;a href=&#34;https://en.wikipedia.org/wiki/Signalling_System_No._7&#34;&gt;specific infrastructure&lt;/a&gt; or articles about infrastructure in general ie cost overruns or how a traffic light system operates&lt;/p&gt;
+
+&lt;h3 id=&#34;news-media&#34;&gt;News Media&lt;/h3&gt;&lt;p&gt;Resources provided by the news media (eg; a database containing financial entities and their appearances in the media) or articles about the media itself. This doesn&amp;rsquo;t contain articles FROM the news media however. It&amp;rsquo;s more of a meta category.&lt;/p&gt;
+
+&lt;h3 id=&#34;people&#34;&gt;People&lt;/h3&gt;&lt;p&gt;This could be articles on &lt;a href=&#34;https://en.wikipedia.org/wiki/Robert_Parker_(wine_critic)&#34;&gt;specific people&lt;/a&gt; (biographies, news pieces) or &lt;a href=&#34;https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and&#34;&gt;&amp;ldquo;people&amp;rdquo; in a broader sense&lt;/a&gt; such as a story on a town or city.&lt;/p&gt;
+
+&lt;h3 id=&#34;politics&#34;&gt;Politics&lt;/h3&gt;&lt;p&gt;Politics of any form, whether it be governmental (elections, &amp;ldquo;red tape&amp;rdquo;) or more local such as office or industry politics&lt;/p&gt;
+
+&lt;h3 id=&#34;world-views&#34;&gt;World Views&lt;/h3&gt;&lt;p&gt;A bit of an abstract category. This contains articles and quotes that upon reading, I thought &lt;a href=&#34;https://news.ycombinator.com/item?id=14391552&#34;&gt;&amp;ldquo;Oh! This gave me some insight into how certain groups or individuals come to view the world.&amp;rdquo;&lt;/a&gt;. That&amp;rsquo;s neither a good or a bad thing, just interesting. Often it contains things that I&amp;rsquo;ve never considered before myself.&lt;/p&gt;
+
+&lt;h2 id=&#34;sports&#34;&gt;Sports&lt;/h2&gt;&lt;p&gt;I had two links related to wrestling I put in here. I don&amp;rsquo;t follow sports much but sometimes there can be interesting crossovers between say sports and business.&lt;/p&gt;
+
+&lt;h2 id=&#34;technology&#34;&gt;Technology&lt;/h2&gt;
+&lt;h3 id=&#34;databases&#34;&gt;Databases&lt;/h3&gt;&lt;p&gt;Articles, Stack Overflow snippets and links in general related to &amp;ldquo;databases&amp;rdquo;. For now, this has no subcategorisation between eg; MySQL v Postgres, SQL vs &amp;ldquo;NoSQL&amp;rdquo; and databases themselves vs database concepts.&lt;/p&gt;
+
+&lt;h3 id=&#34;growing-as-a-developer&#34;&gt;Growing As A Developer&lt;/h3&gt;&lt;p&gt;Some recommendations from other developers (eg; keep a logbook), utilities (resume creators, competency matrixes) and other tools for improving as a developer&lt;/p&gt;
+
+&lt;h3 id=&#34;historical-events&#34;&gt;Historical Events&lt;/h3&gt;&lt;p&gt;Links to &amp;ldquo;historical events&amp;rdquo; which can be anything from &lt;a href=&#34;https://github.com/npm/npm/issues/20791&#34;&gt;unexpected outages&lt;/a&gt; and &lt;a href=&#34;https://github.com/facebook/react/issues/10191&#34;&gt;long running debates&lt;/a&gt; to &lt;a href=&#34;http://www.doublewide.net/passport.htm&#34;&gt;fascinating snippets that somehow haven&amp;rsquo;t been lost yet&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;languages&#34;&gt;Languages&lt;/h3&gt;&lt;p&gt;Anything specific to a programming language whether it be a blog post, tutorial, library or book. At the moment, I haven&amp;rsquo;t split these out into subcategories as each article is tagged with their respective langauges anyway making search easy.&lt;/p&gt;
+
+&lt;h3 id=&#34;lower-level&#34;&gt;Lower Level&lt;/h3&gt;&lt;p&gt;Anything related to &amp;ldquo;low level things&amp;rdquo;. As someone who deals primarily with higher level languages (Python, Javascript) day to day, I classify C++ and C as low level too, haha.&lt;/p&gt;
+
+&lt;h3 id=&#34;neighbours&#34;&gt;Neighbours&lt;/h3&gt;&lt;p&gt;This is really just blog posts with no particular category or links to entire websites or blogs. Neighbours in this term just means other developers in the industry.&lt;/p&gt;
+
+&lt;h3 id=&#34;networking&#34;&gt;Networking&lt;/h3&gt;&lt;p&gt;As it suggests on the tin, any articles, posts etc related to networking in general.&lt;/p&gt;
+
+&lt;h3 id=&#34;observability&#34;&gt;Observability&lt;/h3&gt;&lt;p&gt;This is a pretty new and empty category. I&amp;rsquo;m misusing the term on purpose as it has links to articles relating to observability as well as monitoring.&lt;/p&gt;
+
+&lt;h3 id=&#34;reference-materials&#34;&gt;Reference Materials&lt;/h3&gt;&lt;p&gt;Anything (lists, lists of lists, books, websites etc) that are useful to reference. There are some things in here that shouldn&amp;rsquo;t be such as books on building applications in a specific language so it&amp;rsquo;s a little bit of a dumping ground at the moment. I don&amp;rsquo;t have a good distinction for where language-specific guides should live (languages or reference materials?)&lt;/p&gt;
+
+&lt;h3 id=&#34;reverse-engineering&#34;&gt;Reverse Engineering&lt;/h3&gt;&lt;p&gt;All things related to the art of reverse engineering such as applications, blog posts and reference guides&lt;/p&gt;
+
+&lt;h3 id=&#34;security&#34;&gt;Security&lt;/h3&gt;&lt;p&gt;As it says on the tin. Recommendations as well as &lt;a href=&#34;https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses&#34;&gt;interesting implementations&lt;/a&gt; related to security.&lt;/p&gt;
+
+&lt;h3 id=&#34;shared-concepts&#34;&gt;Shared Concepts&lt;/h3&gt;&lt;p&gt;If it&amp;rsquo;s technical / software development related but not part of any specific category (Unicode for example), I stick it in here&lt;/p&gt;
+
+&lt;h3 id=&#34;the-art-of-development&#34;&gt;The Art of Development&lt;/h3&gt;&lt;p&gt;This is another wishy-washy category since it has some things which should be &lt;a href=&#34;https://blog.pragmaticengineer.com/on-writing-well/&#34;&gt;part of Growing As A Developer&lt;/a&gt; as well as things that are more like &lt;a href=&#34;https://www.devever.net/~hl/xml&#34;&gt;how you should properly structure data&lt;/a&gt; rather than the actual act of development itself. I still need to refine this more.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-industry-itself&#34;&gt;The Industry Itself&lt;/h3&gt;&lt;p&gt;This could be stories about &lt;a href=&#34;http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt&#34;&gt;&amp;ldquo;people&amp;rdquo; (in an individual sense)&lt;/a&gt;, &lt;a href=&#34;https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx&#34;&gt;&amp;ldquo;people&amp;rdquo; (in the group sense)&lt;/a&gt;, &lt;a href=&#34;https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011/&#34;&gt;people opposing other people&lt;/a&gt; and also &lt;a href=&#34;https://eager.io/blog/the-languages-which-almost-were-css/&#34;&gt;choices made by people&lt;/a&gt;. Sometimes companies too.&lt;/p&gt;
+
+&lt;h3 id=&#34;tooling&#34;&gt;Tooling&lt;/h3&gt;&lt;p&gt;Tools and utilities that are useful to refer to later. Think CLIs, GUIs, CDNs and any other 3 letter combination you like.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-art-of-writing&#34;&gt;The Art of Writing&lt;/h2&gt;&lt;p&gt;Something I&amp;rsquo;m looking to flesh out but any articles or references on how to write better!&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

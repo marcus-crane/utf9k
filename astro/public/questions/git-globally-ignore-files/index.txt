@@ -1,0 +1,27 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# How can I globally ignore files?
+01 January 0001
+
+This has been something that has plagued me for years and I’ve never sat down to properly fix it.
+
+Instead, I’ve just added .DS_Store to .gitignore files probably over one hundred times by over.
+
+Anyway, the git documentation mentions the existence of a variable called core.excludesFile.
+
+If you don’t set it, and $XDG_CONFIG_HOME isn’t overridden, you can add global ignores to $HOME/.config/git/ignore.
+
+Let’s see this in action. First we’ll make a brand new Git repository and add a .DS_Store file.
+
+&gt; mkdir sports &gt; cd sports &gt; git init Initialized empty Git repository in /Users/marcus/Code/sports/.git/ &gt; touch .DS_Store &gt; git status On branch main No commits yet Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) .DS_Store nothing added to commit but untracked files present (use &#34;git add&#34; to track) Ah yes, the perpetual hell but let’s try out our new trick.
+
+&gt; echo &#34;.DS_Store&#34; &gt;&gt; ~/.config/git/ignore &gt; git status On branch main No commits yet nothing to commit (create/copy files and use &#34;git add&#34; to track) Mwah, beautiful.
+

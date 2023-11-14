@@ -1,0 +1,25 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# How can I inspect a SAML request?
+01 January 0001
+
+Until recently, I never had to go near SAML with a 10 foot pole but I was recently helping out a coworker with adding SAML authentication to an Elasticsearch cluster.
+
+I had never seen one before but a SAML request looks a little like this:
+
+https://idp.example.org/SAML2/SSO/Redirect?SAMLRequest=fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3%2FA15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr%2FRbRp63K3pL5rPhYOpkVdYib%2FCon%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9%2FfCR7GorYGTWFK8pu6DknnwKL%2FWEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2%2FBK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P%2FAXv4C I took this example from Wikipedia and it’s a pretty good illustration of where the juicy part of the request probably is.
+
+A basic way to inspect this request in Python would look like the following. I don’t claim that this will work on all requests. For that, try something like python3-saml.
+
+from base64 import b64decode from urllib.parse import unquote import zlib url = &#34;fZFfa8IwFMXfBb9DyXvaJtZ1BqsURRC2Mabbw95ivc5Am3TJrXPffmmLY3%2FA15Pzuyf33On8XJXBCaxTRmeEhTEJQBdmr%2FRbRp63K3pL5rPhYOpkVdYib%2FCon%2BC9AYfDQRB4WDvRvWWksVoY6ZQTWlbgBBZik9%2FfCR7GorYGTWFK8pu6DknnwKL%2FWEetlxmR8sBHbHJDWZqOKGdsRJM0kfQAjCUJ43KX8s78ctnIz%2Blp5xpYa4dSo1fjOKGM03i8jSeCMzGevHa2%2FBK5MNo1FdgN2JMqPLmHc0b6WTmiVbsGoTf5qv66Zq2t60x0wXZ2RKydiCJXh3CWVV1CWJgqanfl0%2Bin8xutxYOvZL18NKUqPlvZR5el%2BVhYkAgZQdsA6fWVsZXE63W2itrTQ2cVaKV2CjSSqL1v9P%2FAXv4C&#34; urldecoded_url = unquote(url) b64decoded_url = b64decode(url) request = zlib.decompress(b64decoded_url, -15).decode() print(request) // &#39;&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;\r\n&lt;samlp:AuthnRequest\r\n xmlns:samlp=&#34;urn:oasis:names:tc:SAML:2.0:protocol&#34;\r\n xmlns:saml=&#34;urn:oasis:names:tc:SAML:2.0:assertion&#34;\r\n ID=&#34;aaf23196-1773-2113-474a-fe114412ab72&#34;\r\n Version=&#34;2.0&#34;\r\n IssueInstant=&#34;2004-12-05T09:21:59Z&#34;\r\n AssertionConsumerServiceIndex=&#34;0&#34;\r\n AttributeConsumingServiceIndex=&#34;0&#34;&gt;\r\n &lt;saml:Issuer&gt;https://sp.example.com/SAML2&lt;/saml:Issuer&gt;\r\n &lt;samlp:NameIDPolicy\r\n AllowCreate=&#34;true&#34;\r\n Format=&#34;urn:oasis:names:tc:SAML:2.0:nameid-format:transient&#34;/&gt;\r\n&lt;/samlp:AuthnRequest&gt;\r\n&#39; If you’re feeling a bit lazy, like I often am, you can use any of the online decoders, such as this one by PingID.
+
+If you’re dealing with sensitive credentials however, it’s best to decode it locally rather than trusting a third party.
+

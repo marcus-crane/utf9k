@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>How can I test connectivity within my Kube namespace? | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/questions/kubes-namespace-connectivity/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/questions/kubes-namespace-connectivity/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="In which I remind myself how to quickly test network connectivity within a Kubernetes namespace" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/questions/kubes-namespace-connectivity/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="How can I test connectivity within my Kube namespace?" />
+<meta property="og:description" content="In which I remind myself how to quickly test network connectivity within a Kubernetes namespace" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/questions/kubes-namespace-connectivity/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="questions" />
+
+<meta property="article:modified_time" content="2023-01-03T12:56:46+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="How can I test connectivity within my Kube namespace?"/>
+<meta name="twitter:description" content="In which I remind myself how to quickly test network connectivity within a Kubernetes namespace"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>How can I test connectivity within my Kube namespace?</h1>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>Often times, you might want to test connectivity to a container but without doing so from within the container itself. You could just into a neighbouring pod but it may not have networking tools (ie tools) or even potentially network connectively if there&rsquo;s a <a href="https://kubernetes.io/docs/concepts/services-networking/network-policies/">network policy</a> in the mix.</p>
+<p>A quick way to deploy a curl container has been shared before <a href="https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#securing-the-service">in the Kubernetes docs</a> and it looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; kubectl run curl --image<span style="color:#ff79c6">=</span>radial/busyboxplus:curl -i --tty
+</span></span><span style="display:flex;"><span>Unable to use a TTY - container curl did not allocate one
+</span></span><span style="display:flex;"><span>If you don&#39;t see a <span style="color:#8be9fd;font-style:italic">command</span> prompt, try pressing enter.
+</span></span></code></pre></div><p>I think the output looks something like that but this is a bit more involved as my work makes use of <a href="https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes">policies</a> in our cluster.</p>
+<p>Now normally I just keep a file called <code>curl-debug.yml</code> sitting around my hard drive and deploy it using <code>kubectl apply -f curl-debug.yml</code>
+but you can also deploy it inline using a hideously log container override.</p>
+<p>You may need more (or less) override fields depending on eg; if your network policy only allows pods with certain annotations or metadata to connect to what you&rsquo;re testing.</p>
+<p>An unprivileged curl pod would look something like this. Note that I&rsquo;ve removed <code>-i --rm --tty</code> as it always seems buggy to me and I much prefer to just manually run <code>kubectl exec -it curl -- sh</code> than have my terminal hanging.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; kubectl run curl --image<span style="color:#ff79c6">=</span>radial/busyboxplus:curl --overrides<span style="color:#ff79c6">=</span>&#39;<span style="color:#ff79c6">{</span> <span style="color:#f1fa8c">&#34;spec&#34;</span>: <span style="color:#ff79c6">{</span> <span style="color:#f1fa8c">&#34;securityContext&#34;</span>: <span style="color:#ff79c6">{</span> <span style="color:#f1fa8c">&#34;runAsUser&#34;</span>: 1000, <span style="color:#f1fa8c">&#34;runAsGroup&#34;</span>: 1000, <span style="color:#f1fa8c">&#34;seccompProfile&#34;</span>: <span style="color:#ff79c6">{</span> <span style="color:#f1fa8c">&#34;type&#34;</span>: <span style="color:#f1fa8c">&#34;RuntimeDefault&#34;</span> <span style="color:#ff79c6">}}</span>, <span style="color:#f1fa8c">&#34;containers&#34;</span>: <span style="color:#ff79c6">[{</span> <span style="color:#f1fa8c">&#34;name&#34;</span>: <span style="color:#f1fa8c">&#34;curl&#34;</span>, <span style="color:#f1fa8c">&#34;image&#34;</span>: <span style="color:#f1fa8c">&#34;radial/busyboxplus:curl&#34;</span>, <span style="color:#f1fa8c">&#34;command&#34;</span>: <span style="color:#ff79c6">[</span> <span style="color:#f1fa8c">&#34;/bin/sh&#34;</span>, <span style="color:#f1fa8c">&#34;-c&#34;</span>, <span style="color:#f1fa8c">&#34;--&#34;</span> <span style="color:#ff79c6">]</span>, <span style="color:#f1fa8c">&#34;args&#34;</span>: <span style="color:#ff79c6">[</span> <span style="color:#f1fa8c">&#34;while true; do sleep 30; done; &#34;</span> <span style="color:#ff79c6">]</span>, <span style="color:#f1fa8c">&#34;securityContext&#34;</span>: <span style="color:#ff79c6">{</span> <span style="color:#f1fa8c">&#34;runAsNonRoot&#34;</span>: true, <span style="color:#f1fa8c">&#34;allowPrivilegeEscalation&#34;</span>: <span style="color:#8be9fd;font-style:italic">false</span> <span style="color:#ff79c6">}}]}}</span>
+</span></span><span style="display:flex;"><span>pod/curl created
+</span></span></code></pre></div><p>and for those who don&rsquo;t love huge eyesores, here&rsquo;s the contents of the pod spec I alluded to earlier:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">apiVersion</span>: v1
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">kind</span>: Pod
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">name</span>: <span style="color:#f1fa8c">&#34;curl&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">app</span>: <span style="color:#f1fa8c">&#34;my-cool-app&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">service</span>: <span style="color:#f1fa8c">&#34;some-other-identifier&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">securityContext</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">runAsUser</span>: <span style="color:#bd93f9">1000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">runAsGroup</span>: <span style="color:#bd93f9">1000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">seccompProfile</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">type</span>: RuntimeDefault
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">containers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">name</span>: <span style="color:#f1fa8c">&#34;curl&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">image</span>: <span style="color:#f1fa8c">&#34;radial/busyboxplus:curl&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">command</span>: [ <span style="color:#f1fa8c">&#34;/bin/sh&#34;</span>, <span style="color:#f1fa8c">&#34;-c&#34;</span>, <span style="color:#f1fa8c">&#34;--&#34;</span> ]
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">args</span>: [ <span style="color:#f1fa8c">&#34;while true; do sleep 30; done;&#34;</span> ]
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">securityContext</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">runAsNonRoot</span>: <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">allowPrivilegeEscalation</span>: <span style="color:#ff79c6">false</span>
+</span></span></code></pre></div><p>Ah right, the actual point of the question. Once you have curl running, and you&rsquo;re inside the container, you can then use <code>curl</code> to test out the connectivity of things.</p>
+<p>For example, earlier today I was moving a container to a new cluster and it was using the URL that the ingress was listening to. Let&rsquo;s use <code>https://sports.example.com</code> in this case and say that the service was called <code>sports</code>.</p>
+<p>The ingress URL changed from being internally accessible to publically accessable, although behind an OAuth2 proxy of course.</p>
+<p>I noticed this change by doing the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; curl --head --location http://sports
+</span></span><span style="display:flex;"><span>HTTP/1.1 <span style="color:#bd93f9">200</span> OK
+</span></span><span style="display:flex;"><span>Server: nginx
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>Ok, it resolves the internal service perfectly fine. How about the public one?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; curl --head --location https://sports.example.com
+</span></span><span style="display:flex;"><span>HTTP/1.1 <span style="color:#bd93f9">302</span> Moved Temporarily
+</span></span><span style="display:flex;"><span>Location: https://example.com/_oauth2/start?rd<span style="color:#ff79c6">=</span>https://sports.example.com
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HTTP/1.1 <span style="color:#bd93f9">302</span> Found
+</span></span><span style="display:flex;"><span>Location: https://login.microsoftonline.com/common/oauth2/authorize?a_very_long_string
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HTTP/1.1 <span style="color:#bd93f9">200</span> OK
+</span></span><span style="display:flex;"><span>Content-Length: <span style="color:#bd93f9">186288</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">[</span>...<span style="color:#ff79c6">]</span>
+</span></span></code></pre></div><p>Now, I don&rsquo;t even have to look at the payload to infer that we probably just hit an OAuth2 login page and that&rsquo;s exactly what was happening.</p>
+<p>In the previous cluster, we were using internal links to the external OAuth proxy is never involved. Admittedly, this was rationalised as &ldquo;DNS just magically knows to resolve the request to the service right next door&rdquo; and perhaps this is true but maybe not!</p>
+<p>Anyway, a third case that you might run into is the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; curl --head --location http://something
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># the command just sits with no output forever!</span>
+</span></span></code></pre></div><p>If you check my <code>curl-debug.yaml</code>, I have specific labels that the network policy looks for. Because this curl pod is missing them, it can&rsquo;t make any requests.</p>
+<p>This could be anything from protocol (TCP/UDP), port number, whitelisted namespaces, whitelisted resources and so on. If you have this problem, either check your various log messages for reference to a required policy or check for an existing one that needs to be updated.</p>
+<p>Doing a search for &ldquo;kind: NetworkPolicy&rdquo; should help narrow down which files are relevant and/or if they even exist in the first place.</p>
+<p>Happy debugging!</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

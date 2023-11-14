@@ -1,0 +1,31 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# Conditionally setting your gitconfig
+12 August 2021
+
+Personally, I try to keep my development environment as convenient to use as possible and with the advent of BeyondCorp-style zero trust, more internal services are thankfully available without a VPN required.
+
+This makes it easy to access tooling from your mobile device and other places but it can also mean the line between work and personal blurs a little bit.
+
+A lot of my custom work-related configuration has been deprecated (utilities for wrangling VPNs and proxies) and I basically don’t maintain anything more than what was already open sourced.
+
+One last holdout has been my git configuration however, as I want to create work commits with my work email and vice versa for open source commits. It had been my impression that git had no way to support this but that hasn’t been true for some time.
+
+Thanks to conditional includes, you can dynamically switch instances of your .gitconfig on the fly.
+
+Let’s look at an example. For example purposes, let’s say that my code lives in $HOME/work and my personal code lives in $HOME/projects. You can do something like this:
+
+[user] email = user@example.com name = User signingkey = ABC123 [commit] gpgSign = true [includeIf &#34;gitdir:~/work/&#34;] path = ~/.work.gitconfig What we’re doing here is setting our default variables but upon interacting with a .git initialised repository within the ~/work folder, we instead use our work-based config.
+
+Let’s see an example of this in action:
+
+&gt; pwd /Users/person &gt; git config user.email user@example.com &gt; cd ~/work &gt; pwd /Users/person/work &gt; git config user.email business@work.com Pretty cool, huh?
+

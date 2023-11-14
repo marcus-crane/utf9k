@@ -1,0 +1,23 @@
+/***
+ *    ██╗   ██╗████████╗███████╗ █████╗ ██╗  ██╗
+ *    ██║   ██║╚══██╔══╝██╔════╝██╔══██╗██║ ██╔╝
+ *    ██║   ██║   ██║   █████╗  ╚██████║█████╔╝ 
+ *    ██║   ██║   ██║   ██╔══╝   ╚═══██║██╔═██╗ 
+ *    ╚██████╔╝   ██║   ██║      █████╔╝██║  ██╗
+ *     ╚═════╝    ╚═╝   ╚═╝      ╚════╝ ╚═╝  ╚═╝
+ *                                              
+ */
+
+# How can I try out x-callback-url commands on macOS?
+01 January 0001
+
+There is a CLI tool called xcall which seems to be the only way I’ve seen to actually interact with x-callback-url outside of other applications.
+
+It’s a bit wonky in that you have to drag xcall.app to your Applications folder and then either add that to your path or reference the cli tool inside directly.
+
+Here’s an example of it in use:
+
+&gt; /Applications/xcall.app/Contents/MacOS/xcall -url &#34;things:///version&#34; -activateApp NO { &#34;x-things-client-version&#34; : &#34;31310506&#34;, &#34;x-things-scheme-version&#34; : &#34;2&#34; } Annoyingly, this will activate the application in question, if it isn’t already open, but that is the nature of x-callback-url after all.
+
+It will take the foreground view upon opening but further invocations won’t trigger it, assuming you use -activateApp NO. If you want it to appear, such as when triggering a search, you can use -activateApp YES instead.
+

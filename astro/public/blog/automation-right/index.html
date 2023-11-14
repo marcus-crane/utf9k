@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>When automation goes horribly right | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/blog/automation-right/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/blog/automation-right/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="What do you do when a UI element disappears but the service powering it still persists?" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/blog/automation-right/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="When automation goes horribly right" />
+<meta property="og:description" content="What do you do when a UI element disappears but the service powering it still persists?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/blog/automation-right/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2018-12-03T00:00:00+13:00" />
+<meta property="article:modified_time" content="2023-04-16T21:59:14+12:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="When automation goes horribly right"/>
+<meta name="twitter:description" content="What do you do when a UI element disappears but the service powering it still persists?"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "When automation goes horribly right",
+  "datePublished": "2018-12-03T00:00:00-00:00"
+}
+</script>
+
+
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>When automation goes horribly right</h1>
+    <div id="post-meta">
+      <time datetime="2018-12-03 00:00:00 &#43;1300 NZDT">December 3, 2018</time>  · Around 3 minutes
+    </div>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>Today, I finally solved an issue that has been a pain in my ass for many months: successful automation</p>
+<p>Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a <a href="https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html">blog post</a>. There were a bunch of things from quick replies to profile-listed support hours which I&rsquo;m sure were of some use.</p>
+<p>I used the latter but I also enabled &ldquo;welcome messages&rdquo;: automated replies that would trigger when a &ldquo;customer&rdquo; opened your direct messages. In my case, I&rsquo;m not a business so it was more just some silliness to add to my profile and it confused a few people along the way.</p>
+<center>
+  <figure>
+    <img src="confusion-one.png" alt="A screenshot of a Twitter direct message. On the left is an automated message from the user. It reads &amp;ldquo;Hey there, lease a message after the beep. This has been an automated message&amp;rdquo;. On the right is a reply from a surprised user who asks how the automated message was created."  loading="lazy" />
+  </figure>
+</center><p>Over time, I&rsquo;d forget that I had it enabled and then someone else would get caught out by it a few months later</p>
+<center>
+  <figure>
+    <img src="confusion-two.png" alt="A screenshot of a Twitter direct message, many months after the one just shown previously. On the left are some messages expressing surprise at having found an automated response. On the right is the author expressing confusion, due to having forgot any such automated messages exist."  loading="lazy" />
+  </figure>
+</center><p>and then it kept going at which point it started becoming a bit of a nuisance.</p>
+<center>
+  <figure>
+    <img src="confusion-three.png" alt="A screenshot of a Twitter direct message. On the left is a user saying that the automated messaging is still intact. On the right is the author, typing in full capital letters to express disbelief, stating that they have tried to turn off this automated feature but can&amp;rsquo;t figure out how."  loading="lazy" />
+  </figure>
+</center><p>At this point, I was particularly annoyed and attempted to turn it off. I clearly remembered that there was a dashboard but do you think I could find it? That would be too easy!</p>
+<p>You can actually see a walkthrough of that very page right <a href="https://youtu.be/H-n0hRO7oLk?t=75">here</a> but good luck finding it because it was actually removed.</p>
+<p>At first I didn&rsquo;t believe it. I just figured I had forgotten how to navigate to it but every month, I&rsquo;d try once again to track it down with no luck. Eventually, I just resigned myself to the fact that some automation was running somewhere inside Twitter and I could never turn it off.</p>
+<p>Things changed. I started a new job as a Site Reliability Engineer funnily enough. I would laugh to myself whenever we discussed service availability. Inevitably, it would come up that Google has planned outages in order to keep downstream providers on their toes and not overly reliant.</p>
+<p>I wished so hard that Twitter would have a planned outage but no, apparently this microservice, or whatever it was, never failed. It was perfect and never toppled. Seriously, give those developers a pat on the back because I wanted nothing more than to take a baseball bat to the entire fucking cloud.</p>
+<p>Obviously I couldn&rsquo;t just simply call Twitter and ask them.</p>
+<p>Fast forward to today and once more, a confused friend simply messaged me &ldquo;?&rdquo;. I didn&rsquo;t even have to ask. Whatever this automation was, it never really seemed consistent either. Those who I talked to often would suddenly receive an automated response out of nowhere. Not that I could tell since it wasn&rsquo;t me talking.</p>
+<p>Finally I stumbled onto the Twitter Developer forum and… ah! <a href="https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561">I wasn&rsquo;t alone!</a> I&rsquo;m not crazy! Someone else remembers this thing!</p>
+<p>After a bit of confusion, it was cleared up that the Twitter API has a section for &ldquo;welcome messages&rdquo; which are these very same automated snippets. Using <a href="https://github.com/twitter/twurl">twurl</a>, a Twitter-modified version of curl, I could view those darn things finally.</p>
+<center>
+  <figure>
+    <img src="welcome-messages.png" alt="A screenshot of a Windows terminal. A command has been run and the image depicts the output. The command is a utility called twurl and a GET request is being made to the welcome_messages API endpoint. The output shows a list with one item which is the automated message that this post has been describing. The nightmare is finally over."  loading="lazy" />
+  </figure>
+</center><p>There they were. Sitting within the API the whole time although I&rsquo;d guess that feature was only documented as part of the recent overhaul of Twitter&rsquo;s developer APIs. Even the original URL, <a href="https://dashboard.twitter.com">dashboard.twitter.com</a>, doesn&rsquo;t resolve anymore which is all the proof I needed that I&rsquo;d been left out in the cold.</p>
+<p>With some copy paste magic, I quickly wiped the slate clean. I was free!</p>
+<p>Finally awake from that god awful nightmare.</p>
+<p>The Twitter Business Experience was definitely just that…</p>
+<p>That just leaves one last question: if it took me many months to fix this problem, what hope do those actual businesses who signed up have?</p>
+<p>I guess you get the support you pay for, huh?</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>

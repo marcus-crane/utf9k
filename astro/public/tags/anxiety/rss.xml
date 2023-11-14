@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/anxiety/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Thu, 15 Feb 2018 00:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/anxiety/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Day Xero</title>
+      <link>https://utf9k.net/blog/day-xero/</link>
+      <description>Thoughts upon entering my first proper job in the industry</description>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/day-xero/</guid>
+      <content type="html">&lt;p&gt;Technically it&amp;rsquo;s Day 1 of my new job, a Graduate Site Reliability Engineer at &lt;a href=&#34;https://www.xero.com/nz/&#34;&gt;Xero&lt;/a&gt; but it hasn&amp;rsquo;t officially started since I&amp;rsquo;m still on my way to the airport.&lt;/p&gt;
+&lt;p&gt;I told myself that when I finally got my first full time development position, I&amp;rsquo;d write a big post mortem about how long it took, how many times I was rejected and all that but since I haven&amp;rsquo;t (yet), this is my offering to the Content Overlords.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t even know if I actually slept last night because it felt like most of it was like &amp;ldquo;Oh no, what have I actually learnt over the last year&amp;rdquo; and other rude things from that pesky doubtful voice we all have.&lt;/p&gt;
+&lt;p&gt;Excuse me, you silly voice, I&amp;rsquo;ll have you know that I&amp;rsquo;ve used and/or fiddled with ahem&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docker.com/&#34;&gt;doc&lt;/a&gt;hi&lt;a href=&#34;https://flask.palletsprojects.com/en/2.0.x/&#34;&gt;ask&lt;/a&gt;ydd4h&lt;a href=&#34;https://www.python.org/&#34;&gt;py&lt;/a&gt;&lt;a href=&#34;https://www.djangoproject.com/&#34;&gt;dja&lt;/a&gt;22hf&lt;a href=&#34;https://nodejs.org/en/&#34;&gt;nod&lt;/a&gt;j2ve&lt;a href=&#34;https://www.npmjs.com/&#34;&gt;n&lt;/a&gt;a43&lt;a href=&#34;https://reactjs.org/&#34;&gt;rea&lt;/a&gt;f&lt;a href=&#34;https://webpack.js.org/&#34;&gt;we&lt;/a&gt;tex&lt;a href=&#34;https://babeljs.io/&#34;&gt;abe&lt;/a&gt;gdd0r g&lt;a href=&#34;https://github.com/neovim/neovim&#34;&gt;neov&lt;/a&gt;1fuh&lt;a href=&#34;https://github.com/&#34;&gt;ith&lt;/a&gt;u&lt;a href=&#34;https://github.com/lepture/mistune&#34;&gt;ist&lt;/a&gt;fh&lt;a href=&#34;https://www.archlinux.org/&#34;&gt;rc&lt;/a&gt;8gzvf&lt;a href=&#34;https://www.gnu.org/software/stow/&#34;&gt;tow&lt;/a&gt;fi&lt;a href=&#34;https://www.mediawiki.org/wiki/MediaWiki&#34;&gt;med&lt;/a&gt;uwh&lt;a href=&#34;https://www.mediawiki.org/wiki/Extension:Tabber&#34;&gt;tab&lt;/a&gt;f2&lt;a href=&#34;https://github.com/marcus-crane/dotfiles&#34;&gt;do&lt;/a&gt;fq&lt;a href=&#34;https://github.com/tmux/tmux&#34;&gt;tmu&lt;/a&gt;d&lt;a href=&#34;https://www.neomutt.org/&#34;&gt;mu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and let me tell you, MediaWiki is something… special alright but it&amp;rsquo;s solid!&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d be silly of course to think that somehow knowing a bunch of frameworks and languages will somehow mean I&amp;rsquo;m set for life because that&amp;rsquo;s nonsense talk. It&amp;rsquo;s all about knowing picking the right tool for the right job, y&amp;rsquo;know?&lt;/p&gt;
+&lt;p&gt;One of the things I&amp;rsquo;d like to do more this year is reading more about actual software stories. I started reading &lt;a href=&#34;https://en.wikipedia.org/wiki/Dreaming_in_Code&#34;&gt;Dreaming in Code&lt;/a&gt; earlier this year which seems to be a &amp;ldquo;what not to do&amp;rdquo; manual.&lt;/p&gt;
+&lt;p&gt;The author, Scott Rosenberg often veers so far into tangents that half the book feels more like a history lesson than development but that&amp;rsquo;s good! Software won&amp;rsquo;t save you, or the planet, on its own. You gotta focus on the people behind it and getting them working together as a proper team.&lt;/p&gt;
+&lt;p&gt;This post isn&amp;rsquo;t actually about anything as you can tell. It&amp;rsquo;s the &lt;a href=&#34;https://en.wikipedia.org/wiki/Seinfeld&#34;&gt;Seinfeld&lt;/a&gt; of posts. Well, that&amp;rsquo;s not true since Seinfeld isn&amp;rsquo;t actually about nothing, it&amp;rsquo;s just a show without drama. It&amp;rsquo;s supposed to just be regular life because your average person doesn&amp;rsquo;t live out &lt;a href=&#34;https://en.wikipedia.org/wiki/Sex_and_the_City&#34;&gt;Sex in the City&lt;/a&gt; on a daily basis. I&amp;rsquo;ve never actually seen that show though, it&amp;rsquo;s just used as a punchline a lot.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure if I look back at today, I&amp;rsquo;ll wonder what I was even worried about. If you think about friends or coworkers, do you even really remember meeting them? It&amp;rsquo;s like as soon as you properly know someone, you just kinda forget any awkward moments before your first interaction. I suppose it&amp;rsquo;s like that with jobs. You just kinda turn up one day and, assuming you try your best, you just kinda slot in nicely as if you&amp;rsquo;d been there the whole time.&lt;/p&gt;
+&lt;p&gt;Anyway, I better deploy this thing before my taxi gets here. It&amp;rsquo;s still kinda crazy to me that I can just give away the &lt;a href=&#34;https://github.com/marcus-crane/site/blob/95ae742bbf33662f4dd4cf284e463d0f9320c8d1/site/posts/blog/2018/2018-02-12-day-xero.md&#34;&gt;actual post file&lt;/a&gt; you&amp;rsquo;re reading with a few entries into a terminal. Yes, I had to manually make that link because this post even in the repo yet! That&amp;rsquo;s like some kinda preemptive sharing, whoaaa mannnnn.&lt;/p&gt;
+&lt;p&gt;As someone who learnt piece by piece, pouring a bunch of hours into Right Click -&amp;gt; View Page Source, it&amp;rsquo;s nice to give my own stuff back. I can&amp;rsquo;t remember who said it or when but someone once said something along the lines of &amp;ldquo;I don&amp;rsquo;t write code, I merely borrow it.&amp;rdquo; Their point wasn&amp;rsquo;t that they spend all day on Stack Overflow but rather that none of their ideas are truly original. Nothing is original because it&amp;rsquo;s all inspired by things that came before.&lt;/p&gt;
+&lt;p&gt;Ok, ok, my time is actually almost up and while I&amp;rsquo;m a bit freaked out that I&amp;rsquo;ll be diving into my first full time software job after years of being a hobbyist, there&amp;rsquo;s one thing that I try to remind myself. I might not truly know what I&amp;rsquo;m doing but neither does anyone else.&lt;/p&gt;
+&lt;p&gt;As someone else once told me:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Adults are just kids who got older&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

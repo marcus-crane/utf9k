@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/datadog/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Mon, 08 Aug 2022 19:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/datadog/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sampling all the way down</title>
+      <link>https://utf9k.net/blog/sampling-all-the-way-down/</link>
+      <description>In which we take a brief tour in all the ways that metrics may not accurately capture reality</description>
+      <pubDate>Mon, 08 Aug 2022 19:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/sampling-all-the-way-down/</guid>
+      <content type="html">&lt;p&gt;Recently, I was chatting with a coworker about the accuracy of tracing. In particular, we were discussing &lt;a href=&#34;https://docs.datadoghq.com/tracing/&#34;&gt;Datadog APM&lt;/a&gt; but the same discussion probably applies equally to &lt;a href=&#34;https://opentelemetry.io/&#34;&gt;OpenTelemetry&lt;/a&gt; as well as other SaaS provider implementations.&lt;/p&gt;
+&lt;p&gt;To be clear, when I say accuracy here, I don&amp;rsquo;t mean the accuracy of what each trace is presenting. The overall picture is more than accurate enough but I would argue that it will never 100% reflect reality, nor is that necessarily something valuable to obtain.&lt;/p&gt;
+&lt;p&gt;I thought it might be interesting, both for my own future reference but also just as a general discussion to go through some of the various ways that tracing may not reflect reality in its entirety.&lt;/p&gt;
+&lt;img src=&#34;https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/apm_lifecycle_0.c5017c20b222d73a29b5a1a223f83eb4.png?auto=format&#34; alt=&#34;A diagram showing various parts of the Datadog ingestion pipeline. The screenshot is just meant to reflect the sprawl of different bits involved in the pipeline. The actual elements of the pipeline itself aren&amp;amp;rsquo;t so important for this image.&#34;  /&gt;
+&lt;h2 id=&#34;the-outer-wall&#34;&gt;The outer wall&lt;/h2&gt;&lt;p&gt;First of all, there are surely some portion of requests that will never reach your servers in the first place.&lt;/p&gt;
+&lt;p&gt;There are probably not a lot in accurate but you might imagine various scenarios like someone attempting to visit your website only for their ISP&amp;rsquo;s DNS server to throw a fit, or someone browsing on a train only for their connection to get temporarily blackholed as they pass through a concrete tunnel.&lt;/p&gt;
+&lt;p&gt;These requests won&amp;rsquo;t even reach you so they won&amp;rsquo;t even show up in your tracing.&lt;/p&gt;
+
+&lt;h2 id=&#34;application-sampling&#34;&gt;Application sampling&lt;/h2&gt;&lt;img src=&#34;apps.jpg&#34; alt=&#34;A version of the Datadog ingestion pipeline, with a section titled Your instrumented apps being selected. It reflects the part of the pipeline we are going to discuss in this section.&#34;  /&gt;&lt;p&gt;So we&amp;rsquo;ve got requests hitting our application so we capture 100% of those requests as traces and life is easy right?&lt;/p&gt;
+&lt;p&gt;If only it were so easy.&lt;/p&gt;
+&lt;p&gt;By default, your service will save &lt;a href=&#34;https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_mechanisms/?tab=go#in-tracing-libraries-user-defined-rules&#34;&gt;100 traces per second&lt;/a&gt; unless you explicitly set an override.&lt;/p&gt;
+&lt;p&gt;Datadog does recommend setting a sample rate of 100%, as you&amp;rsquo;re only charged for traces indexed and retained beyond the initial 15 minute ingestion window.&lt;/p&gt;
+&lt;p&gt;You may also have cases where code within your application could be &lt;a href=&#34;https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_mechanisms/?tab=go#force-keep-and-drop&#34;&gt;explicitly causing traces to be discarded&lt;/a&gt; if they&amp;rsquo;re not useful. The inverse is true with retaining specific traces as well.&lt;/p&gt;
+&lt;p&gt;The above also assumes that your application is configured properly as well to ensure those traces aren&amp;rsquo;t being emitted into a black hole.&lt;/p&gt;
+
+&lt;h2 id=&#34;agent-sampling&#34;&gt;Agent sampling&lt;/h2&gt;&lt;img src=&#34;apps.jpg&#34; alt=&#34;The same Datadog ingestion pipeline shown in the previous image with no changes.&#34;  /&gt;&lt;p&gt;Now we go a level high to the process that receives all of your traces.&lt;/p&gt;
+&lt;p&gt;It has its &lt;a href=&#34;https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_mechanisms/?tab=go#in-the-agent&#34;&gt;own sampling&lt;/a&gt; which will only retain ~10 traces/second per agent instance. It&amp;rsquo;s worth noting that this is overridden by setting your application sample rate explicitly but if you haven&amp;rsquo;t, you&amp;rsquo;ll be seeing a portion of reality.&lt;/p&gt;
+&lt;p&gt;You might also get rate limited, causing traces to probably be discarded, if you have &lt;a href=&#34;https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1152&#34;&gt;too many services connecting to a single agent&lt;/a&gt;, &lt;a href=&#34;https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1082&#34;&gt;your agent is using too much memory&lt;/a&gt; or &lt;a href=&#34;https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1091&#34;&gt;your agent is using too much CPU&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_traffic_breakdown.a0e421f3503064b7d03f1c3683a67fc4.png?auto=format&#34; alt=&#34;A screenshot of the Datadog service ingestion screen showing a service that has &amp;amp;lt;0.1% of traces sampled due to agent CPU or RAM usage&#34;  /&gt;&lt;p&gt;On top of all this, there&amp;rsquo;s further sampling beyond the &amp;ldquo;10 traces/second&amp;rdquo; which is a &lt;a href=&#34;https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits/#maximum-events-per-second-limit&#34;&gt;max of 200 trace events per second&lt;/a&gt;. What is a trace event versus a trace you ask? I have no idea!&lt;/p&gt;
+&lt;p&gt;You should probably also disable the &lt;a href=&#34;https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1068&#34;&gt;error sampler&lt;/a&gt; so it doesn&amp;rsquo;t impact your picture of reality too for maximum accuracy.&lt;/p&gt;
+&lt;p&gt;Once again, this too assumes that all of your agent instances are properly configured and aren&amp;rsquo;t dropping traces off a cliff or else you&amp;rsquo;ll be missing a portion of reality.&lt;/p&gt;
+
+&lt;h2 id=&#34;ingestion-sampling&#34;&gt;Ingestion Sampling&lt;/h2&gt;&lt;img src=&#34;https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/ingestion_sampling_rules.664739c275df2d563b782552d467422e.png?auto=format&#34; alt=&#34;A version of the Datadog ingestion pipeline, with a section titled Ingestion sampling rules being selected. It reflects the part of the pipeline we are going to discuss in this section.&#34;  /&gt;&lt;p&gt;Oh, you thought we were done? We&amp;rsquo;re just getting started because we&amp;rsquo;ve got more things to toggle.&lt;/p&gt;
+&lt;p&gt;So you&amp;rsquo;ve configured your application and agent perfectly but you&amp;rsquo;re still not perfectly reflecting reality. &lt;a href=&#34;https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_controls/#service-ingestion-summary&#34;&gt;Did you know upstream services can decide whether traces involving your service are discarded or retained?&lt;/a&gt;.&lt;/p&gt;
+&lt;img src=&#34;https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_ingestion_summary.fd43c5c59b2c9273cd84e8467b958194.png?auto=format&#34; alt=&#34;A screenshot of the Service Ingestion Summary screen showing a service. Visible to the right side are all of the upstream services that have influence on the displayed services trace sampling decisions.&#34;  /&gt;&lt;p&gt;You should probably go talk to your coworkers who maintain upstream services and argue the case for never sampling a single trace. Depending on who controls the credit card, it may not be quite as compelling when considering the huge bill that may be involved.&lt;/p&gt;
+
+&lt;h2 id=&#34;retention-filters&#34;&gt;Retention Filters&lt;/h2&gt;&lt;img src=&#34;https://datadog-docs.imgix.net/images/tracing/apm_lifecycle/retention_filters.5e6f2b4eedbe790caf41a7e090048deb.png?auto=format&#34; alt=&#34;A version of the Datadog ingestion pipeline, with a section titled Retention filters being selected. It reflects the part of the pipeline we are going to discuss in this section.&#34;  /&gt;&lt;p&gt;Ok, we&amp;rsquo;re nearly through the gauntlet because all we&amp;rsquo;ve got left are retention filters.&lt;/p&gt;
+&lt;p&gt;So, let&amp;rsquo;s say that your application sends 100% of traces to Datadog and never gets sampled along the way. That just means your traces are 100% visible for a mere 15 minutes before more sampling kicks in.&lt;/p&gt;
+&lt;p&gt;Retention filters are the final boss here, where by default, Datadog maintains all errors (across a diverse range of errors codes) and a handful of successful traces based on their latencies, status codes and so on.&lt;/p&gt;
+&lt;p&gt;Now you could simply mark all traces as being retained beyond that 15 minute window but I hope you&amp;rsquo;re ready to re-mortgage your house to afford it because indexing ain&amp;rsquo;t cheap, beyond the defaults chosen by Datadog themselves.&lt;/p&gt;
+&lt;p&gt;You also need to ensure that no one else has set up any retention filters that might sample your application in any way so fire up those access control policies.&lt;/p&gt;
+&lt;p&gt;Assuming you&amp;rsquo;re a rich lister however, you&amp;rsquo;ve made it to the end&amp;hellip; right? All is right with the world and we have a perfectly perfect view of the world.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-secret-hidden-boss&#34;&gt;The Secret Hidden Boss&lt;/h2&gt;&lt;p&gt;Even if you have every single trace ever generated, perfection is still out of reach because the insights into our traces themselves may be skewed, short of our combing through all of the data outselves which is likely not possible at scale.&lt;/p&gt;
+&lt;p&gt;To understand more, we need to briefly talk about &lt;a href=&#34;https://arxiv.org/pdf/1908.10693.pdf&#34;&gt;DDSketch&lt;/a&gt; which is Datadog&amp;rsquo;s &amp;ldquo;sketching&amp;rdquo; algorithm.&lt;/p&gt;
+&lt;p&gt;I hadn&amp;rsquo;t heard of the term before but just as a sketch in drawing is an approximation of a fleshed out drawing, a sketch in computer science is an approximation of some set of data.&lt;/p&gt;
+&lt;p&gt;The sketch is not a full accurate set of all existing data points but as an approximation, we can infer things that are roughly true about the source data.&lt;/p&gt;
+&lt;p&gt;For example, let&amp;rsquo;s say our true data set contains 1 million values and the data set is effectively a random sampling.&lt;/p&gt;
+&lt;p&gt;We can take a sample of 1000 values from our source data set and in most cases, the median value within our sample is likely to be about the same as it is in our source data set.&lt;/p&gt;
+&lt;p&gt;While it may not be 100% precise, depending on our use case, it&amp;rsquo;s probably good enough without the overhead of having to process the full dataset.&lt;/p&gt;
+&lt;p&gt;Where this doesn&amp;rsquo;t work however is with quantiles, or percentiles.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s say we wanted to find the maximum value in our 1 million data points. You could just iterate through all of them and keep track of the highest value you&amp;rsquo;ve seen. There&amp;rsquo;s no need to keep every data point in memory, just the current value you&amp;rsquo;re looking at and the highest value you&amp;rsquo;ve seen so far.&lt;/p&gt;
+&lt;p&gt;What about finding the 99% percentile? Well, we need to retain all of the values we&amp;rsquo;ve seen so far in order to continually compare values we&amp;rsquo;re seeing against our 1% grouping and further comparing that to our full dataset to ensure that we&amp;rsquo;re adding and removing the right values.&lt;/p&gt;
+&lt;p&gt;Such a thing would get quite expensive which is where sketching comes in and it&amp;rsquo;s what Datadog does to your data.&lt;/p&gt;
+&lt;p&gt;Rather than perfectly calculating percentiles down to the very last decimal place, traces can be &amp;ldquo;bucketed&amp;rdquo; into rounded that are near enough to capture what they represent but we only need to store the bucket values and not every single value that is allocated to a bucket.&lt;/p&gt;
+&lt;img src=&#34;https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png?auto=format&amp;amp;fit=max&amp;amp;w=847&amp;amp;dpr=2&#34; alt=&#34;A screenshot showing latency buckets. There are three labelled 100 milliseconds, 102 milliseconds and 104 milliseconds. Traces that a few decimal places outside of each bucket are sampled into their closest buckets. For example, a trace that took 104.4 milliseconds is sampled into the 104 millisecond bucket.&#34;  /&gt;&lt;p&gt;That is effectively the sketch in question and you can read more about the entire process &lt;a href=&#34;https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/&#34;&gt;in this blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Suffice to say, even if you did manage to capture all traces, the insights you&amp;rsquo;re getting from them have likely been skewed from reality ever so slightly through the sketching process so you&amp;rsquo;ll never win unless you handle each trace yourself.&lt;/p&gt;
+
+&lt;h2 id=&#34;it-doesnt-matter-in-the-end&#34;&gt;It doesn&amp;rsquo;t matter in the end&lt;/h2&gt;&lt;p&gt;More than anything, this post is partly a technical guide but mostly fun exercise with the end of goal of saying &amp;ldquo;Who cares&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a big fan of the short story &lt;a href=&#34;https://en.wikipedia.org/wiki/On_Exactitude_in_Science&#34;&gt;On Exactitude in Science&lt;/a&gt;. It&amp;rsquo;s a short story about a kingdom who become so good at map making that they make the most accurate map.&lt;/p&gt;
+&lt;p&gt;The problem is that it&amp;rsquo;s 1:1 scale with the kingdom itself in order to capture it in perfect detail. Such a map may be precise but it&amp;rsquo;s so detailed and unwieldy as to be useless.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a big advocate of the same idea in software.&lt;/p&gt;
+&lt;p&gt;Partly so I can be lazy but also because beyond a certain point, true accuracy doesn&amp;rsquo;t really matter.&lt;/p&gt;
+&lt;p&gt;What you want is just enough detail to know that things are happening but further detail is just diminshing returns.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s say that you want to reflect rate limits for a particular customer.&lt;/p&gt;
+&lt;p&gt;Does it really matter whether they&amp;rsquo;re being rate limited 5 times per day or 1000 times per day?&lt;/p&gt;
+&lt;p&gt;Beyond a certain point, the damage is already done and they&amp;rsquo;re having a bad time so knowing the true extent doesn&amp;rsquo;t really change the facts of the situation.&lt;/p&gt;
+&lt;p&gt;It can be interesting to know for sure and you might want to know but there is probably no such thing as a truly accurate value, whether it&amp;rsquo;s tracing, logs or something else.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re probably better off just getting something good enough and then having a nap or investing that time into other improvements.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

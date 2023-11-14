@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/existential/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Fri, 24 Sep 2021 21:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/existential/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who is software even for?</title>
+      <link>https://utf9k.net/blog/who-is-software-even-for/</link>
+      <description>Maybe it&#39;s for you? Maybe it&#39;s for me? Maybe it isn&#39;t for any of us!</description>
+      <pubDate>Fri, 24 Sep 2021 21:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/who-is-software-even-for/</guid>
+      <content type="html">&lt;p&gt;This post is very much written spur of the moment, presumably with the idea that it will help contribute to treating my blog as a &lt;a href=&#34;https://utf9k.net/blog/zettelkasten-blog-a-good-idea/&#34;&gt;zettlekasten&lt;/a&gt; of ideas to think more about in future.&lt;/p&gt;
+&lt;p&gt;I started reading &lt;a href=&#34;https://us.macmillan.com/books/9780374159122&#34;&gt;Four Thousand Weeks: Time Management for Mortals&lt;/a&gt; earlier today and I&amp;rsquo;m enjoying it quite a bit.&lt;/p&gt;
+&lt;p&gt;Despite the name, it&amp;rsquo;s very much not a self help book and instead is about accepting the inevitability of death. If you can manage that, you&amp;rsquo;ll come to truly understand that this idea that you can do, or manage everything on your plate is a big lie.&lt;/p&gt;
+&lt;p&gt;On an entirely unrelated note, I went to get a kebab just before and I was thinking about how most software doesn&amp;rsquo;t really feel designed for fallible humans.&lt;/p&gt;
+&lt;p&gt;A particular scenario is that I quite like using &lt;a href=&#34;https://feedbin.com/&#34;&gt;Feedbin&lt;/a&gt; as my RSS reader but if I go for an extended period of time without actually reading anything, it piles up until I have something like a thousand unread items.&lt;/p&gt;
+&lt;p&gt;This, of course, is a false idea. I am not going to read 1000 items and a lot of them are small snippets such as Hacker News comment feeds but perhaps that&amp;rsquo;s besides the point.&lt;/p&gt;
+&lt;p&gt;What I really wonder is why there isn&amp;rsquo;t a button to say &amp;ldquo;I was sick for 2 weeks and please just surface my most prioritised feeds&amp;rdquo;. In the absence of such a thing, I&amp;rsquo;m left to curse myself for not being a fallible robot and if only I had put in the work, in periodic chunks, each day.&lt;/p&gt;
+&lt;p&gt;Going even further off this idea, it does kind of feel like most software is not really designed for humans. Particularly, mere mortals who get sick or are distracted easily.&lt;/p&gt;
+&lt;p&gt;With that, systems that start out being able to ease stress can become much more daunting when you forget the underlying concepts that back them. Worse still, you might have valuable information &amp;ldquo;stuck&amp;rdquo; in them so you&amp;rsquo;re trapped at the mercy of remastering a system once again.&lt;/p&gt;
+&lt;p&gt;In my case, it&amp;rsquo;s wading through the depths of a messy &amp;ldquo;task management&amp;rdquo; system only to throw my hands up in the air. It&amp;rsquo;s much easier to start with a fresh new competitor that will totally not get messy and I will check in every single day to keep things curated I swear!&lt;/p&gt;
+&lt;p&gt;Either further still, if this feeling is even somewhat true, it raises the question then: &amp;ldquo;Who is software even for?&amp;rdquo; because it can often feel like it&amp;rsquo;s built for idealised humans, if not gods, who remember every CLI flag and have the energy to parse acres of manpages. Anything less feels like treating water because you can&amp;rsquo;t express your will through your fingers in any redeeming fashion.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m being a bit ridiculous and speaking in broad strokes here but I do feel this way from time to time.&lt;/p&gt;
+&lt;p&gt;If we pretend that it is true for a bit, just think how many billions, no, trillions have been wasted on lopsided shit that isn&amp;rsquo;t really enhancing anything for anyone. Maybe for bursts of time but in the grand scheme of things? Not really.&lt;/p&gt;
+&lt;p&gt;That was about the extent of my soul searching before I made it back home anyway. I still need to eat my dinner which is probably getting cold by now.&lt;/p&gt;
+&lt;p&gt;To wrap up, Four Thousand Weeks would have you know that the answer is also not dedicating your life to endless vacation either because that too is simply just another form of trying to feel endlessly productive by another means.&lt;/p&gt;
+&lt;p&gt;Sitting down and just doing what&amp;rsquo;s enjoyable, because you&amp;rsquo;re lucky enough to have time at all is about the best anyone can strive towards.&lt;/p&gt;
+&lt;p&gt;In my case, that should really mean touching less software and being Less Online but adjusting yourself to truly believe it in your bones is the hardest part of all, especially with the addictive nature of the internet.&lt;/p&gt;
+&lt;p&gt;I think expressing it in writing helps and I can always come back here to remind myself.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/productivity/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Fri, 24 Sep 2021 21:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/productivity/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who is software even for?</title>
+      <link>https://utf9k.net/blog/who-is-software-even-for/</link>
+      <description>Maybe it&#39;s for you? Maybe it&#39;s for me? Maybe it isn&#39;t for any of us!</description>
+      <pubDate>Fri, 24 Sep 2021 21:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/who-is-software-even-for/</guid>
+      <content type="html">&lt;p&gt;This post is very much written spur of the moment, presumably with the idea that it will help contribute to treating my blog as a &lt;a href=&#34;https://utf9k.net/blog/zettelkasten-blog-a-good-idea/&#34;&gt;zettlekasten&lt;/a&gt; of ideas to think more about in future.&lt;/p&gt;
+&lt;p&gt;I started reading &lt;a href=&#34;https://us.macmillan.com/books/9780374159122&#34;&gt;Four Thousand Weeks: Time Management for Mortals&lt;/a&gt; earlier today and I&amp;rsquo;m enjoying it quite a bit.&lt;/p&gt;
+&lt;p&gt;Despite the name, it&amp;rsquo;s very much not a self help book and instead is about accepting the inevitability of death. If you can manage that, you&amp;rsquo;ll come to truly understand that this idea that you can do, or manage everything on your plate is a big lie.&lt;/p&gt;
+&lt;p&gt;On an entirely unrelated note, I went to get a kebab just before and I was thinking about how most software doesn&amp;rsquo;t really feel designed for fallible humans.&lt;/p&gt;
+&lt;p&gt;A particular scenario is that I quite like using &lt;a href=&#34;https://feedbin.com/&#34;&gt;Feedbin&lt;/a&gt; as my RSS reader but if I go for an extended period of time without actually reading anything, it piles up until I have something like a thousand unread items.&lt;/p&gt;
+&lt;p&gt;This, of course, is a false idea. I am not going to read 1000 items and a lot of them are small snippets such as Hacker News comment feeds but perhaps that&amp;rsquo;s besides the point.&lt;/p&gt;
+&lt;p&gt;What I really wonder is why there isn&amp;rsquo;t a button to say &amp;ldquo;I was sick for 2 weeks and please just surface my most prioritised feeds&amp;rdquo;. In the absence of such a thing, I&amp;rsquo;m left to curse myself for not being a fallible robot and if only I had put in the work, in periodic chunks, each day.&lt;/p&gt;
+&lt;p&gt;Going even further off this idea, it does kind of feel like most software is not really designed for humans. Particularly, mere mortals who get sick or are distracted easily.&lt;/p&gt;
+&lt;p&gt;With that, systems that start out being able to ease stress can become much more daunting when you forget the underlying concepts that back them. Worse still, you might have valuable information &amp;ldquo;stuck&amp;rdquo; in them so you&amp;rsquo;re trapped at the mercy of remastering a system once again.&lt;/p&gt;
+&lt;p&gt;In my case, it&amp;rsquo;s wading through the depths of a messy &amp;ldquo;task management&amp;rdquo; system only to throw my hands up in the air. It&amp;rsquo;s much easier to start with a fresh new competitor that will totally not get messy and I will check in every single day to keep things curated I swear!&lt;/p&gt;
+&lt;p&gt;Either further still, if this feeling is even somewhat true, it raises the question then: &amp;ldquo;Who is software even for?&amp;rdquo; because it can often feel like it&amp;rsquo;s built for idealised humans, if not gods, who remember every CLI flag and have the energy to parse acres of manpages. Anything less feels like treating water because you can&amp;rsquo;t express your will through your fingers in any redeeming fashion.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m being a bit ridiculous and speaking in broad strokes here but I do feel this way from time to time.&lt;/p&gt;
+&lt;p&gt;If we pretend that it is true for a bit, just think how many billions, no, trillions have been wasted on lopsided shit that isn&amp;rsquo;t really enhancing anything for anyone. Maybe for bursts of time but in the grand scheme of things? Not really.&lt;/p&gt;
+&lt;p&gt;That was about the extent of my soul searching before I made it back home anyway. I still need to eat my dinner which is probably getting cold by now.&lt;/p&gt;
+&lt;p&gt;To wrap up, Four Thousand Weeks would have you know that the answer is also not dedicating your life to endless vacation either because that too is simply just another form of trying to feel endlessly productive by another means.&lt;/p&gt;
+&lt;p&gt;Sitting down and just doing what&amp;rsquo;s enjoyable, because you&amp;rsquo;re lucky enough to have time at all is about the best anyone can strive towards.&lt;/p&gt;
+&lt;p&gt;In my case, that should really mean touching less software and being Less Online but adjusting yourself to truly believe it in your bones is the hardest part of all, especially with the addictive nature of the internet.&lt;/p&gt;
+&lt;p&gt;I think expressing it in writing helps and I can always come back here to remind myself.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Time Dilation</title>
+      <link>https://utf9k.net/blog/time-dilation/</link>
+      <description>Historically, I am often late to a bunch of things even though I plan ahead some of the time</description>
+      <pubDate>Sun, 04 Jul 2021 22:53:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/time-dilation/</guid>
+      <content type="html">&lt;p&gt;A more accurate title would probably be something like &amp;ldquo;Time Inflation&amp;rdquo; but I think &amp;ldquo;Time Dilation&amp;rdquo; sounds cooler.&lt;/p&gt;
+&lt;p&gt;Whenever I&amp;rsquo;m planning a trip anywhere, often just across town, I tend to tack on an extra portion of time. Usually just 10 or 15 minutes as a bit of a buffer and depending on the mode of transport, it tends to get eaten up.&lt;/p&gt;
+&lt;p&gt;The trouble is that I don&amp;rsquo;t really go back and re-evaluate how long it takes to get places. The next time I plan a trip, I tack on an extra portion of time. Usually just 10 or 15 minutes and&amp;hellip; hold on a minute, didn&amp;rsquo;t we already account for it?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m pretty sure there are some things that I just don&amp;rsquo;t even bother doing at all because I&amp;rsquo;ve built this big time sink out of it when in reality, it won&amp;rsquo;t take very long at all.&lt;/p&gt;
+&lt;p&gt;I remember taking the bus somewhere not that long ago and I was surprised that it only took a few minutes.&lt;/p&gt;
+&lt;p&gt;Well, yes, buses like most vehicles are quite fast on land but I guess my perception of time got a bit mangled somewhere along the track.&lt;/p&gt;
+&lt;p&gt;The irony of this of course, is that I waste large swathes of time checking the same five websites for updates, which I didn&amp;rsquo;t really class as procrastination until recently.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s not really a moral to the story or anything like that but re-evaluating what you think you know from time to time can never hurt.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Let your streaks end naturally</title>
+      <link>https://utf9k.net/blog/let-your-streaks-end-naturally/</link>
+      <description>As it says on the tin, all good things must come to an end</description>
+      <pubDate>Thu, 03 Jun 2021 12:50:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/let-your-streaks-end-naturally/</guid>
+      <content type="html">&lt;p&gt;Generally speaking, it&amp;rsquo;s always a good idea to let your streaks end when the time is right.&lt;/p&gt;
+&lt;p&gt;For instance, I took up journalling just before the start of October of 2020 and had an unbroken streak until the middle of December 2020. I picked it up again in the middle of January and it ran all the way until the start of June when I had a particularly troubling &lt;a href=&#34;https://utf9k.net/blog/ride-the-curve/&#34;&gt;life event&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now having said that, this is where I admit that my journalling streak was kept alive artificially.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t actually fill out each entry on each given day but instead, I would forget about it and backfill days (or even a week!) at a time. At that point, it should have become clear that the act of journalling, in and of itself, wasn&amp;rsquo;t compelling enough to keep me interested.&lt;/p&gt;
+&lt;p&gt;As I sit back and think about it, it&amp;rsquo;s probably fair to say that I was more invested in the aesthetics of keeping a journal more than the journal itself.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dayoneapp.com/&#34;&gt;Day One&lt;/a&gt; has a cool feature for &lt;a href=&#34;https://help.dayoneapp.com/en/articles/769055-book-printing&#34;&gt;printing books&lt;/a&gt; and the idea of having a coffee table book&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; was very cool but these are all side effects of journaling.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure it&amp;rsquo;s ok to pursue a habit as a means to the actual thing you want to achieve but just as long as you&amp;rsquo;re aware of the potential pitfalls.&lt;/p&gt;
+&lt;p&gt;On any given week where I failed to complete an entry, the days between the streak and the present built into little mounds of guilt. Nothing bad mind you but just enough to think &amp;ldquo;I need to backfill this entire week&amp;rdquo; to keep the streak going. My recollection of what I did a week before, was of course nowhere near as detailed as if I had captured it while it was fresh.&lt;/p&gt;
+&lt;p&gt;Most importantly, while the streak icon was burning brightly, I was well aware in my mind that the flame had gone out long ago.&lt;/p&gt;
+&lt;p&gt;When I resolved to only fill in a journal entry if I naturally felt compelled to, it was actually quite freeing. I didn&amp;rsquo;t have to think about the artificial guilt that comes with completionism&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Funnily enough, some things I haven&amp;rsquo;t decided to explicitly grow a streak in, such as reviewing &lt;a href=&#34;https://readwise.io&#34;&gt;Readwise&lt;/a&gt; bookmarks, have since developed into their own streaks naturally.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m sure these too will end too when the time is right and that&amp;rsquo;s completely fine.&lt;/p&gt;
+&lt;p&gt;Perhaps you could say the same of relationships too.&lt;/p&gt;
+&lt;!--- Written with A.I in mind --&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Not that I actually have a coffee table, or lounge, mind you!&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;A riduculous idea of course, since I&amp;rsquo;m missing journal entries ranging from my birth to my 25th birthday. There&amp;rsquo;s literally no way anyone can ever &amp;ldquo;complete&amp;rdquo; a journal or backfill the pages.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Emacs probably isn&#39;t right for me</title>
+      <link>https://utf9k.net/blog/emacs-probably-isnt-right-for-me/</link>
+      <description>My confessions as a tooling alcoholic</description>
+      <pubDate>Sat, 13 Feb 2021 17:41:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/emacs-probably-isnt-right-for-me/</guid>
+      <content type="html">&lt;p&gt;I&amp;rsquo;m not someone who tends to wear my text editor on my sleeve, probably because I don&amp;rsquo;t stick to just one anyway, but I&amp;rsquo;ve probably mentioned Emacs more than most in the last year or two.&lt;/p&gt;
+&lt;p&gt;I started out using it as a little bit of a joke more than anything and found myself pleasantly surprised.&lt;/p&gt;
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
+
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;h3 id=&#34;org-mode&#34;&gt;org-mode&lt;/h3&gt;&lt;p&gt;&lt;code&gt;org-mode&lt;/code&gt; is always touted as a massive powerhouse, and having gone down the GTD rabbit hole and all that, it honestly is one of the most feature packed utilities you can find. Everything from basic tagging up to fully fledged time tracking.&lt;/p&gt;
+&lt;p&gt;As a general outliner tool as well, it&amp;rsquo;s really nice being able to nest items without any end in sight and even link to headings within other files too.&lt;/p&gt;
+
+&lt;h3 id=&#34;org-agenda&#34;&gt;org-agenda&lt;/h3&gt;&lt;p&gt;While &lt;code&gt;org-mode&lt;/code&gt; lets you sprinkle &lt;code&gt;TODO&lt;/code&gt; headings throughout your files, you still need some way to see an overview. Being able to hit a few keys and see a fully customisable pseudo-dashboard with upcoming tasks, appointments and even habit tracking is great.&lt;/p&gt;
+
+&lt;h3 id=&#34;literate-programming&#34;&gt;Literate programming&lt;/h3&gt;&lt;p&gt;While this isn&amp;rsquo;t strictly the domain of Emacs, &lt;code&gt;org-mode&lt;/code&gt; makes it really easy to define blocks of code within a file and put commentary around them.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tecosaur.github.io/emacs-config/config.html&#34;&gt;Tecosaur&lt;/a&gt;&amp;rsquo;s Emacs configuration is perhaps a prime example of what you can achieve. To be clear, that website and his dotfiles are one in the same. The code you see on that webpage &lt;strong&gt;is&lt;/strong&gt; his configuration.&lt;/p&gt;
+&lt;p&gt;This is perhaps the strongest selling point for me. My Emacs configuration lives as a &lt;code&gt;.org&lt;/code&gt; file, which is &amp;ldquo;tangled&amp;rdquo; (transformed) into a proper configuration file.&lt;/p&gt;
+
+&lt;h3 id=&#34;community&#34;&gt;Community&lt;/h3&gt;&lt;p&gt;I&amp;rsquo;m not someone who considers myself part of many communities at all but I can definitely say that the parts of the Emacs community I checked out were definitely quite welcoming.&lt;/p&gt;
+&lt;p&gt;First and foremost, I was constantly surprised at the work that &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Henrik Lissner&lt;/a&gt; churns out seemingly every day.&lt;/p&gt;
+&lt;p&gt;His issue responses are not only carefully considered, but also light and humourous too. That extends to even his commit messages which users may never come across.&lt;/p&gt;
+&lt;p&gt;We actually crossed paths briefly a few years ago and while I didn&amp;rsquo;t know it at the time, &lt;a href=&#34;https://twitter.com/sanityinc&#34;&gt;Steve Purcell&lt;/a&gt; would appear all over the Emacs ecosystem too.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t realise his involvement only to discover that he not only is a huge contributor but even has a large hand in running &lt;a href=&#34;https://melpa.org/#/&#34;&gt;MELPA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lastly, because my list isn&amp;rsquo;t very long and I never really engaged in the community for the most part, I learned a bunch from trawling through the repos of &lt;a href=&#34;https://github.com/jethrokuan&#34;&gt;Jethro Kuan&lt;/a&gt; and &lt;a href=&#34;https://github.com/tecosaur/&#34;&gt;Tecosaur&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;lowlights&#34;&gt;Lowlights&lt;/h2&gt;
+&lt;h3 id=&#34;tooling-alcoholism&#34;&gt;Tooling Alcoholism&lt;/h3&gt;&lt;p&gt;This is a term that I &lt;a href=&#34;https://youtu.be/dIjKJjzRX_E?t=82&#34;&gt;first heard mentioned&lt;/a&gt; a few years ago by &lt;a href=&#34;https://about.me/mpj&#34;&gt;mpj&lt;/a&gt; and it basically holds true.&lt;/p&gt;
+&lt;p&gt;Emacs, for me, is essentially the definition of tooling alcoholism because I can happily spend hours configuring it without actually achieving much at all.&lt;/p&gt;
+&lt;p&gt;Some of this extends to tools like &lt;code&gt;org-agenda&lt;/code&gt; too. There&amp;rsquo;s a temptation to have Emacs do it all and so I end up breaking my existing systems just to make them fit.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take calendars as an example. I tried &lt;a href=&#34;https://github.com/dengste/org-caldav&#34;&gt;org-caldav&lt;/a&gt;, which was kind of slow and some of the state got a little out of sync. I couldn&amp;rsquo;t really figure out how to invoke the required keys to delete everything so I nuked the state files and it broke. At my old job, I also tried to make that interop nicely with &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;org-gcal&lt;/a&gt; which worked nicely but I don&amp;rsquo;t use Google Calendar for my personal calendar. I discovered &lt;a href=&#34;https://github.com/ndw/org-mac-iCal&#34;&gt;org-mac-iCal&lt;/a&gt; which worked the best of the lot (no blocking sync required but refreshes can be a little slow) but I had to dig out a specific &lt;a href=&#34;https://github.com/terjesannum/org-mac-iCal&#34;&gt;fork&lt;/a&gt; that removed version checks because macOS was never expected to go past &lt;code&gt;10.x&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Anyway, all this is to say, I started reading &lt;a href=&#34;https://tools.ietf.org/html/rfc5545&#34;&gt;RFC5545&lt;/a&gt; and thinking about how this could be made a much better process before realising that I actually don&amp;rsquo;t care about calendars and being able to assign snippets to text to my calendar entries is not at all worth this amount of pseudo work.&lt;/p&gt;
+&lt;p&gt;I think calendaring was probably the most extreme variation but the tweaking is never ending.&lt;/p&gt;
+
+&lt;h3 id=&#34;mobile-support&#34;&gt;Mobile support&lt;/h3&gt;&lt;p&gt;When it comes to using Emacs on mobile devices, I&amp;rsquo;ve tried a variety of applications and I think I&amp;rsquo;d say &lt;a href=&#34;https://beorgapp.com/&#34;&gt;beOrg&lt;/a&gt; for iOS and &lt;a href=&#34;https://github.com/orgzly/orgzly-android&#34;&gt;Orgzly&lt;/a&gt; for Android are definitely the nicest.&lt;/p&gt;
+&lt;p&gt;Even so, depending on what you&amp;rsquo;re doing, some of the more niche settings in org may not be supported or require further configuration. One of the main selling points of beOrg is that it supports an entire Scheme interpreter but at this point, I&amp;rsquo;m about to black out from the aforementioned tooling alcoholism.&lt;/p&gt;
+&lt;p&gt;I should mention though that these are both TODO applications effectively. While Orgzly, from memory, leans more towards outline editing than beOrg does, I still got the feeling that they aren&amp;rsquo;t necessarily designed to be considered as &amp;ldquo;note taking&amp;rdquo; apps, in so much as an outline is effectively a bunch of inlined notes.&lt;/p&gt;
+
+&lt;h2 id=&#34;now-what&#34;&gt;Now what?&lt;/h2&gt;&lt;p&gt;I could probably write a whole lot more about Emacs, in the relatively brief time I used it, but for now, this is probably enough of what is effectively a farewell.&lt;/p&gt;
+&lt;p&gt;I took a break for a couple of months last year and started missing some of the org functionality. I got back into it only to go down the rabbit hole again and honestly, none of it was particularly productive at all.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s too easy to daydream about all the stuff you could do, without really asking if you should do it. Even before then, odds are you might never get to that state at all when you find yourself fumbling around.&lt;/p&gt;
+&lt;p&gt;Some troubles might be due to looking at things with the wrong mental model of course but acknowledging that still doesn&amp;rsquo;t really help me make everything as seamless as it could (or arguably should) be in the first place.&lt;/p&gt;
+&lt;p&gt;For now, I&amp;rsquo;m just going to stick with basic markdown and a text editor for my notes and see how it goes. Besides, I&amp;rsquo;m meant to be keeping these sorts of things &lt;a href=&#34;https://utf9k.net/blog/zettelkasten-blog-a-good-idea/&#34;&gt;on my blog&lt;/a&gt; anyway.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Fruit Plate</title>
+      <link>https://utf9k.net/blog/fruit-plate/</link>
+      <description>A minor tangent about... I don&#39;t remember, GTD and fruit?</description>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +1300</pubDate>
+      <author><name>Marcus Crane</name></author>
+      <guid>https://utf9k.net/blog/fruit-plate/</guid>
+      <content type="html">&lt;p&gt;I ordered a fruit plate about 15 minutes ago.&lt;/p&gt;
+&lt;p&gt;$20 for a fruit plate and a chai latte is pretty egregious but I think I got a blog post out of it so perhaps it&amp;rsquo;s worth it.&lt;/p&gt;
+&lt;p&gt;Also, plate is a misnomer because it came in a box but that&amp;rsquo;s besides the point.&lt;/p&gt;
+&lt;p&gt;I had purchased an Apple Watch not so long ago based on the promise that &amp;ldquo;Hey, maybe I&amp;rsquo;ll leave my phone at home and be less logged on&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Until just the other day, Spotify streaming via cellular wasn&amp;rsquo;t possible but it seems they expanded the reach of the Beta group and so now it is.&lt;/p&gt;
+&lt;p&gt;Given that was the last, and arguably most important feature I would want to truly ditch my phone, the &amp;ldquo;dream&amp;rdquo; is now a reality.&lt;/p&gt;
+&lt;p&gt;Of course, whether the dream has been realised is a different story, and I wouldn&amp;rsquo;t go so far as it call it a &amp;ldquo;false&amp;rdquo; promise because it&amp;rsquo;s really up to the user to follow through on it.&lt;/p&gt;
+&lt;p&gt;Anyway, none of that is neither here nor there.&lt;/p&gt;
+&lt;p&gt;I was sitting on what is effectively a picnic table, in so much as it was on concrete and I have no friends, and I got thinking about the promise of Getting Things Done™&lt;/p&gt;
+&lt;p&gt;While I generally feel like shit, I got to diagnosing it a bit more given I didn&amp;rsquo;t have a phone out to distract me. The link here is that I now just walk to the gym in the morning without it since I can stream Spotify. Thanks Sweden.&lt;/p&gt;
+&lt;p&gt;Anyway, I realised I haven&amp;rsquo;t done a weekly review in about 2 weeks. I took a break&amp;hellip; and then I guess a second break. I&amp;rsquo;ve done plenty of weekly reviews so it&amp;rsquo;s not like they&amp;rsquo;re hard and often can be pretty handy.&lt;/p&gt;
+&lt;p&gt;The greater problem is that I seem to think I should be doing GTD. Well, actually the problem is really just one of productivity in general.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m often always productive at work, as is most everyone of course. Productive outside of work? Hmm, maybe not so much. Should I be? Well, no. It&amp;rsquo;s a cliche at this point to bring up the whole &amp;ldquo;Person thinks they have to be productive because hustle culture is a thing&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I actually read a Gary Vaynerchuk book once when I was a teenager. I think he said caring about your customer is good or something.&lt;/p&gt;
+&lt;p&gt;Partly, I&amp;rsquo;m not sure that relaxing is something I know how to do. I&amp;rsquo;ve often joked about it but it&amp;rsquo;s kind of true. If I&amp;rsquo;m reading a book, it&amp;rsquo;s usually for the naive hope that I&amp;rsquo;ll take a bunch of notes and recycle it into something for my website. I&amp;rsquo;ll often watch movies and tv shows, sure. I can&amp;rsquo;t claim that going through a backlog is an extension of relaxing so much as it is completing a checklist though.&lt;/p&gt;
+&lt;p&gt;Perhaps to some extent, it&amp;rsquo;s just learning how to drop things. Not doing something I don&amp;rsquo;t really care about, and then remembering I didn&amp;rsquo;t do that thing, is still another block in the pile.&lt;/p&gt;
+&lt;p&gt;I guess this is part of where GTD or any other &amp;ldquo;productivity&amp;rdquo; system falls down is that perhaps it assumes you&amp;rsquo;re a reasonable person who gets up at a reasonable time.&lt;/p&gt;
+&lt;p&gt;I like to think such a thing wouldn&amp;rsquo;t exist if David Allen used Twitter or got distracted 9 times a day by an ocean of Slack notifications.&lt;/p&gt;
+&lt;p&gt;Anyway, I should eat my fruit box so I can have energy to go and contribute to the economy or whatever&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

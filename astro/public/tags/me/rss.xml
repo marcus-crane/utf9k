@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utf9k</title>
+    <link>https://utf9k.net/tags/me/</link>
+    <description>Posts from utf9k</description>
+    <language>en</language>
+    <author>
+      <name>Marcus Crane</name>
+      <email>marcus@utf9k.net</email>
+    </author>
+    <lastBuildDate>Sun, 15 Oct 2023 20:40:00 +1300</lastBuildDate>
+    
+	<atom:link href="https://utf9k.net/tags/me/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

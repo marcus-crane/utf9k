@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/littlefoot_12488593780039224145.min.54699eaea8856da92132545b99c00faedb4366ab9b50eb1b1e6856689a884ae1.css" integrity="sha256-VGmerqiFbakhMlRbmcAPrttDZqubUOsbHmhWaJqISuE=" />
+  
+
+  <title>Setting up Emacs inside of a WSL2 distribution | utf9k</title>
+<link rel="alternate" type="text/markdown" href="https://utf9k.net/blog/emacs-wsl2-install/index.md">
+<link rel="alternate" type="text/plain" href="https://utf9k.net/blog/emacs-wsl2-install/index.txt">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+<meta name="author" content="Marcus Crane" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+<meta name="description"
+  content="As if life wasn&#39;t already hard enough, we can add more Windows into the mix" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+<link rel="canonical" href="https://utf9k.net/blog/emacs-wsl2-install/" />
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="me" href="mailto:hello@utf9k.net" />
+<link rel="me" href="https://mastodon.nz/@utf9k" />
+<link rel="me" href="https://twitter.com/sentreh" />
+<link rel="me" href="https://github.com/marcus-crane" />
+<link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+<link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+<meta property="og:title" content="Setting up Emacs inside of a WSL2 distribution" />
+<meta property="og:description" content="As if life wasn&#39;t already hard enough, we can add more Windows into the mix" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utf9k.net/blog/emacs-wsl2-install/" /><meta property="og:image" content="https://utf9k.net/favicon.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-05-06T00:00:00+13:00" />
+<meta property="article:modified_time" content="2023-01-03T14:06:19+13:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://utf9k.net/favicon.png"/>
+
+<meta name="twitter:title" content="Setting up Emacs inside of a WSL2 distribution"/>
+<meta name="twitter:description" content="As if life wasn&#39;t already hard enough, we can add more Windows into the mix"/>
+<meta name="twitter:site" content="@sentreh"/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.f927dcb0e4d3990cada1be73573ac4f5fa673a75c7e0fc28d4a7ee01400aeaaf.css" integrity="sha256-+SfcsOTTmQytob5zVzrE9fpnOnXH4Pwo1KfuAUAK6q8=" />
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Setting up Emacs inside of a WSL2 distribution",
+  "datePublished": "2020-05-06T00:00:00-00:00"
+}
+</script>
+
+
+</head>
+<body>
+  
+    <header class="navigation">
+  <a href="/" id="logo">
+    <img src="/favicon.png" alt="utf9k" width="16px" height="16px">
+    <span>utf9k</span>
+  </a>
+  <nav>
+    
+    
+    <li><a href="/blog/">Blog</a></li>
+    <span>//</span>
+    
+    <li><a href="/projects/">Projects</a></li>
+    <span>//</span>
+    
+    <li><a href="/about/">About</a></li>
+    <span>//</span>
+    
+    <li><a href="/questions/">Questions</a></li>
+    <span>//</span>
+    
+    <li><a href="/rss.xml">RSS</a></li>
+    
+    
+  </nav>
+</header>
+    <div id="content">
+    
+<article>
+  <header>
+    <h1>Setting up Emacs inside of a WSL2 distribution</h1>
+    <div id="post-meta">
+      <time datetime="2020-05-06 00:00:00 &#43;1300 &#43;1300">May 6, 2020</time>  · Around 10 minutes
+    </div>
+  </header>
+  <div id="post-body">
+    
+
+
+    <p>I&rsquo;ve never really dedicated myself to Emacs despite being interested in <a href="https://orgmode.org/">org mode</a> for a little while now.</p>
+<p>One barrier to entry is that I had no idea how to install it on my desktop. The more places I have it installed, the quicker I can get comfortable enough to actually use it in my day to day life.</p>
+<p>In particular, I&rsquo;m trying out <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>, a lightweight configuration that uses vim-style bindings.</p>
+<p>I&rsquo;m not much of a Vimmer either for the record. I&rsquo;m fairly comfortable opening it up, moving around with H-J-K-L and editing here and there but I&rsquo;m not much more productive than that.</p>
+<p>Anyway, here&rsquo;s a short guide on how you too can get Emacs up and running on Version 2 of the <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows for Linux subsystem</a></p>
+<h2 id="an-optional-prerequisite">
+  <a class="jumplink" href="#an-optional-prerequisite" aria-hidden="true">¶</a>
+  An optional prerequisite
+</h2><p>Currently, I&rsquo;m using <a href="https://x410.dev/">X410</a>, an <a href="https://en.wikipedia.org/wiki/X_Window_System">X Window System</a> for Windows.</p>
+<p>If you&rsquo;re not hugely familiar with X or Windowing systems, it&rsquo;s basically just a way of displaying applications outside of a terminal.</p>
+<p>In our case, while Emacs renders perfectly fine in the terminal, I like to have it render in its own window, which is what a windowing system provides more or less.</p>
+<p>There are plenty of other X servers for Windows but I found this one to be pretty seamless. <a href="https://sourceforge.net/projects/vcxsrv/">VcXsrv</a> is another popular alternative, although I had some configuration troubles getting it working.</p>
+<p>That said, I&rsquo;ve done some fiddling and have provided a setup guide for it as well!</p>
+<p>Before we get started, feel free to skip the entire window manager portion if you&rsquo;re comfortable with, or prefer, running Emacs in your terminal of course.</p>
+<h2 id="the-paid-but-pretty-seamless-way">
+  <a class="jumplink" href="#the-paid-but-pretty-seamless-way" aria-hidden="true">¶</a>
+  The paid, but pretty seamless way
+</h2><p>I should stress that while I&rsquo;ve opted to purchase an X server that has some extra bits and pieces, you can use an open source, unpaid alternative.</p>
+<p>X410 had some decent recommendations for being an easy setup, and happened to be under a very steep discount so I figured I&rsquo;d give it a spin. I also ran into some issues with VcXsrv originally as well.</p>
+<p>You can find it <a href="https://www.microsoft.com/store/productId/9NLP712ZMN9Q">in the Windows Store</a> , presumably for any region. It&rsquo;ll require a Microsoft account to purchase which can be a little annoying if you don&rsquo;t already have one.</p>
+<p>The installation should be straight forward and I don&rsquo;t remember any flags that require toggling.</p>
+<p>Once you&rsquo;ve got it installed, fire it up and you should see a silver X icon in your Windows task tray, in the bottom right of your screen.</p>
+<p>You&rsquo;ll need to click on it (left or right, it makes no difference) and select &ldquo;Allow Public Access&rdquo;. See the end of this section for a note on security.</p>
+<p>While the original WSL1 exposes things on <code>http://localhost</code> (from memory anyway), WSL2 is treated like a network storage.</p>
+<p>This means that our Linux distribution is effectively its own &ldquo;computer&rdquo; with its own IP address, and so firewall policies come into place, and so on.</p>
+<p>When we connect to our X server, it&rsquo;ll be on an internal address such as 172.x.x.x rather than 127.0.0.1.</p>
+<p>Beyond that, we should be good to go! You can either read the alternative setup or skip on down to configuring your <code>DISPLAY</code> environment variable.</p>
+<p>Upon closer inspection, it seems that &ldquo;Allow public access&rdquo; does indeed do what it says on the tin.</p>
+<p>I can confirm that I was able to forward an emacs session from my work laptop to my home desktop without any prompting. The same should hold true of any other random person on your network.</p>
+<p>If you trust your network, and aren&rsquo;t proxying your computer to the internet or something interesting like that, you should be fine. In that case, feel free to jump down to the environment configuration section.</p>
+<p>If you&rsquo;d sleep safer at night with some tighter restrictions, feel free to follow the Windows Firewall configuration steps I&rsquo;ve suggested below, under the setup for VcXsrv. They should apply exactly the same, but to the firewall rule for <code>x410</code> .</p>
+<h2 id="the-free-open-source-slightly-more-involved-way">
+  <a class="jumplink" href="#the-free-open-source-slightly-more-involved-way" aria-hidden="true">¶</a>
+  The free, open source, slightly more involved way
+</h2><p>For those of you who prefer to be able to either not pay for your software, or audit it, you&rsquo;ll want to pick up a copy of <a href="https://sourceforge.net/projects/vcxsrv/files/vcxsrv/">VcXsrv</a> .</p>
+<p>It&rsquo;s a little more involved but not much more. I&rsquo;ve gone through the gauntlet and figured out some settings that seem to work consistently while still staying relatively secure. That said, feel free to let me know since Windows Firewall isn&rsquo;t an area I tend to stray into often.</p>
+<p>Go ahead and install <code>VcXsrv</code> and then once that&rsquo;s done, open up your start menu and search for <code>XLaunch</code> .</p>
+<p>If you run it, it should prompt you for some default settings. You can leave it set to the default (Multiple windows with the display number set to -1 for auto)</p>
+<p>Extra settings should stay as the default.</p>
+<p>You should get to a panel for extra parameters however, and when you do, you&rsquo;ll want to add <code>-ac</code> as a flag. Without it, you&rsquo;ll have some trouble down the line.</p>
+<p>Upon finishing up this configuration, you should get a popup from Windows Defender Firewall. You can click Allow but we&rsquo;ll also do some further configuration next.</p>
+<p>So, with XLaunch all wrapped up, head to your start menu once again and search for &ldquo;Windows Defender Firewall with Advanced Security&rdquo;.</p>
+<p>Open it up, click <code>Inbound Rules</code> and then scroll down until you find <code>VcXsrv windows server</code> . You&rsquo;ll likely have about 4 entries, with two for TCP connections and another two for UDP connections.</p>
+<p>Personally, I&rsquo;ve opted to delete all of them except for one since I don&rsquo;t plan to keep a UDP configuration, nor do I need two types of TCP setup but you can leave them if you like.</p>
+<p>You can either double click, or right click and hit properties, to start modifying your firewall rule.</p>
+<p>First, under General, change the action to <code>Allow the connection</code> if it&rsquo;s not already set as such.</p>
+<p>Don&rsquo;t worry, we&rsquo;ll be scoping down the permissions quite a bit. Well, as much as I could figure out how to anyway. I already did more fiddling here, for the sake of this post, than I probably would otherwise.</p>
+<p>We don&rsquo;t want to allow just anyone to connect to our display server so under the <code>Scope</code> tab, I&rsquo;ve added an IP address range.</p>
+<p>Under <code>Local IP Address</code> , select <code>These IP addresses</code> , click <code>Add</code> -&gt; <code>This IP address range</code> and then enter the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>From: 172.16.0.0
+</span></span><span style="display:flex;"><span>To  : 172.31.255.255
+</span></span></code></pre></div><p>Given that the Windows subsystem is treated like a network device of sorts, our display server will essentially be receiving a connection from a different computer, as far as it&rsquo;s concerned.</p>
+<p>In order to mitigate any actual other computers connecting, we&rsquo;re narrowing down the acceptable list of IP addresses to just those that fall within the WSL range.</p>
+<p>I suppose if you did have a big internal network, with a computer assigned an address on 172.16.x.x, then they could connect but we&rsquo;ll be doing some interface restrictions just below.</p>
+<p>Anyway, repeat the same steps for <code>Remote IP address</code> and then hit <code>Apply your changes</code> .</p>
+<p>At this point, what I wanted to do was reduce the scope of the <code>Protocols</code> tab to just TCP on the ports that X server uses (6000 - 6063) but I had no such luck.</p>
+<p>It potentially be the case that somewhere between WSL land and your host computer, some ports are proxied to be higher or lower, but honestly, I&rsquo;m purely speculating based on no actual evidence.</p>
+<p>For the interested, the above protocol and port restriction causes the host X server to be unreachable. If you extend the range from 6000 to the highest possible port (65535), it does indeed connect which is why it seems it&rsquo;s relying on a range of ports higher than those 63 to be reachable.</p>
+<p>Anyway, enough sidetracking. There is one extra bit of restricting we can do. Under <code>Protocols and Ports</code> -&gt; <code>Protocol type</code> , change it to just allow <code>TCP</code> . You can then navigate to <code>Advanced</code> -&gt; <code>Interface types</code> -&gt; <code>Customize</code> , and you should be able to narrow down the list to just <code>Local area network</code> .</p>
+<p>Presumably, even if anyone is on the wider network with an IP address that happens to match our WSL2 distro, they still won&rsquo;t be able to connect but I haven&rsquo;t tried this.</p>
+<p>With all of that nonsense behind us, we can get on to actually configuring our environment and testing that our setup has worked successfully!</p>
+<h2 id="configuring-your-environment">
+  <a class="jumplink" href="#configuring-your-environment" aria-hidden="true">¶</a>
+  Configuring your environment
+</h2><p>As I briefly referenced in the setup steps for X410, WSL2 is treated as a network device of sorts.</p>
+<p>The exact details are besides the point here but just know that WSL2 is effectively a separate computer.</p>
+<p>What this means, is that we can&rsquo;t rely on Emacs automatically knowing where to find our X display server (if you&rsquo;re opting to use one)</p>
+<p>It&rsquo;ll check inside of our Linux distribution, but we need to point it to our Windows host, since that&rsquo;s where our X server is running.</p>
+<p>Doing so is only one step thankfully:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">DISPLAY</span><span style="color:#ff79c6">=</span><span style="color:#ff79c6">$(</span>cat /etc/resolv.conf | grep nameserver | awk <span style="color:#f1fa8c">&#39;{print $2; exit;}&#39;</span><span style="color:#ff79c6">)</span>:0.0
+</span></span></code></pre></div><p>Ok, easy enough but what just happened?</p>
+<p>By default, you&rsquo;ll have an <code>/etc/resolv.conf</code> generated by WSL. Here&rsquo;s what mine looks like on a relatively fresh installation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#6272a4"># This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># [network]</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># generateResolvConf = false</span>
+</span></span><span style="display:flex;"><span>nameserver 172.31.96.1
+</span></span></code></pre></div><p>That IP address there, <code>172.31.96.1</code> , is the IP address for our Window host machine. At least, from WSL&rsquo;s point of view anyway.</p>
+<p>We can use <code>grep</code> to get the exact line we want:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>marcus@corbenik:~/code/utf9k$ cat /etc/resolv.conf | grep nameserver
+</span></span><span style="display:flex;"><span>nameserver 172.31.96.1
+</span></span></code></pre></div><p>and then use <code>awk</code> to get just the IP address by itself:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>marcus@corbenik:~/code/utf9k$ cat /etc/resolv.conf | grep nameserver | awk <span style="color:#f1fa8c">&#39;{print $2; exit;}&#39;</span>
+</span></span><span style="display:flex;"><span>172.31.96.1
+</span></span></code></pre></div><p>Voila! One IP address. What our above command ends up evaluating to, is the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">DISPLAY</span><span style="color:#ff79c6">=</span>172.31.96.1:0.0
+</span></span></code></pre></div><p>That IP address can change from time to time however, which is why we want to automate setting it each time.</p>
+<p>Our <code>DISPLAY</code> environment variable will go away with each new shell so make sure you put it in your shell startup!</p>
+<p>All that&rsquo;s let is to check that we can connect as expected. Here&rsquo;s a connection test against X410, using <code>nc</code> (netcat)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>marcus@corbenik:~/code/utf9k$ nc -v 172.31.96.1 <span style="color:#bd93f9">6000</span>
+</span></span><span style="display:flex;"><span>Connection to 172.31.96.1 <span style="color:#bd93f9">6000</span> port <span style="color:#ff79c6">[</span>tcp/x11<span style="color:#ff79c6">]</span> succeeded!
+</span></span></code></pre></div><p>Why do we use port 6000? It&rsquo;s the first in a range of ports for X window servers, which range from 6000 - 6063. If you note the <code>0.0</code> on the end of our <code>DISPLAY</code> variable, we&rsquo;re telling it to use display 0, screen 0.</p>
+<p>If we wanted to use a different display, or perhaps having a second X server may qualify, we could connect to <code>&lt;address&gt;:1.0</code> for display 1, screen 0. Under the hood, that would live on port 6001, which is the base port of 6000 added to our display number (1 in this case).</p>
+<p>I didn&rsquo;t really know any of that until writing this so I&rsquo;d encourage you to do your own research if you want to know more, or double check anything I just claimed, haha.</p>
+<h2 id="installing-emacs">
+  <a class="jumplink" href="#installing-emacs" aria-hidden="true">¶</a>
+  Installing Emacs
+</h2><p>Now then, we need an actual Emacs distribution but don&rsquo;t get too trigger happy just yet. For the most part, running <code>sudo apt-get install emacs</code> will give you an outdated package. In reality, it&rsquo;s probably Emacs 25 which is more than fine.</p>
+<p>If you&rsquo;d like to run a more up to date version, you can do the following to fetch a copy of Emacs 26. If you&rsquo;d like to be on the bleeding edge (and is what Doom Emacs recommends), you&rsquo;ll probably need to compile Emacs 27 from source :(</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo add-apt-repository ppa:kelleyk/emacs
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install emacs26
+</span></span></code></pre></div><p>Very nice, you should be all good to go. If you would like to use Doom Emacs as I am, you will need some extra packages which you can find more info about <a href="https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org#ubuntu">via the handy documentation</a></p>
+<p>If you would like to run Emacs in your terminal, just simply fire up <code>emacs</code> . If you wouldd like to run it on your Windows host, and have your X server running and set up, you can run <code>emacs &amp;</code> to spawn it, and keep it open as a background process.</p>
+<p>Happy text manipulation!</p>
+<p>P.S. I wrote this entire post in Doom Emacs, launched from WSL 2 on my home desktop and it works like a charm :)</p>
+
+  </div>
+</article>
+
+    </div>
+    <div id="fullscreen"></div>
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/footnotes.1be9fd05e6f9672cdc2b4f8c9a16b96016b4941e68d5ebe04a863454f8f64122.js" integrity="sha256-G&#43;n9Beb5ZyzcK0&#43;Mmha5YBa0lB5o1evgSoY0VPj2QSI="></script>
+
+  
+  
+  
+  
+  <script defer type="text/javascript" src="/js/image-viewer.90762074c5e8b05c4d401ecb428a34fb7215f4d42d42eb93eff0f6bda5416a6d.js" integrity="sha256-kHYgdMXosFxNQB7LQoo0&#43;3IV9NQtQuuT7/D2vaVBam0="></script>
+
+</body>
+</html>
