@@ -9,6 +9,10 @@ import books from "../data/books.yml";
 import gags from "../data/gags.yml";
 import games from "../data/games.yml";
 import manga from "../data/manga.json";
+
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection("blog");
 ---
 
 <BaseLayout title="Welcome to Astro.">
@@ -129,7 +133,13 @@ import manga from "../data/manga.json";
         <div class="post-stream">
           <h3>Recently updated pages</h3>
           <ul>
-            <li>Recent pages here</li>
+            {
+              blogPosts
+                .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+                .reverse()
+                .slice(0, 5)
+                .map(p => <li><a href={`/blog/${p.slug}`}>{p.data.title}</a></li>)
+            }
           </ul>
         </div>
         <hr />
