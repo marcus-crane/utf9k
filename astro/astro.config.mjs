@@ -20,4 +20,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
+  redirects: {
+    '/index.xml': '/rss.xml'
+  }
 });
