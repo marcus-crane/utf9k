@@ -1,6 +1,6 @@
 ---
 title: "Fatal Frame"
-date: "2015-02-13T11:59:10+13:00"
+date: 2015-02-13T11:59:10+13:00
 slug: "fatal-frame"
 category: "reviews"
 description: "Developer Tecmo's take on Silent Hill franchise finds you battling ghosts in an abandoned mansion. Silly premise or unnerving title? Well, the second one."

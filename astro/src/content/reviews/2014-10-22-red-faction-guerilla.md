@@ -1,6 +1,6 @@
 ---
 title: "Red Faction: Guerilla"
-date: "2014-10-22T05:46:53+13:00"
+date: 2014-10-22T05:46:53+13:00
 slug: "red-faction-guerilla"
 category: "reviews"
 description: "Oh geez, I’m super biased towards Red Faction: Guerilla! It’s one of my favourite games and I think you should check it out!"

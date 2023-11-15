@@ -1,6 +1,6 @@
 ---
 title: "Grand Theft Auto V"
-date: "2015-04-18T14:30:39+13:00"
+date: 2015-04-18T14:30:39+13:00
 slug: "grand-theft-auto-v"
 category: "reviews"
 description: "This isn't really about GTA V. Just to say that I haven't been playing anything else!"

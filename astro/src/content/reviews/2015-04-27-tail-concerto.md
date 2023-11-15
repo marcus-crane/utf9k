@@ -1,6 +1,6 @@
 ---
 title: "Tail Concerto"
-date: "2015-04-27T12:28:16+13:00"
+date: 2015-04-27T12:28:16+13:00
 description: "A review for Tail Concerto"
 slug: "tail-concerto"
 category: "reviews"

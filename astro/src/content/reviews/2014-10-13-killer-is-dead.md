@@ -1,6 +1,6 @@
 ---
 title: "Killer Is Dead"
-date: "2014-10-13T19:19:55+13:00"
+date: 2014-10-13T19:19:55+13:00
 slug: "killer-is-dead"
 category: "reviews"
 description: "A game that is very quirky, nonsensical even, with fairly average gameplay. Despite that, it can still be enjoyable."

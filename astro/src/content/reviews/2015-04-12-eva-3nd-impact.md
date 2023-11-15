@@ -1,6 +1,6 @@
 ---
 title: "Evangelion Shin Gekijoban: 3nd Impact"
-date: "2015-04-12T18:58:31+13:00"
+date: 2015-04-12T18:58:31+13:00
 description: "A review for a pretty fun Evangelion rhythm game"
 slug: "eva-3nd-impact"
 category: "reviews"

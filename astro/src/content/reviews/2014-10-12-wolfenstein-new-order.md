@@ -1,6 +1,6 @@
 ---
 title: "Wolfenstein: The New Order"
-date: "2014-10-12T15:16:16+13:00"
+date: 2014-10-12T15:16:16+13:00
 slug: "wolfenstein-new-order"
 category: "reviews"
 description: "I was expecting a mediocre game but got something much, much better than expected!"

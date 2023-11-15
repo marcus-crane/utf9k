@@ -36,7 +36,7 @@ const questions = defineCollection({
 const reviews = defineCollection({
   type: "content",
   schema: z.object({
-    date: z.string(),
+    date: z.date(),
     ...commonFields,
   }),
 });

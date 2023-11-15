@@ -1,6 +1,6 @@
 ---
 title: "Jumping Flash!"
-date: "2015-03-28T23:28:05+13:00"
+date: 2015-03-28T23:28:05+13:00
 slug: "jumping-flash"
 category: "reviews"
 description: "Robbit, the Super De-Pester is probably one of the oddest choices for protagonist I've played so far."

@@ -1,6 +1,6 @@
 ---
 title: "The Simpsons: Hit & Run"
-date: "2015-01-10T17:58:26+13:00"
+date: 2015-01-10T17:58:26+13:00
 slug: "the-simpsons-hit-and-run"
 category: "reviews"
 description: "Robot wasps? Strange black vans? New Buzz Cola? Something fishy is happening in Springfield. Find out in The Simpsons: Hit & Run."

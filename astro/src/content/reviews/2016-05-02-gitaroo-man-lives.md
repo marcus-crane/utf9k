@@ -1,6 +1,6 @@
 ---
 title: "Gitaroo Man Lives!"
-date: "2016-05-02T12:58:43+13:00"
+date: 2016-05-02T12:58:43+13:00
 description: "A review for Gitaroo Man Lives!"
 slug: "gitaroo-man-lives"
 category: "reviews"

@@ -1,6 +1,6 @@
 ---
 title: "Asura's Wrath"
-date: "2014-12-23T01:48:39+13:00"
+date: 2014-12-23T01:48:39+13:00
 slug: "asuras-wrath"
 category: "reviews"
 description: "Asura's Wrath was criticised back during release for having a DLC ending but don't let that affect what you think of the game! You might be surprised."

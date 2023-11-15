@@ -1,6 +1,6 @@
 ---
 title: "Onimusha: Warlords"
-date: "2015-01-23T21:06:15+13:00"
+date: 2015-01-23T21:06:15+13:00
 slug: "onimusha-warlords"
 category: "reviews"
 description: "Samanosuke fights to banish the demonic Gemna from an alternate history Feudal Japan where Nobunaga died 20 years too early."
