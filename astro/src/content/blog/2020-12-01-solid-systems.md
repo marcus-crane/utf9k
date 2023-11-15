@@ -1,6 +1,6 @@
 ---
 title: "Will we ever get solid systems?"
-date: "2020-12-01T00:00:00+1300"
+date: 2020-12-01T00:00:00+13:00
 description: "Is software reliable? Probably not"
 slug: "solid-systems"
 category: "blog"

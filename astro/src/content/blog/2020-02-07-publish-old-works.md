@@ -1,6 +1,6 @@
 ---
 title: "You should publish your older works"
-date: "2020-02-07T00:00:00+1300"
+date: 2020-02-07T00:00:00+13:00
 description: "I think it's a good idea to publish your existing work, even if you don't like it. You don't like it now but others earlier in their journey may appreciate it in a way that you can't anymore."
 slug: "publish-old-works"
 category: "blog"

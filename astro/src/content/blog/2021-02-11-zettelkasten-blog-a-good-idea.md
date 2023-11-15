@@ -1,6 +1,6 @@
 ---
 title: "Using a blog like a zettelkasten seems like a good idea"
-date: "2021-02-11T17:00:00+1300"
+date: 2021-02-11T17:00:00+13:00
 description: "I mean, it's what it says on the tin!"
 slug: "zettelkasten-blog-a-good-idea"
 category: "blog"

@@ -1,6 +1,6 @@
 ---
 title: "Managing subscriptions with an extra debit card"
-date: "2021-01-11T23:40:00+1300"
+date: 2021-01-11T23:40:00+13:00
 description: "In which I save myself from financial hell by putting subscriptions on another card where they can't creep up on me"
 slug: "subscription-management"
 category: "blog"

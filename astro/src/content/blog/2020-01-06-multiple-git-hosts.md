@@ -1,6 +1,6 @@
 ---
 title: "Dealing with multiple git hosts"
-date: "2020-01-06T00:00:00+1300"
+date: 2020-01-06T00:00:00+13:00
 description: "Why setting for one gitconfig when you could have two or more"
 slug: "multiple-git-hosts"
 category: "blog"

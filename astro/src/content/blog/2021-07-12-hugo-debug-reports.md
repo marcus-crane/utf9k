@@ -1,6 +1,6 @@
 ---
 title: "Creating debug reports with Hugo inline shortcodes"
-date: "2021-07-12T18:50:00+1300"
+date: 2021-07-12T18:50:00+13:00
 slug: "hugo-debug-reports"
 description: "I teach you some tricks on introspecting your Hugo builds"
 category: "blog"

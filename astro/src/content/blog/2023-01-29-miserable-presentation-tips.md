@@ -1,6 +1,6 @@
 ---
 title: "Miserable presentation tips"
-date: "2023-01-29T15:24:00+1300"
+date: 2023-01-29T15:24:00+13:00
 description: "It works well for me but I don't recommend it!"
 slug: "miserable-presentation-tips"
 category: "blog"

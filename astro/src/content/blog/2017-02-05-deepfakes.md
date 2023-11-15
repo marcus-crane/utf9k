@@ -1,6 +1,6 @@
 ---
 title: "Deepfakes"
-date: "2017-02-05T00:00:00+1300"
+date: 2017-02-05T00:00:00+13:00
 slug: "deepfakes"
 category: "blog"
 description: "An exploration of Deepfakes written up when the original subreddit (and creator) was still online"

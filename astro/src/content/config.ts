@@ -12,7 +12,7 @@ const commonFields = {
 const blog = defineCollection({
   type: "content",
   schema: z.object({
-    date: z.string(),
+    date: z.date(),
     draft: z.boolean().optional(),
     ...commonFields,
   }),

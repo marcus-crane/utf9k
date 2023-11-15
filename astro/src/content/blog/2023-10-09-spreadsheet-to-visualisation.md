@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheet to visualisation: How I created towing.utf9k.net"
-date: "2023-10-09T15:00:00+1300"
+date: 2023-10-09T15:00:00+13:00
 description: "How I finished a project that was sitting on the backburner for years"
 slug: "spreadsheet-to-visualisation"
 category: "blog"

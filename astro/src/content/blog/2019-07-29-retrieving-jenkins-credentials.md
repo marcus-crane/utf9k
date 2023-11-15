@@ -1,6 +1,6 @@
 ---
 title: "Retrieving credentials from Jenkins"
-date: "2019-07-29T00:00:00+1300"
+date: 2019-07-29T00:00:00+13:00
 description: "If you've put your secrets in Jenkins, there is a sneaky backdoor to get them out again"
 slug: "retrieving-jenkins-credentials"
 category: "blog"

@@ -1,6 +1,6 @@
 ---
 title: "FAQ driven configuration"
-date: "2021-02-17T18:14:00+1300"
+date: 2021-02-17T18:14:00+13:00
 description: "Not sure how to structure a config file? Try answering questions rather than trying to come up with categories"
 slug: "faq-driven-configuration"
 category: "blog"

@@ -1,6 +1,6 @@
 ---
 title: "Do demo iPads have a canonical owner?"
-date: "2022-06-03T23:35:00+1300"
+date: 2022-06-03T23:35:00+13:00
 description: "In which we investigate whether the demo content loaded onto iPads is owned a single fictional person"
 slug: "ipad-canonical-owner"
 category: "blog"

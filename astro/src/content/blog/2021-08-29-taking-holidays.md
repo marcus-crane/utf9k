@@ -1,6 +1,6 @@
 ---
 title: "Taking holidays is important"
-date: "2021-08-29T22:04:00+1300"
+date: 2021-08-29T22:04:00+13:00
 slug: "taking-holidays"
 description: "Relaxing some of the time is a good idea. Who would have guessed?"
 category: "blog"

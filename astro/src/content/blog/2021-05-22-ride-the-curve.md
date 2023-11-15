@@ -1,6 +1,6 @@
 ---
 title: "Ride the curve"
-date: "2021-05-22T10:40:00+1300"
+date: 2021-05-22T10:40:00+13:00
 description: "A post from a darker time on how to better think about taking a break"
 slug: "ride-the-curve"
 category: "blog"

@@ -1,6 +1,6 @@
 ---
 title: "Fixing a WSL2 VHD conversion issue"
-date: "2019-07-20T00:00:00+1300"
+date: 2019-07-20T00:00:00+13:00
 description: "One night I had a bit to drink and debugged the hell out of a WSL2 issue out of frustration"
 slug: "wsl2-vhd-issue"
 category: "blog"

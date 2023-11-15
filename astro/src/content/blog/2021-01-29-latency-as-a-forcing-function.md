@@ -1,6 +1,6 @@
 ---
 title: "Latency as a forcing function"
-date: "2021-01-29T14:53:00+1300"
+date: 2021-01-29T14:53:00+13:00
 description: "Sometimes latency is good?"
 slug: "latency-as-a-forcing-function"
 category: "blog"

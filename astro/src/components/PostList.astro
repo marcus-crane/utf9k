@@ -6,7 +6,7 @@ interface Props {
 }
 
 const { posts } = Astro.props;
-let seenYears: Set<string> = new Set()
+let seenYears: Set<number> = new Set()
 ---
 
 <ul>
@@ -17,7 +17,7 @@ let seenYears: Set<string> = new Set()
       .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
       .reverse()
       .map((p) => {
-        const currentYear = p.data.date.split("-")[0];
+        const currentYear = p.data.date.getFullYear();
         let header = null;
         if (!seenYears.has(currentYear)) {
           header = <h2>{currentYear}</h2>

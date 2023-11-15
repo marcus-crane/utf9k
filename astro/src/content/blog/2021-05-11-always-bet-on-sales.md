@@ -1,6 +1,6 @@
 ---
 title: "You can always count on sales"
-date: "2021-05-11T18:23:00+1300"
+date: 2021-05-11T18:23:00+13:00
 description: "Complete system downtime won't stop the sales team from making a buck"
 slug: "you-can-always-count-on-sales"
 category: "blog"

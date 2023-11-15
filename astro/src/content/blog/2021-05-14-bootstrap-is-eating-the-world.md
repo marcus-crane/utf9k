@@ -1,6 +1,6 @@
 ---
 title: "Has Bootstrap eaten the world yet?"
-date: "2021-05-14T20:48:00+1300"
+date: 2021-05-14T20:48:00+13:00
 description: "The CSS framework that could"
 slug: "has-bootstrap-eaten-the-world-yet"
 category: "blog"

@@ -1,6 +1,6 @@
 ---
 title: "Data hoarding seems like a large mental overhead"
-date: "2020-05-12T00:00:00+1300"
+date: 2020-05-12T00:00:00+13:00
 description: "Looking back on the idea of a quantified self"
 slug: "mental-overhead-of-data"
 category: "blog"

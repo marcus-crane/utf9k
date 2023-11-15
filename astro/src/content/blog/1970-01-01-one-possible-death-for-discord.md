@@ -1,6 +1,6 @@
 ---
 title: "One possible death for Discord"
-date: "1970-01-01T00:00:00+1300"
+date: 1970-01-01T00:00:00+13:00
 slug: "one-possible-death-for-discord"
 category: "blog"
 description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"

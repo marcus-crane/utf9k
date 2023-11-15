@@ -1,6 +1,6 @@
 ---
 title: "Some thoughts about running a wiki"
-date: "2017-12-18T00:00:00+1300"
+date: 2017-12-18T00:00:00+13:00
 slug: "wiki-thoughts"
 category: "blog"
 description: "I ran a Wiki for a little while and here's what I learned"

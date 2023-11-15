@@ -1,6 +1,6 @@
 ---
 title: "Using Fastmail with CalDAV libraries"
-date: "2022-05-28T20:20:00+1300"
+date: 2022-05-28T20:20:00+13:00
 description: "A guide to using Fastmail with CalDAV libraries which are often fiddly and struggle to find your calendars"
 slug: "fastmail-caldav"
 category: "blog"

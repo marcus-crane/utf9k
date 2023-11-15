@@ -1,6 +1,6 @@
 ---
 title: "Quicksand"
-date: "2020-07-01T00:00:00+1300"
+date: 2020-07-01T00:00:00+13:00
 description: "Being stuck in place, or believing that you are at least, is not fun"
 slug: "quicksand"
 category: "blog"

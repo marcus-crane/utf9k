@@ -1,6 +1,6 @@
 ---
 title: "Dropbox is way too clingy"
-date: "2021-04-27T18:50:00+1300"
+date: 2021-04-27T18:50:00+13:00
 slug: "dropbox-is-way-too-clingy"
 description: "A post in which I post about how involved the Dropbox cancellation process is."
 category: "blog"
