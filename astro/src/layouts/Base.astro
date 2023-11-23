@@ -7,7 +7,6 @@ const { title } = Astro.props;
 
 import Head from "../components/Head.astro";
 import Nav from "../components/Nav.astro";
-import "../css/style.css";
 ---
 
 <!doctype html>
@@ -22,4 +21,9 @@ import "../css/style.css";
     </div>
     <div id="fullscreen"></div>
   </body>
+  <script>
+    import littlefoot from "littlefoot";
+
+    littlefoot()
+  </script>
 </html>

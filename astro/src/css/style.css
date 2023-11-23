@@ -24,7 +24,7 @@
 }
 
 :root,
-.littlefoot__content {
+.littlefoot__wrapper .littlefoot__content {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -60,7 +60,7 @@ body {
     color: var(--text-light);
   }
 
-  .littlefoot__content {
+  .littlefoot__wrapper .littlefoot__content {
     background: var(--bg-dark);
     color: var(--text-light);
   }

@@ -19,6 +19,11 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkReadingTime],
+    remarkRehype: {
+      footnoteLabelProperties: {
+        className: ['sr-only', 'littlefoot--print']
+      }
+    }
   },
   redirects: {
     '/index.xml': '/rss.xml'
