@@ -10,7 +10,7 @@ type Book = {
     author: string;
     cover: string;
     link: string;
-    date_finished: string | null;
+    date_finished: Date | null;
     rating: number | null;
     progress: number;
 }
