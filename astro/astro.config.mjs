@@ -26,6 +26,11 @@ export default defineConfig({
     }
   },
   redirects: {
-    '/index.xml': '/rss.xml'
+    '/index.xml': '/rss.xml',
+    '/blog/rss.xml': '/rss.xml',
+    '/blog/when-automation-goes-horribly-right': '/blog/automation-right',
+    '/notes': '/questions',
+    '/notes/oil-futures': '/questions/finance-oil-futures-negative',
+    '/notes/[...slug]': '/questions/[...slug]'
   }
 });
