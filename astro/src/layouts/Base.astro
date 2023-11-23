@@ -1,9 +1,10 @@
 ---
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 import Head from "../components/Head.astro";
 import Nav from "../components/Nav.astro";
@@ -12,7 +13,7 @@ import Nav from "../components/Nav.astro";
 <!doctype html>
 <html lang="en">
   <head>
-    <Head title={title} />
+    <Head title={title} description={description} />
   </head>
   <body>
     <Nav />

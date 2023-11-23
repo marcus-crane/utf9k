@@ -3,14 +3,15 @@ import Layout from "../layouts/Base.astro";
 
 interface Props {
   title: string;
+  description?: string;
   date?: Date;
   minutesRead?: string;
 }
 
-const { title, date, minutesRead } = Astro.props;
+const { title, description, date, minutesRead } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
   <article>
     <header>
       <h1>{title}</h1>

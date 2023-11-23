@@ -1,22 +1,26 @@
 ---
+import { propsToFilename } from 'astro/assets/utils';
 import '../css/style.css';
 import 'littlefoot/dist/littlefoot.css'
 
 interface Props {
 	title: string | undefined;
+  description: string | undefined;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
+<title>{Astro.props.title}{Astro.props.title && ' | '}utf9k</title>
+{Astro.props.description && (<meta name="description" content={Astro.props.description} />)}
+
 <link rel="preconnect" href="https://cdn.utf9k.net" />
 <meta charset="UTF-8" />
-<meta name="description" content="Astro description" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<title>{Astro.props.title ?? 'utf9k'}</title>
+
 <link rel="preconnect" href="https://cdn.utf9k.net" />
 <!-- {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
