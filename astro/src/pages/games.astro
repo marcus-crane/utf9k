@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/Base.astro";
+
+import type { GameList } from "../schemas/games";
+
+import games from "../data/games.yml";
+
+const typedGames = games as GameList[];
+---
+
+<BaseLayout
+  title="Games"
+  description="Find out what books I have been reading lately"
+>
+  <article>
+    <header>
+      <h1>Games</h1>
+    </header>
+    <div id="post-body">
+      {
+        typedGames.map((gameList) => (
+          <div class="grid-list">
+            <h3>{gameList.list}</h3>
+            <ul role="list">
+              {gameList.games
+                .map((game) => (
+                  <li>
+                    <div>
+                      <img
+                        alt={`Box art for the game titled ${game.title}`}
+                        src={game.cover}
+                      />
+                      <a
+                        href={game.link}
+                        target="_blank"
+                        rel="noopener noreferer"
+                      >
+                        <span>{game.title}</span>
+                      </a>
+                    </div>
+                    <div>
+                      <dd>
+                        {game.platform} {game.replay && "· Replay"}
+                      </dd>
+                      {game.completed !== "0000-00-00" && (
+                        <dd>Finished: {game.completed}</dd>
+                      )}
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </article>
+</BaseLayout>
