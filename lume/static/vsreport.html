@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>VS Report</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<h1 id="servers">Servers</h1>
+<p>VisualShower own a few different domains. They seem to run their own mail servers.</p>
+<p>They own the following domains:</p>
+<ul>
+<li><a href="http://gshower.net">gshower.net</a></li>
+<li><a href="http://visualshower.com">visualshower.com</a></li>
+<li><a href="http://vshower.com">vshower.com</a></li>
+</ul>
+<h1 id="summary">Summary</h1>
+<ul>
+<li>The company wiki requires nothing more than an email confirmation to register and login. This can <strong>easily</strong> be accomplished with nothing more than a simple proxy and a disposable email address service! A number of sensitive items can be seen from the QA Team's Google Play account logins + passwords to a number of employee's birthdays which a malicious user could incorporate into a social engineering attack.</li>
+<li>At least 4 instances of the <code>.git</code> folder being included in the production release of subdomains. It's trivial for a user to view a list of <a href="http://bs.visualshower.com/.git/FETCH_HEAD">branches</a> or view <a href="http://bs.visualshower.com/.git/logs/refs/remotes/origin/sr/master">deployment logs</a> by piecing together contents from the <code>.git</code> folder.</li>
+<li>The company GitLab instance requires nothing more than an email address to register. While it doesn't disclose any information due to everything being private, it is possible to view employee profiles and gather a sense of who works for the company. Perhaps a malicious individual could leverage this for use with social engineering attempts?</li>
+<li>There are a few <a href="http://pv-dev.vshower.com">seemingly abandoned</a> software installations that don't hold much information but still require no credentials to view.</li>
+</ul>
+<h1 id="detailed-report">Detailed Report</h1>
+<p>Below is a list of their subdomains and information about what their purpose is, what they serve and so on</p>
+<h1 id="gshower.net"><a href="http://gshower.net">gshower.net</a></h1>
+<p><a href="http://gshower.net">gshower.net</a> itself does not have any ports open, nor returns any packets.</p>
+<p>The registrant is Hwang Ji Woong, on behalf of VisualShower Corp., whose email is <a href="mailto:jwhwang@visualshower.com">jwhwang@visualshower.com</a>.</p>
+<p>There are no stored results in the <a href="https://web.archive.org">Internet Archive</a>.</p>
+<h2 id="btba-prd.gshower.net"><a href="http://btba-prd.gshower.net" class="uri">btba-prd.gshower.net</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://13.112.83.48">13.112.83.48</a> is home to a lone apache server that serves a blank index page over both http and https. I would assume that it's used for storing Beyond the Bounds: Season 1 assets as indicated by the name but that hasn't been confirmed yet.</p>
+<p>The SSL cert is issued with the common name <code>*.visualshower.com</code>.</p>
+<p>A <code>robots.txt</code> file exists which allows <code>/webview/share</code> and <code>assets/images</code> which may mean that this domain servers the promotional banners see inside Beyond The Bounds.</p>
+<p><code>assets/images</code> by itself produces a <code>403 Forbidden</code> error which means it's likely a directory for storing, well, images.</p>
+<p><code>webview/share</code> generates the following PHP error:</p>
+<div class="sourceCode"><pre class="sourceCode php"><code class="sourceCode php"><span class="kw">A</span> <span class="kw">PHP</span> Error was encountered
+
+Severity: Warning
+
+Message: Missing argument <span class="dv">1</span> <span class="kw">for</span> webview::share<span class="ot">()</span>
+
+Filename: controllers/webview.php
+
+Line Number: <span class="dv">615</span></code></pre></div>
+<p>It also serves the title <code>Facebook Friends</code>.</p>
+<h2 id="btba-test.gshower.net"><a href="http://btba-test.gshower.net">btba-test.gshower.net</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://13.112.56.104">13.112.56.104</a> is home to a lone apache server that serves an error message purely via http. SSL is not available.</p>
+<p>The error message is as follows:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">A PHP Error was encountered
+
+Severity: Warning
+
+Message: session_start(): open(/var/www/html/btba-test//data/session/sess_kd2s701m6pivh39k81h12rlfq0, O_RDWR) failed: Permission denied (13)
+
+Filename: helpers/session_helper.php
+
+Line Number: 24</code></pre></div>
+<p>Interestingly, it exposes the internal file structure, in that the site is serving from <code>var/www/html/btba-test</code> which is the default for most web servers anyway.</p>
+<p>Visiting <code>webview/share</code> generates the same error as before on top of the following additional error:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">A PHP Error was encountered
+
+Severity: Warning
+
+Message: Missing argument 1 for webview::share()
+
+Filename: controllers/webview.php
+
+Line Number: 615</code></pre></div>
+<h2 id="bs.gshower.net"><a href="http://bs.gshower.net">bs.gshower.net</a></h2>
+<p>This subdomain reports all ports as filtered which may mean a firewall is deflecting all attempts to probe for ports.</p>
+<p>I would have assumed this server contained assets for Blustone such as banners.</p>
+<h2 id="mail.gshower.net"><a href="http://mail.gshower.net">mail.gshower.net</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP -&gt; 443</td>
+</tr>
+<tr class="even">
+<td>143</td>
+<td>IMAP</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS -&gt; 5000</td>
+</tr>
+<tr class="even">
+<td>465</td>
+<td>SSL/SMTP</td>
+</tr>
+<tr class="odd">
+<td>587</td>
+<td>SMTP</td>
+</tr>
+<tr class="even">
+<td>993</td>
+<td>IMAPS</td>
+</tr>
+<tr class="odd">
+<td>1723</td>
+<td>PPTP*</td>
+</tr>
+<tr class="even">
+<td>5000</td>
+<td>HTTPS -&gt; 5001</td>
+</tr>
+<tr class="odd">
+<td>5001</td>
+<td>Synology DSM</td>
+</tr>
+<tr class="even">
+<td>5002</td>
+<td>RFE*</td>
+</tr>
+<tr class="odd">
+<td>5004</td>
+<td>SSH</td>
+</tr>
+<tr class="even">
+<td>8080</td>
+<td>HTTP-Proxy*</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>= Purpose could not be confirmed. HTTP requests produced <code>ERR_SSL_PROTOCOL_ERROR</code>.</li>
+</ul>
+<p>The name here is a dead giveaway. <a href="http://218.39.84.179">218.39.84.179</a> is primarily a mail server but it also performs a number of other functions here.</p>
+<h3 id="and-5001">80, 443, 5000 and 5001</h3>
+<p>Visiting the domain via a browser presents the login page for a HELIOS Synology DiskStation 6.1. This &quot;DiskStation Manager&quot; interface ships with all Synology NAS products.</p>
+<p>Thankfully, the default &quot;admin&quot; login has been disabled.</p>
+<p>Visiting Port 80 redirects to Port 443 which redirects to Port 5001 and finally to Port 5001, serving an invalid certificate. The certificate is not truely invalid, although it is issued by StartCom who are discredited by Mozilla and Google.</p>
+<p>The certificate has the Common Name <code>devstudio.visualshower.com</code> so we can assume these are the same server. It would appear to be using nginx as a reverse proxy to serve requests.</p>
+<p>Chances are that this domain may not be configured properly and is serving traffic for <code>devstudio</code> as it may be considered the default.</p>
+<h3 id="section">5002</h3>
+<p>Interesting enough, rather than using the default, this server provides <code>SSH</code> capability on Port 5002.</p>
+<p>It also has an SSL cert with the CN <code>ULTRA.devstudio.visualshower.com</code> which is a non-existent domain as far as I am aware.</p>
+<p>The <code>root</code> account is not disabled.</p>
+<h3 id="and-993">143, 465, 587 and 993</h3>
+<p>These are your standard secured and non-secured email ports. It seems the server runs an instance of Dovecot for mail services.</p>
+<p>The secured ports serve an SSL certificate with the CN <code>mail.visualshower.com</code>.</p>
+<h2 id="wifhd-ww-prd.gshower.net"><a href="http://wifhd-ww-prd.gshower.net">wifhd-ww-prd.gshower.net</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>Visiting this subdomain presents a nice big <code>500 Internal Server Error</code> as follows:</p>
+<pre><code>Internal Server Error
+
+The server encountered an internal error or misconfiguration and was unable to complete your request.
+
+Please contact the server administrator at root@localhost to inform them of the time this error occurred, and the actions you performed just before this error.
+
+More information about this error may be available in the server error log.
+
+Additionally, a 301 Moved Permanently error was encountered while trying to use an ErrorDocument to handle the request.</code></pre>
+<p>Similar to <code>btba-prd</code>, it has the same directory structure and error messages.</p>
+<h1 id="visualshower.com"><a href="http://visualshower.com">visualshower.com</a></h1>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+</tbody>
+</table>
+<p>This domain is home to VisualShower's main company Wordpress website. As such, an admin page can be found at <code>/wp-admin</code> and other assets are stored in <code>/wp-includes/</code>.</p>
+<p>A sitemap can also be found at <code>/sitemap.xml.gz</code>.</p>
+<p>This site, and the <code>btb</code>, <code>bs</code> and <code>wi</code> subdomains all render a <code>403 Forbidden</code> when visting <code>/.git/</code> which likely indicates that they're deployed upon updates to a <code>master</code> branch within their self-hosted <code>GitLab</code> instance.</p>
+<p>The site can also be managed using the FTP protocol.</p>
+<p>The registrant is Woo Suk Lee, on behalf of VisualShower Corp., whose email is <a href="mailto:tmt@visualshower.com">tmt@visualshower.com</a>.</p>
+<h2 id="bs.visualshower.com"><a href="http://bs.visualshower.com">bs.visualshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This subdomain serves as the promotional site for the mobile game <a href="https://vsfan.net/wiki/Blustone">Blustone</a>.</p>
+<p>The site is built using an open source PHP CMS called <a href="http://xpressengine.io/">XpressEngine</a>.</p>
+<p>As mentioned in the entry for the root of the domain, it's deployed using Git and <code>nmap</code> is able to point out some interesting details about the repo:</p>
+<pre><code>Last commit message: prd commit
+Remotes: http://git.vshower.com/spagetti/wi_brand_xe_gameshower.git
+Project type: PHP application (guessed from .gitignore)</code></pre>
+<p>Mainly the remote is of interest as it confirms that the VS promo sites are indeed hosted out of their in-house GitLab instance, rather than just being an abandoned test install.</p>
+<p><a href="https://aws.amazon.com/cloudfront/">Amazon Cloudfront</a> is used to speedup page delivery.</p>
+<p>Despite both an HTTP and an HTTPS version of the page being served, clients are never forced to upgrade to HTTPS despite the fact that users are able to login.</p>
+<p>Forums are also available starting at <a href="https://bs.visualshower.com/en">/en</a> and are also generated using XpressEngine.</p>
+<p>Unsurprisingly, the administration portal is located at <a href="https://bs.visualshower.com/admin">/admin</a>.</p>
+<h2 id="btb.visualshower.com"><a href="http://btb.visualshower.com">btb.visualshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This subdomain serves as the promotional site for the episodic mobile game <a href="https://vsfan.ne/wiki/Beyond_The_Bounds">Beyond The Bounds</a>.</p>
+<p>The findings are all largely similar to [bs.visualshower.com] above. The only proper difference is the skin over the CMS and the site content.</p>
+<p>The last Git commit message was <code>ignore naver seo file.</code> with the remote and other details being identical. This would lead me to assume that the repo structure is something like this:</p>
+<pre><code>- /wi_brand_xe_gameshower
+  - /bs
+  - /btb
+  - /wi</code></pre>
+<p>Each site may be a subrepo that gets deployed as part of the larger <code>wi_brand_xe_gameshower</code> repo, with each subfolder being served to its respective domain name.</p>
+<p>The default action for this site is to render the forums first, rather than the promo page.</p>
+<p>Similarly, an admin portal is available at <a href="https://btb.visualshower.com/admin">/admin</a>.</p>
+<h2 id="devstudio.visualshower.com"><a href="http://devstudio.visualshower.com">devstudio.visualshower.com</a></h2>
+<p>As this subdomain points to the same IP address as <a href="http://mail.gshower.net">mail.gshower.net</a>, please refer above for results.</p>
+<h2 id="imap.visualshower.com"><a href="http://imap.visualshower.com">imap.visualshower.com</a></h2>
+<p>As this subdomain points to the same IP address as <a href="http://mail.gshower.net">mail.gshower.net</a>, please refer above for results.</p>
+<h3 id="join.visualshower.com"><a href="http://join.visualshower.com">join.visualshower.com</a></h3>
+<p>This subdomain acts as a user registration page. It's generally used as the login form for the various forums, with a callback returning the user back to their originating domain.</p>
+<h2 id="mail.visualshower.com"><a href="http://mail.visualshower.com">mail.visualshower.com</a></h2>
+<p>As this subdomain points to the same IP address as <a href="http://mail.gshower.net">mail.gshower.net</a>, please refer above for results.</p>
+<h2 id="smtp.visualshower.com"><a href="http://smtp.visualshower.com">smtp.visualshower.com</a></h2>
+<p>As this subdomain points to the same IP address as <a href="http://mail.gshower.net">mail.gshower.net</a>, please refer above for results.</p>
+<h2 id="static.visualshower.com"><a href="http://static.visualshower.com">static.visualshower.com</a></h2>
+<p>This subdomain itself isn't used however it is home to a few fourth-level domains which stored game assets, most noticably event banners.</p>
+<h2 id="btb.static.visualshower.com"><a href="http://btb.static.visualshower.com">btb.static.visualshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This fourth-level domain acts as file storage essentially, with server response to snooping fans.</p>
+<p>The most obvious place that this domain is referenced is in the source code for <a href="https://btb.visualshower.com">btb.visualshower.com</a> which fetches its css and js content from here.</p>
+<p>Sending a few requests confirmed that users are routed through a load balancer, indicating that it received a sizable number of requests from users game clients as expected.</p>
+<h2 id="wi.static.visualshower.com"><a href="http://wi.static.visualshower.com">wi.static.visualshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>As this fourth-level domain carries out the same purpose as <a href="http://btb.static.visualshower.com">btb.static.visualshower.com</a>, please refer above for results.</p>
+<h2 id="wi.visualshower.com"><a href="http://wi.visualshower.com">wi.visualshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>As with <a href="http://btb.visualshower.com">bs.visualshower.com</a> and <a href="http://btb.visualshower.com">btb.visualshower.com</a> above, this subdomain is the promotional site for the episodic mobile game <a href="https://vsfan.net/wiki/White_Island">White Island</a>.</p>
+<p>The only proper difference is the skin over the CMS and the site content.</p>
+<p>As above, all Git details were the same except for the last commit message which was <code>add icon for NAVER client webview</code>.</p>
+<p>The admin panel can also be found in the usual spot at <a href="http://wi.visualshower.com/admin">/admin</a>.</p>
+<h1 id="vshower.com"><a href="http://vshower.com">vshower.com</a></h1>
+<p>This domain mainly acts as a shortcut for the longer <a href="http://visualshower.com">visualshower.com</a> domain name, and acts as an alias for a number of services shared with <a href="https://gshower.net">gshower.net</a>.</p>
+<p>The registrant is Jang Hyuk Lim, on behalf of VisualShower Corp., whose email is <a href="mailto:tmt@visualshower.com">tmt@visualshower.com</a>.</p>
+<p>The root domain itself isn't assigned to an IP address, however it does have an MX record pointing to <a href="http://helios.mail.visualshower.com">helios.mail.visualshower.com</a>.</p>
+<h2 id="dist.vshower.com"><a href="http://dist.vshower.com">dist.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>SSH</td>
+</tr>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>135</td>
+<td>MSRPC</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+<tr class="even">
+<td>2179</td>
+<td>VMRDP</td>
+</tr>
+<tr class="odd">
+<td>5000</td>
+<td>RDRCT</td>
+</tr>
+<tr class="even">
+<td>8080</td>
+<td>RDRCT</td>
+</tr>
+<tr class="odd">
+<td>49153</td>
+<td>???</td>
+</tr>
+<tr class="even">
+<td>49154</td>
+<td>???</td>
+</tr>
+<tr class="odd">
+<td>49163</td>
+<td>???</td>
+</tr>
+<tr class="even">
+<td>55055</td>
+<td>???</td>
+</tr>
+<tr class="odd">
+<td>55056</td>
+<td>???</td>
+</tr>
+</tbody>
+</table>
+<p>This subdomain has quite a few open processes which you would expect for a server with dist(ribution) in the name, but ultimately, doesn't appear to do much from the outside.</p>
+<p>OS estimation also believes it's a Windows Server, as evidenced by the <code>MSRPC</code> protocol on Port 135. Whether or not it truely does host that service is untested.</p>
+<h1 id="and-8080">80, 443 and 8080</h1>
+<p>The above ports all redirect the user to <a href="http://dist.vshower.com/ota" class="uri">http://dist.vshower.com/ota</a>.</p>
+<p>The <code>/ota</code> page has a login page requiring an ID and a password. It also displays the users operating system, browser and user agent string. It also outputs the user agent string, although it's commented out.</p>
+<p>The OTA page may be linked to <a href="http://ota.visualshower.com" class="uri">http://ota.visualshower.com</a> although its purpose isn't confirmed. One could assume OTA stands for <code>Over the air</code> but that doesn't reveal much without knowing the context it's designed for.</p>
+<h1 id="and-49163">5000, 49153, 49154 and 49163</h1>
+<p>It's unknown what the purpose of these port is. Visiting them in a browser starts to load something but the connection never times out nor receives anything.</p>
+<h1 id="and-55056">55055 and 55056</h1>
+<p>These two ports returns no HTTP response nor can their purpose be identifed by <code>nmap</code>.</p>
+<h2 id="helios.mail.vshower.com"><a href="http://helios.mail.vshower.com">helios.mail.vshower.com</a></h2>
+<p>As this fourth-level domain points to the same IP address as <a href="http://mail.gshower.net">mail.gshower.net</a>, please refer above for results.</p>
+<p>Helios is likely a reference to the Helios DSM system, rather than a mythological reference that VisualShower are usually fond of making.</p>
+<h2 id="job.vshower.com"><a href="http://job.vshower.com">job.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This subdomain acts as a shortcut for potential job applications and redirects the user to <a href="https://join-test.vshower.com/register_v2">join-test.vshower.com/register_v2</a>.</p>
+<h2 id="join-test.vshower.com"><a href="http://join-test.vshower.com">join-test.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This site acts as a portal for VisualShower job applicants.</p>
+<p>Two versions of the login form exist, one at <code>/</code> and the other at <code>/register_v2</code> which is the currently used form.</p>
+<h2 id="mail.vshower.com"><a href="http://mail.vshower.com">mail.vshower.com</a></h2>
+<p>As this subdomain points to the same IP address as <a href="http://dist.gshower.net">dist.gshower.net</a>, please refer above for results.</p>
+<h2 id="ota.vshower.com"><a href="http://ota.vshower.com">ota.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This subdomain contains the &quot;VisualShower OTA.</p>
+<p>Visiting the site displays an empty table with the headings &quot;Download&quot;, &quot;Project Code&quot;, &quot;Build Date&quot;, &quot;Version&quot;, &quot;Platform&quot;, &quot;Service Type&quot;, &quot;Comments&quot;, &quot;PermaLink&quot; and &quot;Alias&quot; which prompts the assumption that it serves as a file storage of sorts.</p>
+<p>Poking around in the bundled JS assets reveals an API endpoint at, well, <code>/api</code> which accepts a few variations such as <code>/api/files</code>. All attempts are unauthorised to non-registered users as one would hope.</p>
+<h2 id="pv-dev.vshower.com"><a href="http://pv-dev.vshower.com">pv-dev.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>SSH</td>
+</tr>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>135</td>
+<td>MSRPC</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+<tr class="even">
+<td>2179</td>
+<td>VMRDP</td>
+</tr>
+<tr class="odd">
+<td>5000</td>
+<td>UPNP</td>
+</tr>
+<tr class="even">
+<td>8000</td>
+<td>Redmine</td>
+</tr>
+<tr class="odd">
+<td>8080</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>49153</td>
+<td>????</td>
+</tr>
+<tr class="odd">
+<td>49154</td>
+<td>????</td>
+</tr>
+<tr class="even">
+<td>49163</td>
+<td>????</td>
+</tr>
+<tr class="odd">
+<td>55055</td>
+<td>????</td>
+</tr>
+<tr class="even">
+<td>55056</td>
+<td>????</td>
+</tr>
+</tbody>
+</table>
+<h1 id="port-80-and-443">Port 80 and 443</h1>
+<p>Interestingly, nothing but a simple HTML tag is rendered: <code>&lt;meta property=&quot;wb:webmaster&quot; content=&quot;50ca26d2e4ae76a8&quot; /&gt;</code>.</p>
+<p>Upon visiting the https:// version of the site, the browser warns that, as of writing, the certificate had expired on the 27th June, 2017.</p>
+<h1 id="port-8000">Port 8000</h1>
+<p>This port hosts an instance of the <a href="https://bitnami.com/stack/redmine">Bitnami Redmine Stack</a> which is a rails-based open source bug tracker.</p>
+<p>Four projects are visible along with their descriptions and creation/modification timestamps.</p>
+<pre><code>Lantern (08/16/2013 11:00 am)
+Lantern Earlgrey 포팅 프로젝트 (Porting Project)
+
+WICT2 (08/13/2013 12:37 pm)
+VisualShower 화이트 아일랜드 2 프로젝트! (White Island 2 Project)
+
+VS (07/29/2013 11:46 pm)
+VisualShower Common
+
+LTCB (07/28/2013 10:05 pm)
+VisualShower LTCB Project!</code></pre>
+<p>Each project contains its own activity page, calendar, news feed and wiki although they're all empty.</p>
+<p>While debatably misconfigured, it's nothing more than abandoned installation that never gained much activity.</p>
+<p>What little contents there is will be discussed each title's relevant discussion/research pages.</p>
+<h2 id="pv-test.vshower.com"><a href="http://pv-test.vshower.com">pv-test.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+</tbody>
+</table>
+<p>Similar to <a href="http://pv-dev.vshower.com">pv-dev.vshower.com</a>, this domain responds on Port 80 with a single meta tag.</p>
+<p>No other ports are open</p>
+<h2 id="sc.vshower.com"><a href="http://sc.vshower.com">sc.vshower.com</a></h2>
+<p>This domain hosts something called StoryCard. The only viewable page is that of a login/registration page.</p>
+<p>It may be an in-house style product from a collaborator such as Naver? It runs off the same CMS used for VisualShower's other sites.</p>
+<p><code>nmap</code> also exists its remote which is <code>http://git.vshower.com/spagetti/sc_vshower.git</code>. The last commit message was <code>change logo position</code>.</p>
+<h2 id="wiki.vshower.com"><a href="http://wiki.vshower.com">wiki.vshower.com</a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+</tbody>
+</table>
+<p>This one is a pretty clear cut case. It hosts a <a href="https://www.dokuwiki.org/">DokuWiki</a> instance.</p>
+<p>Alarmingly, nothing more than an email activation is required to access this wiki which does contain a number of company related articles.</p>
+<p>Any rogue user can easily gain access to all of the articles it contains, from harmless &quot;How to clean the coffee filter&quot; style documentation to the QA accounts (with passwords!!) used for Google Play testing and deployment.</p>
+</body>
+</html>

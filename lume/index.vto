@@ -1,0 +1,111 @@
+{{ layout "base.vto" }}
+<article class="full">
+  <div id="home-wrapper">
+    <div id="welcome-message">
+      <center>
+        <header>
+          <h1>Welcome!</h1>
+        </header>
+      </center>
+      <hr />
+      <center>
+        <header>
+          <h3>Here's a random(ly generated) thought</h3>
+        </header>
+        <p>{{ gags[Math.floor(Math.random() * gags.length)] }}</p>
+      </center>
+      <hr />
+      <div class="post-stream">
+        <center>
+          <header>
+            <h3>
+              <a href="/books/">Books I'm *ahem* paging through</a>
+            </h3>
+          </header>
+          <ul>
+          {{ for book of books[0].books }}
+          {{ if book.progress !== 100 }}
+          <li style="display: inline-block;">
+            <img alttitle="OpenLibrary" altsrc="{{ book.link }}" alt="A cover image of the book titled {{ book.title }}" src="{{ book.cover }}" height="180px" style="border-radius: 3px;" />
+            <p>{{ book.progress }}% read</p>
+          </li>
+          {{ /if }}
+          {{ /for }}
+          </ul>
+        </center>
+      </div>
+      <hr />
+      <div class="post-stream">
+        <center>
+          <header>
+            <h3>Manga I'm actively churning through</h3>
+          </header>
+          <ul>
+          {{ for entry of manga }}
+          {{# I read a lot of ongoign manga so we just filter for finished so we can surface a percentage complete #}}
+          {{ if entry.status === "FINISHED" }}
+          <li style="display: inline-block;">
+            <img alttitle="AniList" altsrc="{{ entry.url }}" alt="A cover image of {{ entry.title }}, a manga series by {{ entry.author }}" src="{{ entry.cover }}" height="180px" style="border-radius: 3px;" />
+            <p>{{ entry.chapters - entry.progress }} chapters left<p>
+          </li>
+          {{ /if }}
+          {{ /for }}
+          </ul>
+        </center>
+      </div>
+    </div>
+    <div id="recent-updates">
+      <div id="liveplayer">
+        {{ "<!-- Curious how my live player works? The unminified source code lives at https://github.com/marcus-crane/utf9k/blob/main/assets/js/live-player.js -->" |> safe }}
+        <h3 id="action">😵‍💫 This widget should have loaded by now!</h3>
+        <div>
+          <div id="rotating-border" class="rotating-border-hidden">
+            <img src="/placeholder.png" id="cover" alt="A grey placeholder cover that is just taking up space until the real cover art is loaded">
+          </div>
+        </div>
+        <strong id="title">Fingers Crossed</strong>
+        <br />
+        <i id="subtitle">It should update if things aren't broken</i>
+        <br />
+          <div id="progress">
+            <i id="elapsed">00:00</i> / <i id="duration">59:59</i>
+          </div>
+      </div>
+      <div class="player-history">
+        <p>Previously</p>
+        <ul id="played-items">
+        </ul>
+      </div>
+      <hr />
+      <div class="post-stream">
+        <h3>Recently updated pages</h3>
+        <ul>
+          {{ for page of search.pages() |> filter(p => !p.draft) |> sort((a, b) => b.data.date - a.data.date) |> slice(0, 6) }}
+          <li>
+            <a href="{{ page.data.url }}">{{ page.data.title }}</a>
+          </li>
+          {{ /for }}
+        </ul>
+      </div>
+      <hr />
+      <center>
+        <div class="post-stream">
+          <header>
+            <h3>
+              <a href="/games/">Games I'm (slowly) progressing through</a>
+            </h3>
+          </header>
+          <ul>
+          {{ for game of games[0].games }}
+          <li style="display: inline-block;">
+            <img alttitle="IGDB" altsrc="{{ game.link }}" alt="Box art for the game titled {{ game.title }}" src="{{ game.cover }}" height="180px" style="border-radius: 3px;" />
+          </li>
+          {{ /for }}
+          </ul>
+        </div>
+      </center>
+      <hr />
+    </div>
+  </div>
+</article>
+{{ /layout }}
