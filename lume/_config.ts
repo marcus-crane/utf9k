@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import esbuild from "lume/plugins/esbuild.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
@@ -9,7 +10,11 @@ import rehypePrettyCode from "npm:rehype-pretty-code";
 
 import prettier from "npm:prettier"
 
-const site = lume();
+const site = lume({
+    server: {
+        port: 1313
+    },
+});
 
 site.use(feed());
 site.use(jsx_preact());
@@ -18,9 +23,9 @@ site.use(remark({
     rehypePlugins: [rehypePrettyCode]
 }));
 site.use(vento());
+site.use(esbuild());
 
 site.copy("css");
-site.copy("js");
 site.copy("static", ".");
 
 // site.process(
