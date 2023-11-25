@@ -25,15 +25,14 @@ const typedBooks = books as BookList[];
           const goalCompletion = (goalProgress * 100) / yearGroup.goal;
           return (
             <div class="grid-list">
-              <div>
+              <header>
                 <h2>{yearGroup.list}</h2>
                 {yearGroup.goal && (
-                  <span>
-                    Yearly goal: {goalProgress} / {yearGroup.goal} books
-                    completed ({Math.round(goalCompletion)}%)
-                  </span>
+                  <div id="post-meta">
+                    Yearly goal: {goalProgress} / {yearGroup.goal} books completed ({Math.round(goalCompletion)}%)
+                  </div>
                 )}
-              </div>
+              </header>
               <ul role="list">
                 {yearGroup.books.map((b) => (
                   <li>

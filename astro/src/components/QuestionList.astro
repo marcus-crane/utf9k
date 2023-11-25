@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { fnv_1a } from '../../lib/fnv32'
 
 interface Props {
   questions: CollectionEntry<"questions">[];
@@ -34,10 +35,21 @@ const systemColours = [
 
 <ul>
   {
-    questions.map((q) => {
+    questions.sort((a, b) => {
+      const nameA = a.data.title.toLowerCase();
+      const nameB = b.data.title.toLowerCase();
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    }).map((q) => {
       const tags = q.data.tags.map(t => {
+        const hash = fnv_1a(t)
         // Hash each tag and reduce it down to just numbers
-        const hash = createHash("sha256").update("microsoft").digest("hex").replace(/[a-zA-Z]+/g, '')
+        // const hash = createHash("sha256").update(t).digest("hex").replace(/[a-zA-Z]+/g, '')
         // Modulo hash to fit within list of colours
         const i = Number(hash) % systemColours.length
         return (

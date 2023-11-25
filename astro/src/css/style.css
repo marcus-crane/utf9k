@@ -630,6 +630,11 @@ form#search {
   margin-top: 1rem;
 }
 
+form#search input#search-input,
+li.question span {
+  margin-left: 4px;
+}
+
 /* Grid lists */
 #post-body .grid-list ul {
   display: grid;

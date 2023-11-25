@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import dayjs from 'dayjs'
 
 interface Props {
   posts: CollectionEntry<"blog">[];
@@ -28,6 +29,7 @@ let seenYears: Set<number> = new Set()
             {header}
             <li>
               <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+              <time>{dayjs(p.data.date).format('MMM DD')}</time>
             </li>
           </>
         );

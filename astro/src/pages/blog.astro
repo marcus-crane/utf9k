@@ -6,10 +6,10 @@ import Posts from "../components/PostList.astro";
 const posts = await getCollection("blog");
 ---
 
-<BaseLayout title="Welcome to Astro.">
+<BaseLayout title="Posts I've written" description="Here you can find all of the blog posts I've hand crafted over the years">
   <main>
     <header>
-      <h1>Blog posts</h1>
+      <h1>Posts I've written</h1>
     </header>
     <Posts posts={posts} />
   </main>
