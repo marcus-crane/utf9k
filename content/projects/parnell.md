@@ -24,6 +24,6 @@ The result is an interactive map where you can change the time of day to see the
 
 The idea was that if you invert this information, you can find the spot least likely to be ticketed.
 
-You can play around with the project just below but if you'd like to see a full screen version, or you have iframes disabled, then you can [check it out here](/project-src/parnell/).
+You can play around with the project just below but if you'd like to see a full screen version, or you have iframes disabled, then you can [check it out here](https://parnell.utf9k.net).
 
-<iframe src="/project-src/parnell" style="height: 500px;" allowfullscreen></iframe>
+<iframe src="https://parnell.utf9k.net" style="height: 500px;" allowfullscreen></iframe>
