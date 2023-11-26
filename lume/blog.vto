@@ -5,16 +5,16 @@
   </header>
   <ul>
     {{> let seenYears = new Set() }}
-    {{ for page of search.pages("category=blog") |> filter(p => !p.draft) |> sort((a, b) => b.data.date - a.data.date) }}
-    {{ if !seenYears.has(page.data.date.getFullYear()) }}
-    <h2>{{ page.data.date.getFullYear() }}</h2>
+    {{ for post of search.pages("category=blog", "date=desc") |> filter(p => !p.draft) |> data }}
+    {{ if !seenYears.has(post.date.getFullYear()) }}
+    <h2>{{ post.date.getFullYear() }}</h2>
     {{ /if }}
     <li>
-      <a href="{{ page.data.url }}">{{ page.data.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       {{# TODO: NZ locale #}}
-      <time datetime="{{ page.data.date |> date('MMM dd') }}">{{ page.data.date |> date('MMM dd') }}</time>
+      <time datetime="{{ post.date |> date('MMM dd') }}">{{ post.date |> date('MMM dd') }}</time>
     </li>
-    {{> seenYears.add(page.data.date.getFullYear()) }}
+    {{> seenYears.add(post.date.getFullYear()) }}
     {{ /for }}
   </ul>
 </main>

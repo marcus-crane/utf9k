@@ -1,0 +1,21 @@
+{{ layout "base.vto" }}
+<main>
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <ul>
+    <h2>Ongoing</h2>
+    {{ for project of search.pages("category=projects", "order=asc title=asc") |> filter(p => p.data.ongoing) |> data }}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {{ /for }}
+    <h2>Archived</h2>
+    {{ for project of search.pages("category=projects", "order=asc title=asc") |> filter(p => !p.data.ongoing) |> data }}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {{ /for }}
+  </ul>
+</main>
+{{ /layout }}
