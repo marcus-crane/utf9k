@@ -3,6 +3,7 @@ title: "Now"
 slug: "now"
 category: "now"
 description: "Usually I am up to Stuff™️ and this page may hold the answers you seek"
+layout: markdown.vto
 lastmod: "2023-10-15T20:40:00+13:00"
 tags:
 - "me"

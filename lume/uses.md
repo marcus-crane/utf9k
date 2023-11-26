@@ -3,6 +3,7 @@ title: "Uses"
 slug: "uses"
 category: "uses"
 description: "In which I get on the bandwagon and list the various tools of my trade"
+layout: markdown.vto
 tags:
 - "meta"
 ---

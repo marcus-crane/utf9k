@@ -1,0 +1,15 @@
+{{ layout "base.vto" }}
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    {{ if ["blog", "reviews"].includes(category) }}
+    <div id="post-meta">
+      <time datetime="{{ date |> date('MM DDDD, yyyy') }}">{{ date |> date('MMMM d, yyyy') }}</time> · Around {{ readingInfo.minutes }} min
+    </div>
+    {{ /if }}
+  </header>
+  <div id="post-body">
+    {{ content }}
+  </div>
+</article>
+{{ /layout }}

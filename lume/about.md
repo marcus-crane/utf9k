@@ -3,6 +3,7 @@ title: "About"
 slug: "about"
 category: "about"
 description: "Learn a bit about me and what I do for a living"
+layout: markdown.vto
 tags:
 - "me"
 ---
