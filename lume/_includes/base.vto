@@ -4,9 +4,10 @@
   {{# {{ block "style" . }}{{ end }}
   {{ partial "head.html" . }}
   {{ block "json+ld" . }}{{ end }} #}}
-  {{ include "head.vto" }}
+  {{ include "partials/head.vto" }}
 </head>
 <body>
+  {{ include "partials/nav.vto" }}
   <div id="content">
     {{ content }}
   </div>

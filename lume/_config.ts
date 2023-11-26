@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
@@ -16,6 +17,7 @@ const site = lume({
     },
 });
 
+site.use(date());
 site.use(feed());
 site.use(jsx_preact());
 site.use(reading_info());
@@ -25,6 +27,7 @@ site.use(remark({
 site.use(vento());
 site.use(esbuild());
 
+// TODO: ESBuild + content hashing
 site.copy("css");
 site.copy("static", ".");
 

@@ -3,6 +3,7 @@
   "packages": {
     "specifiers": {
       "npm:@mdx-js/mdx@2.3.0": "npm:@mdx-js/mdx@2.3.0",
+      "npm:date-fns": "npm:date-fns@2.30.0",
       "npm:date-fns@2.30.0": "npm:date-fns@2.30.0",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@13.0.2",
       "npm:markdown-it-deflist@2.1.0": "npm:markdown-it-deflist@2.1.0",
@@ -2311,6 +2312,7 @@
     "https://deno.land/x/lume@v1.19.3/middlewares/reload.ts": "1162ee5fc3c7e1f6b5fb3da73a648fc71f0a64d30ca48f05ed066c8cb80adbb6",
     "https://deno.land/x/lume@v1.19.3/middlewares/reload_client.js": "34d75e01503fae8180796de882af42b1125fac88f22a010a99d5548de1ba7d72",
     "https://deno.land/x/lume@v1.19.3/mod.ts": "39889108bfda96444489c2d4cec1de3f3a4daee3f5182c20b3965b16a0703055",
+    "https://deno.land/x/lume@v1.19.3/plugins/date.ts": "5b5b4a5715db86c39b4342366d3cc1e5ee67fd57d58acc0d0d793f90de4d53f6",
     "https://deno.land/x/lume@v1.19.3/plugins/esbuild.ts": "0d6e6d8cd225b912016660622148830c1c3846b06aef393b06a181f710b69651",
     "https://deno.land/x/lume@v1.19.3/plugins/favicon.ts": "35839eaeda5604a97f2c3383be3d7853bc035c563579251a08e79a00c0fc85a7",
     "https://deno.land/x/lume@v1.19.3/plugins/feed.ts": "3e8f38523156b450daf7d1b114d431074e7328e702f77f87e3d28495c4f3826f",

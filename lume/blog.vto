@@ -1,0 +1,21 @@
+{{ layout "base.vto" }}
+<main>
+  <header>
+    <h1>Posts I've written</h1>
+  </header>
+  <ul>
+    {{> let seenYears = new Set() }}
+    {{ for page of search.pages("category=blog") |> filter(p => !p.draft) |> sort((a, b) => b.data.date - a.data.date) }}
+    {{ if !seenYears.has(page.data.date.getFullYear()) }}
+    <h2>{{ page.data.date.getFullYear() }}</h2>
+    {{ /if }}
+    <li>
+      <a href="{{ page.data.url }}">{{ page.data.title }}</a>
+      {{# TODO: NZ locale #}}
+      <time datetime="{{ page.data.date |> date('MMM dd') }}">{{ page.data.date |> date('MMM dd') }}</time>
+    </li>
+    {{> seenYears.add(page.data.date.getFullYear()) }}
+    {{ /for }}
+  </ul>
+</main>
+{{ /layout }}
