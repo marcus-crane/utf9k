@@ -18,6 +18,7 @@ const site = lume({
     },
 });
 
+// TODO: data https://lume.land/plugins/search/#returnpagedata
 site.use(date());
 site.use(feed({
     output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],

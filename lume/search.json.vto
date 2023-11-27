@@ -1,0 +1,5 @@
+{{> const index = [] }}
+{{ for question of search.pages("category=questions", "order=asc title=asc") |> data }}
+{{> index.push({ "content": question.content, "slug": question.slug, "tags": question.tags, "title": question.title })}}
+{{ /for }}
+{{ JSON.stringify(index) }}
