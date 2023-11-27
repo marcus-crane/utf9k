@@ -17,6 +17,9 @@
     {{ for question of search.pages("category=questions", "order=asc title=asc") |> data }}
     <li id="{{ question.slug }}" class="question">
       <a href="{{ question.url }}">{{ question.title }}</a>
+      {{ for tag of question.tags }}
+      <span style="color: {{ tag |> taghash }}">#{{ tag }}</span>
+      {{ /for }}
     </li>
     {{ /for }}
   </ul>

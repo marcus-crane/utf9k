@@ -11,6 +11,8 @@ import rehypePrettyCode from "npm:rehype-pretty-code";
 
 import prettier from "npm:prettier"
 
+import { fnv_1a } from "./utils.ts"
+
 const site = lume({
     location: new URL("https://utf9k.net"),
     server: {
@@ -53,5 +55,32 @@ site.copy("static", ".");
 //     [".html"],
 //     async (page) => page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
 // )
+
+site.filter("taghash", tag => {
+    const tagColours = [
+        "lightpink",
+        "blueviolet",
+        "fuchsia",
+        "indigo",
+        "darkviolet",
+        "mediumvioletred",
+        "salmon",
+        "plum",
+        "tomato",
+        "orange",
+        "darkkhaki",
+        "royalblue",
+        "deepskyblue",
+        "lightseagreen",
+        "turquoise",
+        "chocolate",
+        "brown",
+        "goldenrod",
+        "burlywood",
+    ]
+    const hash = fnv_1a(tag)
+    const i = Number(hash) % tagColours.length
+    return tagColours[i]
+})
 
 export default site;
