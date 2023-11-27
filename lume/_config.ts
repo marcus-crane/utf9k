@@ -12,13 +12,30 @@ import rehypePrettyCode from "npm:rehype-pretty-code";
 import prettier from "npm:prettier"
 
 const site = lume({
+    location: new URL("https://utf9k.net"),
     server: {
         port: 1313
     },
 });
 
 site.use(date());
-site.use(feed());
+site.use(feed({
+    output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],
+    query: "category=blog",
+    info: {
+        title: "utf9k",
+        description: "You are online and logged on to my personal ",
+        lang: "en",
+        generator: true
+    },
+    items: {
+        title: "=title",
+        description: "=description",
+        date: "=date",
+        content: "=children",
+        lang: "=lang",
+    },
+}));
 site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
