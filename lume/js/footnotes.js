@@ -1,3 +1,3 @@
-const { littlefoot } = require("npm:littlefoot")
+import littlefoot from "npm:littlefoot"
 
 littlefoot()
