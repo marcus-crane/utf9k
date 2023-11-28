@@ -77,8 +77,7 @@
       </div>
       <div class="player-history">
         <p>Previously</p>
-        <ul id="played-items">
-        </ul>
+        <ul id="played-items"></ul>
       </div>
       <hr />
       <div class="post-stream">
@@ -112,5 +111,7 @@
     </div>
   </div>
 </article>
-<script src="/js/live-player.js"></script>
+<script type="module">
+  import "./js/live-player.js"
+</script>
 {{ /layout }}
