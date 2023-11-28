@@ -10,6 +10,6 @@
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.19.3/",
-    "lume-src/": "https://github.com/lumeland/lume/raw/v1.19.3/"
+    "lume-src/": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/"
   }
 }
