@@ -7,6 +7,7 @@
       "npm:date-fns@2.30.0": "npm:date-fns@2.30.0",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@13.0.2",
       "npm:markdown-it-deflist@2.1.0": "npm:markdown-it-deflist@2.1.0",
+      "npm:markdown-it-footnote": "npm:markdown-it-footnote@3.0.3",
       "npm:markdown-it@13.0.2": "npm:markdown-it@13.0.2",
       "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
       "npm:preact-render-to-string@6.2.2": "npm:preact-render-to-string@6.2.2_preact@10.18.1",
@@ -498,6 +499,10 @@
       },
       "markdown-it-deflist@2.1.0": {
         "integrity": "sha512-3OuqoRUlSxJiuQYu0cWTLHNhhq2xtoSFqsZK8plANg91+RJQU1ziQ6lA2LzmFAEes18uPBsHZpcX6We5l76Nzg==",
+        "dependencies": {}
+      },
+      "markdown-it-footnote@3.0.3": {
+        "integrity": "sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==",
         "dependencies": {}
       },
       "markdown-it@13.0.2": {
@@ -1825,6 +1830,11 @@
       }
     }
   },
+  "redirects": {
+    "https://github.com/lumeland/lume/raw/v1.19.3/core/loaders/text.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/loaders/text.ts",
+    "https://github.com/lumeland/lume/raw/v1.19.3/core/utils.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/utils.ts",
+    "https://github.com/lumeland/lume/raw/v1.19.3/deps/remark.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/remark.ts"
+  },
   "remote": {
     "https://deno.land/std@0.139.0/bytes/equals.ts": "fc16dff2090cced02497f16483de123dfa91e591029f985029193dfaa9d894c9",
     "https://deno.land/std@0.139.0/bytes/mod.ts": "763f97d33051cc3f28af1a688dfe2830841192a9fea0cbaa55f927b49d49d0bf",
@@ -2378,6 +2388,14 @@
     "https://deno.land/x/xml@2.1.2/utils/stringifier.ts": "c701b506835237c0c6c0a08fd94e0a012b644def3f4c819c64788daf2e649ea3",
     "https://deno.land/x/xml@2.1.2/utils/types.ts": "ecaf7785e54a6f1da6f8e56da2bce9853407ceb7d5b3b70f0a60a0890151fe4c",
     "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/cache_busting/mod.ts": "117eaee2cf74289b543d76f99a06c74c909b5ca8b9b427abf8b1f7cadc1f7542",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/loaders/text.ts": "4b1bc3bc64863dfac5cfd0a0acab0ea7b92cf04fffd5423b436dd9b138013a76",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/utils.ts": "b26144a123e3129e5bcce99876952fe574766a9879a0e71478783070b5b70a3b",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/colors.ts": "88c51f7a80827062a84fbe196a1f5669cc6497b20fa53fea06094331fff0c4b2",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/dom.ts": "c39109b2f77e5ac53af8851bd46f09e82da5399bdeece5cd5c58272bd3c06b72",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/front_matter.ts": "14f979bccbf3f3bb21a6ae0541802d7943c036b2a9d20ce1f9f3b3c74b15d171",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/jsonc.ts": "30487183feb4fed471d08a2a2018f41c1f5b91b4e2679b1cfd6c8b6693feae97",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/path.ts": "dd39a1c358b3fececb6e36f731c04252ab4328da2cb238c4e969cfd329fcc597",
+    "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/remark.ts": "b95e8d987aa4a59d97fcbb36dae0bcc8f494072f136830df88f2d54687c9655c",
     "https://raw.githubusercontent.com/marcus-crane/experimental-plugins/fix-nonhash-urls/cache_busting/mod.ts": "99488f14b4e1fe4ae01ddc1c1cf281b0fd5ac5b02bbce0a979a861f54d6c907d"
   }
 }

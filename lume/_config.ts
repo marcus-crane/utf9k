@@ -4,13 +4,13 @@ import esbuild from "lume/plugins/esbuild.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
-import remark from "lume/plugins/remark.ts";
 import vento from "lume/plugins/vento.ts";
 
 import rehypePrettyCode from "npm:rehype-pretty-code";
 
 import prettier from "npm:prettier"
 
+import remark from "./remark.ts";
 import { fnv_1a } from "./utils.ts"
 
 const site = lume({
@@ -42,7 +42,12 @@ site.use(feed({
 site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
-    rehypePlugins: [rehypePrettyCode]
+    rehypePlugins: [rehypePrettyCode],
+    remarkRehype: {
+        footnoteLabelProperties: {
+            className: ['sr-only', 'littlefoot--print']
+        }
+    }
 }));
 site.use(vento());
 site.use(esbuild());
