@@ -20,7 +20,7 @@
     "syntax": "prettier -c public/**/**/**/*.html"
   },
   "devDependencies": {
-    "@babel/core": "7.23.2",
+    "@babel/core": "7.23.5",
     "@babel/preset-env": "7.22.20",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "8.53.0",
