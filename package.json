@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.23.2",
-    "@babel/preset-env": "7.22.20",
+    "@babel/preset-env": "7.23.5",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "eslint": "8.53.0",
     "littlefoot": "4.0.1",
