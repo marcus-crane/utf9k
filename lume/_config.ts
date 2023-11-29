@@ -49,12 +49,12 @@ site.use(feed({
 site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
-    rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOpts]]
-    // remarkRehype: {
-    //     footnoteLabelProperties: {
-    //         className: ['sr-only', 'littlefoot--print']
-    //     }
-    // }
+    rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOpts]],
+    remarkRehype: {
+        footnoteLabelProperties: {
+            className: ['sr-only', 'littlefoot--print']
+        }
+    }
 }));
 site.use(vento());
 site.use(esbuild());

@@ -14,7 +14,7 @@
     </form>
   </header>
   <ul>
-    {{ for question of search.pages("category=questions", "order=asc title=asc") |> data }}
+    {{ for question of search.pages("category=questions", "order=asc title=asc") }}
     <li id="{{ question.slug }}" class="question">
       <a href="{{ question.url }}">{{ question.title }}</a>
       {{ for tag of question.tags }}

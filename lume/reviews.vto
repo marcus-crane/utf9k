@@ -5,7 +5,7 @@
   </header>
   <ul>
     {{> let seenYears = new Set() }}
-    {{ for post of search.pages("category=reviews", "date=desc") |> filter(p => !p.draft) |> data }}
+    {{ for post of search.pages("category=reviews", "date=desc") |> filter(p => !p.draft) }}
     {{ if !seenYears.has(post.date.getFullYear()) }}
     <h2>{{ post.date.getFullYear() }}</h2>
     {{ /if }}
