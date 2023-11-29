@@ -125,7 +125,7 @@ Tidal did have Jay-Z content as an exclusive in the past, which also included th
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
-{{< tweet "jack" 1367460921937817602 >}}
+<%~ await comp.tweet({ user: "jack", id: "1367460921937817602" }) %>
 
 Jack Dorsey mentioned his vision for the future of Tidal:
 
@@ -444,7 +444,7 @@ Kind of but not really?
 
 At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
 
-{{< tweet "plexamp" "1489024846033915908" >}}
+<%~ await comp.tweet({ user: "plexamp", id: "1489024846033915908" }) %>
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
@@ -537,7 +537,7 @@ This one seems like a weirdly obvious oversight so I'm going to give the benefit
 
 The team are definitely aware of it:
 
-{{< tweet "plexamp" "1491494752327372801" >}}
+<%~ await comp.tweet({ user: "plexamp", id: "1491494752327372801" }) %>
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 

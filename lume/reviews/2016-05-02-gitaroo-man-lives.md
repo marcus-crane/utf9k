@@ -32,4 +32,4 @@ Publisher: Koei \
 Released in 2001 (PS2) and 2006 (PSP) \
 Platforms: Playstation 2 and Playstation Portable
 
-{{< tweet user="lennehardt" id="726840026177269760" >}}
+<%~ await comp.tweet({ user: "lennehardt", id: "726840026177269760" }) %>

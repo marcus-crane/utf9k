@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
+import eta from "lume/plugins/eta.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
@@ -29,6 +30,7 @@ const rehypePrettyCodeOpts = {
 
 // TODO: data https://lume.land/plugins/search/#returnpagedata
 site.use(date());
+site.use(eta());
 site.use(feed({
     output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],
     query: "category=blog",
