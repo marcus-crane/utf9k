@@ -1,3 +1,7 @@
+---
+url: /search.json
+---
+
 {{> const index = [] }}
 {{ for question of search.pages("category=questions", "order=asc title=asc") }}
 {{> index.push({ "content": question.content, "slug": question.slug, "tags": question.tags, "title": question.title })}}
