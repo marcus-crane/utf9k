@@ -14,12 +14,14 @@ import prettier from "npm:prettier"
 import remark from "./remark.ts";
 import { fnv_1a } from "./utils.ts"
 
+// TODO: Remove when upgrading to 2.0
+const search = { returnPageData: true };
 const site = lume({
     location: new URL("https://utf9k.net"),
     server: {
         port: 1313
     },
-});
+}, { search });
 
 const rehypePrettyCodeOpts = {
     theme: {
@@ -43,7 +45,7 @@ site.use(feed({
     items: {
         title: "=title",
         description: "=description",
-        published: "=date",
+        date: "=date",
         content: "=children",
         lang: "=lang",
     },

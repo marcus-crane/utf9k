@@ -1,5 +1,5 @@
 import loader from "lume/core/loaders/text.ts";
-import { merge } from "lume/core/utils/object.ts";
+import { merge } from "lume/core/utils.ts";
 import {
   rehypeRaw,
   rehypeSanitize,
@@ -10,13 +10,11 @@ import {
   unified,
 } from "lume/deps/remark.ts";
 
-import type Site from "lume/core/site.ts";
-import type { Engine, Helper } from "lume/core/renderer.ts";
-import type { Page } from "lume/core/file.ts";
+import type { Data, Engine, Helper, Site } from "lume/core.ts";
 
 export interface Options {
   /** List of extensions this plugin applies to */
-  extensions?: string[];
+  extensions: string[];
 
   /**
    * List of remark plugins to use
@@ -27,27 +25,24 @@ export interface Options {
   /** List of rehype plugins to use */
   rehypePlugins?: unknown[];
 
-  /** Configuration for remark-rehype */
+  /** Configuration for remarkRehype */
   remarkRehype?: object;
 
   /** Flag to turn on HTML sanitization to prevent XSS */
   sanitize?: boolean;
 
-  /** Set `false` to remove the default plugins */
-  useDefaultPlugins?: boolean;
+  /** Flag to override the default plugins */
+  overrideDefaultPlugins?: boolean;
 }
 
 // Default options
 export const defaults: Options = {
   extensions: [".md"],
-  sanitize: false,
+  // By default, GitHub-flavored markdown is enabled
+  remarkPlugins: [remarkGfm],
   remarkRehype: { allowDangerousHtml: true },
-  useDefaultPlugins: true,
+  sanitize: false,
 };
-
-const remarkDefaultPlugins = [
-  remarkGfm,
-];
 
 /** Template engine to render Markdown files with Remark */
 export class MarkdownEngine implements Engine {
@@ -61,26 +56,20 @@ export class MarkdownEngine implements Engine {
 
   async render(
     content: string,
-    data?: Record<string, unknown>,
+    data?: Data,
     filename?: string,
   ): Promise<string> {
-    const page = data?.page as Page | undefined;
     return (await this.engine.process({
       value: content,
-      data: page?.data,
+      data: data?.page?.data,
       path: filename,
     })).toString();
   }
 
-  renderComponent(
-    content: string,
-    data?: Record<string, unknown>,
-    filename?: string,
-  ): string {
-    const page = data?.page as Page | undefined;
+  renderSync(content: string, data?: Data, filename?: string): string {
     return this.engine.processSync({
       value: content,
-      data: page?.data,
+      data: data?.page?.data,
       path: filename,
     }).toString();
   }
@@ -89,7 +78,7 @@ export class MarkdownEngine implements Engine {
 }
 
 /** Register the plugin to support Markdown */
-export default function (userOptions?: Options) {
+export default function (userOptions?: Partial<Options>) {
   const options = merge(defaults, userOptions);
 
   return function (site: Site) {
@@ -101,16 +90,20 @@ export default function (userOptions?: Options) {
     // Add remark-parse to generate MDAST
     plugins.push(remarkParse);
 
-    if (options.useDefaultPlugins) {
-      options.remarkPlugins ??= [];
-      options.remarkPlugins.unshift(...remarkDefaultPlugins);
+    if (!options.overrideDefaultPlugins) {
+      // Add default remark plugins
+      defaults.remarkPlugins?.forEach((defaultPlugin) =>
+        plugins.push(defaultPlugin)
+      );
     }
 
     // Add remark plugins
-    plugins.push(...options.remarkPlugins);
+    options.remarkPlugins?.forEach((plugin) => plugins.push(plugin));
+
+    const remarkRehypeOpts = {...defaults.remarkRehype, ...options.remarkRehype}
 
     // Add remark-rehype to generate HAST
-    plugins.push([remarkRehype, options.remarkRehype]);
+    plugins.push([remarkRehype, remarkRehypeOpts]);
 
     if (options.sanitize) {
       // Add rehype-raw to convert raw HTML to HAST
@@ -118,7 +111,7 @@ export default function (userOptions?: Options) {
     }
 
     // Add rehype plugins
-    plugins.push(...options.rehypePlugins ?? []);
+    options.rehypePlugins?.forEach((plugin) => plugins.push(plugin));
 
     if (options.sanitize) {
       // Add rehype-sanitize to make sure HTML is safe
@@ -136,16 +129,13 @@ export default function (userOptions?: Options) {
 
     // Load the pages
     const remarkEngine = new MarkdownEngine(engine);
-    site.loadPages(options.extensions, {
-      loader,
-      engine: remarkEngine,
-    });
+    site.loadPages(options.extensions, loader, remarkEngine);
 
     // Register the filter
     site.filter("md", filter as Helper);
 
     function filter(content: string): string {
-      return remarkEngine.renderComponent(content).trim();
+      return remarkEngine.renderSync(content).trim();
     }
   };
 }
