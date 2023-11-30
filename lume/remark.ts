@@ -25,8 +25,8 @@ export interface Options {
   /** List of rehype plugins to use */
   rehypePlugins?: unknown[];
 
-  /** Configuration for remarkRehype */
-  remarkRehype?: object;
+  /** Configuration for remark */
+  remarkOptions?: object;
 
   /** Flag to turn on HTML sanitization to prevent XSS */
   sanitize?: boolean;
@@ -40,7 +40,7 @@ export const defaults: Options = {
   extensions: [".md"],
   // By default, GitHub-flavored markdown is enabled
   remarkPlugins: [remarkGfm],
-  remarkRehype: { allowDangerousHtml: true },
+  remarkOptions: { allowDangerousHtml: true },
   sanitize: false,
 };
 
@@ -100,10 +100,8 @@ export default function (userOptions?: Partial<Options>) {
     // Add remark plugins
     options.remarkPlugins?.forEach((plugin) => plugins.push(plugin));
 
-    const remarkRehypeOpts = {...defaults.remarkRehype, ...options.remarkRehype}
-
     // Add remark-rehype to generate HAST
-    plugins.push([remarkRehype, remarkRehypeOpts]);
+    plugins.push([remarkRehype, options.remarkOptions]);
 
     if (options.sanitize) {
       // Add rehype-raw to convert raw HTML to HAST

@@ -54,7 +54,7 @@ site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
     rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOpts]],
-    remarkRehype: {
+    remarkOptions: {
         footnoteLabelProperties: {
             className: ['sr-only', 'littlefoot--print']
         }
