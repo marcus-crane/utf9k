@@ -1,2 +1,2 @@
 layout: markdown.vto
-templateEngine: [eta, md]
+templateEngine: [njk, md]

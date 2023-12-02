@@ -13,11 +13,11 @@ tags:
 - "tidal"
 ---
 
-{{% notice emoji="🖼" title="Look at this photograph" %}}
+<% comp "Notice", emoji="🖼", title="Look at this photograph" %>
 Due to the nature of this post, it's pretty image heavy.
 
 Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
-{{% /notice %}}
+<% endcomp %>
 
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
@@ -125,7 +125,7 @@ Tidal did have Jay-Z content as an exclusive in the past, which also included th
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
-<%~ await comp.tweet({ user: "jack", id: "1367460921937817602" }) %>
+<% comp "Tweet", ref="jack/1367460921937817602" %><% endcomp %>
 
 Jack Dorsey mentioned his vision for the future of Tidal:
 
@@ -444,7 +444,7 @@ Kind of but not really?
 
 At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
 
-<%~ await comp.tweet({ user: "plexamp", id: "1489024846033915908" }) %>
+<% comp "Tweet", ref="plexamp/1489024846033915908" %><% endcomp %>
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
@@ -476,7 +476,7 @@ I had the misfortune of having this integration go down briefly due to an outage
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
-{{% notice emoji="🔑" title="A tip for Plex server owners" %}}
+<% comp "Notice", emoji="🔑", title="A tip for Plex server owners" %>
 [Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
 
 They're relatively stable but it's inevitable that the authentication server will fail again one day.
@@ -484,7 +484,7 @@ They're relatively stable but it's inevitable that the authentication server wil
 That isn't a slight towards Plex, it's just an unavoidable reality about computers.
 
 Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
-{{% /notice %}}
+<% endcomp %>
 
 While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and this is where it can be useful as a backup.
 
@@ -537,7 +537,7 @@ This one seems like a weirdly obvious oversight so I'm going to give the benefit
 
 The team are definitely aware of it:
 
-<%~ await comp.tweet({ user: "plexamp", id: "1491494752327372801" }) %>
+<% comp "Tweet", ref="plexamp/1491494752327372801" %><% endcomp %>
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 

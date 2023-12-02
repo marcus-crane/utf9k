@@ -64,7 +64,7 @@ For a period of about 2 weeks, images with transparency such as macOS screenshot
 
 You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
-<%~ await comp.tweet({ user: "sentreh", id: "1436092048914796545" }) %>
+<% comp "Tweet", ref="sentreh/1436092048914796545" %><% endcomp %>
 
 While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.
 
@@ -76,7 +76,7 @@ As I mentioned before, I don't want to point fingers at any people but I will sa
 
 Instead, right in the middle of those two transparency mulched images, what I experienced was [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards.
 
-<%~ await comp.tweet({ user: "TwitterEng", id: "1437857022444138496" }) %>
+<% comp "Tweet", ref="TwitterEng/1437857022444138496" %><% endcomp %>
 
 I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, the optics of it don't look great as someone experiencing this.
 

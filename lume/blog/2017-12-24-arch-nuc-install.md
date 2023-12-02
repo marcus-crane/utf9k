@@ -10,13 +10,13 @@ tags:
 - "linux"
 ---
 
-{{% notice title="⚰️ Is this up to date?" %}}
+<% comp "Notice", emoji="⚰️", title="Is this up to date?" %>
 While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.
 
 If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide and expect that it should be fairly seemless.
 
 While I don't expect much has changed, you should know that I'm not actively verifying that these steps haven't changed or anything like that.
-{{% /notice %}}
+<% endcomp %>
 
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
@@ -57,9 +57,9 @@ I'm targeting a [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware
 
 The following uses [gparted](https://www.gnu.org/software/parted/manual/parted.html) which you may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment what each segment is roughly doing. From hereon in, URLs prefixed by a tilde (\~) indicate resources where you can read further information if you're the curious sort.
 
-{{% notice emoji="⚠️" title="Consider yourself warned" %}}
+<% comp "Notice", emoji="⚠️", title="Consider yourself warned" %>
 The following *WILL* wipe your hard drive so ensure that this is what you'd like to do and/or that you've backed up everything from any currently installed OS
-{{% /notice %}}
+<% endcomp %>
 
 ## Partitioning
 

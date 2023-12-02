@@ -3,6 +3,7 @@ title: "Creating debug reports with Hugo inline shortcodes"
 date: "2021-07-12T18:50:00+1300"
 slug: "hugo-debug-reports"
 description: "I teach you some tricks on introspecting your Hugo builds"
+templateEngine: [njk, md]
 category: "blog"
 tags:
 - "hugo"
@@ -16,7 +17,11 @@ Recently I discovered that [Hugo](https://gohugo.io) added support for [inline s
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
 
-<%~ await comp.tweet({ user: "bepsays", id: "1408348824083615745" }) %>
+<% comp "Notice", emoji="😅", title="This is a test" %>
+Nice
+<% endcomp %>
+
+<% comp "Tweet", ref="jack/1367460921937817602" %><% endcomp %>
 
 ## A shortcode refresher
 

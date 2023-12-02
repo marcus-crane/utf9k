@@ -11,11 +11,11 @@ tags:
 - "linux"
 ---
 
-{{% notice title="Some things have changed since I first wrote this" %}}
+<% comp "Notice", emoji="⏰", title="Some things have changed since I first wrote this" %>
 At the time of writing, I was using Gitlab so you'll see references to my dotfiles living there.
 
 I've now moved back to Github but kept the references to Gitlab in this post intact.
-{{% /notice %}}
+<% endcomp %>
 
 When using my work laptop, I like to keep a copy of my dotfiles so that my tools at work are in sync with my tools at home. They [live in a Github repository](https://github.com/marcus-crane/dotfiles) under my personal account, and I use plain old git to sync changes.
 

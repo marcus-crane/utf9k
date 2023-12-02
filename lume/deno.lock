@@ -29,6 +29,7 @@
       "npm:remark-gfm@4.0.0": "npm:remark-gfm@4.0.0",
       "npm:remark-parse@11.0.0": "npm:remark-parse@11.0.0",
       "npm:remark-rehype@11.0.0": "npm:remark-rehype@11.0.0",
+      "npm:squirrelly": "npm:squirrelly@9.0.0",
       "npm:svg2png-wasm@1.4.1": "npm:svg2png-wasm@1.4.1",
       "npm:unified@11.0.4": "npm:unified@11.0.4"
     },
@@ -1702,6 +1703,10 @@
       },
       "space-separated-tokens@2.0.2": {
         "integrity": "sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==",
+        "dependencies": {}
+      },
+      "squirrelly@9.0.0": {
+        "integrity": "sha512-MutQSfwrpIxvdUOFJ8XOfRSioLy+9O10bmBVWLik4uzJkD5TbeNSTOCKqLjzZJVcgdJNyLc8JRFUN15qFlZx9Q==",
         "dependencies": {}
       },
       "stringify-entities@4.0.3": {

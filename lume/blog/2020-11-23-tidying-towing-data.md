@@ -12,13 +12,13 @@ tags:
 - "data"
 ---
 
-{{% notice title="I am not a lawyer! Oh, I meant to say data scientist" %}}
+<% comp "Notice", emoji="💼", title="I am not a lawyer! Oh, I meant to say data scientist" %>
 I came across this post in an archive folder, fully written out as you see below but never published.
 
 I'm not a data analyst or even really proficient in Pandas by any stretch of the imagination so don't take any of the below as best practice.
 
 What I can claim however is that it worked, more or less, so you're welcome to code along.
-{{% /notice %}}
+<% endcomp %>
 
 This will be a pretty lengthy blog post detailing how I took an XLSX spreadsheet with towing data and cleaned it up to be (mostly) machine readable.
 

@@ -11,13 +11,13 @@ tags:
 - "work"
 ---
 
-{{% notice emoji="🧪" title="This post is a sort of weird living document of sorts" %}}
+<% comp "Notice", emoji="🧪", title="This post is a sort of weird living document of sorts" %>
 To be honest, I got kind of lazy towards the end so I'm pushing out what I wrote.
 
 That said, I also intend to add to the list of bullet points as time goes on.
 
 It's the sort of post that is harder to capture the further away you are from the situation in question!
-{{% /notice %}}
+<% endcomp %>
 
 Generally on this site I have two types of posts: Relatively straight forward technical posts and long-winded, more experimental posts that I would just link to myself in the past if time travel existed.
 
