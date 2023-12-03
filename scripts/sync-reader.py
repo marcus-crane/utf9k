@@ -17,7 +17,7 @@ if not READWISE_TOKEN:
     print("READWISE_TOKEN missing")
     exit(1)
 
-DATA_FILE = "data/books.yml"
+DATA_FILE = "_data/books.yml"
 
 READER_STATE_URL = "https://readwise.io/api/v3/list/"
 
@@ -60,5 +60,5 @@ for book in queryable_books:
     else:
         print('no progress')
 
-with open("data/books.yml", "w") as file:
+with open("_data/books.yml", "w") as file:
     yaml.dump(data, file)

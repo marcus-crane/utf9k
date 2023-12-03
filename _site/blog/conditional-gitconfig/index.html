@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>Conditionally setting your gitconfig</h1>
+
+          <div id="post-meta">
+            <time datetime="Thu Aug 12 2021 19:17:00 GMT+1200 (New Zealand Standard Time)">August 12, 2021</time> ·
+            Around 2 minutes
+          </div>
+        </header>
+        <div id="post-body">
+          <p>
+            Personally, I try to keep my development environment as convenient to use as possible and with the advent of
+            <a href="https://cloud.google.com/beyondcorp">BeyondCorp-style zero trust</a>, more internal services are
+            thankfully available without a VPN required.
+          </p>
+          <p>
+            This makes it easy to access tooling from your mobile device and other places but it can also mean the line
+            between work and personal blurs a little bit.
+          </p>
+          <p>
+            A lot of my custom work-related configuration has been deprecated (utilities for wrangling VPNs and proxies)
+            and I basically don't maintain anything more than what was
+            <a href="https://github.com/marcus-crane/dotfiles">already open sourced</a>.
+          </p>
+          <p>
+            One last holdout has been my git configuration however, as I want to create work commits with my work email
+            and vice versa for open source commits. It had been my impression that git had no way to support this but
+            that hasn't been true for some time.
+          </p>
+          <p>
+            Thanks to <a href="https://git-scm.com/docs/git-config#_conditional_includes">conditional includes</a>, you
+            can dynamically switch instances of your <code>.gitconfig</code> on the fly.
+          </p>
+          <p>
+            Let's look at an example. For example purposes, let's say that my code lives in <code>$HOME/work</code> and
+            my personal code lives in <code>$HOME/projects</code>. You can do something like this:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="shell"
+              data-theme="dark"
+            ><code data-language="shell" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #908CAA">[</span><span style="color: #E0DEF4">user</span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">email</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">user@example.com</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">name</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">User</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">signingkey</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ABC123</span></span>
+<span data-line=""><span style="color: #908CAA">[</span><span style="color: #E0DEF4">commit</span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">gpgSign</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">true</span></span>
+<span data-line=""><span style="color: #908CAA">[</span><span style="color: #E0DEF4">includeIf </span><span style="color: #F6C177">"gitdir:~/work/"</span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">path</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">~/.work.gitconfig</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="shell"
+              data-theme="light"
+            ><code data-language="shell" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #797593">[</span><span style="color: #575279">user</span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #D7827E">email</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">user@example.com</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #D7827E">name</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">User</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #D7827E">signingkey</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">ABC123</span></span>
+<span data-line=""><span style="color: #797593">[</span><span style="color: #575279">commit</span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #D7827E">gpgSign</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">true</span></span>
+<span data-line=""><span style="color: #797593">[</span><span style="color: #575279">includeIf </span><span style="color: #EA9D34">"gitdir:~/work/"</span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #D7827E">path</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">~/.work.gitconfig</span></span></code></pre>
+          </div>
+          <p>
+            What we're doing here is setting our default variables but upon interacting with a
+            <code>.git</code> initialised repository within the <code>~/work</code> folder, we instead use our
+            work-based config.
+          </p>
+          <p>Let's see an example of this in action:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="shell"
+              data-theme="dark"
+            ><code data-language="shell" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> pwd</span></span>
+<span data-line=""><span style="color: #EA9A97">/Users/person</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> git config user.email</span></span>
+<span data-line=""><span style="color: #EA9A97">user@example.com</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> cd </span><span style="color: #3E8FB0">~</span><span style="color: #E0DEF4">/work</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> pwd</span></span>
+<span data-line=""><span style="color: #EA9A97">/Users/person/work</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> git config user.email</span></span>
+<span data-line=""><span style="color: #EA9A97">business@work.com</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="shell"
+              data-theme="light"
+            ><code data-language="shell" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> pwd</span></span>
+<span data-line=""><span style="color: #D7827E">/Users/person</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> git config user.email</span></span>
+<span data-line=""><span style="color: #D7827E">user@example.com</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> cd </span><span style="color: #286983">~</span><span style="color: #575279">/work</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> pwd</span></span>
+<span data-line=""><span style="color: #D7827E">/Users/person/work</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> git config user.email</span></span>
+<span data-line=""><span style="color: #D7827E">business@work.com</span></span></code></pre>
+          </div>
+          <p>Pretty cool, huh?</p>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

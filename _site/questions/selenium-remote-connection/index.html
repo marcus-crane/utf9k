@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I remotely connect to a Selenium cluster</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            I
+            <a href="https://twitter.com/sentreh/status/1435772900917735425"
+              >recently came across an unsecured Selenium instance</a
+            >
+            but I wanted to confirm my findings by making a basic request.
+          </p>
+          <p>
+            While I opted to use the <a href="https://pypi.org/project/selenium/">Python bindings</a> for
+            <a href="https://www.selenium.dev/">Selenium</a>, there wasn't a quick start guide on how to remotely
+            connect to an instance.
+          </p>
+          <p>Here's how you can quickly connect to a Selenium instance and do a basic request using Python:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="python"
+              data-theme="dark"
+            ><code data-language="python" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">from</span><span style="color: #E0DEF4"> selenium</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">webdriver</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">common</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">desired_capabilities </span><span style="color: #3E8FB0">import</span><span style="color: #E0DEF4"> DesiredCapabilities</span></span>
+<span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">from</span><span style="color: #E0DEF4"> selenium </span><span style="color: #3E8FB0">import</span><span style="color: #E0DEF4"> webdriver</span></span>
+<span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> hub_url </span><span style="color: #3E8FB0">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"http://example.com:4444/wd/hub"</span></span>
+<span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> driver </span><span style="color: #3E8FB0">=</span><span style="color: #E0DEF4"> webdriver</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">Remote</span><span style="color: #908CAA">(</span><span style="color: #C4A7E7; font-style: italic">command_executor</span><span style="color: #3E8FB0">=</span><span style="color: #E0DEF4">hub_url</span><span style="color: #908CAA">,</span><span style="color: #E0DEF4"> </span><span style="color: #C4A7E7; font-style: italic">desired_capabilities</span><span style="color: #3E8FB0">=</span><span style="color: #E0DEF4">DesiredCapabilities</span><span style="color: #908CAA">.</span><span style="color: #3E8FB0">CHROME</span><span style="color: #908CAA">)</span></span>
+<span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> driver</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">get</span><span style="color: #908CAA">(</span><span style="color: #F6C177">"https://news.ycombinator.com"</span><span style="color: #908CAA">)</span></span>
+<span data-line=""><span style="color: #3E8FB0">>>></span><span style="color: #E0DEF4"> driver</span><span style="color: #908CAA">.</span><span style="color: #E0DEF4">find_element_by_tag_name</span><span style="color: #908CAA">(</span><span style="color: #F6C177">"img"</span><span style="color: #908CAA">).</span><span style="color: #E0DEF4">get_attribute</span><span style="color: #908CAA">(</span><span style="color: #F6C177">"src"</span><span style="color: #908CAA">)</span></span>
+<span data-line=""><span style="color: #F6C177">'https://news.ycombinator.com/y18.svg'</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="python"
+              data-theme="light"
+            ><code data-language="python" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> </span><span style="color: #286983">from</span><span style="color: #575279"> selenium</span><span style="color: #797593">.</span><span style="color: #575279">webdriver</span><span style="color: #797593">.</span><span style="color: #575279">common</span><span style="color: #797593">.</span><span style="color: #575279">desired_capabilities </span><span style="color: #286983">import</span><span style="color: #575279"> DesiredCapabilities</span></span>
+<span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> </span><span style="color: #286983">from</span><span style="color: #575279"> selenium </span><span style="color: #286983">import</span><span style="color: #575279"> webdriver</span></span>
+<span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> hub_url </span><span style="color: #286983">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">"http://example.com:4444/wd/hub"</span></span>
+<span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> driver </span><span style="color: #286983">=</span><span style="color: #575279"> webdriver</span><span style="color: #797593">.</span><span style="color: #575279">Remote</span><span style="color: #797593">(</span><span style="color: #907AA9; font-style: italic">command_executor</span><span style="color: #286983">=</span><span style="color: #575279">hub_url</span><span style="color: #797593">,</span><span style="color: #575279"> </span><span style="color: #907AA9; font-style: italic">desired_capabilities</span><span style="color: #286983">=</span><span style="color: #575279">DesiredCapabilities</span><span style="color: #797593">.</span><span style="color: #286983">CHROME</span><span style="color: #797593">)</span></span>
+<span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> driver</span><span style="color: #797593">.</span><span style="color: #575279">get</span><span style="color: #797593">(</span><span style="color: #EA9D34">"https://news.ycombinator.com"</span><span style="color: #797593">)</span></span>
+<span data-line=""><span style="color: #286983">>>></span><span style="color: #575279"> driver</span><span style="color: #797593">.</span><span style="color: #575279">find_element_by_tag_name</span><span style="color: #797593">(</span><span style="color: #EA9D34">"img"</span><span style="color: #797593">).</span><span style="color: #575279">get_attribute</span><span style="color: #797593">(</span><span style="color: #EA9D34">"src"</span><span style="color: #797593">)</span></span>
+<span data-line=""><span style="color: #EA9D34">'https://news.ycombinator.com/y18.svg'</span></span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I restrict which traffic is allowed to pass through a Kube ingress?</h1>
+        </header>
+        <div id="post-body">
+          <p>
+            This one had my scratching my head a bit as I wasn't quite sure if Kubernetes was the right place to do
+            this.
+          </p>
+          <p>
+            Depending on your use case, it might make sense to terminate traffic before it reaches your cluster but that
+            may have the effect of filtering traffic to other applications if not done properly.
+          </p>
+          <p>
+            In this instance, the Kubernetes cluster in question makes use of the
+            <a href="https://www.nginx.com/products/nginx-ingress-controller/">NGINX Ingress Controller</a> and as such,
+            honours a whole bunch of flags.
+          </p>
+          <p>Before we get into the details, let's set up a small example.</p>
+          <p>
+            We'll pretend our desktop has an IP address is <code>192.0.2.3</code> exactly. We want to allow only a
+            network range of 1 single address so that say; our mobile device with the address
+            <code>192.0.2.2</code> can't connect but our desktop can.
+          </p>
+          <p>
+            In CIDR notation, this would be represented as <code>192.0.2.3/32</code>, with the
+            <code>32</code> effectively meaning "Just this one address" instead of any other devices on the
+            <code>192.0.2</code> range, or broader.
+          </p>
+          <p>With our address block defined, let's look at an ingress:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="yaml"
+              data-theme="dark"
+            ><code data-language="yaml" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #9CCFD8">apiVersion</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">networking.k8s.io/v1</span></span>
+<span data-line=""><span style="color: #9CCFD8">kind</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Ingress</span></span>
+<span data-line=""><span style="color: #9CCFD8">metadata</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #9CCFD8">name</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">my-cool-ingress</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #9CCFD8">annotations</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #9CCFD8">nginx.ingress.kubernetes.io/whitelist-source-range</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"192.0.2.3/24"</span></span>
+<span data-line=""><span style="color: #9CCFD8">spec</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #9CCFD8">rules</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #908CAA">-</span><span style="color: #E0DEF4"> </span><span style="color: #9CCFD8">host</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">example.com</span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #9CCFD8">http</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">      </span><span style="color: #9CCFD8">paths</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">-</span><span style="color: #E0DEF4"> </span><span style="color: #9CCFD8">path</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #9CCFD8">backend</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #9CCFD8">service</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #9CCFD8">name</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">example-docs</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #9CCFD8">port</span><span style="color: #908CAA">:</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #9CCFD8">name</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">http-example-docs</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="yaml"
+              data-theme="light"
+            ><code data-language="yaml" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #56949F">apiVersion</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">networking.k8s.io/v1</span></span>
+<span data-line=""><span style="color: #56949F">kind</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">Ingress</span></span>
+<span data-line=""><span style="color: #56949F">metadata</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #56949F">name</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">my-cool-ingress</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #56949F">annotations</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #56949F">nginx.ingress.kubernetes.io/whitelist-source-range</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"192.0.2.3/24"</span></span>
+<span data-line=""><span style="color: #56949F">spec</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #56949F">rules</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #797593">-</span><span style="color: #575279"> </span><span style="color: #56949F">host</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">example.com</span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #56949F">http</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">      </span><span style="color: #56949F">paths</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">-</span><span style="color: #575279"> </span><span style="color: #56949F">path</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">/</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #56949F">backend</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #56949F">service</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #56949F">name</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">example-docs</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #56949F">port</span><span style="color: #797593">:</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #56949F">name</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">http-example-docs</span></span></code></pre>
+          </div>
+          <p>
+            Ok, we've allowed our desktop to connect but let's try connecting to this ingress from a device we know
+            isn't allowed, such as our laptop on <code>192.0.2.6</code>:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> curl https://example.com/</span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">html</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">head>&#x3C;title</span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4">403 Forbidden</span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">/title>&#x3C;/head</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">body</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">center>&#x3C;h</span><span style="color: #3E8FB0">1></span><span style="color: #E0DEF4">403 Forbidden</span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">/h1>&#x3C;/center</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">hr>&#x3C;center</span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4">nginx</span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">/center</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">/body</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">/html</span><span style="color: #3E8FB0">></span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> curl https://example.com/</span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">html</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">head>&#x3C;title</span><span style="color: #286983">></span><span style="color: #575279">403 Forbidden</span><span style="color: #286983">&#x3C;</span><span style="color: #575279">/title>&#x3C;/head</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">body</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">center>&#x3C;h</span><span style="color: #286983">1></span><span style="color: #575279">403 Forbidden</span><span style="color: #286983">&#x3C;</span><span style="color: #575279">/h1>&#x3C;/center</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">hr>&#x3C;center</span><span style="color: #286983">></span><span style="color: #575279">nginx</span><span style="color: #286983">&#x3C;</span><span style="color: #575279">/center</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">/body</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">/html</span><span style="color: #286983">></span></span></code></pre>
+          </div>
+          <p>Alright, and now from our desktop at <code>192.0.2.3/24</code>, which we allowed explicitly:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> curl example.com</span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;!</span><span style="color: #EA9A97">doctype</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">htm</span><span style="color: #E0DEF4">l</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">html</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">head</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #EA9A97">title>Example</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Domain</span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #F6C177">/titl</span><span style="color: #E0DEF4">e</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #908CAA">[</span><span style="color: #E0DEF4">...</span><span style="color: #908CAA">]</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> curl example.com</span></span>
+<span data-line=""><span style="color: #286983">&#x3C;!</span><span style="color: #D7827E">doctype</span><span style="color: #575279"> </span><span style="color: #EA9D34">htm</span><span style="color: #575279">l</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">html</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #286983">&#x3C;</span><span style="color: #575279">head</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #286983">&#x3C;</span><span style="color: #D7827E">title>Example</span><span style="color: #575279"> </span><span style="color: #EA9D34">Domain</span><span style="color: #286983">&#x3C;</span><span style="color: #EA9D34">/titl</span><span style="color: #575279">e</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #797593">[</span><span style="color: #575279">...</span><span style="color: #797593">]</span></span></code></pre>
+          </div>
+          <p>
+            Success! We've managed to use nothing but an ingress to block specific traffic but you might wonder, why
+            would I ever use this?
+          </p>
+          <p>
+            One use case may be exposing applications that require the use of a public endpoint, such as
+            <a href="https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software">Microsoft Teams</a> or
+            <a href="https://slack.com">Slack</a>.
+          </p>
+          <p>
+            Often, you can't make use of OAuth but you want to protect against random internet traffic so you can
+            explicitly allow known IP ranges.
+          </p>
+          <p>
+            With <a href="https://azure.microsoft.com">Azure</a> for example, they publish a
+            <a href="https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+              >full list of their active IP ranges</a
+            >
+            so if you can't simply make use of a
+            <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview">VNet</a>, this
+            may be the next best thing.
+          </p>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

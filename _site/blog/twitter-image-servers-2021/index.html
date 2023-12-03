@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>Twitter, could you please fix your image servers?</h1>
+
+          <div id="post-meta">
+            <time datetime="Fri Oct 01 2021 12:18:00 GMT+1300 (New Zealand Daylight Time)">October 1, 2021</time> ·
+            Around 4 minutes
+          </div>
+        </header>
+        <div id="post-body">
+          <p>
+            For anyone who knows me, it's no surprise that I'm horribly addicted to
+            <a href="https://twitter.com">Twitter</a>. I joined back in 2009<sup
+              ><a
+                href="#user-content-fn-1"
+                id="user-content-fnref-1"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >1</a
+              ></sup
+            >
+            and I've fallen into more <a href="/blog/automation-right/">technical rabbit holes</a> than I care to.
+          </p>
+          <p>
+            As a Twitter user who is Very Online, I love to theorise about why services go wrong and poke fun at
+            corporations but as an <a href="https://en.wikipedia.org/wiki/Site_reliability_engineering">SRE</a> myself,
+            I find it very difficult to direct blame at people.
+          </p>
+          <p>
+            To be clear, I'll be talking about Twitter in the brand/persona sense and not as a reflection of the many
+            people who I'm sure work tirelessly behind the scenes.
+          </p>
+          <p>
+            Some might say they're one in the same but my general principle is that taking aim at the marketing facade
+            is fair game while the people themselves are off limits.
+          </p>
+          <p>
+            Not that we've addressed that, I feel like the Twitter "experience" has been degraded for a couple of months
+            now with no real acknowledgement that I can see. In short, I've seen Twitter DMs intermittently fail to
+            load, images being corrupted upon upload and
+            <a href="https://twitter.com/wongmjane/status/1440428582308757507">replies failing to load</a>.
+          </p>
+          <p>
+            I'll be walking through the former two issues as they've been plaguing both myself and some friends the
+            most.
+          </p>
+          <p>
+            When it comes down to it, I'm nothing but a simple armchair critic who doesn't have any real recourse in
+            this abstract digital "customer support" hell we've constructed for ourselves.
+          </p>
+          <p>
+            Besides trying to raise awareness publically by writing this post, I have absolutely no idea if this has any
+            traction internally.
+          </p>
+          <p>With all that out of the way, let's have a look at what has been going on.</p>
+          <h2 id="twitter-dm-images-failing-to-load">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#twitter-dm-images-failing-to-load">¶ </a>Twitter
+            DM images failing to load
+          </h2>
+          <p>This one has been bugging me and some Twitter mutuals for at least a couple of months now.</p>
+          <p>What happens is that intermittently, images will fail to load inside of direct messages.</p>
+          <p>
+            Often times, it isn't that every image fails to load but one or two that have been recently uploaded. In
+            hindsight, it may be that they all fail to load but prior images are loaded from cache now that I think
+            about it.
+          </p>
+          <p>It leads to frustrating discussions like this</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/twitter-image-servers-2021/twitter-dm-huge-l.png"
+                  alt="A Twitter direct message where the author posts an image that fails to load and the recipient says &#x22;huge L the image isn&#x27;t loading&#x22;."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>and this</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/twitter-image-servers-2021/twitter-dm-alt-text.png"
+                  alt="A Twitter direct message where the author receives an image that fails to load, asks &#x22;got any alt text?&#x22; and the other person responds with an accessibility style description of what is in the image. The tone of the interaction is one of lighthearted humour."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>and this</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/twitter-image-servers-2021/twitter-dm-revenue.png"
+                  alt="A Twitter direct message where the author receives an image that fails to load and responds with &#x22;Guess who has $3 billion in revenue but still can&#x27;t display photos in DMs :)&#x22;"
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            It happened again just the other day and I did a little poking around. It seems that
+            <code>ton.twitter.com</code>, the image server used for DMs<sup
+              ><a
+                href="#user-content-fn-2"
+                id="user-content-fnref-2"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >2</a
+              ></sup
+            >
+            times out.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/twitter-image-servers-2021/timeout.png"
+                  alt="A screenshot of a terminal window with two curl commands. The first is requesting an image link over http port 80 in verbose mode. It responds as expected, with the content being a redirect to https. The second command is the prior link but accessed via https and it fails with a timeout."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            Upon closer inspection, only Port 80 (http) appears to be open with redirects to Port 443 (https) failing as
+            there is no such port open based on a quick scan using <code>nmap</code>.
+          </p>
+          <p>
+            It's pretty frustrating and I've actually resorted to DMing on other platforms because of how unstable this
+            can get at times!
+          </p>
+          <h2 id="images-being-mulched">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#images-being-mulched">¶ </a>Images being mulched
+          </h2>
+          <p>
+            For a period of about 2 weeks, images with transparency such as macOS screenshots were being absolutely
+            destroyed upon upload.
+          </p>
+          <p>
+            <a href="https://twitter.com/benedictevans/status/1439536308326645767"
+              >@benedictevans has since set their account to private so here's a direct link if you follow them</a
+            >
+          </p>
+          <p>
+            You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the
+            image. That is supposed to be a nice crisp drop shadow!
+          </p>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              well now, apparently the logitech client i installed has attempted to communicate with discord
+              <a href="https://t.co/Uq0T1jwMYQ">pic.twitter.com/Uq0T1jwMYQ</a>
+            </p>
+            &mdash; Marcus (@sentreh)
+            <a href="https://twitter.com/sentreh/status/1436092048914796545?ref_src=twsrc%5Etfw">September 9, 2021</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>
+            While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind
+            of weirdly broken in plain sight for days on end.
+          </p>
+          <h2 id="closing-thoughts">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#closing-thoughts">¶ </a>Closing thoughts
+          </h2>
+          <p>
+            It doesn't take too much to conclude that these are both image related issues which is interesting but it
+            would be a logical leap to conclude that there is any relation between the image processing pipeline and the
+            DM image server so any further speculation would be just that.
+          </p>
+          <p>
+            As I mentioned before, I don't want to point fingers at any people but I will say that it frustrated me to
+            no end seeing no acknowlegement of this happening continually.
+          </p>
+          <p>
+            Instead, right in the middle of those two transparency mulched images, what I experienced was
+            <a href="https://twitter.com/TwitterEng">@TwitterEng</a> was talking about mechanical keyboards.
+          </p>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Today, we&#39;re talking about switches... keyboard switches ⌨️<br /><br />Choose your fighter. When it
+              comes to the best tactile response, which clickety-clack rules them all?<br /><br />We&#39;re loving TTC
+              Bluish Whites 👀
+            </p>
+            &mdash; Engineering (@XEng)
+            <a href="https://twitter.com/XEng/status/1437857022444138496?ref_src=twsrc%5Etfw">September 14, 2021</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>
+            I'm being a bit flippant mind you since it can be true that one team is doing community building while
+            another is working on technical issues of course but at the same time, the optics of it don't look great as
+            someone experiencing this.
+          </p>
+          <p>Anyway, really all I want is to be able to use DMs again reliably!</p>
+          <p>
+            Instead, I can't help but feel that we're probably going to get the ability to use
+            <a href="https://twitter.com/TheSmarmyBum/status/1443259893411049475">an NFT as an avatar</a> or whatever
+            else is cooking over there sooner than a fix :(
+          </p>
+          <section data-footnotes class="footnotes">
+            <h2 class="sr-only littlefoot--print" id="footnote-label">
+              <a aria-hidden="true" class="jumplink" tabindex="-1" href="#footnote-label">¶ </a>Footnotes
+            </h2>
+            <ol>
+              <li id="user-content-fn-1">
+                <p>
+                  In a few years, I'll have been on Twitter longer than I've been off it (ie; before I registered/before
+                  it existed)
+                  <a
+                    href="#user-content-fnref-1"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 1"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-2">
+                <p>
+                  As far as I can tell, <code>ton</code> is used for DMs while <code>pbs</code> is used for the public
+                  timeline?
+                  <a
+                    href="#user-content-fnref-2"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 2"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

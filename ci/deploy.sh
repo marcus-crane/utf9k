@@ -2,10 +2,6 @@
 
 set -euxo pipefail
 
-bun run build:deps
-bun run build:metadata
-bun run build
-bun run prettify
-
-mv _headers public
-mv _redirects public
+deno task build:deps
+deno task build:metadata
+deno task build

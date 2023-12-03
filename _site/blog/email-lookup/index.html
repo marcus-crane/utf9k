@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>Double checking if an email address exists</h1>
+
+          <div id="post-meta">
+            <time datetime="Wed Sep 25 2019 23:00:00 GMT+1200 (New Zealand Standard Time)">September 25, 2019</time> ·
+            Around 8 minutes
+          </div>
+        </header>
+        <div id="post-body">
+          <h2 id="table-of-contents">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#table-of-contents">¶ </a>Table of Contents
+          </h2>
+          <ul>
+            <li><a href="#preamble">Preamble</a></li>
+            <li><a href="#finding-the-mail-server-macos--linux">Finding the mail server (macOS / Linux)</a></li>
+            <li><a href="#finding-the-mail-server-windows">Finding the mail server (Windows)</a></li>
+            <li>
+              <a href="#interrogatingwhispering-to-the-mail-server">Interrogating/whispering to the mail server</a>
+            </li>
+            <li>
+              <a href="#common-gotchas">Common gotchas</a>
+              <ul>
+                <li><a href="#blocked-ip-addresses">Blocked IP addresses</a></li>
+                <li><a href="#misleading-success-codes">Misleading success codes</a></li>
+              </ul>
+            </li>
+            <li><a href="#what-is-this-handy-for">What is this handy for?</a></li>
+            <li><a href="#fun-fact">Fun fact</a></li>
+          </ul>
+          <h2 id="preamble"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#preamble">¶ </a>Preamble</h2>
+          <p>
+            Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might
+            have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way
+            to find out using a mix of nslookup and telnet.
+          </p>
+          <p>
+            I'll take you through a recent example where I wanted to email Ian Small, the CEO of Evernote, to thank him
+            and the Evernote team for their wonderful Behind the Scenes videos. You can see them
+            <a href="https://www.youtube.com/watch?v=5rNUpXYCcrA">here</a> and I think they're worth a peek.
+          </p>
+          <p>
+            Anyway, if I had to take a blind guess, ian[at]evernote.com would be a valid email. Well, it is indeed and
+            so that's why I've picked it since it's such an obvious format. For the sake of learning, let's just pretend
+            we're trying to find a valid email from scratch. Naturally, if you have a particular domain you're
+            interested in, just swap out evernote.com for your domain of choice. Going forward however, I'll be using
+            evernote.com.
+          </p>
+          <h2 id="finding-the-mail-server-macos--linux">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#finding-the-mail-server-macos--linux">¶ </a
+            >Finding the mail server (macOS / Linux)
+          </h2>
+          <p>
+            For macOS and Linux, we'll want to use <code>nslookup</code> which should come ready to go as part of your
+            OS/distro of choice. Fire up a terminal and enter <code>nslookup -q=MX evernote.com</code> and you should
+            get a bunch of Google domains back like so:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> nslookup -q=MX evernote.com</span></span>
+<span data-line=""><span style="color: #EA9A97">Server:</span><span style="color: #E0DEF4">         </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1</span></span>
+<span data-line=""><span style="color: #EA9A97">Address:</span><span style="color: #E0DEF4">        </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1#53</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #EA9A97">Non-authoritative</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">answer:</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">alt1.aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">alt2.aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx2.googlemail.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx3.googlemail.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx4.googlemail.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx5.googlemail.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">10</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx.l.google.com.</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #EA9A97">Authoritative</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">answers</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">can</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">be</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">found</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">from:</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> nslookup -q=MX evernote.com</span></span>
+<span data-line=""><span style="color: #D7827E">Server:</span><span style="color: #575279">         </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1</span></span>
+<span data-line=""><span style="color: #D7827E">Address:</span><span style="color: #575279">        </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1#53</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #D7827E">Non-authoritative</span><span style="color: #575279"> </span><span style="color: #EA9D34">answer:</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">20</span><span style="color: #575279"> </span><span style="color: #EA9D34">alt1.aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">20</span><span style="color: #575279"> </span><span style="color: #EA9D34">alt2.aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx2.googlemail.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx3.googlemail.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx4.googlemail.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx5.googlemail.com.</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">10</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx.l.google.com.</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #D7827E">Authoritative</span><span style="color: #575279"> </span><span style="color: #EA9D34">answers</span><span style="color: #575279"> </span><span style="color: #EA9D34">can</span><span style="color: #575279"> </span><span style="color: #EA9D34">be</span><span style="color: #575279"> </span><span style="color: #EA9D34">found</span><span style="color: #575279"> </span><span style="color: #EA9D34">from:</span></span></code></pre>
+          </div>
+          <p>
+            What we can see here is a list of the different mail servers used by Evernote. In this case, they're using
+            Gmail, likely as part of Google's <a href="https://gsuite.google.com/">GSuite</a> offering.
+          </p>
+          <p>
+            Go ahead and copy the highest priority mail server, <code>aspmx.l.google.com</code>, to your clipboard as
+            we'll be interrogating it shortly.
+          </p>
+          <h2 id="finding-the-mail-server-windows">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#finding-the-mail-server-windows">¶ </a>Finding
+            the mail server (Windows)
+          </h2>
+          <p>
+            Personally, I'm not much of a Windows development person so I actually had to look up the Windows
+            equivalents.
+          </p>
+          <p>
+            For Powershell, there's a cmdlet called <code>Resolve-DnsName</code> that was surprisingly straight forward
+            to use:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="powershell"
+              data-theme="dark"
+            ><code data-language="powershell" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #E0DEF4">PS C:\Users\marcus.crane</span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> </span><span style="color: #EB6F92; font-style: italic">Resolve-DnsName</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">-</span><span style="color: #E0DEF4">Type MX </span><span style="color: #EB6F92; font-style: italic">evernote.com</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #E0DEF4">Name                                     Type   TTL   Section    NameExchange                              Preference</span></span>
+<span data-line=""><span style="color: #3E8FB0">----</span><span style="color: #E0DEF4">                                     </span><span style="color: #3E8FB0">----</span><span style="color: #E0DEF4">   </span><span style="color: #3E8FB0">---</span><span style="color: #E0DEF4">   </span><span style="color: #3E8FB0">-------</span><span style="color: #E0DEF4">    </span><span style="color: #3E8FB0">------------</span><span style="color: #E0DEF4">                              </span><span style="color: #3E8FB0">----------</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">alt1.aspmx.l.google.com</span><span style="color: #E0DEF4">                   </span><span style="color: #EA9A97">20</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">alt2.aspmx.l.google.com</span><span style="color: #E0DEF4">                   </span><span style="color: #EA9A97">20</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">aspmx2.googlemail.com</span><span style="color: #E0DEF4">                     </span><span style="color: #EA9A97">30</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">aspmx3.googlemail.com</span><span style="color: #E0DEF4">                     </span><span style="color: #EA9A97">30</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">aspmx4.googlemail.com</span><span style="color: #E0DEF4">                     </span><span style="color: #EA9A97">30</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">aspmx5.googlemail.com</span><span style="color: #E0DEF4">                     </span><span style="color: #EA9A97">30</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">evernote.com</span><span style="color: #E0DEF4">                             MX     </span><span style="color: #EA9A97">43200</span><span style="color: #E0DEF4"> Answer     </span><span style="color: #EB6F92; font-style: italic">aspmx.l.google.com</span><span style="color: #E0DEF4">                        </span><span style="color: #EA9A97">10</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="powershell"
+              data-theme="light"
+            ><code data-language="powershell" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #575279">PS C:\Users\marcus.crane</span><span style="color: #286983">></span><span style="color: #575279"> </span><span style="color: #B4637A; font-style: italic">Resolve-DnsName</span><span style="color: #575279"> </span><span style="color: #286983">-</span><span style="color: #575279">Type MX </span><span style="color: #B4637A; font-style: italic">evernote.com</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #575279">Name                                     Type   TTL   Section    NameExchange                              Preference</span></span>
+<span data-line=""><span style="color: #286983">----</span><span style="color: #575279">                                     </span><span style="color: #286983">----</span><span style="color: #575279">   </span><span style="color: #286983">---</span><span style="color: #575279">   </span><span style="color: #286983">-------</span><span style="color: #575279">    </span><span style="color: #286983">------------</span><span style="color: #575279">                              </span><span style="color: #286983">----------</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">alt1.aspmx.l.google.com</span><span style="color: #575279">                   </span><span style="color: #D7827E">20</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">alt2.aspmx.l.google.com</span><span style="color: #575279">                   </span><span style="color: #D7827E">20</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">aspmx2.googlemail.com</span><span style="color: #575279">                     </span><span style="color: #D7827E">30</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">aspmx3.googlemail.com</span><span style="color: #575279">                     </span><span style="color: #D7827E">30</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">aspmx4.googlemail.com</span><span style="color: #575279">                     </span><span style="color: #D7827E">30</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">aspmx5.googlemail.com</span><span style="color: #575279">                     </span><span style="color: #D7827E">30</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">evernote.com</span><span style="color: #575279">                             MX     </span><span style="color: #D7827E">43200</span><span style="color: #575279"> Answer     </span><span style="color: #B4637A; font-style: italic">aspmx.l.google.com</span><span style="color: #575279">                        </span><span style="color: #D7827E">10</span></span></code></pre>
+          </div>
+          <p>
+            As above, you'll want to copy the mail server with the highest preference, which is
+            <code>aspmx.l.google.com</code> in this case.
+          </p>
+          <p>
+            If you're a diehard command prompt fan, or just don't like/have access to Powershell, you can also get by
+            using command prompt. It actually has a tool called <code>nslookup</code> that comes with two modes:
+            interactive and non-interactive. I couldn't get a one liner to work so instead, we'll just have to settle
+            for the interactive mode.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">C:\Users\marcus.crane>nslookup</span></span>
+<span data-line=""><span style="color: #EA9A97">Default</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Server:</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">UnKnown</span></span>
+<span data-line=""><span style="color: #EA9A97">Address:</span><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> set q=mx</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> evernote.com</span></span>
+<span data-line=""><span style="color: #EA9A97">Server:</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">UnKnown</span></span>
+<span data-line=""><span style="color: #EA9A97">Address:</span><span style="color: #E0DEF4">  </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #EA9A97">Non-authoritative</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">answer:</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">alt1.aspmx.l.google.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">alt2.aspmx.l.google.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx2.googlemail.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx3.googlemail.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx4.googlemail.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">30</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx5.googlemail.com</span></span>
+<span data-line=""><span style="color: #EA9A97">evernote.com</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">MX</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">preference</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">10</span><span style="color: #F6C177">,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx.l.google.com</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">C:\Users\marcus.crane>nslookup</span></span>
+<span data-line=""><span style="color: #D7827E">Default</span><span style="color: #575279"> </span><span style="color: #EA9D34">Server:</span><span style="color: #575279">  </span><span style="color: #EA9D34">UnKnown</span></span>
+<span data-line=""><span style="color: #D7827E">Address:</span><span style="color: #575279">  </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> set q=mx</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> evernote.com</span></span>
+<span data-line=""><span style="color: #D7827E">Server:</span><span style="color: #575279">  </span><span style="color: #EA9D34">UnKnown</span></span>
+<span data-line=""><span style="color: #D7827E">Address:</span><span style="color: #575279">  </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #D7827E">Non-authoritative</span><span style="color: #575279"> </span><span style="color: #EA9D34">answer:</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">20</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">alt1.aspmx.l.google.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">20</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">alt2.aspmx.l.google.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx2.googlemail.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx3.googlemail.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx4.googlemail.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">30</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx5.googlemail.com</span></span>
+<span data-line=""><span style="color: #D7827E">evernote.com</span><span style="color: #575279">    </span><span style="color: #EA9D34">MX</span><span style="color: #575279"> </span><span style="color: #EA9D34">preference</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">10</span><span style="color: #EA9D34">,</span><span style="color: #575279"> </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx.l.google.com</span></span></code></pre>
+          </div>
+          <p>
+            Once more, <code>aspmx.l.google.com</code>, the server with the highest preference is the one we're after so
+            copy it and keep it handy.
+          </p>
+          <p>
+            If you want to read more about nslookup for command prompt, I dug up
+            <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup"
+              >some documentation</a
+            >
+            which lives under the section for Windows Server. Let me know if you figure out how to use nslookup in
+            non-interactive mode!
+          </p>
+          <h2 id="interrogatingwhispering-to-the-mail-server">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#interrogatingwhispering-to-the-mail-server"
+              >¶ </a
+            >Interrogating/whispering to the mail server
+          </h2>
+          <p>
+            Ok, got that mail server address handy? Now the party begins because from this point, the commands should be
+            exactly the same across all major platforms with one quick caveat.
+          </p>
+          <p>
+            Windows users? You'll need to enable <code>telnet</code> by searching for "Turn Windows features on or off",
+            ticking <code>Telnet Client</code> and restarting to gain access.
+          </p>
+          <p>
+            Fire up your terminal of choice and enter <code>telnet aspmx.l.google.com 25</code>. This is where you'd
+            substitute your own mail server if you were following along at home with a different domain. Still the same
+            port 25 though since we're dealing with SMTP no matter what.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> telnet aspmx.l.google.com 25</span></span>
+<span data-line=""><span style="color: #EA9A97">Trying</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">172.217</span><span style="color: #F6C177">.194.26...</span></span>
+<span data-line=""><span style="color: #EA9A97">Connected</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">Escape</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">character</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">is</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">'^]'.</span></span>
+<span data-line=""><span style="color: #EA9A97">220</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mx.google.com</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ESMTP</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">b26si1910042pgs.432</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> telnet aspmx.l.google.com 25</span></span>
+<span data-line=""><span style="color: #D7827E">Trying</span><span style="color: #575279"> </span><span style="color: #D7827E">172.217</span><span style="color: #EA9D34">.194.26...</span></span>
+<span data-line=""><span style="color: #D7827E">Connected</span><span style="color: #575279"> </span><span style="color: #EA9D34">to</span><span style="color: #575279"> </span><span style="color: #EA9D34">aspmx.l.google.com.</span></span>
+<span data-line=""><span style="color: #D7827E">Escape</span><span style="color: #575279"> </span><span style="color: #EA9D34">character</span><span style="color: #575279"> </span><span style="color: #EA9D34">is</span><span style="color: #575279"> </span><span style="color: #EA9D34">'^]'.</span></span>
+<span data-line=""><span style="color: #D7827E">220</span><span style="color: #575279"> </span><span style="color: #EA9D34">mx.google.com</span><span style="color: #575279"> </span><span style="color: #EA9D34">ESMTP</span><span style="color: #575279"> </span><span style="color: #EA9D34">b26si1910042pgs.432</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span></code></pre>
+          </div>
+          <p>
+            There's not much to see besides a 200 code, meaning we've connected successfully. I feel like a lot of
+            servers usually have a nice message like "hi" or "welcome" and I thought Google did too but I guess not.
+          </p>
+          <p>
+            Our first step is to say hello to the server, which sounds like a joke but it's not. Enter
+            <code>helo hi</code> and the server should greet you back like so:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> helo hi</span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mx.google.com</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">at</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">your</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">service</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> helo hi</span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #EA9D34">mx.google.com</span><span style="color: #575279"> </span><span style="color: #EA9D34">at</span><span style="color: #575279"> </span><span style="color: #EA9D34">your</span><span style="color: #575279"> </span><span style="color: #EA9D34">service</span></span></code></pre>
+          </div>
+          <p>
+            I've artificially inserted a prompt here to denote what I've entered but generally, telnet will have no such
+            prompt.
+          </p>
+          <p>
+            Next, we'll need to say who the message is coming from. You can use your own email, or any email really. I
+            like to use <a href="mailto:test@example.com">test@example.com</a> because it's a dummy email, but it also
+            comes from a real domain name. If that sounds like news, <a href="https://www.iana.org">IANA</a> provides
+            example.com as a domain for use in "illustrative documents" like books. Anyway, we provide our identity like
+            so:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> mail from: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">test@example.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">from:</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #F6C177">test@example.co</span><span style="color: #E0DEF4">m</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.0</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">b26si1910042pgs.432</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> mail from: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">test@example.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">from:</span><span style="color: #575279"> </span><span style="color: #286983">&#x3C;</span><span style="color: #EA9D34">test@example.co</span><span style="color: #575279">m</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.0</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span><span style="color: #575279"> </span><span style="color: #EA9D34">b26si1910042pgs.432</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span></code></pre>
+          </div>
+          <p>
+            We see another <code>250</code> response code followed by an <code>OK</code> which means that the mail
+            server has accepted. If someone went wrong, we'd see a 500 code. I think I've gotten errors on rare
+            occasions where I've used fake domain names so I just use example.com to play it safe.
+          </p>
+          <p>
+            Lately, and where all our hard work pays off, is providing a recipient. This won't actually send an email,
+            it'll just let us know if the address is real or not.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">ian@evernote.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">b26si1910042pgs.432</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span>
+<span data-line=""><span style="color: #EA9A97">rcpt</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to:</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #F6C177">not.ian@evernote.co</span><span style="color: #E0DEF4">m</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">The</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">email</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">account</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">that</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">you</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">tried</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">reach</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">does</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">not</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exist.</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Please</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">try</span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">double-checking</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">the</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #F6C177">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #F6C177">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">ian@evernote.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span><span style="color: #575279"> </span><span style="color: #EA9D34">b26si1910042pgs.432</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span>
+<span data-line=""><span style="color: #D7827E">rcpt</span><span style="color: #575279"> </span><span style="color: #EA9D34">to:</span><span style="color: #575279"> </span><span style="color: #286983">&#x3C;</span><span style="color: #EA9D34">not.ian@evernote.co</span><span style="color: #575279">m</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">The</span><span style="color: #575279"> </span><span style="color: #EA9D34">email</span><span style="color: #575279"> </span><span style="color: #EA9D34">account</span><span style="color: #575279"> </span><span style="color: #EA9D34">that</span><span style="color: #575279"> </span><span style="color: #EA9D34">you</span><span style="color: #575279"> </span><span style="color: #EA9D34">tried</span><span style="color: #575279"> </span><span style="color: #EA9D34">to</span><span style="color: #575279"> </span><span style="color: #EA9D34">reach</span><span style="color: #575279"> </span><span style="color: #EA9D34">does</span><span style="color: #575279"> </span><span style="color: #EA9D34">not</span><span style="color: #575279"> </span><span style="color: #EA9D34">exist.</span><span style="color: #575279"> </span><span style="color: #EA9D34">Please</span><span style="color: #575279"> </span><span style="color: #EA9D34">try</span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">double-checking</span><span style="color: #575279"> </span><span style="color: #EA9D34">the</span><span style="color: #575279"> </span><span style="color: #EA9D34">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #EA9D34">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #EA9D34">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp</span></span></code></pre>
+          </div>
+          <p>
+            As we can see, <a href="mailto:ian@evernote.com">ian@evernote.com</a> does indeed exist! We'd receive a 550
+            error if the user was invalid but there are often some catches.
+          </p>
+          <p>
+            You won't always get it in the first go, or even necessarily have any leads on what the email structure
+            looks like. All I can really suggest is brute force combinations until you get a response. If
+            <a href="mailto:ian@evernote.com">ian@evernote.com</a> wasn't valid, my next step would look like this:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">ian.small@evernote.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">The</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">email</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">account</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">that</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">you</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">tried</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">reach</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">does</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">not</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exist.</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Please</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">try</span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">double-checking</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">the</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #F6C177">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #F6C177">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp</span></span>
+<span data-line=""><span style="color: #F6C177">rcpt to: &#x3C;i.small@evernote.com></span></span>
+<span data-line=""><span style="color: #F6C177">550-5.1.1 The email account that you tried to reach does not exist. Please try</span></span>
+<span data-line=""><span style="color: #F6C177">550-5.1.1 double-checking the recipient's</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">email</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">address</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">for</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">typos</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">or</span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">unnecessary</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">spaces.</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Learn</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">more</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">at</span></span>
+<span data-line=""><span style="color: #EA9A97">550</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">5.1</span><span style="color: #F6C177">.1</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">https://support.google.com/mail/?p=NoSuchUser</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">b26si1910042pgs.432</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">ismall@evernote.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">b26si1910042pgs.432</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">ian.small@evernote.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">The</span><span style="color: #575279"> </span><span style="color: #EA9D34">email</span><span style="color: #575279"> </span><span style="color: #EA9D34">account</span><span style="color: #575279"> </span><span style="color: #EA9D34">that</span><span style="color: #575279"> </span><span style="color: #EA9D34">you</span><span style="color: #575279"> </span><span style="color: #EA9D34">tried</span><span style="color: #575279"> </span><span style="color: #EA9D34">to</span><span style="color: #575279"> </span><span style="color: #EA9D34">reach</span><span style="color: #575279"> </span><span style="color: #EA9D34">does</span><span style="color: #575279"> </span><span style="color: #EA9D34">not</span><span style="color: #575279"> </span><span style="color: #EA9D34">exist.</span><span style="color: #575279"> </span><span style="color: #EA9D34">Please</span><span style="color: #575279"> </span><span style="color: #EA9D34">try</span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">double-checking</span><span style="color: #575279"> </span><span style="color: #EA9D34">the</span><span style="color: #575279"> </span><span style="color: #EA9D34">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #EA9D34">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #EA9D34">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser b26si1910042pgs.432 - gsmtp</span></span>
+<span data-line=""><span style="color: #EA9D34">rcpt to: &#x3C;i.small@evernote.com></span></span>
+<span data-line=""><span style="color: #EA9D34">550-5.1.1 The email account that you tried to reach does not exist. Please try</span></span>
+<span data-line=""><span style="color: #EA9D34">550-5.1.1 double-checking the recipient's</span><span style="color: #575279"> </span><span style="color: #EA9D34">email</span><span style="color: #575279"> </span><span style="color: #EA9D34">address</span><span style="color: #575279"> </span><span style="color: #EA9D34">for</span><span style="color: #575279"> </span><span style="color: #EA9D34">typos</span><span style="color: #575279"> </span><span style="color: #EA9D34">or</span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">unnecessary</span><span style="color: #575279"> </span><span style="color: #EA9D34">spaces.</span><span style="color: #575279"> </span><span style="color: #EA9D34">Learn</span><span style="color: #575279"> </span><span style="color: #EA9D34">more</span><span style="color: #575279"> </span><span style="color: #EA9D34">at</span></span>
+<span data-line=""><span style="color: #D7827E">550</span><span style="color: #575279"> </span><span style="color: #D7827E">5.1</span><span style="color: #EA9D34">.1</span><span style="color: #575279">  </span><span style="color: #EA9D34">https://support.google.com/mail/?p=NoSuchUser</span><span style="color: #575279"> </span><span style="color: #EA9D34">b26si1910042pgs.432</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">ismall@evernote.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span><span style="color: #575279"> </span><span style="color: #EA9D34">b26si1910042pgs.432</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span></code></pre>
+          </div>
+          <p>
+            The most common formats are probably <code>first.name</code>, <code>f.last</code> and <code>flast</code> but
+            I'm sure you can look up lists of common formats or something.
+          </p>
+          <h2 id="common-gotchas">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#common-gotchas">¶ </a>Common gotchas
+          </h2>
+          <p>
+            The above usually works out for me most of the time but there's a few different things I've noticed along
+            the way that can throw a spanner in the works.
+          </p>
+          <h3 id="blocked-ip-addresses">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#blocked-ip-addresses">¶ </a>Blocked IP addresses
+          </h3>
+          <p>
+            This is one issue I came across while writing this post and it's to do with mail servers that refer you to a
+            block list.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> telnet microsoft-com.mail.protection.outlook.com 25</span></span>
+<span data-line=""><span style="color: #EA9A97">Trying</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">104.47</span><span style="color: #F6C177">.53.36...</span></span>
+<span data-line=""><span style="color: #EA9A97">Connected</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">microsoft-com.mail.protection.outlook.com.</span></span>
+<span data-line=""><span style="color: #EA9A97">Escape</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">character</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">is</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">'^]'.</span></span>
+<span data-line=""><span style="color: #EA9A97">220</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">BL2NAM06FT004.mail.protection.outlook.com</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Microsoft</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ESMTP</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">MAIL</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Service</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ready</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">at</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Thu,</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">26</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Sep</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2019</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">10</span><span style="color: #F6C177">:51:20</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">+0000</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> helo hi</span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">BL2NAM06FT004.mail.protection.outlook.com</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Hello</span><span style="color: #E0DEF4"> [121.74.XX.XX]</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> mail from: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">test@example.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.0</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Sender</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">satya.nadella@microsoft.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">550</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">5.7</span><span style="color: #F6C177">.606</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Access</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">denied,</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">banned</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">sending</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">IP</span><span style="color: #E0DEF4"> [121.74.XX.XX]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/</span><span style="color: #3E8FB0">?</span><span style="color: #E0DEF4">LinkID=526655 </span><span style="color: #908CAA">(</span><span style="color: #EA9A97">AS16012609</span><span style="color: #908CAA">)</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span><span style="color: #E0DEF4">BL2NAM06FT004.Eop-nam06.prod.protection.outlook.com</span><span style="color: #908CAA">]</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> telnet microsoft-com.mail.protection.outlook.com 25</span></span>
+<span data-line=""><span style="color: #D7827E">Trying</span><span style="color: #575279"> </span><span style="color: #D7827E">104.47</span><span style="color: #EA9D34">.53.36...</span></span>
+<span data-line=""><span style="color: #D7827E">Connected</span><span style="color: #575279"> </span><span style="color: #EA9D34">to</span><span style="color: #575279"> </span><span style="color: #EA9D34">microsoft-com.mail.protection.outlook.com.</span></span>
+<span data-line=""><span style="color: #D7827E">Escape</span><span style="color: #575279"> </span><span style="color: #EA9D34">character</span><span style="color: #575279"> </span><span style="color: #EA9D34">is</span><span style="color: #575279"> </span><span style="color: #EA9D34">'^]'.</span></span>
+<span data-line=""><span style="color: #D7827E">220</span><span style="color: #575279"> </span><span style="color: #EA9D34">BL2NAM06FT004.mail.protection.outlook.com</span><span style="color: #575279"> </span><span style="color: #EA9D34">Microsoft</span><span style="color: #575279"> </span><span style="color: #EA9D34">ESMTP</span><span style="color: #575279"> </span><span style="color: #EA9D34">MAIL</span><span style="color: #575279"> </span><span style="color: #EA9D34">Service</span><span style="color: #575279"> </span><span style="color: #EA9D34">ready</span><span style="color: #575279"> </span><span style="color: #EA9D34">at</span><span style="color: #575279"> </span><span style="color: #EA9D34">Thu,</span><span style="color: #575279"> </span><span style="color: #D7827E">26</span><span style="color: #575279"> </span><span style="color: #EA9D34">Sep</span><span style="color: #575279"> </span><span style="color: #D7827E">2019</span><span style="color: #575279"> </span><span style="color: #D7827E">10</span><span style="color: #EA9D34">:51:20</span><span style="color: #575279"> </span><span style="color: #EA9D34">+0000</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> helo hi</span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #EA9D34">BL2NAM06FT004.mail.protection.outlook.com</span><span style="color: #575279"> </span><span style="color: #EA9D34">Hello</span><span style="color: #575279"> [121.74.XX.XX]</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> mail from: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">test@example.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.0</span><span style="color: #575279"> </span><span style="color: #EA9D34">Sender</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">satya.nadella@microsoft.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">550</span><span style="color: #575279"> </span><span style="color: #D7827E">5.7</span><span style="color: #EA9D34">.606</span><span style="color: #575279"> </span><span style="color: #EA9D34">Access</span><span style="color: #575279"> </span><span style="color: #EA9D34">denied,</span><span style="color: #575279"> </span><span style="color: #EA9D34">banned</span><span style="color: #575279"> </span><span style="color: #EA9D34">sending</span><span style="color: #575279"> </span><span style="color: #EA9D34">IP</span><span style="color: #575279"> [121.74.XX.XX]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/</span><span style="color: #286983">?</span><span style="color: #575279">LinkID=526655 </span><span style="color: #797593">(</span><span style="color: #D7827E">AS16012609</span><span style="color: #797593">)</span><span style="color: #575279"> </span><span style="color: #797593">[</span><span style="color: #575279">BL2NAM06FT004.Eop-nam06.prod.protection.outlook.com</span><span style="color: #797593">]</span></span></code></pre>
+          </div>
+          <p>
+            I've noticed it with websites that use Microsoft / Outlook primarily where it mentioned that your IP
+            address, or perhaps your entire IP range, is banned and that you should visit a particular link.
+          </p>
+          <p>
+            Presumably this is because common home address ranges are blocked, as I imagine most spammers just operate
+            from those same ranges. I don't really have a solution for these cases unfortunately.
+          </p>
+          <h3 id="misleading-success-codes">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#misleading-success-codes">¶ </a>Misleading
+            success codes
+          </h3>
+          <p>
+            Some SMTP servers are configured so that every address returns a success code meaning you can't tell what
+            exists and what doesn't
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> mail from: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">test@example.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.0</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Sender</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ok</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">postmaster@fb.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Recipient</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ok</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">not.a.real.user@fb.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Recipient</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ok</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">mark@fb.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Recipient</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ok</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> mail from: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">test@example.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.0</span><span style="color: #575279"> </span><span style="color: #EA9D34">Sender</span><span style="color: #575279"> </span><span style="color: #EA9D34">ok</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">postmaster@fb.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">Recipient</span><span style="color: #575279"> </span><span style="color: #EA9D34">ok</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">not.a.real.user@fb.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">Recipient</span><span style="color: #575279"> </span><span style="color: #EA9D34">ok</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">mark@fb.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">Recipient</span><span style="color: #575279"> </span><span style="color: #EA9D34">ok</span></span></code></pre>
+          </div>
+          <p>
+            There's not really any way around this other than sending a real email I suppose but you can test for it
+            pretty easily. I like to use two emails, <code>postmaster</code> and <code>not.a.real.user</code> first as a
+            test to see what they return. By default, the large majority of mail servers, if not all, have a postmaster
+            address by default so you can almost guarantee it exists. Likewise, you'd almost never create an address
+            called not.a.real.user so it quickly lets you know if you're going to be tricked when trying your actual
+            target address.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> mail from: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">test@example.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.0</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">c127si1944876pga.334</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">postmaster@evernote.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">250</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">2.1</span><span style="color: #F6C177">.5</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">OK</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">c127si1944876pga.334</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">-</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gsmtp</span></span>
+<span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> rcpt to: </span><span style="color: #3E8FB0">&#x3C;</span><span style="color: #E0DEF4">not.a.real.user@evernote.com</span><span style="color: #3E8FB0">></span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">The</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">email</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">account</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">that</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">you</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">tried</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">to</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">reach</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">does</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">not</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exist.</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Please</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">try</span></span>
+<span data-line=""><span style="color: #EA9A97">550-5.1.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">double-checking</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">the</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #F6C177">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #F6C177">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser c127si1944876pga.334 - gsmtp</span></span>
+<span data-line=""><span style="color: #F6C177">> rcpt to: &#x3C;ian@evernote.com></span></span>
+<span data-line=""><span style="color: #F6C177">250 2.1.5 OK c127si1944876pga.334 - gsmtp</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> mail from: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">test@example.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.0</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span><span style="color: #575279"> </span><span style="color: #EA9D34">c127si1944876pga.334</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">postmaster@evernote.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">250</span><span style="color: #575279"> </span><span style="color: #D7827E">2.1</span><span style="color: #EA9D34">.5</span><span style="color: #575279"> </span><span style="color: #EA9D34">OK</span><span style="color: #575279"> </span><span style="color: #EA9D34">c127si1944876pga.334</span><span style="color: #575279"> </span><span style="color: #EA9D34">-</span><span style="color: #575279"> </span><span style="color: #EA9D34">gsmtp</span></span>
+<span data-line=""><span style="color: #286983">></span><span style="color: #575279"> rcpt to: </span><span style="color: #286983">&#x3C;</span><span style="color: #575279">not.a.real.user@evernote.com</span><span style="color: #286983">></span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">The</span><span style="color: #575279"> </span><span style="color: #EA9D34">email</span><span style="color: #575279"> </span><span style="color: #EA9D34">account</span><span style="color: #575279"> </span><span style="color: #EA9D34">that</span><span style="color: #575279"> </span><span style="color: #EA9D34">you</span><span style="color: #575279"> </span><span style="color: #EA9D34">tried</span><span style="color: #575279"> </span><span style="color: #EA9D34">to</span><span style="color: #575279"> </span><span style="color: #EA9D34">reach</span><span style="color: #575279"> </span><span style="color: #EA9D34">does</span><span style="color: #575279"> </span><span style="color: #EA9D34">not</span><span style="color: #575279"> </span><span style="color: #EA9D34">exist.</span><span style="color: #575279"> </span><span style="color: #EA9D34">Please</span><span style="color: #575279"> </span><span style="color: #EA9D34">try</span></span>
+<span data-line=""><span style="color: #D7827E">550-5.1.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">double-checking</span><span style="color: #575279"> </span><span style="color: #EA9D34">the</span><span style="color: #575279"> </span><span style="color: #EA9D34">recipient's email address for typos or</span></span>
+<span data-line=""><span style="color: #EA9D34">550-5.1.1 unnecessary spaces. Learn more at</span></span>
+<span data-line=""><span style="color: #EA9D34">550 5.1.1  https://support.google.com/mail/?p=NoSuchUser c127si1944876pga.334 - gsmtp</span></span>
+<span data-line=""><span style="color: #EA9D34">> rcpt to: &#x3C;ian@evernote.com></span></span>
+<span data-line=""><span style="color: #EA9D34">250 2.1.5 OK c127si1944876pga.334 - gsmtp</span></span></code></pre>
+          </div>
+          <h2 id="what-is-this-handy-for">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#what-is-this-handy-for">¶ </a>What is this handy
+            for?
+          </h2>
+          <p>
+            I first came across this trick a few years back. I had been talking to someone about a job interview, before
+            I was actually in the tech industry but I… forgot to ask them for their email address. I remembered their
+            name but I didn't know how it was formatted exactly so that's where this trick came in handy. It's useful to
+            have in your back pocket when you want to email a semi-public figure too like the CEO of a company. Just
+            make sure to use it wisely and respectfully. You won't make any friends by being malicious.
+          </p>
+          <h2 id="fun-fact"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#fun-fact">¶ </a>Fun fact</h2>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> nslookup -q=MX nintendo.co.uk</span></span>
+<span data-line=""><span style="color: #EA9A97">Server:</span><span style="color: #E0DEF4">         </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1</span></span>
+<span data-line=""><span style="color: #EA9A97">Address:</span><span style="color: #E0DEF4">        </span><span style="color: #EA9A97">192.168</span><span style="color: #F6C177">.1.1#53</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #EA9A97">Non-authoritative</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">answer:</span></span>
+<span data-line=""><span style="color: #EA9A97">nintendo.co.uk</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">luigi-mx.nintendo.de.</span></span>
+<span data-line=""><span style="color: #EA9A97">nintendo.co.uk</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">mail</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">exchanger</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">=</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">10</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">mario-mx.nintendo.de.</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> nslookup -q=MX nintendo.co.uk</span></span>
+<span data-line=""><span style="color: #D7827E">Server:</span><span style="color: #575279">         </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1</span></span>
+<span data-line=""><span style="color: #D7827E">Address:</span><span style="color: #575279">        </span><span style="color: #D7827E">192.168</span><span style="color: #EA9D34">.1.1#53</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #D7827E">Non-authoritative</span><span style="color: #575279"> </span><span style="color: #EA9D34">answer:</span></span>
+<span data-line=""><span style="color: #D7827E">nintendo.co.uk</span><span style="color: #575279">  </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">20</span><span style="color: #575279"> </span><span style="color: #EA9D34">luigi-mx.nintendo.de.</span></span>
+<span data-line=""><span style="color: #D7827E">nintendo.co.uk</span><span style="color: #575279">  </span><span style="color: #EA9D34">mail</span><span style="color: #575279"> </span><span style="color: #EA9D34">exchanger</span><span style="color: #575279"> </span><span style="color: #EA9D34">=</span><span style="color: #575279"> </span><span style="color: #D7827E">10</span><span style="color: #575279"> </span><span style="color: #EA9D34">mario-mx.nintendo.de.</span></span></code></pre>
+          </div>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

@@ -12,7 +12,7 @@ from common import (
     get_image_name
 )
 
-DATA_FILE = "data/imagemetadata.json"
+DATA_FILE = "_data/imagemetadata.json"
 IMAGE_SHORTCODE = "!["
 IMAGECODE_REGEX = r"!\[.*]\(.*\)"
 

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>How can I see what applications are making my shell commands slow?</h1>
+        </header>
+        <div id="post-body">
+          <p>Recently I had noticed that some shell commands on my laptop were executing surprisingly slow.</p>
+          <p>
+            Like most things in the tech world, it was due to a piece of
+            <a href="https://www.jamf.com">jamf</a> software locking up anything that was being read.
+          </p>
+          <p>
+            I managed to validate this assumption using the command <code>fs_usage</code> which requires sudo. Here's an
+            example of it in action.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="shell"
+              data-theme="dark"
+            ><code data-language="shell" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> sudo fs_usage </span><span style="color: #3E8FB0">|</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">grep</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">zshrc</span></span>
+<span data-line=""><span style="color: #EA9A97">Password:</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">open</span><span style="color: #E0DEF4">              </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #E0DEF4">                                              </span><span style="color: #EA9A97">0.000021</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">lugh</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">open</span><span style="color: #E0DEF4">              </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                </span><span style="color: #EA9A97">0.000137</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">lugh</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">    </span><span style="color: #F6C177">WrData[A]</span><span style="color: #E0DEF4">       </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                </span><span style="color: #EA9A97">0.000324</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">W</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">lugh</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">lstat64</span><span style="color: #E0DEF4">           </span><span style="color: #F6C177">/System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                            </span><span style="color: #EA9A97">0.000015</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">fseventsd</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">lstat64</span><span style="color: #E0DEF4">           </span><span style="color: #F6C177">dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                              </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">lstat64</span><span style="color: #E0DEF4">           </span><span style="color: #F6C177">.zshrc</span><span style="color: #E0DEF4">                                                                           </span><span style="color: #EA9A97">0.000007</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">lstat64</span><span style="color: #E0DEF4">           </span><span style="color: #F6C177">.zshrc</span><span style="color: #E0DEF4">                                                                           </span><span style="color: #EA9A97">0.000004</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">readlink</span><span style="color: #E0DEF4">          </span><span style="color: #F6C177">.zshrc</span><span style="color: #E0DEF4">                                                                           </span><span style="color: #EA9A97">0.000004</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">stat64</span><span style="color: #E0DEF4">            </span><span style="color: #F6C177">dotfiles/zsh/.zshrc/.stow</span><span style="color: #E0DEF4">                                                        </span><span style="color: #EA9A97">0.000002</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">stat64</span><span style="color: #E0DEF4">            </span><span style="color: #F6C177">dotfiles/zsh/.zshrc/.nonstow</span><span style="color: #E0DEF4">                                                     </span><span style="color: #EA9A97">0.000001</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">stat64</span><span style="color: #E0DEF4">            </span><span style="color: #F6C177">dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                              </span><span style="color: #EA9A97">0.000004</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">perl5.28</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">getattrlist</span><span style="color: #E0DEF4">       </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                </span><span style="color: #EA9A97">0.000014</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                                                </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #E0DEF4">                                              </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">getattrlist</span><span style="color: #E0DEF4">       </span><span style="color: #F6C177">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #E0DEF4">                                              </span><span style="color: #EA9A97">0.000012</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/.zshrc</span><span style="color: #E0DEF4">                                                             </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">getattrlist</span><span style="color: #E0DEF4">       </span><span style="color: #F6C177">/Users/marcus/.zshrc</span><span style="color: #E0DEF4">                                                             </span><span style="color: #EA9A97">0.000015</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/zshrc.md</span><span style="color: #E0DEF4">                                                           </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">getattrlist</span><span style="color: #E0DEF4">       </span><span style="color: #F6C177">/Users/marcus/zshrc.md</span><span style="color: #E0DEF4">                                                           </span><span style="color: #EA9A97">0.000014</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/zshrc.md</span><span style="color: #E0DEF4">                                                           </span><span style="color: #EA9A97">0.000003</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">getxattr</span><span style="color: #E0DEF4">          </span><span style="color: #F6C177">dotfiles/zsh/zshrc.md</span><span style="color: #E0DEF4">                                                            </span><span style="color: #EA9A97">0.000014</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/zshrc.md</span><span style="color: #E0DEF4">                                                           </span><span style="color: #EA9A97">0.000004</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:22</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">fsgetpath</span><span style="color: #E0DEF4">         </span><span style="color: #F6C177">/Users/marcus/zshrc.md</span><span style="color: #E0DEF4">                                                           </span><span style="color: #EA9A97">0.000003</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">Finder</span></span>
+<span data-line=""><span style="color: #EA9A97">16:19:23</span><span style="color: #E0DEF4">  </span><span style="color: #F6C177">lstat64</span><span style="color: #E0DEF4">           </span><span style="color: #F6C177">/System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #E0DEF4">                            </span><span style="color: #EA9A97">0.000005</span><span style="color: #E0DEF4">   </span><span style="color: #F6C177">fseventsd</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="shell"
+              data-theme="light"
+            ><code data-language="shell" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #286983">></span><span style="color: #575279"> sudo fs_usage </span><span style="color: #286983">|</span><span style="color: #575279"> </span><span style="color: #D7827E">grep</span><span style="color: #575279"> </span><span style="color: #EA9D34">zshrc</span></span>
+<span data-line=""><span style="color: #D7827E">Password:</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">open</span><span style="color: #575279">              </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #575279">                                              </span><span style="color: #D7827E">0.000021</span><span style="color: #575279">   </span><span style="color: #EA9D34">lugh</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">open</span><span style="color: #575279">              </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                </span><span style="color: #D7827E">0.000137</span><span style="color: #575279">   </span><span style="color: #EA9D34">lugh</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">    </span><span style="color: #EA9D34">WrData[A]</span><span style="color: #575279">       </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                </span><span style="color: #D7827E">0.000324</span><span style="color: #575279"> </span><span style="color: #EA9D34">W</span><span style="color: #575279"> </span><span style="color: #EA9D34">lugh</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">lstat64</span><span style="color: #575279">           </span><span style="color: #EA9D34">/System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                            </span><span style="color: #D7827E">0.000015</span><span style="color: #575279">   </span><span style="color: #EA9D34">fseventsd</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">lstat64</span><span style="color: #575279">           </span><span style="color: #EA9D34">dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                              </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">lstat64</span><span style="color: #575279">           </span><span style="color: #EA9D34">.zshrc</span><span style="color: #575279">                                                                           </span><span style="color: #D7827E">0.000007</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">lstat64</span><span style="color: #575279">           </span><span style="color: #EA9D34">.zshrc</span><span style="color: #575279">                                                                           </span><span style="color: #D7827E">0.000004</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">readlink</span><span style="color: #575279">          </span><span style="color: #EA9D34">.zshrc</span><span style="color: #575279">                                                                           </span><span style="color: #D7827E">0.000004</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">stat64</span><span style="color: #575279">            </span><span style="color: #EA9D34">dotfiles/zsh/.zshrc/.stow</span><span style="color: #575279">                                                        </span><span style="color: #D7827E">0.000002</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">stat64</span><span style="color: #575279">            </span><span style="color: #EA9D34">dotfiles/zsh/.zshrc/.nonstow</span><span style="color: #575279">                                                     </span><span style="color: #D7827E">0.000001</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">stat64</span><span style="color: #575279">            </span><span style="color: #EA9D34">dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                              </span><span style="color: #D7827E">0.000004</span><span style="color: #575279">   </span><span style="color: #EA9D34">perl5.28</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">getattrlist</span><span style="color: #575279">       </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                </span><span style="color: #D7827E">0.000014</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                                                </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #575279">                                              </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">getattrlist</span><span style="color: #575279">       </span><span style="color: #EA9D34">/Users/marcus/dotfiles/zsh/zshrc.md</span><span style="color: #575279">                                              </span><span style="color: #D7827E">0.000012</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/.zshrc</span><span style="color: #575279">                                                             </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">getattrlist</span><span style="color: #575279">       </span><span style="color: #EA9D34">/Users/marcus/.zshrc</span><span style="color: #575279">                                                             </span><span style="color: #D7827E">0.000015</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/zshrc.md</span><span style="color: #575279">                                                           </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">getattrlist</span><span style="color: #575279">       </span><span style="color: #EA9D34">/Users/marcus/zshrc.md</span><span style="color: #575279">                                                           </span><span style="color: #D7827E">0.000014</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/zshrc.md</span><span style="color: #575279">                                                           </span><span style="color: #D7827E">0.000003</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">getxattr</span><span style="color: #575279">          </span><span style="color: #EA9D34">dotfiles/zsh/zshrc.md</span><span style="color: #575279">                                                            </span><span style="color: #D7827E">0.000014</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/zshrc.md</span><span style="color: #575279">                                                           </span><span style="color: #D7827E">0.000004</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:22</span><span style="color: #575279">  </span><span style="color: #EA9D34">fsgetpath</span><span style="color: #575279">         </span><span style="color: #EA9D34">/Users/marcus/zshrc.md</span><span style="color: #575279">                                                           </span><span style="color: #D7827E">0.000003</span><span style="color: #575279">   </span><span style="color: #EA9D34">Finder</span></span>
+<span data-line=""><span style="color: #D7827E">16:19:23</span><span style="color: #575279">  </span><span style="color: #EA9D34">lstat64</span><span style="color: #575279">           </span><span style="color: #EA9D34">/System/Volumes/Data/Users/marcus/dotfiles/zsh/.zshrc</span><span style="color: #575279">                            </span><span style="color: #D7827E">0.000005</span><span style="color: #575279">   </span><span style="color: #EA9D34">fseventsd</span></span></code></pre>
+          </div>
+          <p>
+            Now this output doesn't actually come from my work computer so you won't see the mentioned JamfAgent but we
+            can walk through this anyway.
+          </p>
+          <p>
+            First is <a href="https://github.com/marcus-crane/lugh">lugh</a>, a custom and possibly temporary literate
+            markdown tool I use on my dotfiles. Next is <code>perl</code>, in the form of
+            <a href="https://www.gnu.org/software/stow/">GNU Stow</a> followed by macOS Finder doing some things. This
+            gives a really nice breakdown of what is going on.
+          </p>
+          <p>
+            You can even use it to better understand applications, like if you run <code>git status</code> and see all
+            the files that were touched within the <code>.git</code> folder.
+          </p>
+          <p>
+            I actually spotted that Yet Another Daemon was touching some of my <code>.git</code> files on my work laptop
+            too. Shoo!
+          </p>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

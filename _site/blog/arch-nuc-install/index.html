@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>Installing Arch Linux on my Intel NUC</h1>
+
+          <div id="post-meta">
+            <time datetime="Sun Dec 24 2017 00:00:00 GMT+1300 (New Zealand Daylight Time)">December 24, 2017</time> ·
+            Around 9 minutes
+          </div>
+        </header>
+        <div id="post-body">
+          <div class="notice">
+            <hr class="hidden" />
+            <h3>
+              <span>⚰️</span>
+              Is this up to date?
+            </h3>
+            <p>
+              While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily
+              driver nowadays.
+            </p>
+            <p>
+              If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide and expect that it should
+              be fairly seemless.
+            </p>
+            <p>
+              While I don't expect much has changed, you should know that I'm not actively verifying that these steps
+              haven't changed or anything like that.
+            </p>
+            <hr class="hidden" />
+          </div>
+          <h2 id="table-of-contents">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#table-of-contents">¶ </a>Table of Contents
+          </h2>
+          <ul>
+            <li><a href="#preamble">Preamble</a></li>
+            <li><a href="#getting-online">Getting online</a></li>
+            <li><a href="#setting-up-your-hard-drive">Setting up your hard drive</a></li>
+            <li><a href="#partitioning">Partitioning</a></li>
+            <li><a href="#making-file-systems">Making file systems</a></li>
+            <li><a href="#mounting-our-new-file-systems">Mounting our new file systems</a></li>
+            <li><a href="#installing-base-packages">Installing base packages</a></li>
+            <li><a href="#set-up-bash">Set up bash</a></li>
+            <li><a href="#updates-and-other-dependencies-optional">Updates and other dependencies (optional)</a></li>
+            <li><a href="#generating-locale">Generating locale</a></li>
+            <li><a href="#timezone">Timezone</a></li>
+            <li><a href="#setting-hardware-clock">Setting hardware clock</a></li>
+            <li><a href="#hostname-setup">Hostname setup</a></li>
+            <li><a href="#set-a-root-password">Set a root password</a></li>
+            <li><a href="#installing-a-boot-manager">Installing a boot manager</a></li>
+            <li><a href="#configuring-the-boot-manager">Configuring the boot manager</a></li>
+          </ul>
+          <h2 id="preamble"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#preamble">¶ </a>Preamble</h2>
+          <p>
+            It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a
+            wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for
+            my own future reference.
+          </p>
+          <p>
+            Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient
+            method of installing. It's just what I know works for me.
+          </p>
+          <h2 id="getting-online">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#getting-online">¶ </a>Getting online
+          </h2>
+          <p>
+            As I'm installing on an Intel NUC, I'm going to assume you might like it run it mainly via WiFi so we'll
+            start by getting online. You can do this graphically by running <code>wifi-menu</code>.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">wifi-menu</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">wifi-menu</span></span></code></pre>
+          </div>
+          <p>
+            Once you've set up a profile, you'll see a new entry when using the <code>ifconfig</code> command and you
+            can confirm you're online with <code>ping archlinux.org -c 3</code>.
+          </p>
+          <h2 id="setting-up-your-hard-drive">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#setting-up-your-hard-drive">¶ </a>Setting up
+            your hard drive
+          </h2>
+          <p>
+            Personally, I wouldn't, and probably couldn't (yet) install Arch Linux as a dual boot partition. That is,
+            alongside another operating system such as Windows or macOS. You might like to and that's great but this
+            isn't the guide for you :)
+          </p>
+          <p>First, we need to see what our current devices are:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">fdisk</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">-l</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">fdisk</span><span style="color: #575279"> </span><span style="color: #286983">-l</span></span></code></pre>
+          </div>
+          <p>
+            You may see a few. In my case, my hard drive has a few <code>/dev/sda&#x3C;number></code> entries and my USB
+            has 2 <code>/dev/sdb&#x3C;number></code> entries. For the purposes of this guide, I'll be assuming that your
+            hard drive is under <code>/dev/sda</code> but when installing to, say, a Macbook, I've found that the hard
+            drive can be under <code>/dev/sdb</code>.
+          </p>
+          <p>My hard drive will end up looking as follows once I've set it up:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>SIZE</th>
+                <th>PURPOSE</th>
+                <th>LOCATION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>500M</td>
+                <td>Boot Sector</td>
+                <td>/boot</td>
+              </tr>
+              <tr>
+                <td>20G</td>
+                <td>System Root</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>8G</td>
+                <td>Swap Space</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>437G</td>
+                <td>Home Directory</td>
+                <td>/home</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            I'm targeting a <a href="https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface">UEFI</a> BIOS
+            so we'll be using <a href="https://en.wikipedia.org/wiki/GUID_Partition_Table">GPT</a> for our partition
+            table.
+          </p>
+          <p>
+            The following uses <a href="https://www.gnu.org/software/parted/manual/parted.html">gparted</a> which you
+            may or may not be familiar with if you've only use GUI installers before. Just follow along and I'll comment
+            what each segment is roughly doing. From hereon in, URLs prefixed by a tilde (~) indicate resources where
+            you can read further information if you're the curious sort.
+          </p>
+          <div class="notice">
+            <hr class="hidden" />
+            <h3>
+              <span>⚠️</span>
+              Consider yourself warned
+            </h3>
+            <p>
+              The following <em>WILL</em> wipe your hard drive so ensure that this is what you'd like to do and/or that
+              you've backed up everything from any currently installed OS
+            </p>
+            <hr class="hidden" />
+          </div>
+          <h2 id="partitioning">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#partitioning">¶ </a>Partitioning
+          </h2>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Launched parted, passing our hard drive as an argument</span></span>
+<span data-line=""><span style="color: #EA9A97">parted</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a partition table using the GUID Partition Table (GPT) format.</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> This wipes your drive(!)</span></span>
+<span data-line=""><span style="color: #EA9A97">mklabel</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">gpt</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a 499M boot sector that will live at /boot</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ESP is short for EFI System Partition and are always formatted as FAT32</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> We start at 1MiB instead of 0 because MBR/GPT both use the first block</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ~ https://unix.stackexchange.com/a/286325</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> We use 550MiB as Rod Smith reports possible bugs with ESPs below 512MiB</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ~ http://www.rodsbooks.com/efi-bootloaders/principles.html</span></span>
+<span data-line=""><span style="color: #EA9A97">mkpart</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ESP</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">fat32</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">1</span><span style="color: #F6C177">MiB</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">551</span><span style="color: #F6C177">MiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Set the boot flag to ON on partition number 1</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ~ https://www.gnu.org/software/parted/manual/html_node/set.html</span></span>
+<span data-line=""><span style="color: #EB6F92; font-style: italic">set</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">boot</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">on</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a 20G ext4 partition that will live at /</span></span>
+<span data-line=""><span style="color: #EA9A97">mkpart</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">primary</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">ext4</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">551</span><span style="color: #F6C177">MiB</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20.5</span><span style="color: #F6C177">GiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create an 8G swap partition</span></span>
+<span data-line=""><span style="color: #EA9A97">mkpart</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">primary</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">linux-swap</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">20.5</span><span style="color: #F6C177">GiB</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">28.5</span><span style="color: #F6C177">GiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Allocate the remaining space which will be used by users at /home/{user}</span></span>
+<span data-line=""><span style="color: #EA9A97">mkpart</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">primary</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">28.5</span><span style="color: #F6C177">GiB</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">100</span><span style="color: #F6C177">%</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> All done!</span></span>
+<span data-line=""><span style="color: #EA9A97">quit</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Launched parted, passing our hard drive as an argument</span></span>
+<span data-line=""><span style="color: #D7827E">parted</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a partition table using the GUID Partition Table (GPT) format.</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> This wipes your drive(!)</span></span>
+<span data-line=""><span style="color: #D7827E">mklabel</span><span style="color: #575279"> </span><span style="color: #EA9D34">gpt</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a 499M boot sector that will live at /boot</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ESP is short for EFI System Partition and are always formatted as FAT32</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> We start at 1MiB instead of 0 because MBR/GPT both use the first block</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ~ https://unix.stackexchange.com/a/286325</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> We use 550MiB as Rod Smith reports possible bugs with ESPs below 512MiB</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ~ http://www.rodsbooks.com/efi-bootloaders/principles.html</span></span>
+<span data-line=""><span style="color: #D7827E">mkpart</span><span style="color: #575279"> </span><span style="color: #EA9D34">ESP</span><span style="color: #575279"> </span><span style="color: #EA9D34">fat32</span><span style="color: #575279"> </span><span style="color: #D7827E">1</span><span style="color: #EA9D34">MiB</span><span style="color: #575279"> </span><span style="color: #D7827E">551</span><span style="color: #EA9D34">MiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Set the boot flag to ON on partition number 1</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ~ https://www.gnu.org/software/parted/manual/html_node/set.html</span></span>
+<span data-line=""><span style="color: #B4637A; font-style: italic">set</span><span style="color: #575279"> </span><span style="color: #D7827E">1</span><span style="color: #575279"> </span><span style="color: #EA9D34">boot</span><span style="color: #575279"> </span><span style="color: #EA9D34">on</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a 20G ext4 partition that will live at /</span></span>
+<span data-line=""><span style="color: #D7827E">mkpart</span><span style="color: #575279"> </span><span style="color: #EA9D34">primary</span><span style="color: #575279"> </span><span style="color: #EA9D34">ext4</span><span style="color: #575279"> </span><span style="color: #D7827E">551</span><span style="color: #EA9D34">MiB</span><span style="color: #575279"> </span><span style="color: #D7827E">20.5</span><span style="color: #EA9D34">GiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create an 8G swap partition</span></span>
+<span data-line=""><span style="color: #D7827E">mkpart</span><span style="color: #575279"> </span><span style="color: #EA9D34">primary</span><span style="color: #575279"> </span><span style="color: #EA9D34">linux-swap</span><span style="color: #575279"> </span><span style="color: #D7827E">20.5</span><span style="color: #EA9D34">GiB</span><span style="color: #575279"> </span><span style="color: #D7827E">28.5</span><span style="color: #EA9D34">GiB</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Allocate the remaining space which will be used by users at /home/{user}</span></span>
+<span data-line=""><span style="color: #D7827E">mkpart</span><span style="color: #575279"> </span><span style="color: #EA9D34">primary</span><span style="color: #575279"> </span><span style="color: #D7827E">28.5</span><span style="color: #EA9D34">GiB</span><span style="color: #575279"> </span><span style="color: #D7827E">100</span><span style="color: #EA9D34">%</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> All done!</span></span>
+<span data-line=""><span style="color: #D7827E">quit</span></span></code></pre>
+          </div>
+          <p>Now that are partitions are set up, running <code>fdisk -l</code> again should show the following:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>DEVICE</th>
+                <th>FORMAT</th>
+                <th>LOCATION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>/dev/sda1</td>
+                <td>ESP</td>
+                <td>/boot</td>
+              </tr>
+              <tr>
+                <td>/dev/sda2</td>
+                <td>ext4</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>/dev/sda4</td>
+                <td>ext4</td>
+                <td>/home</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 id="making-file-systems">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#making-file-systems">¶ </a>Making file systems
+          </h2>
+          <p>
+            We don't need any utilites to create our file systems, we can just do 'em straight outta the box like so:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a 32bit VFAT filesystem for our boot partition</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> VFAT is essentially FAT32 with support for longer filenames. See below for more details.</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ~ http://wiki.linuxquestions.org/wiki/VFAT</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> ~ https://unix.stackexchange.com/a/263731</span></span>
+<span data-line=""><span style="color: #EA9A97">mkfs.vfat</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">-F32</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create an ext4 filesystem for our root partition</span></span>
+<span data-line=""><span style="color: #EA9A97">mkfs.ext4</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda2</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Prepare a swap area</span></span>
+<span data-line=""><span style="color: #EA9A97">mkswap</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda3</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Activate our created swap area</span></span>
+<span data-line=""><span style="color: #EA9A97">swapon</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda3</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create an ext4 filesystem for our home partition</span></span>
+<span data-line=""><span style="color: #EA9A97">mkfs.ext4</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda4</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a 32bit VFAT filesystem for our boot partition</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> VFAT is essentially FAT32 with support for longer filenames. See below for more details.</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ~ http://wiki.linuxquestions.org/wiki/VFAT</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> ~ https://unix.stackexchange.com/a/263731</span></span>
+<span data-line=""><span style="color: #D7827E">mkfs.vfat</span><span style="color: #575279"> </span><span style="color: #286983">-F32</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda1</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create an ext4 filesystem for our root partition</span></span>
+<span data-line=""><span style="color: #D7827E">mkfs.ext4</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda2</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Prepare a swap area</span></span>
+<span data-line=""><span style="color: #D7827E">mkswap</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda3</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Activate our created swap area</span></span>
+<span data-line=""><span style="color: #D7827E">swapon</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda3</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create an ext4 filesystem for our home partition</span></span>
+<span data-line=""><span style="color: #D7827E">mkfs.ext4</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda4</span></span></code></pre>
+          </div>
+          <p>Now that our hard drive is completely set up, we're ready to mount our file systems.</p>
+          <h2 id="mounting-our-new-file-systems">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#mounting-our-new-file-systems">¶ </a>Mounting
+            our new file systems
+          </h2>
+          <p>Just as a reminder, here's where we want our partitions to end up</p>
+          <table>
+            <thead>
+              <tr>
+                <th>DEVICE</th>
+                <th>FORMAT</th>
+                <th>LOCATION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>/dev/sda1</td>
+                <td>ESP</td>
+                <td>/boot</td>
+              </tr>
+              <tr>
+                <td>/dev/sda2</td>
+                <td>ext4</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>/dev/sda4</td>
+                <td>ext4</td>
+                <td>/home</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Here's how this layout translates into mount commands:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Mount our root partition to /mnt</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> NOTE: /mnt doesn't persist once we're in our bash prompt</span></span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> For example, /mnt/home becomes just /home</span></span>
+<span data-line=""><span style="color: #EA9A97">mount</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda2</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a folder which our ESP partition will be mounted to</span></span>
+<span data-line=""><span style="color: #EA9A97">mkdir</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt/boot</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Mount our ESP partition to /boot</span></span>
+<span data-line=""><span style="color: #EA9A97">mount</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt/boot</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Create a home folder where all of our user directories will live</span></span>
+<span data-line=""><span style="color: #EA9A97">mkdir</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt/home</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #908CAA; font-style: italic">#</span><span style="color: #6E6A86; font-style: italic"> Mount the home partition to /home</span></span>
+<span data-line=""><span style="color: #EA9A97">mount</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/dev/sda4</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt/home</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Mount our root partition to /mnt</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> NOTE: /mnt doesn't persist once we're in our bash prompt</span></span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> For example, /mnt/home becomes just /home</span></span>
+<span data-line=""><span style="color: #D7827E">mount</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda2</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a folder which our ESP partition will be mounted to</span></span>
+<span data-line=""><span style="color: #D7827E">mkdir</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt/boot</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Mount our ESP partition to /boot</span></span>
+<span data-line=""><span style="color: #D7827E">mount</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda1</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt/boot</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Create a home folder where all of our user directories will live</span></span>
+<span data-line=""><span style="color: #D7827E">mkdir</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt/home</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color: #797593; font-style: italic">#</span><span style="color: #9893A5; font-style: italic"> Mount the home partition to /home</span></span>
+<span data-line=""><span style="color: #D7827E">mount</span><span style="color: #575279"> </span><span style="color: #EA9D34">/dev/sda4</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt/home</span></span></code></pre>
+          </div>
+          <p>Nice! We're completely done and can start to actually install and configure Arch Linux.</p>
+          <h2 id="installing-base-packages">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#installing-base-packages">¶ </a>Installing base
+            packages
+          </h2>
+          <p>
+            Now we need to download and install the base packages for Arch Linux to our <code>/mnt</code> which will
+            becomes our root (<code>/</code>) later on.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">pacstrap</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">base</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">pacstrap</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt</span><span style="color: #575279"> </span><span style="color: #EA9D34">base</span></span></code></pre>
+          </div>
+          <p>
+            For the curious, the <code>base</code> group contains a number of default libraries and utilties you may
+            have used such as <code>man</code>, <code>openssl</code>, <code>bash</code>, <code>iptables</code> and
+            <code>gcc</code> to name a few.
+          </p>
+          <p>
+            You can view the <code>pacstrap</code> script itself
+            <a href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in">here</a>. I thought it would
+            be quite longer!
+          </p>
+          <p>
+            The script also runs the <code>mkinitcpio</code> bash script which you can learn more about
+            <a href="https://wiki.archlinux.org/index.php/mkinitcpio#Overview">here</a>.
+          </p>
+          <p>This entire process may take a few minutes so feel free to read ahead while you wait.</p>
+          <h2 id="set-up-bash">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#set-up-bash">¶ </a>Set up bash
+          </h2>
+          <p>
+            With Arch Linux installed, we can finally move off of our live USB and start a bash process to set up our
+            freshly initialised system after 2 more quick steps
+          </p>
+          <p>
+            Step 1 is generating a <a href="http://www.linfo.org/etc_fstab.html">file systems table</a>, referred to as
+            <code>fstab</code> going forward. This is done so that all devices (/dev/sdaX) specificied in the file are
+            mounted automatically on startup.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">genfstab</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">-U</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">>></span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt/etc/fstab</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">genfstab</span><span style="color: #575279"> </span><span style="color: #286983">-U</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt</span><span style="color: #575279"> </span><span style="color: #286983">>></span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt/etc/fstab</span></span></code></pre>
+          </div>
+          <p>
+            The <code>-U</code> flag denotes that we want to identify our devices using
+            <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUIDs</a>, instead of labels, as noted
+            <a href="https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in#L86">here</a>.
+          </p>
+          <p>Step 2 is even quicker!</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">arch-chroot</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/mnt</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">arch-chroot</span><span style="color: #575279"> </span><span style="color: #EA9D34">/mnt</span></span></code></pre>
+          </div>
+          <p>
+            <code>arch-chroot</code>, seen
+            <a href="https://github.com/falconindy/arch-install-scripts/blob/master/arch-chroot.in">here</a> changes the
+            root directory to, well, <code>/</code> which is our new root directory. As we're still on the live USB, we
+            specify it as <code>/mnt</code> instead.
+          </p>
+          <p>
+            <code>arch-chroot</code> is also able to take some flags following the root partition such as
+            <code>arch-chroot /mnt /bin/bash</code>. It's worth noting that the preceeding example is actually fairly
+            pointless seeing as <code>arch-chroot</code> already defaults to <code>bash</code> anyway.
+          </p>
+          <p>
+            Huzzah! We're finally in our new system but will it boot? Not quite yet and we've still a lot to set up so
+            let's carry on.
+          </p>
+          <h2 id="updates-and-other-dependencies-optional">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#updates-and-other-dependencies-optional">¶ </a
+            >Updates and other dependencies (optional)
+          </h2>
+          <p>
+            At this point, I like to run a system upgrade using <code>pacman -Syu</code> just in case. As we've just
+            pulled our dependencies minutes ago, it'll likely find nothing but I reckon it feels good, haha.
+          </p>
+          <p>
+            I also need some extra bits and pieces for later at this point. We couldn't have fetched these earlier as
+            trying to run <code>pacman</code>, the Arch Linux package manager, from the live USB would attempt to
+            install to the USB itself and error out.
+          </p>
+          <p>I need the following bits:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>PACKAGE</th>
+                <th>PURPOSE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="http://invisible-island.net/dialog/">dialog</a></td>
+                <td>A library for console-based UIs like <code>wifi-menu</code></td>
+              </tr>
+              <tr>
+                <td><a href="https://downloadcenter.intel.com/search?keyword=microcode+data">intel-ucode</a></td>
+                <td>Micro-code updates for Intel CPUs</td>
+              </tr>
+              <tr>
+                <td><a href="https://w1.fi/wpa_supplicant/">wpa_supplicant</a></td>
+                <td>Used to connect to wireless networks (put simply)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            That should be everything for now. The other bits (<code>netctl</code> and <code>dhcpcd</code>) were already
+            installed as part of the <code>base</code> group from earlier. If you're using Ethernet, you can basically
+            skip this entire step hence why it's marked as optional.
+          </p>
+          <p>
+            Honestly, we don't really need <code>dialog</code> as we could just use <code>netctl</code> directly but I
+            find it more user friendly and I'm not a masochist, haha.
+          </p>
+          <p>
+            You might as well also enable <code>dhcpcd</code> if you need it for ethernet with
+            <code>systemctl enable dhcpcd</code>.
+          </p>
+          <h2 id="generating-locale">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#generating-locale">¶ </a>Generating locale
+          </h2>
+          <p>
+            Popular software often ships in a number of languages but in order to show the correct language, currency
+            and so on, it needs to know where you live. We achieve this by generating and setting a locale.
+          </p>
+          <p>
+            To do so, edit <code>/etc/locale.gen</code> and uncomment your respective locale. In short, the format is
+            <code>{language}_{country code}.{character encoding}</code>. As an example, I'm in New Zealand so I
+            uncomment the line <code>en_NZ.UTF-8 UTF-8</code>. If in doubt, just opt for <code>utf-8</code>.
+          </p>
+          <p>
+            I just use <code>nano</code> but if you prefer, this would be an alright time to run
+            <code>pacman -S vim</code>.
+          </p>
+          <p>
+            Once you've done that, you'll need to generate the locale files and export your language to your environment
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">locale-gen</span></span>
+<span data-line=""><span style="color: #3E8FB0">export</span><span style="color: #E0DEF4"> </span><span style="color: #E0DEF4; font-style: italic">LANG</span><span style="color: #3E8FB0">=</span><span style="color: #F6C177">{xx}_{yy}.UTF-8</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">locale-gen</span></span>
+<span data-line=""><span style="color: #286983">export</span><span style="color: #575279"> </span><span style="color: #575279; font-style: italic">LANG</span><span style="color: #286983">=</span><span style="color: #EA9D34">{xx}_{yy}.UTF-8</span></span></code></pre>
+          </div>
+          <p>If done successfully, <code>echo $LANG</code> will display your locale.</p>
+          <p>
+            For reference, the actual <code>locale-gen</code> script can be seen
+            <a
+              href="https://sourceware.org/git/?p=glibc.git;a=blob;f=localedata/gen-locale.sh;h=39f1475cbc45faaae32728dbfd7cce282c3cdb05;hb=HEAD"
+              >here</a
+            >
+            as part of <a href="https://sourceware.org/git/?p=glibc.git;a=summary">glibc</a>, the GNU implementation of
+            the C standard library. I always wondered where it was from!
+          </p>
+          <h2 id="timezone"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#timezone">¶ </a>Timezone</h2>
+          <p>
+            Selecting our timezone is fairly straightforward thanks to an interactive program called
+            <code>tzselect</code>. Running it will show a list of continents and oceans. Selecting one will drill down
+            to display countries.
+          </p>
+          <p>
+            Once you've confirmed the output, it will mention appending the timezone to a file. Instead, we want to
+            symlink that timezone to a file. In my case, the timezone is <code>Pacific/Auckland</code> but of course,
+            you'll want to input your respective timezone instead.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">ln</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">-s</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/usr/share/zoneinfo/Pacific/Auckland</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/etc/localtime</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">ln</span><span style="color: #575279"> </span><span style="color: #286983">-s</span><span style="color: #575279"> </span><span style="color: #EA9D34">/usr/share/zoneinfo/Pacific/Auckland</span><span style="color: #575279"> </span><span style="color: #EA9D34">/etc/localtime</span></span></code></pre>
+          </div>
+          <h2 id="setting-hardware-clock">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#setting-hardware-clock">¶ </a>Setting hardware
+            clock
+          </h2>
+          <p>
+            The last of our locale related setups is configuring the system clock. To do that, we'll tell our hardware
+            clock to set the system time using the <code>--hctosys</code> option. You can read more about
+            <code>hwclock</code> and how it differs from system time
+            <a href="https://linux.die.net/man/8/hwclock">here</a>
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">hwclock</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">--systohc</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">hwclock</span><span style="color: #575279"> </span><span style="color: #286983">--systohc</span></span></code></pre>
+          </div>
+          <h2 id="hostname-setup">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#hostname-setup">¶ </a>Hostname setup
+          </h2>
+          <p>
+            We like life to be simple (but no simpler) and giving our computer/server a unique name is an important part
+            of that process. For this bit, let's assume we want to name our system <code>weinerdog</code> because it
+            sounds silly.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EB6F92; font-style: italic">echo</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">weinerdog</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/etc/hostname</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #B4637A; font-style: italic">echo</span><span style="color: #575279"> </span><span style="color: #EA9D34">weinerdog</span><span style="color: #575279"> </span><span style="color: #286983">></span><span style="color: #575279"> </span><span style="color: #EA9D34">/etc/hostname</span></span></code></pre>
+          </div>
+          <p>
+            Oh, that was easy. We also need to tell our system that <code>weinerdog</code> is an alias for
+            <code>127.0.0.1</code>, just like <code>localhost</code> is. We could fire up our favourite editor but it's
+            likely <code>/etc/hosts</code> is empty so just do the following:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EB6F92; font-style: italic">echo</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">127.0</span><span style="color: #F6C177">.0.1</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">localhost</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">weinerdog</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/etc/hosts</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #B4637A; font-style: italic">echo</span><span style="color: #575279"> </span><span style="color: #D7827E">127.0</span><span style="color: #EA9D34">.0.1</span><span style="color: #575279"> </span><span style="color: #EA9D34">localhost</span><span style="color: #575279"> </span><span style="color: #EA9D34">weinerdog</span><span style="color: #575279"> </span><span style="color: #286983">></span><span style="color: #575279"> </span><span style="color: #EA9D34">/etc/hosts</span></span></code></pre>
+          </div>
+          <p>How quick was that, huh?</p>
+          <h2 id="set-a-root-password">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#set-a-root-password">¶ </a>Set a root password
+          </h2>
+          <p>
+            We'll be using this password to login, which I sometimes forget. It should be different than the password
+            for the user account we'll be making soon but I'd be lying if I said I have a super secure password. You
+            have bigger problems if you think this writeup will give you top notch security anyway. I'm just here for a
+            usable system!
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">passwd</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">passwd</span></span></code></pre>
+          </div>
+          <p>Just type in your password twice. Not much more to it than that.</p>
+          <h2 id="installing-a-boot-manager">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#installing-a-boot-manager">¶ </a>Installing a
+            boot manager
+          </h2>
+          <p>
+            We'll be using <code>systemd-boot</code> as our EFI boot manager. I couldn't tell you anything about it
+            other than it works and that's good enough.
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">bootctl</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">--path=/boot</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">install</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">bootctl</span><span style="color: #575279"> </span><span style="color: #286983">--path=/boot</span><span style="color: #575279"> </span><span style="color: #EA9D34">install</span></span></code></pre>
+          </div>
+          <p>
+            The above command copies the <code>systemd-boot</code> binary to our EFI System Partition
+            (<code>/boot</code>) and adds it as the default EFI application to be loaded as stated
+            <a href="https://wiki.archlinux.org/index.php/systemd-boot#EFI_boot">here</a>.
+          </p>
+          <h2 id="configuring-the-boot-manager">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#configuring-the-boot-manager">¶ </a>Configuring
+            the boot manager
+          </h2>
+          <p>
+            Now that we have a boot manager, we need to tell it what to boot exactly. We'll create a new
+            <code>arch.conf</code> entry using <code>nano</code>:
+          </p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">nano</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/boot/loader/entries/arch.conf</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">nano</span><span style="color: #575279"> </span><span style="color: #EA9D34">/boot/loader/entries/arch.conf</span></span></code></pre>
+          </div>
+          <p>and enter the following</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EA9A97">title</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Arch</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">Linux</span></span>
+<span data-line=""><span style="color: #EA9A97">linux</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/vmlinuz-linux</span></span>
+<span data-line=""><span style="color: #EA9A97">initrd</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/intel-ucode.img</span></span>
+<span data-line=""><span style="color: #EA9A97">initrd</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/initramfs-linux.img</span></span>
+<span data-line=""><span style="color: #EA9A97">options</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">root=/dev/sda2</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">rw</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">elevator=deadline</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">quiet</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">splash</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">resume=/dev/sda3</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">nmi_watchdog=</span><span style="color: #EA9A97">0</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #D7827E">title</span><span style="color: #575279"> </span><span style="color: #EA9D34">Arch</span><span style="color: #575279"> </span><span style="color: #EA9D34">Linux</span></span>
+<span data-line=""><span style="color: #D7827E">linux</span><span style="color: #575279"> </span><span style="color: #EA9D34">/vmlinuz-linux</span></span>
+<span data-line=""><span style="color: #D7827E">initrd</span><span style="color: #575279"> </span><span style="color: #EA9D34">/intel-ucode.img</span></span>
+<span data-line=""><span style="color: #D7827E">initrd</span><span style="color: #575279"> </span><span style="color: #EA9D34">/initramfs-linux.img</span></span>
+<span data-line=""><span style="color: #D7827E">options</span><span style="color: #575279"> </span><span style="color: #EA9D34">root=/dev/sda2</span><span style="color: #575279"> </span><span style="color: #EA9D34">rw</span><span style="color: #575279"> </span><span style="color: #EA9D34">elevator=deadline</span><span style="color: #575279"> </span><span style="color: #EA9D34">quiet</span><span style="color: #575279"> </span><span style="color: #EA9D34">splash</span><span style="color: #575279"> </span><span style="color: #EA9D34">resume=/dev/sda3</span><span style="color: #575279"> </span><span style="color: #EA9D34">nmi_watchdog=</span><span style="color: #D7827E">0</span></span></code></pre>
+          </div>
+          <p>
+            <strong>NOTE</strong>: The line <code>initrd /intel-ucode.img</code> <strong>ONLY</strong> applies if you
+            installed the <code>intel-ucode</code> package from earlier which anyone with an Intel CPU should do.
+          </p>
+          <p>
+            As for the options, I couldn't say if you need, or don't need, any of them but it's worked fine for me so
+            far. I'll probably read up on them in depth shortly and update this post as required.
+          </p>
+          <p>Once that's created, set it as the default configuration:</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EB6F92; font-style: italic">echo</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"default arch"</span><span style="color: #E0DEF4"> </span><span style="color: #3E8FB0">></span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">/boot/loader/loader.conf</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #B4637A; font-style: italic">echo</span><span style="color: #575279"> </span><span style="color: #EA9D34">"default arch"</span><span style="color: #575279"> </span><span style="color: #286983">></span><span style="color: #575279"> </span><span style="color: #EA9D34">/boot/loader/loader.conf</span></span></code></pre>
+          </div>
+          <p>and now you're ready to reboot into a nicely working system!</p>
+          <div data-rehype-pretty-code-fragment="">
+            <pre
+              class="rose-pine-moon"
+              style="background-color: #232136"
+              tabindex="0"
+              data-language="bash"
+              data-theme="dark"
+            ><code data-language="bash" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #EB6F92; font-style: italic">exit</span></span>
+<span data-line=""><span style="color: #EA9A97">reboot</span></span></code></pre>
+            <pre
+              class="rose-pine-dawn"
+              style="background-color: #faf4ed"
+              tabindex="0"
+              data-language="bash"
+              data-theme="light"
+            ><code data-language="bash" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #B4637A; font-style: italic">exit</span></span>
+<span data-line=""><span style="color: #D7827E">reboot</span></span></code></pre>
+          </div>
+          <p>I've still got a lot to learn about Arch Linux but so far, the above setup has worked well for me.</p>
+          <p>
+            There's still more that goes into a system but this is enough to get past the pesky initial setup which gave
+            me hours upon hours of grief as a beginner, which I still am essentially.
+          </p>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>

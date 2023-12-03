@@ -1,6 +1,6 @@
 import { resolve } from "path"
 
-const file = Bun.file(resolve(import.meta.dir + '/../data/manga.json'))
+const file = Bun.file(resolve(import.meta.dir + '/../_data/manga.json'))
 const token = process.env.TOKEN
 
 type Manga = {

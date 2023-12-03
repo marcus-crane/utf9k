@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "build:deps": "./ci/install.sh",
+    "build:metadata": "./ci/genmetadata.sh",
+    "deploy": "./ci/deploy.sh",
+    "test": "./ci/test.sh",
+    "sync": "./ci/externalsync.sh"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.19.4/"
+  }
+}

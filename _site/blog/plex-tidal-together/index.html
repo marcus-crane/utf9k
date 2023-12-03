@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>utf9k</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#eaebe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1f2738" media="(prefers-color-scheme: dark)" />
+    <meta name="author" content="Marcus Crane" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://twitter.com/sentreh" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+    <link rel="stylesheet" href="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <a href="/" id="logo">
+        <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+        <span>utf9k</span>
+      </a>
+      <nav>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </nav>
+    </header>
+    <div id="content">
+      <article>
+        <header>
+          <h1>Plex + Tidal = A Nice Match</h1>
+
+          <div id="post-meta">
+            <time datetime="Sat Feb 12 2022 13:20:00 GMT+1300 (New Zealand Daylight Time)">February 12, 2022</time> ·
+            Around 22 minutes
+          </div>
+        </header>
+        <div id="post-body">
+          <div class="notice">
+            <hr class="hidden" />
+            <h3>
+              <span>🖼</span>
+              Look at this photograph
+            </h3>
+            <p>Due to the nature of this post, it's pretty image heavy.</p>
+            <p>
+              Not all of the images are legible if you look at them inline so just a heads up that you can click on an
+              image to view the full thing.
+            </p>
+            <hr class="hidden" />
+          </div>
+          <h2 id="table-of-contents">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#table-of-contents">¶ </a>Table of Contents
+          </h2>
+          <ul>
+            <li><a href="#preamble">Preamble</a></li>
+            <li><a href="#my-history-with-spotify">My history with Spotify</a></li>
+            <li>
+              <a href="#my-ideal-criteria-for-a-replacement">My ideal criteria for a replacement</a>
+              <ul>
+                <li>
+                  <a href="#a-good-api">A good API</a>
+                  <ul>
+                    <li><a href="#apple-music">Apple Music</a></li>
+                    <li><a href="#tidal">Tidal</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#cross-platform-sessions">Cross-platform sessions</a>
+                  <ul>
+                    <li><a href="#apple-music-1">Apple Music</a></li>
+                    <li><a href="#tidal-1">Tidal</a></li>
+                  </ul>
+                </li>
+                <li><a href="#artists-i-like">Artists I like</a></li>
+                <li><a href="#apple-music-2">Apple Music</a></li>
+                <li><a href="#tidal-2">Tidal</a></li>
+              </ul>
+            </li>
+            <li><a href="#an-annoying-compromise">An annoying compromise</a></li>
+            <li><a href="#the-perfect-candidate-appears">The perfect candidate appears</a></li>
+            <li><a href="#a-quick-note-on-plexamp">A quick note on Plexamp</a></li>
+            <li>
+              <a href="#ok-but-how-well-does-it-actually-integrate-with-tidal"
+                >Ok but how well does it actually integrate with Tidal</a
+              >
+              <ul>
+                <li><a href="#cross-platform-search">Cross-platform search</a></li>
+                <li><a href="#a-lively-home-screen">A lively home screen</a></li>
+                <li><a href="#viewing-albums-by-mood">Viewing albums by mood</a></li>
+              </ul>
+            </li>
+            <li><a href="#hows-the-api-though">How's the API though?</a></li>
+            <li><a href="#what-about-cross-platform-sessions">What about cross-platform sessions?</a></li>
+            <li>
+              <a href="#ok-but-whats-the-catch-here">Ok but what's the catch here</a>
+              <ul>
+                <li>
+                  <a href="#hard-dependency-on-the-authentication-server"
+                    >Hard dependency on the authentication server</a
+                  >
+                </li>
+                <li><a href="#drm-maybe-yes-maybe-no">DRM...? Maybe yes, maybe no?</a></li>
+                <li><a href="#you-cant-remove-tidal-albums">You can't remove Tidal albums</a></li>
+                <li><a href="#plexamp-sessions-are-weirdly-long-lived">Plexamp sessions are weirdly long lived</a></li>
+              </ul>
+            </li>
+            <li><a href="#closing-thoughts">Closing thoughts</a></li>
+          </ul>
+          <h2 id="preamble"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#preamble">¶ </a>Preamble</h2>
+          <p>
+            As I'm sure you're probably aware, Spotify has
+            <a href="https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation"
+              >had a bit of news coverage lately</a
+            >
+            regarding <a href="https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience">The Joe Rogan Experience</a>.
+          </p>
+          <p>
+            As a result, the band <a href="https://en.wikipedia.org/wiki/Failure_(band)">Failure</a> announced<sup
+              ><a
+                href="#user-content-fn-pulling"
+                id="user-content-fnref-pulling"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >1</a
+              ></sup
+            >
+            that they are going to
+            <a
+              href="https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537"
+              >pull their music from Spotify</a
+            >
+            in part because the
+            <a href="https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation"
+              >streaming payouts are supposed to be some of the worst in the industry</a
+            >.
+          </p>
+          <p>
+            I can't speak to any of the above with accuracy nor is this a post about the ethics of the streaming model
+            for artists.
+          </p>
+          <p>
+            Instead, I'm just a fan of Failure who figured they would take this opportunity to review other streaming
+            services and see how they fare.
+          </p>
+          <p>
+            The goal here is to find a setup that lets me listen to everything I enjoy, with as little friction, while
+            still supporting the artists I care about.
+          </p>
+          <p>
+            The solution I've found that works for me, and that I'll be covering in this post, is to stream most things
+            via <a href="https://plexamp.com/">Plexamp</a>.
+          </p>
+          <p>
+            It supports both streaming from <a href="https://tidal.com/">Tidal</a> and playing content stored locally on
+            my <a href="https://www.plex.tv/">Plex</a> server, such as rips from games that never released official
+            soundtracks.
+          </p>
+          <p>
+            For everything else, I can purchase albums from <a href="https://bandcamp.com">Bandcamp</a>, including
+            content that was
+            <a href="https://failureband.bandcamp.com/album/fantastic-planet-live">never streamable</a> in the first
+            place, plus I can feel better that I'm better compensating the artists I enjoy.
+          </p>
+          <p>
+            From here, you can either save yourself a solid 15 - 20 minutes and close the tab or if you'd like to read a
+            deep dive into the bits and pieces that sold me on this setup, then I hope you enjoy what is now the longest
+            post on this site to date 😮‍💨
+          </p>
+          <h2 id="my-history-with-spotify">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#my-history-with-spotify">¶ </a>My history with
+            Spotify
+          </h2>
+          <p>
+            I've had Spotify Premium for a number of years as part of an offer with my
+            <a href="https://www.spark.co.nz/getmore/spotify/">telco</a>.
+          </p>
+          <p>
+            On their highest data plan, Spotify Premium is entirely free while lower plans give a partial subsidy<sup
+              ><a
+                href="#user-content-fn-subsidy"
+                id="user-content-fnref-subsidy"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >2</a
+              ></sup
+            >
+            but I've never actually used the Spotify Free tier in any meaningful capacity.<sup
+              ><a
+                href="#user-content-fn-cafe"
+                id="user-content-fnref-cafe"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >3</a
+              ></sup
+            >
+          </p>
+          <p>
+            While I've discovered a lot of new tracks over the years with Spotify, my general usage pattern is that I
+            replay the last 10 - 20 songs on my Liked Songs playlist and occasionally I'll use the Song Radio feature on
+            one of them.
+          </p>
+          <p>
+            This cycle repeats as I add more songs to Liked Songs and my "play window" slides up to include the new song
+            and as a result, the last song dropped "outside" of the window.
+          </p>
+          <p>
+            Given my usage pattern, I'm not hugely worried about giving up custom playlists<sup
+              ><a
+                href="#user-content-fn-discover"
+                id="user-content-fnref-discover"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >4</a
+              ></sup
+            >
+            like "Discover Weekly" that I know a lot of people swear by. Worst case, I can still view them in the free
+            version of Spotify if I decide to move on.
+          </p>
+          <h2 id="my-ideal-criteria-for-a-replacement">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#my-ideal-criteria-for-a-replacement">¶ </a>My
+            ideal criteria for a replacement
+          </h2>
+          <p>
+            This post was never meant to be a comprehensive comparison of different services and what they offer but in
+            saying that, it got a bit out of hand.
+          </p>
+          <p>
+            Spotify, <a href="https://music.apple.com/">Apple Music</a> and <a href="https://tidal.com">Tidal</a> were
+            the three main contenders that I compared based on the (arguably niche) criteria I care about.
+          </p>
+          <p>
+            Let's break down of those bits of criteria and how each service matches up against them, at least in my
+            experience.
+          </p>
+          <h3 id="a-good-api">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#a-good-api">¶ </a>A good API
+          </h3>
+          <p>
+            For anyone who has seen the little "Now Playing" widget on the front page of my site<sup
+              ><a
+                href="#user-content-fn-nowplaying"
+                id="user-content-fnref-nowplaying"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >5</a
+              ></sup
+            >, it was
+            <a
+              href="https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go#L61"
+              >powered by the Spotify API</a
+            >
+            by polling every few seconds for what I'm currently listening to. I'd definitely want to recreate that
+            functionality if I can.
+          </p>
+          <p>
+            As far as I know, Spotify has the
+            <a href="https://developer.spotify.com/documentation/web-api/reference/#/">most comprehensive API</a> of any
+            streaming platform, even exposing the ability to control playback programatically which could make for some
+            really cool projects.
+          </p>
+          <h4 id="apple-music">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#apple-music">¶ </a>Apple Music
+          </h4>
+          <p>
+            Apple Music is mostly ruled out here given their
+            <a href="https://developer.apple.com/documentation/applemusicapi/">API</a> is pretty lacking in general,
+            especially when it comes to interacting with the current user.
+          </p>
+          <p>
+            I dunno what it is about Apple but reading their API documentation makes me feel like I've been teleported
+            back to 2006 with a bucket full of XML.
+          </p>
+          <p>
+            Maybe it's just a cultural artefact from when they only dealt with desktop applications because all of their
+            web offerings feel extremely bizarre.
+          </p>
+          <h4 id="tidal"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#tidal">¶ </a>Tidal</h4>
+          <p>
+            Tidal is also out as they
+            <a href="https://twitter.com/TIDAL/status/699726946817679360">don't even have a public API at all</a>.
+          </p>
+          <p>
+            There are a couple of unofficial API clients on Github but some of them haven't seen much activity in recent
+            times.
+          </p>
+          <p>I did consider trying to hack something together myself but that'll be addressed in the next section.</p>
+          <h3 id="cross-platform-sessions">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#cross-platform-sessions">¶ </a>Cross-platform
+            sessions
+          </h3>
+          <p>This is something that Spotify really excels at.</p>
+          <p>
+            If you play a song on mobile, you can continue it on your desktop and vice versa. By that, I mean you could
+            either transfer the track to your desktop, picking up exactly where you left off, or you could continue on
+            mobile while controlling the session from your desktop (ie; changing volume, pausing, switching song).
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/spotify-remote-session.jpg"
+                  alt="A screenshot of the Spotify desktop client open to the album White Pony by the band Deftones. The track &#x22;Change (In the House of Flies)&#x22; is currently playing. At the bottom of the screen is a green banner that says &#x22;Listening on Marcus&#x27;s iPhone&#x22;. This indicates that the user is able to remotely control the session from their desktop."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            This was really handy at my previous job where trying to stream over a VPN<sup
+              ><a
+                href="#user-content-fn-vpn"
+                id="user-content-fnref-vpn"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >6</a
+              ></sup
+            >
+            was just asking for trouble.
+          </p>
+          <p>
+            Other times, I might be in the middle of a long podcast on mobile and I can't be bothered transferring as I
+            sit down at my desktop.
+          </p>
+          <h4 id="apple-music-1">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#apple-music-1">¶ </a>Apple Music
+          </h4>
+          <p>
+            This... sort of works on a technical level but still not really. I was disappointed here given that Apple
+            generally has a decent track record when it comes to devices talking with each other.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/apple-music-session.jpg"
+                  alt="A screenshot of the Apple Music client open to the artist page for Missy Elliot. A share icon in the top right of the navigation bar has been selected, with multiple Apple devices visible such as a laptop, Apple TV and Homepod. The song Work It by Missy Elliot has just started playing. Visible in the share switcher is the ability to switch to the &#x22;Lounge Room&#x22;, in this case the Homepod, where ATM by J. Cole was previously playing."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            As you can see, Apple Music on my laptop is aware that I'm playing a song on an
+            <a href="https://www.apple.com/nz/homepod-mini/">HomePod</a>. I can then select the HomePod and pause the
+            track which then reflects instantly on my phone as well.
+          </p>
+          <p>
+            So basically, you can have sessions but only when the playing device is not an Apple Music client itself.
+          </p>
+          <p>
+            I also ran into this fun popup when poking around and this won't be the last time we see something like it
+            in this post
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/apple-music-too-many-devices.jpg"
+                  alt="Visible over a desktop wallpaper is a native macOS dialog popup. At the top of the popup is the Apple Music logo. The text reads &#x22;More than one device is trying to play music. With a Family plan, up to 5 other people can stream their music at once.&#x22; with the ability to select Not Now or Upgrade."
+                />
+              </figure>
+            </center>
+          </p>
+          <h4 id="tidal-1"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#tidal-1">¶ </a>Tidal</h4>
+          <p>
+            While looking into whether I could pull session information out of Tidal, I realised that it doesn't really
+            have a concept of a current session. For example, if I play a song in the Tidal iOS app, the Tidal desktop
+            client has no idea about any other clients. This doesn't reflect in the API either, at least from the calls
+            I could see it making.
+          </p>
+          <h3 id="artists-i-like">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#artists-i-like">¶ </a>Artists I like
+          </h3>
+          <p>
+            This basically boils down to Failure who I previously mentioned and
+            <a href="https://edharrison.bandcamp.com/">Ed Harrison</a> given I listen to the Neotokyo OST a lot.
+            Apparently Ed was my #1 artist in 2020 (according to Spotify Wrapped) with just over 2000 minutes (33.3
+            hours) which is... pretty bad.
+          </p>
+          <h3 id="apple-music-2">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#apple-music-2">¶ </a>Apple Music
+          </h3>
+          <p>It has both Failure and Ed Harrison's catalogue. I'm happy.</p>
+          <h3 id="tidal-2"><a aria-hidden="true" class="jumplink" tabindex="-1" href="#tidal-2">¶ </a>Tidal</h3>
+          <p>
+            It has Failure and some of Ed Harrison's catalogue but not NeoTokyo. Honestly, this was a bit of a death
+            blow for me as far as using Tidal by itself.
+          </p>
+          <p>
+            Tidal did have Jay-Z content as an exclusive in the past, which also included the Jay x Kanye West crossover
+            album <a href="https://en.wikipedia.org/wiki/Watch_the_Throne">Watch the Throne</a> which I like a lot. This
+            is no longer the case as Jigga released his catalogue on Spotify to
+            <a href="https://twitter.com/Spotify/status/1202090253839937536">celebrate his 50th birthday</a>.
+          </p>
+          <p>
+            Also, as I write this, I'm now learning that
+            <a href="https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer"
+              >Hov sold the majority of his shares to <strike>Square</strike> Block</a
+            >
+            in 2021? What the fuck?
+          </p>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              I’m grateful for Jay’s vision, wisdom, and leadership. I knew TIDAL was something special as soon as I
+              experienced it, and I’m inspired to work with him. He&#39;ll now help lead our entire company, including
+              Seller and the Cash App, as soon as the deal closes.
+              <a href="https://t.co/YRfYjcWJQx">https://t.co/YRfYjcWJQx</a>
+              <a href="https://t.co/xBtq2xfwue">pic.twitter.com/xBtq2xfwue</a>
+            </p>
+            &mdash; jack (@jack)
+            <a href="https://twitter.com/jack/status/1367460921937817602?ref_src=twsrc%5Etfw">March 4, 2021</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>Jack Dorsey mentioned his vision for the future of Tidal:</p>
+          <blockquote>
+            <p>
+              We’ll work on entirely new listening experiences to bring fans closer together, simple integrations for
+              merch sales, modern collaboration tools, and new complementary revenue streams.
+            </p>
+          </blockquote>
+          <p>
+            That basically means nothing to me but whatever. The Carter Administration is still on the board of
+            <strike>Square</strike> Block and that can only mean one thing.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png"
+                  alt="An image of Jay-Z from the Square website. More specifically, it is a 3D cube being displayed at an angle to the camera. Overlaid on the cube is an image of Jay-Z&#x27;s face. This is supposed to be a play on the fact that investors in Block, the company previously known as Square, where employees are known as Blockheads. It&#x27;s stupid."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>Beautiful.</p>
+          <h2 id="an-annoying-compromise">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#an-annoying-compromise">¶ </a>An annoying
+            compromise
+          </h2>
+          <p>
+            At this point, neither Tidal or Apple Music are hugely appealing based on the features I've mentioned so
+            far.
+          </p>
+          <p>
+            They're perfectly fine as streaming services but there's another aspect I haven't mentioned up to this
+            point: Music stored on my Plex server.
+          </p>
+          <p>
+            I have a few rips<sup
+              ><a
+                href="#user-content-fn-khinsider"
+                id="user-content-fnref-khinsider"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >7</a
+              ></sup
+            >
+            from various videogames that
+            <a href="https://www.youtube.com/watch?v=e7Zn5I1xutE">don't have official albums</a> that I've kept floating
+            around my Plex server for a few years now.
+          </p>
+          <p>
+            I aspire to listen to them more but I never get around to listening to them with Spotify as my daily driver
+            as it doesn't support local files in any useful way<sup
+              ><a
+                href="#user-content-fn-localfiles"
+                id="user-content-fnref-localfiles"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >8</a
+              ></sup
+            >. It would be nice if there was a way to have both things in the same place.
+          </p>
+          <p>
+            My plan at this point was going to be trying out Tidal since it had a relatively nice UI. To get around the
+            lack of Neotokyo, I could just purchase Ed's work from <a href="https://bandcamp.com">Bandcamp</a> and load
+            it onto Plex and just deal with the UX hassle of constantly switching between apps.
+          </p>
+          <h2 id="the-perfect-candidate-appears">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#the-perfect-candidate-appears">¶ </a>The perfect
+            candidate appears
+          </h2>
+          <p>
+            I had been vaguely aware for a while that Plex touted some sort of integration with Tidal but I had no idea
+            what form it took.
+          </p>
+          <p>
+            I had even read up on integration, where the killer feature is
+            <a href="https://support.plex.tv/articles/add-tidal-content-to-your-plex-music-library/"
+              >clearly outlined</a
+            >
+            but apparently I did a rubbish job at reading since I entirely overlooked it.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-add-to-library.jpg"
+                  alt="A screenshot of the Plexamp iOS application. It is open to Jay-Z&#x27;s artist page where a few of his albums are visible. A menu is open at the bottom with a number of options including &#x22;Add to Library&#x22; and &#x22;Add to My TIDAL&#x22;."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            You'll see that there are two buttons at the bottom of the screen: <em>Add to My TIDAL</em> and
+            <em>Add to Library</em>.
+          </p>
+          <p>When I first hooked up Tidal to Plex, I would just press <em>Add to My TIDAL</em>.</p>
+          <p>
+            Ok, great, it adds albums to my TIDAL library remote through Plex. Big whoop. A few days later, I
+            accidentally hit <em>Add to Library</em> and oh my god.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-jak-jay.jpg"
+                  alt="A cropped image of the Plexamp macOS application is visible. It is open to the albums page with displays the cover art for a number of albums. Visible are a few Jay-Z albums, the Kane &#x26; Lynch OST, the OSTs for Jak 2 and 3, a Pokemon OST and three Kanye West albums."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            You're telling me I can put Jay right next to Jak? Wrap it up, I think we've got a winner on our hands! At
+            this point, I was sold.
+          </p>
+          <p>
+            The ability to add virtual streaming items right next to my "local" (streaming from across the living room)
+            items is pretty much the ideal outcome.
+          </p>
+          <p>
+            In fairness, Google Play Music offered something like this in the past but the idea of investing effort into
+            a Google product is about as attractive as
+            <a href="https://music.youtube.com/googleplaymusic">preordering a coffin</a>.
+          </p>
+          <p>Anyway, with this, we can tick one piece of criteria off the list:</p>
+          <p>✅ for <strong>Artists I like</strong> (1/3)</p>
+          <h2 id="a-quick-note-on-plexamp">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#a-quick-note-on-plexamp">¶ </a>A quick note on
+            Plexamp
+          </h2>
+          <p>
+            Before we continue, I should note that I mostly interface with my Plex library (and Tidal) through
+            <a href="https://plexamp.com/">Plexamp</a>.
+          </p>
+          <p>
+            For an audio player that
+            <a href="https://medium.com/plexlabs/introducing-plexamp-9493a658847a">started life back in 2017</a> as a
+            <a href="https://medium.com/plexlabs">Plex Labs</a> experiment, it has grown into an entire ecosystem,
+            complete with mobile and desktop apps.
+          </p>
+          <p>
+            To be clear, it's just streaming content from your plex server through a music-focused client. It doesn't
+            require deploying any additional software. You can also listen to Podcasts (via Plex) on it too although I
+            don't do that myself.
+          </p>
+          <p>
+            The Tidal integration works perfectly fine with the regular Plex apps as well but the music section in
+            general shines brightest when using Plexamp if you ask me.
+          </p>
+          <h2 id="ok-but-how-well-does-it-actually-integrate-with-tidal">
+            <a
+              aria-hidden="true"
+              class="jumplink"
+              tabindex="-1"
+              href="#ok-but-how-well-does-it-actually-integrate-with-tidal"
+              >¶ </a
+            >Ok but how well does it actually integrate with Tidal
+          </h2>
+          <p>
+            At this point in our tour, you might be thinking "Ok, sure but I bet under the hood, it's just duct tape and
+            chewing gum" which is definitely what I expected going in.
+          </p>
+          <p>
+            Thankfully, it really is a first class Plex citizen and I'll even give you a whirlwind tour of my favourite
+            features.
+          </p>
+          <h3 id="cross-platform-search">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#cross-platform-search">¶ </a>Cross-platform
+            search
+          </h3>
+          <p>
+            Whether finding something new or something existing, you can search across your entire catalog and Tidal's
+            at the same time which is really appreciated.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-cross-search.jpg"
+                  alt="Visible is a screenshot of the Plexamp iOS application. It is open to a search for the phrase &#x22;Bad Company&#x22;. The results are split into sections. The first section called &#x22;Albums&#x22; contains one result which is the OST for Battlefield: Bad Company 2. The next two sections are &#x22;Tidal Artists&#x22; and &#x22;Tidal Albums&#x22; respectively which surface results relating to the phrase &#x22;Bad Company&#x22;."
+                />
+              </figure>
+            </center>
+          </p>
+          <h3 id="a-lively-home-screen">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#a-lively-home-screen">¶ </a>A lively home screen
+          </h3>
+          <p>
+            The home screen is a great example of how Tidal content is interweaved with your local content pretty
+            seamlessly.
+          </p>
+          <p>
+            The only thing that differentiates the two is a little logo tucked away next to the last played indicator.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-home.jpg"
+                  alt="Visible is a screenshot of the Plexamp iOS application. It is open to the home screen which is broken into a two sections: &#x22;Recent Plays&#x22; and &#x22;Recently Added in Music&#x22;. More sections exist off screen. At the bottom is a currently playing song &#x22;Empire State of Mind&#x22; by Jay-Z."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            There's much more that isn't illustrated here too. My library is still pretty empty (relatively speaking)
+            but Plexamp will generate mixes for you like this:
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://www.plex.tv/wp-content/uploads/2021/08/scrolling-mixes.gif"
+                  alt="Visible is an animated GIF displaying a section of the Plexamp iOS homescreen. A &#x22;Mixes for You&#x22; section is being scrolled through, showing mixes for various artist. For example: a 2Pac Mix containing songs by various rap artists."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            To enable automatic mixes, and other features, you'll want to enable
+            <a href="https://support.plex.tv/articles/sonic-analysis-music/">Sonic Analysis</a>. I did a bit of a
+            facepalm when I realised I didn't have this enabled yet. I even read the blog post for it when it launched!
+          </p>
+          <p>There's also a feature for surfacing what happened "On This Day" in music history:</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://www.plex.tv/wp-content/uploads/2021/08/on-this-day-crop-800x390.png"
+                  alt="Visible is the cover art for the album She&#x27;s the One by Tom Petty within a section called &#x22;On this Day&#x22;. It states that the album mentioned come out on this day 25 years ago."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            It would have said that February 10th<sup
+              ><a
+                href="#user-content-fn-feb"
+                id="user-content-fnref-feb"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >9</a
+              ></sup
+            >
+            is the 28th anniversary of
+            <a href="https://en.wikipedia.org/wiki/The_College_Dropout">The College Dropout</a> if not for a
+            <a href="https://twitter.com/plexamp/status/1491497134851428352">pesky oversight</a>. Thankfully it should
+            be addressed soon so we can appropriately celebrate ye's 29th debut next year.
+          </p>
+          <h3 id="viewing-albums-by-mood">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#viewing-albums-by-mood">¶ </a>Viewing albums by
+            mood
+          </h3>
+          <p>
+            There are a couple of cool groups like this such as albums by record labels and so on but mood is one of the
+            more interesting.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-mood.jpg"
+                  alt="Visible is a screenshot of a desktop with the Plexamp macOS application open. A list called &#x22;Belligerent&#x22; is open with a handful of albums that reflect that mood or feeling."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            I haven't taken it for a spin just yet but based on the premise, I can see myself using this quite a bit. It
+            also demonstrates yet again how nicely the two sources (local and tidal) can play together.
+          </p>
+          <p>It's about time that we look at why they play nicely together so let's take a peek under the hood.</p>
+          <h2 id="hows-the-api-though">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#hows-the-api-though">¶ </a>How's the API though?
+          </h2>
+          <p>
+            If you remember, something I wanted was to continue powering the "Now playing" widget on the front of my
+            website.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/utf9k-nowplaying.jpg"
+                  alt="Visible is a screenshot of this website open in a small Safari window. Visible is a Now Playing widget showing Roses by Outkast. It reflects the song playing in Plexamp offscreen."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>✅ for <strong>A good API</strong> (2/3)</p>
+          <p>
+            Initially playing Tidal content through the dedicated "Music On TIDAL" library<sup
+              ><a
+                href="#user-content-fn-source"
+                id="user-content-fnref-source"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >10</a
+              ></sup
+            >
+            didn't surface anything in the API but by virtue of adding items to our regular music library instead, we
+            get full metadata available via the <code>/status/sessions</code> endpoint.
+          </p>
+          <details>
+            <summary>Here's the absolute mountain of information available for you to play with</summary>
+            <div data-rehype-pretty-code-fragment="">
+              <pre
+                class="rose-pine-moon"
+                style="background-color: #232136"
+                tabindex="0"
+                data-language="json"
+                data-theme="dark"
+              ><code data-language="json" data-theme="dark" style="display: grid;"><span data-line=""><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">MediaContainer</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">size</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">1</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Metadata</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">      </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">addedAt</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1064275200"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">allowSync</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">art</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9560/art/1644407944"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">attribution</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"com.tidal"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369573"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentArt</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9560/art/1644407944"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentGuid</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"plex://artist/5d07bbfc403c6402904a6105"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9560"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentRatingKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"9560"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentThumb</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9560/thumb/1644407944"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">grandparentTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"OutKast"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">guid</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"plex://track/5d07cebf403c6402900cd0d9"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">index</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"10"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9590"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">lastViewedAt</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1644480645"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">librarySectionID</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">librarySectionKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/sections/4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">librarySectionTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Music"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">oneShot</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">originallyAvailableAt</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"2003-09-23"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentGuid</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"plex://album/5d07c173403c640290846b36"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentIndex</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"2"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9561"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentRatingKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"9561"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentStudio</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Arista"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentThumb</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9561/thumb/1644407962"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Speakerboxxx / The Love Below"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">parentYear</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"2003"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">ratingKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"9590"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">remoteMedia</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">sessionKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"453"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">sourceKey</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/5c038b3e48a2d2001de6a1a6"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">summary</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">""</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">thumb</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/metadata/9561/thumb/1644407962"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">title</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Roses"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">type</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"track"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">updatedAt</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1644407920"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">viewCount</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">viewOffset</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"258"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Media</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">audioCodec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"aac"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">container</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"mp4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"12075"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">optimizedForStreaming</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">source</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"provider://tv.plex.provider.music"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Part</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">container</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"mp4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"12156"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/parts/1772296-HIGH"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Stream</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumGain</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"-9.71"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumPeak</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0.998444"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumRange</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"10.019548"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">bitrate</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"320"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"aac"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"AAC"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"AAC"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">gain</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"-10.6"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"25488"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">index</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">peak</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0.988556"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">selected</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"2"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"lrc"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"LRC (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"LRC (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">format</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"lrc"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"26578"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/streams/26578"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">minLines</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"3"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">provider</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"com.plexapp.agents.lyricfind"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">timed</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"txt"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"TXT (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"TXT (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">format</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"txt"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"26579"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/streams/26579"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">provider</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"com.plexapp.agents.lyricfind"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"4"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">audioCodec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"aac"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">container</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"mp4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"12076"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">optimizedForStreaming</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">source</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"provider://tv.plex.provider.music"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Part</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">container</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"mp4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"12157"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/parts/1772296-LOW"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Stream</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">[</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumGain</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"-9.71"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumPeak</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0.998444"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">albumRange</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"10.019548"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">bitrate</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"96"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"aac"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"AAC"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">duration</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"369000"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"AAC"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">gain</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"-10.6"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"25489"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">index</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">peak</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"0.988556"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">selected</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"2"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"lrc"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"LRC (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"LRC (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">format</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"lrc"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"26580"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/streams/26580"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">minLines</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"3"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">provider</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"com.plexapp.agents.lyricfind"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"4"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">timed</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">codec</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"txt"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">displayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"TXT (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">extendedDisplayTitle</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"TXT (External)"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">format</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"txt"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"26581"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">key</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"/library/streams/26581"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">provider</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"com.plexapp.agents.lyricfind"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">                    </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">streamType</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"4"</span></span>
+<span data-line=""><span style="color: #E0DEF4">                  </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">                </span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">              </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">            </span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">],</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">User</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">id</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">thumb</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"https://plex.tv/users/&#x3C;me>/avatar?c=1643535847"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">title</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Sentryism"</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">},</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">Player</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #908CAA">{</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">address</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"172.17.0.1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">device</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"macOS"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">machineIdentifier</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"&#x3C;my machine>"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">model</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">""</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">platform</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"macOS"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">platformVersion</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"21.4.0"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">product</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"Plexamp"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">remotePublicAddress</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"172.17.0.1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">state</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"playing"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">title</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"skeith"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">vendor</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">""</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">version</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #F6C177">"3.9.1"</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">local</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">false</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">relayed</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">false</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">secure</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">true</span><span style="color: #908CAA">,</span></span>
+<span data-line=""><span style="color: #E0DEF4">          </span><span style="color: #908CAA">"</span><span style="color: #9CCFD8">userID</span><span style="color: #908CAA">"</span><span style="color: #908CAA">:</span><span style="color: #E0DEF4"> </span><span style="color: #EA9A97">1</span></span>
+<span data-line=""><span style="color: #E0DEF4">        </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">      </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #E0DEF4">    </span><span style="color: #908CAA">]</span></span>
+<span data-line=""><span style="color: #E0DEF4">  </span><span style="color: #908CAA">}</span></span>
+<span data-line=""><span style="color: #908CAA">}</span></span></code></pre>
+              <pre
+                class="rose-pine-dawn"
+                style="background-color: #faf4ed"
+                tabindex="0"
+                data-language="json"
+                data-theme="light"
+              ><code data-language="json" data-theme="light" style="display: grid;"><span data-line=""><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #797593">"</span><span style="color: #56949F">MediaContainer</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #797593">"</span><span style="color: #56949F">size</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #D7827E">1</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #797593">"</span><span style="color: #56949F">Metadata</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">      </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">addedAt</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1064275200"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">allowSync</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">art</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9560/art/1644407944"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">attribution</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"com.tidal"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369573"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentArt</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9560/art/1644407944"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentGuid</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"plex://artist/5d07bbfc403c6402904a6105"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9560"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentRatingKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"9560"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentThumb</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9560/thumb/1644407944"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">grandparentTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"OutKast"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">guid</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"plex://track/5d07cebf403c6402900cd0d9"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">index</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"10"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9590"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">lastViewedAt</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1644480645"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">librarySectionID</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">librarySectionKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/sections/4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">librarySectionTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Music"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">oneShot</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">originallyAvailableAt</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"2003-09-23"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentGuid</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"plex://album/5d07c173403c640290846b36"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentIndex</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"2"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9561"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentRatingKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"9561"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentStudio</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Arista"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentThumb</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9561/thumb/1644407962"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Speakerboxxx / The Love Below"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">parentYear</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"2003"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">ratingKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"9590"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">remoteMedia</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">sessionKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"453"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">sourceKey</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/5c038b3e48a2d2001de6a1a6"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">summary</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">""</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">thumb</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/metadata/9561/thumb/1644407962"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">title</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Roses"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">type</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"track"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">updatedAt</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1644407920"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">viewCount</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">viewOffset</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"258"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">Media</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">audioCodec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"aac"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">container</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"mp4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"12075"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">optimizedForStreaming</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">source</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"provider://tv.plex.provider.music"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">Part</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">container</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"mp4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"12156"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/parts/1772296-HIGH"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">Stream</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumGain</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"-9.71"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumPeak</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0.998444"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumRange</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"10.019548"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">bitrate</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"320"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"aac"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"AAC"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"AAC"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">gain</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"-10.6"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"25488"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">index</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">peak</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0.988556"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">selected</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"2"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"lrc"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"LRC (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"LRC (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">format</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"lrc"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"26578"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/streams/26578"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">minLines</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"3"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">provider</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"com.plexapp.agents.lyricfind"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">timed</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"txt"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"TXT (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"TXT (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">format</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"txt"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"26579"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/streams/26579"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">provider</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"com.plexapp.agents.lyricfind"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"4"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">audioCodec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"aac"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">container</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"mp4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"12076"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">optimizedForStreaming</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">source</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"provider://tv.plex.provider.music"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">"</span><span style="color: #56949F">Part</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">container</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"mp4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"12157"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/parts/1772296-LOW"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">"</span><span style="color: #56949F">Stream</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">[</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumGain</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"-9.71"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumPeak</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0.998444"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">albumRange</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"10.019548"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">bitrate</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"96"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"aac"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"AAC"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">duration</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"369000"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"AAC"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">gain</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"-10.6"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"25489"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">index</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">peak</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"0.988556"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">selected</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"2"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"lrc"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"LRC (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"LRC (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">format</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"lrc"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"26580"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/streams/26580"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">minLines</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"3"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">provider</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"com.plexapp.agents.lyricfind"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"4"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">timed</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">codec</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"txt"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">displayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"TXT (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">extendedDisplayTitle</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"TXT (External)"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">format</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"txt"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"26581"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">key</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"/library/streams/26581"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">provider</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"com.plexapp.agents.lyricfind"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">                    </span><span style="color: #797593">"</span><span style="color: #56949F">streamType</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"4"</span></span>
+<span data-line=""><span style="color: #575279">                  </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">                </span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">              </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">            </span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">],</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">User</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">id</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">thumb</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"https://plex.tv/users/&#x3C;me>/avatar?c=1643535847"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">title</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Sentryism"</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">},</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">"</span><span style="color: #56949F">Player</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #797593">{</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">address</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"172.17.0.1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">device</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"macOS"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">machineIdentifier</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"&#x3C;my machine>"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">model</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">""</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">platform</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"macOS"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">platformVersion</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"21.4.0"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">product</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"Plexamp"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">remotePublicAddress</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"172.17.0.1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">state</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"playing"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">title</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"skeith"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">vendor</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">""</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">version</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #EA9D34">"3.9.1"</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">local</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #D7827E">false</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">relayed</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #D7827E">false</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">secure</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #D7827E">true</span><span style="color: #797593">,</span></span>
+<span data-line=""><span style="color: #575279">          </span><span style="color: #797593">"</span><span style="color: #56949F">userID</span><span style="color: #797593">"</span><span style="color: #797593">:</span><span style="color: #575279"> </span><span style="color: #D7827E">1</span></span>
+<span data-line=""><span style="color: #575279">        </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">      </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #575279">    </span><span style="color: #797593">]</span></span>
+<span data-line=""><span style="color: #575279">  </span><span style="color: #797593">}</span></span>
+<span data-line=""><span style="color: #797593">}</span></span></code></pre>
+            </div>
+          </details>
+          <p>We can definitely work with that!</p>
+          <p>
+            It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate
+            upon closing the app but I just sidestep that by filtering for any sessions that aren't paused. Don't worry,
+            there'll be a section for gotchas like this later on.
+          </p>
+          <p>
+            I'll also put it into perspective that we're accessing metadata about a third party playing track, in a
+            world that would love to choke you out with Widevine gloves on the mat. Relatively speaking, it's pretty
+            refreshing to see.
+          </p>
+          <p>
+            As far as how this is possible, what's really going on here is that Plex's own metadata providers are doing
+            the heavy lifting. When playing your local music, you get the exact same payload except for the
+            <code>"attribution": "com.tidal"</code> entry at the start.
+          </p>
+          <h2 id="what-about-cross-platform-sessions">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#what-about-cross-platform-sessions">¶ </a>What
+            about cross-platform sessions?
+          </h2>
+          <p>Kind of but not really?</p>
+          <p>
+            At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
+          </p>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">fyi, the next version of plexamp adds controllability.</p>
+            &mdash; Plexamp (@plexamp)
+            <a href="https://twitter.com/plexamp/status/1489024846033915908?ref_src=twsrc%5Etfw">February 2, 2022</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>❌ but 👀 for <strong>Cross-platform sessions</strong> (2/3)</p>
+          <p>
+            <strong>UPDATE</strong>: For Valentines Day, we got
+            <a href="https://forums.plex.tv/t/plexamp-release-notes/221280/38">a lofty 4.0 update</a> which includes,
+            among other things, the ability to control your playback on another device!
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plex-remote-session.jpg"
+                  alt="Visible in the background, but obscured by a popup, is the album Fantastic Planet by Failure. Overlaid is a widget asking the user to &#x22;Select Player&#x22;. Visible are two different players: The author&#x27;s iPhone and the desktop currently playing Fantastic Planet. The implication here is that it is possible to transfer the currently playing album to another device on the network."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>What you're seeing here is my phone controlling a session that's playing on my laptop.</p>
+          <p>
+            Given this was part of a larger refactor that unlocked a lot of capabilities, I assume we'll see this
+            fleshed out even more going forward.
+          </p>
+          <p>I'll be updating this to:</p>
+          <p>✅ for <strong>Cross-platform sessions</strong> (3/3)</p>
+          <p>although my fingers are crossed that it gets to be even more seamless than it is in the first release!</p>
+          <h2 id="ok-but-whats-the-catch-here">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#ok-but-whats-the-catch-here">¶ </a>Ok but what's
+            the catch here
+          </h2>
+          <p>
+            In the spirit of fairness, nothing is perfect and there are few things I've stumbled across while using this
+            setup as my daily driver.
+          </p>
+          <p>
+            Most of these are either fine in moderation or things that I'm sure the
+            <a href="https://twitter.com/plexamp">Plexamp team</a> are aiming to address. If not, the team can consider
+            this post as my bug report/feature request list!
+          </p>
+          <h3 id="hard-dependency-on-the-authentication-server">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#hard-dependency-on-the-authentication-server"
+              >¶ </a
+            >Hard dependency on the authentication server
+          </h3>
+          <p>
+            I had the misfortune of having this integration go down briefly due to an outage with the Plex
+            authentication server.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plex-status-page.jpg"
+                  alt="Visible is a screenshot of the Plex status page cropped to show two sections: &#x22;Authentication and API server&#x22; and &#x22;Plex website&#x22;. Visible for the first section a couple of outages over a 90 day period equally a total uptime of 99.81%."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication
+            server surely means no way to verify who has rights to play Tidal content.
+          </p>
+          <div class="notice">
+            <hr class="hidden" />
+            <h3>
+              <span>🔑</span>
+              A tip for Plex server owners
+            </h3>
+            <p>
+              <a href="https://en.wikipedia.org/wiki/Entropy">Entropy</a> is a sad fact of life and Plex's
+              authentication servers are no different.
+            </p>
+            <p>They're relatively stable but it's inevitable that the authentication server will fail again one day.</p>
+            <p>That isn't a slight towards Plex, it's just an unavoidable reality about computers.</p>
+            <p>
+              Anyway, to work around this in future, you can
+              <a href="https://support.plex.tv/articles/200890058-authentication-for-local-network-access/"
+                >whitelist your local network</a
+              >
+              so that you can still stream (locally stored) content while you wait for the authentication server to
+              return.
+            </p>
+            <hr class="hidden" />
+          </div>
+          <p>
+            While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself
+            and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and
+            this is where it can be useful as a backup.
+          </p>
+          <p>
+            As an <a href="https://sre.google/">SRE</a>, albeit one currently off the clock, if I'm going to talk shit
+            about availability then I should bring some data and so I did a brief skim of the
+            <a href="https://status.plex.tv/">Plex status page</a>.
+          </p>
+          <p>
+            Basically, I added up the number of minutes elapsed for every publicly listed outage for the year of 2021
+            and got something just under 9 hours. That's almost bang on 99.9% (three nines) which is a pretty standard
+            expectation for services.
+          </p>
+          <p>
+            Arguably you'd hope for something closer to 99.99% (four nines) for a critical piece of infrastructure like
+            that but eh, I'm not exactly doing math out here.
+          </p>
+          <p>
+            Some of those incidents aren't even attributed to authentication outages but I threw them in there just to
+            look at the worst case scenario.
+          </p>
+          <p>
+            These outages, when they do happen, are generally about an hour long. The odds of hitting the same hour
+            period in the same month is
+            <a href="https://rachelbythebay.com/w/2019/07/15/giant/">pretty slim... right?</a>. I've used Plex for years
+            prior to this and only run into them a couple of times although I will admit that music streaming is
+            something that I do a lot more than visual media.
+          </p>
+          <p>
+            My personal opinion is that it's fine. I'm not overly concerned! I have too many local tracks in my backlog
+            to listen to so I'll just take it as an excuse to go through unplayed content instead of consuming the same
+            5 Outkast albums on a loop until I die.
+          </p>
+          <p>Besides, every service has outages. This problem isn't unique to Plex.</p>
+          <h3 id="drm-maybe-yes-maybe-no">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#drm-maybe-yes-maybe-no">¶ </a>DRM...? Maybe yes,
+            maybe no?
+          </h3>
+          <p>
+            I stumbled onto this purely by accident but I guess you can't stream Tidal content if you access your Plex
+            server via your local network (ie; instead of via <a href="https://app.plex.net">https://app.plex.net</a>)
+          </p>
+          <p>Trying to do so gave me an error dialogue with this message:</p>
+          <blockquote>
+            <p>
+              An error occurred trying to play this item. Please make sure content from TIDAL is not already playing on
+              another device.
+            </p>
+          </blockquote>
+          <p>
+            Despite the message, nothing else was playing and despite my best effort, I couldn't get this to go away.
+          </p>
+          <p>The exact same track would work via the hosted Plex app and I'm not entirely sure.</p>
+          <p>
+            I'm guessing there is some arbitrary legalese in the deal between Tidal and Plex that says "You must only
+            load our content over an SSL connection" or something to that effect.
+          </p>
+          <p>It could also just be a bug 🤷‍♀️</p>
+          <p>Despite the error, it's perfectly possible to play multiple tracks from Tidal at the same time</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.jpg"
+                  alt="Visible is a cropped screenshot of the Plex media server dashboard. Visible are three Tool albums playing on three different Plex/Plexamp instances."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            If you're curious, here's how the aural mashup shown above sounded<sup
+              ><a
+                href="#user-content-fn-riaa"
+                id="user-content-fnref-riaa"
+                data-footnote-ref
+                aria-describedby="footnote-label"
+                >11</a
+              ></sup
+            >
+          </p>
+          <center>
+            <audio controls>
+              <source src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg" />
+              Your browser doesn't support the audio tag :(
+            </audio>
+          </center>
+          <h3 id="you-cant-remove-tidal-albums">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#you-cant-remove-tidal-albums">¶ </a>You can't
+            remove Tidal albums
+          </h3>
+          <p>
+            This one seems like a weirdly obvious oversight so I'm going to give the benefit of the doubt here and
+            assume there was some weird technical limitation that mean this was deferred to the backlog.
+          </p>
+          <p>The team are definitely aware of it:</p>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              1) On the roadmap, yeah, along with deletion of other things.<br /><br />2) Check in the web app when your
+              release date is. <a href="https://t.co/iPXAjvyAMe">pic.twitter.com/iPXAjvyAMe</a>
+            </p>
+            &mdash; Plexamp (@plexamp)
+            <a href="https://twitter.com/plexamp/status/1491494752327372801?ref_src=twsrc%5Etfw">February 9, 2022</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>
+            It's a little annoying though because I have added one or two albums accidentally and now they're just stuck
+            with me forever but amongst an ocean of albums, it doesn't feel so bad.
+          </p>
+          <h3 id="plexamp-sessions-are-weirdly-long-lived">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#plexamp-sessions-are-weirdly-long-lived">¶ </a
+            >Plexamp sessions are weirdly long lived
+          </h3>
+          <p>Interestingly, Plexamp sessions can't be cancelled by the owner of a Plex server?</p>
+          <p>
+            With most streaming content, you can force stop a session but here, you can't even kill your own sessions
+            for some reason.
+          </p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-not-pausing.jpg"
+                  alt="Visible is a cropped screenshot of the Plex media server dashboard. Visible are two Plexamp streams on different devices."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            In this screenshot, I've actually paused "Praxis Palace" but the media server continues to show it
+            progressing as normal.
+          </p>
+          <p>
+            The green padlock indicates that I can't touch the session so I just sort of need to wait for it to expire
+            on its own.
+          </p>
+          <p>
+            When the track reaches the end, the progress bar just jumps back to where I had gotten up to before closing
+            the player.
+          </p>
+          <p>
+            My fingers are crossed that this will probably be handled by the refactor that gives us controllability
+            between platforms.
+          </p>
+          <h2 id="closing-thoughts">
+            <a aria-hidden="true" class="jumplink" tabindex="-1" href="#closing-thoughts">¶ </a>Closing thoughts
+          </h2>
+          <p>
+            Believe or not, I actually cut this post short because I could gush about Plexamp for quite a while longer.
+          </p>
+          <p>Suffice to say, I was sold from the minute I was able to weave Tidal tracks alongside my local tracks.</p>
+          <p>
+            <center>
+              <figure>
+                <img
+                  src="https://cdn.utf9k.net/blog/plex-tidal-together/plexamp-upnext.jpg"
+                  alt="Visible is a plain screenshot of the Plexamp desktop application with the song &#x22;Praise the Lord (Da Shine)&#x22; by A$AP Rocky playing."
+                />
+              </figure>
+            </center>
+          </p>
+          <p>
+            I've been meaning to listen to a lot more game OSTs and while a heap were added to Spotify, there are still
+            some really niche ones I kick myself for not getting around to.
+          </p>
+          <p>
+            The main thing that Plexamp offers me is the removal of friction between juggling multiple applications (in
+            this case, Plex and Spotify) since the one I use heaviest will always dominate my focus.
+          </p>
+          <p>With this setup, I don't have to worry about it because everything is in one place!</p>
+          <p>
+            Usually that feels like a red flag but I think the integration has been handled really elegantly here. It's
+            simply another provider for Plex with no more or less attention than every other provider. It just kinda
+            works™.
+          </p>
+          <p>I will reiterate though that if you don't care about local content, just use Spotify.</p>
+          <p>
+            If you balk at the thought of paying for both Plex and Tidal, maybe this also isn't for you. Personally I've
+            subscribed to <a href="https://www.plex.tv/plex-pass/">Plex Pass</a> so many years in a row that I ended up
+            just investing in a lifetime subscription.
+          </p>
+          <p>
+            However, you like tinkering with APIs or you want to consolidate your library in one place, while not being
+            enough of a masochist to build 100% of your library through local files, then maybe you'll enjoy this setup
+            as much as I have.
+          </p>
+          <p>
+            Plexamp definitely feels like a labour of love and all of the little UI string gag planted throughout the
+            app promote that feeling.
+          </p>
+          <p>
+            Perhaps the only question left now is whether I can bear to sully my library with
+            <a href="https://www.youtube.com/watch?v=kJunmC9YKQA">untaggable content</a>.
+          </p>
+          <p>Enjoy!</p>
+          <section data-footnotes class="footnotes">
+            <h2 class="sr-only littlefoot--print" id="footnote-label">
+              <a aria-hidden="true" class="jumplink" tabindex="-1" href="#footnote-label">¶ </a>Footnotes
+            </h2>
+            <ol>
+              <li id="user-content-fn-pulling">
+                <p>
+                  It seems that these claims are starting to take effect. I didn't have any doubt but if I had to guess,
+                  I figure there's probably some process where Spotify waits out the calendar month in order to
+                  calculate compensation. It seems that Neil's entire catalogue has disappeared at the time of
+                  publishing. Prior to this, he pulled his catalogue
+                  <a
+                    href="https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338/"
+                    >back in 2015</a
+                  >
+                  due to "my music [being] devalued by the worst quality in the history of broadcasting or any other
+                  form of distribution"
+                  <a
+                    href="#user-content-fnref-pulling"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 1"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-subsidy">
+                <p>
+                  On lower plans, they usually pay for half and you just pay the remainder. It shows as an add-on to
+                  your mobile plan but it's a little more fiddly to setup than the higher data plan which just pays for
+                  the whole thing. If you use Spotify (as I did), it's easy to write off an upgrade to the highest plan
+                  as being the same plan + a Spotify sub which you'd have purchased anyway.
+                  <a
+                    href="#user-content-fnref-subsidy"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 2"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-cafe">
+                <p>
+                  Funnily enough, the first time I heard a Spotify ad was actually at a cafe that was using Spotify's
+                  free version. I'm not entirely sure that's legal but damn, those ads really are annoying.
+                  <a
+                    href="#user-content-fnref-cafe"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 3"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-discover">
+                <p>
+                  I know some people absolutely swear by Discover Weekly and while I think it is really good, I always
+                  forget to listen to it. I'm also not opposed to just viewing it once a week and listening to those
+                  songs via an alternative streaming plans. Hell, I might just be able to pull the playlist via an API
+                  endpoint and populate an identical playlist somewhere else?
+                  <a
+                    href="#user-content-fnref-discover"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 4"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-nowplaying">
+                <p>
+                  Currently, it shows TV shows, movies and music via Plex and even what I'm playing on my PS5 via the
+                  Playstation Network APIs. I'll probably write about it in a future blog post. It was previously
+                  powered by both Spotify and <a href="https://trakt.tv">Trakt</a> before my switch though.
+                  <a
+                    href="#user-content-fnref-nowplaying"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 5"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-vpn">
+                <p>
+                  Especially given all of the traffic would transit through Germany while I lived in New Zealand. It
+                  wasn't really the VPN though, more that the traffic passed through two or three different
+                  <a href="https://en.wikipedia.org/wiki/Network_address_translation">NATs</a>.
+                  <a
+                    href="#user-content-fnref-vpn"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 6"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-khinsider">
+                <p>
+                  <a href="https://github.com/marcus-crane/khinsider"><em>cough</em></a>
+                  <a
+                    href="#user-content-fnref-khinsider"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 7"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-localfiles">
+                <p>
+                  The feature has degraded over the years so I'm not sure of the current state but last I checked, you
+                  can add local files to the desktop client. This doesn't actually sync them like a la Google Music but
+                  instead just dumps them all into a basic list that you can play. If you open Spotify on a different
+                  desktop, you have to do the same process again from scratch.
+                  <a
+                    href="#user-content-fnref-localfiles"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 8"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-feb">
+                <p>
+                  The first draft of this post was written on Feb 10th but I didn't get around to editing it until Feb
+                  12th hence this doesn't really line up with the publication date.
+                  <a
+                    href="#user-content-fnref-feb"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 9"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-source">
+                <p>
+                  There are two sources in Plex: One shows your Tidal library by itself and streams direct from Tidal.
+                  Given this, Tidal content doesn't show up in the API, as the stream doesn't transit via Plex. The
+                  other source is when you add Tidal content to your music library. This does transit via Plex so it
+                  shows up via the API.
+                  <a
+                    href="#user-content-fnref-source"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 10"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+              <li id="user-content-fn-riaa">
+                <p>
+                  Do three audio fingerprints make a unique fingerprint? I hope the RIAA doesn't destroy my blog or I
+                  might have to use one of those shady Swiss bulletproof hosts going forward...
+                  <a
+                    href="#user-content-fnref-riaa"
+                    data-footnote-backref=""
+                    aria-label="Back to reference 11"
+                    class="data-footnote-backref"
+                    >↩</a
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </article>
+
+      <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>
+      <script type="text/javascript">
+        littlefoot.littlefoot(); // Pass any littlefoot settings here.
+      </script>
+    </div>
+    <div id="fullscreen"></div>
+    <script type="module">
+      import "/js/image-viewer.js";
+    </script>
+  </body>
+</html>
