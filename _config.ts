@@ -10,7 +10,7 @@ import nunjucks from "lume/plugins/nunjucks.ts"
 
 // NPM
 import rehypePrettyCode from "npm:rehype-pretty-code@0.11.0";
-import prettier from "npm:prettier@3.1.0"
+import prettier from "npm:prettier@3.0.0"
 
 // Deno / ESM
 import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
