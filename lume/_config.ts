@@ -81,10 +81,10 @@ site.use(nunjucks({
 site.copy("css");
 site.copy("static", ".");
 
-// site.process(
-//     [".html"],
-//     async (page) => page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
-// )
+site.process(
+    [".html"],
+    async (page) => page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
+)
 
 site.filter("taghash", tag => {
     const tagColours = [
