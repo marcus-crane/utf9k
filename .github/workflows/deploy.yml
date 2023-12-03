@@ -27,8 +27,8 @@ jobs:
         with:
           python-version: "3.11.0"
           cache: 'pip'
-      - name: Build site
-        run: deno task build
+      - name: Generate metadata and deploy site
+        run: deno task deploy
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
         with:
