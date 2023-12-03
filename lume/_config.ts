@@ -40,15 +40,15 @@ const rehypePrettyCodeOpts = {
 }
 
 const rehypeAutolinkHeadingsOpts = {
-    behaviour: 'before',
     properties: {
-        ariaHidden: true,
+        ariaHidden: 'true',
         class: 'jumplink',
         tabIndex: -1
     },
     // Fragment is important here so we don't get HTML document tags wrapping our header icon
     // In this case, it's only visible in the RSS feed
-    content: fromHtmlIsomorphic('¶', { fragment: true })
+    // Also, the whitespace here is important for alignment!
+    content: fromHtmlIsomorphic('¶ ', { fragment: true })
 }
 
 // TODO: data https://lume.land/plugins/search/#returnpagedata
