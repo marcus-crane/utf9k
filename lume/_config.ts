@@ -20,6 +20,7 @@ import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7'
 
 
 // Local
+import rehypePostImageWrapper from "./rehypePostImageWrapper.ts"
 import remark from "./remark.ts";
 import { fnv_1a } from "./utils.ts"
 
@@ -79,6 +80,7 @@ site.use(remark({
     rehypePlugins: [
         [rehypePrettyCode, rehypePrettyCodeOpts],
         rehypeSlug,
+        rehypePostImageWrapper,
         [rehypeAutolinkHeadings, rehypeAutolinkHeadingsOpts]
     ],
     remarkOptions: {
@@ -109,7 +111,9 @@ site.copy("static", ".");
 
 site.process(
     [".html"],
-    async (page) => page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
+    async (page) => {
+        page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
+    }
 )
 
 site.filter("taghash", tag => {

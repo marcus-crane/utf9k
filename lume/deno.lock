@@ -31,9 +31,11 @@
       "npm:remark-gfm@4.0.0": "npm:remark-gfm@4.0.0",
       "npm:remark-parse@11.0.0": "npm:remark-parse@11.0.0",
       "npm:remark-rehype@11.0.0": "npm:remark-rehype@11.0.0",
+      "npm:replace-ext": "npm:replace-ext@2.0.0",
       "npm:squirrelly": "npm:squirrelly@9.0.0",
       "npm:svg2png-wasm@1.4.1": "npm:svg2png-wasm@1.4.1",
-      "npm:unified@11.0.4": "npm:unified@11.0.4"
+      "npm:unified@11.0.4": "npm:unified@11.0.4",
+      "npm:unist-util-visit": "npm:unist-util-visit@5.0.0"
     },
     "npm": {
       "@babel/runtime@7.23.2": {
@@ -1700,6 +1702,10 @@
           "unified": "unified@11.0.4"
         }
       },
+      "replace-ext@2.0.0": {
+        "integrity": "sha512-UszKE5KVK6JvyD92nzMn9cDapSk6w/CaFZ96CnmDMUqH9oowfxF/ZjRITD25H4DnOQClLA4/j7jLGXXLVKxAug==",
+        "dependencies": {}
+      },
       "sade@1.8.1": {
         "integrity": "sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==",
         "dependencies": {
@@ -1966,6 +1972,7 @@
     "https://esm.sh/rehype-autolink-headings@7": "https://esm.sh/rehype-autolink-headings@7.1.0",
     "https://esm.sh/rehype-slug@6": "https://esm.sh/rehype-slug@6.0.0",
     "https://esm.sh/remark-toc@9": "https://esm.sh/remark-toc@9.0.0",
+    "https://esm.sh/unist-util-visit@5": "https://esm.sh/unist-util-visit@5.0.0",
     "https://github.com/lumeland/lume/raw/v1.19.3/core/loaders/text.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/loaders/text.ts",
     "https://github.com/lumeland/lume/raw/v1.19.3/core/utils.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/core/utils.ts",
     "https://github.com/lumeland/lume/raw/v1.19.3/deps/remark.ts": "https://raw.githubusercontent.com/lumeland/lume/v1.19.3/deps/remark.ts"
@@ -2004,6 +2011,9 @@
     "https://deno.land/std@0.170.0/path/posix.ts": "b859684bc4d80edfd4cad0a82371b50c716330bed51143d6dcdbe59e6278b30c",
     "https://deno.land/std@0.170.0/path/separator.ts": "fe1816cb765a8068afb3e8f13ad272351c85cbc739af56dacfc7d93d710fe0f9",
     "https://deno.land/std@0.170.0/path/win32.ts": "7cebd2bda6657371adc00061a1d23fdd87bcdf64b4843bb148b0b24c11b40f69",
+    "https://deno.land/std@0.177.0/path/_constants.ts": "e49961f6f4f48039c0dfed3c3f93e963ca3d92791c9d478ac5b43183413136e0",
+    "https://deno.land/std@0.177.0/path/_util.ts": "d7abb1e0dea065f427b89156e28cdeb32b045870acdf865833ba808a73b576d0",
+    "https://deno.land/std@0.177.0/path/posix.ts": "8b7c67ac338714b30c816079303d0285dd24af6b284f7ad63da5b27372a2c94d",
     "https://deno.land/std@0.201.0/assert/assert.ts": "9a97dad6d98c238938e7540736b826440ad8c1c1e54430ca4c4e623e585607ee",
     "https://deno.land/std@0.201.0/assert/assertion_error.ts": "4d0bde9b374dfbcbe8ac23f54f567b77024fb67dbb1906a852d67fe050d42f56",
     "https://deno.land/std@0.201.0/html/entities.ts": "43f208131bb847e6e222c9dd50322066491da93ed945a93d778923ef7e975398",
@@ -2919,6 +2929,7 @@
     "https://esm.sh/rehype-autolink-headings@7.1.0": "66d11d07f8e5cc477b261c80652bf3004706408c6016712a160cc83149a2c04a",
     "https://esm.sh/rehype-slug@6.0.0": "e806dd9c81a7d6dcbd3850febbdbf204b37cecb551a2b3159a1be0abaf228c6c",
     "https://esm.sh/remark-toc@9.0.0": "15375f467d541e8ba1dd52ca58805597dd3def38e803bde25444d4e3748d27e5",
+    "https://esm.sh/unist-util-visit@5.0.0": "39c6a28445ca31c6ad1e97c663c9d6f86d8820a2b5893c77e2d363cb630c8dc5",
     "https://esm.sh/v135/@ungap/structured-clone@1.2.0/denonext/structured-clone.mjs": "e683ab48ef7a3afd3bce9d1589d14177ddbdbf76fa1483524dddbeb6b142469f",
     "https://esm.sh/v135/github-slugger@2.0.0/denonext/github-slugger.mjs": "42ff6fe7ba4f63d8a048970e5a32cd5b0348905dde3f9e270d90e44a6e7635ae",
     "https://esm.sh/v135/hast-util-heading-rank@3.0.0/denonext/hast-util-heading-rank.mjs": "e246a2970de527835b62651d5c38bb0be5031eb1f74e336bb7315a257db6d527",
