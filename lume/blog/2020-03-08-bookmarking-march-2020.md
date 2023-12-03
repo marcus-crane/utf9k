@@ -9,6 +9,10 @@ tags:
 - "organisation"
 ---
 
+## Table of Contents
+
+## Preamble
+
 For no particular reason, other than I figured it might help me make better sense of how I organise articles, here's a fairly detailed breakdown of my bookmarking setup.
 
 Currently I'm using [Raindrop.io](https://raindrop.io) but I've also used [Pinboard](https://pinboard.in), [Pocket](https://getpocket.com) and [Larder](https://larder.io) happily in the past too.

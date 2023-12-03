@@ -3,6 +3,7 @@ import { join } from "https://deno.land/std@0.208.0/path/mod.ts";
 const tweetCachePath = join(new URL('.', import.meta.url).pathname, '../_data/tweets.json')
 
 const tweets = [
+    "https://twitter.com/bepsays/status/1408348824083615745",
     "https://twitter.com/jack/status/1367460921937817602",
     "https://twitter.com/plexamp/status/1489024846033915908",
     "https://twitter.com/plexamp/status/1491494752327372801",

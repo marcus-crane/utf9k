@@ -19,6 +19,10 @@ Due to the nature of this post, it's pretty image heavy.
 Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
 <% endcomp %>
 
+## Table of Contents
+
+## Preamble
+
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
 As a result, the band [Failure](https://en.wikipedia.org/wiki/Failure_(band)) announced[^pulling] that they are going to [pull their music from Spotify](https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537) in part because the [streaming payouts are supposed to be some of the worst in the industry](https://en.wikipedia.org/wiki/Criticism_of_Spotify#Allegations_of_unfair_artist_compensation).

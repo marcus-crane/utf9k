@@ -20,6 +20,10 @@ I'm not a data analyst or even really proficient in Pandas by any stretch of the
 What I can claim however is that it worked, more or less, so you're welcome to code along.
 <% endcomp %>
 
+## Table of Contents
+
+## Preamble
+
 This will be a pretty lengthy blog post detailing how I took an XLSX spreadsheet with towing data and cleaned it up to be (mostly) machine readable.
 
 My ultimate goal is to transform it into a fancy data visualisation. I know roughly how to get there but getting there is tedious.

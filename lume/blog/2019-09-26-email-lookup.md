@@ -11,6 +11,10 @@ tags:
 - "tip"
 ---
 
+## Table of Contents
+
+## Preamble
+
 Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
 
 I'll take you through a recent example where I wanted to email Ian Small, the CEO of Evernote, to thank him and the Evernote team for their wonderful Behind the Scenes videos. You can see them [here](https://www.youtube.com/watch?v=5rNUpXYCcrA) and I think they're worth a peek.

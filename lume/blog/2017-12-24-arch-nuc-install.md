@@ -18,6 +18,10 @@ If I were to reinstall Arch Linux tomorrow, I would still dogfood my own guide a
 While I don't expect much has changed, you should know that I'm not actively verifying that these steps haven't changed or anything like that.
 <% endcomp %>
 
+## Table of Contents
+
+## Preamble
+
 It's that time again where I decide to reinstall Arch Linux and likely end up bashing my head against a wall. I have an old blog post on my Github but it could be better so this is an extended version mainly for my own future reference.
 
 Please note that this isn't some guide for pros or that I expect to have the most 100% correct or efficient method of installing. It's just what I know works for me.

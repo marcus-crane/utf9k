@@ -10,6 +10,10 @@ tags:
 - "data"
 ---
 
+## Table of Contents
+
+## Preamble
+
 It's spring here in New Zealand, and unfortunately I think I've spent more time decluttering digital items instead of physical, but I've still had an interesting time as a result
 
 ## Why are people so protective of my data?

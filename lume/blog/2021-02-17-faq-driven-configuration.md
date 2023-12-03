@@ -9,6 +9,10 @@ tags:
 - "documentation"
 ---
 
+## Table of Contents
+
+## Preamble
+
 I'm sure this idea isn't new in the slightest but a handy trick I've been using is to define configuration as a series of questions, not unlike a FAQ.
 
 Rather than explain it, [here](https://github.com/marcus-crane/dotfiles/blob/62813e09dc6d5127b0f25a5017ae23fd37ce180f/doom/.doom.d/config.org) is an example of a configuration file I've structured this way.

@@ -10,6 +10,10 @@ tags:
 - "ipad"
 ---
 
+## Table of Contents
+
+## Preamble
+
 A few years ago, I ordered a 4th generation Apple iPad Air and the store I purchased it from accidentally sent me a demo unit.
 
 It was a fully working iPad but it came preloaded with a number of dummy items such as a five calendars, a handful of documents and acres of photos.

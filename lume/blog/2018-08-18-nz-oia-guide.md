@@ -11,6 +11,10 @@ tags:
 - "oia"
 ---
 
+## Table of Contents
+
+## Preamble
+
 I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin) and got me inspired to do some own data wrangling of my own.
 
 A few days later, a coworker got a parking ticket and I was reminded of that post so I told them the story. They seemed to think it was a neat idea but didn't have a great understanding of the Official Information Act process. I mean, just look at that name! It sounds all legal and fancy but really, it's actually very straight forward (and arguably kinda fun).

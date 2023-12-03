@@ -17,11 +17,7 @@ Recently I discovered that [Hugo](https://gohugo.io) added support for [inline s
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
 
-<% comp "Notice", emoji="😅", title="This is a test" %>
-Nice
-<% endcomp %>
-
-<% comp "Tweet", ref="jack/1367460921937817602" %><% endcomp %>
+<% comp "Tweet", ref="bepsays/1408348824083615745" %><% endcomp %>
 
 ## A shortcode refresher
 

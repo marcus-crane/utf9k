@@ -10,6 +10,10 @@ tags:
 - "tracing"
 ---
 
+## Table of Contents
+
+## Preamble
+
 Recently, I was chatting with a coworker about the accuracy of tracing. In particular, we were discussing [Datadog APM](https://docs.datadoghq.com/tracing/) but the same discussion probably applies equally to [OpenTelemetry](https://opentelemetry.io/) as well as other SaaS provider implementations.
 
 To be clear, when I say accuracy here, I don't mean the accuracy of what each trace is presenting. The overall picture is more than accurate enough but I would argue that it will never 100% reflect reality, nor is that necessarily something valuable to obtain.

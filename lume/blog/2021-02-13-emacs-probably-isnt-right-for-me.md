@@ -10,6 +10,10 @@ tags:
 - "workflow"
 ---
 
+## Table of Contents
+
+## Preamble
+
 I'm not someone who tends to wear my text editor on my sleeve, probably because I don't stick to just one anyway, but I've probably mentioned Emacs more than most in the last year or two.
 
 I started out using it as a little bit of a joke more than anything and found myself pleasantly surprised.

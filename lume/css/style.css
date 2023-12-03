@@ -402,7 +402,8 @@ article .heading h6 {
   margin-bottom: 0.25em;
 }
 
-article .highlight {
+article .highlight,
+article div[data-rehype-pretty-code-fragment] {
   margin-bottom: 1.3rem;
 }
 
@@ -541,6 +542,7 @@ details {
 
 table,
 .highlight,
+div[data-rehype-pretty-code-fragment],
 pre[class*="language-"],
 figure,
 #post-body img,
@@ -552,6 +554,7 @@ iframe {
 @media only screen and (min-width: 500px) {
   table,
   .highlight,
+  div[data-rehype-pretty-code-fragment],
   pre[class*="language-"],
   figure,
   #post-body > img {
@@ -563,6 +566,7 @@ iframe {
 @media only screen and (min-width: 1000px) {
   table,
   .highlight,
+  div[data-rehype-pretty-code-fragment],
   pre[class*="language-"],
   figure {
     width: 150%;

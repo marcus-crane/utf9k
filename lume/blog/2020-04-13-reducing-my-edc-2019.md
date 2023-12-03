@@ -8,6 +8,10 @@ tags:
 - "organisation"
 ---
 
+## Table of Contents
+
+## Preamble
+
 During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.
 
 I managed to reduce down the complexity by quite a large amount, and it's probably one of the better investments I've made recently.
