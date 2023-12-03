@@ -21,7 +21,6 @@
       "npm:preact@10.18.1": "npm:preact@10.18.1",
       "npm:preact@10.19.2": "npm:preact@10.19.2",
       "npm:prettier": "npm:prettier@3.0.3",
-      "npm:prettier@3.1.0": "npm:prettier@3.1.0",
       "npm:react-dom@18.2.0": "npm:react-dom@18.2.0_react@18.2.0",
       "npm:react@18.2.0": "npm:react@18.2.0",
       "npm:rehype-pretty-code": "npm:rehype-pretty-code@0.10.2_shiki@0.14.5",
@@ -1567,10 +1566,6 @@
       },
       "prettier@3.0.3": {
         "integrity": "sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==",
-        "dependencies": {}
-      },
-      "prettier@3.1.0": {
-        "integrity": "sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==",
         "dependencies": {}
       },
       "pretty-format@3.8.0": {
