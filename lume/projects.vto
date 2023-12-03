@@ -5,13 +5,13 @@
   </header>
   <ul>
     <h2>Ongoing</h2>
-    {{ for project of search.pages("category=projects ongoing=true", "order=asc title=asc") }}
+    {{ for project of search.pages("category=projects ongoing=true").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
     <li>
       <a href="{{ project.url }}">{{ project.title }}</a>
     </li>
     {{ /for }}
     <h2>Archived</h2>
-    {{ for project of search.pages("category=projects ongoing=false", "order=asc title=asc") }}
+    {{ for project of search.pages("category=projects ongoing=false").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
     <li>
       <a href="{{ project.url }}">{{ project.title }}</a>
     </li>
