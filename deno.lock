@@ -9,6 +9,7 @@
       "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
       "npm:preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.3.1_preact@10.19.2",
       "npm:preact@10.19.2": "npm:preact@10.19.2",
+      "npm:prettier@3.0.0": "npm:prettier@3.0.0",
       "npm:prettier@3.1.0": "npm:prettier@3.1.0",
       "npm:rehype-pretty-code@0.11.0": "npm:rehype-pretty-code@0.11.0_shiki@0.14.5",
       "npm:rehype-raw@7.0.0": "npm:rehype-raw@7.0.0",
@@ -713,6 +714,10 @@
       },
       "preact@10.19.2": {
         "integrity": "sha512-UA9DX/OJwv6YwP9Vn7Ti/vF80XL+YA5H2l7BpCtUr3ya8LWHFzpiO5R+N7dN16ujpIxhekRFuOOF82bXX7K/lg==",
+        "dependencies": {}
+      },
+      "prettier@3.0.0": {
+        "integrity": "sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==",
         "dependencies": {}
       },
       "prettier@3.1.0": {
