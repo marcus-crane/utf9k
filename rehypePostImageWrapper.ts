@@ -3,7 +3,7 @@
  * @typedef {import('hast').Root} Root
  */
 
-import {visit} from 'https://esm.sh/unist-util-visit@5'
+import {visit} from 'https://esm.sh/unist-util-visit@5.0.0'
 
 /**
  * Wrap images in pictures.

@@ -45,4 +45,4 @@ pnpm-debug.log*
 .DS_Store
 
 # Lume
-lume/_site
+_site

@@ -9,14 +9,14 @@ import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 
 // NPM
-import { fromHtmlIsomorphic } from 'npm:hast-util-from-html-isomorphic'
-import rehypePrettyCode from "npm:rehype-pretty-code";
-import prettier from "npm:prettier"
+import rehypePrettyCode from "npm:rehype-pretty-code@0.11.0";
+import prettier from "npm:prettier@3.1.0"
 
 // Deno / ESM
-import remarkToc from 'https://esm.sh/remark-toc@9'
-import rehypeSlug from 'https://esm.sh/rehype-slug@6'
-import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7'
+import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
+import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
+import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
+import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
 
 
 // Local
