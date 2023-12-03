@@ -1,17 +1,25 @@
+// Lume
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
-import eta from "lume/plugins/eta.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 
+// NPM
+import { fromHtmlIsomorphic } from 'npm:hast-util-from-html-isomorphic'
 import rehypePrettyCode from "npm:rehype-pretty-code";
-
 import prettier from "npm:prettier"
 
+// Deno / ESM
+import remarkToc from 'https://esm.sh/remark-toc@9'
+import rehypeSlug from 'https://esm.sh/rehype-slug@6'
+import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7'
+
+
+// Local
 import remark from "./remark.ts";
 import { fnv_1a } from "./utils.ts"
 
@@ -31,9 +39,20 @@ const rehypePrettyCodeOpts = {
     }
 }
 
+const rehypeAutolinkHeadingsOpts = {
+    behaviour: 'before',
+    properties: {
+        ariaHidden: true,
+        class: 'jumplink',
+        tabIndex: -1
+    },
+    // Fragment is important here so we don't get HTML document tags wrapping our header icon
+    // In this case, it's only visible in the RSS feed
+    content: fromHtmlIsomorphic('¶', { fragment: true })
+}
+
 // TODO: data https://lume.land/plugins/search/#returnpagedata
 site.use(date());
-site.use(eta());
 site.use(feed({
     output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],
     query: "category=blog",
@@ -54,7 +73,14 @@ site.use(feed({
 site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
-    rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOpts]],
+    remarkPlugins: [
+        remarkToc
+    ],
+    rehypePlugins: [
+        [rehypePrettyCode, rehypePrettyCodeOpts],
+        rehypeSlug,
+        [rehypeAutolinkHeadings, rehypeAutolinkHeadingsOpts]
+    ],
     remarkOptions: {
         footnoteLabelProperties: {
             className: ['sr-only', 'littlefoot--print']
