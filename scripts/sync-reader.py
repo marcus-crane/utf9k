@@ -33,7 +33,7 @@ def get_reading_progress(id):
         return resp['results'][0].get('reading_progress', False)
     return False
 
-with open("data/books.yml", "r") as file:
+with open("_data//books.yml", "r") as file:
     data = yaml.load(file.read())
 
 current_year = data[0]['books']
