@@ -83,7 +83,7 @@
       <div class="post-stream">
         <h3>Recently updated pages</h3>
         <ul>
-          {{ for page of search.pages() |> filter(p => !p.draft) |> sort((a, b) => b.date - a.date) |> slice(0, 6) }}
+          {{ for page of search.pages() |> filter(p => p.category === "blog") |> filter(p => !p.draft) |> sort((a, b) => b.date - a.date) |> slice(0, 6) }}
           <li>
             <a href="{{ page.url }}">{{ page.title }}</a>
           </li>
