@@ -23,7 +23,7 @@ It's a little light on detail because I've been too lazy to flesh it out with ex
 
 Let's take a closer look at one of those blocks:
 
-```emacs
+```lisp
 *** I would like to see the time while inside Emacs
 
 Displaying the time in the bottom bar seems like a good idea
@@ -45,7 +45,7 @@ Let's look at [an older version](https://github.com/marcus-crane/dotfiles/blob/f
 
 We can distill the linked section down to something like this:
 
-```emacs
+```lisp
 *** Setting org file locations
 
 (after! org
@@ -74,7 +74,7 @@ Now let's look at [a later version](https://github.com/marcus-crane/dotfiles/blo
 
 While the configuration has changed a bit, I'll be reducing it to just the blocks we see above for a side by side comparison
 
-```emacs
+```lisp
 ** Setting up
 
 *** Where do my org files live?
@@ -107,7 +107,7 @@ Perhaps one of my favourite aspects, which I only got to experience just recentl
 
 First, let's look at an example of how you might normally specify a configuration section. In this case, we're setting an environment variable that points to a Dropbox folder.[^dropbox]
 
-```emacs
+```lisp
 ** Setting up Dropbox
 
 (setq dropbox (getenv "DROPBOX_DIR"))
@@ -125,7 +125,7 @@ Now, let's say we get fed up with Dropbox and decide to move entirely to our own
 
 In the past, I've probably done this many times, as I move around software. For a little while, my Emacs configuration has been scoped nicer to look like this:
 
-```emacs
+```lisp
 ** Where do I store my files?
 
 (setq storage "~/Dropbox")
