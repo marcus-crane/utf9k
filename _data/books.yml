@@ -29,15 +29,6 @@
     date_finished: null
     rating: null
     progress: 62
-  
-  - title: Taxtopia
-    subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
-    author: The Rebel Accountant
-    cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
-    link: https://openlibrary.org/works/OL28024085W/Taxtopia
-    date_finished: null
-    rating: null
-    progress: 56
 
   - title: Wrong Way
     subtitle: How Privatisation & Economic Reform Backfired
@@ -65,6 +56,15 @@
   #   date_finished: null
   #   rating: null
   #   progress: 57
+
+  - title: Taxtopia
+    subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
+    author: The Rebel Accountant
+    cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
+    link: https://openlibrary.org/works/OL28024085W/Taxtopia
+    date_finished: 2023-12-05
+    rating: 5
+    progress: 100
 
   - title: The PARA Method
     subtitle: Simplify, Organize, and Master Your Digital Life
