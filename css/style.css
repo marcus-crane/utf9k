@@ -18,9 +18,13 @@
     0.85rem
   );
   --text-light: #d0d1c7;
+  --text-code-light: #575279;
   --text-dark: #1e1e1e;
+  --text-code-dark: #E0DEF4;
   --bg-light: #eaebe3;
+  --bg-code-light: #faf4ed;
   --bg-dark: #1f2738;
+  --bg-code-dark: #232136;
 }
 
 :root, .littlefoot__content {
@@ -407,29 +411,28 @@ article div[data-rehype-pretty-code-fragment] {
   margin-bottom: 1.3rem;
 }
 
-/* Same colours as Dracula Prism loaded via Hugo config */
+/* Same colours as rose-pine themes loaded via rehype-pretty-code */
 article p code {
-  background-color: #282a36;
-  color: #f8f8f2;
+  background-color: var(--bg-code-light);
+  color: var(--text-code-light);
   font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
     monospace; /* Matches prism config */
-  font-size: 0.95rem;
+  font-size: 1.2em;
   padding: 0.2rem 0.3rem;
   border-radius: 0.3rem;
   white-space: nowrap;
-  vertical-align: text-top;
+}
+
+@media (prefers-color-scheme: dark) {
+  article p code {
+    background-color: var(--bg-code-dark);
+    color: var(--text-code-dark);
+  }
 }
 
 pre code {
   font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
     monospace; /* Matches prism config */
-}
-
-@media (prefers-color-scheme: dark) {
-  article p code {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
-  }
 }
 
 /* Blockquotes */
