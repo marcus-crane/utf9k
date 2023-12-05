@@ -1,5 +1,6 @@
 ---
 title: Books
+templateEngine: [njk, vto]
 ---
 
 {{ layout "base.vto" }}
@@ -7,6 +8,15 @@ title: Books
     <header>
       <h1>Books</h1>
     </header>
+    <div class="notice">
+      <hr class="hidden" />
+      <h3>
+        <span>📚</span>
+        How the rating system works
+      </h3>
+      <p>If a book has the loudspeaker emoji <span>(📣)</span>, it means that I found it interesting/enjoyable/compelling enough to bring it up in a discussion without being prompted.</p>
+      <hr class="hidden" />
+    </div>
     <div id="post-body">
       {{ for yearGroup of books }}
       {{> const goalProgress = yearGroup.books.filter(b => b.progress === 100).length }}
@@ -32,8 +42,7 @@ title: Books
           <dl>
             {{ if book.progress === 100 && book.rating !== null }}
             <div>
-              <dd>Finished: {{ book.date_finished?.toISOString().split("T")[0] }}</dd>
-              <dd>Rating: {{ '★'.repeat(book.rating) }}</dd>
+              <dd>{{ book.date_finished?.toISOString().split("T")[0] }} {{ if book.recommended }}· <span>📣</span>{{ /if }}
             </div>
             {{ /if }}
             {{ if book.progress !== 100 }}

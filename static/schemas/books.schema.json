@@ -74,18 +74,9 @@
                 }
               ]
             },
-            "rating": {
-              "description": "The rating that you would give this book out of 5. Use null if you haven't finished reading this book yet.",
-              "anyOf": [
-                {
-                  "type": "integer",
-                  "minimum": 0,
-                  "maximum": 5
-                },
-                {
-                  "type": "null"
-                }
-              ]
+            "recommended": {
+              "description": "Whether or not I found this book to be interesting enough to mention to someone else in passing.",
+              "type": "boolean"
             },
             "progress": {
               "description": "Your current progress through the book between 0 and 100",
