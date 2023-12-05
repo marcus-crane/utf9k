@@ -7,7 +7,7 @@ tags:
 - "hexedit"
 - "playstation"
 - "videogames"
-aliases:
+oldUrl:
 - "/notes/ps1-disc-layout/"
 ---
 

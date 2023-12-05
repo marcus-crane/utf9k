@@ -6,7 +6,7 @@ category: "questions"
 tags:
 - "finance"
 - "futures"
-aliases:
+oldUrl:
 - "/notes/oil-futures/"
 ---
 

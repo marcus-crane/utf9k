@@ -15,6 +15,7 @@
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.19.4/",
+    "lume-exp/": "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/",
     "prettier": "npm:prettier@3.0.0",
     "rehype-pretty-code": "npm:rehype-pretty-code@0.11.0"
   }

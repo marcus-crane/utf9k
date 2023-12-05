@@ -8,7 +8,7 @@ tags:
 - "automation"
 - "microservices"
 - "twitter"
-aliases:
+oldUrl:
 - "/blog/when-automation-goes-horribly-right"
 ---
 

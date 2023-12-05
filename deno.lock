@@ -1455,6 +1455,7 @@
     "https://esm.sh/v135/vfile@6.0.1/denonext/do-not-use-conditional-minproc.js": "34e683b50c7d1e17a90a522afafcdb032ceaeff2e0eb5dbca28f9b4783de73ba",
     "https://esm.sh/v135/vfile@6.0.1/denonext/do-not-use-conditional-minurl.js": "79e90ed8915870371874d7ca17f8cbb3a8cab5b4e054bbcff85f7c91df32d0ba",
     "https://esm.sh/v135/vfile@6.0.1/denonext/vfile.mjs": "31065c960cf79824afc0bc6890688c540f09d067eb5415effb7fafac6ef33c13",
-    "https://esm.sh/v135/web-namespaces@2.0.1/denonext/web-namespaces.mjs": "bc6ee363bbe40abddca68678e849584981176d9bde3728b4c5d47a5241dac7bf"
+    "https://esm.sh/v135/web-namespaces@2.0.1/denonext/web-namespaces.mjs": "bc6ee363bbe40abddca68678e849584981176d9bde3728b4c5d47a5241dac7bf",
+    "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/redirect/mod.ts": "4fd4884478e11eb1aa75bb291181a4cd43938c9644e0016e17437d0a587a8ed0"
   }
 }

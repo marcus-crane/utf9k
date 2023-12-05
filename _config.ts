@@ -9,6 +9,9 @@ import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 
+// Experimental Plugins
+import redirect from "lume-exp/redirect/mod.ts"
+
 // NPM
 import rehypePrettyCode from "rehype-pretty-code";
 import prettier from "prettier"
@@ -106,6 +109,7 @@ site.use(nunjucks({
     }
 }))
 site.use(metas())
+site.use(redirect())
 
 // TODO: ESBuild + content hashing
 site.copy("css");

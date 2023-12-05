@@ -8,7 +8,7 @@ tags:
 - "zettelkasten"
 - "blogging"
 - "meta"
-aliases:
+oldUrl:
 - "/blog/zettlekasten-blog-a-good-idea/"
 ---
 
