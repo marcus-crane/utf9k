@@ -1,9 +1,6 @@
 # utf9k
 
-![MIT License](https://img.shields.io/github/license/marcus-crane/utf9k)
-![Hugo version](https://img.shields.io/badge/hugo-v0.119.0-blue)
-
-This is my personal website, which is powered by [Hugo](https://www.gohugo.io) and [CommonMark](https://commonmark.org).
+This is my personal website, which is powered by [Lume](https://github.com/lumeland/lume) and Markdown.
 
 It also has some live, progressive enhancement elements powered by [gunslinger](https://github.com/marcus-crane/gunslinger).
 
@@ -25,31 +22,21 @@ Of particular interest is the live player on the homepage which surfaces metadat
 
 ## Getting setup
 
-To get started, you'll want to install Hugo using one of the variety of [officially supported installation methods](https://gohugo.io/getting-started/installing/).
+To get started, you'll want to install Deno using one of the variety of [officially supported installation methods](https://github.com/lumeland/lume).
 
-You'll also need to have [npm](https://www.npmjs.com/get-npm) installed.
-
-I personally use [pnpm](https://pnpm.io/) as a package manager but npm works fine.
-
-Once you've got all of that set up, running `yarn start` will do everything required to start up a local server.
+Once you've got all of that set up, running `deno task serve` should do everything required to start up a local server.
 
 You should be able to access the development version of the site at http://localhost:1313
 
-## Layout
-
-Pages, posts and related images live in `content`
-
-HTML templates live in `layouts`
-
-A handful of static files live in `static` with most images living with their respective posts.
-
 ## Deployment
 
-Builds are executed using Github Actions with the resulting static output being deployed to [Cloudflare Pages](https://pages.cloudflare.com/).
+Builds are executed using Github Actions with the resulting static output being deployed to [Bunny Storage](https://bunny.net/storage/).
 
-In short, pushes to `main` will update [utf9k.net](https://utf9k.net) automatically.
+From there, my site is replicated using [Bunny CDN](https://bunny.net/cdn/).
 
-All of the Pages setup is [configured via Terraform](https://github.com/marcus-crane/infrastructure/blob/main/cfpages-utf9k-net.tf).
+I've used hosted services like Netlify and Cloudflare Pages in the past but I found that, surprisingly, their CDNs are not necessarily the fastest plus when you're not paying, you have no leverage during any inevitable outages.
+
+Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically although depending on what changes, I sometimes manually trigger a cache purge.
 
 ## Using Act
 
@@ -60,19 +47,3 @@ Running `act` will perform the entire build pipeline, aside from deployment to C
 It is essentially the same workflow as `pnpm run deploy`, just that it will also install all prerequisite tools like Hugo, Cue and so on.
 
 In theory, you could also use `act -b` to build the site and output it from the container but I make no guarantees that it would work.
-
-## Astro
-
-I'm currently experimenting with a migration to [Astro](https://astro.build), to make it easier wrangling with image processing among other things.
-
-I might end up hating it but for now, I've embedded the contents of an Astro build in this repo.
-
-As a reminder to myself, it can be removed by deleting the following files/folders:
-
-```console
-$ rm -rf .astro
-$ rm -rf src
-$ rm -rf static/fonts
-$ rm astro.config.mjs
-$ rm tsconfig.json
-```
