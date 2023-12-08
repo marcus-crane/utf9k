@@ -95,7 +95,7 @@ site.use(remark({
     }
 }));
 site.use(vento());
-site.use(esbuild());
+// site.use(esbuild()); # TODO: Some JS fails to be minified properly
 site.use(nunjucks({
     options: {
         autoescape: false,
