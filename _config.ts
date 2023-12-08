@@ -24,6 +24,7 @@ import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.
 
 
 // Local
+import cache_busting from "./_plugins/cache_busting.ts"
 import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
 import remark from "./_plugins/remark.ts";
 import { fnv_1a } from "./utils.ts"
@@ -110,6 +111,7 @@ site.use(nunjucks({
 }))
 site.use(metas())
 site.use(redirect())
+site.use(cache_busting())
 
 // TODO: ESBuild + content hashing
 site.copy("css");
