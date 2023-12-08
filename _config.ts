@@ -27,7 +27,7 @@ import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.
 import cache_busting from "./_plugins/cache_busting.ts"
 import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
 import remark from "./_plugins/remark.ts";
-import { fnv_1a } from "./utils.ts"
+import { fnv_1a } from "./_utils/fnv_1a.ts"
 
 // TODO: Remove when upgrading to 2.0
 const search = { returnPageData: true };
