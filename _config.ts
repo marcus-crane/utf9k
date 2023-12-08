@@ -24,8 +24,8 @@ import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.
 
 
 // Local
-import rehypePostImageWrapper from "./rehypePostImageWrapper.ts"
-import remark from "./remark.ts";
+import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
+import remark from "./_plugins/remark.ts";
 import { fnv_1a } from "./utils.ts"
 
 // TODO: Remove when upgrading to 2.0
