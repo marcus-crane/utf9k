@@ -813,7 +813,7 @@ footer {
   height: 100rem;
   position: absolute;
   margin: -50rem;
-  transition-duration: 1s;
+  transition-duration: 3s;
   -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 45%, transparent 85%);
   mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 45%, transparent 85%);
   border-radius: 50%;

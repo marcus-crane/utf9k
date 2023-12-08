@@ -8,7 +8,7 @@ const elapsed = document.querySelector("#elapsed")
 const duration = document.querySelector("#duration")
 const progressArea = document.querySelector("#progress")
 
-const rotatingBorder = document.querySelector("#rotating-border")
+const sun = document.querySelector("#sun")
 
 const MANGA = 'manga'
 const GAMING = 'gaming'
@@ -101,7 +101,7 @@ function renderLivePlayer(data) {
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
   let showProgression = false
-  rotatingBorder.className = "rotating-border-hidden"
+  sun.className = "sun-hidden"
   switch (data.category) {
   case MANGA:
     data.title = formatMangaTitle(data.title)
@@ -141,10 +141,8 @@ function renderLivePlayer(data) {
   livePlayer.className = "transition-opacity duration-1000"
 
   if (data.dominant_colours && data.is_active) {
-    rotatingBorder.className = "rotating-border-hidden"
-    rotatingBorder.style = ""
     buildAnimatedBorder(data.dominant_colours)
-    rotatingBorder.className = ""
+    sun.className = ""
   }
 
   if (showProgression) {
@@ -181,8 +179,8 @@ function renderLivePlayer(data) {
 }
 
 function buildAnimatedBorder(dominantColours) {
-  const fullColours = [...dominantColours, ...dominantColours, ...dominantColours]
-  const gradientLen = dominantColours.length * 3
+  const fullColours = [...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours]
+  const gradientLen = dominantColours.length * 6
   const stepInterval = 1 / gradientLen
   let previousStep = 0.0
   let gradientVal = "conic-gradient("
@@ -192,7 +190,7 @@ function buildAnimatedBorder(dominantColours) {
   }
   gradientVal += ")"
   gradientVal = gradientVal.replace(",)", ")") // Lazy
-  rotatingBorder.style.setProperty("--border-bg", gradientVal)
+  sun.style.setProperty("--border-bg", gradientVal)
 }
 
 /* History */
