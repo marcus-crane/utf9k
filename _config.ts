@@ -115,6 +115,7 @@ site.use(cache_busting())
 
 // TODO: ESBuild + content hashing
 site.copy("css");
+site.copy("js");
 site.copy("static", ".");
 
 site.ignore(
