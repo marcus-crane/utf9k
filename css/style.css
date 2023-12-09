@@ -160,21 +160,25 @@ h2 {
   padding: 0.8rem;
 }
 
-.navigation a {
+.navigation #logo {
+  width: 100%;
+}
+
+.navigation #logo a {
   display: flex;
   height: fit-content;
   flex-direction: row;
   text-decoration: none;
-  width: 100%;
+  width: fit-content;
 }
 
-.navigation a span {
+.navigation #logo span {
   font-size: 1em;
   font-weight: 500;
   margin-left: 0.5rem;
 }
 
-.navigation a img {
+.navigation #logo img {
   height: 1.4rem;
   width: 1.4rem;
 }
