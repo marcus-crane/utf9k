@@ -3,7 +3,7 @@
 <head>
   {{ include "partials/head.vto" }}
 </head>
-<body>
+<body {{ if it.bodystyle }}style="{{ it.bodystyle }}"{{ /if }}>
   {{ content }}
 </body>
 </html>
