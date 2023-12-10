@@ -1,12 +1,15 @@
 import binaryLoader from "lume/core/loaders/binary.ts";
-import { getPathAndExtension, merge } from "lume/core/utils.ts";
+import { merge } from "lume/core/utils/object.ts";
+import { getPathAndExtension } from "lume/core/utils/path.ts";
 import { encode } from "lume/deps/hex.ts";
 import { posix } from "lume/deps/path.ts";
 import modifyUrls from "lume/plugins/modify_urls.ts";
 
 import { extname } from "https://deno.land/std@0.109.0/path/mod.ts";
 
-import type { Page, Plugin, Site } from "lume/core.ts";
+import type { Plugin } from "lume/core/site.ts";
+import { Page } from "lume/core/file.ts";
+import Site from "lume/core/site.ts";
 import type { Element } from "lume/deps/dom.ts";
 
 export interface Options {

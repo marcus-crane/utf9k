@@ -1,16 +1,17 @@
 // Lume
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
-import esbuild from "lume/plugins/esbuild.ts";
+// import esbuild from "lume/plugins/esbuild.ts";
 import metas from "lume/plugins/metas.ts";
 import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
+import remark from "lume-src/plugins/remark.ts";
 
 // Experimental Plugins
-import redirect from "lume-exp/redirect/mod.ts"
+import redirect from "./_plugins/redirect.ts"
 
 // NPM
 import rehypePrettyCode from "rehype-pretty-code";
@@ -26,17 +27,14 @@ import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
 import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
-import remark from "./_plugins/remark.ts";
 import { fnv_1a } from "./_utils/fnv_1a.ts"
 
-// TODO: Remove when upgrading to 2.0
-const search = { returnPageData: true };
 const site = lume({
     location: new URL("https://utf9k.net"),
     server: {
         port: 1313
     },
-}, { search });
+});
 
 const rehypePrettyCodeOpts = {
     theme: {
@@ -57,7 +55,6 @@ const rehypeAutolinkHeadingsOpts = {
     content: fromHtmlIsomorphic('¶ ', { fragment: true })
 }
 
-// TODO: data https://lume.land/plugins/search/#returnpagedata
 site.use(date());
 site.use(feed({
     output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],
@@ -71,7 +68,7 @@ site.use(feed({
     items: {
         title: "=title",
         description: "=description",
-        date: "=date",
+        published: "=date",
         content: "=children",
         lang: "=lang",
     },
@@ -88,7 +85,7 @@ site.use(remark({
         rehypePostImageWrapper,
         [rehypeAutolinkHeadings, rehypeAutolinkHeadingsOpts]
     ],
-    remarkOptions: {
+    rehypeOptions: {
         footnoteLabelProperties: {
             className: ['sr-only', 'littlefoot--print']
         }
@@ -133,8 +130,12 @@ site.ignore(
 
 site.process(
     [".html"],
-    async (page) => {
-        page.content = await prettier.format(page.content, { parser: "html", printWidth: 120 })
+    async (pages) => {
+        for (const page of pages) {
+            if (page.content !== undefined) {
+                page.content = await prettier.format(page.content.toString(), { parser: "html", printWidth: 120 })
+            }
+        }
     }
 )
 
