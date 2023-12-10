@@ -1,7 +1,7 @@
 import binaryLoader from "lume/core/loaders/binary.ts";
 import { merge } from "lume/core/utils/object.ts";
 import { getPathAndExtension } from "lume/core/utils/path.ts";
-import { encode } from "lume/deps/hex.ts";
+import { encodeHex } from "lume/deps/hex.ts";
 import { posix } from "lume/deps/path.ts";
 import modifyUrls from "lume/plugins/modify_urls.ts";
 
@@ -37,6 +37,7 @@ export default function (userOptions?: Partial<Options>): Plugin {
   const options = merge(defaults, userOptions);
 
   return (site: Site) => {
+
     site.use(modifyUrls({ fn: replace }));
 
     async function replace(url: string | null, page: Page, element: Element) {
@@ -118,9 +119,8 @@ export default function (userOptions?: Partial<Options>): Plugin {
       // TODO: See above when retrieving file content
       const buffer = new Uint8Array(content);
       const hashBuffer = await crypto.subtle.digest("SHA-1", buffer);
-      const hex = encode(new Uint8Array(hashBuffer));
-      const hash = new TextDecoder().decode(hex);
-      return hash.substring(0, options.hashLength);
+      const hex = encodeHex(hashBuffer);
+      return hex.substring(0, options.hashLength);
     }
   };
 }

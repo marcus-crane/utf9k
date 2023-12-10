@@ -8,8 +8,8 @@
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
-    "build": "deno task lume",
-    "serve": "deno task lume -s",
+    "build": "MODE=build deno task lume",
+    "serve": "MODE=serve deno task lume -s",
     "build:deps": "./ci/install.sh",
     "build:metadata": "./ci/genmetadata.sh",
     "deploy": "./ci/deploy.sh",

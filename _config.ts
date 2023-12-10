@@ -23,11 +23,13 @@ import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
 import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
 
-
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
 import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
 import { fnv_1a } from "./_utils/fnv_1a.ts"
+
+// Used to toggle on/off certain plugins locally such as cache busting
+const mode = Deno.env.get("MODE")
 
 const site = lume({
     location: new URL("https://utf9k.net"),
@@ -108,7 +110,10 @@ site.use(nunjucks({
 }))
 site.use(metas())
 site.use(redirect())
-site.use(cache_busting())
+
+if (mode === "build") {
+    site.use(cache_busting())
+}
 
 // TODO: ESBuild + content hashing
 site.copy("css");
