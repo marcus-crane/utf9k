@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -818,7 +819,6 @@ footer {
   position: absolute;
   margin: -50rem;
   transition-duration: 3s;
-  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 45%, transparent 85%);
   mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 45%, transparent 85%);
   border-radius: 50%;
   opacity: 25%;
@@ -835,7 +835,6 @@ footer {
     height: 100%;
     transform-origin: center;
     border-radius: 50%;
-    -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 15%, transparent 65%);
     mask-image: radial-gradient(rgba(0, 0, 0, 1.0) 15%, transparent 65%);
     
 }

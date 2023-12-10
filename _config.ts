@@ -9,6 +9,7 @@ import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 import remark from "lume-src/plugins/remark.ts";
+import postcss from "lume/plugins/postcss.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -110,13 +111,13 @@ site.use(nunjucks({
 }))
 site.use(metas())
 site.use(redirect())
+site.use(postcss())
 
 if (mode === "build") {
     site.use(cache_busting())
 }
 
 // TODO: ESBuild + content hashing
-site.copy("css");
 site.copy("js");
 site.copy("static", ".");
 
