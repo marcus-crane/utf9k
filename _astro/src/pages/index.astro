@@ -12,7 +12,15 @@ import manga from "../data/manga.json";
 
 import { getCollection } from 'astro:content';
 
+import WriteFile from "../components/WriteFile.astro"
+import RssXml from '../components/RssXml.astro';
+
 const blogPosts = await getCollection("blog");
+
+const rssPosts = await Astro.glob('../content/blog/**/*.mdx');
+
+const publicDirUrl = new URL(import.meta.url);
+const rssPath = new URL("index.xml", publicDirUrl)
 ---
 
 <BaseLayout title="Welcome to Astro.">
@@ -175,3 +183,7 @@ const blogPosts = await getCollection("blog");
     import "../js/live-player";
   </script>
 </BaseLayout>
+
+<WriteFile fileUrl={rssPath} slot="rss-writer">
+  <RssXml allPosts={rssPosts} slot="rss-writer" />
+</WriteFile>

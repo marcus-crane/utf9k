@@ -1,0 +1,13 @@
+---
+import path from 'node:path';
+import fs from 'node:fs/promises';
+
+const distFolder = './dist';
+const filename = 'rss.xml';
+const fileUrl = path.join(distFolder, filename);
+
+if (Astro.slots.has('rss-writer')) {
+	const html = await Astro.slots.render('rss-writer');
+	await fs.writeFile(fileUrl, html);
+}
+---

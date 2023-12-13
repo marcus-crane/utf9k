@@ -14,7 +14,6 @@ let seenYears: Set<number> = new Set()
   {
     // TODO: Invent something nicer
     reviews
-      .filter(p => !p.data.draft)
       .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
       .reverse()
       .map((r) => {

@@ -1,0 +1,39 @@
+---
+import type { MDXInstance } from 'astro';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
+import path from 'path';
+
+const allPosts: MDXInstance<Record<string, any>>[] = Astro.props.allPosts;
+
+const rssHeaderXml = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0">
+  <channel>
+    <title>${SITE_TITLE}</title>
+    <description><![CDATA[ ${SITE_DESCRIPTION} ]]></description>
+    <link>${SITE_URL}</link>`;
+
+const rssFooterXml = `  </channel>
+  </rss>
+  `;
+---
+<Fragment set:html={rssHeaderXml} />
+{allPosts.map(post =>
+  <Fragment set:html={`
+    <item>
+      <title>${post.frontmatter.title.replace('&', '&amp;')}</title>
+      <link>${new URL(
+        path.join("/", path.basename(post.file, path.extname(post.file))),
+        SITE_URL
+      )}</link>
+      <guid>${new URL(
+        path.join("/", path.basename(post.file, path.extname(post.file))),
+        SITE_URL
+      )}</guid>
+      <description><![CDATA[ ${post.frontmatter.description}]]></description>
+      <pubDate>${post.frontmatter.date}</pubDate>
+      <content:encoded><![CDATA[`} />
+      <post.Content/>
+    <Fragment set:html={`]]></content:encoded>
+    </item>`} />)}
+<Fragment set:html={rssFooterXml} />
