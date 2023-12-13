@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Base.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  date?: Date;
+  minutesRead?: string;
+}
+
+const { title, description, date, minutesRead } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <article>
+    <header>
+      <h1>{title}</h1>
+      <div id="post-meta">
+        {date !== undefined && (
+        <time datetime={date.toUTCString()}>
+          {
+            date.toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+          }
+        </time>)}{minutesRead !== undefined && ` · ${minutesRead}`}
+      </div>
+    </header>
+    <div id="post-body">
+      <slot />
+    </div>
+  </article>
+</Layout>

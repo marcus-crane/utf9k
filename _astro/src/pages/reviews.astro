@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/Base.astro";
+import ReviewList from "../components/ReviewList.astro";
+
+const reviews = await getCollection("reviews");
+---
+
+<BaseLayout title="Reviews" description="Years ago, I used to write game reviews as a personal hobby. That website no longer exists but I've archived them to reflect my writing progression over time.">
+  <main>
+    <header>
+      <h1>Reviews</h1>
+    </header>
+    <ReviewList reviews={reviews} />
+  </main>
+</BaseLayout>

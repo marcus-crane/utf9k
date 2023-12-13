@@ -9,6 +9,7 @@
       "npm:markdown-it-deflist@2.1.0": "npm:markdown-it-deflist@2.1.0",
       "npm:markdown-it-deflist@3.0.0": "npm:markdown-it-deflist@3.0.0",
       "npm:markdown-it@13.0.2": "npm:markdown-it@13.0.2",
+      "npm:mdast-util-to-string@^4.0.0": "npm:mdast-util-to-string@4.0.0",
       "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
       "npm:postcss-import@15.1.0": "npm:postcss-import@15.1.0_postcss@8.4.32",
       "npm:postcss-nesting@12.0.1": "npm:postcss-nesting@12.0.1_postcss@8.4.32_postcss-selector-parser@6.0.13",

@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from "astro:content";
+import dayjs from 'dayjs'
+
+interface Props {
+  posts: CollectionEntry<"blog">[];
+}
+
+const { posts } = Astro.props;
+let seenYears: Set<number> = new Set()
+---
+
+<ul>
+  {
+    // TODO: Invent something nicer
+    posts
+      .filter(p => !p.data.draft)
+      .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+      .reverse()
+      .map((p) => {
+        const currentYear = p.data.date.getFullYear();
+        let header = null;
+        if (!seenYears.has(currentYear)) {
+          header = <h2>{currentYear}</h2>
+          seenYears.add(currentYear)
+        }
+        return (
+          <>
+            {header}
+            <li>
+              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+              <time>{dayjs(p.data.date).format('MMM DD')}</time>
+            </li>
+          </>
+        );
+      })
+  }
+</ul>

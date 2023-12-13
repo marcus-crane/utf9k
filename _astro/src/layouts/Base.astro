@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={title} description={description} />
+  </head>
+  <body>
+    <Nav />
+    <div id="content">
+      <slot />
+    </div>
+    <div id="fullscreen"></div>
+  </body>
+  <script>
+    import littlefoot from "littlefoot";
+
+    littlefoot()
+  </script>
+</html>

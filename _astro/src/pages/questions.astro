@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/Base.astro";
+import QuestionList from "../components/QuestionList.astro";
+
+const questions = await getCollection("questions");
+---
+
+<BaseLayout title="Questions" description="From time to time, I'll discover something I want to remember and jot it down here">
+  <main>
+    <header>
+      <h1>Answers to questions I'll soon forget</h1>
+      <form id="search" role="search">
+        <label for="search-input">I'm curious about</label>
+        <input
+          disabled
+          type="search"
+          id="search-input"
+          class="search-input bg-gray-100"
+        />
+        <label class="text-red-500" id="error-output"></label>
+      </form>
+    </header>
+    <QuestionList questions={questions} />
+  </main>
+</BaseLayout>
+
+<script>
+  import "../js/question-search";
+</script>
