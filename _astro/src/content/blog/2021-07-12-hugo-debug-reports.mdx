@@ -14,6 +14,10 @@ tags:
 
 import { Tweet } from "@astro-community/astro-embed-twitter"
 
+import Notice from "../../components/Notice.astro"
+
+import gags from "../../data/gags.yml";
+
 Recently I discovered that [Hugo](https://gohugo.io) added support for [inline shortcodes](https://gohugo.io/templates/shortcode-templates/) like 30 versions ago.
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
@@ -32,8 +36,10 @@ To give an idea of what this means, here's a reminder on how you were required t
 </div>
 
 <!-- content/blog/example-post.md -->
-# This is an example post {{ notice title="This is a notice" }} This is the
-content inside of a notice shortcode {{ /notice }}
+# This is an example post
+{{ notice title="This is a notice" }}
+This is the content inside of a notice shortcode
+{{ /notice }}
 ```
 
 <sup>Minor caveat with shortcode syntax[^syntax]</sup>
@@ -62,16 +68,20 @@ Don't believe me? Here's that same inline shortcode embedded in this very post:
 
 <details>
   <summary>Check out these fun gag lines I wrote</summary>
-  {{< readfile.inline >}}
-<ul>
-  {{ range $.Site.Data.gags }}
-  <li>{{ . }}</li>
-  {{ end }}
+  <ul>
+  {gags.map(g => <li>{g}</li>)}
   </ul>
-  {{< /readfile.inline >}}
 </details>
 
 If any of these look familiar, I just used an inline shortcode to read from the same file that powers the footer.
+
+<Notice emoji="🗞️" title="Don't believe everything you read online!">
+The above shortcode did work (and probably still does) but at the time of writing of update, my site no longer uses Hugo.
+
+I've recreated the behaviour you would see using [MDX](https://mdxjs.com/) but as such, the example above is no longer literally powered by Hugo shortcodes.
+
+That said, Hugo shortcodes are still a cool middleground to have some dynamic content that is pulled in and statically built without going all in on Javascript.
+</Notice>
 
 I haven't used inline shortcodes to their full potential yet but I'd like to use it to add a bit more flavour to posts in future where having a dedicated shortcode would be a bit overkill.
 
