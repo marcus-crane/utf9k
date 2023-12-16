@@ -185,6 +185,7 @@ const isProduction = process.env.NODE_ENV === 'production'
   </script>
 </BaseLayout>
 
+{/* TODO: Try to render a static instance of RssXml locally */}
 {isProduction && (
 <WriteFile slot="rss-writer">
   <RssXml allPosts={rssPosts} slot="rss-writer" />
