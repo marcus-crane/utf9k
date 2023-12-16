@@ -16,7 +16,7 @@ In a sense, that's exactly the case but perhaps not for quite the reasons you mi
 
 ## What are oil futures?
 
-> with the pandemic bringing the economy to a standstill, there is so much unused oil sloshing around that American energy companies have run out of room to store it. And if there’s no place to put the oil, no one wants a crude contract that is about to come due.
+> with the pandemic bringing the economy to a standstill, there is so much unused oil sloshing around that American energy companies have run out of room to store it. And if there's no place to put the oil, no one wants a crude contract that is about to come due.
 
 In reality, traders hold a contract that, generally after about 3 months, is translated into a physical delivery of oil.
 

@@ -13,11 +13,15 @@ tags:
   - "tidal"
 ---
 
-{{% notice emoji="🖼" title="Look at this photograph" %}}
+import Notice from "../../components/Notice.astro"
+
+import { Tweet } from "@astro-community/astro-embed-twitter"
+
+<Notice emoji="🖼" title="Look at this photograph">
 Due to the nature of this post, it's pretty image heavy.
 
 Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
-{{% /notice %}}
+</Notice>
 
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
@@ -125,11 +129,11 @@ Tidal did have Jay-Z content as an exclusive in the past, which also included th
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
-{{< tweet "jack" 1367460921937817602 >}}
+<Tweet id="https://twitter.com/jack/status/1367460921937817602" />
 
 Jack Dorsey mentioned his vision for the future of Tidal:
 
-> We’ll work on entirely new listening experiences to bring fans closer together, simple integrations for merch sales, modern collaboration tools, and new complementary revenue streams.
+> We'll work on entirely new listening experiences to bring fans closer together, simple integrations for merch sales, modern collaboration tools, and new complementary revenue streams.
 
 That basically means nothing to me but whatever. The Carter Administration is still on the board of <strike>Square</strike> Block and that can only mean one thing.
 
@@ -237,8 +241,6 @@ If you remember, something I wanted was to continue powering the "Now playing" w
 ✅ for **A good API** (2/3)
 
 Initially playing Tidal content through the dedicated "Music On TIDAL" library[^source] didn't surface anything in the API but by virtue of adding items to our regular music library instead, we get full metadata available via the `/status/sessions` endpoint.
-
-<details><summary>Here's the absolute mountain of information available for you to play with</summary>
 
 ```json
 {
@@ -428,8 +430,6 @@ Initially playing Tidal content through the dedicated "Music On TIDAL" library[^
 }
 ```
 
-</details>
-
 We can definitely work with that!
 
 It is possible to have multiple sessions at once, and Plexamp often takes a while for sessions to terminate upon closing the app but I just sidestep that by filtering for any sessions that aren't paused. Don't worry, there'll be a section for gotchas like this later on.
@@ -444,7 +444,7 @@ Kind of but not really?
 
 At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
 
-{{< tweet "plexamp" "1489024846033915908" >}}
+<Tweet id="https://twitter.com/plexamp/status/1489024846033915908" />
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
@@ -476,7 +476,7 @@ I had the misfortune of having this integration go down briefly due to an outage
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
-{{% notice emoji="🔑" title="A tip for Plex server owners" %}}
+<Notice emoji="🔑" title="A tip for Plex server owners">
 [Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
 
 They're relatively stable but it's inevitable that the authentication server will fail again one day.
@@ -484,7 +484,7 @@ They're relatively stable but it's inevitable that the authentication server wil
 That isn't a slight towards Plex, it's just an unavoidable reality about computers.
 
 Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
-{{% /notice %}}
+</Notice>
 
 While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and this is where it can be useful as a backup.
 
@@ -526,7 +526,7 @@ If you're curious, here's how the aural mashup shown above sounded[^riaa]
 
 <center>
   <audio controls>
-    <source src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg">
+    <source src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg" />
     Your browser doesn't support the audio tag :(
   </audio>
 </center>
@@ -537,7 +537,7 @@ This one seems like a weirdly obvious oversight so I'm going to give the benefit
 
 The team are definitely aware of it:
 
-{{< tweet "plexamp" "1491494752327372801" >}}
+<Tweet id="https://twitter.com/plexamp/status/1491494752327372801" />
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 
