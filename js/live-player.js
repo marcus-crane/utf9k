@@ -242,6 +242,7 @@ function renderHistory(data) {
       break
     case PODCAST:
       emoji = "🎤"
+      break
     default:
       emoji = ""
     }
