@@ -21,8 +21,7 @@ const blogPosts = await getCollection("blog");
 // who adapted it from https://scottwillsey.com/rss-pt2/
 const rssPosts = await Astro.glob('../content/blog/**/*.mdx');
 
-const publicDirUrl = new URL(import.meta.url);
-const rssPath = new URL("index.xml", publicDirUrl)
+const isProduction = process.env.NODE_ENV === 'production'
 ---
 
 <BaseLayout title="Welcome to Astro.">
@@ -186,6 +185,8 @@ const rssPath = new URL("index.xml", publicDirUrl)
   </script>
 </BaseLayout>
 
-<WriteFile fileUrl={rssPath} slot="rss-writer">
-  <RssXml allPosts={isProduction ? rssPosts : []} slot="rss-writer" />
+{isProduction && (
+<WriteFile slot="rss-writer">
+  <RssXml allPosts={rssPosts} slot="rss-writer" />
 </WriteFile>
+)}
