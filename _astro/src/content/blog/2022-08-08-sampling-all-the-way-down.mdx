@@ -52,7 +52,7 @@ It has its [own sampling](https://docs.datadoghq.com/tracing/trace_pipeline/inge
 
 You might also get rate limited, causing traces to probably be discarded, if you have [too many services connecting to a single agent](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1152), [your agent is using too much memory](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1082) or [your agent is using too much CPU](https://github.com/DataDog/datadog-agent/blob/main/pkg/config/config_template.yaml#L1091).
 
-![A screenshot of the Datadog service ingestion screen showing a service that has <0.1% of traces sampled due to agent CPU or RAM usage](https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_traffic_breakdown.a0e421f3503064b7d03f1c3683a67fc4.png?auto=format)
+![A screenshot of the Datadog service ingestion screen showing a service that has < 0.1% of traces sampled due to agent CPU or RAM usage](https://datadog-docs.imgix.net/images/tracing/trace_indexing_and_ingestion/service_traffic_breakdown.a0e421f3503064b7d03f1c3683a67fc4.png?auto=format)
 
 On top of all this, there's further sampling beyond the "10 traces/second" which is a [max of 200 trace events per second](https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits/#maximum-events-per-second-limit). What is a trace event versus a trace you ask? I have no idea!
 
