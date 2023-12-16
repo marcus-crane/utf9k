@@ -10,7 +10,7 @@ const progressArea = document.querySelector("#progress")
 
 const sun = document.querySelector("#sun")
 
-const PODCAST = 'podcast'
+const PODCAST = 'podcast_episode'
 const MANGA = 'manga'
 const GAMING = 'gaming'
 const EPISODE = 'episode'
