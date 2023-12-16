@@ -19,9 +19,9 @@ const blogPosts = await getCollection("blog");
 
 // MDX RSS hack taken from https://github.com/kogakure/website-astro-stefanimhoff.de/blob/8ecf5b3644dee879a3d344a8de08c5ad0be895cf/src/pages/index.astro#L14
 // who adapted it from https://scottwillsey.com/rss-pt2/
-const rssPosts = await Astro.glob('../content/blog/**/*.mdx');
 
 const isProduction = process.env.NODE_ENV === 'production'
+const rssPosts = isProduction ? await Astro.glob('../content/blog/**/*.mdx') : [];
 ---
 
 <BaseLayout title="Welcome to Astro.">
