@@ -270,6 +270,7 @@ pre {
 .post-stream li {
   list-style: none;
   text-align: center;
+  margin-right: .5rem;
 }
 
 /* Player history */
@@ -637,6 +638,10 @@ table {
 /* Questions */
 form#search {
   margin-top: 1rem;
+}
+
+ul li.question span {
+  margin-right: .3rem;
 }
 
 /* Grid lists */

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/Core.astro";
+import BaseLayout from "../layouts/Base.astro";
 import Nav from "../components/Nav.astro"
 
 import type { BookList } from "../schemas/books"
@@ -150,7 +150,7 @@ const rssPosts = isProduction ? await Astro.glob('../content/blog/**/*.mdx') : [
                 blogPosts
                   .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
                   .reverse()
-                  .slice(0, 5)
+                  .slice(0, 6)
                   .map(p => <li><a href={`/blog/${p.slug}`}>{p.data.title}</a></li>)
               }
             </ul>
