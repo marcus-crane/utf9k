@@ -25,7 +25,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 const rssPosts = isProduction ? await Astro.glob('../content/blog/**/*.mdx') : [];
 ---
 
-<BaseLayout title="Welcome to Astro." bodystyle="overflow-x: hidden;">
+<BaseLayout bodystyle="overflow-x: hidden;">
   <div id="sun"></div>
   <Nav />
   <div id="content">

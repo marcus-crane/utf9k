@@ -10,6 +10,7 @@ const progressArea = document.querySelector("#progress")
 
 const sun = document.querySelector("#sun")
 
+const PODCAST = 'podcast_episode'
 const MANGA = 'manga'
 const GAMING = 'gaming'
 const EPISODE = 'episode'
@@ -19,8 +20,8 @@ const TRACK = 'track'
 const gamingVerb = "🕹 I'm currently playing"
 const gamingVerbPastTense = "🕹 I was recently playing"
 
-const musicVerb = "🎧 I'm currently listening to"
-const musicVerbPastTense = "🎧 I was recently listening to"
+const audioVerb = "🎧 I'm currently listening to"
+const audioVerbPastTense = "🎧 I was recently listening to"
 
 const tvVerb = "📺 I'm currently watching"
 const tvVerbPastTense = "📺 I was recently watching"
@@ -33,6 +34,7 @@ const readingVerbPastTense = "📚 I was recently reading"
 // for say; manga so when that changes, we want to re-fetch
 // history instead of deferring
 const liveliness = {
+  PODCAST: true,
   MANGA: false,
   GAMING: false,
   EPISODE: true,
@@ -127,12 +129,13 @@ function renderLivePlayer(data) {
       action.innerText = tvVerbPastTense
     }
     break
+  case PODCAST:
   case TRACK:
     if (data.is_active) {
-      action.innerText = musicVerb
+      action.innerText = audioVerb
       showProgression = true
     } else {
-      action.innerText = musicVerbPastTense
+      action.innerText = audioVerbPastTense
     }
     break
   default:
@@ -236,6 +239,9 @@ function renderHistory(data) {
       break
     case MANGA:
       emoji = "📚"
+      break
+    case PODCAST:
+      emoji = "🎤"
       break
     default:
       emoji = ""

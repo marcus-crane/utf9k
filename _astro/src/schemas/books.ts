@@ -11,6 +11,6 @@ type Book = {
     cover: string;
     link: string;
     date_finished: Date | null;
-    rating: number | null;
+    recommended: boolean;
     progress: number;
 }
