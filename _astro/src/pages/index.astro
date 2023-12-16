@@ -17,6 +17,8 @@ import RssXml from '../components/RssXml.astro';
 
 const blogPosts = await getCollection("blog");
 
+// MDX RSS hack taken from https://github.com/kogakure/website-astro-stefanimhoff.de/blob/8ecf5b3644dee879a3d344a8de08c5ad0be895cf/src/pages/index.astro#L14
+// who adapted it from https://scottwillsey.com/rss-pt2/
 const rssPosts = await Astro.glob('../content/blog/**/*.mdx');
 
 const publicDirUrl = new URL(import.meta.url);
@@ -185,5 +187,5 @@ const rssPath = new URL("index.xml", publicDirUrl)
 </BaseLayout>
 
 <WriteFile fileUrl={rssPath} slot="rss-writer">
-  <RssXml allPosts={rssPosts} slot="rss-writer" />
+  <RssXml allPosts={isProduction ? rssPosts : []} slot="rss-writer" />
 </WriteFile>
