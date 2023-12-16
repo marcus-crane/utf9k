@@ -1,0 +1,20 @@
+---
+import Layout from "./Base.astro";
+
+import Nav from "../components/Nav.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <Nav />
+  <div id="content">
+    <slot />
+  </div>
+  <div id="fullscreen"></div>
+</Layout>

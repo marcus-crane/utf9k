@@ -2,29 +2,29 @@
 interface Props {
   title: string;
   description?: string;
+  bodystyle?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, bodystyle } = Astro.props;
 
 import Head from "../components/Head.astro";
-import Nav from "../components/Nav.astro";
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <Head title={title} description={description} />
   </head>
-  <body>
-    <Nav />
-    <div id="content">
-      <slot />
-    </div>
+  <body style={bodystyle}>
+    <slot />
+    <script>
+      import littlefoot from "littlefoot";
+    
+      littlefoot()
+    </script>
     <div id="fullscreen"></div>
+    <script>
+      import "../js/image-viewer";
+    </script>
   </body>
-  <script>
-    import littlefoot from "littlefoot";
-
-    littlefoot()
-  </script>
 </html>
