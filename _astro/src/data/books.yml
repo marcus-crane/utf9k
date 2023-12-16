@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=../static/schemas/books.schema.json
 - list: 2023
   goal: 24
   books:
@@ -7,7 +8,7 @@
     #   cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
     #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
     #   date_finished: null
-    #   rating: null
+    #   recommended: false
     #   progress: 11
 
     # - title: The Seven-Day Stress Prescription
@@ -16,7 +17,7 @@
     #   cover: https://covers.openlibrary.org/b/id/14304273-L.jpg
     #   link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
     #   date_finished: null
-    #   rating: null
+    #   recommended: false
     #   progress: 10
 
     - title: High Performance Browser Networking
@@ -25,17 +26,8 @@
       cover: https://covers.openlibrary.org/b/id/14411035-L.jpg
       link: https://openlibrary.org/works/OL17581297W/High_Performance_Browser_Networking
       date_finished: null
-      rating: null
-      progress: 56
-
-    - title: Taxtopia
-      subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
-      author: The Rebel Accountant
-      cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
-      link: https://openlibrary.org/works/OL28024085W/Taxtopia
-      date_finished: null
-      rating: null
-      progress: 18
+      recommended: false
+      progress: 67
 
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
@@ -43,7 +35,7 @@
       cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
       link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_finished: null
-      rating: null
+      recommended: false
       progress: 32
 
     # - title: Unscripted
@@ -52,7 +44,7 @@
     #   cover: https://covers.openlibrary.org/b/id/14369191-L.jpg
     #   link: https://openlibrary.org/works/OL28158768W/Unscripted
     #   date_finished: null
-    #   rating: null
+    #   recommended: false
     #   progress: 15
 
     # - title: What the CEO Wants You to Know
@@ -61,8 +53,17 @@
     #   cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
     #   link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
     #   date_finished: null
-    #   rating: null
+    #   recommended: false
     #   progress: 57
+
+    - title: Taxtopia
+      subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
+      author: The Rebel Accountant
+      cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
+      link: https://openlibrary.org/works/OL28024085W/Taxtopia
+      date_finished: 2023-12-05
+      recommended: true
+      progress: 100
 
     - title: The PARA Method
       subtitle: Simplify, Organize, and Master Your Digital Life
@@ -70,7 +71,7 @@
       cover: https://covers.openlibrary.org/b/id/14417094-L.jpg
       link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
       date_finished: 2023-08-30
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Hanging Out
@@ -79,7 +80,7 @@
       cover: https://covers.openlibrary.org/b/id/13847599-L.jpg
       link: https://openlibrary.org/works/OL27939130W/Hanging_Out
       date_finished: 2023-06-06
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Like, Comment, Subscribe
@@ -88,7 +89,7 @@
       cover: https://covers.openlibrary.org/b/id/12895071-L.jpg
       link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
       date_finished: 2023-02-07
-      rating: 5
+      recommended: true
       progress: 100
 
 - list: 2022
@@ -100,7 +101,7 @@
       cover: https://covers.openlibrary.org/b/id/12742378-L.jpg
       link: https://openlibrary.org/works/OL27739453W/Build
       date_finished: 2022-10-29
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: High Output Management
@@ -109,7 +110,7 @@
       cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
       link: https://openlibrary.org/works/OL2355834W/High_Output_Management
       date_finished: 2022-10-23
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Building a Second Brain
@@ -118,7 +119,7 @@
       cover: https://covers.openlibrary.org/b/id/12372866-L.jpg
       link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
       date_finished: 2022-09-20
-      rating: 4
+      recommended: false
       progress: 100
 
     - title: Slow Horses
@@ -127,7 +128,7 @@
       cover: https://covers.openlibrary.org/b/id/12861756-L.jpg
       link: https://openlibrary.org/works/OL18630860W
       date_finished: 2022-09-18
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Ruined by Design
@@ -136,7 +137,7 @@
       cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
       date_finished: 2022-02-24
-      rating: 3
+      recommended: false
       progress: 100
 
 - list: 2021
@@ -148,7 +149,7 @@
       cover: https://covers.openlibrary.org/b/id/11990973-L.jpg
       link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
       date_finished: 2021-11-06
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: Crossing the Chasm, 3rd Edition
@@ -157,7 +158,7 @@
       cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
       link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
       date_finished: 2021-08-09
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: The Usefulness of Useless Knowledge
@@ -166,7 +167,7 @@
       cover: https://covers.openlibrary.org/b/id/11456656-L.jpg
       link: https://openlibrary.org/works/OL24725948W/The_Usefulness_of_Useless_Knowledge
       date_finished: 2021-07-30
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Resilient Management
@@ -175,7 +176,7 @@
       cover: https://covers.openlibrary.org/b/id/11270402-L.jpg
       link: https://openlibrary.org/works/OL20750525W/Resilient_Management
       date_finished: 2021-07-19
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Big Four
@@ -184,7 +185,7 @@
       cover: https://covers.openlibrary.org/b/id/11194303-L.jpg
       link: https://openlibrary.org/works/OL19762252W/The_Big_Four
       date_finished: 2021-05-30
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Little Rice
@@ -193,7 +194,7 @@
       cover: https://covers.openlibrary.org/b/id/7984442-L.jpg
       link: https://openlibrary.org/works/OL17709914W/Little_Rice
       date_finished: 2021-05-05
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Waxman Report
@@ -202,7 +203,7 @@
       cover: https://covers.openlibrary.org/b/id/6421143-L.jpg
       link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
       date_finished: 2021-04-24
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: In the Beginning ...Was the Command Line
@@ -211,7 +212,7 @@
       cover: https://covers.openlibrary.org/b/id/6396549-L.jpg
       link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
       date_finished: 2021-02-20
-      rating: 2
+      recommended: false
       progress: 100
 
     - title: The Dip
@@ -220,7 +221,7 @@
       cover: https://covers.openlibrary.org/b/id/6405017-L.jpg
       link: https://openlibrary.org/works/OL2329204W/The_Dip
       date_finished: 2021-02-13
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Propaganda
@@ -229,7 +230,7 @@
       cover: https://covers.openlibrary.org/b/id/10413643-L.jpg
       link: https://openlibrary.org/works/OL21948057W/Propaganda
       date_finished: 2021-02-12
-      rating: 4
+      recommended: true
       progress: 100
 
 - list: 2020
@@ -241,7 +242,7 @@
       cover: https://covers.openlibrary.org/b/id/11220620-L.jpg
       link: https://openlibrary.org/works/OL17717287W/In_the_Plex
       date_finished: 2020-12-28
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: Naked Pictures of Famous People
@@ -250,7 +251,7 @@
       cover: https://covers.openlibrary.org/b/id/8345799-L.jpg
       link: https://openlibrary.org/works/OL1959419W/Naked_Pictures_of_Famous_People
       date_finished: 2020-12-05
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Checklist Manifesto
@@ -259,7 +260,7 @@
       cover: https://covers.openlibrary.org/b/id/11442271-L.jpg
       link: https://openlibrary.org/works/OL15436462W/The_Checklist_Manifesto
       date_finished: 2020-12-04
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Greenlights
@@ -268,7 +269,7 @@
       cover: https://covers.openlibrary.org/b/id/11442301-L.jpg
       link: https://openlibrary.org/works/OL23520310W/Greenlights
       date_finished: 2020-11-09
-      rating: 2
+      recommended: false
       progress: 100
 
     - title: The Death of Ivan Ilych
@@ -277,7 +278,7 @@
       cover: https://covers.openlibrary.org/b/id/8939341-L.jpg
       link: https://openlibrary.org/works/OL20281370W/The_Death_of_Ivan_Ilych
       date_finished: 2020-10-24
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: As We May Think
@@ -286,7 +287,7 @@
       cover: https://covers.openlibrary.org/b/id/11442310-L.jpg
       link: https://openlibrary.org/works/OL5098582W/As_We_May_Think
       date_finished: 2020-09-30
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Talking to My Daughter About the Economy
@@ -295,7 +296,7 @@
       cover: https://covers.openlibrary.org/b/id/8866724-L.jpg
       link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
       date_finished: 2020-09-30
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: The Miracle of Mindfulness
@@ -304,7 +305,7 @@
       cover: https://covers.openlibrary.org/b/id/11442319-L.jpg
       link: https://openlibrary.org/works/OL12381026W/The_Miracle_of_Mindfulness
       date_finished: 2020-09-19
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: On Bullshit
@@ -313,7 +314,7 @@
       cover: https://covers.openlibrary.org/b/id/10919760-L.jpg
       link: https://openlibrary.org/works/OL1829528W/On_Bullshit
       date_finished: 2020-09-15
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: The Curse of Bigness
@@ -322,7 +323,7 @@
       cover: https://covers.openlibrary.org/b/id/11442329-L.jpg
       link: https://openlibrary.org/works/OL19764853W/The_Curse_of_Bigness
       date_finished: 2020-09-14
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Memos from the Chairman
@@ -331,7 +332,7 @@
       cover: https://covers.openlibrary.org/b/id/11442346-L.jpg
       link: https://openlibrary.org/works/OL2646874W/Memos_from_the_Chairman
       date_finished: 2020-09-11
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Learning HTTP/2
@@ -340,7 +341,7 @@
       cover: https://covers.openlibrary.org/b/id/11442379-L.jpg
       link: https://openlibrary.org/works/OL20055086W/Learning_HTTP_2
       date_finished: 2020-09-04
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Master Switch
@@ -349,7 +350,7 @@
       cover: https://covers.openlibrary.org/b/id/11442411-L.jpg
       link: https://openlibrary.org/works/OL15118227W/The_Master_Switch
       date_finished: 2020-08-09
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Atomic Habits
@@ -358,7 +359,7 @@
       cover: https://covers.openlibrary.org/b/id/10958382-L.jpg
       link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
       date_finished: 2020-07-12
-      rating: 4
+      recommended: false
       progress: 100
 
     - title: The Inner Game of Tennis
@@ -367,7 +368,7 @@
       cover: https://covers.openlibrary.org/b/id/11442494-L.jpg
       link: https://openlibrary.org/works/OL20307725W/The_Inner_Game_of_Tennis
       date_finished: 2020-06-06
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Zen in the Art of Writing
@@ -376,7 +377,7 @@
       cover: https://covers.openlibrary.org/b/id/369269-L.jpg
       link: https://openlibrary.org/works/OL103179W/Zen_in_The_Art_of_Writing
       date_finished: 2020-05-11
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Red Tape
@@ -385,7 +386,7 @@
       cover: https://covers.openlibrary.org/b/id/613854-L.jpg
       link: https://openlibrary.org/works/OL3479766W/Red_Tape
       date_finished: 2020-03-23
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Why I Write
@@ -394,7 +395,7 @@
       cover: https://covers.openlibrary.org/b/id/11442618-L.jpg
       link: https://openlibrary.org/works/OL1168147W/Why_I_Write
       date_finished: 2020-02-25
-      rating: 4
+      recommended: false
       progress: 100
 
     - title: Dirty Politics
@@ -403,7 +404,7 @@
       cover: https://covers.openlibrary.org/b/id/7286103-L.jpg
       link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
       date_finished: 2020-02-09
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Getting Things Done
@@ -412,7 +413,7 @@
       cover: https://covers.openlibrary.org/b/id/10434117-L.jpg
       link: https://openlibrary.org/works/OL20777755W/Getting_Things_Done
       date_finished: 2020-02-07
-      rating: 4
+      recommended: false
       progress: 100
 
     - title: The Information Diet
@@ -421,7 +422,7 @@
       cover: https://covers.openlibrary.org/b/id/7089729-L.jpg
       link: https://openlibrary.org/works/OL16538242W/The_Information_Diet
       date_finished: 2020-01-30
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Myth of Sisyphus
@@ -430,7 +431,7 @@
       cover: https://covers.openlibrary.org/b/id/12726570-L.jpg
       link: https://openlibrary.org/works/OL1230690W/The_Myth_of_Sisyphus_and_Other_Essays
       date_finished: 2020-01-26
-      rating: 3
+      recommended: false
       progress: 100
 
 - list: 2019
@@ -442,7 +443,7 @@
       cover: https://covers.openlibrary.org/b/id/9398045-L.jpg
       link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
       date_finished: 2019-12-25
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Super Pumped
@@ -451,7 +452,7 @@
       cover: https://covers.openlibrary.org/b/id/8777999-L.jpg
       link: https://openlibrary.org/works/OL20125074W/Super_Pumped
       date_finished: 2019-11-26
-      rating: 4
+      recommended: true
       progress: 100
 
 - list: 2018
@@ -463,7 +464,7 @@
       cover: https://covers.openlibrary.org/b/id/404390-L.jpg
       link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
       date_finished: 2018-12-23
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Phoenix Project
@@ -472,7 +473,7 @@
       cover: https://covers.openlibrary.org/b/id/9151976-L.jpg
       link: https://openlibrary.org/works/OL16806686W/The_Phoenix_Project
       date_finished: 2018-12-23
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: The Fifth Discipline
@@ -481,7 +482,7 @@
       cover: https://covers.openlibrary.org/b/id/7018044-L.jpg
       link: https://openlibrary.org/works/OL4440692W/The_Fifth_Discipline
       date_finished: 2018-08-05
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: The Flinch
@@ -490,7 +491,7 @@
       cover: https://covers.openlibrary.org/b/id/11443316-L.jpg
       link: https://openlibrary.org/works/OL24137194W/The_Flinch
       date_finished: 2018-05-11
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Twin Peaks
@@ -499,7 +500,7 @@
       cover: https://covers.openlibrary.org/b/id/8289411-L.jpg
       link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
       date_finished: 2018-04-28
-      rating: 4
+      recommended: false
       progress: 100
 
     - title: Site Reliability Engineering
@@ -508,7 +509,7 @@
       cover: https://covers.openlibrary.org/b/id/9196728-L.jpg
       link: https://openlibrary.org/works/OL20028554W/Site_Reliability_Engineering
       date_finished: 2018-02-24
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Tales from the Loop
@@ -517,7 +518,7 @@
       cover: https://covers.openlibrary.org/b/id/10866158-L.jpg
       link: https://openlibrary.org/works/OL20040484W/Tales_from_the_Loop
       date_finished: 2018-02-06
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Shit London
@@ -526,7 +527,7 @@
       cover: https://covers.openlibrary.org/b/id/7799604-L.jpg
       link: https://openlibrary.org/works/OL17548993W/Shit_London
       date_finished: 2018-01-24
-      rating: 3
+      recommended: false
       progress: 100
 
     - title: Japanese Game Graphics
@@ -535,7 +536,7 @@
       cover: https://covers.openlibrary.org/b/id/29998-L.jpg
       link: https://openlibrary.org/works/OL274966W/Japanese_Game_Graphics
       date_finished: 2018-01-14
-      rating: 5
+      recommended: true
       progress: 100
 
     - title: Show Stopper!
@@ -544,7 +545,7 @@
       cover: https://covers.openlibrary.org/b/id/7885313-L.jpg
       link: https://openlibrary.org/works/OL106726W/Show-Stopper
       date_finished: 2018-01-14
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Half-Life 2
@@ -553,7 +554,7 @@
       cover: https://covers.openlibrary.org/b/id/510697-L.jpg
       link: https://openlibrary.org/works/OL8010203W/Half-Life_2
       date_finished: 2018-01-14
-      rating: 4
+      recommended: true
       progress: 100
 
     - title: Pendulum
@@ -562,5 +563,5 @@
       cover: https://covers.openlibrary.org/b/id/11443428-L.jpg
       link: https://openlibrary.org/works/OL22646312W/Pendulum
       date_finished: 2018-01-13
-      rating: 4
+      recommended: false
       progress: 100

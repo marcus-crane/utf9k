@@ -11,6 +11,15 @@
       completed: "0000-00-00"
 - list: Stalled
   games:
+    - id: 10893684
+      title: Rogue Galaxy
+      link: https://howlongtobeat.com/game/7946
+      platform: PlayStation 4
+      cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
+      replay: false
+      notes: ""
+      updated: "2023-11-05 00:32:07"
+      completed: "0000-00-00"
     - id: 745959
       title: "Final Fantasy XIV: A Realm Reborn"
       link: https://howlongtobeat.com/game/12654
@@ -154,15 +163,6 @@
       replay: false
       notes: ""
       updated: "2023-07-30 00:01:13"
-      completed: "0000-00-00"
-    - id: 10893684
-      title: Rogue Galaxy
-      link: https://howlongtobeat.com/game/7946
-      platform: PlayStation 4
-      cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
-      replay: false
-      notes: ""
-      updated: "2021-07-11 08:13:15"
       completed: "0000-00-00"
     - id: 10893641
       title: "The Witcher 2: Assassins of Kings"
