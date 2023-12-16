@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../static/schemas/books.schema.json
+# yaml-language-server: $schema=../../public/schemas/books.schema.json
 - list: 2023
   goal: 24
   books:
