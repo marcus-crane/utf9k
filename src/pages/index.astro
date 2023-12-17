@@ -16,7 +16,9 @@ import { getCollection } from 'astro:content';
 import WriteFile from "../components/WriteFile.astro"
 import RssXml from '../components/RssXml.astro';
 
-const blogPosts = await getCollection("blog");
+const blogPosts = await getCollection("blog", ({ data }) => {
+  return data.draft !== true
+});
 
 // MDX RSS hack taken from https://github.com/kogakure/website-astro-stefanimhoff.de/blob/8ecf5b3644dee879a3d344a8de08c5ad0be895cf/src/pages/index.astro#L14
 // who adapted it from https://scottwillsey.com/rss-pt2/

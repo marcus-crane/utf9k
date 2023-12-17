@@ -3,9 +3,15 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
 import dayjs from 'dayjs'
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog", ({ data }) => {
+  return data.draft !== true
+});
 let seenYears: Set<number> = new Set()
----
+
+const processedPosts = posts
+  .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+  .reverse()
+  ---
 
 <BaseLayout title="Posts I've written" description="Here you can find all of the blog posts I've hand crafted over the years">
   <main>
@@ -15,10 +21,7 @@ let seenYears: Set<number> = new Set()
     <ul>
       {
         // TODO: Invent something nicer
-        posts
-          .filter(p => !p.data.draft)
-          .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
-          .reverse()
+        processedPosts
           .map((p) => {
             const currentYear = p.data.date.getFullYear();
             let header = null;

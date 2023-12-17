@@ -6,7 +6,6 @@ import path from 'path';
 const allPosts: MDXInstance<Record<string, any>>[] = await Astro.glob('../content/blog/**/*.mdx');
 
 const processedPosts = allPosts
-  .filter(p => !p.frontmatter.draft)
   .sort((a, b) => (a.frontmatter.date > b.frontmatter.date ? 1 : a < b ? -1 : 0))
   .reverse()
 
