@@ -1,6 +1,6 @@
 # utf9k
 
-This is my personal website, which is powered by [Lume](https://github.com/lumeland/lume) and Markdown.
+This is my personal website, which is powered by [Astro](https://astro.build/) and a combination of Markdown and [MDX](https://mdxjs.com/).
 
 It also has some live, progressive enhancement elements powered by [gunslinger](https://github.com/marcus-crane/gunslinger).
 
@@ -19,12 +19,16 @@ Of particular interest is the live player on the homepage which surfaces metadat
   * powered by anilist apis
 * games
   * powered by steam apis
+* podcasts
+  * powered by (unreleased podcast player that has a web api)
 
 ## Getting setup
 
-To get started, you'll want to install Deno using one of the variety of [officially supported installation methods](https://github.com/lumeland/lume).
+To get started, you'll want to install Bun using one of the variety of [officially supported installation methods](https://bun.sh/).
 
-Once you've got all of that set up, running `deno task serve` should do everything required to start up a local server.
+You can use [Node.js](https://nodejs.org/en) as well but personally I use Bun these days and haven't encountered anything it can't support.
+
+Once you've got all of that set up, running `bun dev` should do everything required to start up a local server.
 
 You should be able to access the development version of the site at http://localhost:1313
 
@@ -44,6 +48,6 @@ This repo is also compatible with [act](https://github.com/nektos/act), a tool f
 
 Running `act` will perform the entire build pipeline, aside from deployment to Cloudflare Pages.
 
-It is essentially the same workflow as `pnpm run deploy`, just that it will also install all prerequisite tools like Hugo, Cue and so on.
+It is essentially the same workflow as `bun run deploy`, just that it will also install all prerequisite tools like Hugo, Cue and so on.
 
 In theory, you could also use `act -b` to build the site and output it from the container but I make no guarantees that it would work.

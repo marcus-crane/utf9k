@@ -2,6 +2,6 @@
 
 set -euxo pipefail
 
-deno task build:deps
-deno task build:metadata
-deno task build
+bun run build:deps
+bun run build:metadata
+bun run build
