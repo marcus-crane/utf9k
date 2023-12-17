@@ -3,6 +3,8 @@ import type { MDXInstance } from 'astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
 import path from 'path';
 
+import { dateToRfc822 } from "../utils/rfc822"
+
 const allPosts: MDXInstance<Record<string, any>>[] = await Astro.glob('../content/blog/**/*.mdx');
 
 const processedPosts = allPosts
@@ -35,7 +37,7 @@ const rssFooterXml = `  </channel>
         SITE_URL
       )}</guid>
       <description><![CDATA[ ${post.frontmatter.description}]]></description>
-      <pubDate>${post.frontmatter.date}</pubDate>
+      <pubDate>${dateToRfc822(post.frontmatter.date)}</pubDate>
       <content:encoded><![CDATA[`} />
       <post.Content/>
     <Fragment set:html={`]]></content:encoded>

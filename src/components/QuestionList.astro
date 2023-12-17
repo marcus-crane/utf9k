@@ -1,14 +1,12 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { fnv_1a } from '../../lib/fnv32'
+import { fnv_1a } from '../utils/fnv32'
 
 interface Props {
   questions: CollectionEntry<"questions">[];
 }
 
 const { questions } = Astro.props;
-
-import { createHash } from "node:crypto"
 
 const systemColours = [
   "lightpink",
@@ -49,7 +47,6 @@ const systemColours = [
       const tags = q.data.tags.map(t => {
         const hash = fnv_1a(t)
         // Hash each tag and reduce it down to just numbers
-        // const hash = createHash("sha256").update(t).digest("hex").replace(/[a-zA-Z]+/g, '')
         // Modulo hash to fit within list of colours
         const i = Number(hash) % systemColours.length
         return (
@@ -64,14 +61,4 @@ const systemColours = [
       );
     })
   }
-  <!-- {{ range sort .Pages "Lastmod" "desc" }}
-    <li id="{{ .Slug }}" class="question">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ range .Params.tags }}
-        {{ $hash := (crypto.FNV32a .) }}
-        {{ $i := mod $hash (len $systemColors) }}
-        <span style="color: {{ index $systemColors $i }}">#{{ . }}</span>
-      {{ end }}
-    </li>
-    {{ end }} -->
 </ul>
