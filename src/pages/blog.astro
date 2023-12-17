@@ -1,9 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
-import Posts from "../components/PostList.astro";
+import dayjs from 'dayjs'
 
 const posts = await getCollection("blog");
+let seenYears: Set<number> = new Set()
 ---
 
 <BaseLayout title="Posts I've written" description="Here you can find all of the blog posts I've hand crafted over the years">
@@ -11,6 +12,31 @@ const posts = await getCollection("blog");
     <header>
       <h1>Posts I've written</h1>
     </header>
-    <Posts posts={posts} />
+    <ul>
+      {
+        // TODO: Invent something nicer
+        posts
+          .filter(p => !p.data.draft)
+          .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+          .reverse()
+          .map((p) => {
+            const currentYear = p.data.date.getFullYear();
+            let header = null;
+            if (!seenYears.has(currentYear)) {
+              header = <h2>{currentYear}</h2>
+              seenYears.add(currentYear)
+            }
+            return (
+              <>
+                {header}
+                <li>
+                  <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+                  <time>{dayjs(p.data.date).format('MMM DD')}</time>
+                </li>
+              </>
+            );
+          })
+      }
+    </ul>
   </main>
 </BaseLayout>
