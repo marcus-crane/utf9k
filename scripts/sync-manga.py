@@ -4,10 +4,6 @@ import os
 import requests
 from PIL import ImageFile
 
-from common import CUR_DIR
-
-TOKEN = os.getenv("ANILIST_TOKEN")
-
 DATA_FILE = "src/data/manga.json"
 
 manga = []
