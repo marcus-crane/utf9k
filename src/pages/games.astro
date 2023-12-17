@@ -5,6 +5,8 @@ import type { GameList } from "../schemas/games";
 
 import games from "../data/games.yml";
 
+import { Image } from 'astro:assets';
+
 const typedGames = games as GameList[];
 ---
 
@@ -26,9 +28,11 @@ const typedGames = games as GameList[];
                 .map((game) => (
                   <li>
                     <div>
-                      <img
+                      <Image
                         alt={`Box art for the game titled ${game.title}`}
                         src={game.cover}
+                        width={game.cover_width}
+                        height={game.cover_height}
                       />
                       <a
                         href={game.link}

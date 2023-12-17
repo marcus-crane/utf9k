@@ -5,6 +5,8 @@
     link: https://howlongtobeat.com/game/57335
     platform: PC
     cover: https://howlongtobeat.com/games/57335_Disco_Elysium.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-10-17 04:11:37'
@@ -16,6 +18,8 @@
     link: https://howlongtobeat.com/game/7946
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
+    cover_width: 300
+    cover_height: 424
     replay: false
     notes: ''
     updated: '2023-11-05 00:32:07'
@@ -25,6 +29,8 @@
     link: https://howlongtobeat.com/game/12654
     platform: PC
     cover: https://howlongtobeat.com/games/12654_Final_Fantasy_XIV.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: Playing post-6.0 content
     updated: '2023-10-17 04:11:46'
@@ -34,6 +40,8 @@
     link: https://howlongtobeat.com/game/17617
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/250px-Transistor_art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-10-17 04:10:31'
@@ -43,6 +51,8 @@
     link: https://howlongtobeat.com/game/113203
     platform: PC
     cover: https://howlongtobeat.com/games/113203_Cyberpunk_2077_Phantom_Liberty.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: Starting to explore Dogtown
     updated: '2023-10-17 04:10:23'
@@ -52,6 +62,8 @@
     link: https://howlongtobeat.com/game/37832
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/37832_Final_Fantasy_XII_The_Zodiac_Age.jfif
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: null
     updated: '2023-10-08 07:58:51'
@@ -61,6 +73,8 @@
     link: https://howlongtobeat.com/game/5739
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Maxpayne3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2023-10-08 07:57:54'
@@ -70,6 +84,8 @@
     link: https://howlongtobeat.com/game/60754
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
+    cover_width: 266
+    cover_height: 374
     replay: false
     notes: ''
     updated: '2023-10-08 07:57:31'
@@ -79,6 +95,8 @@
     link: https://howlongtobeat.com/game/22
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/668247-boxdothackinfection_l_large.jpg
+    cover_width: 300
+    cover_height: 424
     replay: false
     notes: Exploring Expansive Haunted Sea of Sand next
     updated: '2023-09-07 08:19:13'
@@ -88,6 +106,8 @@
     link: https://howlongtobeat.com/game/90104
     platform: PC
     cover: https://howlongtobeat.com/games/90104_Say_No_More.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-08-25 10:13:53'
@@ -97,6 +117,8 @@
     link: https://howlongtobeat.com/game/27127
     platform: ''
     cover: https://howlongtobeat.com/games/COD_Black_Ops_3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 07:17:36'
@@ -106,6 +128,8 @@
     link: https://howlongtobeat.com/game/37861
     platform: PC
     cover: https://howlongtobeat.com/games/37861_Watch_Dogs_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:37:30'
@@ -115,6 +139,8 @@
     link: https://howlongtobeat.com/game/27100
     platform: PC
     cover: https://howlongtobeat.com/games/27100_Red_Dead_Redemption_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:36:52'
@@ -124,6 +150,8 @@
     link: https://howlongtobeat.com/game/122891
     platform: PC
     cover: https://howlongtobeat.com/games/122891_Hi-Fi_Rush.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: ''
     updated: '2023-07-30 06:36:28'
@@ -133,6 +161,8 @@
     link: https://howlongtobeat.com/game/44852
     platform: PC
     cover: https://howlongtobeat.com/games/44852_Spider-Man_(2017).jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2023-07-30 00:49:34'
@@ -142,6 +172,8 @@
     link: https://howlongtobeat.com/game/77921
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/77921_Scarlet_Nexus.jpg
+    cover_width: 718
+    cover_height: 993
     replay: false
     notes: ''
     updated: '2023-07-30 00:49:25'
@@ -151,6 +183,8 @@
     link: https://howlongtobeat.com/game/34075
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/Digimon_Story,_Cyber_Sleuth.jpeg
+    cover_width: 250
+    cover_height: 275
     replay: false
     notes: ''
     updated: '2023-07-30 00:01:23'
@@ -160,6 +194,8 @@
     link: https://howlongtobeat.com/game/76406
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/76406_NieR_Replicant_ver122474487139.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 00:01:13'
@@ -169,6 +205,8 @@
     link: https://howlongtobeat.com/game/10268
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Witcher_2_cover.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2021-07-11 08:13:05'
@@ -178,6 +216,8 @@
     link: https://howlongtobeat.com/game/4077
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/256px-Grandia_coverart.jpg
+    cover_width: 256
+    cover_height: 258
     replay: false
     notes: ''
     updated: '2021-07-11 08:12:56'
@@ -187,6 +227,8 @@
     link: https://howlongtobeat.com/game/966
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/Bayonetta_Box_Art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2021-07-11 08:12:47'
@@ -198,6 +240,8 @@
     link: https://howlongtobeat.com/game/83152
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/83152_Final_Fantasy_XVI.png
+    cover_width: 265
+    cover_height: 376
     replay: false
     notes: ''
     updated: '2023-07-30 00:02:45'
@@ -207,6 +251,8 @@
     link: https://howlongtobeat.com/game/68262
     platform: PC
     cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: ''
     updated: '2023-07-30 06:34:35'
@@ -216,6 +262,8 @@
     link: https://howlongtobeat.com/game/124297
     platform: PC
     cover: https://howlongtobeat.com/games/124297_Paranormasight_The_Seven_Mysteries_of_Honjo.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:38:45'
@@ -225,6 +273,8 @@
     link: https://howlongtobeat.com/game/166
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Ac04box.jpg
+    cover_width: 266
+    cover_height: 376
     replay: false
     notes: ''
     updated: '2023-07-30 06:38:15'
@@ -234,6 +284,8 @@
     link: https://howlongtobeat.com/game/62564
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/62564_Katamari_Damacy_Reroll.jpg
+    cover_width: 500
+    cover_height: 713
     replay: false
     notes: ''
     updated: '2023-07-30 06:40:04'
@@ -243,6 +295,8 @@
     link: https://howlongtobeat.com/game/86015
     platform: PC
     cover: https://howlongtobeat.com/games/86015_Alba_A_Wildlife_Adventure.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:41:12'
@@ -252,6 +306,8 @@
     link: https://howlongtobeat.com/game/51323
     platform: PC
     cover: https://howlongtobeat.com/games/51323_Donut_County.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:39:25'
@@ -261,6 +317,8 @@
     link: https://howlongtobeat.com/game/2127
     platform: PC
     cover: https://howlongtobeat.com/games/Cyberpunk-2077-2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 06:40:35'
@@ -270,6 +328,8 @@
     link: https://howlongtobeat.com/game/33836
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/33836_Phoenix_Wright_Ace_Attorney_-_Spirit_of_Justice.jpg
+    cover_width: 500
+    cover_height: 500
     replay: false
     notes: ''
     updated: '2023-07-30 06:41:41'
@@ -279,6 +339,8 @@
     link: https://howlongtobeat.com/game/63110
     platform: PC
     cover: https://howlongtobeat.com/games/63110_Call_of_Duty_Modern_Warfare.jpeg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: ''
     updated: '2023-07-30 06:44:09'
@@ -288,6 +350,8 @@
     link: https://howlongtobeat.com/game/12977
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/Ace_Attorney_5_cover.jpg
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2023-07-30 06:43:20'
@@ -297,6 +361,8 @@
     link: https://howlongtobeat.com/game/524
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/Apollo-justice-english-cover.jpg
+    cover_width: 256
+    cover_height: 229
     replay: false
     notes: ''
     updated: '2023-07-30 06:42:43'
@@ -306,6 +372,8 @@
     link: https://howlongtobeat.com/game/7029
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/Pheonixwright3trialsandtrib-cover-english.jpg
+    cover_width: 256
+    cover_height: 236
     replay: true
     notes: ''
     updated: '2023-07-30 00:09:06'
@@ -315,6 +383,8 @@
     link: https://howlongtobeat.com/game/79776
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/79776_Ratchet_&_Clank_Rift_Apart.jpg
+    cover_width: 1024
+    cover_height: 1024
     replay: false
     notes: ''
     updated: '2021-07-18 08:37:12'
@@ -324,6 +394,8 @@
     link: https://howlongtobeat.com/game/42833
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/42833_Super_Mario_Odyssey.jpg
+    cover_width: 220
+    cover_height: 334
     replay: false
     notes: ''
     updated: '2021-05-11 22:38:59'
@@ -333,6 +405,8 @@
     link: https://howlongtobeat.com/game/13157
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Kingdom_Hearts_III.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: ''
     updated: '2021-02-18 07:37:03'
@@ -342,6 +416,8 @@
     link: https://howlongtobeat.com/game/43236
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/43236_Kingdom_Hearts_0.2_Birth_by_Sleep_-_A_Fragmentary_Passage.jpg
+    cover_width: 250
+    cover_height: 375
     replay: false
     notes: ''
     updated: '2020-12-21 08:18:20'
@@ -351,6 +427,8 @@
     link: https://howlongtobeat.com/game/72067
     platform: PC VR
     cover: https://howlongtobeat.com/games/72067_Half-Life_Alyx.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2020-03-28 11:05:20'
@@ -360,6 +438,8 @@
     link: https://howlongtobeat.com/game/10267
     platform: PC
     cover: https://howlongtobeat.com/games/The_Witcher_EU_box.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2020-01-27 05:33:03'
@@ -369,6 +449,8 @@
     link: https://howlongtobeat.com/game/65235
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/65235_Pokmon_Sword_And_Shield.jpg
+    cover_width: 550
+    cover_height: 896
     replay: false
     notes: ''
     updated: '2020-01-27 05:35:01'
@@ -378,6 +460,8 @@
     link: https://howlongtobeat.com/game/38061
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/38061_Death_Stranding.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2019-11-11 05:17:19'
@@ -387,6 +471,8 @@
     link: https://howlongtobeat.com/game/12687
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Detuned.png
+    cover_width: 240
+    cover_height: 240
     replay: false
     notes: ''
     updated: '2023-07-30 07:03:24'
@@ -396,6 +482,8 @@
     link: https://howlongtobeat.com/game/111
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/111_999_Nine_Hours_Nine_Persons_Nine_Doors.jpg
+    cover_width: 600
+    cover_height: 847
     replay: true
     notes: ''
     updated: '2016-06-01 05:58:33'
@@ -405,6 +493,8 @@
     link: https://howlongtobeat.com/game/111
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/111_999_Nine_Hours_Nine_Persons_Nine_Doors.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2015-02-26 11:59:00'
@@ -414,6 +504,8 @@
     link: https://howlongtobeat.com/game/319
     platform: PC
     cover: https://howlongtobeat.com/games/Alan-wake-0.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:30'
@@ -423,6 +515,8 @@
     link: https://howlongtobeat.com/game/401
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Alpha_Protocol_cover.jpg
+    cover_width: 256
+    cover_height: 318
     replay: false
     notes: ''
     updated: '2023-07-30 06:58:22'
@@ -432,6 +526,8 @@
     link: https://howlongtobeat.com/game/29048
     platform: PC
     cover: https://howlongtobeat.com/games/Anna_Extended_Edition_header.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:53:32'
@@ -441,6 +537,8 @@
     link: https://howlongtobeat.com/game/518
     platform: PlayStation
     cover: https://howlongtobeat.com/games/Ape_Escape_UK.jpg
+    cover_width: 256
+    cover_height: 252
     replay: false
     notes: ''
     updated: '2012-12-27 03:28:06'
@@ -450,6 +548,8 @@
     link: https://howlongtobeat.com/game/519
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/252px-Ape_Escape_2_Coverart.png
+    cover_width: 252
+    cover_height: 358
     replay: false
     notes: ''
     updated: '2012-12-27 03:28:16'
@@ -459,6 +559,8 @@
     link: https://howlongtobeat.com/game/520
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/252px-Ape_Escape_3_Coverart.png
+    cover_width: 252
+    cover_height: 348
     replay: false
     notes: ''
     updated: '2012-12-27 03:28:26'
@@ -468,6 +570,8 @@
     link: https://howlongtobeat.com/game/649
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Assassins_Creed.jpg
+    cover_width: 330
+    cover_height: 420
     replay: false
     notes: ''
     updated: '2012-12-27 02:16:18'
@@ -477,6 +581,8 @@
     link: https://howlongtobeat.com/game/651
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Assassins_Creed_2_Box_Art.JPG
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:15:34'
@@ -486,6 +592,8 @@
     link: https://howlongtobeat.com/game/661
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Assassins_Creed_brotherhood_cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-11-16 15:15:42'
@@ -495,6 +603,8 @@
     link: https://howlongtobeat.com/game/688
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Asuras_Wrath_Cover_Art.png
+    cover_width: 250
+    cover_height: 266
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:18'
@@ -504,6 +614,8 @@
     link: https://howlongtobeat.com/game/778
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Back_to_the_Future_The_Game.PNG
+    cover_width: 220
+    cover_height: 290
     replay: false
     notes: ''
     updated: '2016-02-21 00:15:26'
@@ -513,6 +625,8 @@
     link: https://howlongtobeat.com/game/869
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Bastion_Boxart.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:12:45'
@@ -522,6 +636,8 @@
     link: https://howlongtobeat.com/game/881
     platform: PC
     cover: https://howlongtobeat.com/games/Arkham_Asylum.jpg
+    cover_width: 256
+    cover_height: 391
     replay: false
     notes: ''
     updated: '2012-12-26 07:15:43'
@@ -531,6 +647,8 @@
     link: https://howlongtobeat.com/game/881
     platform: PC
     cover: https://howlongtobeat.com/games/Arkham_Asylum.jpg
+    cover_width: 256
+    cover_height: 391
     replay: true
     notes: ''
     updated: '2016-04-29 22:17:36'
@@ -540,6 +658,8 @@
     link: https://howlongtobeat.com/game/882
     platform: PC
     cover: https://howlongtobeat.com/games/250px-ArkhamCity.jpg
+    cover_width: 250
+    cover_height: 266
     replay: false
     notes: ''
     updated: '2015-10-01 08:55:51'
@@ -549,6 +669,8 @@
     link: https://howlongtobeat.com/game/910
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/256px-Battle_Engine_Aquila.jpg
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2012-12-27 03:33:10'
@@ -558,6 +680,8 @@
     link: https://howlongtobeat.com/game/946
     platform: PC
     cover: https://howlongtobeat.com/games/Bc2lowres.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:56:00'
@@ -567,6 +691,8 @@
     link: https://howlongtobeat.com/game/946
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Bc2lowres.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:03:12'
@@ -576,6 +702,8 @@
     link: https://howlongtobeat.com/game/977
     platform: PC
     cover: https://howlongtobeat.com/games/Beat-Hazard-Ultra.jpg
+    cover_width: 685
+    cover_height: 300
     replay: false
     notes: ''
     updated: '2015-02-26 12:02:49'
@@ -585,6 +713,8 @@
     link: https://howlongtobeat.com/game/1047
     platform: PC
     cover: https://howlongtobeat.com/games/Binary_Domain_Cover_Art.png
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2015-02-16 10:34:18'
@@ -594,6 +724,8 @@
     link: https://howlongtobeat.com/game/1047
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Binary_Domain_Cover_Art.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:04:47'
@@ -603,6 +735,8 @@
     link: https://howlongtobeat.com/game/1065
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Bioshockcoverfinalcropped.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:05:45'
@@ -612,6 +746,8 @@
     link: https://howlongtobeat.com/game/1068
     platform: PC
     cover: https://howlongtobeat.com/games/Official_cover_art_for_Bioshock_Infinite.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:06:36'
@@ -621,6 +757,8 @@
     link: https://howlongtobeat.com/game/1273
     platform: PC
     cover: https://howlongtobeat.com/games/Borderlandscover.jpg
+    cover_width: 340
+    cover_height: 432
     replay: false
     notes: ''
     updated: '2015-10-01 08:57:51'
@@ -630,6 +768,8 @@
     link: https://howlongtobeat.com/game/1273
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Borderlandscover.jpg
+    cover_width: 340
+    cover_height: 432
     replay: false
     notes: ''
     updated: '2012-12-27 02:04:30'
@@ -639,6 +779,8 @@
     link: https://howlongtobeat.com/game/1274
     platform: PC
     cover: https://howlongtobeat.com/games/Borderlands2boxart3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:57:36'
@@ -648,6 +790,8 @@
     link: https://howlongtobeat.com/game/1274
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Borderlands2boxart3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2020-01-27 05:38:14'
@@ -657,6 +801,8 @@
     link: https://howlongtobeat.com/game/1329
     platform: PC
     cover: https://howlongtobeat.com/games/256px-BRINK.jpg
+    cover_width: 256
+    cover_height: 322
     replay: false
     notes: ''
     updated: '2012-12-26 07:25:54'
@@ -666,6 +812,8 @@
     link: https://howlongtobeat.com/game/1329
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-BRINK.jpg
+    cover_width: 256
+    cover_height: 322
     replay: true
     notes: ''
     updated: '2012-12-26 07:26:19'
@@ -675,6 +823,8 @@
     link: https://howlongtobeat.com/game/1333
     platform: PC
     cover: https://howlongtobeat.com/games/Broken_Sword_2_cover.png
+    cover_width: 256
+    cover_height: 341
     replay: false
     notes: ''
     updated: '2012-12-26 07:27:47'
@@ -684,6 +834,8 @@
     link: https://howlongtobeat.com/game/1337
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Shadow-of-the-Templars-01.gif
+    cover_width: 256
+    cover_height: 331
     replay: false
     notes: ''
     updated: '2015-02-16 09:07:48'
@@ -693,6 +845,8 @@
     link: https://howlongtobeat.com/game/1468
     platform: PC
     cover: https://howlongtobeat.com/games/Call_of_Duty_4_Modern_Warfare.jpg
+    cover_width: 300
+    cover_height: 429
     replay: false
     notes: ''
     updated: '2012-12-27 02:18:18'
@@ -702,6 +856,8 @@
     link: https://howlongtobeat.com/game/18220
     platform: PC
     cover: https://howlongtobeat.com/games/COD_Advanced_Warfare.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 09:01:28'
@@ -711,6 +867,8 @@
     link: https://howlongtobeat.com/game/1471
     platform: PC
     cover: https://howlongtobeat.com/games/CoD_Black_Ops_cover.png
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2012-12-27 02:18:35'
@@ -720,6 +878,8 @@
     link: https://howlongtobeat.com/game/1472
     platform: PC
     cover: https://howlongtobeat.com/games/275px-Call_of_Duty_Black_Ops_II_Game_Cover.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:28'
@@ -729,6 +889,8 @@
     link: https://howlongtobeat.com/game/1477
     platform: PC
     cover: https://howlongtobeat.com/games/Modern_Warfare_2_cover.PNG
+    cover_width: 350
+    cover_height: 498
     replay: false
     notes: ''
     updated: '2012-12-27 02:18:52'
@@ -738,6 +900,8 @@
     link: https://howlongtobeat.com/game/1477
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Modern_Warfare_2_cover.PNG
+    cover_width: 350
+    cover_height: 498
     replay: false
     notes: ''
     updated: '2012-12-27 02:19:33'
@@ -747,6 +911,8 @@
     link: https://howlongtobeat.com/game/1478
     platform: PC
     cover: https://howlongtobeat.com/games/Call_of_Duty_Modern_Warfare_3_box_art.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:18:40'
@@ -756,6 +922,8 @@
     link: https://howlongtobeat.com/game/1487
     platform: PC
     cover: https://howlongtobeat.com/games/CallofJuarez-gunslinger_cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:06:50'
@@ -765,6 +933,8 @@
     link: https://howlongtobeat.com/game/1616
     platform: PC
     cover: https://howlongtobeat.com/games/1616_Cave_Story.jpg
+    cover_width: 341
+    cover_height: 317
     replay: false
     notes: ''
     updated: '2012-12-27 03:24:36'
@@ -774,6 +944,8 @@
     link: https://howlongtobeat.com/game/1874
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Companyofheroes_pcboxboxart_160w.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:14:00'
@@ -783,6 +955,8 @@
     link: https://howlongtobeat.com/game/1957
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Counter-Strike_Global_Offensive.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:13:53'
@@ -792,6 +966,8 @@
     link: https://howlongtobeat.com/game/1958
     platform: PC
     cover: https://howlongtobeat.com/games/250px-CSSource.JPG
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:13:43'
@@ -801,6 +977,8 @@
     link: https://howlongtobeat.com/game/2068
     platform: PC
     cover: https://howlongtobeat.com/games/2068_Crysis.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2013-01-04 05:29:23'
@@ -810,6 +988,8 @@
     link: https://howlongtobeat.com/game/2110
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-CustomRoboArenacover.jpg
+    cover_width: 250
+    cover_height: 224
     replay: false
     notes: ''
     updated: '2013-01-23 10:14:40'
@@ -819,6 +999,8 @@
     link: https://howlongtobeat.com/game/2134
     platform: PlayStation
     cover: https://howlongtobeat.com/games/D_Coverart.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-01-09 04:18:41'
@@ -828,6 +1010,8 @@
     link: https://howlongtobeat.com/game/20855
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Super_Danganronpa_2_Cover_Art.jpg
+    cover_width: 300
+    cover_height: 382
     replay: false
     notes: ''
     updated: '2016-01-09 02:51:42'
@@ -837,6 +1021,8 @@
     link: https://howlongtobeat.com/game/16630
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Danganronpaboxart.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-01-09 02:52:08'
@@ -846,6 +1032,8 @@
     link: https://howlongtobeat.com/game/16630
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Danganronpaboxart.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-01-09 02:51:27'
@@ -855,6 +1043,8 @@
     link: https://howlongtobeat.com/game/2224
     platform: PC
     cover: https://howlongtobeat.com/games/Dark_Souls_Cover_Art.jpg
+    cover_width: 250
+    cover_height: 310
     replay: false
     notes: ''
     updated: '2015-02-26 12:11:35'
@@ -864,6 +1054,8 @@
     link: https://howlongtobeat.com/game/2281
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/256px-Daxter_with_rating.jpg
+    cover_width: 256
+    cover_height: 441
     replay: false
     notes: ''
     updated: '2012-12-27 02:59:07'
@@ -873,6 +1065,8 @@
     link: https://howlongtobeat.com/game/2284
     platform: PC
     cover: https://howlongtobeat.com/games/DODSourceCover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:13:08'
@@ -882,6 +1076,8 @@
     link: https://howlongtobeat.com/game/2330
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/DeadRisingCaseZero.jpg
+    cover_width: 291
+    cover_height: 400
     replay: false
     notes: ''
     updated: '2012-12-27 02:58:38'
@@ -891,6 +1087,8 @@
     link: https://howlongtobeat.com/game/2333
     platform: PC
     cover: https://howlongtobeat.com/games/Dead_Space_Box_Art.jpg
+    cover_width: 256
+    cover_height: 320
     replay: false
     notes: ''
     updated: '0000-00-00 00:00:00'
@@ -900,6 +1098,8 @@
     link: https://howlongtobeat.com/game/2335
     platform: PC
     cover: https://howlongtobeat.com/games/Dead_Space_2_Box_Art.jpg
+    cover_width: 256
+    cover_height: 322
     replay: false
     notes: ''
     updated: '2012-12-26 06:54:31'
@@ -909,6 +1109,8 @@
     link: https://howlongtobeat.com/game/2337
     platform: PC
     cover: https://howlongtobeat.com/games/Dead_Space_3_PC_game_cover.jpg
+    cover_width: 250
+    cover_height: 312
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:34'
@@ -918,6 +1120,8 @@
     link: https://howlongtobeat.com/game/43743
     platform: PC
     cover: https://howlongtobeat.com/games/43743_Dear_Esther_Landmark_Edition.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 06:55:41'
@@ -927,6 +1131,8 @@
     link: https://howlongtobeat.com/game/14358
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Destiny_box_art.png
+    cover_width: 275
+    cover_height: 317
     replay: false
     notes: ''
     updated: '2016-02-20 22:57:03'
@@ -936,6 +1142,8 @@
     link: https://howlongtobeat.com/game/43894
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/43894_Destiny_2.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2020-01-27 05:44:56'
@@ -945,6 +1153,8 @@
     link: https://howlongtobeat.com/game/2475
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/250px-Destroy_All_Humans_box_art_for_the_PlayStation_2.jpg
+    cover_width: 250
+    cover_height: 316
     replay: false
     notes: ''
     updated: '2012-12-27 05:49:09'
@@ -954,6 +1164,8 @@
     link: https://howlongtobeat.com/game/2476
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/256px-DAH2box.jpg
+    cover_width: 256
+    cover_height: 326
     replay: false
     notes: ''
     updated: '2012-12-27 05:49:30'
@@ -963,6 +1175,8 @@
     link: https://howlongtobeat.com/game/2489
     platform: PC
     cover: https://howlongtobeat.com/games/Dxhr_box.jpg
+    cover_width: 250
+    cover_height: 353
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:50'
@@ -972,6 +1186,8 @@
     link: https://howlongtobeat.com/game/2560
     platform: PC
     cover: https://howlongtobeat.com/games/DinnerDate_292x136.jpg
+    cover_width: 292
+    cover_height: 136
     replay: false
     notes: ''
     updated: '2012-12-26 07:28:27'
@@ -981,6 +1197,8 @@
     link: https://howlongtobeat.com/game/40860
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/40860_Dragon_Ball_Xenoverse_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2019-04-21 05:54:58'
@@ -990,6 +1208,8 @@
     link: https://howlongtobeat.com/game/68262
     platform: PC
     cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: null
     updated: '2023-07-30 06:34:08'
@@ -999,6 +1219,8 @@
     link: https://howlongtobeat.com/game/3087
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Elite_Beat_Agents.jpg
+    cover_width: 256
+    cover_height: 230
     replay: false
     notes: ''
     updated: '2013-01-23 10:17:17'
@@ -1008,6 +1230,8 @@
     link: https://howlongtobeat.com/game/33491
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/no_boxart.png
+    cover_width: 600
+    cover_height: 800
     replay: false
     notes: ''
     updated: '2016-01-09 04:13:26'
@@ -1017,6 +1241,8 @@
     link: https://howlongtobeat.com/game/47269
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/47269_Evangelion_Shin_Gekijouban_3nd_Impact.jpg
+    cover_width: 640
+    cover_height: 1103
     replay: false
     notes: ''
     updated: '2023-07-30 07:04:43'
@@ -1026,6 +1252,8 @@
     link: https://howlongtobeat.com/game/3340
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Fallout_3_cover_art.PNG
+    cover_width: 256
+    cover_height: 429
     replay: false
     notes: ''
     updated: '2012-12-27 02:54:07'
@@ -1035,6 +1263,8 @@
     link: https://howlongtobeat.com/game/26729
     platform: PC
     cover: https://howlongtobeat.com/games/Fallout_4.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-01-09 02:08:29'
@@ -1044,6 +1274,8 @@
     link: https://howlongtobeat.com/game/3351
     platform: PC
     cover: https://howlongtobeat.com/games/Fallout_New_Vegas.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2015-02-26 12:19:19'
@@ -1053,6 +1285,8 @@
     link: https://howlongtobeat.com/game/3360
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/250px-Family_Guy_Video_Game!.jpg
+    cover_width: 250
+    cover_height: 347
     replay: false
     notes: ''
     updated: '2013-01-17 01:50:28'
@@ -1062,6 +1296,8 @@
     link: https://howlongtobeat.com/game/3376
     platform: PC
     cover: https://howlongtobeat.com/games/Far_Cry_Coverart.png
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2012-12-27 03:25:11'
@@ -1071,6 +1307,8 @@
     link: https://howlongtobeat.com/game/3378
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Far-cry-3-box-art-xbox-360.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:13:43'
@@ -1080,6 +1318,8 @@
     link: https://howlongtobeat.com/game/19310
     platform: PC
     cover: https://howlongtobeat.com/games/Far_Cry_4_box_art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:14:17'
@@ -1089,6 +1329,8 @@
     link: https://howlongtobeat.com/game/3395
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Fatal_Frame_Coverart.png
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:46'
@@ -1098,6 +1340,8 @@
     link: https://howlongtobeat.com/game/3537
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/3537_Final_Fantasy_XV.jpg
+    cover_width: 640
+    cover_height: 708
     replay: false
     notes: ''
     updated: '2020-01-27 05:45:38'
@@ -1107,6 +1351,8 @@
     link: https://howlongtobeat.com/game/24739
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/FINAL_FANTASY_XV_EPISODE_DUSCAE_title.jpg
+    cover_width: 250
+    cover_height: 167
     replay: false
     notes: ''
     updated: '2016-01-09 02:35:35'
@@ -1116,6 +1362,8 @@
     link: https://howlongtobeat.com/game/3674
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Fracture_front.jpg
+    cover_width: 256
+    cover_height: 321
     replay: false
     notes: ''
     updated: '2012-12-27 02:55:00'
@@ -1125,6 +1373,8 @@
     link: https://howlongtobeat.com/game/3847
     platform: PC
     cover: https://howlongtobeat.com/games/GarrysMod_292x136.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:21:17'
@@ -1134,6 +1384,8 @@
     link: https://howlongtobeat.com/game/3862
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Gears_of_War.png
+    cover_width: 256
+    cover_height: 320
     replay: false
     notes: ''
     updated: '2012-12-27 02:55:44'
@@ -1143,6 +1395,8 @@
     link: https://howlongtobeat.com/game/3916
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/3916_Ghost_Trick_Phantom_Detective.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-29 02:23:29'
@@ -1152,6 +1406,8 @@
     link: https://howlongtobeat.com/game/3940
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/220px-Gitaroo_Man_Lives.jpg
+    cover_width: 220
+    cover_height: 373
     replay: false
     notes: ''
     updated: '2012-12-26 07:18:10'
@@ -1161,6 +1417,8 @@
     link: https://howlongtobeat.com/game/17536
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Goat_Simulator.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-01-09 02:44:36'
@@ -1170,6 +1428,8 @@
     link: https://howlongtobeat.com/game/38050
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/38050_God_of_War.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2018-04-27 11:58:12'
@@ -1179,6 +1439,8 @@
     link: https://howlongtobeat.com/game/3976
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/200px-God_of_War_Collection_Cover.jpg
+    cover_width: 200
+    cover_height: 231
     replay: false
     notes: ''
     updated: '2012-12-27 02:20:58'
@@ -1188,6 +1450,8 @@
     link: https://howlongtobeat.com/game/3978
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-God_of_War_III_not_final_art.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-11-11 12:35:43'
@@ -1197,6 +1461,8 @@
     link: https://howlongtobeat.com/game/3983
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/200px-God_of_War_Origins_Collection_box_art.jpg
+    cover_width: 200
+    cover_height: 231
     replay: false
     notes: ''
     updated: '2012-12-27 02:21:07'
@@ -1206,6 +1472,8 @@
     link: https://howlongtobeat.com/game/4062
     platform: PC
     cover: https://howlongtobeat.com/games/250px-GTAIV_Logo.jpg
+    cover_width: 250
+    cover_height: 313
     replay: true
     notes: ''
     updated: '2012-12-26 07:09:27'
@@ -1215,6 +1483,8 @@
     link: https://howlongtobeat.com/game/4062
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/250px-GTAIV_Logo.jpg
+    cover_width: 250
+    cover_height: 313
     replay: false
     notes: ''
     updated: '2012-12-26 07:08:08'
@@ -1224,6 +1494,8 @@
     link: https://howlongtobeat.com/game/4074
     platform: PC
     cover: https://howlongtobeat.com/games/252px-The_Ballad_of_Gay_Tony_cover.jpg
+    cover_width: 252
+    cover_height: 303
     replay: false
     notes: ''
     updated: '2023-07-30 07:11:47'
@@ -1233,6 +1505,8 @@
     link: https://howlongtobeat.com/game/4063
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Grand_Theft_Auto_IV_coverart.jpg
+    cover_width: 256
+    cover_height: 330
     replay: false
     notes: ''
     updated: '2023-07-30 07:11:33'
@@ -1242,6 +1516,8 @@
     link: https://howlongtobeat.com/game/4067
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Grand_Theft_Auto_IV_Episodes_From_Liberty_City.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:22:08'
@@ -1251,6 +1527,8 @@
     link: https://howlongtobeat.com/game/4073
     platform: PC
     cover: https://howlongtobeat.com/games/GTASABOX.jpg
+    cover_width: 256
+    cover_height: 320
     replay: false
     notes: ''
     updated: '2015-02-26 12:22:27'
@@ -1260,6 +1538,8 @@
     link: https://howlongtobeat.com/game/4076
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/256px-GTA_Vice_City_Stories_PSP_boxart.jpg
+    cover_width: 256
+    cover_height: 328
     replay: false
     notes: ''
     updated: '2012-12-26 07:07:30'
@@ -1269,6 +1549,8 @@
     link: https://howlongtobeat.com/game/4087
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Gravity_rush_US_cover.png
+    cover_width: 250
+    cover_height: 319
     replay: false
     notes: ''
     updated: '2023-07-30 06:55:18'
@@ -1278,6 +1560,8 @@
     link: https://howlongtobeat.com/game/30313
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Gravity-Rush-2-ms.jpg
+    cover_width: 1024
+    cover_height: 1024
     replay: false
     notes: ''
     updated: '2017-02-17 09:40:44'
@@ -1287,6 +1571,8 @@
     link: https://howlongtobeat.com/game/34079
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Gravity_Rush_Remastered_image.jpg
+    cover_width: 225
+    cover_height: 225
     replay: false
     notes: ''
     updated: '2016-02-19 00:00:42'
@@ -1296,6 +1582,8 @@
     link: https://howlongtobeat.com/game/4205
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Gungrave_Coverart.png
+    cover_width: 256
+    cover_height: 364
     replay: false
     notes: ''
     updated: '2015-02-26 11:35:55'
@@ -1305,6 +1593,8 @@
     link: https://howlongtobeat.com/game/4248
     platform: PC
     cover: https://howlongtobeat.com/games/256px-421px-HL2box.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2015-11-11 11:37:07'
@@ -1314,6 +1604,8 @@
     link: https://howlongtobeat.com/game/4248
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/256px-421px-HL2box.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:29:10'
@@ -1323,6 +1615,8 @@
     link: https://howlongtobeat.com/game/4250
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Image-HL2EP1cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:30:14'
@@ -1332,6 +1626,8 @@
     link: https://howlongtobeat.com/game/4251
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Half-Life_2_Episode_Two_title.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:30:47'
@@ -1341,6 +1637,8 @@
     link: https://howlongtobeat.com/game/4252
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Lostcoastlogo.PNG
+    cover_width: 300
+    cover_height: 426
     replay: false
     notes: ''
     updated: '2023-07-30 07:12:06'
@@ -1350,6 +1648,8 @@
     link: https://howlongtobeat.com/game/4262
     platform: Xbox
     cover: https://howlongtobeat.com/games/Halo2-cover.png
+    cover_width: 256
+    cover_height: 319
     replay: false
     notes: ''
     updated: '2012-12-27 02:56:17'
@@ -1359,6 +1659,8 @@
     link: https://howlongtobeat.com/game/4263
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/256px-Halo_3_final_boxshot.JPG
+    cover_width: 256
+    cover_height: 325
     replay: false
     notes: ''
     updated: '2012-12-27 02:56:41'
@@ -1368,6 +1670,8 @@
     link: https://howlongtobeat.com/game/4264
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Halo_3_ODST_Box_Art.png
+    cover_width: 256
+    cover_height: 323
     replay: false
     notes: ''
     updated: '2012-12-27 02:56:49'
@@ -1377,6 +1681,8 @@
     link: https://howlongtobeat.com/game/4269
     platform: Xbox
     cover: https://howlongtobeat.com/games/Halobox.jpg
+    cover_width: 256
+    cover_height: 331
     replay: false
     notes: ''
     updated: '2012-12-27 02:56:28'
@@ -1386,6 +1692,8 @@
     link: https://howlongtobeat.com/game/4270
     platform: Xbox One
     cover: https://howlongtobeat.com/games/4270_Halo_Combat_Evolved_-_Anniversary.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-02-19 00:05:35'
@@ -1395,6 +1703,8 @@
     link: https://howlongtobeat.com/game/4377
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Heavy_Rain_Cover_Art.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2012-12-27 03:31:00'
@@ -1404,6 +1714,8 @@
     link: https://howlongtobeat.com/game/26831
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/26831_Hitman.jpg
+    cover_width: 755
+    cover_height: 1079
     replay: false
     notes: ''
     updated: '2020-01-27 05:43:52'
@@ -1413,6 +1725,8 @@
     link: https://howlongtobeat.com/game/4477
     platform: PC
     cover: https://howlongtobeat.com/games/Hitman_4_artwork.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-01-09 02:43:23'
@@ -1422,6 +1736,8 @@
     link: https://howlongtobeat.com/game/4477
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Hitman_4_artwork.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:25:05'
@@ -1431,6 +1747,8 @@
     link: https://howlongtobeat.com/game/4494
     platform: PC
     cover: https://howlongtobeat.com/games/Homefront.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:26:01'
@@ -1440,6 +1758,8 @@
     link: https://howlongtobeat.com/game/26784
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Horizon-Zero-Dawn-feat.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2017-04-17 05:40:30'
@@ -1449,6 +1769,8 @@
     link: https://howlongtobeat.com/game/4527
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/256px-Hotel_Dusk.jpg
+    cover_width: 256
+    cover_height: 230
     replay: false
     notes: ''
     updated: '2012-12-27 03:02:38'
@@ -1458,6 +1780,8 @@
     link: https://howlongtobeat.com/game/4530
     platform: PC
     cover: https://howlongtobeat.com/games/Hotline_Miami_cover.png
+    cover_width: 250
+    cover_height: 351
     replay: false
     notes: ''
     updated: '2020-01-27 05:45:57'
@@ -1467,6 +1791,8 @@
     link: https://howlongtobeat.com/game/9939
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/The_Iconoclasts.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2019-09-09 05:46:41'
@@ -1476,6 +1802,8 @@
     link: https://howlongtobeat.com/game/4674
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Infamous-cover.jpg
+    cover_width: 256
+    cover_height: 294
     replay: false
     notes: ''
     updated: '2015-10-01 09:07:18'
@@ -1485,6 +1813,8 @@
     link: https://howlongtobeat.com/game/4675
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Infamous_2.png
+    cover_width: 250
+    cover_height: 290
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:04'
@@ -1494,6 +1824,8 @@
     link: https://howlongtobeat.com/game/20787
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/inFAMOUSFirstLight.jpg
+    cover_width: 275
+    cover_height: 183
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:44'
@@ -1503,6 +1835,8 @@
     link: https://howlongtobeat.com/game/16606
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Infamous_second_son_boxart.jpg
+    cover_width: 256
+    cover_height: 318
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:26'
@@ -1512,6 +1846,8 @@
     link: https://howlongtobeat.com/game/4797
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Jak_3_Coverart.png
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2015-10-01 08:52:44'
@@ -1521,6 +1857,8 @@
     link: https://howlongtobeat.com/game/4800
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Jak_and_Daxter_-_The_Precursor_Legacy_Coverart.png
+    cover_width: 256
+    cover_height: 364
     replay: false
     notes: ''
     updated: '2012-12-27 02:22:06'
@@ -1530,6 +1868,8 @@
     link: https://howlongtobeat.com/game/4801
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-JakIIbox.jpg
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2012-12-27 02:22:16'
@@ -1539,6 +1879,8 @@
     link: https://howlongtobeat.com/game/4886
     platform: PlayStation
     cover: https://howlongtobeat.com/games/Jumpingflash_boxart.jpg
+    cover_width: 220
+    cover_height: 300
     replay: false
     notes: ''
     updated: '2015-03-22 11:33:37'
@@ -1548,6 +1890,8 @@
     link: https://howlongtobeat.com/game/4904
     platform: PC
     cover: https://howlongtobeat.com/games/Just-Cause-win-cover.jpg
+    cover_width: 256
+    cover_height: 348
     replay: false
     notes: ''
     updated: '2012-12-27 03:27:18'
@@ -1557,6 +1901,8 @@
     link: https://howlongtobeat.com/game/4905
     platform: PC
     cover: https://howlongtobeat.com/games/Just_Cause_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:31:40'
@@ -1566,6 +1912,8 @@
     link: https://howlongtobeat.com/game/26404
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Just_Cause_3_cover_art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2017-03-13 18:13:40'
@@ -1575,6 +1923,8 @@
     link: https://howlongtobeat.com/game/4923
     platform: PC
     cover: https://howlongtobeat.com/games/Kane_and_Lynch_2_cover.jpg
+    cover_width: 256
+    cover_height: 315
     replay: false
     notes: ''
     updated: '2015-10-01 08:51:22'
@@ -1584,6 +1934,8 @@
     link: https://howlongtobeat.com/game/4924
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Kane_and_Lynch_cover_art.jpg
+    cover_width: 250
+    cover_height: 310
     replay: true
     notes: ''
     updated: '2015-10-01 08:51:50'
@@ -1593,6 +1945,8 @@
     link: https://howlongtobeat.com/game/4924
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/250px-Kane_and_Lynch_cover_art.jpg
+    cover_width: 250
+    cover_height: 310
     replay: false
     notes: ''
     updated: '2012-12-26 07:10:49'
@@ -1602,6 +1956,8 @@
     link: https://howlongtobeat.com/game/4953
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Kenka_Bancho_Badass_Rumble_Cover.jpg
+    cover_width: 250
+    cover_height: 431
     replay: false
     notes: ''
     updated: '2015-10-01 09:03:47'
@@ -1611,6 +1967,8 @@
     link: https://howlongtobeat.com/game/4981
     platform: PC
     cover: https://howlongtobeat.com/games/KillerIsDead.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:52:32'
@@ -1620,6 +1978,8 @@
     link: https://howlongtobeat.com/game/4983
     platform: PC
     cover: https://howlongtobeat.com/games/4983_Killing_Floor.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:52:38'
@@ -1629,6 +1989,8 @@
     link: https://howlongtobeat.com/game/5037
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Kingdom_Hearts.jpg
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2012-12-27 03:03:08'
@@ -1638,6 +2000,8 @@
     link: https://howlongtobeat.com/game/5039
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/KingdomdaysNA.jpg
+    cover_width: 256
+    cover_height: 228
     replay: false
     notes: ''
     updated: '2012-12-27 03:03:29'
@@ -1647,6 +2011,8 @@
     link: https://howlongtobeat.com/game/5042
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Kingdom_Hearts_HD_1.5_ReMIX_box_art.jpg
+    cover_width: 256
+    cover_height: 295
     replay: false
     notes: ''
     updated: '2016-02-18 23:58:20'
@@ -1656,6 +2022,8 @@
     link: https://howlongtobeat.com/game/5043
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Kingdom_Hearts_II_(PS2).jpg
+    cover_width: 256
+    cover_height: 361
     replay: false
     notes: ''
     updated: '2012-12-27 03:03:49'
@@ -1665,6 +2033,8 @@
     link: https://howlongtobeat.com/game/5043
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Kingdom_Hearts_II_(PS2).jpg
+    cover_width: 256
+    cover_height: 361
     replay: false
     notes: ''
     updated: '2017-01-18 10:55:02'
@@ -1674,6 +2044,8 @@
     link: https://howlongtobeat.com/game/5047
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/KingdomHeartsCoMCover_.jpg
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2012-12-27 03:04:04'
@@ -1683,6 +2055,8 @@
     link: https://howlongtobeat.com/game/5050
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Key_of_Heaven_256x439.jpg
+    cover_width: 256
+    cover_height: 439
     replay: false
     notes: ''
     updated: '2016-01-09 04:38:21'
@@ -1692,6 +2066,8 @@
     link: https://howlongtobeat.com/game/5209
     platform: PC
     cover: https://howlongtobeat.com/games/252px-Left4Dead_Windows_cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:37:21'
@@ -1701,6 +2077,8 @@
     link: https://howlongtobeat.com/game/5212
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Left4Dead2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:37:41'
@@ -1710,6 +2088,8 @@
     link: https://howlongtobeat.com/game/5291
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/2349930-image2_large.png
+    cover_width: 300
+    cover_height: 422
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:37'
@@ -1719,6 +2099,8 @@
     link: https://howlongtobeat.com/game/23836
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/23836_Life_Is_Strange_-_Episode_1_Chrysalis.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '2015-12-29 05:23:54'
@@ -1728,6 +2110,8 @@
     link: https://howlongtobeat.com/game/23845
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/23845_Life_Is_Strange_-_Episode_2_Out_of_Time.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '2015-12-29 05:24:35'
@@ -1737,6 +2121,8 @@
     link: https://howlongtobeat.com/game/23846
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/23846_Life_Is_Strange_-_Episode_3_Chaos_Theory.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '2015-12-29 05:24:49'
@@ -1746,6 +2132,8 @@
     link: https://howlongtobeat.com/game/23847
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/23847_Life_Is_Strange_-_Episode_4_Dark_Room.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '2015-12-29 05:25:09'
@@ -1755,6 +2143,8 @@
     link: https://howlongtobeat.com/game/23848
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/23848_Life_Is_Strange_-_Episode_5_Polarized.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '2016-01-09 02:13:35'
@@ -1764,6 +2154,8 @@
     link: https://howlongtobeat.com/game/18676
     platform: PC
     cover: https://howlongtobeat.com/games/LiliChildofGeos.jpg
+    cover_width: 292
+    cover_height: 136
     replay: false
     notes: ''
     updated: '2016-01-09 04:11:03'
@@ -1773,6 +2165,8 @@
     link: https://howlongtobeat.com/game/5395
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Lostplanet2cover.jpg
+    cover_width: 250
+    cover_height: 308
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:40'
@@ -1782,6 +2176,8 @@
     link: https://howlongtobeat.com/game/5398
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/256px-LostViaDomusCover_small.jpg
+    cover_width: 256
+    cover_height: 326
     replay: false
     notes: ''
     updated: '2012-12-27 02:57:41'
@@ -1791,6 +2187,8 @@
     link: https://howlongtobeat.com/game/5513
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Mafia_II_Boxart.jpg
+    cover_width: 256
+    cover_height: 325
     replay: true
     notes: ''
     updated: '2015-02-26 12:39:24'
@@ -1800,6 +2198,8 @@
     link: https://howlongtobeat.com/game/5513
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-Mafia_II_Boxart.jpg
+    cover_width: 256
+    cover_height: 325
     replay: true
     notes: ''
     updated: '2015-02-16 09:16:54'
@@ -1809,6 +2209,8 @@
     link: https://howlongtobeat.com/game/11640
     platform: PC
     cover: https://howlongtobeat.com/games/Magrunner_Dark_Pulse.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-03-16 06:15:33'
@@ -1818,6 +2220,8 @@
     link: https://howlongtobeat.com/game/5698
     platform: PC
     cover: https://howlongtobeat.com/games/Mass_Effect_poster.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2012-12-26 07:34:20'
@@ -1827,6 +2231,8 @@
     link: https://howlongtobeat.com/game/5698
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/Mass_Effect_poster.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:34:53'
@@ -1836,6 +2242,8 @@
     link: https://howlongtobeat.com/game/5699
     platform: PC
     cover: https://howlongtobeat.com/games/MassEffect2_cover.PNG
+    cover_width: 256
+    cover_height: 388
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:36'
@@ -1845,6 +2253,8 @@
     link: https://howlongtobeat.com/game/5707
     platform: PC
     cover: https://howlongtobeat.com/games/5707_Mass_Effect_3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:35:16'
@@ -1854,6 +2264,8 @@
     link: https://howlongtobeat.com/game/5736
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Maxpaynebox.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:35:49'
@@ -1863,6 +2275,8 @@
     link: https://howlongtobeat.com/game/5736
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Maxpaynebox.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2012-12-26 07:36:47'
@@ -1872,6 +2286,8 @@
     link: https://howlongtobeat.com/game/5738
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Max_Payne_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:37:15'
@@ -1881,6 +2297,8 @@
     link: https://howlongtobeat.com/game/5739
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Maxpayne3.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:37:50'
@@ -1890,6 +2308,8 @@
     link: https://howlongtobeat.com/game/5777
     platform: PC
     cover: https://howlongtobeat.com/games/250px-MoH_Airborne_cover_PC_DVD.jpg
+    cover_width: 250
+    cover_height: 316
     replay: false
     notes: ''
     updated: '2012-12-26 07:38:28'
@@ -1899,6 +2319,8 @@
     link: https://howlongtobeat.com/game/5905
     platform: PC
     cover: https://howlongtobeat.com/games/5905_Metal_Gear_Rising_Revengeance.jpg
+    cover_width: 600
+    cover_height: 847
     replay: true
     notes: ''
     updated: '2015-02-26 12:41:57'
@@ -1908,6 +2330,8 @@
     link: https://howlongtobeat.com/game/5905
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/5905_Metal_Gear_Rising_Revengeance.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:22'
@@ -1917,6 +2341,8 @@
     link: https://howlongtobeat.com/game/5908
     platform: PlayStation
     cover: https://howlongtobeat.com/games/5908_Metal_Gear_Solid.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:26:12'
@@ -1926,6 +2352,8 @@
     link: https://howlongtobeat.com/game/5910
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/5910_Metal_Gear_Solid_2_Sons_of_Liberty.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:26:21'
@@ -1935,6 +2363,8 @@
     link: https://howlongtobeat.com/game/5910
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/5910_Metal_Gear_Solid_2_Sons_of_Liberty.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2016-04-08 09:59:56'
@@ -1944,6 +2374,8 @@
     link: https://howlongtobeat.com/game/5913
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/5913_Metal_Gear_Solid_3_Snake_Eater.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:26:52'
@@ -1953,6 +2385,8 @@
     link: https://howlongtobeat.com/game/5916
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/5916_Metal_Gear_Solid_4_Guns_of_the_Patriots.jpg
+    cover_width: 640
+    cover_height: 740
     replay: false
     notes: ''
     updated: '2012-12-27 02:27:28'
@@ -1962,6 +2396,8 @@
     link: https://howlongtobeat.com/game/17291
     platform: PC
     cover: https://howlongtobeat.com/games/MGSV_Ground_Zeroes_boxart.jpg
+    cover_width: 250
+    cover_height: 308
     replay: true
     notes: ''
     updated: '2020-01-27 05:44:37'
@@ -1971,6 +2407,8 @@
     link: https://howlongtobeat.com/game/17291
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/MGSV_Ground_Zeroes_boxart.jpg
+    cover_width: 250
+    cover_height: 308
     replay: false
     notes: ''
     updated: '2020-01-27 05:44:10'
@@ -1980,6 +2418,8 @@
     link: https://howlongtobeat.com/game/5918
     platform: PC
     cover: https://howlongtobeat.com/games/MetalGearSolid5_2013.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-09-21 08:33:18'
@@ -1989,6 +2429,8 @@
     link: https://howlongtobeat.com/game/5919
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Metal_Gear_Solid_Peace_Walker_Cover_Art.jpg
+    cover_width: 256
+    cover_height: 413
     replay: false
     notes: ''
     updated: '2012-12-27 02:27:09'
@@ -1998,6 +2440,8 @@
     link: https://howlongtobeat.com/game/6085
     platform: PC
     cover: https://howlongtobeat.com/games/Mirrors_Edge.jpg
+    cover_width: 256
+    cover_height: 321
     replay: false
     notes: ''
     updated: '2012-12-26 07:39:17'
@@ -2007,6 +2451,8 @@
     link: https://howlongtobeat.com/game/38029
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/38029_Nier_Automata.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2020-01-27 05:36:02'
@@ -2016,6 +2462,8 @@
     link: https://howlongtobeat.com/game/6609
     platform: PC
     cover: https://howlongtobeat.com/games/Nikopol.jpg
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2012-12-26 07:39:59'
@@ -2025,6 +2473,8 @@
     link: https://howlongtobeat.com/game/6768
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/250px-Onimusha_-_Warlords_Coverart.png
+    cover_width: 250
+    cover_height: 354
     replay: false
     notes: ''
     updated: '2016-01-09 04:18:52'
@@ -2034,6 +2484,8 @@
     link: https://howlongtobeat.com/game/6853
     platform: Nintendo GameCube
     cover: https://howlongtobeat.com/games/250px-PN03NTSCcover.jpg
+    cover_width: 250
+    cover_height: 352
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:03'
@@ -2043,6 +2495,8 @@
     link: https://howlongtobeat.com/game/20582
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/PLAYABLE_TEASER_SILENTHILLS.jpg
+    cover_width: 225
+    cover_height: 225
     replay: false
     notes: ''
     updated: '2016-01-09 02:41:00'
@@ -2052,6 +2506,8 @@
     link: https://howlongtobeat.com/game/6922
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/USPaRappacover.jpg
+    cover_width: 200
+    cover_height: 200
     replay: false
     notes: ''
     updated: '2023-07-30 07:05:20'
@@ -2061,6 +2517,8 @@
     link: https://howlongtobeat.com/game/7026
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/Phoenix_Wright_-_Ace_Attorney_Coverart.png
+    cover_width: 256
+    cover_height: 231
     replay: true
     notes: ''
     updated: '2017-07-13 03:39:44'
@@ -2070,6 +2528,8 @@
     link: https://howlongtobeat.com/game/7026
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Phoenix_Wright_-_Ace_Attorney_Coverart.png
+    cover_width: 256
+    cover_height: 231
     replay: false
     notes: ''
     updated: '2012-12-27 03:07:20'
@@ -2079,6 +2539,8 @@
     link: https://howlongtobeat.com/game/7028
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/256px-Justice_for_all.jpg
+    cover_width: 256
+    cover_height: 230
     replay: true
     notes: ''
     updated: '2019-09-09 05:46:19'
@@ -2088,6 +2550,8 @@
     link: https://howlongtobeat.com/game/7028
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/256px-Justice_for_all.jpg
+    cover_width: 256
+    cover_height: 230
     replay: false
     notes: ''
     updated: '2012-12-27 03:08:02'
@@ -2097,6 +2561,8 @@
     link: https://howlongtobeat.com/game/7029
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Pheonixwright3trialsandtrib-cover-english.jpg
+    cover_width: 256
+    cover_height: 236
     replay: false
     notes: ''
     updated: '2012-12-27 03:08:13'
@@ -2106,6 +2572,8 @@
     link: https://howlongtobeat.com/game/7146
     platform: Game Boy Color
     cover: https://howlongtobeat.com/games/189986-pokemoncrystal_large.jpg
+    cover_width: 300
+    cover_height: 300
     replay: false
     notes: ''
     updated: '2023-07-30 06:52:52'
@@ -2115,6 +2583,8 @@
     link: https://howlongtobeat.com/game/7148
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/PokemonDiamondBox.jpg
+    cover_width: 256
+    cover_height: 229
     replay: false
     notes: ''
     updated: '2012-12-27 02:12:59'
@@ -2124,6 +2594,8 @@
     link: https://howlongtobeat.com/game/7150
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/510BNCVM1NL._SL500_AA300_.jpg
+    cover_width: 300
+    cover_height: 300
     replay: false
     notes: ''
     updated: '2012-12-27 02:10:43'
@@ -2133,6 +2605,8 @@
     link: https://howlongtobeat.com/game/7151
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/Pokemon_FireRed_Coverart.png
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2012-12-27 02:10:53'
@@ -2142,6 +2616,8 @@
     link: https://howlongtobeat.com/game/7152
     platform: Game Boy Color
     cover: https://howlongtobeat.com/games/Pokemongold.png
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:00'
@@ -2151,6 +2627,8 @@
     link: https://howlongtobeat.com/game/7153
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/256px-Pokemon_HeartGold_Version_box.jpg
+    cover_width: 256
+    cover_height: 234
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:12'
@@ -2160,6 +2638,8 @@
     link: https://howlongtobeat.com/game/7155
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/200px-Pokemon_Mystery_Dungeon_-_Blue_Rescue_Team_Coverart.png
+    cover_width: 200
+    cover_height: 179
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:29'
@@ -2169,6 +2649,8 @@
     link: https://howlongtobeat.com/game/7161
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-Pokemon_Platinum.png
+    cover_width: 250
+    cover_height: 225
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:39'
@@ -2178,6 +2660,8 @@
     link: https://howlongtobeat.com/game/7166
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Pokemon_Ranger_Coverart.png
+    cover_width: 256
+    cover_height: 230
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:52'
@@ -2187,6 +2671,8 @@
     link: https://howlongtobeat.com/game/7169
     platform: Game Boy Color
     cover: https://howlongtobeat.com/games/Pokemon_red_box.jpg
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2012-12-27 02:12:11'
@@ -2196,6 +2682,8 @@
     link: https://howlongtobeat.com/game/7170
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/Pokemon_Ruby_NA.jpg
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2012-12-27 02:12:22'
@@ -2205,6 +2693,8 @@
     link: https://howlongtobeat.com/game/7230
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Portal_standalonebox.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2020-01-27 05:36:43'
@@ -2214,6 +2704,8 @@
     link: https://howlongtobeat.com/game/7231
     platform: PC
     cover: https://howlongtobeat.com/games/Portal2cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:41:09'
@@ -2223,6 +2715,8 @@
     link: https://howlongtobeat.com/game/7278
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/250px-Prey_(Xbox_360).jpg
+    cover_width: 250
+    cover_height: 358
     replay: false
     notes: ''
     updated: '2012-12-27 02:58:07'
@@ -2232,6 +2726,8 @@
     link: https://howlongtobeat.com/game/7337
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-Professor_Layton_and_the_Curious_Village_NA_Boxart.JPG
+    cover_width: 250
+    cover_height: 225
     replay: false
     notes: ''
     updated: '2012-12-27 03:05:32'
@@ -2241,6 +2737,8 @@
     link: https://howlongtobeat.com/game/7338
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-Diabolical_Box.jpg
+    cover_width: 250
+    cover_height: 225
     replay: false
     notes: ''
     updated: '2012-12-27 03:05:50'
@@ -2250,6 +2748,8 @@
     link: https://howlongtobeat.com/game/7365
     platform: PC
     cover: https://howlongtobeat.com/games/256px-PROTOTYPE.png
+    cover_width: 256
+    cover_height: 316
     replay: true
     notes: ''
     updated: '2012-12-26 07:42:25'
@@ -2259,6 +2759,8 @@
     link: https://howlongtobeat.com/game/7365
     platform: Xbox 360
     cover: https://howlongtobeat.com/games/256px-PROTOTYPE.png
+    cover_width: 256
+    cover_height: 316
     replay: false
     notes: ''
     updated: '2012-12-26 07:41:40'
@@ -2268,6 +2770,8 @@
     link: https://howlongtobeat.com/game/7397
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/252px-Pursuit_Force.jpg
+    cover_width: 252
+    cover_height: 432
     replay: false
     notes: ''
     updated: '2012-12-27 03:00:19'
@@ -2277,6 +2781,8 @@
     link: https://howlongtobeat.com/game/7398
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Pursuit_Force_-_Extreme_Justice_Coverart.png
+    cover_width: 256
+    cover_height: 439
     replay: false
     notes: ''
     updated: '2012-12-27 03:00:47'
@@ -2286,6 +2792,8 @@
     link: https://howlongtobeat.com/game/7414
     platform: PC
     cover: https://howlongtobeat.com/games/Puzzle_Agent_cover.jpg
+    cover_width: 256
+    cover_height: 120
     replay: false
     notes: ''
     updated: '2012-12-27 01:56:02'
@@ -2295,6 +2803,8 @@
     link: https://howlongtobeat.com/game/7415
     platform: PC
     cover: https://howlongtobeat.com/games/PuzzleAgent2_292x136.jpg
+    cover_width: 292
+    cover_height: 136
     replay: false
     notes: ''
     updated: '2012-12-27 01:56:10'
@@ -2304,6 +2814,8 @@
     link: https://howlongtobeat.com/game/7585
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/RaCbox.jpg
+    cover_width: 256
+    cover_height: 363
     replay: true
     notes: ''
     updated: '2013-07-05 07:16:40'
@@ -2313,6 +2825,8 @@
     link: https://howlongtobeat.com/game/35859
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/35859_Ratchet_&_Clank_(2016).jpg
+    cover_width: 250
+    cover_height: 275
     replay: false
     notes: ''
     updated: '2017-12-04 23:50:56'
@@ -2322,6 +2836,8 @@
     link: https://howlongtobeat.com/game/7587
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/255px-Ratchet_and_Clank_Future-_A_Crack_in_Time.jpg
+    cover_width: 255
+    cover_height: 297
     replay: false
     notes: ''
     updated: '2012-12-26 07:19:15'
@@ -2331,6 +2847,8 @@
     link: https://howlongtobeat.com/game/7588
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/RandC_FQFB_Cover.jpg
+    cover_width: 256
+    cover_height: 298
     replay: false
     notes: ''
     updated: '2012-12-26 07:19:36'
@@ -2340,6 +2858,8 @@
     link: https://howlongtobeat.com/game/7589
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/252px-RandC_FTD_Box_Art-RP-thumb.jpg
+    cover_width: 252
+    cover_height: 290
     replay: false
     notes: ''
     updated: '2012-12-26 07:19:50'
@@ -2349,6 +2869,8 @@
     link: https://howlongtobeat.com/game/7594
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Ratchet_and_clank_gc_image.jpg
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2012-12-26 07:20:09'
@@ -2358,6 +2880,8 @@
     link: https://howlongtobeat.com/game/7594
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Ratchet_and_clank_gc_image.jpg
+    cover_width: 256
+    cover_height: 363
     replay: true
     notes: ''
     updated: '2013-07-05 07:17:12'
@@ -2367,6 +2891,8 @@
     link: https://howlongtobeat.com/game/7595
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/Size_Matters.jpg
+    cover_width: 256
+    cover_height: 512
     replay: false
     notes: ''
     updated: '2012-12-26 07:20:24'
@@ -2376,6 +2902,8 @@
     link: https://howlongtobeat.com/game/7596
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Ratchetandclank3box.jpg
+    cover_width: 256
+    cover_height: 365
     replay: false
     notes: ''
     updated: '2012-12-26 07:20:41'
@@ -2385,6 +2913,8 @@
     link: https://howlongtobeat.com/game/7597
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Deadlocked.jpg
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2012-12-26 07:21:00'
@@ -2394,6 +2924,8 @@
     link: https://howlongtobeat.com/game/7676
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-Red_Dead_Redemption.jpg
+    cover_width: 256
+    cover_height: 307
     replay: false
     notes: ''
     updated: '2012-12-27 02:43:30'
@@ -2403,6 +2935,8 @@
     link: https://howlongtobeat.com/game/7689
     platform: PC
     cover: https://howlongtobeat.com/games/252px-Red_Faction_Guerrilla_Cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 06:56:19'
@@ -2412,6 +2946,8 @@
     link: https://howlongtobeat.com/game/7689
     platform: PC
     cover: https://howlongtobeat.com/games/252px-Red_Faction_Guerrilla_Cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2012-12-26 07:14:05'
@@ -2421,6 +2957,8 @@
     link: https://howlongtobeat.com/game/7747
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Resistance_2_cover_art.png
+    cover_width: 290
+    cover_height: 335
     replay: false
     notes: ''
     updated: '2012-12-27 02:32:42'
@@ -2430,6 +2968,8 @@
     link: https://howlongtobeat.com/game/7750
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Resistance_Fall_of_Man.jpg
+    cover_width: 256
+    cover_height: 299
     replay: false
     notes: ''
     updated: '2012-12-27 02:29:10'
@@ -2439,6 +2979,8 @@
     link: https://howlongtobeat.com/game/8072
     platform: PC
     cover: https://howlongtobeat.com/games/Sr2_cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 01:57:05'
@@ -2448,6 +2990,8 @@
     link: https://howlongtobeat.com/game/8076
     platform: PC
     cover: https://howlongtobeat.com/games/Saints_Row_The_Third_box_art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 01:57:40'
@@ -2457,6 +3001,8 @@
     link: https://howlongtobeat.com/game/8076
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Saints_Row_The_Third_box_art.jpg
+    cover_width: 300
+    cover_height: 450
     replay: true
     notes: ''
     updated: '2015-02-16 09:53:56'
@@ -2466,6 +3012,8 @@
     link: https://howlongtobeat.com/game/8111
     platform: PC
     cover: https://howlongtobeat.com/games/8111_Sam_&_Max_Beyond_Time_and_Space.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 07:13:50'
@@ -2475,6 +3023,8 @@
     link: https://howlongtobeat.com/game/8113
     platform: PC
     cover: https://howlongtobeat.com/games/Sam_and_Max_Save_the_World_artwork.jpg
+    cover_width: 256
+    cover_height: 358
     replay: false
     notes: ''
     updated: '2023-07-30 07:14:03'
@@ -2484,6 +3034,8 @@
     link: https://howlongtobeat.com/game/8149
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Sands_of_Destruction.jpg
+    cover_width: 256
+    cover_height: 230
     replay: false
     notes: ''
     updated: '2012-12-26 07:05:34'
@@ -2493,6 +3045,8 @@
     link: https://howlongtobeat.com/game/8348
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Sotc_boxart.jpg
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2012-12-27 03:34:51'
@@ -2502,6 +3056,8 @@
     link: https://howlongtobeat.com/game/8348
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Sotc_boxart.jpg
+    cover_width: 256
+    cover_height: 362
     replay: false
     notes: ''
     updated: '2016-02-20 21:12:20'
@@ -2511,6 +3067,8 @@
     link: https://howlongtobeat.com/game/8648
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Sly_2_-_Band_of_Thieves_Coverart.png
+    cover_width: 256
+    cover_height: 366
     replay: false
     notes: ''
     updated: '2023-07-30 07:02:01'
@@ -2520,6 +3078,8 @@
     link: https://howlongtobeat.com/game/8649
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Sly_3.jpg
+    cover_width: 255
+    cover_height: 360
     replay: false
     notes: ''
     updated: '2023-07-30 07:02:18'
@@ -2529,6 +3089,8 @@
     link: https://howlongtobeat.com/game/8650
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Sly_Cooper_and_the_Thievius_Raccoonus_Coverart.png
+    cover_width: 256
+    cover_height: 359
     replay: false
     notes: ''
     updated: '2013-01-04 05:32:28'
@@ -2538,6 +3100,8 @@
     link: https://howlongtobeat.com/game/8898
     platform: PC
     cover: https://howlongtobeat.com/games/2066519-spec_ops_thelinelarge.jpg
+    cover_width: 300
+    cover_height: 367
     replay: false
     notes: ''
     updated: '2020-01-27 05:45:13'
@@ -2547,6 +3111,8 @@
     link: https://howlongtobeat.com/game/8938
     platform: PlayStation
     cover: https://howlongtobeat.com/games/256px-Smboxpsx.jpg
+    cover_width: 256
+    cover_height: 188
     replay: false
     notes: ''
     updated: '2013-01-23 10:16:14'
@@ -2556,6 +3122,8 @@
     link: https://howlongtobeat.com/game/8941
     platform: PlayStation
     cover: https://howlongtobeat.com/games/Spider-Man_2_-_Enter_Electro_Coverart.png
+    cover_width: 256
+    cover_height: 255
     replay: false
     notes: ''
     updated: '2013-01-23 10:16:05'
@@ -2565,6 +3133,8 @@
     link: https://howlongtobeat.com/game/9098
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/StarWarsBattlefront2_PC.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 01:58:39'
@@ -2574,6 +3144,8 @@
     link: https://howlongtobeat.com/game/9572
     platform: PlayStation
     cover: https://howlongtobeat.com/games/Tail_Concerto_Coverart.png
+    cover_width: 256
+    cover_height: 256
     replay: false
     notes: ''
     updated: '2016-01-09 04:11:35'
@@ -2583,6 +3155,8 @@
     link: https://howlongtobeat.com/game/22804
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/TalesfromtheBorderlands.jpg
+    cover_width: 720
+    cover_height: 1080
     replay: false
     notes: ''
     updated: '2016-02-21 00:17:27'
@@ -2592,6 +3166,8 @@
     link: https://howlongtobeat.com/game/9632
     platform: PC
     cover: https://howlongtobeat.com/games/250px-Tf2_standalonebox.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 03:30:04'
@@ -2601,6 +3177,8 @@
     link: https://howlongtobeat.com/game/9897
     platform: PC
     cover: https://howlongtobeat.com/games/Graveyard1.jpg
+    cover_width: 460
+    cover_height: 215
     replay: false
     notes: ''
     updated: '0000-00-00 00:00:00'
@@ -2610,6 +3188,8 @@
     link: https://howlongtobeat.com/game/9995
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/256px-TheLastGuardian.jpg
+    cover_width: 250
+    cover_height: 275
     replay: false
     notes: ''
     updated: '2018-06-19 09:11:57'
@@ -2619,6 +3199,8 @@
     link: https://howlongtobeat.com/game/18126
     platform: PC
     cover: https://howlongtobeat.com/games/TheLastTinkerCityofColors.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:36:35'
@@ -2628,6 +3210,8 @@
     link: https://howlongtobeat.com/game/52711
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/52711_The_Legend_of_Zelda_A_Link_to_the_Past_and_Four_Swords.jpg
+    cover_width: 250
+    cover_height: 250
     replay: false
     notes: ''
     updated: '2023-07-30 06:53:46'
@@ -2637,6 +3221,8 @@
     link: https://howlongtobeat.com/game/10029
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/The_Legend_of_Zelda_-_Four_Swords_Adventures.png
+    cover_width: 250
+    cover_height: 166
     replay: false
     notes: ''
     updated: '2012-12-27 02:08:30'
@@ -2646,6 +3232,8 @@
     link: https://howlongtobeat.com/game/10041
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-Zelda_ph.jpg
+    cover_width: 250
+    cover_height: 223
     replay: false
     notes: ''
     updated: '2012-12-27 02:08:42'
@@ -2655,6 +3243,8 @@
     link: https://howlongtobeat.com/game/10044
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/250px-TMC_Box_Art.JPG
+    cover_width: 250
+    cover_height: 254
     replay: false
     notes: ''
     updated: '2012-12-27 02:08:55'
@@ -2664,6 +3254,8 @@
     link: https://howlongtobeat.com/game/10045
     platform: Nintendo GameCube
     cover: https://howlongtobeat.com/games/250px-ZeldaWindWakerGCNCoverArtUS.jpg
+    cover_width: 250
+    cover_height: 351
     replay: false
     notes: ''
     updated: '2012-12-27 02:09:13'
@@ -2673,6 +3265,8 @@
     link: https://howlongtobeat.com/game/10213
     platform: PC
     cover: https://howlongtobeat.com/games/TheStanleyParable_2011.png
+    cover_width: 250
+    cover_height: 200
     replay: false
     notes: ''
     updated: '2015-02-16 09:56:44'
@@ -2682,6 +3276,8 @@
     link: https://howlongtobeat.com/game/14083
     platform: PC
     cover: https://howlongtobeat.com/games/TheStanleyParable.png
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:55:45'
@@ -2691,6 +3287,8 @@
     link: https://howlongtobeat.com/game/10232
     platform: PC
     cover: https://howlongtobeat.com/games/256px-tinybangstory.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:00:37'
@@ -2700,6 +3298,8 @@
     link: https://howlongtobeat.com/game/21142
     platform: PC
     cover: https://howlongtobeat.com/games/The_Vanishing_of_Ethan_Carter.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:08:33'
@@ -2709,6 +3309,8 @@
     link: https://howlongtobeat.com/game/10250
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/The_Walking_Dead-game-cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-02-21 00:18:02'
@@ -2718,6 +3320,8 @@
     link: https://howlongtobeat.com/game/10276
     platform: PC
     cover: https://howlongtobeat.com/games/The_Wonderful_End_of_the_World_slate_image._SX320_SY240_CR0,0,0,0_.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2013-02-17 00:56:56'
@@ -2727,6 +3331,8 @@
     link: https://howlongtobeat.com/game/10301
     platform: PC
     cover: https://howlongtobeat.com/games/2297927-tfof_box_large.jpg
+    cover_width: 300
+    cover_height: 140
     replay: false
     notes: ''
     updated: '2012-12-27 01:59:46'
@@ -2736,6 +3342,8 @@
     link: https://howlongtobeat.com/game/10350
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Timeholloweurope.jpg
+    cover_width: 255
+    cover_height: 229
     replay: true
     notes: ''
     updated: '2015-02-16 10:34:06'
@@ -2745,6 +3353,8 @@
     link: https://howlongtobeat.com/game/10367
     platform: PC
     cover: https://howlongtobeat.com/games/TinyandBigGrandpaLeftovers.jpg
+    cover_width: 292
+    cover_height: 136
     replay: false
     notes: ''
     updated: '2012-12-27 02:00:46'
@@ -2754,6 +3364,8 @@
     link: https://howlongtobeat.com/game/38000
     platform: PC
     cover: https://howlongtobeat.com/games/38000_Titanfall_2.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2020-01-27 05:40:18'
@@ -2763,6 +3375,8 @@
     link: https://howlongtobeat.com/game/10387
     platform: PC
     cover: https://howlongtobeat.com/games/tothemoonfirbirdgames.jpg
+    cover_width: 289
+    cover_height: 300
     replay: false
     notes: ''
     updated: '2012-12-27 02:01:30'
@@ -2772,6 +3386,8 @@
     link: https://howlongtobeat.com/game/10412
     platform: PlayStation Portable
     cover: https://howlongtobeat.com/games/252px-Tokobot-cover.jpg
+    cover_width: 252
+    cover_height: 434
     replay: false
     notes: ''
     updated: '2012-12-27 03:01:26'
@@ -2781,6 +3397,8 @@
     link: https://howlongtobeat.com/game/20073
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/The_Division_box.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-04-10 03:28:22'
@@ -2790,6 +3408,8 @@
     link: https://howlongtobeat.com/game/10469
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Tr2011cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:14'
@@ -2799,6 +3419,8 @@
     link: https://howlongtobeat.com/game/10623
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/250px-Traumacenterbox.jpg
+    cover_width: 250
+    cover_height: 226
     replay: false
     notes: ''
     updated: '2013-01-23 10:20:56'
@@ -2808,6 +3430,8 @@
     link: https://howlongtobeat.com/game/10796
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Uncharted_2_updated_PS3_logo.jpg
+    cover_width: 256
+    cover_height: 295
     replay: false
     notes: ''
     updated: '2015-11-11 11:33:52'
@@ -2817,6 +3441,8 @@
     link: https://howlongtobeat.com/game/10797
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Uncharted_3_Boxart.jpg
+    cover_width: 250
+    cover_height: 292
     replay: false
     notes: ''
     updated: '2016-01-09 02:33:51'
@@ -2826,6 +3452,8 @@
     link: https://howlongtobeat.com/game/20077
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/Uncharted_4_Reveal_Wallpaper.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2020-01-27 05:39:31'
@@ -2835,6 +3463,8 @@
     link: https://howlongtobeat.com/game/10799
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/Uncharted_Drakes_Fortune.jpg
+    cover_width: 256
+    cover_height: 295
     replay: false
     notes: ''
     updated: '2012-12-27 02:52:12'
@@ -2844,6 +3474,8 @@
     link: https://howlongtobeat.com/game/21924
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/21924_Until_Dawn.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-02-20 22:53:08'
@@ -2853,6 +3485,8 @@
     link: https://howlongtobeat.com/game/10899
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/250px-Vanquish.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:51:45'
@@ -2862,6 +3496,8 @@
     link: https://howlongtobeat.com/game/11020
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/250px-Wanted_Weapons_of_Fate_Cover.jpg
+    cover_width: 250
+    cover_height: 323
     replay: true
     notes: ''
     updated: '2016-05-01 07:16:05'
@@ -2871,6 +3507,8 @@
     link: https://howlongtobeat.com/game/11020
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/250px-Wanted_Weapons_of_Fate_Cover.jpg
+    cover_width: 250
+    cover_height: 323
     replay: true
     notes: ''
     updated: '2015-10-01 09:10:52'
@@ -2880,6 +3518,8 @@
     link: https://howlongtobeat.com/game/11020
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/250px-Wanted_Weapons_of_Fate_Cover.jpg
+    cover_width: 250
+    cover_height: 323
     replay: false
     notes: ''
     updated: '2012-12-27 02:52:48'
@@ -2889,6 +3529,8 @@
     link: https://howlongtobeat.com/game/16899
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/Weapon-Shop-de-Omasse-Logo-Nintendo-Direct-NA-2014-02-131.jpg
+    cover_width: 275
+    cover_height: 183
     replay: false
     notes: ''
     updated: '2016-01-09 04:19:29'
@@ -2898,6 +3540,8 @@
     link: https://howlongtobeat.com/game/16886
     platform: PC
     cover: https://howlongtobeat.com/games/256px-Wolfenstein_The_New_Order_cover.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-16 09:02:32'
@@ -2907,6 +3551,8 @@
     link: https://howlongtobeat.com/game/11421
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/256px-Yakuza-sega.jpg
+    cover_width: 256
+    cover_height: 361
     replay: false
     notes: ''
     updated: '2015-02-16 10:34:10'
@@ -2916,6 +3562,8 @@
     link: https://howlongtobeat.com/game/11422
     platform: PlayStation 2
     cover: https://howlongtobeat.com/games/Yakuza2.jpg
+    cover_width: 228
+    cover_height: 320
     replay: false
     notes: ''
     updated: '2016-01-09 02:19:58'
@@ -2925,6 +3573,8 @@
     link: https://howlongtobeat.com/game/11423
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-Yakuza3_boxart.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2016-05-01 06:40:59'
@@ -2934,6 +3584,8 @@
     link: https://howlongtobeat.com/game/11424
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/11424_Yakuza_4.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2017-07-13 03:41:15'
@@ -2943,6 +3595,8 @@
     link: https://howlongtobeat.com/game/11549
     platform: iOS
     cover: https://howlongtobeat.com/games/250px-Zenonia_start_screen.jpg
+    cover_width: 250
+    cover_height: 167
     replay: false
     notes: ''
     updated: '2023-07-30 07:07:18'
@@ -2952,6 +3606,8 @@
     link: https://howlongtobeat.com/game/11550
     platform: iOS
     cover: https://howlongtobeat.com/games/Zenonia2.jpg
+    cover_width: 705
+    cover_height: 345
     replay: false
     notes: ''
     updated: '2023-07-30 07:07:35'
@@ -2961,6 +3617,8 @@
     link: https://howlongtobeat.com/game/11556
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Virtues_Last_Reward_3DS_Boxart.jpg
+    cover_width: 250
+    cover_height: 303
     replay: true
     notes: ''
     updated: '2016-07-08 18:37:35'
@@ -2970,6 +3628,8 @@
     link: https://howlongtobeat.com/game/11556
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Virtues_Last_Reward_3DS_Boxart.jpg
+    cover_width: 250
+    cover_height: 303
     replay: false
     notes: ''
     updated: '2015-09-21 08:30:22'
@@ -2979,6 +3639,8 @@
     link: https://howlongtobeat.com/game/33283
     platform: PlayStation Vita
     cover: https://howlongtobeat.com/games/Zero_Time_Dilemma.png
+    cover_width: 250
+    cover_height: 291
     replay: false
     notes: ''
     updated: '2016-07-08 18:38:26'
@@ -2988,6 +3650,8 @@
     link: https://howlongtobeat.com/game/11570
     platform: Game Boy Advance
     cover: https://howlongtobeat.com/games/ZoidsLegacy_large.jpg
+    cover_width: 300
+    cover_height: 298
     replay: false
     notes: ''
     updated: '2012-12-27 02:07:21'
@@ -2997,6 +3661,8 @@
     link: https://howlongtobeat.com/game/11585
     platform: PlayStation 3
     cover: https://howlongtobeat.com/games/256px-Zone_of_the_Enders_Cover.jpg
+    cover_width: 256
+    cover_height: 363
     replay: false
     notes: ''
     updated: '2016-01-09 04:01:37'
@@ -3010,6 +3676,8 @@
     link: https://howlongtobeat.com/game/7140
     platform: Nintendo DS
     cover: https://howlongtobeat.com/games/Pokemon_Black_Box_Artwork.jpg
+    cover_width: 250
+    cover_height: 227
     replay: false
     notes: ''
     updated: '2023-07-30 00:51:25'
@@ -3019,6 +3687,8 @@
     link: https://howlongtobeat.com/game/21324
     platform: Nintendo 3DS
     cover: https://howlongtobeat.com/games/pokemonAlphaSapphire.jpg
+    cover_width: 250
+    cover_height: 250
     replay: false
     notes: ''
     updated: '2023-07-30 00:51:02'
@@ -3028,6 +3698,8 @@
     link: https://howlongtobeat.com/game/38019
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg
+    cover_width: 600
+    cover_height: 847
     replay: false
     notes: ''
     updated: '2023-07-30 00:10:00'

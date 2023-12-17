@@ -1,6 +1,7 @@
-import pendulum
 from ruamel.yaml import YAML
+
 import requests
+from PIL import ImageFile
 
 def represent_none(self, data):
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
@@ -71,12 +72,22 @@ for game in games:
         idx = 1
     if game['list_retired']:
         idx = 4
+    cover_url = f"https://howlongtobeat.com/games/{game['game_image']}"
+    headers = {'Range': 'bytes=0-2000000', **headers}
+    r = requests.get(cover_url, stream=True, headers=headers)
+
+    p = ImageFile.Parser()
+    p.feed(r.content)
+    width, height = p.image.size
+
     lists[idx]['games'].append({
         'id': game['id'],
         'title': game['custom_title'],
         'link': f"https://howlongtobeat.com/game/{game['game_id']}",
         'platform': game['platform'],
-        'cover': f"https://howlongtobeat.com/games/{game['game_image']}",
+        'cover': cover_url,
+        'cover_width': width,
+        'cover_height': height,
         'replay': True if game['play_count'] > 1 else False,
         'notes': game['play_notes'],
         'updated': game['date_updated'],

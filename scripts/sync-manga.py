@@ -43,9 +43,9 @@ r = requests.post("https://graphql.anilist.co", json={'query': query})
 results = r.json()['data']['MediaListCollection']['lists'][0]['entries']
 
 for result in results:
-    coverUrl = result['media']['coverImage']['extraLarge']
+    cover_url = result['media']['coverImage']['extraLarge']
     headers = {'Range': 'bytes=0-2000000'}
-    r = requests.get(coverUrl, stream=True, headers=headers)
+    r = requests.get(cover_url, stream=True, headers=headers)
 
     p = ImageFile.Parser()
     p.feed(r.content)
@@ -54,7 +54,7 @@ for result in results:
       'progress': result['progress'],
       'title': result['media']['title']['userPreferred'],
       'chapters': result['media']['chapters'],
-      'cover': coverUrl,
+      'cover': cover_url,
       'cover_height': height,
       'cover_width': width,
       'color': result['media']['coverImage']['color'],

@@ -12,6 +12,7 @@ import games from "../data/games.yml";
 import manga from "../data/manga.json";
 
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 import WriteFile from "../components/WriteFile.astro"
 import RssXml from '../components/RssXml.astro';
@@ -80,8 +81,8 @@ const isProduction = process.env.NODE_ENV === 'production'
                         <img
                           alt={`A cover image of the book titled ${book.title}`}
                           src={book.cover}
-                          height="180px"
-                          style="border-radius: 3px;"
+                          width="120px"
+                          style="border-radius: 3px; width: auto; max-height: 16rem;"
                         />
                         <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={book.link}>OpenLibrary</a></figcaption>
                         <p>{book.progress}% read</p>
@@ -103,11 +104,12 @@ const isProduction = process.env.NODE_ENV === 'production'
                     .filter((m) => m.chapters !== null)
                     .map((manga) => (
                       <li style="display: inline-block;">
-                        <img
+                        <Image
                           alt={`A cover image of ${manga.title}, a manga series by ${manga.author}`}
                           src={manga.cover}
-                          height="180px"
-                          style="border-radius: 3px;"
+                          width={manga.cover_width}
+                          height={manga.cover_height}
+                          style="border-radius: 3px; width: auto; max-height: 16rem;"
                         />
                         <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={manga.url}>Anilist</a></figcaption>
                         <p>{manga.chapters! - manga.progress} chapters left</p>
@@ -124,9 +126,11 @@ const isProduction = process.env.NODE_ENV === 'production'
             <h3 id="action">😵‍💫 This widget should have loaded by now!</h3>
             <div>
               <div id="rotating-border" class="rotating-border-hidden">
-                <img
+                <Image
                   src="/placeholder.png"
                   id="cover"
+                  width="400"
+                  height="400"
                   alt="A grey placeholder cover that is just taking up space until the real cover art is loaded"
                 />
               </div>
@@ -168,11 +172,12 @@ const isProduction = process.env.NODE_ENV === 'production'
                 {
                   (games as GameList[])[0].games.map((game) => (
                     <li style="display: inline-block;">
-                      <img
+                      <Image
                         alt={`Box art for the game titled ${game.title}`}
                         src={game.cover}
-                        height="180px"
-                        style="border-radius: 3px;"
+                        width={game.cover_width}
+                        height={game.cover_height}
+                        style="border-radius: 3px; width: auto; max-height: 16rem;"
                       />
                       <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={game.link}>IGDB</a></figcaption>
                     </li>

@@ -13,4 +13,6 @@ type Game = {
     notes: string;
     updated: string;
     completed: string;
+    cover_height: number;
+    cover_width: number;
 }
