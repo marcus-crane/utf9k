@@ -10,7 +10,7 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-DATA_FILE = "_data/games.yml"
+DATA_FILE = "src/data/games.yml"
 
 url = "https://howlongtobeat.com/api/user/495/games/list"
 
@@ -89,7 +89,7 @@ lists[2]['games'] = sorted(lists[2]['games'], key=lambda x: x['completed'], reve
 lists[3]['games'] = sorted(lists[3]['games'], key=lambda x: x['updated'], reverse=True)
 lists[4]['games'] = sorted(lists[4]['games'], key=lambda x: x['updated'], reverse=True)
 
-with open("_data/games.yml", "w") as file:
+with open("src/data/games.yml", "w") as file:
     yaml.dump(lists, file)
 
 print("~ Games synced locally")

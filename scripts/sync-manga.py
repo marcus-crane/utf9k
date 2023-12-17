@@ -7,7 +7,7 @@ from common import CUR_DIR
 
 TOKEN = os.getenv("ANILIST_TOKEN")
 
-DATA_FILE = "_data/manga.json"
+DATA_FILE = "src/data/manga.json"
 
 manga = []
 
@@ -59,7 +59,7 @@ for result in results:
 
 manga = sorted(manga, key=lambda x: x['title'])
 
-with open('_data/manga.json', 'w') as file:
+with open('src/data/manga.json', 'w') as file:
     json.dump(manga, file, indent=2, sort_keys=True)
 
 print("~ Manga synced locally")

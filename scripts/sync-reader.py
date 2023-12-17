@@ -17,7 +17,7 @@ if not READWISE_TOKEN:
     print("READWISE_TOKEN missing")
     exit(1)
 
-DATA_FILE = "_data/books.yml"
+DATA_FILE = "src/data/books.yml"
 
 READER_STATE_URL = "https://readwise.io/api/v3/list/"
 
@@ -33,7 +33,7 @@ def get_reading_progress(id):
         return resp['results'][0].get('reading_progress', False)
     return False
 
-with open("_data//books.yml", "r") as file:
+with open("src/data//books.yml", "r") as file:
     data = yaml.load(file.read())
 
 current_year = data[0]['books']
@@ -60,5 +60,5 @@ for book in queryable_books:
     else:
         print('no progress')
 
-with open("_data/books.yml", "w") as file:
+with open("src/data/books.yml", "w") as file:
     yaml.dump(data, file)
