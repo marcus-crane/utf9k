@@ -1,16 +1,41 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
-import ProjectList from "../components/ProjectList.astro";
 
 const projects = await getCollection("projects");
 ---
 
-<BaseLayout title="Projects" description="Check out a handful of side projects that I'm quite proud of">
+<BaseLayout
+  title="Projects"
+  description="Check out a handful of side projects that I'm quite proud of"
+>
   <main>
     <header>
       <h1>Projects</h1>
     </header>
-    <ProjectList projects={projects} />
+    <ul>
+      <h2>Ongoing</h2>
+      {
+        projects
+          .filter((p) => p.data.ongoing)
+          .sort((a, b) => a.data.title.localeCompare(b.data.title))
+          .map((p) => (
+            <li>
+              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+            </li>
+          ))
+      }
+      <h2>Archived</h2>
+      {
+        projects
+          .filter((p) => !p.data.ongoing)
+          .sort((a, b) => a.data.title.localeCompare(b.data.title))
+          .map((p) => (
+            <li>
+              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+            </li>
+          ))
+      }
+    </ul>
   </main>
 </BaseLayout>

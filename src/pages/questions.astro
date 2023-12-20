@@ -1,9 +1,31 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
-import QuestionList from "../components/QuestionList.astro";
+import { fnv_1a } from '../utils/fnv32'
 
 const questions = await getCollection("questions");
+
+const systemColours = [
+  "lightpink",
+  "blueviolet",
+  "fuchsia",
+  "indigo",
+  "darkviolet",
+  "mediumvioletred",
+  "salmon",
+  "plum",
+  "tomato",
+  "orange",
+  "darkkhaki",
+  "royalblue",
+  "deepskyblue",
+  "lightseagreen",
+  "turquoise",
+  "chocolate",
+  "brown",
+  "goldenrod",
+  "burlywood",
+];
 ---
 
 <BaseLayout title="Questions" description="From time to time, I'll discover something I want to remember and jot it down here">
@@ -21,7 +43,38 @@ const questions = await getCollection("questions");
         <label class="text-red-500" id="error-output"></label>
       </form>
     </header>
-    <QuestionList questions={questions} />
+    <ul>
+      {
+        questions.sort((a, b) => {
+          const nameA = a.data.title.toLowerCase();
+          const nameB = b.data.title.toLowerCase();
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+          return 0;
+        }).map((q) => {
+          const tags = q.data.tags.map(t => {
+            const hash = fnv_1a(t)
+            // Hash each tag and reduce it down to just numbers
+            // Modulo hash to fit within list of colours
+            const i = Number(hash) % systemColours.length
+            return (
+              <span style={`color: ${systemColours[i]}`}>#{t}</span>
+            )
+          })
+          return (
+            <li id={q.slug} class="question">
+              <a href={`/${q.collection}/${q.slug}`}>{q.data.title}</a>
+              {tags}
+            </li>
+          );
+        })
+      }
+    </ul>
+    
   </main>
 </BaseLayout>
 
