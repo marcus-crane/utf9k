@@ -56,6 +56,15 @@
     #   recommended: false
     #   progress: 57
 
+    - title: Blood, Sweat, and Pixels
+      subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
+      author: Jason Schreier
+      cover: https://covers.openlibrary.org/b/id/14559727-L.jpg
+      link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
+      date_finished: 2023-12-25
+      recommended: false
+      progress: 100
+    
     - title: Walking Your Blues Away
       subtitle: How to Heal the Mind and Create Emotional Well-Being
       author: Thom Hartmann
