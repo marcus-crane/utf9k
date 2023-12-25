@@ -28,6 +28,15 @@
       date_finished: null
       recommended: false
       progress: 67
+      
+    - title: Risk & Reward
+      subtitle: An Inside View of the Property/Casualty Insurance Business
+      author: Stephen Catlin
+      cover: https://covers.openlibrary.org/b/id/14559728-L.jpg
+      link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
+      date_finished: null
+      recommended: false
+      progress: 21 
 
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
