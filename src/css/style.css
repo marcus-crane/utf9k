@@ -663,8 +663,6 @@ ul li.question span {
 
 @media only screen and (min-width: 1200px) {
   #post-body .grid-list ul:not(.partial-list):not(.almost-full-list) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, minmax(40px, auto));
     margin-left: -50%;
     width: 200%;
   }

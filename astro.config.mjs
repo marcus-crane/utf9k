@@ -15,6 +15,13 @@ export default defineConfig({
     server: {
         port: 1313,
     },
+    image: {
+        domains: [
+            "covers.openlibrary.org",
+            "s4.anilist.co",
+            "howlongtobeat.com"
+        ]
+    },
     integrations: [mdx(), sitemap()],
     vite: {
         plugins: [yaml()]

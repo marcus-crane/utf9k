@@ -30,6 +30,10 @@
     "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0",
     "rehype-slug": "^6.0.0",
+    "sharp": "^0.33.1",
     "unist-util-visit": "^5.0.0"
-  }
+  },
+  "trustedDependencies": [
+    "sharp"
+  ]
 }

@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/Core.astro";
+
+import manga from "../data/manga.json";
+
+import { Image } from 'astro:assets';
+---
+
+<BaseLayout
+  title="Books"
+  description="The freshest panels directed right into my eyeballs"
+>
+  <article>
+    <header>
+      <h1>Manga</h1>
+    </header>
+    <div id="post-body">
+      <div class="grid-list">
+        <header>
+          <h2>Ongoing manga</h2>
+        </header>
+        <ul role="list">
+          {manga.filter(m => m.chapters === null).map((m) => (
+            <li>
+              <div>
+                <img
+                  alt={`A cover photo of the book titled ${m.title}`}
+                  src={m.cover}
+                />
+                <a href={m.url} target="_blank" rel="noopener noreferer">
+                  <span>{m.title}</span>
+                </a>
+              </div>
+              <dl>
+                {m.progress} chapters read
+              </dl>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="grid-list">
+        <header>
+          <h2>Manga that has wrapped up</h2>
+        </header>
+        <ul role="list">
+          {manga.filter(m => m.chapters !== null).map((m) => (
+            <li>
+              <div>
+                <img
+                  alt={`A cover photo of the book titled ${m.title}`}
+                  src={m.cover}
+                />
+                <a href={m.url} target="_blank" rel="noopener noreferer">
+                  <span>{m.title}</span>
+                </a>
+              </div>
+              <dl>
+                {m.progress !== 100 && (
+                  <p>{m.progress}% read</p>
+                )}
+              </dl>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
