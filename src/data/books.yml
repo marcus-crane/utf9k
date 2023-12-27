@@ -23,8 +23,10 @@
     - title: High Performance Browser Networking
       subtitle: What Every Web Developer Should Know about Networking and Web Performance
       author: Ilya Grigorik
-      cover: https://covers.openlibrary.org/b/id/14411035-L.jpg
-      link: https://openlibrary.org/works/OL17581297W/High_Performance_Browser_Networking
+      cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
+      cover_height: 1377
+      cover_width: 1050
+      link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
       date_finished: null
       recommended: false
       progress: 67
@@ -32,7 +34,9 @@
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business
       author: Stephen Catlin
-      cover: https://covers.openlibrary.org/b/id/14559728-L.jpg
+      cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
+      cover_height: 1208
+      cover_width: 800
       link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
       date_finished: null
       recommended: false
@@ -41,7 +45,9 @@
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
       author: Damien Cahill and Phillip Toner
-      cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
+      cover: https://cdn.utf9k.net/books/wrong-way.jpg
+      cover_height: 1124
+      cover_width: 735
       link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_finished: null
       recommended: false
@@ -68,7 +74,9 @@
     - title: Blood, Sweat, and Pixels
       subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
       author: Jason Schreier
-      cover: https://covers.openlibrary.org/b/id/14559727-L.jpg
+      cover: https://cdn.utf9k.net/books/blood-sweat-and-pixels.jpg
+      cover_height: 1808
+      cover_width: 1200
       link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
       date_finished: 2023-12-25
       recommended: false
@@ -77,7 +85,9 @@
     - title: Walking Your Blues Away
       subtitle: How to Heal the Mind and Create Emotional Well-Being
       author: Thom Hartmann
-      cover: https://covers.openlibrary.org/b/id/1992046-L.jpg
+      cover: https://cdn.utf9k.net/books/walking-your-blues-away.jpg
+      cover_height: 2700
+      cover_width: 1800
       link: https://openlibrary.org/works/OL554786W/Walking_Your_Blues_Away
       date_finished: 2023-12-15
       recommended: false
@@ -86,7 +96,9 @@
     - title: Taxtopia
       subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
       author: The Rebel Accountant
-      cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
+      cover: https://cdn.utf9k.net/books/taxtopia.jpg
+      cover_height: 2835
+      cover_width: 1878
       link: https://openlibrary.org/works/OL28024085W/Taxtopia
       date_finished: 2023-12-05
       recommended: true
@@ -95,7 +107,9 @@
     - title: The PARA Method
       subtitle: Simplify, Organize, and Master Your Digital Life
       author: Tiago Forte
-      cover: https://covers.openlibrary.org/b/id/14417094-L.jpg
+      cover: https://cdn.utf9k.net/books/the-para-method.jpg
+      cover_height: 2070
+      cover_width: 1538
       link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
       date_finished: 2023-08-30
       recommended: false
@@ -104,7 +118,9 @@
     - title: Hanging Out
       subtitle: The Radical Power of Killing Time
       author: Sheila Liming
-      cover: https://covers.openlibrary.org/b/id/13847599-L.jpg
+      cover: https://cdn.utf9k.net/books/hanging-out.jpg
+      cover_height: 1240
+      cover_width: 797
       link: https://openlibrary.org/works/OL27939130W/Hanging_Out
       date_finished: 2023-06-06
       recommended: false
@@ -113,7 +129,9 @@
     - title: Like, Comment, Subscribe
       subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
       author: Mark Bergen
-      cover: https://covers.openlibrary.org/b/id/12895071-L.jpg
+      cover: https://cdn.utf9k.net/books/like-comment-subscribe.jpg
+      cover_height: 1812
+      cover_width: 1200
       link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
       date_finished: 2023-02-07
       recommended: true

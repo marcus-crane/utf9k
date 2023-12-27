@@ -19,7 +19,8 @@ export default defineConfig({
         domains: [
             "covers.openlibrary.org",
             "s4.anilist.co",
-            "howlongtobeat.com"
+            "howlongtobeat.com",
+            "cdn.utf9k.net"
         ]
     },
     integrations: [mdx(), sitemap()],

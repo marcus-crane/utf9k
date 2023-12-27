@@ -78,10 +78,11 @@ const isProduction = process.env.NODE_ENV === 'production'
                     .filter((b) => b.progress !== 100)
                     .map((book) => (
                       <li style="display: inline-block;">
-                        <img
+                        <Image
                           alt={`A cover image of the book titled ${book.title}`}
                           src={book.cover}
-                          width="120px"
+                          height={book.cover_height!}
+                          width={book.cover_width!}
                           style="border-radius: 3px; width: auto; max-height: 16rem;"
                         />
                         <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={book.link}>OpenLibrary</a></figcaption>

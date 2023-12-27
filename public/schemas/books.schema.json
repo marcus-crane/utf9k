@@ -52,12 +52,16 @@
             },
             "cover": {
               "type": "string",
-              "pattern": "^https://covers.openlibrary.org/b/id/.*-L.jpg$",
               "description": "The URL for the OpenLibrary cover image used for this book"
+            },
+            "cover_height": {
+              "type": "number"
+            },
+            "cover_width": {
+              "type": "number"
             },
             "link": {
               "type": "string",
-              "pattern" : "^https://openlibrary.org/works/.*$",
               "description": "The URL for the OpenLibrary page for this book"
             },
             "date_finished": {
