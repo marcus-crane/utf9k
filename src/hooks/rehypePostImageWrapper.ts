@@ -22,7 +22,7 @@ export default function rehypePostImageWrapper() {
    * @returns {undefined}
    *   Nothing.
    */
-  return function (tree) {
+  return function (tree: any) {
     visit(tree, 'element', function (node, index, parent) {
       if (
         typeof index !== 'number' ||
