@@ -846,7 +846,7 @@ footer {
     background: var(--border-bg);
     transition-duration: 3s;
     transform: rotate(15deg);
-    animation: rotate 120s linear infinite;
+    animation: rotate 100s linear infinite;
 }
 
 @keyframes rotate {
