@@ -1,6 +1,6 @@
 ---
 title: "How can I strip code signatures from macOS binaries?"
-slug: "macos-extracting-shared-dyld-cache"
+slug: "macos-strip-code-signatures"
 description: "In which I have a nice, clean, insecure binary to play with"
 category: "questions"
 tags:
