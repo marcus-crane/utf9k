@@ -19,18 +19,7 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 10
-
-    - title: High Performance Browser Networking
-      subtitle: What Every Web Developer Should Know about Networking and Web Performance
-      author: Ilya Grigorik
-      cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
-      cover_height: 1377
-      cover_width: 1050
-      link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
-      date_finished: null
-      recommended: false
-      progress: 81
-      
+ 
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business
       author: Stephen Catlin
@@ -62,14 +51,25 @@
     #   recommended: false
     #   progress: 15
 
-    # - title: What the CEO Wants You to Know
-    #   subtitle: How Your Company Really Works
-    #   author: Ram Charan
-    #   cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
-    #   link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 57
+    - title: What the CEO Wants You to Know
+      subtitle: How Your Company Really Works
+      author: Ram Charan
+      cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
+      link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
+      date_finished: null
+      recommended: false
+      progress: 57
+
+    - title: High Performance Browser Networking
+      subtitle: What Every Web Developer Should Know about Networking and Web Performance
+      author: Ilya Grigorik
+      cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
+      cover_height: 1377
+      cover_width: 1050
+      link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
+      date_finished: 2024-01-03
+      recommended: false
+      progress: 100
 
     - title: Blood, Sweat, and Pixels
       subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
