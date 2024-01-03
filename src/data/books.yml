@@ -54,7 +54,9 @@
     - title: What the CEO Wants You to Know
       subtitle: How Your Company Really Works
       author: Ram Charan
-      cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
+      cover: https://cdn.utf9k.net/books/what-the-ceo-wants-you-to-know.jpg
+      cover_height: 2340
+      cover_width: 1527
       link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
       date_finished: null
       recommended: false
