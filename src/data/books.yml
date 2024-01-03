@@ -58,9 +58,9 @@
       cover_height: 2340
       cover_width: 1527
       link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
-      date_finished: null
+      date_finished: 2024-01-03
       recommended: false
-      progress: 57
+      progress: 100
 
     - title: High Performance Browser Networking
       subtitle: What Every Web Developer Should Know about Networking and Web Performance
