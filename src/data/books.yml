@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../public/schemas/books.schema.json
-- list: 2023
-  goal: 24
+- list: 2024
+  goal: 16
   books:
     # - title: Seeing Like a State
     #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
@@ -95,6 +95,9 @@
       recommended: false
       progress: 100
 
+- list: 2023
+  goal: 24
+  books:
     - title: Blood, Sweat, and Pixels
       subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
       author: Jason Schreier
