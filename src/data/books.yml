@@ -19,6 +19,28 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 10
+
+    # - title: 100 Go Mistakes and How to Avoid Them
+    #   subtitle: null
+    #   author: Teiva Harsanyi
+    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+    #   cover_height: 2775
+    #   cover_width: 2213
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 13
+
+    - title: SQL Performance Explained
+      subtitle: Everything Developers Need To Know About SQL Performance
+      author: Markus Winand
+      cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+      cover_height: 1804
+      cover_width: 1200
+      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+      date_finished: null
+      recommended: false
+      progress: 24
  
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business
