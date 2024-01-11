@@ -31,6 +31,17 @@
     #   recommended: false
     #   progress: 13
 
+    - title: The Shallows
+      subtitle: What the Internet is Doing to our Brains
+      author: Nicholas Carr
+      cover: https://cdn.utf9k.net/books/the-shallows.jpg
+      cover_height: 1799
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL15297392W/The_Shallows
+      date_finished: null
+      recommended: false
+      progress: 17
+
     - title: SQL Performance Explained
       subtitle: Everything Developers Need To Know About SQL Performance
       author: Markus Winand
