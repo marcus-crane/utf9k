@@ -31,25 +31,47 @@
       recommended: false
       progress: 31
 
-    - title: Wrong Way
-      subtitle: How Privatisation & Economic Reform Backfired
-      author: Damien Cahill and Phillip Toner
-      cover: https://cdn.utf9k.net/books/wrong-way.jpg
-      cover_height: 1124
-      cover_width: 735
-      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-      date_finished: null
-      recommended: false
-      progress: 32
-
-    # - title: Unscripted
-    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-    #   author: James B. Stewart and Rachel Abrams
-    #   cover: https://covers.openlibrary.org/b/id/14369191-L.jpg
-    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    # - title: Wrong Way
+    #   subtitle: How Privatisation & Economic Reform Backfired
+    #   author: Damien Cahill and Phillip Toner
+    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
+    #   cover_height: 1124
+    #   cover_width: 735
+    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
     #   date_finished: null
     #   recommended: false
-    #   progress: 15
+    #   progress: 32
+
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1500
+      cover_width: 976
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_finished: null
+      recommended: false
+      progress: 16
+
+    - title: Creative Doing
+      subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
+      cover: https://cdn.utf9k.net/books/creative-doing.jpg
+      cover_height: 888
+      cover_width: 584
+      link: https://openlibrary.org/works/OL37513885W/Creative_Doing_75_Practical_Exercises_to_Unblock_Your_Creative_Potential_in_Your_Work_Hobby_or_Next_
+      date_finished: 2024-01-09
+      recommended: false
+      progress: 100
+
+    - title: Digital Zettelkasten
+      subtitle: Principles, Methods, & Examples
+      cover: https://cdn.utf9k.net/books/digital-zettelkasten.jpg
+      cover_height: 1360
+      cover_width: 850
+      link: https://openlibrary.org/works/OL24703365W/Digital_Zettelkasten
+      date_finished: 2024-01-04
+      recommended: false
+      progress: 100
 
     - title: What the CEO Wants You to Know
       subtitle: How Your Company Really Works
