@@ -5,7 +5,9 @@
     # - title: Seeing Like a State
     #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
     #   author: James C. Scott
-    #   cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
+    #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
+    #   cover_height: 1245
+    #   cover_width: 800
     #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
     #   date_finished: null
     #   recommended: false
@@ -14,7 +16,9 @@
     # - title: The Seven-Day Stress Prescription
     #   subtitle: null
     #   author: Elissa Epel
-    #   cover: https://covers.openlibrary.org/b/id/14304273-L.jpg
+    #   cover: https://cdn.utf9k.net/books/the-seven-day-stress-prescription.jpg
+    #   cover_height: 2339
+    #   cover_width: 1524
     #   link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
     #   date_finished: null
     #   recommended: false
@@ -203,7 +207,9 @@
     - title: Build
       subtitle: An Unorthodox Guide to Making Things Worth Making
       author: Tony Fadell
-      cover: https://covers.openlibrary.org/b/id/12742378-L.jpg
+      cover: https://cdn.utf9k.net/books/build.jpg
+      cover_height: 2560
+      cover_width: 1600
       link: https://openlibrary.org/works/OL27739453W/Build
       date_finished: 2022-10-29
       recommended: true
@@ -212,7 +218,9 @@
     - title: High Output Management
       subtitle: null
       author: Andrew S. Grove
-      cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
+      cover: https://cdn.utf9k.net/books/high-output-management.jpg
+      cover_height: 2411
+      cover_width: 1563
       link: https://openlibrary.org/works/OL2355834W/High_Output_Management
       date_finished: 2022-10-23
       recommended: true
@@ -221,7 +229,9 @@
     - title: Building a Second Brain
       subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
       author: Tiago Forte
-      cover: https://covers.openlibrary.org/b/id/12372866-L.jpg
+      cover: https://cdn.utf9k.net/books/building-a-second-brain.jpg
+      cover_height: 2555
+      cover_width: 1610
       link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
       date_finished: 2022-09-20
       recommended: false
@@ -230,7 +240,9 @@
     - title: Slow Horses
       subtitle: null
       author: Mick Herron
-      cover: https://covers.openlibrary.org/b/id/12861756-L.jpg
+      cover: https://cdn.utf9k.net/books/slow-horses.jpg
+      cover_height: 2337
+      cover_width: 1525
       link: https://openlibrary.org/works/OL18630860W
       date_finished: 2022-09-18
       recommended: true
@@ -239,7 +251,9 @@
     - title: Ruined by Design
       subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
       author: Mike Monteiro
-      cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
+      cover: https://cdn.utf9k.net/books/ruined-by-design.jpg
+      cover_height: 2582
+      cover_width: 1686
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
       date_finished: 2022-02-24
       recommended: false
