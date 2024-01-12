@@ -22,7 +22,9 @@ const typedGames = games as GameList[];
       {
         typedGames.map((gameList) => (
           <div class="grid-list">
-            <h3>{gameList.list}</h3>
+            <header>
+              <h2>{gameList.list}</h2>
+            </header>
             <ul role="list">
               {gameList.games
                 .map((game) => (

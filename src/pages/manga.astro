@@ -23,9 +23,12 @@ import { Image } from 'astro:assets';
           {manga.filter(m => m.chapters === null).map((m) => (
             <li>
               <div>
-                <img
-                  alt={`A cover photo of the book titled ${m.title}`}
+                <Image
+                  alt={`A cover image of ${m.title}, a manga series by ${m.author}`}
                   src={m.cover}
+                  width={m.cover_width}
+                  height={m.cover_height}
+                  style="border-radius: 3px; width: auto; max-width: 16rem;"
                 />
                 <a href={m.url} target="_blank" rel="noopener noreferer">
                   <span>{m.title}</span>
@@ -46,9 +49,12 @@ import { Image } from 'astro:assets';
           {manga.filter(m => m.chapters !== null).map((m) => (
             <li>
               <div>
-                <img
-                  alt={`A cover photo of the book titled ${m.title}`}
+                <Image
+                  alt={`A cover image of ${m.title}, a manga series by ${m.author}`}
                   src={m.cover}
+                  width={m.cover_width}
+                  height={m.cover_height}
+                  style="border-radius: 3px; width: auto; max-width: 16rem;"
                 />
                 <a href={m.url} target="_blank" rel="noopener noreferer">
                   <span>{m.title}</span>
