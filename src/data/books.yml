@@ -555,8 +555,8 @@
       subtitle: Its Origins, Uses, and Abuses
       author: Herbert Kaufman
       cover: https://cdn.utf9k.net/books/red-tape.jpg
-      cover_height: 0
-      cover_width: 0
+      cover_height: 2550
+      cover_width: 1650
       link: https://openlibrary.org/works/OL3479766W/Red_Tape
       date_finished: 2020-03-23
       recommended: false
@@ -624,8 +624,8 @@
       subtitle: null
       author: Gene Kim
       cover: https://cdn.utf9k.net/books/the-unicorn-project.jpg
-      cover_height: 0
-      cover_width: 0
+      cover_height: 2560
+      cover_width: 1707
       link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
       date_finished: 2019-12-25
       recommended: false
