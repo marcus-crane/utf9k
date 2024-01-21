@@ -6,9 +6,6 @@ on:
     workflows: [Audit Links, External Sync]
     types:
       - completed
-env:
-  ANILIST_TOKEN: ${{ secrets.ANILIST_TOKEN }}
-  READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-22.04

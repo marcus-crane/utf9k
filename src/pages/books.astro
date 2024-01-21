@@ -5,6 +5,8 @@ import type { BookList } from "../schemas/books";
 
 import books from "../data/books.yml";
 
+import { Image } from 'astro:assets';
+
 const typedBooks = books as BookList[];
 ---
 
@@ -46,9 +48,11 @@ const typedBooks = books as BookList[];
                 {yearGroup.books.map((b) => (
                   <li>
                     <div>
-                      <img
-                        alt={`A cover photo of the book titled ${b.title}`}
+                      <Image
+                        alt={`Cover of the book title ${b.title}`}
                         src={b.cover}
+                        width={b.cover_width}
+                        height={b.cover_height}
                       />
                       <a href={b.link} target="_blank" rel="noopener noreferer">
                         <span>{b.title}</span>
