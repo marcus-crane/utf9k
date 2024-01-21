@@ -46,16 +46,16 @@
       recommended: false
       progress: 32
 
-    - title: SQL Performance Explained
-      subtitle: Everything Developers Need To Know About SQL Performance
-      author: Markus Winand
-      cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
-      cover_height: 1804
-      cover_width: 1200
-      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-      date_finished: null
-      recommended: false
-      progress: 24
+    # - title: SQL Performance Explained
+    #   subtitle: Everything Developers Need To Know About SQL Performance
+    #   author: Markus Winand
+    #   cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+    #   cover_height: 1804
+    #   cover_width: 1200
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 24
  
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business

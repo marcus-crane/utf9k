@@ -1,5 +1,4 @@
 ---
-import { propsToFilename } from "astro/assets/utils";
 import "../css/style.css";
 import "littlefoot/dist/littlefoot.css";
 
@@ -37,8 +36,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   name="viewport"
   content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 />
-<!-- {{ if .Params.keywords }}
-<meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />{{ end }} -->
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
 <link rel="canonical" href={canonicalURL} />

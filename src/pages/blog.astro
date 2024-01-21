@@ -3,9 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
 import dayjs from 'dayjs'
 
-const posts = await getCollection("blog", ({ data }) => {
-  return data.draft !== true
-});
+const posts = await getCollection("blog");
 let seenYears: Set<number> = new Set()
 
 const processedPosts = posts
