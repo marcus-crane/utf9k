@@ -1,5 +1,27 @@
 - list: Playing
   games:
+  - id: 10893684
+    title: Rogue Galaxy
+    link: https://howlongtobeat.com/game/7946
+    platform: PlayStation 4
+    cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
+    cover_width: 300
+    cover_height: 424
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:46:50'
+    completed: '0000-00-00'
+  - id: 32999332
+    title: Alan Wake II
+    link: https://howlongtobeat.com/game/101237
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/101237_Alan_Wake_2.jpg
+    cover_width: 810
+    cover_height: 1080
+    replay: false
+    notes: null
+    updated: '2024-01-12 10:43:10'
+    completed: '0000-00-00'
   - id: 30797736
     title: Disco Elysium
     link: https://howlongtobeat.com/game/57335
@@ -13,17 +35,6 @@
     completed: '0000-00-00'
 - list: Stalled
   games:
-  - id: 10893684
-    title: Rogue Galaxy
-    link: https://howlongtobeat.com/game/7946
-    platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
-    cover_width: 300
-    cover_height: 424
-    replay: false
-    notes: ''
-    updated: '2023-11-05 00:32:07'
-    completed: '0000-00-00'
   - id: 745959
     title: 'Final Fantasy XIV: A Realm Reborn'
     link: https://howlongtobeat.com/game/12654
@@ -34,17 +45,6 @@
     replay: false
     notes: Playing post-6.0 content
     updated: '2023-10-17 04:11:46'
-    completed: '0000-00-00'
-  - id: 10893668
-    title: Transistor
-    link: https://howlongtobeat.com/game/17617
-    platform: Nintendo Switch
-    cover: https://howlongtobeat.com/games/250px-Transistor_art.jpg
-    cover_width: 300
-    cover_height: 450
-    replay: false
-    notes: ''
-    updated: '2023-10-17 04:10:31'
     completed: '0000-00-00'
   - id: 30499827
     title: 'Cyberpunk 2077: Phantom Liberty'
@@ -68,28 +68,6 @@
     notes: null
     updated: '2023-10-08 07:58:51'
     completed: '0000-00-00'
-  - id: 30499829
-    title: Max Payne 3
-    link: https://howlongtobeat.com/game/5739
-    platform: PC
-    cover: https://howlongtobeat.com/games/256px-Maxpayne3.jpg
-    cover_width: 300
-    cover_height: 450
-    replay: true
-    notes: ''
-    updated: '2023-10-08 07:57:54'
-    completed: '0000-00-00'
-  - id: 29819412
-    title: Judgment
-    link: https://howlongtobeat.com/game/60754
-    platform: PlayStation 5
-    cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
-    cover_width: 266
-    cover_height: 374
-    replay: false
-    notes: ''
-    updated: '2023-10-08 07:57:31'
-    completed: '0000-00-00'
   - id: 29266757
     title: .hack//Infection
     link: https://howlongtobeat.com/game/22
@@ -111,17 +89,6 @@
     replay: false
     notes: ''
     updated: '2023-08-25 10:13:53'
-    completed: '0000-00-00'
-  - id: 29275023
-    title: 'Call of Duty: Black Ops III'
-    link: https://howlongtobeat.com/game/27127
-    platform: ''
-    cover: https://howlongtobeat.com/games/COD_Black_Ops_3.jpg
-    cover_width: 300
-    cover_height: 450
-    replay: false
-    notes: ''
-    updated: '2023-07-30 07:17:36'
     completed: '0000-00-00'
   - id: 29274874
     title: Watch Dogs 2
@@ -200,17 +167,6 @@
     notes: ''
     updated: '2023-07-30 00:01:13'
     completed: '0000-00-00'
-  - id: 10893641
-    title: 'The Witcher 2: Assassins of Kings'
-    link: https://howlongtobeat.com/game/10268
-    platform: PC
-    cover: https://howlongtobeat.com/games/256px-Witcher_2_cover.png
-    cover_width: 300
-    cover_height: 450
-    replay: false
-    notes: ''
-    updated: '2021-07-11 08:13:05'
-    completed: '0000-00-00'
   - id: 10893681
     title: Grandia
     link: https://howlongtobeat.com/game/4077
@@ -222,19 +178,19 @@
     notes: ''
     updated: '2021-07-11 08:12:56'
     completed: '0000-00-00'
-  - id: 6088467
-    title: Bayonetta
-    link: https://howlongtobeat.com/game/966
-    platform: Nintendo Switch
-    cover: https://howlongtobeat.com/games/Bayonetta_Box_Art.jpg
-    cover_width: 300
-    cover_height: 450
-    replay: false
-    notes: ''
-    updated: '2021-07-11 08:12:47'
-    completed: '0000-00-00'
 - list: Completed
   games:
+  - id: 32999340
+    title: Control
+    link: https://howlongtobeat.com/game/57507
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/57507_Control.jpg
+    cover_width: 720
+    cover_height: 1080
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:44:46'
+    completed: '2024-01-06'
   - id: 29266787
     title: Final Fantasy XVI
     link: https://howlongtobeat.com/game/83152
@@ -383,8 +339,8 @@
     link: https://howlongtobeat.com/game/79776
     platform: PlayStation 5
     cover: https://howlongtobeat.com/games/79776_Ratchet_&_Clank_Rift_Apart.jpg
-    cover_width: 1024
-    cover_height: 1024
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2021-07-18 08:37:12'
@@ -3671,6 +3627,50 @@
   games: []
 - list: Retired
   games:
+  - id: 10893641
+    title: 'The Witcher 2: Assassins of Kings'
+    link: https://howlongtobeat.com/game/10268
+    platform: PC
+    cover: https://howlongtobeat.com/games/256px-Witcher_2_cover.png
+    cover_width: 300
+    cover_height: 450
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:45:54'
+    completed: '0000-00-00'
+  - id: 29275023
+    title: 'Call of Duty: Black Ops III'
+    link: https://howlongtobeat.com/game/27127
+    platform: ''
+    cover: https://howlongtobeat.com/games/COD_Black_Ops_3.jpg
+    cover_width: 300
+    cover_height: 450
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:45:35'
+    completed: '0000-00-00'
+  - id: 29819412
+    title: Judgment
+    link: https://howlongtobeat.com/game/60754
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/60754_Judge_Eyes.jpg
+    cover_width: 266
+    cover_height: 374
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:45:23'
+    completed: '0000-00-00'
+  - id: 6088467
+    title: Bayonetta
+    link: https://howlongtobeat.com/game/966
+    platform: Nintendo Switch
+    cover: https://howlongtobeat.com/games/Bayonetta_Box_Art.jpg
+    cover_width: 300
+    cover_height: 450
+    replay: false
+    notes: ''
+    updated: '2024-01-12 10:45:07'
+    completed: '0000-00-00'
   - id: 11148373
     title: Pokémon Black and White
     link: https://howlongtobeat.com/game/7140
