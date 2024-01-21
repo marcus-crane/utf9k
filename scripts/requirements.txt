@@ -1,5 +1,5 @@
 attrs==19.3.0
-beautifulsoup4==4.12.2
+beautifulsoup4==4.12.3
 certifi==2023.7.22
 chardet==5.2.0
 charset-normalizer==3.3.2
