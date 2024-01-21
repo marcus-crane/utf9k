@@ -11,4 +11,3 @@ python "$SCRIPTS/gather-filesizes.py"
 # python "$SCRIPTS/gather-image-metadata.py" TODO: Fix
 python "$SCRIPTS/sync-manga.py"
 python "$SCRIPTS/sync-games.py"
-python "$SCRIPTS/sync-reader.py"
