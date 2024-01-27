@@ -42,9 +42,9 @@
       cover_height: 1799
       cover_width: 1200
       link: https://openlibrary.org/works/OL15297392W/The_Shallows
-      date_finished: null
+      date_finished: 2024-01-27
       recommended: false
-      progress: 47 
+      progress: 100
 
     # - title: SQL Performance Explained
     #   subtitle: Everything Developers Need To Know About SQL Performance
@@ -68,27 +68,27 @@
       recommended: false
       progress: 31
 
-    # - title: Wrong Way
-    #   subtitle: How Privatisation & Economic Reform Backfired
-    #   author: Damien Cahill and Phillip Toner
-    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
-    #   cover_height: 1124
-    #   cover_width: 735
-    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 32
-
-    - title: Unscripted
-      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-      author: James B. Stewart and Rachel Abrams
-      cover: https://cdn.utf9k.net/books/unscripted.jpg
-      cover_height: 1498
-      cover_width: 975
-      link: https://openlibrary.org/works/OL28158768W/Unscripted
+    - title: Wrong Way
+      subtitle: How Privatisation & Economic Reform Backfired
+      author: Damien Cahill and Phillip Toner
+      cover: https://cdn.utf9k.net/books/wrong-way.jpg
+      cover_height: 1124
+      cover_width: 735
+      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_finished: null
       recommended: false
-      progress: 17
+      progress: 32
+
+    # - title: Unscripted
+    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+    #   author: James B. Stewart and Rachel Abrams
+    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
+    #   cover_height: 1498
+    #   cover_width: 975
+    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 17
 
     - title: Creative Doing
       subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
