@@ -180,6 +180,17 @@
     completed: '0000-00-00'
 - list: Completed
   games:
+  - id: 33557684
+    title: Silent Hill 2
+    link: https://howlongtobeat.com/game/8523
+    platform: PlayStation 2
+    cover: https://howlongtobeat.com/games/250px-Silent_Hill_2.jpg
+    cover_width: 250
+    cover_height: 361
+    replay: false
+    notes: ''
+    updated: '2024-01-30 07:36:18'
+    completed: '2024-01-30'
   - id: 32999340
     title: Control
     link: https://howlongtobeat.com/game/57507
