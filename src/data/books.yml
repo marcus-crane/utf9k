@@ -35,6 +35,17 @@
     #   recommended: false
     #   progress: 13
 
+    - title: Silent Hill 2
+      subtitle: The Novel
+      author: Sadamu Yamashita
+      cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
+      cover_height: 1000
+      cover_width: 667
+      link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
+      date_finished: null
+      recommended: false
+      progress: 53
+
     - title: The Shallows
       subtitle: What the Internet is Doing to our Brains
       author: Nicholas Carr
