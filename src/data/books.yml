@@ -35,28 +35,6 @@
     #   recommended: false
     #   progress: 13
 
-    - title: Silent Hill 2
-      subtitle: The Novel
-      author: Sadamu Yamashita
-      cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
-      cover_height: 1000
-      cover_width: 667
-      link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
-      date_finished: null
-      recommended: false
-      progress: 53
-
-    - title: The Shallows
-      subtitle: What the Internet is Doing to our Brains
-      author: Nicholas Carr
-      cover: https://cdn.utf9k.net/books/the-shallows.jpg
-      cover_height: 1799
-      cover_width: 1200
-      link: https://openlibrary.org/works/OL15297392W/The_Shallows
-      date_finished: 2024-01-27
-      recommended: false
-      progress: 100
-
     # - title: SQL Performance Explained
     #   subtitle: Everything Developers Need To Know About SQL Performance
     #   author: Markus Winand
@@ -101,6 +79,28 @@
     #   recommended: false
     #   progress: 17
 
+    - title: Silent Hill 2
+      subtitle: The Novel
+      author: Sadamu Yamashita
+      cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
+      cover_height: 1000
+      cover_width: 667
+      link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
+      date_finished: 2022-02-02 
+      recommended: false
+      progress: 100
+ 
+    - title: The Shallows
+      subtitle: What the Internet is Doing to our Brains
+      author: Nicholas Carr
+      cover: https://cdn.utf9k.net/books/the-shallows.jpg
+      cover_height: 1799
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL15297392W/The_Shallows
+      date_finished: 2024-01-27
+      recommended: false
+      progress: 100
+  
     - title: Creative Doing
       subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
       cover: https://cdn.utf9k.net/books/creative-doing.jpg
