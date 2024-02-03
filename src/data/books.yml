@@ -79,6 +79,17 @@
     #   recommended: false
     #   progress: 17
 
+    - title: Networks of New York
+      subtitle: An Illustrated Field Guide to Urban Internet Infrastructure
+      author: Ingrid Burrington
+      cover: https://cdn.utf9k.net/books/networks-of-new-york.jpg
+      cover_height: 1903
+      cover_width: 1200
+      link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
+      date_finished: 2022-02-03
+      recommended: true
+      progress: 100
+
     - title: Silent Hill 2
       subtitle: The Novel
       author: Sadamu Yamashita
