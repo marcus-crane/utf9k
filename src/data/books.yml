@@ -54,8 +54,8 @@
       cover_width: 800
       link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
       date_finished: null
-      recommended: false
-      progress: 31
+      recommended: true
+      progress: 43
 
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
