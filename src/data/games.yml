@@ -1,26 +1,15 @@
 - list: Playing
   games:
-  - id: 10893684
-    title: Rogue Galaxy
-    link: https://howlongtobeat.com/game/7946
-    platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
+  - id: 33814790
+    title: 'The Stanley Parable: Ultra Deluxe'
+    link: https://howlongtobeat.com/game/81950
+    platform: PC
+    cover: https://howlongtobeat.com/games/81950_The_Stanley_Parable_Ultra_Deluxe.jpg
     cover_width: 300
-    cover_height: 424
+    cover_height: 450
     replay: false
     notes: ''
-    updated: '2024-01-12 10:46:50'
-    completed: '0000-00-00'
-  - id: 32999332
-    title: Alan Wake II
-    link: https://howlongtobeat.com/game/101237
-    platform: PlayStation 5
-    cover: https://howlongtobeat.com/games/101237_Alan_Wake_2.jpg
-    cover_width: 810
-    cover_height: 1080
-    replay: false
-    notes: null
-    updated: '2024-01-12 10:43:10'
+    updated: '2024-02-08 09:24:23'
     completed: '0000-00-00'
   - id: 30797736
     title: Disco Elysium
@@ -35,6 +24,28 @@
     completed: '0000-00-00'
 - list: Stalled
   games:
+  - id: 10893684
+    title: Rogue Galaxy
+    link: https://howlongtobeat.com/game/7946
+    platform: PlayStation 4
+    cover: https://howlongtobeat.com/games/RG_EU_Cover_300.jpg
+    cover_width: 300
+    cover_height: 424
+    replay: false
+    notes: ''
+    updated: '2024-02-08 09:23:57'
+    completed: '0000-00-00'
+  - id: 32999332
+    title: Alan Wake II
+    link: https://howlongtobeat.com/game/101237
+    platform: PlayStation 5
+    cover: https://howlongtobeat.com/games/101237_Alan_Wake_2.jpg
+    cover_width: 810
+    cover_height: 1080
+    replay: false
+    notes: ''
+    updated: '2024-02-08 09:23:43'
+    completed: '0000-00-00'
   - id: 745959
     title: 'Final Fantasy XIV: A Realm Reborn'
     link: https://howlongtobeat.com/game/12654
