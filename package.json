@@ -15,7 +15,7 @@
     "sync": "./ci/externalsync.sh"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
+    "@astrojs/check": "^0.5.0",
     "@astrojs/mdx": "^2.0.5",
     "@astrojs/sitemap": "^3.0.5",
     "astro": "^4.2.1",
