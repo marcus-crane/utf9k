@@ -15,15 +15,15 @@
     "sync": "./ci/externalsync.sh"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/mdx": "^2.0.5",
+    "@astrojs/check": "^0.5.0",
+    "@astrojs/mdx": "^2.1.1",
     "@astrojs/sitemap": "^3.0.5",
-    "astro": "^4.2.1",
+    "astro": "^4.3.5",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@astro-community/astro-embed-twitter": "^0.5.3",
-    "@astro-community/astro-embed-youtube": "^0.4.3",
+    "@astro-community/astro-embed-youtube": "^0.4.4",
     "@rollup/plugin-yaml": "^4.1.2",
     "dayjs": "^1.11.10",
     "littlefoot": "^4.0.1",
