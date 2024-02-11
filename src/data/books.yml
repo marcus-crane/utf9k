@@ -45,17 +45,6 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 24
- 
-    - title: Risk & Reward
-      subtitle: An Inside View of the Property/Casualty Insurance Business
-      author: Stephen Catlin
-      cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
-      cover_height: 1208
-      cover_width: 800
-      link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
-      date_finished: null
-      recommended: true
-      progress: 43
 
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
@@ -78,6 +67,17 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 17
+ 
+    - title: Risk & Reward
+      subtitle: An Inside View of the Property/Casualty Insurance Business
+      author: Stephen Catlin
+      cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
+      cover_height: 1208
+      cover_width: 800
+      link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
+      date_finished: 2024-02-11
+      recommended: true
+      progress: 100
 
     - title: Networks of New York
       subtitle: An Illustrated Field Guide to Urban Internet Infrastructure
@@ -86,7 +86,7 @@
       cover_height: 1903
       cover_width: 1200
       link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
-      date_finished: 2022-02-03
+      date_finished: 2024-02-03
       recommended: true
       progress: 100
 
@@ -97,7 +97,7 @@
       cover_height: 1000
       cover_width: 667
       link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
-      date_finished: 2022-02-02 
+      date_finished: 2024-02-02 
       recommended: false
       progress: 100
  
