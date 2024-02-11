@@ -8,9 +8,15 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// TODO: Put back ternery when bug in Astro compiler is fixed
+let title = "utf9k"
+if (Astro.props.title) {
+  title = `${Astro.props.title} | ${title}`
+} 
 ---
 
-<title>{Astro.props.title}{Astro.props.title && " | "}utf9k</title>
+<title>{title}</title>
 {
   Astro.props.description && (
     <meta name="description" content={Astro.props.description} />
