@@ -1,16 +1,5 @@
 - list: Playing
   games:
-  - id: 33888567
-    title: 'Halo: Reach'
-    link: https://howlongtobeat.com/game/4271
-    platform: PC
-    cover: https://howlongtobeat.com/games/Halo-_Reach_box_art.png
-    cover_width: 256
-    cover_height: 326
-    replay: false
-    notes: null
-    updated: '2024-02-11 07:41:34'
-    completed: '0000-00-00'
   - id: 33814790
     title: 'The Stanley Parable: Ultra Deluxe'
     link: https://howlongtobeat.com/game/81950
@@ -202,6 +191,17 @@
     completed: '0000-00-00'
 - list: Completed
   games:
+  - id: 33888567
+    title: 'Halo: Reach'
+    link: https://howlongtobeat.com/game/4271
+    platform: PC
+    cover: https://howlongtobeat.com/games/Halo-_Reach_box_art.png
+    cover_width: 256
+    cover_height: 326
+    replay: false
+    notes: ''
+    updated: '2024-02-13 08:17:40'
+    completed: '2024-02-13'
   - id: 33557684
     title: Silent Hill 2
     link: https://howlongtobeat.com/game/8523
