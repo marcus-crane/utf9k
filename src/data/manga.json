@@ -6,7 +6,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-82gwrvQV6OBc.png",
     "cover_height": 722,
     "cover_width": 460,
-    "progress": 155,
+    "progress": 156,
     "status": "RELEASING",
     "title": "Chainsaw Man",
     "url": "https://anilist.co/manga/105778"
@@ -22,6 +22,18 @@
     "status": "RELEASING",
     "title": "Dragon Ball Super",
     "url": "https://anilist.co/manga/86508"
+  },
+  {
+    "author": "Jiro Matsumoto",
+    "chapters": 84,
+    "color": null,
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31131-xZFKnHNqyvGP.jpg",
+    "cover_height": 654,
+    "cover_width": 460,
+    "progress": 2,
+    "status": "FINISHED",
+    "title": "Freesia",
+    "url": "https://anilist.co/manga/31131"
   },
   {
     "author": "Gege Akutami",
