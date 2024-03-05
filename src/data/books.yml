@@ -78,6 +78,17 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 17
+    
+    - title: Creative Dysregulation
+      subtitle: Why Your Creativity is Chaotic & What to Do About It
+      author: Kelly Wilde-Miller
+      cover: https://cdn.utf9k.net/books/creative-dysregulation.jpg
+      cover_height: 1510
+      cover_width: 1014
+      link: https://www.kellywildemiller.com/creativedysregulation
+      date_finished: 2024-03-05
+      recommended: false
+      progress: 100
  
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business
