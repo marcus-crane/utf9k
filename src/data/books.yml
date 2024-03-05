@@ -46,17 +46,6 @@
     #   recommended: false
     #   progress: 24
 
-    - title: Hacks, Leaks, and Revelations
-      subtitle: The Art of Analyzing Hacked and Leaked Data
-      author: Micah Lee
-      cover: https://cdn.utf9k.net/books/hacks-leaks-and-revelations.jpg
-      cover_height: 1832
-      cover_width: 1400
-      link: https://nostarch.com/hacks-leaks-and-revelations
-      date_finished: null
-      recommended: false
-      progress: 79
-
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
       author: Damien Cahill and Phillip Toner
@@ -78,6 +67,17 @@
     #   date_finished: null
     #   recommended: false
     #   progress: 17
+    
+    - title: Hacks, Leaks, and Revelations
+      subtitle: The Art of Analyzing Hacked and Leaked Data
+      author: Micah Lee
+      cover: https://cdn.utf9k.net/books/hacks-leaks-and-revelations.jpg
+      cover_height: 1832
+      cover_width: 1400
+      link: https://nostarch.com/hacks-leaks-and-revelations
+      date_finished: 2024-03-06
+      recommended: false
+      progress: 100 
     
     - title: Creative Dysregulation
       subtitle: Why Your Creativity is Chaotic & What to Do About It
