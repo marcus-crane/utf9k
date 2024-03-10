@@ -68,6 +68,17 @@
     #   recommended: false
     #   progress: 17
     
+    - title: Burn Book
+      subtitle: A Tech Love Story
+      author: Kara Swisher
+      cover: https://cdn.utf9k.net/books/burn-book.jpg
+      cover_height: 2113
+      cover_width: 1400
+      link: https://www.simonandschuster.com/books/Burn-Book/Kara-Swisher/9781982163891
+      date_finished: 2024-03-10
+      recommended: false
+      progress: 100
+    
     - title: Hacks, Leaks, and Revelations
       subtitle: The Art of Analyzing Hacked and Leaked Data
       author: Micah Lee
