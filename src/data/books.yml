@@ -46,6 +46,16 @@
     #   recommended: false
     #   progress: 24
 
+    - title: The Power Broker
+      author: Robert Caro
+      cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+      cover_height: 1922
+      cover_width: 1265
+      link: https://en.wikipedia.org/wiki/The_Power_Broker
+      date_finished: null
+      recommended: false
+      progress: 1
+
     - title: Wrong Way
       subtitle: How Privatisation & Economic Reform Backfired
       author: Damien Cahill and Phillip Toner
