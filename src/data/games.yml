@@ -646,9 +646,9 @@
     title: 'Batman: Arkham City'
     link: https://howlongtobeat.com/game/882
     platform: PC
-    cover: https://howlongtobeat.com/games/250px-ArkhamCity.jpg
-    cover_width: 250
-    cover_height: 266
+    cover: https://howlongtobeat.com/games/882_Batman_Arkham_City.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:55:51'
@@ -2814,8 +2814,8 @@
     link: https://howlongtobeat.com/game/35859
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/35859_Ratchet_&_Clank_(2016).jpg
-    cover_width: 250
-    cover_height: 275
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2017-12-04 23:50:56'
