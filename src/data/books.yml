@@ -46,7 +46,19 @@
     #   recommended: false
     #   progress: 24
 
+    - title: How Big Things Get Done
+      subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
+      author: Bent Flyvbjerg and Dan Gardner
+      cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
+      cover_height: 2500
+      cover_width: 1688
+      link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
+      date_finished: null
+      recommended: true
+      progress: 29
+
     - title: The Power Broker
+      subtitle: Robert Moses and the Fall of New York
       author: Robert Caro
       cover: https://cdn.utf9k.net/books/the-power-broker.jpg
       cover_height: 1922
@@ -65,18 +77,18 @@
       link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_finished: null
       recommended: false
-      progress: 32
+      progress: 40
 
-    # - title: Unscripted
-    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-    #   author: James B. Stewart and Rachel Abrams
-    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
-    #   cover_height: 1498
-    #   cover_width: 975
-    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 17
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_finished: null
+      recommended: false
+      progress: 21
     
     - title: Burn Book
       subtitle: A Tech Love Story
