@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && NODE_ENV=production astro build",
+    "dev": "TZ=UTC astro dev",
+    "start": "TZ=UTC astro dev",
+    "build": "astro check && NODE_ENV=production TZ=UTC astro build",
     "preview": "astro preview",
     "astro": "astro",
     "build:deps": "./ci/install.sh",
