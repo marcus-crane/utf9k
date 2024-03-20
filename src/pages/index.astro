@@ -23,7 +23,6 @@ const blogPosts = await getCollection("blog", ({ data }) => {
 
 const processedPosts = blogPosts
   .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
-  .reverse()
   .slice(0, 6)
 
 // MDX RSS hack taken from https://github.com/kogakure/website-astro-stefanimhoff.de/blob/8ecf5b3644dee879a3d344a8de08c5ad0be895cf/src/pages/index.astro#L14
