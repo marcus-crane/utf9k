@@ -68,27 +68,27 @@
       recommended: false
       progress: 1
 
-    - title: Wrong Way
-      subtitle: How Privatisation & Economic Reform Backfired
-      author: Damien Cahill and Phillip Toner
-      cover: https://cdn.utf9k.net/books/wrong-way.jpg
-      cover_height: 1124
-      cover_width: 735
-      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-      date_finished: null
-      recommended: false
-      progress: 40
+    # - title: Wrong Way
+    #   subtitle: How Privatisation & Economic Reform Backfired
+    #   author: Damien Cahill and Phillip Toner
+    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
+    #   cover_height: 1124
+    #   cover_width: 735
+    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 40
 
-    - title: Unscripted
-      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-      author: James B. Stewart and Rachel Abrams
-      cover: https://cdn.utf9k.net/books/unscripted.jpg
-      cover_height: 1498
-      cover_width: 975
-      link: https://openlibrary.org/works/OL28158768W/Unscripted
-      date_finished: null
-      recommended: false
-      progress: 21
+    # - title: Unscripted
+    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+    #   author: James B. Stewart and Rachel Abrams
+    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
+    #   cover_height: 1498
+    #   cover_width: 975
+    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 21
     
     - title: Burn Book
       subtitle: A Tech Love Story
