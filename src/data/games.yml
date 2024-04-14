@@ -1,5 +1,18 @@
 - list: Playing
   games:
+  - id: 29274864
+    title: 'Dragon Ball Z: Kakarot'
+    link: https://howlongtobeat.com/game/68262
+    platform: PC
+    cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
+    cover_width: 720
+    cover_height: 1080
+    replay: false
+    notes: ''
+    updated: '2024-04-14 09:50:35'
+    completed: '2023-04-14'
+- list: Stalled
+  games:
   - id: 33814790
     title: 'The Stanley Parable: Ultra Deluxe'
     link: https://howlongtobeat.com/game/81950
@@ -9,7 +22,7 @@
     cover_height: 450
     replay: false
     notes: ''
-    updated: '2024-02-08 09:24:23'
+    updated: '2024-04-14 09:47:15'
     completed: '0000-00-00'
   - id: 30797736
     title: Disco Elysium
@@ -20,10 +33,8 @@
     cover_height: 450
     replay: false
     notes: ''
-    updated: '2023-10-17 04:11:37'
+    updated: '2024-04-14 09:47:01'
     completed: '0000-00-00'
-- list: Stalled
-  games:
   - id: 10893684
     title: Rogue Galaxy
     link: https://howlongtobeat.com/game/7946
@@ -235,17 +246,6 @@
     notes: ''
     updated: '2023-07-30 00:02:45'
     completed: '2023-07-23'
-  - id: 29274864
-    title: 'Dragon Ball Z: Kakarot'
-    link: https://howlongtobeat.com/game/68262
-    platform: PC
-    cover: https://howlongtobeat.com/games/68262_Dragon_Ball_Z_Kakarot.jpg
-    cover_width: 720
-    cover_height: 1080
-    replay: false
-    notes: ''
-    updated: '2023-07-30 06:34:35'
-    completed: '2023-04-14'
   - id: 29274880
     title: 'Paranormasight: The Seven Mysteries of Honjo'
     link: https://howlongtobeat.com/game/124297
