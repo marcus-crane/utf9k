@@ -46,6 +46,28 @@
     #   recommended: false
     #   progress: 24
 
+    - title: Going Infinite
+      subtitle: The Rise and Fall of a New Tycoon
+      author: Michael Lewis
+      cover: https://cdn.utf9k.net/books/going-infinite.jpg
+      cover_height: 5000
+      cover_width: 3249
+      link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+      date_finished: null
+      recommended: false
+      progress: 23
+
+    - title: Means of Control
+      subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
+      author: Byron Tau
+      cover: https://cdn.utf9k.net/books/means-of-control.jpg
+      cover_height: 2776
+      cover_width: 1838
+      link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
+      date_finished: null
+      recommended: true
+      progress: 5
+
     - title: How Big Things Get Done
       subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
       author: Bent Flyvbjerg and Dan Gardner
