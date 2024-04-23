@@ -767,9 +767,9 @@
     title: Borderlands
     link: https://howlongtobeat.com/game/1273
     platform: PC
-    cover: https://howlongtobeat.com/games/Borderlandscover.jpg
-    cover_width: 340
-    cover_height: 432
+    cover: https://howlongtobeat.com/games/1273_Borderlands.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-10-01 08:57:51'
@@ -778,9 +778,9 @@
     title: Borderlands
     link: https://howlongtobeat.com/game/1273
     platform: PlayStation 3
-    cover: https://howlongtobeat.com/games/Borderlandscover.jpg
-    cover_width: 340
-    cover_height: 432
+    cover: https://howlongtobeat.com/games/1273_Borderlands.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:04:30'
@@ -1097,9 +1097,9 @@
     title: Dead Space
     link: https://howlongtobeat.com/game/2333
     platform: PC
-    cover: https://howlongtobeat.com/games/Dead_Space_Box_Art.jpg
-    cover_width: 256
-    cover_height: 320
+    cover: https://howlongtobeat.com/games/2333_Dead_Space.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '0000-00-00 00:00:00'
@@ -1284,9 +1284,9 @@
     title: 'Fallout: New Vegas'
     link: https://howlongtobeat.com/game/3351
     platform: PC
-    cover: https://howlongtobeat.com/games/Fallout_New_Vegas.jpg
-    cover_width: 600
-    cover_height: 847
+    cover: https://howlongtobeat.com/games/3351_Fallout_New_Vegas.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2015-02-26 12:19:19'
@@ -1647,9 +1647,9 @@
     title: 'Half-Life 2: Lost Coast'
     link: https://howlongtobeat.com/game/4252
     platform: PC
-    cover: https://howlongtobeat.com/games/250px-Lostcoastlogo.PNG
+    cover: https://howlongtobeat.com/games/4252_Half-Life_2_Lost_Coast.jpg
     cover_width: 300
-    cover_height: 426
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2023-07-30 07:12:06'
@@ -2450,9 +2450,9 @@
     title: Mirror's Edge
     link: https://howlongtobeat.com/game/6085
     platform: PC
-    cover: https://howlongtobeat.com/games/Mirrors_Edge.jpg
-    cover_width: 256
-    cover_height: 321
+    cover: https://howlongtobeat.com/games/6085_Mirrors_Edge.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 07:39:17'
