@@ -877,9 +877,9 @@
     title: 'Call of Duty: Black Ops'
     link: https://howlongtobeat.com/game/1471
     platform: PC
-    cover: https://howlongtobeat.com/games/CoD_Black_Ops_cover.png
-    cover_width: 256
-    cover_height: 363
+    cover: https://howlongtobeat.com/games/1471_Call_of_Duty_Black_Ops.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 02:18:35'
@@ -3165,9 +3165,9 @@
     title: Tales from the Borderlands
     link: https://howlongtobeat.com/game/22804
     platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/TalesfromtheBorderlands.jpg
-    cover_width: 720
-    cover_height: 1080
+    cover: https://howlongtobeat.com/games/22804_Tales_from_the_Borderlands.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2016-02-21 00:17:27'
