@@ -1812,9 +1812,9 @@
     title: Infamous
     link: https://howlongtobeat.com/game/4674
     platform: PlayStation 3
-    cover: https://howlongtobeat.com/games/Infamous-cover.jpg
-    cover_width: 256
-    cover_height: 294
+    cover: https://howlongtobeat.com/games/4674_inFAMOUS.jpg
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2015-10-01 09:07:18'
@@ -2604,9 +2604,9 @@
     title: Pokémon Emerald
     link: https://howlongtobeat.com/game/7150
     platform: Game Boy Advance
-    cover: https://howlongtobeat.com/games/510BNCVM1NL._SL500_AA300_.jpg
-    cover_width: 300
-    cover_height: 300
+    cover: https://howlongtobeat.com/games/7150_Pokmon_Emerald_Version.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2012-12-27 02:10:43'
@@ -2626,9 +2626,9 @@
     title: Pokémon Gold and Silver
     link: https://howlongtobeat.com/game/7152
     platform: Game Boy Color
-    cover: https://howlongtobeat.com/games/Pokemongold.png
-    cover_width: 256
-    cover_height: 256
+    cover: https://howlongtobeat.com/games/7152_Pokmon_Gold_and_Silver.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2012-12-27 02:11:00'
