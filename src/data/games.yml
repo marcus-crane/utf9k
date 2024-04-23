@@ -1108,9 +1108,9 @@
     title: Dead Space 2
     link: https://howlongtobeat.com/game/2335
     platform: PC
-    cover: https://howlongtobeat.com/games/Dead_Space_2_Box_Art.jpg
-    cover_width: 256
-    cover_height: 322
+    cover: https://howlongtobeat.com/games/2335_Dead_Space_2.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-26 06:54:31'
@@ -1328,7 +1328,7 @@
     title: Far Cry 4
     link: https://howlongtobeat.com/game/19310
     platform: PC
-    cover: https://howlongtobeat.com/games/Far_Cry_4_box_art.jpg
+    cover: https://howlongtobeat.com/games/19310_Far_Cry_4.jpg
     cover_width: 300
     cover_height: 450
     replay: false
@@ -1439,8 +1439,8 @@
     link: https://howlongtobeat.com/game/38050
     platform: PlayStation 4
     cover: https://howlongtobeat.com/games/38050_God_of_War.jpg
-    cover_width: 600
-    cover_height: 847
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2018-04-27 11:58:12'
@@ -1845,9 +1845,9 @@
     title: 'Infamous: Second Son'
     link: https://howlongtobeat.com/game/16606
     platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/Infamous_second_son_boxart.jpg
-    cover_width: 256
-    cover_height: 318
+    cover: https://howlongtobeat.com/games/16606_inFAMOUS_Second_Son.jpg
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:26'
@@ -1900,9 +1900,9 @@
     title: Just Cause
     link: https://howlongtobeat.com/game/4904
     platform: PC
-    cover: https://howlongtobeat.com/games/Just-Cause-win-cover.jpg
-    cover_width: 256
-    cover_height: 348
+    cover: https://howlongtobeat.com/games/4904_Just_Cause.jpg
+    cover_width: 300
+    cover_height: 450
     replay: false
     notes: ''
     updated: '2012-12-27 03:27:18'
@@ -3730,9 +3730,9 @@
     title: Pokémon Black and White
     link: https://howlongtobeat.com/game/7140
     platform: Nintendo DS
-    cover: https://howlongtobeat.com/games/Pokemon_Black_Box_Artwork.jpg
-    cover_width: 250
-    cover_height: 227
+    cover: https://howlongtobeat.com/games/7140_Pokmon_Black_and_White.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2023-07-30 00:51:25'
@@ -3754,7 +3754,7 @@
     platform: Nintendo Switch
     cover: https://howlongtobeat.com/games/38019_The_Legend_of_Zelda_Breath_of_the_Wild.jpg
     cover_width: 600
-    cover_height: 847
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2023-07-30 00:10:00'
