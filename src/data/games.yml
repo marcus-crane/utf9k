@@ -1141,9 +1141,9 @@
     title: Destiny
     link: https://howlongtobeat.com/game/14358
     platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/Destiny_box_art.png
-    cover_width: 275
-    cover_height: 317
+    cover: https://howlongtobeat.com/games/14358_Destiny.jpg
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2016-02-20 22:57:03'
@@ -1823,9 +1823,9 @@
     title: Infamous 2
     link: https://howlongtobeat.com/game/4675
     platform: PlayStation 3
-    cover: https://howlongtobeat.com/games/Infamous_2.png
-    cover_width: 250
-    cover_height: 290
+    cover: https://howlongtobeat.com/games/4675_inFAMOUS_2.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:04'
@@ -1834,9 +1834,9 @@
     title: 'Infamous: First Light'
     link: https://howlongtobeat.com/game/20787
     platform: PlayStation 4
-    cover: https://howlongtobeat.com/games/inFAMOUSFirstLight.jpg
-    cover_width: 275
-    cover_height: 183
+    cover: https://howlongtobeat.com/games/20787_inFAMOUS_First_Light.jpg
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2015-10-01 09:08:44'
@@ -2582,9 +2582,9 @@
     title: Pokémon Crystal
     link: https://howlongtobeat.com/game/7146
     platform: Game Boy Color
-    cover: https://howlongtobeat.com/games/189986-pokemoncrystal_large.jpg
-    cover_width: 300
-    cover_height: 300
+    cover: https://howlongtobeat.com/games/7146_Pokmon_Crystal.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2023-07-30 06:52:52'
