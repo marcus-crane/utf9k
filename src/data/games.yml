@@ -459,9 +459,9 @@
     title: Pokémon Sword and Shield
     link: https://howlongtobeat.com/game/65235
     platform: Nintendo Switch
-    cover: https://howlongtobeat.com/games/65235_Pokmon_Sword_And_Shield.jpg
-    cover_width: 550
-    cover_height: 896
+    cover: https://howlongtobeat.com/games/65235_Pokmon_Sword_and_Shield.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2020-01-27 05:35:01'
@@ -2934,9 +2934,9 @@
     title: Red Dead Redemption
     link: https://howlongtobeat.com/game/7676
     platform: PlayStation 3
-    cover: https://howlongtobeat.com/games/256px-Red_Dead_Redemption.jpg
-    cover_width: 256
-    cover_height: 307
+    cover: https://howlongtobeat.com/games/7676_Red_Dead_Redemption.png
+    cover_width: 600
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2012-12-27 02:43:30'
@@ -3741,9 +3741,9 @@
     title: Pokémon Omega Ruby and Alpha Sapphire
     link: https://howlongtobeat.com/game/21324
     platform: Nintendo 3DS
-    cover: https://howlongtobeat.com/games/no_boxart.png
+    cover: https://howlongtobeat.com/games/21324_Pokmon_Omega_Ruby_and_Alpha_Sapphire.png
     cover_width: 600
-    cover_height: 800
+    cover_height: 900
     replay: false
     notes: ''
     updated: '2023-07-30 00:51:02'
