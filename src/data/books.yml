@@ -46,16 +46,16 @@
     #   recommended: false
     #   progress: 24
 
-    - title: Going Infinite
-      subtitle: The Rise and Fall of a New Tycoon
-      author: Michael Lewis
-      cover: https://cdn.utf9k.net/books/going-infinite.jpg
-      cover_height: 5000
-      cover_width: 3249
-      link: https://www.penguin.co.nz/books/going-infinite-9780241651117
-      date_finished: null
-      recommended: false
-      progress: 23
+    # - title: Going Infinite
+    #   subtitle: The Rise and Fall of a New Tycoon
+    #   author: Michael Lewis
+    #   cover: https://cdn.utf9k.net/books/going-infinite.jpg
+    #   cover_height: 5000
+    #   cover_width: 3249
+    #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 23
 
     - title: Means of Control
       subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
@@ -79,16 +79,16 @@
       recommended: true
       progress: 29
 
-    - title: The Power Broker
-      subtitle: Robert Moses and the Fall of New York
-      author: Robert Caro
-      cover: https://cdn.utf9k.net/books/the-power-broker.jpg
-      cover_height: 1922
-      cover_width: 1265
-      link: https://en.wikipedia.org/wiki/The_Power_Broker
-      date_finished: null
-      recommended: false
-      progress: 1
+    # - title: The Power Broker
+    #   subtitle: Robert Moses and the Fall of New York
+    #   author: Robert Caro
+    #   cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+    #   cover_height: 1922
+    #   cover_width: 1265
+    #   link: https://en.wikipedia.org/wiki/The_Power_Broker
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 1
 
     # - title: Wrong Way
     #   subtitle: How Privatisation & Economic Reform Backfired
