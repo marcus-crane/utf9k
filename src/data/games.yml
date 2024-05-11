@@ -1,27 +1,5 @@
 - list: Playing
   games:
-  - id: 35486769
-    title: 'Halo: Combat Evolved - Anniversary'
-    link: https://howlongtobeat.com/game/4270
-    platform: PC
-    cover: https://howlongtobeat.com/games/4270_Halo_Combat_Evolved_-_Anniversary.jpg
-    cover_width: 600
-    cover_height: 847
-    replay: true
-    notes: ''
-    updated: '2024-04-14 09:52:23'
-    completed: '0000-00-00'
-  - id: 35486760
-    title: Fallout 4
-    link: https://howlongtobeat.com/game/26729
-    platform: PC
-    cover: https://howlongtobeat.com/games/Fallout_4.jpg
-    cover_width: 300
-    cover_height: 450
-    replay: true
-    notes: ''
-    updated: '2024-04-14 09:52:08'
-    completed: '0000-00-00'
   - id: 29274864
     title: 'Dragon Ball Z: Kakarot'
     link: https://howlongtobeat.com/game/68262
@@ -31,10 +9,32 @@
     cover_height: 1080
     replay: false
     notes: ''
-    updated: '2024-04-14 09:50:35'
+    updated: '2024-05-11 09:52:00'
     completed: '2023-04-14'
+  - id: 35486760
+    title: Fallout 4
+    link: https://howlongtobeat.com/game/26729
+    platform: PC
+    cover: https://howlongtobeat.com/games/Fallout_4.jpg
+    cover_width: 300
+    cover_height: 450
+    replay: true
+    notes: ''
+    updated: '2024-05-11 09:51:53'
+    completed: '0000-00-00'
 - list: Stalled
   games:
+  - id: 35486769
+    title: 'Halo: Combat Evolved - Anniversary'
+    link: https://howlongtobeat.com/game/4270
+    platform: PC
+    cover: https://howlongtobeat.com/games/4270_Halo_Combat_Evolved_-_Anniversary.jpg
+    cover_width: 600
+    cover_height: 847
+    replay: true
+    notes: ''
+    updated: '2024-05-11 09:51:41'
+    completed: '0000-00-00'
   - id: 33814790
     title: 'The Stanley Parable: Ultra Deluxe'
     link: https://howlongtobeat.com/game/81950
