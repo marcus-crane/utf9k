@@ -270,6 +270,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 12366
+    title: 'Lili: Child of Geos'
+    link: https://www.backloggd.com/games/lili-child-of-geos/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co21bf.jpg
+      width: 720
+      height: 540
   - id: 135735
     title: 'Half-Life: Alyx - Final Hours'
     link: https://www.backloggd.com/games/half-life-alyx-final-hours/
@@ -611,13 +618,6 @@
     link: https://www.backloggd.com/games/magrunner-dark-pulse/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2egb.jpg
-      width: 720
-      height: 540
-  - id: 17447
-    title: Titanfall 2
-    link: https://www.backloggd.com/games/titanfall-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/fhbeilnghyhhmjqhinqa.jpg
       width: 720
       height: 540
 - list: Backlog
