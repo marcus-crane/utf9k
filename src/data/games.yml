@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 7351
+    title: Doom
+    link: https://www.backloggd.com/games/doom--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nc7.jpg
+      width: 720
+      height: 540
+  - id: 9740
+    title: "Deus Ex: Human Revolution - Director's Cut"
+    link: https://www.backloggd.com/games/deus-ex-human-revolution-directors-cut/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2tgb.jpg
+      width: 720
+      height: 540
   - id: 19164
     title: Borderlands 3
     link: https://www.backloggd.com/games/borderlands-3/
@@ -587,6 +601,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 12579
+    title: 'Danganronpa V3: Killing Harmony'
+    link: https://www.backloggd.com/games/danganronpa-v3-killing-harmony--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1u57.jpg
+      width: 720
+      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
