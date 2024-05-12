@@ -39,6 +39,244 @@
       height: 540
 - list: Completed
   games:
+  - id: 732
+    title: 'Grand Theft Auto: San Andreas'
+    link: https://www.backloggd.com/games/grand-theft-auto-san-andreas/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lb9.jpg
+      width: 720
+      height: 540
+  - id: 6632
+    title: 'Call of Duty: Advanced Warfare'
+    link: https://www.backloggd.com/games/call-of-duty-advanced-warfare/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wky.jpg
+      width: 720
+      height: 540
+  - id: 9977
+    title: 'Anna: Extended Edition'
+    link: https://www.backloggd.com/games/anna-extended-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co21si.jpg
+      width: 720
+      height: 540
+  - id: 1062
+    title: Alan Wake
+    link: https://www.backloggd.com/games/alan-wake/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dft.jpg
+      width: 720
+      height: 540
+  - id: 12366
+    title: 'Lili: Child of Geos'
+    link: https://www.backloggd.com/games/lili-child-of-geos/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co21bf.jpg
+      width: 720
+      height: 540
+  - id: 3082
+    title: Dear Esther
+    link: https://www.backloggd.com/games/dear-esther/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2eez.jpg
+      width: 720
+      height: 540
+  - id: 38
+    title: Dead Space 2
+    link: https://www.backloggd.com/games/dead-space-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20xq.jpg
+      width: 720
+      height: 540
+  - id: 2155
+    title: Dark Souls
+    link: https://www.backloggd.com/games/dark-souls/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1x78.jpg
+      width: 720
+      height: 540
+  - id: 43
+    title: 'Deus Ex: Human Revolution'
+    link: https://www.backloggd.com/games/deus-ex-human-revolution/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rd2.jpg
+      width: 720
+      height: 540
+  - id: 501
+    title: 'Batman: Arkham City'
+    link: https://www.backloggd.com/games/batman-arkham-city/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1voh.jpg
+      width: 720
+      height: 540
+  - id: 3174
+    title: 'Grand Theft Auto IV: The Ballad of Gay Tony'
+    link: https://www.backloggd.com/games/grand-theft-auto-iv-the-ballad-of-gay-tony/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co28od.jpg
+      width: 720
+      height: 540
+  - id: 3265
+    title: 'Grand Theft Auto IV: The Lost and Damned'
+    link: https://www.backloggd.com/games/grand-theft-auto-iv-the-lost-and-damned/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1th2.jpg
+      width: 720
+      height: 540
+  - id: 654
+    title: Company of Heroes
+    link: https://www.backloggd.com/games/company-of-heroes/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ht7.jpg
+      width: 720
+      height: 540
+  - id: 9255
+    title: The Graveyard
+    link: https://www.backloggd.com/games/the-graveyard/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ofz.jpg
+      width: 720
+      height: 540
+  - id: 846
+    title: 'Red Faction: Guerrilla'
+    link: https://www.backloggd.com/games/red-faction-guerrilla/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2h9b.jpg
+      width: 720
+      height: 540
+  - id: 37
+    title: Dead Space
+    link: https://www.backloggd.com/games/dead-space/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2g7w.jpg
+      width: 720
+      height: 540
+  - id: 34705
+    title: Iconoclasts
+    link: https://www.backloggd.com/games/iconoclasts/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ug9.jpg
+      width: 720
+      height: 540
+  - id: 19449
+    title: 'Dragon Ball: Xenoverse 2'
+    link: https://www.backloggd.com/games/dragon-ball-xenoverse-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1u95.jpg
+      width: 720
+      height: 540
+  - id: 1033
+    title: 'The Legend of Zelda: The Wind Waker'
+    link: https://www.backloggd.com/games/the-legend-of-zelda-the-wind-waker/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3ohz.jpg
+      width: 720
+      height: 540
+  - id: 4060
+    title: P.N.03
+    link: https://www.backloggd.com/games/p-dot-n-03/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pe4.jpg
+      width: 720
+      height: 540
+  - id: 1523
+    title: 'Trauma Center: Under the Knife'
+    link: https://www.backloggd.com/games/trauma-center-under-the-knife/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dwx.jpg
+      width: 720
+      height: 540
+  - id: 21055
+    title: Time Hollow
+    link: https://www.backloggd.com/games/time-hollow/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2sr4.jpg
+      width: 720
+      height: 540
+  - id: 9109
+    title: Elite Beat Agents
+    link: https://www.backloggd.com/games/elite-beat-agents/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dyd.jpg
+      width: 720
+      height: 540
+  - id: 3466
+    title: Custom Robo Arena
+    link: https://www.backloggd.com/games/custom-robo-arena/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3vmf.jpg
+      width: 720
+      height: 540
+  - id: 1348
+    title: 'Ghost Trick: Phantom Detective'
+    link: https://www.backloggd.com/games/ghost-trick-phantom-detective/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2yj9.jpg
+      width: 720
+      height: 540
+  - id: 1428
+    title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-trials-and-tribulations/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8u.jpg
+      width: 720
+      height: 540
+  - id: 1427
+    title: 'Phoenix Wright: Ace Attorney - Justice for All'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-justice-for-all/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8t.jpg
+      width: 720
+      height: 540
+  - id: 1426
+    title: 'Phoenix Wright: Ace Attorney'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8s.jpg
+      width: 720
+      height: 540
+  - id: 1398
+    title: Professor Layton and the Diabolical Box
+    link: https://www.backloggd.com/games/professor-layton-and-the-diabolical-box/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wtf.jpg
+      width: 720
+      height: 540
+  - id: 1397
+    title: Professor Layton and the Curious Village
+    link: https://www.backloggd.com/games/professor-layton-and-the-curious-village/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wtd.jpg
+      width: 720
+      height: 540
+  - id: 1223
+    title: Kingdom Hearts 358/2 Days
+    link: https://www.backloggd.com/games/kingdom-hearts-358-2-days/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co31qj.jpg
+      width: 720
+      height: 540
+  - id: 9249
+    title: 'Hotel Dusk: Room 215'
+    link: https://www.backloggd.com/games/hotel-dusk-room-215/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xf0.jpg
+      width: 720
+      height: 540
+  - id: 1518
+    title: Pokémon Pearl Version
+    link: https://www.backloggd.com/games/pokemon-pearl-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zio.jpg
+      width: 720
+      height: 540
+  - id: 9543
+    title: 'Zero Escape: Nine Hours, Nine Persons, Nine Doors'
+    link: https://www.backloggd.com/games/zero-escape-nine-hours-nine-persons-nine-doors/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4hsz.jpg
+      width: 720
+      height: 540
   - id: 14606
     title: Pokémon Ranger
     link: https://www.backloggd.com/games/pokemon-ranger/
@@ -151,216 +389,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2wrx.jpg
       width: 720
       height: 540
-  - id: 1557
-    title: Pokémon Ruby Version
-    link: https://www.backloggd.com/games/pokemon-ruby-version/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zhq.jpg
-      width: 720
-      height: 540
-  - id: 1559
-    title: Pokémon FireRed Version
-    link: https://www.backloggd.com/games/pokemon-firered-version/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ziq.jpg
-      width: 720
-      height: 540
-  - id: 1517
-    title: Pokémon Emerald Version
-    link: https://www.backloggd.com/games/pokemon-emerald-version/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zhr.jpg
-      width: 720
-      height: 540
-  - id: 1035
-    title: 'The Legend of Zelda: The Minish Cap'
-    link: https://www.backloggd.com/games/the-legend-of-zelda-the-minish-cap/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3nsk.jpg
-      width: 720
-      height: 540
-  - id: 49203
-    title: 'Zoids: Legacy'
-    link: https://www.backloggd.com/games/zoids-legacy/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co49gt.jpg
-      width: 720
-      height: 540
-  - id: 77336
-    title: 'The Legend of Zelda: A Link to the Past & Four Swords'
-    link: https://www.backloggd.com/games/the-legend-of-zelda-a-link-to-the-past-and-four-swords/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3nsh.jpg
-      width: 720
-      height: 540
-  - id: 19564
-    title: Death Stranding
-    link: https://www.backloggd.com/games/death-stranding/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5vq8.jpg
-      width: 720
-      height: 540
-  - id: 37382
-    title: Pokémon Sword
-    link: https://www.backloggd.com/games/pokemon-sword/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zk2.jpg
-      width: 720
-      height: 540
-  - id: 80
-    title: The Witcher
-    link: https://www.backloggd.com/games/the-witcher/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xrx.jpg
-      width: 720
-      height: 540
-  - id: 126098
-    title: 'Half-Life: Alyx'
-    link: https://www.backloggd.com/games/half-life-alyx/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1tq3.jpg
-      width: 720
-      height: 540
-  - id: 26676
-    title: 'Kingdom Hearts 0.2: Birth by Sleep - A Fragmentary Passage'
-    link: https://www.backloggd.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6kji.jpg
-      width: 720
-      height: 540
-  - id: 2933
-    title: Kingdom Hearts III
-    link: https://www.backloggd.com/games/kingdom-hearts-iii/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1tpy.jpg
-      width: 720
-      height: 540
-  - id: 26758
-    title: Super Mario Odyssey
-    link: https://www.backloggd.com/games/super-mario-odyssey/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mxf.jpg
-      width: 720
-      height: 540
-  - id: 134582
-    title: 'Ratchet & Clank: Rift Apart'
-    link: https://www.backloggd.com/games/ratchet-and-clank-rift-apart/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2str.jpg
-      width: 720
-      height: 540
-  - id: 221287
-    title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
-    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-trials-and-tribulations--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z6m.jpg
-      width: 720
-      height: 540
-  - id: 1429
-    title: 'Apollo Justice: Ace Attorney'
-    link: https://www.backloggd.com/games/apollo-justice-ace-attorney/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8n.jpg
-      width: 720
-      height: 540
-  - id: 1432
-    title: 'Phoenix Wright: Ace Attorney - Dual Destinies'
-    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-dual-destinies/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8o.jpg
-      width: 720
-      height: 540
-  - id: 119177
-    title: 'Call of Duty: Modern Warfare'
-    link: https://www.backloggd.com/games/call-of-duty-modern-warfare/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rsg.jpg
-      width: 720
-      height: 540
-  - id: 12077
-    title: 'Phoenix Wright: Ace Attorney - Spirit of Justice'
-    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-spirit-of-justice/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z95.jpg
-      width: 720
-      height: 540
-  - id: 135919
-    title: 'Alba: A Wildlife Adventure'
-    link: https://www.backloggd.com/games/alba-a-wildlife-adventure/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3uyi.jpg
-      width: 720
-      height: 540
-  - id: 55080
-    title: Donut County
-    link: https://www.backloggd.com/games/donut-county/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qv8.jpg
-      width: 720
-      height: 540
-  - id: 9763
-    title: 'Ace Combat 04: Shattered Skies'
-    link: https://www.backloggd.com/games/ace-combat-04-shattered-skies/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2f34.jpg
-      width: 720
-      height: 540
-  - id: 109458
-    title: Katamari Damacy Reroll
-    link: https://www.backloggd.com/games/katamari-damacy-reroll/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co25sm.jpg
-      width: 720
-      height: 540
-  - id: 236694
-    title: 'Paranormasight: The Seven Mysteries of Honjo'
-    link: https://www.backloggd.com/games/paranormasight-the-seven-mysteries-of-honjo/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co64ro.jpg
-      width: 720
-      height: 540
-  - id: 103329
-    title: Control
-    link: https://www.backloggd.com/games/control/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2evj.jpg
-      width: 720
-      height: 540
-  - id: 1877
-    title: Cyberpunk 2077
-    link: https://www.backloggd.com/games/cyberpunk-2077/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7497.jpg
-      width: 720
-      height: 540
-  - id: 990
-    title: 'Halo: Reach'
-    link: https://www.backloggd.com/games/halo-reach/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xha.jpg
-      width: 720
-      height: 540
-  - id: 481
-    title: Silent Hill 2
-    link: https://www.backloggd.com/games/silent-hill-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vyg.jpg
-      width: 720
-      height: 540
-  - id: 31551
-    title: Final Fantasy XVI
-    link: https://www.backloggd.com/games/final-fantasy-xvi/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5w3k.jpg
-      width: 720
-      height: 540
-  - id: 114009
-    title: 'Dragon Ball Z: Kakarot'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2kqa.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 26384
@@ -379,6 +407,27 @@
       height: 540
 - list: Retired
   games:
+  - id: 3267
+    title: 'Day of Defeat: Source'
+    link: https://www.backloggd.com/games/day-of-defeat-source/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co610o.jpg
+      width: 720
+      height: 540
+  - id: 307
+    title: 'Counter-Strike: Source'
+    link: https://www.backloggd.com/games/counter-strike-source/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1txv.jpg
+      width: 720
+      height: 540
+  - id: 1372
+    title: 'Counter-Strike: Global Offensive'
+    link: https://www.backloggd.com/games/counter-strike-global-offensive/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6996.jpg
+      width: 720
+      height: 540
   - id: 386
     title: Final Fantasy XIV Online
     link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
