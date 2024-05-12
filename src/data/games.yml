@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 104971
+    title: 'AI: The Somnium Files'
+    link: https://www.backloggd.com/games/ai-the-somnium-files/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mjy.jpg
+      width: 720
+      height: 540
+  - id: 14758
+    title: 'Ace Combat 7: Skies Unknown'
+    link: https://www.backloggd.com/games/ace-combat-7-skies-unknown/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ilk.jpg
+      width: 720
+      height: 540
   - id: 1755
     title: Mega Man Battle Network
     link: https://www.backloggd.com/games/mega-man-battle-network/
@@ -568,6 +582,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 80022
+    title: StreetPass Mii Plaza
+    link: https://www.backloggd.com/games/streetpass-mii-plaza/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co483w.jpg
+      width: 720
+      height: 540
+  - id: 2687
+    title: 'Animal Crossing: New Leaf'
+    link: https://www.backloggd.com/games/animal-crossing-new-leaf/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3whp.jpg
+      width: 720
+      height: 540
   - id: 3278
     title: Garry's Mod
     link: https://www.backloggd.com/games/garry-s-mod/
