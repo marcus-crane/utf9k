@@ -46,6 +46,41 @@
       height: 540
 - list: Completed
   games:
+  - id: 7432
+    title: Jumping Flash!
+    link: https://www.backloggd.com/games/jumping-flash/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vls.jpg
+      width: 720
+      height: 540
+  - id: 375
+    title: Metal Gear Solid
+    link: https://www.backloggd.com/games/metal-gear-solid/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7k2q.jpg
+      width: 720
+      height: 540
+  - id: 3762
+    title: Ape Escape
+    link: https://www.backloggd.com/games/ape-escape/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gzc.jpg
+      width: 720
+      height: 540
+  - id: 2059
+    title: Yakuza
+    link: https://www.backloggd.com/games/yakuza/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co29tp.jpg
+      width: 720
+      height: 540
+  - id: 5845
+    title: 'Onimusha: Warlords'
+    link: https://www.backloggd.com/games/onimusha-warlords/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4r26.jpg
+      width: 720
+      height: 540
   - id: 5106
     title: Fatal Frame
     link: https://www.backloggd.com/games/fatal-frame/
@@ -359,41 +394,6 @@
     link: https://www.backloggd.com/games/uncharted-drake-s-fortune/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1tp7.jpg
-      width: 720
-      height: 540
-  - id: 7240
-    title: 'Wanted: Weapons of Fate'
-    link: https://www.backloggd.com/games/wanted-weapons-of-fate/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5x8d.jpg
-      width: 720
-      height: 540
-  - id: 493
-    title: Heavy Rain
-    link: https://www.backloggd.com/games/heavy-rain/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3rhy.jpg
-      width: 720
-      height: 540
-  - id: 139896
-    title: Shadow of the Colossus
-    link: https://www.backloggd.com/games/shadow-of-the-colossus--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ijk.jpg
-      width: 720
-      height: 540
-  - id: 222125
-    title: Sly Cooper and the Thievius Raccoonus
-    link: https://www.backloggd.com/games/sly-cooper-and-the-thievius-raccoonus--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5kkg.jpg
-      width: 720
-      height: 540
-  - id: 1530
-    title: Jak 3
-    link: https://www.backloggd.com/games/jak-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6kks.jpg
       width: 720
       height: 540
 - list: Backlog
