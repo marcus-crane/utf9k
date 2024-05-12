@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 6705
+    title: A Hat in Time
+    link: https://www.backloggd.com/games/a-hat-in-time/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5pl5.jpg
+      width: 720
+      height: 540
+  - id: 130216
+    title: 'Hardspace: Shipbreaker'
+    link: https://www.backloggd.com/games/hardspace-shipbreaker/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m8b.jpg
+      width: 720
+      height: 540
   - id: 2538
     title: 'Enslaved: Odyssey to the West'
     link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
@@ -256,6 +270,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 135735
+    title: 'Half-Life: Alyx - Final Hours'
+    link: https://www.backloggd.com/games/half-life-alyx-final-hours/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2p9m.jpg
+      width: 720
+      height: 540
   - id: 1020
     title: Grand Theft Auto V
     link: https://www.backloggd.com/games/grand-theft-auto-v/
@@ -597,13 +618,6 @@
     link: https://www.backloggd.com/games/titanfall-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/fhbeilnghyhhmjqhinqa.jpg
-      width: 720
-      height: 540
-  - id: 623
-    title: 'Call of Duty 4: Modern Warfare'
-    link: https://www.backloggd.com/games/call-of-duty-4-modern-warfare/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wko.jpg
       width: 720
       height: 540
 - list: Backlog
