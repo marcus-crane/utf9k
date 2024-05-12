@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 103329
+    title: Control
+    link: https://www.backloggd.com/games/control/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2evj.jpg
+      width: 720
+      height: 540
   - id: 144352
     title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
@@ -32,6 +39,76 @@
       height: 540
 - list: Completed
   games:
+  - id: 1429
+    title: 'Apollo Justice: Ace Attorney'
+    link: https://www.backloggd.com/games/apollo-justice-ace-attorney/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8n.jpg
+      width: 720
+      height: 540
+  - id: 1432
+    title: 'Phoenix Wright: Ace Attorney - Dual Destinies'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-dual-destinies/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8o.jpg
+      width: 720
+      height: 540
+  - id: 119177
+    title: 'Call of Duty: Modern Warfare'
+    link: https://www.backloggd.com/games/call-of-duty-modern-warfare/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rsg.jpg
+      width: 720
+      height: 540
+  - id: 12077
+    title: 'Phoenix Wright: Ace Attorney - Spirit of Justice'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-spirit-of-justice/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z95.jpg
+      width: 720
+      height: 540
+  - id: 135919
+    title: 'Alba: A Wildlife Adventure'
+    link: https://www.backloggd.com/games/alba-a-wildlife-adventure/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3uyi.jpg
+      width: 720
+      height: 540
+  - id: 55080
+    title: Donut County
+    link: https://www.backloggd.com/games/donut-county/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qv8.jpg
+      width: 720
+      height: 540
+  - id: 9763
+    title: 'Ace Combat 04: Shattered Skies'
+    link: https://www.backloggd.com/games/ace-combat-04-shattered-skies/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2f34.jpg
+      width: 720
+      height: 540
+  - id: 109458
+    title: Katamari Damacy Reroll
+    link: https://www.backloggd.com/games/katamari-damacy-reroll/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co25sm.jpg
+      width: 720
+      height: 540
+  - id: 236694
+    title: 'Paranormasight: The Seven Mysteries of Honjo'
+    link: https://www.backloggd.com/games/paranormasight-the-seven-mysteries-of-honjo/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co64ro.jpg
+      width: 720
+      height: 540
+  - id: 103329
+    title: Control
+    link: https://www.backloggd.com/games/control/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2evj.jpg
+      width: 720
+      height: 540
   - id: 1877
     title: Cyberpunk 2077
     link: https://www.backloggd.com/games/cyberpunk-2077/
