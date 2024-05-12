@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 18320
+    title: Battlefield 1
+    link: https://www.backloggd.com/games/battlefield-1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n9d.jpg
+      width: 720
+      height: 540
+  - id: 228542
+    title: 'Armored Core VI: Fires of Rubicon'
+    link: https://www.backloggd.com/games/armored-core-vi-fires-of-rubicon/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6ffo.jpg
+      width: 720
+      height: 540
   - id: 104971
     title: 'AI: The Somnium Files'
     link: https://www.backloggd.com/games/ai-the-somnium-files/
@@ -582,6 +596,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 277
+    title: Battlefield 2
+    link: https://www.backloggd.com/games/battlefield-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2nal.jpg
+      width: 720
+      height: 540
+  - id: 2956
+    title: Audiosurf
+    link: https://www.backloggd.com/games/audiosurf/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ud3.jpg
+      width: 720
+      height: 540
+  - id: 1881
+    title: Arma 3
+    link: https://www.backloggd.com/games/arma-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20uo.jpg
+      width: 720
+      height: 540
+  - id: 601
+    title: 'ArmA 2: Operation Arrowhead'
+    link: https://www.backloggd.com/games/arma-2-operation-arrowhead/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2130.jpg
+      width: 720
+      height: 540
   - id: 80022
     title: StreetPass Mii Plaza
     link: https://www.backloggd.com/games/streetpass-mii-plaza/
