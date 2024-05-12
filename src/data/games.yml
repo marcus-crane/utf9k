@@ -39,6 +39,223 @@
       height: 540
 - list: Completed
   games:
+  - id: 14606
+    title: Pokémon Ranger
+    link: https://www.backloggd.com/games/pokemon-ranger/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1z5b.jpg
+      width: 720
+      height: 540
+  - id: 1519
+    title: Pokémon Platinum Version
+    link: https://www.backloggd.com/games/pokemon-platinum-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zhu.jpg
+      width: 720
+      height: 540
+  - id: 2319
+    title: 'Pokémon Mystery Dungeon: Red Rescue Team'
+    link: https://www.backloggd.com/games/pokemon-mystery-dungeon-red-rescue-team/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co21em.jpg
+      width: 720
+      height: 540
+  - id: 1556
+    title: Pokémon HeartGold Version
+    link: https://www.backloggd.com/games/pokemon-heartgold-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1z57.jpg
+      width: 720
+      height: 540
+  - id: 1037
+    title: 'The Legend of Zelda: Phantom Hourglass'
+    link: https://www.backloggd.com/games/the-legend-of-zelda-phantom-hourglass/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3ocu.jpg
+      width: 720
+      height: 540
+  - id: 24331
+    title: Sands of Destruction
+    link: https://www.backloggd.com/games/sands-of-destruction/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2w9y.jpg
+      width: 720
+      height: 540
+  - id: 221286
+    title: 'Phoenix Wright: Ace Attorney - Justice For All'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-justice-for-all--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z6n.jpg
+      width: 720
+      height: 540
+  - id: 221285
+    title: 'Phoenix Wright: Ace Attorney'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney--3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z6o.jpg
+      width: 720
+      height: 540
+  - id: 21007
+    title: Liberation Maiden
+    link: https://www.backloggd.com/games/liberation-maiden/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/oevuv8jpcieauh2hscqw.jpg
+      width: 720
+      height: 540
+  - id: 9639
+    title: Weapon Shop de Omasse
+    link: https://www.backloggd.com/games/weapon-shop-de-omasse/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/lwkdxp4revsca6jz28zf.jpg
+      width: 720
+      height: 540
+  - id: 39232
+    title: 'Zenonia 2: The Lost Memories'
+    link: https://www.backloggd.com/games/zenonia-2-the-lost-memories/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xhi.jpg
+      width: 720
+      height: 540
+  - id: 38725
+    title: Zenonia
+    link: https://www.backloggd.com/games/zenonia/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1s87.jpg
+      width: 720
+      height: 540
+  - id: 1561
+    title: Pokémon Red Version
+    link: https://www.backloggd.com/games/pokemon-red-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5pi4.jpg
+      width: 720
+      height: 540
+  - id: 1513
+    title: Pokémon Silver Version
+    link: https://www.backloggd.com/games/pokemon-silver-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5pid.jpg
+      width: 720
+      height: 540
+  - id: 1514
+    title: Pokémon Crystal Version
+    link: https://www.backloggd.com/games/pokemon-crystal-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5pil.jpg
+      width: 720
+      height: 540
+  - id: 1220
+    title: 'Kingdom Hearts: Chain of Memories'
+    link: https://www.backloggd.com/games/kingdom-hearts-chain-of-memories/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2wrx.jpg
+      width: 720
+      height: 540
+  - id: 1557
+    title: Pokémon Ruby Version
+    link: https://www.backloggd.com/games/pokemon-ruby-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zhq.jpg
+      width: 720
+      height: 540
+  - id: 1559
+    title: Pokémon FireRed Version
+    link: https://www.backloggd.com/games/pokemon-firered-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ziq.jpg
+      width: 720
+      height: 540
+  - id: 1517
+    title: Pokémon Emerald Version
+    link: https://www.backloggd.com/games/pokemon-emerald-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zhr.jpg
+      width: 720
+      height: 540
+  - id: 1035
+    title: 'The Legend of Zelda: The Minish Cap'
+    link: https://www.backloggd.com/games/the-legend-of-zelda-the-minish-cap/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3nsk.jpg
+      width: 720
+      height: 540
+  - id: 49203
+    title: 'Zoids: Legacy'
+    link: https://www.backloggd.com/games/zoids-legacy/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co49gt.jpg
+      width: 720
+      height: 540
+  - id: 77336
+    title: 'The Legend of Zelda: A Link to the Past & Four Swords'
+    link: https://www.backloggd.com/games/the-legend-of-zelda-a-link-to-the-past-and-four-swords/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3nsh.jpg
+      width: 720
+      height: 540
+  - id: 19564
+    title: Death Stranding
+    link: https://www.backloggd.com/games/death-stranding/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5vq8.jpg
+      width: 720
+      height: 540
+  - id: 37382
+    title: Pokémon Sword
+    link: https://www.backloggd.com/games/pokemon-sword/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zk2.jpg
+      width: 720
+      height: 540
+  - id: 80
+    title: The Witcher
+    link: https://www.backloggd.com/games/the-witcher/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xrx.jpg
+      width: 720
+      height: 540
+  - id: 126098
+    title: 'Half-Life: Alyx'
+    link: https://www.backloggd.com/games/half-life-alyx/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1tq3.jpg
+      width: 720
+      height: 540
+  - id: 26676
+    title: 'Kingdom Hearts 0.2: Birth by Sleep - A Fragmentary Passage'
+    link: https://www.backloggd.com/games/kingdom-hearts-0-dot-2-birth-by-sleep-a-fragmentary-passage/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6kji.jpg
+      width: 720
+      height: 540
+  - id: 2933
+    title: Kingdom Hearts III
+    link: https://www.backloggd.com/games/kingdom-hearts-iii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1tpy.jpg
+      width: 720
+      height: 540
+  - id: 26758
+    title: Super Mario Odyssey
+    link: https://www.backloggd.com/games/super-mario-odyssey/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mxf.jpg
+      width: 720
+      height: 540
+  - id: 134582
+    title: 'Ratchet & Clank: Rift Apart'
+    link: https://www.backloggd.com/games/ratchet-and-clank-rift-apart/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2str.jpg
+      width: 720
+      height: 540
+  - id: 221287
+    title: 'Phoenix Wright: Ace Attorney - Trials and Tribulations'
+    link: https://www.backloggd.com/games/phoenix-wright-ace-attorney-trials-and-tribulations--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z6m.jpg
+      width: 720
+      height: 540
   - id: 1429
     title: 'Apollo Justice: Ace Attorney'
     link: https://www.backloggd.com/games/apollo-justice-ace-attorney/
