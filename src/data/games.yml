@@ -23,6 +23,27 @@
       height: 540
 - list: Stalled
   games:
+  - id: 290179
+    title: "Dragon Ball Z: Kakarot - Goku's Next Journey"
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-gokus-next-journey/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7xyb.jpg
+      width: 720
+      height: 540
+  - id: 262032
+    title: 'Dragon Ball Z: Kakarot- 23rd World Tournament'
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-23rd-world-tournament/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6zlc.jpg
+      width: 720
+      height: 540
+  - id: 227674
+    title: 'Dragon Ball Z: Kakarot - Bardock: Alone Against Fate'
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-bardock-alone-against-fate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6zld.jpg
+      width: 720
+      height: 540
   - id: 2988
     title: Prototype 2
     link: https://www.backloggd.com/games/prototype-2/
@@ -53,6 +74,181 @@
       height: 540
 - list: Completed
   games:
+  - id: 144352
+    title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3jco.jpg
+      width: 720
+      height: 540
+  - id: 141042
+    title: 'Dragon Ball Z: Kakarot - A New Power Awakens: Part 2'
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-a-new-power-awakens-part-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq8.jpg
+      width: 720
+      height: 540
+  - id: 132643
+    title: 'Dragon Ball Z: Kakarot - A New Power Awakens: Part 1'
+    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-a-new-power-awakens-part-1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq7.jpg
+      width: 720
+      height: 540
+  - id: 16
+    title: 'Fallout: New Vegas'
+    link: https://www.backloggd.com/games/fallout-new-vegas/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1u60.jpg
+      width: 720
+      height: 540
+  - id: 488
+    title: 'Kane & Lynch 2: Dog Days'
+    link: https://www.backloggd.com/games/kane-lynch-2-dog-days/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2crk.jpg
+      width: 720
+      height: 540
+  - id: 1048
+    title: 'Hitman: Blood Money'
+    link: https://www.backloggd.com/games/hitman-blood-money/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dm6.jpg
+      width: 720
+      height: 540
+  - id: 1983
+    title: Bastion
+    link: https://www.backloggd.com/games/bastion/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qlj.jpg
+      width: 720
+      height: 540
+  - id: 1885
+    title: Homefront
+    link: https://www.backloggd.com/games/homefront/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2j9b.jpg
+      width: 720
+      height: 540
+  - id: 500
+    title: 'Batman: Arkham Asylum'
+    link: https://www.backloggd.com/games/batman-arkham-asylum/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1voj.jpg
+      width: 720
+      height: 540
+  - id: 2940
+    title: Killer Is Dead
+    link: https://www.backloggd.com/games/killer-is-dead/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4wxz.jpg
+      width: 720
+      height: 540
+  - id: 2346
+    title: 'The Last Tinker: City of Colors'
+    link: https://www.backloggd.com/games/the-last-tinker-city-of-colors/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co43wv.jpg
+      width: 720
+      height: 540
+  - id: 538
+    title: BioShock Infinite
+    link: https://www.backloggd.com/games/bioshock-infinite/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n12.jpg
+      width: 720
+      height: 540
+  - id: 9822
+    title: Dinner Date
+    link: https://www.backloggd.com/games/dinner-date/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co84ec.jpg
+      width: 720
+      height: 540
+  - id: 2939
+    title: The Vanishing of Ethan Carter
+    link: https://www.backloggd.com/games/the-vanishing-of-ethan-carter/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1r7q.jpg
+      width: 720
+      height: 540
+  - id: 529
+    title: Far Cry 3
+    link: https://www.backloggd.com/games/far-cry-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1vpd.jpg
+      width: 720
+      height: 540
+  - id: 6801
+    title: Far Cry 4
+    link: https://www.backloggd.com/games/far-cry-4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2npa.jpg
+      width: 720
+      height: 540
+  - id: 558
+    title: Just Cause 2
+    link: https://www.backloggd.com/games/just-cause-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qri.jpg
+      width: 720
+      height: 540
+  - id: 1915
+    title: Lost Planet 2
+    link: https://www.backloggd.com/games/lost-planet-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qu3.jpg
+      width: 720
+      height: 540
+  - id: 75
+    title: Mass Effect 3
+    link: https://www.backloggd.com/games/mass-effect-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1x7q.jpg
+      width: 720
+      height: 540
+  - id: 74
+    title: Mass Effect 2
+    link: https://www.backloggd.com/games/mass-effect-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20ac.jpg
+      width: 720
+      height: 540
+  - id: 18
+    title: Max Payne
+    link: https://www.backloggd.com/games/max-payne/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3wb2.jpg
+      width: 720
+      height: 540
+  - id: 19
+    title: 'Max Payne 2: The Fall of Max Payne'
+    link: https://www.backloggd.com/games/max-payne-2-the-fall-of-max-payne/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lcl.jpg
+      width: 720
+      height: 540
+  - id: 960
+    title: Max Payne 3
+    link: https://www.backloggd.com/games/max-payne-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2mjo.jpg
+      width: 720
+      height: 540
+  - id: 1314
+    title: 'Medal of Honor: Airborne'
+    link: https://www.backloggd.com/games/medal-of-honor-airborne/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pmo.jpg
+      width: 720
+      height: 540
+  - id: 1051
+    title: Mirror's Edge
+    link: https://www.backloggd.com/games/mirror-s-edge/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5gbw.jpg
+      width: 720
+      height: 540
   - id: 10601
     title: 'Nikopol: Secrets of the Immortals'
     link: https://www.backloggd.com/games/nikopol-secrets-of-the-immortals/
@@ -228,181 +424,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2i.jpg
       width: 720
       height: 540
-  - id: 27837
-    title: 'Sam & Max: Beyond Time and Space - Episode 3: Night of the Raving Dead'
-    link: https://www.backloggd.com/games/sam-and-max-beyond-time-and-space-episode-3-night-of-the-raving-dead/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2g.jpg
-      width: 720
-      height: 540
-  - id: 27836
-    title: 'Sam & Max: Beyond Time and Space - Episode 2: Moai Better Blues'
-    link: https://www.backloggd.com/games/sam-and-max-beyond-time-and-space-episode-2-moai-better-blues/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2f.jpg
-      width: 720
-      height: 540
-  - id: 27835
-    title: 'Sam & Max: Beyond Time and Space - Episode 1: Ice Station Santa'
-    link: https://www.backloggd.com/games/sam-and-max-beyond-time-and-space-episode-1-ice-station-santa/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2e.jpg
-      width: 720
-      height: 540
-  - id: 27825
-    title: 'Sam & Max: Save the World - Episode 6: Bright Side of the Moon'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-6-bright-side-of-the-moon/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co40rh.jpg
-      width: 720
-      height: 540
-  - id: 27824
-    title: 'Sam & Max: Save the World - Episode 5: Reality 2.0'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-5-reality-2-dot-0/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co40rg.jpg
-      width: 720
-      height: 540
-  - id: 19361
-    title: 'Sam & Max: Save the World - Episode 4: Abe Lincoln Must Die!'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-4-abe-lincoln-must-die/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co40rf.jpg
-      width: 720
-      height: 540
-  - id: 27821
-    title: 'Sam & Max: Save the World - Episode 3: The Mole, the Mob and the Meatball'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-3-the-mole-the-mob-and-the-meatball/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co40re.jpg
-      width: 720
-      height: 540
-  - id: 27822
-    title: 'Sam & Max: Save the World - Episode 2: Situation Comedy'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-2-situation-comedy/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co40rd.jpg
-      width: 720
-      height: 540
-  - id: 27826
-    title: 'Sam & Max: Save the World - Episode 1: Culture Shock'
-    link: https://www.backloggd.com/games/sam-and-max-save-the-world-episode-1-culture-shock/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2c.jpg
-      width: 720
-      height: 540
-  - id: 547
-    title: Gears of War
-    link: https://www.backloggd.com/games/gears-of-war/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co28gi.jpg
-      width: 720
-      height: 540
-  - id: 1377
-    title: 'Spec Ops: The Line'
-    link: https://www.backloggd.com/games/spec-ops-the-line/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2acb.jpg
-      width: 720
-      height: 540
-  - id: 1384
-    title: Hotline Miami
-    link: https://www.backloggd.com/games/hotline-miami/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1vqp.jpg
-      width: 720
-      height: 540
-  - id: 6189
-    title: Cave Story
-    link: https://www.backloggd.com/games/cave-story/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7cty.jpg
-      width: 720
-      height: 540
-  - id: 306
-    title: Far Cry
-    link: https://www.backloggd.com/games/far-cry/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1vpf.jpg
-      width: 720
-      height: 540
-  - id: 1042
-    title: Just Cause
-    link: https://www.backloggd.com/games/just-cause/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co23af.jpg
-      width: 720
-      height: 540
-  - id: 296
-    title: Crysis
-    link: https://www.backloggd.com/games/crysis/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2on1.jpg
-      width: 720
-      height: 540
-  - id: 1122
-    title: 'Call of Duty: Black Ops II'
-    link: https://www.backloggd.com/games/call-of-duty-black-ops-ii/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wkv.jpg
-      width: 720
-      height: 540
-  - id: 1216
-    title: Dead Space 3
-    link: https://www.backloggd.com/games/dead-space-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2int.jpg
-      width: 720
-      height: 540
-  - id: 1985
-    title: 'Metal Gear Solid V: The Phantom Pain'
-    link: https://www.backloggd.com/games/metal-gear-solid-v-the-phantom-pain/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1v85.jpg
-      width: 720
-      height: 540
-  - id: 2031
-    title: 'Wolfenstein: The New Order'
-    link: https://www.backloggd.com/games/wolfenstein-the-new-order/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co21c0.jpg
-      width: 720
-      height: 540
-  - id: 1164
-    title: Tomb Raider
-    link: https://www.backloggd.com/games/tomb-raider--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rbu.jpg
-      width: 720
-      height: 540
-  - id: 1976
-    title: 'Call of Juarez: Gunslinger'
-    link: https://www.backloggd.com/games/call-of-juarez-gunslinger/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qqf.jpg
-      width: 720
-      height: 540
-  - id: 38513
-    title: Tail Concerto
-    link: https://www.backloggd.com/games/tail-concerto/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2o1w.jpg
-      width: 720
-      height: 540
-  - id: 4319
-    title: D
-    link: https://www.backloggd.com/games/d/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3sww.jpg
-      width: 720
-      height: 540
-  - id: 7432
-    title: Jumping Flash!
-    link: https://www.backloggd.com/games/jumping-flash/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vls.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 26384
@@ -421,6 +442,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 3278
+    title: Garry's Mod
+    link: https://www.backloggd.com/games/garry-s-mod/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mxa.jpg
+      width: 720
+      height: 540
+  - id: 2949
+    title: Killing Floor
+    link: https://www.backloggd.com/games/killing-floor/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2sn9.jpg
+      width: 720
+      height: 540
+  - id: 124
+    title: Left 4 Dead 2
+    link: https://www.backloggd.com/games/left-4-dead-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1y2f.jpg
+      width: 720
+      height: 540
+  - id: 122
+    title: Left 4 Dead
+    link: https://www.backloggd.com/games/left-4-dead/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qrm.jpg
+      width: 720
+      height: 540
   - id: 891
     title: Team Fortress 2
     link: https://www.backloggd.com/games/team-fortress-2/
