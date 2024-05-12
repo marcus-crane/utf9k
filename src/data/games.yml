@@ -23,6 +23,34 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1755
+    title: Mega Man Battle Network
+    link: https://www.backloggd.com/games/mega-man-battle-network/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co203q.jpg
+      width: 720
+      height: 540
+  - id: 113119
+    title: 'The Stanley Parable: Ultra Deluxe'
+    link: https://www.backloggd.com/games/the-stanley-parable-ultra-deluxe/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4p71.jpg
+      width: 720
+      height: 540
+  - id: 126120
+    title: Say No! More
+    link: https://www.backloggd.com/games/say-no-more/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3m7k.jpg
+      width: 720
+      height: 540
+  - id: 25076
+    title: Red Dead Redemption 2
+    link: https://www.backloggd.com/games/red-dead-redemption-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
+      width: 720
+      height: 540
   - id: 11292
     title: Rogue Galaxy
     link: https://www.backloggd.com/games/rogue-galaxy/
@@ -172,6 +200,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 18100
+    title: Pokémon Sun
+    link: https://www.backloggd.com/games/pokemon-sun/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3co7.jpg
+      width: 720
+      height: 540
+  - id: 133302
+    title: Scarlet Nexus
+    link: https://www.backloggd.com/games/scarlet-nexus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3b6l.jpg
+      width: 720
+      height: 540
   - id: 144352
     title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
@@ -506,20 +548,6 @@
     link: https://www.backloggd.com/games/half-life-2-lost-coast/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co25r5.jpg
-      width: 720
-      height: 540
-  - id: 27839
-    title: "Sam & Max: Beyond Time and Space - Episode 5: What's New Beelzebub?"
-    link: https://www.backloggd.com/games/sam-and-max-beyond-time-and-space-episode-5-whats-new-beelzebub/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2j.jpg
-      width: 720
-      height: 540
-  - id: 27838
-    title: 'Sam & Max: Beyond Time and Space - Episode 4: Chariots of the Dogs'
-    link: https://www.backloggd.com/games/sam-and-max-beyond-time-and-space-episode-4-chariots-of-the-dogs/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z2i.jpg
       width: 720
       height: 540
 - list: Backlog
