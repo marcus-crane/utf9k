@@ -173,12 +173,12 @@ const isProduction = process.env.NODE_ENV === 'production'
                     <li style="display: inline-block;">
                       <Image
                         alt={`Box art for the game titled ${game.title}`}
-                        src={game.cover}
-                        width={game.cover_width}
-                        height={game.cover_height}
+                        src={game.cover.url}
+                        width={game.cover.width}
+                        height={game.cover.height}
                         style="border-radius: 3px; width: auto; max-height: 16rem;"
                       />
-                      <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={game.link}>IGDB</a></figcaption>
+                      <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={game.link}>Backloggd</a></figcaption>
                     </li>
                   ))
                 }

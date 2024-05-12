@@ -32,9 +32,9 @@ const typedGames = games as GameList[];
                     <div>
                       <Image
                         alt={`Box art for the game titled ${game.title}`}
-                        src={game.cover}
-                        width={game.cover_width}
-                        height={game.cover_height}
+                        src={game.cover.url}
+                        width={game.cover.width}
+                        height={game.cover.height}
                       />
                       <a
                         href={game.link}
@@ -44,14 +44,14 @@ const typedGames = games as GameList[];
                         <span>{game.title}</span>
                       </a>
                     </div>
-                    <div>
+                    {/* <div>
                       <dd>
                         {game.platform} {game.replay && "· Replay"}
                       </dd>
                       {game.completed !== "0000-00-00" && (
                         <dd>Finished: {game.completed}</dd>
                       )}
-                    </div>
+                    </div> */}
                   </li>
                 ))}
             </ul>

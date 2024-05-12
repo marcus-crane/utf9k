@@ -1,7 +1,8 @@
-from ruamel.yaml import YAML
+from urllib.parse import urljoin
 
+from bs4 import BeautifulSoup
 import requests
-from PIL import ImageFile
+from ruamel.yaml import YAML
 
 def represent_none(self, data):
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
@@ -11,31 +12,17 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-DATA_FILE = "src/data/games.yml"
+DATA_FILE = "src/data/gamesv2.yml"
 
-url = "https://howlongtobeat.com/api/user/495/games/list"
+PLAYING_URL = "https://www.backloggd.com/u/utf9k/playing/"
+COMPLETED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:completed/"
+RETIRED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:retired/"
+SHELVED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:shelved/"
+BACKLOGGED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:backlog/"
 
-payload = {
-    "user_id": 495,
-    "lists": ["playing", "backlog", "custom", "completed", "retired"],
-    "set_playstyle": "comp_all",
-    "name": "",
-    "platform": "",
-    "storefront": "",
-    "sortBy": "",
-    "sortFlip": 0,
-    "view": "",
-    "random": 0,
-    "limit": 1000,
-    "currentUserHome": True
-}
 headers = {
-    "content-type": "application/json",
-    "user-agent": "utf9k Personal Game Sync <https://github.com/marcus-crane/utf9k>"
+    "User-Agent": "utf9k Personal Game Sync <https://github.com/marcus-crane/utf9k>"
 }
-
-r = requests.post(url, json=payload, headers=headers)
-data = r.json()
 
 lists = [
     {
@@ -60,45 +47,33 @@ lists = [
     }
 ]
 
-games = data['data']['gamesList']
+def _iterate_list_page(url, list_idx):
+    r = requests.get(url, headers=headers)
+    soup = BeautifulSoup(r.text, 'html.parser')
+    games = soup.find(id="game-lists").find_all("div", {"class": "card"})
+    for game in games:
 
-for game in games:
-    idx = 2
-    if game['list_playing']:
-        idx = 0
-    if game['list_backlog']:
-        idx = 3
-    if game['list_custom']:
-        idx = 1
-    if game['list_retired']:
-        idx = 4
-    cover_url = f"https://howlongtobeat.com/games/{game['game_image']}"
-    headers = {'Range': 'bytes=0-2000000', **headers}
-    r = requests.get(cover_url, stream=True, headers=headers)
+        _id = int(game.attrs['game_id'])
+        title = game.find('div', {"class": "game-text-centered"}).text.strip()
+        link = game.find('a', {"class": "cover-link"}).attrs.get('href')
+        image = game.find('img').get('src').replace('cover_big', '720p')
 
-    p = ImageFile.Parser()
-    p.feed(r.content)
-    width, height = p.image.size
+        lists[list_idx]['games'].append({
+            'id': _id,
+            'title': title,
+            'link': urljoin('https://www.backloggd.com', link),
+            'cover': {
+                'url': image,
+                'width': 720,
+                'height': 540
+            },
+        })
 
-    lists[idx]['games'].append({
-        'id': game['id'],
-        'title': game['custom_title'],
-        'link': f"https://howlongtobeat.com/game/{game['game_id']}",
-        'platform': game['platform'],
-        'cover': cover_url,
-        'cover_width': width,
-        'cover_height': height,
-        'replay': True if game['play_count'] > 1 else False,
-        'notes': game['play_notes'],
-        'updated': game['date_updated'],
-        'completed': game['date_complete']
-    })
-
-lists[0]['games'] = sorted(lists[0]['games'], key=lambda x: x['updated'], reverse=True)
-lists[1]['games'] = sorted(lists[1]['games'], key=lambda x: x['updated'], reverse=True)
-lists[2]['games'] = sorted(lists[2]['games'], key=lambda x: x['completed'], reverse=True)
-lists[3]['games'] = sorted(lists[3]['games'], key=lambda x: x['updated'], reverse=True)
-lists[4]['games'] = sorted(lists[4]['games'], key=lambda x: x['updated'], reverse=True)
+_iterate_list_page(PLAYING_URL, 0)
+_iterate_list_page(SHELVED_URL, 1)
+_iterate_list_page(COMPLETED_URL, 2)
+_iterate_list_page(BACKLOGGED_URL, 3)
+_iterate_list_page(RETIRED_URL, 4)
 
 with open("src/data/games.yml", "w") as file:
     yaml.dump(lists, file)

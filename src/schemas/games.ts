@@ -8,11 +8,15 @@ type Game = {
     title: string;
     link: string;
     platform: string;
-    cover: string;
+    cover: Cover;
     replay: boolean;
     notes: string;
     updated: string;
     completed: string;
-    cover_height: number;
-    cover_width: number;
+}
+
+type Cover = {
+    url: string;
+    height: number;
+    width: number;
 }
