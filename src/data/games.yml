@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 2538
+    title: 'Enslaved: Odyssey to the West'
+    link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gko.jpg
+      width: 720
+      height: 540
   - id: 7351
     title: Doom
     link: https://www.backloggd.com/games/doom--2/
@@ -249,6 +256,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 1020
+    title: Grand Theft Auto V
+    link: https://www.backloggd.com/games/grand-theft-auto-v/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lbd.jpg
+      width: 720
+      height: 540
   - id: 21127
     title: "Broken Sword: Shadow of the Templars - The Director's Cut"
     link: https://www.backloggd.com/games/broken-sword-shadow-of-the-templars-the-directors-cut/
@@ -592,13 +606,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1wko.jpg
       width: 720
       height: 540
-  - id: 545
-    title: 'Call of Duty: Black Ops'
-    link: https://www.backloggd.com/games/call-of-duty-black-ops/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wkl.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -624,6 +631,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 234
+    title: Guild Wars
+    link: https://www.backloggd.com/games/guild-wars/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2smt.jpg
+      width: 720
+      height: 540
+  - id: 2955
+    title: 'Elite: Dangerous'
+    link: https://www.backloggd.com/games/elite-dangerous/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xs9.jpg
+      width: 720
+      height: 540
   - id: 83731
     title: Beat Saber
     link: https://www.backloggd.com/games/beat-saber/
