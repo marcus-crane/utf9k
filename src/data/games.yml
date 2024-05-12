@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 19164
+    title: Borderlands 3
+    link: https://www.backloggd.com/games/borderlands-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20r3.jpg
+      width: 720
+      height: 540
   - id: 18320
     title: Battlefield 1
     link: https://www.backloggd.com/games/battlefield-1/
@@ -228,6 +235,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 21127
+    title: "Broken Sword: Shadow of the Templars - The Director's Cut"
+    link: https://www.backloggd.com/games/broken-sword-shadow-of-the-templars-the-directors-cut/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4wrf.jpg
+      width: 720
+      height: 540
+  - id: 13212
+    title: The Beginner's Guide
+    link: https://www.backloggd.com/games/the-beginners-guide/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2rz1.jpg
+      width: 720
+      height: 540
   - id: 18100
     title: Pokémon Sun
     link: https://www.backloggd.com/games/pokemon-sun/
@@ -564,20 +585,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1wkl.jpg
       width: 720
       height: 540
-  - id: 979
-    title: 'Call of Duty: Modern Warfare 3'
-    link: https://www.backloggd.com/games/call-of-duty-modern-warfare-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wkn.jpg
-      width: 720
-      height: 540
-  - id: 10395
-    title: 'Half-Life 2: Lost Coast'
-    link: https://www.backloggd.com/games/half-life-2-lost-coast/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co25r5.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 26384
@@ -596,6 +603,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 83731
+    title: Beat Saber
+    link: https://www.backloggd.com/games/beat-saber/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20ux.jpg
+      width: 720
+      height: 540
+  - id: 199447
+    title: Beat Hazard 3
+    link: https://www.backloggd.com/games/beat-hazard-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5bj6.jpg
+      width: 720
+      height: 540
+  - id: 7404
+    title: Beat Hazard
+    link: https://www.backloggd.com/games/beat-hazard/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2o9m.jpg
+      width: 720
+      height: 540
+  - id: 17131
+    title: BeamNG.drive
+    link: https://www.backloggd.com/games/beamng-dot-drive/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1sym.jpg
+      width: 720
+      height: 540
   - id: 277
     title: Battlefield 2
     link: https://www.backloggd.com/games/battlefield-2/
