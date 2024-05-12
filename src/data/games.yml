@@ -23,6 +23,104 @@
       height: 540
 - list: Stalled
   games:
+  - id: 11292
+    title: Rogue Galaxy
+    link: https://www.backloggd.com/games/rogue-galaxy/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26fu.jpg
+      width: 720
+      height: 540
+  - id: 138949
+    title: Marvel's Spider-Man Remastered
+    link: https://www.backloggd.com/games/marvels-spider-man-remastered/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co52vm.jpg
+      width: 720
+      height: 540
+  - id: 131999
+    title: NieR Replicant ver.1.22474487139...
+    link: https://www.backloggd.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5h0n.jpg
+      width: 720
+      height: 540
+  - id: 233585
+    title: Hi-Fi Rush
+    link: https://www.backloggd.com/games/hi-fi-rush/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6219.jpg
+      width: 720
+      height: 540
+  - id: 107213
+    title: Grandia HD Remaster
+    link: https://www.backloggd.com/games/grandia-hd-remaster/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2uni.jpg
+      width: 720
+      height: 540
+  - id: 19455
+    title: 'Final Fantasy XII: The Zodiac Age'
+    link: https://www.backloggd.com/games/final-fantasy-xii-the-zodiac-age/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2g6o.jpg
+      width: 720
+      height: 540
+  - id: 26472
+    title: Disco Elysium
+    link: https://www.backloggd.com/games/disco-elysium/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1sfj.jpg
+      width: 720
+      height: 540
+  - id: 15705
+    title: 'Digimon Story: Cyber Sleuth'
+    link: https://www.backloggd.com/games/digimon-story-cyber-sleuth/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2px6.jpg
+      width: 720
+      height: 540
+  - id: 11807
+    title: .Hack//Infection
+    link: https://www.backloggd.com/games/dot-hack-slash-slash-infection/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1oub.jpg
+      width: 720
+      height: 540
+  - id: 6898
+    title: Pokémon Alpha Sapphire
+    link: https://www.backloggd.com/games/pokemon-alpha-sapphire/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co56ef.jpg
+      width: 720
+      height: 540
+  - id: 1522
+    title: Pokémon White Version
+    link: https://www.backloggd.com/games/pokemon-white-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1z21.jpg
+      width: 720
+      height: 540
+  - id: 478
+    title: 'The Witcher 2: Assassins of Kings'
+    link: https://www.backloggd.com/games/the-witcher-2-assassins-of-kings/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wy4.jpg
+      width: 720
+      height: 540
+  - id: 281562
+    title: Judgment
+    link: https://www.backloggd.com/games/judgment--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7q97.jpg
+      width: 720
+      height: 540
+  - id: 19441
+    title: Watch Dogs 2
+    link: https://www.backloggd.com/games/watch-dogs-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2p3j.jpg
+      width: 720
+      height: 540
   - id: 290179
     title: "Dragon Ball Z: Kakarot - Goku's Next Journey"
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-gokus-next-journey/
