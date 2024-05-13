@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1214
+    title: Dark Cloud
+    link: https://www.backloggd.com/games/dark-cloud/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xtn.jpg
+      width: 720
+      height: 540
   - id: 11397
     title: Yakuza 0
     link: https://www.backloggd.com/games/yakuza-0/
@@ -333,6 +340,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 3048
+    title: 'The Order: 1886'
+    link: https://www.backloggd.com/games/the-order-1886/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2rn6.jpg
+      width: 720
+      height: 540
   - id: 8774
     title: Grow Home
     link: https://www.backloggd.com/games/grow-home/
@@ -676,13 +690,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1x7d.jpg
       width: 720
       height: 540
-  - id: 3035
-    title: The Stanley Parable
-    link: https://www.backloggd.com/games/the-stanley-parable/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rc9.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -708,6 +715,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 18854
+    title: Let It Die
+    link: https://www.backloggd.com/games/let-it-die/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qiy.jpg
+      width: 720
+      height: 540
   - id: 234
     title: Guild Wars
     link: https://www.backloggd.com/games/guild-wars/
@@ -846,6 +860,13 @@
     link: https://www.backloggd.com/games/beat-hazard-ultra/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1yfw.jpg
+      width: 720
+      height: 540
+  - id: 2114
+    title: Tom Clancy's The Division
+    link: https://www.backloggd.com/games/tom-clancy-s-the-division/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yvf.jpg
       width: 720
       height: 540
   - id: 1939
