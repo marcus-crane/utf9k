@@ -375,6 +375,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 288870
+    title: 'Dragon Ball Z: Budokai 3 HD'
+    link: https://www.backloggd.com/games/dragon-ball-z-budokai-3-hd/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tsq.jpg
+      width: 720
+      height: 540
+  - id: 288866
+    title: 'Dragon Ball Z: Budokai HD'
+    link: https://www.backloggd.com/games/dragon-ball-z-budokai-hd/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tsk.jpg
+      width: 720
+      height: 540
   - id: 12517
     title: Undertale
     link: https://www.backloggd.com/games/undertale/
@@ -709,20 +723,6 @@
     link: https://www.backloggd.com/games/portal-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rs4.jpg
-      width: 720
-      height: 540
-  - id: 6778
-    title: Puzzle Agent 2
-    link: https://www.backloggd.com/games/puzzle-agent-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2628.jpg
-      width: 720
-      height: 540
-  - id: 15995
-    title: Puzzle Agent
-    link: https://www.backloggd.com/games/puzzle-agent/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co21gr.jpg
       width: 720
       height: 540
 - list: Backlog
