@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 21899
+    title: Final Fantasy X HD Remaster
+    link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
+      width: 720
+      height: 540
   - id: 207026
     title: Final Fantasy VII
     link: https://www.backloggd.com/games/final-fantasy-vii--6/
@@ -133,6 +140,13 @@
     link: https://www.backloggd.com/games/mega-man-battle-network/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co203q.jpg
+      width: 720
+      height: 540
+  - id: 133302
+    title: Scarlet Nexus
+    link: https://www.backloggd.com/games/scarlet-nexus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3b6l.jpg
       width: 720
       height: 540
   - id: 113119
@@ -345,13 +359,6 @@
     link: https://www.backloggd.com/games/pokemon-sun/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3co7.jpg
-      width: 720
-      height: 540
-  - id: 133302
-    title: Scarlet Nexus
-    link: https://www.backloggd.com/games/scarlet-nexus/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3b6l.jpg
       width: 720
       height: 540
   - id: 144352
@@ -653,6 +660,13 @@
     link: https://www.backloggd.com/games/magrunner-dark-pulse/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2egb.jpg
+      width: 720
+      height: 540
+  - id: 17447
+    title: Titanfall 2
+    link: https://www.backloggd.com/games/titanfall-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/fhbeilnghyhhmjqhinqa.jpg
       width: 720
       height: 540
 - list: Backlog
