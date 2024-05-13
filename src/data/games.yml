@@ -23,6 +23,27 @@
       height: 540
 - list: Stalled
   games:
+  - id: 150045
+    title: 'Resident Evil: Revelations'
+    link: https://www.backloggd.com/games/resident-evil-revelations--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co54h4.jpg
+      width: 720
+      height: 540
+  - id: 96027
+    title: 'Red Faction: Guerrilla Re-Mars-tered'
+    link: https://www.backloggd.com/games/red-faction-guerrilla-re-mars-tered/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qs4.jpg
+      width: 720
+      height: 540
+  - id: 528
+    title: 'Red Faction: Armageddon'
+    link: https://www.backloggd.com/games/red-faction-armageddon/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jjv.jpg
+      width: 720
+      height: 540
   - id: 151665
     title: Palworld
     link: https://www.backloggd.com/games/palworld/
@@ -350,13 +371,6 @@
     link: https://www.backloggd.com/games/cyberpunk-2077-phantom-liberty/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7566.jpg
-      width: 720
-      height: 540
-  - id: 185246
-    title: Alan Wake II
-    link: https://www.backloggd.com/games/alan-wake-ii/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6jar.jpg
       width: 720
       height: 540
 - list: Completed
