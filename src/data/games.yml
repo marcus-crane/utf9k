@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 153700
+    title: "Ghost of Tsushima: Director's Cut"
+    link: https://www.backloggd.com/games/ghost-of-tsushima-directors-cut/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3p5f.jpg
+      width: 720
+      height: 540
   - id: 21899
     title: Final Fantasy X HD Remaster
     link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
@@ -319,6 +326,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 11065
+    title: Ratchet & Clank
+    link: https://www.backloggd.com/games/ratchet-and-clank/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co230k.jpg
+      width: 720
+      height: 540
+  - id: 218744
+    title: 'Silent Hill: The Short Message'
+    link: https://www.backloggd.com/games/silent-hill-the-short-message/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7p8y.jpg
+      width: 720
+      height: 540
   - id: 12366
     title: 'Lili: Child of Geos'
     link: https://www.backloggd.com/games/lili-child-of-geos/
@@ -653,20 +674,6 @@
     link: https://www.backloggd.com/games/the-stanley-parable--1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co25ck.jpg
-      width: 720
-      height: 540
-  - id: 8286
-    title: 'Magrunner: Dark Pulse'
-    link: https://www.backloggd.com/games/magrunner-dark-pulse/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2egb.jpg
-      width: 720
-      height: 540
-  - id: 17447
-    title: Titanfall 2
-    link: https://www.backloggd.com/games/titanfall-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/fhbeilnghyhhmjqhinqa.jpg
       width: 720
       height: 540
 - list: Backlog
