@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 210395
+    title: Slay the Princess
+    link: https://www.backloggd.com/games/slay-the-princess/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co501b.jpg
+      width: 720
+      height: 540
+  - id: 116753
+    title: A Short Hike
+    link: https://www.backloggd.com/games/a-short-hike/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6e83.jpg
+      width: 720
+      height: 540
   - id: 150045
     title: 'Resident Evil: Revelations'
     link: https://www.backloggd.com/games/resident-evil-revelations--1/
@@ -359,22 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co20jt.jpg
       width: 720
       height: 540
-  - id: 2640
-    title: 'Halo: Combat Evolved Anniversary'
-    link: https://www.backloggd.com/games/halo-combat-evolved-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xhb.jpg
-      width: 720
-      height: 540
-  - id: 215769
-    title: 'Cyberpunk 2077: Phantom Liberty'
-    link: https://www.backloggd.com/games/cyberpunk-2077-phantom-liberty/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7566.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 1981
+    title: Saints Row IV
+    link: https://www.backloggd.com/games/saints-row-iv/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nrn.jpg
+      width: 720
+      height: 540
   - id: 106227
     title: Portal 2 - The Final Hours
     link: https://www.backloggd.com/games/portal-2-the-final-hours/
@@ -718,13 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rk3.jpg
       width: 720
       height: 540
-  - id: 3079
-    title: "Tiny and Big: Grandpa's Leftovers"
-    link: https://www.backloggd.com/games/tiny-and-big-grandpa-s-leftovers/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2h2e.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -750,6 +750,48 @@
       height: 540
 - list: Retired
   games:
+  - id: 9254
+    title: Subnautica
+    link: https://www.backloggd.com/games/subnautica/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1iqw.jpg
+      width: 720
+      height: 540
+  - id: 884
+    title: Street Fighter IV
+    link: https://www.backloggd.com/games/street-fighter-iv/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1w4t.jpg
+      width: 720
+      height: 540
+  - id: 3019
+    title: Starbound
+    link: https://www.backloggd.com/games/starbound/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4b19.jpg
+      width: 720
+      height: 540
+  - id: 3239
+    title: Space Engineers
+    link: https://www.backloggd.com/games/space-engineers/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1n1d.jpg
+      width: 720
+      height: 540
+  - id: 28008
+    title: Secret World Legends
+    link: https://www.backloggd.com/games/secret-world-legends/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/dq2f9plwuckhxb2scbvu.jpg
+      width: 720
+      height: 540
+  - id: 1378
+    title: R.U.S.E.
+    link: https://www.backloggd.com/games/ruse/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jjp.jpg
+      width: 720
+      height: 540
   - id: 138590
     title: PowerWash Simulator
     link: https://www.backloggd.com/games/powerwash-simulator/
