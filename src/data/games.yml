@@ -375,6 +375,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 1009
+    title: The Last of Us
+    link: https://www.backloggd.com/games/the-last-of-us/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1r7f.jpg
+      width: 720
+      height: 540
+  - id: 4204
+    title: Terminator Salvation
+    link: https://www.backloggd.com/games/terminator-salvation/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2cbm.jpg
+      width: 720
+      height: 540
   - id: 288870
     title: 'Dragon Ball Z: Budokai 3 HD'
     link: https://www.backloggd.com/games/dragon-ball-z-budokai-3-hd/
@@ -711,22 +725,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1s.jpg
       width: 720
       height: 540
-  - id: 78249
-    title: "Back to the Future: The Game - Episode 1: It's About Time"
-    link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-1-its-about-time/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1r.jpg
-      width: 720
-      height: 540
-  - id: 72
-    title: Portal 2
-    link: https://www.backloggd.com/games/portal-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rs4.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 279658
+    title: 'Final Fantasy XVI: The Rising Tide'
+    link: https://www.backloggd.com/games/final-fantasy-xvi-the-rising-tide/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7h8t.jpg
+      width: 720
+      height: 540
+  - id: 279657
+    title: 'Final Fantasy XVI: Echoes of the Fallen'
+    link: https://www.backloggd.com/games/final-fantasy-xvi-echoes-of-the-fallen/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7hhs.jpg
+      width: 720
+      height: 540
   - id: 12579
     title: 'Danganronpa V3: Killing Harmony'
     link: https://www.backloggd.com/games/danganronpa-v3-killing-harmony--1/
