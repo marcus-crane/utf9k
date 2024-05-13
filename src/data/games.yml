@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 11
+    title: 'Vampire: The Masquerade - Bloodlines'
+    link: https://www.backloggd.com/games/vampire-the-masquerade-bloodlines/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n14.jpg
+      width: 720
+      height: 540
+  - id: 128097
+    title: Turnip Boy Commits Tax Evasion
+    link: https://www.backloggd.com/games/turnip-boy-commits-tax-evasion/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4kc1.jpg
+      width: 720
+      height: 540
   - id: 210395
     title: Slay the Princess
     link: https://www.backloggd.com/games/slay-the-princess/
@@ -359,22 +373,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co6zlc.jpg
       width: 720
       height: 540
-  - id: 227674
-    title: 'Dragon Ball Z: Kakarot - Bardock: Alone Against Fate'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-bardock-alone-against-fate/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6zld.jpg
-      width: 720
-      height: 540
-  - id: 2988
-    title: Prototype 2
-    link: https://www.backloggd.com/games/prototype-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co20jt.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 12517
+    title: Undertale
+    link: https://www.backloggd.com/games/undertale/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2855.jpg
+      width: 720
+      height: 540
+  - id: 7386
+    title: The Talos Principle
+    link: https://www.backloggd.com/games/the-talos-principle/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rb5.jpg
+      width: 720
+      height: 540
   - id: 1981
     title: Saints Row IV
     link: https://www.backloggd.com/games/saints-row-iv/
@@ -711,20 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co21gr.jpg
       width: 720
       height: 540
-  - id: 9013
-    title: Thirty Flights of Loving
-    link: https://www.backloggd.com/games/thirty-flights-of-loving/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2edo.jpg
-      width: 720
-      height: 540
-  - id: 15120
-    title: The Tiny Bang Story
-    link: https://www.backloggd.com/games/the-tiny-bang-story/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rk3.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -750,6 +750,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 24723
+    title: 'Unreal Tournament: Game of the Year Edition'
+    link: https://www.backloggd.com/games/unreal-tournament-game-of-the-year-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co635k.jpg
+      width: 720
+      height: 540
+  - id: 1879
+    title: Terraria
+    link: https://www.backloggd.com/games/terraria/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rbo.jpg
+      width: 720
+      height: 540
+  - id: 7533
+    title: Tera
+    link: https://www.backloggd.com/games/tera/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6g4n.jpg
+      width: 720
+      height: 540
+  - id: 7401
+    title: Symphony
+    link: https://www.backloggd.com/games/symphony/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2rig.jpg
+      width: 720
+      height: 540
   - id: 9254
     title: Subnautica
     link: https://www.backloggd.com/games/subnautica/
