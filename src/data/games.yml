@@ -23,6 +23,41 @@
       height: 540
 - list: Stalled
   games:
+  - id: 207026
+    title: Final Fantasy VII
+    link: https://www.backloggd.com/games/final-fantasy-vii--6/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4xgh.jpg
+      width: 720
+      height: 540
+  - id: 133923
+    title: 'Paper Mario: The Origami King'
+    link: https://www.backloggd.com/games/paper-mario-the-origami-king/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2sai.jpg
+      width: 720
+      height: 540
+  - id: 236663
+    title: Metroid Prime Remastered
+    link: https://www.backloggd.com/games/metroid-prime-remastered/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co658o.jpg
+      width: 720
+      height: 540
+  - id: 243900
+    title: 'Captain Toad: Treasure Tracker'
+    link: https://www.backloggd.com/games/captain-toad-treasure-tracker--3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6c6f.jpg
+      width: 720
+      height: 540
+  - id: 122238
+    title: 'Xenoblade Chronicles: Definitive Edition'
+    link: https://www.backloggd.com/games/xenoblade-chronicles-definitive-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co27kt.jpg
+      width: 720
+      height: 540
   - id: 6705
     title: A Hat in Time
     link: https://www.backloggd.com/games/a-hat-in-time/
