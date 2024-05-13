@@ -23,6 +23,27 @@
       height: 540
 - list: Stalled
   games:
+  - id: 151665
+    title: Palworld
+    link: https://www.backloggd.com/games/palworld/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7n02.jpg
+      width: 720
+      height: 540
+  - id: 120436
+    title: 'One Piece: Pirate Warriors 4'
+    link: https://www.backloggd.com/games/one-piece-pirate-warriors-4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m9q.jpg
+      width: 720
+      height: 540
+  - id: 194837
+    title: One Piece Odyssey
+    link: https://www.backloggd.com/games/one-piece-odyssey/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5x13.jpg
+      width: 720
+      height: 540
   - id: 1214
     title: Dark Cloud
     link: https://www.backloggd.com/games/dark-cloud/
@@ -340,6 +361,27 @@
       height: 540
 - list: Completed
   games:
+  - id: 106227
+    title: Portal 2 - The Final Hours
+    link: https://www.backloggd.com/games/portal-2-the-final-hours/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zzj.jpg
+      width: 720
+      height: 540
+  - id: 2985
+    title: Persona 4 Golden
+    link: https://www.backloggd.com/games/persona-4-golden/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1n1x.jpg
+      width: 720
+      height: 540
+  - id: 236694
+    title: 'Paranormasight: The Seven Mysteries of Honjo'
+    link: https://www.backloggd.com/games/paranormasight-the-seven-mysteries-of-honjo/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co64ro.jpg
+      width: 720
+      height: 540
   - id: 3048
     title: 'The Order: 1886'
     link: https://www.backloggd.com/games/the-order-1886/
@@ -669,27 +711,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2h2e.jpg
       width: 720
       height: 540
-  - id: 5025
-    title: To the Moon
-    link: https://www.backloggd.com/games/to-the-moon/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co25yv.jpg
-      width: 720
-      height: 540
-  - id: 14905
-    title: The Wonderful End of the World
-    link: https://www.backloggd.com/games/the-wonderful-end-of-the-world/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co44l0.jpg
-      width: 720
-      height: 540
-  - id: 71
-    title: Portal
-    link: https://www.backloggd.com/games/portal/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1x7d.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -715,6 +736,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 138590
+    title: PowerWash Simulator
+    link: https://www.backloggd.com/games/powerwash-simulator/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7gek.jpg
+      width: 720
+      height: 540
+  - id: 513
+    title: Phantasy Star Online 2
+    link: https://www.backloggd.com/games/phantasy-star-online-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ep5.jpg
+      width: 720
+      height: 540
+  - id: 2058
+    title: Payday 2
+    link: https://www.backloggd.com/games/payday-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3s5l.jpg
+      width: 720
+      height: 540
+  - id: 1381
+    title: 'Payday: The Heist'
+    link: https://www.backloggd.com/games/payday-the-heist/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co68m7.jpg
+      width: 720
+      height: 540
   - id: 18854
     title: Let It Die
     link: https://www.backloggd.com/games/let-it-die/
