@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 11397
+    title: Yakuza 0
+    link: https://www.backloggd.com/games/yakuza-0/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co252x.jpg
+      width: 720
+      height: 540
   - id: 153700
     title: "Ghost of Tsushima: Director's Cut"
     link: https://www.backloggd.com/games/ghost-of-tsushima-directors-cut/
@@ -326,6 +333,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 8774
+    title: Grow Home
+    link: https://www.backloggd.com/games/grow-home/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co217x.jpg
+      width: 720
+      height: 540
   - id: 11065
     title: Ratchet & Clank
     link: https://www.backloggd.com/games/ratchet-and-clank/
@@ -669,13 +683,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rc9.jpg
       width: 720
       height: 540
-  - id: 18453
-    title: The Stanley Parable
-    link: https://www.backloggd.com/games/the-stanley-parable--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co25ck.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 12579
@@ -839,6 +846,20 @@
     link: https://www.backloggd.com/games/beat-hazard-ultra/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1yfw.jpg
+      width: 720
+      height: 540
+  - id: 1939
+    title: Destiny
+    link: https://www.backloggd.com/games/destiny/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rco.jpg
+      width: 720
+      height: 540
+  - id: 25657
+    title: Destiny 2
+    link: https://www.backloggd.com/games/destiny-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co67qb.jpg
       width: 720
       height: 540
   - id: 3267
