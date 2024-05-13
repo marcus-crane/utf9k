@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1942
+    title: 'The Witcher 3: Wild Hunt'
+    link: https://www.backloggd.com/games/the-witcher-3-wild-hunt/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wyy.jpg
+      width: 720
+      height: 540
   - id: 11
     title: 'Vampire: The Masquerade - Bloodlines'
     link: https://www.backloggd.com/games/vampire-the-masquerade-bloodlines/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-gokus-next-journey/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7xyb.jpg
-      width: 720
-      height: 540
-  - id: 262032
-    title: 'Dragon Ball Z: Kakarot- 23rd World Tournament'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-23rd-world-tournament/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6zlc.jpg
       width: 720
       height: 540
 - list: Completed
@@ -750,6 +750,34 @@
       height: 540
 - list: Retired
   games:
+  - id: 2903
+    title: Warframe
+    link: https://www.backloggd.com/games/warframe/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nhi.jpg
+      width: 720
+      height: 540
+  - id: 16718
+    title: 'Viscera Cleanup Detail: Shadow Warrior'
+    link: https://www.backloggd.com/games/viscera-cleanup-detail-shadow-warrior/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ig3.jpg
+      width: 720
+      height: 540
+  - id: 5564
+    title: "Viscera Cleanup Detail: Santa's Rampage"
+    link: https://www.backloggd.com/games/viscera-cleanup-detail-santa-s-rampage/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8705.jpg
+      width: 720
+      height: 540
+  - id: 6009
+    title: Viscera Cleanup Detail
+    link: https://www.backloggd.com/games/viscera-cleanup-detail/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co24ky.jpg
+      width: 720
+      height: 540
   - id: 24723
     title: 'Unreal Tournament: Game of the Year Edition'
     link: https://www.backloggd.com/games/unreal-tournament-game-of-the-year-edition/
