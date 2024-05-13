@@ -764,6 +764,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 109462
+    title: 'Animal Crossing: New Horizons'
+    link: https://www.backloggd.com/games/animal-crossing-new-horizons/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3wls.jpg
+      width: 720
+      height: 540
   - id: 2903
     title: Warframe
     link: https://www.backloggd.com/games/warframe/
