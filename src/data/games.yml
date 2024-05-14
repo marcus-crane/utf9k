@@ -16,6 +16,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 3042
+    title: Dying Light
+    link: https://www.backloggd.com/games/dying-light/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
+      width: 720
+      height: 540
   - id: 7194
     title: Steins;Gate
     link: https://www.backloggd.com/games/steins-gate/
@@ -357,13 +364,6 @@
     link: https://www.backloggd.com/games/judgment--2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7q97.jpg
-      width: 720
-      height: 540
-  - id: 19441
-    title: Watch Dogs 2
-    link: https://www.backloggd.com/games/watch-dogs-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2p3j.jpg
       width: 720
       height: 540
 - list: Completed
