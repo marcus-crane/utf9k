@@ -368,6 +368,27 @@
       height: 540
 - list: Completed
   games:
+  - id: 127132
+    title: "Sam & Max: The Devil's Playhouse - Episode 3: They Stole Max's Brain!"
+    link: https://www.backloggd.com/games/sam-and-max-the-devils-playhouse-episode-3-they-stole-maxs-brain/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jg5.jpg
+      width: 720
+      height: 540
+  - id: 127131
+    title: "Sam & Max: The Devil's Playhouse - Episode 2: The Tomb of Sammun-Mak"
+    link: https://www.backloggd.com/games/sam-and-max-the-devils-playhouse-episode-2-the-tomb-of-sammun-mak/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jg4.jpg
+      width: 720
+      height: 540
+  - id: 106205
+    title: "Sam & Max: The Devil's Playhouse - Episode 1: The Penal Zone"
+    link: https://www.backloggd.com/games/sam-and-max-the-devils-playhouse-episode-1-the-penal-zone/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co40rj.jpg
+      width: 720
+      height: 540
   - id: 9708
     title: 'Danganronpa Another Episode: Ultra Despair Girls'
     link: https://www.backloggd.com/games/danganronpa-another-episode-ultra-despair-girls/
@@ -697,27 +718,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2mjo.jpg
       width: 720
       height: 540
-  - id: 1314
-    title: 'Medal of Honor: Airborne'
-    link: https://www.backloggd.com/games/medal-of-honor-airborne/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pmo.jpg
-      width: 720
-      height: 540
-  - id: 1051
-    title: Mirror's Edge
-    link: https://www.backloggd.com/games/mirror-s-edge/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5gbw.jpg
-      width: 720
-      height: 540
-  - id: 10601
-    title: 'Nikopol: Secrets of the Immortals'
-    link: https://www.backloggd.com/games/nikopol-secrets-of-the-immortals/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co21e2.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -757,6 +757,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 7365
+    title: MAG
+    link: https://www.backloggd.com/games/mag/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2so1.jpg
+      width: 720
+      height: 540
+  - id: 351
+    title: Battlefield 1943
+    link: https://www.backloggd.com/games/battlefield-1943/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nv3.jpg
+      width: 720
+      height: 540
   - id: 53014
     title: Wake-Up Club
     link: https://www.backloggd.com/games/wake-up-club/
@@ -1091,12 +1105,5 @@
     link: https://www.backloggd.com/games/counter-strike-global-offensive/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co6996.jpg
-      width: 720
-      height: 540
-  - id: 386
-    title: Final Fantasy XIV Online
-    link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
       width: 720
       height: 540
