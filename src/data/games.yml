@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 93498
+    title: Welcome Park
+    link: https://www.backloggd.com/games/welcome-park/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2d49.jpg
+      width: 720
+      height: 540
   - id: 1009
     title: The Last of Us
     link: https://www.backloggd.com/games/the-last-of-us/
@@ -711,13 +718,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1t.jpg
       width: 720
       height: 540
-  - id: 78253
-    title: 'Back to the Future: The Game - Episode 2: Get Tannen!'
-    link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-2-get-tannen/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1s.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -757,6 +757,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 92456
+    title: Smart As...
+    link: https://www.backloggd.com/games/smart-as-dot-dot-dot/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co61cg.jpg
+      width: 720
+      height: 540
   - id: 109462
     title: 'Animal Crossing: New Horizons'
     link: https://www.backloggd.com/games/animal-crossing-new-horizons/
