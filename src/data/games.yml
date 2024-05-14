@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 119585
+    title: Paint Park Plus
+    link: https://www.backloggd.com/games/paint-park-plus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co61b4.jpg
+      width: 720
+      height: 540
   - id: 93498
     title: Welcome Park
     link: https://www.backloggd.com/games/welcome-park/
@@ -711,13 +718,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1u.jpg
       width: 720
       height: 540
-  - id: 78250
-    title: 'Back to the Future: The Game - Episode 3: Citizen Brown'
-    link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-3-citizen-brown/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1t.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -757,6 +757,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 53014
+    title: Wake-Up Club
+    link: https://www.backloggd.com/games/wake-up-club/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1lpj.jpg
+      width: 720
+      height: 540
   - id: 92456
     title: Smart As...
     link: https://www.backloggd.com/games/smart-as-dot-dot-dot/
