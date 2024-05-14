@@ -16,6 +16,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 25877
+    title: "Pokémon: Let's Go, Pikachu!"
+    link: https://www.backloggd.com/games/pokemon-lets-go-pikachu/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zjy.jpg
+      width: 720
+      height: 540
   - id: 3042
     title: Dying Light
     link: https://www.backloggd.com/games/dying-light/
@@ -357,13 +364,6 @@
     link: https://www.backloggd.com/games/the-witcher-2-assassins-of-kings/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1wy4.jpg
-      width: 720
-      height: 540
-  - id: 281562
-    title: Judgment
-    link: https://www.backloggd.com/games/judgment--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7q97.jpg
       width: 720
       height: 540
 - list: Completed
