@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 5002
+    title: 'Megamind: Ultimate Showdown'
+    link: https://www.backloggd.com/games/megamind-ultimate-showdown/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7yz5.jpg
+      width: 720
+      height: 540
   - id: 127132
     title: "Sam & Max: The Devil's Playhouse - Episode 3: They Stole Max's Brain!"
     link: https://www.backloggd.com/games/sam-and-max-the-devils-playhouse-episode-3-they-stole-maxs-brain/
@@ -711,13 +718,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2lcl.jpg
       width: 720
       height: 540
-  - id: 960
-    title: Max Payne 3
-    link: https://www.backloggd.com/games/max-payne-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2mjo.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -757,6 +757,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 2680
+    title: DJ Hero 2
+    link: https://www.backloggd.com/games/dj-hero-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2e2t.jpg
+      width: 720
+      height: 540
   - id: 7365
     title: MAG
     link: https://www.backloggd.com/games/mag/
@@ -1098,12 +1105,5 @@
     link: https://www.backloggd.com/games/counter-strike-source/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1txv.jpg
-      width: 720
-      height: 540
-  - id: 1372
-    title: 'Counter-Strike: Global Offensive'
-    link: https://www.backloggd.com/games/counter-strike-global-offensive/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6996.jpg
       width: 720
       height: 540
