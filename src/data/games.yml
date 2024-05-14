@@ -16,6 +16,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 7194
+    title: Steins;Gate
+    link: https://www.backloggd.com/games/steins-gate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
+      width: 720
+      height: 540
+  - id: 21899
+    title: Final Fantasy X HD Remaster
+    link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
+      width: 720
+      height: 540
   - id: 1942
     title: 'The Witcher 3: Wild Hunt'
     link: https://www.backloggd.com/games/the-witcher-3-wild-hunt/
@@ -112,13 +126,6 @@
     link: https://www.backloggd.com/games/ghost-of-tsushima-directors-cut/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3p5f.jpg
-      width: 720
-      height: 540
-  - id: 21899
-    title: Final Fantasy X HD Remaster
-    link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
       width: 720
       height: 540
   - id: 207026
@@ -359,15 +366,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2p3j.jpg
       width: 720
       height: 540
-  - id: 290179
-    title: "Dragon Ball Z: Kakarot - Goku's Next Journey"
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-gokus-next-journey/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7xyb.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 9708
+    title: 'Danganronpa Another Episode: Ultra Despair Girls'
+    link: https://www.backloggd.com/games/danganronpa-another-episode-ultra-despair-girls/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1n83.jpg
+      width: 720
+      height: 540
   - id: 19907
     title: 'Resistance: Burning Skies'
     link: https://www.backloggd.com/games/resistance-burning-skies/
@@ -709,13 +716,6 @@
     link: https://www.backloggd.com/games/nikopol-secrets-of-the-immortals/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co21e2.jpg
-      width: 720
-      height: 540
-  - id: 78251
-    title: 'Back to the Future: The Game - Episode 5: Outatime'
-    link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-5-outatime/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1w.jpg
       width: 720
       height: 540
 - list: Backlog
