@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 19907
+    title: 'Resistance: Burning Skies'
+    link: https://www.backloggd.com/games/resistance-burning-skies/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2b4c.jpg
+      width: 720
+      height: 540
   - id: 119585
     title: Paint Park Plus
     link: https://www.backloggd.com/games/paint-park-plus/
@@ -709,13 +716,6 @@
     link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-5-outatime/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1w.jpg
-      width: 720
-      height: 540
-  - id: 78252
-    title: 'Back to the Future: The Game - Episode 4: Double Visions'
-    link: https://www.backloggd.com/games/back-to-the-future-the-game-episode-4-double-visions/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z1u.jpg
       width: 720
       height: 540
 - list: Backlog
