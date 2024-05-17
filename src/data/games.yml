@@ -368,6 +368,27 @@
       height: 540
 - list: Completed
   games:
+  - id: 8981
+    title: Dash of Destruction
+    link: https://www.backloggd.com/games/dash-of-destruction/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2om2.jpg
+      width: 720
+      height: 540
+  - id: 2844
+    title: 'The Simpsons: Hit & Run'
+    link: https://www.backloggd.com/games/the-simpsons-hit-run/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2uk7.jpg
+      width: 720
+      height: 540
+  - id: 2671
+    title: 'Guitar Hero III: Legends of Rock'
+    link: https://www.backloggd.com/games/guitar-hero-iii-legends-of-rock/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wqm.jpg
+      width: 720
+      height: 540
   - id: 7488
     title: WWE Legends of WrestleMania
     link: https://www.backloggd.com/games/wwe-legends-of-wrestlemania/
@@ -697,27 +718,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1qu3.jpg
       width: 720
       height: 540
-  - id: 75
-    title: Mass Effect 3
-    link: https://www.backloggd.com/games/mass-effect-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1x7q.jpg
-      width: 720
-      height: 540
-  - id: 74
-    title: Mass Effect 2
-    link: https://www.backloggd.com/games/mass-effect-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co20ac.jpg
-      width: 720
-      height: 540
-  - id: 18
-    title: Max Payne
-    link: https://www.backloggd.com/games/max-payne/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3wb2.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -757,6 +757,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 20524
+    title: Uno
+    link: https://www.backloggd.com/games/uno/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2va0.jpg
+      width: 720
+      height: 540
   - id: 2680
     title: DJ Hero 2
     link: https://www.backloggd.com/games/dj-hero-2/
@@ -1098,12 +1105,5 @@
     link: https://www.backloggd.com/games/day-of-defeat-source/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co610o.jpg
-      width: 720
-      height: 540
-  - id: 307
-    title: 'Counter-Strike: Source'
-    link: https://www.backloggd.com/games/counter-strike-source/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1txv.jpg
       width: 720
       height: 540
