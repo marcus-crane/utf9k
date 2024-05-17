@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 7488
+    title: WWE Legends of WrestleMania
+    link: https://www.backloggd.com/games/wwe-legends-of-wrestlemania/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4xnr.jpg
+      width: 720
+      height: 540
   - id: 5002
     title: 'Megamind: Ultimate Showdown'
     link: https://www.backloggd.com/games/megamind-ultimate-showdown/
@@ -709,13 +716,6 @@
     link: https://www.backloggd.com/games/max-payne/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3wb2.jpg
-      width: 720
-      height: 540
-  - id: 19
-    title: 'Max Payne 2: The Fall of Max Payne'
-    link: https://www.backloggd.com/games/max-payne-2-the-fall-of-max-payne/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lcl.jpg
       width: 720
       height: 540
 - list: Backlog
