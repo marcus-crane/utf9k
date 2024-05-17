@@ -368,6 +368,48 @@
       height: 540
 - list: Completed
   games:
+  - id: 10300
+    title: 'Fallout 3: Mothership Zeta'
+    link: https://www.backloggd.com/games/fallout-3-mothership-zeta/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7ktg.jpg
+      width: 720
+      height: 540
+  - id: 10302
+    title: 'Fallout 3: Point Lookout'
+    link: https://www.backloggd.com/games/fallout-3-point-lookout/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2x84.jpg
+      width: 720
+      height: 540
+  - id: 10299
+    title: 'Fallout 3: Broken Steel'
+    link: https://www.backloggd.com/games/fallout-3-broken-steel/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2x87.jpg
+      width: 720
+      height: 540
+  - id: 10303
+    title: 'Fallout 3: The Pitt'
+    link: https://www.backloggd.com/games/fallout-3-the-pitt/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7ktf.jpg
+      width: 720
+      height: 540
+  - id: 10301
+    title: 'Fallout 3: Operation Anchorage'
+    link: https://www.backloggd.com/games/fallout-3-operation-anchorage/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2x85.jpg
+      width: 720
+      height: 540
+  - id: 15
+    title: Fallout 3
+    link: https://www.backloggd.com/games/fallout-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ycw.jpg
+      width: 720
+      height: 540
   - id: 8981
     title: Dash of Destruction
     link: https://www.backloggd.com/games/dash-of-destruction/
@@ -674,48 +716,6 @@
     link: https://www.backloggd.com/games/bioshock-infinite/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2n12.jpg
-      width: 720
-      height: 540
-  - id: 9822
-    title: Dinner Date
-    link: https://www.backloggd.com/games/dinner-date/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co84ec.jpg
-      width: 720
-      height: 540
-  - id: 2939
-    title: The Vanishing of Ethan Carter
-    link: https://www.backloggd.com/games/the-vanishing-of-ethan-carter/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1r7q.jpg
-      width: 720
-      height: 540
-  - id: 529
-    title: Far Cry 3
-    link: https://www.backloggd.com/games/far-cry-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1vpd.jpg
-      width: 720
-      height: 540
-  - id: 6801
-    title: Far Cry 4
-    link: https://www.backloggd.com/games/far-cry-4/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2npa.jpg
-      width: 720
-      height: 540
-  - id: 558
-    title: Just Cause 2
-    link: https://www.backloggd.com/games/just-cause-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qri.jpg
-      width: 720
-      height: 540
-  - id: 1915
-    title: Lost Planet 2
-    link: https://www.backloggd.com/games/lost-planet-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qu3.jpg
       width: 720
       height: 540
 - list: Backlog
