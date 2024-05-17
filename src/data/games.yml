@@ -368,6 +368,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 276352
+    title: Wangan Midnight Maximum Tune 6 RR
+    link: https://www.backloggd.com/games/wangan-midnight-maximum-tune-6-rr/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7d4d.jpg
+      width: 720
+      height: 540
   - id: 3750
     title: Quantum Break
     link: https://www.backloggd.com/games/quantum-break/
@@ -711,15 +718,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co4wxz.jpg
       width: 720
       height: 540
-  - id: 2346
-    title: 'The Last Tinker: City of Colors'
-    link: https://www.backloggd.com/games/the-last-tinker-city-of-colors/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co43wv.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 191409
+    title: 'Taiko no Tatsujin: Rhythm Festival'
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
+      width: 720
+      height: 540
   - id: 279658
     title: 'Final Fantasy XVI: The Rising Tide'
     link: https://www.backloggd.com/games/final-fantasy-xvi-the-rising-tide/
