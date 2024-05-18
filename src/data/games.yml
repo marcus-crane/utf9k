@@ -764,6 +764,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 10128
+    title: Rock Band 4
+    link: https://www.backloggd.com/games/rock-band-4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4b7m.jpg
+      width: 720
+      height: 540
+  - id: 3146
+    title: 'Plants vs. Zombies: Garden Warfare'
+    link: https://www.backloggd.com/games/plants-vs-zombies-garden-warfare-2e561d33-2b92-408a-92f2-ec79ddcc6c2b/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qyz.jpg
+      width: 720
+      height: 540
   - id: 7336
     title: Dreadnought
     link: https://www.backloggd.com/games/dreadnought/
@@ -1098,19 +1112,5 @@
     link: https://www.backloggd.com/games/beat-hazard-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3m20.jpg
-      width: 720
-      height: 540
-  - id: 38882
-    title: Beat Hazard Ultra
-    link: https://www.backloggd.com/games/beat-hazard-ultra/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yfw.jpg
-      width: 720
-      height: 540
-  - id: 2114
-    title: Tom Clancy's The Division
-    link: https://www.backloggd.com/games/tom-clancy-s-the-division/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yvf.jpg
       width: 720
       height: 540
