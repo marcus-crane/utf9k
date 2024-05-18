@@ -727,6 +727,27 @@
       height: 540
 - list: Backlog
   games:
+  - id: 135940
+    title: Bomb Rush Cyberfunk
+    link: https://www.backloggd.com/games/bomb-rush-cyberfunk/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6ya8.jpg
+      width: 720
+      height: 540
+  - id: 279634
+    title: 'Dragon Ball: Sparking! Zero'
+    link: https://www.backloggd.com/games/dragon-ball-sparking-zero/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7h9a.jpg
+      width: 720
+      height: 540
+  - id: 119171
+    title: Baldur's Gate 3
+    link: https://www.backloggd.com/games/baldurs-gate-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co670h.jpg
+      width: 720
+      height: 540
   - id: 279658
     title: 'Final Fantasy XVI: The Rising Tide'
     link: https://www.backloggd.com/games/final-fantasy-xvi-the-rising-tide/
