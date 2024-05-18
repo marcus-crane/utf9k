@@ -23,6 +23,34 @@
       height: 540
 - list: Stalled
   games:
+  - id: 3225
+    title: No Man's Sky
+    link: https://www.backloggd.com/games/no-man-s-sky/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6zat.jpg
+      width: 720
+      height: 540
+  - id: 43702
+    title: Digimon World 2003
+    link: https://www.backloggd.com/games/digimon-world-2003/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3gkc.jpg
+      width: 720
+      height: 540
+  - id: 3022
+    title: Transistor
+    link: https://www.backloggd.com/games/transistor/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pi1.jpg
+      width: 720
+      height: 540
+  - id: 21880
+    title: Final Fantasy X-2 HD Remaster
+    link: https://www.backloggd.com/games/final-fantasy-x-2-hd-remaster/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co30sp.jpg
+      width: 720
+      height: 540
   - id: 5333
     title: Strider
     link: https://www.backloggd.com/games/strider/
@@ -345,36 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
       width: 720
       height: 540
-  - id: 11292
-    title: Rogue Galaxy
-    link: https://www.backloggd.com/games/rogue-galaxy/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co26fu.jpg
-      width: 720
-      height: 540
-  - id: 138949
-    title: Marvel's Spider-Man Remastered
-    link: https://www.backloggd.com/games/marvels-spider-man-remastered/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co52vm.jpg
-      width: 720
-      height: 540
-  - id: 131999
-    title: NieR Replicant ver.1.22474487139...
-    link: https://www.backloggd.com/games/nier-replicant-ver-dot-1-22474487139-dot-dot-dot/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5h0n.jpg
-      width: 720
-      height: 540
-  - id: 233585
-    title: Hi-Fi Rush
-    link: https://www.backloggd.com/games/hi-fi-rush/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6219.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 1192
+    title: Crash Team Racing
+    link: https://www.backloggd.com/games/crash-team-racing/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7r52.jpg
+      width: 720
+      height: 540
   - id: 41878
     title: "Uncharted: Drake's Fortune Remastered"
     link: https://www.backloggd.com/games/uncharted-drakes-fortune-remastered/
@@ -718,13 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2dm6.jpg
       width: 720
       height: 540
-  - id: 1983
-    title: Bastion
-    link: https://www.backloggd.com/games/bastion/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qlj.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -764,6 +764,76 @@
       height: 540
 - list: Retired
   games:
+  - id: 123
+    title: World of Warcraft
+    link: https://www.backloggd.com/games/world-of-warcraft/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2l7z.jpg
+      width: 720
+      height: 540
+  - id: 1183
+    title: Guild Wars 2
+    link: https://www.backloggd.com/games/guild-wars-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co54tr.jpg
+      width: 720
+      height: 540
+  - id: 6292
+    title: Black Desert
+    link: https://www.backloggd.com/games/black-desert/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6f1i.jpg
+      width: 720
+      height: 540
+  - id: 18940
+    title: Combat Arms
+    link: https://www.backloggd.com/games/combat-arms/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hvq.jpg
+      width: 720
+      height: 540
+  - id: 12054
+    title: Flyff
+    link: https://www.backloggd.com/games/flyff/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3xug.jpg
+      width: 720
+      height: 540
+  - id: 9804
+    title: MapleStory
+    link: https://www.backloggd.com/games/maplestory/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7diu.jpg
+      width: 720
+      height: 540
+  - id: 93620
+    title: 'Minecraft: PlayStation 4 Edition'
+    link: https://www.backloggd.com/games/minecraft-playstation-4-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ur4.jpg
+      width: 720
+      height: 540
+  - id: 121
+    title: Minecraft
+    link: https://www.backloggd.com/games/minecraft/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co49x5.jpg
+      width: 720
+      height: 540
+  - id: 1081
+    title: The Elder Scrolls Online
+    link: https://www.backloggd.com/games/the-elder-scrolls-online/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ybf.jpg
+      width: 720
+      height: 540
+  - id: 6748
+    title: Killing Floor 2
+    link: https://www.backloggd.com/games/killing-floor-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2coc.jpg
+      width: 720
+      height: 540
   - id: 10128
     title: Rock Band 4
     link: https://www.backloggd.com/games/rock-band-4/
@@ -1042,75 +1112,5 @@
     link: https://www.backloggd.com/games/arma-3/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co20uo.jpg
-      width: 720
-      height: 540
-  - id: 601
-    title: 'ArmA 2: Operation Arrowhead'
-    link: https://www.backloggd.com/games/arma-2-operation-arrowhead/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2130.jpg
-      width: 720
-      height: 540
-  - id: 80022
-    title: StreetPass Mii Plaza
-    link: https://www.backloggd.com/games/streetpass-mii-plaza/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co483w.jpg
-      width: 720
-      height: 540
-  - id: 2687
-    title: 'Animal Crossing: New Leaf'
-    link: https://www.backloggd.com/games/animal-crossing-new-leaf/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3whp.jpg
-      width: 720
-      height: 540
-  - id: 3278
-    title: Garry's Mod
-    link: https://www.backloggd.com/games/garry-s-mod/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mxa.jpg
-      width: 720
-      height: 540
-  - id: 2949
-    title: Killing Floor
-    link: https://www.backloggd.com/games/killing-floor/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2sn9.jpg
-      width: 720
-      height: 540
-  - id: 124
-    title: Left 4 Dead 2
-    link: https://www.backloggd.com/games/left-4-dead-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1y2f.jpg
-      width: 720
-      height: 540
-  - id: 122
-    title: Left 4 Dead
-    link: https://www.backloggd.com/games/left-4-dead/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qrm.jpg
-      width: 720
-      height: 540
-  - id: 891
-    title: Team Fortress 2
-    link: https://www.backloggd.com/games/team-fortress-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6rzl.jpg
-      width: 720
-      height: 540
-  - id: 51283
-    title: Rhythm Zone
-    link: https://www.backloggd.com/games/rhythm-zone/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4but.jpg
-      width: 720
-      height: 540
-  - id: 109611
-    title: Beat Hazard 2
-    link: https://www.backloggd.com/games/beat-hazard-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3m20.jpg
       width: 720
       height: 540
