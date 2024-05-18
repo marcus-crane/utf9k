@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 144612
+    title: Ico
+    link: https://www.backloggd.com/games/ico--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7221.jpg
+      width: 720
+      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/the-stanley-parable-ultra-deluxe/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co4p71.jpg
-      width: 720
-      height: 540
-  - id: 126120
-    title: Say No! More
-    link: https://www.backloggd.com/games/say-no-more/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3m7k.jpg
       width: 720
       height: 540
 - list: Completed
