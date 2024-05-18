@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 6739
+    title: Black Mesa
+    link: https://www.backloggd.com/games/black-mesa/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20n4.jpg
+      width: 720
+      height: 540
   - id: 3171
     title: The Saboteur
     link: https://www.backloggd.com/games/the-saboteur/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/ai-the-somnium-files/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1mjy.jpg
-      width: 720
-      height: 540
-  - id: 14758
-    title: 'Ace Combat 7: Skies Unknown'
-    link: https://www.backloggd.com/games/ace-combat-7-skies-unknown/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ilk.jpg
       width: 720
       height: 540
 - list: Completed
