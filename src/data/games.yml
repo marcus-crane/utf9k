@@ -16,6 +16,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 24109
+    title: R-Type Final
+    link: https://www.backloggd.com/games/r-type-final/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7e27.jpg
+      width: 720
+      height: 540
   - id: 36550
     title: 'Yakuza: Like a Dragon'
     link: https://www.backloggd.com/games/yakuza-like-a-dragon/
@@ -357,13 +364,6 @@
     link: https://www.backloggd.com/games/grandia-hd-remaster/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2uni.jpg
-      width: 720
-      height: 540
-  - id: 19455
-    title: 'Final Fantasy XII: The Zodiac Age'
-    link: https://www.backloggd.com/games/final-fantasy-xii-the-zodiac-age/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2g6o.jpg
       width: 720
       height: 540
 - list: Completed
@@ -764,6 +764,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 11198
+    title: Rocket League
+    link: https://www.backloggd.com/games/rocket-league/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5w0w.jpg
+      width: 720
+      height: 540
   - id: 9660
     title: Monday Night Combat
     link: https://www.backloggd.com/games/monday-night-combat/
@@ -1105,12 +1112,5 @@
     link: https://www.backloggd.com/games/destiny/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rco.jpg
-      width: 720
-      height: 540
-  - id: 25657
-    title: Destiny 2
-    link: https://www.backloggd.com/games/destiny-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co67qb.jpg
       width: 720
       height: 540
