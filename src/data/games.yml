@@ -764,6 +764,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 7336
+    title: Dreadnought
+    link: https://www.backloggd.com/games/dreadnought/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/jfojp19iirdczgg9ayem.jpg
+      width: 720
+      height: 540
   - id: 11198
     title: Rocket League
     link: https://www.backloggd.com/games/rocket-league/
@@ -1105,12 +1112,5 @@
     link: https://www.backloggd.com/games/tom-clancy-s-the-division/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1yvf.jpg
-      width: 720
-      height: 540
-  - id: 1939
-    title: Destiny
-    link: https://www.backloggd.com/games/destiny/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rco.jpg
       width: 720
       height: 540
