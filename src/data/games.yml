@@ -375,6 +375,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 5114
+    title: Rango
+    link: https://www.backloggd.com/games/rango/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2d0f.jpg
+      width: 720
+      height: 540
   - id: 1192
     title: Crash Team Racing
     link: https://www.backloggd.com/games/crash-team-racing/
@@ -716,13 +723,6 @@
     link: https://www.backloggd.com/games/kane-lynch-2-dog-days/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2crk.jpg
-      width: 720
-      height: 540
-  - id: 1048
-    title: 'Hitman: Blood Money'
-    link: https://www.backloggd.com/games/hitman-blood-money/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dm6.jpg
       width: 720
       height: 540
 - list: Backlog
