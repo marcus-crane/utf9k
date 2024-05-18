@@ -375,6 +375,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 4710
+    title: Battleship
+    link: https://www.backloggd.com/games/battleship/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dbv.jpg
+      width: 720
+      height: 540
   - id: 4781
     title: 'CSI: Fatal Conspiracy'
     link: https://www.backloggd.com/games/csi-fatal-conspiracy/
@@ -716,13 +723,6 @@
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-a-new-power-awakens-part-1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq7.jpg
-      width: 720
-      height: 540
-  - id: 16
-    title: 'Fallout: New Vegas'
-    link: https://www.backloggd.com/games/fallout-new-vegas/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1u60.jpg
       width: 720
       height: 540
 - list: Backlog
