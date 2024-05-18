@@ -16,6 +16,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 113114
+    title: The Outer Worlds
+    link: https://www.backloggd.com/games/the-outer-worlds/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2eew.jpg
+      width: 720
+      height: 540
   - id: 125009
     title: 'Halo 2: Anniversary'
     link: https://www.backloggd.com/games/halo-2-anniversary/
@@ -359,15 +366,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co56ef.jpg
       width: 720
       height: 540
-  - id: 1522
-    title: Pokémon White Version
-    link: https://www.backloggd.com/games/pokemon-white-version/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1z21.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 2030
+    title: TimeShift
+    link: https://www.backloggd.com/games/timeshift/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2k37.jpg
+      width: 720
+      height: 540
   - id: 276352
     title: Wangan Midnight Maximum Tune 6 RR
     link: https://www.backloggd.com/games/wangan-midnight-maximum-tune-6-rr/
@@ -709,13 +716,6 @@
     link: https://www.backloggd.com/games/batman-arkham-asylum/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1voj.jpg
-      width: 720
-      height: 540
-  - id: 2940
-    title: Killer Is Dead
-    link: https://www.backloggd.com/games/killer-is-dead/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4wxz.jpg
       width: 720
       height: 540
 - list: Backlog
