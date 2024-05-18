@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 5333
+    title: Strider
+    link: https://www.backloggd.com/games/strider/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2h20.jpg
+      width: 720
+      height: 540
   - id: 24109
     title: R-Type Final
     link: https://www.backloggd.com/games/r-type-final/
@@ -366,15 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co6219.jpg
       width: 720
       height: 540
-  - id: 107213
-    title: Grandia HD Remaster
-    link: https://www.backloggd.com/games/grandia-hd-remaster/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2uni.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 41878
+    title: "Uncharted: Drake's Fortune Remastered"
+    link: https://www.backloggd.com/games/uncharted-drakes-fortune-remastered/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1un2.jpg
+      width: 720
+      height: 540
   - id: 122313
     title: 'Control: AWE'
     link: https://www.backloggd.com/games/control-awe/
@@ -716,13 +723,6 @@
     link: https://www.backloggd.com/games/bastion/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1qlj.jpg
-      width: 720
-      height: 540
-  - id: 1885
-    title: Homefront
-    link: https://www.backloggd.com/games/homefront/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2j9b.jpg
       width: 720
       height: 540
 - list: Backlog
