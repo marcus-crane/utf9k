@@ -16,6 +16,34 @@
       height: 540
 - list: Stalled
   games:
+  - id: 36550
+    title: 'Yakuza: Like a Dragon'
+    link: https://www.backloggd.com/games/yakuza-like-a-dragon/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2em9.jpg
+      width: 720
+      height: 540
+  - id: 119270
+    title: Tales of Arise
+    link: https://www.backloggd.com/games/tales-of-arise/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ls2.jpg
+      width: 720
+      height: 540
+  - id: 109274
+    title: Judgment
+    link: https://www.backloggd.com/games/judgment/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rqt.jpg
+      width: 720
+      height: 540
+  - id: 112874
+    title: Horizon Forbidden West
+    link: https://www.backloggd.com/games/horizon-forbidden-west/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gvu.jpg
+      width: 720
+      height: 540
   - id: 113114
     title: The Outer Worlds
     link: https://www.backloggd.com/games/the-outer-worlds/
@@ -338,36 +366,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2g6o.jpg
       width: 720
       height: 540
-  - id: 26472
-    title: Disco Elysium
-    link: https://www.backloggd.com/games/disco-elysium/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1sfj.jpg
-      width: 720
-      height: 540
-  - id: 15705
-    title: 'Digimon Story: Cyber Sleuth'
-    link: https://www.backloggd.com/games/digimon-story-cyber-sleuth/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2px6.jpg
-      width: 720
-      height: 540
-  - id: 11807
-    title: .Hack//Infection
-    link: https://www.backloggd.com/games/dot-hack-slash-slash-infection/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1oub.jpg
-      width: 720
-      height: 540
-  - id: 6898
-    title: Pokémon Alpha Sapphire
-    link: https://www.backloggd.com/games/pokemon-alpha-sapphire/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co56ef.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 122313
+    title: 'Control: AWE'
+    link: https://www.backloggd.com/games/control-awe/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2f43.jpg
+      width: 720
+      height: 540
   - id: 2030
     title: TimeShift
     link: https://www.backloggd.com/games/timeshift/
@@ -709,13 +716,6 @@
     link: https://www.backloggd.com/games/homefront/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2j9b.jpg
-      width: 720
-      height: 540
-  - id: 500
-    title: 'Batman: Arkham Asylum'
-    link: https://www.backloggd.com/games/batman-arkham-asylum/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1voj.jpg
       width: 720
       height: 540
 - list: Backlog
