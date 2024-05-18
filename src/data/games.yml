@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 3171
+    title: The Saboteur
+    link: https://www.backloggd.com/games/the-saboteur/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co23vr.jpg
+      width: 720
+      height: 540
+  - id: 20003
+    title: Killzone HD
+    link: https://www.backloggd.com/games/killzone-hd/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3ja4.jpg
+      width: 720
+      height: 540
   - id: 144612
     title: Ico
     link: https://www.backloggd.com/games/ico--1/
@@ -317,6 +331,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2tgb.jpg
       width: 720
       height: 540
+  - id: 4220
+    title: Dark Void
+    link: https://www.backloggd.com/games/dark-void/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2f09.jpg
+      width: 720
+      height: 540
   - id: 19164
     title: Borderlands 3
     link: https://www.backloggd.com/games/borderlands-3/
@@ -350,27 +371,6 @@
     link: https://www.backloggd.com/games/ace-combat-7-skies-unknown/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1ilk.jpg
-      width: 720
-      height: 540
-  - id: 1755
-    title: Mega Man Battle Network
-    link: https://www.backloggd.com/games/mega-man-battle-network/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co203q.jpg
-      width: 720
-      height: 540
-  - id: 133302
-    title: Scarlet Nexus
-    link: https://www.backloggd.com/games/scarlet-nexus/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3b6l.jpg
-      width: 720
-      height: 540
-  - id: 113119
-    title: 'The Stanley Parable: Ultra Deluxe'
-    link: https://www.backloggd.com/games/the-stanley-parable-ultra-deluxe/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4p71.jpg
       width: 720
       height: 540
 - list: Completed
