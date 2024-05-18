@@ -764,6 +764,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 25217
+    title: Truth or Lies
+    link: https://www.backloggd.com/games/truth-or-lies/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/jhom0xjvhzrj3bghhwou.jpg
+      width: 720
+      height: 540
   - id: 123
     title: World of Warcraft
     link: https://www.backloggd.com/games/world-of-warcraft/
@@ -1105,12 +1112,5 @@
     link: https://www.backloggd.com/games/audiosurf/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1ud3.jpg
-      width: 720
-      height: 540
-  - id: 1881
-    title: Arma 3
-    link: https://www.backloggd.com/games/arma-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co20uo.jpg
       width: 720
       height: 540
