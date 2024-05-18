@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 473
+    title: 'Battlefield: Bad Company'
+    link: https://www.backloggd.com/games/battlefield-bad-company/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
+      width: 720
+      height: 540
   - id: 3225
     title: No Man's Sky
     link: https://www.backloggd.com/games/no-man-s-sky/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/say-no-more/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3m7k.jpg
-      width: 720
-      height: 540
-  - id: 25076
-    title: Red Dead Redemption 2
-    link: https://www.backloggd.com/games/red-dead-redemption-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
       width: 720
       height: 540
 - list: Completed
