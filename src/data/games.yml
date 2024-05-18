@@ -375,6 +375,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 4781
+    title: 'CSI: Fatal Conspiracy'
+    link: https://www.backloggd.com/games/csi-fatal-conspiracy/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7nqc.jpg
+      width: 720
+      height: 540
   - id: 5114
     title: Rango
     link: https://www.backloggd.com/games/rango/
@@ -718,13 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1u60.jpg
       width: 720
       height: 540
-  - id: 488
-    title: 'Kane & Lynch 2: Dog Days'
-    link: https://www.backloggd.com/games/kane-lynch-2-dog-days/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2crk.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 279658
@@ -764,6 +764,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 80196
+    title: PlayStation Home
+    link: https://www.backloggd.com/games/playstation-home/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1r46.jpg
+      width: 720
+      height: 540
   - id: 25217
     title: Truth or Lies
     link: https://www.backloggd.com/games/truth-or-lies/
@@ -1105,12 +1112,5 @@
     link: https://www.backloggd.com/games/battlefield-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2nal.jpg
-      width: 720
-      height: 540
-  - id: 2956
-    title: Audiosurf
-    link: https://www.backloggd.com/games/audiosurf/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ud3.jpg
       width: 720
       height: 540
