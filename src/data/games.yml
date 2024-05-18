@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 191409
+    title: 'Taiko no Tatsujin: Rhythm Festival'
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
+      width: 720
+      height: 540
   - id: 144352
     title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
     link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
@@ -720,13 +727,6 @@
       height: 540
 - list: Backlog
   games:
-  - id: 191409
-    title: 'Taiko no Tatsujin: Rhythm Festival'
-    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
-      width: 720
-      height: 540
   - id: 279658
     title: 'Final Fantasy XVI: The Rising Tide'
     link: https://www.backloggd.com/games/final-fantasy-xvi-the-rising-tide/
