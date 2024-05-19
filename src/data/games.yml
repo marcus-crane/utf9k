@@ -23,6 +23,41 @@
       height: 540
 - list: Stalled
   games:
+  - id: 238665
+    title: Mother
+    link: https://www.backloggd.com/games/mother--4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6695.jpg
+      width: 720
+      height: 540
+  - id: 2899
+    title: EarthBound
+    link: https://www.backloggd.com/games/earthbound/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6v07.jpg
+      width: 720
+      height: 540
+  - id: 126212
+    title: Trepang2
+    link: https://www.backloggd.com/games/trepang2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4kxs.jpg
+      width: 720
+      height: 540
+  - id: 134071
+    title: 'Mafia II: Definitive Edition'
+    link: https://www.backloggd.com/games/mafia-ii-definitive-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26zi.jpg
+      width: 720
+      height: 540
+  - id: 16981
+    title: Knuckle Sandwich
+    link: https://www.backloggd.com/games/knuckle-sandwich/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m94.jpg
+      width: 720
+      height: 540
   - id: 33062
     title: The Letter
     link: https://www.backloggd.com/games/the-letter/
@@ -336,41 +371,6 @@
     link: https://www.backloggd.com/games/paper-mario-the-origami-king/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2sai.jpg
-      width: 720
-      height: 540
-  - id: 236663
-    title: Metroid Prime Remastered
-    link: https://www.backloggd.com/games/metroid-prime-remastered/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co658o.jpg
-      width: 720
-      height: 540
-  - id: 243900
-    title: 'Captain Toad: Treasure Tracker'
-    link: https://www.backloggd.com/games/captain-toad-treasure-tracker--3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6c6f.jpg
-      width: 720
-      height: 540
-  - id: 122238
-    title: 'Xenoblade Chronicles: Definitive Edition'
-    link: https://www.backloggd.com/games/xenoblade-chronicles-definitive-edition/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co27kt.jpg
-      width: 720
-      height: 540
-  - id: 109
-    title: L.A. Noire
-    link: https://www.backloggd.com/games/l-a-noire/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ldn.jpg
-      width: 720
-      height: 540
-  - id: 6705
-    title: A Hat in Time
-    link: https://www.backloggd.com/games/a-hat-in-time/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5pl5.jpg
       width: 720
       height: 540
 - list: Completed
@@ -806,6 +806,41 @@
       height: 540
 - list: Retired
   games:
+  - id: 142672
+    title: Wobbledogs
+    link: https://www.backloggd.com/games/wobbledogs/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4s1f.jpg
+      width: 720
+      height: 540
+  - id: 28489
+    title: Ready or Not
+    link: https://www.backloggd.com/games/ready-or-not/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m9w.jpg
+      width: 720
+      height: 540
+  - id: 115285
+    title: Audica
+    link: https://www.backloggd.com/games/audica/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ws3.jpg
+      width: 720
+      height: 540
+  - id: 240902
+    title: 'Cities: Skylines II'
+    link: https://www.backloggd.com/games/cities-skylines-ii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co68lb.jpg
+      width: 720
+      height: 540
+  - id: 75184
+    title: Superflight
+    link: https://www.backloggd.com/games/superflight/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co24ur.jpg
+      width: 720
+      height: 540
   - id: 31695
     title: 'Beautiful Japanese Scenery: Animated Jigsaws'
     link: https://www.backloggd.com/games/beautiful-japanese-scenery-animated-jigsaws/
@@ -1119,40 +1154,5 @@
     link: https://www.backloggd.com/games/animal-crossing-new-horizons/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3wls.jpg
-      width: 720
-      height: 540
-  - id: 2903
-    title: Warframe
-    link: https://www.backloggd.com/games/warframe/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nhi.jpg
-      width: 720
-      height: 540
-  - id: 16718
-    title: 'Viscera Cleanup Detail: Shadow Warrior'
-    link: https://www.backloggd.com/games/viscera-cleanup-detail-shadow-warrior/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ig3.jpg
-      width: 720
-      height: 540
-  - id: 6009
-    title: Viscera Cleanup Detail
-    link: https://www.backloggd.com/games/viscera-cleanup-detail/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co24ky.jpg
-      width: 720
-      height: 540
-  - id: 24723
-    title: 'Unreal Tournament: Game of the Year Edition'
-    link: https://www.backloggd.com/games/unreal-tournament-game-of-the-year-edition/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co635k.jpg
-      width: 720
-      height: 540
-  - id: 1879
-    title: Terraria
-    link: https://www.backloggd.com/games/terraria/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rbo.jpg
       width: 720
       height: 540
