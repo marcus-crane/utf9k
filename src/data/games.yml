@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1408
+    title: Metal Slug 3
+    link: https://www.backloggd.com/games/metal-slug-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ox6.jpg
+      width: 720
+      height: 540
+  - id: 9245
+    title: "Deadly Premonition: Director's Cut"
+    link: https://www.backloggd.com/games/deadly-premonition-directors-cut/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7ugw.jpg
+      width: 720
+      height: 540
   - id: 5060
     title: Deponia
     link: https://www.backloggd.com/games/deponia/
@@ -357,20 +371,6 @@
     link: https://www.backloggd.com/games/hardspace-shipbreaker/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2m8b.jpg
-      width: 720
-      height: 540
-  - id: 2538
-    title: 'Enslaved: Odyssey to the West'
-    link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gko.jpg
-      width: 720
-      height: 540
-  - id: 7351
-    title: Doom
-    link: https://www.backloggd.com/games/doom--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1nc7.jpg
       width: 720
       height: 540
 - list: Completed
@@ -806,6 +806,55 @@
       height: 540
 - list: Retired
   games:
+  - id: 8422
+    title: Breach & Clear
+    link: https://www.backloggd.com/games/breach-and-clear/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co60pm.jpg
+      width: 720
+      height: 540
+  - id: 7555
+    title: 'World of Guns: Gun Disassembly'
+    link: https://www.backloggd.com/games/world-of-guns-gun-disassembly/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xe0.jpg
+      width: 720
+      height: 540
+  - id: 9066
+    title: 'Cities: Skylines'
+    link: https://www.backloggd.com/games/cities-skylines/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mx3.jpg
+      width: 720
+      height: 540
+  - id: 3173
+    title: Risk of Rain
+    link: https://www.backloggd.com/games/risk-of-rain/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2k2z.jpg
+      width: 720
+      height: 540
+  - id: 8036
+    title: Verdun
+    link: https://www.backloggd.com/games/verdun/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co24l6.jpg
+      width: 720
+      height: 540
+  - id: 16558
+    title: 'GunZ 2: The Second Duel'
+    link: https://www.backloggd.com/games/gunz-2-the-second-duel/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3bse.jpg
+      width: 720
+      height: 540
+  - id: 2605
+    title: BattleBlock Theater
+    link: https://www.backloggd.com/games/battleblock-theater/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ify.jpg
+      width: 720
+      height: 540
   - id: 2974
     title: Surgeon Simulator 2013
     link: https://www.backloggd.com/games/surgeon-simulator-2013/
@@ -1065,13 +1114,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2ig3.jpg
       width: 720
       height: 540
-  - id: 5564
-    title: "Viscera Cleanup Detail: Santa's Rampage"
-    link: https://www.backloggd.com/games/viscera-cleanup-detail-santa-s-rampage/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co8705.jpg
-      width: 720
-      height: 540
   - id: 6009
     title: Viscera Cleanup Detail
     link: https://www.backloggd.com/games/viscera-cleanup-detail/
@@ -1112,47 +1154,5 @@
     link: https://www.backloggd.com/games/subnautica/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1iqw.jpg
-      width: 720
-      height: 540
-  - id: 884
-    title: Street Fighter IV
-    link: https://www.backloggd.com/games/street-fighter-iv/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1w4t.jpg
-      width: 720
-      height: 540
-  - id: 3019
-    title: Starbound
-    link: https://www.backloggd.com/games/starbound/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4b19.jpg
-      width: 720
-      height: 540
-  - id: 3239
-    title: Space Engineers
-    link: https://www.backloggd.com/games/space-engineers/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1n1d.jpg
-      width: 720
-      height: 540
-  - id: 28008
-    title: Secret World Legends
-    link: https://www.backloggd.com/games/secret-world-legends/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/dq2f9plwuckhxb2scbvu.jpg
-      width: 720
-      height: 540
-  - id: 1378
-    title: R.U.S.E.
-    link: https://www.backloggd.com/games/ruse/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jjp.jpg
-      width: 720
-      height: 540
-  - id: 138590
-    title: PowerWash Simulator
-    link: https://www.backloggd.com/games/powerwash-simulator/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7gek.jpg
       width: 720
       height: 540
