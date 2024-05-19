@@ -785,6 +785,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 2691
+    title: Rock Band 3
+    link: https://www.backloggd.com/games/rock-band-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wpd.jpg
+      width: 720
+      height: 540
+  - id: 2721
+    title: Rock Band Unplugged
+    link: https://www.backloggd.com/games/rock-band-unplugged/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wqp.jpg
+      width: 720
+      height: 540
   - id: 80196
     title: PlayStation Home
     link: https://www.backloggd.com/games/playstation-home/
@@ -1119,19 +1133,5 @@
     link: https://www.backloggd.com/games/beat-hazard/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2o9m.jpg
-      width: 720
-      height: 540
-  - id: 17131
-    title: BeamNG.drive
-    link: https://www.backloggd.com/games/beamng-dot-drive/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1sym.jpg
-      width: 720
-      height: 540
-  - id: 277
-    title: Battlefield 2
-    link: https://www.backloggd.com/games/battlefield-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2nal.jpg
       width: 720
       height: 540
