@@ -806,6 +806,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 6230
+    title: 'E.Y.E: Divine Cybermancy'
+    link: https://www.backloggd.com/games/e-y-e-divine-cybermancy/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7eny.jpg
+      width: 720
+      height: 540
+  - id: 16255
+    title: Super Monday Night Combat
+    link: https://www.backloggd.com/games/super-monday-night-combat/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2srn.jpg
+      width: 720
+      height: 540
   - id: 1055
     title: 'Red Orchestra 2: Heroes of Stalingrad'
     link: https://www.backloggd.com/games/red-orchestra-2-heroes-of-stalingrad/
@@ -1140,19 +1154,5 @@
     link: https://www.backloggd.com/games/guild-wars/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2smt.jpg
-      width: 720
-      height: 540
-  - id: 2955
-    title: 'Elite: Dangerous'
-    link: https://www.backloggd.com/games/elite-dangerous/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xs9.jpg
-      width: 720
-      height: 540
-  - id: 83731
-    title: Beat Saber
-    link: https://www.backloggd.com/games/beat-saber/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co20ux.jpg
       width: 720
       height: 540
