@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 33062
+    title: The Letter
+    link: https://www.backloggd.com/games/the-letter/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co23dd.jpg
+      width: 720
+      height: 540
   - id: 1408
     title: Metal Slug 3
     link: https://www.backloggd.com/games/metal-slug-3/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/a-hat-in-time/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5pl5.jpg
-      width: 720
-      height: 540
-  - id: 130216
-    title: 'Hardspace: Shipbreaker'
-    link: https://www.backloggd.com/games/hardspace-shipbreaker/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m8b.jpg
       width: 720
       height: 540
 - list: Completed
@@ -806,6 +806,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 31695
+    title: 'Beautiful Japanese Scenery: Animated Jigsaws'
+    link: https://www.backloggd.com/games/beautiful-japanese-scenery-animated-jigsaws/
+    cover:
+      url: https://www.backloggd.com/packs/media/images/no_image-eee1d555ae021e9cf0ca691c0e9ec60a.jpg
+      width: 720
+      height: 540
+  - id: 19082
+    title: The Jackbox Party Pack 3
+    link: https://www.backloggd.com/games/the-jackbox-party-pack-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4zen.jpg
+      width: 720
+      height: 540
   - id: 13226
     title: Keep Talking and Nobody Explodes
     link: https://www.backloggd.com/games/keep-talking-and-nobody-explodes/
@@ -1140,19 +1154,5 @@
     link: https://www.backloggd.com/games/terraria/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rbo.jpg
-      width: 720
-      height: 540
-  - id: 7533
-    title: Tera
-    link: https://www.backloggd.com/games/tera/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6g4n.jpg
-      width: 720
-      height: 540
-  - id: 7401
-    title: Symphony
-    link: https://www.backloggd.com/games/symphony/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2rig.jpg
       width: 720
       height: 540
