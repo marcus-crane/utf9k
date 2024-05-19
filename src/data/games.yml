@@ -23,6 +23,62 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1819
+    title: 'Dragon Quest VIII: Journey of the Cursed King'
+    link: https://www.backloggd.com/games/dragon-quest-viii-journey-of-the-cursed-king/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7vf2.jpg
+      width: 720
+      height: 540
+  - id: 1215
+    title: Dark Cloud 2
+    link: https://www.backloggd.com/games/dark-cloud-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2zhm.jpg
+      width: 720
+      height: 540
+  - id: 5761
+    title: 'Burnout 3: Takedown'
+    link: https://www.backloggd.com/games/burnout-3-takedown/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1y53.jpg
+      width: 720
+      height: 540
+  - id: 2264
+    title: "Zack & Wiki: Quest for Barbaros' Treasure"
+    link: https://www.backloggd.com/games/zack-and-wiki-quest-for-barbaros-treasure--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7k8g.jpg
+      width: 720
+      height: 540
+  - id: 26766
+    title: Xenoblade Chronicles 2
+    link: https://www.backloggd.com/games/xenoblade-chronicles-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1o5h.jpg
+      width: 720
+      height: 540
+  - id: 229177
+    title: Super Mario Sunshine
+    link: https://www.backloggd.com/games/super-mario-sunshine--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co68sg.jpg
+      width: 720
+      height: 540
+  - id: 229246
+    title: Super Mario Galaxy
+    link: https://www.backloggd.com/games/super-mario-galaxy--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5wv7.jpg
+      width: 720
+      height: 540
+  - id: 2272
+    title: No More Heroes
+    link: https://www.backloggd.com/games/no-more-heroes/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qum.jpg
+      width: 720
+      height: 540
   - id: 233571
     title: Hitman World of Assassination
     link: https://www.backloggd.com/games/hitman-world-of-assassination/
@@ -315,62 +371,6 @@
     link: https://www.backloggd.com/games/red-faction-guerrilla-re-mars-tered/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1qs4.jpg
-      width: 720
-      height: 540
-  - id: 528
-    title: 'Red Faction: Armageddon'
-    link: https://www.backloggd.com/games/red-faction-armageddon/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2jjv.jpg
-      width: 720
-      height: 540
-  - id: 151665
-    title: Palworld
-    link: https://www.backloggd.com/games/palworld/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7n02.jpg
-      width: 720
-      height: 540
-  - id: 120436
-    title: 'One Piece: Pirate Warriors 4'
-    link: https://www.backloggd.com/games/one-piece-pirate-warriors-4/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2m9q.jpg
-      width: 720
-      height: 540
-  - id: 194837
-    title: One Piece Odyssey
-    link: https://www.backloggd.com/games/one-piece-odyssey/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5x13.jpg
-      width: 720
-      height: 540
-  - id: 1214
-    title: Dark Cloud
-    link: https://www.backloggd.com/games/dark-cloud/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xtn.jpg
-      width: 720
-      height: 540
-  - id: 11397
-    title: Yakuza 0
-    link: https://www.backloggd.com/games/yakuza-0/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co252x.jpg
-      width: 720
-      height: 540
-  - id: 153700
-    title: "Ghost of Tsushima: Director's Cut"
-    link: https://www.backloggd.com/games/ghost-of-tsushima-directors-cut/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3p5f.jpg
-      width: 720
-      height: 540
-  - id: 207026
-    title: Final Fantasy VII
-    link: https://www.backloggd.com/games/final-fantasy-vii--6/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4xgh.jpg
       width: 720
       height: 540
 - list: Completed
@@ -727,6 +727,20 @@
       height: 540
 - list: Backlog
   games:
+  - id: 482
+    title: Silent Hill 3
+    link: https://www.backloggd.com/games/silent-hill-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3kol.jpg
+      width: 720
+      height: 540
+  - id: 8576
+    title: Drakengard 3
+    link: https://www.backloggd.com/games/drakengard-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co25oy.jpg
+      width: 720
+      height: 540
   - id: 4872
     title: 'Fragile Dreams: Farewell Ruins of the Moon'
     link: https://www.backloggd.com/games/fragile-dreams-farewell-ruins-of-the-moon/
@@ -827,6 +841,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 1195
+    title: Crash Bash
+    link: https://www.backloggd.com/games/crash-bash/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ei4.jpg
+      width: 720
+      height: 540
   - id: 10631
     title: Picross 3D
     link: https://www.backloggd.com/games/picross-3d/
@@ -1168,12 +1189,5 @@
     link: https://www.backloggd.com/games/battlefield-1943/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1nv3.jpg
-      width: 720
-      height: 540
-  - id: 53014
-    title: Wake-Up Club
-    link: https://www.backloggd.com/games/wake-up-club/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1lpj.jpg
       width: 720
       height: 540
