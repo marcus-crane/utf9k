@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 233571
+    title: Hitman World of Assassination
+    link: https://www.backloggd.com/games/hitman-world-of-assassination/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co620f.jpg
+      width: 720
+      height: 540
   - id: 238665
     title: Mother
     link: https://www.backloggd.com/games/mother--4/
@@ -366,15 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co4xgh.jpg
       width: 720
       height: 540
-  - id: 133923
-    title: 'Paper Mario: The Origami King'
-    link: https://www.backloggd.com/games/paper-mario-the-origami-king/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2sai.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 239812
+    title: Cats Hidden in Paris
+    link: https://www.backloggd.com/games/cats-hidden-in-paris/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6uk5.jpg
+      width: 720
+      height: 540
   - id: 9630
     title: Fallout 4
     link: https://www.backloggd.com/games/fallout-4/
@@ -718,15 +725,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2rz1.jpg
       width: 720
       height: 540
-  - id: 18100
-    title: Pokémon Sun
-    link: https://www.backloggd.com/games/pokemon-sun/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3co7.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 2538
+    title: 'Enslaved: Odyssey to the West'
+    link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gko.jpg
+      width: 720
+      height: 540
   - id: 92919
     title: Eliza
     link: https://www.backloggd.com/games/eliza/
