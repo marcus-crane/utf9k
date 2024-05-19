@@ -375,6 +375,34 @@
       height: 540
 - list: Completed
   games:
+  - id: 2699
+    title: Tony Hawk's Underground 2
+    link: https://www.backloggd.com/games/tony-hawk-s-underground-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1p3f.jpg
+      width: 720
+      height: 540
+  - id: 2698
+    title: Tony Hawk's Underground
+    link: https://www.backloggd.com/games/tony-hawk-s-underground/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2g2b.jpg
+      width: 720
+      height: 540
+  - id: 24181
+    title: 'Tekken: Dark Resurrection'
+    link: https://www.backloggd.com/games/tekken-dark-resurrection/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co46qz.jpg
+      width: 720
+      height: 540
+  - id: 5414
+    title: 'Twisted Metal: Head-On'
+    link: https://www.backloggd.com/games/twisted-metal-head-on/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pog.jpg
+      width: 720
+      height: 540
   - id: 239812
     title: Cats Hidden in Paris
     link: https://www.backloggd.com/games/cats-hidden-in-paris/
@@ -697,36 +725,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co21bf.jpg
       width: 720
       height: 540
-  - id: 135735
-    title: 'Half-Life: Alyx - Final Hours'
-    link: https://www.backloggd.com/games/half-life-alyx-final-hours/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2p9m.jpg
-      width: 720
-      height: 540
-  - id: 1020
-    title: Grand Theft Auto V
-    link: https://www.backloggd.com/games/grand-theft-auto-v/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lbd.jpg
-      width: 720
-      height: 540
-  - id: 21127
-    title: "Broken Sword: Shadow of the Templars - The Director's Cut"
-    link: https://www.backloggd.com/games/broken-sword-shadow-of-the-templars-the-directors-cut/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4wrf.jpg
-      width: 720
-      height: 540
-  - id: 13212
-    title: The Beginner's Guide
-    link: https://www.backloggd.com/games/the-beginners-guide/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2rz1.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 4872
+    title: 'Fragile Dreams: Farewell Ruins of the Moon'
+    link: https://www.backloggd.com/games/fragile-dreams-farewell-ruins-of-the-moon/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2yjf.jpg
+      width: 720
+      height: 540
+  - id: 1430
+    title: 'Ace Attorney Investigations: Miles Edgeworth'
+    link: https://www.backloggd.com/games/ace-attorney-investigations-miles-edgeworth/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8q.jpg
+      width: 720
+      height: 540
   - id: 2538
     title: 'Enslaved: Odyssey to the West'
     link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
@@ -813,6 +827,20 @@
       height: 540
 - list: Retired
   games:
+  - id: 10631
+    title: Picross 3D
+    link: https://www.backloggd.com/games/picross-3d/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2dzy.jpg
+      width: 720
+      height: 540
+  - id: 43623
+    title: 'Friends: The One With All The Trivia'
+    link: https://www.backloggd.com/games/friends-the-one-with-all-the-trivia/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ovc.jpg
+      width: 720
+      height: 540
   - id: 142672
     title: Wobbledogs
     link: https://www.backloggd.com/games/wobbledogs/
@@ -1147,19 +1175,5 @@
     link: https://www.backloggd.com/games/wake-up-club/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1lpj.jpg
-      width: 720
-      height: 540
-  - id: 92456
-    title: Smart As...
-    link: https://www.backloggd.com/games/smart-as-dot-dot-dot/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co61cg.jpg
-      width: 720
-      height: 540
-  - id: 109462
-    title: 'Animal Crossing: New Horizons'
-    link: https://www.backloggd.com/games/animal-crossing-new-horizons/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3wls.jpg
       width: 720
       height: 540
