@@ -806,6 +806,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 1055
+    title: 'Red Orchestra 2: Heroes of Stalingrad'
+    link: https://www.backloggd.com/games/red-orchestra-2-heroes-of-stalingrad/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6117.jpg
+      width: 720
+      height: 540
   - id: 2696
     title: Rock Band Blitz
     link: https://www.backloggd.com/games/rock-band-blitz/
@@ -1147,12 +1154,5 @@
     link: https://www.backloggd.com/games/beat-saber/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co20ux.jpg
-      width: 720
-      height: 540
-  - id: 199447
-    title: Beat Hazard 3
-    link: https://www.backloggd.com/games/beat-hazard-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5bj6.jpg
       width: 720
       height: 540
