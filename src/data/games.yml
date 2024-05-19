@@ -727,6 +727,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 92919
+    title: Eliza
+    link: https://www.backloggd.com/games/eliza/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1uab.jpg
+      width: 720
+      height: 540
   - id: 196761
     title: Kingdom Hearts IV
     link: https://www.backloggd.com/games/kingdom-hearts-iv/
