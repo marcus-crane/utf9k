@@ -375,6 +375,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 9630
+    title: Fallout 4
+    link: https://www.backloggd.com/games/fallout-4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yc6.jpg
+      width: 720
+      height: 540
   - id: 3004
     title: DLC Quest
     link: https://www.backloggd.com/games/dlc-quest/
@@ -718,13 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3co7.jpg
       width: 720
       height: 540
-  - id: 144352
-    title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3jco.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 92919
@@ -806,6 +806,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 13226
+    title: Keep Talking and Nobody Explodes
+    link: https://www.backloggd.com/games/keep-talking-and-nobody-explodes/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/aykvlxlmax2rcvljwkqn.jpg
+      width: 720
+      height: 540
   - id: 8422
     title: Breach & Clear
     link: https://www.backloggd.com/games/breach-and-clear/
@@ -1147,12 +1154,5 @@
     link: https://www.backloggd.com/games/symphony/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2rig.jpg
-      width: 720
-      height: 540
-  - id: 9254
-    title: Subnautica
-    link: https://www.backloggd.com/games/subnautica/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1iqw.jpg
       width: 720
       height: 540
