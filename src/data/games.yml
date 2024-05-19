@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 9533
+    title: 'Deus Ex: Human Revolution - The Missing Link'
+    link: https://www.backloggd.com/games/deus-ex-human-revolution-the-missing-link/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co25nu.jpg
+      width: 720
+      height: 540
   - id: 1339
     title: Psychonauts
     link: https://www.backloggd.com/games/psychonauts/
@@ -324,6 +331,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co27kt.jpg
       width: 720
       height: 540
+  - id: 109
+    title: L.A. Noire
+    link: https://www.backloggd.com/games/l-a-noire/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ldn.jpg
+      width: 720
+      height: 540
   - id: 6705
     title: A Hat in Time
     link: https://www.backloggd.com/games/a-hat-in-time/
@@ -357,20 +371,6 @@
     link: https://www.backloggd.com/games/deus-ex-human-revolution-directors-cut/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2tgb.jpg
-      width: 720
-      height: 540
-  - id: 4220
-    title: Dark Void
-    link: https://www.backloggd.com/games/dark-void/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2f09.jpg
-      width: 720
-      height: 540
-  - id: 19164
-    title: Borderlands 3
-    link: https://www.backloggd.com/games/borderlands-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co20r3.jpg
       width: 720
       height: 540
 - list: Completed
