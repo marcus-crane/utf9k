@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 1339
+    title: Psychonauts
+    link: https://www.backloggd.com/games/psychonauts/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co38t0.jpg
+      width: 720
+      height: 540
   - id: 99812
     title: 'Zone of the Enders: The 2nd Runner HD Edition'
     link: https://www.backloggd.com/games/zone-of-the-enders-the-2nd-runner-hd-edition/
@@ -364,13 +371,6 @@
     link: https://www.backloggd.com/games/borderlands-3/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co20r3.jpg
-      width: 720
-      height: 540
-  - id: 18320
-    title: Battlefield 1
-    link: https://www.backloggd.com/games/battlefield-1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n9d.jpg
       width: 720
       height: 540
 - list: Completed
