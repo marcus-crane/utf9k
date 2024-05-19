@@ -23,6 +23,34 @@
       height: 540
 - list: Stalled
   games:
+  - id: 19678
+    title: Digimon World 3
+    link: https://www.backloggd.com/games/digimon-world-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7znc.jpg
+      width: 720
+      height: 540
+  - id: 1810
+    title: Brave Fencer Musashi
+    link: https://www.backloggd.com/games/brave-fencer-musashi/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3bfv.jpg
+      width: 720
+      height: 540
+  - id: 1987
+    title: XIII
+    link: https://www.backloggd.com/games/xiii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co87no.jpg
+      width: 720
+      height: 540
+  - id: 2144
+    title: 'TimeSplitters: Future Perfect'
+    link: https://www.backloggd.com/games/timesplitters-future-perfect/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co21s3.jpg
+      width: 720
+      height: 540
   - id: 1819
     title: 'Dragon Quest VIII: Journey of the Cursed King'
     link: https://www.backloggd.com/games/dragon-quest-viii-journey-of-the-cursed-king/
@@ -345,36 +373,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co4kc1.jpg
       width: 720
       height: 540
-  - id: 210395
-    title: Slay the Princess
-    link: https://www.backloggd.com/games/slay-the-princess/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co501b.jpg
-      width: 720
-      height: 540
-  - id: 116753
-    title: A Short Hike
-    link: https://www.backloggd.com/games/a-short-hike/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6e83.jpg
-      width: 720
-      height: 540
-  - id: 150045
-    title: 'Resident Evil: Revelations'
-    link: https://www.backloggd.com/games/resident-evil-revelations--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co54h4.jpg
-      width: 720
-      height: 540
-  - id: 96027
-    title: 'Red Faction: Guerrilla Re-Mars-tered'
-    link: https://www.backloggd.com/games/red-faction-guerrilla-re-mars-tered/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qs4.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 19834
+    title: 'Dragon Ball Z: The Legacy of Goku II'
+    link: https://www.backloggd.com/games/dragon-ball-z-the-legacy-of-goku-ii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2z5y.jpg
+      width: 720
+      height: 540
+  - id: 6387
+    title: 'Dragon Ball Z: The Legacy of Goku'
+    link: https://www.backloggd.com/games/dragon-ball-z-the-legacy-of-goku/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1u9g.jpg
+      width: 720
+      height: 540
   - id: 2699
     title: Tony Hawk's Underground 2
     link: https://www.backloggd.com/games/tony-hawk-s-underground-2/
@@ -711,22 +725,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co230k.jpg
       width: 720
       height: 540
-  - id: 218744
-    title: 'Silent Hill: The Short Message'
-    link: https://www.backloggd.com/games/silent-hill-the-short-message/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7p8y.jpg
-      width: 720
-      height: 540
-  - id: 12366
-    title: 'Lili: Child of Geos'
-    link: https://www.backloggd.com/games/lili-child-of-geos/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co21bf.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 2142
+    title: TimeSplitters
+    link: https://www.backloggd.com/games/timesplitters/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1p36.jpg
+      width: 720
+      height: 540
+  - id: 2143
+    title: TimeSplitters 2
+    link: https://www.backloggd.com/games/timesplitters-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5p8t.jpg
+      width: 720
+      height: 540
   - id: 482
     title: Silent Hill 3
     link: https://www.backloggd.com/games/silent-hill-3/
