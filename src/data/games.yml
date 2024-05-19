@@ -23,6 +23,20 @@
       height: 540
 - list: Stalled
   games:
+  - id: 99812
+    title: 'Zone of the Enders: The 2nd Runner HD Edition'
+    link: https://www.backloggd.com/games/zone-of-the-enders-the-2nd-runner-hd-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gzy.jpg
+      width: 720
+      height: 540
+  - id: 3193
+    title: 'Need for Speed: Most Wanted'
+    link: https://www.backloggd.com/games/need-for-speed-most-wanted-53b9fef3-adb4-41a0-8ca0-ffcbb0060467/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co20a5.jpg
+      width: 720
+      height: 540
   - id: 6739
     title: Black Mesa
     link: https://www.backloggd.com/games/black-mesa/
@@ -359,22 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2n9d.jpg
       width: 720
       height: 540
-  - id: 228542
-    title: 'Armored Core VI: Fires of Rubicon'
-    link: https://www.backloggd.com/games/armored-core-vi-fires-of-rubicon/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6ffo.jpg
-      width: 720
-      height: 540
-  - id: 104971
-    title: 'AI: The Somnium Files'
-    link: https://www.backloggd.com/games/ai-the-somnium-files/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1mjy.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 7240
+    title: 'Wanted: Weapons of Fate'
+    link: https://www.backloggd.com/games/wanted-weapons-of-fate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5x8d.jpg
+      width: 720
+      height: 540
   - id: 4710
     title: Battleship
     link: https://www.backloggd.com/games/battleship/
@@ -718,15 +725,22 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq8.jpg
       width: 720
       height: 540
-  - id: 132643
-    title: 'Dragon Ball Z: Kakarot - A New Power Awakens: Part 1'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-a-new-power-awakens-part-1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq7.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
+  - id: 196761
+    title: Kingdom Hearts IV
+    link: https://www.backloggd.com/games/kingdom-hearts-iv/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4n1q.jpg
+      width: 720
+      height: 540
+  - id: 117778
+    title: 'Kingdom Hearts III: ReMind'
+    link: https://www.backloggd.com/games/kingdom-hearts-iii-remind/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xdl.jpg
+      width: 720
+      height: 540
   - id: 135940
     title: Bomb Rush Cyberfunk
     link: https://www.backloggd.com/games/bomb-rush-cyberfunk/
@@ -785,6 +799,13 @@
       height: 540
 - list: Retired
   games:
+  - id: 2696
+    title: Rock Band Blitz
+    link: https://www.backloggd.com/games/rock-band-blitz/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wsd.jpg
+      width: 720
+      height: 540
   - id: 2691
     title: Rock Band 3
     link: https://www.backloggd.com/games/rock-band-3/
@@ -1126,12 +1147,5 @@
     link: https://www.backloggd.com/games/beat-hazard-3/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5bj6.jpg
-      width: 720
-      height: 540
-  - id: 7404
-    title: Beat Hazard
-    link: https://www.backloggd.com/games/beat-hazard/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2o9m.jpg
       width: 720
       height: 540
