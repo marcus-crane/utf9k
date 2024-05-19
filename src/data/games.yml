@@ -23,6 +23,13 @@
       height: 540
 - list: Stalled
   games:
+  - id: 5060
+    title: Deponia
+    link: https://www.backloggd.com/games/deponia/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qqn.jpg
+      width: 720
+      height: 540
   - id: 9533
     title: 'Deus Ex: Human Revolution - The Missing Link'
     link: https://www.backloggd.com/games/deus-ex-human-revolution-the-missing-link/
@@ -366,15 +373,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1nc7.jpg
       width: 720
       height: 540
-  - id: 9740
-    title: "Deus Ex: Human Revolution - Director's Cut"
-    link: https://www.backloggd.com/games/deus-ex-human-revolution-directors-cut/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2tgb.jpg
-      width: 720
-      height: 540
 - list: Completed
   games:
+  - id: 3004
+    title: DLC Quest
+    link: https://www.backloggd.com/games/dlc-quest/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2105.jpg
+      width: 720
+      height: 540
   - id: 7240
     title: 'Wanted: Weapons of Fate'
     link: https://www.backloggd.com/games/wanted-weapons-of-fate/
@@ -718,13 +725,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3jco.jpg
       width: 720
       height: 540
-  - id: 141042
-    title: 'Dragon Ball Z: Kakarot - A New Power Awakens: Part 2'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-a-new-power-awakens-part-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2kq8.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 92919
@@ -806,6 +806,41 @@
       height: 540
 - list: Retired
   games:
+  - id: 2974
+    title: Surgeon Simulator 2013
+    link: https://www.backloggd.com/games/surgeon-simulator-2013/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1v3l.jpg
+      width: 720
+      height: 540
+  - id: 2958
+    title: Planetary Annihilation
+    link: https://www.backloggd.com/games/planetary-annihilation/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hc3.jpg
+      width: 720
+      height: 540
+  - id: 7579
+    title: Insurgency
+    link: https://www.backloggd.com/games/insurgency/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co43mw.jpg
+      width: 720
+      height: 540
+  - id: 2950
+    title: 'Age of Empires II: HD Edition'
+    link: https://www.backloggd.com/games/age-of-empires-ii-hd-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xxx.jpg
+      width: 720
+      height: 540
+  - id: 16356
+    title: Drunken Robot Pornography
+    link: https://www.backloggd.com/games/drunken-robot-pornography/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2q01.jpg
+      width: 720
+      height: 540
   - id: 6230
     title: 'E.Y.E: Divine Cybermancy'
     link: https://www.backloggd.com/games/e-y-e-divine-cybermancy/
@@ -1119,40 +1154,5 @@
     link: https://www.backloggd.com/games/powerwash-simulator/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7gek.jpg
-      width: 720
-      height: 540
-  - id: 513
-    title: Phantasy Star Online 2
-    link: https://www.backloggd.com/games/phantasy-star-online-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ep5.jpg
-      width: 720
-      height: 540
-  - id: 2058
-    title: Payday 2
-    link: https://www.backloggd.com/games/payday-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3s5l.jpg
-      width: 720
-      height: 540
-  - id: 1381
-    title: 'Payday: The Heist'
-    link: https://www.backloggd.com/games/payday-the-heist/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co68m7.jpg
-      width: 720
-      height: 540
-  - id: 18854
-    title: Let It Die
-    link: https://www.backloggd.com/games/let-it-die/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1qiy.jpg
-      width: 720
-      height: 540
-  - id: 234
-    title: Guild Wars
-    link: https://www.backloggd.com/games/guild-wars/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2smt.jpg
       width: 720
       height: 540
