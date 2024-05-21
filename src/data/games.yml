@@ -496,6 +496,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 733
+    title: 'Grand Theft Auto: Vice City'
+    link: https://www.backloggd.com/games/grand-theft-auto-vice-city/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2lbb.jpg
+      width: 720
+      height: 540
   - id: 19678
     title: Digimon World 3
     link: https://www.backloggd.com/games/digimon-world-3/
@@ -837,12 +844,5 @@
     link: https://www.backloggd.com/games/vampire-the-masquerade-bloodlines/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2n14.jpg
-      width: 720
-      height: 540
-  - id: 128097
-    title: Turnip Boy Commits Tax Evasion
-    link: https://www.backloggd.com/games/turnip-boy-commits-tax-evasion/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4kc1.jpg
       width: 720
       height: 540
