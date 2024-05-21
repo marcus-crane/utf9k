@@ -37,7 +37,7 @@ lists = [
         'games': []
     },
     {
-        'list': 'Stalled',
+        'list': 'Shelved',
         'games': []
     },
 ]
@@ -65,9 +65,9 @@ def _iterate_list_page(url, list_idx):
         })
 
 _iterate_list_page(PLAYING_URL, 0)
-_iterate_list_page(SHELVED_URL, 1)
+_iterate_list_page(BACKLOGGED_URL, 1)
 _iterate_list_page(COMPLETED_URL, 2)
-_iterate_list_page(BACKLOGGED_URL, 3)
+_iterate_list_page(SHELVED_URL, 3)
 
 with open("src/data/games.yml", "w") as file:
     yaml.dump(lists, file)
