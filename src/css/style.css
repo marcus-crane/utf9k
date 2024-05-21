@@ -648,14 +648,12 @@ ul li.question span {
 #post-body .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, minmax(40px, auto));
   grid-gap: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
   #post-body .grid-list ul:not(.partial-list) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, minmax(40px, auto));
     margin-left: -25%;
     width: 150%;
   }

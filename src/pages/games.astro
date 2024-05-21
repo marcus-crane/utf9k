@@ -20,7 +20,8 @@ const typedGames = games as GameList[];
     </header>
     <div id="post-body">
       {
-        typedGames.map((gameList) => (
+        typedGames
+          .map((gameList) => (
           <div class="grid-list">
             <header>
               <h2>{gameList.list}</h2>
@@ -56,6 +57,7 @@ const typedGames = games as GameList[];
                 ))}
             </ul>
           </div>
+          <hr />
         ))
       }
     </div>

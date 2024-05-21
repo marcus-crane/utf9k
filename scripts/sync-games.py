@@ -16,7 +16,6 @@ DATA_FILE = "src/data/gamesv2.yml"
 
 PLAYING_URL = "https://www.backloggd.com/u/utf9k/playing/"
 COMPLETED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:completed/"
-RETIRED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:retired/"
 SHELVED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:shelved/"
 BACKLOGGED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:backlog/"
 
@@ -30,21 +29,17 @@ lists = [
         'games': []
     },
     {
-        'list': 'Stalled',
-        'games': []
+        'list': 'Backlog',
+        'games': [],
     },
     {
         'list': 'Completed',
         'games': []
     },
     {
-        'list': 'Backlog',
-        'games': [],
-    },
-    {
-        'list': 'Retired',
+        'list': 'Stalled',
         'games': []
-    }
+    },
 ]
 
 def _iterate_list_page(url, list_idx):
@@ -73,7 +68,6 @@ _iterate_list_page(PLAYING_URL, 0)
 _iterate_list_page(SHELVED_URL, 1)
 _iterate_list_page(COMPLETED_URL, 2)
 _iterate_list_page(BACKLOGGED_URL, 3)
-_iterate_list_page(RETIRED_URL, 4)
 
 with open("src/data/games.yml", "w") as file:
     yaml.dump(lists, file)
