@@ -496,6 +496,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 18361
+    title: Transformers
+    link: https://www.backloggd.com/games/transformers/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1p3j.jpg
+      width: 720
+      height: 540
   - id: 37134
     title: .Hack//G.U. Last Recode
     link: https://www.backloggd.com/games/dot-hack-slash-slash-g-dot-u-last-recode/
@@ -837,12 +844,5 @@
     link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
-      width: 720
-      height: 540
-  - id: 1942
-    title: 'The Witcher 3: Wild Hunt'
-    link: https://www.backloggd.com/games/the-witcher-3-wild-hunt/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wyy.jpg
       width: 720
       height: 540
