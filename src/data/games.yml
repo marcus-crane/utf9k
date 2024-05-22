@@ -144,6 +144,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 2033
+    title: 'Call of Duty: Ghosts'
+    link: https://www.backloggd.com/games/call-of-duty-ghosts/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3b15.jpg
+      width: 720
+      height: 540
+  - id: 621
+    title: Call of Duty
+    link: https://www.backloggd.com/games/call-of-duty/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n19.jpg
+      width: 720
+      height: 540
   - id: 5204
     title: Spy Fox in "Dry Cereal"
     link: https://www.backloggd.com/games/spy-fox-in-dry-cereal/
@@ -478,20 +492,6 @@
     link: https://www.backloggd.com/games/dragon-ball-z-budokai-hd/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7tsk.jpg
-      width: 720
-      height: 540
-  - id: 12517
-    title: Undertale
-    link: https://www.backloggd.com/games/undertale/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2855.jpg
-      width: 720
-      height: 540
-  - id: 7386
-    title: The Talos Principle
-    link: https://www.backloggd.com/games/the-talos-principle/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rb5.jpg
       width: 720
       height: 540
 - list: Shelved
