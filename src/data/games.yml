@@ -30,6 +30,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 138065
+    title: 'Medarot 9: Kabuto Version'
+    link: https://www.backloggd.com/games/medarot-9-kabuto-version/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4tr2.jpg
+      width: 720
+      height: 540
   - id: 2142
     title: TimeSplitters
     link: https://www.backloggd.com/games/timesplitters/
