@@ -4,37 +4,43 @@ title: "Now"
 slug: "now"
 category: "now"
 description: "Usually I am up to Stuff™️ and this page may hold the answers you seek"
-lastmod: "2024-01-03T09:50:00+13:00"
+lastmod: "2024-05-26T16:29:00+13:00"
 tags:
   - "me"
 ---
 
-**New Year, Same Me**
+**Time flies**
 
-Time flies and 2024 is already upon us!
+Earlier this year, I moved into a new apartment after a decent stint housesitting.
 
-I swear I say it every year but 2024 sounds like such a futuristic number.
+It took me a while to set everything up, cross chores off my list etc etc but I'm finally pretty cozy now so I might finally be getting back to some of my side projects.
 
-After a quiet first half of 2023, I ended up producing a couple of blog posts towards the end of 2023 and have even set myself a goal using [Beeminder](https://beeminder.com) to write at least one a month.
+While my site has been mostly keeping up to date with Astro, I haven't invested in any of the recent additions that might add some extra flourish.
 
-My default is a bit of a paradox where I'll not write because I think I need to spend time to make something quality, only to churn out text in one sitting until I get bored and then just hit publish without doing any further edits or reviews.
+The very recent addition of an experimental [Container API](https://astro.build/blog/astro-490/) for Astro is quite interesting and, among other things, might finally allow RSS feeds containing MDX posts.
 
-As the old [clay analogy](https://austinkleon.com/2020/12/10/quantity-leads-to-quality-the-origin-of-a-parable/) goes, I'm better off making more posts and letting that result in quality than purely aiming for quality itself.
+You already can use MDX posts [as I do here](https://utf9k.net/rss.xml) but neither Astro (nor any other framework to my knowledge) has support for it natively, resulting in some [interesting hacks](https://scottwillsey.com/rss-pt2/) that have popped up.
 
-Maybe I'm already doing that though, just on a slowish timeline given I've already written a bunch of posts for the last few years.
+While I haven't done much work on [gunslinger](https://gunslinger.utf9k.net) despite wanting to do a rewrite[^1], I did finally get around to refreshing the docs for [October](https://october.utf9k.net) which can be seen [here](https://october.utf9k.net). It's using [Vitepress](vitepress.dev) which I had previously invested in for [another small site](dotfiles.utf9k.net) and it's quite nice I think.
 
-**Site Design**
+I'm interested in keeping an eye on [Starlight](https://starlight.astro.build) as it grows as well.
 
-I recently moved my site from [Hugo](https://gohugo.io/) to [Astro](https://astro.build/) as more of a middle ground to add some fun to my site.
+As far as data powering this site, I pulled the trigger on moving from [HowLongToBeat](https://howlongtobeat.com/user/sentry), with [Backloggd](https://backloggd.com/u/utf9k) now being my source of truth.
 
-While my previous Hugo iteration had some progressive Javascript, it always felt a little stricter than I would like around Javascript tooling.
+In part, it's been on my list ever since HLTB got purchased by Ziff Davis, the megacorp that owns IGN as well. While I haven't seen any evidence of bad stewardship, I couldn't tell you who actually runs the site and I imagine it's a matter of time before it devolves.
 
-I still stand by the idea that most things should be static by default, and that will continue to be true but a little leeway around things like MDX are nice.
+Backloggd also has some nice features like game series, a recent addition that lets you track how many titles in a given series you've completed. The model being focused more on the game itself rather than, y'know, how long it takes to beat said game also makes more sense for someone less competitive or interested in mind-maxing time. HLTB is still an invaluable resource though.
 
-Interestingly, I was a bit sour on the idea of MDX for a long time but after some thought and experimentation, I realised that using shortcodes within Markdown is really no different if you squint.
+Oh yeah, Backloggd's stats page is really nice. I'm excited to see what new features get added as well. Hopefully playtime imports from Steam among other things.
 
-There are some questions I have around syntax support (ie; would IA Writer consider `.mdx` to be a non-markdown file?) but I've written that much Markdown over the years that I'm not too worried. I rarely use stuff like header collapsing and other features.
+Hmm, what else.
 
-I'd like to freshen up my site a little bit this year to make it stand out a bit more, homepage live player aside which is my pride and joy :')
+While I'm still a heavy user of [Readwise Reader](https://read.readwise.io), I've set up a [Feedbin](https://feedbin.com) account once again for higher traffic RSS feeds. Some of the feeds I've got in Reader have started becoming a little too noisy so I've moved the noisiest to Feedbin which I action roughly once a day and send things I intend to read over to Reader.
 
-Maybe my next post will finally be writing about how it all works on a technical level since it's evolved quite a bit over the years
+[Beeminder](https://beeminder.com) continues to be great for staying on track with goals, although I'm due for some [meta goal maintenance](https://blog.beeminder.com/calendial/) I'm sure.
+
+Lastly, I bought a [Brick](https://getbrick.app/shop) about a month ago and I can highly recommend it. It's a small magnetic NFC brick that you can stick on your fridge. With the corresponding app on your phone, you can tap your phone against the brick to "brick" your phone. Basically, it uses Screentime to lock out apps that you've marked. In my case, Instagram and on weekends, work stuff like Slack or Gmail.
+
+Being an NFC brick, you never have to think about charging it or anything like that and unlike most app-only screen trackers, the UI doesn't need to accomodate any sort of bypass which will inevitably just be used when you're at rock bottom. It's great when you lock up your phone then you can't do anything to work around it because your brick is physically at home or something like that. You can do an emergency bypass should the need arrive although you're only able to do it 5 times before the app disables itself entirely so it's definitely not ripe for abuse.
+
+Probably one of the best things I've bought this year and surprisingly useful stuff from a small two-person business in Wisconsin.
