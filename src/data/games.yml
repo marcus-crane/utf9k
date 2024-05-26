@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 85872
+    title: Taiko no Tatsujin Arcade
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-arcade/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co76n4.jpg
+      width: 720
+      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
@@ -510,6 +517,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2lbb.jpg
       width: 720
       height: 540
+  - id: 145443
+    title: 'Taiko no Tatsujin: Pop Tap Bea‪t‬'
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-pop-tap-beat/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co76xs.jpg
+      width: 720
+      height: 540
   - id: 19678
     title: Digimon World 3
     link: https://www.backloggd.com/games/digimon-world-3/
@@ -830,12 +844,5 @@
     link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
-      width: 720
-      height: 540
-  - id: 1942
-    title: 'The Witcher 3: Wild Hunt'
-    link: https://www.backloggd.com/games/the-witcher-3-wild-hunt/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wyy.jpg
       width: 720
       height: 540
