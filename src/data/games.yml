@@ -1,24 +1,10 @@
 - list: Playing
   games:
-  - id: 85872
-    title: Taiko no Tatsujin Arcade
-    link: https://www.backloggd.com/games/taiko-no-tatsujin-arcade/
+  - id: 473
+    title: 'Battlefield: Bad Company'
+    link: https://www.backloggd.com/games/battlefield-bad-company/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co76n4.jpg
-      width: 720
-      height: 540
-  - id: 191409
-    title: 'Taiko no Tatsujin: Rhythm Festival'
-    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
-      width: 720
-      height: 540
-  - id: 144352
-    title: 'Dragon Ball Z: Kakarot - Trunks: The Warrior Of Hope'
-    link: https://www.backloggd.com/games/dragon-ball-z-kakarot-trunks-the-warrior-of-hope/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co3jco.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
       width: 720
       height: 540
   - id: 9630
@@ -734,13 +720,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7221.jpg
       width: 720
       height: 540
-  - id: 473
-    title: 'Battlefield: Bad Company'
-    link: https://www.backloggd.com/games/battlefield-bad-company/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
-      width: 720
-      height: 540
   - id: 3225
     title: No Man's Sky
     link: https://www.backloggd.com/games/no-man-s-sky/
@@ -851,5 +830,12 @@
     link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
+      width: 720
+      height: 540
+  - id: 1942
+    title: 'The Witcher 3: Wild Hunt'
+    link: https://www.backloggd.com/games/the-witcher-3-wild-hunt/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wyy.jpg
       width: 720
       height: 540
