@@ -53,6 +53,10 @@ def _iterate_list_page(url, list_idx):
         link = game.find('a', {"class": "cover-link"}).attrs.get('href')
         image = game.find('img').get('src').replace('cover_big', '720p')
 
+        # Temporary skip due to bidirectional characters in title
+        if _id == 145443:
+            continue
+
         lists[list_idx]['games'].append({
             'id': _id,
             'title': title,
