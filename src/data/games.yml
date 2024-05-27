@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 85872
+    title: Taiko no Tatsujin Arcade
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-arcade/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co76n4.jpg
+      width: 720
+      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
