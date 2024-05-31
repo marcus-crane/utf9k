@@ -503,6 +503,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 144054
+    title: 'Pokémon Legends: Arceus'
+    link: https://www.backloggd.com/games/pokemon-legends-arceus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3d03.jpg
+      width: 720
+      height: 540
   - id: 18361
     title: Transformers
     link: https://www.backloggd.com/games/transformers/
@@ -844,12 +851,5 @@
     link: https://www.backloggd.com/games/steins-gate/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
-      width: 720
-      height: 540
-  - id: 21899
-    title: Final Fantasy X HD Remaster
-    link: https://www.backloggd.com/games/final-fantasy-x-hd-remaster/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co30so.jpg
       width: 720
       height: 540
