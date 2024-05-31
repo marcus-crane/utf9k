@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 254339
+    title: Super Mario Bros. Wonder
+    link: https://www.backloggd.com/games/super-mario-bros-wonder/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6nnl.jpg
+      width: 720
+      height: 540
   - id: 134597
     title: Astro's Playroom
     link: https://www.backloggd.com/games/astros-playroom/
