@@ -503,6 +503,34 @@
       height: 540
 - list: Shelved
   games:
+  - id: 27397
+    title: Voez
+    link: https://www.backloggd.com/games/voez/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/qpd3iofmo9sfwznskpkf.jpg
+      width: 720
+      height: 540
+  - id: 90101
+    title: Super Smash Bros. Ultimate
+    link: https://www.backloggd.com/games/super-smash-bros-ultimate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2255.jpg
+      width: 720
+      height: 540
+  - id: 211243
+    title: Doom 3
+    link: https://www.backloggd.com/games/doom-3--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co512p.jpg
+      width: 720
+      height: 540
+  - id: 27443
+    title: 'Away: Journey to the Unexpected'
+    link: https://www.backloggd.com/games/away-journey-to-the-unexpected/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/aspc6oouotr45wtsukuj.jpg
+      width: 720
+      height: 540
   - id: 144054
     title: 'Pokémon Legends: Arceus'
     link: https://www.backloggd.com/games/pokemon-legends-arceus/
@@ -823,33 +851,5 @@
     link: https://www.backloggd.com/games/the-outer-worlds/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2eew.jpg
-      width: 720
-      height: 540
-  - id: 125009
-    title: 'Halo 2: Anniversary'
-    link: https://www.backloggd.com/games/halo-2-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
-      width: 720
-      height: 540
-  - id: 25877
-    title: "Pokémon: Let's Go, Pikachu!"
-    link: https://www.backloggd.com/games/pokemon-lets-go-pikachu/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1zjy.jpg
-      width: 720
-      height: 540
-  - id: 3042
-    title: Dying Light
-    link: https://www.backloggd.com/games/dying-light/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
-      width: 720
-      height: 540
-  - id: 7194
-    title: Steins;Gate
-    link: https://www.backloggd.com/games/steins-gate/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
       width: 720
       height: 540
