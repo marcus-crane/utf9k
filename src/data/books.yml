@@ -57,28 +57,6 @@
     #   recommended: false
     #   progress: 23
 
-    - title: Means of Control
-      subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
-      author: Byron Tau
-      cover: https://cdn.utf9k.net/books/means-of-control.jpg
-      cover_height: 2776
-      cover_width: 1838
-      link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
-      date_finished: null
-      recommended: true
-      progress: 5
-
-    - title: How Big Things Get Done
-      subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
-      author: Bent Flyvbjerg and Dan Gardner
-      cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
-      cover_height: 2500
-      cover_width: 1688
-      link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
-      date_finished: null
-      recommended: true
-      progress: 29
-
     # - title: The Power Broker
     #   subtitle: Robert Moses and the Fall of New York
     #   author: Robert Caro
@@ -99,7 +77,7 @@
     #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
     #   date_finished: null
     #   recommended: false
-    #   progress: 40
+    #   progress: 41
 
     # - title: Unscripted
     #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
@@ -110,7 +88,29 @@
     #   link: https://openlibrary.org/works/OL28158768W/Unscripted
     #   date_finished: null
     #   recommended: false
-    #   progress: 21
+    #   progress: 22
+
+    - title: Means of Control
+      subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
+      author: Byron Tau
+      cover: https://cdn.utf9k.net/books/means-of-control.jpg
+      cover_height: 2776
+      cover_width: 1838
+      link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
+      date_finished: null
+      recommended: true
+      progress: 13
+
+    - title: How Big Things Get Done
+      subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
+      author: Bent Flyvbjerg and Dan Gardner
+      cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
+      cover_height: 2500
+      cover_width: 1688
+      link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
+      date_finished: 2024-06-01
+      recommended: true
+      progress: 100
     
     - title: Burn Book
       subtitle: A Tech Love Story
