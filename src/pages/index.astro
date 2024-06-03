@@ -82,6 +82,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                       <>
                         <li style="display: inline-block;">
                           <Image
+                            loading="eager"
                             alt={`The cover of ${book.title}, a book by ${book.author}`}
                             src={book.cover}
                             height={book.cover_height!}
@@ -114,6 +115,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                       <>
                         <li style="display: inline-block;">
                           <Image
+                            loading="eager"
                             alt={`The cover of ${manga.title}, a manga series by ${manga.author}`}
                             src={manga.cover}
                             width={manga.cover_width}
@@ -138,6 +140,7 @@ const isProduction = process.env.NODE_ENV === 'production'
             <div>
               <div id="rotating-border" class="rotating-border-hidden">
                 <Image
+                  loading="eager"
                   src="/placeholder.png"
                   id="cover"
                   width="400"
@@ -181,6 +184,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                     <>
                       <li style="display: inline-block;">
                         <Image
+                          loading="eager"
                           alt={`The game box art for ${game.title}`}
                           src={game.cover.url}
                           width={game.cover.width}
