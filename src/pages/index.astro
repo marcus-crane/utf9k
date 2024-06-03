@@ -80,7 +80,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                       <>
                         <li style="display: inline-block;">
                           <Image
-                            alt={`A cover image of the book titled ${book.title}`}
+                            alt={`The cover of ${book.title}, a book by ${book.author}`}
                             src={book.cover}
                             height={book.cover_height!}
                             width={book.cover_width!}
@@ -112,7 +112,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                       <>
                         <li style="display: inline-block;">
                           <Image
-                            alt={`A cover image of ${manga.title}, a manga series by ${manga.author}`}
+                            alt={`The cover of ${manga.title}, a manga series by ${manga.author}`}
                             src={manga.cover}
                             width={manga.cover_width}
                             height={manga.cover_height}
@@ -179,7 +179,7 @@ const isProduction = process.env.NODE_ENV === 'production'
                     <>
                       <li style="display: inline-block;">
                         <Image
-                          alt={`Box art for the game titled ${game.title}`}
+                          alt={`The game box art for ${game.title}`}
                           src={game.cover.url}
                           width={game.cover.width}
                           height={game.cover.height}

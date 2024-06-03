@@ -77,6 +77,15 @@ eventSource.onmessage = function (event) {
   }
 }
 
+function normaliseCategoryName(category) {
+  switch (category) {
+    case PODCAST:
+      return "podcast episode"
+    default:
+      return category
+    }
+}
+
 function formatMangaTitle(title) {
   if (title.includes(" - ")) {
     return `Chapters ${title.replace("-", "through")}`
@@ -160,7 +169,7 @@ function renderLivePlayer(data) {
   subtitle.innerText = data.subtitle
 
   cover.src = "https://gunslinger.utf9k.net" + data.image
-  cover.alt = `Cover art for the ${data.category} ${data.title} by ${data.subtitle}`
+  cover.alt = `Cover art for the ${normaliseCategoryName(data.category)} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
 
