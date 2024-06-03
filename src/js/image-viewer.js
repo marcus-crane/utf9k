@@ -29,7 +29,6 @@ function addOverlay(el) {
 
     const figCaption = overlayDiv.parentElement.querySelector("figcaption")
     // Easier to just copy the whole node and not risk forgetting to reset the list view node back to hidden
-    const figCaptionCopy = figCaption.cloneNode(true)
     
     fullsizeImage.src = el.src
 
@@ -37,6 +36,7 @@ function addOverlay(el) {
 
     if (figCaption !== null) {
       imageCaption.innerHTML += "<br /><br />"
+      const figCaptionCopy = figCaption.cloneNode(true)
       figCaptionCopy.style.display = "block";
       imageCaption.appendChild(figCaptionCopy)
     }
