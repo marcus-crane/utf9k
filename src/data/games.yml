@@ -158,6 +158,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 279374
+    title: 'Duck Detective: The Secret Salami'
+    link: https://www.backloggd.com/games/duck-detective-the-secret-salami/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7gxl.jpg
+      width: 720
+      height: 540
   - id: 134597
     title: Astro's Playroom
     link: https://www.backloggd.com/games/astros-playroom/
@@ -499,13 +506,6 @@
     link: https://www.backloggd.com/games/terminator-salvation/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2cbm.jpg
-      width: 720
-      height: 540
-  - id: 288870
-    title: 'Dragon Ball Z: Budokai 3 HD'
-    link: https://www.backloggd.com/games/dragon-ball-z-budokai-3-hd/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tsq.jpg
       width: 720
       height: 540
 - list: Shelved
