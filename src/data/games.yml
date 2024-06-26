@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 26384
+    title: E.X. Troopers
+    link: https://www.backloggd.com/games/ex-troopers/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
+      width: 720
+      height: 540
   - id: 254339
     title: Super Mario Bros. Wonder
     link: https://www.backloggd.com/games/super-mario-bros-wonder/
@@ -140,13 +147,6 @@
     link: https://www.backloggd.com/games/danganronpa-v3-killing-harmony--1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1u57.jpg
-      width: 720
-      height: 540
-  - id: 26384
-    title: E.X. Troopers
-    link: https://www.backloggd.com/games/ex-troopers/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
       width: 720
       height: 540
   - id: 44775
