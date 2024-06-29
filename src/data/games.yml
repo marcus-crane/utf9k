@@ -1,45 +1,24 @@
 - list: Playing
   games:
+  - id: 229177
+    title: Super Mario Sunshine
+    link: https://www.backloggd.com/games/super-mario-sunshine--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co68sg.jpg
+      width: 720
+      height: 540
+  - id: 8187
+    title: Just Cause 3
+    link: https://www.backloggd.com/games/just-cause-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co24o5.jpg
+      width: 720
+      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
-      width: 720
-      height: 540
-  - id: 254339
-    title: Super Mario Bros. Wonder
-    link: https://www.backloggd.com/games/super-mario-bros-wonder/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6nnl.jpg
-      width: 720
-      height: 540
-  - id: 191409
-    title: 'Taiko no Tatsujin: Rhythm Festival'
-    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
-      width: 720
-      height: 540
-  - id: 85872
-    title: Taiko no Tatsujin Arcade
-    link: https://www.backloggd.com/games/taiko-no-tatsujin-arcade/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co76n4.jpg
-      width: 720
-      height: 540
-  - id: 473
-    title: 'Battlefield: Bad Company'
-    link: https://www.backloggd.com/games/battlefield-bad-company/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
-      width: 720
-      height: 540
-  - id: 9630
-    title: Fallout 4
-    link: https://www.backloggd.com/games/fallout-4/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yc6.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -510,6 +489,20 @@
       height: 540
 - list: Shelved
   games:
+  - id: 473
+    title: 'Battlefield: Bad Company'
+    link: https://www.backloggd.com/games/battlefield-bad-company/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
+      width: 720
+      height: 540
+  - id: 254339
+    title: Super Mario Bros. Wonder
+    link: https://www.backloggd.com/games/super-mario-bros-wonder/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6nnl.jpg
+      width: 720
+      height: 540
   - id: 27397
     title: Voez
     link: https://www.backloggd.com/games/voez/
@@ -634,13 +627,6 @@
     link: https://www.backloggd.com/games/xenoblade-chronicles-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1o5h.jpg
-      width: 720
-      height: 540
-  - id: 229177
-    title: Super Mario Sunshine
-    link: https://www.backloggd.com/games/super-mario-sunshine--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co68sg.jpg
       width: 720
       height: 540
   - id: 229246
@@ -851,12 +837,5 @@
     link: https://www.backloggd.com/games/horizon-forbidden-west/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2gvu.jpg
-      width: 720
-      height: 540
-  - id: 113114
-    title: The Outer Worlds
-    link: https://www.backloggd.com/games/the-outer-worlds/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2eew.jpg
       width: 720
       height: 540
