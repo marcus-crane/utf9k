@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 121481
+    title: 'Tasomachi: Behind the Twilight'
+    link: https://www.backloggd.com/games/tasomachi-behind-the-twilight/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vtk.jpg
+      width: 720
+      height: 540
   - id: 229177
     title: Super Mario Sunshine
     link: https://www.backloggd.com/games/super-mario-sunshine--2/
