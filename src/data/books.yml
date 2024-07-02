@@ -33,7 +33,7 @@
       link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
       date_finished: null
       recommended: false
-      progress: 22
+      progress: 45
 
     # - title: SQL Performance Explained
     #   subtitle: Everything Developers Need To Know About SQL Performance
@@ -77,18 +77,18 @@
       link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_finished: null
       recommended: false
-      progress: 41
+      progress: 44
 
-    # - title: Unscripted
-    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-    #   author: James B. Stewart and Rachel Abrams
-    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
-    #   cover_height: 1498
-    #   cover_width: 975
-    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 22
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_finished: null
+      recommended: false
+      progress: 32
 
     - title: Means of Control
       subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
