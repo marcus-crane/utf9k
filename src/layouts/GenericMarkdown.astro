@@ -5,6 +5,7 @@ interface Frontmatter {
   title: string;
   description?: string;
   category: string;
+  lastmod: string;
   tags: string[];
 }
 
@@ -19,6 +20,20 @@ const { frontmatter } = Astro.props;
   <article>
     <header>
       <h1>{frontmatter.title}</h1>
+      <div id="post-meta">
+        {
+          frontmatter.lastmod !== undefined && (
+            <time datetime={new Date(frontmatter.lastmod).toUTCString()}>
+              Last updated on
+              {new Date(frontmatter.lastmod).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+          )
+        }
+      </div>
     </header>
     <div id="post-body">
       <slot />
