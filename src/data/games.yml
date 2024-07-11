@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 121481
-    title: 'Tasomachi: Behind the Twilight'
-    link: https://www.backloggd.com/games/tasomachi-behind-the-twilight/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vtk.jpg
-      width: 720
-      height: 540
   - id: 229177
     title: Super Mario Sunshine
     link: https://www.backloggd.com/games/super-mario-sunshine--2/
@@ -496,6 +489,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 121481
+    title: 'Tasomachi: Behind the Twilight'
+    link: https://www.backloggd.com/games/tasomachi-behind-the-twilight/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2vtk.jpg
+      width: 720
+      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
@@ -837,12 +837,5 @@
     link: https://www.backloggd.com/games/judgment/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rqt.jpg
-      width: 720
-      height: 540
-  - id: 112874
-    title: Horizon Forbidden West
-    link: https://www.backloggd.com/games/horizon-forbidden-west/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gvu.jpg
       width: 720
       height: 540
