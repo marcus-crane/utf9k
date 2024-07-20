@@ -7,25 +7,11 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
       width: 720
       height: 540
-  - id: 229177
-    title: Super Mario Sunshine
-    link: https://www.backloggd.com/games/super-mario-sunshine--2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co68sg.jpg
-      width: 720
-      height: 540
   - id: 8187
     title: Just Cause 3
     link: https://www.backloggd.com/games/just-cause-3/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co24o5.jpg
-      width: 720
-      height: 540
-  - id: 26384
-    title: E.X. Troopers
-    link: https://www.backloggd.com/games/ex-troopers/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -496,6 +482,20 @@
       height: 540
 - list: Shelved
   games:
+  - id: 26384
+    title: E.X. Troopers
+    link: https://www.backloggd.com/games/ex-troopers/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
+      width: 720
+      height: 540
+  - id: 229177
+    title: Super Mario Sunshine
+    link: https://www.backloggd.com/games/super-mario-sunshine--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co68sg.jpg
+      width: 720
+      height: 540
   - id: 121481
     title: 'Tasomachi: Behind the Twilight'
     link: https://www.backloggd.com/games/tasomachi-behind-the-twilight/
@@ -515,6 +515,13 @@
     link: https://www.backloggd.com/games/super-mario-bros-wonder/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co6nnl.jpg
+      width: 720
+      height: 540
+  - id: 270725
+    title: 'Klonoa: Door to Phantomile'
+    link: https://www.backloggd.com/games/klonoa-door-to-phantomile--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7be0.jpg
       width: 720
       height: 540
   - id: 27397
@@ -550,6 +557,13 @@
     link: https://www.backloggd.com/games/pokemon-legends-arceus/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3d03.jpg
+      width: 720
+      height: 540
+  - id: 191409
+    title: 'Taiko no Tatsujin: Rhythm Festival'
+    link: https://www.backloggd.com/games/taiko-no-tatsujin-rhythm-festival/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6tsh.jpg
       width: 720
       height: 540
   - id: 18361
@@ -816,33 +830,5 @@
     link: https://www.backloggd.com/games/strider/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2h20.jpg
-      width: 720
-      height: 540
-  - id: 24109
-    title: R-Type Final
-    link: https://www.backloggd.com/games/r-type-final/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7e27.jpg
-      width: 720
-      height: 540
-  - id: 36550
-    title: 'Yakuza: Like a Dragon'
-    link: https://www.backloggd.com/games/yakuza-like-a-dragon/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2em9.jpg
-      width: 720
-      height: 540
-  - id: 119270
-    title: Tales of Arise
-    link: https://www.backloggd.com/games/tales-of-arise/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ls2.jpg
-      width: 720
-      height: 540
-  - id: 109274
-    title: Judgment
-    link: https://www.backloggd.com/games/judgment/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1rqt.jpg
       width: 720
       height: 540
