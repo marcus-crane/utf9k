@@ -562,7 +562,7 @@ iframe {
   table,
   .highlight,
   div[data-rehype-pretty-code-fragment],
-  pre[class*="language-"],
+  pre[class*="astro-code"],
   figure,
   #post-body > img {
     width: 110%;
@@ -574,7 +574,7 @@ iframe {
   table,
   .highlight,
   div[data-rehype-pretty-code-fragment],
-  pre[class*="language-"],
+  pre[class*="astro-code"],
   figure {
     width: 150%;
     margin-left: -25%;
