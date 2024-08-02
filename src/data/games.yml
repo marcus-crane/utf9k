@@ -130,6 +130,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 262538
+    title: Thank Goodness You’re Here
+    link: https://www.backloggd.com/games/thank-goodness-youre-here/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6yyq.jpg
+      width: 720
+      height: 540
   - id: 279374
     title: 'Duck Detective: The Secret Salami'
     link: https://www.backloggd.com/games/duck-detective-the-secret-salami/
@@ -471,13 +478,6 @@
     link: https://www.backloggd.com/games/the-last-of-us/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1r7f.jpg
-      width: 720
-      height: 540
-  - id: 4204
-    title: Terminator Salvation
-    link: https://www.backloggd.com/games/terminator-salvation/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2cbm.jpg
       width: 720
       height: 540
 - list: Shelved
