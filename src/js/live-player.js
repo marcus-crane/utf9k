@@ -48,7 +48,7 @@ const liveliness = {
 // is playing. We'll do an initial population of the site before calling out event source
 // and pretty quickly get brought up to date by the event stream
 function initPlayer() {
-  fetch("https://gunslinger.utf9k.net/api/v3/playing")
+  fetch("https://gunslinger.utf9k.net/api/v4/playing")
     .then(res => res.json())
     .then(data => renderLivePlayer(data))
     .then(_ => fetchHistory()) // We load history only once the live player is rendered to ensure the playing track is filtered from history
@@ -129,6 +129,11 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderLivePlayer(data) {
+  if (data.length == 0) {
+    return
+  }
+  // We should always have one item
+  data = data[0]
   clearInterval(window.currentInterval)
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
@@ -189,7 +194,9 @@ function renderLivePlayer(data) {
   title.innerText = data.title
   subtitle.innerText = data.subtitle
 
-  cover.src = "https://gunslinger.utf9k.net" + data.image
+
+
+  cover.src = "https://gunslinger.utf9k.net/static/" + data.id.replaceAll(":", ".") + ".jpeg"
   cover.alt = `Cover art for the ${normaliseCategoryName(data.category)} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
@@ -230,7 +237,7 @@ function buildAnimatedBorder(dominantColours) {
 const playerHistory = document.querySelector("#played-items")
 
 function fetchHistory() {
-  fetch("https://gunslinger.utf9k.net/api/v3/history")
+  fetch("https://gunslinger.utf9k.net/api/v4/history")
     .then(res => res.json())
     .then(data => renderHistory(data))
     .catch(err => console.error(`Failed to initialise player history: ${err}`))
