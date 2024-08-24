@@ -196,7 +196,7 @@ function renderLivePlayer(data) {
 
 
 
-  cover.src = "https://gunslinger.utf9k.net/static/" + data.id.replaceAll(":", ".") + ".jpeg"
+  cover.src = "https://gunslinger.utf9k.net" + data.image
   cover.alt = `Cover art for the ${normaliseCategoryName(data.category)} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
