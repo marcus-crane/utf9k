@@ -7,27 +7,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co8hl0.jpg
       width: 720
       height: 540
-  - id: 119171
-    title: Baldur's Gate 3
-    link: https://www.backloggd.com/games/baldurs-gate-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co670h.jpg
-      width: 720
-      height: 540
-  - id: 386
-    title: Final Fantasy XIV Online
-    link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
-      width: 720
-      height: 540
-  - id: 8187
-    title: Just Cause 3
-    link: https://www.backloggd.com/games/just-cause-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co24o5.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 138065
