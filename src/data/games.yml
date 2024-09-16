@@ -123,6 +123,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 303811
+    title: Astro Bot
+    link: https://www.backloggd.com/games/astro-bot/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8hl0.jpg
+      width: 720
+      height: 540
   - id: 262538
     title: Thank Goodness You’re Here!
     link: https://www.backloggd.com/games/thank-goodness-youre-here/
@@ -464,13 +471,6 @@
     link: https://www.backloggd.com/games/welcome-park/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2d49.jpg
-      width: 720
-      height: 540
-  - id: 1009
-    title: The Last of Us
-    link: https://www.backloggd.com/games/the-last-of-us/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1r7f.jpg
       width: 720
       height: 540
 - list: Shelved
