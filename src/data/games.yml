@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 6064
+    title: Ape Escape 3
+    link: https://www.backloggd.com/games/ape-escape-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6b7x.jpg
+      width: 720
+      height: 540
   - id: 386
     title: Final Fantasy XIV Online
     link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
