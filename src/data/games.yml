@@ -14,13 +14,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
       width: 720
       height: 540
-  - id: 303811
-    title: Astro Bot
-    link: https://www.backloggd.com/games/astro-bot/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co8hl0.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 138065
