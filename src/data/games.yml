@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 7194
+    title: Steins;Gate
+    link: https://www.backloggd.com/games/steins-gate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
+      width: 720
+      height: 540
   - id: 6064
     title: Ape Escape 3
     link: https://www.backloggd.com/games/ape-escape-3/
