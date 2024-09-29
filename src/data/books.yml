@@ -2,6 +2,17 @@
 - list: 2024
   goal: 16
   books:
+    - title: Meditations for Mortals
+      subtitle: Four Weeks to Embrace Your Limitations and Make Time for What Counts
+      author: Oliver Burkeman
+      cover: https://cdn.utf9k.net/books/meditations-for-mortals.jpg
+      cover_height: 2620
+      cover_width: 1630
+      link: https://www.penguin.co.nz/books/meditations-for-mortals-9781847927620
+      date_finished: null
+      recommended: false
+      progress: 53
+
     # - title: Seeing Like a State
     #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
     #   author: James C. Scott
@@ -24,16 +35,16 @@
     #   recommended: false
     #   progress: 10
 
-    - title: 100 Go Mistakes and How to Avoid Them
-      subtitle: null
-      author: Teiva Harsanyi
-      cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
-      cover_height: 2775
-      cover_width: 2213
-      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-      date_finished: null
-      recommended: false
-      progress: 45
+    # - title: 100 Go Mistakes and How to Avoid Them
+    #   subtitle: null
+    #   author: Teiva Harsanyi
+    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+    #   cover_height: 2775
+    #   cover_width: 2213
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 45
 
     # - title: SQL Performance Explained
     #   subtitle: Everything Developers Need To Know About SQL Performance
@@ -68,27 +79,27 @@
     #   recommended: false
     #   progress: 1
 
-    - title: Wrong Way
-      subtitle: How Privatisation & Economic Reform Backfired
-      author: Damien Cahill and Phillip Toner
-      cover: https://cdn.utf9k.net/books/wrong-way.jpg
-      cover_height: 1124
-      cover_width: 735
-      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-      date_finished: null
-      recommended: false
-      progress: 44
+    # - title: Wrong Way
+    #   subtitle: How Privatisation & Economic Reform Backfired
+    #   author: Damien Cahill and Phillip Toner
+    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
+    #   cover_height: 1124
+    #   cover_width: 735
+    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
 
-    - title: Unscripted
-      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-      author: James B. Stewart and Rachel Abrams
-      cover: https://cdn.utf9k.net/books/unscripted.jpg
-      cover_height: 1498
-      cover_width: 975
-      link: https://openlibrary.org/works/OL28158768W/Unscripted
-      date_finished: null
-      recommended: false
-      progress: 32
+    # - title: Unscripted
+    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+    #   author: James B. Stewart and Rachel Abrams
+    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
+    #   cover_height: 1498
+    #   cover_width: 975
+    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 32
 
     - title: Means of Control
       subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
