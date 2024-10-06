@@ -9,9 +9,9 @@
       cover_height: 2620
       cover_width: 1630
       link: https://www.penguin.co.nz/books/meditations-for-mortals-9781847927620
-      date_finished: null
-      recommended: false
-      progress: 59
+      date_finished: 2024-10-06
+      recommended: true
+      progress: 100
 
     # - title: Seeing Like a State
     #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
