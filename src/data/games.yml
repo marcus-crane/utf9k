@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 279634
+    title: 'Dragon Ball: Sparking! Zero'
+    link: https://www.backloggd.com/games/dragon-ball-sparking-zero/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8bhn.jpg
+      width: 720
+      height: 540
   - id: 7194
     title: Steins;Gate
     link: https://www.backloggd.com/games/steins-gate/
