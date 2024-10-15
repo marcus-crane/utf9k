@@ -13,7 +13,7 @@ This is a test
 
 This is an extra test
 
-![eicar-test-file](./eicar-test-file.md)
+![[./eicar-test-file|eicar-test-file]]
 
 Do embeds work?
 
