@@ -2,6 +2,7 @@
 title: Test Grafana
 slug: test-grafana
 description: Something about Grafana
+category: questions
 share: true
 tags:
   - test
@@ -12,7 +13,7 @@ This is a test
 
 This is an extra test
 
-![EICAR test file](EICAR%20test%20file.md)
+![[./eicar-test-file|eicar-test-file]]
 
 Do embeds work?
 
