@@ -4,7 +4,7 @@ title: Now
 slug: now
 category: now
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
-share: true
+publish: true
 output: src/pages
 lastmod: 2024-10-16T22:00:00+13:00
 tags:
