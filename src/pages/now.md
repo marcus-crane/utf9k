@@ -10,7 +10,8 @@ lastmod: 2024-10-16T22:00:00+13:00
 tags:
   - me
 ---
-Here's what I'm up to currently
+Here's what I'm up to currently:
+
 ## Experimenting with Enveloppe
 
 I discovered this great plugin called [Enveloppe](https://github.com/Enveloppe/obsidian-enveloppe) for Obsidian that lets me push Markdown from Obsidian to Github.
