@@ -4,6 +4,7 @@ slug: lucene-cheat-sheet
 description: How does that query go again?
 category: questions
 share: true
+output: src/content/questions
 tags:
   - cheatsheet
   - kibana
