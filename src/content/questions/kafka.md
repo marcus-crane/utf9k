@@ -24,8 +24,15 @@ Previously, the default strategy (aptly named `DefaultPartitioner`) used to be t
 
 You could use [this calculator](https://murmurhash2.vercel.app/) combined with the [default Kafka seed](https://github.com/apache/kafka/blob/trunk/clients/src/main/java/org/apache/kafka/common/utils/Utils.java#L494) (`9747b28c`) to figure out the murmur hash and then modulo by the number of partitions you had.
 
-For example: `0974728 (seed) + 12413413 (input) -> 3242098085 (hash) % 16 (partition) = 5` would mean your message would end up on partition 5
+For example: 
 
+```
+0974728 (seed) + 12413413 (input) -> 3242098085 (hash)
+3242098085 (hash) % 16 (partition)
+= 5
+```
+
+This would mean that a message with a key of `12413413` sent to a topic with 16 partitions, would be assigned to Partition 5
 # Calculating hash strategy for kafka-go
 
 Nowadays, the default partition is apparently [UniformStickyPartitioner](https://cwiki.apache.org/confluence/display/KAFKA/KIP-794%3A+Strictly+Uniform+Sticky+Partitioner) although at the time of writing [IBM/sarama](https://github.com/IBM/sarama) defaults to [HashPartitioner](https://github.com/IBM/sarama/blob/main/config.go#L529) and [segmentio/kafka-go](https://github.com/segmentio/kafka-go) has round-robin as [its default](https://github.com/segmentio/kafka-go/blob/main/writer.go#L96).
