@@ -12,7 +12,6 @@ tags:
   - opensearch
   - reference
 ---
-
 [Apache Lucene](https://lucene.apache.org/) is a search library used by the popular [Kibana](https://www.elastic.co/kibana) and [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/) projects.
 
 While both projects have their own DSLs for searching[^1], they also support Lucene as a fallback.
