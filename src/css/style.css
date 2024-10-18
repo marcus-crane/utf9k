@@ -379,6 +379,10 @@ article #post-body img {
   border-radius: 3px;
 }
 
+article .book-body center img {
+  max-width: 25% !important;
+}
+
 article .heading-2 {
   margin-left: -2rem;
 }
