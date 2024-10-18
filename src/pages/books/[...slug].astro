@@ -45,13 +45,13 @@ if (subtitle != null) {
       <h1>{title}<h1>
       <img src={cover} height={cover_height} width={cover_width} />
       <ul>
-        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
-        {progress !== 100 && <li>Progress: {progress}%</li>}
         <li>Status: {status}</li>
+        {progress !== 100 && <li>Progress: {progress}%</li>}
+        {progress === 100 && <li>Date Finished: {dayjs(date_finished).format('MMMM DD, YYYY')}</li>}
+        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
         <li>Authors: {authors.join(' and ')}</li>
         <li>Publisher: {publisher}</li>
         <li>Published: {dayjs(published).format('MMMM DD, YYYY')}</li>
-        {progress === 100 && <li>Date Finished: {dayjs(date_finished).format('MMMM DD, YYYY')}</li>}
         <li>Page Count: {pageCount}</li>
         <li>Info: <a href={link}>{link}</a></li>
         <li>ISBN 10: {isbn10}</li>
