@@ -1,20 +1,58 @@
 ---
-import { getCollection } from 'astro:content';
-import MarkdownPost from '../../layouts/MarkdownPost.astro';
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Core.astro";
+import dayjs from 'dayjs'
 
 export async function getStaticPaths() {
-  const books = await getCollection('books');
-  return books.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+  const books = await getCollection("books");
+  return books.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const { title, description } = entry.data;
+const {
+  title,
+  subtitle,
+  authors,
+  pageCount,
+  publisher,
+  published,
+  isbn10,
+  // isbn13,
+  link,
+  status,
+  cover,
+  date_finished,
+  recommended,
+  progress,
+} = entry.data;
+
+let fullTitle = title;
+if (subtitle != null) {
+  fullTitle = `${title}: ${subtitle}`;
+}
 ---
 
-<MarkdownPost title={title} description={description}>
-  <Content />
-</MarkdownPost>
+<Layout title={fullTitle}>
+  <article>
+    <div id="post-body">
+      <Content />
+      <ul>
+        <li>Authors: {authors.join(' and ')}</li>
+        <li>Publisher: {publisher}</li>
+        <li>Published: {dayjs(published).format('MMMM DD, YYYY')}</li>
+        <li>Date Finished: {dayjs(date_finished).format('MMMM DD, YYYY')}</li>
+        <li>Page Count: {pageCount}</li>
+        <li>Info: <a href={link}>{link}</a></li>
+        <li>ISBN 10: {isbn10}</li>
+        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
+        {progress !== 100 && <li>Progress: {progress}%</li>}
+        <li>Status: {status}</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

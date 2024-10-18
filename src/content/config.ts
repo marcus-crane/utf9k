@@ -10,8 +10,20 @@ const commonFields = {
 const books = defineCollection({
   type: "content",
   schema: z.object({
-    date: z.date(),
-    ...commonFields,
+    title: z.string(),
+    subtitle: z.string(),
+    authors: z.array(z.string()),
+    pageCount: z.number(),
+    publisher: z.string(),
+    published: z.date(),
+    isbn10: z.number(),
+    // isbn13: z.number(),
+    link: z.string(),
+    status: z.string(),
+    cover: z.string(),
+    date_finished: z.date(),
+    recommended: z.boolean(),
+    progress: z.number()
   }),
 });
 
