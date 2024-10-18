@@ -42,6 +42,9 @@ if (subtitle != null) {
     <div id="post-body">
       <Content />
       <ul>
+        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
+        {progress !== 100 && <li>Progress: {progress}%</li>}
+        <li>Status: {status}</li>
         <li>Authors: {authors.join(' and ')}</li>
         <li>Publisher: {publisher}</li>
         <li>Published: {dayjs(published).format('MMMM DD, YYYY')}</li>
@@ -49,9 +52,6 @@ if (subtitle != null) {
         <li>Page Count: {pageCount}</li>
         <li>Info: <a href={link}>{link}</a></li>
         <li>ISBN 10: {isbn10}</li>
-        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
-        {progress !== 100 && <li>Progress: {progress}%</li>}
-        <li>Status: {status}</li>
       </ul>
     </div>
   </article>
