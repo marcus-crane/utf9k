@@ -26,21 +26,19 @@ const {
   link,
   status,
   cover,
+  cover_height,
+  cover_width,
   date_finished,
   recommended,
   progress,
 } = entry.data;
-
-let fullTitle = title;
-if (subtitle != null) {
-  fullTitle = `${title}: ${subtitle}`;
-}
 ---
 
 <Layout title={fullTitle}>
   <article class="book-entry">
     <div id="post-body">
-      <Content />
+      <h1>{title}<h1>
+      <img src={cover} height={cover_height} width={cover_width} />
       <ul>
         <li>Recommended: <input type="checkbox" checked={recommended} /></li>
         {progress !== 100 && <li>Progress: {progress}%</li>}
