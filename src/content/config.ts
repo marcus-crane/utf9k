@@ -21,6 +21,8 @@ const books = defineCollection({
     link: z.string(),
     status: z.string(),
     cover: z.string(),
+    cover_height: z.number(),
+    cover_width: z.number(),
     date_finished: z.date(),
     recommended: z.boolean(),
     progress: z.number()
