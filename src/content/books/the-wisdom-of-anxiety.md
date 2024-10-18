@@ -17,7 +17,7 @@ output: src/content/books
 cover: https://cdn.utf9k.net/books/blah.jpg
 cover_height: 1500
 cover_width: 1000
-date_finished: 
-recommended: 
+date_finished: 1970-01-01
+recommended: false
 progress: 17
 ---
