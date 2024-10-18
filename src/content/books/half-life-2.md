@@ -8,7 +8,7 @@ pageCount: 288
 publisher: Prima Games
 published: 2004-11-23
 isbn10: 761543643
-isbn13: 
+isbn13: 9780761543640
 link: https://utf9k.net
 status: Finished
 slug: half-life-2
