@@ -25,15 +25,25 @@ progress: 100
 # Half-Life 2: Raising the Bar
 
 > · Unprecedented access behind Half-Life and Half-Life 2
+>
 > · A forward by Valve founder Gabe Newell
+>
 > · Hundreds of art, design, preproduction, and other art pieces crammed into the book
+>
 > · Over a dozen key members of Valve's staff interviewed
+>
 > · Officially approved by Valve
+>
 > · Behind City 17 and other locations
+>
 > · The development of the Source engine
+>
 > · A rogue's gallery of beasts, characters, and monstrosities
+>
 > · Key weapons development revelations
+>
 > · A tour of many of the game's locations, from inception to completion
+>
 > · Filled with art, screens, and anecdotes from the Valve team
 
 ![250](https://cdn.utf9k.net/books/half-life-2.jpg)
