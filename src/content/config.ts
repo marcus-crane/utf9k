@@ -7,6 +7,14 @@ const commonFields = {
   tags: z.array(z.string()),
 };
 
+const books = defineCollection({
+  type: "content",
+  schema: z.object({
+    date: z.date(),
+    ...commonFields,
+  }),
+});
+
 // TODO: Consider moving schemas out: Using CollectionEntry type makes this a bit redundant at present
 // https://docs.astro.build/en/guides/content-collections/#defining-multiple-collections
 const blog = defineCollection({
@@ -42,6 +50,7 @@ const reviews = defineCollection({
 });
 
 export const collections = {
+  books,
   blog,
   projects,
   questions,
