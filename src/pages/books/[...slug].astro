@@ -32,6 +32,11 @@ const {
   recommended,
   progress,
 } = entry.data;
+
+let fullTitle = title;
+if (subtitle != null) {
+  fullTitle = `${title}: ${subtitle}`;
+}
 ---
 
 <Layout title={fullTitle}>
