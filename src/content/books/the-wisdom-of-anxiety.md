@@ -18,7 +18,7 @@ output: src/content/books
 cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
 cover_height: 1500
 cover_width: 1000
-date_finished: 01-01-2024
+date_finished: 2024-01-01
 recommended: false
 progress: 17
 ---
