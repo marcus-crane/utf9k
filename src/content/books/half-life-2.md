@@ -1,5 +1,5 @@
 ---
-title: Half-life 2
+title: Half-Life 2
 subtitle: Raising the Bar
 authors:
   - Valve (Firm)
