@@ -18,11 +18,10 @@ const {
   title,
   subtitle,
   authors,
-  pageCount,
+  length,
   publisher,
   published,
-  isbn10,
-  // isbn13,
+  isbn,
   link,
   status,
   cover,
@@ -52,9 +51,9 @@ if (subtitle != null) {
         <li>Authors: {authors.join(' and ')}</li>
         <li>Publisher: {publisher}</li>
         <li>Published: {dayjs(published).format('MMMM DD, YYYY')}</li>
-        <li>Page Count: {pageCount}</li>
+        <li>Page Count: {length}</li>
         <li>Info: <a href={link}>{link}</a></li>
-        <li>ISBN 10: {isbn10}</li>
+        <li>ISBN: {isbn}</li>
       </ul>
     </div>
   </article>
