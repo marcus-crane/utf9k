@@ -15,10 +15,10 @@
     "sync": "./ci/externalsync.sh"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.4",
-    "@astrojs/mdx": "3.1.7",
-    "@astrojs/sitemap": "3.2.0",
-    "astro": "4.15.11",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "4.0.0-beta.2",
+    "@astrojs/sitemap": "3.2.1",
+    "astro": "5.0.0-beta.5",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
