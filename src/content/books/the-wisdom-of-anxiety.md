@@ -25,7 +25,7 @@ progress: 17
 
 ## Cover
 
-![250](https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg)
+![Book cover for The Wisdom of Anxiety|250](https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg)
 
 ## Description
 
