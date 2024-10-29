@@ -379,13 +379,18 @@ article #post-body img {
   border-radius: 3px;
 }
 
-article.book-entry #post-body blockquote p {
+article.book-entry #post-body blockquote p,
+article.book-entry #post-body h2 {
   margin-bottom: 0;
+}
+
+article.book-entry #post-body p {
+  margin-top: 0.75em;
 }
 
 article.book-entry #post-body center {
   margin: 0 auto;
-  max-width: 25%;
+  max-width: 35%;
 }
 
 article .heading-2 {

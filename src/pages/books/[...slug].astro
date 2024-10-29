@@ -28,7 +28,6 @@ const {
   cover_height,
   cover_width,
   date_finished,
-  recommended,
   progress,
 } = entry.data;
 
@@ -42,18 +41,25 @@ if (subtitle != null) {
   <article class="book-entry">
     <div id="post-body">
       <h1>{title}</h1>
-      <img src={cover} height={cover_height} width={cover_width} />
+      <center>
+        <figure>
+          <img src={cover} height={cover_height} width={cover_width} alt=`Book cover for ${title}` />
+        </figure>
+      </center>
+      <h2>Metadata</h2>
       <ul>
-        <li>Status: {status}</li>
-        {progress !== 100 && <li>Progress: {progress}%</li>}
-        {progress === 100 && <li>Date Finished: {dayjs(date_finished).format('MMMM DD, YYYY')}</li>}
-        <li>Recommended: <input type="checkbox" checked={recommended} /></li>
-        <li>Authors: {authors.join(' and ')}</li>
-        <li>Publisher: {publisher}</li>
-        <li>Published: {dayjs(published).format('MMMM DD, YYYY')}</li>
-        <li>Page Count: {length}</li>
-        <li>Info: <a href={link}>{link}</a></li>
-        <li>ISBN: {isbn}</li>
+        <li><b>Authors</b>: {authors.join(' and ')}</li>
+        <li><b>Publisher</b>: {publisher}</li>
+        <li><b>Published</b>: {dayjs(published).format('MMMM DD, YYYY')}</li>
+        <li><b>Page Count</b>: {length}</li>
+        <li><b>Info</b>: <a href={link}>{link}</a></li>
+        <li><b>ISBN</b>: {isbn}</li>
+      </ul>
+      <h2>Progress</h2>
+      <ul>
+        <li><b>Status</b>: {status}</li>
+        {progress !== 100 && <li><b>Progress</b>: {progress}%</li>}
+        {progress === 100 && <li><b>Date Finished</b>: {dayjs(date_finished).format('MMMM DD, YYYY')}</li>}
       </ul>
       <Content />
     </div>
