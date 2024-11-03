@@ -1,17 +1,15 @@
 ---
-title: Athena Queries
-slug: athena-queries
-description: It's like SQL but slightly wonkier
 category: questions
-publish: true
+description: It's like SQL but slightly wonkier
 output: src/content/questions
+publish: true
+slug: athena-queries
 tags:
   - athena
   - cheatsheet
   - sql
+title: Athena Queries
 ---
-# Athena Queries
-
 ## Querying for JSON embedded in fields
 
 You can use `JSON_EXTRACT_SCALAR` to extract content out of a text field like so:
