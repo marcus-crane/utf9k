@@ -1,4 +1,5 @@
 ---
+publish: true
 title: Risk & Reward
 subtitle: An Inside View of the Property/Casualty Insurance Business
 authors:
@@ -14,16 +15,16 @@ link: https://example.com
 status: Finished
 slug: risk-and-reward
 category: books
-publish: true
 output: src/content/books
 cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
 cover_height: 1208
 cover_width: 800
+cover-display: contain
 date_finished: 2024-02-11
 recommended: true
 progress: 100
+cover-y: "90"
 ---
-
 ## Highlights
 
 N/A
