@@ -1,29 +1,29 @@
 ---
-publish: true
-title: Risk & Reward
-subtitle: An Inside View of the Property/Casualty Insurance Business
 authors:
   - Stephen Catlin
-length: 237
-publisher: Iskaboo Publishing Ltd
-published: 2017-07-06
-isbn: 9780957559554
+category: books
+cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
+cover-display: contain
+cover-y: "90"
+cover_height: 1208
+cover_width: 800
+date_finished: 2024-02-11
 genre:
   - Insurance
   - Finance
+isbn: 9780957559554
+length: 237
 link: https://example.com
-status: Finished
-slug: risk-and-reward
-category: books
 output: src/content/books
-cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
-cover_height: 1208
-cover_width: 800
-cover-display: contain
-date_finished: 2024-02-11
-recommended: true
 progress: 100
-cover-y: "90"
+publish: true
+published: 2017-07-06
+publisher: Iskaboo Publishing Ltd
+recommended: true
+slug: risk-and-reward
+status: Finished
+subtitle: An Inside View of the Property/Casualty Insurance Business
+title: Risk & Reward
 ---
 ## Highlights
 
