@@ -1,15 +1,14 @@
 ---
-layout: ../layouts/GenericMarkdown.astro
-title: About
-slug: about
 category: about
 description: Learn a bit about me and what I do for a living
-publish: true
+layout: ../layouts/GenericMarkdown.astro
 output: src/pages
+publish: true
+slug: about
 tags:
   - me
+title: About
 ---
-
 I never write as much as I wish I would but there's a handful of articles you can read.
 
 I currently work at [Lightspeed](https://www.lightspeedhq.com/), particularly working on [Vend](https://www.vendhq.com/nz/).

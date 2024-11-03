@@ -1,14 +1,14 @@
 ---
-layout: ../layouts/GenericMarkdown.astro
-title: Now
-slug: now
 category: now
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
-publish: true
-output: src/pages
 lastmod: 2024-10-16T22:00:00+13:00
+layout: ../layouts/GenericMarkdown.astro
+output: src/pages
+publish: true
+slug: now
 tags:
   - me
+title: Now
 ---
 Here's what I'm up to currently:
 
