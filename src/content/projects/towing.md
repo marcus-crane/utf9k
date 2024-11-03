@@ -1,17 +1,17 @@
 ---
-title: Vehicles towed in Auckland, New Zealand
 category: projects
-slug: towing
-ongoing: false
 description: Three years of towing data being simulated all at once
+ongoing: false
+output: src/content/projects
+publish: true
+slug: towing
 tags:
   - maps
   - nz
   - projects
   - traffic
   - visualisation
-publish: true
-output: src/content/projects
+title: Vehicles towed in Auckland, New Zealand
 ---
 
 ![A screenshot of the towing.utf9k.net website. A map of the city of Auckland, New Zealand is visible with lots of little orange streaks visible on the map. Each streak represents a vehicle that was towed over a 3 year period. Each streak is in motion, heading to where they were towed to.](https://cdn.utf9k.net/projects/towing/website.png)
