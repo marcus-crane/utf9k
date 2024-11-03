@@ -1,27 +1,27 @@
 ---
-publish: true
-title: The Wisdom of Anxiety
-subtitle: How worry and intrusive thoughts are gifts to help you heal
 authors:
   - Sheryl Paul
-length: 218
-publisher: Hachette UK
-published: 2019-06-27
-isbn: 9781783253456
-genre:
-  - Health & Fitness
-link: https://conscious-transitions.com/the-wisdom-of-anxiety/
-status: Reading
-slug: the-wisdom-of-anxiety
 category: books
-output: src/content/books
 cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
+cover-display: contain
 cover_height: 1500
 cover_width: 1000
-cover-display: contain
 date_finished: 2024-01-01
-recommended: false
+genre:
+  - Health & Fitness
+isbn: 9781783253456
+length: 218
+link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+output: src/content/books
 progress: 17
+publish: true
+published: 2019-06-27
+publisher: Hachette UK
+recommended: false
+slug: the-wisdom-of-anxiety
+status: Reading
+subtitle: How worry and intrusive thoughts are gifts to help you heal
+title: The Wisdom of Anxiety
 ---
 ## Highlights
 
