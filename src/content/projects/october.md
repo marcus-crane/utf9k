@@ -1,9 +1,10 @@
 ---
-title: October
 category: projects
-slug: october
-ongoing: true
 description: A project of mine that allows Kobo users to sync their highlights to Readwise. It solves a problem in my workflow and I use it quite regularly.
+ongoing: true
+output: src/content/projects
+publish: true
+slug: october
 tags:
   - ereader
   - golang
@@ -12,8 +13,7 @@ tags:
   - readwise
   - sqlite
   - wails
-publish: true
-output: src/content/projects
+title: October
 ---
 
 ![A screenshot of October. Visible is a macOS window in the foreground with the background wallpaper visible behind it. The window shows that a Kobo Libra H20 is currently connected. On the right is a single button that asks if the user would like to sync 249 highlights to Readwise. At the bottom is a toast saying that 217 highlights were sent to Readwise successfully.](https://cdn.utf9k.net/projects/october/selector_main.png)
