@@ -1,16 +1,16 @@
 ---
-title: Lucene Cheat Sheet
-slug: lucene-cheat-sheet
-description: How does that query go again?
 category: questions
-publish: true
+description: How does that query go again?
 output: src/content/questions
+publish: true
+slug: lucene-cheat-sheet
 tags:
   - cheatsheet
   - kibana
   - lucene
   - opensearch
   - reference
+title: Lucene Cheat Sheet
 ---
 [Apache Lucene](https://lucene.apache.org/) is a search library used by the popular [Kibana](https://www.elastic.co/kibana) and [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/) projects.
 
