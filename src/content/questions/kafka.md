@@ -34,7 +34,7 @@ For example:
 
 This would mean that a message with a key of `12413413` sent to a topic with 16 partitions, would be assigned to Partition 5
 
-# Calculating hash strategy for kafka-go
+## Calculating hash strategy for kafka-go
 
 Nowadays, the default partition is apparently [UniformStickyPartitioner](https://cwiki.apache.org/confluence/display/KAFKA/KIP-794%3A+Strictly+Uniform+Sticky+Partitioner) although at the time of writing [IBM/sarama](https://github.com/IBM/sarama) defaults to [HashPartitioner](https://github.com/IBM/sarama/blob/main/config.go#L529) and [segmentio/kafka-go](https://github.com/segmentio/kafka-go) has round-robin as [its default](https://github.com/segmentio/kafka-go/blob/main/writer.go#L96).
 
