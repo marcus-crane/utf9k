@@ -18,6 +18,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "4.0.0-beta.2",
     "@astrojs/sitemap": "3.2.1",
+    "@r4ai/remark-callout": "^0.6.2",
     "astro": "5.0.0-beta.5",
     "typescript": "^5.3.3"
   },

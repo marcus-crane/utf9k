@@ -10,15 +10,13 @@ tags:
 - "steam"
 ---
 
-import Notice from "../../components/Notice.astro"
-
-<Notice emoji="⚠️" title="Beware what you click on!">
-This post contains screenshots for a phishing website.
-
-I won't be typing out the URL but you can infer the site from the screenshots in this post of course.
-
-While I encourage you to have fun poking around if you want, I'm not responsible if anything goes wrong!
-</Notice>
+> [!caution] Beware what you click on!
+>
+> This post contains screenshots for a phishing website.
+> 
+> I won't be typing out the URL but you can infer the site from the screenshots in this post of course.
+>
+> While I encourage you to have fun poking around if you want, I'm not responsible if anything goes wrong!
 
 Earlier today, I received a phishing attempt to try and steal my Steam account. It didn't work but I did think it was quite interesting!
 

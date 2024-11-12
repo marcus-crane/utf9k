@@ -3,6 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 import { remarkReadingTime } from './remark-reading-time.mjs';
+import remarkCallout from "@r4ai/remark-callout";
 import yaml from "@rollup/plugin-yaml";
 
 import rehypePostImageWrapper from "./src/hooks/rehypePostImageWrapper.ts";
@@ -28,7 +29,7 @@ export default defineConfig({
         plugins: [yaml()]
     },
     markdown: {
-        remarkPlugins: [remarkReadingTime],
+        remarkPlugins: [remarkReadingTime, remarkCallout],
         remarkRehype: {
             footnoteLabelProperties: {
                 className: ['sr-only', 'littlefoot--print']

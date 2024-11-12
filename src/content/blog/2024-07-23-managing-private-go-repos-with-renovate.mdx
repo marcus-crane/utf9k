@@ -10,15 +10,13 @@ tags:
 - "software"
 ---
 
-import Notice from "../../components/Notice.astro"
-
-<Notice emoji="🤔" title="I would probably change my mind if I started from scratch">
-As mentioned at the end of this post, most of this setup is a bit convoluted when compared to Renovate CE.
-
-I don't believe all of the options it has nowadays were available back when the setup below was configured but it may still be useful to someone who prefers a fully stateless setup.
-
-I'm mainly pointing this out so you don't start implementing things before reading the entire post.
-</Notice>
+> [!warning] 🤔 I would probably change my mind if I started from scratch
+>
+> As mentioned at the end of this post, most of this setup is a bit convoluted when compared to Renovate CE.
+>
+> I don't believe all of the options it has nowadays were available back when the setup below was configured but it may still be useful to someone who prefers a fully stateless setup.
+>
+> I'm mainly pointing this out so you don't start implementing things before reading the entire post.
 
 [Renovate](https://mend.io/renovate) is a handy tool for managing dependency updates, especially when you have many repositories. It supports a huge range of languages and allow for batching dependency updates together based on various rules.
 

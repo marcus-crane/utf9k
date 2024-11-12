@@ -11,17 +11,16 @@ tags:
   - "acquisition"
 ---
 
-import Notice from "../../components/Notice.astro"
+> [!note] 💻 This post was an unpublished draft that accidentally got published.
+>
+> This post was originally a draft that I threw together in 2021 when Microsoft were [allegedly in talks to buy](https://www.theverge.com/2021/3/26/22352028/microsoft-discord-acquisition-analysis-report) Discord.
+> 
+> Around the same time, there was a lot of discussion in the gaming community around Discord and how it's "better" than Slack which is the wrong view given they target different markets.
+> 
+> While doing some work on my site, the post was accidentally published so I figure I might as well just push it out into the world.
+> 
+> From what I remember, the post didn't really have any clear direction so I was going to split it up into smaller chunks, but the window it was relevant in has long passed and I don't have any real reason to ever get back to it.> 
 
-<Notice emoji="💻" title="This post was an unpublished draft that accidentally got published.">
-This post was originally a draft that I threw together in 2021 when Microsoft were [allegedly in talks to buy](https://www.theverge.com/2021/3/26/22352028/microsoft-discord-acquisition-analysis-report) Discord.
-
-Around the same time, there was a lot of discussion in the gaming community around Discord and how it's "better" than Slack which is the wrong view given they target different markets.
-
-While doing some work on my site, the post was accidentally published so I figure I might as well just push it out into the world.
-
-From what I remember, the post didn't really have any clear direction so I was going to split it up into smaller chunks, but the window it was relevant in has long passed and I don't have any real reason to ever get back to it.
-</Notice>
 
 In this post, I'm going to be considering a "What if" scenario for fun regarding the idea of Microsoft buying Discord. For those unaware, [Microsoft is apparently talking with Discord about possibly buying them up](https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164) for at least $10 billion. As I'm writing this, it hasn't happened yet which is always the most fun time to speculate.
 
