@@ -62,7 +62,7 @@ gyp ERR! not ok
 
 For clarity, there's the actually important part pulled out:
 
-```console
+```shell
 Traceback (most recent call last):
   File "/Users/marcus/blah/node_modules/node-gyp/gyp/gyp_main.py", line 42, in <module>
     import gyp  # noqa: E402
@@ -84,7 +84,7 @@ This was done via [PEP 632](https://peps.python.org/pep-0632/) and announced at 
 
 Anyway, for myself on macOS, I did the following to get distutils all set up:
 
-```console
+```shell
 $ brew install python-setuptools
 $ pip install setuptools
 ```
