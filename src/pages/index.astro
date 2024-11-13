@@ -14,9 +14,6 @@ import manga from "../data/manga.json";
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
-import WriteFile from "../components/WriteFile.astro"
-import RssXml from '../components/RssXml.astro';
-
 import { getApexDomain } from "../utils/domains";
 
 const blogPosts = await getCollection("blog", ({ data }) => {
@@ -26,11 +23,6 @@ const blogPosts = await getCollection("blog", ({ data }) => {
 const processedPosts = blogPosts
   .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
   .slice(0, 6)
-
-// MDX RSS hack taken from https://github.com/kogakure/website-astro-stefanimhoff.de/blob/8ecf5b3644dee879a3d344a8de08c5ad0be895cf/src/pages/index.astro#L14
-// who adapted it from https://scottwillsey.com/rss-pt2/
-
-const isProduction = process.env.NODE_ENV === 'production'
 ---
 
 <BaseLayout bodystyle="overflow-x: hidden;">
@@ -209,10 +201,3 @@ const isProduction = process.env.NODE_ENV === 'production'
     </script>
   </div>
 </BaseLayout>
-
-{/* TODO: Try to render a static instance of RssXml locally */}
-{isProduction && (
-<WriteFile slot="rss-writer">
-  <RssXml slot="rss-writer" />
-</WriteFile>
-)}
