@@ -11,19 +11,17 @@ tags:
   - "selfcare"
 ---
 
-import Notice from "../../components/Notice.astro"
-
-<Notice emoji="🚣‍♀️" title="It's rough seas out there!">
-Not so long ago, I was struggling with instances of <a href="https://en.wikipedia.org/wiki/Depersonalization">something very unfamiliar</a> , which scared the shit out of me.
-
-As one of many distractions, I popped open a text editor and started writing about my life so far and this is what came out.
-
-I've strongly resisted the urge to make any edits, beyond adding links for context. All footnotes were already written inline with the draft.
-
-I haven't fully reread it nor do I really intend to. I also never got to the actual point of the title, which is what I started off with as a prompt.
-
-In short, I'm trying to relax more and look after myself. That doesn't mean stopping work but riding the momentum I already built up, whether I realise it or not.
-</Notice>
+> [!info] 🚣‍♀️ It's rough seas out there!
+>
+> Not so long ago, I was struggling with instances of <a href="https://en.wikipedia.org/wiki/Depersonalization">something very unfamiliar</a> , which scared the shit out of me.
+>
+> As one of many distractions, I popped open a text editor and started writing about my life so far and this is what came out.
+>
+> I've strongly resisted the urge to make any edits, beyond adding links for context. All footnotes were already written inline with the draft.
+>
+> I haven't fully reread it nor do I really intend to. I also never got to the actual point of the title, which is what I started off with as a prompt.
+>
+> In short, I'm trying to relax more and look after myself. That doesn't mean stopping work but riding the momentum I already built up, whether I realise it or not.
 
 Generally, I tend to worry a lot about what things might look like in the future.
 

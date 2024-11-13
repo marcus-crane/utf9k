@@ -469,7 +469,8 @@ blockquote {
 }
 
 /* Notices */
-.notice {
+.notice,
+div[data-callout] {
   background-color: var(--text-light);
   border-radius: 0.5rem;
   display: flex;
@@ -481,12 +482,20 @@ blockquote {
 
 article #post-body .notice h2,
 article #post-body .notice h3,
-article #post-body .notice p {
+article #post-body .notice p,
+article #post-body div[data-callout-title],
+article #post-body div[data-callout-body] p {
   margin-bottom: 0.5rem;
 }
 
+article #post-body div[data-callout-title] {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
 @media (prefers-color-scheme: dark) {
-  .notice {
+  .notice,
+  div[data-callout] {
     background-color: var(--text-dark);
   }
 }
@@ -578,7 +587,8 @@ iframe {
   div[data-rehype-pretty-code-fragment],
   pre[class*="astro-code"],
   figure,
-  #post-body > img {
+  #post-body > img,
+  div[data-callout] {
     width: 110%;
     margin-left: -5%;
   }

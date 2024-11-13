@@ -13,15 +13,11 @@ tags:
   - "tidal"
 ---
 
-import Notice from "../../components/Notice.astro"
-
-import { Tweet } from "@astro-community/astro-embed-twitter"
-
-<Notice emoji="🖼" title="Look at this photograph">
-Due to the nature of this post, it's pretty image heavy.
-
-Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
-</Notice>
+> [!info] 🖼 Look at this photograph
+>
+> Due to the nature of this post, it's pretty image heavy.
+>
+> Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.
 
 As I'm sure you're probably aware, Spotify has [had a bit of news coverage lately](https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation) regarding [The Joe Rogan Experience](https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience).
 
@@ -129,7 +125,7 @@ Tidal did have Jay-Z content as an exclusive in the past, which also included th
 
 Also, as I write this, I'm now learning that [Hov sold the majority of his shares to <strike>Square</strike> Block](https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer) in 2021? What the fuck?
 
-<Tweet id="https://twitter.com/jack/status/1367460921937817602" />
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">I’m grateful for Jay’s vision, wisdom, and leadership. I knew TIDAL was something special as soon as I experienced it, and I’m inspired to work with him. He&#39;ll now help lead our entire company, including Seller and the Cash App, as soon as the deal closes. <a href="https://t.co/YRfYjcWJQx">https://t.co/YRfYjcWJQx</a> <a href="https://t.co/xBtq2xfwue">pic.twitter.com/xBtq2xfwue</a></p>&mdash; jack (@jack) <a href="https://twitter.com/jack/status/1367460921937817602?ref_src=twsrc%5Etfw">March 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Jack Dorsey mentioned his vision for the future of Tidal:
 
@@ -444,7 +440,7 @@ Kind of but not really?
 
 At this point, I'll take 2 out of 3 happily but we're apparently getting something in this space very soon!
 
-<Tweet id="https://twitter.com/plexamp/status/1489024846033915908" />
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">fyi, the next version of plexamp adds controllability.</p>&mdash; Plexamp (@plexamp) <a href="https://twitter.com/plexamp/status/1489024846033915908?ref_src=twsrc%5Etfw">February 2, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ❌ but 👀 for **Cross-platform sessions** (2/3)
 
@@ -476,15 +472,15 @@ I had the misfortune of having this integration go down briefly due to an outage
 
 As one might imagine, we're still at the mercy of (fairly invisible) DRM under the hood. No authentication server surely means no way to verify who has rights to play Tidal content.
 
-<Notice emoji="🔑" title="A tip for Plex server owners">
-[Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
-
-They're relatively stable but it's inevitable that the authentication server will fail again one day.
-
-That isn't a slight towards Plex, it's just an unavoidable reality about computers.
-
-Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
-</Notice>
+> [!tip] 🔑 A tip for Plex server owners
+>
+> [Entropy](https://en.wikipedia.org/wiki/Entropy) is a sad fact of life and Plex's authentication servers are no different.
+>
+> They're relatively stable but it's inevitable that the authentication server will fail again one day.
+>
+> That isn't a slight towards Plex, it's just an unavoidable reality about computers.
+>
+> Anyway, to work around this in future, you can [whitelist your local network](https://support.plex.tv/articles/200890058-authentication-for-local-network-access/) so that you can still stream (locally stored) content while you wait for the authentication server to return.
 
 While this sounds bad on paper, it's not really an issue in that nothing stops me just opening Tidal itself and streaming music from there in the meantime. If you remember, Plex has an "Add to My Tidal" button and this is where it can be useful as a backup.
 
@@ -537,7 +533,7 @@ This one seems like a weirdly obvious oversight so I'm going to give the benefit
 
 The team are definitely aware of it:
 
-<Tweet id="https://twitter.com/plexamp/status/1491494752327372801" />
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">1) On the roadmap, yeah, along with deletion of other things.<br /><br />2) Check in the web app when your release date is. <a href="https://t.co/iPXAjvyAMe">pic.twitter.com/iPXAjvyAMe</a></p>&mdash; Plexamp (@plexamp) <a href="https://twitter.com/plexamp/status/1491494752327372801?ref_src=twsrc%5Etfw">February 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 It's a little annoying though because I have added one or two albums accidentally and now they're just stuck with me forever but amongst an ocean of albums, it doesn't feel so bad.
 
