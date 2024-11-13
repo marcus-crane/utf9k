@@ -64,15 +64,15 @@ Once the user has determined that both models are sufficiently trained, the netw
 
 Without much in the way of deeply detailed explanations to go on, this is my best attempt however I can't speak much on the final conversation process. To illustrate the result, here is the original [Gal Gadot](https://en.wikipedia.org/wiki/Gal_Gadot) conversion posted by deepfakes himself. **As indicated earlier, the following is pornography and is definitely not safe for work**.
 
-<Notice emoji="📭" title="There's nothing here anymore!">
-This portion originally linked to an extremely [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) deepfake video for archival purposes.
-
-It used to reside at [https://www.pornhub.com/embed/ph5a27755783e28](https://www.pornhub.com/embed/ph5a27755783e28)[^deadlink] but has long since been removed.
-
-The original caption I provided read as follows:
-
-> "The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!"
-</Notice>
+> [!note] 📭 There's nothing here anymore!
+>
+> This portion originally linked to an extremely [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) deepfake video for archival purposes.
+> 
+> It used to reside at [https://www.pornhub.com/embed/ph5a27755783e28](https://www.pornhub.com/embed/ph5a27755783e28)[^deadlink] but has long since been removed.
+>
+> The original caption I provided read as follows:
+> 
+> > "The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!"
 
 I chose the clip above because it provides a good indication of what works but also what can go wrong. There's a number of instances where the result is miserable, such as 1:09 where multiple facial expressions flash one after the other. Often times, the edges of the overlaid face can clearly be seen, giving an idea of which elements have been replaced. All in all though, the result can be frighteningly accurate, just with the small amount of code that the creator referred to as ["embarassingly simple"](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e/)[^deadlink].
 

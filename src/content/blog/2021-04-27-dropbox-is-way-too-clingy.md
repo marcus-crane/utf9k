@@ -13,8 +13,6 @@ tags:
   - "software"
 ---
 
-import { YouTube } from '@astro-community/astro-embed-youtube';
-
 As much as [Dropbox](https://www.dropbox.com) is great on a technical level, the user experience keeps degrading all the time.
 
 Installing it is a complete nightmare of clicking through super slow window transitions and banners begging you to upgrade your account.
@@ -107,7 +105,7 @@ Why would anyone do this sort of thing? It just screams disbelief in your own pr
 
 Anyway, there's only one thing I have to say to Dropbox after all this:
 
-<YouTube id="HhnUK1YmMEU" />
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HhnUK1YmMEU?si=joG9ld7vOXIOpiSO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [^1]: Apparently not as I later found out.
 [^2]: By which I mean, just now.

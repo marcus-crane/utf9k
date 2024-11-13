@@ -10,8 +10,6 @@ tags:
   - "twitter"
 ---
 
-import { Tweet } from "@astro-community/astro-embed-twitter"
-
 For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've fallen into more [technical rabbit holes](/blog/automation-right/) than I care to.
 
 As a Twitter user who is Very Online, I love to theorise about why services go wrong and poke fun at corporations but as an [SRE](https://en.wikipedia.org/wiki/Site_reliability_engineering) myself, I find it very difficult to direct blame at people.
@@ -66,7 +64,7 @@ For a period of about 2 weeks, images with transparency such as macOS screenshot
 
 You'll see it looks like someone took the spray can from MS Paint and went to town on the edges of the image. That is supposed to be a nice crisp drop shadow!
 
-<Tweet id="https://twitter.com/sentreh/status/1436092048914796545" />
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">well now, apparently the logitech client i installed has attempted to communicate with discord <a href="https://t.co/Uq0T1jwMYQ">pic.twitter.com/Uq0T1jwMYQ</a></p>&mdash; Marcus (@sentreh) <a href="https://twitter.com/sentreh/status/1436092048914796545?ref_src=twsrc%5Etfw">September 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 While this appears to have been fixed recently, it was also not acknowledged as far as I can tell. Just kind of weirdly broken in plain sight for days on end.
 
@@ -78,7 +76,7 @@ As I mentioned before, I don't want to point fingers at any people but I will sa
 
 Instead, right in the middle of those two transparency mulched images, what I experienced was [@TwitterEng](https://twitter.com/TwitterEng) was talking about mechanical keyboards.
 
-<Tweet id="https://twitter.com/TwitterEng/status/1437857022444138496" />
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Today, we&#39;re talking about switches... keyboard switches ⌨️<br/><br/>Choose your fighter. When it comes to the best tactile response, which clickety-clack rules them all?<br/><br/>We&#39;re loving TTC Bluish Whites 👀</p>&mdash; Engineering (@XEng) <a href="https://twitter.com/XEng/status/1437857022444138496?ref_src=twsrc%5Etfw">September 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I'm being a bit flippant mind you since it can be true that one team is doing community building while another is working on technical issues of course but at the same time, the optics of it don't look great as someone experiencing this.
 

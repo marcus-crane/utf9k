@@ -12,17 +12,11 @@ tags:
   - "staticsites"
 ---
 
-import { Tweet } from "@astro-community/astro-embed-twitter"
-
-import Notice from "../../components/Notice.astro"
-
-import gags from "../../data/gags.yml";
-
 Recently I discovered that [Hugo](https://gohugo.io) added support for [inline shortcodes](https://gohugo.io/templates/shortcode-templates/) like 30 versions ago.
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:
 
-<Tweet id="https://twitter.com/bepsays/status/1408348824083615745" />
+<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">You didn&#39;t ask ... (we added that to get the <a href="https://twitter.com/getbootstrap?ref_src=twsrc%5Etfw">@getbootstrap</a> site on Hugo, they had lots of inline scripting) ...</p>&mdash; Bjørn Erik Pedersen (@bepsays) <a href="https://twitter.com/bepsays/status/1408348824083615745?ref_src=twsrc%5Etfw">June 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## A shortcode refresher
 
@@ -52,8 +46,9 @@ In saying that, the introduction of inline shortcodes allows us to do some fun t
 
 ```html
 <!-- content/blog/example-post.md -->
-# This is an example post Check out some of these funny gags I wrote: {{
-readfile.inline }}
+# This is an example post
+Check out some of these funny gags I wrote:
+{{ readfile.inline }}
 <ul>
   {{ range $.Site.Data.gags }}
   <li>{{ . }}</li>
@@ -66,22 +61,15 @@ readfile.inline }}
 
 Don't believe me? Here's that same inline shortcode embedded in this very post:
 
-<details>
-  <summary>Check out these fun gag lines I wrote</summary>
-  <ul>
-  {gags.map(g => <li>{g}</li>)}
-  </ul>
-</details>
+> [!note] 🗞️ Don't believe everything you read online!
+>
+> Originally, this part would have the contents of what you see above.
+> 
+> I had moved to Astro and recreated this with MDX but now I'm slowly moving back to Astro so for now, this file is just plain Markdown again.
+>
+> You'll just have to take my word for it that this was a real thing (and will be again shortly)
 
 If any of these look familiar, I just used an inline shortcode to read from the same file that powers the footer.
-
-<Notice emoji="🗞️" title="Don't believe everything you read online!">
-The above shortcode did work (and probably still does) but at the time of writing of update, my site no longer uses Hugo.
-
-I've recreated the behaviour you would see using [MDX](https://mdxjs.com/) but as such, the example above is no longer literally powered by Hugo shortcodes.
-
-That said, Hugo shortcodes are still a cool middleground to have some dynamic content that is pulled in and statically built without going all in on Javascript.
-</Notice>
 
 I haven't used inline shortcodes to their full potential yet but I'd like to use it to add a bit more flavour to posts in future where having a dedicated shortcode would be a bit overkill.
 
