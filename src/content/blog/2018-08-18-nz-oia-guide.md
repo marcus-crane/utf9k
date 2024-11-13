@@ -19,7 +19,7 @@ I'm no expert myself but I can at least show you where to start. I actually have
 
 ## Some caveats
 
-It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
+It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked \#1 in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
 
 It should go without saying that a less transparent, or even citizen-hostile government is going to be an entirely different kettle of fish.
 
