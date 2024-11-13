@@ -3,7 +3,11 @@ category: "blog"
 date: 2018-08-18T00:00:00+13:00
 description: "My extremely brief crash course in the Official Information Act and how it can be used for some interesting civic side projects"
 slug: "nz-oia-guide"
-tags: ["government", "guide", "nz", "oia", 1]
+tags:
+  - "government"
+  - "guide"
+  - "nz"
+  - "oia"
 title: "A brief guide to OIAs in New Zealand"
 ---
 
