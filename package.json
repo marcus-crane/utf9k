@@ -15,16 +15,14 @@
     "sync": "./ci/externalsync.sh"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "4.0.0-beta.2",
-    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/check": "0.9.4",
+    "@astrojs/mdx": "3.1.9",
+    "@astrojs/sitemap": "^3.2.1",
     "@r4ai/remark-callout": "^0.6.2",
-    "astro": "5.0.0-beta.5",
+    "astro": "4.16.11",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@astro-community/astro-embed-twitter": "^0.5.3",
-    "@astro-community/astro-embed-youtube": "^0.5.0",
     "@rollup/plugin-yaml": "^4.1.2",
     "dayjs": "^1.11.10",
     "littlefoot": "^4.0.1",

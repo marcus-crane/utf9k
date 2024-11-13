@@ -11,8 +11,6 @@ tags:
   - "psp"
 ---
 
-import { Tweet } from "@astro-community/astro-embed-twitter"
-
 Sometimes you play a game and it's like the developers passion is just oozing out of the screen. **You can just feel it when you play, that the team loved making the game and put their all into it.** Need I say anymore?
 
 If you mention rhythm games, quite a few people first think of PaRappa the Rapper but I don't think it's generally realised that PaRappa is actually regarded as one of, if not, the first modern rhythm game. It was only in 1996 with well known arcade titles like Beatmania and Dance Dance Revolution following shortly afterward. PaRappa and other titles that followed mainly focused on rhythm but designer Keiichi Yano was intent on making something fresh. **It was his belief that the people recognise songs they enjoy by their melodies and harmonies** rather than by their rhythms. Now, how do you go about incorporating that?
@@ -35,4 +33,4 @@ Released in 2001 (PS2) and 2006 (PSP) \
 Platforms: Playstation 2 and Playstation Portable
 
 
-<Tweet id="https://twitter.com/lennehardt/status/726840026177269760" />
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/sentreh?ref_src=twsrc%5Etfw">@Sentreh</a> Wow, that&#39;s a blast from the past! Thank you!:)</p>&mdash; Lenne Hardt レニー・ハート (@lennehardt) <a href="https://twitter.com/lennehardt/status/726840026177269760?ref_src=twsrc%5Etfw">May 1, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
