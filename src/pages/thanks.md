@@ -1,15 +1,14 @@
 ---
-layout: ../layouts/GenericMarkdown.astro
-title: Thanks
-slug: thanks
 category: thanks
 description: This website was built on the shoulders of giants. This page names a number of them.
-publish: true
+layout: ../layouts/GenericMarkdown.astro
 output: src/pages
+publish: true
+slug: thanks
 tags:
   - meta
+title: Thanks
 ---
-
 There's no requirement on the internet to say thanks but I'd have absolutely no inspiration (or site) without the following.
 
 In no particular order, shout outs to:
