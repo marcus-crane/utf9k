@@ -1,13 +1,13 @@
 ---
-title: "Who is software even for?"
-date: 2021-09-24T21:00:00+13:00
-slug: "who-is-software-even-for"
-description: "Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!"
 category: "blog"
+date: 2021-09-24T21:00:00+13:00
+description: "Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!"
+slug: "who-is-software-even-for"
 tags:
   - "existential"
   - "productivity"
   - "software"
+title: "Who is software even for?"
 ---
 
 This post is very much written spur of the moment, presumably with the idea that it will help contribute to treating my blog as a [zettlekasten](/blog/zettelkasten-blog-a-good-idea/) of ideas to think more about in future.

@@ -1,12 +1,12 @@
 ---
-title: "Claude makes the case against Boeing"
+category: "blog"
 date: 2024-06-26T23:45:00+13:00
 description: "On claude.ai giving the correct answer that the CEO of Boeing should feel bad"
 slug: "pleasant-claude-interaction"
-category: "blog"
 tags:
 - "ai"
 - "ethics"
+title: "Claude makes the case against Boeing"
 ---
 
 It's almost Winter time which means plenty of people are coming down with colds. That gross, groggy feeling makes it hard to concentrate and to some degree, you even hallucinate a little bit[^1]. Getting your wires crossed makes it hard to stay on track so there's lots of idle time where you just kind of gaze out the window.

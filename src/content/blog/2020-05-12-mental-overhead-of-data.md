@@ -1,13 +1,13 @@
 ---
-title: "Data hoarding seems like a large mental overhead"
+category: "blog"
 date: 2020-05-12T00:00:00+13:00
 description: "Looking back on the idea of a quantified self"
 slug: "mental-overhead-of-data"
-category: "blog"
 tags:
   - "data"
   - "overhead"
   - "off-the-cuff"
+title: "Data hoarding seems like a large mental overhead"
 ---
 
 This isn't a post that I've outlined before hand, or even really considered in any particular depth. I'm just making up this post, and it's structure as I type.

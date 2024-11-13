@@ -1,13 +1,13 @@
 ---
-title: "Writing for your worst self"
+category: "blog"
 date: 2024-01-21T14:53:00+13:00
 description: "If time is a flat circle, you're going to end up in the hole again sooner or later"
 slug: "writing-for-your-worst-self"
-category: "blog"
 tags:
 - "selfcare"
 - "writing"
 - "meta"
+title: "Writing for your worst self"
 ---
 
 The other day, I came across [Adam Mastroianni](https://www.adammastroianni.com/)'s great post [So you wanna de-bog yourself](https://www.experimental-history.com/p/so-you-wanna-de-bog-yourself) where he outlines all the various stories that he tells himself when he's stuck.

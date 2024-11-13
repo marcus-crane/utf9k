@@ -1,13 +1,13 @@
 ---
-title: "Portable gaming with the Retroid Pocket 4 Pro"
+category: "blog"
 date: 2024-10-02T10:40:00+13:00
 description: "I finally found a handheld that I really enjoy"
 slug: "retroid-pocket-4-pro"
-category: "blog"
 tags:
 - "emulation"
 - "gaming"
 - "syncthing"
+title: "Portable gaming with the Retroid Pocket 4 Pro"
 ---
 
 So far, my favourite purchase of the year has to be the [Retroid Pocket 4 Pro](https://www.goretroid.com/products/retroid-pocket-4-handheld).

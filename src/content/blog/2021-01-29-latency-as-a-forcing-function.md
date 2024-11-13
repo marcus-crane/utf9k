@@ -1,14 +1,14 @@
 ---
-title: "Latency as a forcing function"
+category: "blog"
 date: 2021-01-29T14:53:00+13:00
 description: "Sometimes latency is good?"
 slug: "latency-as-a-forcing-function"
-category: "blog"
 tags:
   - "bugs"
   - "latency"
   - "patience"
   - "people"
+title: "Latency as a forcing function"
 ---
 
 I'm probably not alone in admitting that sometimes _not_ checking work apps can be pretty hard.

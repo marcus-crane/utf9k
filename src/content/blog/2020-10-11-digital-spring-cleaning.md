@@ -1,13 +1,13 @@
 ---
-title: "Digital Spring Cleaning"
+category: "blog"
 date: 2020-10-11T00:00:00+13:00
 description: "As I work through deleting a bunch of accounts, I note down the various issues that make it harder than it should be"
 slug: "digital-spring-cleaning"
-category: "blog"
 tags:
   - "internet"
   - "cleaning"
   - "data"
+title: "Digital Spring Cleaning"
 ---
 
 It's spring here in New Zealand, and unfortunately I think I've spent more time decluttering digital items instead of physical, but I've still had an interesting time as a result

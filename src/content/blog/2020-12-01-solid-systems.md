@@ -1,12 +1,12 @@
 ---
-title: "Will we ever get solid systems?"
+category: "blog"
 date: 2020-12-01T00:00:00+13:00
 description: "Is software reliable? Probably not"
 slug: "solid-systems"
-category: "blog"
 tags:
   - "shopping"
   - "reliability"
+title: "Will we ever get solid systems?"
 ---
 
 If I had a crystal ball in front of me, one of the things I would like to ask is "Will we, the human race, ever get solid systems?".

@@ -1,13 +1,13 @@
 ---
-title: "Fruit Plate"
+category: "blog"
 date: 2020-11-02T00:00:00+13:00
 description: "A minor tangent about... I don't remember, GTD and fruit?"
 slug: "fruit-plate"
-category: "blog"
 tags:
   - "work"
   - "overhead"
   - "productivity"
+title: "Fruit Plate"
 ---
 
 I ordered a fruit plate about 15 minutes ago.

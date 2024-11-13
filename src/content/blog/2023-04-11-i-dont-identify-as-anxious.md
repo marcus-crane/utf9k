@@ -1,13 +1,13 @@
 ---
-title: "I don't identify as anxious"
+category: "blog"
 date: 2023-04-11T19:00:00+13:00
 description: "Here are some things that have been bothering me"
 slug: "i-dont-identify-as-anxious"
-category: "blog"
 tags:
   - "health"
   - "longterm"
   - "selfcare"
+title: "I don't identify as anxious"
 ---
 
 This is my [epic treatise](https://apenwarr.ca/log/20171213) on the things that have been troubling me for some time now.

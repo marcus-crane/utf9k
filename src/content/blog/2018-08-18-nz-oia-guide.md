@@ -1,14 +1,14 @@
 ---
-title: "A brief guide to OIAs in New Zealand"
+category: "blog"
 date: 2018-08-18T00:00:00+13:00
 description: "My extremely brief crash course in the Official Information Act and how it can be used for some interesting civic side projects"
 slug: "nz-oia-guide"
-category: "blog"
 tags:
   - "government"
   - "guide"
   - "nz"
   - "oia"
+title: "A brief guide to OIAs in New Zealand"
 ---
 
 I was browsing [Hacker News](https://news.ycombinator.com) earlier this week and came across an interesting post called [Using FOIA Data and Unix to halve major source of parking tickets](http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html). As you can imagine, the post is [exactly what it says on the tin](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin) and got me inspired to do some own data wrangling of my own.
@@ -19,7 +19,7 @@ I'm no expert myself but I can at least show you where to start. I actually have
 
 ## Some caveats
 
-It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked #1 in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
+It's worth noting that while this guide is specifically aimed at New Zealanders, some of the tips can possibly apply to your own country. I should note that New Zealand is ranked \#1 in [Transparency International's Corruption Perception Index](https://www.transparency.org/country/NZL) so as you can imagine, there's generally no hassle with requesting information from our government.
 
 It should go without saying that a less transparent, or even citizen-hostile government is going to be an entirely different kettle of fish.
 

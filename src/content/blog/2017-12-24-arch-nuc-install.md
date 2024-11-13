@@ -1,13 +1,13 @@
 ---
-title: "Installing Arch Linux on my Intel NUC"
-date: 2017-12-24T00:00:00+13:00
-slug: "arch-nuc-install"
 category: "blog"
+date: 2017-12-24T00:00:00+13:00
 description: "My self help guide to installing Arch"
+slug: "arch-nuc-install"
 tags:
   - "arch"
   - "guide"
   - "linux"
+title: "Installing Arch Linux on my Intel NUC"
 ---
 
 > [!info] ⚰️ Is this up to date?

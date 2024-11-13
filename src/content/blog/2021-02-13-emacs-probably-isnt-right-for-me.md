@@ -1,13 +1,13 @@
 ---
-title: "Emacs probably isn't right for me"
+category: "blog"
 date: 2021-02-13T17:41:00+13:00
 description: "My confessions as a tooling alcoholic"
 slug: "emacs-probably-isnt-right-for-me"
-category: "blog"
 tags:
   - "emacs"
   - "productivity"
   - "workflow"
+title: "Emacs probably isn't right for me"
 ---
 
 I'm not someone who tends to wear my text editor on my sleeve, probably because I don't stick to just one anyway, but I've probably mentioned Emacs more than most in the last year or two.

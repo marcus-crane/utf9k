@@ -1,13 +1,13 @@
 ---
-title: "Deepfakes"
-date: 2017-02-05T00:00:00+13:00
-slug: "deepfakes"
 category: "blog"
+date: 2017-02-05T00:00:00+13:00
 description: "An exploration of Deepfakes written up when the original subreddit (and creator) was still online"
+slug: "deepfakes"
 tags:
   - "deepfakes"
   - "future"
   - "technology"
+title: "Deepfakes"
 ---
 
 > [!note] 💿 This post has been remastered slightly due to its age.
@@ -71,7 +71,7 @@ Without much in the way of deeply detailed explanations to go on, this is my bes
 > It used to reside at [https://www.pornhub.com/embed/ph5a27755783e28](https://www.pornhub.com/embed/ph5a27755783e28)[^deadlink] but has long since been removed.
 >
 > The original caption I provided read as follows:
-> 
+>
 > > "The video was a pornstar with Gal Gadot's face. Not really her face but overlaid on the body of someone else. The scary thing is you couldn't easily distinguish that it wasn't fake!"
 
 I chose the clip above because it provides a good indication of what works but also what can go wrong. There's a number of instances where the result is miserable, such as 1:09 where multiple facial expressions flash one after the other. Often times, the edges of the overlaid face can clearly be seen, giving an idea of which elements have been replaced. All in all though, the result can be frighteningly accurate, just with the small amount of code that the creator referred to as ["embarassingly simple"](https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e/)[^deadlink].

@@ -1,13 +1,13 @@
 ---
-title: "Beeminder is neat"
+category: "blog"
 date: 2024-03-20T22:10:00+13:00
 description: "Present me thinks it's neat. Past me had to actually do the work so it sucks to be them."
 slug: "beeminder-is-neat"
-category: "blog"
 tags:
 - "productivity"
 - "motivation"
 - "incentive"
+title: "Beeminder is neat"
 ---
 
 Since around October last year, I started trying out [Beeminder](https://beeminder.com) and now, months later, I'm effectively a convert.

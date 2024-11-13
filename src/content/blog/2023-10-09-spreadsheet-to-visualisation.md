@@ -1,13 +1,13 @@
 ---
-title: "Spreadsheet to visualisation: How I created towing.utf9k.net"
+category: "blog"
 date: 2023-10-09T15:00:00+13:00
 description: "How I finished a project that was sitting on the backburner for years"
 slug: "spreadsheet-to-visualisation"
-category: "blog"
 tags:
   - "software"
   - "tutorial"
   - "visualisation"
+title: "Spreadsheet to visualisation: How I created towing.utf9k.net"
 ---
 
 From time to time, I like to [submit requests under the Official Information Act](https://utf9k.net/blog/nz-oia-guide/) and see what fun datasets I can get my hands on.

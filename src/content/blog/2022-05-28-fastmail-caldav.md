@@ -1,13 +1,13 @@
 ---
-title: "Using Fastmail with CalDAV libraries"
+category: "blog"
 date: 2022-05-28T20:20:00+13:00
 description: "A guide to using Fastmail with CalDAV libraries which are often fiddly and struggle to find your calendars"
 slug: "fastmail-caldav"
-category: "blog"
 tags:
   - "caldav"
   - "calendar"
   - "fastmail"
+title: "Using Fastmail with CalDAV libraries"
 ---
 
 I've been a subscriber to [Fastmail](https://fastmail.com) now for probably a good five years at least, if not more at this point.

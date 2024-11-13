@@ -1,14 +1,14 @@
 ---
-title: "I didn't want to be an astronaut as a kid"
-date: 2022-01-22T16:40:00+13:00
-slug: "not-being-an-astronaut"
-description: "Some thoughts on what career I thought I might like as a kid"
 category: "blog"
+date: 2022-01-22T16:40:00+13:00
+description: "Some thoughts on what career I thought I might like as a kid"
+slug: "not-being-an-astronaut"
 tags:
   - "career"
   - "childhood"
   - "dreams"
   - "work"
+title: "I didn't want to be an astronaut as a kid"
 ---
 
 For those who read my blog, you'll know that one of the long running arcs is documenting my thoughts as I enter each new job.

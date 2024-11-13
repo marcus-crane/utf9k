@@ -1,13 +1,13 @@
 ---
-title: "Twitter, could you please fix your image servers?"
-date: 2021-10-01T12:18:00+13:00
-slug: "twitter-image-servers-2021"
-description: "Throughout the year of 2021, I have run into a number of issues with Twitter's image servers"
 category: "blog"
+date: 2021-10-01T12:18:00+13:00
+description: "Throughout the year of 2021, I have run into a number of issues with Twitter's image servers"
+slug: "twitter-image-servers-2021"
 tags:
   - "reliability"
   - "sre"
   - "twitter"
+title: "Twitter, could you please fix your image servers?"
 ---
 
 For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've fallen into more [technical rabbit holes](/blog/automation-right/) than I care to.
