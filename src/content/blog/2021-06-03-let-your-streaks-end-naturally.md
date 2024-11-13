@@ -1,14 +1,14 @@
 ---
-title: "Let your streaks end naturally"
+category: "blog"
 date: 2021-06-03T12:50:00+13:00
 description: "As it says on the tin, all good things must come to an end"
 slug: "let-your-streaks-end-naturally"
-category: "blog"
 tags:
   - "health"
   - "longterm"
   - "productivity"
   - "selfcare"
+title: "Let your streaks end naturally"
 ---
 
 Generally speaking, it's always a good idea to let your streaks end when the time is right.

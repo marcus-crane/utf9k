@@ -1,13 +1,13 @@
 ---
-title: "A fascinating attempt at Steam phishing"
+category: "blog"
 date: 2024-11-02T17:00:00+13:00
 description: "I enjoyed almost being tricked but really shouldn't"
 slug: "fascinating-steam-scam"
-category: "blog"
 tags:
 - "phishing"
 - "scam"
 - "steam"
+title: "A fascinating attempt at Steam phishing"
 ---
 
 > [!caution] Beware what you click on!

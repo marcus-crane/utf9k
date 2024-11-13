@@ -1,12 +1,12 @@
 ---
-title: "Recovering lost Python results in the REPL"
+category: "blog"
 date: 2018-12-12T00:00:00+13:00
 description: "Did you know that Python stores the previous output as a hidden variable?"
 slug: "lost-python-results"
-category: "blog"
 tags:
   - "python"
   - "snippet"
+title: "Recovering lost Python results in the REPL"
 ---
 
 I was messing around with some queuing earlier today in order to try out the [Kombu](https://github.com/celery/kombu) library. It works pretty nicely but I goofed up while playing with it.

@@ -1,13 +1,13 @@
 ---
-title: "Sampling all the way down"
+category: "blog"
 date: 2022-08-08T19:00:00+13:00
 description: "In which we take a brief tour in all the ways that metrics may not accurately capture reality"
 slug: "sampling-all-the-way-down"
-category: "blog"
 tags:
   - "datadog"
   - "sampling"
   - "tracing"
+title: "Sampling all the way down"
 ---
 
 Recently, I was chatting with a coworker about the accuracy of tracing. In particular, we were discussing [Datadog APM](https://docs.datadoghq.com/tracing/) but the same discussion probably applies equally to [OpenTelemetry](https://opentelemetry.io/) as well as other SaaS provider implementations.

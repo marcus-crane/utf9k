@@ -1,9 +1,8 @@
 ---
-title: "Dropbox is way too clingy"
-date: 2021-04-27T18:50:00+13:00
-slug: "dropbox-is-way-too-clingy"
-description: "A post in which I post about how involved the Dropbox cancellation process is."
 category: "blog"
+date: 2021-04-27T18:50:00+13:00
+description: "A post in which I post about how involved the Dropbox cancellation process is."
+slug: "dropbox-is-way-too-clingy"
 tags:
   - "apps"
   - "cancellation"
@@ -11,6 +10,7 @@ tags:
   - "dropbox"
   - "hell"
   - "software"
+title: "Dropbox is way too clingy"
 ---
 
 As much as [Dropbox](https://www.dropbox.com) is great on a technical level, the user experience keeps degrading all the time.

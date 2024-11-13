@@ -1,16 +1,10 @@
 ---
-title: "Plex + Tidal = A Nice Match"
+category: "blog"
 date: 2022-02-12T13:20:00+13:00
 description: "A lengthy post in which I gush about how I like Plexamp a lot due to how it integrates nicely with Tidal"
 slug: "plex-tidal-together"
-category: "blog"
-tags:
-  - "audio"
-  - "music"
-  - "plex"
-  - "spotify"
-  - "streaming"
-  - "tidal"
+tags: ["audio", "music", "plex", "spotify", "streaming", "tidal", 1]
+title: "Plex + Tidal = A Nice Match"
 ---
 
 > [!info] 🖼 Look at this photograph
@@ -111,7 +105,7 @@ While looking into whether I could pull session information out of Tidal, I real
 
 ### Artists I like
 
-This basically boils down to Failure who I previously mentioned and [Ed Harrison](https://edharrison.bandcamp.com/) given I listen to the Neotokyo OST a lot. Apparently Ed was my #1 artist in 2020 (according to Spotify Wrapped) with just over 2000 minutes (33.3 hours) which is... pretty bad.
+This basically boils down to Failure who I previously mentioned and [Ed Harrison](https://edharrison.bandcamp.com/) given I listen to the Neotokyo OST a lot. Apparently Ed was my artist in 2020 (according to Spotify Wrapped) with just over 2000 minutes (33.3 hours) which is... pretty bad.
 
 ### Apple Music
 

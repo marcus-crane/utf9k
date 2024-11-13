@@ -1,15 +1,15 @@
 ---
-title: "Using a blog like a zettelkasten seems like a good idea"
+aliases:
+  - "/blog/zettlekasten-blog-a-good-idea/"
+category: "blog"
 date: 2021-02-11T17:00:00+13:00
 description: "I mean, it's what it says on the tin!"
 slug: "zettelkasten-blog-a-good-idea"
-category: "blog"
 tags:
   - "zettelkasten"
   - "blogging"
   - "meta"
-aliases:
-  - "/blog/zettlekasten-blog-a-good-idea/"
+title: "Using a blog like a zettelkasten seems like a good idea"
 ---
 
 Having recently gotten back into the swing of reading via [RSS](https://en.wikipedia.org/wiki/RSS), I spotted a post from [Mike Crittenden](https://critter.blog) called [Blogging as a Zettelkasten](https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/).

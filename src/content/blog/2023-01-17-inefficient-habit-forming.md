@@ -1,12 +1,12 @@
 ---
-title: "Habit forming in the least efficient way possible"
+category: "blog"
 date: 2023-01-17T18:30:00+13:00
 description: "Instead of committing to a habit, why not torture yourself over long spans of time?"
 slug: "inefficient-habit-forming"
-category: "blog"
 tags:
   - "habits"
   - "routines"
+title: "Habit forming in the least efficient way possible"
 ---
 
 If you were to ask me how good I am at habit forming, I would say "Not very".

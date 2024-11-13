@@ -1,13 +1,13 @@
 ---
-title: "Has Bootstrap eaten the world yet?"
+category: "blog"
 date: 2021-05-14T20:48:00+13:00
 description: "The CSS framework that could"
 slug: "has-bootstrap-eaten-the-world-yet"
-category: "blog"
 tags:
   - "css"
   - "design"
   - "software"
+title: "Has Bootstrap eaten the world yet?"
 ---
 
 To quote everyone's favourite [rap enthusiast](https://www.forbes.com/sites/zackomalleygreenburg/2012/10/03/inside-andreessen-horowitz-15-million-investment-in-rap-genius/?sh=7c7d895f4da2) [Marc Andreessen](https://a16z.com/author/marc-andreessen/), "Software is eating the world" but I'd like to coin my own term in that vein: "Bootstrap is eating the world".

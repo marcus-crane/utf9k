@@ -1,13 +1,13 @@
 ---
-title: "We are all that person who reads a book while walking"
+category: "blog"
 date: 2021-03-03T13:02:46+13:00
 description: "Honestly, this post is weird and dumb. I wouldn't recommend it."
 slug: "walking-while-reading"
-category: "blog"
 tags:
   - "people"
   - "phones"
   - "internet"
+title: "We are all that person who reads a book while walking"
 ---
 
 There is a person who lives in my general area that I've spotted two or three times in the almost three years that I have lived at my flat.

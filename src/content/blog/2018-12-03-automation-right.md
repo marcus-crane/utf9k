@@ -1,15 +1,15 @@
 ---
-title: "When automation goes horribly right"
+aliases:
+  - "/blog/when-automation-goes-horribly-right"
+category: "blog"
 date: 2018-12-03T00:00:00+13:00
 description: "What do you do when a UI element disappears but the service powering it still persists?"
 slug: "automation-right"
-category: "blog"
 tags:
   - "automation"
   - "microservices"
   - "twitter"
-aliases:
-  - "/blog/when-automation-goes-horribly-right"
+title: "When automation goes horribly right"
 ---
 
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation

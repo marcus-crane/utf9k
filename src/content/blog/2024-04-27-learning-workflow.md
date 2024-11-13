@@ -1,13 +1,13 @@
 ---
-title: "How my learning workflow looks as of 2024"
+category: "blog"
 date: 2024-04-27T11:58:00+13:00
 description: "Well, on my best days. I have plenty of days whehttps://en.wikipedia.org/wiki/Zettelkastenre I doomscroll too."
 slug: "learning-workflow-2024"
-category: "blog"
 tags:
 - "productivity"
 - "reading"
 - "workflows"
+title: "How my learning workflow looks as of 2024"
 ---
 
 This post is going to be a brief rundown of how I generally go about capturing and processing interesting stuff, whether it's articles, books, videos or whatever else.

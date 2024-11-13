@@ -1,14 +1,10 @@
 ---
-title: "One possible death for Discord"
-date: 2023-12-17T14:14:00+13:00
-slug: "one-possible-death-for-discord"
 category: "blog"
+date: 2023-12-17T14:14:00+13:00
 description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"
-tags:
-  - "business"
-  - "discord"
-  - "microsoft"
-  - "acquisition"
+slug: "one-possible-death-for-discord"
+tags: ["business", "discord", "microsoft", "acquisition", pallet-town]
+title: "One possible death for Discord"
 ---
 
 > [!note] 💻 This post was an unpublished draft that accidentally got published.
@@ -20,7 +16,6 @@ tags:
 > While doing some work on my site, the post was accidentally published so I figure I might as well just push it out into the world.
 > 
 > From what I remember, the post didn't really have any clear direction so I was going to split it up into smaller chunks, but the window it was relevant in has long passed and I don't have any real reason to ever get back to it.> 
-
 
 In this post, I'm going to be considering a "What if" scenario for fun regarding the idea of Microsoft buying Discord. For those unaware, [Microsoft is apparently talking with Discord about possibly buying them up](https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164) for at least $10 billion. As I'm writing this, it hasn't happened yet which is always the most fun time to speculate.
 
@@ -60,7 +55,7 @@ Take all this with a grain of salt mind you since a comparison to Slack would be
 
 To some extent, Discord can be [thought of as a meta-layer](https://kwokchain.com/2019/08/16/the-arc-of-collaboration/). That's just a fancy way of saying that when you're in a game, you don't necessarily "leave" Discord because there is an overlay that appears within the game.
 
-![A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called #pallet-town.](https://cdn.utf9k.net/blog/one-possible-death-for-discord/discord-overlay.jpg)
+![A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called.](https://cdn.utf9k.net/blog/one-possible-death-for-discord/discord-overlay.jpg)
 
 If you hit whatever the key combination is, the game UI dims as a Discord window pops up and you can chat with your friends. Whether it's text or voice chat, you don't have to leave the game to interact with Discord as a whole.
 

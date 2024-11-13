@@ -1,13 +1,13 @@
 ---
-title: "Is anything happening behind the curtain?"
+category: "blog"
 date: 2021-01-31T15:41:00+13:00
 description: "The difference between nothing and something depends on whether the curtain has been raised yet"
 slug: "is-anything-happening-behind-the-curtain"
-category: "blog"
 tags:
   - "doubts"
   - "finance"
   - "worldview"
+title: "Is anything happening behind the curtain?"
 ---
 
 This week has definitely been one of the more interesting ones I can remember.

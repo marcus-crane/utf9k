@@ -1,12 +1,12 @@
 ---
-title: "Miserable presentation tips"
+category: "blog"
 date: 2023-01-29T15:24:00+13:00
 description: "It works well for me but I don't recommend it!"
 slug: "miserable-presentation-tips"
-category: "blog"
 tags:
   - "presenting"
   - "tips"
+title: "Miserable presentation tips"
 ---
 
 When the thought of having to give a presentation comes up, my usual reaction is that it might be fun.

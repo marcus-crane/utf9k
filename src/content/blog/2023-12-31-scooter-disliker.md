@@ -1,14 +1,14 @@
 ---
-title: "A small reprieve from poorly executed ideas"
+category: "blog"
 date: 2023-12-31T15:20:00+13:00
 description: "Maybe one sector's recession is another person's happy place?"
 slug: "scooter-disliker"
-category: "blog"
 tags:
 - "scooters"
 - "capitalism"
 - "venturecapital"
 - "funding"
+title: "A small reprieve from poorly executed ideas"
 ---
 
 I've spend the latter half of this year trapped in one of [Auckland](https://en.wikipedia.org/wiki/Auckland)'s pleasant ~concrete hellscapes~ suburbs and with that has come one of my new-found hobbies: wandering to the local dairy to pick up a newspaper.

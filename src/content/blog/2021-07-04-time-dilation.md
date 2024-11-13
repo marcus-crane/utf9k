@@ -1,12 +1,12 @@
 ---
-title: "Time Dilation"
-date: 2021-07-04T22:53:00+13:00
-slug: "time-dilation"
-description: "Historically, I am often late to a bunch of things even though I plan ahead some of the time"
 category: "blog"
+date: 2021-07-04T22:53:00+13:00
+description: "Historically, I am often late to a bunch of things even though I plan ahead some of the time"
+slug: "time-dilation"
 tags:
   - "productivity"
   - "timemanagement"
+title: "Time Dilation"
 ---
 
 A more accurate title would probably be something like "Time Inflation" but I think "Time Dilation" sounds cooler.

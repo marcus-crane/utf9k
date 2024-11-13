@@ -1,14 +1,14 @@
 ---
-title: "Double checking if an email address exists"
+category: "blog"
 date: 2019-09-26T00:00:00+13:00
 description: "There are some tricks you can use to figure out if an email address is legit"
 slug: "email-lookup"
-category: "blog"
 tags:
   - "email"
   - "nslookup"
   - "telnet"
   - "tip"
+title: "Double checking if an email address exists"
 ---
 
 Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
