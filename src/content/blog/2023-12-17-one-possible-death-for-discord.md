@@ -59,7 +59,7 @@ Take all this with a grain of salt mind you since a comparison to Slack would be
 
 To some extent, Discord can be [thought of as a meta-layer](https://kwokchain.com/2019/08/16/the-arc-of-collaboration/). That's just a fancy way of saying that when you're in a game, you don't necessarily "leave" Discord because there is an overlay that appears within the game.
 
-![A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called.](https://cdn.utf9k.net/blog/one-possible-death-for-discord/discord-overlay.jpg)
+![A mock screenshot from the original Discord support pages. It shows a game, possibly Fortnite, in the background obscured by two large windows. The window on the left shows some channels within a Discord server. The window on the right shows the contents of the selected channel, called \#pallet-town.](https://cdn.utf9k.net/blog/one-possible-death-for-discord/discord-overlay.jpg)
 
 If you hit whatever the key combination is, the game UI dims as a Discord window pops up and you can chat with your friends. Whether it's text or voice chat, you don't have to leave the game to interact with Discord as a whole.
 
