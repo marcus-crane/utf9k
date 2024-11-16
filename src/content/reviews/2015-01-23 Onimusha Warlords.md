@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: onimusha-warlords
 tags:
-  - "2001"
   - pc
   - ps2
   - xbox
