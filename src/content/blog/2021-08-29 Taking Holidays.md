@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-08-29T22:04:00+13:00
-description: "Relaxing some of the time is a good idea. Who would have guessed?"
-slug: "taking-holidays"
+description: Relaxing some of the time is a good idea. Who would have guessed?
+output: src/content/blog
+publish: true
+slug: taking-holidays
 tags:
-  - "books"
-  - "microsoft"
-  - "worklifebalance"
-title: "Taking holidays is important"
+  - books
+  - microsoft
+  - worklifebalance
+title: Taking holidays is important
 ---
-
 I'm definitely not good at practicing this but while reading [Show Stopper!](https://www.amazon.com/Show-Stopper-Breakneck-Generation-Microsoft/dp/0029356717) a few years back, I noted that [Dave Cutler](https://en.wikipedia.org/wiki/Dave_Cutler) was big on always taking holidays on time.
 
 I even tried to email him once to ask why but unfortunately I had no luck.
