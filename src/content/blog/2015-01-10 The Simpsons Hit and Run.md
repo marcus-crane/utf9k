@@ -1,0 +1,41 @@
+---
+category: reviews
+date: 2015-01-10T17:58:26+13:00
+description: "Robot wasps? Strange black vans? New Buzz Cola? Something fishy is happening in Springfield. Find out in The Simpsons: Hit & Run."
+output: src/content/blog
+publish: true
+slug: the-simpsons-hit-and-run
+tags:
+  - "2003"
+  - gamecube
+  - pc
+  - ps2
+  - xbox
+title: "The Simpsons: Hit & Run"
+---
+The Adventures of Rocky and Bullwinkle and Friends. The Terminator. Wayne's World. Beavis and Butt-head, The Incredible Hulk. Even Scarface! What do they have in common? They were all popular franchises that received game adaptions from Radical Entertainment, founded in 1992. Most people would be more familiar with their latest work, Prototype.
+
+The sequel, Prototype 2? Not so much. It failed to attract much of an audience prompting Activision to lay off the majority of their staff. Some were moved on to other projects but it was really just a way to increase numbers on other projects while still keeping old staff around as a “support team” for Radical's titles. What are they up to now? After the layoffs, any and all development by the studio was officially ceased.
+
+Despite their long history, one notable franchise is missing from my earlier list. The Simpsons. After showing a proof of concept to Fox, they were granted the rights to the franchise and promptly got to work on The Simpsons: Road Rage. Saying that it was a ‘tribute' to SEGA's Crazy Taxi is putting it in the nicest terms I can. The game sold alright and received average to mildly positive reviews so they got to keep the rights for another game.
+
+Road Rage 2 would have been the easiest path to take but Radical wanted to switch things up. They stripped Road Rage of everything except the driving mechanics, overhauled the entire engine and allowed the player explore on foot. Now you might be thinking, “A game where you can run around and drive cars? Hmm, this sounds familiar” and you'd be absolutely correct. Grand Theft Auto III had released only six months after Road Rage so it was still fairly fresh in most gamer's minds. **Yes, The Simpsons: Hit & Run is a tribute to Grand Theft Auto III**.
+
+As easily as you might jump to conclusions, **it wasn't just a simple clone**. What Radical Entertainment released is not just considered to be the best Simpsons game. To this day, it is still one of the few times that a franchise has crossed over into the realm of videogames and come back with a product that properly recreates the look and feel of a franchise. The sales easily reflect that too. **[7.05 million](https://www.vgchartz.com/gamedb/?name=the+simpsons%3A+hit&publisher=&platform=&genre=&minSales=0&results=200) units sold globally across three platforms**. That's before PC sales which figures are not available for. To put that into perspective, Super Smash Bros. Melee sold [7.07 million](https://www.vgchartz.com/game/2291/super-smash-bros-melee/) copies and Uncharted 2 sold [6.56 million](https://www.vgchartz.com/game/28733/uncharted-2-among-thieves/) copies. It was a pretty big deal for the time and the reviews that it received reflected just how much of an accomplish the title was given the task at hand.
+
+So, enough with the history lesson, why was it such a success? **Put simply, the development team made the world as genuine as possible**. Matt Groening and the show's writers not only wrote the entire story for the game but all of the dialogue snippets too. They didn't just hire good voice actors, the cast of the show reprised their roles. I'm talking main characters all the way down to minor characters like Ol' Gill, Professor Frink, Cletus, Comic Book Guy and so on. As you drive around the Springfield or run around on foot, you'll bump into many of the characters you've come to know and love. Some of them may play a part in a mission, others might just be walking around minding their own business. Springfield is nothing without its citizens and almost all of them can be found in some form or another.
+
+The game, much like its inspiration, tells its story through character missions. You get a cutscene, go plow into some other cars, compete in a race or collect items and then come back to progress the story. The races can be a bit tedious but destroying competition never wears thin. The basic premise of the story follows a number of strange occurrences in Springfield starting with a horde of robotic wasps appearing around the town. Shortly afterwards, Bart is mysteriously abducted by a tractor beam outside the Springfield stadium and soon, strange black vans start driving around Springfield. It seems that all of these events are connected and have something to do with the “new and improved” Buzz Cola that Krusty the Clown has just recently released. As you progress through the game, **you'll get to play as Homer, Bart, Lisa, Marge and even Apu** as you try to figure out just what is going on.
+
+Springfield isn't fully open world like you might be expecting. The town is split into three main levels, each containing different landmarks that you can visit. Level 1 is home to the Nuclear Power Plant, Burns Manor, the Kwik-E-Mart, Springfield Elementary School and of course, the home of The Simpsons family. Level 2 contains Moe's Bar, the DMV and so on. You'll end up exploring each level at least twice as a different character for a total of 7 levels. A major point of the show is that it would jump between locations while purposely never mapping out how they are all connected. Given that hurdle, the developers and writers did a spectacular job constructing the levels in a way that feels authentic.
+
+Despite all of my praise for the the game, it isn't without its downfalls. **The game is still notorious for having a few insanely difficult missions** towards the end of the game. Most are due to having to drive to an objective while a timer ticks away. It's a huge struggle to arrive in time, given nothing short of a miracle. My other minor gripe is with the sometimes wonky camera system. If you are reversing, the camera will face you but as you accelerate forward, it can take a few seconds to snap behind you again leaving you blind to oncoming traffic. Oh and did I mention that some of the race AI manages to accelerate at the speed of light? Yeah, **that's the sort of stuff that'll make you want to tear your hair out**.
+
+The game has the usual frustrating obstacles of pedestrians, objects and cars but it also has a Hit & Run meter. If you have too many collisions, the police will start pursuing and they are probably some of the most relentless AI in the game. Once they start coming after you, you may as well just restart because they will stop you no matter what, wasting precious seconds. **None of these issues are a huge worry** though as thankfully, if you fail too many times, you are given the option to just skip the mission you are stuck on.
+
+I really have no idea what happened with this game. By some stroke of luck, Radical managed to avoid all of the pitfalls that most modern adaptations face. It would be way too easy today for a game to be sliced up due to publisher pressure or to be falsely represented to consumers. That is what I just can't get over. Against all the odds, they promised a game where you get to explore the world of Springfield, meet all of your favourite characters, laugh along with jokes written specifically for the game and somehow, they actually delivered on it. **They were able to ship what is essentially just a natural extension of the Simpsons universe**.
+
+Developer: Radical Entertainment \
+Publisher: Vivendi Universal Games / Sierra Entertainment (EU) \
+Released in 2003 \
+Platforms: Gamecube, PC, Playstation 2 and Xbox
