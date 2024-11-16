@@ -11,7 +11,6 @@ tags:
   - linux
 title: Installing Arch Linux on my Intel NUC
 ---
-
 > [!info] ⚰️ Is this up to date?
 >
 > While I used to fiddle with Arch, and other Linux distros when I was younger, I don't run it as my daily driver nowadays.
