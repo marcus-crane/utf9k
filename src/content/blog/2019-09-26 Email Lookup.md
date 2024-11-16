@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2019-09-26T00:00:00+13:00
-description: "There are some tricks you can use to figure out if an email address is legit"
-slug: "email-lookup"
+description: There are some tricks you can use to figure out if an email address is legit
+output: src/content/blog
+publish: true
+slug: email-lookup
 tags:
-  - "email"
-  - "nslookup"
-  - "telnet"
-  - "tip"
-title: "Double checking if an email address exists"
+  - email
+  - nslookup
+  - telnet
+  - tip
+title: Double checking if an email address exists
 ---
-
 Sometimes I'll want to email someone but I don't know if their email address is valid. Likewise, they might have verbally told it to you, but you can't remember if it has a dot or a dash! Luckily, there's a handy way to find out using a mix of nslookup and telnet.
 
 I'll take you through a recent example where I wanted to email Ian Small, the CEO of Evernote, to thank him and the Evernote team for their wonderful Behind the Scenes videos. You can see them [here](https://www.youtube.com/watch?v=5rNUpXYCcrA) and I think they're worth a peek.
