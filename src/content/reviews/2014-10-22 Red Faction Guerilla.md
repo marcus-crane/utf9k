@@ -1,16 +1,17 @@
 ---
-title: "Red Faction: Guerilla"
+category: reviews
 date: 2014-10-22T05:46:53+13:00
-slug: "red-faction-guerilla"
-category: "reviews"
 description: "Oh geez, I'm super biased towards Red Faction: Guerilla! It's one of my favourite games and I think you should check it out!"
+output: src/content/reviews
+publish: true
+slug: red-faction-guerilla
 tags:
   - "2009"
-  - "pc"
-  - "ps3"
-  - "xbox-360"
+  - pc
+  - ps3
+  - xbox-360
+title: "Red Faction: Guerilla"
 ---
-
 Oh geez, I'm **super biased** towards Red Faction: Guerilla! **It's one of my favourite games** and I think you should check it out toooooo!
 
 So, **the main appeal of Red Faction: Guerilla is the Geomod engine**. Buildings and other structures are assigned actual weight in the game so if you knock out just the right portion of a building, the whole thing will collapse in on itself. It **can lead to some “big destruction” such as bringing down an entire bridge**,ranging down to being able to just drive through enemy buildings or even just sign posts and have them come crumbling down.
