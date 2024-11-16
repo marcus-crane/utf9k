@@ -11,7 +11,6 @@ tags:
   - software
 title: Managing private Go repos with Renovate
 ---
-
 > [!warning] 🤔 I would probably change my mind if I started from scratch
 >
 > As mentioned at the end of this post, most of this setup is a bit convoluted when compared to Renovate CE.
