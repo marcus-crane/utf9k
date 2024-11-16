@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2020-10-06T00:00:00+13:00
-description: "It's wild that you can couple a physical business to digital technology to the extent that one can't operate without the other"
-slug: "internet-reliance"
+description: It's wild that you can couple a physical business to digital technology to the extent that one can't operate without the other
+output: src/content/blog
+publish: true
+slug: internet-reliance
 tags:
-  - "internet"
-  - "business"
-title: "Relying on the internet as a business"
+  - internet
+  - business
+title: Relying on the internet as a business
 ---
-
 I went to get a haircut about 45 minutes before writing this post, and the internet went out briefly. I overheard one of the hair stylists say
 
 > It's weird to think how much we rely on the internet, huh?
