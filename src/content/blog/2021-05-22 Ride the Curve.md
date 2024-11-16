@@ -12,7 +12,6 @@ tags:
   - selfcare
 title: Ride the curve
 ---
-
 > [!info] 🚣‍♀️ It's rough seas out there!
 >
 > Not so long ago, I was struggling with instances of <a href="https://en.wikipedia.org/wiki/Depersonalization">something very unfamiliar</a> , which scared the shit out of me.
