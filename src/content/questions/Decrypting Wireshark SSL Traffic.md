@@ -1,14 +1,15 @@
 ---
-title: "How can I decrypt SSL traffic with Wireshark?"
-slug: "decrypting-wireshark-ssl-traffic"
-description: "In which I sniff my own packets"
-category: "questions"
+category: questions
+description: In which I sniff my own packets
+output: src/content/questions
+publish: true
+slug: decrypting-wireshark-ssl-traffic
 tags:
-  - "wireshark"
-  - "networking"
-  - "reverseengineering"
+  - wireshark
+  - networking
+  - reverseengineering
+title: How can I decrypt SSL traffic with Wireshark?
 ---
-
 **Source**: https://everything.curl.dev/usingcurl/tls/sslkeylogfile
 
 `curl` supports an environment variable called `SSLKEYLOGFILE` out of the box.
