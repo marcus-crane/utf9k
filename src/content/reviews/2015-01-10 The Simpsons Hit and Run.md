@@ -1,17 +1,18 @@
 ---
-title: "The Simpsons: Hit & Run"
+category: reviews
 date: 2015-01-10T17:58:26+13:00
-slug: "the-simpsons-hit-and-run"
-category: "reviews"
 description: "Robot wasps? Strange black vans? New Buzz Cola? Something fishy is happening in Springfield. Find out in The Simpsons: Hit & Run."
+output: src/content/reviews
+publish: true
+slug: the-simpsons-hit-and-run
 tags:
   - "2003"
-  - "gamecube"
-  - "pc"
-  - "ps2"
-  - "xbox"
+  - gamecube
+  - pc
+  - ps2
+  - xbox
+title: "The Simpsons: Hit & Run"
 ---
-
 The Adventures of Rocky and Bullwinkle and Friends. The Terminator. Wayne's World. Beavis and Butt-head, The Incredible Hulk. Even Scarface! What do they have in common? They were all popular franchises that received game adaptions from Radical Entertainment, founded in 1992. Most people would be more familiar with their latest work, Prototype.
 
 The sequel, Prototype 2? Not so much. It failed to attract much of an audience prompting Activision to lay off the majority of their staff. Some were moved on to other projects but it was really just a way to increase numbers on other projects while still keeping old staff around as a “support team” for Radical's titles. What are they up to now? After the layoffs, any and all development by the studio was officially ceased.
