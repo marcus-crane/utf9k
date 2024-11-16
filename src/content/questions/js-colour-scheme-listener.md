@@ -1,13 +1,14 @@
 ---
-title: "How can I listen for user changes to their colour scheme (ie dark mode)?"
-slug: "js-colour-scheme-listener"
-description: "A small Javascript snippet useful for dynamically changing colour schemes"
-category: "questions"
+category: questions
+description: A small Javascript snippet useful for dynamically changing colour schemes
+output: src/content/questions
+publish: true
+slug: js-colour-scheme-listener
 tags:
-  - "darkmode"
-  - "javascript"
+  - darkmode
+  - javascript
+title: How can I listen for user changes to their colour scheme (ie dark mode)?
 ---
-
 While you could provide a button, some parts of a site can look quite nice if they automatically transition between light and dark mode.
 
 You can listen for these changes like so:
