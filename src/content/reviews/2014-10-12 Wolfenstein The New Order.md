@@ -1,18 +1,19 @@
 ---
-title: "Wolfenstein: The New Order"
+category: reviews
 date: 2014-10-12T15:16:16+13:00
-slug: "wolfenstein-new-order"
-category: "reviews"
-description: "I was expecting a mediocre game but got something much, much better than expected!"
+description: I was expecting a mediocre game but got something much, much better than expected!
+output: src/content/reviews
+publish: true
+slug: wolfenstein-new-order
 tags:
   - "2014"
-  - "pc"
-  - "ps3"
-  - "ps4"
-  - "xbox-360"
-  - "xbox-one"
+  - pc
+  - ps3
+  - ps4
+  - xbox-360
+  - xbox-one
+title: "Wolfenstein: The New Order"
 ---
-
 Oh gosh, I was going into this expecting something just alright but I was quite surprised by this latest entry into the Wolfenstein franchise. The last entry from 2009, just titled Wolfenstein, was pretty forgettable and before that, there had been no entries for 8 years before that so the franchise had, for the most part it seemed, fallen by the wayside.
 
 The main thing that stood out to me when I was playing through Wolfenstein: The New Order was that **the developers really seemed to care about the game that they were making!**
