@@ -1,13 +1,14 @@
 ---
-title: "How can I remotely connect to a Selenium cluster"
-slug: "selenium-remote-connection"
-description: "In which I remind myself how to connect to Selenium using Python"
-category: "questions"
+category: questions
+description: In which I remind myself how to connect to Selenium using Python
+output: src/content/questions
+publish: true
+slug: selenium-remote-connection
 tags:
-  - "python"
-  - "selenium"
+  - python
+  - selenium
+title: How can I remotely connect to a Selenium cluster
 ---
-
 I [recently came across an unsecured Selenium instance](https://twitter.com/sentreh/status/1435772900917735425) but I wanted to confirm my findings by making a basic request.
 
 While I opted to use the [Python bindings](https://pypi.org/project/selenium/) for [Selenium](https://www.selenium.dev/), there wasn't a quick start guide on how to remotely connect to an instance.
