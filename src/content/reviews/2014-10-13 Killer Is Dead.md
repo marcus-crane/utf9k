@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: killer-is-dead
 tags:
-  - "2013"
   - pc
   - ps3
   - xbox-360
