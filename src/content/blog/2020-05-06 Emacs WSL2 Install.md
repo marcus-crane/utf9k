@@ -1,17 +1,18 @@
 ---
-category: "blog"
+category: blog
 date: 2020-05-06T00:00:00+13:00
-description: "As if life wasn't already hard enough, we can add more Windows into the mix"
-slug: "emacs-wsl2-install"
+description: As if life wasn't already hard enough, we can add more Windows into the mix
+output: src/content/blog
+publish: true
+slug: emacs-wsl2-install
 tags:
-  - "emacs"
-  - "linux"
-  - "unix"
-  - "windows"
-  - "wsl"
-title: "Setting up Emacs inside of a WSL2 distribution"
+  - emacs
+  - linux
+  - unix
+  - windows
+  - wsl
+title: Setting up Emacs inside of a WSL2 distribution
 ---
-
 I've never really dedicated myself to Emacs despite being interested in [org mode](https://orgmode.org/) for a little while now.
 
 One barrier to entry is that I had no idea how to install it on my desktop. The more places I have it installed, the quicker I can get comfortable enough to actually use it in my day to day life.
