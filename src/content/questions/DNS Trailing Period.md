@@ -1,14 +1,15 @@
 ---
-title: "What is the period you sometimes see at the end of a domain name?"
-slug: "dns-trailing-period"
-description: "In which I note the existence of a sneaky period"
-category: "questions"
+category: questions
+description: In which I note the existence of a sneaky period
+output: src/content/questions
+publish: true
+slug: dns-trailing-period
 tags:
-  - "dns"
-  - "historical"
-  - "networking"
+  - dns
+  - historical
+  - networking
+title: What is the period you sometimes see at the end of a domain name?
 ---
-
 The root node of DNS has a `null` label
 
 The DNS tree is restricted to 127 levels of depth so you could `only.have.a.domain.name.one.hundred.and.twenty.seven.levels.deep.com`
