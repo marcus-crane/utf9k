@@ -1,16 +1,17 @@
 ---
-title: "How can I see what applications are making my shell commands slow?"
-slug: "macos-see-file-usage"
-description: "In which I remind myself how introspect filesystem usage on macOS"
-category: "questions"
+category: questions
+description: In which I remind myself how introspect filesystem usage on macOS
+output: src/content/questions
+publish: true
+slug: macos-see-file-usage
 tags:
-  - "enterprise"
-  - "jamf"
-  - "macos"
-  - "performance"
-  - "terminal"
+  - enterprise
+  - jamf
+  - macos
+  - performance
+  - terminal
+title: How can I see what applications are making my shell commands slow?
 ---
-
 Recently I had noticed that some shell commands on my laptop were executing surprisingly slow.
 
 Like most things in the tech world, it was due to a piece of [jamf](https://www.jamf.com) software locking up anything that was being read.
