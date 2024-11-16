@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: time-hollow
 tags:
-  - "2008"
   - nds
 title: Time Hollow
 ---
