@@ -1,16 +1,17 @@
 ---
-title: "Why do Playstation 1 discs start at offset 37656?"
-slug: "ps1-disc-offset"
-description: "In which I remind myself how PS1 discs offset their contents"
-category: "questions"
-tags:
-  - "hexedit"
-  - "playstation"
-  - "videogames"
 aliases:
-  - "/notes/ps1-disc-layout/"
+  - /notes/ps1-disc-layout/
+category: questions
+description: In which I remind myself how PS1 discs offset their contents
+output: src/content/questions
+publish: true
+slug: ps1-disc-offset
+tags:
+  - hexedit
+  - playstation
+  - videogames
+title: Why do Playstation 1 discs start at offset 37656?
 ---
-
 The Playstation 1 uses CD-ROMs with the [XA extension](https://en.wikipedia.org/wiki/CD-ROM#CD-ROM_XA_extension).
 
 If you open a PS1 ISO within a hex editor, you'll want to scroll down to `offset 37656`
