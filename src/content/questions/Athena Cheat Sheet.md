@@ -1,6 +1,9 @@
 ---
+aliases:
+  - /questions/athena-queries
+  - /questions/athena
 category: questions
-description: I can never remember how to query for big data
+description: It's like SQL but slightly wonkier
 output: src/content/questions
 publish: true
 slug: athena-cheat-sheet
