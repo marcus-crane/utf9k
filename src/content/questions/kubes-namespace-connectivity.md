@@ -1,15 +1,16 @@
 ---
-title: "How can I test connectivity within my Kube namespace?"
-slug: "kubes-namespace-connectivity"
-description: "In which I remind myself how to quickly test network connectivity within a Kubernetes namespace"
-category: "questions"
+category: questions
+description: In which I remind myself how to quickly test network connectivity within a Kubernetes namespace
+output: src/content/questions
+publish: true
+slug: kubes-namespace-connectivity
 tags:
-  - "curl"
-  - "debugging"
-  - "kubernetes"
-  - "networking"
+  - curl
+  - debugging
+  - kubernetes
+  - networking
+title: How can I test connectivity within my Kube namespace?
 ---
-
 Often times, you might want to test connectivity to a container but without doing so from within the container itself. You could just into a neighbouring pod but it may not have networking tools (ie tools) or even potentially network connectively if there's a [network policy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) in the mix.
 
 A quick way to deploy a curl container has been shared before [in the Kubernetes docs](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/#securing-the-service) and it looks like this:
