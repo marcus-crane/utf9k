@@ -6,8 +6,6 @@ output: src/content/reviews
 publish: true
 slug: gitaroo-man-lives
 tags:
-  - "2001"
-  - "2006"
   - ps2
   - psp
 title: Gitaroo Man Lives!
