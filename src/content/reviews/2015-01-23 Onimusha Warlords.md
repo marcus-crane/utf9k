@@ -1,16 +1,17 @@
 ---
-title: "Onimusha: Warlords"
+category: reviews
 date: 2015-01-23T21:06:15+13:00
-slug: "onimusha-warlords"
-category: "reviews"
-description: "Samanosuke fights to banish the demonic Gemna from an alternate history Feudal Japan where Nobunaga died 20 years too early."
+description: Samanosuke fights to banish the demonic Gemna from an alternate history Feudal Japan where Nobunaga died 20 years too early.
+output: src/content/reviews
+publish: true
+slug: onimusha-warlords
 tags:
   - "2001"
-  - "pc"
-  - "ps2"
-  - "xbox"
+  - pc
+  - ps2
+  - xbox
+title: "Onimusha: Warlords"
 ---
-
 Did you know that Onimusha was originally conceived as a Playstation 1 title? The Playstation 2's launch was drawing near and the growing excitement within the development team led to the half-complete game being shifted. It was moved to the groundbreaking new console, leaving its original home behind in the dust.
 
 So, for those who either haven't heard of Onimusha, or know the name but have yet to check it out, it was actually **created by Keiji Inafune, famously known for bringing up Mega Man**. Coming off of the success of the Mega Man franchise, Inafune felt like shifting away from The Blue Bomber towards something new and fresh. Somewhat surprisingly, **he wanted to make a game that captured the spirit of Akira Kurosawa's samurai films.**
