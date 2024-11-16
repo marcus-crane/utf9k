@@ -1,13 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2017-02-05T00:00:00+13:00
-description: "An exploration of Deepfakes written up when the original subreddit (and creator) was still online"
-slug: "deepfakes"
+description: An exploration of Deepfakes written up when the original subreddit (and creator) was still online
+output: src/content/blog
+publish: true
+slug: deepfakes
 tags:
-  - "deepfakes"
-  - "future"
-  - "technology"
-title: "Deepfakes"
+  - deepfakes
+  - future
+  - technology
+title: Deepfakes
 ---
 
 > [!note] 💿 This post has been remastered slightly due to its age.
