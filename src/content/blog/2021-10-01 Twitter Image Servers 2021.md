@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-10-01T12:18:00+13:00
-description: "Throughout the year of 2021, I have run into a number of issues with Twitter's image servers"
-slug: "twitter-image-servers-2021"
+description: Throughout the year of 2021, I have run into a number of issues with Twitter's image servers
+output: src/content/blog
+publish: true
+slug: twitter-image-servers-2021
 tags:
-  - "reliability"
-  - "sre"
-  - "twitter"
-title: "Twitter, could you please fix your image servers?"
+  - reliability
+  - sre
+  - twitter
+title: Twitter, could you please fix your image servers?
 ---
-
 For anyone who knows me, it's no surprise that I'm horribly addicted to [Twitter](https://twitter.com). I joined back in 2009[^1] and I've fallen into more [technical rabbit holes](/blog/automation-right/) than I care to.
 
 As a Twitter user who is Very Online, I love to theorise about why services go wrong and poke fun at corporations but as an [SRE](https://en.wikipedia.org/wiki/Site_reliability_engineering) myself, I find it very difficult to direct blame at people.
