@@ -1,13 +1,14 @@
 ---
-title: "Why do some Emacs functions have double dashes?"
-slug: "emacs-function-double-dash"
-description: "In which I squint heavily to notice any difference"
-category: "questions"
+category: questions
+description: In which I squint heavily to notice any difference
+output: src/content/questions
+publish: true
+slug: emacs-function-double-dash
 tags:
-  - "elisp"
-  - "emacs"
+  - elisp
+  - emacs
+title: Why do some Emacs functions have double dashes?
 ---
-
 As an example of what I mean, `org-roam` had seemingly the same function names at one point, despite the only difference being some double dashes
 
 [Here is an example](https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el#L236)
