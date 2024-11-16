@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /questions/athena-queries
 category: questions
 description: It's like SQL but slightly wonkier
 output: src/content/questions
@@ -12,8 +14,6 @@ tags:
   - loadbalancer
   - logging
 title: AWS Athena
-aliases:
-  - /questions/athena-queries
 ---
 ## Querying for JSON embedded in fields
 
