@@ -1,13 +1,14 @@
 ---
-title: "How can I inspect a SAML request?"
-slug: "saml-inspect-request"
-description: "In which I remind myself how to dig into a SAML payload"
-category: "questions"
+category: questions
+description: In which I remind myself how to dig into a SAML payload
+output: src/content/questions
+publish: true
+slug: saml-inspect-request
 tags:
-  - "authentication"
-  - "saml"
+  - authentication
+  - saml
+title: How can I inspect a SAML request?
 ---
-
 Until recently, I never had to go near SAML with a 10 foot pole but I was recently helping out a coworker with adding SAML authentication to an Elasticsearch cluster.
 
 I had never seen one before but a SAML request looks a little like this:
