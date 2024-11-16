@@ -1,13 +1,14 @@
 ---
-title: "How can I export a Postgres database?"
-slug: "postgres-export-db"
-description: "In which I remind myself how to export a Postgres database"
-category: "questions"
+category: questions
+description: In which I remind myself how to export a Postgres database
+output: src/content/questions
+publish: true
+slug: postgres-export-db
 tags:
-  - "databases"
-  - "postgres"
+  - databases
+  - postgres
+title: How can I export a Postgres database?
 ---
-
 Using `pg_dump`, which ships with the `psql` executable, it's a pretty simple progress
 
 ```bash
