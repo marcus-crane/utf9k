@@ -12,7 +12,6 @@ tags:
   - acquisition
 title: One possible death for Discord
 ---
-
 > [!note] 💻 This post was an unpublished draft that accidentally got published.
 >
 > This post was originally a draft that I threw together in 2021 when Microsoft were [allegedly in talks to buy](https://www.theverge.com/2021/3/26/22352028/microsoft-discord-acquisition-analysis-report) Discord.
