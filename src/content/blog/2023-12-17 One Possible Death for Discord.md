@@ -1,14 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2023-12-17T14:14:00+13:00
-description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"
-slug: "one-possible-death-for-discord"
+description: An unreleased post where I talk about Discord and what might happen to them if they were acquired
+output: src/content/blog
+publish: true
+slug: one-possible-death-for-discord
 tags:
-  - "business"
-  - "discord"
-  - "microsoft"
-  - "acquisition"
-title: "One possible death for Discord"
+  - business
+  - discord
+  - microsoft
+  - acquisition
+title: One possible death for Discord
 ---
 
 > [!note] 💻 This post was an unpublished draft that accidentally got published.
