@@ -6,9 +6,6 @@ output: src/content/reviews
 publish: true
 slug: grand-theft-auto-v
 tags:
-  - "2013"
-  - "2014"
-  - "2015"
   - pc
   - ps3
   - ps4
