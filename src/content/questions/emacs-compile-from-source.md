@@ -1,12 +1,13 @@
 ---
-title: "How can I compile Emacs from source?"
-slug: "emacs-compile-from-source"
-description: "In which I recall how to compile an operating system of a text editor"
-category: "questions"
+category: questions
+description: In which I recall how to compile an operating system of a text editor
+output: src/content/questions
+publish: true
+slug: emacs-compile-from-source
 tags:
-  - "emacs"
+  - emacs
+title: How can I compile Emacs from source?
 ---
-
 The following should roughly do it. Your mileage may vary!
 
 ```shell
