@@ -1,15 +1,16 @@
 ---
-title: "Liberation Maiden"
+category: reviews
 date: 2015-03-08T18:51:04+13:00
-slug: "liberation-maiden"
-category: "reviews"
-description: "Jump into the Liberation Kamui for some fast-paced Suda51 style action as you fight to save New Japan!"
+description: Jump into the Liberation Kamui for some fast-paced Suda51 style action as you fight to save New Japan!
+output: src/content/reviews
+publish: true
+slug: liberation-maiden
 tags:
   - "2012"
-  - "3ds"
-  - "ios"
+  - 3ds
+  - ios
+title: Liberation Maiden
 ---
-
 Before talking about Liberation Maiden, it's important to know where it came from. Originally, it was released in Japan as one of the titles that made up the Guild01 compilation. It was a physical cartridge that you could buy and enjoy four relatively small games, each from a well-known Japanese game designer, or in the case of [Weapon Shop de Omasse](/reviews/weapon-shop-de-omasse), a Japanese comedian. The actual compilation itself didn't perform great, selling a lousy 20,000 copies in its first month but I get the feeling that it was meant to be more of a project for the fans rather than a money maker. Thanks to digital distribution, the collection did slowly make its way to the west although, rather than being bundled up, they were only made available as individual purchases.
 
 What you'll be told right off the bat is this: **Shoko Ozora, full time anime high school girl, has just been unanimously elected as Second President of New Japan** following the assassination of her father. With no time to spare, she hops in the Liberator mech Kamui and sets off from the Parliamentary Battleship Nagata. It's her job to liberate Japan in her Liberator mech (get it?) from the Dominion, a Nazi Germany stand-in led by “the Chairman”. Not that any of that is even remotely important since the Chairman is never mentioned in game and you don't even really get introduced to the Dominion. Stage 1 basically starts you off right in the heart of battle asking you to obliterate “all of those things over there”. I wouldn't expect any less from the designer Suda51 who you might know from No More Heroes, Killer Is Dead or Lollipop Chainsaw.
