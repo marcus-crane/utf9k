@@ -1,13 +1,14 @@
 ---
-title: "How can I configure my printer via terminal on macOS?"
-slug: "macos-printer-cli"
-description: "Printing without a display seems counter-intuitive"
-category: "questions"
+category: questions
+description: Printing without a display seems counter-intuitive
+output: src/content/questions
+publish: true
+slug: macos-printer-cli
 tags:
-  - "macos"
-  - "printers"
+  - macos
+  - printers
+title: How can I configure my printer via terminal on macOS?
 ---
-
 Recently, a coworker of mine got a new laptop and needed to connect to the printer at work. One of the dialog boxes asked for the "print queue".
 
 For the unfamiliar, here's what the macOS printer settings look like.
