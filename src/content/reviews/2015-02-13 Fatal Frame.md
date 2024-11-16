@@ -6,8 +6,6 @@ output: src/content/reviews
 publish: true
 slug: fatal-frame
 tags:
-  - "2001"
-  - "2002"
   - ps2
   - xbox
 title: Fatal Frame
