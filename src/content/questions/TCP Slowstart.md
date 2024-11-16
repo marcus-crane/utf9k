@@ -1,15 +1,16 @@
 ---
-title: "How can I check whether a server may be unnecessarily slow-starting?"
-slug: "tcp-slowstart"
-description: "In which machines may not be running the marathon you think they are"
-category: "questions"
+category: questions
+description: In which machines may not be running the marathon you think they are
+output: src/content/questions
+publish: true
+slug: tcp-slowstart
 tags:
-  - "software"
-  - "networking"
-  - "tcp"
-  - "unix"
+  - software
+  - networking
+  - tcp
+  - unix
+title: How can I check whether a server may be unnecessarily slow-starting?
 ---
-
 As discussed in [High Performance Browser Networking](https://hpbn.co/), TCP Slow-Start is an important element of the TCP protocol as it ensures that both client and server start out with an acceptable throughput, so as to not overwhelm one another.
 
 Very quickly, they both increment their windows until they're at the allowed maximum.
