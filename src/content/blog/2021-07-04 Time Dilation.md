@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2021-07-04T22:53:00+13:00
-description: "Historically, I am often late to a bunch of things even though I plan ahead some of the time"
-slug: "time-dilation"
+description: Historically, I am often late to a bunch of things even though I plan ahead some of the time
+output: src/content/blog
+publish: true
+slug: time-dilation
 tags:
-  - "productivity"
-  - "timemanagement"
-title: "Time Dilation"
+  - productivity
+  - timemanagement
+title: Time Dilation
 ---
-
 A more accurate title would probably be something like "Time Inflation" but I think "Time Dilation" sounds cooler.
 
 Whenever I'm planning a trip anywhere, often just across town, I tend to tack on an extra portion of time. Usually just 10 or 15 minutes as a bit of a buffer and depending on the mode of transport, it tends to get eaten up.
