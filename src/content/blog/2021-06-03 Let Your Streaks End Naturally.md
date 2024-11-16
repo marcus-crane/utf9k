@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2021-06-03T12:50:00+13:00
-description: "As it says on the tin, all good things must come to an end"
-slug: "let-your-streaks-end-naturally"
+description: As it says on the tin, all good things must come to an end
+output: src/content/blog
+publish: true
+slug: let-your-streaks-end-naturally
 tags:
-  - "health"
-  - "longterm"
-  - "productivity"
-  - "selfcare"
-title: "Let your streaks end naturally"
+  - health
+  - longterm
+  - productivity
+  - selfcare
+title: Let your streaks end naturally
 ---
-
 Generally speaking, it's always a good idea to let your streaks end when the time is right.
 
 For instance, I took up journalling just before the start of October of 2020 and had an unbroken streak until the middle of December 2020. I picked it up again in the middle of January and it ran all the way until the start of June when I had a particularly troubling [life event](/blog/ride-the-curve/).
