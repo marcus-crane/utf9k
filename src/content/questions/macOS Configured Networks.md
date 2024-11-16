@@ -1,13 +1,14 @@
 ---
-title: "How can I view configured networks in my macOS terminal?"
-slug: "macos-configured-networks"
-description: "In which I remind myself how to configure macOS networks via the terminal"
-category: "questions"
+category: questions
+description: In which I remind myself how to configure macOS networks via the terminal
+output: src/content/questions
+publish: true
+slug: macos-configured-networks
 tags:
-  - "macos"
-  - "networking"
+  - macos
+  - networking
+title: How can I view configured networks in my macOS terminal?
 ---
-
 Let's assume you have multiple networks set up under `System Preferences > Networks`.
 
 You might have "Work" which has a bunch of proxy configuration specified and "Home" which just disabled proxy configuration.
