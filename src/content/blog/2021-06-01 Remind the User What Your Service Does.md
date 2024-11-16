@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2021-06-01T23:12:00+13:00
-description: "You haven't emailed me for 2 years! Who are you again?"
-slug: "remind-the-user-what-your-service-does"
+description: You haven't emailed me for 2 years! Who are you again?
+output: src/content/blog
+publish: true
+slug: remind-the-user-what-your-service-does
 tags:
-  - "business"
-  - "email"
-  - "marketing"
-  - "promotion"
-title: "Remind the user what your service does"
+  - business
+  - email
+  - marketing
+  - promotion
+title: Remind the user what your service does
 ---
-
 This goes out to anyone who does marketing for startups and businesses.
 
 If you're about to announce something like an update for those on a waitlist or a big bang version 2, please include a reminder of what your service actually is?
