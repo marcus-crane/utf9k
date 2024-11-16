@@ -1,14 +1,15 @@
 ---
-title: "How can I live tail statsd metrics?"
-slug: "tshark-statsd-metrics"
-description: "In which I have more data than I know what to do with"
-category: "questions"
+category: questions
+description: In which I have more data than I know what to do with
+output: src/content/questions
+publish: true
+slug: tshark-statsd-metrics
 tags:
-  - "tshark"
-  - "wireshark"
-  - "datadog"
+  - tshark
+  - wireshark
+  - datadog
+title: How can I live tail statsd metrics?
 ---
-
 It's pretty rare but sometimes it can be useful to capture statsd metrics at the source.
 
 Here's an example that uses tshark to capture some dogstatsd metrics on the fly.
