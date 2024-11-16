@@ -6,9 +6,6 @@ output: src/content/reviews
 publish: true
 slug: gravity-rush
 tags:
-  - "2012"
-  - "2015"
-  - "2016"
   - ps4
   - psvita
 title: Gravity Rush
