@@ -1,16 +1,15 @@
 ---
-title: "Gitaroo Man Lives!"
+category: reviews
 date: 2016-05-02T12:58:43+13:00
-description: "A review for Gitaroo Man Lives!"
-slug: "gitaroo-man-lives"
-category: "reviews"
+description: A review for Gitaroo Man Lives!
+output: src/content/reviews
+publish: true
+slug: gitaroo-man-lives
 tags:
-  - "2001"
-  - "2006"
-  - "ps2"
-  - "psp"
+  - ps2
+  - psp
+title: Gitaroo Man Lives!
 ---
-
 Sometimes you play a game and it's like the developers passion is just oozing out of the screen. **You can just feel it when you play, that the team loved making the game and put their all into it.** Need I say anymore?
 
 If you mention rhythm games, quite a few people first think of PaRappa the Rapper but I don't think it's generally realised that PaRappa is actually regarded as one of, if not, the first modern rhythm game. It was only in 1996 with well known arcade titles like Beatmania and Dance Dance Revolution following shortly afterward. PaRappa and other titles that followed mainly focused on rhythm but designer Keiichi Yano was intent on making something fresh. **It was his belief that the people recognise songs they enjoy by their melodies and harmonies** rather than by their rhythms. Now, how do you go about incorporating that?

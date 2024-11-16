@@ -1,14 +1,14 @@
 ---
-title: "Time Hollow"
+category: reviews
 date: 2015-02-08T02:12:21+13:00
-slug: "time-hollow"
-category: "reviews"
-description: "Time Hollow is a very enjoyable game about the consequences of time manipulation. I'd recommend it for those who like the concept of time travel!"
+description: Time Hollow is a very enjoyable game about the consequences of time manipulation. I'd recommend it for those who like the concept of time travel!
+output: src/content/reviews
+publish: true
+slug: time-hollow
 tags:
-  - "2008"
-  - "nds"
+  - nds
+title: Time Hollow
 ---
-
 Protagonist, and timepiece connoisseur, Ethan Kairos lives with his parents. No, wait, that isn't right. Living with his uncle after the disappearance of his parents, he attends Kako High. He likes to spend his time hanging out at the local Cafe Chronos with his friends Ben, Vin and Morris. Today is a rather special as it happens to be Ethan's 18th birthday. Vin's sister, Ashley and her best friend Emily even surprise him with a vintage alarm clock. Didn't they? Hmm, that isn't right either. What I meant to say was Ashley and Emily got into a fight over what gift to buy causing Ashley ran away. As the number of **alterations to the past start to spiral out of control**, it becomes obvious that Ethan's history is being messed with big time, no pun intended.
 
 The game is a light adventure/VN title, using the bottom touch screen for examining 2D environments and selecting dialogue while the top screen displays conversations and extra background art. You won't be fighting any enemies but **if you like time travel stories with great twists, it should keep you invested.** Upon waking up on his 18th birthday, Ethan notices a strange pen along with a note tucked under the collar of Sox, his cat. The note describes the Hollow Pen which Ethan can use to alter the course of past events.

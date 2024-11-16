@@ -1,16 +1,15 @@
 ---
-title: "Lili: Child of Geos"
+category: reviews
 date: 2015-05-04T22:31:12+13:00
 description: "A review for Lili: Child of Geos"
-slug: "lili-child-of-geos"
-category: "reviews"
+output: src/content/reviews
+publish: true
+slug: lili-child-of-geos
 tags:
-  - "2012"
-  - "2014"
-  - "ios"
-  - "pc"
+  - ios
+  - pc
+title: "Lili: Child of Geos"
 ---
-
 Alrighty students, if you want to graduate then I'm looking for the best report possible. You've only a limited amount of time to complete your greatest challenge yet: pick me some really nice flowers! That's one of the main things you'll be doing in Lili: Child of Geos but there's way more to this title than meets the eye. After all, there's more to a game than its box art or err, digital screenshots.
 
 Lili is the heroine on this outing to the strange island of Geos, home to a wide range of goofball characters. She initially sets out to find some rare flowers for her final exam but gets dragged into helping set the inhabitants of Geos free from the nasty Mayor. The entire journey is fairly relaxed with prompts reminding you that you're free to explore at your leisure or just chat with the wooden folk around each area. Oh yeah, the citizens of Geos, officially known as constructs, are actually living creatures mostly made of wood save for a certain flying mailbox. They each have their own quirkly personality complete with collectable cards briefing detailing their backgrounds.

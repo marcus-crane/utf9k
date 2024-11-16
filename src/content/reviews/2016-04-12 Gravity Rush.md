@@ -1,17 +1,15 @@
 ---
-title: "Gravity Rush"
+category: reviews
 date: 2016-04-12T02:30:12+13:00
-description: "A review for Gravity Rush"
-slug: "gravity-rush"
-category: "reviews"
+description: A review for Gravity Rush
+output: src/content/reviews
+publish: true
+slug: gravity-rush
 tags:
-  - "2012"
-  - "2015"
-  - "2016"
-  - "ps4"
-  - "psvita"
+  - ps4
+  - psvita
+title: Gravity Rush
 ---
-
 What's up, Gravity Shifters. It's been a while, huh? We're just days away from the release of Dark Souls 3 and what better way to celebrate than with a look back at a game that isn't dark and forboding: Gravity Rush! For those of you who missed this favourite of mine, it was originally a Playstation Vita exclusive which pretty much says it all. Earlier this year, PS4 owners were treated to an HD re-release which stays true to the original while incorpating the DLC and upping the visuals to a nice 1080p at 60 FPS.
 
 **It's a sorta-open world action-adventure title** set in the mysterious city of Hekseville. Our leading lady Kat awakens in the middle of Auldnoir, the residental district, only to find it being ripped apart by a severe gravity storm. She very quickly finds herself partner to Dusty, a cute black cat that imbues Kat with gravity shifting powers. If it isn't obvious yet, said powers serve as the main draw of the title. Your main enemies are red blob-like creatures called the Nevi which come in a variety of different forms, much like the Heartless for those of you who played Kingdom Hearts. No one is really quite sure why they've started attacking Hekseville as is often the case in your run of the mill amnesiac stories. Oh, did I mention Kat has amnesia? Not the most original concept but as the player, you'll often finding yourself feeling lost alongside Kat in this odd world.

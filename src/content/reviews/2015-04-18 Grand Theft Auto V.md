@@ -1,20 +1,18 @@
 ---
-title: "Grand Theft Auto V"
+category: reviews
 date: 2015-04-18T14:30:39+13:00
-slug: "grand-theft-auto-v"
-category: "reviews"
-description: "This isn't really about GTA V. Just to say that I haven't been playing anything else!"
+description: This isn't really about GTA V. Just to say that I haven't been playing anything else!
+output: src/content/reviews
+publish: true
+slug: grand-theft-auto-v
 tags:
-  - "2013"
-  - "2014"
-  - "2015"
-  - "pc"
-  - "ps3"
-  - "ps4"
-  - "xbox-360"
-  - "xbox-one"
+  - pc
+  - ps3
+  - ps4
+  - xbox-360
+  - xbox-one
+title: Grand Theft Auto V
 ---
-
 Well, sorta.
 
 As some of you may know, Grand Theft Auto V finally released for PC. I think it's a really nice port which has so far definitely been worth the dollaroos I spent on it.

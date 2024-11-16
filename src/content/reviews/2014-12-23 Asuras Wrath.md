@@ -1,14 +1,14 @@
 ---
-title: "Asura's Wrath"
+category: reviews
 date: 2014-12-23T01:48:39+13:00
-slug: "asuras-wrath"
-category: "reviews"
-description: "Asura's Wrath was criticised back during release for having a DLC ending but don't let that affect what you think of the game! You might be surprised."
+description: Asura's Wrath was criticised back during release for having a DLC ending but don't let that affect what you think of the game! You might be surprised.
+output: src/content/reviews
+publish: true
+slug: asuras-wrath
 tags:
-  - "2012"
-  - "ps3"
+  - ps3
+title: Asura's Wrath
 ---
-
 If you've heard of this title before but have yet to play it, I'm going to assume that the first thing that springs to mind is “Oh, wasn't Asura's Wrath that one game where the gameplay is just all QTEs?”. Well, you're halfway correct. I've just recently finished it for the second time and I'll likely be doing a third run through for 100% completion just because of how much I really enjoy the title. “But how! The ending was released as DLC!”, I hear you exclaim and yes, that did indeed happen but it's not as bad as you probably think. We'll get into all that shortly but until then, onwards to the premise of the game.
 
 When I first looked at the cover of Asura's Wrath, I didn't really understand what Asura was exactly. He sort of looks like he is made of clay but beyond that, he doesn't have any features that point to him being from any specific point in time. You'll soon discover, if you read the manual anyway which I didn't, that Asura is a demigod in **a world that mixes science fiction with religion and spiritualism**, in particular the Hindu and Buddhist religions. Asura is one of the eight guardian generals who fights to protect the planet Gaia from an army of creatures known as the Gohma and in particular, a large being known as the Gohma Vlitra who appears every few thousand years to try and destroy all things in its path. No, like, I don't think you get it. When I say large, this thing takes up around 1/10 of the planet when it emerges. It is ridiculously huge.

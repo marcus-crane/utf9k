@@ -1,16 +1,17 @@
 ---
-title: "Call of Juarez: Gunslinger"
+category: reviews
 date: 2015-02-22T18:13:25+13:00
-slug: "call-of-juarez-gunslinger"
-category: "reviews"
-description: "Giddy up for some of the most enjoyable Wild West action since, well, the Wild West I suppose!"
+description: Giddy up for some of the most enjoyable Wild West action since, well, the Wild West I suppose!
+output: src/content/reviews
+publish: true
+slug: call-of-juarez-gunslinger
 tags:
-  - "2013"
-  - "pc"
-  - "ps3"
-  - "xbox-360"
+  - pc
+  - ps3
+  - xbox-360
+  - clothing
+title: "Call of Juarez: Gunslinger"
 ---
-
 Call of Juarez: Gunslinger is a Techland title. You've probably heard of them as being the developers of mediocre titles such as Dead Island, Dead Island: Riptide and Call of Juarez: The Cartel. That said, their latest release Dying Light, while far from perfect, is fairly enjoyable from what I've heard. Overall though, they don't exactly have the best track record so naturally I assumed that if The Cartel wasn't the final nail in the coffin for the franchise then Gunslinger would be. Thanks in part to having mixed up Gunslinger with “The Gunstringer” for Kinect, I checked it out and found it to be very fff- _inhales_ ffffff- err, enjoyable.
 
 The style of storytelling is perhaps the most important aspect, serving as a basis for a number of enjoyable elements to work off of. You see, **the entire game is actually a story being told in a bar by bounty hunter Silas Greaves.** Split into a total of 14 episodes, he spins yarns about his face offs with Jessie James, Billy the Kid, Butch Cassidy, The Sundance Kid and a host of other, perhaps lesser known historical figures. Given the nature of his career, **Silas exaggerates a number of plot elements**, some minor such as the weather and some much larger like the number of enemies he successfully fought off.
