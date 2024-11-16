@@ -1,18 +1,19 @@
 ---
-category: "blog"
+category: blog
 date: 2021-04-27T18:50:00+13:00
-description: "A post in which I post about how involved the Dropbox cancellation process is."
-slug: "dropbox-is-way-too-clingy"
+description: A post in which I post about how involved the Dropbox cancellation process is.
+output: src/content/blog
+publish: true
+slug: dropbox-is-way-too-clingy
 tags:
-  - "apps"
-  - "cancellation"
-  - "deletion"
-  - "dropbox"
-  - "hell"
-  - "software"
-title: "Dropbox is way too clingy"
+  - apps
+  - cancellation
+  - deletion
+  - dropbox
+  - hell
+  - software
+title: Dropbox is way too clingy
 ---
-
 As much as [Dropbox](https://www.dropbox.com) is great on a technical level, the user experience keeps degrading all the time.
 
 Installing it is a complete nightmare of clicking through super slow window transitions and banners begging you to upgrade your account.
