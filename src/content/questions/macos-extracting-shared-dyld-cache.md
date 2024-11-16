@@ -1,14 +1,15 @@
 ---
-title: "How can I extract stuff from the macOS shared dyld cache?"
-slug: "macos-extracting-shared-dyld-cache"
-description: "In which I have no idea what is going on with shared libraries"
-category: "questions"
+category: questions
+description: In which I have no idea what is going on with shared libraries
+output: src/content/questions
+publish: true
+slug: macos-extracting-shared-dyld-cache
 tags:
-  - "macos"
-  - "libraries"
-  - "reverseengineering"
+  - macos
+  - libraries
+  - reverseengineering
+title: How can I extract stuff from the macOS shared dyld cache?
 ---
-
 **Source**: https://alinpanaitiu.com/blog/turn-off-macbook-display-clamshell/
 
 Since macOS Big Sur shipped, Apple have started shipping system libraries as one big cache blob.
