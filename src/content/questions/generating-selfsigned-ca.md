@@ -1,14 +1,15 @@
 ---
-title: "How can I generate a self-signed CA certificate chain?"
-slug: "generating-selfsigned-ca"
-description: "In which I pretend to make computers secure"
-category: "questions"
+category: questions
+description: In which I pretend to make computers secure
+output: src/content/questions
+publish: true
+slug: generating-selfsigned-ca
 tags:
-  - "security"
-  - "certificates"
-  - "openssl"
+  - security
+  - certificates
+  - openssl
+title: How can I generate a self-signed CA certificate chain?
 ---
-
 Here is how to generate a self-signed client CA for an extremely long period of time. You probably shouldn't do this for anything important though!
 
 ```bash
