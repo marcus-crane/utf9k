@@ -1,15 +1,16 @@
 ---
-title: "Why did oil futures go negative in April 2020?"
-slug: "finance-oil-futures-negative"
-description: "In which I write about something that is definitely not computers"
-category: "questions"
-tags:
-  - "finance"
-  - "futures"
 aliases:
-  - "/notes/oil-futures/"
+  - /notes/oil-futures/
+category: questions
+description: In which I write about something that is definitely not computers
+output: src/content/questions
+publish: true
+slug: finance-oil-futures-negative
+tags:
+  - finance
+  - futures
+title: Why did oil futures go negative in April 2020?
 ---
-
 On April 20th 2020, oil futures fell to $-37.63 per barrel but how is that possible? That would suggest people are literally paying customers to take oil off their hands.
 
 In a sense, that's exactly the case but perhaps not for quite the reasons you might expect.
