@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: jumping-flash
 tags:
-  - "1995"
   - ps1
   - psn
 title: Jumping Flash!
