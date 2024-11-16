@@ -1,15 +1,16 @@
 ---
-title: "Jumping Flash!"
+category: reviews
 date: 2015-03-28T23:28:05+13:00
-slug: "jumping-flash"
-category: "reviews"
-description: "Robbit, the Super De-Pester is probably one of the oddest choices for protagonist I've played so far."
+description: Robbit, the Super De-Pester is probably one of the oddest choices for protagonist I've played so far.
+output: src/content/reviews
+publish: true
+slug: jumping-flash
 tags:
   - "1995"
-  - "ps1"
-  - "psn"
+  - ps1
+  - psn
+title: Jumping Flash!
 ---
-
 You've heard of Jumpman (Mario) and Rockman (Megaman) and now its time to get ready for Spring Man, the newest addition to the generic name trio. No, I'm not talking about the Mega Man 7 boss, I'm talking about Robbit, the robotic rabbit, star of the Playstation 1 tech demo, Jumping Flash!.
 
 Now, I say tech demo which generally conjures up the idea of cinematic movie running in real time. A famous few over the last few years were [Kara](https://www.youtube.com/watch?v=1EvqiGm0wz8), The Order: 1886 and [Agni's Philosophy](https://www.youtube.com/watch?v=UVX0OUO9ptU) but this was actually released as a playable game. First appearing in Japan as a Playstation launch title, critics liked it for its 3D graphics and original take on platforming.
