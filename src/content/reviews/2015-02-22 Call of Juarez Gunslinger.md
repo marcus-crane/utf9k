@@ -6,10 +6,10 @@ output: src/content/reviews
 publish: true
 slug: call-of-juarez-gunslinger
 tags:
-  - "2013"
   - pc
   - ps3
   - xbox-360
+  - clothing
 title: "Call of Juarez: Gunslinger"
 ---
 Call of Juarez: Gunslinger is a Techland title. You've probably heard of them as being the developers of mediocre titles such as Dead Island, Dead Island: Riptide and Call of Juarez: The Cartel. That said, their latest release Dying Light, while far from perfect, is fairly enjoyable from what I've heard. Overall though, they don't exactly have the best track record so naturally I assumed that if The Cartel wasn't the final nail in the coffin for the franchise then Gunslinger would be. Thanks in part to having mixed up Gunslinger with “The Gunstringer” for Kinect, I checked it out and found it to be very fff- _inhales_ ffffff- err, enjoyable.
