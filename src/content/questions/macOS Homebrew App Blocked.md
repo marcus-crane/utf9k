@@ -1,14 +1,15 @@
 ---
-title: "How can I run a Homebrew application being blocked by Gatekeeper?"
-slug: "macos-homebrew-app-blocked"
-description: "In which I remind myself how to remove the quarantine flag"
-category: "questions"
+category: questions
+description: In which I remind myself how to remove the quarantine flag
+output: src/content/questions
+publish: true
+slug: macos-homebrew-app-blocked
 tags:
-  - "gatekeeper"
-  - "homebrew"
-  - "macos"
+  - gatekeeper
+  - homebrew
+  - macos
+title: How can I run a Homebrew application being blocked by Gatekeeper?
 ---
-
 This issue is particularly annoying and I only just discovered it today for the first time.
 
 Here's an example of what it looks like
