@@ -11,7 +11,6 @@ tags:
   - steam
 title: A fascinating attempt at Steam phishing
 ---
-
 > [!caution] Beware what you click on!
 >
 > This post contains screenshots for a phishing website.
