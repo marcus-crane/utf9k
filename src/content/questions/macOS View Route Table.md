@@ -1,14 +1,15 @@
 ---
-title: "How can I see my route table?"
-slug: "macos-view-route-table"
-description: "In which I remind myself how to check out where a request is likely to route"
-category: "questions"
+category: questions
+description: In which I remind myself how to check out where a request is likely to route
+output: src/content/questions
+publish: true
+slug: macos-view-route-table
 tags:
-  - "macos"
-  - "networking"
-  - "vpn"
+  - macos
+  - networking
+  - vpn
+title: How can I see my route table?
 ---
-
 For those of us who are subject to using corporate VPNs, all sorts of wackiness can occur such as `127.0.0.1` being routed first to another country before trying to resolve locally.
 
 You can see both IPv4 and IPv6 routing entries by running `netstat -rn`. Personally, I like to just show IPv4 addresses.
