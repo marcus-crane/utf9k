@@ -1,13 +1,14 @@
 ---
-title: "How can I look up my current external IP address?"
-slug: "dns-lookup-current-ip"
-description: "In which I remember how to use dig with alternative DNS"
-category: "questions"
+category: questions
+description: In which I remember how to use dig with alternative DNS
+output: src/content/questions
+publish: true
+slug: dns-lookup-current-ip
 tags:
-  - "dig"
-  - "dns"
+  - dig
+  - dns
+title: How can I look up my current external IP address?
 ---
-
 DNS! It's always the answer for your woes :)
 
 While there are a myriad of HTTP servers for seeing your external IP address, you can also use one of the various DNS based services on offer.
