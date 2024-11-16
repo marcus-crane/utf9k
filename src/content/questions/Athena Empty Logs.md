@@ -11,6 +11,7 @@ tags:
   - cloud
   - loadbalancers
   - sql
+aliases: 
 ---
 Recently, I was querying for some ALB load balancer logs. It's not something that happens too often but I was surprised to find that the query rows were empty except for the `date` column.
 
