@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: liberation-maiden
 tags:
-  - "2012"
   - 3ds
   - ios
 title: Liberation Maiden
