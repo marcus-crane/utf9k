@@ -1,15 +1,16 @@
 ---
-title: "How can I monitor JAMF downloads on macOS?"
-slug: "macos-monitor-jamf-downloads"
-description: "In which I remind myself how to inspect JAMF progress"
-category: "questions"
+category: questions
+description: In which I remind myself how to inspect JAMF progress
+output: src/content/questions
+publish: true
+slug: macos-monitor-jamf-downloads
 tags:
-  - "enterprise"
-  - "jamf"
-  - "macos"
-  - "software"
+  - enterprise
+  - jamf
+  - macos
+  - software
+title: How can I monitor JAMF downloads on macOS?
 ---
-
 For large downloads, such as macOS updates, it can be annoying that tools like Self Service don't surface download metrics
 
 Thankfully, we can find the download on disk and watch as the file size increases
