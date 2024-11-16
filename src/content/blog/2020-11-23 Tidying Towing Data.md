@@ -13,7 +13,6 @@ tags:
   - data
 title: Tidying up towing data with Pandas
 ---
-
 > [!info] 💼 I am not a lawyer! Oh, I meant to say data scientist
 >
 > I came across this post in an archive folder, fully written out as you see below but never published.
