@@ -1,15 +1,16 @@
 ---
-title: "How can I cross-compile Golang software using Zig?"
-slug: "zig-golang-crosscompile"
-description: "In which I don't have to go to the store to buy 6 different laptops"
-category: "questions"
+category: questions
+description: In which I don't have to go to the store to buy 6 different laptops
+output: src/content/questions
+publish: true
+slug: zig-golang-crosscompile
 tags:
-  - "golang"
-  - "compilation"
-  - "zig"
-  - "softwaredevelopment"
+  - golang
+  - compilation
+  - zig
+  - softwaredevelopment
+title: How can I cross-compile Golang software using Zig?
 ---
-
 When trying to cross-compile applications for different operating systems and architectures, you can often hit some niche configurations that are difficult to accomodate.
 
 Thankfully [Zig](https://ziglang.org/) can help to alleviate this pain point as it bundles standard libraries for all major platforms ie; `GNU libc`, `musl libc` and so on.
