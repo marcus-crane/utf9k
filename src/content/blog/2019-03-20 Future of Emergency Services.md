@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2019-03-20T00:00:00+13:00
-description: "It's surprising that the idea of an emergency service is even viable, considering how many people are doing things at any given time"
-slug: "future-of-emergency-services"
+description: It's surprising that the idea of an emergency service is even viable, considering how many people are doing things at any given time
+output: src/content/blog
+publish: true
+slug: future-of-emergency-services
 tags:
-  - "future"
-  - "people"
-title: "What is the future of emergency services?"
+  - future
+  - people
+title: What is the future of emergency services?
 ---
-
 Yesterday, I had an onset of severe abdominal pains. I didn't want to overreact so I called [Healthline](https://www.health.govt.nz/your-health/services-and-support/health-care-services/healthline) who recommended I see either my GP, or [A&E](https://en.wikipedia.org/wiki/Emergency_department) within the next 6 hours.
 
 Shortly after I hung up, I had a pain spike bad enough to make me burst into tears. I wasn't getting anywhere clutching my stomach on the floor so I called an ambulance.
