@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-02-13T01:11:00+13:00
-description: "How many widgets can you fit on a mobile webpage? More than should be legal"
-slug: "a-recently-horrible-iteration-of-google-search"
+description: How many widgets can you fit on a mobile webpage? More than should be legal
+output: src/content/blog
+publish: true
+slug: a-recently-horrible-iteration-of-google-search
 tags:
-  - "google"
-  - "media"
-  - "search"
-title: "Google recently surfaced awful results for movies and tv"
+  - google
+  - media
+  - search
+title: Google recently surfaced awful results for movies and tv
 ---
-
 I don't know about you but whenever I have just watched a movie, or tv series, I like to look it up on Wikipedia to read about the development behind the scenes and how it was received upon release.
 
 Ok, I also have a pretty bad habit of reading the plot of a film while I'm also meant to be watching the film itself. Never in theatres of course!
