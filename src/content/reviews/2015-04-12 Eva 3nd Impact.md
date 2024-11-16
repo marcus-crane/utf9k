@@ -1,14 +1,15 @@
 ---
-title: "Evangelion Shin Gekijoban: 3nd Impact"
+category: reviews
 date: 2015-04-12T18:58:31+13:00
-description: "A review for a pretty fun Evangelion rhythm game"
-slug: "eva-3nd-impact"
-category: "reviews"
+description: A review for a pretty fun Evangelion rhythm game
+output: src/content/reviews
+publish: true
+slug: eva-3nd-impact
 tags:
   - "2011"
-  - "psp"
+  - psp
+title: "Evangelion Shin Gekijoban: 3nd Impact"
 ---
-
 I'm not a huge rhythm game player. I've played the odd bit of Osu! and Guitar Hero but obviously, the most important thing is soundtrack. I could try getting into Stepmania but drowning in a sea of nightcore anime remixes isn't exactly my idea of fun. Despite having just said that, I do love me some Evangelion so I couldn't resist when I learnt that Japan had received a music game adapted from the ongoing Rebuild of Evangelion project. Who would dare mix rhythm and Eva? Someone equally known for “crazy” titles, Goichi ‘Suda51' Suda so this, I had to see.
 
 Just before you point it out, **3nd isn't a typo**. That's actually the title used. At first you might try to pronounce it as Thir-end Impact but don't forget this is a Japanese game. The pun plays off ‘san', the Japanese pronounciation of the number 3. When you read 3 as san, the title becomes san-nd or Sound Impact. Get it?
