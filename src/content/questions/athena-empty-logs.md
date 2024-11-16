@@ -1,17 +1,18 @@
 ---
-title: "Why does my Athena query return empty logs?"
-slug: "athena-empty-logs"
-description: "In which I wonder where all the data has gone!"
-category: "questions"
+category: questions
+description: In which I wonder where all the data has gone!
+output: src/content/questions
+publish: true
+slug: athena-empty-logs
 tags:
-  - "amazon"
-  - "athena"
-  - "aws"
-  - "cloud"
-  - "loadbalancers"
-  - "sql"
+  - amazon
+  - athena
+  - aws
+  - cloud
+  - loadbalancers
+  - sql
+title: Why does my Athena query return empty logs?
 ---
-
 Recently, I was querying for some ALB load balancer logs. It's not something that happens too often but I was surprised to find that the query rows were empty except for the `date` column.
 
 I quickly figured out that only logs from May 30th, 2024 and onwards were missing and after a quick comparison, realised that the log formats had changed.
