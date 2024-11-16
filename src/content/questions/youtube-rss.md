@@ -1,13 +1,14 @@
 ---
-title: "How can I subscribe to a YouTube channel with an RSS reader?"
-slug: "youtube-rss"
-description: "In which I take back control of my attention span (as if)"
-category: "questions"
+category: questions
+description: In which I take back control of my attention span (as if)
+output: src/content/questions
+publish: true
+slug: youtube-rss
 tags:
-  - "youtube"
-  - "rss"
+  - youtube
+  - rss
+title: How can I subscribe to a YouTube channel with an RSS reader?
 ---
-
 All YouTube channels have an RSS feed which can be found at the following endpoint:
 
 ```
