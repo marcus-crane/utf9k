@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2020-11-02T00:00:00+13:00
-description: "A minor tangent about... I don't remember, GTD and fruit?"
-slug: "fruit-plate"
+description: A minor tangent about... I don't remember, GTD and fruit?
+output: src/content/blog
+publish: true
+slug: fruit-plate
 tags:
-  - "work"
-  - "overhead"
-  - "productivity"
-title: "Fruit Plate"
+  - work
+  - overhead
+  - productivity
+title: Fruit Plate
 ---
-
 I ordered a fruit plate about 15 minutes ago.
 
 $20 for a fruit plate and a chai latte is pretty egregious but I think I got a blog post out of it so perhaps it's worth it.
