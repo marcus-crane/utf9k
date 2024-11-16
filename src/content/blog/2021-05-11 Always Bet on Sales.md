@@ -1,18 +1,19 @@
 ---
-category: "blog"
+category: blog
 date: 2021-05-11T18:23:00+13:00
-description: "Complete system downtime won't stop the sales team from making a buck"
-slug: "you-can-always-count-on-sales"
+description: Complete system downtime won't stop the sales team from making a buck
+output: src/content/blog
+publish: true
+slug: you-can-always-count-on-sales
 tags:
-  - "azure"
-  - "business"
-  - "microsoft"
-  - "outages"
-  - "reliability"
-  - "sales"
-title: "You can always count on sales"
+  - azure
+  - business
+  - microsoft
+  - outages
+  - reliability
+  - sales
+title: You can always count on sales
 ---
-
 For any readers who weren't aware, [Microsoft Azure](https://status.azure.com) suffered from a [major Azure Active Directory outage](https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx) back in March 2021.
 
 A great deal of services were degraded while I was at work so I mostly spent March 15th, 2021 monitoring the situation and broadcasting status updates for fellow affected teams internally.
