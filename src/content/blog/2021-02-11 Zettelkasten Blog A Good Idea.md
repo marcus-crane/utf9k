@@ -1,17 +1,18 @@
 ---
 aliases:
-  - "/blog/zettlekasten-blog-a-good-idea/"
-category: "blog"
+  - /blog/zettlekasten-blog-a-good-idea/
+category: blog
 date: 2021-02-11T17:00:00+13:00
-description: "I mean, it's what it says on the tin!"
-slug: "zettelkasten-blog-a-good-idea"
+description: I mean, it's what it says on the tin!
+output: src/content/blog
+publish: true
+slug: zettelkasten-blog-a-good-idea
 tags:
-  - "zettelkasten"
-  - "blogging"
-  - "meta"
-title: "Using a blog like a zettelkasten seems like a good idea"
+  - zettelkasten
+  - blogging
+  - meta
+title: Using a blog like a zettelkasten seems like a good idea
 ---
-
 Having recently gotten back into the swing of reading via [RSS](https://en.wikipedia.org/wiki/RSS), I spotted a post from [Mike Crittenden](https://critter.blog) called [Blogging as a Zettelkasten](https://critter.blog/2021/02/10/blogging-as-a-zettelkasten/).
 
 It touches on the idea that a blog can act as a [zettelkasten](https://zettelkasten.de/introduction/). For the unfamiliar, a zettelkasten is nothing more than a big collection of notes. While you might imagine reams of snippets dumped into a tool like [Apple Notes](<https://en.wikipedia.org/wiki/Notes_(Apple)>), the difference is that each note (or "zettel") is generously interlinked with other notes so as to form a "web of knowledge" or a "second brain". Each note should address one standalone idea such as "English is an unproductive language" rather than a more generic "Notes on languages".[^not-succinct]
