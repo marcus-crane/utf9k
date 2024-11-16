@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: the-simpsons-hit-and-run
 tags:
-  - "2003"
   - gamecube
   - pc
   - ps2
