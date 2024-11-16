@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2024-01-21T14:53:00+13:00
-description: "If time is a flat circle, you're going to end up in the hole again sooner or later"
-slug: "writing-for-your-worst-self"
+description: If time is a flat circle, you're going to end up in the hole again sooner or later
+output: src/content/blog
+publish: true
+slug: writing-for-your-worst-self
 tags:
-- "selfcare"
-- "writing"
-- "meta"
-title: "Writing for your worst self"
+  - selfcare
+  - writing
+  - meta
+title: Writing for your worst self
 ---
-
 The other day, I came across [Adam Mastroianni](https://www.adammastroianni.com/)'s great post [So you wanna de-bog yourself](https://www.experimental-history.com/p/so-you-wanna-de-bog-yourself) where he outlines all the various stories that he tells himself when he's stuck.
 
 A lot of that was stuff that all sounded very familiar but it also reminded me about an unwritten rule that I like to keep: Writing for your worst self.
