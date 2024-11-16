@@ -1,15 +1,16 @@
 ---
-title: "How can I quickly flatten a JSON dictionary?"
-slug: "json-dict-flattening"
-description: "In which I save myself a little bit of time"
-category: "questions"
+category: questions
+description: In which I save myself a little bit of time
+output: src/content/questions
+publish: true
+slug: json-dict-flattening
 tags:
-  - "json"
-  - "python"
-  - "software"
-  - "programming"
+  - json
+  - python
+  - software
+  - programming
+title: How can I quickly flatten a JSON dictionary?
 ---
-
 A very niche use case but I had a use case once for flattening a JSON object such that it went from this
 
 ```json
