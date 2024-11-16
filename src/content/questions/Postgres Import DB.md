@@ -1,13 +1,14 @@
 ---
-title: "How can I import a dumped database into Postgres?"
-slug: "postgres-import-db"
-description: "In which I remind myself how to import a Postgres database"
-category: "questions"
+category: questions
+description: In which I remind myself how to import a Postgres database
+output: src/content/questions
+publish: true
+slug: postgres-import-db
 tags:
-  - "databases"
-  - "postgres"
+  - databases
+  - postgres
+title: How can I import a dumped database into Postgres?
 ---
-
 Using `pg_restore`, it's almost the same process as `pg_dump` but in reverse
 
 ```bash
