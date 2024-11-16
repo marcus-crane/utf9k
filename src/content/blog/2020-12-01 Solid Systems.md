@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2020-12-01T00:00:00+13:00
-description: "Is software reliable? Probably not"
-slug: "solid-systems"
+description: Is software reliable? Probably not
+output: src/content/blog
+publish: true
+slug: solid-systems
 tags:
-  - "shopping"
-  - "reliability"
-title: "Will we ever get solid systems?"
+  - shopping
+  - reliability
+title: Will we ever get solid systems?
 ---
-
 If I had a crystal ball in front of me, one of the things I would like to ask is "Will we, the human race, ever get solid systems?".
 
 I don't mean [SOLID](https://en.wikipedia.org/wiki/SOLID), I don't even know what that means, but you know, robust and just generally not prone to letting the user fall right through the cracks by taking an unexpected route.
