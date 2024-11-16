@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: tail-concerto
 tags:
-  - "1998"
   - ps1
 title: Tail Concerto
 ---
