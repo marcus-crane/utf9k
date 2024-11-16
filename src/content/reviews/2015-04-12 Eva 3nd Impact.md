@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: eva-3nd-impact
 tags:
-  - "2011"
   - psp
 title: "Evangelion Shin Gekijoban: 3nd Impact"
 ---
