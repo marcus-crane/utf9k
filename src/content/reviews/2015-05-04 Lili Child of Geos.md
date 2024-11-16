@@ -6,8 +6,6 @@ output: src/content/reviews
 publish: true
 slug: lili-child-of-geos
 tags:
-  - "2012"
-  - "2014"
   - ios
   - pc
 title: "Lili: Child of Geos"
