@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: asuras-wrath
 tags:
-  - "2012"
   - ps3
 title: Asura's Wrath
 ---
