@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: wolfenstein-new-order
 tags:
-  - "2014"
   - pc
   - ps3
   - ps4
