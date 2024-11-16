@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2022-06-03T23:35:00+13:00
-description: "In which we investigate whether the demo content loaded onto iPads is owned a single fictional person"
-slug: "ipad-canonical-owner"
+description: In which we investigate whether the demo content loaded onto iPads is owned a single fictional person
+output: src/content/blog
+publish: true
+slug: ipad-canonical-owner
 tags:
-  - "apple"
-  - "mystery"
-  - "ipad"
-title: "Do demo iPads have a canonical owner?"
+  - apple
+  - mystery
+  - ipad
+title: Do demo iPads have a canonical owner?
 ---
-
 A few years ago, I ordered a 4th generation Apple iPad Air and the store I purchased it from accidentally sent me a demo unit.
 
 It was a fully working iPad but it came preloaded with a number of dummy items such as a five calendars, a handful of documents and acres of photos.
