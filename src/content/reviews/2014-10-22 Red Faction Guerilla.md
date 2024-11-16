@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: red-faction-guerilla
 tags:
-  - "2009"
   - pc
   - ps3
   - xbox-360
