@@ -14,7 +14,6 @@ tags:
   - tidal
 title: Plex + Tidal = A Nice Match
 ---
-
 > [!info] 🖼 Look at this photograph
 >
 > Due to the nature of this post, it's pretty image heavy.
