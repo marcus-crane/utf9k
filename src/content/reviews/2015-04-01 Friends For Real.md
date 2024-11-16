@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: friends-for-real
 tags:
-  - "2005"
   - pc
   - ps2
 title: "Friends: The One with All the Trivia"
