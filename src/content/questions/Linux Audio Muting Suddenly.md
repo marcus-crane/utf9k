@@ -1,15 +1,16 @@
 ---
-title: "Why do some of my applications suddenly get muted on Linux?"
-slug: "linux-audio-muting-suddenly"
-description: "In which I investigate multiple audio streams clashing with each other"
-category: "questions"
+category: questions
+description: In which I investigate multiple audio streams clashing with each other
+output: src/content/questions
+publish: true
+slug: linux-audio-muting-suddenly
 tags:
-  - "audio"
-  - "bugs"
-  - "linux"
-  - "spotify"
+  - audio
+  - bugs
+  - linux
+  - spotify
+title: Why do some of my applications suddenly get muted on Linux?
 ---
-
 I recently ran into this issue when switching my distro to [Manjaro](https://manjaro.org).
 
 I'd find that whenever a different audio source would start playing such as a voice call, notification or even a silent video on the web, my Spotify audio would drop to 0 instantly

@@ -1,13 +1,14 @@
 ---
-title: "How can I find my current NODE_MODULE_VERSION?"
-slug: "nodejs-module-version"
-description: "In which I remind myself how to determine the value of NODE_MODULE_VERSION"
-category: "questions"
+category: questions
+description: In which I remind myself how to determine the value of NODE_MODULE_VERSION
+output: src/content/questions
+publish: true
+slug: nodejs-module-version
 tags:
-  - "javascript"
-  - "nodejs"
+  - javascript
+  - nodejs
+title: How can I find my current NODE_MODULE_VERSION?
 ---
-
 This error is usually pretty cryptic and I often forget how to debug it so let's look at a sample error:
 
 ```bash

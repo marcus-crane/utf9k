@@ -1,14 +1,15 @@
 ---
-title: "How can I find out why my Mac has restarted?"
-slug: "macos-check-shutdown-cause"
-description: "In which I try to figure out why my coworkers Macbook crashed"
-category: "questions"
+category: questions
+description: In which I try to figure out why my coworkers Macbook crashed
+output: src/content/questions
+publish: true
+slug: macos-check-shutdown-cause
 tags:
-  - "crashes"
-  - "logging"
-  - "macos"
+  - crashes
+  - logging
+  - macos
+title: How can I find out why my Mac has restarted?
 ---
-
 This is arguably one of the more obscure commands I've come across. At the time, a coworker of mine was having issues where his laptop would restart seemingly at random.
 
 We were able to find out a bit more with the following command:

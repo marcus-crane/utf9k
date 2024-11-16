@@ -1,15 +1,14 @@
 ---
-title: "How can I find out more about the hardware inside my Mac?"
-slug: "macos-view-hardware"
-description: "In which I remind myself how to view system specs in the terminal"
-category: "questions"
+category: questions
+description: In which I remind myself how to view system specs in the terminal
+output: src/content/questions
+publish: true
+slug: macos-view-hardware
 tags:
-  - "hardware"
-  - "macos"
+  - hardware
+  - macos
+title: How can I find out more about the hardware inside my Mac?
 ---
-
-##
-
 While there's the classic `Apple menu -> About This Mac -> System Report`, a terminal based alternative is the `system_profiler` command.
 
 You can use a list of queryable types like so:

@@ -1,12 +1,13 @@
 ---
-title: "How can I globally ignore files?"
-slug: "git-globally-ignore-files"
-description: "In which I wage war against .DS_Store"
-category: "questions"
+category: questions
+description: In which I wage war against .DS_Store
+output: src/content/questions
+publish: true
+slug: git-globally-ignore-files
 tags:
-  - "git"
+  - git
+title: How can I globally ignore files?
 ---
-
 This has been something that has plagued me for years and I've never sat down to properly fix it.
 
 Instead, I've just added `.DS_Store` to `.gitignore` files probably over one hundred times by over.

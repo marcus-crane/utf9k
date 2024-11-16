@@ -1,15 +1,16 @@
 ---
-title: "How can I inspect socket connection states"
-slug: "inspecting-socket-connections"
-description: "In which I kill some stubborn connections"
-category: "questions"
+category: questions
+description: In which I kill some stubborn connections
+output: src/content/questions
+publish: true
+slug: inspecting-socket-connections
 tags:
-  - "software"
-  - "networking"
-  - "unix"
-  - "sockets"
+  - software
+  - networking
+  - unix
+  - sockets
+title: How can I inspect socket connection states
 ---
-
 Often times, it can be useful to inspect the state of socket connections made by applications.
 
 You can use the tool `ss` to inspect and even kill connections.

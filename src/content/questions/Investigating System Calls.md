@@ -1,14 +1,15 @@
 ---
-title: "How can I go about investigating system calls?"
-slug: "investigating-system-calls"
-description: "In which I never remember to use this stuff"
-category: "questions"
+category: questions
+description: In which I never remember to use this stuff
+output: src/content/questions
+publish: true
+slug: investigating-system-calls
 tags:
-  - "software"
-  - "debugging"
-  - "investigation"
+  - software
+  - debugging
+  - investigation
+title: How can I go about investigating system calls?
 ---
-
 From time to time, it can be useful to explore what your applications are doing.
 
 Sometimes, you may find horrifying things such as with [How Setting the TZ Environment Variable Avoids Thousands of System Calls](https://blog.packagecloud.io/set-environment-variable-save-thousands-of-system-calls/).

@@ -1,13 +1,14 @@
 ---
-title: "How can I restrict which traffic is allowed to pass through a Kube ingress?"
-slug: "kubes-ingress-ip-range"
-description: "In which I remind myself how to restrict a Kube ingress to a specific CIDR range"
-category: "questions"
+category: questions
+description: In which I remind myself how to restrict a Kube ingress to a specific CIDR range
+output: src/content/questions
+publish: true
+slug: kubes-ingress-ip-range
 tags:
-  - "allowlist"
-  - "kubernetes"
+  - allowlist
+  - kubernetes
+title: How can I restrict which traffic is allowed to pass through a Kube ingress?
 ---
-
 This one had my scratching my head a bit as I wasn't quite sure if Kubernetes was the right place to do this.
 
 Depending on your use case, it might make sense to terminate traffic before it reaches your cluster but that may have the effect of filtering traffic to other applications if not done properly.

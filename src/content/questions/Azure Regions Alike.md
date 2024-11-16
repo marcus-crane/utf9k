@@ -1,15 +1,16 @@
 ---
-title: "Are all Azure regions alike?"
-slug: "azure-regions-alike"
-description: "In which I think about Azure, which is a mistake in itself"
-category: "questions"
+category: questions
+description: In which I think about Azure, which is a mistake in itself
+output: src/content/questions
+publish: true
+slug: azure-regions-alike
 tags:
-  - "availability"
-  - "azure"
-  - "cloud"
-  - "microsoft"
+  - availability
+  - azure
+  - cloud
+  - microsoft
+title: Are all Azure regions alike?
 ---
-
 No! As I learned recently, only a handful of regions feature multiple availability zones.
 
 Having originally started out using [AWS](https://aws.amazon.com), I had assumed that every region has multiple availability zones.

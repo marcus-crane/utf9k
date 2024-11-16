@@ -1,13 +1,14 @@
 ---
-title: "How can I capture network packets with tcpdump?"
-slug: "tcpdump-exfiltration"
-description: "In which I have more data than I know what to do with"
-category: "questions"
+category: questions
+description: In which I have more data than I know what to do with
+output: src/content/questions
+publish: true
+slug: tcpdump-exfiltration
 tags:
-  - "wireshark"
-  - "networking"
+  - wireshark
+  - networking
+title: How can I capture network packets with tcpdump?
 ---
-
 I always forget the various flags for `tcpdump` but also how to actually get captures off of machines in the rare case that it's useful for low level debugging.
 
 ```console

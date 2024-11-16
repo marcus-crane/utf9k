@@ -1,12 +1,13 @@
 ---
-title: "How can I view methods associated with an Elixir object?"
-slug: "elixir-object-methods"
-description: "In which I remember how to introspect in Elixir"
-category: "questions"
+category: questions
+description: In which I remember how to introspect in Elixir
+output: src/content/questions
+publish: true
+slug: elixir-object-methods
 tags:
-  - "elixir"
+  - elixir
+title: How can I view methods associated with an Elixir object?
 ---
-
 Let's say we have the following module
 
 ```elixir

@@ -1,14 +1,18 @@
 ---
-title: "How can I easily bulk generate icons on macOS?"
-slug: "macos-generating-iconsets"
-description: "In which I get some nice icons without too much effort"
-category: "questions"
+category: questions
+description: In which I get some nice icons without too much effort
+output: src/content/questions
+publish: true
+slug: macos-generating-iconsets
 tags:
-  - "macos"
-  - "design"
-  - "utilities"
+  - macos
+  - design
+  - utilities
+  - macos
+  - resources
+  - design
+title: How can I easily bulk generate icons on macOS?
 ---
-
 **Source**: [Originally mentioned by strogonoff on Hacker News](https://news.ycombinator.com/item?id=36495008)
 
 > You can use sips together with iconutil to generate a complete .icns file for your app from a single 1024 by 1024 PNG without any third party software:
@@ -33,5 +37,3 @@ iconutil -c icns MyIcon.iconset
 ```shell
 ffmpeg -i MyIcon.iconset/icon_256x256.png icon.ico
 ```
-
-#macos #resources #design

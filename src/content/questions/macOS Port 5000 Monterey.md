@@ -1,15 +1,16 @@
 ---
-title: "What is using Port 5000 on macOS Monterey?"
-slug: "macos-port-5000-monterey"
-description: "In which I recall how to evict an annoying gremlin"
-category: "questions"
+category: questions
+description: In which I recall how to evict an annoying gremlin
+output: src/content/questions
+publish: true
+slug: macos-port-5000-monterey
 tags:
-  - "airplay"
-  - "macos"
-  - "monterey"
-  - "receiver"
+  - airplay
+  - macos
+  - monterey
+  - receiver
+title: What is using Port 5000 on macOS Monterey?
 ---
-
 I've been fiddling a bit with [Wails](https://github.com/wailsapp/wails) recently and I gave the unreleased v2 alpha a try.
 
 Out of the box, it binds to Port 5000 and I was surprised to receive a `403 Forbidden`.

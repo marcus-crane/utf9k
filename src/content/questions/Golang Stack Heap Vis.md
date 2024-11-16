@@ -1,16 +1,17 @@
 ---
-title: "How can I visualise stack and heap alloactions in Go?"
-slug: "golang-stack-heap-vis"
-description: "In which I will probably ignore the results and write inefficient software"
-category: "questions"
+category: questions
+description: In which I will probably ignore the results and write inefficient software
+output: src/content/questions
+publish: true
+slug: golang-stack-heap-vis
 tags:
-  - "golang"
-  - "performance"
-  - "garbagecollection"
-  - "software"
-  - "optimisation"
+  - golang
+  - performance
+  - garbagecollection
+  - software
+  - optimisation
+title: How can I visualise stack and heap alloactions in Go?
 ---
-
 **Source**: [Making a Go program 42% faster with a one character change](https://hmarr.com/blog/go-allocation-hunting/)
 
 You can compile your program with a special flag to see the output of how variables are stored

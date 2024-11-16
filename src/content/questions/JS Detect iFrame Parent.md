@@ -1,13 +1,14 @@
 ---
-title: "How can I determine if my code is inside of an iFrame?"
-slug: "js-detect-iframe-parent"
-description: "A small Javascript snippet useful for detecting if the host frame is an iframe"
-category: "questions"
+category: questions
+description: A small Javascript snippet useful for detecting if the host frame is an iframe
+output: src/content/questions
+publish: true
+slug: js-detect-iframe-parent
 tags:
-  - "iframe"
-  - "javascript"
+  - iframe
+  - javascript
+title: How can I determine if my code is inside of an iFrame?
 ---
-
 I suppose they aren't used too much anymore but I've started using them as a preview window for my [projects](/projects) page.
 
 It can be handy to act different depending on an iFrame, such as scaling the view port.

@@ -1,12 +1,13 @@
 ---
-title: "How can I view the methods associated with an object?"
-slug: "powershell-object-methods"
-description: "In which I remind myself how to introspect objects in Powershell"
-category: "questions"
+category: questions
+description: In which I remind myself how to introspect objects in Powershell
+output: src/content/questions
+publish: true
+slug: powershell-object-methods
 tags:
-  - "powershell"
+  - powershell
+title: How can I view the methods associated with an object?
 ---
-
 Let's say that you have a variable that contains a string:
 
 ```powershell

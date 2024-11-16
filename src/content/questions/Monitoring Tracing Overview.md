@@ -1,13 +1,14 @@
 ---
-title: "What is tracing?"
-slug: "monitoring-tracing-overview"
-description: "In which I remind myself about the difference between monitoring and tracing"
-category: "questions"
+category: questions
+description: In which I remind myself about the difference between monitoring and tracing
+output: src/content/questions
+publish: true
+slug: monitoring-tracing-overview
 tags:
-  - "instrumentation"
-  - "monitoring"
+  - instrumentation
+  - monitoring
+title: What is tracing?
 ---
-
 In the same vein that it's not often feasible to capture all data, all of the time, tracing is concerned with sampling a subset of events such as every 50th incoming request.
 
 Generally most tracing implementations will show you how much time is spent at each step of the way from establishing an SSL connection through to how long is spent talking with any given database.

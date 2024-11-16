@@ -1,12 +1,13 @@
 ---
-title: "How can I view help documentation for an Elixir module?"
-slug: "elixir-help-docs"
-description: "In which I help myself to help myself"
-category: "questions"
+category: questions
+description: In which I help myself to help myself
+output: src/content/questions
+publish: true
+slug: elixir-help-docs
 tags:
-  - "elixir"
+  - elixir
+title: How can I view help documentation for an Elixir module?
 ---
-
 The iex interpreter includes a function called h which can be used to show documentation for a module
 
 ```elixir

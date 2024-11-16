@@ -1,13 +1,14 @@
 ---
-title: "What is profiling?"
-slug: "monitoring-what-is-profiling"
-description: "In which I remind myself what profiling is"
-category: "questions"
+category: questions
+description: In which I remind myself what profiling is
+output: src/content/questions
+publish: true
+slug: monitoring-what-is-profiling
 tags:
-  - "instrumentation"
-  - "monitoring"
+  - instrumentation
+  - monitoring
+title: What is profiling?
 ---
-
 An initial thought might be that it would help to capture all context about everything, all of the time but that would soon get very expensive to store.
 
 Profiling takes the approach of capturing as much context as possible for a certain period of time, generally for use in debugging.

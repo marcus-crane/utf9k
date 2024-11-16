@@ -1,14 +1,15 @@
 ---
-title: "How can I strip code signatures from macOS binaries?"
-slug: "macos-strip-code-signatures"
-description: "In which I have a nice, clean, insecure binary to play with"
-category: "questions"
+category: questions
+description: In which I have a nice, clean, insecure binary to play with
+output: src/content/questions
+publish: true
+slug: macos-strip-code-signatures
 tags:
-  - "macos"
-  - "libraries"
-  - "reverseengineering"
+  - macos
+  - libraries
+  - reverseengineering
+title: How can I strip code signatures from macOS binaries?
 ---
-
 When compiling applications by default, they get invisibly signed in order to protect them from tampering.
 
 This isn't always desirable such as if you want to use [dtruss](https://brendangregg.com/DTrace/dtruss) and other applications to monitor their system calls.

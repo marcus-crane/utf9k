@@ -1,13 +1,14 @@
 ---
-title: "How can I check if an S3 bucket name is available?"
-slug: "s3-bucket-naming"
-description: "In which you can seize a cool namespace"
-category: "questions"
+category: questions
+description: In which you can seize a cool namespace
+output: src/content/questions
+publish: true
+slug: s3-bucket-naming
 tags:
-  - "aws"
-  - "s3"
+  - aws
+  - s3
+title: How can I check if an S3 bucket name is available?
 ---
-
 When wanting to create an S3 bucket, you don't always want to go to the effort to actually attempt to make one.
 
 Thankfully it's possible to see if a name is taken without any special auth required.

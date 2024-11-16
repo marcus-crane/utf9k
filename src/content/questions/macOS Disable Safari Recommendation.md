@@ -1,14 +1,15 @@
 ---
-title: "How can I disable the 'Try the new Safari' notification?"
-slug: "macos-disable-safari-recommendation"
-description: "In which I remind myself how to get rid of that pesky notification"
-category: "questions"
+category: questions
+description: In which I remind myself how to get rid of that pesky notification
+output: src/content/questions
+publish: true
+slug: macos-disable-safari-recommendation
 tags:
-  - "macos"
-  - "safari"
-  - "software"
+  - macos
+  - safari
+  - software
+title: How can I disable the 'Try the new Safari' notification?
 ---
-
 This question [was trending](https://news.ycombinator.com/item?id=28361730) on [Hacker News](https://news.ycombinator.com) but the thread in question never addressed it.
 
 Buried down in the comments was a technical fix [suggested by torstenvl](https://news.ycombinator.com/item?id=28362014).

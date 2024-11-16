@@ -1,13 +1,14 @@
 ---
-title: "What is worth instrumenting?"
-slug: "monitoring-what-to-instrument"
-description: "In which I remind myself what is a good idea to instrument"
-category: "questions"
+category: questions
+description: In which I remind myself what is a good idea to instrument
+output: src/content/questions
+publish: true
+slug: monitoring-what-to-instrument
 tags:
-  - "instrumentation"
-  - "monitoring"
+  - instrumentation
+  - monitoring
+title: What is worth instrumenting?
 ---
-
 Services and libraries have different needs. Further, not all services are alike in the types of work they perform or what types of work are important to measure
 
 ### Online-serving systems

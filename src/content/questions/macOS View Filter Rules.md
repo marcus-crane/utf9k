@@ -1,12 +1,14 @@
 ---
-title: "How can I view macOS network filter rules?"
-slug: "macos-view-filter-rules"
-description: "In which I pour over some routing tables"
-category: "questions"
+category: questions
+description: In which I pour over some routing tables
+output: src/content/questions
+publish: true
+slug: macos-view-filter-rules
 tags:
-  - "macos"
-  - "software"
-  - "networking"
+  - macos
+  - software
+  - networking
+title: How can I view macOS network filter rules?
 ---
 
 ```console

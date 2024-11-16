@@ -1,14 +1,15 @@
 ---
-title: "How can I read a Kubernetes secret?"
-slug: "kubes-read-secret"
-description: "In which I remind myself how to read the contents of a Kubernetes secret"
-category: "questions"
+category: questions
+description: In which I remind myself how to read the contents of a Kubernetes secret
+output: src/content/questions
+publish: true
+slug: kubes-read-secret
 tags:
-  - "credentials"
-  - "kubernetes"
-  - "security"
+  - credentials
+  - kubernetes
+  - security
+title: How can I read a Kubernetes secret?
 ---
-
 Often times, it can be useful to check the value of a Kubernetes secret, to check that it lines up with what an application is receiving. An example might be a randomly generated secret that is shared between multiple Kubernetes resources.
 
 Let's have a look at a mock secret:

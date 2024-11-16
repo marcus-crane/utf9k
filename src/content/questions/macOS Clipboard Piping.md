@@ -1,14 +1,15 @@
 ---
-title: "How can I access my clipboard contents inside my terminal?"
-slug: "macos-clipboard-piping"
-description: "In which I remind myself how to pipe from the macOS clipboard into terminal applications"
-category: "questions"
+category: questions
+description: In which I remind myself how to pipe from the macOS clipboard into terminal applications
+output: src/content/questions
+publish: true
+slug: macos-clipboard-piping
 tags:
-  - "clipboard"
-  - "macos"
-  - "terminal"
+  - clipboard
+  - macos
+  - terminal
+title: How can I access my clipboard contents inside my terminal?
 ---
-
 I've known about this tool for some time now but I'm writing about it because I ALWAYS forget to use it.
 
 `pbcopy`, and as I just discovered, `pbpaste` are two tools that are built into macOS.

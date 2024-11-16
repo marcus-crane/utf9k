@@ -1,15 +1,16 @@
 ---
-title: "How can I extract macOS signatures from binaries?"
-slug: "macos-extracting-signatures"
-description: "In which I pull some certificates out of their hiding spot"
-category: "questions"
+category: questions
+description: In which I pull some certificates out of their hiding spot
+output: src/content/questions
+publish: true
+slug: macos-extracting-signatures
 tags:
-  - "macos"
-  - "codesigning"
-  - "certificates"
-  - "x509"
+  - macos
+  - codesigning
+  - certificates
+  - x509
+title: How can I extract macOS signatures from binaries?
 ---
-
 From time to time, it can be useful to know who signed a given macOS application.
 
 You can do that like so:
