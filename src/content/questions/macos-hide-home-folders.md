@@ -1,13 +1,14 @@
 ---
-title: "How can I hide folders in my Home directory?"
-slug: "macos-hide-home-folders"
-description: "In which I remind myself how to hide otherwise unused home folders"
-category: "questions"
+category: questions
+description: In which I remind myself how to hide otherwise unused home folders
+output: src/content/questions
+publish: true
+slug: macos-hide-home-folders
 tags:
-  - "housekeeping"
-  - "macos"
+  - housekeeping
+  - macos
+title: How can I hide folders in my Home directory?
 ---
-
 If you've ever seen those pesky default folders like `Public` and `Movies`, the good news is that you can get rid of them.
 
 You can't, or more specifically, you shouldn't fully delete them as some applications may assume their existence but you can get close enough.
