@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2024-06-26T23:45:00+13:00
-description: "On claude.ai giving the correct answer that the CEO of Boeing should feel bad"
-slug: "pleasant-claude-interaction"
+description: On claude.ai giving the correct answer that the CEO of Boeing should feel bad
+output: src/content/blog
+publish: true
+slug: pleasant-claude-interaction
 tags:
-- "ai"
-- "ethics"
-title: "Claude makes the case against Boeing"
+  - ai
+  - ethics
+title: Claude makes the case against Boeing
 ---
-
 It's almost Winter time which means plenty of people are coming down with colds. That gross, groggy feeling makes it hard to concentrate and to some degree, you even hallucinate a little bit[^1]. Getting your wires crossed makes it hard to stay on track so there's lots of idle time where you just kind of gaze out the window.
 
 Particularly this past weekend, I was stretched out on the couch jumping around different bits of media and among them was one of the [recent hearing](https://youtu.be/-RcnCu7WLxc?t=68) of Boeing CEO [David Calhoun](https://en.wikipedia.org/wiki/Dave_Calhoun). It was one of those standard panels where the CEO is asked "How did things get so bad" to which he replied "Things are not bad and have never been better!".
