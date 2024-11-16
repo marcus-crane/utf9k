@@ -1,14 +1,15 @@
 ---
-title: "How can I get rid of the default application folders that ship with my Linux distro?"
-slug: "linux-disable-stock-folders"
-description: "In which I remind myself how to disable default application folders in Linux"
-category: "questions"
+category: questions
+description: In which I remind myself how to disable default application folders in Linux
+output: src/content/questions
+publish: true
+slug: linux-disable-stock-folders
 tags:
-  - "housekeeping"
-  - "linux"
-  - "xdg"
+  - housekeeping
+  - linux
+  - xdg
+title: How can I get rid of the default application folders that ship with my Linux distro?
 ---
-
 While you can delete stock folders such as `Templates`, `Public` and so on, they'll still appear in the sidebar of your file explorer.
 
 The good news is that they're pretty easy to disable.
