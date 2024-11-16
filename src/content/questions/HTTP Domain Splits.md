@@ -1,15 +1,16 @@
 ---
-title: "Why did sites split their assets across multiple domains back in the day?"
-slug: "http-domain-splits"
-description: "In which I capture a bit of history around domain splits"
-category: "questions"
+category: questions
+description: In which I capture a bit of history around domain splits
+output: src/content/questions
+publish: true
+slug: http-domain-splits
 tags:
-  - "cookies"
-  - "headers"
-  - "historical"
-  - "http"
+  - cookies
+  - headers
+  - historical
+  - http
+title: Why did sites split their assets across multiple domains back in the day?
 ---
-
 It was common to have images on a subdomain and the bulk of the site at the root of a domain such as `nytimes.com` and `img.nytimes.com`
 
 Caching is widely understood as the current value but it doesn't capture the historical context behind the introduction of this tactic.
