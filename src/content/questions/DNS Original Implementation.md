@@ -1,13 +1,14 @@
 ---
-title: "How was DNS originally implemented?"
-slug: "dns-original-implementation"
-description: "In which I capture a bit of DNS history to remind myself"
-category: "questions"
+category: questions
+description: In which I capture a bit of DNS history to remind myself
+output: src/content/questions
+publish: true
+slug: dns-original-implementation
 tags:
-  - "dns"
-  - "historical"
+  - dns
+  - historical
+title: How was DNS originally implemented?
 ---
-
 Back in the day, there was just one file: `HOSTS.TXT`.
 
 It contained a name-to-address mapping for every entity within [ARPANET](https://en.wikipedia.org/wiki/ARPANET).
