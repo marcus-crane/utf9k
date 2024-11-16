@@ -6,8 +6,6 @@ output: src/content/reviews
 publish: true
 slug: kenka-bancho
 tags:
-  - "2008"
-  - "2009"
   - psp
 title: "Kenka Bancho: Badass Rumble"
 ---
