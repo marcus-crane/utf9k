@@ -1,14 +1,15 @@
 ---
-title: "How can I unpack the contents of an Electron app?"
-slug: "electron-unpacking"
-description: "In which I open up my favourite text editor"
-category: "questions"
+category: questions
+description: In which I open up my favourite text editor
+output: src/content/questions
+publish: true
+slug: electron-unpacking
 tags:
-  - "electron"
-  - "reverseengineering"
-  - "software"
+  - electron
+  - reverseengineering
+  - software
+title: How can I unpack the contents of an Electron app?
 ---
-
 It can be interesting to unpack Electron apps to see how they function or just generally try to reimplement a feature in a different language.
 
 You'll first need to open up the application itself which varies from platform to platform. In our case, we'll have a look at the Obsidian macOS app as an example.
