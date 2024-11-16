@@ -1,16 +1,17 @@
 ---
-title: "Killer Is Dead"
+category: reviews
 date: 2014-10-13T19:19:55+13:00
-slug: "killer-is-dead"
-category: "reviews"
-description: "A game that is very quirky, nonsensical even, with fairly average gameplay. Despite that, it can still be enjoyable."
+description: A game that is very quirky, nonsensical even, with fairly average gameplay. Despite that, it can still be enjoyable.
+output: src/content/reviews
+publish: true
+slug: killer-is-dead
 tags:
   - "2013"
-  - "pc"
-  - "ps3"
-  - "xbox-360"
+  - pc
+  - ps3
+  - xbox-360
+title: Killer Is Dead
 ---
-
 This was **perhaps one of the most nonsensical games that I have played in a long time**. The story, for the most part, was barely comprehensible and even after having finished it, I still don't understand a lot of what happened!
 
 That said, personally, I like nonsensical things so, for me at least, this wasn't a huge issue. **If what you're looking for is a good story however, I would say that this really isn't really the game for you**. If you're here for something along the lines of DMC or are just a **general action game fan** who is after an extensive combo system with flashy tricks, then sorry but **you'll just think this game is garbage tier when judged on its combat**.
