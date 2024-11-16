@@ -1,15 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2020-11-23T00:00:00+13:00
-description: "A step by step walkthrough on how I cleaned up some data as part of a side project"
-slug: "tidying-towing-data"
+description: A step by step walkthrough on how I cleaned up some data as part of a side project
+output: src/content/blog
+publish: true
+slug: tidying-towing-data
 tags:
-  - "python"
-  - "pandas"
-  - "cleaning"
-  - "oia"
-  - "data"
-title: "Tidying up towing data with Pandas"
+  - python
+  - pandas
+  - cleaning
+  - oia
+  - data
+title: Tidying up towing data with Pandas
 ---
 
 > [!info] 💼 I am not a lawyer! Oh, I meant to say data scientist
