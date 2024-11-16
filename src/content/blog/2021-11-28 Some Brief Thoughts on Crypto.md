@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-11-28T15:04:00+13:00
 description: "It really is what it says on the tin: I have some thoughts about crypto"
-slug: "brief-thoughts-on-crypto"
+output: src/content/blog
+publish: true
+slug: brief-thoughts-on-crypto
 tags:
-  - "blockchain"
-  - "cryptocurrency"
-  - "nft"
-title: "Brief thoughts on crypto"
+  - blockchain
+  - cryptocurrency
+  - nft
+title: Brief thoughts on crypto
 ---
-
 It shouldn't come as any surprise that I don't consider myself a fan of blockchain derivatives such as cryptocurrencies and NFTs.
 
 In short because when 1 unit of a currency is worth $54,000 at the time of writing, that sounds more like an investment vehicle.
