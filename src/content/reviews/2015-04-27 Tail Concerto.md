@@ -1,14 +1,15 @@
 ---
-title: "Tail Concerto"
+category: reviews
 date: 2015-04-27T12:28:16+13:00
-description: "A review for Tail Concerto"
-slug: "tail-concerto"
-category: "reviews"
+description: A review for Tail Concerto
+output: src/content/reviews
+publish: true
+slug: tail-concerto
 tags:
   - "1998"
-  - "ps1"
+  - ps1
+title: Tail Concerto
 ---
-
 Oooh, yes, we've finally come full circle back to CyberConnect again who you might remember as the ones responsible for over-the-top cinematic brawler ‘thing', Asura's Wrath. They're best known for the .hack franchise, perhaps one of my favourite series, two JoJo's Bizarre Adventure games for the PS3/4 and the 16 different Naruto: Ultimate Ninja games that have been released so far. Under all of that hides the Little Tail Bronx series which has gone fairly under the radar. Much like the Xeno and Final Fantasy series, each release is a spiritual successor to the last rather than there being direct sequels.
 
 All three releases so far have all been set in a steampunk world full of anthropomorphic cats and dogs, but they never share the same characters or worlds. Despite the series' low profitability, CyberConnect2 still continues to express interest in creating even more entries which is a fairly rare thing to hear from a company who works under a publisher. Might as well see what it's all about!
