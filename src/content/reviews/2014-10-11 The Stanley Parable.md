@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: the-stanley-parable
 tags:
-  - "2013"
   - pc
 title: The Stanley Parable
 ---
