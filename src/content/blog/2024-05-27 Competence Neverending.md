@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2024-05-27T23:10:00+13:00
-description: "Being self taught is a perpetual blessing and a curse if you're too harsh on yourself"
-slug: "competence-neverending"
+description: Being self taught is a perpetual blessing and a curse if you're too harsh on yourself
+output: src/content/blog
+publish: true
+slug: competence-neverending
 tags:
-- "selfcriticism"
-- "learning"
-- "compassion"
-title: "Competence Neverending"
+  - selfcriticism
+  - learning
+  - compassion
+title: Competence Neverending
 ---
-
 As I continue to progress through my career, one thing remains constant which is that [I am very bad at phoning things in](https://utf9k.net/blog/ride-the-curve).
 
 It's not super often that I have to engage in business type meetings but this week is the rare exception.
