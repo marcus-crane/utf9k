@@ -1,14 +1,15 @@
 ---
-title: "The Stanley Parable"
+category: reviews
 date: 2014-10-11T07:46:05+13:00
-slug: "the-stanley-parable"
-category: "reviews"
-description: "Very much enjoyed this title and encourage anyone interested in playing it. It looks like a walking simulator at first glance but it's a bit more than that."
+description: Very much enjoyed this title and encourage anyone interested in playing it. It looks like a walking simulator at first glance but it's a bit more than that.
+output: src/content/reviews
+publish: true
+slug: the-stanley-parable
 tags:
   - "2013"
-  - "pc"
+  - pc
+title: The Stanley Parable
 ---
-
 Hmm, let's see here. How would I write about something like The Stanley Parable…
 
 The Stanley Parable is... well, at first glance, it's **easy to compare it to a 'walking simulator'** such as Gone Home or Dear Esther and to an extent, that's somewhat correct, I mean, you do just walk around. You can't jump or sprint, just walk and press E to open doors.
