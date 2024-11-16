@@ -1,18 +1,19 @@
 ---
-title: "Life is Strange"
+category: reviews
 date: 2016-01-01T00:01:03+13:00
-description: "A review for Life is Strange"
-slug: "life-is-strange"
-category: "reviews"
+description: A review for Life is Strange
+output: src/content/reviews
+publish: true
+slug: life-is-strange
 tags:
   - "2015"
-  - "pc"
-  - "ps3"
-  - "ps4"
-  - "xbox-360"
-  - "xbox-one"
+  - pc
+  - ps3
+  - ps4
+  - xbox-360
+  - xbox-one
+title: Life is Strange
 ---
-
 Admittedly, I picked up Life is Strange to experience just how cringeworthy it is. I'd heard a bit of negativity regarding the game and its fans. While the concept of separating the art from the artist is debatable, I think this is a clear case of separating the game from its user base. It's best experienced without any hype or misconceptions attached.
 
 In a broad sense, **Life is Strange is a story about Maxine "Max" Caulfield**, an 18 year old girl attending the prestigious Blackwell Academy. A few weeks into her course, she unintentionally finds herself the observer of a fatal shooting in the girl's bathroom. Fearing for her life, **she discovers that she is able to reverse time**. This jumps back to earlier that day, giving her time to alter the events of the future, for better or worse. The rest is best experienced blind.
