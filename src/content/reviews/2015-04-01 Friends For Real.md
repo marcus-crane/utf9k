@@ -1,15 +1,16 @@
 ---
-title: "Friends: The One with All the Trivia"
+category: reviews
 date: 2015-04-01T17:00:58+13:00
-slug: "friends-for-real"
-category: "reviews"
-description: "Help me! I'm trapped in this eternal hell!"
+description: Help me! I'm trapped in this eternal hell!
+output: src/content/reviews
+publish: true
+slug: friends-for-real
 tags:
   - "2005"
-  - "pc"
-  - "ps2"
+  - pc
+  - ps2
+title: "Friends: The One with All the Trivia"
 ---
-
 Videogame perfection. Move over Dork Souls because we have a new contender for world's hardest game. Take all of the most minute, irrelevant details from across 236 episodes of Friends, compact it all into a single trivia game and the result is Friends: The One With All The Trivia.
 
 This game does not hold your hand. The second you hit Start, sit back because you're about to endure a barrage of over 3000 questions and 700 video clips. Your hosts Janice, Gunther and Jack & Judy Geller accompany you on the tour letting out small jeers when you inevitably mess up. As someone who has never seen an episode of Friends, it felt like a trip into hell itself.
