@@ -6,7 +6,6 @@ output: src/content/reviews
 publish: true
 slug: life-is-strange
 tags:
-  - "2015"
   - pc
   - ps3
   - ps4
