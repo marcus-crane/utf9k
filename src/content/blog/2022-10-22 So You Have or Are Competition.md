@@ -12,7 +12,6 @@ tags:
   - work
 title: So you have (or are) competition
 ---
-
 > [!note] 🧪 This post is a sort of weird living document of sorts
 >
 > To be honest, I got kind of lazy towards the end so I'm pushing out what I wrote.
