@@ -1,13 +1,14 @@
 ---
-category: "blog"
+category: blog
 date: 2020-04-13T00:00:00+13:00
-description: "For no particular reason, I documented all the crap I haul around and my plan to slim it down even further"
-slug: "reducing-my-edc-2019"
+description: For no particular reason, I documented all the crap I haul around and my plan to slim it down even further
+output: src/content/blog
+publish: true
+slug: reducing-my-edc-2019
 tags:
-  - "organisation"
-title: "Reducing my everyday carry during 2019"
+  - organisation
+title: Reducing my everyday carry during 2019
 ---
-
 During the beginning of 2019, I had quite a bit of stuff I was carrying around and it bugged me quite a bit.
 
 I managed to reduce down the complexity by quite a large amount, and it's probably one of the better investments I've made recently.
