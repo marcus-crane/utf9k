@@ -1,15 +1,16 @@
 ---
-title: "Kenka Bancho: Badass Rumble"
+category: reviews
 date: 2015-04-04T23:39:05+13:00
-slug: "kenka-bancho"
-category: "reviews"
-description: "Get ready to ignite your fighting spirit as you participate in a full scale rumble to see who will win the title of toughest guy in all of Japan."
+description: Get ready to ignite your fighting spirit as you participate in a full scale rumble to see who will win the title of toughest guy in all of Japan.
+output: src/content/reviews
+publish: true
+slug: kenka-bancho
 tags:
   - "2008"
   - "2009"
-  - "psp"
+  - psp
+title: "Kenka Bancho: Badass Rumble"
 ---
-
 Psst, hey punk, you think you've got what it takes be Japan's toughest bancho, huh? Well, we'll just see about that. Every school in the area will be arriving in Kyouto soon for some boring ass trip but who wants to visit some crusty old museum with those losers? We're about to see who really has what it takes, y'hear? It's time to separate the tough-talking shabazos from the banchos who can really handle the heat. **Get ready to ignite your fighting spirit and defend your honour in an full scale rumble between 47 other banchos vying for the title of "toughest guy in all of Japan".**
 
 Still with me? Let's rewind a little bit. In Kenka Bancho: Badass Rumble, you're just one of the many banchos in said rumble spanning the city of Kyouto. What is a bancho, you ask? It's the Japanese term used to refer to someone who leads a group of “juvenile delinquents”. You may have seen a few stereotypes in anime or manga where you have one intimidating leader, perhaps still in school who oversees a number of spineless peons that do all the dirty work. Those peons are a prime example of shabazo. Goons who act tough but have no sense of honour instead opting to either fight dirty or run away like the weak cowards they are. You don't want to be a shabazo, do you? Good.
