@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2023-10-09T15:00:00+13:00
-description: "How I finished a project that was sitting on the backburner for years"
-slug: "spreadsheet-to-visualisation"
+description: How I finished a project that was sitting on the backburner for years
+output: src/content/blog
+publish: true
+slug: spreadsheet-to-visualisation
 tags:
-  - "software"
-  - "tutorial"
-  - "visualisation"
+  - software
+  - tutorial
+  - visualisation
 title: "Spreadsheet to visualisation: How I created towing.utf9k.net"
 ---
-
 From time to time, I like to [submit requests under the Official Information Act](https://utf9k.net/blog/nz-oia-guide/) and see what fun datasets I can get my hands on.
 
 A few of these projects end up on the back burner and [towing.utf9k.net](https://towing.utf9k.net) was no different. Before we get too far, you might want to [read this brief overview](https://utf9k.net/projects/towing/) about what it does to build some context.

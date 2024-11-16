@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2021-05-22T10:40:00+13:00
-description: "A post from a darker time on how to better think about taking a break"
-slug: "ride-the-curve"
+description: A post from a darker time on how to better think about taking a break
+output: src/content/blog
+publish: true
+slug: ride-the-curve
 tags:
-  - "career"
-  - "health"
-  - "longterm"
-  - "selfcare"
-title: "Ride the curve"
+  - career
+  - health
+  - longterm
+  - selfcare
+title: Ride the curve
 ---
-
 > [!info] 🚣‍♀️ It's rough seas out there!
 >
 > Not so long ago, I was struggling with instances of <a href="https://en.wikipedia.org/wiki/Depersonalization">something very unfamiliar</a> , which scared the shit out of me.

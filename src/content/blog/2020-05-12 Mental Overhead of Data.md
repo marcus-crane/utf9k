@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2020-05-12T00:00:00+13:00
-description: "Looking back on the idea of a quantified self"
-slug: "mental-overhead-of-data"
+description: Looking back on the idea of a quantified self
+output: src/content/blog
+publish: true
+slug: mental-overhead-of-data
 tags:
-  - "data"
-  - "overhead"
-  - "off-the-cuff"
-title: "Data hoarding seems like a large mental overhead"
+  - data
+  - overhead
+  - off-the-cuff
+title: Data hoarding seems like a large mental overhead
 ---
-
 This isn't a post that I've outlined before hand, or even really considered in any particular depth. I'm just making up this post, and it's structure as I type.
 
 Having said that, I've got a few points on my whiteboard that made something click, along with some thoughts that have been frustrating me for a little bit now.

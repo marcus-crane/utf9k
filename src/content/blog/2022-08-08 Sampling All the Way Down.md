@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2022-08-08T19:00:00+13:00
-description: "In which we take a brief tour in all the ways that metrics may not accurately capture reality"
-slug: "sampling-all-the-way-down"
+description: In which we take a brief tour in all the ways that metrics may not accurately capture reality
+output: src/content/blog
+publish: true
+slug: sampling-all-the-way-down
 tags:
-  - "datadog"
-  - "sampling"
-  - "tracing"
-title: "Sampling all the way down"
+  - datadog
+  - sampling
+  - tracing
+title: Sampling all the way down
 ---
-
 Recently, I was chatting with a coworker about the accuracy of tracing. In particular, we were discussing [Datadog APM](https://docs.datadoghq.com/tracing/) but the same discussion probably applies equally to [OpenTelemetry](https://opentelemetry.io/) as well as other SaaS provider implementations.
 
 To be clear, when I say accuracy here, I don't mean the accuracy of what each trace is presenting. The overall picture is more than accurate enough but I would argue that it will never 100% reflect reality, nor is that necessarily something valuable to obtain.

@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2023-12-17T14:14:00+13:00
-description: "An unreleased post where I talk about Discord and what might happen to them if they were acquired"
-slug: "one-possible-death-for-discord"
+description: An unreleased post where I talk about Discord and what might happen to them if they were acquired
+output: src/content/blog
+publish: true
+slug: one-possible-death-for-discord
 tags:
-  - "business"
-  - "discord"
-  - "microsoft"
-  - "acquisition"
-title: "One possible death for Discord"
+  - business
+  - discord
+  - microsoft
+  - acquisition
+title: One possible death for Discord
 ---
-
 > [!note] 💻 This post was an unpublished draft that accidentally got published.
 >
 > This post was originally a draft that I threw together in 2021 when Microsoft were [allegedly in talks to buy](https://www.theverge.com/2021/3/26/22352028/microsoft-discord-acquisition-analysis-report) Discord.

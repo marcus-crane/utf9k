@@ -1,17 +1,18 @@
 ---
 aliases:
-  - "/blog/when-automation-goes-horribly-right"
-category: "blog"
+  - /blog/when-automation-goes-horribly-right
+category: blog
 date: 2018-12-03T00:00:00+13:00
-description: "What do you do when a UI element disappears but the service powering it still persists?"
-slug: "automation-right"
+description: What do you do when a UI element disappears but the service powering it still persists?
+output: src/content/blog
+publish: true
+slug: automation-right
 tags:
-  - "automation"
-  - "microservices"
-  - "twitter"
-title: "When automation goes horribly right"
+  - automation
+  - microservices
+  - twitter
+title: When automation goes horribly right
 ---
-
 Today, I finally solved an issue that has been a pain in my ass for many months: successful automation
 
 Towards the latter end of 2016, Twitter announced a new suite of tools for businesses via a [blog post](https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html). There were a bunch of things from quick replies to profile-listed support hours which I'm sure were of some use.

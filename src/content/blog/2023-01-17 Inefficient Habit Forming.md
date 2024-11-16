@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2023-01-17T18:30:00+13:00
-description: "Instead of committing to a habit, why not torture yourself over long spans of time?"
-slug: "inefficient-habit-forming"
+description: Instead of committing to a habit, why not torture yourself over long spans of time?
+output: src/content/blog
+publish: true
+slug: inefficient-habit-forming
 tags:
-  - "habits"
-  - "routines"
-title: "Habit forming in the least efficient way possible"
+  - habits
+  - routines
+title: Habit forming in the least efficient way possible
 ---
-
 If you were to ask me how good I am at habit forming, I would say "Not very".
 
 Looking back over time, there are plenty of routines that I do at present but I wouldn't call them formed habits since they still take some thinking (and remembering) that I should have done them.

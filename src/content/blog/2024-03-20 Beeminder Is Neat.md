@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2024-03-20T22:10:00+13:00
-description: "Present me thinks it's neat. Past me had to actually do the work so it sucks to be them."
-slug: "beeminder-is-neat"
+description: Present me thinks it's neat. Past me had to actually do the work so it sucks to be them.
+output: src/content/blog
+publish: true
+slug: beeminder-is-neat
 tags:
-- "productivity"
-- "motivation"
-- "incentive"
-title: "Beeminder is neat"
+  - productivity
+  - motivation
+  - incentive
+title: Beeminder is neat
 ---
-
 Since around October last year, I started trying out [Beeminder](https://beeminder.com) and now, months later, I'm effectively a convert.
 
 For the uninitiated, Beeminder is a service that lets you define some goals and then helps you stay accountable in achieving them.

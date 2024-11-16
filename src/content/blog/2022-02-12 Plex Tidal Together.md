@@ -1,18 +1,19 @@
 ---
-category: "blog"
+category: blog
 date: 2022-02-12T13:20:00+13:00
-description: "A lengthy post in which I gush about how I like Plexamp a lot due to how it integrates nicely with Tidal"
-slug: "plex-tidal-together"
+description: A lengthy post in which I gush about how I like Plexamp a lot due to how it integrates nicely with Tidal
+output: src/content/blog
+publish: true
+slug: plex-tidal-together
 tags:
-  - "audio"
-  - "music"
-  - "plex"
-  - "spotify"
-  - "streaming"
-  - "tidal"
-title: "Plex + Tidal = A Nice Match"
+  - audio
+  - music
+  - plex
+  - spotify
+  - streaming
+  - tidal
+title: Plex + Tidal = A Nice Match
 ---
-
 > [!info] 🖼 Look at this photograph
 >
 > Due to the nature of this post, it's pretty image heavy.

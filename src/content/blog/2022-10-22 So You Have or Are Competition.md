@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2022-10-22T22:00:00+13:00
-description: "A series of questions that I would ask my past self in certain awkward situations"
-slug: "so-you-have-or-are-competition"
+description: A series of questions that I would ask my past self in certain awkward situations
+output: src/content/blog
+publish: true
+slug: so-you-have-or-are-competition
 tags:
-  - "culture"
-  - "people"
-  - "social"
-  - "work"
-title: "So you have (or are) competition"
+  - culture
+  - people
+  - social
+  - work
+title: So you have (or are) competition
 ---
-
 > [!note] 🧪 This post is a sort of weird living document of sorts
 >
 > To be honest, I got kind of lazy towards the end so I'm pushing out what I wrote.

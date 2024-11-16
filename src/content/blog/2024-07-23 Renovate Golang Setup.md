@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2024-07-23T23:50:00+13:00
-description: "Setting up Renovate with Go can be a little bit more fiddly than most languages"
-slug: "renovate-golang-setup"
+description: Setting up Renovate with Go can be a little bit more fiddly than most languages
+output: src/content/blog
+publish: true
+slug: renovate-golang-setup
 tags:
-- "github"
-- "renovate"
-- "software"
-title: "Managing private Go repos with Renovate"
+  - github
+  - renovate
+  - software
+title: Managing private Go repos with Renovate
 ---
-
 > [!warning] 🤔 I would probably change my mind if I started from scratch
 >
 > As mentioned at the end of this post, most of this setup is a bit convoluted when compared to Renovate CE.

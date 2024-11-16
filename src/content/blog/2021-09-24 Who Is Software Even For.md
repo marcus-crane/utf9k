@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-09-24T21:00:00+13:00
-description: "Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!"
-slug: "who-is-software-even-for"
+description: Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!
+output: src/content/blog
+publish: true
+slug: who-is-software-even-for
 tags:
-  - "existential"
-  - "productivity"
-  - "software"
-title: "Who is software even for?"
+  - existential
+  - productivity
+  - software
+title: Who is software even for?
 ---
-
 This post is very much written spur of the moment, presumably with the idea that it will help contribute to treating my blog as a [zettlekasten](/blog/zettelkasten-blog-a-good-idea/) of ideas to think more about in future.
 
 I started reading [Four Thousand Weeks: Time Management for Mortals](https://us.macmillan.com/books/9780374159122) earlier today and I'm enjoying it quite a bit.

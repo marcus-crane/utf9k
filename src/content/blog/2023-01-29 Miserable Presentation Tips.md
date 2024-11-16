@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2023-01-29T15:24:00+13:00
-description: "It works well for me but I don't recommend it!"
-slug: "miserable-presentation-tips"
+description: It works well for me but I don't recommend it!
+output: src/content/blog
+publish: true
+slug: miserable-presentation-tips
 tags:
-  - "presenting"
-  - "tips"
-title: "Miserable presentation tips"
+  - presenting
+  - tips
+title: Miserable presentation tips
 ---
-
 When the thought of having to give a presentation comes up, my usual reaction is that it might be fun.
 
 I've given a decent handful of talks over the last few years to medium-ish audiences, with the largest being to around 100 people. For various reasons, the most recent ones have been via video calls but I've done a couple in person and they don't feel that different in hindsight.

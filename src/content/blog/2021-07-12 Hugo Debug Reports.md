@@ -1,17 +1,18 @@
 ---
-category: "blog"
+category: blog
 date: 2021-07-12T18:50:00+13:00
-description: "I teach you some tricks on introspecting your Hugo builds"
-slug: "hugo-debug-reports"
+description: I teach you some tricks on introspecting your Hugo builds
+output: src/content/blog
+publish: true
+slug: hugo-debug-reports
 tags:
-  - "hugo"
-  - "maintenance"
-  - "meta"
-  - "organisation"
-  - "staticsites"
-title: "Creating debug reports with Hugo inline shortcodes"
+  - hugo
+  - maintenance
+  - meta
+  - organisation
+  - staticsites
+title: Creating debug reports with Hugo inline shortcodes
 ---
-
 Recently I discovered that [Hugo](https://gohugo.io) added support for [inline shortcodes](https://gohugo.io/templates/shortcode-templates/) like 30 versions ago.
 
 According to [bep](https://github.com/bep), the reason I had never heard about them was simple:

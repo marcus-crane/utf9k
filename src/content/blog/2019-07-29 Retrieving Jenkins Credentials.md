@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2019-07-29T00:00:00+13:00
-description: "If you've put your secrets in Jenkins, there is a sneaky backdoor to get them out again"
-slug: "retrieving-jenkins-credentials"
+description: If you've put your secrets in Jenkins, there is a sneaky backdoor to get them out again
+output: src/content/blog
+publish: true
+slug: retrieving-jenkins-credentials
 tags:
-  - "cicd"
-  - "jenkins"
-  - "security"
-title: "Retrieving credentials from Jenkins"
+  - cicd
+  - jenkins
+  - security
+title: Retrieving credentials from Jenkins
 ---
-
 Have you ever stored a password in Jenkins, only to forget later on what the value is? You might try logging it from inside an existing job, but you'll find that Jenkins goes out of its way to mask that value from you (and any potential attackers!)
 
 There's a sneaky way to get those credentials out of a Jenkins agent that requires only a little bit of wrangling. It may be possible to lock this down, I haven't looked, so it's good to be aware of it, in order to consider the security implications too.

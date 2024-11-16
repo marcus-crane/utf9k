@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-08-12T20:17:00+13:00
-description: "Did you know you can change Git attributes based on what folder you're in?"
-slug: "conditional-gitconfig"
+description: Did you know you can change Git attributes based on what folder you're in?
+output: src/content/blog
+publish: true
+slug: conditional-gitconfig
 tags:
-  - "dotfiles"
-  - "git"
-  - "work"
-title: "Conditionally setting your gitconfig"
+  - dotfiles
+  - git
+  - work
+title: Conditionally setting your gitconfig
 ---
-
 Personally, I try to keep my development environment as convenient to use as possible and with the advent of [BeyondCorp-style zero trust](https://cloud.google.com/beyondcorp), more internal services are thankfully available without a VPN required.
 
 This makes it easy to access tooling from your mobile device and other places but it can also mean the line between work and personal blurs a little bit.

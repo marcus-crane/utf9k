@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2023-11-21T18:00:00+13:00
-description: "Ironically, I don't actually drive currently so I'll be fine"
-slug: "vehicle-congestion-gnss"
+description: Ironically, I don't actually drive currently so I'll be fine
+output: src/content/blog
+publish: true
+slug: vehicle-congestion-gnss
 tags:
-- "cars"
-- "privacy"
-- "surveillance"
-title: "What does vehicle congestion tracking mean for privacy?"
+  - cars
+  - privacy
+  - surveillance
+title: What does vehicle congestion tracking mean for privacy?
 ---
-
 Unfortunately for me, I finally[^1] got around to checking out [Beeminder](https://www.beeminder.com) recently and as a result, I'm due to write one blog post by the end of the day or be charged $5.
 
 Normally, I would be the last person to write anything about driving but I need a topic and so it just so happens that I actually did a bit of a dive into this topic on the weekend so here we are.

@@ -1,17 +1,18 @@
 ---
-category: "blog"
+category: blog
 date: 2021-01-11T23:40:00+13:00
-description: "In which I save myself from financial hell by putting subscriptions on another card where they can't creep up on me"
-slug: "subscription-management"
+description: In which I save myself from financial hell by putting subscriptions on another card where they can't creep up on me
+output: src/content/blog
+publish: true
+slug: subscription-management
 tags:
-  - "finance"
-  - "budgets"
-  - "subscriptions"
-  - "money"
-  - "tip"
-title: "Managing subscriptions with an extra debit card"
+  - finance
+  - budgets
+  - subscriptions
+  - money
+  - tip
+title: Managing subscriptions with an extra debit card
 ---
-
 The title says it all really but I'll go into detail a little more.
 
 One of the handiest tricks I ever discovered earlier last year, was to get a second debit card issued specifically just for subscriptions.

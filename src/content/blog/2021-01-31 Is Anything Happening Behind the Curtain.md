@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2021-01-31T15:41:00+13:00
-description: "The difference between nothing and something depends on whether the curtain has been raised yet"
-slug: "is-anything-happening-behind-the-curtain"
+description: The difference between nothing and something depends on whether the curtain has been raised yet
+output: src/content/blog
+publish: true
+slug: is-anything-happening-behind-the-curtain
 tags:
-  - "doubts"
-  - "finance"
-  - "worldview"
-title: "Is anything happening behind the curtain?"
+  - doubts
+  - finance
+  - worldview
+title: Is anything happening behind the curtain?
 ---
-
 This week has definitely been one of the more interesting ones I can remember.
 
 First up is the [GameStop short squeeze of 2021](https://en.wikipedia.org/wiki/GameStop_short_squeeze). A pretty fascinating event, that seemed to highlight far more structural issues than the original squeezer, [/u/deepfuckingvalue](https://www.wsj.com/articles/keith-gill-drove-the-gamestop-reddit-mania-he-talked-to-the-journal-11611931696) could have ever predicted.

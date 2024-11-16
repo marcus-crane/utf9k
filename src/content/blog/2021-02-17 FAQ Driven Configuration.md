@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2021-02-17T18:14:00+13:00
-description: "Not sure how to structure a config file? Try answering questions rather than trying to come up with categories"
-slug: "faq-driven-configuration"
+description: Not sure how to structure a config file? Try answering questions rather than trying to come up with categories
+output: src/content/blog
+publish: true
+slug: faq-driven-configuration
 tags:
-  - "configuration"
-  - "documentation"
-title: "FAQ driven configuration"
+  - configuration
+  - documentation
+title: FAQ driven configuration
 ---
-
 I'm sure this idea isn't new in the slightest but a handy trick I've been using is to define configuration as a series of questions, not unlike a FAQ.
 
 Rather than explain it, [here](https://github.com/marcus-crane/dotfiles/blob/62813e09dc6d5127b0f25a5017ae23fd37ce180f/doom/.doom.d/config.org) is an example of a configuration file I've structured this way.

@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2022-01-22T16:40:00+13:00
-description: "Some thoughts on what career I thought I might like as a kid"
-slug: "not-being-an-astronaut"
+description: Some thoughts on what career I thought I might like as a kid
+output: src/content/blog
+publish: true
+slug: not-being-an-astronaut
 tags:
-  - "career"
-  - "childhood"
-  - "dreams"
-  - "work"
-title: "I didn't want to be an astronaut as a kid"
+  - career
+  - childhood
+  - dreams
+  - work
+title: I didn't want to be an astronaut as a kid
 ---
-
 For those who read my blog, you'll know that one of the long running arcs is documenting my thoughts as I enter each new job.
 
 [Day Xero](/blog/day-xero) was initially just a standalone post I slapped together as I departed for my first day as a member of the [Xero graduate program](https://www.xero.com/nz/about/graduate/)[^1]. It was since joined by [Day One](/blog/day-one) ([Mercedes-Benz](https://www.mercedes-benz-trucks.com/content/mbo/markets/en_NZ/home.html)) and [Day Two](/blog/day-two) ([Vend](https://www.vendhq.com/nz/)[^2]) and I'm sure in time there will inevitably be a few more entries but for now, I'm pretty happy where I am.

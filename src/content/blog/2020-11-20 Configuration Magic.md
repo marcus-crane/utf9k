@@ -1,14 +1,15 @@
 ---
-category: "blog"
+category: blog
 date: 2020-11-20T00:00:00+13:00
-description: "Configuration is great! Magic... not so much!"
-slug: "configuration-magic"
+description: Configuration is great! Magic... not so much!
+output: src/content/blog
+publish: true
+slug: configuration-magic
 tags:
-  - "complexity"
-  - "configuration"
-title: "Configuration magic"
+  - complexity
+  - configuration
+title: Configuration magic
 ---
-
 I don't consider myself qualified enough to write much on the art of programming but I think this is probably the closest I've ever found myself.
 
 ## The situation

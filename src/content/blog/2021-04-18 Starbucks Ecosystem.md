@@ -1,16 +1,17 @@
 ---
-category: "blog"
+category: blog
 date: 2021-04-18T13:21:00+13:00
-description: "A post in which I ramble about Starbucks and how if you squint, it's a place that some people treat as their second home."
-slug: "starbucks-rewards-third-place"
+description: A post in which I ramble about Starbucks and how if you squint, it's a place that some people treat as their second home.
+output: src/content/blog
+publish: true
+slug: starbucks-rewards-third-place
 tags:
-  - "apps"
-  - "coffee"
-  - "ecosystems"
-  - "starbucks"
+  - apps
+  - coffee
+  - ecosystems
+  - starbucks
 title: "Starbucks Rewards or: Whether a Coffee Shop Can Be a Third Place"
 ---
-
 Like all non-technical blog posts I write, the ones that get published are often a spur of the moment reaction to something I just saw or experienced. In this case, I was visiting a Starbucks location here in New Zealand and learned an annoying qualifier about the recently introduced Starbucks Rewards system.
 
 For any international readers, Starbucks doesn't have a huge presence here in New Zealand. As of 2018, the total number of stores had dropped from [nearly 50 to 22](https://www.stuff.co.nz/business/industries/106769552/restaurant-brands-sells-starbucks-coffee-in-nz) with a majority of those being within key cities such as Auckland and Wellington.

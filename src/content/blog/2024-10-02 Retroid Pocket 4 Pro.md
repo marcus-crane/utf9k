@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2024-10-02T10:40:00+13:00
-description: "I finally found a handheld that I really enjoy"
-slug: "retroid-pocket-4-pro"
+description: I finally found a handheld that I really enjoy
+output: src/content/blog
+publish: true
+slug: retroid-pocket-4-pro
 tags:
-- "emulation"
-- "gaming"
-- "syncthing"
-title: "Portable gaming with the Retroid Pocket 4 Pro"
+  - emulation
+  - gaming
+  - syncthing
+title: Portable gaming with the Retroid Pocket 4 Pro
 ---
-
 So far, my favourite purchase of the year has to be the [Retroid Pocket 4 Pro](https://www.goretroid.com/products/retroid-pocket-4-handheld).
 
 ![A photo of the author holding a Retroid Pocket 4 Pro with their left hand. Visible on the screen is Steins;Gate for the Playstation Portable. It's not entirely clear from the image but they are on a train.](https://cdn.utf9k.net/blog/retroid-pocket-4-pro/steinsgate-train.jpg)

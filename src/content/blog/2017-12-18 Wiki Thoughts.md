@@ -1,15 +1,16 @@
 ---
-category: "blog"
+category: blog
 date: 2017-12-18T00:00:00+13:00
-description: "I ran a Wiki for a little while and here's what I learned"
-slug: "wiki-thoughts"
+description: I ran a Wiki for a little while and here's what I learned
+output: src/content/blog
+publish: true
+slug: wiki-thoughts
 tags:
-  - "community"
-  - "leadership"
-  - "wiki"
-title: "Some thoughts about running a wiki"
+  - community
+  - leadership
+  - wiki
+title: Some thoughts about running a wiki
 ---
-
 Recently, I started playing a mobile game called [Blustone](http://bs.visualshower.com/). It's not perfect and for all the minor issues I have with it, it's pretty enjoyable for the most part. The most important draw however has been the community.
 
 It's not huge and it does have its bad apples but for the most part, I've met a few nice people online.
