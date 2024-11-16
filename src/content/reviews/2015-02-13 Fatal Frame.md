@@ -1,16 +1,17 @@
 ---
-title: "Fatal Frame"
+category: reviews
 date: 2015-02-13T11:59:10+13:00
-slug: "fatal-frame"
-category: "reviews"
-description: "Developer Tecmo's take on Silent Hill franchise finds you battling ghosts in an abandoned mansion. Silly premise or unnerving title? Well, the second one."
+description: Developer Tecmo's take on Silent Hill franchise finds you battling ghosts in an abandoned mansion. Silly premise or unnerving title? Well, the second one.
+output: src/content/reviews
+publish: true
+slug: fatal-frame
 tags:
   - "2001"
   - "2002"
-  - "ps2"
-  - "xbox"
+  - ps2
+  - xbox
+title: Fatal Frame
 ---
-
 Oh dear, how survival horror has changed. The later entries in popular survival horror franchises such as Resident Evil, Silent Hill, Dead Space and Alone in the Dark have all slowly started drifting towards more combat oriented gameplay. We've started to see a bit of an attempt at beating the genre back into shape with titles like Slender and Amnesia but I don't think purely removing all combat is quite the right formula either. Enter Fatal Frame, developer Tecmo's take on Silent Hill, when survival horror considered what your character couldn't see to be just as important, if not more, than what you could see.
 
 The haunted Himuro Mansion is home to first entry in the franchise. Following the disappearance of his mentor, Junsei Takamine, Mafuyu Hinasaki has yet to return from within the aged estate. Two weeks have since passed and Mafuyu's younger sister, Miku, takes it upon herself to enter Himuro Mansion in search of her brother. She soon learns that Junsei's assistant and editor both accompanied him as he was conducting research on his latest novel.
