@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 import { remarkReadingTime } from './remark-reading-time.mjs';
@@ -24,7 +23,7 @@ export default defineConfig({
             "cdn.utf9k.net"
         ]
     },
-    integrations: [mdx(), sitemap()],
+    integrations: [sitemap()],
     vite: {
         plugins: [yaml()]
     },

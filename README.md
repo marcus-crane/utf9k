@@ -1,6 +1,6 @@
 # utf9k
 
-This is my personal website, which is powered by [Astro](https://astro.build/) and a combination of Markdown and [MDX](https://mdxjs.com/).
+This is my personal website, which is powered by [Astro](https://astro.build/) and Markdown.
 
 It also has some live, progressive enhancement elements powered by [gunslinger](https://github.com/marcus-crane/gunslinger).
 
