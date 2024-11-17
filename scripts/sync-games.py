@@ -42,10 +42,12 @@ lists = [
     },
 ]
 
-def _iterate_list_page(url, list_idx):
-    r = requests.get(url, headers=headers)
+def _iterate_list_page(url, list_idx, page=1):
+    page_url = f"{url}?page={page}"
+    r = requests.get(page_url, headers=headers)
     soup = BeautifulSoup(r.text, 'html.parser')
     games = soup.find(id="game-lists").find_all("div", {"class": "card"})
+    print(page_url)
     for game in games:
 
         _id = int(game.attrs['game_id'])
@@ -63,6 +65,10 @@ def _iterate_list_page(url, list_idx):
                 'height': 540
             },
         })
+
+    has_next_page = len(soup.select('span.next.disabled')) == 0
+    if has_next_page:
+        _iterate_list_page(url, list_idx, page=page+1)
 
 _iterate_list_page(PLAYING_URL, 0)
 _iterate_list_page(BACKLOGGED_URL, 1)
