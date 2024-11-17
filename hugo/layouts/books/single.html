@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<img src="{{ .Params.cover }}" alt="Book cover art for {{ .Title }}" />
+{{ .Content }}
+{{ end }}
