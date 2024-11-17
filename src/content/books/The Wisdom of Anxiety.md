@@ -13,7 +13,7 @@ isbn: 9781783253456
 length: 218
 link: https://conscious-transitions.com/the-wisdom-of-anxiety/
 output: src/content/books
-progress: 17
+progress: 42
 publish: true
 published: 2019-06-27
 publisher: Hachette UK
