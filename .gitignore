@@ -22,3 +22,5 @@ dist/
 
 # macOS-specific files
 .DS_Store
+
+hugo/public
