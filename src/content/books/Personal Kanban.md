@@ -16,7 +16,7 @@ link: https://example.com
 output: src/content/books
 progress: 26
 publish: true
-published: 2011
+published: 2011-02-02
 publisher: Createspace Independent Publishing Platform
 recommended: false
 slug: personal-kanban
