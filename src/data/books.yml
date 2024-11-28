@@ -90,17 +90,6 @@
     #   recommended: false
     #   progress: 32
 
-    - title: Personal Kanban
-      subtitle: Mapping Work | Navigating Life
-      author: Jim Benson and Tonianne DeMaria Barry
-      cover: https://cdn.utf9k.net/books/personal-kanban.jpg
-      cover_height: 1360
-      cover_width: 907
-      link: https://www.personalkanban.com/
-      date_finished: null
-      recommended: false
-      progress: 17
-
     - title: The Wisdom of Anxiety
       subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
       author: Sheryl Paul
@@ -111,6 +100,17 @@
       date_finished: null
       recommended: false
       progress: 17
+
+    - title: Personal Kanban
+      subtitle: Mapping Work | Navigating Life
+      author: Jim Benson and Tonianne DeMaria Barry
+      cover: https://cdn.utf9k.net/books/personal-kanban.jpg
+      cover_height: 1360
+      cover_width: 907
+      link: https://www.personalkanban.com/
+      date_finished: 2024-11-23
+      recommended: false
+      progress: 100
 
     - title: Meditations for Mortals
       subtitle: Four Weeks to Embrace Your Limitations and Make Time for What Counts
