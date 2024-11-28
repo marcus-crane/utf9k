@@ -24,4 +24,4 @@ dist/
 .DS_Store
 
 hugo/public
-hugo
+hugo_stats.json
