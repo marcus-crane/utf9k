@@ -38,8 +38,3 @@ jobs:
           pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
           upload: "true"
           purgePullZone: "true"
-      - uses: mshick/add-pr-comment@v2
-        if: ${{ !env.ACT }}
-        with:
-          message: |
-            🚀 This branch can be previewed at ${{ steps.cloudflare-publish.outputs.url }}
