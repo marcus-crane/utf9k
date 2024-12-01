@@ -97,6 +97,8 @@ As a last point on this topic, my [blog](https://www.beeminder.com/utf9k/blog) g
 
 Something like tracking a certain number of words written per X days where the end result is a post for example would work. On first thought, I would think that churning out a large volume might impact quality compared to waiting until I have an "A-ha!" moment but as the parable goes, [quantity can often lead to better quality as a side effect](https://austinkleon.com/2020/12/10/quantity-leads-to-quality-the-origin-of-a-parable/).
 
+EDIT: I remembered just after publishing that the beeminder blog had recently written about this exact problem and how it can be incremented by way of [fractional beeminding](https://blog.beeminder.com/fracblog).
+
 ## Know when to drop stuff you dislike
 
 This one seems pretty straightforward but I'll elaborate a bit.
