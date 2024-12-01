@@ -195,12 +195,12 @@ The whole point of beeminding at all is to make progress in the things you care 
 
 The best part is, you can just schedule a goal to sit down and appreciate your other goals.
 
-[^1] The only "bug" that comes to mind was when I travelled to Australia, I derailed on a goal before the day had actually ended as your timezone is set on an account level rather than inferred by your device. It's more of a UX quirk and I provided feedback about it.
+[^1]: The only "bug" that comes to mind was when I travelled to Australia, I derailed on a goal before the day had actually ended as your timezone is set on an account level rather than inferred by your device. It's more of a UX quirk and I provided feedback about it.
 
-[^2] I pay for the [Infinibee](https://www.beeminder.com/premium) at the time of writing so I can create unlimited goals although I've probably derailed enough that I don't need to anymore. I haven't actually experimented with custom goals which is part of the plan too. I should do that.
+[^2]: I pay for the [Infinibee](https://www.beeminder.com/premium) at the time of writing so I can create unlimited goals although I've probably derailed enough that I don't need to anymore. I haven't actually experimented with custom goals which is part of the plan too. I should do that.
 
-[^3] I have a daily goals for tidying up for any amount of time.
+[^3]: I have a daily goals for tidying up for any amount of time.
 
-[^4] Such as if your goal requires you to be in a certain location.
+[^4]: Such as if your goal requires you to be in a certain location.
 
-[^5] Not that I have that many really.
+[^5]: Not that I have that many really.
