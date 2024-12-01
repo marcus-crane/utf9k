@@ -39,7 +39,7 @@ Now then, with that introduction out of the way, here are some useful tips for a
 They should be generally applicable to any goal measurement, even outside of Beeminder so if you get value either way then that's great to hear.
 ## Pace yourself
 
-When starting out with Beeminder, it can be very tempting to enter all starry eyed and set yourself up with a few goals to do daily.
+When starting out with Beeminder, it can be very tempting to enter all starry-eyed and set yourself up with a few goals to do daily.
 
 There's nothing wrong with daily goals but continue down this path and suddenly you'll find yourself stressed trying to juggle all of these commitments.
 
@@ -63,9 +63,9 @@ Meanwhile, your backlog is slowly gaining new items and suddenly, you're burned 
 
 What you really want to do is resist measuring goals in pure volume. Not only because volume changes but because it can be too tempting to try tackling it all in one sitting.
 
-What you really want to optimise for is throughput, actioning X items per Y days[^5] for example. In the worst case, you'll only have to do a small amount per day, knowing you're making progress. In the best cases however, you'll have extra energy and do slightly more than your goal, getting you ever closer.
+What you really want to optimise for is throughput, actioning X items per Y days for example. In the worst case, you'll only have to do a small amount per day, knowing you're making progress. In the best cases however, you'll have extra energy and do slightly more than your goal, getting you ever closer.
 
-Before you know it, you'll have made [huge progress](https://www.beeminder.com/utf9k/readwisearticles) through your backlogs and it won't have even felt like you did much work at all.
+Before you know it, you'll have made [huge progress](https://www.beeminder.com/utf9k/readwisearticles) through your backlog and it won't have even felt like you did much work at all.
 
 ## Don't solely measure outputs
 
@@ -145,7 +145,7 @@ I generally put a placeholder note in the data field with "TBA" and then fill it
 
 When you have goals that you dislike, as discussed above, it can be tempting to just +1 them to deal with tomorrow. If you start to recognise that behaviour, the correct thing to do is not just continually +1 but actually archive the goal and free yourself.
 
-I do this with a [journalling goal](https://www.beeminder.com/utf9k/journal) where I sometimes have too much buffer and forget to fill out entries for a few days so I end up backfilling data with a special notation. It looks like `Today + Backfill (1/1, 2/1 and 3/1)` if you're curious.
+I do this with a [journaling goal](https://www.beeminder.com/utf9k/journal) where I sometimes have too much buffer and forget to fill out entries for a few days so I end up backfilling data with a special notation. It looks like `Today + Backfill (1/1, 2/1 and 3/1)` if you're curious.
 
 Ideally I would have no backfilling but life happens.
 
@@ -155,7 +155,7 @@ While the most common usage for Beeminder is to do things that are less enjoyabl
 
 Life isn't all about pure productivity but as someone guilty of being caught up in their career at the best of times, Beeminder has actually helped me unwind some of that mess as well.
 
-Over the last year, I've used Beeminder to [watch nearly 80 movies](https://www.beeminder.com/utf9k/movies) that had been on my backlog as well as ensured that I've taken [regular vacations](https://www.beeminder.com/utf9k/vacations)which I [know is important](/blog/taking-holidays) but the admin involved can make it tempting to put off.
+Over the last year, I've used Beeminder to [watch nearly 80 movies](https://www.beeminder.com/utf9k/movies) that had been on my backlog as well as ensured that I've taken [regular vacations](https://www.beeminder.com/utf9k/vacations) which I [know is important](/blog/taking-holidays) but the admin involved can make it tempting to put off.
 
 It's even better if you can predict what sorts of things you let fall by the wayside and counteract them. I [track my step count](https://www.beeminder.com/utf9k/steps) which yes, ideally I would actually walk more than I do by default, but it's actually intended to enforce a baseline.
 
@@ -189,7 +189,7 @@ While we're on the subject, I should point out that there is a reason my vacatio
 
 This is definitely one that I don't do enough. Look at your goals and celebrate how far you've come!
 
-As you get further into Beeminder, you can start to glaze over graphs. My movie graph says that I crossed a whopping 80 movies off my backlog but admittedly, when I look at it, I don't really psyche myself up about it.
+As you get further into Beeminder, you can start to glaze over graphs. My movie graph says that I crossed a whopping 80 movies off my backlog but admittedly, when I look at it, I don't really psych myself up about it.
 
 The whole point of beeminding at all is to make progress in the things you care about so it's important to stop and appreciate that progress or else you'll just be running forever, never arriving at your destination.
 
