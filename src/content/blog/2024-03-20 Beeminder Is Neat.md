@@ -91,7 +91,7 @@ Beeminder is just sort of there, showing me the price of not doing business and 
 
 In this particular case, it was a little bit of a fluke but if you get the staggering just right, it can make a big difference when it counts.
 
-Ironically, I once complained about how [software usually fails to account for the user taking a break](http://localhost:1313/blog/who-is-software-even-for) and here we have a surprising case of the opposite: Software not letting me take a break was actually helpful in the long run.
+Ironically, I once complained about how [software usually fails to account for the user taking a break](/blog/who-is-software-even-for) and here we have a surprising case of the opposite: Software not letting me take a break was actually helpful in the long run.
 
 Now I should mention that if you're not careful, you could over-eagerly set an overwhelming amount of goals and completely crush yourself so [there's an art to being reasonable](https://blog.beeminder.com/calendial/) of course.
 
