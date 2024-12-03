@@ -1,6 +1,9 @@
 name: Build and push
 on:
   push:
+    paths-ignore:
+      - '.github/workflows/deploy-next.yml'
+      - 'hugo/**'
   workflow_dispatch:
   workflow_run:
     workflows: [Audit Links, External Sync]
