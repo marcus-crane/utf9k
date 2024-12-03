@@ -33,6 +33,7 @@ jobs:
           source: "hugo/dist"
           storageZoneName: "utf9k-next"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}"
+          storageEndpoint: "syd.storage.bunnycdn.com"
           accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
           pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID_NEXT }}"
           upload: "true"
