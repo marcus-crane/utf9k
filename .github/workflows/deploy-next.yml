@@ -1,4 +1,4 @@
-name: Build and push
+name: Hugo - Build and push
 on:
   push:
     paths:

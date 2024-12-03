@@ -1,4 +1,4 @@
-name: Build and push
+name: Astro - Build and push
 on:
   push:
     paths-ignore:
