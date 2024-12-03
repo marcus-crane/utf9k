@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  <a class="jumplink" href="#{{ .Anchor | safeURL }}" aria-hidden="true">¶</a>
+  {{ .Text | safeHTML }}
+</h{{ .Level }}>

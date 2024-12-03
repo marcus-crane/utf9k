@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-
+<html lang="en">
 <head>
-  <title>utf9k</title>
+  {{ block "style" . }}{{ end }}
+  {{ partial "head.html" . }}
+  {{ block "json+ld" . }}{{ end }}
 </head>
-
 <body>
-  <main>
+  {{ block "body" . }}
+    {{ partialCached "header.html" . }}
+    <div id="content">
     {{ block "main" . }}{{ end }}
-  </main>
+    </div>
+    <div id="fullscreen"></div>
+  {{ end }}
+  {{ block "script" . }}{{ end }}
 </body>
-
 </html>

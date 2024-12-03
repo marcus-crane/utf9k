@@ -1,0 +1,13 @@
+{
+  "name": "utf9k",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "littlefoot": "^4.1.2"
+  }
+}

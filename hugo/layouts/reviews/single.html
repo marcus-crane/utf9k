@@ -1,7 +1,10 @@
 {{ define "main" }}
-<article>
+<article class="mx-auto prose dark:prose-dark">
   <header>
     <h1>{{ .Title }}</h1>
+    <div class="text-gray-500 text-xs font-medium uppercase tracking-wide pt-2">
+      <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+    </div>
   </header>
   <div id="post-body">
     {{ partial "toc.html" . }}

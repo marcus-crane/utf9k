@@ -1,10 +1,9 @@
 {{ define "main" }}
-<article>
+<article class='{{ if isset .Params "maxwidth" }}full{{ end }}'>
   <header>
     <h1>{{ .Title }}</h1>
   </header>
   <div id="post-body">
-    {{ partial "toc.html" . }}
     {{ .Content }}
   </div>
 </article>
