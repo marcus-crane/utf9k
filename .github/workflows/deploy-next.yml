@@ -1,0 +1,38 @@
+name: Build and push
+on:
+  push:
+    paths:
+      - 'hugo/**'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions:
+      deployments: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.139.0"
+      - name: Change to Hugo directory
+        run: cd hugo
+      - name: Install dependencies
+        run: bun install
+      - name: Build site
+        run: bun run deploy
+      - name: Publish to Bunny Edge CDN
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
+        with:
+          source: "dist"
+          storageZoneName: "utf9k-next"
+          storagePassword: "${{ secrets.BUNNY_API_TOKEN }}"
+          accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
+          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID_NEXT }}"
+          upload: "true"
+          purgePullZone: "true"
