@@ -21,7 +21,7 @@ const blogPosts = await getCollection("blog", ({ data }) => {
 });
 
 const processedPosts = blogPosts
-  .sort((a, b) => (a.data.date > b.data.date ? 1 : a < b ? -1 : 0))
+  .reverse()
   .slice(0, 6)
 ---
 
