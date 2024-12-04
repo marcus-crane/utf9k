@@ -30,7 +30,7 @@ jobs:
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
         with:
-          source: "hugo/dist"
+          source: "hugo/public"
           storageZoneName: "utf9k-next"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}"
           storageEndpoint: "syd.storage.bunnycdn.com"
