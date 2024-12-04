@@ -36,7 +36,7 @@ jobs:
         with:
           source: "dist"
           storageZoneName: utf9k
-          storagePassword: "${{ secrets.BUNNY_API_TOKEN }}"
+          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_GLOBAL_API_KEY }}"
           pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
           upload: "true"
