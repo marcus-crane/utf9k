@@ -375,6 +375,10 @@ article #post-body .littlefoot__content p {
   margin-bottom: 0;
 }
 
+article #post-body .littlefoot__content p {
+  font-size: 1rem;
+}
+
 article #post-body img {
   border-radius: 3px;
 }
