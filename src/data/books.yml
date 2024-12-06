@@ -90,6 +90,17 @@
     #   recommended: false
     #   progress: 32
 
+    - title: The Upward Spiral
+      subtitle: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time
+      author: Alex Korb
+      cover: https://cdn.utf9k.net/books/the-upward-spiral.jpg
+      cover_height: 1801
+      cover_width: 1200
+      link: https://www.alexkorbphd.com/the-upward-spiral-method/
+      date_finished: null
+      recommended: false
+      progress: 49
+
     - title: The Wisdom of Anxiety
       subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
       author: Sheryl Paul
