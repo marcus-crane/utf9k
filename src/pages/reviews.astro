@@ -30,7 +30,7 @@ let seenYears: Set<number> = new Set()
               <>
                 {header}
                 <li>
-                  <a href={`/${r.collection}/${r.slug}`}>{r.data.title}</a>
+                  <a href={`/${r.collection}/${r.id}`}>{r.data.title}</a>
                   <time>{dayjs(r.data.date).format('MMM DD')}</time>
                 </li>
               </>

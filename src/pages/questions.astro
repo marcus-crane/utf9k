@@ -66,8 +66,8 @@ const systemColours = [
             )
           })
           return (
-            <li id={q.slug} class="question">
-              <a href={`/${q.collection}/${q.slug}`}>{q.data.title}</a>
+            <li id={q.id} class="question">
+              <a href={`/${q.collection}/${q.id}`}>{q.data.title}</a>
               {tags}
             </li>
           );

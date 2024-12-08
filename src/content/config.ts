@@ -1,4 +1,5 @@
 import { z, defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
 
 const commonFields = {
   title: z.string(),
@@ -8,7 +9,7 @@ const commonFields = {
 };
 
 const books = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/books" }),
   schema: z.object({
     title: z.string(),
     subtitle: z.string(),
@@ -31,7 +32,7 @@ const books = defineCollection({
 // TODO: Consider moving schemas out: Using CollectionEntry type makes this a bit redundant at present
 // https://docs.astro.build/en/guides/content-collections/#defining-multiple-collections
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/blog" }),
   schema: z.object({
     date: z.date(),
     draft: z.boolean().optional(),
@@ -40,7 +41,7 @@ const blog = defineCollection({
 });
 
 const projects = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/projects" }),
   schema: z.object({
     ongoing: z.boolean(),
     ...commonFields,
@@ -48,14 +49,14 @@ const projects = defineCollection({
 });
 
 const questions = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/questions" }),
   schema: z.object({
     ...commonFields,
   }),
 });
 
 const reviews = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/data/reviews" }),
   schema: z.object({
     date: z.date(),
     ...commonFields,

@@ -21,7 +21,7 @@ const projects = await getCollection("projects");
           .sort((a, b) => a.data.title.localeCompare(b.data.title))
           .map((p) => (
             <li>
-              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+              <a href={`/${p.collection}/${p.id}`}>{p.data.title}</a>
             </li>
           ))
       }
@@ -32,7 +32,7 @@ const projects = await getCollection("projects");
           .sort((a, b) => a.data.title.localeCompare(b.data.title))
           .map((p) => (
             <li>
-              <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+              <a href={`/${p.collection}/${p.id}`}>{p.data.title}</a>
             </li>
           ))
       }

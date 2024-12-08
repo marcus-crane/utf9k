@@ -1,18 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Core.astro";
-import dayjs from 'dayjs'
+import * as dayjs from 'dayjs'
 
 export async function getStaticPaths() {
   const books = await getCollection("books");
   return books.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { id: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const {
   title,

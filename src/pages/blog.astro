@@ -31,7 +31,7 @@ const processedPosts = posts
               <>
                 {header}
                 <li>
-                  <a href={`/${p.collection}/${p.slug}`}>{p.data.title}</a>
+                  <a href={`/${p.collection}/${p.id}`}>{p.data.title}</a>
                   <time>{dayjs(p.data.date).format('MMM DD')}</time>
                 </li>
               </>
