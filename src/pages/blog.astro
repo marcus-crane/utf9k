@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/Core.astro";
-import dayjs from 'dayjs'
+import * as dayjs from 'dayjs'
 
 const posts = await getCollection("blog");
 let seenYears: Set<number> = new Set()
