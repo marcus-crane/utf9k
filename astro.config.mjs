@@ -45,6 +45,6 @@ export default defineConfig({
         '/blog/when-automation-goes-horribly-right': '/blog/automation-right',
         '/notes': '/questions',
         '/notes/oil-futures': '/questions/finance-oil-futures-negative',
-        '/notes/[...slug]': '/questions/[...slug]'
+        '/notes/[...id]': '/questions/[...id]'
     }
 });
