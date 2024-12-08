@@ -27,8 +27,9 @@ tags:
       {{ $image := $image.Resize "x360 q100" }}
       <li>
         <div>
+          <!-- TODO: Properly strip quotes from alt tags -->
           <img
-            alt="Box art for the game titled {{ .title }}"
+            alt='Box art for the game titled {{ .title }}'
             src="{{ if $image }}{{ $image.RelPermalink }}{{ else }}https://via.placeholder.com/264x352{{ end }}"
             width="{{ .cover.width }}px"
             height="{{ .cover.height }}px"
