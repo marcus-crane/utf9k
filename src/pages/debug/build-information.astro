@@ -30,6 +30,10 @@ const allQuestions = await getCollection("questions")
           <td>{new Date().toISOString()}</td>
         </tr>
         <tr>
+          <td>Astro version</td>
+          <td>{Astro.generator}</td>
+        </tr>
+        <tr>
           <td>Total Blog posts</td>
           <td>{allBlogPosts.length}</td>
         </tr>
