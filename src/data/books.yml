@@ -79,27 +79,27 @@
     #   recommended: false
     #   progress: 44
 
-    # - title: Unscripted
-    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-    #   author: James B. Stewart and Rachel Abrams
-    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
-    #   cover_height: 1498
-    #   cover_width: 975
-    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 32
-
-    - title: The Wisdom of Anxiety
-      subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
-      author: Sheryl Paul
-      cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
-      cover_height: 1500
-      cover_width: 1000
-      link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
       date_finished: null
       recommended: false
-      progress: 44
+      progress: 32
+
+    # - title: The Wisdom of Anxiety
+    #   subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
+    #   author: Sheryl Paul
+    #   cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
+    #   cover_height: 1500
+    #   cover_width: 1000
+    #   link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
 
     - title: The Upward Spiral
       subtitle: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time
