@@ -23,6 +23,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 306137
+    title: 'Mario & Luigi: Brothership'
+    link: https://www.backloggd.com/games/mario-and-luigi-brothership/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8d9a.jpg
+      width: 720
+      height: 540
   - id: 138065
     title: 'Medarot 9: Kabuto Version'
     link: https://www.backloggd.com/games/medarot-9-kabuto-version/
