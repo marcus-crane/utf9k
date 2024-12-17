@@ -28,7 +28,7 @@ jobs:
         run: bun run deploy
         working-directory: hugo
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.4
         with:
           source: "hugo/public"
           storageZoneName: "utf9k-next"
