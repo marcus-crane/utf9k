@@ -158,7 +158,7 @@ const processedPosts = blogPosts
             <h3>Recently updated pages</h3>
             <ul>
               {
-                processedPosts.map(p => <li><a href={`/blog/${p.slug}`}>{p.data.title}</a></li>)
+                processedPosts.map(p => <li><a href={`/blog/${p.id}`}>{p.data.title}</a></li>)
               }
             </ul>
           </div>
