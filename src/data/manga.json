@@ -48,6 +48,18 @@
     "url": "https://anilist.co/manga/31131"
   },
   {
+    "author": "Hirohiko Araki",
+    "chapters": 69,
+    "color": "#e4c90d",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31630-Fg8JERVKuWB5.jpg",
+    "cover_height": 727,
+    "cover_width": 460,
+    "progress": 4,
+    "status": "FINISHED",
+    "title": "JoJo no Kimyou na Bouken: Sentou Chouryuu",
+    "url": "https://anilist.co/manga/31630"
+  },
+  {
     "author": "Takeru Hokazono",
     "chapters": null,
     "color": "#d6351a",
@@ -90,7 +102,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-ulXvn0lzWvsz.jpg",
     "cover_height": 717,
     "cover_width": 460,
-    "progress": 1133,
+    "progress": 1134,
     "status": "RELEASING",
     "title": "ONE PIECE",
     "url": "https://anilist.co/manga/30013"
@@ -102,7 +114,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx74347-O6KMkECzHPOE.jpg",
     "cover_height": 722,
     "cover_width": 460,
-    "progress": 23,
+    "progress": 27,
     "status": "RELEASING",
     "title": "One Punch-Man",
     "url": "https://anilist.co/manga/74347"
@@ -126,7 +138,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx108556-NHjkz0BNJhLx.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 82,
+    "progress": 83,
     "status": "RELEASING",
     "title": "SPY\u00d7FAMILY",
     "url": "https://anilist.co/manga/108556"
