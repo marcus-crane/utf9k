@@ -1,0 +1,2 @@
+layout: markdown.vto
+templateEngine: [njk, md]

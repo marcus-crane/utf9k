@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact",
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "MODE=build deno task lume",
+    "serve": "MODE=serve deno task lume -s",
+    "build:deps": "./ci/install.sh",
+    "build:metadata": "./ci/genmetadata.sh",
+    "deploy": "./ci/deploy.sh",
+    "test": "./ci/test.sh",
+    "sync": "./ci/externalsync.sh"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.0.0/",
+    "lume-src/": "https://raw.githubusercontent.com/lumeland/lume/main/",
+    "lume-exp/": "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/",
+    "prettier": "npm:prettier@3.0.0",
+    "rehype-pretty-code": "npm:rehype-pretty-code@0.11.0"
+  }
+}

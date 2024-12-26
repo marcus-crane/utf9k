@@ -1,0 +1,6 @@
+{{ if tweets[ref] }}
+{{ tweets[ref].html }}
+{{ else }}
+{{> console.error(`Failed to find tweet ref in cache: ${ref}`)}}
+<p>CACHE_ERR: Tweet at ref {{ ref }} was not cached</p>
+{{ /if }}

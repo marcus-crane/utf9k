@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":assignee(marcus-crane)"
+  ],
+  "prHourlyLimit": 10,
+  "schedule": [
+    "every weekend"
+  ],
+  "npm": {
+    "stabilityDays": 3
+  },
+  "packageRules": [
+    {
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patch",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ]
+    }
+  ]
+}

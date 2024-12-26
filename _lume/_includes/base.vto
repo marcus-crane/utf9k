@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ include "partials/head.vto" }}
+</head>
+<body {{ if it.bodystyle }}style="{{ it.bodystyle }}"{{ /if }}>
+  {{ content }}
+</body>
+</html>

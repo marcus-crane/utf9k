@@ -1,0 +1,25 @@
+---
+title: Projects
+---
+
+{{ layout "core.vto" }}
+<main>
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <ul>
+    <h2>Ongoing</h2>
+    {{ for project of search.pages("category=projects ongoing=true").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {{ /for }}
+    <h2>Archived</h2>
+    {{ for project of search.pages("category=projects ongoing=false").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {{ /for }}
+  </ul>
+</main>
+{{ /layout }}
