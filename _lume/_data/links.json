@@ -2,9 +2,7 @@
   "http://bs.visualshower.com": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2017-12-18--wiki-thoughts/index.md"
-    ],
+    "sources": ["content/blog/2017-12-18--wiki-thoughts/index.md"],
     "status": 0,
     "url": "http://bs.visualshower.com"
   },
@@ -25,9 +23,7 @@
       "Vary": "Accept-Encoding",
       "X-Cache": "HIT"
     },
-    "sources": [
-      "content/questions/selenium-remote-connection.md"
-    ],
+    "sources": ["content/questions/selenium-remote-connection.md"],
     "status": 200,
     "url": "http://example.com"
   },
@@ -49,9 +45,7 @@
       "X-EventID": "652ada2040a04d4380bbf02482185c23",
       "X-MSEdge-Ref": "Ref A: 71AD70B5E506483692708F0352D8112D Ref B: BLUEDGE1311 Ref C: 2023-10-14T18:12:48Z"
     },
-    "sources": [
-      "content/blog/2019-09-26--email-lookup/index.md"
-    ],
+    "sources": ["content/blog/2019-09-26--email-lookup/index.md"],
     "status": 200,
     "url": "http://go.microsoft.com/fwlink"
   },
@@ -71,9 +65,7 @@
       "Server": "Apache/2.4.18 (Ubuntu)",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "http://mchap.io/using-foia-data-and-unix-to-halve-major-source-of-parking-tickets.html"
   },
@@ -89,9 +81,7 @@
       "Vary": "Accept-Encoding",
       "X-Content-Type-Options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-12-18--wiki-thoughts/index.md"
-    ],
+    "sources": ["content/blog/2017-12-18--wiki-thoughts/index.md"],
     "status": 200,
     "url": "http://serebii.net"
   },
@@ -111,9 +101,7 @@
       "X-Pingback": "https://www.visualshower.com/xmlrpc.php",
       "X-Powered-By": "PHP/5.6.40"
     },
-    "sources": [
-      "content/blog/2017-12-18--wiki-thoughts/index.md"
-    ],
+    "sources": ["content/blog/2017-12-18--wiki-thoughts/index.md"],
     "status": 200,
     "url": "http://visualshower.com"
   },
@@ -136,9 +124,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Request-Id": "f64110975ecbf39b137c7381"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "http://wiki.linuxquestions.org/wiki/VFAT"
   },
@@ -155,9 +141,7 @@
       "Last-Modified": "Sun, 21 May 2000 11:19:30 GMT",
       "Server": "Apache/2.4.54 (FreeBSD) OpenSSL/1.1.1o-freebsd"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/katzbio.txt"
   },
@@ -175,9 +159,7 @@
       "Upgrade": "h2,h2c",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/questions/monitoring-what-to-instrument.md"
-    ],
+    "sources": ["content/questions/monitoring-what-to-instrument.md"],
     "status": 200,
     "url": "http://www.brendangregg.com/usemethod.html"
   },
@@ -196,9 +178,7 @@
       "Server": "Apache/2.4.41 (Ubuntu)",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "http://www.doublewide.net/passport.htm"
   },
@@ -217,9 +197,7 @@
       "Server": "Apache/2.4.29 (Ubuntu)",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "http://www.fudco.com/chip/lessons.html"
   },
@@ -230,9 +208,7 @@
       "Date": "Sat, 14 Oct 2023 18:11:16 GMT",
       "X-Azure-Ref": "0xdkqZQAAAABU1wThzH4bR5ICEc/RTk+3TU5aMjIxMDYwNjExMDI1ADUyNWFjMzc5LTk0Y2MtNDJhNC1hYzdjLWFiNTE3NWZlODNmMA=="
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 403,
     "url": "http://www.legislation.govt.nz/act/public/1982/0156/latest/DLM64785.html"
   },
@@ -247,9 +223,7 @@
       "Server": "Apache",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "http://www.linfo.org/etc_fstab.html"
   },
@@ -268,9 +242,7 @@
       "Server": "Apache/2.2.34 (Unix) mod_fcgid/2.3.9 mod_perl/2.0.9 Perl/v5.12.3",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "http://www.nzlii.org/nz/legis/hist_act/osa19511951n77183"
   },
@@ -298,9 +270,7 @@
       "X-Generator": "Drupal 9 (https://www.drupal.org)",
       "X-UA-Compatible": "IE=edge"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "http://www.ombudsman.parliament.nz"
   },
@@ -319,9 +289,7 @@
       "Upgrade": "h2,h2c",
       "Vary": "Accept-Encoding,User-Agent"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "http://www.rodsbooks.com/efi-bootloaders/principles.html"
   },
@@ -336,10 +304,7 @@
       "Vary": "Accept-Encoding",
       "X-Powered-By": "ASP.NET"
     },
-    "sources": [
-      "layouts/_default/sitemap.xml",
-      "layouts/sitemap.xml"
-    ],
+    "sources": ["layouts/_default/sitemap.xml", "layouts/sitemap.xml"],
     "status": 200,
     "url": "http://www.sitemaps.org/schemas/sitemap/0.9"
   },
@@ -368,10 +333,7 @@
       "x-backend": "www-mirrors",
       "x-request-id": "8161bd01d9e18274"
     },
-    "sources": [
-      "layouts/_default/sitemap.xml",
-      "layouts/sitemap.xml"
-    ],
+    "sources": ["layouts/_default/sitemap.xml", "layouts/sitemap.xml"],
     "status": 200,
     "url": "http://www.w3.org/1999/xhtml"
   },
@@ -433,10 +395,7 @@
       "x-backend": "www-mirrors",
       "x-request-id": "8161bd02cb0d825d"
     },
-    "sources": [
-      "layouts/_default/index.xml",
-      "layouts/_default/rss.xml"
-    ],
+    "sources": ["layouts/_default/index.xml", "layouts/_default/rss.xml"],
     "status": 200,
     "url": "http://www.w3.org/2005/Atom"
   },
@@ -465,9 +424,7 @@
       "x-backend": "www-mirrors",
       "x-request-id": "809818c898be16c3"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "http://www.w3.org/TR/html4/loose.dtd"
   },
@@ -510,9 +467,7 @@
       "X-Nf-Request-Id": "01HCQP1Q65QP03NMVN5H3935FV",
       "X-Powered-By": "Next.js"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://1password.com"
   },
@@ -530,9 +485,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Contextid": "DRfYTlIq/MNmG2DAf"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 404,
     "url": "https://2ndstreetgym.com"
   },
@@ -573,9 +526,7 @@
       "Server": "Apache",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://abstrusegoose.com/389"
   },
@@ -617,9 +568,7 @@
       "Transfer-Encoding": "chunked",
       "X-Content-Type-Options": "nosniff"
     },
-    "sources": [
-      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
-    ],
+    "sources": ["content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"],
     "status": 200,
     "url": "https://apenwarr.ca/log/20171213"
   },
@@ -636,9 +585,7 @@
       "Transfer-Encoding": "chunked",
       "X-Content-Type-Options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://apenwarr.ca/log/20190926"
   },
@@ -664,9 +611,7 @@
       "X-XSS-Protection": "1; mode=block, 1; mode=block",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/experiments/requester-window/index.html"
-    ],
+    "sources": ["content/experiments/requester-window/index.html"],
     "status": 200,
     "url": "https://api.ipinfodb.com/v3/ip-city"
   },
@@ -691,9 +636,7 @@
       "X-Cache": "Hit from cloudfront",
       "X-Powered-By": "Express"
     },
-    "sources": [
-      "content/project-src/parnell/index.html"
-    ],
+    "sources": ["content/project-src/parnell/index.html"],
     "status": 200,
     "url": "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
   },
@@ -718,18 +661,14 @@
       "X-Cache": "Hit from cloudfront",
       "X-Powered-By": "Express"
     },
-    "sources": [
-      "content/project-src/parnell/index.html"
-    ],
+    "sources": ["content/project-src/parnell/index.html"],
     "status": 200,
     "url": "https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"
   },
   "https://app.plex.net": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 0,
     "url": "https://app.plex.net"
   },
@@ -753,9 +692,7 @@
       "X-Vercel-Cache": "HIT",
       "X-Vercel-Id": "iad1::fjwzg-1697306958382-5375c979fe0d"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://arc.net"
   },
@@ -795,9 +732,7 @@
       "Set-Cookie": "browser=104.45.204.174.1697307150305728; path=/; max-age=946080000; domain=.arxiv.org",
       "Strict-Transport-Security": "max-age=31536000"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://arxiv.org/pdf/1706.02932v2.pdf"
   },
@@ -817,9 +752,7 @@
       "Set-Cookie": "browser=104.45.204.174.1697307323521336; path=/; max-age=946080000; domain=.arxiv.org",
       "Strict-Transport-Security": "max-age=31536000"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://arxiv.org/pdf/1908.10693.pdf"
   },
@@ -832,9 +765,7 @@
       "Date": "Sat, 14 Oct 2023 18:11:26 GMT",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 200,
     "url": "https://at.govt.nz/bus-train-ferry/at-hop-card/buy-at-hop-card/buy-an-at-hop-key-tag"
   },
@@ -873,9 +804,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-served-by": "sip5-10092"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://audiokarma.org/forums/index.php"
   },
@@ -903,9 +832,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 403,
     "url": "https://autocode.com"
   },
@@ -933,9 +860,7 @@
       "x-amz-id-1": "SJFRR5YFVFZTZR6Y7R54",
       "x-amz-rid": "SJFRR5YFVFZTZR6Y7R54"
     },
-    "sources": [
-      "content/questions/azure-regions-alike.md"
-    ],
+    "sources": ["content/questions/azure-regions-alike.md"],
     "status": 200,
     "url": "https://aws.amazon.com"
   },
@@ -966,9 +891,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=acom\"}]}"
     },
-    "sources": [
-      "content/questions/kubes-ingress-ip-range.md"
-    ],
+    "sources": ["content/questions/kubes-ingress-ip-range.md"],
     "status": 200,
     "url": "https://azure.microsoft.com"
   },
@@ -1031,9 +954,7 @@
       "report-to": "{\"group\": \"network-errors\", \"max_age\": 604800, \"endpoints\": [{\"url\": \"https://mdec.nelreports.net/api/report?cat=microsoft-ignite-pages-part-3\"}]}",
       "x-version": "2023.1004.1204821.0003264139"
     },
-    "sources": [
-      "content/blog/2021-05-11--always-bet-on-sales/index.md"
-    ],
+    "sources": ["content/blog/2021-05-11--always-bet-on-sales/index.md"],
     "status": 200,
     "url": "https://azure.microsoft.com/en-us/services/bot-services"
   },
@@ -1065,9 +986,7 @@
       "nel": "{\"report_to\": \"network-errors\", \"max_age\": 604800, \"success_fraction\": 0.01, \"failure_fraction\": 1.0}",
       "report-to": "{\"group\": \"network-errors\", \"max_age\": 604800, \"endpoints\": [{\"url\": \"https://mdec.nelreports.net/api/report?cat=aem-wave-2\"}]}"
     },
-    "sources": [
-      "content/blog/2021-05-11--always-bet-on-sales/index.md"
-    ],
+    "sources": ["content/blog/2021-05-11--always-bet-on-sales/index.md"],
     "status": 200,
     "url": "https://azure.microsoft.com/en-us/support/create-ticket"
   },
@@ -1087,9 +1006,7 @@
       "Vary": "Accept-Encoding",
       "X-Nf-Request-Id": "01HCQP3ZZQAHXF94E3C44ND8BM"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://babeljs.io"
   },
@@ -1163,9 +1080,7 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "DENY"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://berkeleygraphics.com/typefaces/berkeley-mono"
   },
@@ -1230,9 +1145,7 @@
       "x-version": "0a5c43e93f8c",
       "x-view-name": "bitbucket.apps.repo2.views.SourceView"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://bitbucket.org/mituharu/emacs-mac/src"
   },
@@ -1261,9 +1174,7 @@
       "X-XSS-Protection": "1; mode=block",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://blog.discord.com/engineering-posts/home"
   },
@@ -1292,9 +1203,7 @@
       "X-XSS-Protection": "1; mode=block",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://blog.discord.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3"
   },
@@ -1324,9 +1233,7 @@
       "etag": "W/\"cef6-aXCRA7kG/IkUL8CYDujsqOp+u0o\"",
       "x-request-id": "91d7ad52-2591-440c-8d2d-d759124d5b2a, 91d7ad52-2591-440c-8d2d-d759124d5b2a"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://blog.pragmaticengineer.com/on-writing-well"
   },
@@ -1353,9 +1260,7 @@
       "x-transaction-id": "c149062748db3eb7",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2018-12-03--automation-right/index.md"
-    ],
+    "sources": ["content/blog/2018-12-03--automation-right/index.md"],
     "status": 200,
     "url": "https://blog.twitter.com/marketing/en_us/topics/product-news/2016/speed-up-customer-service-with-quick-replies-welcome-messages.html"
   },
@@ -1415,9 +1320,7 @@
       "www-authenticate": "Basic realm=\"caldav.fastmail.com\"",
       "x-frontend": "frontend1"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 401,
     "url": "https://caldav.fastmail.com/dav/calendars/user"
   },
@@ -1433,9 +1336,7 @@
       "www-authenticate": "Basic realm=\"caldav.fastmail.com\"",
       "x-frontend": "frontend1"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 401,
     "url": "https://caldav.fastmail.com/dav/principals/user/user"
   },
@@ -1487,9 +1388,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/projects/october/index.md"
-    ],
+    "sources": ["content/projects/october/index.md"],
     "status": 200,
     "url": "https://chrome.google.com/webstore/detail/comments-to-readwise/mbpckcijlikkkakedodgpgkdmgbdogmp"
   },
@@ -1543,18 +1442,14 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-08-12--conditional-gitconfig/index.md"
-    ],
+    "sources": ["content/blog/2021-08-12--conditional-gitconfig/index.md"],
     "status": 200,
     "url": "https://cloud.google.com/beyondcorp"
   },
   "https://cloudflare.de": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 0,
     "url": "https://cloudflare.de"
   },
@@ -1577,9 +1472,7 @@
       "X-XSS-Protection": "1; mode=block",
       "x-azure-ref": "0SdkqZQAAAABQmUjRjA98RrfNQit0Jn4oTU5aMjIxMDYwNjExMDM5AGJlODdkYzZkLTQwZjktNDViMC04ODEwLTk5MTA4N2VmOGIyOQ=="
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://code.visualstudio.com"
   },
@@ -1608,9 +1501,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "assets/css/style.css"
-    ],
+    "sources": ["assets/css/style.css"],
     "status": 403,
     "url": "https://codepen.io/MauriciAbad/pen/WNrpmPr"
   },
@@ -1640,9 +1531,7 @@
       "expires": "Sat, 14 Oct 2023 12:49:24 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 200,
     "url": "https://commonmark.org"
   },
@@ -1701,9 +1590,7 @@
       "x-request-guid": "5399885b-5bf8-4e7b-bd0d-d1717d76b911",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://cooking.stackexchange.com/questions/105602/steak-dropped-in-soapy-dish-water"
   },
@@ -1731,9 +1618,7 @@
       "expires": "Thu, 12 Oct 2023 02:11:04 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://danluu.com/sounds-easy"
   },
@@ -1767,9 +1652,7 @@
       "x-goog-stored-content-encoding": "gzip",
       "x-goog-stored-content-length": "5970"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 200,
     "url": "https://darklang.com"
   },
@@ -1785,9 +1668,7 @@
       "x-response-time": "1",
       "x-transaction-id": "2bc1da43fd7174ce"
     },
-    "sources": [
-      "content/blog/2018-12-03--automation-right/index.md"
-    ],
+    "sources": ["content/blog/2018-12-03--automation-right/index.md"],
     "status": 404,
     "url": "https://dashboard.twitter.com"
   },
@@ -1879,9 +1760,7 @@
       "X-Xss-Protection": "1; mode=block",
       "x-powered-by": "WP Engine"
     },
-    "sources": [
-      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
-    ],
+    "sources": ["content/blog/2019-07-20--wsl2-vhd-issue/index.md"],
     "status": 200,
     "url": "https://devblogs.microsoft.com/commandline/announcing-wsl-2"
   },
@@ -1907,9 +1786,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 200,
     "url": "https://developer.android.com/guide/topics/connectivity/nfc/hce"
   },
@@ -1936,9 +1813,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://developer.apple.com/documentation/applemusicapi"
   },
@@ -2001,9 +1876,7 @@
       "x-goog-stored-content-length": "46716",
       "x-guploader-uploadid": "ADPycdt3J1ILpxUS9Q2uKS4JSaPOS9l4ayzQLtTJ_kHzbgzu-CUOQqEu9m5xpHaVkjBkyeE_ds8mVpD38WMY93s_5KHFe4EKIvB1"
     },
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 200,
     "url": "https://developer.mozilla.org/en-US"
   },
@@ -2034,9 +1907,7 @@
       "x-vhost": "developer.pingidentity.com",
       "x-xss-protection": "1; mode=block;"
     },
-    "sources": [
-      "content/questions/saml-inspect-request.md"
-    ],
+    "sources": ["content/questions/saml-inspect-request.md"],
     "status": 200,
     "url": "https://developer.pingidentity.com/en/tools/saml-decoder.html"
   },
@@ -2060,9 +1931,7 @@
       "x-frame-options": "deny",
       "x-powered-by": "Next.js"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://developer.spotify.com/documentation/web-api/reference"
   },
@@ -2118,9 +1987,7 @@
       "X-UA-Device": "smartphone",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://digitalworldproblems.tumblr.com/post/76036641581/while-im-looking-at-that-moviecode-post-he"
   },
@@ -2150,9 +2017,7 @@
       "X-XSS-Protection": "1; mode=block",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://discord.com"
   },
@@ -2181,9 +2046,7 @@
       "X-XSS-Protection": "1; mode=block",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://discord.com/rich-presence"
   },
@@ -2221,9 +2084,7 @@
       "X-Statuspage-Version": "6945caf310deea444aa83a9f4c83bd9b6b441a3d",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://discordstatus.com"
   },
@@ -2253,9 +2114,7 @@
       "x-content-type-options": "nosniff",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://docker.com"
   },
@@ -2285,9 +2144,7 @@
       "x-amz-meta-md5chksum": "3cb23cc547165df53b57219ec9f22738",
       "x-amz-version-id": "0nvwM3QrCfqkz1g_lslVS7YIl5PABG_b"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://docs.datadoghq.com/tracing"
   },
@@ -2317,9 +2174,7 @@
       "x-amz-meta-md5chksum": "cc1c62c3cbd32c5083afdc320391c226",
       "x-amz-version-id": "ybJv0r2TipLtgHMtbucvQkohyhbWsU8p"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://docs.datadoghq.com/tracing/trace_pipeline/ingestion_controls"
   },
@@ -2383,9 +2238,7 @@
       "x-amz-meta-md5chksum": "38bfb6808acf0d9cc155dced6e13d382",
       "x-amz-version-id": "bnI6IkzT.LAc2I9w.7QNO_gw.6tS4xOS"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://docs.datadoghq.com/tracing/troubleshooting/agent_rate_limits"
   },
@@ -2422,9 +2275,7 @@
       "X-Timer": "S1697306924.023815,VS0,VE3",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/debug/build-information.md"
-    ],
+    "sources": ["content/debug/build-information.md"],
     "status": 200,
     "url": "https://docs.github.com/en/actions/learn-github-actions/environment-variables"
   },
@@ -2485,9 +2336,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=mdocs\"}]}"
     },
-    "sources": [
-      "content/questions/azure-regions-alike.md"
-    ],
+    "sources": ["content/questions/azure-regions-alike.md"],
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/azure/availability-zones/az-region"
   },
@@ -2516,9 +2365,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=mdocs\"}]}"
     },
-    "sources": [
-      "content/questions/kubes-namespace-connectivity.md"
-    ],
+    "sources": ["content/questions/kubes-namespace-connectivity.md"],
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes"
   },
@@ -2547,9 +2394,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=mdocs\"}]}"
     },
-    "sources": [
-      "content/questions/kubes-ingress-ip-range.md"
-    ],
+    "sources": ["content/questions/kubes-ingress-ip-range.md"],
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview"
   },
@@ -2578,9 +2423,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=mdocs\"}]}"
     },
-    "sources": [
-      "content/blog/2019-09-26--email-lookup/index.md"
-    ],
+    "sources": ["content/blog/2019-09-26--email-lookup/index.md"],
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup"
   },
@@ -2609,9 +2452,7 @@
       "nel": "{\"report_to\":\"network-errors\",\"max_age\":604800,\"success_fraction\":0.01,\"failure_fraction\":1.0}",
       "report-to": "{\"group\":\"network-errors\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://mdec.nelreports.net/api/report?cat=mdocs\"}]}"
     },
-    "sources": [
-      "content/projects/netbox-plugin-azuread/index.md"
-    ],
+    "sources": ["content/projects/netbox-plugin-azuread/index.md"],
     "status": 200,
     "url": "https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top"
   },
@@ -2676,18 +2517,14 @@
       "X-Vhost": "publish",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://downloadcenter.intel.com/search"
   },
   "https://downloadtile.com": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 0,
     "url": "https://downloadtile.com"
   },
@@ -2710,9 +2547,7 @@
       "X-Vercel-Execution-Region": "sfo1",
       "X-Vercel-Id": "iad1::sfo1::7ss2n-1697306956196-9586c3b308de"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://draculatheme.com/iterm"
   },
@@ -2770,9 +2605,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "x-rm": "RDWD"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://eager.io/blog/the-languages-which-almost-were-css"
   },
@@ -2797,9 +2630,7 @@
       "set-cookie": "client_id=AC9CAD6800916A8B3B074CED68CD8A13CFBF2660A031662DC16A052A4DBBEFA0; domain=.bandcamp.com; path=/; expires=Fri, 14 Oct 2033 18:16:03 -0000; secure; HttpOnly; SameSite=None, session=1%09r%3A%5B%22nilZ0i1341306502x1697307363%22%5D%09t%3A1697307363; domain=.bandcamp.com; path=/; expires=Tue, 28 Nov 2023 18:16:03 -0000, session=1%09t%3A1697307363; domain=.bandcamp.com; path=/; expires=Tue, 28 Nov 2023 18:16:03 -0000, session=1%09r%3A%5B%22nilZ0i1341306502x1697307363%22%5D%09t%3A1697307363; domain=.bandcamp.com; path=/; expires=Tue, 28 Nov 2023 18:16:03 -0000, BACKENDID3=flexocentral-z9sq-2; path=/; Secure",
       "transfer-encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://edharrison.bandcamp.com"
   },
@@ -2824,9 +2655,7 @@
       "x-request-guid": "27278035-56d2-49c1-851a-c2269a276cec",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/questions/emacs-function-double-dash.md"
-    ],
+    "sources": ["content/questions/emacs-function-double-dash.md"],
     "status": 200,
     "url": "https://emacs.stackexchange.com/questions/42286/double-hyphen-in-elisp-function-names"
   },
@@ -2855,9 +2684,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/questions/dns-original-implementation.md"
-    ],
+    "sources": ["content/questions/dns-original-implementation.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/ARPANET"
   },
@@ -2886,9 +2713,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Active_Directory"
   },
@@ -2948,9 +2773,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Apple_Park"
   },
@@ -2979,9 +2802,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Australian_rules_football"
   },
@@ -3010,9 +2831,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Autoencoder"
   },
@@ -3041,9 +2860,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/experiments/fancy-hyperlinks/index.md"
-    ],
+    "sources": ["content/experiments/fancy-hyperlinks/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Billy_Idol"
   },
@@ -3072,9 +2889,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/questions/ps1-disc-offset.md"
-    ],
+    "sources": ["content/questions/ps1-disc-offset.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/CD-ROM"
   },
@@ -3103,9 +2918,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/COVID-19_recession"
   },
@@ -3134,9 +2947,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Capitol_Hill_Babysitting_Co-op"
   },
@@ -3165,9 +2976,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Criticism_of_Spotify"
   },
@@ -3228,9 +3037,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-08-29--taking-holidays/index.md"
-    ],
+    "sources": ["content/blog/2021-08-29--taking-holidays/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Dave_Cutler"
   },
@@ -3259,9 +3066,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Depersonalization"
   },
@@ -3290,9 +3095,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin"
   },
@@ -3321,9 +3124,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
   },
@@ -3352,9 +3153,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Dreaming_in_Code"
   },
@@ -3383,9 +3182,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-12-01--solid-systems/index.md"
-    ],
+    "sources": ["content/blog/2020-12-01--solid-systems/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/EFTPOS"
   },
@@ -3414,9 +3211,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-02-17--faq-driven-configuration/index.md"
-    ],
+    "sources": ["content/blog/2021-02-17--faq-driven-configuration/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Emacs_Lisp"
   },
@@ -3476,9 +3271,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Entropy"
   },
@@ -3507,9 +3300,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
-    ],
+    "sources": ["content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Escitalopram"
   },
@@ -3538,9 +3329,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Failure_"
   },
@@ -3601,9 +3390,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Financial_crisis_of_2007"
   },
@@ -3632,9 +3419,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/G._K._Chesterton"
   },
@@ -3663,9 +3448,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/GUID_Partition_Table"
   },
@@ -3694,9 +3477,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Gal_Gadot"
   },
@@ -3787,9 +3568,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/now/index.md"
-    ],
+    "sources": ["content/now/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Goodhart"
   },
@@ -3818,9 +3597,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Google_Calendar"
   },
@@ -3881,9 +3658,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/ISO/IEC_27001"
   },
@@ -3943,9 +3718,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Keynote_"
   },
@@ -4006,9 +3779,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa"
   },
@@ -4037,9 +3808,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Network_address_translation"
   },
@@ -4068,9 +3837,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/about/index.md"
-    ],
+    "sources": ["content/about/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Newmarket"
   },
@@ -4099,9 +3866,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Not_safe_for_work"
   },
@@ -4162,9 +3927,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Nuclear_option"
   },
@@ -4193,9 +3956,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Numbers_"
   },
@@ -4224,9 +3985,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Oceania"
   },
@@ -4255,9 +4014,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Official_Information_Act_1982"
   },
@@ -4286,9 +4043,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/On_Exactitude_in_Science"
   },
@@ -4317,9 +4072,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Pages_"
   },
@@ -4348,9 +4101,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/projects/parnell/index.md"
-    ],
+    "sources": ["content/projects/parnell/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Parnell"
   },
@@ -4410,9 +4161,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/now/index.md"
-    ],
+    "sources": ["content/now/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Queenstown"
   },
@@ -4441,9 +4190,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/QuickTime_File_Format"
   },
@@ -4503,9 +4250,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/questions/macos-clipboard-piping.md"
-    ],
+    "sources": ["content/questions/macos-clipboard-piping.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Repetitive_strain_injury"
   },
@@ -4534,9 +4279,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
-    ],
+    "sources": ["content/blog/2022-01-22--not-being-an-astronaut/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Resting_bitch_face"
   },
@@ -4565,9 +4308,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Robert_Parker_"
   },
@@ -4596,9 +4337,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/questions/saml-inspect-request.md"
-    ],
+    "sources": ["content/questions/saml-inspect-request.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/SAML_2.0"
   },
@@ -4627,9 +4366,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-12-01--solid-systems/index.md"
-    ],
+    "sources": ["content/blog/2020-12-01--solid-systems/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/SOLID"
   },
@@ -4658,9 +4395,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/San_Francisco_Bay_Area"
   },
@@ -4689,9 +4424,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Seinfeld"
   },
@@ -4720,9 +4453,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Self-sovereign_identity"
   },
@@ -4751,9 +4482,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Sex_and_the_City"
   },
@@ -4782,9 +4511,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Signalling_System_No._7"
   },
@@ -4813,9 +4540,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/about/index.md"
-    ],
+    "sources": ["content/about/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Site_Reliability_Engineering"
   },
@@ -4844,9 +4569,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
-    ],
+    "sources": ["content/blog/2021-10-01--twitter-image-servers-2021/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Site_reliability_engineering"
   },
@@ -4875,9 +4598,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Skynet_"
   },
@@ -4906,9 +4627,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Software_as_a_service"
   },
@@ -4937,9 +4656,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/now/index.md"
-    ],
+    "sources": ["content/now/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/South_Island"
   },
@@ -4999,9 +4716,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Strings_"
   },
@@ -5030,9 +4745,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/System_and_Organization_Controls"
   },
@@ -5061,9 +4774,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/The_College_Dropout"
   },
@@ -5092,9 +4803,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/The_Joe_Rogan_Experience"
   },
@@ -5154,9 +4863,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Third_place"
   },
@@ -5217,9 +4924,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/USS_Callister"
   },
@@ -5248,9 +4953,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface"
   },
@@ -5279,9 +4982,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/United_States_customary_units"
   },
@@ -5310,9 +5011,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Universally_unique_identifier"
   },
@@ -5341,9 +5040,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/VCard"
   },
@@ -5372,9 +5069,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Watch_the_Throne"
   },
@@ -5435,9 +5130,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/X_Window_System"
   },
@@ -5466,9 +5159,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://en.wikipedia.org/wiki/Yellowstone_National_Park"
   },
@@ -5511,9 +5202,7 @@
       "Vary": "Accept-Encoding",
       "X-Cache": "404-HIT"
     },
-    "sources": [
-      "content/questions/kubes-namespace-connectivity.md"
-    ],
+    "sources": ["content/questions/kubes-namespace-connectivity.md"],
     "status": 404,
     "url": "https://example.com/_oauth2/start"
   },
@@ -5532,9 +5221,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2020-05-12--mental-overhead-of-data/index.md"
-    ],
+    "sources": ["content/blog/2020-05-12--mental-overhead-of-data/index.md"],
     "status": 200,
     "url": "https://exist.io"
   },
@@ -5568,9 +5255,7 @@
       "report-to": "{\"max_age\":259200,\"endpoints\":[{\"url\":\"https:\\/\\/m.facebook.com\\/ajax\\/mtouch_error_reports\\/\"}]}",
       "x-fb-optimizer": "0"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://facebook.com"
   },
@@ -5597,9 +5282,7 @@
       "x-bc-app-description": "flexocentral-jqsx-tralbum-page1",
       "x-bc-app-id": "3013270"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://failureband.bandcamp.com/album/fantastic-planet-live"
   },
@@ -5683,9 +5366,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://fileinfo.com/extension/abbu"
   },
@@ -5709,9 +5390,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://fileinfo.com/extension/webloc"
   },
@@ -5745,9 +5424,7 @@
       "x-amz-id-2": "zYOsdRctlKXMmY68AMCu1QDk4bxWEJYoVE+fiyvFcB1kCq8yiWZh8u86yz0DSCe1rNdK4eviZnk=",
       "x-amz-request-id": "17XV37K8VDBC8JEY"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://flask.palletsprojects.com/en/2.0.x"
   },
@@ -5770,9 +5447,7 @@
       "x-permitted-cross-domain-policies": "none",
       "x-request-id": "F44LXY2xMTI3_iMAIrNx"
     },
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 200,
     "url": "https://fly.io"
   },
@@ -5792,9 +5467,7 @@
       "transfer-encoding": "chunked",
       "via": "1.1 fly.io, 1.1 fly.io"
     },
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 200,
     "url": "https://fly.io/blog"
   },
@@ -5813,9 +5486,7 @@
       "Server": "Apache/2.4.38 (Debian)",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/questions/linux-disable-stock-folders.md"
-    ],
+    "sources": ["content/questions/linux-disable-stock-folders.md"],
     "status": 200,
     "url": "https://freedesktop.org/wiki/Software/xdg-user-dirs"
   },
@@ -5842,9 +5513,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz"
   },
@@ -5901,9 +5570,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019"
   },
@@ -5930,9 +5597,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020"
   },
@@ -5959,9 +5624,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021"
   },
@@ -5988,9 +5651,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i"
   },
@@ -6017,9 +5678,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/projects/meta-oia-requests/index.md"
-    ],
+    "sources": ["content/projects/meta-oia-requests/index.md"],
     "status": 200,
     "url": "https://fyi.org.nz/request/6763-withheld-rejected-oia-filings"
   },
@@ -6046,9 +5705,7 @@
       "X-UA-Compatible": "IE=Edge,chrome=1",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/project-src/parnell/index.html"
-    ],
+    "sources": ["content/project-src/parnell/index.html"],
     "status": 200,
     "url": "https://fyi.org.nz/request/8643-request-for-parking-ticket-data-for-the-parnell-area"
   },
@@ -6106,9 +5763,7 @@
       "cf-chl-bypass": "1",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 403,
     "url": "https://genius.com/Jay-z-and-kanye-west-ham-lyrics"
   },
@@ -6177,9 +5832,7 @@
       "X-Frame-Options": "DENY",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://getpocket.com"
   },
@@ -6197,9 +5850,7 @@
       "Vary": "Accept-Encoding",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 403,
     "url": "https://gigaom.com/2011/02/18/war-is-hell-welcome-to-the-twitter-wars-of-2011"
   },
@@ -6230,9 +5881,7 @@
       "X-Ua-Compatible": "IE=edge",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in"
   },
@@ -6258,9 +5907,7 @@
       "X-XSS-Protection": "0",
       "content-language": "en-US"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://github.com"
   },
@@ -6342,9 +5989,7 @@
       "X-GitHub-Request-Id": "FA41:130B:7852BD:A4B04C:652ADAB7",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://github.com/LeonardSSH/coc-discord-rpc"
   },
@@ -6369,9 +6014,7 @@
       "X-GitHub-Request-Id": "FA40:27D8:1D895BD:28856C7:652AD95D",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-07-12--hugo-debug-reports/index.md"
-    ],
+    "sources": ["content/blog/2021-07-12--hugo-debug-reports/index.md"],
     "status": 200,
     "url": "https://github.com/bep"
   },
@@ -6396,9 +6039,7 @@
       "X-GitHub-Request-Id": "FA42:04A1:429A992:5BE8DF1:652AD98D",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2018-12-12--lost-python-results/index.md"
-    ],
+    "sources": ["content/blog/2018-12-12--lost-python-results/index.md"],
     "status": 200,
     "url": "https://github.com/celery/kombu"
   },
@@ -6424,9 +6065,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=314.926412,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=806.27173,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=124.03676,nginx;desc=\"NGINX\";dur=1.385359,glb;desc=\"GLB\";dur=5.763347",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "https://github.com/davish/obsidian-full-calendar/issues/87"
   },
@@ -6452,9 +6091,7 @@
       "server-timing": "pull_request_layout-fragment;desc=\"pull_request_layout fragment\";dur=434.885833,conversation_content-fragment;desc=\"conversation_content fragment\";dur=546.883578,conversation_sidebar-fragment;desc=\"conversation_sidebar fragment\";dur=225.914776,nginx;desc=\"NGINX\";dur=0.681236,glb;desc=\"GLB\";dur=9.440312",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "https://github.com/davish/obsidian-full-calendar/pull/106"
   },
@@ -6506,9 +6143,7 @@
       "X-GitHub-Request-Id": "FA40:77B9:768852:A1C9ED:652ADAB2",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://github.com/discord"
   },
@@ -6533,9 +6168,7 @@
       "X-GitHub-Request-Id": "FA40:27D8:1D87E48:288369A:652AD949",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://github.com/doomemacs/doomemacs"
   },
@@ -6561,9 +6194,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=304.415355,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=1252.149377,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=129.358178,nginx;desc=\"NGINX\";dur=1.364509,glb;desc=\"GLB\";dur=7.237526",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://github.com/facebook/react/issues/10191"
   },
@@ -6586,9 +6217,7 @@
       "X-GitHub-Request-Id": "FA41:34F7:1005C66:15B5D3E:652AD9D7",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 404,
     "url": "https://github.com/falconindy/arch-install-scripts/blob/master/arch-chroot.in"
   },
@@ -6611,9 +6240,7 @@
       "X-GitHub-Request-Id": "FA40:769A:2190005:2DFADE9:652AD9D7",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 404,
     "url": "https://github.com/falconindy/arch-install-scripts/blob/master/genfstab.in"
   },
@@ -6664,9 +6291,7 @@
       "X-GitHub-Request-Id": "FA40:27D8:1DB499F:28C06EE:652ADB7F",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 200,
     "url": "https://github.com/hlissner/doom-emacs/blob/develop/docs/getting_started.org"
   },
@@ -6691,9 +6316,7 @@
       "X-GitHub-Request-Id": "FA43:8F61:795AB9:A5AD07:652ADAB8",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://github.com/imfunniee/youtube-discord-rpc"
   },
@@ -6745,9 +6368,7 @@
       "X-GitHub-Request-Id": "FA42:04A1:429BBC1:5BEA6CB:652AD99A",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://github.com/lepture/mistune"
   },
@@ -6772,9 +6393,7 @@
       "X-GitHub-Request-Id": "FA40:769A:21654B9:2DC0674:652AD7E9",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "layouts/partials/head.html"
-    ],
+    "sources": ["layouts/partials/head.html"],
     "status": 200,
     "url": "https://github.com/marcus-crane"
   },
@@ -7018,9 +6637,7 @@
       "X-GitHub-Request-Id": "FA44:5B47:1FE4E07:2B7BDBF:652ADAEC",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-02-17--faq-driven-configuration/index.md"
-    ],
+    "sources": ["content/blog/2021-02-17--faq-driven-configuration/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles/blob/37840b8/nvim/.config/nvim/init.vim"
   },
@@ -7045,9 +6662,7 @@
       "X-GitHub-Request-Id": "FA41:1780:302F691:428913F:652ADAEB",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-02-17--faq-driven-configuration/index.md"
-    ],
+    "sources": ["content/blog/2021-02-17--faq-driven-configuration/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles/blob/62813e09dc6d5127b0f25a5017ae23fd37ce180f/doom/.doom.d/config.org"
   },
@@ -7072,9 +6687,7 @@
       "X-GitHub-Request-Id": "FA43:5AF1:1F33742:2AC3F7C:652ADAEC",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-02-17--faq-driven-configuration/index.md"
-    ],
+    "sources": ["content/blog/2021-02-17--faq-driven-configuration/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles/blob/6b6763a385b842b9dbdc3c883fe8bd0f13df60f2/doom/.doom.d/config.org"
   },
@@ -7099,9 +6712,7 @@
       "X-GitHub-Request-Id": "FA42:6012:1DD3F9B:28F13D0:652ADAEB",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2021-02-17--faq-driven-configuration/index.md"
-    ],
+    "sources": ["content/blog/2021-02-17--faq-driven-configuration/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/dotfiles/blob/f14b4ebf86e41fa9cad3630355364eada11482f1/doom/.doom.d/config.org"
   },
@@ -7126,9 +6737,7 @@
       "X-GitHub-Request-Id": "FA41:34F7:FDA535:157B159:652AD7EE",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/thanks/index.md"
-    ],
+    "sources": ["content/thanks/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/gunslinger"
   },
@@ -7153,9 +6762,7 @@
       "X-GitHub-Request-Id": "FA40:77B9:76C405:A21C1A:652ADAE0",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/gunslinger/blob/db5337d6e6846d3555540abaafb0bcba775c3cf2/jobs/spotify.go"
   },
@@ -7180,9 +6787,7 @@
       "X-GitHub-Request-Id": "FA40:27D8:1DA8C8E:28B0516:652ADAEA",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/khinsider"
   },
@@ -7207,9 +6812,7 @@
       "X-GitHub-Request-Id": "FA40:769A:2180F97:2DE6657:652AD924",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/questions/macos-see-file-usage.md"
-    ],
+    "sources": ["content/questions/macos-see-file-usage.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/lugh"
   },
@@ -7234,9 +6837,7 @@
       "X-GitHub-Request-Id": "FA41:34F7:FF8673:15A3D76:652AD941",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/projects/netbox-plugin-azuread/index.md"
-    ],
+    "sources": ["content/projects/netbox-plugin-azuread/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/netbox-plugin-azuread"
   },
@@ -7261,10 +6862,7 @@
       "X-GitHub-Request-Id": "FA42:04A1:4291B8B:5BDCD79:652AD92E",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/now/index.md",
-      "content/projects/october/index.md"
-    ],
+    "sources": ["content/now/index.md", "content/projects/october/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/october"
   },
@@ -7289,9 +6887,7 @@
       "X-GitHub-Request-Id": "FA40:769A:218ADA4:2DF3C88:652AD9A0",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://github.com/marcus-crane/site/blob/95ae742bbf33662f4dd4cf284e463d0f9320c8d1/site/posts/blog/2018/2018-02-12-day-xero.md"
   },
@@ -7316,9 +6912,7 @@
       "X-GitHub-Request-Id": "FA40:769A:216616A:2DC174D:652AD7F2",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/questions/macos-invoke-x-callback-url.md"
-    ],
+    "sources": ["content/questions/macos-invoke-x-callback-url.md"],
     "status": 200,
     "url": "https://github.com/martinfinke/xcall"
   },
@@ -7344,9 +6938,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=366.534787,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=419.603994,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=124.130227,nginx;desc=\"NGINX\";dur=0.462114,glb;desc=\"GLB\";dur=10.263041",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
-    ],
+    "sources": ["content/blog/2019-07-20--wsl2-vhd-issue/index.md"],
     "status": 200,
     "url": "https://github.com/microsoft/WSL/issues/1521"
   },
@@ -7372,9 +6964,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=479.05729,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=732.606067,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=119.15385,nginx;desc=\"NGINX\";dur=0.948395,glb;desc=\"GLB\";dur=6.071459",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
-    ],
+    "sources": ["content/blog/2019-07-20--wsl2-vhd-issue/index.md"],
     "status": 200,
     "url": "https://github.com/microsoft/WSL/issues/2185"
   },
@@ -7400,9 +6990,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=352.645033,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=1266.758833,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=135.232688,nginx;desc=\"NGINX\";dur=0.939572,glb;desc=\"GLB\";dur=6.635667",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2019-07-20--wsl2-vhd-issue/index.md"
-    ],
+    "sources": ["content/blog/2019-07-20--wsl2-vhd-issue/index.md"],
     "status": 200,
     "url": "https://github.com/microsoft/WSL/issues/2195"
   },
@@ -7509,9 +7097,7 @@
       "X-GitHub-Request-Id": "FA40:769A:2182501:2DE83D1:652AD937",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/projects/netbox-plugin-azuread/index.md"
-    ],
+    "sources": ["content/projects/netbox-plugin-azuread/index.md"],
     "status": 200,
     "url": "https://github.com/netbox-community/netbox"
   },
@@ -7537,9 +7123,7 @@
       "server-timing": "issue_layout-fragment;desc=\"issue_layout fragment\";dur=373.192231,issue_conversation_content-fragment;desc=\"issue_conversation_content fragment\";dur=539.227226,issue_conversation_sidebar-fragment;desc=\"issue_conversation_sidebar fragment\";dur=128.290956,nginx;desc=\"NGINX\";dur=0.666693,glb;desc=\"GLB\";dur=7.098612",
       "x-voltron-version": "641caae"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://github.com/npm/npm/issues/20791"
   },
@@ -7563,9 +7147,7 @@
       "X-GitHub-Request-Id": "FA41:34F7:FF6666:15A123E:652AD92A",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/questions/saml-inspect-request.md"
-    ],
+    "sources": ["content/questions/saml-inspect-request.md"],
     "status": 200,
     "url": "https://github.com/onelogin/python3-saml"
   },
@@ -7617,9 +7199,7 @@
       "X-GitHub-Request-Id": "FA42:04A1:4276615:5BB7EF0:652AD7F3",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/questions/emacs-function-double-dash.md"
-    ],
+    "sources": ["content/questions/emacs-function-double-dash.md"],
     "status": 200,
     "url": "https://github.com/org-roam/org-roam/blob/ba835ef6242caf23e60ab9de1aaf1f25d7e5841f/org-roam-capture.el"
   },
@@ -7698,9 +7278,7 @@
       "X-GitHub-Request-Id": "FA42:552E:764025:A1BEFE:652ADAB7",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://github.com/smokes/photoshop-rich-presence"
   },
@@ -7833,9 +7411,7 @@
       "X-GitHub-Request-Id": "FA44:6914:21A487F:2DE6163:652AD99D",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://github.com/tmux/tmux"
   },
@@ -7860,9 +7436,7 @@
       "X-GitHub-Request-Id": "FA40:769A:218EEF2:2DF960C:652AD9CB",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2018-12-03--automation-right/index.md"
-    ],
+    "sources": ["content/blog/2018-12-03--automation-right/index.md"],
     "status": 200,
     "url": "https://github.com/twitter/twurl"
   },
@@ -7914,9 +7488,7 @@
       "X-GitHub-Request-Id": "FA40:769A:21817A5:2DE7173:652AD92B",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/questions/macos-port-5000-monterey/index.md"
-    ],
+    "sources": ["content/questions/macos-port-5000-monterey/index.md"],
     "status": 200,
     "url": "https://github.com/wailsapp/wails"
   },
@@ -7999,9 +7571,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2019-09-26--email-lookup/index.md"
-    ],
+    "sources": ["content/blog/2019-09-26--email-lookup/index.md"],
     "status": 200,
     "url": "https://gsuite.google.com"
   },
@@ -8025,9 +7595,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://guides.apple.com"
   },
@@ -8057,9 +7625,7 @@
       "x-vercel-id": "iad1::jm6zd-1697307149802-904ff126ada3",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694"
   },
@@ -8088,9 +7654,7 @@
       "X-Varnish": "56874259",
       "X-Varnish-Cache": "MISS"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 200,
     "url": "https://heartofthecity.co.nz/dining/coffee/starbucks-coffee"
   },
@@ -8144,9 +7708,7 @@
       "X-Runtime": "0.102782",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://hoodline.com/2017/09/french-bistro-south-park-cafe-to-bid-adieu"
   },
@@ -8171,18 +7733,14 @@
       "x-powered-by": "Next.js",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://howlongtobeat.com/user/Sentry"
   },
   "https://idp.example.org/SAML2/SSO/Redirect": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/questions/saml-inspect-request.md"
-    ],
+    "sources": ["content/questions/saml-inspect-request.md"],
     "status": 0,
     "url": "https://idp.example.org/SAML2/SSO/Redirect"
   },
@@ -8207,9 +7765,7 @@
       "server": "imgix",
       "x-imgix-id": "8b2fd47ab66654c51ff701a2244abea27aec43a8"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://imgix.datadoghq.com/img/blog/engineering/computing-accurate-percentiles-with-ddsketch/ddsketch_diagram_6_190911.png"
   },
@@ -8264,9 +7820,7 @@
       "last-modified": "Thu, 05 Oct 2023 23:53:40 GMT",
       "vary": "Accept-Encoding,User-Agent"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://iterm2.com"
   },
@@ -8319,9 +7873,7 @@
       "X-Powered-By": "Express",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://josephg.com/blog/electron-is-flash-for-the-desktop"
   },
@@ -8341,9 +7893,7 @@
       "x-pingback": "https://kidlit.com/xmlrpc.php",
       "x-turbo-charged-by": "LiteSpeed"
     },
-    "sources": [
-      "content/blog/2020-11-20--configuration-magic/index.md"
-    ],
+    "sources": ["content/blog/2020-11-20--configuration-magic/index.md"],
     "status": 200,
     "url": "https://kidlit.com/breaking-the-rules-in-world-building"
   },
@@ -8363,9 +7913,7 @@
       "Vary": "Accept-Encoding",
       "X-Nf-Request-Id": "01HCQNQ1F19HKATJ76P4A558PJ"
     },
-    "sources": [
-      "content/questions/kubes-namespace-connectivity.md"
-    ],
+    "sources": ["content/questions/kubes-namespace-connectivity.md"],
     "status": 200,
     "url": "https://kubernetes.io/docs/concepts/services-networking/connect-applications-service"
   },
@@ -8385,9 +7933,7 @@
       "Vary": "Accept-Encoding",
       "X-Nf-Request-Id": "01HCQNQ1A39MNQ5N1HKAZJ9DRX"
     },
-    "sources": [
-      "content/questions/kubes-namespace-connectivity.md"
-    ],
+    "sources": ["content/questions/kubes-namespace-connectivity.md"],
     "status": 200,
     "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies"
   },
@@ -8413,9 +7959,7 @@
       "vary": "Accept-Encoding",
       "x-endurance-cache-level": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://kwokchain.com/2019/08/16/the-arc-of-collaboration"
   },
@@ -8431,9 +7975,7 @@
       "Vary": "Cookie",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://larder.io"
   },
@@ -8460,9 +8002,7 @@
       "X-Proxy-Cache": "HIT",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-10-26--day-two/index.md"
-    ],
+    "sources": ["content/blog/2021-10-26--day-two/index.md"],
     "status": 200,
     "url": "https://lightspeedhq.com"
   },
@@ -8491,9 +8031,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 403,
     "url": "https://linux.die.net/man/8/hwclock"
   },
@@ -8518,9 +8056,7 @@
       "x-ms-ests-server": "2.1.16522.6 - EUS ProdSlices",
       "x-ms-request-id": "5fc51b70-f8b4-4d48-b620-a6a95d694e00"
     },
-    "sources": [
-      "content/questions/kubes-namespace-connectivity.md"
-    ],
+    "sources": ["content/questions/kubes-namespace-connectivity.md"],
     "status": 200,
     "url": "https://login.microsoftonline.com/common/oauth2/authorize"
   },
@@ -8560,9 +8096,7 @@
       "Server": "OpenBSD httpd",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2020-01-06--multiple-git-hosts/index.md"
-    ],
+    "sources": ["content/blog/2020-01-06--multiple-git-hosts/index.md"],
     "status": 200,
     "url": "https://man.openbsd.org/ssh_config"
   },
@@ -8584,9 +8118,7 @@
       "X-Frame-Options": "DENY, SAMEORIGIN",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/questions/linux-audio-muting-suddenly.md"
-    ],
+    "sources": ["content/questions/linux-audio-muting-suddenly.md"],
     "status": 200,
     "url": "https://manjaro.org"
   },
@@ -8613,9 +8145,7 @@
       "X-Runtime": "0.033061",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "layouts/partials/head.html"
-    ],
+    "sources": ["layouts/partials/head.html"],
     "status": 200,
     "url": "https://mastodon.nz"
   },
@@ -8673,9 +8203,7 @@
       "x-ua-compatible": "IE=edge, Chrome=1",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://medium.com/plexlabs"
   },
@@ -8707,9 +8235,7 @@
       "x-envoy-upstream-service-time": "588",
       "x-request-received-at": "1697307365781"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://medium.com/plexlabs/introducing-plexamp-9493a658847a"
   },
@@ -8791,9 +8317,7 @@
       "x-responding-instance": "amp-web-onyx-music-server:100345:mr36p00it-ingc08083901:5005:2340.6.0-music.external",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://music.apple.com"
   },
@@ -8819,9 +8343,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://music.youtube.com/googleplaymusic"
   },
@@ -8848,9 +8370,7 @@
       "X-UA-Compatible": "IE=edge",
       "X-Varnish": "44042942"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://nesslabs.com/jomo"
   },
@@ -8874,9 +8394,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "x-powered-by": "WP Engine"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://news.xbox.com/en-us/2018/04/24/microsoft-discord-team-connect-gamers-across-xbox-live-discord"
   },
@@ -8951,9 +8469,7 @@
       "Last-Modified": "Wed, 28 Jun 2023 06:50:30 GMT",
       "Server": "nginx"
     },
-    "sources": [
-      "content/questions/selenium-remote-connection.md"
-    ],
+    "sources": ["content/questions/selenium-remote-connection.md"],
     "status": 200,
     "url": "https://news.ycombinator.com/y18.svg"
   },
@@ -8977,9 +8493,7 @@
       "X-Vercel-Cache": "HIT",
       "X-Vercel-Id": "iad1::iad1::xbgjj-1697307033154-a3f3aeefb4fd"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://nodejs.org/en"
   },
@@ -9003,9 +8517,7 @@
       "X-Vercel-Cache": "HIT",
       "X-Vercel-Id": "iad1::iad1::6tqll-1697306612450-4dcac78bed40"
     },
-    "sources": [
-      "content/questions/nodejs-module-version.md"
-    ],
+    "sources": ["content/questions/nodejs-module-version.md"],
     "status": 200,
     "url": "https://nodejs.org/en/download/releases"
   },
@@ -9079,9 +8591,7 @@
       "Vary": "Accept-Encoding",
       "X-Nf-Request-Id": "01HCQPCSP5S5WJRFA5Y0MW26R1"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://opentelemetry.io"
   },
@@ -9127,9 +8637,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-L-Path": "inert"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://origin.com"
   },
@@ -9156,9 +8664,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://oukosher.org/blog/industrial-kosher/peanut-butter-ii-standard-of-identity"
   },
@@ -9184,9 +8690,7 @@
       "cf-apo-via": "tcache",
       "cf-edge-cache": "cache,platform=wordpress"
     },
-    "sources": [
-      "content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"
-    ],
+    "sources": ["content/blog/2023-04-11--i-dont-identify-as-anxious/index.md"],
     "status": 200,
     "url": "https://oxsci.org/can-a-camera-capture-your-soul"
   },
@@ -9292,9 +8796,7 @@
       "X-ac": "3.dca _atomic_dca BYPASS",
       "X-nananana": "Batcache-Hit"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://pocketcasts.com"
   },
@@ -9324,18 +8826,14 @@
       "cc-cache-status": "HIT",
       "cc-perf": "download=25;process=15;t=51"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://pocketsmith.com"
   },
   "https://polybit.com": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 0,
     "url": "https://polybit.com"
   },
@@ -9360,9 +8858,7 @@
       "X-Nf-Request-Id": "01HCQP0JF2DE1WA0DZSDMAR054",
       "alt-svc": "h3=\":443\"; ma=86400"
     },
-    "sources": [
-      "content/questions/prometheus-sample-size.md"
-    ],
+    "sources": ["content/questions/prometheus-sample-size.md"],
     "status": 200,
     "url": "https://prometheus.io/docs/prometheus/latest/storage"
   },
@@ -9390,9 +8886,7 @@
       "X-Timer": "S1697306946.947601,VS0,VE114",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/projects/netbox-plugin-azuread/index.md"
-    ],
+    "sources": ["content/projects/netbox-plugin-azuread/index.md"],
     "status": 200,
     "url": "https://pypi.org/project/netbox-plugin-azuread"
   },
@@ -9420,9 +8914,7 @@
       "X-Timer": "S1697306919.562110,VS0,VE1",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/questions/selenium-remote-connection.md"
-    ],
+    "sources": ["content/questions/selenium-remote-connection.md"],
     "status": 200,
     "url": "https://pypi.org/project/selenium"
   },
@@ -9453,9 +8945,7 @@
       "x-fawn-proc-count": "2,2,24",
       "x-php-version": "8.0"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple"
   },
@@ -9472,9 +8962,7 @@
       "Last-Modified": "Fri, 13 Oct 2023 02:58:17 GMT",
       "Server": "Apache/2.4.57"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://rachelbythebay.com/w/2019/07/15/giant"
   },
@@ -9500,9 +8988,7 @@
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://raindrop.io"
   },
@@ -9526,9 +9012,7 @@
       "Vary": "Accept-Encoding",
       "X-XSS-Protection": "1"
     },
-    "sources": [
-      "content/blog/2021-05-11--always-bet-on-sales/index.md"
-    ],
+    "sources": ["content/blog/2021-05-11--always-bet-on-sales/index.md"],
     "status": 200,
     "url": "https://rcpmag.com/articles/2021/03/16/what-happened-azure-ad-outage.aspx"
   },
@@ -9607,10 +9091,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "DENY"
     },
-    "sources": [
-      "content/projects/october/index.md",
-      "content/uses/index.md"
-    ],
+    "sources": ["content/projects/october/index.md", "content/uses/index.md"],
     "status": 200,
     "url": "https://readwise.io/read"
   },
@@ -9640,9 +9121,7 @@
       "x-ratelimit-remaining": "99",
       "x-ratelimit-used": "1"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://reddit.com/r/deepfakes"
   },
@@ -9720,9 +9199,7 @@
       "x-amz-id-2": "R+92uJ3HyOPGn8htnHoJNRXKeo0q3t1K/Y3UdnmEgpoq8oPF4IfzAN/B08TllRUjE39ZBGN/WWo=",
       "x-amz-request-id": "Q6ZTAS3E89BT8D11"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://s29.q4cdn.com/628966176/files/images/board/blockheads-BOD-jayz.png"
   },
@@ -9747,9 +9224,7 @@
       "Server": "Google Frontend",
       "X-Cloud-Trace-Context": "70d983fb95e361bdac4da07fdaac595c"
     },
-    "sources": [
-      "layouts/blog/single.html"
-    ],
+    "sources": ["layouts/blog/single.html"],
     "status": 200,
     "url": "https://schema.org"
   },
@@ -9769,9 +9244,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-Powered-By": "ASP.NET"
     },
-    "sources": [
-      "content/blog/2019-09-26--email-lookup/index.md"
-    ],
+    "sources": ["content/blog/2019-09-26--email-lookup/index.md"],
     "status": 200,
     "url": "https://sender.office.com"
   },
@@ -9832,9 +9305,7 @@
       "x-slack-unique-id": "ZSrarzMb6XOFqR1DuZKs2gAAACM",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://slack.com/intl/en-nz/enterprise"
   },
@@ -9894,9 +9365,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-ua-compatible": "IE=edge,chrome=1"
     },
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 200,
     "url": "https://sourceforge.net/projects/vcxsrv"
   },
@@ -9924,9 +9393,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-ua-compatible": "IE=edge,chrome=1"
     },
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 200,
     "url": "https://sourceforge.net/projects/vcxsrv/files/vcxsrv"
   },
@@ -9954,9 +9421,7 @@
   "https://sp.example.com/SAML2": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/questions/saml-inspect-request.md"
-    ],
+    "sources": ["content/questions/saml-inspect-request.md"],
     "status": 0,
     "url": "https://sp.example.com/SAML2"
   },
@@ -9984,9 +9449,7 @@
       "Strict-Transport-Security": "max-age=15768000",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2020-11-23--tidying-towing-data/index.md"
-    ],
+    "sources": ["content/blog/2020-11-23--tidying-towing-data/index.md"],
     "status": 200,
     "url": "https://sqlitebrowser.org"
   },
@@ -10015,9 +9478,7 @@
       "expires": "Sat, 14 Oct 2023 18:19:39 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://sriramk.com/memos/goldberg-music.pdf"
   },
@@ -10043,9 +9504,7 @@
       "x-request-guid": "703ae25b-61bc-4415-8f34-e20aec768d93",
       "x-stack-debug": ""
     },
-    "sources": [
-      "assets/js/live-player.js"
-    ],
+    "sources": ["assets/js/live-player.js"],
     "status": 200,
     "url": "https://stackoverflow.com/a/69126766"
   },
@@ -10071,9 +9530,7 @@
       "x-request-guid": "04045409-e5a2-49f6-af09-4969da629e8b",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses"
   },
@@ -10099,9 +9556,7 @@
       "X-Powered-By": "ASP.NET",
       "x-ms-request-id": "44a06ca6-7d61-442d-80b4-821847fee788"
     },
-    "sources": [
-      "content/blog/2021-05-11--always-bet-on-sales/index.md"
-    ],
+    "sources": ["content/blog/2021-05-11--always-bet-on-sales/index.md"],
     "status": 200,
     "url": "https://status.azure.com"
   },
@@ -10129,9 +9584,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "content/blog/2020-10-11--digital-spring-cleaning/index.md"
-    ],
+    "sources": ["content/blog/2020-10-11--digital-spring-cleaning/index.md"],
     "status": 403,
     "url": "https://stdlib.com"
   },
@@ -10152,9 +9605,7 @@
       "Vary": "Accept-Encoding",
       "X-Frame-Options": "DENY"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://store.steampowered.com/about"
   },
@@ -10175,9 +9626,7 @@
       "Vary": "Accept-Encoding",
       "X-Frame-Options": "DENY"
     },
-    "sources": [
-      "content/reviews/2014-10-11--the-stanley-parable/index.md"
-    ],
+    "sources": ["content/reviews/2014-10-11--the-stanley-parable/index.md"],
     "status": 200,
     "url": "https://store.steampowered.com/app/221910"
   },
@@ -10232,9 +9681,7 @@
       "x-vercel-cache": "HIT",
       "x-vercel-id": "iad1::6zfgr-1697307665122-a277dc986617"
     },
-    "sources": [
-      "content/experiments/fancy-hyperlinks/index.md"
-    ],
+    "sources": ["content/experiments/fancy-hyperlinks/index.md"],
     "status": 200,
     "url": "https://tailwindcss.com/docs/font-smoothing"
   },
@@ -10354,9 +9801,7 @@
       "x-transaction-id": "7c124275408ef184",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
-    ],
+    "sources": ["content/blog/2021-10-01--twitter-image-servers-2021/index.md"],
     "status": 200,
     "url": "https://twitter.com"
   },
@@ -10418,9 +9863,7 @@
       "x-transaction-id": "5125151bcd025c34",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://twitter.com/Spotify/status/1202090253839937536"
   },
@@ -10450,9 +9893,7 @@
       "x-transaction-id": "4f1ee7577a5aa690",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://twitter.com/TIDAL/status/699726946817679360"
   },
@@ -10482,9 +9923,7 @@
       "x-transaction-id": "2b86747b990a3bf9",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
-    ],
+    "sources": ["content/blog/2021-10-01--twitter-image-servers-2021/index.md"],
     "status": 200,
     "url": "https://twitter.com/TheSmarmyBum/status/1443259893411049475"
   },
@@ -10514,9 +9953,7 @@
       "x-transaction-id": "918a85cfb179e1d5",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
-    ],
+    "sources": ["content/blog/2021-10-01--twitter-image-servers-2021/index.md"],
     "status": 200,
     "url": "https://twitter.com/TwitterEng"
   },
@@ -10610,9 +10047,7 @@
       "x-transaction-id": "2a425d7abc78fc0b",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://twitter.com/plexamp"
   },
@@ -10642,9 +10077,7 @@
       "x-transaction-id": "368562aefb011142",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://twitter.com/plexamp/status/1491497134851428352"
   },
@@ -10741,9 +10174,7 @@
       "x-transaction-id": "09f3640a397180f5",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/questions/selenium-remote-connection.md"
-    ],
+    "sources": ["content/questions/selenium-remote-connection.md"],
     "status": 200,
     "url": "https://twitter.com/sentreh/status/1435772900917735425"
   },
@@ -10773,9 +10204,7 @@
       "x-transaction-id": "7ad6405d52e6dc28",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2021-10-01--twitter-image-servers-2021/index.md"
-    ],
+    "sources": ["content/blog/2021-10-01--twitter-image-servers-2021/index.md"],
     "status": 200,
     "url": "https://twitter.com/wongmjane/status/1440428582308757507"
   },
@@ -10800,9 +10229,7 @@
       "x-request-id": "5d7d6d30-0f5c-4171-9a22-937ff832d407",
       "x-xss-protection": "0"
     },
-    "sources": [
-      "content/blog/2018-12-03--automation-right/index.md"
-    ],
+    "sources": ["content/blog/2018-12-03--automation-right/index.md"],
     "status": 404,
     "url": "https://twittercommunity.com/t/defunct-business-auto-dm-feature-no-longer-editable-and-still-sends/116561"
   },
@@ -10823,9 +10250,7 @@
       "x-timestamp": "1695126960.86267",
       "x-trans-id": "txe0021a22efcb4b9b8ea64-00652ad898"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://ubisoftconnect.com/en-US"
   },
@@ -10850,9 +10275,7 @@
       "x-request-guid": "bd976028-515a-4a94-a752-de90343b19da",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://unix.stackexchange.com/a/263731"
   },
@@ -10877,9 +10300,7 @@
       "x-request-guid": "3fe9ad4d-900a-4566-8b80-bdcff2544eec",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://unix.stackexchange.com/a/286325"
   },
@@ -10904,9 +10325,7 @@
       "x-request-guid": "0f4b82d7-d72f-45b0-8223-79515c800695",
       "x-stack-debug": ""
     },
-    "sources": [
-      "content/questions/dns-lookup-current-ip.md"
-    ],
+    "sources": ["content/questions/dns-lookup-current-ip.md"],
     "status": 200,
     "url": "https://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-a-shell-script"
   },
@@ -10961,9 +10380,7 @@
       "X-Pingback": "https://us.macmillan.com/xmlrpc.php",
       "x-powered-by": "WP Engine"
     },
-    "sources": [
-      "content/blog/2021-09-24--who-is-software-even-for/index.md"
-    ],
+    "sources": ["content/blog/2021-09-24--who-is-software-even-for/index.md"],
     "status": 200,
     "url": "https://us.macmillan.com/books/9780374159122"
   },
@@ -11025,9 +10442,7 @@
       "X-hacker": "If you're reading this, you should visit wpvip.com/careers and apply to join the fun, mention this header.",
       "X-rq": "dca8 85 188 443"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://variety.com/2015/digital/news/two-weeks-later-neil-young-finally-removes-his-music-from-spotify-1201550338"
   },
@@ -11041,18 +10456,14 @@
       "Date": "Sat, 14 Oct 2023 18:03:27 GMT",
       "Server": "Werkzeug/2.2.2 Python/3.9.16"
     },
-    "sources": [
-      "content/games/index.md"
-    ],
+    "sources": ["content/games/index.md"],
     "status": 200,
     "url": "https://via.placeholder.com/264x352"
   },
   "https://vsfan.net/wiki": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2017-12-18--wiki-thoughts/index.md"
-    ],
+    "sources": ["content/blog/2017-12-18--wiki-thoughts/index.md"],
     "status": 0,
     "url": "https://vsfan.net/wiki"
   },
@@ -11075,9 +10486,7 @@
       "referrer-policy": "strict-origin-when-cross-origin",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/projects/october/index.md"
-    ],
+    "sources": ["content/projects/october/index.md"],
     "status": 200,
     "url": "https://wails.io"
   },
@@ -11101,9 +10510,7 @@
       "x-tr": "259",
       "x-ts": "200"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://web.archive.org"
   },
@@ -11140,9 +10547,7 @@
       "x-tr": "1433",
       "x-ts": "200"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://web.archive.org/web/20071031080918/http"
   },
@@ -11179,9 +10584,7 @@
       "x-tr": "204",
       "x-ts": "200"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://web.archive.org/web/20180206231055/https"
   },
@@ -11257,9 +10660,7 @@
       "expires": "Sat, 14 Oct 2023 00:25:11 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://webpack.js.org"
   },
@@ -11281,9 +10682,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Request-Id": "d08d293b6c618adf66368646"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://wiki.archlinux.org/index.php/mkinitcpio"
   },
@@ -11305,9 +10704,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Request-Id": "00bb6269ec382db3bfe744c1"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://wiki.archlinux.org/index.php/systemd-boot"
   },
@@ -11329,9 +10726,7 @@
       "X-Cache": "Miss from cloudfront",
       "x-amz-rid": "2NFBVYSNE64J420PPPC6"
     },
-    "sources": [
-      "content/blog/2021-08-29--taking-holidays/index.md"
-    ],
+    "sources": ["content/blog/2021-08-29--taking-holidays/index.md"],
     "status": 200,
     "url": "https://www.amazon.com/Show-Stopper-Breakneck-Generation-Microsoft/dp/0029356717"
   },
@@ -11356,9 +10751,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.apple.com/nz/education/k12/apple-distinguished-schools"
   },
@@ -11383,9 +10776,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://www.apple.com/nz/homepod-mini"
   },
@@ -11409,9 +10800,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "DENY"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.archlinux.org"
   },
@@ -11425,9 +10814,7 @@
       "Server": "Apache",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 404,
     "url": "https://www.bandainamcoid.com/banapassport/en"
   },
@@ -11449,9 +10836,7 @@
       "Server-Timing": "cdn-cache; desc=REVALIDATE, edge; dur=117, origin; dur=46, ak_p; desc=\"1697306978759_1749903164_67746193_16322_80521_52_9_-\";dur=1",
       "Set-Cookie": "ApplicationGatewayAffinityCORS=e232c36d3c1755acc8ae33318ad1fabc; Path=/; SameSite=None; Secure, ApplicationGatewayAffinity=e232c36d3c1755acc8ae33318ad1fabc; Path=/"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2019/building-operational-resilience-impact-tolerances-for-important-business-services.pdf"
   },
@@ -11499,9 +10884,7 @@
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://www.bbc.com/news/technology-34066941"
   },
@@ -11641,9 +11024,7 @@
       "X-Timer": "S1697307017.610958,VS0,VE414",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.buzzfeednews.com/article/scottlucas/san-francisco-spent-a-decade-being-rich-important-and"
   },
@@ -11667,9 +11048,7 @@
       "x-amz-meta-s3cmd-attrs": "atime:1672366200/ctime:1672366235/gid:1000/gname:stucchio/md5:52065bb34555f1eca1f41e05e2c5d872/mode:33188/mtime:1672366200/uid:1000/uname:stucchio",
       "x-amz-request-id": "CBBD824D8YPV7N3M"
     },
-    "sources": [
-      "content/blog/2020-11-20--configuration-magic/index.md"
-    ],
+    "sources": ["content/blog/2020-11-20--configuration-magic/index.md"],
     "status": 200,
     "url": "https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html"
   },
@@ -11692,9 +11071,7 @@
       "upgrade": "h2,h2c",
       "vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.covingtonschool.org/ces/4740-About.html"
   },
@@ -11756,9 +11133,7 @@
       "expires": "Sat, 14 Oct 2023 18:21:54 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "https://www.cyrusimap.org"
   },
@@ -11788,9 +11163,7 @@
       "expires": "Sat, 14 Oct 2023 18:22:51 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2022-05-28--fastmail-caldav/index.md"
-    ],
+    "sources": ["content/blog/2022-05-28--fastmail-caldav/index.md"],
     "status": 200,
     "url": "https://www.cyrusimap.org/imap/concepts/features/dav-collection-mgmt.html"
   },
@@ -11814,9 +11187,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-lambda-id": "77e6c284-1ca6-48b5-a167-2422e5b7bdd1"
     },
-    "sources": [
-      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
-    ],
+    "sources": ["content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"],
     "status": 200,
     "url": "https://www.darkpatterns.org"
   },
@@ -11846,9 +11217,7 @@
       "x-amz-meta-md5chksum": "2363e3eb51ac8f4770e7e37f58f24432",
       "x-amz-version-id": "Qb_6EpEGtwT4iWP0YI9j7cbwqNzFzgyz"
     },
-    "sources": [
-      "content/blog/2022-08-08--sampling-all-the-way-down/index.md"
-    ],
+    "sources": ["content/blog/2022-08-08--sampling-all-the-way-down/index.md"],
     "status": 200,
     "url": "https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch"
   },
@@ -11878,9 +11247,7 @@
       "expires": "Sat, 14 Oct 2023 18:19:41 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html"
   },
@@ -11907,9 +11274,7 @@
       "X-Hello-There": "you found me. password: steak",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.devever.net"
   },
@@ -11941,9 +11306,7 @@
       "X-Timer": "S1697307033.044693,VS0,VE4",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.djangoproject.com"
   },
@@ -11969,9 +11332,7 @@
       "X-Permitted-Cross-Domain-Policies": "none",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
-    ],
+    "sources": ["content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"],
     "status": 200,
     "url": "https://www.dropbox.com"
   },
@@ -11999,9 +11360,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "cf-mitigated": "challenge"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 403,
     "url": "https://www.ebgames.co.nz"
   },
@@ -12051,9 +11410,7 @@
       "x-ms-request-id": "fc72a493-601e-00da-80ca-fe8757000000",
       "x-ms-version": "2018-03-28"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://www.electronjs.org"
   },
@@ -12078,9 +11435,7 @@
       "x-content-type-options": "nosniff",
       "x-frame-options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://www.figma.com"
   },
@@ -12158,9 +11513,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://www.freecodecamp.org/news/so-yeah-we-tried-slack-and-we-deeply-regretted-it-391bcc714c81"
   },
@@ -12210,9 +11563,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "sameorigin"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://www.gnu.org/software/parted/manual/html_node/set.html"
   },
@@ -12236,9 +11587,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "sameorigin"
     },
-    "sources": [
-      "content/blog/2017-12-24--arch-nuc-install/index.md"
-    ],
+    "sources": ["content/blog/2017-12-24--arch-nuc-install/index.md"],
     "status": 200,
     "url": "https://www.gnu.org/software/parted/manual/parted.html"
   },
@@ -12293,9 +11642,7 @@
       "x-amz-rid": "AA9HNWKY6VSC0W6HVAQN",
       "x-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 200,
     "url": "https://www.goodreads.com/book/show/4119.The_Great_Good_Place"
   },
@@ -12317,9 +11664,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "content/projects/towing/index.md"
-    ],
+    "sources": ["content/projects/towing/index.md"],
     "status": 200,
     "url": "https://www.google.com/maps"
   },
@@ -12340,9 +11685,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx"
   },
@@ -12470,9 +11813,7 @@
       "X-Content-Type-Options": "nosniff, nosniff",
       "X-Frame-Options": "DENY"
     },
-    "sources": [
-      "content/blog/2019-09-26--email-lookup/index.md"
-    ],
+    "sources": ["content/blog/2019-09-26--email-lookup/index.md"],
     "status": 200,
     "url": "https://www.iana.org"
   },
@@ -12532,9 +11873,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/questions/macos-see-file-usage.md"
-    ],
+    "sources": ["content/questions/macos-see-file-usage.md"],
     "status": 200,
     "url": "https://www.jamf.com"
   },
@@ -12563,9 +11902,7 @@
       "X-Frame-Options": "DENY",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://www.jetbrains.com/go"
   },
@@ -12593,9 +11930,7 @@
       "X-Powered-By": "",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "https://www.justice.govt.nz/about/official-information-act-requests"
   },
@@ -12720,9 +12055,7 @@
       "x-rpid": "RP3E1A600",
       "x-sid": "AS3E1D706"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.losaltosca.gov"
   },
@@ -12744,9 +12077,7 @@
       "x-rpid": "RP3E1D600",
       "x-sid": "AS3E1D706"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 404,
     "url": "https://www.losaltosca.gov/recreation/page/rosita-park"
   },
@@ -12806,9 +12137,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.mediawiki.org/wiki/Extension"
   },
@@ -12838,9 +12167,7 @@
       "x-client-ip": "104.45.204.174",
       "x-content-type-options": "nosniff"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.mediawiki.org/wiki/MediaWiki"
   },
@@ -12863,9 +12190,7 @@
       "alt-svc": "h3=\":443\"; ma=86400",
       "x-powered-by": "WP Engine"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.michaelmina.net/restaurants"
   },
@@ -12893,18 +12218,14 @@
       "ms-cv": "CASMicrosoftCV83db9a52.0",
       "ms-cv-esi": "CASMicrosoftCV83db9a52.0"
     },
-    "sources": [
-      "content/questions/kubes-ingress-ip-range.md"
-    ],
+    "sources": ["content/questions/kubes-ingress-ip-range.md"],
     "status": 404,
     "url": "https://www.microsoft.com/en-us/download/details.aspx"
   },
   "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/questions/kubes-ingress-ip-range.md"
-    ],
+    "sources": ["content/questions/kubes-ingress-ip-range.md"],
     "status": 0,
     "url": "https://www.microsoft.com/en-ww/microsoft-teams/group-chat-software"
   },
@@ -12926,9 +12247,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Powered-By": "ASP.NET"
     },
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 200,
     "url": "https://www.microsoft.com/store/productId/9NLP712ZMN9Q"
   },
@@ -12953,9 +12272,7 @@
       "X-Frame-Options": "SAMEORIGIN",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 200,
     "url": "https://www.mifare.net/en/products/chip-card-ics/mifare-desfire"
   },
@@ -12968,9 +12285,7 @@
       "Date": "Sat, 14 Oct 2023 18:11:30 GMT",
       "Server": "awselb/2.0"
     },
-    "sources": [
-      "content/blog/2020-04-13--reducing-my-edc-2019/index.md"
-    ],
+    "sources": ["content/blog/2020-04-13--reducing-my-edc-2019/index.md"],
     "status": 403,
     "url": "https://www.mightyape.co.nz/product/sony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds-black/30990778"
   },
@@ -13004,9 +12319,7 @@
       "X-launch-status": "Go Flight!",
       "X-rq": "dca7 85 187 443"
     },
-    "sources": [
-      "content/experiments/fancy-hyperlinks/index.md"
-    ],
+    "sources": ["content/experiments/fancy-hyperlinks/index.md"],
     "status": 200,
     "url": "https://www.nasa.gov"
   },
@@ -13031,9 +12344,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.neogaf.com/threads/dead-franchises-almost-nobody-but-you-seems-to-want-back.1355948"
   },
@@ -13063,9 +12374,7 @@
       "expires": "Sat, 14 Oct 2023 17:37:19 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.neomutt.org"
   },
@@ -13089,9 +12398,7 @@
       "x-gateway-request-id": "6778d8a668f31c99281f2db0d1d28077",
       "x-gateway-skip-cache": "0"
     },
-    "sources": [
-      "content/questions/kubes-ingress-ip-range.md"
-    ],
+    "sources": ["content/questions/kubes-ingress-ip-range.md"],
     "status": 200,
     "url": "https://www.nginx.com/products/nginx-ingress-controller"
   },
@@ -13112,9 +12419,7 @@
       "X-Cache": "Miss from cloudfront",
       "X-Powered-By": "PHP/8.1.23"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://www.nme.com/en_au/news/music/failure-remove-their-music-from-spotify-over-covid-controversy-enough-is-enough-3152537"
   },
@@ -13143,9 +12448,7 @@
       "x-frame-options": "DENY",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.npmjs.com"
   },
@@ -13173,9 +12476,7 @@
       "X-Served-By": "pod-www-render-nginx-5bd7597dcd-lffmb",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://www.npr.org/2022/01/31/1076891070/joe-rogan-responds-spotify-podcast-covid-misinformation"
   },
@@ -13245,9 +12546,7 @@
       "x-nyt-edge-cache": "HIT-HIT",
       "x-nyt-route": "homepage"
     },
-    "sources": [
-      "content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"
-    ],
+    "sources": ["content/blog/2021-04-27--dropbox-is-way-too-clingy/index.md"],
     "status": 200,
     "url": "https://www.nytimes.com"
   },
@@ -13335,9 +12634,7 @@
       "x-nyt-route": "vi-story",
       "x-scoop-last-modified": "2019-06-18T19:42:43.662Z"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://www.nytimes.com/2019/01/26/business/against-hustle-culture-rise-and-grind-tgim.html"
   },
@@ -13362,9 +12659,7 @@
       "X-Nf-Request-Id": "01HCQPCRRNZAG6CJKA59WMDJ50",
       "X-Xss-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://www.okta.com"
   },
@@ -13393,9 +12688,7 @@
       "transfer-encoding": "chunked",
       "x-wix-request-id": "1697307378.1248484100960764696"
     },
-    "sources": [
-      "content/blog/2021-10-26--day-two/index.md"
-    ],
+    "sources": ["content/blog/2021-10-26--day-two/index.md"],
     "status": 200,
     "url": "https://www.oliverburkeman.com/books"
   },
@@ -13473,9 +12766,7 @@
       "pragma": "cache",
       "x-frame-options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2020-03-08--bookmarking-march-2020/index.md"
-    ],
+    "sources": ["content/blog/2020-03-08--bookmarking-march-2020/index.md"],
     "status": 200,
     "url": "https://www.propublica.org/article/the-red-cross-secret-disaster"
   },
@@ -13501,9 +12792,7 @@
       "X-Frame-Options": "DENY",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2020-11-20--configuration-magic/index.md"
-    ],
+    "sources": ["content/blog/2020-11-20--configuration-magic/index.md"],
     "status": 200,
     "url": "https://www.pulumi.com/product"
   },
@@ -13526,9 +12815,7 @@
       "X-Served-By": "cache-iad-kiad7000129-IAD",
       "X-Timer": "S1697307033.875861,VS0,VE1"
     },
-    "sources": [
-      "content/blog/2018-02-15--day-xero/index.md"
-    ],
+    "sources": ["content/blog/2018-02-15--day-xero/index.md"],
     "status": 200,
     "url": "https://www.python.org"
   },
@@ -13556,9 +12843,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dr8hk8e"
   },
@@ -13586,9 +12871,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dra7ayi"
   },
@@ -13616,9 +12899,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/drbv6io"
   },
@@ -13646,9 +12927,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/deepfakes/comments/7jqvny/release_face_swap_model_tool/dreu4rl"
   },
@@ -13676,9 +12955,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/deepfakes/comments/7pgcg4/detailed_explanation_of_the_algorithm/dshkv3o"
   },
@@ -13706,9 +12983,7 @@
       "transfer-encoding": "chunked",
       "x-is-wrs": "false"
     },
-    "sources": [
-      "content/blog/2021-05-22--ride-the-curve/index.md"
-    ],
+    "sources": ["content/blog/2021-05-22--ride-the-curve/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/r/ffxiv/comments/6h4129/yoshida_acknowledging_glamour_importance/divdh85"
   },
@@ -13738,9 +13013,7 @@
       "x-ratelimit-remaining": "99",
       "x-ratelimit-used": "1"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.reddit.com/user/deepfakes"
   },
@@ -13800,18 +13073,14 @@
       "expires": "Sat, 14 Oct 2023 18:18:41 GMT",
       "x-proxy-cache": "MISS"
     },
-    "sources": [
-      "content/questions/prometheus-sample-size.md"
-    ],
+    "sources": ["content/questions/prometheus-sample-size.md"],
     "status": 200,
     "url": "https://www.robustperception.io/how-much-space-does-the-wal-take-up"
   },
   "https://www.ruinedby.de": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/now/index.md"
-    ],
+    "sources": ["content/now/index.md"],
     "status": 0,
     "url": "https://www.ruinedby.de"
   },
@@ -13832,9 +13101,7 @@
       "transfer-encoding": "chunked",
       "vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.santaritaschool.org/santaritaes/6993-Address-Directions.html"
   },
@@ -13850,9 +13117,7 @@
       "Server": "Apache",
       "Transfer-Encoding": "chunked"
     },
-    "sources": [
-      "content/questions/selenium-remote-connection.md"
-    ],
+    "sources": ["content/questions/selenium-remote-connection.md"],
     "status": 200,
     "url": "https://www.selenium.de"
   },
@@ -13891,9 +13156,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "SAMEORIGIN"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://www.spark.co.nz/getmore/spotify"
   },
@@ -13942,9 +13205,7 @@
       "x-frame-options": "SAMEORIGIN",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 200,
     "url": "https://www.starbucks.co.nz/rewards"
   },
@@ -14030,9 +13291,7 @@
       "X-lastBigModificationTime": "Mon, 03 Sep 2018 07:35:44 GMT",
       "X-lastPublishTime": "Mon, 03 Sep 2018 19:19:20 GMT"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 200,
     "url": "https://www.stuff.co.nz/business/industries/106769552/restaurant-brands-sells-starbucks-coffee-in-nz"
   },
@@ -14049,9 +13308,7 @@
       "Transfer-Encoding": "chunked",
       "Vary": "Accept-Encoding"
     },
-    "sources": [
-      "content/uses/index.md"
-    ],
+    "sources": ["content/uses/index.md"],
     "status": 200,
     "url": "https://www.sublimetext.com"
   },
@@ -14109,9 +13366,7 @@
       "content-security-policy": "frame-ancestors https://voxmedia.stories.usechorus.com 'self'",
       "etag": "\"w8s65r5vqz3jq0\""
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.theverge.com/2018/1/24/16929148/fake-celebrity-porn-ai-deepfake-face-swapping-artificial-intelligence-reddit"
   },
@@ -14140,9 +13395,7 @@
       "x-robots-tag": "all",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2018-08-18--nz-oia-guide/index.md"
-    ],
+    "sources": ["content/blog/2018-08-18--nz-oia-guide/index.md"],
     "status": 200,
     "url": "https://www.transparency.org/country/NZL"
   },
@@ -14192,9 +13445,7 @@
       "x-uber-edge": "e4-dca23:w:385875973",
       "x-xss-protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/2021-04-18--starbucks-ecosystem/index.md"
-    ],
+    "sources": ["content/blog/2021-04-18--starbucks-ecosystem/index.md"],
     "status": 406,
     "url": "https://www.uber.com/nz/en/u/rewards"
   },
@@ -14245,9 +13496,7 @@
       "vary": "Accept-Encoding",
       "x-powered-by": "PHP/7.4.4"
     },
-    "sources": [
-      "content/reviews/2015-02-08--time-hollow/index.md"
-    ],
+    "sources": ["content/reviews/2015-02-08--time-hollow/index.md"],
     "status": 200,
     "url": "https://www.vgchartz.com/game/16779/time-hollow"
   },
@@ -14341,9 +13590,7 @@
       "X-XSS-Protection": "1; mode=block",
       "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
     },
-    "sources": [
-      "content/blog/2022-02-12--plex-tidal-together/index.md"
-    ],
+    "sources": ["content/blog/2022-02-12--plex-tidal-together/index.md"],
     "status": 200,
     "url": "https://www.vox.com/recode/22313268/tidal-square-jay-z-jack-dorsey-nft-explainer"
   },
@@ -14441,9 +13688,7 @@
       "content-encoding": "gzip",
       "transfer-encoding": "chunked"
     },
-    "sources": [
-      "content/blog/2017-02-05--deepfakes/index.md"
-    ],
+    "sources": ["content/blog/2017-02-05--deepfakes/index.md"],
     "status": 200,
     "url": "https://www.wired.com/story/face-swap-porn-legal-limbo"
   },
@@ -14494,9 +13739,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-XSS-Protection": "1; mode=block"
     },
-    "sources": [
-      "content/blog/20xx--one-possible-death-for-discord/index.md"
-    ],
+    "sources": ["content/blog/20xx--one-possible-death-for-discord/index.md"],
     "status": 200,
     "url": "https://www.wsj.com/articles/microsoft-is-in-exclusive-talks-to-acquire-discord-11616715164"
   },
@@ -14547,9 +13790,7 @@
       "x-amz-request-id": "MMD48FMF565YKJZ4",
       "x-amz-server-side-encryption": "AES256"
     },
-    "sources": [
-      "content/blog/2022-01-22--not-being-an-astronaut/index.md"
-    ],
+    "sources": ["content/blog/2022-01-22--not-being-an-astronaut/index.md"],
     "status": 200,
     "url": "https://www.xero.com/nz/about/graduate"
   },
@@ -14576,9 +13817,7 @@
       "X-Content-Type-Options": "nosniff",
       "X-XSS-Protection": "0"
     },
-    "sources": [
-      "layouts/404.html"
-    ],
+    "sources": ["layouts/404.html"],
     "status": 200,
     "url": "https://www.youtube.com/embed/C7xyoPqYkYM"
   },
@@ -14662,18 +13901,14 @@
       "X-Host": "grn144.sf2p.intern.weebly.net",
       "X-UA-Compatible": "IE=edge,chrome=1"
     },
-    "sources": [
-      "content/blog/2022-06-03--ipad-canonical-owner/index.md"
-    ],
+    "sources": ["content/blog/2022-06-03--ipad-canonical-owner/index.md"],
     "status": 200,
     "url": "https://www.zaziesf.com"
   },
   "https://x410.de": {
     "alive": false,
     "headers": {},
-    "sources": [
-      "content/blog/2020-05-06--emacs-wsl2-install/index.md"
-    ],
+    "sources": ["content/blog/2020-05-06--emacs-wsl2-install/index.md"],
     "status": 0,
     "url": "https://x410.de"
   },
@@ -14697,9 +13932,7 @@
       "x-amz-request-id": "6T36JN66DFR913AT",
       "x-amz-server-side-encryption": "AES256"
     },
-    "sources": [
-      "content/projects/parnell/index.md"
-    ],
+    "sources": ["content/projects/parnell/index.md"],
     "status": 200,
     "url": "https://xero.com/nz"
   },
@@ -14734,9 +13967,7 @@
       "x-amz-id-2": "9ucd6Lj1pu0iGsyXGwtZ3lI2m1huvzouAShfoHAWiExpvZRK58xq/dcoNKxyuocaHAl3GWlK2PU=",
       "x-amz-request-id": "SBK25P7WFAJDMTCW"
     },
-    "sources": [
-      "content/blog/2020-11-23--tidying-towing-data/index.md"
-    ],
+    "sources": ["content/blog/2020-11-23--tidying-towing-data/index.md"],
     "status": 200,
     "url": "https://xlrd.readthedocs.io/en/latest"
   },

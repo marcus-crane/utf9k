@@ -3,5 +3,5 @@
 set -euxo pipefail
 
 deno task build:deps
-deno task build:metadata
+# deno task build:metadata
 deno task build

@@ -6,17 +6,17 @@ headings:
 entries:
   - ID: 1
     RequestDate: 09/02/2016
-    Subject: Detention and deporation of New Zealanders from Australia  
+    Subject: Detention and deporation of New Zealanders from Australia
     DeniedUnder: 6(a)
 
   - ID: 2
     RequestDate: 30/03/2016
-    Subject: Prime Minister’s recent visit to Sri Lanka
+    Subject: Prime Minister's recent visit to Sri Lanka
     DeniedUnder: 6(a)
 
   - ID: 3
     RequestDate: 06/04/2016
-    Subject: Communications regarding the 2016 US Presidential Election 
+    Subject: Communications regarding the 2016 US Presidential Election
     DeniedUnder: 6(a)
 
   - ID: 4
@@ -31,7 +31,7 @@ entries:
 
   - ID: 6
     RequestDate: 16/08/2016
-    Subject: Decision to extend New Zealand’s training mission to Iraq
+    Subject: Decision to extend New Zealand's training mission to Iraq
     DeniedUnder: 6(a)
 
   - ID: 7
@@ -46,7 +46,7 @@ entries:
 
   - ID: 9
     RequestDate: 2016 - 2017
-    Subject: Preparation for Trump Administration 
+    Subject: Preparation for Trump Administration
     DeniedUnder: 6(a), 6(b)
 
   - ID: 10
@@ -101,27 +101,27 @@ entries:
 
   - ID: 20
     RequestDate: 13/07/2018
-    Subject: Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence  
+    Subject: Documents received as Minister for Arts, Culture & Heritage, Minister for Child Poverty Reduction and Minister for National Security & Intelligence
     DeniedUnder: 6(b)(i)
 
   - ID: 21
     RequestDate: 24/07/2018
-    Subject: Records relating to visit to NZ by former US Secretary of State Hillary Clinton  
+    Subject: Records relating to visit to NZ by former US Secretary of State Hillary Clinton
     DeniedUnder: 6(a), 6(c)
 
   - ID: 22
     RequestDate: 30/07/2018
-    Subject: Correspondence with the President of the United States 
+    Subject: Correspondence with the President of the United States
     DeniedUnder: 6(a)
 
   - ID: 23
     RequestDate: 11/09/2018
-    Subject: Inquiry into the appointment process for the Deputy Police Commissioner  
+    Subject: Inquiry into the appointment process for the Deputy Police Commissioner
     DeniedUnder: 6(c)
-  
+
   - ID: 24
     RequestDate: 03/10/2018
-    Subject: Phone calls to heads of state  
+    Subject: Phone calls to heads of state
     DeniedUnder: 6(a)
 
   - ID: 25
@@ -271,7 +271,7 @@ entries:
 
   - ID: 54
     RequestDate: 2020 - 2021
-    Subject: Request for briefings relating to Cyber Ransom and strengthening NZ’s resilience to disinformation
+    Subject: Request for briefings relating to Cyber Ransom and strengthening NZ's resilience to disinformation
     DeniedUnder: 6(a), 6(b)(i)
 
   - ID: 55
@@ -291,7 +291,7 @@ entries:
 
   - ID: 58
     RequestDate: 2020 - 2021
-    Subject: Request for briefings and Cabinet papers relating to New Zealand’s involvement in Afghanistan
+    Subject: Request for briefings and Cabinet papers relating to New Zealand's involvement in Afghanistan
     DeniedUnder: 6(a)
 
   - ID: 59
@@ -304,18 +304,23 @@ entries:
     Subject: Request for correspondence with COVID-19 advertisers
     DeniedUnder: 6(c)
 
-Sources:
+sources:
   - SourceURL: https://fyi.org.nz/request/4578-foia-sections-s6-a-and-s-6-b-i
     SourceTitle: FOIA Sections S6 (a) and S (6) b (i) - fyi.govt.nz
+    Duration: "2016 - 2017"
 
   - SourceURL: https://fyi.org.nz/request/6763-withheld-rejected-oia-filings
     SourceTitle: Withheld / Rejected OIA Filings - fyi.govt.nz
+    Duration: "2017 - 2018"
 
   - SourceURL: https://fyi.org.nz/request/11587-foia-sections-s6-a-and-s-6-b-i-oct-2018-oct-2019
     SourceTitle: FOIA Sections S6(a) and S(6)b(i) - Oct 2018 - Oct 2019
+    Duration: "2018 - 2019"
 
   - SourceURL: https://fyi.org.nz/request/13527-foia-sections-s6-a-and-s-6-b-i-nov-2019-aug-2020
     SourceTitle: FOIA Sections S6(a) and S(6)b(i) - Nov 2019 - Aug 2020
+    Duration: "2019 - 2020"
 
   - SourceURL: https://fyi.org.nz/request/16579-dpmc-oias-affected-by-section-6-aug-2020-aug-2021
-    SourceTitle: \[DPMC] OIAs affected by Section 6 | Aug 2020 - Aug 2021
+    SourceTitle: "[DPMC] OIAs affected by Section 6 | Aug 2020 - Aug 2021"
+    Duration: "2020 - 2021"

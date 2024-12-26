@@ -1,573 +1,921 @@
-# yaml-language-server: $schema=../static/schemas/books.schema.json
+# yaml-language-server: $schema=../../public/schemas/books.schema.json
+- list: 2024
+  goal: 16
+  books:
+    # - title: Seeing Like a State
+    #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+    #   author: James C. Scott
+    #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
+    #   cover_height: 1245
+    #   cover_width: 800
+    #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 11
+
+    # - title: The Seven-Day Stress Prescription
+    #   subtitle: null
+    #   author: Elissa Epel
+    #   cover: https://cdn.utf9k.net/books/the-seven-day-stress-prescription.jpg
+    #   cover_height: 2339
+    #   cover_width: 1524
+    #   link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 10
+
+    # - title: 100 Go Mistakes and How to Avoid Them
+    #   subtitle: null
+    #   author: Teiva Harsanyi
+    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+    #   cover_height: 2775
+    #   cover_width: 2213
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 45
+
+    # - title: SQL Performance Explained
+    #   subtitle: Everything Developers Need To Know About SQL Performance
+    #   author: Markus Winand
+    #   cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+    #   cover_height: 1804
+    #   cover_width: 1200
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 24
+
+    # - title: Going Infinite
+    #   subtitle: The Rise and Fall of a New Tycoon
+    #   author: Michael Lewis
+    #   cover: https://cdn.utf9k.net/books/going-infinite.jpg
+    #   cover_height: 5000
+    #   cover_width: 3249
+    #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 23
+
+    # - title: The Power Broker
+    #   subtitle: Robert Moses and the Fall of New York
+    #   author: Robert Caro
+    #   cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+    #   cover_height: 1922
+    #   cover_width: 1265
+    #   link: https://en.wikipedia.org/wiki/The_Power_Broker
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 1
+
+    # - title: Wrong Way
+    #   subtitle: How Privatisation & Economic Reform Backfired
+    #   author: Damien Cahill and Phillip Toner
+    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
+    #   cover_height: 1124
+    #   cover_width: 735
+    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
+
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_finished: null
+      recommended: false
+      progress: 32
+
+    # - title: The Wisdom of Anxiety
+    #   subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
+    #   author: Sheryl Paul
+    #   cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
+    #   cover_height: 1500
+    #   cover_width: 1000
+    #   link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
+
+    - title: The Upward Spiral
+      subtitle: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time
+      author: Alex Korb
+      cover: https://cdn.utf9k.net/books/the-upward-spiral.jpg
+      cover_height: 1801
+      cover_width: 1200
+      link: https://www.alexkorbphd.com/the-upward-spiral-method/
+      date_finished: 2024-12-13
+      recommended: true
+      progress: 100
+
+    - title: Personal Kanban
+      subtitle: Mapping Work | Navigating Life
+      author: Jim Benson and Tonianne DeMaria Barry
+      cover: https://cdn.utf9k.net/books/personal-kanban.jpg
+      cover_height: 1360
+      cover_width: 907
+      link: https://www.personalkanban.com/
+      date_finished: 2024-11-23
+      recommended: false
+      progress: 100
+
+    - title: Meditations for Mortals
+      subtitle: Four Weeks to Embrace Your Limitations and Make Time for What Counts
+      author: Oliver Burkeman
+      cover: https://cdn.utf9k.net/books/meditations-for-mortals.jpg
+      cover_height: 2620
+      cover_width: 1630
+      link: https://www.penguin.co.nz/books/meditations-for-mortals-9781847927620
+      date_finished: 2024-10-06
+      recommended: true
+      progress: 100
+
+    - title: Means of Control
+      subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
+      author: Byron Tau
+      cover: https://cdn.utf9k.net/books/means-of-control.jpg
+      cover_height: 2776
+      cover_width: 1838
+      link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
+      date_finished: 2024-06-07
+      recommended: true
+      progress: 100
+
+    - title: How Big Things Get Done
+      subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
+      author: Bent Flyvbjerg and Dan Gardner
+      cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
+      cover_height: 2500
+      cover_width: 1688
+      link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
+      date_finished: 2024-06-01
+      recommended: true
+      progress: 100
+    
+    - title: Burn Book
+      subtitle: A Tech Love Story
+      author: Kara Swisher
+      cover: https://cdn.utf9k.net/books/burn-book.jpg
+      cover_height: 2113
+      cover_width: 1400
+      link: https://www.simonandschuster.com/books/Burn-Book/Kara-Swisher/9781982163891
+      date_finished: 2024-03-10
+      recommended: false
+      progress: 100
+    
+    - title: Hacks, Leaks, and Revelations
+      subtitle: The Art of Analyzing Hacked and Leaked Data
+      author: Micah Lee
+      cover: https://cdn.utf9k.net/books/hacks-leaks-and-revelations.jpg
+      cover_height: 1832
+      cover_width: 1400
+      link: https://nostarch.com/hacks-leaks-and-revelations
+      date_finished: 2024-03-06
+      recommended: false
+      progress: 100 
+    
+    - title: Creative Dysregulation
+      subtitle: Why Your Creativity is Chaotic & What to Do About It
+      author: Kelly Wilde-Miller
+      cover: https://cdn.utf9k.net/books/creative-dysregulation.jpg
+      cover_height: 1510
+      cover_width: 1014
+      link: https://www.kellywildemiller.com/creativedysregulation
+      date_finished: 2024-03-05
+      recommended: false
+      progress: 100
+ 
+    - title: Risk & Reward
+      subtitle: An Inside View of the Property/Casualty Insurance Business
+      author: Stephen Catlin
+      cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
+      cover_height: 1208
+      cover_width: 800
+      link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
+      date_finished: 2024-02-11
+      recommended: true
+      progress: 100
+
+    - title: Networks of New York
+      subtitle: An Illustrated Field Guide to Urban Internet Infrastructure
+      author: Ingrid Burrington
+      cover: https://cdn.utf9k.net/books/networks-of-new-york.jpg
+      cover_height: 1903
+      cover_width: 1200
+      link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
+      date_finished: 2024-02-03
+      recommended: true
+      progress: 100
+
+    - title: Silent Hill 2
+      subtitle: The Novel
+      author: Sadamu Yamashita
+      cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
+      cover_height: 1000
+      cover_width: 667
+      link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
+      date_finished: 2024-02-02 
+      recommended: false
+      progress: 100
+ 
+    - title: The Shallows
+      subtitle: What the Internet is Doing to our Brains
+      author: Nicholas Carr
+      cover: https://cdn.utf9k.net/books/the-shallows.jpg
+      cover_height: 1799
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL15297392W/The_Shallows
+      date_finished: 2024-01-27
+      recommended: false
+      progress: 100
+  
+    - title: Creative Doing
+      subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
+      cover: https://cdn.utf9k.net/books/creative-doing.jpg
+      cover_height: 888
+      cover_width: 584
+      link: https://openlibrary.org/works/OL37513885W/Creative_Doing_75_Practical_Exercises_to_Unblock_Your_Creative_Potential_in_Your_Work_Hobby_or_Next_
+      date_finished: 2024-01-09
+      recommended: false
+      progress: 100
+
+    - title: Digital Zettelkasten
+      subtitle: Principles, Methods, & Examples
+      cover: https://cdn.utf9k.net/books/digital-zettelkasten.jpg
+      cover_height: 1360
+      cover_width: 850
+      link: https://openlibrary.org/works/OL24703365W/Digital_Zettelkasten
+      date_finished: 2024-01-04
+      recommended: false
+      progress: 100
+
+    - title: What the CEO Wants You to Know
+      subtitle: How Your Company Really Works
+      author: Ram Charan
+      cover: https://cdn.utf9k.net/books/what-the-ceo-wants-you-to-know.jpg
+      cover_height: 2340
+      cover_width: 1527
+      link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
+      date_finished: 2024-01-03
+      recommended: false
+      progress: 100
+
+    - title: High Performance Browser Networking
+      subtitle: What Every Web Developer Should Know about Networking and Web Performance
+      author: Ilya Grigorik
+      cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
+      cover_height: 1377
+      cover_width: 1050
+      link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
+      date_finished: 2024-01-03
+      recommended: false
+      progress: 100
+
 - list: 2023
   goal: 24
   books:
+    - title: Blood, Sweat, and Pixels
+      subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
+      author: Jason Schreier
+      cover: https://cdn.utf9k.net/books/blood-sweat-and-pixels.jpg
+      cover_height: 1808
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
+      date_finished: 2023-12-25
+      recommended: false
+      progress: 100
+    
+    - title: Walking Your Blues Away
+      subtitle: How to Heal the Mind and Create Emotional Well-Being
+      author: Thom Hartmann
+      cover: https://cdn.utf9k.net/books/walking-your-blues-away.jpg
+      cover_height: 2700
+      cover_width: 1800
+      link: https://openlibrary.org/works/OL554786W/Walking_Your_Blues_Away
+      date_finished: 2023-12-15
+      recommended: false
+      progress: 100
 
-  # - title: Seeing Like a State
-  #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
-  #   author: James C. Scott
-  #   cover: https://covers.openlibrary.org/b/id/13320978-L.jpg
-  #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
-  #   date_finished: null
-  #   recommended: false
-  #   progress: 11
+    - title: Taxtopia
+      subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
+      author: The Rebel Accountant
+      cover: https://cdn.utf9k.net/books/taxtopia.jpg
+      cover_height: 2835
+      cover_width: 1878
+      link: https://openlibrary.org/works/OL28024085W/Taxtopia
+      date_finished: 2023-12-05
+      recommended: true
+      progress: 100
 
-  # - title: The Seven-Day Stress Prescription
-  #   subtitle: null
-  #   author: Elissa Epel
-  #   cover: https://covers.openlibrary.org/b/id/14304273-L.jpg
-  #   link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
-  #   date_finished: null
-  #   recommended: false
-  #   progress: 10
+    - title: The PARA Method
+      subtitle: Simplify, Organize, and Master Your Digital Life
+      author: Tiago Forte
+      cover: https://cdn.utf9k.net/books/the-para-method.jpg
+      cover_height: 2070
+      cover_width: 1538
+      link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
+      date_finished: 2023-08-30
+      recommended: false
+      progress: 100
 
-  - title: High Performance Browser Networking
-    subtitle: What Every Web Developer Should Know about Networking and Web Performance
-    author: Ilya Grigorik
-    cover: https://covers.openlibrary.org/b/id/14411035-L.jpg
-    link: https://openlibrary.org/works/OL17581297W/High_Performance_Browser_Networking
-    date_finished: null
-    recommended: false
-    progress: 67
+    - title: Hanging Out
+      subtitle: The Radical Power of Killing Time
+      author: Sheila Liming
+      cover: https://cdn.utf9k.net/books/hanging-out.jpg
+      cover_height: 1240
+      cover_width: 797
+      link: https://openlibrary.org/works/OL27939130W/Hanging_Out
+      date_finished: 2023-06-06
+      recommended: false
+      progress: 100
 
-  - title: Wrong Way
-    subtitle: How Privatisation & Economic Reform Backfired
-    author: Damien Cahill and Phillip Toner
-    cover: https://covers.openlibrary.org/b/id/12996382-L.jpg
-    link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-    date_finished: null
-    recommended: false
-    progress: 32
-
-  # - title: Unscripted
-  #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-  #   author: James B. Stewart and Rachel Abrams
-  #   cover: https://covers.openlibrary.org/b/id/14369191-L.jpg
-  #   link: https://openlibrary.org/works/OL28158768W/Unscripted
-  #   date_finished: null
-  #   recommended: false
-  #   progress: 15
-
-  # - title: What the CEO Wants You to Know
-  #   subtitle: How Your Company Really Works
-  #   author: Ram Charan
-  #   cover: https://covers.openlibrary.org/b/id/14353679-L.jpg
-  #   link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
-  #   date_finished: null
-  #   recommended: false
-  #   progress: 57
-
-  - title: Taxtopia
-    subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
-    author: The Rebel Accountant
-    cover: https://covers.openlibrary.org/b/id/14534574-L.jpg
-    link: https://openlibrary.org/works/OL28024085W/Taxtopia
-    date_finished: 2023-12-05
-    recommended: true
-    progress: 100
-
-  - title: The PARA Method
-    subtitle: Simplify, Organize, and Master Your Digital Life
-    author: Tiago Forte
-    cover: https://covers.openlibrary.org/b/id/14417094-L.jpg
-    link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
-    date_finished: 2023-08-30
-    recommended: false
-    progress: 100
-
-  - title: Hanging Out
-    subtitle: The Radical Power of Killing Time
-    author: Sheila Liming
-    cover: https://covers.openlibrary.org/b/id/13847599-L.jpg
-    link: https://openlibrary.org/works/OL27939130W/Hanging_Out
-    date_finished: 2023-06-06
-    recommended: false
-    progress: 100
-
-  - title: Like, Comment, Subscribe
-    subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
-    author: Mark Bergen
-    cover: https://covers.openlibrary.org/b/id/12895071-L.jpg
-    link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
-    date_finished: 2023-02-07
-    recommended: true
-    progress: 100
+    - title: Like, Comment, Subscribe
+      subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
+      author: Mark Bergen
+      cover: https://cdn.utf9k.net/books/like-comment-subscribe.jpg
+      cover_height: 1812
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
+      date_finished: 2023-02-07
+      recommended: true
+      progress: 100
 
 - list: 2022
   goal: 12
   books:
+    - title: Build
+      subtitle: An Unorthodox Guide to Making Things Worth Making
+      author: Tony Fadell
+      cover: https://cdn.utf9k.net/books/build.jpg
+      cover_height: 2560
+      cover_width: 1600
+      link: https://openlibrary.org/works/OL27739453W/Build
+      date_finished: 2022-10-29
+      recommended: true
+      progress: 100
 
-  - title: Build
-    subtitle: An Unorthodox Guide to Making Things Worth Making
-    author: Tony Fadell
-    cover: https://covers.openlibrary.org/b/id/12742378-L.jpg
-    link: https://openlibrary.org/works/OL27739453W/Build
-    date_finished: 2022-10-29
-    recommended: true
-    progress: 100
+    - title: High Output Management
+      subtitle: null
+      author: Andrew S. Grove
+      cover: https://cdn.utf9k.net/books/high-output-management.jpg
+      cover_height: 2411
+      cover_width: 1563
+      link: https://openlibrary.org/works/OL2355834W/High_Output_Management
+      date_finished: 2022-10-23
+      recommended: true
+      progress: 100
 
-  - title: High Output Management
-    subtitle: null
-    author: Andrew S. Grove
-    cover: https://covers.openlibrary.org/b/id/12722803-L.jpg
-    link: https://openlibrary.org/works/OL2355834W/High_Output_Management
-    date_finished: 2022-10-23
-    recommended: true
-    progress: 100
+    - title: Building a Second Brain
+      subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
+      author: Tiago Forte
+      cover: https://cdn.utf9k.net/books/building-a-second-brain.jpg
+      cover_height: 2555
+      cover_width: 1610
+      link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
+      date_finished: 2022-09-20
+      recommended: false
+      progress: 100
 
-  - title: Building a Second Brain
-    subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
-    author: Tiago Forte
-    cover: https://covers.openlibrary.org/b/id/12372866-L.jpg
-    link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
-    date_finished: 2022-09-20
-    recommended: false
-    progress: 100
+    - title: Slow Horses
+      subtitle: null
+      author: Mick Herron
+      cover: https://cdn.utf9k.net/books/slow-horses.jpg
+      cover_height: 2337
+      cover_width: 1525
+      link: https://openlibrary.org/works/OL18630860W
+      date_finished: 2022-09-18
+      recommended: true
+      progress: 100
 
-  - title: Slow Horses
-    subtitle: null
-    author: Mick Herron
-    cover: https://covers.openlibrary.org/b/id/12861756-L.jpg
-    link: https://openlibrary.org/works/OL18630860W
-    date_finished: 2022-09-18
-    recommended: true
-    progress: 100
-
-  - title: Ruined by Design
-    subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
-    author: Mike Monteiro
-    cover: https://covers.openlibrary.org/b/id/11937903-L.jpg
-    link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
-    date_finished: 2022-02-24
-    recommended: false
-    progress: 100
+    - title: Ruined by Design
+      subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
+      author: Mike Monteiro
+      cover: https://cdn.utf9k.net/books/ruined-by-design.jpg
+      cover_height: 2582
+      cover_width: 1686
+      link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
+      date_finished: 2022-02-24
+      recommended: false
+      progress: 100
 
 - list: 2021
   goal: 20
   books:
+    - title: Four Thousand Weeks
+      subtitle: Time Management for Mortals
+      author: Oliver Burkeman
+      cover: https://cdn.utf9k.net/books/four-thousand-weeks.jpg
+      cover_height: 2475
+      cover_width: 1612
+      link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
+      date_finished: 2021-11-06
+      recommended: true
+      progress: 100
 
-  - title: Four Thousand Weeks
-    subtitle: Time Management for Mortals
-    author: Oliver Burkeman
-    cover: https://covers.openlibrary.org/b/id/11990973-L.jpg
-    link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
-    date_finished: 2021-11-06
-    recommended: true
-    progress: 100
+    - title: Crossing the Chasm, 3rd Edition
+      subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
+      author: Geoffrey A. Moore
+      cover: https://cdn.utf9k.net/books/crossing-the-chasm.jpg
+      cover_height: 1251
+      cover_width: 800
+      link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
+      date_finished: 2021-08-09
+      recommended: true
+      progress: 100
 
-  - title: Crossing the Chasm, 3rd Edition
-    subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
-    author: Geoffrey A. Moore
-    cover: https://covers.openlibrary.org/b/id/8982180-L.jpg
-    link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
-    date_finished: 2021-08-09
-    recommended: true
-    progress: 100
+    - title: The Usefulness of Useless Knowledge
+      subtitle: null
+      author: Abraham Flexner
+      cover: https://cdn.utf9k.net/books/the-usefulness-of-useless-knowledge.jpg
+      cover_height: 2100
+      cover_width: 1350
+      link: https://openlibrary.org/works/OL24725948W/The_Usefulness_of_Useless_Knowledge
+      date_finished: 2021-07-30
+      recommended: false
+      progress: 100
 
-  - title: The Usefulness of Useless Knowledge
-    subtitle: null
-    author: Abraham Flexner
-    cover: https://covers.openlibrary.org/b/id/11456656-L.jpg
-    link: https://openlibrary.org/works/OL24725948W/The_Usefulness_of_Useless_Knowledge
-    date_finished: 2021-07-30
-    recommended: false
-    progress: 100
+    - title: Resilient Management
+      subtitle: null
+      author: Lara Hogan
+      cover: https://cdn.utf9k.net/books/resilient-management.jpg
+      cover_height: 3165
+      cover_width: 2048
+      link: https://openlibrary.org/works/OL20750525W/Resilient_Management
+      date_finished: 2021-07-19
+      recommended: false
+      progress: 100
 
-  - title: Resilient Management
-    subtitle: null
-    author: Lara Hogan
-    cover: https://covers.openlibrary.org/b/id/11270402-L.jpg
-    link: https://openlibrary.org/works/OL20750525W/Resilient_Management
-    date_finished: 2021-07-19
-    recommended: false
-    progress: 100
+    - title: The Big Four
+      subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
+      author: Ian D. Gow
+      cover: https://cdn.utf9k.net/books/the-big-four.jpg
+      cover_height: 1382
+      cover_width: 904
+      link: https://openlibrary.org/works/OL19762252W/The_Big_Four
+      date_finished: 2021-05-30
+      recommended: true
+      progress: 100
 
-  - title: The Big Four
-    subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
-    author: Ian D. Gow
-    cover: https://covers.openlibrary.org/b/id/11194303-L.jpg
-    link: https://openlibrary.org/works/OL19762252W/The_Big_Four
-    date_finished: 2021-05-30
-    recommended: true
-    progress: 100
+    - title: Little Rice
+      subtitle: Smartphones, Xiaomi, and The Chinese Dream
+      author: Clay Shirky
+      cover: https://cdn.utf9k.net/books/little-rice.jpg
+      cover_height: 1500
+      cover_width: 1000
+      link: https://openlibrary.org/works/OL17709914W/Little_Rice
+      date_finished: 2021-05-05
+      recommended: false
+      progress: 100
 
-  - title: Little Rice
-    subtitle: Smartphones, Xiaomi, and The Chinese Dream
-    author: Clay Shirky
-    cover: https://covers.openlibrary.org/b/id/7984442-L.jpg
-    link: https://openlibrary.org/works/OL17709914W/Little_Rice
-    date_finished: 2021-05-05
-    recommended: false
-    progress: 100
+    - title: The Waxman Report
+      subtitle: How Congress Really Works
+      author: Henry Waxman
+      cover: https://cdn.utf9k.net/books/the-waxman-report.jpg
+      cover_height: 2600
+      cover_width: 1711
+      link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
+      date_finished: 2021-04-24
+      recommended: true
+      progress: 100
 
-  - title: The Waxman Report
-    subtitle: How Congress Really Works
-    author: Henry Waxman
-    cover: https://covers.openlibrary.org/b/id/6421143-L.jpg
-    link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
-    date_finished: 2021-04-24
-    recommended: true
-    progress: 100
+    - title: In the Beginning ...Was the Command Line
+      subtitle: null
+      author: Neal Stephenson
+      cover: https://cdn.utf9k.net/books/in-the-beginning-was-the-command-line.jpg
+      cover_height: 1853
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
+      date_finished: 2021-02-20
+      recommended: false
+      progress: 100
 
-  - title: In the Beginning ...Was the Command Line
-    subtitle: null
-    author: Neal Stephenson
-    cover: https://covers.openlibrary.org/b/id/6396549-L.jpg
-    link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
-    date_finished: 2021-02-20
-    recommended: false
-    progress: 100
+    - title: The Dip
+      subtitle: A Little Book That Teaches You When to Quit
+      author: Seth Godin
+      cover: https://cdn.utf9k.net/books/the-dip.jpg
+      cover_height: 2122
+      cover_width: 1500
+      link: https://openlibrary.org/works/OL2329204W/The_Dip
+      date_finished: 2021-02-13
+      recommended: false
+      progress: 100
 
-  - title: The Dip
-    subtitle: A Little Book That Teaches You When to Quit
-    author: Seth Godin
-    cover: https://covers.openlibrary.org/b/id/6405017-L.jpg
-    link: https://openlibrary.org/works/OL2329204W/The_Dip
-    date_finished: 2021-02-13
-    recommended: false
-    progress: 100
-
-  - title: Propaganda
-    subtitle: null
-    author: Edward Bernays
-    cover: https://covers.openlibrary.org/b/id/10413643-L.jpg
-    link: https://openlibrary.org/works/OL21948057W/Propaganda
-    date_finished: 2021-02-12
-    recommended: true
-    progress: 100
+    - title: Propaganda
+      subtitle: null
+      author: Edward Bernays
+      cover: https://cdn.utf9k.net/books/propaganda.jpg
+      cover_height: 1192
+      cover_width: 768
+      link: https://openlibrary.org/works/OL21948057W/Propaganda
+      date_finished: 2021-02-12
+      recommended: true
+      progress: 100
 
 - list: 2020
   goal: 12
   books:
+    - title: In the Plex
+      subtitle: How Google Thinks, Works, and Shapes Our Lives
+      author: Steven Levy
+      cover: https://cdn.utf9k.net/books/in-the-plex.jpg
+      cover_height: 2132
+      cover_width: 1400
+      link: https://openlibrary.org/works/OL17717287W/In_the_Plex
+      date_finished: 2020-12-28
+      recommended: true
+      progress: 100
 
-  - title: In the Plex
-    subtitle: How Google Thinks, Works, and Shapes Our Lives
-    author: Steven Levy
-    cover: https://covers.openlibrary.org/b/id/11220620-L.jpg
-    link: https://openlibrary.org/works/OL17717287W/In_the_Plex
-    date_finished: 2020-12-28
-    recommended: true
-    progress: 100
+    - title: Naked Pictures of Famous People
+      subtitle: null
+      author: Jon Stewart
+      cover: https://cdn.utf9k.net/books/naked-pictures-of-famous-people.jpg
+      cover_height: 1200
+      cover_width: 797
+      link: https://openlibrary.org/works/OL1959419W/Naked_Pictures_of_Famous_People
+      date_finished: 2020-12-05
+      recommended: false
+      progress: 100
 
-  - title: Naked Pictures of Famous People
-    subtitle: null
-    author: Jon Stewart
-    cover: https://covers.openlibrary.org/b/id/8345799-L.jpg
-    link: https://openlibrary.org/works/OL1959419W/Naked_Pictures_of_Famous_People
-    date_finished: 2020-12-05
-    recommended: false
-    progress: 100
+    - title: The Checklist Manifesto
+      subtitle: How to Get Things Right
+      author: Atul Gawande
+      cover: https://cdn.utf9k.net/books/the-checklist-manifesto.jpg
+      cover_height: 2100
+      cover_width: 1400
+      link: https://openlibrary.org/works/OL15436462W/The_Checklist_Manifesto
+      date_finished: 2020-12-04
+      recommended: true
+      progress: 100
 
-  - title: The Checklist Manifesto
-    subtitle: How to Get Things Right
-    author: Atul Gawande
-    cover: https://covers.openlibrary.org/b/id/11442271-L.jpg
-    link: https://openlibrary.org/works/OL15436462W/The_Checklist_Manifesto
-    date_finished: 2020-12-04
-    recommended: true
-    progress: 100
+    - title: Greenlights
+      subtitle: null
+      author: Matthew McConaughey
+      cover: https://cdn.utf9k.net/books/greenlights.jpg
+      cover_height: 3000
+      cover_width: 2088
+      link: https://openlibrary.org/works/OL23520310W/Greenlights
+      date_finished: 2020-11-09
+      recommended: false
+      progress: 100
 
-  - title: Greenlights
-    subtitle: null
-    author: Matthew McConaughey
-    cover: https://covers.openlibrary.org/b/id/11442301-L.jpg
-    link: https://openlibrary.org/works/OL23520310W/Greenlights
-    date_finished: 2020-11-09
-    recommended: false
-    progress: 100
+    - title: The Death of Ivan Ilych
+      subtitle: null
+      author: Leo Tolstoy
+      cover: https://cdn.utf9k.net/books/the-death-of-ivan-ilych.jpg
+      cover_height: 2025
+      cover_width: 1256
+      link: https://openlibrary.org/works/OL20281370W/The_Death_of_Ivan_Ilych
+      date_finished: 2020-10-24
+      recommended: false
+      progress: 100
 
-  - title: The Death of Ivan Ilych
-    subtitle: null
-    author: Leo Tolstoy
-    cover: https://covers.openlibrary.org/b/id/8939341-L.jpg
-    link: https://openlibrary.org/works/OL20281370W/The_Death_of_Ivan_Ilych
-    date_finished: 2020-10-24
-    recommended: false
-    progress: 100
+    - title: As We May Think
+      subtitle: null
+      author: Vannevar Bush
+      cover: https://cdn.utf9k.net/books/as-we-may-think.jpg
+      cover_height: 4032
+      cover_width: 3024
+      link: https://openlibrary.org/works/OL5098582W/As_We_May_Think
+      date_finished: 2020-09-30
+      recommended: true
+      progress: 100
 
-  - title: As We May Think
-    subtitle: null
-    author: Vannevar Bush
-    cover: https://covers.openlibrary.org/b/id/11442310-L.jpg
-    link: https://openlibrary.org/works/OL5098582W/As_We_May_Think
-    date_finished: 2020-09-30
-    recommended: true
-    progress: 100
+    - title: Talking to My Daughter About the Economy
+      subtitle: or, How Capitalism Works - and How It Fails
+      author: Yanis Varoufakis
+      cover: https://cdn.utf9k.net/books/talking-to-my-daughter-about-the-economy.jpg
+      cover_height: 2339
+      cover_width: 1524
+      link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
+      date_finished: 2020-09-30
+      recommended: true
+      progress: 100
 
-  - title: Talking to My Daughter About the Economy
-    subtitle: or, How Capitalism Works - and How It Fails
-    author: Yanis Varoufakis
-    cover: https://covers.openlibrary.org/b/id/8866724-L.jpg
-    link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
-    date_finished: 2020-09-30
-    recommended: true
-    progress: 100
+    - title: The Miracle of Mindfulness
+      subtitle: An Introduction to the Practice of Meditation
+      author: Thich Nhat Hanh
+      cover: https://cdn.utf9k.net/books/the-miracle-of-mindfulness.jpg
+      cover_height: 1809
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL12381026W/The_Miracle_of_Mindfulness
+      date_finished: 2020-09-19
+      recommended: false
+      progress: 100
 
-  - title: The Miracle of Mindfulness
-    subtitle: An Introduction to the Practice of Meditation
-    author: Thich Nhat Hanh
-    cover: https://covers.openlibrary.org/b/id/11442319-L.jpg
-    link: https://openlibrary.org/works/OL12381026W/The_Miracle_of_Mindfulness
-    date_finished: 2020-09-19
-    recommended: false
-    progress: 100
+    - title: On Bullshit
+      subtitle: null
+      author: Harry G. Frankfurt
+      cover: https://cdn.utf9k.net/books/on-bullshit.jpg
+      cover_height: 1872
+      cover_width: 1240
+      link: https://openlibrary.org/works/OL1829528W/On_Bullshit
+      date_finished: 2020-09-15
+      recommended: true
+      progress: 100
 
-  - title: On Bullshit
-    subtitle: null
-    author: Harry G. Frankfurt
-    cover: https://covers.openlibrary.org/b/id/10919760-L.jpg
-    link: https://openlibrary.org/works/OL1829528W/On_Bullshit
-    date_finished: 2020-09-15
-    recommended: true
-    progress: 100
+    - title: The Curse of Bigness
+      subtitle: Antitrust in the New Gilded Age
+      author: Tim Wu
+      cover: https://cdn.utf9k.net/books/the-curse-of-bigness.jpg
+      cover_height: 2326
+      cover_width: 1507
+      link: https://openlibrary.org/works/OL19764853W/The_Curse_of_Bigness
+      date_finished: 2020-09-14
+      recommended: true
+      progress: 100
 
-  - title: The Curse of Bigness
-    subtitle: Antitrust in the New Gilded Age
-    author: Tim Wu
-    cover: https://covers.openlibrary.org/b/id/11442329-L.jpg
-    link: https://openlibrary.org/works/OL19764853W/The_Curse_of_Bigness
-    date_finished: 2020-09-14
-    recommended: true
-    progress: 100
+    - title: Memos from the Chairman
+      subtitle: null
+      author: Alan C. Greenberg
+      cover: https://cdn.utf9k.net/books/memos-from-the-chairman.jpg
+      cover_height: 1616
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL2646874W/Memos_from_the_Chairman
+      date_finished: 2020-09-11
+      recommended: false
+      progress: 100
 
-  - title: Memos from the Chairman
-    subtitle: null
-    author: Alan C. Greenberg
-    cover: https://covers.openlibrary.org/b/id/11442346-L.jpg
-    link: https://openlibrary.org/works/OL2646874W/Memos_from_the_Chairman
-    date_finished: 2020-09-11
-    recommended: false
-    progress: 100
+    - title: Learning HTTP/2
+      subtitle: A Practical Guide for Beginners
+      author: Stephen Ludin and Javier Garza
+      cover: https://cdn.utf9k.net/books/learning-http2.jpg
+      cover_height: 1575
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL20055086W/Learning_HTTP_2
+      date_finished: 2020-09-04
+      recommended: false
+      progress: 100
 
-  - title: Learning HTTP/2
-    subtitle: A Practical Guide for Beginners
-    author: Stephen Ludin and Javier Garza
-    cover: https://covers.openlibrary.org/b/id/11442379-L.jpg
-    link: https://openlibrary.org/works/OL20055086W/Learning_HTTP_2
-    date_finished: 2020-09-04
-    recommended: false
-    progress: 100
+    - title: The Master Switch
+      subtitle: The Rise and Fall of Information Empires
+      author: Tim Wu
+      cover: https://cdn.utf9k.net/books/the-master-switch.jpg
+      cover_height: 1889
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL15118227W/The_Master_Switch
+      date_finished: 2020-08-09
+      recommended: true
+      progress: 100
 
-  - title: The Master Switch
-    subtitle: The Rise and Fall of Information Empires
-    author: Tim Wu
-    cover: https://covers.openlibrary.org/b/id/11442411-L.jpg
-    link: https://openlibrary.org/works/OL15118227W/The_Master_Switch
-    date_finished: 2020-08-09
-    recommended: true
-    progress: 100
+    - title: Atomic Habits
+      subtitle: An Easy & Proven Way to Build Good Habits & Break Bad Ones
+      author: James Clear
+      cover: https://cdn.utf9k.net/books/atomic-habits.jpg
+      cover_height: 2765
+      cover_width: 1807
+      link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
+      date_finished: 2020-07-12
+      recommended: false
+      progress: 100
 
-  - title: Atomic Habits
-    subtitle: An Easy & Proven Way to Build Good Habits & Break Bad Ones
-    author: James Clear
-    cover: https://covers.openlibrary.org/b/id/10958382-L.jpg
-    link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
-    date_finished: 2020-07-12
-    recommended: false
-    progress: 100
+    - title: The Inner Game of Tennis
+      subtitle: The Classic Guide to the Mental Side of Peak Performance
+      author: Timothy W. Gallwey
+      cover: https://cdn.utf9k.net/books/the-inner-game-of-tennis.jpg
+      cover_height: 1855
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL20307725W/The_Inner_Game_of_Tennis
+      date_finished: 2020-06-06
+      recommended: true
+      progress: 100
 
-  - title: The Inner Game of Tennis
-    subtitle: The Classic Guide to the Mental Side of Peak Performance
-    author: Timothy W. Gallwey
-    cover: https://covers.openlibrary.org/b/id/11442494-L.jpg
-    link: https://openlibrary.org/works/OL20307725W/The_Inner_Game_of_Tennis
-    date_finished: 2020-06-06
-    recommended: true
-    progress: 100
+    - title: Zen in the Art of Writing
+      subtitle: null
+      author: Ray Bradbury
+      cover: https://cdn.utf9k.net/books/zen-in-the-art-of-writing.jpg
+      cover_height: 1830
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL103179W/Zen_in_The_Art_of_Writing
+      date_finished: 2020-05-11
+      recommended: false
+      progress: 100
 
-  - title: Zen in the Art of Writing
-    subtitle: null
-    author: Ray Bradbury
-    cover: https://covers.openlibrary.org/b/id/369269-L.jpg
-    link: https://openlibrary.org/works/OL103179W/Zen_in_The_Art_of_Writing
-    date_finished: 2020-05-11
-    recommended: false
-    progress: 100
+    - title: Red Tape
+      subtitle: Its Origins, Uses, and Abuses
+      author: Herbert Kaufman
+      cover: https://cdn.utf9k.net/books/red-tape.jpg
+      cover_height: 2550
+      cover_width: 1650
+      link: https://openlibrary.org/works/OL3479766W/Red_Tape
+      date_finished: 2020-03-23
+      recommended: false
+      progress: 100
 
-  - title: Red Tape
-    subtitle: Its Origins, Uses, and Abuses
-    author: Herbert Kaufman
-    cover: https://covers.openlibrary.org/b/id/613854-L.jpg
-    link: https://openlibrary.org/works/OL3479766W/Red_Tape
-    date_finished: 2020-03-23
-    recommended: false
-    progress: 100
+    - title: Why I Write
+      subtitle: null
+      author: George Orwell
+      cover: https://cdn.utf9k.net/books/why-i-write.jpg
+      cover_height: 2550
+      cover_width: 1650
+      link: https://openlibrary.org/works/OL1168147W/Why_I_Write
+      date_finished: 2020-02-25
+      recommended: false
+      progress: 100
 
-  - title: Why I Write
-    subtitle: null
-    author: George Orwell
-    cover: https://covers.openlibrary.org/b/id/11442618-L.jpg
-    link: https://openlibrary.org/works/OL1168147W/Why_I_Write
-    date_finished: 2020-02-25
-    recommended: false
-    progress: 100
+    - title: Dirty Politics
+      subtitle: How Attack Politics is Poisoning New Zealand's Political Environment
+      author: Nicky Hager
+      cover: https://cdn.utf9k.net/books/dirty-politics.jpg
+      cover_height: 1442
+      cover_width: 1000
+      link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
+      date_finished: 2020-02-09
+      recommended: true
+      progress: 100
 
-  - title: Dirty Politics
-    subtitle: How Attack Politics is Poisoning New Zealand's Political Environment
-    author: Nicky Hager
-    cover: https://covers.openlibrary.org/b/id/7286103-L.jpg
-    link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
-    date_finished: 2020-02-09
-    recommended: true
-    progress: 100
+    - title: Getting Things Done
+      subtitle: The Art of Stress-Free Productivity
+      author: David Allen
+      cover: https://cdn.utf9k.net/books/getting-things-done.jpg
+      cover_height: 2339
+      cover_width: 1513
+      link: https://openlibrary.org/works/OL20777755W/Getting_Things_Done
+      date_finished: 2020-02-07
+      recommended: false
+      progress: 100
 
-  - title: Getting Things Done
-    subtitle: The Art of Stress-Free Productivity
-    author: David Allen
-    cover: https://covers.openlibrary.org/b/id/10434117-L.jpg
-    link: https://openlibrary.org/works/OL20777755W/Getting_Things_Done
-    date_finished: 2020-02-07
-    recommended: false
-    progress: 100
+    - title: The Information Diet
+      subtitle: A Case for Conscious Consumption
+      author: Clay A. Johnson
+      cover: https://cdn.utf9k.net/books/the-information-diet.jpg
+      cover_height: 1000
+      cover_width: 667
+      link: https://openlibrary.org/works/OL16538242W/The_Information_Diet
+      date_finished: 2020-01-30
+      recommended: false
+      progress: 100
 
-  - title: The Information Diet
-    subtitle: A Case for Conscious Consumption
-    author: Clay A. Johnson
-    cover: https://covers.openlibrary.org/b/id/7089729-L.jpg
-    link: https://openlibrary.org/works/OL16538242W/The_Information_Diet
-    date_finished: 2020-01-30
-    recommended: false
-    progress: 100
-
-  - title: The Myth of Sisyphus
-    subtitle: null
-    author: Albert Camus
-    cover: https://covers.openlibrary.org/b/id/12726570-L.jpg
-    link: https://openlibrary.org/works/OL1230690W/The_Myth_of_Sisyphus_and_Other_Essays
-    date_finished: 2020-01-26
-    recommended: false
-    progress: 100
+    - title: The Myth of Sisyphus
+      subtitle: null
+      author: Albert Camus
+      cover: https://cdn.utf9k.net/books/the-myth-of-sisyphus.jpg
+      cover_height: 1851
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL1230690W/The_Myth_of_Sisyphus_and_Other_Essays
+      date_finished: 2020-01-26
+      recommended: false
+      progress: 100
 
 - list: 2019
   goal: null
   books:
+    - title: The Unicorn Project
+      subtitle: null
+      author: Gene Kim
+      cover: https://cdn.utf9k.net/books/the-unicorn-project.jpg
+      cover_height: 2560
+      cover_width: 1707
+      link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
+      date_finished: 2019-12-25
+      recommended: false
+      progress: 100
 
-  - title: The Unicorn Project
-    subtitle: null
-    author: Gene Kim
-    cover: https://covers.openlibrary.org/b/id/9398045-L.jpg
-    link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
-    date_finished: 2019-12-25
-    recommended: false
-    progress: 100
-
-  - title: Super Pumped
-    subtitle: The Battle for Uber
-    author: Mike Isaac
-    cover: https://covers.openlibrary.org/b/id/8777999-L.jpg
-    link: https://openlibrary.org/works/OL20125074W/Super_Pumped
-    date_finished: 2019-11-26
-    recommended: true
-    progress: 100
+    - title: Super Pumped
+      subtitle: The Battle for Uber
+      author: Mike Isaac
+      cover: https://cdn.utf9k.net/books/super-pumped.jpg
+      cover_height: 2560
+      cover_width: 1707
+      link: https://openlibrary.org/works/OL20125074W/Super_Pumped
+      date_finished: 2019-11-26
+      recommended: true
+      progress: 100
 
 - list: 2018
   goal: null
   books:
+    - title: How To Win Friends And Influence People
+      subtitle: null
+      author: Dale Carnegie
+      cover: https://cdn.utf9k.net/books/how-to-win-friends-and-influence-people.jpg
+      cover_height: 2473
+      cover_width: 1585
+      link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
+      date_finished: 2018-12-23
+      recommended: false
+      progress: 100
 
-  - title: How To Win Friends And Influence People
-    subtitle: null
-    author: Dale Carnegie
-    cover: https://covers.openlibrary.org/b/id/404390-L.jpg
-    link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
-    date_finished: 2018-12-23
-    recommended: false
-    progress: 100
+    - title: The Phoenix Project
+      subtitle: A Novel About IT, DevOps, and Helping Your Business Win
+      author: Gene Kim
+      cover: https://cdn.utf9k.net/books/the-phoenix-project.jpg
+      cover_height: 1794
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL16806686W/The_Phoenix_Project
+      date_finished: 2018-12-23
+      recommended: true
+      progress: 100
 
-  - title: The Phoenix Project
-    subtitle: A Novel About IT, DevOps, and Helping Your Business Win
-    author: Gene Kim
-    cover: https://covers.openlibrary.org/b/id/9151976-L.jpg
-    link: https://openlibrary.org/works/OL16806686W/The_Phoenix_Project
-    date_finished: 2018-12-23
-    recommended: true
-    progress: 100
+    - title: The Fifth Discipline
+      subtitle: The Art & Practice of The Learning Organization
+      author: Peter M. Senge
+      cover: https://cdn.utf9k.net/books/the-fifth-discipline.jpg
+      cover_height: 1425
+      cover_width: 938
+      link: https://openlibrary.org/works/OL4440692W/The_Fifth_Discipline
+      date_finished: 2018-08-05
+      recommended: false
+      progress: 100
 
-  - title: The Fifth Discipline
-    subtitle: The Art & Practice of The Learning Organization
-    author: Peter M. Senge
-    cover: https://covers.openlibrary.org/b/id/7018044-L.jpg
-    link: https://openlibrary.org/works/OL4440692W/The_Fifth_Discipline
-    date_finished: 2018-08-05
-    recommended: false
-    progress: 100
+    - title: The Flinch
+      subtitle: null
+      author: Julien Smith
+      cover: https://cdn.utf9k.net/books/the-flinch.jpg
+      cover_height: 1200
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL24137194W/The_Flinch
+      date_finished: 2018-05-11
+      recommended: false
+      progress: 100
 
-  - title: The Flinch
-    subtitle: null
-    author: Julien Smith
-    cover: https://covers.openlibrary.org/b/id/11443316-L.jpg
-    link: https://openlibrary.org/works/OL24137194W/The_Flinch
-    date_finished: 2018-05-11
-    recommended: false
-    progress: 100
+    - title: Twin Peaks
+      subtitle: The Final Dossier
+      author: Mark Frost
+      cover: https://cdn.utf9k.net/books/twin-peaks-the-final-dossier.jpg
+      cover_height: 1000
+      cover_width: 803
+      link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
+      date_finished: 2018-04-28
+      recommended: false
+      progress: 100
 
-  - title: Twin Peaks
-    subtitle: The Final Dossier
-    author: Mark Frost
-    cover: https://covers.openlibrary.org/b/id/8289411-L.jpg
-    link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
-    date_finished: 2018-04-28
-    recommended: false
-    progress: 100
+    - title: Site Reliability Engineering
+      subtitle: How Google Runs Production Systems
+      author: Betsy Beyer
+      cover: https://cdn.utf9k.net/books/site-reliability-engineering.jpg
+      cover_height: 1575
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL20028554W/Site_Reliability_Engineering
+      date_finished: 2018-02-24
+      recommended: true
+      progress: 100
 
-  - title: Site Reliability Engineering
-    subtitle: How Google Runs Production Systems
-    author: Betsy Beyer
-    cover: https://covers.openlibrary.org/b/id/9196728-L.jpg
-    link: https://openlibrary.org/works/OL20028554W/Site_Reliability_Engineering
-    date_finished: 2018-02-24
-    recommended: true
-    progress: 100
+    - title: Tales from the Loop
+      subtitle: null
+      author: Simon Stålenhag
+      cover: https://cdn.utf9k.net/books/tales-from-the-loop.jpg
+      cover_height: 1400
+      cover_width: 1417
+      link: https://openlibrary.org/works/OL20040484W/Tales_from_the_Loop
+      date_finished: 2018-02-06
+      recommended: true
+      progress: 100
 
-  - title: Tales from the Loop
-    subtitle: null
-    author: Simon Stålenhag
-    cover: https://covers.openlibrary.org/b/id/10866158-L.jpg
-    link: https://openlibrary.org/works/OL20040484W/Tales_from_the_Loop
-    date_finished: 2018-02-06
-    recommended: true
-    progress: 100
+    - title: Shit London
+      subtitle: Snapshots of a City on the Edge
+      author: Patrick Dalton
+      cover: https://cdn.utf9k.net/books/shit-london.jpg
+      cover_height: 932
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL17548993W/Shit_London
+      date_finished: 2018-01-24
+      recommended: false
+      progress: 100
 
-  - title: Shit London
-    subtitle: Snapshots of a City on the Edge
-    author: Patrick Dalton
-    cover: https://covers.openlibrary.org/b/id/7799604-L.jpg
-    link: https://openlibrary.org/works/OL17548993W/Shit_London
-    date_finished: 2018-01-24
-    recommended: false
-    progress: 100
+    - title: Japanese Game Graphics
+      subtitle: Behind the Scenes of Your Favorite Games
+      author: Works Corporation
+      cover: https://cdn.utf9k.net/books/japanese-game-graphics.jpg
+      cover_height: 1000
+      cover_width: 742
+      link: https://openlibrary.org/works/OL274966W/Japanese_Game_Graphics
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
 
-  - title: Japanese Game Graphics
-    subtitle: Behind the Scenes of Your Favorite Games
-    author: Works Corporation
-    cover: https://covers.openlibrary.org/b/id/29998-L.jpg
-    link: https://openlibrary.org/works/OL274966W/Japanese_Game_Graphics
-    date_finished: 2018-01-14
-    recommended: true
-    progress: 100
+    - title: Show Stopper!
+      subtitle: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft
+      author: G. Pascal Zachary
+      cover: https://cdn.utf9k.net/books/showstopper.jpg
+      cover_height: 1829
+      cover_width: 1200
+      link: https://openlibrary.org/works/OL106726W/Show-Stopper
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
 
-  - title: Show Stopper!
-    subtitle: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft
-    author: G. Pascal Zachary
-    cover: https://covers.openlibrary.org/b/id/7885313-L.jpg
-    link: https://openlibrary.org/works/OL106726W/Show-Stopper
-    date_finished: 2018-01-14
-    recommended: true
-    progress: 100
+    - title: Half-Life 2
+      subtitle: Raising the Bar
+      author: David Hodgson
+      cover: https://cdn.utf9k.net/books/half-life-2.jpg
+      cover_height: 1179
+      cover_width: 904
+      link: https://openlibrary.org/works/OL8010203W/Half-Life_2
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
 
-  - title: Half-Life 2
-    subtitle: Raising the Bar
-    author: David Hodgson
-    cover: https://covers.openlibrary.org/b/id/510697-L.jpg
-    link: https://openlibrary.org/works/OL8010203W/Half-Life_2
-    date_finished: 2018-01-14
-    recommended: true
-    progress: 100
-
-  - title: Pendulum
-    subtitle: How Past Generations Shape Our Present and Predict Our Future
-    author: Roy H. Williams
-    cover: https://covers.openlibrary.org/b/id/11443428-L.jpg
-    link: https://openlibrary.org/works/OL22646312W/Pendulum
-    date_finished: 2018-01-13
-    recommended: false
-    progress: 100
+    - title: Pendulum
+      subtitle: How Past Generations Shape Our Present and Predict Our Future
+      author: Roy H. Williams
+      cover: https://cdn.utf9k.net/books/pendulum.jpg
+      cover_height: 2560
+      cover_width: 1684
+      link: https://openlibrary.org/works/OL22646312W/Pendulum
+      date_finished: 2018-01-13
+      recommended: false
+      progress: 100
