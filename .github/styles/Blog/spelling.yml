@@ -1,7 +1,0 @@
-extends: spelling
-message: "'%s' is a typo!"
-dicpath: /Users/marcus/utf9k/.github/styles/dics
-dictionaries:
-  - en_US
-  - en_GB
-  - en_AU

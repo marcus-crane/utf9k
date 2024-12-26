@@ -25,3 +25,6 @@ dist/
 
 hugo/public
 hugo_stats.json
+
+deno.lock
+_site
