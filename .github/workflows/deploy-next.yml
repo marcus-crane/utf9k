@@ -25,6 +25,7 @@ jobs:
           cache: 'pip'
       - name: Generate metadata and deploy site
         run: deno task deploy
+        working-directory: ./_lume
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
