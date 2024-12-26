@@ -7,7 +7,7 @@
     ]
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "MODE=build deno task lume",
     "serve": "MODE=serve deno task lume -s",
     "build:deps": "./ci/install.sh",
@@ -17,7 +17,7 @@
     "sync": "./ci/externalsync.sh"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.0.0/",
+    "lume/": "https://deno.land/x/lume@v2.4.3/",
     "lume-src/": "https://raw.githubusercontent.com/lumeland/lume/main/",
     "lume-exp/": "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/",
     "prettier": "npm:prettier@3.0.0",
