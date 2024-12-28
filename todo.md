@@ -1,7 +1,13 @@
 ---
 title: Lume Migration
 layout: markdown.vto
+<<<<<<< HEAD
 --
+||||||| 6d8cd714
+# Lume Migration
+=======
+---
+>>>>>>> 4392428b0e1f02543093251de246477d63c162a0
 
 Things to do.
 
@@ -36,3 +42,4 @@ Some of these aren't needed for Lume specifically but just general things to act
 - [ ] Consider humans.txt/llms.txt etc
 - [ ] Review what pages should feature lastmod
 - [ ] Figure out how to set default markdown layout (_data?)
+- [ ] Add build info to site somewhere
