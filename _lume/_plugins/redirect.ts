@@ -68,16 +68,10 @@ export default function (userOptions?: DeepPartial<Options>) {
 
       pages.forEach((page) => {
         const url = page.data.url;
-        const oldUrl = page.data.oldUrl as string | string[] | undefined;
+        const aliases = page.data.aliases as string[] | undefined;
 
-        if (url && oldUrl) {
-          if (typeof oldUrl === "string") {
-            redirects.push(parseRedirection(url, oldUrl, options.status));
-          } else {
-            oldUrl.forEach((u) =>
-              redirects.push(parseRedirection(url, u, options.status))
-            );
-          }
+        if (url && aliases) {
+          aliases.forEach((u) => redirects.push(parseRedirection(url, u, options.status)));
         }
       });
 
@@ -94,10 +88,10 @@ const validStatusCodes = [301, 302, 307, 308];
 
 function parseRedirection(
   newUrl: string,
-  oldUrl: string,
+  alias: string,
   defaultCode: Status,
 ): [string, string, Status] {
-  const [from, code] = oldUrl.split(/\s+/);
+  const [from, code] = alias.split(/\s+/);
   const parsedCode = code ? parseInt(code) : defaultCode;
 
   if (!validStatusCodes.includes(parsedCode)) {
