@@ -18,10 +18,12 @@ Some of these aren't needed for Lume specifically but just general things to act
 - [ ] Wire up link check module
 - [x] Validate usage of Obsidian blockquotes
 - [x] Validate usage of tweets
-- [ ] Convert back to normal slugs
-- [ ] Convert back to normal file names
+- [x] Convert back to normal slugs
+- [x] Convert back to normal file names
 - [ ] Port over RSS styling
-- [ ] Generate descriptions for pages
+- [x] Generate descriptions for pages
+- [ ] Check if all descriptions are surfaced
+- [ ] Remove redundant frontmatter
 - [ ] Import CSS via esbuild instead of static
 - [ ] Review upgrade guide: https://lume.land/docs/advanced/migrate-to-lume2/
 - [ ] Remove old Tailwind directives
