@@ -1,9 +1,6 @@
-name: Astro - Build and push
+name: Build and push
 on:
   push:
-    paths-ignore:
-      - '.github/workflows/deploy-next.yml'
-      - 'hugo/**'
   workflow_dispatch:
   workflow_run:
     workflows: [Audit Links, External Sync]
@@ -18,19 +15,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v2.x
       - name: Setup Python
         id: setup-python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11.0"
           cache: 'pip'
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-      - name: Install dependencies
-        run: bun install
       - name: Generate metadata and deploy site
-        run: bun run deploy
+        run: deno task deploy
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
