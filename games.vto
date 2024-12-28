@@ -22,12 +22,12 @@ description: Check out what games I have been playing in recent times
               <span>{{ game.title }}</span>
             </a>
           </div>
-          <div>
+          {{# <div>
             <dd>
               {{ game.platform }} {{ if game.replay }}· Replay{{ /if }}
             </dd>
             {{ if game.completed !== "0000-00-00" }}<dd>Finished: {{ game.completed }}</dd>{{ /if }}
-          </div>
+          </div> #}}
         </li>
         {{ /for }}
         </ul>
