@@ -5,9 +5,6 @@
     ":assignee(marcus-crane)"
   ],
   "prHourlyLimit": 10,
-  "schedule": [
-    "every weekend"
-  ],
   "npm": {
     "stabilityDays": 3
   },
