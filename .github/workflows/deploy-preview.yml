@@ -1,13 +1,9 @@
-name: Deploy
+name: Deploy (Preview)
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - 'main'
   workflow_dispatch:
-  workflow_run:
-    workflows: [Audit Links, External Sync]
-    types:
-      - completed
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -32,9 +28,10 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
           source: "_site"
-          storageZoneName: utf9k
-          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
+          storageZoneName: "utf9k-next"
+          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}"
+          storageEndpoint: "syd.storage.bunnycdn.com"
           accessKey: "${{ secrets.BUNNY_GLOBAL_API_KEY }}"
-          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
+          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID_NEXT }}"
           upload: "true"
           purgePullZone: "true"
