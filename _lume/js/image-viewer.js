@@ -26,18 +26,19 @@ function addOverlay(el) {
     const imageViewer = document.createElement("div")
     const fullsizeImage = document.createElement("img")
     const imageCaption = document.createElement("p")
-    // Used to surface links that would otherwise redirect the user on click to somewhere besides image src
-    const imageLink = el.getAttribute("altsrc")
-    const imageLinkTitle = el.getAttribute("alttitle")
+
+    const figCaption = overlayDiv.parentElement.querySelector("figcaption")
+    // Easier to just copy the whole node and not risk forgetting to reset the list view node back to hidden
     
     fullsizeImage.src = el.src
 
     imageCaption.innerHTML = el.getAttribute("alt")
 
-    if (imageLink !== null) {
-      let imageTitle = imageLinkTitle === null ? imageLink : imageLinkTitle
+    if (figCaption !== null) {
       imageCaption.innerHTML += "<br /><br />"
-      imageCaption.innerHTML += `You can learn more by visiting <a target="_blank" href="${imageLink}">${imageTitle}</a>`
+      const figCaptionCopy = figCaption.cloneNode(true)
+      figCaptionCopy.style.display = "block";
+      imageCaption.appendChild(figCaptionCopy)
     }
 
     imageViewer.appendChild(fullsizeImage)

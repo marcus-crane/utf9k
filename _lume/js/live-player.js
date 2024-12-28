@@ -47,13 +47,23 @@ const liveliness = {
 // until the server state changes. This can take a while or maybe even never if nothing
 // is playing. We'll do an initial population of the site before calling out event source
 // and pretty quickly get brought up to date by the event stream
-fetch("https://gunslinger.utf9k.net/api/v3/playing")
-  .then(res => res.json())
-  .then(data => renderLivePlayer(data))
-  .then(_ => fetchHistory()) // We load history only once the live player is rendered to ensure the playing track is filtered from history
-  .catch(err => console.error(`Failed to initialise player state: ${err}`))
+function initPlayer() {
+  fetch("https://gunslinger.utf9k.net/api/v4/playing")
+    .then(res => res.json())
+    .then(data => renderLivePlayer(data))
+    .then(_ => fetchHistory()) // We load history only once the live player is rendered to ensure the playing track is filtered from history
+    .catch(err => console.error(`Failed to initialise player state: ${err}`))
+}
 
-const eventSource = new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
+// Call this once on startup + anytime we are the active tab again
+initPlayer()
+
+// This seems pointless but we want to disconnect + reconnect the source depending on tab focus so we respect the user's browsing resources
+function initEventSource() {
+  return new EventSource("https://gunslinger.utf9k.net/events?stream=playback")
+}
+
+let eventSource = initEventSource()
 
 eventSource.onmessage = function (event) {
   const data = JSON.parse(event.data)
@@ -75,6 +85,26 @@ eventSource.onmessage = function (event) {
   ) {
     fetchHistory()
   }
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    // The user has gone to do something else so no point showing our fancy effect
+    eventSource.close()
+  } else {
+    // Give our source a wee bit of time to catch up + instant refresh of the player
+    initPlayer()
+    eventSource = initEventSource()
+  }
+})
+
+function normaliseCategoryName(category) {
+  switch (category) {
+    case PODCAST:
+      return "podcast episode"
+    default:
+      return category
+    }
 }
 
 function formatMangaTitle(title) {
@@ -99,6 +129,11 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderLivePlayer(data) {
+  if (data.length == 0) {
+    return
+  }
+  // We should always have one item
+  data = data[0]
   clearInterval(window.currentInterval)
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
@@ -159,8 +194,10 @@ function renderLivePlayer(data) {
   title.innerText = data.title
   subtitle.innerText = data.subtitle
 
+
+
   cover.src = "https://gunslinger.utf9k.net" + data.image
-  cover.alt = `Cover art for the ${data.category} ${data.title} by ${data.subtitle}`
+  cover.alt = `Cover art for the ${normaliseCategoryName(data.category)} ${data.title} by ${data.subtitle}`
 
   livePlayer.style.opacity = 1
 
@@ -200,7 +237,7 @@ function buildAnimatedBorder(dominantColours) {
 const playerHistory = document.querySelector("#played-items")
 
 function fetchHistory() {
-  fetch("https://gunslinger.utf9k.net/api/v3/history")
+  fetch("https://gunslinger.utf9k.net/api/v4/history")
     .then(res => res.json())
     .then(data => renderHistory(data))
     .catch(err => console.error(`Failed to initialise player history: ${err}`))
