@@ -6,8 +6,8 @@ import requests
 
 from common import CUR_DIR
 
-DATA_FILE = "src/data/links.json"
-DATA_FILE_NO_HEADERS = "src/data/links-noheaders.json"
+DATA_FILE = "_data/links.json"
+DATA_FILE_NO_HEADERS = "_data/links-noheaders.json"
 STATIC_SITE = f"{CUR_DIR}/../content"
 URL_RE = r"((?<=[^a-zA-Z0-9])(?:https?\:\/\/|[a-zA-Z0-9]{1,}\.{1}|\b)(?:\w{1,}\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm|nz|ai){1}(?:\/[a-zA-Z0-9-_.]{1,})*)"
 include = set(['js', 'content', '_includes'])
