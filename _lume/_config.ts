@@ -16,6 +16,7 @@ import redirect from "./_plugins/redirect.ts"
 
 // NPM
 import rehypePrettyCode from "rehype-pretty-code";
+import remarkCallout from "remark-callout";
 import prettier from "prettier"
 
 // Deno / ESM
@@ -80,7 +81,8 @@ site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
     remarkPlugins: [
-        remarkToc
+        remarkToc,
+        remarkCallout,
     ],
     rehypePlugins: [
         [rehypePrettyCode, rehypePrettyCodeOpts],
