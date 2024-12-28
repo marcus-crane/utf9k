@@ -21,3 +21,8 @@ Some of these aren't needed for Lume specifically but just general things to act
 - [ ] Convert back to normal slugs
 - [ ] Convert back to normal file names
 - [ ] Port over RSS styling
+- [ ] Generate descriptions for pages
+- [ ] Import CSS via esbuild instead of static
+- [ ] Review upgrade guide: https://lume.land/docs/advanced/migrate-to-lume2/
+- [ ] Remove old Tailwind directives
+- [ ] Restore books apex domain thing

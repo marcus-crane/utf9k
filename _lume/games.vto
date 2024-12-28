@@ -1,5 +1,6 @@
 ---
 title: Games
+description: Check out what games I have been playing in recent times
 ---
 
 {{ layout "core.vto" }}
@@ -15,7 +16,8 @@ title: Games
         {{ for game of gameList.games }}
         <li>
           <div>
-            <img alt="Box art for the game titled {{ game.title |> escape }}" src="{{ game.cover.url }}" />
+            <img alt="Box art for the game titled {{ game.title |> escape }}" src="{{ game.cover.url }}" width="{{ game.cover.width }}px" height="{{ game.cover.height }}px" />
+            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ game.link }}">Backloggd</a></figcaption>
             <a href="{{ game.link }}" target="_blank" rel="noopener noreferer">
               <span>{{ game.title }}</span>
             </a>

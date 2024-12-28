@@ -22,6 +22,7 @@
     "lume-exp/": "https://raw.githubusercontent.com/lumeland/experimental-plugins/main/",
     "prettier": "npm:prettier@3.0.0",
     "rehype-pretty-code": "npm:rehype-pretty-code@0.11.0",
-    "remark-callout": "npm:@r4ai/remark-callout@0.6.2"
+    "remark-callout": "npm:@r4ai/remark-callout@0.6.2",
+    "top-domain": "npm:@segment/top-domain@3.0.1"
   }
 }

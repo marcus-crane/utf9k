@@ -20,12 +20,14 @@ import redirect from "./_plugins/redirect.ts"
 import rehypePrettyCode from "rehype-pretty-code";
 import remarkCallout from "remark-callout";
 import prettier from "prettier"
+import domain from "top-domain"
 
 // Deno / ESM
 import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
 import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
 import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
+import ci from "https://deno.land/x/lume_plugin_ci@v1.0.0/mod.ts";
 
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
@@ -118,6 +120,7 @@ site.use(redirect())
 site.use(postcss())
 site.use(robots())
 site.use(sitemap())
+site.use(ci())
 
 if (mode === "build") {
     site.use(cache_busting())
@@ -177,5 +180,7 @@ site.filter("taghash", tag => {
     const i = Number(hash) % tagColours.length
     return tagColours[i]
 })
+
+site.filter("getApexDomain", domain)
 
 export default site;
