@@ -1,13 +1,7 @@
 ---
 title: Lume Migration
 layout: markdown.vto
-<<<<<<< HEAD
---
-||||||| 6d8cd714
-# Lume Migration
-=======
 ---
->>>>>>> 4392428b0e1f02543093251de246477d63c162a0
 
 Things to do.
 
