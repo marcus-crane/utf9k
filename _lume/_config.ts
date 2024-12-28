@@ -10,6 +10,8 @@ import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 import remark from "lume-src/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
+import robots from "lume/plugins/robots.ts";
+import sitemap from "lume/plugins/sitemap.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -114,6 +116,8 @@ site.use(nunjucks({
 site.use(metas())
 site.use(redirect())
 site.use(postcss())
+site.use(robots())
+site.use(sitemap())
 
 if (mode === "build") {
     site.use(cache_busting())
