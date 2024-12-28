@@ -1,24 +1,45 @@
 ---
-title: "Now"
-slug: "now"
-category: "now"
-description: "Usually I am up to Stuff™️ and this page may hold the answers you seek"
+category: now
+description: Usually I am up to Stuff™️ and this page may hold the answers you seek
+lastmod: 2024-12-20T22:30:00+13:00
 layout: markdown.vto
-lastmod: "2023-10-15T20:40:00+13:00"
+output: src/pages
+publish: true
+slug: now
 tags:
-- "me"
+  - me
+title: Now
 ---
+Here's what I'm up to currently:
 
-## 2023 is coming to an end
+## Holiday Season
 
-My last "now" update was all the way back in 2022!
+It's that time of year again.
 
-Geez, time flies.
+For myself, I usually visit my parents for a few days and tend to get started on doing a digital spring cleaning.
 
-I hadn't written much this year, as I had some [personal hurdles](/blog/i-dont-identify-as-anxious) to jump over but I'm slowly getting back into having side projects and other things.
+Going through my task manager, junking all the stuff I don't really want to do as well as cancelling various subscriptions that I don't really need.
 
-I finally got a post [off the backburner](/blog/spreadsheet-to-visualisation) recently and I might have some notes sitting around to cobble into another.
+There are a couple of things that I currently pay for that I can consolidate by writing a couple of scripts since the problem areas don't change much as well.
 
-The live player widget on the homepage still makes me proud, mainly due to the infrastructure that powers it all, but I'd like to flesh it out even more which I'm slowly chipping away at.
+## Obsidian Bankruptcy
 
-Beyond that, I dunno, I started experimenting with [Beeminder](https://www.beeminder.com/) but it hasn't been enough time to really say much about it yet.
+Not a total bankruptcy but I think I'm at the point where I'd like to archive most of my existing notes to the side and then refresh my [Obsidian](https://obsidian.md) vault so that it doesn't have so much junk.
+
+I've ended up with nested folders where I have no real idea what's contained inside them and they're really archival notes that I never refer back to really.
+
+## Hardcover
+
+For some time now, I've been maintaining my list of books read [on my site](https://utf9k.net/books) which works but sometimes it can be annoying sourcing all of the various metadata.
+
+A lot of it isn't automated on my end.
+
+Recently, I learned about [Hardcover](https://hardcover.app) which aspires to be a Goodreads successor.
+
+Most importantly, it has an API so it'd be feasible to start using that and then just pull my data locally similar to what I currently do with [Backloggd](https://backloggd.com).
+
+## Website Refresh
+
+It has been a while since I've given my site a nice tidy up and I'm about ready to sit down and give it all a revamp.
+
+I've been saving various screenshots of design elements around the web that I like so it'll take me a while to figure out what aesthetic elements I'd like to use for this latest iteration.
