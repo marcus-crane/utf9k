@@ -33,7 +33,6 @@ templateEngine: [njk, vto]
         </header>
         <ul role="list">
         {{ for book of yearGroup.books }}
-        {{> console.log(book.title) }}
         <li>
           <div>
             <img alt="A cover photo of the book titled {{ book.title }}" src="{{ book.cover }}" />
