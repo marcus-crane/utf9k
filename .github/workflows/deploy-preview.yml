@@ -1,9 +1,8 @@
-name: Lume - Build and push
+name: Deploy (Preview)
 on:
   push:
-    paths:
-      - '.github/workflows/deploy-next.yml'
-      - '_lume/**'
+    branches-ignore:
+      - 'main'
   workflow_dispatch:
 jobs:
   build:
@@ -25,11 +24,10 @@ jobs:
           cache: 'pip'
       - name: Generate metadata and deploy site
         run: deno task deploy
-        working-directory: ./_lume
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
-          source: "_lume/_site"
+          source: "_site"
           storageZoneName: "utf9k-next"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}"
           storageEndpoint: "syd.storage.bunnycdn.com"

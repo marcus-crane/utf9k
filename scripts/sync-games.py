@@ -12,7 +12,7 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-DATA_FILE = "src/data/gamesv2.yml"
+DATA_FILE = "_/gamesv2.yml"
 
 PLAYING_URL = "https://www.backloggd.com/u/utf9k/playing/"
 COMPLETED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:completed/"
@@ -75,7 +75,7 @@ _iterate_list_page(BACKLOGGED_URL, 1)
 _iterate_list_page(COMPLETED_URL, 2)
 _iterate_list_page(SHELVED_URL, 3)
 
-with open("src/data/games.yml", "w") as file:
+with open("_data/games.yml", "w") as file:
     yaml.dump(lists, file)
 
 print("~ Games synced locally")

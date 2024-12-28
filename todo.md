@@ -1,7 +1,7 @@
 ---
 title: Lume Migration
 layout: markdown.vto
---
+---
 
 Things to do.
 
@@ -31,6 +31,9 @@ Some of these aren't needed for Lume specifically but just general things to act
 - [ ] Review upgrade guide: https://lume.land/docs/advanced/migrate-to-lume2/
 - [ ] Remove old Tailwind directives
 - [ ] Restore books apex domain thing
+- [ ] Review scripts
+- [ ] Review Astro rehype/remark
 - [ ] Consider humans.txt/llms.txt etc
 - [ ] Review what pages should feature lastmod
 - [ ] Figure out how to set default markdown layout (_data?)
+- [ ] Add build info to site somewhere
