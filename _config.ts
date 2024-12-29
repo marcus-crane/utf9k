@@ -186,6 +186,9 @@ site.filter("taghash", tag => {
 
 site.filter("getApexDomain", domain)
 
+// Prior versions of the site never used trailing slashes. Functionally, this doesn't matter too much,
+// but for RSS readers, the GUID tends to be the URL so having a trailing slash may accidentally
+// result in a duplicate feed item appearing if said reader does not trim trailing slashes.
 site.addEventListener("afterBuild", (event) => {
     event.pages.forEach(async (page) => {
         if (
