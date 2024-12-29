@@ -23,6 +23,7 @@ import prettier from "prettier"
 import domain from "top-domain"
 
 // Deno / ESM
+import { join } from "https://deno.land/std@0.215.0/path/mod.ts";
 import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
 import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
@@ -33,6 +34,8 @@ import ci from "https://deno.land/x/lume_plugin_ci@v1.0.0/mod.ts";
 import cache_busting from "./_plugins/cache_busting.ts"
 import rehypePostImageWrapper from "./_hooks/rehypePostImageWrapper.ts"
 import { fnv_1a } from "./_utils/fnv_1a.ts"
+
+const RSS_FILE_NAMES = ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"];
 
 // Used to toggle on/off certain plugins locally such as cache busting
 const mode = Deno.env.get("MODE")
@@ -65,7 +68,7 @@ const rehypeAutolinkHeadingsOpts = {
 
 site.use(date());
 site.use(feed({
-    output: ["/rss.xml", "/index.xml", "/rss.json", "/blog/rss.xml"],
+    output: RSS_FILE_NAMES,
     query: "category=blog",
     info: {
         title: "utf9k",
@@ -182,5 +185,25 @@ site.filter("taghash", tag => {
 })
 
 site.filter("getApexDomain", domain)
+
+site.addEventListener("afterBuild", (event) => {
+    event.pages.forEach(async (page) => {
+        if (
+            RSS_FILE_NAMES.includes(page.data.url)
+        ) {
+            const filePath = join("_site", page.data.url);
+            let content = await Deno.readTextFile(filePath);
+
+            if (RSS_FILE_NAMES.includes(page.data.url)) {
+                content = content.replaceAll(
+                    /\/<\/guid>/g,
+                    "</guid>"
+                );
+            }
+
+            await Deno.writeTextFile(filePath, content);
+        }
+    });
+});
 
 export default site;
