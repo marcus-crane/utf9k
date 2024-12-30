@@ -137,6 +137,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 137001
+    title: 'Call of Duty: Black Ops Cold War'
+    link: https://www.backloggd.com/games/call-of-duty-black-ops-cold-war/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2n6j.jpg
+      width: 720
+      height: 540
   - id: 303811
     title: Astro Bot
     link: https://www.backloggd.com/games/astro-bot/
