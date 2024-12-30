@@ -13,17 +13,6 @@
     #   recommended: false
     #   progress: 11
 
-    # - title: The Seven-Day Stress Prescription
-    #   subtitle: null
-    #   author: Elissa Epel
-    #   cover: https://cdn.utf9k.net/books/the-seven-day-stress-prescription.jpg
-    #   cover_height: 2339
-    #   cover_width: 1524
-    #   link: https://openlibrary.org/works/OL27774869W/The_Stress_Prescription
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 10
-
     # - title: 100 Go Mistakes and How to Avoid Them
     #   subtitle: null
     #   author: Teiva Harsanyi
@@ -90,16 +79,16 @@
       recommended: false
       progress: 32
 
-    # - title: The Wisdom of Anxiety
-    #   subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
-    #   author: Sheryl Paul
-    #   cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
-    #   cover_height: 1500
-    #   cover_width: 1000
-    #   link: https://conscious-transitions.com/the-wisdom-of-anxiety/
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 44
+    - title: The Wisdom of Anxiety
+      subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
+      author: Sheryl Paul
+      cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
+      cover_height: 1500
+      cover_width: 1000
+      link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+      date_finished: 2024-12-30
+      recommended: false
+      progress: 100
 
     - title: The Upward Spiral
       subtitle: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time
