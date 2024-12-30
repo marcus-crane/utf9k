@@ -1,6 +1,6 @@
 ---
 category: blog
-date: 2024-12-01
+date: 2024-12-01T19:58:00+13:00
 description: Apparently it's been slightly more than a year
 output: src/content/blog
 publish: true
