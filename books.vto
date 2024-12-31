@@ -22,12 +22,13 @@ templateEngine: [njk, vto]
       {{ for yearGroup of books }}
       {{> const goalProgress = yearGroup.books.filter(b => b.progress === 100).length }}
       {{> const goalCompletion = (goalProgress * 100) / yearGroup.goal }}
+      {{> console.log(goalCompletion) }}
       <div class="grid-list">
         <header>
           <h2>{{ yearGroup.list }}</h2>
           {{ if yearGroup.goal }}
           <div id="post-meta">
-            Yearly goal: {{ goalProgress }} / {{ yearGroup.goal }} books completed ({{> Math.round(goalCompletion)}}%)
+            Yearly goal: {{ goalProgress }} / {{ yearGroup.goal }} books completed ({{ Math.round(goalCompletion) }}%)
           </div>
           {{ /if }}
         </header>
