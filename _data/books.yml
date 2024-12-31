@@ -1,84 +1,21 @@
 # yaml-language-server: $schema=../../public/schemas/books.schema.json
+- list: 2025
+  goal: 16
+  books:
+    - title: Amusing Ourselves to Death
+      subtitle: Public Discourse in the Age of Show Business
+      author: Neil Postman
+      cover: https://cdn.utf9k.net/books/amusing-ourselves-to-death.jpg
+      cover_height: 2560
+      cover_width: 1693
+      link: https://www.penguinrandomhouse.com/books/297276/amusing-ourselves-to-death-by-neil-postman/
+      date_finished: null
+      recommended: false
+      progress: 9
+
 - list: 2024
   goal: 16
   books:
-    # - title: Seeing Like a State
-    #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
-    #   author: James C. Scott
-    #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
-    #   cover_height: 1245
-    #   cover_width: 800
-    #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 11
-
-    # - title: 100 Go Mistakes and How to Avoid Them
-    #   subtitle: null
-    #   author: Teiva Harsanyi
-    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
-    #   cover_height: 2775
-    #   cover_width: 2213
-    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 45
-
-    # - title: SQL Performance Explained
-    #   subtitle: Everything Developers Need To Know About SQL Performance
-    #   author: Markus Winand
-    #   cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
-    #   cover_height: 1804
-    #   cover_width: 1200
-    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 24
-
-    # - title: Going Infinite
-    #   subtitle: The Rise and Fall of a New Tycoon
-    #   author: Michael Lewis
-    #   cover: https://cdn.utf9k.net/books/going-infinite.jpg
-    #   cover_height: 5000
-    #   cover_width: 3249
-    #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 23
-
-    # - title: The Power Broker
-    #   subtitle: Robert Moses and the Fall of New York
-    #   author: Robert Caro
-    #   cover: https://cdn.utf9k.net/books/the-power-broker.jpg
-    #   cover_height: 1922
-    #   cover_width: 1265
-    #   link: https://en.wikipedia.org/wiki/The_Power_Broker
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 1
-
-    # - title: Wrong Way
-    #   subtitle: How Privatisation & Economic Reform Backfired
-    #   author: Damien Cahill and Phillip Toner
-    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
-    #   cover_height: 1124
-    #   cover_width: 735
-    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 44
-
-    - title: Unscripted
-      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-      author: James B. Stewart and Rachel Abrams
-      cover: https://cdn.utf9k.net/books/unscripted.jpg
-      cover_height: 1498
-      cover_width: 975
-      link: https://openlibrary.org/works/OL28158768W/Unscripted
-      date_finished: null
-      recommended: false
-      progress: 32
-
     - title: The Wisdom of Anxiety
       subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
       author: Sheryl Paul
@@ -908,3 +845,80 @@
       date_finished: 2018-01-13
       recommended: false
       progress: 100
+
+    # - title: Seeing Like a State
+    #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+    #   author: James C. Scott
+    #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
+    #   cover_height: 1245
+    #   cover_width: 800
+    #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 11
+
+    # - title: 100 Go Mistakes and How to Avoid Them
+    #   subtitle: null
+    #   author: Teiva Harsanyi
+    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+    #   cover_height: 2775
+    #   cover_width: 2213
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 45
+
+    # - title: SQL Performance Explained
+    #   subtitle: Everything Developers Need To Know About SQL Performance
+    #   author: Markus Winand
+    #   cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+    #   cover_height: 1804
+    #   cover_width: 1200
+    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 24
+
+    # - title: Going Infinite
+    #   subtitle: The Rise and Fall of a New Tycoon
+    #   author: Michael Lewis
+    #   cover: https://cdn.utf9k.net/books/going-infinite.jpg
+    #   cover_height: 5000
+    #   cover_width: 3249
+    #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 23
+
+    # - title: The Power Broker
+    #   subtitle: Robert Moses and the Fall of New York
+    #   author: Robert Caro
+    #   cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+    #   cover_height: 1922
+    #   cover_width: 1265
+    #   link: https://en.wikipedia.org/wiki/The_Power_Broker
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 1
+
+    # - title: Wrong Way
+    #   subtitle: How Privatisation & Economic Reform Backfired
+    #   author: Damien Cahill and Phillip Toner
+    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
+    #   cover_height: 1124
+    #   cover_width: 735
+    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
+
+    # - title: Unscripted
+    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+    #   author: James B. Stewart and Rachel Abrams
+    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
+    #   cover_height: 1498
+    #   cover_width: 975
+    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 32
