@@ -1,0 +1,81 @@
+---
+category: blog
+date: 2024-12-31T18:10:00+13:00
+description: 
+tags:
+- stack
+- tools
+title: My stack as of EY2024
+---
+
+Once again, I'm due to write a post to keep my blog fresh and I still have no planned anything in advance.
+
+It's also the end of the year and I have some stuff to do later today so I figure why not start a possibly new segment where I just talk about the various "things" I use.
+
+Some of this will be similar to my outdated and not-public-outside-of-search [uses](https://utf9k.net/uses) page but with a bit more elaboration.
+
+These won't be in any particular order and I'll be outlining how I actually use these things, not how they work in a perfect world.
+
+## [Fastmail](https://fastmail.com)
+
+This is probably the thing that has been part of my "stack" for longer than anything else although there were a couple of periods where I briefly swapped it out for GSuite only to retreat back.
+
+From a quick email search[^1], I first joined in 2018 which doesn't seem like that long ago but that was probably around the time I really got on the "cheap is expensive" bandwagon.
+
+I have nothing but nice things to say about Fastmail really so here are a few:
+
+- I can count the number of outages I've experienced over 6 years on one hand and even then, I hardly remember being impacted at all.
+- I barely get any spam (maybe 3 pieces a week which go straight to the spam folder) and the spam I do get is because I have an older address set up that was part of a bunch of breaches
+- Being able to create unlimited aliases, especially wildcard aliases is a feature that I haven't seen other email providers compete with. Last I checked, [Proton Mail](https://proton.me/mail) only let you create a handful of aliases.
+- The email apps always tend to be snappy, presumably in part to Fastmail's creation of, and investment in [JMAP](https://jmap.io/)
+- Search is always super fast and pretty reliable as far as I can remember
+- Being able to set up email rules is super great, particularly the ability to resend an email (not forwarding) such that it appears to another sender as if they had received it directly. I use this for forwarding email newsletters to various places
+
+Perhaps the only thing that Fastmail historically has been missing is offline support for mobile but as of a few days ago, it's currently [in beta](https://www.fastmail.com/blog/offline-architecture/) and seems to work well.
+
+My usual route on the train goes through a tunnel which kills connectivity so it's a good place to test it out.
+
+## [TickTick](https://ticktick.com/)
+
+Another tool that I've used for quite some time and it is quite hard to replace, in part because it offers a lot of features in one app.
+
+Alongside the standard features you'd expect with a todo list (due dates, tags, descriptions), there is also support for calendars (Local, Google Calendar and WebDav), habit tracking and pomodoro tracking.
+
+It's available on all major operating systems (desktop and mobile) and there's some cross-sync smarts so if you start a Pomodoro on one device, your active progress will surface on another device which means you say; start a pomodoro on desktop while using your phone as a display for time remaining.
+
+I've used all of these features in some capacity but I find myself using less these days, as much as I might aspire to do pomodoros more and structure my time a bit more.
+
+For those interested, given the current political climate, I should mention that TickTick does have ties to China in some capacity.
+
+For those on the mainland, [Dida 365](https://dida365.com/) is the same thing as TickTick although with extra integrations into WeChat for example that don't exist in the internationalised TickTick.
+
+As I understand it, TickTick itself is entirely separate and hosted in the US, using independent AWS infrastructure by a team based in the US.
+
+The situation is fairly similar to Evernote, who had [Yinxiang Biji](https://www.yinxiang.com/) which was the same thing hosted in China. The difference here is that Evernote in the US is the original while in this case, I believe Dida 365 in China is the original.
+
+I don't actually know the above for a fact though and obviously my actions in using it show that I'm fairly comfortable knowing this.
+
+For the most part, it's a tradeoff of convenience but also competition. When it comes to other alternatives, they're leagues behind in the amount of functionality that TickTick has to offer. With the Chinese context in mind, it makes sense that TickTick would be pretty far along given the whole [super app mentality](https://en.wikipedia.org/wiki/Super-app) that is less of a thing in the West.
+
+Now in saying all this, more is necessarily better. I might aspire to use most of these features but I really don't, at least not in a consistent fashion and it's something I intend to review in 2025.
+
+[Todoist](https://todoist.com/) is probably the most popular todo list that works cross-platform but as with most things Electron, it can feel a little wonky at times, not to mention falling over when you don't have internet connectivity. I don't think that's quite so true nowadays but it was in the past which rendered it unusable while visiting my family who are, relatively speaking, in the middle of nowhere connectivity wise.
+
+The other thing with Todoist is that it does natively integrate with a range of apps, in large part not just because it has an API but it pretty much goes [above and beyond](https://developer.todoist.com/sync/v8/) with its public API.
+
+TickTick does have a minimal API itself, and a wealth of private endpoints that I have used here and there but until they're made public, I don't see it getting huge traction with third party apps.
+
+Once again though, as I write this, I keep falling for the same pitfall where "more is more". It seems nice on paper to be able to add tasks directly from Slack or whatever else but probably, I should actually be trying to minimise my exposure to task management apps.
+
+In an ideal world, I'd just write everything down on paper and sync myself with a task manager once a week. It really is a problem of scope creep but I don't always have paper on me and quick saving things to my inbox is pretty much muscle memory at this point.
+
+As an aside on task management broadly, I do buy into the idea that having a calendar as your main way to plan is the "real" answer, and that a task manager should really take a backseat. I just haven't really found an ideal way to seamlessly integrate the two, if that should even be the case.
+
+It's all a tale for another time.
+
+## Other stuff
+
+> [!note]
+> I'm due to post something today, which is confirmed via RSS so I can't cheese it. It's the last day of the year and I'm heading out shortly so I will cheese it by posting what I've got so far and I'll come back to the rest tomorrow.
+
+[^1]: I archive *everything* and have email right back to 2009 when I was still in school as a teenager.
