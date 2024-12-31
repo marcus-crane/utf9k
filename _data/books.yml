@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../public/schemas/books.schema.json
 - list: 2025
-  goal: 16
+  goal: 18
   books:
     - title: Amusing Ourselves to Death
       subtitle: Public Discourse in the Age of Show Business
