@@ -3,6 +3,7 @@ aliases:
   - /blog/eoy24-stack
 category: blog
 date: 2024-12-31T18:10:00+13:00
+lastmod: 2025-01-03T14:05:00+13:00
 description: Here are my app defaults that I'm bringing with me into 2025
 tags:
 - tools
@@ -29,19 +30,20 @@ In all likelihood, I had seen [a previous post](https://kevquirk.com/blog/my-def
   - Newsblur iOS (for mobile)
   - Newsblur Android (for tablet)
 - ⌨️ **Launcher**: [Raycast](https://www.raycast.com/)
-- ☁️ **Cloud storage**:
+- ☁️ **Cloud Storage**:
   - iCloud
   - Synology NAS (SMB) over [Tailscale](https://tailscale.com/)
   - [Backblaze B2](https://www.backblaze.com/cloud-storage) for archive exports (ie; social media archives) + CDN storage for this site
   - [Bunny](https://bunny.net/) for storing this site's rendered files
-- 🌅 **Photo library**: iCloud + replicated to Synology NAS and B2 using [icloud_photos_downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
+- 🌅 **Photo Library**: iCloud + replicated to Synology NAS and B2 using [icloud_photos_downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
 - 🌐 **Web Browser**: [Zen Browser](https://github.com/zen-browser/desktop) on desktop and mobile devices
 - 💬 **Chat**:
   - Various social networks via [Beeper](https://www.beeper.com/)
   - iMessage
   - WhatsApp
 - 🔖 **Bookmarks**:
-  - [Pinboard](https://pinboard.in)
+  - [Pinboard](https://pinboard.in) via web
+  - [Pins](https://get-pins.app/), a Pinboard client for iOS
   - Some common bookmarks surfaced via [Glance](https://github.com/glanceapp/glance)
 - 📑 **Read Later**: [Readwise Reader](https://read.readwise.io)
 - 📚 **Reading**:
@@ -53,18 +55,34 @@ In all likelihood, I had seen [a previous post](https://kevquirk.com/blog/my-def
 - 🛒 **Shopping Lists**:
   - [Woolworths NZ](https://apps.apple.com/nz/app/woolworths-nz/id1278164689) iOS app
   - TickTick
-- 💰 **Personal Finance**: I have a couple markdown tables in Obsidian that are out of date but I haven't used anything for personal finance this year
+- 💰 **Personal Finance**: I have a couple of Markdown tables in Obsidian that are out of date but I haven't used anything for personal finance this year
 - 🎵 **Music**:
   - Spotify for streamable music
   - [Plexamp](https://www.plex.tv/plexamp/) for unstreamable music
-- 🎤 **Podcasts**: Spotify
+- 🎤 **Podcasts**: [Spotify](https://spotify.com)
 - 🔐 **Password Management**: [1Password](https://1password.com/)
 - 🤦‍♂️ **Social Media**: [Instagram](https://www.instagram.com/) is probably the only social media I've properly used, besides a handful of direct tweets?
 - 🌤️ **Weather**: Apple Weather
-- 🔎 **Search**: Kagi
+- 🔎 **Search**: [Kagi](https://kagi.com)
 - 🧮 **Code Editor**:
   - [Visual Studio Code](https://code.visualstudio.com/) for larger projects
   - [Neovim](https://github.com/neovim/neovim) for smaller, quick edits 
+- 🍱 **Nutrition Tracker**: [Cronometer](https://cronometer.com/)
+- 🚌 **Transportation Tracker**: [Transit](https://transitapp.com/)
+- 📚 **Book Tracker**:
+  - Currently Reading is stored as a yml file in the repo for this website
+  - [Book Tracker](https://booktrack.app/) for tracking my want-to-read list
+  - [Hardcover](https://hardcover.app/) as a current experiment in using a Goodreads-style service again
+- 🪪 **VPN**: [Tailscale](https://tailscale.com/) but no traditional VPN beyond that
+- 🗺️ **Maps**:
+  - Apple Maps for browsing
+  - Google Maps for directions
+- 👨‍🚀 **MITM Proxying**: [Proxyman](https://proxyman.io/)
+- 🚨 **External Notifications**: [Pushover](https://pushover.net/)
+- 🤖 **Default LLM**: [Kagi Assistant](https://kagi.com/assistant) using [Claude 3.5 Sonnet](https://en.wikipedia.org/wiki/Claude_(language_model))
+- 🛫 **Flight Tracker**: [Flighty](https://flighty.com/)
+- 💳 **Loyalty Card Wallet**: [Barcodes](https://apps.apple.com/us/app/barcodes-loyalty-card-wallet/id1610894014)
+- 📦 **Package Tracker**: [Parcel](https://parcel.app/)
 
 ## Change prediction for 2025
 
