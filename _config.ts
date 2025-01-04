@@ -1,4 +1,5 @@
 // Lume
+import { Page } from "lume/core/file.ts";
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 // import esbuild from "lume/plugins/esbuild.ts";
@@ -22,8 +23,11 @@ import remarkCallout from "remark-callout";
 import prettier from "prettier"
 import domain from "top-domain"
 
-// Deno / ESM
-import { join } from "https://deno.land/std@0.215.0/path/mod.ts";
+// Deno
+import { crypto } from "jsr:@std/crypto/crypto"
+import { join } from "jsr:@std/path";
+
+// ESM
 import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
 import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
@@ -208,5 +212,27 @@ site.addEventListener("afterBuild", (event) => {
         }
     });
 });
+
+site.process("*", async (filteredPages, allPages) => {
+    let pageContent = ""
+    const sortedPages = allPages.sort((a, b) => a.data.url.localeCompare(b.data.url))
+    for (const page of sortedPages) {
+        const encoder = new TextEncoder()
+        const data = encoder.encode(page.content);
+        const hashBuffer = await crypto.subtle.digest("SHA-1", data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer))
+        const hashHex = hashArray
+            .map(b => b.toString(16)
+            .padStart(2, "0"))
+            .join("")
+        pageContent += `${hashHex} ${page.data.url}\n`
+    }
+    const hashPage = Page.create({
+        url: `/digest.txt`,
+        content: pageContent
+    })
+
+    allPages.push(hashPage)
+})
 
 export default site;
