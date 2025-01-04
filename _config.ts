@@ -24,7 +24,6 @@ import prettier from "prettier"
 import domain from "top-domain"
 
 // Deno
-import { crypto } from "jsr:@std/crypto/crypto"
 import { join } from "jsr:@std/path";
 
 // ESM
@@ -212,27 +211,5 @@ site.addEventListener("afterBuild", (event) => {
         }
     });
 });
-
-site.process("*", async (filteredPages, allPages) => {
-    let pageContent = `Built at ${new Date()}\n`
-    const sortedPages = allPages.sort((a, b) => a.data.url.localeCompare(b.data.url))
-    for (const page of sortedPages) {
-        const encoder = new TextEncoder()
-        const data = encoder.encode(page.content);
-        const hashBuffer = await crypto.subtle.digest("SHA-1", data);
-        const hashArray = Array.from(new Uint8Array(hashBuffer))
-        const hashHex = hashArray
-            .map(b => b.toString(16)
-            .padStart(2, "0"))
-            .join("")
-        pageContent += `${hashHex} ${page.data.url}\n`
-    }
-    const hashPage = Page.create({
-        url: `/digest.txt`,
-        content: pageContent
-    })
-
-    allPages.push(hashPage)
-})
 
 export default site;
