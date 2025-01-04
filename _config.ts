@@ -214,7 +214,7 @@ site.addEventListener("afterBuild", (event) => {
 });
 
 site.process("*", async (filteredPages, allPages) => {
-    let pageContent = ""
+    let pageContent = `Built at ${new Date()}\n`
     const sortedPages = allPages.sort((a, b) => a.data.url.localeCompare(b.data.url))
     for (const page of sortedPages) {
         const encoder = new TextEncoder()
