@@ -17,7 +17,7 @@ description: The freshest panels directed right into my eyeballs
           {{ for m of manga.filter(m => m.chapters === null) }}
             <li>
               <div>
-                <Image
+                <img
                   alt="A cover image of {{ m.title }}, a manga series by {{ m.author }}"
                   src="{{ m.cover }}"
                   width="{{ m.cover_width }}"
@@ -45,7 +45,7 @@ description: The freshest panels directed right into my eyeballs
           {{ for m of manga.filter(m => m.chapters !== null) }}
             <li>
               <div>
-                <Image
+                <img
                   alt="A cover image of {{ m.title }}, a manga series by {{ m.author }}"
                   src="{{ m.cover }}"
                   width="{{ m.cover_width }}"
