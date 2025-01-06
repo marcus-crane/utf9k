@@ -1,5 +1,5 @@
 ---
-title: Games
+title: Manga
 description: The freshest panels directed right into my eyeballs
 ---
 
@@ -9,7 +9,63 @@ description: The freshest panels directed right into my eyeballs
       <h1>Manga</h1>
     </header>
     <div id="post-body">
-        <p>To be revived in a bit</p>
+      <div class="grid-list">
+        <header>
+          <h2>Actively publishing / reading weekly</h2>
+        </header>
+        <ul role="list">
+          {{ for m of manga.filter(m => m.chapters === null) }}
+            <li>
+              <div>
+                <img
+                  alt="A cover image of {{ m.title }}, a manga series by {{ m.author }}"
+                  src="{{ m.cover }}"
+                  width="{{ m.cover_width }}"
+                  height="{{ m.cover_height }}"
+                  style="border-radius: 3px; width: auto; max-width: 16rem;"
+                />
+                <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ m.url }}">Anilist</a></figcaption>
+                <a href="{{ m.url }}" target="_blank" rel="noopener noreferer">
+                  <span>{{ m.title }}</span>
+                </a>
+              </div>
+              <dl>
+                {{ m.progress }} chapters read
+              </dl>
+            </li>
+          {{ /for }}
+        </ul>
+      </div>
+      <hr />
+      <div class="grid-list">
+        <header>
+          <h2>Finished publishing / reading occasionally</h2>
+        </header>
+        <ul role="list">
+          {{ for m of manga.filter(m => m.chapters !== null) }}
+            <li>
+              <div>
+                <img
+                  alt="A cover image of {{ m.title }}, a manga series by {{ m.author }}"
+                  src="{{ m.cover }}"
+                  width="{{ m.cover_width }}"
+                  height="{{ m.cover_height }}"
+                  style="border-radius: 3px; width: auto; max-width: 16rem;"
+                />
+                <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ m.url }}">Anilist</a></figcaption>
+                <a href="{{ m.url }}" target="_blank" rel="noopener noreferer">
+                  <span>{{ m.title }}</span>
+                </a>
+              </div>
+              {{ if m.progress !== 100 }}
+              <dl>
+                <p>{{ m.progress }}% read</p>
+              </dl>
+              {{ /if }}
+            </li>
+          {{ /for }}
+        </ul>
+      </div>
     </div>
   </article>
 {{ /layout }}

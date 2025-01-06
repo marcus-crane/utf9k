@@ -149,6 +149,8 @@ site.ignore(
     ".DS_Store"
 );
 
+// TODO: Try Promise.alL(pages.map(fn))
+// https://lume.land/docs/advanced/migrate-to-lume2/#change-your-(pre)processors
 site.process(
     [".html"],
     async (pages) => {
