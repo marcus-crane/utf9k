@@ -2,8 +2,6 @@
 category: projects
 description: Three years of towing data being simulated all at once
 ongoing: false
-output: src/content/projects
-publish: true
 slug: towing
 tags:
   - maps

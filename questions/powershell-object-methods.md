@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to introspect objects in Powershell
-output: src/content/questions
-publish: true
 slug: powershell-object-methods
 tags:
   - powershell

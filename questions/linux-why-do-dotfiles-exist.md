@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I capture a bit of history about the origin of dotfiles
-output: src/content/questions
-publish: true
 slug: linux-why-do-dotfiles-exist
 tags:
   - historical

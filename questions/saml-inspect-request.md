@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to dig into a SAML payload
-output: src/content/questions
-publish: true
 slug: saml-inspect-request
 tags:
   - authentication

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Figuring out how HashPartitioner works
-output: src/content/questions
-publish: true
 slug: kafka-golang-hash-strategy
 tags:
   - kafka

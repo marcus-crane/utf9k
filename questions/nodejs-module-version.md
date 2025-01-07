@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to determine the value of NODE_MODULE_VERSION
-output: src/content/questions
-publish: true
 slug: nodejs-module-version
 tags:
   - javascript

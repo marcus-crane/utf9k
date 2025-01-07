@@ -3,8 +3,6 @@ aliases:
   - /notes/ps1-disc-layout/
 category: questions
 description: In which I remind myself how PS1 discs offset their contents
-output: src/content/questions
-publish: true
 slug: ps1-disc-offset
 tags:
   - hexedit

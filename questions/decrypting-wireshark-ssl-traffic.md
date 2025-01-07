@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I sniff my own packets
-output: src/content/questions
-publish: true
 slug: decrypting-wireshark-ssl-traffic
 tags:
   - wireshark

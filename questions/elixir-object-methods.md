@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remember how to introspect in Elixir
-output: src/content/questions
-publish: true
 slug: elixir-object-methods
 tags:
   - elixir

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I capture a bit of history around domain splits
-output: src/content/questions
-publish: true
 slug: http-domain-splits
 tags:
   - cookies

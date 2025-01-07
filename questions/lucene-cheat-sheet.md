@@ -1,8 +1,6 @@
 ---
 category: questions
 description: How does that query go again?
-output: src/content/questions
-publish: true
 slug: lucene-cheat-sheet
 tags:
   - cheatsheet

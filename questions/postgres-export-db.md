@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to export a Postgres database
-output: src/content/questions
-publish: true
 slug: postgres-export-db
 tags:
   - databases

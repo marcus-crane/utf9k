@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I kill some stubborn connections
-output: src/content/questions
-publish: true
 slug: inspecting-socket-connections
 tags:
   - software

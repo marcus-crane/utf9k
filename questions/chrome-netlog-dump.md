@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Who needs mitmproxy when you can just ask the browser nicely
-output: src/content/questions
-publish: true
 slug: chrome-netlog-dump
 tags:
   - browsers

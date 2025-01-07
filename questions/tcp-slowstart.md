@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which machines may not be running the marathon you think they are
-output: src/content/questions
-publish: true
 slug: tcp-slowstart
 tags:
   - software

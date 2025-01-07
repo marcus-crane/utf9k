@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I pretend to make computers secure
-output: src/content/questions
-publish: true
 slug: generating-selfsigned-ca
 tags:
   - security

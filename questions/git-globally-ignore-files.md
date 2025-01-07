@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I wage war against .DS_Store
-output: src/content/questions
-publish: true
 slug: git-globally-ignore-files
 tags:
   - git

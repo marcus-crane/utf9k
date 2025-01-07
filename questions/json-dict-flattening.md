@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I save myself a little bit of time
-output: src/content/questions
-publish: true
 slug: json-dict-flattening
 tags:
   - json

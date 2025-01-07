@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I never remember to use this stuff
-output: src/content/questions
-publish: true
 slug: investigating-system-calls
 tags:
   - software

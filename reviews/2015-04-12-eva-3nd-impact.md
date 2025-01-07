@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-04-12T18:58:31+13:00
 description: A review for a pretty fun Evangelion rhythm game
-output: src/content/reviews
-publish: true
 slug: eva-3nd-impact
 tags:
   - psp

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: A small Javascript snippet useful for detecting if the host frame is an iframe
-output: src/content/questions
-publish: true
 slug: js-detect-iframe-parent
 tags:
   - iframe

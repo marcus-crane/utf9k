@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to do napkin math for Prometheus
-output: src/content/questions
-publish: true
 slug: prometheus-sample-size
 tags:
   - monitoring

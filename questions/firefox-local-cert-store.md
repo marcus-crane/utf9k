@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I help an employer continue to be annoying
-output: src/content/questions
-publish: true
 slug: firefox-local-cert-store
 tags:
   - browsers

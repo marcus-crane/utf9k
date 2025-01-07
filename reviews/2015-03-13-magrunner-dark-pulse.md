@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-03-13T05:11:41+13:00
 description: What begins as a simple competition to find the world's best Magrunner soon devolves into a nightmare as Cthulu and this spawn stop by for a visit.
-output: src/content/reviews
-publish: true
 slug: magrunner-dark-pulse
 tags:
   - pc

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to configure macOS networks via the terminal
-output: src/content/questions
-publish: true
 slug: macos-configured-networks
 tags:
   - macos

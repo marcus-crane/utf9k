@@ -2,8 +2,6 @@
 category: projects
 description: A now-archived plugin that added Azure Active Directory authentication to Netbox
 ongoing: false
-output: src/content/projects
-publish: true
 slug: netbox-plugin-azuread
 tags:
   - archived

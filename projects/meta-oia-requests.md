@@ -3,8 +3,6 @@ category: projects
 description: An ongoing project of mine where I ask some meta-questions about documents that are redacted each year in New Zealand
 maxwidth: true
 ongoing: false
-output: src/content/projects
-publish: true
 slug: meta-oia-requests
 tags:
   - government

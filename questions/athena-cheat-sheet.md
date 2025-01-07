@@ -4,8 +4,6 @@ aliases:
   - /questions/athena
 category: questions
 description: It's like SQL but slightly wonkier
-output: src/content/questions
-publish: true
 slug: athena-cheat-sheet
 tags:
   - athena

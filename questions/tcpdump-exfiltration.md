@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I have more data than I know what to do with
-output: src/content/questions
-publish: true
 slug: tcpdump-exfiltration
 tags:
   - wireshark

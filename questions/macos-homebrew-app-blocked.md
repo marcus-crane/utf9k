@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to remove the quarantine flag
-output: src/content/questions
-publish: true
 slug: macos-homebrew-app-blocked
 tags:
   - gatekeeper

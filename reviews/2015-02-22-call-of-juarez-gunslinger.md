@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-02-22T18:13:25+13:00
 description: Giddy up for some of the most enjoyable Wild West action since, well, the Wild West I suppose!
-output: src/content/reviews
-publish: true
 slug: call-of-juarez-gunslinger
 tags:
   - pc

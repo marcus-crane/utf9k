@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to trigger a Kubernetes cronjob on demand
-output: src/content/questions
-publish: true
 slug: kubes-create-cron-instance
 tags:
   - cronjob

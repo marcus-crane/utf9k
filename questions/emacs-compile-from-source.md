@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I recall how to compile an operating system of a text editor
-output: src/content/questions
-publish: true
 slug: emacs-compile-from-source
 tags:
   - emacs

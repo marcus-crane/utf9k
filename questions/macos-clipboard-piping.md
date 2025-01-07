@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to pipe from the macOS clipboard into terminal applications
-output: src/content/questions
-publish: true
 slug: macos-clipboard-piping
 tags:
   - clipboard

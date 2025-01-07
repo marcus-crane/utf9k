@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to test out callback commands
-output: src/content/questions
-publish: true
 slug: macos-invoke-x-callback-url
 tags:
   - macos

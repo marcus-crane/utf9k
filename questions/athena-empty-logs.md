@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I wonder where all the data has gone!
-output: src/content/questions
-publish: true
 slug: athena-empty-logs
 tags:
   - amazon

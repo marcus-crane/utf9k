@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to quickly test network connectivity within a Kubernetes namespace
-output: src/content/questions
-publish: true
 slug: kubes-namespace-connectivity
 tags:
   - curl

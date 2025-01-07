@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I pour over some routing tables
-output: src/content/questions
-publish: true
 slug: macos-view-filter-rules
 tags:
   - macos

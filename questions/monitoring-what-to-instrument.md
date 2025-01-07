@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself what is a good idea to instrument
-output: src/content/questions
-publish: true
 slug: monitoring-what-to-instrument
 tags:
   - instrumentation

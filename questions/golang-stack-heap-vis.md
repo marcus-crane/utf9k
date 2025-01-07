@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I will probably ignore the results and write inefficient software
-output: src/content/questions
-publish: true
 slug: golang-stack-heap-vis
 tags:
   - golang

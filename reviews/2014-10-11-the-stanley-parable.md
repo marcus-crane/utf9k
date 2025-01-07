@@ -2,8 +2,6 @@
 category: reviews
 date: 2014-10-11T07:46:05+13:00
 description: Very much enjoyed this title and encourage anyone interested in playing it. It looks like a walking simulator at first glance but it's a bit more than that.
-output: src/content/reviews
-publish: true
 slug: the-stanley-parable
 tags:
   - pc

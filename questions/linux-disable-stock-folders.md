@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to disable default application folders in Linux
-output: src/content/questions
-publish: true
 slug: linux-disable-stock-folders
 tags:
   - housekeeping

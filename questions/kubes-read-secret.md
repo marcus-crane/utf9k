@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to read the contents of a Kubernetes secret
-output: src/content/questions
-publish: true
 slug: kubes-read-secret
 tags:
   - credentials

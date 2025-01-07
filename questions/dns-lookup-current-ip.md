@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remember how to use dig with alternative DNS
-output: src/content/questions
-publish: true
 slug: dns-lookup-current-ip
 tags:
   - dig

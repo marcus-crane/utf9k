@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-03-08T18:51:04+13:00
 description: Jump into the Liberation Kamui for some fast-paced Suda51 style action as you fight to save New Japan!
-output: src/content/reviews
-publish: true
 slug: liberation-maiden
 tags:
   - 3ds

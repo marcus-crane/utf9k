@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-04-18T14:30:39+13:00
 description: This isn't really about GTA V. Just to say that I haven't been playing anything else!
-output: src/content/reviews
-publish: true
 slug: grand-theft-auto-v
 tags:
   - pc

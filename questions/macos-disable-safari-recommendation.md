@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to get rid of that pesky notification
-output: src/content/questions
-publish: true
 slug: macos-disable-safari-recommendation
 tags:
   - macos

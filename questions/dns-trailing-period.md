@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I note the existence of a sneaky period
-output: src/content/questions
-publish: true
 slug: dns-trailing-period
 tags:
   - dns

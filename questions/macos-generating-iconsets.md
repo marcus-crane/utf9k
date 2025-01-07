@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I get some nice icons without too much effort
-output: src/content/questions
-publish: true
 slug: macos-generating-iconsets
 tags:
   - macos

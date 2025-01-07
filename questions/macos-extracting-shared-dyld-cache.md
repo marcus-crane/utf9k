@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I have no idea what is going on with shared libraries
-output: src/content/questions
-publish: true
 slug: macos-extracting-shared-dyld-cache
 tags:
   - macos

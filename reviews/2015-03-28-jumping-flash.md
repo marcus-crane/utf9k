@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-03-28T23:28:05+13:00
 description: Robbit, the Super De-Pester is probably one of the oddest choices for protagonist I've played so far.
-output: src/content/reviews
-publish: true
 slug: jumping-flash
 tags:
   - ps1

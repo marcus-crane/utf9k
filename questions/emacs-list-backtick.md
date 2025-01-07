@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I squint harder at elisp gibberish
-output: src/content/questions
-publish: true
 slug: emacs-list-backtick
 tags:
   - elisp
