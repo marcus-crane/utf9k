@@ -2,8 +2,6 @@
 category: blog
 date: 2020-04-13T00:00:00+13:00
 description: For no particular reason, I documented all the crap I haul around and my plan to slim it down even further
-output: src/content/blog
-publish: true
 slug: reducing-my-edc-2019
 tags:
   - organisation

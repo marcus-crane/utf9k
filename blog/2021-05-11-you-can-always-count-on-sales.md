@@ -2,8 +2,6 @@
 category: blog
 date: 2021-05-11T18:23:00+13:00
 description: Complete system downtime won't stop the sales team from making a buck
-output: src/content/blog
-publish: true
 slug: you-can-always-count-on-sales
 tags:
   - azure

@@ -2,8 +2,6 @@
 category: blog
 date: 2021-08-29T22:04:00+13:00
 description: Relaxing some of the time is a good idea. Who would have guessed?
-output: src/content/blog
-publish: true
 slug: taking-holidays
 tags:
   - books

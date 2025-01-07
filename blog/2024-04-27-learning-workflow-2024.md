@@ -1,9 +1,7 @@
 ---
 category: blog
 date: 2024-04-27T11:58:00+13:00
-description: Well, on my best days. I have plenty of days whehttps://en.wikipedia.org/wiki/Zettelkastenre I doomscroll too.
-output: src/content/blog
-publish: true
+description: Well, on my best days. I have plenty of days where I doomscroll too.
 slug: learning-workflow-2024
 tags:
   - productivity

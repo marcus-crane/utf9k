@@ -2,8 +2,6 @@
 category: blog
 date: 2020-12-01T00:00:00+13:00
 description: Is software reliable? Probably not
-output: src/content/blog
-publish: true
 slug: solid-systems
 tags:
   - shopping

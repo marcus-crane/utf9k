@@ -2,8 +2,6 @@
 category: blog
 date: 2021-06-01T23:12:00+13:00
 description: You haven't emailed me for 2 years! Who are you again?
-output: src/content/blog
-publish: true
 slug: remind-the-user-what-your-service-does
 tags:
   - business

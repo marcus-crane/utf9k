@@ -2,8 +2,6 @@
 category: blog
 date: 2023-01-17T18:30:00+13:00
 description: Instead of committing to a habit, why not torture yourself over long spans of time?
-output: src/content/blog
-publish: true
 slug: inefficient-habit-forming
 tags:
   - habits

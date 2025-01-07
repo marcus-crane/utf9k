@@ -2,8 +2,6 @@
 category: blog
 date: 2020-02-07T00:00:00+13:00
 description: I think it's a good idea to publish your existing work, even if you don't like it. You don't like it now but others earlier in their journey may appreciate it in a way that you can't anymore.
-output: src/content/blog
-publish: true
 slug: publish-old-works
 tags:
   - rambling

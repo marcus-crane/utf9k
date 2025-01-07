@@ -2,8 +2,6 @@
 category: blog
 date: 2023-12-31T15:20:00+13:00
 description: Maybe one sector's recession is another person's happy place?
-output: src/content/blog
-publish: true
 slug: scooter-disliker
 tags:
   - scooters

@@ -2,8 +2,6 @@
 category: blog
 date: 2021-07-04T22:53:00+13:00
 description: Historically, I am often late to a bunch of things even though I plan ahead some of the time
-output: src/content/blog
-publish: true
 slug: time-dilation
 tags:
   - productivity

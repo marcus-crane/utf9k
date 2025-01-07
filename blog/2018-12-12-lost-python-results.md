@@ -2,8 +2,6 @@
 category: blog
 date: 2018-12-12T00:00:00+13:00
 description: Did you know that Python stores the previous output as a hidden variable?
-output: src/content/blog
-publish: true
 slug: lost-python-results
 tags:
   - python

@@ -2,8 +2,6 @@
 category: blog
 date: 2021-03-03T13:02:46+13:00
 description: Honestly, this post is weird and dumb. I wouldn't recommend it.
-output: src/content/blog
-publish: true
 slug: walking-while-reading
 tags:
   - people

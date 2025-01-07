@@ -2,8 +2,6 @@
 category: blog
 date: 2024-03-20T22:10:00+13:00
 description: Present me thinks it's neat. Past me had to actually do the work so it sucks to be them.
-output: src/content/blog
-publish: true
 slug: beeminder-is-neat
 tags:
   - productivity

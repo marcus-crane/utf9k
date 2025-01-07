@@ -2,8 +2,6 @@
 category: blog
 date: 2020-11-20T00:00:00+13:00
 description: Configuration is great! Magic... not so much!
-output: src/content/blog
-publish: true
 slug: configuration-magic
 tags:
   - complexity

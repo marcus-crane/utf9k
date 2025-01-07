@@ -2,8 +2,6 @@
 category: blog
 date: 2024-11-02T17:00:00+13:00
 description: I enjoyed almost being tricked but really shouldn't
-output: src/content/blog
-publish: true
 slug: fascinating-steam-scam
 tags:
   - phishing

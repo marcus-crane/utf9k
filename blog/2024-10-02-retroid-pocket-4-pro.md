@@ -2,8 +2,6 @@
 category: blog
 date: 2024-10-02T10:40:00+13:00
 description: I finally found a handheld that I really enjoy
-output: src/content/blog
-publish: true
 slug: retroid-pocket-4-pro
 tags:
   - emulation

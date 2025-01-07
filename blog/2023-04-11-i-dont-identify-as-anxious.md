@@ -2,8 +2,6 @@
 category: blog
 date: 2023-04-11T19:00:00+13:00
 description: Here are some things that have been bothering me
-output: src/content/blog
-publish: true
 slug: i-dont-identify-as-anxious
 tags:
   - health

@@ -2,8 +2,6 @@
 category: blog
 date: 2021-06-03T12:50:00+13:00
 description: As it says on the tin, all good things must come to an end
-output: src/content/blog
-publish: true
 slug: let-your-streaks-end-naturally
 tags:
   - health

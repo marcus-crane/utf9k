@@ -2,8 +2,6 @@
 category: blog
 date: 2017-12-24T00:00:00+13:00
 description: My self help guide to installing Arch
-output: src/content/blog
-publish: true
 slug: arch-nuc-install
 tags:
   - arch

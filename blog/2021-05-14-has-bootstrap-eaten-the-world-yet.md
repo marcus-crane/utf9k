@@ -2,8 +2,6 @@
 category: blog
 date: 2021-05-14T20:48:00+13:00
 description: The CSS framework that could
-output: src/content/blog
-publish: true
 slug: has-bootstrap-eaten-the-world-yet
 tags:
   - css
