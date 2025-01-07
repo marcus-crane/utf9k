@@ -2,8 +2,6 @@
 category: about
 description: Learn a bit about me and what I do for a living
 layout: markdown.vto
-output: src/pages
-publish: true
 slug: about
 tags:
   - me

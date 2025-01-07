@@ -2,8 +2,6 @@
 category: thanks
 description: This website was built on the shoulders of giants. This page names a number of them.
 layout: markdown.vto
-output: src/pages
-publish: true
 slug: thanks
 tags:
   - meta
