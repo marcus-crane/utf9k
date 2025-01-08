@@ -1,0 +1,32 @@
+---
+title: Official Information Act requests
+description: This is a list of OIAs that I personally think are interesting
+---
+
+{{ layout "core.vto" }}
+<article>
+  <header>
+    <h1>Official Information Act requests</h1>
+  </header>
+  <div class="notice">
+    <hr class="hidden" />
+    <h3>
+      <span>📚</span>
+      How the rating system works
+    </h3>
+    <p>If a book has the loudspeaker emoji <span>(📣)</span>, it means that I found it interesting/enjoyable/compelling
+      enough to bring it up in a discussion without being prompted.</p>
+    <hr class="hidden" />
+  </div>
+  <div id="post-body">
+    <ul>
+      {{ for oia of oias }}
+      <li>
+        <a href="{{ oia.url }}">{{ oia.title }}</a>
+        <p>{{ oia.description }}</p>
+      </li>
+      {{ /for }}
+    </ul>
+  </div>
+</article>
+{{ /layout }}
