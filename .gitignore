@@ -3,3 +3,4 @@ node_modules
 _scripts/venv
 .DS_Store
 _site
+scripts/venv
