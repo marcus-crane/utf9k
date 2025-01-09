@@ -39,3 +39,5 @@ From there, my site is replicated using [Bunny CDN](https://bunny.net/cdn/).
 I've used hosted services like Netlify and Cloudflare Pages in the past but I found that, surprisingly, their CDNs are not necessarily the fastest plus when you're not paying, you have no leverage during any inevitable outages.
 
 Pushes to `main` will update [utf9k.net](https://utf9k.net) automatically although depending on what changes, I sometimes manually trigger a cache purge.
+
+Test
