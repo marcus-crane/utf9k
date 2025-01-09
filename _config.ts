@@ -9,7 +9,7 @@ import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
-import remark from "lume-src/plugins/remark.ts";
+import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
 import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
