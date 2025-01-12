@@ -220,6 +220,11 @@ if (mode === "build") {
         let pageContent = ``
         const sortedPages = allPages.sort((a, b) => a.data.url.localeCompare(b.data.url))
         for (const page of sortedPages) {
+            if (page.data.url === "/") {
+                // Homepage contains some dynamic content so we remove it
+                // to ensure digest only changes when content changes
+                continue
+            }
             const encoder = new TextEncoder()
             const data = encoder.encode(page.content);
             const hashBuffer = await crypto.subtle.digest("SHA-1", data);
