@@ -18,6 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: denoland/setup-deno@v1
+        id: setup-deno
         with:
           deno-version: v2.x
       - name: Setup Python
@@ -28,6 +29,8 @@ jobs:
           cache: 'pip'
       - name: Generate metadata and deploy site
         run: deno task deploy
+        env:
+          PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:

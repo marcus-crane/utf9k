@@ -21,16 +21,8 @@ layout: page.vto
     <td>{{ search.pages().length }}</td>
   </tr>
   <tr>
-    <td>Deno version</td>
-    <td>{{ Deno.version.deno }}</td>
-  </tr>
-  <tr>
-    <td>Typescript version</td>
-    <td>{{ Deno.version.typescript }}</td>
-  </tr>
-  <tr>
-    <td>Python version</td>
-    <td>{{ Deno.env.PYTHON_VERSION }}</td>
+    <td>Number of blog posts</td>
+    <td>{{ search.pages("category=blog").length }}</td>
   </tr>
   <tr>
     <td>Build target</td>
@@ -43,5 +35,33 @@ layout: page.vto
   <tr>
     <td>Shell language</td>
     <td>{{ Deno.env.LANG }}</td>
+  </tr>
+  <tr>
+    <td>Build tools</td>
+    <td>
+      <ul>
+        <li>Deno: {{ Deno.version.deno }}</li>
+        <li>Typescript: {{ Deno.version.typescript }}</li>
+        <li>Python: {{ Deno.env.PYTHON_VERSION }}</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>CI Info (<a href="https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables">Github Actions</a>)</td>
+    <td>
+      <ul>
+        <li>CI: {{ getenv "CI" }}</li>
+        <li>Github Action: {{ getenv "GITHUB_ACTION" }}</li>
+        <li>Github Actor: {{ getenv "GITHUB_ACTOR" }}</li>
+        <li>Github Job: {{ getenv "GITHUB_JOB" }}</li>
+        <li>Github Ref: {{ getenv "GITHUB_REF" }}</li>
+        <li>Github Run Attempt: {{ getenv "GITHUB_RUN_ATTEMPT" }}</li>
+        <li>Github Run ID: {{ getenv "GITHUB_RUN_ID" }}</li>
+        <li>Github Run Number: {{ getenv "GITHUB_RUN_NUMBER" }}</li>
+        <li>Github SHA: {{ getenv "GITHUB_SHA" }}</li>
+        <li>Runner Arch: {{ getenv "RUNNER_ARCH" }}</li>
+        <li>Runner OS: {{ getenv "RUNNER_OS" }}</li>
+      </ul>
+    </td>
   </tr>
 </table>

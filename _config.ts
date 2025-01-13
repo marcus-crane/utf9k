@@ -32,7 +32,6 @@ import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphi
 import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
 import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
-import ci from "https://deno.land/x/lume_plugin_ci@v1.0.0/mod.ts";
 
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
@@ -127,7 +126,6 @@ site.use(redirect())
 site.use(postcss())
 site.use(robots())
 site.use(sitemap())
-site.use(ci())
 
 if (mode === "build") {
     site.use(cache_busting())
