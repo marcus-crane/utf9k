@@ -50,17 +50,17 @@ layout: page.vto
     <td>CI Info (<a href="https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables">Github Actions</a>)</td>
     <td>
       <ul>
-        <li>CI: {{ getenv "CI" }}</li>
-        <li>Github Action: {{ getenv "GITHUB_ACTION" }}</li>
-        <li>Github Actor: {{ getenv "GITHUB_ACTOR" }}</li>
-        <li>Github Job: {{ getenv "GITHUB_JOB" }}</li>
-        <li>Github Ref: {{ getenv "GITHUB_REF" }}</li>
-        <li>Github Run Attempt: {{ getenv "GITHUB_RUN_ATTEMPT" }}</li>
-        <li>Github Run ID: {{ getenv "GITHUB_RUN_ID" }}</li>
-        <li>Github Run Number: {{ getenv "GITHUB_RUN_NUMBER" }}</li>
-        <li>Github SHA: {{ getenv "GITHUB_SHA" }}</li>
-        <li>Runner Arch: {{ getenv "RUNNER_ARCH" }}</li>
-        <li>Runner OS: {{ getenv "RUNNER_OS" }}</li>
+        <li>CI: {{ Deno.env.CI }}</li>
+        <li>Github Action: {{ Deno.env.GITHUB_ACTION }}</li>
+        <li>Github Actor: {{ Deno.env.GITHUB_ACTOR }}</li>
+        <li>Github Job: {{ Deno.env.GITHUB_JOB }}</li>
+        <li>Github Ref: {{ Deno.env.GITHUB_REF }}</li>
+        <li>Github Run Attempt: {{ Deno.env.GITHUB_RUN_ATTEMPT }}</li>
+        <li>Github Run ID: {{ Deno.env.GITHUB_RUN_ID }}</li>
+        <li>Github Run Number: {{ Deno.env.GITHUB_RUN_NUMBER }}</li>
+        <li>Github SHA: {{ Deno.env.GITHUB_SHA }}</li>
+        <li>Runner Arch: {{ Deno.env.RUNNER_ARCH }}</li>
+        <li>Runner OS: {{ Deno.env.RUNNER_OS }}</li>
       </ul>
     </td>
   </tr>
