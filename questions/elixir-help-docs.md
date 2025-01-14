@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I help myself to help myself
-output: src/content/questions
-publish: true
 slug: elixir-help-docs
 tags:
   - elixir

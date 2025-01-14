@@ -2,8 +2,6 @@
 category: blog
 date: 2020-10-06T00:00:00+13:00
 description: It's wild that you can couple a physical business to digital technology to the extent that one can't operate without the other
-output: src/content/blog
-publish: true
 slug: internet-reliance
 tags:
   - internet

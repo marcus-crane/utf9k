@@ -1,8 +1,6 @@
 ---
 category: questions
 description: A small Javascript snippet useful for dynamically changing colour schemes
-output: src/content/questions
-publish: true
 slug: js-colour-scheme-listener
 tags:
   - darkmode

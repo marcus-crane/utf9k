@@ -2,8 +2,6 @@
 category: blog
 date: 2024-06-26T23:45:00+13:00
 description: On claude.ai giving the correct answer that the CEO of Boeing should feel bad
-output: src/content/blog
-publish: true
 slug: pleasant-claude-interaction
 tags:
   - ai

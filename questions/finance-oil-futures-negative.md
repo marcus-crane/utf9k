@@ -3,8 +3,6 @@ aliases:
   - /notes/oil-futures/
 category: questions
 description: In which I write about something that is definitely not computers
-output: src/content/questions
-publish: true
 slug: finance-oil-futures-negative
 tags:
   - finance

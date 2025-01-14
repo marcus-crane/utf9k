@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I pull some certificates out of their hiding spot
-output: src/content/questions
-publish: true
 slug: macos-extracting-signatures
 tags:
   - macos

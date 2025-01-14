@@ -2,8 +2,6 @@
 category: reviews
 date: 2016-01-01T00:01:03+13:00
 description: A review for Life is Strange
-output: src/content/reviews
-publish: true
 slug: life-is-strange
 tags:
   - pc

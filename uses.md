@@ -2,8 +2,6 @@
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
 layout: markdown.vto
-output: src/pages
-publish: true
 slug: uses
 tags:
   - meta

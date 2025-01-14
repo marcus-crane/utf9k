@@ -1,8 +1,6 @@
 ---
 category: questions
 description: I should have just stayed on Python 2 (kidding!)
-output: src/content/questions
-publish: true
 slug: nodegyp-python-distutils-missing
 tags:
   - node

@@ -2,8 +2,6 @@
 category: blog
 date: 2024-05-27T23:10:00+13:00
 description: Being self taught is a perpetual blessing and a curse if you're too harsh on yourself
-output: src/content/blog
-publish: true
 slug: competence-neverending
 tags:
   - selfcriticism

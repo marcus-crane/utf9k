@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I try to retrieve my secrets using my text editor
-output: src/content/questions
-publish: true
 slug: emacs-auth-sources
 tags:
   - elisp

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Printing without a display seems counter-intuitive
-output: src/content/questions
-publish: true
 slug: macos-printer-cli
 tags:
   - macos

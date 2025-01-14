@@ -2,8 +2,6 @@
 category: blog
 date: 2021-09-24T21:00:00+13:00
 description: Maybe it's for you? Maybe it's for me? Maybe it isn't for any of us!
-output: src/content/blog
-publish: true
 slug: who-is-software-even-for
 tags:
   - existential

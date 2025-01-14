@@ -2,8 +2,6 @@
 category: blog
 date: 2020-11-02T00:00:00+13:00
 description: A minor tangent about... I don't remember, GTD and fruit?
-output: src/content/blog
-publish: true
 slug: fruit-plate
 tags:
   - work

@@ -5,7 +5,7 @@
     <div id="post-meta">
       {{ if ["blog", "reviews"].includes(category) }}<time datetime="{{ date }}">{{ date |> date('MMMM d, yyyy') }}</time> ·{{ /if }}
       {{ if lastmod }}<time datetime="{{ lastmod }}">Last updated on {{ lastmod |> date('MMMM d, yyyy') }}</time> ·{{ /if }}
-      Around {{ readingInfo.minutes }} minute{{ if readingInfo.minutes > 1}}s{{ /if }}
+      {{ if readingInfo }}Around {{ readingInfo.minutes }} minute{{ if readingInfo.minutes > 1}}s{{ /if }}{{ /if }}
     </div>
   </header>
   <div id="post-body">

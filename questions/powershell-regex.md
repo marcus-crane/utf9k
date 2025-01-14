@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to search using regexes in Powershell
-output: src/content/questions
-publish: true
 slug: powershell-regex
 tags:
   - powershell

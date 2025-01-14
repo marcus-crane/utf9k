@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to set a default namespace for Kubernetes
-output: src/content/questions
-publish: true
 slug: kubes-default-namespace
 tags:
   - defaults

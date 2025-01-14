@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I investigate multiple audio streams clashing with each other
-output: src/content/questions
-publish: true
 slug: linux-audio-muting-suddenly
 tags:
   - audio

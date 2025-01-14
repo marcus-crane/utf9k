@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to check out where a request is likely to route
-output: src/content/questions
-publish: true
 slug: macos-view-route-table
 tags:
   - macos

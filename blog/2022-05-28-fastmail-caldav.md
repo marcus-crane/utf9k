@@ -2,8 +2,6 @@
 category: blog
 date: 2022-05-28T20:20:00+13:00
 description: A guide to using Fastmail with CalDAV libraries which are often fiddly and struggle to find your calendars
-output: src/content/blog
-publish: true
 slug: fastmail-caldav
 tags:
   - caldav

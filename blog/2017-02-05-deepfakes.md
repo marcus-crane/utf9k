@@ -2,8 +2,6 @@
 category: blog
 date: 2017-02-05T00:00:00+13:00
 description: An exploration of Deepfakes written up when the original subreddit (and creator) was still online
-output: src/content/blog
-publish: true
 slug: deepfakes
 tags:
   - deepfakes

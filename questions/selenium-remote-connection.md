@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to connect to Selenium using Python
-output: src/content/questions
-publish: true
 slug: selenium-remote-connection
 tags:
   - python

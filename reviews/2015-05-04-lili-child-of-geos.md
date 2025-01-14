@@ -2,8 +2,6 @@
 category: reviews
 date: 2015-05-04T22:31:12+13:00
 description: "A review for Lili: Child of Geos"
-output: src/content/reviews
-publish: true
 slug: lili-child-of-geos
 tags:
   - ios

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Did I tell you I use Arch? Here are some random snippets I found useful
-output: src/content/questions
-publish: true
 slug: arch-linux
 tags:
   - linux

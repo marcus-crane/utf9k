@@ -2,8 +2,6 @@
 category: projects
 description: A previous project of mine that interactively mapped out parking tickets issued in the Parnell area over a period of a few years
 ongoing: false
-output: src/content/projects
-publish: true
 slug: parnell
 tags:
   - maps

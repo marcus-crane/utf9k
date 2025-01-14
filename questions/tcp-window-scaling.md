@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which machines are made safe from being overwhelmed
-output: src/content/questions
-publish: true
 slug: tcp-window-scaling
 tags:
   - software

@@ -1,0 +1,27 @@
+---
+title: Official Information Act requests
+description: This is a list of OIAs that I personally think are interesting
+---
+
+{{ layout "core.vto" }}
+<article>
+  <header>
+    <h1>Official Information Act requests</h1>
+  </header>
+  <div class="notice">
+    <hr class="hidden" />
+    <p>This list contains OIAs that I personally think are interesting in some way or another. Most of them will be from other people, filed using <a href="https://fyi.org.nz/">fyi.org.nz</a>.</p>
+    <hr class="hidden" />
+  </div>
+  <div id="post-body">
+    <ul>
+      {{ for oia of oias }}
+      <li>
+        <a href="{{ oia.url }}">{{ oia.title }}</a>
+        <p>{{ oia.description }}</p>
+      </li>
+      {{ /for }}
+    </ul>
+  </div>
+</article>
+{{ /layout }}

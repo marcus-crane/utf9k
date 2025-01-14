@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to restrict a Kube ingress to a specific CIDR range
-output: src/content/questions
-publish: true
 slug: kubes-ingress-ip-range
 tags:
   - allowlist

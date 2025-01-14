@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I have a nice, clean, insecure binary to play with
-output: src/content/questions
-publish: true
 slug: macos-strip-code-signatures
 tags:
   - macos

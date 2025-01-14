@@ -2,8 +2,6 @@
 category: reviews
 date: 2014-10-12T15:16:16+13:00
 description: I was expecting a mediocre game but got something much, much better than expected!
-output: src/content/reviews
-publish: true
 slug: wolfenstein-new-order
 tags:
   - pc

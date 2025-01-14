@@ -2,8 +2,6 @@
 category: blog
 date: 2021-04-27T18:50:00+13:00
 description: A post in which I post about how involved the Dropbox cancellation process is.
-output: src/content/blog
-publish: true
 slug: dropbox-is-way-too-clingy
 tags:
   - apps

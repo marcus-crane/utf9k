@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which you can seize a cool namespace
-output: src/content/questions
-publish: true
 slug: s3-bucket-naming
 tags:
   - aws

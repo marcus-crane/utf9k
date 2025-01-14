@@ -2,8 +2,6 @@
 category: blog
 date: 2021-02-17T18:14:00+13:00
 description: Not sure how to structure a config file? Try answering questions rather than trying to come up with categories
-output: src/content/blog
-publish: true
 slug: faq-driven-configuration
 tags:
   - configuration

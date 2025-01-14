@@ -536,6 +536,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1rb5.jpg
       width: 720
       height: 540
+  - id: 116753
+    title: A Short Hike
+    link: https://www.backloggd.com/games/a-short-hike/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co6e83.jpg
+      width: 720
+      height: 540
   - id: 1981
     title: Saints Row IV
     link: https://www.backloggd.com/games/saints-row-iv/
@@ -3021,13 +3028,6 @@
     link: https://www.backloggd.com/games/slay-the-princess/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co501b.jpg
-      width: 720
-      height: 540
-  - id: 116753
-    title: A Short Hike
-    link: https://www.backloggd.com/games/a-short-hike/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6e83.jpg
       width: 720
       height: 540
   - id: 150045

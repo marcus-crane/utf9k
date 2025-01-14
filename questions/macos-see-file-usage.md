@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how introspect filesystem usage on macOS
-output: src/content/questions
-publish: true
 slug: macos-see-file-usage
 tags:
   - enterprise

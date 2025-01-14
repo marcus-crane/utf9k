@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to inspect JAMF progress
-output: src/content/questions
-publish: true
 slug: macos-monitor-jamf-downloads
 tags:
   - enterprise

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I try to figure out why my coworkers Macbook crashed
-output: src/content/questions
-publish: true
 slug: macos-check-shutdown-cause
 tags:
   - crashes

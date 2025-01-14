@@ -2,8 +2,6 @@
 category: blog
 date: 2021-02-21T22:48:00+13:00
 description: The macOS and iOS address book leaves a bit to be desired
-output: src/content/blog
-publish: true
 slug: address-book-sorting
 tags:
   - people

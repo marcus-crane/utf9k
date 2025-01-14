@@ -2,8 +2,6 @@
 category: blog
 date: 2020-05-12T00:00:00+13:00
 description: Looking back on the idea of a quantified self
-output: src/content/blog
-publish: true
 slug: mental-overhead-of-data
 tags:
   - data

@@ -1,0 +1,67 @@
+---
+title: Build Information
+slug: build-information
+category: debug
+description: This page contains build information about this site and the tools that is uses
+layout: page.vto
+---
+
+<p>Sometimes it's handy to check when my site was last built, and with what variables especially if I'm transitioning things behind the scenes such as DNS records or static hosting.</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Build timestamp</td>
+    <td>{{ new Date() }}</td>
+  </tr>
+  <tr>
+    <td>Number of pages</td>
+    <td>{{ search.pages().length }}</td>
+  </tr>
+  <tr>
+    <td>Number of blog posts</td>
+    <td>{{ search.pages("category=blog").length }}</td>
+  </tr>
+  <tr>
+    <td>Build target</td>
+    <td>{{ Deno.build.target }}</td>
+  </tr>
+  <tr>
+    <td>Site build mode</td>
+    <td>{{ Deno.env.MODE }}</td>
+  </tr>
+  <tr>
+    <td>Shell language</td>
+    <td>{{ Deno.env.LANG }}</td>
+  </tr>
+  <tr>
+    <td>Build tools</td>
+    <td>
+      <ul>
+        <li>Deno: {{ Deno.version.deno }}</li>
+        <li>Typescript: {{ Deno.version.typescript }}</li>
+        <li>Python: {{ Deno.env.PYTHON_VERSION }}</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>CI Info (<a href="https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables">Github Actions</a>)</td>
+    <td>
+      <ul>
+        <li>CI: {{ Deno.env.CI }}</li>
+        <li>Github Action: {{ Deno.env.GITHUB_ACTION }}</li>
+        <li>Github Actor: {{ Deno.env.GITHUB_ACTOR }}</li>
+        <li>Github Job: {{ Deno.env.GITHUB_JOB }}</li>
+        <li>Github Ref: {{ Deno.env.GITHUB_REF }}</li>
+        <li>Github Run Attempt: {{ Deno.env.GITHUB_RUN_ATTEMPT }}</li>
+        <li>Github Run ID: {{ Deno.env.GITHUB_RUN_ID }}</li>
+        <li>Github Run Number: {{ Deno.env.GITHUB_RUN_NUMBER }}</li>
+        <li>Github SHA: {{ Deno.env.GITHUB_SHA }}</li>
+        <li>Runner Arch: {{ Deno.env.RUNNER_ARCH }}</li>
+        <li>Runner OS: {{ Deno.env.RUNNER_OS }}</li>
+      </ul>
+    </td>
+  </tr>
+</table>

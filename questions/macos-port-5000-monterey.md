@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I recall how to evict an annoying gremlin
-output: src/content/questions
-publish: true
 slug: macos-port-5000-monterey
 tags:
   - airplay

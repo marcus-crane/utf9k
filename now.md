@@ -3,8 +3,6 @@ category: now
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
 lastmod: 2024-12-20T22:30:00+13:00
 layout: markdown.vto
-output: src/pages
-publish: true
 slug: now
 tags:
   - me

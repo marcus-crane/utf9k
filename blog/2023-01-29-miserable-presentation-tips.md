@@ -2,8 +2,6 @@
 category: blog
 date: 2023-01-29T15:24:00+13:00
 description: It works well for me but I don't recommend it!
-output: src/content/blog
-publish: true
 slug: miserable-presentation-tips
 tags:
   - presenting

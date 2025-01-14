@@ -2,8 +2,6 @@
 category: blog
 date: 2021-07-12T18:50:00+13:00
 description: I teach you some tricks on introspecting your Hugo builds
-output: src/content/blog
-publish: true
 slug: hugo-debug-reports
 tags:
   - hugo

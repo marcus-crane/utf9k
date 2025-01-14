@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I squint heavily to notice any difference
-output: src/content/questions
-publish: true
 slug: emacs-function-double-dash
 tags:
   - elisp

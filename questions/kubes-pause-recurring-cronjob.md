@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to suspend a Kubernetes cronjob
-output: src/content/questions
-publish: true
 slug: kubes-pause-recurring-cronjob
 tags:
   - cronjob

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to hide otherwise unused home folders
-output: src/content/questions
-publish: true
 slug: macos-hide-home-folders
 tags:
   - housekeeping

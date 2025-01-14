@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I don't have to go to the store to buy 6 different laptops
-output: src/content/questions
-publish: true
 slug: zig-golang-crosscompile
 tags:
   - golang

@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself what profiling is
-output: src/content/questions
-publish: true
 slug: monitoring-what-is-profiling
 tags:
   - instrumentation

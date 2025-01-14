@@ -2,8 +2,6 @@
 category: blog
 date: 2019-07-29T00:00:00+13:00
 description: If you've put your secrets in Jenkins, there is a sneaky backdoor to get them out again
-output: src/content/blog
-publish: true
 slug: retrieving-jenkins-credentials
 tags:
   - cicd

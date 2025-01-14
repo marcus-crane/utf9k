@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I open up my favourite text editor
-output: src/content/questions
-publish: true
 slug: electron-unpacking
 tags:
   - electron

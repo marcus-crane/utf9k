@@ -2,8 +2,6 @@
 category: blog
 date: 2024-01-21T14:53:00+13:00
 description: If time is a flat circle, you're going to end up in the hole again sooner or later
-output: src/content/blog
-publish: true
 slug: writing-for-your-worst-self
 tags:
   - selfcare

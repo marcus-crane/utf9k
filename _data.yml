@@ -3,7 +3,6 @@ metas:
   title: "=title"
   description: "=description"
   keywords: "=tags"
-  twitter: "@sentreh"
   icon: /favicon.png
   lang: en
   generator: true

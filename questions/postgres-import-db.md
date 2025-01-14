@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself how to import a Postgres database
-output: src/content/questions
-publish: true
 slug: postgres-import-db
 tags:
   - databases

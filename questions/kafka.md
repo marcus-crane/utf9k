@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Shipping messages around the place
-output: src/content/questions
-publish: true
 slug: kafka
 tags:
   - kafka

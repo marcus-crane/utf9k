@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I remind myself about the difference between monitoring and tracing
-output: src/content/questions
-publish: true
 slug: monitoring-tracing-overview
 tags:
   - instrumentation

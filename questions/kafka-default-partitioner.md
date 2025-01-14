@@ -1,8 +1,6 @@
 ---
 category: questions
 description: Figuring out where my messages went
-output: src/content/questions
-publish: true
 slug: kafka-default-partitioner
 tags:
   - kafka

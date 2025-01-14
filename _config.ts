@@ -9,10 +9,11 @@ import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
-import remark from "lume-src/plugins/remark.ts";
+import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
 import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import checkUrls from "lume/plugins/check_urls.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -24,6 +25,7 @@ import prettier from "prettier"
 import domain from "top-domain"
 
 // Deno
+import { crypto } from "jsr:@std/crypto/crypto";
 import { join } from "jsr:@std/path";
 
 // ESM
@@ -31,7 +33,6 @@ import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphi
 import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
 import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
 import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
-import ci from "https://deno.land/x/lume_plugin_ci@v1.0.0/mod.ts";
 
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
@@ -126,7 +127,7 @@ site.use(redirect())
 site.use(postcss())
 site.use(robots())
 site.use(sitemap())
-site.use(ci())
+site.use(checkUrls())
 
 if (mode === "build") {
     site.use(cache_busting())
@@ -213,5 +214,33 @@ site.addEventListener("afterBuild", (event) => {
         }
     });
 });
+
+if (mode === "build") {
+    site.process("*", async (filteredPages, allPages) => {
+        let pageContent = ``
+        const sortedPages = allPages.sort((a, b) => a.data.url.localeCompare(b.data.url))
+        for (const page of sortedPages) {
+            if (page.data.url === "/") {
+                // Homepage contains some dynamic content so we remove it
+                // to ensure digest only changes when content changes
+                continue
+            }
+            const encoder = new TextEncoder()
+            const data = encoder.encode(page.content);
+            const hashBuffer = await crypto.subtle.digest("SHA-1", data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer))
+            const hashHex = hashArray
+                .map(b => b.toString(16)
+                .padStart(2, "0"))
+                .join("")
+            pageContent += `${hashHex} ${page.data.url}\n`
+        }
+        const hashPage = Page.create({
+            url: `/digest.txt`,
+            content: pageContent
+        })
+        allPages.push(hashPage)
+    })
+}
 
 export default site;

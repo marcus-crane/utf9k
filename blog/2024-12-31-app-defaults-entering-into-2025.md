@@ -3,8 +3,9 @@ aliases:
   - /blog/eoy24-stack
 category: blog
 date: 2024-12-31T18:10:00+13:00
-lastmod: 2025-01-03T14:05:00+13:00
 description: Here are my app defaults that I'm bringing with me into 2025
+lastmod: 2025-01-03T14:05:00+13:00
+slug: app-defaults-entering-into-2025
 tags:
 - tools
 title: App defaults entering into 2025

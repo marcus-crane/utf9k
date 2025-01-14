@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I capture a bit of DNS history to remind myself
-output: src/content/questions
-publish: true
 slug: dns-original-implementation
 tags:
   - dns

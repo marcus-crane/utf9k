@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I think about Azure, which is a mistake in itself
-output: src/content/questions
-publish: true
 slug: azure-regions-alike
 tags:
   - availability

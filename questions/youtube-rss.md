@@ -1,8 +1,6 @@
 ---
 category: questions
 description: In which I take back control of my attention span (as if)
-output: src/content/questions
-publish: true
 slug: youtube-rss
 tags:
   - youtube
