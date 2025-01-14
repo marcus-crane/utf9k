@@ -13,6 +13,7 @@ import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
 import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import checkUrls from "lume/plugins/check_urls.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -126,6 +127,7 @@ site.use(redirect())
 site.use(postcss())
 site.use(robots())
 site.use(sitemap())
+site.use(checkUrls())
 
 if (mode === "build") {
     site.use(cache_busting())

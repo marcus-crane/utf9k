@@ -19,7 +19,7 @@ That said, it isn't a game in the traditional sense. I mean, there's no skill pr
 
 Beyond that, I can't say a lot more without spoiling it! It's not super long, well, it's as long as it takes you to follow every ending which can vary since some are obvious and some are hidden!
 
-I'd say, check out the demo on [https://store.steampowered.com/app/221910](Steam) and if it appeals to you, I would highly recommend checking it out!
+I'd say, check out the demo on [Steam](https://store.steampowered.com/app/221910) and if it appeals to you, I would highly recommend checking it out!
 
 Oh, also, do keep in mind that the demo isn't so much a segment of the actual title so much as it is a demo of what sort of experience that the title is.
 
