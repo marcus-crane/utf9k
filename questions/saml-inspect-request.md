@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to dig into a SAML payload
+lastmod: 2021-06-24
 slug: saml-inspect-request
 tags:
   - authentication

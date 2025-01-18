@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I help an employer continue to be annoying
+lastmod: 2021-04-21
 slug: firefox-local-cert-store
 tags:
   - browsers

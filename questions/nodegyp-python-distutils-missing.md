@@ -1,6 +1,7 @@
 ---
 category: questions
 description: I should have just stayed on Python 2 (kidding!)
+lastmod: 2024-11-13
 slug: nodegyp-python-distutils-missing
 tags:
   - node

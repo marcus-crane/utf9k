@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I get some nice icons without too much effort
+lastmod: 2024-01-01
 slug: macos-generating-iconsets
 tags:
   - macos

@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to view system specs in the terminal
+lastmod: 2021-05-24
 slug: macos-view-hardware
 tags:
   - hardware

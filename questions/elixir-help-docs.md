@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I help myself to help myself
+lastmod: 2021-06-24
 slug: elixir-help-docs
 tags:
   - elixir

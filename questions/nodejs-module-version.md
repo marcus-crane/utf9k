@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to determine the value of NODE_MODULE_VERSION
+lastmod: 2021-06-24
 slug: nodejs-module-version
 tags:
   - javascript

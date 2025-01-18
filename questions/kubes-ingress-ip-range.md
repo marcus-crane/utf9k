@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to restrict a Kube ingress to a specific CIDR range
+lastmod: 2021-06-25
 slug: kubes-ingress-ip-range
 tags:
   - allowlist

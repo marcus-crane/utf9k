@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I try to figure out why my coworkers Macbook crashed
+lastmod: 2021-09-03
 slug: macos-check-shutdown-cause
 tags:
   - crashes

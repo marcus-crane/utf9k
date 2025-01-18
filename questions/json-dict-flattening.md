@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I save myself a little bit of time
+lastmod: 2024-01-01
 slug: json-dict-flattening
 tags:
   - json

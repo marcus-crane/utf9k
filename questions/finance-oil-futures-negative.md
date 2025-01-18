@@ -3,6 +3,7 @@ aliases:
   - /notes/oil-futures/
 category: questions
 description: In which I write about something that is definitely not computers
+lastmod: 2020-08-06
 slug: finance-oil-futures-negative
 tags:
   - finance

@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I kill some stubborn connections
+lastmod: 2024-01-01
 slug: inspecting-socket-connections
 tags:
   - software

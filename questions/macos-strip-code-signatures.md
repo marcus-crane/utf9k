@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I have a nice, clean, insecure binary to play with
+lastmod: 2024-01-01
 slug: macos-strip-code-signatures
 tags:
   - macos

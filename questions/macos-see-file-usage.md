@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how introspect filesystem usage on macOS
+lastmod: 2021-04-09
 slug: macos-see-file-usage
 tags:
   - enterprise

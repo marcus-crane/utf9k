@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I sniff my own packets
+lastmod: 2024-01-01
 slug: decrypting-wireshark-ssl-traffic
 tags:
   - wireshark

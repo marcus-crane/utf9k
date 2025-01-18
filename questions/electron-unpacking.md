@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I open up my favourite text editor
+lastmod: 2024-01-01
 slug: electron-unpacking
 tags:
   - electron

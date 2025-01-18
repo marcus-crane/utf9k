@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to check out where a request is likely to route
+lastmod: 2020-09-15
 slug: macos-view-route-table
 tags:
   - macos

@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I have no idea what is going on with shared libraries
+lastmod: 2024-01-01
 slug: macos-extracting-shared-dyld-cache
 tags:
   - macos

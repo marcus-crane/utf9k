@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I capture a bit of history about the origin of dotfiles
+lastmod: 2021-06-25
 slug: linux-why-do-dotfiles-exist
 tags:
   - historical

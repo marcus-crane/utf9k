@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself what is a good idea to instrument
+lastmod: 2021-06-24
 slug: monitoring-what-to-instrument
 tags:
   - instrumentation

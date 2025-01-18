@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I never remember to use this stuff
+lastmod: 2024-01-01
 slug: investigating-system-calls
 tags:
   - software

@@ -1,6 +1,7 @@
 ---
 category: questions
 description: A small Javascript snippet useful for dynamically changing colour schemes
+lastmod: 2021-06-24
 slug: js-colour-scheme-listener
 tags:
   - darkmode

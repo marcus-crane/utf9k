@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to get rid of that pesky notification
+lastmod: 2021-08-31
 slug: macos-disable-safari-recommendation
 tags:
   - macos

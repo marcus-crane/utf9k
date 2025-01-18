@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I squint heavily to notice any difference
+lastmod: 2021-06-24
 slug: emacs-function-double-dash
 tags:
   - elisp

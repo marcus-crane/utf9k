@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remember how to introspect in Elixir
+lastmod: 2021-06-24
 slug: elixir-object-methods
 tags:
   - elixir

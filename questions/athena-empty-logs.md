@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I wonder where all the data has gone!
+lastmod: 2024-08-24
 slug: athena-empty-logs
 tags:
   - amazon

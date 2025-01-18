@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to test out callback commands
+lastmod: 2021-04-16
 slug: macos-invoke-x-callback-url
 tags:
   - macos

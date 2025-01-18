@@ -1,6 +1,7 @@
 ---
 category: questions
 description: Figuring out where my messages went
+lastmod: 2024-11-16
 slug: kafka-default-partitioner
 tags:
   - kafka

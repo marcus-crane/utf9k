@@ -1,6 +1,7 @@
 ---
 category: questions
 description: How does that query go again?
+lastmod: 2024-11-03
 slug: lucene-cheat-sheet
 tags:
   - cheatsheet

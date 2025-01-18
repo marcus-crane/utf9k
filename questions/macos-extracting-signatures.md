@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I pull some certificates out of their hiding spot
+lastmod: 2024-01-01
 slug: macos-extracting-signatures
 tags:
   - macos

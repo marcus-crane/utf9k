@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I don't have to go to the store to buy 6 different laptops
+lastmod: 2024-01-01
 slug: zig-golang-crosscompile
 tags:
   - golang

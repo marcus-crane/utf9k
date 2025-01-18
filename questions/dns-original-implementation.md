@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I capture a bit of DNS history to remind myself
+lastmod: 2021-06-24
 slug: dns-original-implementation
 tags:
   - dns

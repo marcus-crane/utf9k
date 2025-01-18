@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to set a default namespace for Kubernetes
+lastmod: 2021-06-24
 slug: kubes-default-namespace
 tags:
   - defaults

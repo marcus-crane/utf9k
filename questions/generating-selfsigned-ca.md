@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I pretend to make computers secure
+lastmod: 2024-01-01
 slug: generating-selfsigned-ca
 tags:
   - security

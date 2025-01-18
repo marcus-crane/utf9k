@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself what profiling is
+lastmod: 2021-06-24
 slug: monitoring-what-is-profiling
 tags:
   - instrumentation

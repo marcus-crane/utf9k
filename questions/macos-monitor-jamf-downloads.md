@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remind myself how to inspect JAMF progress
+lastmod: 2021-06-24
 slug: macos-monitor-jamf-downloads
 tags:
   - enterprise

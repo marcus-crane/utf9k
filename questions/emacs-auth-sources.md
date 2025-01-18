@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I try to retrieve my secrets using my text editor
+lastmod: 2021-06-24
 slug: emacs-auth-sources
 tags:
   - elisp

@@ -1,6 +1,7 @@
 ---
 category: questions
 description: In which I remember how to use dig with alternative DNS
+lastmod: 2021-06-24
 slug: dns-lookup-current-ip
 tags:
   - dig
