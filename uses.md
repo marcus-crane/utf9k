@@ -1,6 +1,7 @@
 ---
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
+lastmod: 2023-06-15
 layout: markdown.vto
 slug: uses
 tags:
