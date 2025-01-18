@@ -23,16 +23,14 @@ import rehypePrettyCode from "rehype-pretty-code";
 import remarkCallout from "remark-callout";
 import prettier from "prettier"
 import domain from "top-domain"
+import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
+import remarkToc from 'remark-toc'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehypeAutolinkHeadings'
 
 // Deno
 import { crypto } from "jsr:@std/crypto/crypto";
 import { join } from "jsr:@std/path";
-
-// ESM
-import { fromHtmlIsomorphic } from 'https://esm.sh/hast-util-from-html-isomorphic@2.0.0'
-import remarkToc from 'https://esm.sh/remark-toc@9.0.0'
-import rehypeSlug from 'https://esm.sh/rehype-slug@6.0.0'
-import rehypeAutolinkHeadings from 'https://esm.sh/rehype-autolink-headings@7.0.0'
 
 // Local
 import cache_busting from "./_plugins/cache_busting.ts"
