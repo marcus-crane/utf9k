@@ -2027,6 +2027,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co55mn.jpg
       width: 720
       height: 540
+  - id: 2640
+    title: 'Halo: Combat Evolved Anniversary'
+    link: https://www.backloggd.com/games/halo-combat-evolved-anniversary/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xhb.jpg
+      width: 720
+      height: 540
   - id: 740
     title: 'Halo: Combat Evolved'
     link: https://www.backloggd.com/games/halo-combat-evolved/
@@ -3357,13 +3364,6 @@
     link: https://www.backloggd.com/games/prototype-2/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co20jt.jpg
-      width: 720
-      height: 540
-  - id: 2640
-    title: 'Halo: Combat Evolved Anniversary'
-    link: https://www.backloggd.com/games/halo-combat-evolved-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xhb.jpg
       width: 720
       height: 540
   - id: 215769
