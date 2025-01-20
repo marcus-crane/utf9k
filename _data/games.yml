@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 125009
+    title: 'Halo 2: Anniversary'
+    link: https://www.backloggd.com/games/halo-2-anniversary/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
+      width: 720
+      height: 540
   - id: 7194
     title: Steins;Gate
     link: https://www.backloggd.com/games/steins-gate/
@@ -2582,6 +2589,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 125009
+    title: 'Halo 2: Anniversary'
+    link: https://www.backloggd.com/games/halo-2-anniversary/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
+      width: 720
+      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
@@ -2972,13 +2986,6 @@
     link: https://www.backloggd.com/games/the-outer-worlds/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2eew.jpg
-      width: 720
-      height: 540
-  - id: 125009
-    title: 'Halo 2: Anniversary'
-    link: https://www.backloggd.com/games/halo-2-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
       width: 720
       height: 540
   - id: 25877
