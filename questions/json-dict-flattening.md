@@ -2,6 +2,7 @@
 category: questions
 description: In which I save myself a little bit of time
 lastmod: 2024-01-01
+lastrev: 2025-01-20
 slug: json-dict-flattening
 tags:
   - json
