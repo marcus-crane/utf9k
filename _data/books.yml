@@ -1,6 +1,18 @@
 - list: 2025
   goal: 18
   books:
+    - title: Moral Mazes
+      subtitle: The World of Corporate Managers
+      author: Robert Jackall
+      cover: https://cdn.utf9k.net/books/moral-mazes.jpg
+      cover_height: 1360
+      cover_width: 907
+      link: https://global.oup.com/academic/product/moral-mazes-9780199729883
+      date_started: 2025-01-25
+      date_finished: null
+      recommended: false
+      progress: 0
+
     - title: Amusing Ourselves to Death
       subtitle: Public Discourse in the Age of Show Business
       author: Neil Postman
