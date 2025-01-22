@@ -14,7 +14,7 @@ description: The freshest panels directed right into my eyeballs
           <h2>Actively publishing / reading weekly</h2>
         </header>
         <ul role="list">
-          {{ for item of manga.filter(m => item.chapters === null) }}
+          {{ for item of manga.filter(m => m.chapters === null) }}
             <li>
               <div>
                 <img
