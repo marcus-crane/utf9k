@@ -1,0 +1,10 @@
+---
+url: /robots.txt
+---
+
+User-agent: *
+{{- if Deno.env.get("MODE") === "build" }}
+Allow: /
+{{- else }}
+Disallow: /
+{{- /if }}

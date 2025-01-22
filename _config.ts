@@ -123,9 +123,8 @@ site.use(nunjucks({
 site.use(metas())
 site.use(redirect())
 site.use(postcss())
-site.use(robots())
-site.use(sitemap())
 site.use(checkUrls())
+site.use(sitemap()) // Finds existing robots.txt and inserts sitemap
 
 if (mode === "build") {
     site.use(cache_busting())
