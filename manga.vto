@@ -14,23 +14,23 @@ description: The freshest panels directed right into my eyeballs
           <h2>Actively publishing / reading weekly</h2>
         </header>
         <ul role="list">
-          {{ for m of manga.filter(m => m.chapters === null) }}
+          {{ for item of manga.filter(m => item.chapters === null) }}
             <li>
               <div>
                 <img
-                  alt="A cover image of {{ m.title }}, a manga series by {{ m.author }}"
-                  src="{{ m.cover }}"
-                  width="{{ m.cover_width }}"
-                  height="{{ m.cover_height }}"
+                  alt="A cover image of {{ item.title }}, a manga series by {{ item.author }}"
+                  src="{{ item.cover }}"
+                  width="{{ item.cover_width }}"
+                  height="{{ item.cover_height }}"
                   style="border-radius: 3px; width: auto; max-width: 16rem;"
                 />
-                <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ m.url }}">Anilist</a></figcaption>
-                <a href="{{ m.url }}" target="_blank" rel="noopener noreferer">
-                  <span>{{ m.title }}</span>
+                <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ item.url }}">Anilist</a></figcaption>
+                <a href="{{ item.url }}" target="_blank" rel="noopener noreferer">
+                  <span>{{ item.title }}</span>
                 </a>
               </div>
               <dl>
-                {{ m.progress }} chapters read
+                {{ item.progress }} chapters read
               </dl>
             </li>
           {{ /for }}

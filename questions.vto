@@ -21,10 +21,10 @@ aliases:
     </form>
   </header>
   <ul>
-    {{ for question of search.pages("category=questions", "order=asc title=asc") }}
-    <li id="{{ question.slug }}" class="question">
-      <a href="{{ question.url }}">{{ question.title }}</a>
-      {{ for tag of question.tags }}
+    {{ for item of search.pages("category=questions", "order=asc title=asc") }}
+    <li id="{{ item.slug }}" class="question">
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {{ for tag of item.tags }}
       <span style="color: {{ tag |> taghash }}">#{{ tag }}</span>
       {{ /for }}
     </li>

@@ -13,20 +13,20 @@ description: Check out what games I have been playing in recent times
       <div class="grid-list">
         <h3>{{ gameList.list }}</h3>
         <ul role="list">
-        {{ for game of gameList.games }}
+        {{ for item of gameList.games }}
         <li>
           <div>
-            <img alt="Box art for the game titled {{ game.title |> escape }}" src="{{ game.cover.url }}" width="{{ game.cover.width }}px" height="{{ game.cover.height }}px" />
-            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ game.link }}">Backloggd</a></figcaption>
-            <a href="{{ game.link }}" target="_blank" rel="noopener noreferer">
-              <span>{{ game.title }}</span>
+            <img alt="Box art for the game titled {{ item.title |> escape }}" src="{{ item.cover.url }}" width="{{ item.cover.width }}px" height="{{ item.cover.height }}px" />
+            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ item.link }}">Backloggd</a></figcaption>
+            <a href="{{ item.link }}" target="_blank" rel="noopener noreferer">
+              <span>{{ item.title }}</span>
             </a>
           </div>
           {{# <div>
             <dd>
-              {{ game.platform }} {{ if game.replay }}· Replay{{ /if }}
+              {{ item.platform }} {{ if item.replay }}· Replay{{ /if }}
             </dd>
-            {{ if game.completed !== "0000-00-00" }}<dd>Finished: {{ game.completed }}</dd>{{ /if }}
+            {{ if item.completed !== "0000-00-00" }}<dd>Finished: {{ item.completed }}</dd>{{ /if }}
           </div> #}}
         </li>
         {{ /for }}

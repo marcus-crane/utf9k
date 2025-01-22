@@ -10,16 +10,16 @@ description: Here you can find all of the blog posts I've hand crafted over the 
   </header>
   <ul>
     {{> let seenYears = new Set() }}
-    {{ for post of search.pages("category=blog", "date=desc") |> filter(p => !p.draft) }}
-    {{ if !seenYears.has(post.date.getFullYear()) }}
-    <h2>{{ post.date.getFullYear() }}</h2>
+    {{ for item of search.pages("category=blog", "date=desc") |> filter(p => !p.draft) }}
+    {{ if !seenYears.has(item.date.getFullYear()) }}
+    <h2>{{ item.date.getFullYear() }}</h2>
     {{ /if }}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ item.url }}">{{ item.title }}</a>
       {{# TODO: NZ locale #}}
-      <time datetime="{{ post.date |> date('MMM dd') }}">{{ post.date |> date('MMM dd') }}</time>
+      <time datetime="{{ item.date |> date('MMM dd') }}">{{ item.date |> date('MMM dd') }}</time>
     </li>
-    {{> seenYears.add(post.date.getFullYear()) }}
+    {{> seenYears.add(item.date.getFullYear()) }}
     {{ /for }}
   </ul>
 </main>

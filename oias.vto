@@ -15,10 +15,10 @@ description: This is a list of OIAs that I personally think are interesting
   </div>
   <div id="post-body">
     <ul>
-      {{ for oia of oias }}
+      {{ for item of oias }}
       <li>
-        <a href="{{ oia.url }}">{{ oia.title }}</a>
-        <p>{{ oia.description }}</p>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        <p>{{ item.description }}</p>
       </li>
       {{ /for }}
     </ul>

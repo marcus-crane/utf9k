@@ -30,12 +30,12 @@
               </h3>
             </header>
             <ul>
-            {{ for book of books[0].books }}
-            {{ if book.progress !== 100 }}
+            {{ for item of books[0].books }}
+            {{ if item.progress !== 100 }}
             <li style="display: inline-block;">
-              <img alt="A cover photo of the book titled {{ book.title }}" src="{{ book.cover }}" height="180px" style="border-radius: 3px;" />
-              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={{ book.link }}>{{ book.link }}</a></figcaption>
-              <p>{{ book.progress }}% read</p>
+              <img alt="A cover photo of the book titled {{ item.title }}" src="{{ item.cover }}" height="180px" style="border-radius: 3px;" />
+              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={{ item.link }}>{{ item.link }}</a></figcaption>
+              <p>{{ item.progress }}% read</p>
             </li>
             {{ /if }}
             {{ /for }}
@@ -51,13 +51,13 @@
               </h3>
             </header>
             <ul>
-            {{ for entry of manga }}
+            {{ for item of manga }}
             {{# I read a lot of ongoign manga so we just filter for finished so we can surface a percentage complete #}}
-            {{ if entry.status === "FINISHED" }}
+            {{ if item.status === "FINISHED" }}
             <li style="display: inline-block;">
-              <img alt="A cover image of {{ entry.title }}, a manga series by {{ entry.author }}" src="{{ entry.cover }}" height="180px" style="border-radius: 3px;" />
-              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ entry.url }}">Anilist</a></figcaption>
-              <p>{{ entry.chapters - entry.progress }} chapters left<p>
+              <img alt="A cover image of {{ item.title }}, a manga series by {{ item.author }}" src="{{ item.cover }}" height="180px" style="border-radius: 3px;" />
+              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ item.url }}">Anilist</a></figcaption>
+              <p>{{ item.chapters - item.progress }} chapters left<p>
             </li>
             {{ /if }}
             {{ /for }}
@@ -90,9 +90,9 @@
         <div class="post-stream">
           <h3>Recently updated pages</h3>
           <ul>
-            {{ for page of search.pages() |> filter(p => p.category === "blog") |> filter(p => !p.draft) |> sort((a, b) => b.date - a.date) |> slice(0, 6) }}
+            {{ for item of search.pages() |> filter(p => p.category === "blog") |> filter(p => !p.draft) |> sort((a, b) => b.date - a.date) |> slice(0, 6) }}
             <li>
-              <a href="{{ page.url }}">{{ page.title }}</a>
+              <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
             {{ /for }}
           </ul>
@@ -106,10 +106,10 @@
               </h3>
             </header>
             <ul>
-            {{ for game of games[0].games }}
+            {{ for item of games[0].games }}
             <li style="display: inline-block;">
-              <img alt="Box art for the game titled {{ game.title |> escape }}" src="{{ game.cover.url }}" height="180px" style="border-radius: 3px;" />
-              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ game.link }}">Backloggd</a></figcaption>
+              <img alt="Box art for the game titled {{ item.title |> escape }}" src="{{ item.cover.url }}" height="180px" style="border-radius: 3px;" />
+              <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ item.link }}">Backloggd</a></figcaption>
             </li>
             {{ /for }}
             </ul>

@@ -10,15 +10,15 @@ description: Check out a handful of side projects that I'm quite proud of
   </header>
   <ul>
     <h2>Ongoing</h2>
-    {{ for project of search.pages("category=projects ongoing=true").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
+    {{ for item of search.pages("category=projects ongoing=true").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
     <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>
+      <a href="{{ item.url }}">{{ item.title }}</a>
     </li>
     {{ /for }}
     <h2>Archived</h2>
-    {{ for project of search.pages("category=projects ongoing=false").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
+    {{ for item of search.pages("category=projects ongoing=false").sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase())) }}
     <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>
+      <a href="{{ item.url }}">{{ item.title }}</a>
     </li>
     {{ /for }}
   </ul>

@@ -31,23 +31,23 @@ description: Find out what books I have been reading lately
           {{ /if }}
         </header>
         <ul role="list">
-        {{ for book of yearGroup.books }}
+        {{ for item of yearGroup.books }}
         <li>
           <div>
-            <img alt="A cover photo of the book titled {{ book.title }}" src="{{ book.cover }}" />
-            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={{ book.link }}>{{ book.link }}</a></figcaption>
-            <a href="{{ book.link }}" target="_blank" rel="noopener noreferer">
-              <span>{{ book.title }}</span>
+            <img alt="A cover photo of the book titled {{ item.title }}" src="{{ item.cover }}" />
+            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href={{ item.link }}>{{ item.link }}</a></figcaption>
+            <a href="{{ item.link }}" target="_blank" rel="noopener noreferer">
+              <span>{{ item.title }}</span>
             </a>
           </div>
           <dl>
-            {{ if book.progress === 100 && book.rating !== null }}
+            {{ if item.progress === 100 && item.rating !== null }}
             <div>
-              <dd>{{ book.date_finished?.toISOString().split("T")[0] }} {{ if book.recommended }}· <span>📣</span>{{ /if }}
+              <dd>{{ item.date_finished?.toISOString().split("T")[0] }} {{ if item.recommended }}· <span>📣</span>{{ /if }}
             </div>
             {{ /if }}
-            {{ if book.progress !== 100 }}
-            <p>{{ book.progress}}% read</p>
+            {{ if item.progress !== 100 }}
+            <p>{{ item.progress}}% read</p>
             {{ /if }}
           </dl>
         </li>
