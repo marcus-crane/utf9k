@@ -47,20 +47,13 @@ layout: page.vto
     </td>
   </tr>
   <tr>
-    <td>CI Info (<a href="https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables">Github Actions</a>)</td>
+    <td>CI Info (<a href="https://github.com/denizdogan/lume-plugin-ci">via lume-ci</a>)</td>
     <td>
       <ul>
-        <li>CI: {{ Deno.env.CI }}</li>
-        <li>Github Action: {{ Deno.env.GITHUB_ACTION }}</li>
-        <li>Github Actor: {{ Deno.env.GITHUB_ACTOR }}</li>
-        <li>Github Job: {{ Deno.env.GITHUB_JOB }}</li>
-        <li>Github Ref: {{ Deno.env.GITHUB_REF }}</li>
-        <li>Github Run Attempt: {{ Deno.env.GITHUB_RUN_ATTEMPT }}</li>
-        <li>Github Run ID: {{ Deno.env.GITHUB_RUN_ID }}</li>
-        <li>Github Run Number: {{ Deno.env.GITHUB_RUN_NUMBER }}</li>
-        <li>Github SHA: {{ Deno.env.GITHUB_SHA }}</li>
-        <li>Runner Arch: {{ Deno.env.RUNNER_ARCH }}</li>
-        <li>Runner OS: {{ Deno.env.RUNNER_OS }}</li>
+        <li>CI Name: {{ ci.name }}</li>
+        <li>CI Service: {{ ci.service }}</li>
+        <li>Branch: <a href="https://github.com/marcus-crane/utf9k/tree/{{ ci.branch }}">{{ ci.branch }}</a></li>
+        <li>Commit: <a href="https://github.com/marcus-crane/utf9k/commit/{{ ci.commit }}">{{ ci.commit }}</a></li>
       </ul>
     </td>
   </tr>
