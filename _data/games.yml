@@ -130,6 +130,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 125009
+    title: 'Halo 2: Anniversary'
+    link: https://www.backloggd.com/games/halo-2-anniversary/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
+      width: 720
+      height: 540
   - id: 137001
     title: 'Call of Duty: Black Ops Cold War'
     link: https://www.backloggd.com/games/call-of-duty-black-ops-cold-war/
@@ -2575,13 +2582,6 @@
       height: 540
 - list: Shelved
   games:
-  - id: 125009
-    title: 'Halo 2: Anniversary'
-    link: https://www.backloggd.com/games/halo-2-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
-      width: 720
-      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
