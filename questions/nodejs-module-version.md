@@ -2,6 +2,7 @@
 category: questions
 description: In which I remind myself how to determine the value of NODE_MODULE_VERSION
 lastmod: 2021-06-24
+lastrev: 2025-01-27
 slug: nodejs-module-version
 tags:
   - javascript
@@ -19,6 +20,6 @@ NODE_MODULE_VERSION 89.
 
 I often remember that I need to possibly use a different version of nodejs but I never remember how to tell which one.
 
-The official NodeJS site has a table with version numbers and their corresponding `NODE_MODULE_VERSION` [available here](https://nodejs.org/en/download/releases/).
+The official NodeJS site has a table with version numbers and their corresponding `NODE_MODULE_VERSION` [available here](https://nodejs.org/en/about/previous-releases).
 
 In the case of this error, I think I probably want to downgrade to `Node.js 14.x`? It's all very confusing.
