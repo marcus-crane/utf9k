@@ -18,6 +18,9 @@ import checkUrls from "lume/plugins/check_urls.ts";
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
 
+// Third party Lume plugins
+import ci from "https://deno.land/x/lume_plugin_ci@v1.0.0/mod.ts";
+
 // NPM
 import rehypePrettyCode from "rehype-pretty-code";
 import remarkCallout from "remark-callout";
@@ -125,6 +128,7 @@ site.use(redirect())
 site.use(postcss())
 site.use(checkUrls())
 site.use(sitemap()) // Finds existing robots.txt and inserts sitemap
+site.use(ci());
 
 if (mode === "build") {
     site.use(cache_busting())
@@ -147,7 +151,7 @@ site.ignore(
     ".DS_Store"
 );
 
-// TODO: Try Promise.alL(pages.map(fn))
+// TODO: Try Promise.all(pages.map(fn))
 // https://lume.land/docs/advanced/migrate-to-lume2/#change-your-(pre)processors
 site.process(
     [".html"],

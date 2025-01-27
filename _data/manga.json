@@ -18,7 +18,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-jIm1KsPcIwIl.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 181,
+    "progress": 182,
     "status": "RELEASING",
     "title": "Dandadan",
     "url": "https://anilist.co/manga/132029"
@@ -34,18 +34,6 @@
     "status": "RELEASING",
     "title": "Dragon Ball Super",
     "url": "https://anilist.co/manga/86508"
-  },
-  {
-    "author": "Hazuki Minase",
-    "chapters": null,
-    "color": "#e4935d",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102232-nbSn305VsCtg.jpg",
-    "cover_height": 654,
-    "cover_width": 460,
-    "progress": 48,
-    "status": "RELEASING",
-    "title": "Final Fantasy: Lost Stranger",
-    "url": "https://anilist.co/manga/102232"
   },
   {
     "author": "Jiro Matsumoto",
@@ -66,7 +54,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b181892-YRpigdYLeVfR.jpg",
     "cover_height": 345,
     "cover_width": 230,
-    "progress": 2,
+    "progress": 3,
     "status": "RELEASING",
     "title": "Hakutaku",
     "url": "https://anilist.co/manga/181892"
@@ -138,7 +126,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx74347-O6KMkECzHPOE.jpg",
     "cover_height": 722,
     "cover_width": 460,
-    "progress": 144,
+    "progress": 203,
     "status": "RELEASING",
     "title": "One Punch-Man",
     "url": "https://anilist.co/manga/74347"
