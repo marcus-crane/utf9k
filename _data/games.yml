@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 987
+    title: Halo 3
+    link: https://www.backloggd.com/games/halo-3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xhc.jpg
+      width: 720
+      height: 540
   - id: 125009
     title: 'Halo 2: Anniversary'
     link: https://www.backloggd.com/games/halo-2-anniversary/
