@@ -4,14 +4,12 @@ import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
 // import esbuild from "lume/plugins/esbuild.ts";
 import metas from "lume/plugins/metas.ts";
-import jsx_preact from "lume/plugins/jsx_preact.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
 import nunjucks from "lume/plugins/nunjucks.ts"
 import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
-import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import checkUrls from "lume/plugins/check_urls.ts";
 
@@ -89,7 +87,6 @@ site.use(feed({
         lang: "=lang",
     },
 }));
-site.use(jsx_preact());
 site.use(reading_info());
 site.use(remark({
     remarkPlugins: [
