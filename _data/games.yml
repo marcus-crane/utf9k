@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 3042
+    title: Dying Light
+    link: https://www.backloggd.com/games/dying-light/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
+      width: 720
+      height: 540
   - id: 987
     title: Halo 3
     link: https://www.backloggd.com/games/halo-3/
@@ -2979,13 +2986,6 @@
     link: https://www.backloggd.com/games/pokemon-lets-go-pikachu/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1zjy.jpg
-      width: 720
-      height: 540
-  - id: 3042
-    title: Dying Light
-    link: https://www.backloggd.com/games/dying-light/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
       width: 720
       height: 540
   - id: 7194
