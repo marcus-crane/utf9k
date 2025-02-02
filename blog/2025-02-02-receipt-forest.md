@@ -15,7 +15,7 @@ When you make a purchase using one of the self-checkout machines, it will ask yo
 > [!note] Nice cart, loser
 > Please ignore the junk I purchased. The [2025 Royal Rumble](https://en.wikipedia.org/wiki/Royal_Rumble_(2025)) was on and that shit was 4 hours long so I needed a snack.
 
-![](https://cdn.utf9k.net/blog/receipt-forest/receipt-consent.jpg)
+![A screenshot of a self-checkout machine, customised with New World branding. A transaction is visible in the background, with a popup modal in the foreground. The modal reads "Would you like to print a receipt?" Two buttons labelled "Yes" and "No" are visible.](https://cdn.utf9k.net/blog/receipt-forest/receipt-consent.jpg)
 
 The problem here is that it doesn't matter whether you press "Yes" or "No", you'll still get a receipt.
 
@@ -24,13 +24,13 @@ It's like all the worst elements of [consent fatigue](https://iapp.org/news/a/ho
 Despite this screen, I always press "No" because without that, the machine will just sit there.
 
 
-![](https://cdn.utf9k.net/blog/receipt-forest/receipt-printer.jpg)
+![A close-up photo of the receipt printer slot for a self-checkout machine. A receipt is hanging out of the printer slot.](https://cdn.utf9k.net/blog/receipt-forest/receipt-printer.jpg)
 
 Usually either the next person after you presses "No", incurring the wait of having the machine spit out a receipt or a cashier comes over to press it.
 
 The real horror is that next to each of these machines are plastic tubs for customers to discard their unwanted receipts into.
 
-![](https://cdn.utf9k.net/blog/receipt-forest/receipt-bin.jpg)
+![A photo of a black plastic tub containing about 100 discarded receipts. The bin is situated between two self-checkout machines, althought this isn't immediately clear in the photo.](https://cdn.utf9k.net/blog/receipt-forest/receipt-bin.jpg)
 
 This is actually an evolution in the process, believe it or not.
 
