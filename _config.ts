@@ -7,7 +7,6 @@ import metas from "lume/plugins/metas.ts";
 import feed from "lume/plugins/feed.ts";
 import reading_info from "lume/plugins/reading_info.ts";
 import vento from "lume/plugins/vento.ts";
-import nunjucks from "lume/plugins/nunjucks.ts"
 import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
 import sitemap from "lume/plugins/sitemap.ts";
@@ -107,19 +106,6 @@ site.use(remark({
 }));
 site.use(vento());
 // site.use(esbuild()); # TODO: Some JS fails to be minified properly
-site.use(nunjucks({
-    options: {
-        autoescape: false,
-        tags: {
-            blockStart: '<%',
-            blockEnd: '%>',
-            variableStart: '<$',
-            variableEnd: '$>',
-            commentStart: '<#',
-            commentEnd: '#>'
-        }
-    }
-}))
 site.use(metas())
 site.use(redirect())
 site.use(postcss())
