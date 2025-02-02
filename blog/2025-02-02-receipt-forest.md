@@ -14,6 +14,7 @@ When you make a purchase using one of the self-checkout machines, it will ask yo
 
 > [!note] Nice cart, loser
 > Please ignore the junk I purchased. The [2025 Royal Rumble](https://en.wikipedia.org/wiki/Royal_Rumble_(2025)) was on and that shit was 4 hours long so I needed a snack.
+> Also yes, inflation is crazy.
 
 ![A screenshot of a self-checkout machine, customised with New World branding. A transaction is visible in the background, with a popup modal in the foreground. The modal reads "Would you like to print a receipt?" Two buttons labelled "Yes" and "No" are visible.](https://cdn.utf9k.net/blog/receipt-forest/receipt-consent.jpg)
 
