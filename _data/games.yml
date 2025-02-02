@@ -1,17 +1,10 @@
 - list: Playing
   games:
-  - id: 987
-    title: Halo 3
-    link: https://www.backloggd.com/games/halo-3/
+  - id: 3042
+    title: Dying Light
+    link: https://www.backloggd.com/games/dying-light/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xhc.jpg
-      width: 720
-      height: 540
-  - id: 125009
-    title: 'Halo 2: Anniversary'
-    link: https://www.backloggd.com/games/halo-2-anniversary/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qtv.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
       width: 720
       height: 540
   - id: 386
@@ -1975,7 +1968,7 @@
     title: 'Half-Life 2: Episode One'
     link: https://www.backloggd.com/games/half-life-2-episode-one/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2mw3.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9c5r.jpg
       width: 720
       height: 540
   - id: 233
@@ -2986,13 +2979,6 @@
     link: https://www.backloggd.com/games/pokemon-lets-go-pikachu/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1zjy.jpg
-      width: 720
-      height: 540
-  - id: 3042
-    title: Dying Light
-    link: https://www.backloggd.com/games/dying-light/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
       width: 720
       height: 540
   - id: 7194
