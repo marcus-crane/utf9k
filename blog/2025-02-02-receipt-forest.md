@@ -64,6 +64,8 @@ Again, this is presumably pretty generous.
 
 According to [Claude 3.5 Sonnet](https://www.anthropic.com/claude/sonnet), that's roughly 1,288 trees worth of receipt paper.
 
-It would also take 20% of an olympic swimming pool, or the daily water needs of 705 people to produce all of that receipt paper as well.
+It would also take about 485,000 litres of water to produce all that paper, or the daily water needs for about 120,000 people if we give them a generous 4 litres each.[^1]
 
 I wouldn't call myself an environmentalist by any stretch but damn, just fix the fucking button already!
+
+[^1]: The US [National Academies of Sciences, Engineering, and Medicine](https://en.wikipedia.org/wiki/National_Academies_of_Sciences,_Engineering,_and_Medicine) puts the [Adequate Intake level](https://nap.nationalacademies.org/read/10925/chapter/6) for *total* water intake at 3.7L and 2.7L for young men and women respectively. Some people surely need more and some people will get by with less. 
