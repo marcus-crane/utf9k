@@ -51,7 +51,7 @@ At the time of writing, New World has "more than 140 stores" so we'll say 140 st
 
 We'll also be extremely generous and say that the average store only has 1 self-checkout.
 
-> ![note]
+> [!note]
 > I should mention I don't know for a fact that every New World store has this issue but the ones I've been to in recent memory have all had this issue.
 > I've never seen it fixed in any store either.
 > The fact that tubs exist at multiple stores, despite New World being a franchisee model, would suggest that someone up the chain made a decision to distribute tubs instead of, you know, doing the sane thing.
