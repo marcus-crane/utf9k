@@ -66,7 +66,12 @@ function initEventSource() {
 let eventSource = initEventSource()
 
 eventSource.onmessage = function (event) {
-  const data = JSON.parse(event.data)
+  let data = JSON.parse(event.data)
+  if (data.length !== 1) {
+    // Dunno what to do about that
+    return
+  }
+  data = data[0]
   if (data.started_at < 0) {
     // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
     // in the meantime, we'll just bail out and the user won't know
@@ -129,11 +134,6 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderLivePlayer(data) {
-  if (data.length == 0) {
-    return
-  }
-  // We should always have one item
-  data = data[0]
   clearInterval(window.currentInterval)
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
@@ -193,8 +193,6 @@ function renderLivePlayer(data) {
 
   title.innerText = data.title
   subtitle.innerText = data.subtitle
-
-
 
   cover.src = "https://gunslinger.utf9k.net" + data.image
   cover.alt = `Cover art for the ${normaliseCategoryName(data.category)} ${data.title} by ${data.subtitle}`
