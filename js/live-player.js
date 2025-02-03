@@ -71,8 +71,8 @@ eventSource.onmessage = function (event) {
     // Dunno what to do about that
     return
   }
-  data = data[0]
-  if (data.started_at < 0) {
+  const primaryItem = data[0]
+  if (primaryItem.started_at < 0) {
     // Sometimes the endpoint is empty, which is meant to be impossible but need to do some bug fixing so
     // in the meantime, we'll just bail out and the user won't know
     throw ("Encountered a bug so we won't render the live player")
@@ -83,10 +83,10 @@ eventSource.onmessage = function (event) {
   // If a track hasn't changed but is just getting a progression update, we also want to skip re-rendering
   // Lastly, not all categories have live updates so we should take any update as a hint to update history
   // in order to properly show the effect of the current item dropping out of the player and into the history queue
-  const shouldUpdateHistory = !liveliness[data.category] || data.is_active
+  const shouldUpdateHistory = !liveliness[primaryItem.category] || primaryItem.is_active
   if (
     shouldUpdateHistory &&
-    data.title !== previousTitle
+    primaryItem.title !== previousTitle
   ) {
     fetchHistory()
   }
@@ -134,6 +134,11 @@ function formatMsToHumanTimestamp(ms) {
 }
 
 function renderLivePlayer(data) {
+  if (data.length == 0) {
+    return
+  }
+  // We should always have one item
+  data = data[0]
   clearInterval(window.currentInterval)
   let progression = data.elapsed_ms
   let currentDuration = data.duration_ms
