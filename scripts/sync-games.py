@@ -12,8 +12,6 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-DATA_FILE = "_/gamesv2.yml"
-
 PLAYING_URL = "https://www.backloggd.com/u/utf9k/playing/"
 COMPLETED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:completed/"
 SHELVED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:shelved/"
