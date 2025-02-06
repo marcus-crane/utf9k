@@ -467,8 +467,8 @@
       isbn13: 9781800812215
       asin: 1800812213
       link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
-      date_added: 2022-09-20
-      date_started: null
+      date_added: 2022-06-25
+      date_started: 2022-06-25
       date_finished: 2022-09-20
       recommended: false
       progress: 100
@@ -482,8 +482,8 @@
       isbn13: 9781641292979
       asin: 1641292970
       link: https://openlibrary.org/works/OL18630860W
-      date_added: 2022-09-20
-      date_started: null
+      date_added: 2022-07-17
+      date_started: 2022-07-17
       date_finished: 2022-09-18
       recommended: true
       progress: 100
@@ -498,7 +498,7 @@
       asin: 1090532083
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
       date_added: 2021-02-25
-      date_started: null
+      date_started: 2022-01-09
       date_finished: 2022-02-24
       recommended: false
       progress: 100
@@ -606,7 +606,7 @@
       asin: 0446519251
       link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
       date_added: 2020-01-30
-      date_started: null # at least 2021-03-07 and prior
+      date_started: 2021-03-02
       date_finished: 2021-04-24
       recommended: true
       progress: 100
@@ -773,8 +773,8 @@
       isbn13: 9780691122946
       asin: 0691122946
       link: https://openlibrary.org/works/OL1829528W/On_Bullshit
-      date_added: 2020-09-15
-      date_started: null
+      date_added: 2020-08-22
+      date_started: 2020-08-22
       date_finished: 2020-09-15
       recommended: true
       progress: 100
