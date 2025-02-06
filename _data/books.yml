@@ -420,7 +420,7 @@
       asin: 0241468280
       link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
       date_added: null
-      date_started: null
+      date_started: 2022-10-07
       date_finished: 2023-02-07
       recommended: true
       progress: 100
@@ -516,7 +516,7 @@
       asin: 0374159122
       link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
       date_added: 2021-08-14
-      date_started: null
+      date_started: 2021-09-24
       date_finished: 2021-11-06
       recommended: true
       progress: 100
@@ -606,7 +606,7 @@
       asin: 0446519251
       link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
       date_added: 2020-01-30
-      date_started: null
+      date_started: null # at least 2021-03-07 and prior
       date_finished: 2021-04-24
       recommended: true
       progress: 100
