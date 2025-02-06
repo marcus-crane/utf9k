@@ -25,7 +25,7 @@
       isbn13: null
       asin: null
       link: https://global.oup.com/academic/product/moral-mazes-9780199729883
-      date_added: null
+      date_added: 2022-11-14
       date_started: 2025-01-25
       date_finished: null
       recommended: false
@@ -40,7 +40,7 @@
       isbn13: null
       asin: null
       link: https://www.penguinrandomhouse.com/books/297276/amusing-ourselves-to-death-by-neil-postman/
-      date_added: null
+      date_added: 2018-04-03
       date_started: 2024-12-31
       date_finished: 2025-01-20
       recommended: true
@@ -193,8 +193,8 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
-      date_added: null
-      date_started: null
+      date_added: 2023-10-27
+      date_started: 2023-12-25
       date_finished: 2024-02-11
       recommended: true
       progress: 100
@@ -208,7 +208,7 @@
       isbn13: null
       asin: null
       link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
-      date_added: null
+      date_added: 2020-12-24
       date_started: null
       date_finished: 2024-02-03
       recommended: true
@@ -238,8 +238,8 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL15297392W/The_Shallows
-      date_added: null
-      date_started: null
+      date_added: 2022-08-03
+      date_started: 2023-12-26
       date_finished: 2024-01-27
       recommended: false
       progress: 100
@@ -314,8 +314,8 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
-      date_added: null
-      date_started: null
+      date_added: 2018-01-14
+      date_started: 2023-10-22
       date_finished: 2023-12-25
       recommended: false
       progress: 100
@@ -330,7 +330,7 @@
       asin: null
       link: https://openlibrary.org/works/OL554786W/Walking_Your_Blues_Away
       date_added: 2023-10-27
-      date_started: 2023-10-27
+      date_started: 2023-12-06
       date_finished: 2023-12-15
       recommended: false
       progress: 100
@@ -422,7 +422,7 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL2355834W/High_Output_Management
-      date_added: null
+      date_added: 2020-09-05
       date_started: null
       date_finished: 2022-10-23
       recommended: true
@@ -467,7 +467,7 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
-      date_added: null
+      date_added: 2021-02-25
       date_started: null
       date_finished: 2022-02-24
       recommended: false
@@ -485,7 +485,7 @@
       isbn13: null
       asin: null
       link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
-      date_added: null
+      date_added: 2021-08-14
       date_started: null
       date_finished: 2021-11-06
       recommended: true
@@ -1211,7 +1211,11 @@
     #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
     #   cover_height: 1245
     #   cover_width: 800
+    #   isbn13: 9780300078152
+    #   asin: 0300078153
     #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+    #   date_added: 2018-01-14
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 11
@@ -1223,6 +1227,8 @@
     #   cover_height: 2775
     #   cover_width: 2213
     #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_added: null
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 45
@@ -1234,6 +1240,8 @@
     #   cover_height: 1804
     #   cover_width: 1200
     #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+    #   date_added: null
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 24
@@ -1245,6 +1253,8 @@
     #   cover_height: 5000
     #   cover_width: 3249
     #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+    #   date_added: null
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 23
@@ -1256,6 +1266,8 @@
     #   cover_height: 1922
     #   cover_width: 1265
     #   link: https://en.wikipedia.org/wiki/The_Power_Broker
+    #   date_added: 2023-06-11
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 1
@@ -1267,6 +1279,8 @@
     #   cover_height: 1124
     #   cover_width: 735
     #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+    #   date_added: 2020-08-07
+    #   date_started: 2022-11-12
     #   date_finished: null
     #   recommended: false
     #   progress: 44
@@ -1278,6 +1292,8 @@
     #   cover_height: 1498
     #   cover_width: 975
     #   link: https://openlibrary.org/works/OL28158768W/Unscripted
+    #   date_added: 2023-04-18
+    #   date_started: null
     #   date_finished: null
     #   recommended: false
     #   progress: 32
