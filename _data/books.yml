@@ -79,6 +79,21 @@
       recommended: true
       progress: 100
 
+    - title: Half-Life 2
+      subtitle: Raising the Bar
+      author: David Hodgson
+      cover: https://cdn.utf9k.net/books/half-life-2.jpg
+      cover_height: 1179
+      cover_width: 904
+      isbn13: 9780761543640
+      asin: 0761543643
+      link: https://openlibrary.org/works/OL8010203W/Half-Life_2
+      date_added: 2024-12-02
+      date_started: 2024-12-02
+      date_finished: 2024-12-12
+      recommended: true
+      progress: 100
+
     - title: Personal Kanban
       subtitle: Mapping Work | Navigating Life
       author: Jim Benson and Tonianne DeMaria Barry
@@ -185,8 +200,8 @@
       progress: 100 
     
     - title: Creative Dysregulation
-      subtitle: Why Your Creativity is Chaotic & What to Do About It
-      author: Kelly Wilde-Miller
+      subtitle: Why Your Creativity Is Chaotic & What to Do About It
+      author: Kelly Wilde Miller
       cover: https://cdn.utf9k.net/books/creative-dysregulation.jpg
       cover_height: 1510
       cover_width: 1014
@@ -295,8 +310,8 @@
       cover: https://cdn.utf9k.net/books/what-the-ceo-wants-you-to-know.jpg
       cover_height: 2340
       cover_width: 1527
-      isbn13: 9780553417791
-      asin: B01MR1TTS4
+      isbn13: 9780553417784
+      asin: 0553417789
       link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
       date_added: 2023-06-11
       date_started: 2023-06-13
@@ -358,8 +373,8 @@
       cover: https://cdn.utf9k.net/books/taxtopia.jpg
       cover_height: 2835
       cover_width: 1878
-      isbn13: 9781800960879
-      asin: 1800960875
+      isbn13: 9781800960886
+      asin: 1800960883
       link: https://openlibrary.org/works/OL28024085W/Taxtopia
       date_added: 2023-10-27
       date_started: 2023-10-27
@@ -373,8 +388,8 @@
       cover: https://cdn.utf9k.net/books/the-para-method.jpg
       cover_height: 2070
       cover_width: 1538
-      isbn13: 9781800819542
-      asin: 1800819544
+      isbn13: 9781668045565
+      asin: 1668045567
       link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
       date_added: 2023-08-28
       date_started: 2023-08-28
@@ -388,8 +403,8 @@
       cover: https://cdn.utf9k.net/books/hanging-out.jpg
       cover_height: 1240
       cover_width: 797
-      isbn13: 9781760644727
-      asin: 1760644722
+      isbn13: 9781685890056
+      asin: 1685890059
       link: https://openlibrary.org/works/OL27939130W/Hanging_Out
       date_added: 2023-04-07
       date_started: 2023-05-29
@@ -418,7 +433,7 @@
       cover: https://cdn.utf9k.net/books/like-comment-subscribe.jpg
       cover_height: 1812
       cover_width: 1200
-      isbn13: 9780241468289
+      isbn13: 9780593296349
       asin: 0241468280
       link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
       date_added: null
@@ -677,7 +692,7 @@
       progress: 100
 
     - title: Naked Pictures of Famous People
-      subtitle: Another Example of Blatantly False Advertising
+      subtitle: null
       author: Jon Stewart
       cover: https://cdn.utf9k.net/books/naked-pictures-of-famous-people.jpg
       cover_height: 1200
@@ -742,7 +757,7 @@
       cover: https://cdn.utf9k.net/books/talking-to-my-daughter-about-the-economy.jpg
       cover_height: 2339
       cover_width: 1524
-      isbn13: 9780374718435
+      isbn13: 9781847924421
       asin: B076H4WMY1
       link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
       date_added: 2020-09-14
