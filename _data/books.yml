@@ -7,8 +7,8 @@
       cover: https://cdn.utf9k.net/books/designing-data-intensive-applications.jpg
       cover_height: 1575
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9781449373320
+      asin: 1449373321
       link: https://dataintensive.net
       date_added: null
       date_started: 2022-07-05
@@ -22,8 +22,8 @@
       cover: https://cdn.utf9k.net/books/moral-mazes.jpg
       cover_height: 1360
       cover_width: 907
-      isbn13: null
-      asin: null
+      isbn13: 9780195060805
+      asin: 0195060806
       link: https://global.oup.com/academic/product/moral-mazes-9780199729883
       date_added: 2022-11-14
       date_started: 2025-01-25
@@ -37,8 +37,8 @@
       cover: https://cdn.utf9k.net/books/amusing-ourselves-to-death.jpg
       cover_height: 2560
       cover_width: 1693
-      isbn13: null
-      asin: null
+      isbn13: 9780143036531
+      asin: 9780143036531
       link: https://www.penguinrandomhouse.com/books/297276/amusing-ourselves-to-death-by-neil-postman/
       date_added: 2018-04-03
       date_started: 2024-12-31
@@ -55,11 +55,11 @@
       cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
       cover_height: 1500
       cover_width: 1000
-      isbn13: null
-      asin: null
+      isbn13: 9781683642503
+      asin: 1683642503
       link: https://conscious-transitions.com/the-wisdom-of-anxiety/
       date_added: 2024-10-06
-      date_started: null
+      date_started: 2024-10-06
       date_finished: 2024-12-30
       recommended: false
       progress: 100
@@ -70,11 +70,11 @@
       cover: https://cdn.utf9k.net/books/the-upward-spiral.jpg
       cover_height: 1801
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9781626251205
+      asin: 1626251207
       link: https://www.alexkorbphd.com/the-upward-spiral-method/
       date_added: 2024-09-16
-      date_started: null
+      date_started: 2024-09-29
       date_finished: 2024-12-13
       recommended: true
       progress: 100
@@ -85,12 +85,27 @@
       cover: https://cdn.utf9k.net/books/personal-kanban.jpg
       cover_height: 1360
       cover_width: 907
-      isbn13: null
-      asin: null
+      isbn13: 9781453802267
+      asin: 1453802266
       link: https://www.personalkanban.com/
-      date_added: 2024-10-06
-      date_started: null
+      date_added: 2024-09-29
+      date_started: 2024-09-29
       date_finished: 2024-11-23
+      recommended: false
+      progress: 100
+    
+    - title: Who Moved My Cheese?
+      subtitle: An Amazing Way to Deal with Change in Your Work and in Your Life
+      author: Spencer Johnson
+      cover: https://cdn.utf9k.net/books/who-moved-my-cheese.jpg
+      cover_height: 2360
+      cover_width: 1490
+      isbn13: 9780091883768
+      asin: 0091883768
+      link: https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F
+      date_added: 2024-08-29
+      date_started: 2024-10-11
+      date_finished: 2024-11-22
       recommended: false
       progress: 100
 
@@ -100,11 +115,11 @@
       cover: https://cdn.utf9k.net/books/meditations-for-mortals.jpg
       cover_height: 2620
       cover_width: 1630
-      isbn13: null
-      asin: null
+      isbn13: 9780374611996
+      asin: 0374611998
       link: https://www.penguin.co.nz/books/meditations-for-mortals-9781847927620
       date_added: 2024-09-16
-      date_started: null
+      date_started: 2024-09-16
       date_finished: 2024-10-06
       recommended: true
       progress: 100
@@ -115,11 +130,11 @@
       cover: https://cdn.utf9k.net/books/means-of-control.jpg
       cover_height: 2776
       cover_width: 1838
-      isbn13: null
-      asin: null
+      isbn13: 9780593443224
+      asin: 0593443225
       link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
-      date_added: null
-      date_started: null
+      date_added: 2024-04-09
+      date_started: 2024-11-22
       date_finished: 2024-06-07
       recommended: true
       progress: 100
@@ -130,11 +145,11 @@
       cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
       cover_height: 2500
       cover_width: 1688
-      isbn13: null
-      asin: null
+      isbn13: 9780593239513
+      asin: 0593239512
       link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
       date_added: 2023-12-24
-      date_started: null
+      date_started: 2024-02-03
       date_finished: 2024-06-01
       recommended: true
       progress: 100
@@ -145,11 +160,11 @@
       cover: https://cdn.utf9k.net/books/burn-book.jpg
       cover_height: 2113
       cover_width: 1400
-      isbn13: null
-      asin: null
+      isbn13: 9781982163891
+      asin: 1982163895
       link: https://www.simonandschuster.com/books/Burn-Book/Kara-Swisher/9781982163891
-      date_added: null
-      date_started: null
+      date_added: 2024-03-03
+      date_started: 2024-03-07
       date_finished: 2024-03-10
       recommended: false
       progress: 100
@@ -160,11 +175,11 @@
       cover: https://cdn.utf9k.net/books/hacks-leaks-and-revelations.jpg
       cover_height: 1832
       cover_width: 1400
-      isbn13: null
-      asin: null
+      isbn13: 9781718503120
+      asin: 1718503121
       link: https://nostarch.com/hacks-leaks-and-revelations
       date_added: 2024-02-05
-      date_started: null
+      date_started: 2024-02-07
       date_finished: 2024-03-06
       recommended: false
       progress: 100 
@@ -176,10 +191,10 @@
       cover_height: 1510
       cover_width: 1014
       isbn13: null
-      asin: null
+      asin: B0CVBM1JTV
       link: https://www.kellywildemiller.com/creativedysregulation
-      date_added: null
-      date_started: null
+      date_added: 2024-03-03
+      date_started: 2024-03-03
       date_finished: 2024-03-05
       recommended: false
       progress: 100
@@ -190,8 +205,8 @@
       cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
       cover_height: 1208
       cover_width: 800
-      isbn13: null
-      asin: null
+      isbn13: 9780957559554
+      asin: 0957559550
       link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
       date_added: 2023-10-27
       date_started: 2023-12-25
@@ -205,26 +220,26 @@
       cover: https://cdn.utf9k.net/books/networks-of-new-york.jpg
       cover_height: 1903
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9781612195421
+      asin: 1612195423
       link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
       date_added: 2020-12-24
-      date_started: null
+      date_started: 2024-02-02
       date_finished: 2024-02-03
       recommended: true
       progress: 100
 
-    - title: Silent Hill 2
+    - title: サイレントヒル2 (Silent Hill 2)
       subtitle: The Novel
       author: Sadamu Yamashita
       cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
       cover_height: 1000
       cover_width: 667
-      isbn13: null
-      asin: null
+      isbn13: 9784861558320
+      asin: 4861558328
       link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
-      date_added: null
-      date_started: null
+      date_added: 2024-01-21
+      date_started: 2024-01-21
       date_finished: 2024-02-02 
       recommended: false
       progress: 100
@@ -235,8 +250,8 @@
       cover: https://cdn.utf9k.net/books/the-shallows.jpg
       cover_height: 1799
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9780393339758
+      asin: 0393339750
       link: https://openlibrary.org/works/OL15297392W/The_Shallows
       date_added: 2022-08-03
       date_started: 2023-12-26
@@ -249,11 +264,11 @@
       cover: https://cdn.utf9k.net/books/creative-doing.jpg
       cover_height: 888
       cover_width: 584
-      isbn13: null
-      asin: null
+      isbn13: 9781952120428
+      asin: 195212042X
       link: https://openlibrary.org/works/OL37513885W/Creative_Doing_75_Practical_Exercises_to_Unblock_Your_Creative_Potential_in_Your_Work_Hobby_or_Next_
-      date_added: 2023-12-12
-      date_started: null
+      date_added: 2023-12-10
+      date_started: 2023-12-10
       date_finished: 2024-01-09
       recommended: false
       progress: 100
@@ -263,11 +278,11 @@
       cover: https://cdn.utf9k.net/books/digital-zettelkasten.jpg
       cover_height: 1360
       cover_width: 850
-      isbn13: null
-      asin: null
+      isbn13: 9780578928098
+      asin: 0578928094
       link: https://openlibrary.org/works/OL24703365W/Digital_Zettelkasten
       date_added: 2023-12-28
-      date_started: null
+      date_started: 2023-12-18
       date_finished: 2024-01-04
       recommended: false
       progress: 100
@@ -278,11 +293,11 @@
       cover: https://cdn.utf9k.net/books/what-the-ceo-wants-you-to-know.jpg
       cover_height: 2340
       cover_width: 1527
-      isbn13: null
-      asin: null
+      isbn13: 9780553417791
+      asin: B01MR1TTS4
       link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
-      date_added: 2023-12-06
-      date_started: null
+      date_added: 2023-06-11
+      date_started: 2023-06-13
       date_finished: 2024-01-03
       recommended: false
       progress: 100
@@ -293,11 +308,11 @@
       cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
       cover_height: 1377
       cover_width: 1050
-      isbn13: null
-      asin: null
+      isbn13: 9781449344764
+      asin: 1449344763
       link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
       date_added: 2022-10-01
-      date_started: null
+      date_started: 2023-08-08
       date_finished: 2024-01-03
       recommended: false
       progress: 100
@@ -311,8 +326,8 @@
       cover: https://cdn.utf9k.net/books/blood-sweat-and-pixels.jpg
       cover_height: 1808
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9780062651242
+      asin: B01NAKSWW1
       link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
       date_added: 2018-01-14
       date_started: 2023-10-22
@@ -326,8 +341,8 @@
       cover: https://cdn.utf9k.net/books/walking-your-blues-away.jpg
       cover_height: 2700
       cover_width: 1800
-      isbn13: null
-      asin: null
+      isbn13: 9781594771446
+      asin: 1594771448
       link: https://openlibrary.org/works/OL554786W/Walking_Your_Blues_Away
       date_added: 2023-10-27
       date_started: 2023-12-06
@@ -341,8 +356,8 @@
       cover: https://cdn.utf9k.net/books/taxtopia.jpg
       cover_height: 2835
       cover_width: 1878
-      isbn13: null
-      asin: null
+      isbn13: 9781800960879
+      asin: 1800960875
       link: https://openlibrary.org/works/OL28024085W/Taxtopia
       date_added: 2023-10-27
       date_started: 2023-10-27
@@ -356,11 +371,11 @@
       cover: https://cdn.utf9k.net/books/the-para-method.jpg
       cover_height: 2070
       cover_width: 1538
-      isbn13: null
-      asin: null
+      isbn13: 9781800819542
+      asin: 1800819544
       link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
-      date_added: null
-      date_started: null
+      date_added: 2023-08-28
+      date_started: 2023-08-28
       date_finished: 2023-08-30
       recommended: false
       progress: 100
@@ -371,12 +386,27 @@
       cover: https://cdn.utf9k.net/books/hanging-out.jpg
       cover_height: 1240
       cover_width: 797
-      isbn13: null
-      asin: null
+      isbn13: 9781760644727
+      asin: 1760644722
       link: https://openlibrary.org/works/OL27939130W/Hanging_Out
       date_added: 2023-04-07
-      date_started: null
+      date_started: 2023-05-29
       date_finished: 2023-06-06
+      recommended: false
+      progress: 100
+    
+    - title: How to Make Coffee
+      subtitle: The Science Behind the Bean
+      author: Lani Kingston
+      cover: https://cdn.utf9k.net/books/how-to-make-coffee.jpg
+      cover_height: 1012
+      cover_width: 704
+      isbn13: 9781419715846
+      asin: 1419715844
+      link: https://www.goodreads.com/book/show/23167750-how-to-make-coffee
+      date_added: 2022-10-05
+      date_started: 2022-10-05
+      date_finished: 2023-03-29
       recommended: false
       progress: 100
 
@@ -386,8 +416,8 @@
       cover: https://cdn.utf9k.net/books/like-comment-subscribe.jpg
       cover_height: 1812
       cover_width: 1200
-      isbn13: null
-      asin: null
+      isbn13: 9780241468289
+      asin: 0241468280
       link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
       date_added: null
       date_started: null
@@ -404,8 +434,8 @@
       cover: https://cdn.utf9k.net/books/build.jpg
       cover_height: 2560
       cover_width: 1600
-      isbn13: null
-      asin: null
+      isbn13: 9781787634114
+      asin: 1787634116
       link: https://openlibrary.org/works/OL27739453W/Build
       date_added: 2022-05-15
       date_started: null
@@ -419,8 +449,8 @@
       cover: https://cdn.utf9k.net/books/high-output-management.jpg
       cover_height: 2411
       cover_width: 1563
-      isbn13: null
-      asin: null
+      isbn13: 9780679762881
+      asin: 0679762884
       link: https://openlibrary.org/works/OL2355834W/High_Output_Management
       date_added: 2020-09-05
       date_started: null
@@ -434,8 +464,8 @@
       cover: https://cdn.utf9k.net/books/building-a-second-brain.jpg
       cover_height: 2555
       cover_width: 1610
-      isbn13: null
-      asin: null
+      isbn13: 9781800812215
+      asin: 1800812213
       link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
       date_added: 2022-09-20
       date_started: null
@@ -449,8 +479,8 @@
       cover: https://cdn.utf9k.net/books/slow-horses.jpg
       cover_height: 2337
       cover_width: 1525
-      isbn13: null
-      asin: null
+      isbn13: 9781641292979
+      asin: 1641292970
       link: https://openlibrary.org/works/OL18630860W
       date_added: 2022-09-20
       date_started: null
@@ -464,8 +494,8 @@
       cover: https://cdn.utf9k.net/books/ruined-by-design.jpg
       cover_height: 2582
       cover_width: 1686
-      isbn13: null
-      asin: null
+      isbn13: 9781090532084
+      asin: 1090532083
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
       date_added: 2021-02-25
       date_started: null
@@ -482,8 +512,8 @@
       cover: https://cdn.utf9k.net/books/four-thousand-weeks.jpg
       cover_height: 2475
       cover_width: 1612
-      isbn13: null
-      asin: null
+      isbn13: 9780374159122
+      asin: 0374159122
       link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
       date_added: 2021-08-14
       date_started: null
@@ -527,8 +557,8 @@
       cover: https://cdn.utf9k.net/books/resilient-management.jpg
       cover_height: 3165
       cover_width: 2048
-      isbn13: null
-      asin: null
+      isbn13: 9781937557829
+      asin: 1937557820
       link: https://openlibrary.org/works/OL20750525W/Resilient_Management
       date_added: 2021-06-10
       date_started: 2021-06-10
@@ -587,8 +617,8 @@
       cover: https://cdn.utf9k.net/books/in-the-beginning-was-the-command-line.jpg
       cover_height: 1853
       cover_width: 1200
-      isbn13: null
-      asin: B0DTRLCN3R
+      isbn13: 9780380815937
+      asin: 0380815931
       link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
       date_added: 2020-07-09
       date_started: 2021-01-01
@@ -704,21 +734,6 @@
       recommended: false
       progress: 100
 
-    - title: As We May Think
-      subtitle: null
-      author: Vannevar Bush
-      cover: https://cdn.utf9k.net/books/as-we-may-think.jpg
-      cover_height: 4032
-      cover_width: 3024
-      isbn13: null
-      asin: B0DTT7FXNY
-      link: https://openlibrary.org/works/OL5098582W/As_We_May_Think
-      date_added: 2020-08-19
-      date_started: 2020-09-30
-      date_finished: 2020-09-30
-      recommended: true
-      progress: 100
-
     - title: Talking to My Daughter About the Economy
       subtitle: or, How Capitalism Works - and How It Fails
       author: Yanis Varoufakis
@@ -830,8 +845,8 @@
       cover: https://cdn.utf9k.net/books/atomic-habits.jpg
       cover_height: 2765
       cover_width: 1807
-      isbn13: null
-      asin: B07D23CFGR
+      isbn13: 9781847941848
+      asin: 1847941842
       link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
       date_added: 2020-07-17
       date_started: null
@@ -905,8 +920,8 @@
       cover: https://cdn.utf9k.net/books/dirty-politics.jpg
       cover_height: 1442
       cover_width: 1000
-      isbn13: null
-      asin: B0DT1G9HQS
+      isbn13: 9781927213360
+      asin: 1927213363
       link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
       date_added: 2020-02-07
       date_started: 2020-02-07
@@ -1215,7 +1230,7 @@
     #   asin: 0300078153
     #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
     #   date_added: 2018-01-14
-    #   date_started: null
+    #   date_started: 2024-01-26
     #   date_finished: null
     #   recommended: false
     #   progress: 11
@@ -1227,8 +1242,8 @@
     #   cover_height: 2775
     #   cover_width: 2213
     #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_added: null
-    #   date_started: null
+    #   date_added: 2022-12-17
+    #   date_started: 2022-12-17
     #   date_finished: null
     #   recommended: false
     #   progress: 45
@@ -1240,8 +1255,8 @@
     #   cover_height: 1804
     #   cover_width: 1200
     #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_added: null
-    #   date_started: null
+    #   date_added: 2023-01-14
+    #   date_started: 2023-01-15
     #   date_finished: null
     #   recommended: false
     #   progress: 24
@@ -1253,8 +1268,8 @@
     #   cover_height: 5000
     #   cover_width: 3249
     #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
-    #   date_added: null
-    #   date_started: null
+    #   date_added: 2024-03-29
+    #   date_started: 2024-03-29
     #   date_finished: null
     #   recommended: false
     #   progress: 23
@@ -1267,7 +1282,7 @@
     #   cover_width: 1265
     #   link: https://en.wikipedia.org/wiki/The_Power_Broker
     #   date_added: 2023-06-11
-    #   date_started: null
+    #   date_started: 2024-02-27
     #   date_finished: null
     #   recommended: false
     #   progress: 1
@@ -1293,7 +1308,7 @@
     #   cover_width: 975
     #   link: https://openlibrary.org/works/OL28158768W/Unscripted
     #   date_added: 2023-04-18
-    #   date_started: null
+    #   date_started: 2023-08-18
     #   date_finished: null
     #   recommended: false
     #   progress: 32
