@@ -675,7 +675,7 @@
       progress: 100
 
     - title: Naked Pictures of Famous People
-      subtitle: null
+      subtitle: Another Example of Blatantly False Advertising
       author: Jon Stewart
       cover: https://cdn.utf9k.net/books/naked-pictures-of-famous-people.jpg
       cover_height: 1200
@@ -978,7 +978,7 @@
   goal: null
   books:
     - title: The Unicorn Project
-      subtitle: null
+      subtitle: A Novel about Developers, Digital Disruption, and Thriving in the Age of Data
       author: Gene Kim
       cover: https://cdn.utf9k.net/books/the-unicorn-project.jpg
       cover_height: 2560
