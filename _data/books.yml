@@ -325,7 +325,11 @@
       cover: https://cdn.utf9k.net/books/building-a-second-brain.jpg
       cover_height: 2555
       cover_width: 1610
+      isbn13: null
+      asin: null
       link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
+      date_added: null
+      date_started: null
       date_finished: 2022-09-20
       recommended: false
       progress: 100
@@ -336,7 +340,11 @@
       cover: https://cdn.utf9k.net/books/slow-horses.jpg
       cover_height: 2337
       cover_width: 1525
+      isbn13: null
+      asin: null
       link: https://openlibrary.org/works/OL18630860W
+      date_added: null
+      date_started: null
       date_finished: 2022-09-18
       recommended: true
       progress: 100
@@ -347,7 +355,11 @@
       cover: https://cdn.utf9k.net/books/ruined-by-design.jpg
       cover_height: 2582
       cover_width: 1686
+      isbn13: null
+      asin: null
       link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
+      date_added: null
+      date_started: null
       date_finished: 2022-02-24
       recommended: false
       progress: 100
@@ -361,7 +373,11 @@
       cover: https://cdn.utf9k.net/books/four-thousand-weeks.jpg
       cover_height: 2475
       cover_width: 1612
+      isbn13: null
+      asin: null
       link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
+      date_added: null
+      date_started: null
       date_finished: 2021-11-06
       recommended: true
       progress: 100
@@ -402,7 +418,11 @@
       cover: https://cdn.utf9k.net/books/resilient-management.jpg
       cover_height: 3165
       cover_width: 2048
+      isbn13: null
+      asin: null
       link: https://openlibrary.org/works/OL20750525W/Resilient_Management
+      date_added: 2021-06-10
+      date_started: 2021-06-10
       date_finished: 2021-07-19
       recommended: false
       progress: 100
@@ -432,7 +452,7 @@
       asin: 0990976327
       link: https://openlibrary.org/works/OL17709914W/Little_Rice
       date_added: 2021-01-09
-      date_started: null
+      date_started: 2021-04-24
       date_finished: 2021-05-05
       recommended: false
       progress: 100
@@ -866,14 +886,14 @@
 - list: 2018
   goal: null
   books:
-    - title: How To Win Friends And Influence People
+    - title: How To Win Friends and Influence People
       subtitle: null
       author: Dale Carnegie
       cover: https://cdn.utf9k.net/books/how-to-win-friends-and-influence-people.jpg
       cover_height: 2473
       cover_width: 1585
-      isbn13: 9788026871521
-      asin: B01N2QGMOU
+      isbn13: 9780671027032
+      asin: B00D5ATO1S
       link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
       date_added: 2018-07-01
       date_started: 2018-07-01
@@ -953,20 +973,6 @@
       date_added: 2018-02-28
       date_started: null
       date_finished: 2018-02-28
-      recommended: false
-      progress: 100
-
-    - title: 20 Python Libraries You Aren't Using
-      subtitle: null
-      author: Caleb Hattingh
-      cover: https://cdn.utf9k.net/books/20-python-libraries-you-arent-using.jpg
-      cover_height: 0
-      cover_width: 0
-      isbn13: 9781491967928
-      asin: 1491967927
-      link: https://www.goodreads.com/book/show/32051366-20-python-libraries-you-aren-t-using
-      date_started: null
-      date_finished: 2018-02-26
       recommended: false
       progress: 100
 
