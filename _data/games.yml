@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 1128
+    title: 'Castlevania: Symphony of the Night'
+    link: https://www.backloggd.com/games/castlevania-symphony-of-the-night/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co53m8.jpg
+      width: 720
+      height: 540
   - id: 3042
     title: Dying Light
     link: https://www.backloggd.com/games/dying-light/
