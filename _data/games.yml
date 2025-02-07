@@ -23,6 +23,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 18055
+    title: Breath of Fire III
+    link: https://www.backloggd.com/games/breath-of-fire-iii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8zmx.jpg
+      width: 720
+      height: 540
   - id: 306137
     title: 'Mario & Luigi: Brothership'
     link: https://www.backloggd.com/games/mario-and-luigi-brothership/
