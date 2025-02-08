@@ -2,6 +2,7 @@
 category: questions
 description: In which I remind myself how to connect to Selenium using Python
 lastmod: 2021-09-10
+lastrev: 2025-02-08
 slug: selenium-remote-connection
 tags:
   - python

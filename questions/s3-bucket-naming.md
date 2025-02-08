@@ -2,6 +2,7 @@
 category: questions
 description: In which you can seize a cool namespace
 lastmod: 2024-01-01
+lastrev: 2025-02-08
 slug: s3-bucket-naming
 tags:
   - aws
