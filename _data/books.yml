@@ -1275,6 +1275,8 @@
       cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
       cover_height: 2775
       cover_width: 2213
+      isbn13: 9781617299599
+      asin: 1617299596
       link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
       date_added: 2022-12-17
       date_started: 2022-12-17
@@ -1288,6 +1290,8 @@
       cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
       cover_height: 1804
       cover_width: 1200
+      isbn13: 9783950307825
+      asin: 3950307826
       link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
       date_added: 2023-01-14
       date_started: 2023-01-15
@@ -1301,6 +1305,8 @@
       cover: https://cdn.utf9k.net/books/going-infinite.jpg
       cover_height: 5000
       cover_width: 3249
+      isbn13: 9781324074335
+      asin: 1324074337
       link: https://www.penguin.co.nz/books/going-infinite-9780241651117
       date_added: 2024-03-29
       date_started: 2024-03-29
@@ -1314,6 +1320,8 @@
       cover: https://cdn.utf9k.net/books/the-power-broker.jpg
       cover_height: 1922
       cover_width: 1265
+      isbn13: 9780394720241
+      asin: 0394720245
       link: https://en.wikipedia.org/wiki/The_Power_Broker
       date_added: 2023-06-11
       date_started: 2024-02-27
@@ -1322,11 +1330,13 @@
       progress: 1
 
     - title: Wrong Way
-      subtitle: How Privatisation & Economic Reform Backfired
+      subtitle: How Privatisation and Economic Reform Backfired
       author: Damien Cahill and Phillip Toner
       cover: https://cdn.utf9k.net/books/wrong-way.jpg
       cover_height: 1124
       cover_width: 735
+      isbn13: 9781760640385
+      asin: 1760640387
       link: https://openlibrary.org/works/OL29300070W/Wrong_Way
       date_added: 2020-08-07
       date_started: 2022-11-12
@@ -1340,6 +1350,8 @@
       cover: https://cdn.utf9k.net/books/unscripted.jpg
       cover_height: 1498
       cover_width: 975
+      isbn13: 9781984879424
+      asin: 1984879421
       link: https://openlibrary.org/works/OL28158768W/Unscripted
       date_added: 2023-04-18
       date_started: 2023-08-18
