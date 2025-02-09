@@ -4,3 +4,4 @@ _scripts/venv
 .DS_Store
 _site
 scripts/venv
+books.csv
