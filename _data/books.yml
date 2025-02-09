@@ -1,6 +1,21 @@
 - list: 2025
   goal: 18
   books:
+    - title: The Future of Classification
+      subtitle: null
+      author: Rita Marcella and Arthur Maltby
+      cover: https://cdn.utf9k.net/books/the-future-of-classification.jpg
+      cover_height: 1000
+      cover_width: 664
+      isbn13: 9780815346593
+      asin: null
+      link: https://www.routledge.com/The-Future-of-Classification/Marcella-Maltby/p/book/9780815346593
+      date_added: 2025-02-09
+      date_started: 2025-02-09
+      date_finished: null
+      recommended: false
+      progress: 5
+
     - title: Designing Data-Intensive Applications
       subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
       author: Martin Kleppman
@@ -1237,125 +1252,127 @@
       recommended: false
       progress: 100
 
-    # - title: Seeing Like a State
-    #   subtitle: How Certain Schemes to Improve the Human Condition Have Failed
-    #   author: James C. Scott
-    #   cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
-    #   cover_height: 1245
-    #   cover_width: 800
-    #   isbn13: 9780300078152
-    #   asin: 0300078153
-    #   link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
-    #   date_added: 2018-01-14
-    #   date_started: 2024-01-26
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 11
+- list: Stalled
+  books:
+    - title: Seeing Like a State
+      subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+      author: James C. Scott
+      cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
+      cover_height: 1245
+      cover_width: 800
+      isbn13: 9780300078152
+      asin: 0300078153
+      link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+      date_added: 2018-01-14
+      date_started: 2024-01-26
+      date_finished: null
+      recommended: false
+      progress: 11
 
-    # - title: 100 Go Mistakes and How to Avoid Them
-    #   subtitle: null
-    #   author: Teiva Harsanyi
-    #   cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
-    #   cover_height: 2775
-    #   cover_width: 2213
-    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_added: 2022-12-17
-    #   date_started: 2022-12-17
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 45
+    - title: 100 Go Mistakes and How to Avoid Them
+      subtitle: null
+      author: Teiva Harsanyi
+      cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+      cover_height: 2775
+      cover_width: 2213
+      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+      date_added: 2022-12-17
+      date_started: 2022-12-17
+      date_finished: null
+      recommended: false
+      progress: 45
 
-    # - title: SQL Performance Explained
-    #   subtitle: Everything Developers Need To Know About SQL Performance
-    #   author: Markus Winand
-    #   cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
-    #   cover_height: 1804
-    #   cover_width: 1200
-    #   link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
-    #   date_added: 2023-01-14
-    #   date_started: 2023-01-15
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 24
+    - title: SQL Performance Explained
+      subtitle: Everything Developers Need To Know About SQL Performance
+      author: Markus Winand
+      cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+      cover_height: 1804
+      cover_width: 1200
+      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+      date_added: 2023-01-14
+      date_started: 2023-01-15
+      date_finished: null
+      recommended: false
+      progress: 24
 
-    # - title: Going Infinite
-    #   subtitle: The Rise and Fall of a New Tycoon
-    #   author: Michael Lewis
-    #   cover: https://cdn.utf9k.net/books/going-infinite.jpg
-    #   cover_height: 5000
-    #   cover_width: 3249
-    #   link: https://www.penguin.co.nz/books/going-infinite-9780241651117
-    #   date_added: 2024-03-29
-    #   date_started: 2024-03-29
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 23
+    - title: Going Infinite
+      subtitle: The Rise and Fall of a New Tycoon
+      author: Michael Lewis
+      cover: https://cdn.utf9k.net/books/going-infinite.jpg
+      cover_height: 5000
+      cover_width: 3249
+      link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+      date_added: 2024-03-29
+      date_started: 2024-03-29
+      date_finished: null
+      recommended: false
+      progress: 23
 
-    # - title: The Power Broker
-    #   subtitle: Robert Moses and the Fall of New York
-    #   author: Robert Caro
-    #   cover: https://cdn.utf9k.net/books/the-power-broker.jpg
-    #   cover_height: 1922
-    #   cover_width: 1265
-    #   link: https://en.wikipedia.org/wiki/The_Power_Broker
-    #   date_added: 2023-06-11
-    #   date_started: 2024-02-27
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 1
+    - title: The Power Broker
+      subtitle: Robert Moses and the Fall of New York
+      author: Robert Caro
+      cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+      cover_height: 1922
+      cover_width: 1265
+      link: https://en.wikipedia.org/wiki/The_Power_Broker
+      date_added: 2023-06-11
+      date_started: 2024-02-27
+      date_finished: null
+      recommended: false
+      progress: 1
 
-    # - title: Wrong Way
-    #   subtitle: How Privatisation & Economic Reform Backfired
-    #   author: Damien Cahill and Phillip Toner
-    #   cover: https://cdn.utf9k.net/books/wrong-way.jpg
-    #   cover_height: 1124
-    #   cover_width: 735
-    #   link: https://openlibrary.org/works/OL29300070W/Wrong_Way
-    #   date_added: 2020-08-07
-    #   date_started: 2022-11-12
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 44
+    - title: Wrong Way
+      subtitle: How Privatisation & Economic Reform Backfired
+      author: Damien Cahill and Phillip Toner
+      cover: https://cdn.utf9k.net/books/wrong-way.jpg
+      cover_height: 1124
+      cover_width: 735
+      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+      date_added: 2020-08-07
+      date_started: 2022-11-12
+      date_finished: null
+      recommended: false
+      progress: 44
 
-    # - title: Unscripted
-    #   subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
-    #   author: James B. Stewart and Rachel Abrams
-    #   cover: https://cdn.utf9k.net/books/unscripted.jpg
-    #   cover_height: 1498
-    #   cover_width: 975
-    #   link: https://openlibrary.org/works/OL28158768W/Unscripted
-    #   date_added: 2023-04-18
-    #   date_started: 2023-08-18
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 32
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_added: 2023-04-18
+      date_started: 2023-08-18
+      date_finished: null
+      recommended: false
+      progress: 32
 
-    # - title: The 99% Invisible City
-    #   subtitle: A Field Guide to the Hidden World of Everyday Design
-    #   author: Roman Mars
-    #   cover: https://cdn.utf9k.net/books/the-99-percent-invisible-city.jpg
-    #   cover_height: 0
-    #   cover_width: 0
-    #   isbn13: 9781529355307
-    #   asin: B084D9ZCP6
-    #   link: https://www.goodreads.com/book/show/54869549-the-99-invisible-city
-    #   date_added: 2020-10-24
-    #   date_started: 2020-10-24
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 5
+    - title: The 99% Invisible City
+      subtitle: A Field Guide to the Hidden World of Everyday Design
+      author: Roman Mars
+      cover: https://cdn.utf9k.net/books/the-99-percent-invisible-city.jpg
+      cover_height: 2700
+      cover_width: 2100
+      isbn13: 9781529355307
+      asin: B084D9ZCP6
+      link: https://www.goodreads.com/book/show/54869549-the-99-invisible-city
+      date_added: 2020-10-24
+      date_started: 2020-10-24
+      date_finished: null
+      recommended: false
+      progress: 5
 
-    # - title: Original Copies
-    #   subtitle: Architectural Mimicry in Contemporary China
-    #   author: Bianca Bosker
-    #   cover:
-    #   cover_height:
-    #   cover_width:
-    #   isbn13: 9780824836061
-    #   asin: 0824836065
-    #   link: https://www.goodreads.com/book/show/15938487-original-copies
-    #   date_added: 2020-12-04
-    #   date_started: 2020-12-04
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 5
+    - title: Original Copies
+      subtitle: Architectural Mimicry in Contemporary China
+      author: Bianca Bosker
+      cover: https://cdn.utf9k.net/books/original-copies.jpg
+      cover_height: 1000
+      cover_width: 798
+      isbn13: 9780824836061
+      asin: 0824836065
+      link: https://www.goodreads.com/book/show/15938487-original-copies
+      date_added: 2020-12-04
+      date_started: 2020-12-04
+      date_finished: null
+      recommended: false
+      progress: 5
