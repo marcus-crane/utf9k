@@ -2,6 +2,7 @@
 category: questions
 description: In which I capture a bit of history around domain splits
 lastmod: 2021-06-25
+lastrev: 2025-02-12
 slug: http-domain-splits
 tags:
   - cookies
