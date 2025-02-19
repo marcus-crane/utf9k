@@ -45,6 +45,21 @@
       date_finished: null
       recommended: false
       progress: 19
+    
+    - title: Tidy First?
+      subtitle: A Personal Exercise in Empirical Software Design
+      author: Kent Back
+      cover: https://cdn.utf9k.net/books/tidy-first.jpg
+      cover_height: 1826
+      cover_width: 1400
+      isbn13: 9781098151249
+      asin: 1098151240
+      link: https://hardcover.app/books/tidy-first
+      date_added: 2024-08-15
+      date_started: 2024-12-18
+      date_finished: 2025-02-18
+      recommended: false
+      progress: 100
 
     - title: Amusing Ourselves to Death
       subtitle: Public Discourse in the Age of Show Business

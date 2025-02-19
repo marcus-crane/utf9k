@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 4097
+    title: Tomba!
+    link: https://www.backloggd.com/games/tomba/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co55st.jpg
+      width: 720
+      height: 540
   - id: 1128
     title: 'Castlevania: Symphony of the Night'
     link: https://www.backloggd.com/games/castlevania-symphony-of-the-night/
@@ -12,13 +19,6 @@
     link: https://www.backloggd.com/games/dying-light/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
-      width: 720
-      height: 540
-  - id: 386
-    title: Final Fantasy XIV Online
-    link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -2269,7 +2269,7 @@
     title: 'Hotel Dusk: Room 215'
     link: https://www.backloggd.com/games/hotel-dusk-room-215/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2xf0.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9f5i.jpg
       width: 720
       height: 540
   - id: 1518
