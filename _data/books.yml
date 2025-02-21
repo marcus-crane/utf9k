@@ -1,6 +1,21 @@
 - list: 2025
   goal: 18
   books:
+    - title: The Three-Body Problem
+      subtitle: null
+      author: Liu Cixin
+      cover: https://cdn.utf9k.net/books/the-three-body-problem.jpg
+      cover_height: 1334
+      cover_width: 2048
+      isbn13: 9781800249172
+      asin: 1800249179
+      link: https://hardcover.app/books/the-three-body-problem
+      date_added: 2025-02-19
+      date_started: 2025-02-21
+      date_finished: null
+      recommended: false
+      progress: 15
+
     - title: The Future of Classification
       subtitle: null
       author: Rita Marcella and Arthur Maltby
