@@ -2,6 +2,7 @@
 category: questions
 description: In which I remind myself how to configure macOS networks via the terminal
 lastmod: 2021-06-24
+lastrev: 2025-02-22
 slug: macos-configured-networks
 tags:
   - macos
