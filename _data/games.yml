@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 625
+    title: 'Call of Duty: World at War'
+    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
+      width: 720
+      height: 540
   - id: 4097
     title: Tomba!
     link: https://www.backloggd.com/games/tomba/
