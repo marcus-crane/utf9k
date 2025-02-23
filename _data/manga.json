@@ -36,40 +36,16 @@
     "url": "https://anilist.co/manga/86508"
   },
   {
-    "author": "Jiro Matsumoto",
-    "chapters": 84,
-    "color": null,
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31131-xZFKnHNqyvGP.jpg",
-    "cover_height": 654,
-    "cover_width": 460,
-    "progress": 13,
-    "status": "FINISHED",
-    "title": "Freesia",
-    "url": "https://anilist.co/manga/31131"
-  },
-  {
     "author": "Yuto Sano",
     "chapters": null,
     "color": "#d69378",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx150378-cClKErwmvgsv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 11,
+    "progress": 24,
     "status": "RELEASING",
     "title": "Gokurakugai",
     "url": "https://anilist.co/manga/150378"
-  },
-  {
-    "author": "Kouki Ishikawa",
-    "chapters": 18,
-    "color": "#0da1e4",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx181892-kjIYDHshNHUb.jpg",
-    "cover_height": 724,
-    "cover_width": 460,
-    "progress": 3,
-    "status": "FINISHED",
-    "title": "Hakutaku",
-    "url": "https://anilist.co/manga/181892"
   },
   {
     "author": "Hirohiko Araki",
@@ -108,18 +84,6 @@
     "url": "https://anilist.co/manga/86551"
   },
   {
-    "author": "Kouta Kawae",
-    "chapters": null,
-    "color": "#e4ae93",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx163497-HNrC3KDTVxW5.jpg",
-    "cover_height": 724,
-    "cover_width": 460,
-    "progress": 40,
-    "status": "RELEASING",
-    "title": "Nue no Onmyouji",
-    "url": "https://anilist.co/manga/163497"
-  },
-  {
     "author": "Eiichirou Oda",
     "chapters": null,
     "color": "#f1935d",
@@ -142,30 +106,6 @@
     "status": "RELEASING",
     "title": "One Punch-Man",
     "url": "https://anilist.co/manga/74347"
-  },
-  {
-    "author": "Ryou Takamisaki",
-    "chapters": 74,
-    "color": "#fed650",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30761-wHRkZauDhLNV.png",
-    "cover_height": 716,
-    "cover_width": 460,
-    "progress": 2,
-    "status": "FINISHED",
-    "title": "Rockman.EXE",
-    "url": "https://anilist.co/manga/30761"
-  },
-  {
-    "author": "Tatsuya Endou",
-    "chapters": null,
-    "color": "#e43543",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx108556-NHjkz0BNJhLx.jpg",
-    "cover_height": 723,
-    "cover_width": 460,
-    "progress": 83,
-    "status": "RELEASING",
-    "title": "SPY\u00d7FAMILY",
-    "url": "https://anilist.co/manga/108556"
   },
   {
     "author": "Masakazu Ishiguro",
