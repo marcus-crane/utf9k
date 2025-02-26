@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 625
-    title: 'Call of Duty: World at War'
-    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
+  - id: 9597
+    title: 'Solatorobo: Red the Hunter'
+    link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hqa.jpg
       width: 720
       height: 540
   - id: 4097
@@ -12,20 +12,6 @@
     link: https://www.backloggd.com/games/tomba/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co55st.jpg
-      width: 720
-      height: 540
-  - id: 1128
-    title: 'Castlevania: Symphony of the Night'
-    link: https://www.backloggd.com/games/castlevania-symphony-of-the-night/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co53m8.jpg
-      width: 720
-      height: 540
-  - id: 3042
-    title: Dying Light
-    link: https://www.backloggd.com/games/dying-light/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
       width: 720
       height: 540
 - list: Backlog
