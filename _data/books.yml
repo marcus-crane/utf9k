@@ -12,9 +12,9 @@
       link: https://hardcover.app/books/the-three-body-problem
       date_added: 2025-02-19
       date_started: 2025-02-21
-      date_finished: null
-      recommended: false
-      progress: 43
+      date_finished: 2025-03-06
+      recommended: true
+      progress: 100
 
     - title: The Future of Classification
       subtitle: null
