@@ -11,6 +11,7 @@ jsonLd:
   "@type": WebSite
   url: /
   name: utf9k
+  description: =description
   author:
     "@type": Person
     name: Marcus Crane
