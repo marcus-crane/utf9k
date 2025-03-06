@@ -1,20 +1,6 @@
 - list: 2025
   goal: 18
   books:
-    - title: The Three-Body Problem
-      subtitle: null
-      author: Liu Cixin
-      cover: https://cdn.utf9k.net/books/the-three-body-problem.jpg
-      cover_height: 1334
-      cover_width: 2048
-      isbn13: 9781800249172
-      asin: 1800249179
-      link: https://hardcover.app/books/the-three-body-problem
-      date_added: 2025-02-19
-      date_started: 2025-02-21
-      date_finished: 2025-03-06
-      recommended: true
-      progress: 100
 
     - title: The Future of Classification
       subtitle: null
@@ -30,21 +16,20 @@
       date_finished: null
       recommended: false
       progress: 5
-
-    - title: Designing Data-Intensive Applications
-      subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
-      author: Martin Kleppman
-      cover: https://cdn.utf9k.net/books/designing-data-intensive-applications.jpg
-      cover_height: 1575
-      cover_width: 1200
-      isbn13: 9781449373320
-      asin: 1449373321
-      link: https://dataintensive.net
-      date_added: null
-      date_started: 2022-07-05
+    
+    - title: How To Be Wrong
+      subtitle: A crash course in startup success
+      author: Rowan Simpson
+      cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
+      cover_height: 2657
+      cover_width: 1885
+      isbn13: 9780473729967
+      asin: null
+      date_added: 2025-03-06
+      date_started: 2025-03-06
       date_finished: null
       recommended: false
-      progress: 14
+      progress: 4
 
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
@@ -60,6 +45,21 @@
       date_finished: null
       recommended: false
       progress: 19
+
+    - title: The Three-Body Problem
+      subtitle: null
+      author: Liu Cixin
+      cover: https://cdn.utf9k.net/books/the-three-body-problem.jpg
+      cover_height: 1334
+      cover_width: 2048
+      isbn13: 9781800249172
+      asin: 1800249179
+      link: https://hardcover.app/books/the-three-body-problem
+      date_added: 2025-02-19
+      date_started: 2025-02-21
+      date_finished: 2025-03-06
+      recommended: true
+      progress: 100
     
     - title: Tidy First?
       subtitle: A Personal Exercise in Empirical Software Design
@@ -1284,6 +1284,21 @@
 
 - list: Stalled
   books:
+    - title: Designing Data-Intensive Applications
+      subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+      author: Martin Kleppman
+      cover: https://cdn.utf9k.net/books/designing-data-intensive-applications.jpg
+      cover_height: 1575
+      cover_width: 1200
+      isbn13: 9781449373320
+      asin: 1449373321
+      link: https://dataintensive.net
+      date_added: null
+      date_started: 2022-07-05
+      date_finished: null
+      recommended: false
+      progress: 14
+
     - title: Seeing Like a State
       subtitle: How Certain Schemes to Improve the Human Condition Have Failed
       author: James C. Scott
