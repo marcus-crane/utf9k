@@ -11,6 +11,7 @@ import remark from "lume/plugins/remark.ts";
 import postcss from "lume/plugins/postcss.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import checkUrls from "lume/plugins/check_urls.ts";
+import jsonLd from "lume/plugins/json_ld.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -112,6 +113,7 @@ site.use(postcss())
 site.use(checkUrls())
 site.use(sitemap()) // Finds existing robots.txt and inserts sitemap
 site.use(ci());
+site.use(jsonLd());
 
 if (mode === "build") {
     site.use(cache_busting())
