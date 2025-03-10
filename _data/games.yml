@@ -1,17 +1,17 @@
 - list: Playing
   games:
+  - id: 6770
+    title: Fantasy Life
+    link: https://www.backloggd.com/games/fantasy-life/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2haw.jpg
+      width: 720
+      height: 540
   - id: 9597
     title: 'Solatorobo: Red the Hunter'
     link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2hqa.jpg
-      width: 720
-      height: 540
-  - id: 4097
-    title: Tomba!
-    link: https://www.backloggd.com/games/tomba/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co55st.jpg
       width: 720
       height: 540
 - list: Backlog
