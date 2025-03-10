@@ -4,6 +4,7 @@ aliases:
 category: questions
 description: In which I remind myself how PS1 discs offset their contents
 lastmod: 2021-06-24
+lastrev: 2025-03-10
 slug: ps1-disc-offset
 tags:
   - hexedit
