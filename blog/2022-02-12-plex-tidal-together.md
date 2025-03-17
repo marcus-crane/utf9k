@@ -12,8 +12,16 @@ tags:
   - tidal
 title: Plex + Tidal = A Nice Match
 ---
-> [!info] 🖼 Look at this photograph
+
+> [!caution] 🪦 This post describes a now-dead integration
+> For anyone discovering this post in the present day, unfortunately the [integration
+> between Plex and Tidal](https://forums.plex.tv/t/tidal-integration-with-plex-ending-october-28-2024/885728) no longer exists.
 >
+> To be clear, it was pulled on Tidal's end with Plex only been given enough time
+> to wrap up service on their end. Plexamp still continues to be a great player
+> for local music however.
+
+> [!info] 🖼 Look at this photograph
 > Due to the nature of this post, it's pretty image heavy.
 >
 > Not all of the images are legible if you look at them inline so just a heads up that you can click on an image to view the full thing.

@@ -550,7 +550,9 @@ main ol > li:before,
 main ul > h2,
 main ol > h2,
 #post-body ul > h2,
-#post-body > ol > h2 {
+#post-body > ol > h2,
+.grid-list > h2,
+.grid-list > header > h2 {
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 1em;
@@ -669,6 +671,10 @@ ul li.question span {
 }
 
 /* Grid lists */
+#post-body .grid-list {
+  margin-bottom: 2em;
+}
+
 #post-body .grid-list ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

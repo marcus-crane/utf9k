@@ -3,7 +3,7 @@
 <head>
   {{ include "partials/head.vto" }}
 </head>
-<body {{ if it.bodystyle }}style="{{ it.bodystyle }}"{{ /if }}>
+<body{{ if it.bodystyle }} style="{{ it.bodystyle }}"{{ /if }}>
   {{ content }}
   {{# TODO: Import CSS #}}
   <script src="https://unpkg.com/littlefoot@4.0.1/dist/littlefoot.js" type="text/javascript"></script>

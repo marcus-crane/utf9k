@@ -1,31 +1,17 @@
 - list: Playing
   games:
-  - id: 625
-    title: 'Call of Duty: World at War'
-    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
+  - id: 6770
+    title: Fantasy Life
+    link: https://www.backloggd.com/games/fantasy-life/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2haw.jpg
       width: 720
       height: 540
-  - id: 4097
-    title: Tomba!
-    link: https://www.backloggd.com/games/tomba/
+  - id: 9597
+    title: 'Solatorobo: Red the Hunter'
+    link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co55st.jpg
-      width: 720
-      height: 540
-  - id: 1128
-    title: 'Castlevania: Symphony of the Night'
-    link: https://www.backloggd.com/games/castlevania-symphony-of-the-night/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co53m8.jpg
-      width: 720
-      height: 540
-  - id: 3042
-    title: Dying Light
-    link: https://www.backloggd.com/games/dying-light/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hqa.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -173,7 +159,7 @@
       width: 720
       height: 540
   - id: 262538
-    title: Thank Goodness You’re Here!
+    title: Thank Goodness You're Here!
     link: https://www.backloggd.com/games/thank-goodness-youre-here/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co6yyq.jpg
@@ -190,7 +176,7 @@
     title: Astro's Playroom
     link: https://www.backloggd.com/games/astros-playroom/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6sd6.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9hb4.jpg
       width: 720
       height: 540
   - id: 2033
@@ -1233,7 +1219,7 @@
     title: Fatal Frame
     link: https://www.backloggd.com/games/fatal-frame/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7nlq.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9jki.jpg
       width: 720
       height: 540
   - id: 1790
@@ -2178,7 +2164,7 @@
     title: 'Dragon Ball: Xenoverse 2'
     link: https://www.backloggd.com/games/dragon-ball-xenoverse-2/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co8uu7.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9hs4.jpg
       width: 720
       height: 540
   - id: 1033
@@ -2817,7 +2803,7 @@
     title: Trepang2
     link: https://www.backloggd.com/games/trepang2/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4kxs.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9hie.jpg
       width: 720
       height: 540
   - id: 134071
