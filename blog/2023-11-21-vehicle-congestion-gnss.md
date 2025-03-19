@@ -73,7 +73,7 @@ As far as tracking itself, no country at the time of the report had actually imp
 
 > Belgium is one of the more recent schemes and allows for the self-install of the small lunchbox-sized OBU via the cigarette lighter plug
 
-If this were the model to follow, it stands that you could leave it unplugged until you get to somewhere that utilises congestion although that list will be ever growing. Convenience always wins with these things so I imagine most would just leave these things on all the time from the minute you turn on your vehicle.
+If this were the model to follow, it stands that you could leave it unplugged until you get to somewhere that utilises congestion although that list will be ever growing. Convenience always wins with these things so I imagine most users would just have their OBU running from the minute they turn on their vehicle.
 
 You also don't want to be leaning over in traffic to plug in your OBU only to accidentally cause a crash and all that.
 
@@ -81,12 +81,12 @@ This sentiment is mentioned within the report though:
 
 > Unlike a smartphone or removable device, a permanently mounted OBU will be a reminder of continuous vehicle tracking. This will raise additional privacy concerns with vehicle users, particularly when non-chargeable vehicle trips are undertaken.
 
-You can read the rest of the report but the gist is that all of this is very much a pipe dream that would be extremely difficult to implement purely from a logistics level before you even get into how to tackle the social and privacy perceptions that the public will ultimately have.
+You can read the rest of the report but the gist is that all of this is very much a pipe dream. Even if you could figure out how to implement it from a logstical point of view, you'd quickly run into the social and privacy perceptions that the public will ultimately have.
 
 With that, I have saved myself from being beeminded into financial ruin and I can promptly forget any of this ever happened until we all live in a cyberpunk dystopia where we can be tag-teamed by Big Car and Big Tax all day long.
 
 [^1]: While I initially signed up due to their new [Readwise Reader](https://blog.beeminder.com/readwise/) integration, I had been vaguely aware that it existed for about the last 10 years. I think I had passed it off as being unmaintained since they hadn't injected 90% whitespace into their margins. Ironically, they're probably more active (in a user-facing sense) than any other company I can think of! Also, I'm writing this post so something works.
 
-[^2]: They're also Voyager's Website of the Year. Presumably an award that can only be awarded by a panel of judges who are blind, masochist and with a level of self respect that starts at "It's not so bad, they only have 4 chumboxes nestled amongst their 1:9 content-to-ad ratio"
+[^2]: They're also Voyager's Website of the Year. Presumably an award that can only be awarded by a panel of judges who are blind, masochistic and with a level of self-respect that starts at "It's not so bad, they only have 4 chumboxes nestled amongst their 1:9 content-to-ad ratio"
 
 [^3]: A real person who has a name that I could type but that would require me to think about them more than once during the current lunar cycle so instead I'll leave that task up to the reader
