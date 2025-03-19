@@ -33,7 +33,7 @@ Now on paper, ACT should be all about personal privacy but they also have a lead
 
 Before we continue, this would be a good place to pause and mention that, personally, this is all very much an investigation out of technical interest.
 
-It could be tempting to jump the gun and yell "Big Brother" but [at the end of the day](https://www.youtube.com/watch?v=B811XSGf--A&t=45s), these sorts of dull policies are implemented by normal, hardworking public servants who have to work through all manner of privacy and safety implications in excrutiating detail.
+It could be tempting to jump the gun and yell "Big Brother" but [at the end of the day](https://www.youtube.com/watch?v=B811XSGf--A&t=45s), these sorts of dull policies are implemented by normal, hardworking public servants who have to work through all manner of privacy and safety implications in excruciating detail.
 
 Back on track, I can see it's starting to get a bit dark outside so I need to write faster and make less gags.
 
@@ -43,9 +43,9 @@ Over in Singapore, they have an Electronic Road Pricing (ERP) system which consi
 
 You can read a bit more about it in [this discussion paper](https://www.itf-oecd.org/sites/default/files/docs/congestion-control-singapore.pdf) titled "Congestion Control in Singapore".
 
-It primarily talks about the overhead gantry system but at the time of writing, work is underway to replace the gantry system with the aforemented "satellite-based pricing", which is to say: Cars will be fitted with a device that can talk to a satellite.
+It primarily talks about the overhead gantry system but at the time of writing, work is underway to replace the gantry system with the aforementioned "satellite-based pricing", which is to say: Cars will be fitted with a device that can talk to a satellite.
 
-The system is just generally referred to as being [GNSS-based](https://en.wikipedia.org/wiki/Satellite_navigation) although there are four such systems with GPS being the most well known. It seems that Singapore's system [may be powered](https://qzss.go.jp/en/overview/downloads/movie_qzss.html) by [QZSS](https://en.wikipedia.org/wiki/Quasi-Zenith_Satellite_System), a regional satnat system launched by the Japanese Government which is technically not a GNSS system but is still compatible with GPS.
+The system is just generally referred to as being [GNSS-based](https://en.wikipedia.org/wiki/Satellite_navigation) although there are four such systems with GPS being the most well known. It seems that Singapore's system [may be powered](https://qzss.go.jp/en/overview/downloads/movie_qzss.html) by [QZSS](https://en.wikipedia.org/wiki/Quasi-Zenith_Satellite_System), a regional satnav system launched by the Japanese Government which is technically not a GNSS system but is still compatible with GPS.
 
 Detours aside, the way that this new satellite system works is that vehicles are outfitted with onboard units (OBUs) which you can see an example of [in this video](https://www.youtube.com/watch?v=KZPYTa6Ox-4).
 
@@ -71,9 +71,9 @@ Down on Page 6, we start getting into the nitty gritty of what could go wrong:
 
 As far as tracking itself, no country at the time of the report had actually implemented the system so any OBUs would be custom made but there is a brief description of a Belgian heavy-vehicle device:
 
-> Belgium is one of the more recent schemes and allows for the self-install of the small lunchbox size OBU via the cigarette lighter plug
+> Belgium is one of the more recent schemes and allows for the self-install of the small lunchbox-sized OBU via the cigarette lighter plug
 
-If this were the model to follow, it stands that you could leave it unplugged until you get to somewhere that utilises congestion although that list will be every growing. Convenience always wins with these things so I imagine most would just leave these things on all the time from the minute you turn on your vehicle.
+If this were the model to follow, it stands that you could leave it unplugged until you get to somewhere that utilises congestion although that list will be ever growing. Convenience always wins with these things so I imagine most would just leave these things on all the time from the minute you turn on your vehicle.
 
 You also don't want to be leaning over in traffic to plug in your OBU only to accidentally cause a crash and all that.
 
@@ -87,6 +87,6 @@ With that, I have saved myself from being beeminded into financial ruin and I ca
 
 [^1]: While I initially signed up due to their new [Readwise Reader](https://blog.beeminder.com/readwise/) integration, I had been vaguely aware that it existed for about the last 10 years. I think I had passed it off as being unmaintained since they hadn't injected 90% whitespace into their margins. Ironically, they're probably more active (in a user-facing sense) than any other company I can think of! Also, I'm writing this post so something works.
 
-[^2]: They're also Voyager's Website of the Year. Presumably an award that can only be awarded by a panel of judges who are blind, masochist and a level of self respect that starts at "It's not so bad, they only have 4 chumboxes nestled amongst their 1:9 content-to-ad ratio"
+[^2]: They're also Voyager's Website of the Year. Presumably an award that can only be awarded by a panel of judges who are blind, masochist and with a level of self respect that starts at "It's not so bad, they only have 4 chumboxes nestled amongst their 1:9 content-to-ad ratio"
 
 [^3]: A real person who has a name that I could type but that would require me to think about them more than once during the current lunar cycle so instead I'll leave that task up to the reader
