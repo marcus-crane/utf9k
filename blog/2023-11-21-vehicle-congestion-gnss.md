@@ -29,17 +29,17 @@ Nestled amongst it all were the views of [ACT New Zealand](https://en.wikipedia.
 
 Casually putting "satellite", "transmitter" and "tracking" all in the same sentence made an exclamation mark pop up over my head.
 
-Now on paper, ACT should be all about personal privacy but they also have a leader who [cracks eggs like you would wring a hand towel](https://d3unuz0h0mttub.cloudfront.net/s3/digital-cougar-assets/nznow/2021/01/29/1611872881760_ZW0421DavidSeymour074A9642.jpg?width=922&height=&mode=crop&anchor=topcenter&quality=75) so I figured I should do a little bit more digging for my own curiosity.
+Now on paper, ACT should be all about personal privacy but they also have a leader who [cracks eggs like you would wring a hand towel](https://cdn.utf9k.net/blog/vehicle-congestion-gnss/eggcrack.jpg) so I figured I should do a little bit more digging for my own curiosity.
 
 Before we continue, this would be a good place to pause and mention that, personally, this is all very much an investigation out of technical interest.
 
-It could be tempting to jump the gun and yell "Big Brother" but [at the end of the day](https://youtu.be/B811XSGf--A?t=45), these sorts of dull policies are implemented by normal, hardworking public servants who have to work through all manner of privacy and safety implications in excrutiating detail.
+It could be tempting to jump the gun and yell "Big Brother" but [at the end of the day](https://www.youtube.com/watch?v=B811XSGf--A&t=45s), these sorts of dull policies are implemented by normal, hardworking public servants who have to work through all manner of privacy and safety implications in excrutiating detail.
 
 Back on track, I can see it's starting to get a bit dark outside so I need to write faster and make less gags.
 
 Over in Singapore, they have an Electronic Road Pricing (ERP) system which consists of large overhead gantries like this:
 
-![A photo of a highway with a few cars driving on it. Above the highway is a large structured with white panels and a blue centre panel. The centre panel has the letters ERP and an electronic dislay which is turned off.](https://upload.wikimedia.org/wikipedia/commons/1/1e/Fort_Canning_Tunnel_02.JPG)
+![A photo of a highway with a few cars driving on it. Above the highway is a large structured with white panels and a blue centre panel. The centre panel has the letters ERP and an electronic dislay which is turned off.](https://cdn.utf9k.net/blog/vehicle-congestion-gnss/fort-canning-tunnel.jpg)
 
 You can read a bit more about it in [this discussion paper](https://www.itf-oecd.org/sites/default/files/docs/congestion-control-singapore.pdf) titled "Congestion Control in Singapore".
 
@@ -47,7 +47,7 @@ It primarily talks about the overhead gantry system but at the time of writing, 
 
 The system is just generally referred to as being [GNSS-based](https://en.wikipedia.org/wiki/Satellite_navigation) although there are four such systems with GPS being the most well known. It seems that Singapore's system [may be powered](https://qzss.go.jp/en/overview/downloads/movie_qzss.html) by [QZSS](https://en.wikipedia.org/wiki/Quasi-Zenith_Satellite_System), a regional satnat system launched by the Japanese Government which is technically not a GNSS system but is still compatible with GPS.
 
-Detours aside, the way that this new satellite system works is that vehicles are outfitted with onboard units (OBUs) which you can see an example of [in this video](https://youtu.be/KZPYTa6Ox-4).
+Detours aside, the way that this new satellite system works is that vehicles are outfitted with onboard units (OBUs) which you can see an example of [in this video](https://www.youtube.com/watch?v=KZPYTa6Ox-4).
 
 The idea is that the OBU can communicate with overhead satellites and allow proper congestion charging no matter where you are. No longer is the roading system bound by having to physically install gantries everywhere but it does raise the question of when tracking begins and ends.
 
