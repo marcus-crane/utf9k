@@ -3,8 +3,8 @@ url: /robots.txt
 ---
 
 User-agent: *
-{{- if (Deno.env.get("GITHUB_REF_NAME") === "main" && Deno.env.has("CI")) || Deno.env.has("CI") === false }}
+{{ if (Deno.env.get("GITHUB_REF_NAME") === "main" && Deno.env.has("CI")) || Deno.env.has("CI") === false }}
 Allow: /
-{{- else }}
+{{ else }}
 Disallow: /
-{{- /if }}
+{{ /if }}
