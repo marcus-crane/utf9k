@@ -7,13 +7,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2haw.jpg
       width: 720
       height: 540
-  - id: 9597
-    title: 'Solatorobo: Red the Hunter'
-    link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hqa.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 18055
@@ -137,6 +130,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 9597
+    title: 'Solatorobo: Red the Hunter'
+    link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2hqa.jpg
+      width: 720
+      height: 540
   - id: 125009
     title: 'Halo 2: Anniversary'
     link: https://www.backloggd.com/games/halo-2-anniversary/
