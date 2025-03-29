@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 6770
-    title: Fantasy Life
-    link: https://www.backloggd.com/games/fantasy-life/
+  - id: 27958
+    title: 'Radiant Historia: Perfect Chronology'
+    link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2haw.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26im.jpg
       width: 720
       height: 540
 - list: Backlog
