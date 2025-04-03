@@ -49,3 +49,5 @@ Sometimes those decisions are wrong and broken but short of time travelling (or 
 In fact, that output couldn't exist in a non-cringe state and you had to create cringe to progress as a person. The proof of that is in the fact that you can identify what makes you cringe at all!
 
 Eventually, some amount of your output will get to a point where you can just make the thing you want at the quality you aspire to but there will always be some new avenues that are unknown and the resulting output will be more cringe and that's perfectly fine.
+
+For what it's worth, this entire blog is a record of cringe. There are a few posts that I still think are great but most of them are still cringe which is great because it means I won't run out of motivation to improve anytime soon!
