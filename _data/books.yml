@@ -2,34 +2,49 @@
   goal: 18
   books:
 
-    - title: The Future of Classification
-      subtitle: null
-      author: Rita Marcella and Arthur Maltby
-      cover: https://cdn.utf9k.net/books/the-future-of-classification.jpg
-      cover_height: 1000
-      cover_width: 664
-      isbn13: 9780815346593
-      asin: null
-      link: https://www.routledge.com/The-Future-of-Classification/Marcella-Maltby/p/book/9780815346593
-      date_added: 2025-02-04
-      date_started: 2025-02-09
+    - title: Political Ponerology
+      subtitle: A Science on the Nature of Evil Adjusted for Political Purposes
+      author: Andrew M. Lobaczewski
+      cover: https://cdn.utf9k.net/books/political-ponerology.jpg
+      cover_height: 2560
+      cover_width: 1707
+      isbn13: 9781897244258
+      asin: 1897244258
+      link: https://www.redpillpress.com/shop/political-ponerology-expanded/
+      date_added: 2025-03-23
+      date_started: 2025-03-23
       date_finished: null
       recommended: false
       progress: 5
+
+    # - title: The Future of Classification
+    #   subtitle: null
+    #   author: Rita Marcella and Arthur Maltby
+    #   cover: https://cdn.utf9k.net/books/the-future-of-classification.jpg
+    #   cover_height: 1000
+    #   cover_width: 664
+    #   isbn13: 9780815346593
+    #   asin: null
+    #   link: https://www.routledge.com/The-Future-of-Classification/Marcella-Maltby/p/book/9780815346593
+    #   date_added: 2025-02-04
+    #   date_started: 2025-02-09
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 5
     
-    - title: How To Be Wrong
-      subtitle: A crash course in startup success
-      author: Rowan Simpson
-      cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
-      cover_height: 2657
-      cover_width: 1885
-      isbn13: 9780473729967
-      asin: null
-      date_added: 2025-03-06
-      date_started: 2025-03-06
-      date_finished: null
-      recommended: false
-      progress: 4
+    # - title: How To Be Wrong
+    #   subtitle: A crash course in startup success
+    #   author: Rowan Simpson
+    #   cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
+    #   cover_height: 2657
+    #   cover_width: 1885
+    #   isbn13: 9780473729967
+    #   asin: null
+    #   date_added: 2025-03-06
+    #   date_started: 2025-03-06
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 4
 
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
@@ -45,6 +60,21 @@
       date_finished: null
       recommended: false
       progress: 19
+
+    - title: The Tyranny of Metrics
+      subtitle: null
+      author: Jerry Z. Muller
+      cover: https://cdn.utf9k.net/books/the-tyranny-of-metrics.jpg
+      cover_height: 2625
+      cover_width: 1725
+      isbn13: 9780691174952
+      asin: 0691174954
+      link: https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics  
+      date_added: 2022-09-22
+      date_started: 2025-03-21
+      date_finished: 2025-04-02
+      recommended: false
+      progress: 100
 
     - title: The Three-Body Problem
       subtitle: null
