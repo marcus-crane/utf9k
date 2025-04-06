@@ -9,6 +9,48 @@
       height: 540
 - list: Backlog
   games:
+  - id: 146075
+    title: The Great Ace Attorney Chronicles
+    link: https://www.backloggd.com/games/the-great-ace-attorney-chronicles/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ylx.jpg
+      width: 720
+      height: 540
+  - id: 152122
+    title: Doki Doki Literature Club Plus!
+    link: https://www.backloggd.com/games/doki-doki-literature-club-plus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7qyu.jpg
+      width: 720
+      height: 540
+  - id: 266679
+    title: 'Another Code: Recollection'
+    link: https://www.backloggd.com/games/another-code-recollection/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co72z3.jpg
+      width: 720
+      height: 540
+  - id: 2272
+    title: No More Heroes
+    link: https://www.backloggd.com/games/no-more-heroes/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qum.jpg
+      width: 720
+      height: 540
+  - id: 321048
+    title: 'Xenoblade Chronicles X: Definitive Edition'
+    link: https://www.backloggd.com/games/xenoblade-chronicles-x-definitive-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8zsb.jpg
+      width: 720
+      height: 540
+  - id: 8284
+    title: Pokémon Black Version 2
+    link: https://www.backloggd.com/games/pokemon-black-version-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1z8d.jpg
+      width: 720
+      height: 540
   - id: 18055
     title: Breath of Fire III
     link: https://www.backloggd.com/games/breath-of-fire-iii/
