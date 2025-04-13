@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 1402
+    title: 'Professor Layton vs. Phoenix Wright: Ace Attorney'
+    link: https://www.backloggd.com/games/professor-layton-vs-phoenix-wright-ace-attorney/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co25vf.jpg
+      width: 720
+      height: 540
   - id: 27958
     title: 'Radiant Historia: Perfect Chronology'
     link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
