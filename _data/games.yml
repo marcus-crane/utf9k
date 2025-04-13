@@ -9,6 +9,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 119577
+    title: 'The House in Fata Morgana: Dreams of the Revenants Edition'
+    link: https://www.backloggd.com/games/the-house-in-fata-morgana-dreams-of-the-revenants-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4qrz.jpg
+      width: 720
+      height: 540
   - id: 146075
     title: The Great Ace Attorney Chronicles
     link: https://www.backloggd.com/games/the-great-ace-attorney-chronicles/
@@ -172,6 +179,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 27958
+    title: 'Radiant Historia: Perfect Chronology'
+    link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26im.jpg
+      width: 720
+      height: 540
   - id: 9597
     title: 'Solatorobo: Red the Hunter'
     link: https://www.backloggd.com/games/solatorobo-red-the-hunter/
