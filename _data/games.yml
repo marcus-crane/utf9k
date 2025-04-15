@@ -186,6 +186,20 @@
       height: 540
 - list: Completed
   games:
+  - id: 85125
+    title: Epic Word Search Collection
+    link: https://www.backloggd.com/games/epic-word-search-collection/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2t68.jpg
+      width: 720
+      height: 540
+  - id: 85124
+    title: Epic Word Search Collection 2
+    link: https://www.backloggd.com/games/epic-word-search-collection-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2t8s.jpg
+      width: 720
+      height: 540
   - id: 27958
     title: 'Radiant Historia: Perfect Chronology'
     link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
