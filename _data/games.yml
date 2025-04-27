@@ -1,21 +1,21 @@
 - list: Playing
   games:
-  - id: 1402
-    title: 'Professor Layton vs. Phoenix Wright: Ace Attorney'
-    link: https://www.backloggd.com/games/professor-layton-vs-phoenix-wright-ace-attorney/
+  - id: 7194
+    title: Steins;Gate
+    link: https://www.backloggd.com/games/steins-gate/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co25vf.jpg
-      width: 720
-      height: 540
-  - id: 27958
-    title: 'Radiant Historia: Perfect Chronology'
-    link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co26im.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
       width: 720
       height: 540
 - list: Backlog
   games:
+  - id: 305152
+    title: 'Clair Obscur: Expedition 33'
+    link: https://www.backloggd.com/games/clair-obscur-expedition-33/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9gam.jpg
+      width: 720
+      height: 540
   - id: 119577
     title: 'The House in Fata Morgana: Dreams of the Revenants Edition'
     link: https://www.backloggd.com/games/the-house-in-fata-morgana-dreams-of-the-revenants-edition/
@@ -3049,13 +3049,6 @@
     link: https://www.backloggd.com/games/pokemon-lets-go-pikachu/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1zjy.jpg
-      width: 720
-      height: 540
-  - id: 7194
-    title: Steins;Gate
-    link: https://www.backloggd.com/games/steins-gate/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
       width: 720
       height: 540
   - id: 21899
