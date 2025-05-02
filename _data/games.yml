@@ -186,6 +186,27 @@
       height: 540
 - list: Completed
   games:
+  - id: 302690
+    title: 'Jak and Daxter: The Precursor Legacy'
+    link: https://www.backloggd.com/games/jak-and-daxter-the-precursor-legacy--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8ssw.jpg
+      width: 720
+      height: 540
+  - id: 302717
+    title: Jak II
+    link: https://www.backloggd.com/games/jak-ii--2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8goz.jpg
+      width: 720
+      height: 540
+  - id: 302985
+    title: Jak 3
+    link: https://www.backloggd.com/games/jak-3--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8gp1.jpg
+      width: 720
+      height: 540
   - id: 27958
     title: 'Radiant Historia: Perfect Chronology'
     link: https://www.backloggd.com/games/radiant-historia-perfect-chronology/
@@ -1537,20 +1558,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3ddb.jpg
       width: 720
       height: 540
-  - id: 1528
-    title: 'Jak and Daxter: The Precursor Legacy'
-    link: https://www.backloggd.com/games/jak-and-daxter-the-precursor-legacy/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1w7q.jpg
-      width: 720
-      height: 540
-  - id: 1529
-    title: Jak II
-    link: https://www.backloggd.com/games/jak-ii/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2agi.jpg
-      width: 720
-      height: 540
   - id: 380
     title: 'Metal Gear Solid 4: Guns of the Patriots'
     link: https://www.backloggd.com/games/metal-gear-solid-4-guns-of-the-patriots/
@@ -1605,13 +1612,6 @@
     link: https://www.backloggd.com/games/sly-cooper-and-the-thievius-raccoonus--1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5kkg.jpg
-      width: 720
-      height: 540
-  - id: 1530
-    title: Jak 3
-    link: https://www.backloggd.com/games/jak-3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6kks.jpg
       width: 720
       height: 540
   - id: 378
