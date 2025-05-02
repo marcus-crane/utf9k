@@ -2652,6 +2652,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 7482
+    title: White Knight Chronicles
+    link: https://www.backloggd.com/games/white-knight-chronicles/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8kzz.jpg
+      width: 720
+      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
