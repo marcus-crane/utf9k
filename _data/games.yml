@@ -1355,6 +1355,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3w1l.jpg
       width: 720
       height: 540
+  - id: 2207
+    title: Shadow of the Colossus
+    link: https://www.backloggd.com/games/shadow-of-the-colossus/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ozz.jpg
+      width: 720
+      height: 540
   - id: 2651
     title: Destroy All Humans!
     link: https://www.backloggd.com/games/destroy-all-humans/
