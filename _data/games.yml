@@ -7,13 +7,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
       width: 720
       height: 540
-  - id: 7194
-    title: Steins;Gate
-    link: https://www.backloggd.com/games/steins-gate/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 305152
@@ -193,6 +186,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 7194
+    title: Steins;Gate
+    link: https://www.backloggd.com/games/steins-gate/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co5ff7.jpg
+      width: 720
+      height: 540
   - id: 302690
     title: 'Jak and Daxter: The Precursor Legacy'
     link: https://www.backloggd.com/games/jak-and-daxter-the-precursor-legacy--1/
