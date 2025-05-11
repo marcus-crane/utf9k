@@ -2,34 +2,35 @@
   goal: 18
   books:
 
-    - title: Political Ponerology
-      subtitle: A Science on the Nature of Evil Adjusted for Political Purposes
-      author: Andrew M. Lobaczewski
-      cover: https://cdn.utf9k.net/books/political-ponerology.jpg
-      cover_height: 2560
-      cover_width: 1707
-      isbn13: 9781897244258
-      asin: 1897244258
-      link: https://www.redpillpress.com/shop/political-ponerology-expanded/
-      date_added: 2025-03-23
-      date_started: 2025-03-23
+    - title: Creating The Mania
+      subtitle: An Inside Look at How WrestleMania Comes to Life
+      author: Jon Robinson
+      cover: https://cdn.utf9k.net/books/creating-the-mania.jpg
+      cover_height: 667
+      cover_width: 1000
+      isbn13: 9781770414501
+      asin: 1770414509
+      link: https://ecwpress.com/products/creating-the-mania
+      date_added: 2025-05-05
+      date_started: 2025-05-05
       date_finished: null
       recommended: false
       progress: 5
 
-    # - title: How To Be Wrong
-    #   subtitle: A crash course in startup success
-    #   author: Rowan Simpson
-    #   cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
-    #   cover_height: 2657
-    #   cover_width: 1885
-    #   isbn13: 9780473729967
-    #   asin: null
-    #   date_added: 2025-03-06
-    #   date_started: 2025-03-06
-    #   date_finished: null
-    #   recommended: false
-    #   progress: 4
+    - title: How to Take Smart Notes
+      subtitle: One Simple Technique to Boost Writing, Learning and Thinking
+      author: Sönke Ahrens
+      cover: https://cdn.utf9k.net/books/how-to-take-smart-notes.jpg
+      cover_height: 2400
+      cover_width: 1576
+      isbn13: 9783982438801
+      asin: 3982438802
+      link: https://www.soenkeahrens.de/en/takesmartnotes
+      date_added: 2022-04-29
+      date_started: 2025-05-02
+      date_finished: null
+      recommended: false
+      progress: 34
 
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
@@ -44,7 +45,7 @@
       date_started: 2025-01-25
       date_finished: null
       recommended: false
-      progress: 45
+      progress: 50
 
     - title: The Tyranny of Metrics
       subtitle: null
@@ -1299,6 +1300,35 @@
 
 - list: Stalled
   books:
+    - title: Political Ponerology
+      subtitle: A Science on the Nature of Evil Adjusted for Political Purposes
+      author: Andrew M. Lobaczewski
+      cover: https://cdn.utf9k.net/books/political-ponerology.jpg
+      cover_height: 2560
+      cover_width: 1707
+      isbn13: 9781897244258
+      asin: 1897244258
+      link: https://www.redpillpress.com/shop/political-ponerology-expanded/
+      date_added: 2025-03-23
+      date_started: 2025-03-23
+      date_finished: null
+      recommended: false
+      progress: 5
+
+    - title: How To Be Wrong
+      subtitle: A crash course in startup success
+      author: Rowan Simpson
+      cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
+      cover_height: 2657
+      cover_width: 1885
+      isbn13: 9780473729967
+      asin: null
+      date_added: 2025-03-06
+      date_started: 2025-03-06
+      date_finished: null
+      recommended: false
+      progress: 4
+
     - title: Designing Data-Intensive Applications
       subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
       author: Martin Kleppman
