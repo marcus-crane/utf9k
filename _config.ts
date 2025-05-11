@@ -12,6 +12,7 @@ import postcss from "lume/plugins/postcss.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import checkUrls from "lume/plugins/check_urls.ts";
 import jsonLd from "lume/plugins/json_ld.ts";
+import extractDate from "lume/plugins/extract_date.ts";
 
 // Experimental Plugins
 import redirect from "./_plugins/redirect.ts"
@@ -114,6 +115,7 @@ site.use(checkUrls())
 site.use(sitemap()) // Finds existing robots.txt and inserts sitemap
 site.use(ci());
 site.use(jsonLd());
+site.use(extractDate());
 
 if (mode === "build") {
     site.use(cache_busting())
@@ -122,6 +124,7 @@ if (mode === "build") {
 // TODO: ESBuild + content hashing
 site.copy("js");
 site.copy("static", ".");
+site.add([".css"])
 
 site.ignore(
     "scripts",
