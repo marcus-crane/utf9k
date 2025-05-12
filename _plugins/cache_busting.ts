@@ -1,4 +1,3 @@
-import binaryLoader from "lume/core/loaders/binary.ts";
 import { merge } from "lume/core/utils/object.ts";
 import { getPathAndExtension } from "lume/core/utils/path.ts";
 import { encodeHex } from "lume/deps/hex.ts";
@@ -40,7 +39,7 @@ export default function (userOptions?: Partial<Options>): Plugin {
 
     site.use(modifyUrls({ fn: replace }));
 
-    async function replace(url: string | null, page: Page, element: Element) {
+    async function replace(url: string | null, page: Page, element?: Element) {
       if (url) {
         const extension = extname(url)
         if (options.nodeTypes.includes(element.nodeName) && url.startsWith('/') && options.fileExtensions.includes(extension)) {
@@ -82,7 +81,7 @@ export default function (userOptions?: Partial<Options>): Plugin {
     }
 
     async function getFileContent(url: string): Promise<Uint8Array> {
-      const content = await site.getContent(url, binaryLoader);
+      const content = await site.getContent(url, true);
 
       if (!content) {
         throw new Error(`Unable to find the file "${url}"`);
@@ -94,21 +93,13 @@ export default function (userOptions?: Partial<Options>): Plugin {
     }
 
     function renameFile(url: string, hash: string) {
-      // It's a page
-      const page = site.pages.find((page) => page.data.url === url);
+      // It's a page or static file
+      const file = site.pages.find((page) => page.data.url === url)
+        ?? site.files.find((file) => file.data.url === url)
 
-      if (page) {
+      if (file) {
         const [path, ext] = getPathAndExtension(url);
-        page.data.url = `${path}.${hash}${ext}`;
-        return;
-      }
-
-      // It's a static file
-      const staticFile = site.files.find((file) => file.outputPath === url);
-
-      if (staticFile) {
-        const [path, ext] = getPathAndExtension(url);
-        staticFile.outputPath = `${path}.${hash}${ext}`;
+        file.data.url = `${path}.${hash}${ext}`;
         return;
       }
 
