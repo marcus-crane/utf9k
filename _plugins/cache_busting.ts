@@ -40,7 +40,7 @@ export default function (userOptions?: Partial<Options>): Plugin {
     site.use(modifyUrls({ fn: replace }));
 
     async function replace(url: string | null, page: Page, element?: Element) {
-      if (url) {
+      if (url && element !== undefined && element.nodeName !== undefined) {
         const extension = extname(url)
         if (options.nodeTypes.includes(element.nodeName) && url.startsWith('/') && options.fileExtensions.includes(extension)) {
           return await addHash(url, page);
