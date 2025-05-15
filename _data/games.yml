@@ -2673,6 +2673,76 @@
       height: 540
 - list: Shelved
   games:
+  - id: 625
+    title: 'Call of Duty: World at War'
+    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
+      width: 720
+      height: 540
+  - id: 1128
+    title: 'Castlevania: Symphony of the Night'
+    link: https://www.backloggd.com/games/castlevania-symphony-of-the-night/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co53m8.jpg
+      width: 720
+      height: 540
+  - id: 1402
+    title: 'Professor Layton vs. Phoenix Wright: Ace Attorney'
+    link: https://www.backloggd.com/games/professor-layton-vs-phoenix-wright-ace-attorney/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co25vf.jpg
+      width: 720
+      height: 540
+  - id: 4097
+    title: Tomba!
+    link: https://www.backloggd.com/games/tomba/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co55st.jpg
+      width: 720
+      height: 540
+  - id: 6770
+    title: Fantasy Life
+    link: https://www.backloggd.com/games/fantasy-life/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2haw.jpg
+      width: 720
+      height: 540
+  - id: 144024
+    title: Final Fantasy VII Remake Intergrade
+    link: https://www.backloggd.com/games/final-fantasy-vii-remake-intergrade/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4vor.jpg
+      width: 720
+      height: 540
+  - id: 138113
+    title: Word Search by Powgi
+    link: https://www.backloggd.com/games/word-search-by-powgi/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2h3q.jpg
+      width: 720
+      height: 540
+  - id: 119159
+    title: 'Fuga: Melodies of Steel'
+    link: https://www.backloggd.com/games/fuga-melodies-of-steel/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co3gll.jpg
+      width: 720
+      height: 540
+  - id: 37094
+    title: Shadow of the Colossus
+    link: https://www.backloggd.com/games/shadow-of-the-colossus--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co272w.jpg
+      width: 720
+      height: 540
+  - id: 3042
+    title: Dying Light
+    link: https://www.backloggd.com/games/dying-light/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co65yq.jpg
+      width: 720
+      height: 540
   - id: 7482
     title: White Knight Chronicles
     link: https://www.backloggd.com/games/white-knight-chronicles/
