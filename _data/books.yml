@@ -17,21 +17,6 @@
       recommended: false
       progress: 5
 
-    - title: How to Take Smart Notes
-      subtitle: One Simple Technique to Boost Writing, Learning and Thinking
-      author: Sönke Ahrens
-      cover: https://cdn.utf9k.net/books/how-to-take-smart-notes.jpg
-      cover_height: 2400
-      cover_width: 1576
-      isbn13: 9783982438801
-      asin: 3982438802
-      link: https://www.soenkeahrens.de/en/takesmartnotes
-      date_added: 2022-04-29
-      date_started: 2025-05-02
-      date_finished: null
-      recommended: false
-      progress: 34
-
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
       author: Robert Jackall
@@ -46,6 +31,21 @@
       date_finished: null
       recommended: false
       progress: 50
+
+    - title: How to Take Smart Notes
+      subtitle: One Simple Technique to Boost Writing, Learning and Thinking
+      author: Sönke Ahrens
+      cover: https://cdn.utf9k.net/books/how-to-take-smart-notes.jpg
+      cover_height: 2400
+      cover_width: 1576
+      isbn13: 9783982438801
+      asin: 3982438802
+      link: https://www.soenkeahrens.de/en/takesmartnotes
+      date_added: 2022-04-29
+      date_started: 2025-05-02
+      date_finished: 2025-05-16
+      recommended: false
+      progress: 100
 
     - title: The Tyranny of Metrics
       subtitle: null
