@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 386
-    title: Final Fantasy XIV Online
-    link: https://www.backloggd.com/games/final-fantasy-xiv-online--1/
+  - id: 103406
+    title: Robotics;Notes Elite
+    link: https://www.backloggd.com/games/robotics-notes-elite/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co48rz.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co27fe.jpg
       width: 720
       height: 540
 - list: Backlog
