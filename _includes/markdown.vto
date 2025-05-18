@@ -2,11 +2,12 @@
 <article>
   <header>
     <h1>{{ title }}</h1>
+    {{ if ["blog", "reviews"].includes(category) || lastmod }}
     <div id="post-meta">
-      {{ if ["blog", "reviews"].includes(category) }}<time datetime="{{ date }}">{{ date |> date('MMMM d, yyyy') }}</time> ·{{ /if }}
-      {{ if lastmod }}<time datetime="{{ lastmod }}">Last updated on {{ lastmod |> date('MMMM d, yyyy') }}</time> ·{{ /if }}
-      {{ if readingInfo }}Around {{ readingInfo.minutes }} minute{{ if readingInfo.minutes > 1}}s{{ /if }}{{ /if }}
+      {{ if ["blog", "reviews"].includes(category) }}<time datetime="{{ date }}">{{ date |> date('MMMM d, yyyy') }}</time> {{ if lastmod }} <span>·</span> {{ /if }} {{ /if }}
+      {{ if lastmod }}<time datetime="{{ lastmod }}"> Last updated on {{ lastmod |> date('MMMM d, yyyy') }}</time>{{ /if }}
     </div>
+    {{ /if }}
   </header>
   <div id="post-body">
     {{ content }}
