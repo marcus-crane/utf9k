@@ -10,6 +10,4 @@ title: About
 ---
 I never write as much as I wish I would but there's a handful of articles you can read.
 
-I currently work at [Lightspeed](https://www.lightspeedhq.com/), particularly working on [Vend](https://www.vendhq.com/nz/).
-
-In particular, I'm a Staff [Site Reliability Engineer](https://en.wikipedia.org/wiki/Site_Reliability_Engineering) based out of our office in [Newmarket, New Zealand](https://en.wikipedia.org/wiki/Newmarket,_New_Zealand).
+I live in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland) where I work as a Lead Platform Engineer at [Halter](https://www.halterhq.com/).
