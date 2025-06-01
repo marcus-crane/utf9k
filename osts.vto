@@ -1,0 +1,46 @@
+---
+title: OSTs
+description: My own personal index of Spotify albums I might listen to one day
+---
+
+{{ layout "core.vto" }}
+<article>
+    <header>
+      <h1>Game OSTs</h1>
+    </header>
+    <div class="notice">
+      <hr class="hidden" />
+      <h3>
+        <span>🔊</span>
+        What is this page for
+      </h3>
+      <p>While Spotify contains lots of game OSTs, there are that many that I never know what to search for. This page is my own personal index of albums that I'd like to listen through one day. Non-web links are used to avoid triggering the web player on desktop and mobile.</p>
+      <hr class="hidden" />
+    </div>
+    <div id="post-body">
+      <div class="grid-list">
+        <ul role="list">
+        {{ for item of osts }}
+        {{> const directLink = "spotify:album:" + item.id }}
+        {{> const playerLink = "https://open.spotify.com/album/" + item.id }}
+        <li>
+          <div>
+            <img alt="The cover of an album titled {{ item.title }}" src="{{ item.cover }}" />
+            <figcaption style="display: none;">You can learn more by visiting <a target="_blank" href="{{ playerLink }}">the Spotify album page.</a></figcaption>
+            <a href="{{ directLink }}" target="_blank" rel="noopener noreferer">
+              <span>{{ item.title }}</span>
+            </a>
+          </div>
+          <dl>
+            <div>
+              <dd>{{ item.artist }}</dd>
+              <dd>{{ item.release_date }} · {{ item.total_tracks }} tracks</dd>
+            </div>
+          </dl>
+        </li>
+        {{ /for }}
+        </ul>
+      </div>
+    </div>
+  </article>
+{{ /layout }}
