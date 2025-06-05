@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 338069
+    title: Nintendo Switch 2 Welcome Tour
+    link: https://www.backloggd.com/games/nintendo-switch-2-welcome-tour/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9mc9.jpg
+      width: 720
+      height: 540
   - id: 236664
     title: 'Fantasy Life i: The Girl Who Steals Time'
     link: https://www.backloggd.com/games/fantasy-life-i-the-girl-who-steals-time/
