@@ -3079,6 +3079,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7221.jpg
       width: 720
       height: 540
+  - id: 2136
+    title: Bayonetta
+    link: https://www.backloggd.com/games/bayonetta/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8nf4.jpg
+      width: 720
+      height: 540
   - id: 3225
     title: No Man's Sky
     link: https://www.backloggd.com/games/no-man-s-sky/
