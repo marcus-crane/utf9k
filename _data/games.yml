@@ -2687,6 +2687,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 77232
+    title: 'Metal Gear Solid: Digital Graphic Novel'
+    link: https://www.backloggd.com/games/metal-gear-solid-digital-graphic-novel/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pnw.jpg
+      width: 720
+      height: 540
   - id: 625
     title: 'Call of Duty: World at War'
     link: https://www.backloggd.com/games/call-of-duty-world-at-war/
