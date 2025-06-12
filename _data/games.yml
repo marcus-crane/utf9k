@@ -1,17 +1,17 @@
 - list: Playing
   games:
+  - id: 11393
+    title: Chaos;Child
+    link: https://www.backloggd.com/games/chaos-child/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26xc.jpg
+      width: 720
+      height: 540
   - id: 338069
     title: Nintendo Switch 2 Welcome Tour
     link: https://www.backloggd.com/games/nintendo-switch-2-welcome-tour/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co9mc9.jpg
-      width: 720
-      height: 540
-  - id: 236664
-    title: 'Fantasy Life i: The Girl Who Steals Time'
-    link: https://www.backloggd.com/games/fantasy-life-i-the-girl-who-steals-time/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co9uqw.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -2687,6 +2687,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 236664
+    title: 'Fantasy Life i: The Girl Who Steals Time'
+    link: https://www.backloggd.com/games/fantasy-life-i-the-girl-who-steals-time/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9uqw.jpg
+      width: 720
+      height: 540
   - id: 77232
     title: 'Metal Gear Solid: Digital Graphic Novel'
     link: https://www.backloggd.com/games/metal-gear-solid-digital-graphic-novel/
