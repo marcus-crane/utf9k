@@ -14,13 +14,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co9uqw.jpg
       width: 720
       height: 540
-  - id: 103406
-    title: Robotics;Notes Elite
-    link: https://www.backloggd.com/games/robotics-notes-elite/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co27fe.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 305152
@@ -200,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 103406
+    title: Robotics;Notes Elite
+    link: https://www.backloggd.com/games/robotics-notes-elite/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co27fe.jpg
+      width: 720
+      height: 540
   - id: 43953
     title: Chaos;Head Noah
     link: https://www.backloggd.com/games/chaos-head-noah/
