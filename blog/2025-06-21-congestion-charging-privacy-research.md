@@ -47,7 +47,9 @@ The scheme itself is important so we’ll take a brief look at the two types tha
 ## Single Charge Schemes
 
 *Example: Auckland’s proposed cordon scheme around the Central Business District*  
-![][image1]  
+
+![](https://cdn.utf9k.net/blog/congestion-charging-privacy-research/cordon.png)
+
 If an authority charges at the boundary of a congestion charging zone (on entry and/or exit), the scheme operator only gains knowledge of when a user has entered and/or exited a congestion zone.
 
 There is no possibility, at least purely based on congestion charging records, to know or even guess where a user has been within the congestion zone.
@@ -59,7 +61,9 @@ We should note that there is the separate question of enforcement which will lik
 ## Corridor Charge Schemes
 
 *Example: Auckland’s proposed corridor scheme*  
-![][image2]  
+
+![](https://cdn.utf9k.net/blog/congestion-charging-privacy-research/corridor.png)
+
 If an authority decides to charge along a corridor, they would presumably need to capture a data point at each charging point that a user passes through, regardless of whether the corridor charges a fixed or variable price.
 
 As above, the actual implementation of any corridor charging scheme is very likely to be managed through the use of ANPR cameras.
