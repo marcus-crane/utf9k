@@ -1,6 +1,6 @@
 ---
 category: blog
-date: 2025-06-21T12:15:00+13:00
+date: 2025-06-21T13:20:00+13:00
 description: Open sourcing some research I did into privacy issues relating to congestion charging
 slug: congestion-charging-privacy-research
 tags:
