@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 338069
-    title: Nintendo Switch 2 Welcome Tour
-    link: https://www.backloggd.com/games/nintendo-switch-2-welcome-tour/
+  - id: 288983
+    title: The Roottrees Are Dead
+    link: https://www.backloggd.com/games/the-roottrees-are-dead--1/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co9mc9.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tyi.jpg
       width: 720
       height: 540
   - id: 15705
@@ -21,29 +21,15 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co26xc.jpg
       width: 720
       height: 540
-  - id: 288983
-    title: The Roottrees Are Dead
-    link: https://www.backloggd.com/games/the-roottrees-are-dead--1/
+  - id: 338069
+    title: Nintendo Switch 2 Welcome Tour
+    link: https://www.backloggd.com/games/nintendo-switch-2-welcome-tour/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tyi.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9mc9.jpg
       width: 720
       height: 540
 - list: Backlog
   games:
-  - id: 2272
-    title: No More Heroes
-    link: https://www.backloggd.com/games/no-more-heroes/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qum.jpg
-      width: 720
-      height: 540
-  - id: 2538
-    title: 'Enslaved: Odyssey to the West'
-    link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gko.jpg
-      width: 720
-      height: 540
   - id: 305152
     title: 'Clair Obscur: Expedition 33'
     link: https://www.backloggd.com/games/clair-obscur-expedition-33/
@@ -77,6 +63,13 @@
     link: https://www.backloggd.com/games/another-code-recollection/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co72z3.jpg
+      width: 720
+      height: 540
+  - id: 2272
+    title: No More Heroes
+    link: https://www.backloggd.com/games/no-more-heroes/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2qum.jpg
       width: 720
       height: 540
   - id: 321048
@@ -154,6 +147,13 @@
     link: https://www.backloggd.com/games/ace-attorney-investigations-miles-edgeworth/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8q.jpg
+      width: 720
+      height: 540
+  - id: 2538
+    title: 'Enslaved: Odyssey to the West'
+    link: https://www.backloggd.com/games/enslaved-odyssey-to-the-west/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2gko.jpg
       width: 720
       height: 540
   - id: 92919
