@@ -1,31 +1,10 @@
 - list: Playing
   games:
-  - id: 288983
-    title: The Roottrees Are Dead
-    link: https://www.backloggd.com/games/the-roottrees-are-dead--1/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co7tyi.jpg
-      width: 720
-      height: 540
-  - id: 15705
-    title: 'Digimon Story: Cyber Sleuth'
-    link: https://www.backloggd.com/games/digimon-story-cyber-sleuth/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2px6.jpg
-      width: 720
-      height: 540
   - id: 11393
     title: Chaos;Child
     link: https://www.backloggd.com/games/chaos-child/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co26xc.jpg
-      width: 720
-      height: 540
-  - id: 338069
-    title: Nintendo Switch 2 Welcome Tour
-    link: https://www.backloggd.com/games/nintendo-switch-2-welcome-tour/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co9mc9.jpg
       width: 720
       height: 540
 - list: Backlog
