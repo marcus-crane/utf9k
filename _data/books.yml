@@ -2,6 +2,21 @@
   goal: 18
   books:
 
+    - title: Careless People
+      subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
+      author: Sarah Wynn-Williams
+      cover: https://cdn.utf9k.net/books/careless-people.jpg
+      cover_height: 1539
+      cover_width: 1000
+      isbn13: 9781250391247
+      asin: B0DY9TZD8Z
+      link: https://www.goodreads.com/book/show/223436601-careless-people
+      date_added: 2025-03-13
+      date_started: 2025-06-30
+      date_finished: null
+      recommended: false
+      progress: 13
+
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
       author: Robert Jackall
