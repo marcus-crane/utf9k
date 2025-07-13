@@ -1,7 +1,7 @@
 ---
 category: now
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
-lastmod: 2024-12-20
+lastmod: 2025-07-13
 layout: markdown.vto
 slug: now
 tags:
@@ -10,34 +10,54 @@ title: Now
 ---
 Here's what I'm up to currently:
 
-## Holiday Season
+## Working at Halter
 
-It's that time of year again.
+At the time of writing, I've just wrapped up my fifth week at [Halter](https://halterhq.com) which has been consuming a lot of my brain space in a good way.
 
-For myself, I usually visit my parents for a few days and tend to get started on doing a digital spring cleaning.
+Admittedly, I'm not the greatest at pacing myself when it comes to new problems so that's definitely something I'll be working on.
 
-Going through my task manager, junking all the stuff I don't really want to do as well as cancelling various subscriptions that I don't really need.
+## Obsidian
 
-There are a couple of things that I currently pay for that I can consolidate by writing a couple of scripts since the problem areas don't change much as well.
+I declared Obsidian bankruptcy earlier in the year and I've tried to organically land on a structure that is optimised for using as little thought power as I can manage for organising notes.
 
-## Obsidian Bankruptcy
+In short, all notes go in the root of my vault but I use backlinks to loosely create parent/child relationships where they make sense.
 
-Not a total bankruptcy but I think I'm at the point where I'd like to archive most of my existing notes to the side and then refresh my [Obsidian](https://obsidian.md) vault so that it doesn't have so much junk.
+That sounds like a mess but I've been using the new Obsidian Bases functionality as a view layer for managing and organising those parent notes which is going alright so far.
 
-I've ended up with nested folders where I have no real idea what's contained inside them and they're really archival notes that I never refer back to really.
+I think this setup is pretty solid but I'm not rushing to backfill my historical notes in order to make sure it feels as sturdy as I hope.
 
-## Hardcover
+## Links
 
-For some time now, I've been maintaining my list of books read [on my site](https://utf9k.net/books) which works but sometimes it can be annoying sourcing all of the various metadata.
+At the moment, I maintain a [Linkding instance](https://links.soup.utf9k.net) which works well but it feels overkill for a list that essentially could just be a flat file.
 
-A lot of it isn't automated on my end.
+I think I'd like to incorporate my link archive into my site when I do a redesign.
 
-Recently, I learned about [Hardcover](https://hardcover.app) which aspires to be a Goodreads successor.
+## Beeminder
 
-Most importantly, it has an API so it'd be feasible to start using that and then just pull my data locally similar to what I currently do with [Backloggd](https://backloggd.com).
+After building up a bunch of goals in Beeminder, I found that a lot of my priorities and schedule changed in relation to my new job.
 
-## Website Refresh
+A lot of those goals were also just things that I didn't really find myself enjoying at all or they had slightly misaligned incentives so I archived a bunch of them.
 
-It has been a while since I've given my site a nice tidy up and I'm about ready to sit down and give it all a revamp.
+That said, I'd like to introduce a couple more such as making sure that I touch my Obsidian vault most days.
 
-I've been saving various screenshots of design elements around the web that I like so it'll take me a while to figure out what aesthetic elements I'd like to use for this latest iteration.
+## Website refresh
+
+This one is always a long running thing where I say I'll do it yet never have any inspiration.
+
+I went back through my sizable batch of website screenshots and got a few ideas that I'm going to ideally start experimenting with.
+
+This time around, I'd like to make sure that my site is structurally sound in browsers without CSS so for example, no giant images and so on.
+
+Historically I've done a good job with progressive JS but less so with CSS.
+
+I don't strictly need to but I guess as someone who works as a Site Reliability Engineer, it's a nice challenge to come up with something aesthetically pleasing and yet performant and backwards compatible (within reason).
+
+Being a frontender is not something I would able to do as a day job but I do like to be able to put my money where my mouth is in regards to web bloat.
+
+## Media consumption
+
+I got back into wrestling in a big way this year where I'd watch Raw and Smackdown weekly.
+
+I don't regret it or anything but damn if it isn't a time sink (even with fast forwarding) and to make it worse, I think I might start watching AEW now after that great showing at AEW All In Texas.
+
+Realistically, I might just have to watch the highlights and/or just start watching the PPVs because I only really watch promos for the weekly shows anyway.

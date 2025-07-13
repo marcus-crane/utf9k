@@ -8,6 +8,8 @@ tags:
   - me
 title: About
 ---
-I never write as much as I wish I would but there's a handful of articles you can read.
+My name is Marcus Crane and you're logged on to my personal website!
 
 I live in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland) where I work as a Lead Platform Engineer at [Halter](https://www.halterhq.com/).
+
+When I'm not computering at work, I tend to enjoy computering at home.
