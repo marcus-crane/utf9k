@@ -2,21 +2,6 @@
   goal: 18
   books:
 
-    - title: Creating The Mania
-      subtitle: An Inside Look at How WrestleMania Comes to Life
-      author: Jon Robinson
-      cover: https://cdn.utf9k.net/books/creating-the-mania.jpg
-      cover_height: 667
-      cover_width: 1000
-      isbn13: 9781770414501
-      asin: 1770414509
-      link: https://ecwpress.com/products/creating-the-mania
-      date_added: 2025-05-05
-      date_started: 2025-05-05
-      date_finished: null
-      recommended: false
-      progress: 5
-
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
       author: Robert Jackall
@@ -1300,6 +1285,22 @@
 
 - list: Stalled
   books:
+
+    - title: Creating The Mania
+      subtitle: An Inside Look at How WrestleMania Comes to Life
+      author: Jon Robinson
+      cover: https://cdn.utf9k.net/books/creating-the-mania.jpg
+      cover_height: 667
+      cover_width: 1000
+      isbn13: 9781770414501
+      asin: 1770414509
+      link: https://ecwpress.com/products/creating-the-mania
+      date_added: 2025-05-05
+      date_started: 2025-05-05
+      date_finished: null
+      recommended: false
+      progress: 5
+
     - title: Political Ponerology
       subtitle: A Science on the Nature of Evil Adjusted for Political Purposes
       author: Andrew M. Lobaczewski
