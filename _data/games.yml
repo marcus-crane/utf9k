@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 338106
+    title: Donkey Kong Bananza
+    link: https://www.backloggd.com/games/donkey-kong-bananza/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coa082.jpg
+      width: 720
+      height: 540
   - id: 11393
     title: Chaos;Child
     link: https://www.backloggd.com/games/chaos-child/
