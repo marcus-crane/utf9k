@@ -193,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 11393
+    title: Chaos;Child
+    link: https://www.backloggd.com/games/chaos-child/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co26xc.jpg
+      width: 720
+      height: 540
   - id: 103406
     title: Robotics;Notes Elite
     link: https://www.backloggd.com/games/robotics-notes-elite/
