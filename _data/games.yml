@@ -7,13 +7,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/coa082.jpg
       width: 720
       height: 540
-  - id: 11393
-    title: Chaos;Child
-    link: https://www.backloggd.com/games/chaos-child/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co26xc.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 305152
