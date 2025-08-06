@@ -64,7 +64,7 @@ def _iterate_list_page(url, list_idx, page=1):
             },
         })
 
-    has_next_page = len(soup.select('span.next.disabled')) == 0
+    has_next_page = 'aria-disabled' not in soup.select('a[aria-label="Next"]')[0].attrs.keys()
     if has_next_page:
         _iterate_list_page(url, list_idx, page=page+1)
 
