@@ -6,10 +6,34 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
     "cover_height": 722,
     "cover_width": 460,
-    "progress": 207,
+    "progress": 210,
     "status": "RELEASING",
     "title": "Chainsaw Man",
     "url": "https://anilist.co/manga/105778"
+  },
+  {
+    "author": "Chiyo St. Inc.",
+    "chapters": 27,
+    "color": null,
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx104320-4t0DLyiDqqLo.jpg",
+    "cover_height": 569,
+    "cover_width": 400,
+    "progress": 1,
+    "status": "FINISHED",
+    "title": "Chaos;Child: Children's Collapse",
+    "url": "https://anilist.co/manga/104320"
+  },
+  {
+    "author": "Nitro Plus",
+    "chapters": 11,
+    "color": "#6b5d1a",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx37653-lYH5MDm6e2V6.jpg",
+    "cover_height": 661,
+    "cover_width": 460,
+    "progress": 2,
+    "status": "FINISHED",
+    "title": "Ch\u00e4oS;HEAd",
+    "url": "https://anilist.co/manga/37653"
   },
   {
     "author": "Yukinobu Tatsu",
@@ -18,7 +42,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 200,
+    "progress": 205,
     "status": "RELEASING",
     "title": "Dandadan",
     "url": "https://anilist.co/manga/132029"
@@ -42,7 +66,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx150378-cClKErwmvgsv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 26,
+    "progress": 28,
     "status": "RELEASING",
     "title": "Gokurakugai",
     "url": "https://anilist.co/manga/150378"
@@ -90,7 +114,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
     "cover_height": 717,
     "cover_width": 460,
-    "progress": 1153,
+    "progress": 1156,
     "status": "RELEASING",
     "title": "ONE PIECE",
     "url": "https://anilist.co/manga/30013"
@@ -114,7 +138,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101942-yjslDpT6XcpK.jpg",
     "cover_height": 660,
     "cover_width": 460,
-    "progress": 71,
+    "progress": 74,
     "status": "RELEASING",
     "title": "Tengoku Daimakyou",
     "url": "https://anilist.co/manga/101942"
