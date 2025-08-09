@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 11394
-    title: Steins;Gate 0
-    link: https://www.backloggd.com/games/steins-gate-0/
+  - id: 317407
+    title: Battlefield 6
+    link: https://www.backloggd.com/games/battlefield-6/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co24ua.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coa5zt.jpg
       width: 720
       height: 540
   - id: 338106
