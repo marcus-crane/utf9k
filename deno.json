@@ -17,7 +17,7 @@
     "sync": "./ci/externalsync.sh"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v3.0.7/",
+    "lume/": "https://deno.land/x/lume@v3.0.9/",
     "prettier": "npm:prettier@3.5.3",
     "rehype-pretty-code": "npm:rehype-pretty-code@0.14.1",
     "remark-callout": "npm:@r4ai/remark-callout@0.6.2",
@@ -33,7 +33,7 @@
   ],
   "lint": {
     "plugins": [
-      "https://deno.land/x/lume@v3.0.7/lint.ts"
+      "https://deno.land/x/lume@v3.0.9/lint.ts"
     ]
   }
 }
