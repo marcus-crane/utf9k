@@ -36,7 +36,6 @@ Everything else is stock and unconfigured.
 ## Applications
 
 - [1Password](https://1password.com/) for password management
-- [Book Tracker](https://booktrack.app/) for tracking reading progress
 - [CleanShot X](https://cleanshot.com/) for capturing and annotating screenshots
 - [Eagle](https://eagle.cool/) for capturing website designs that I like
 - [Fastmail](https://fastmail.com/) for email and calendaring
