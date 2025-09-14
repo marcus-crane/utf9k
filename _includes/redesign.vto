@@ -27,9 +27,34 @@
   >
 </head>
 <body>
-  {{ include "partials/nav.vto" }}
-  <div id="content">
-    {{ content }}
-  </div>
+  <main class="container-fluid">
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <img src="/favicon.png" alt="utf9k" width="16px" height="16px" />
+            <strong>utf9k</strong>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <span>//</span>
+        <li><a href="/projects/">Projects</a></li>
+        <span>//</span>
+        <li><a href="/about/">About</a></li>
+        <span>//</span>
+        <li><a href="/questions/">Questions</a></li>
+        <span>//</span>
+        <li><a href="/rss.xml">RSS</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>{{ title }}</h1>
+      <div id="post-body">
+        {{ content }}
+      </div>
+    </article>
+  </main>
 </body>
 </html>
