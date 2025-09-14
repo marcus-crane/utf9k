@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 11394
-    title: Steins;Gate 0
-    link: https://www.backloggd.com/games/steins-gate-0/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co24ua.jpg
-      width: 720
-      height: 540
   - id: 338106
     title: Donkey Kong Bananza
     link: https://www.backloggd.com/games/donkey-kong-bananza/
