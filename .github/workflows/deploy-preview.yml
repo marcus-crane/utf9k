@@ -25,7 +25,7 @@ jobs:
       - name: Generate metadata and deploy site
         run: deno task deploy
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.0
         with:
           source: "_site"
           storageZoneName: "utf9k-next"
