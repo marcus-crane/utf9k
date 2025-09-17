@@ -1,7 +1,7 @@
 ---
 aliases:
-  - /questions/athena-queries
-  - /questions/athena
+  - /questions/athena-queries/
+  - /questions/athena/
 category: questions
 description: It's like SQL but slightly wonkier
 lastmod: 2024-11-03

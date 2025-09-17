@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /blog/eoy24-stack
+  - /blog/eoy24-stack/
 category: blog
 date: 2024-12-31T18:10:00+13:00
 description: Here are my app defaults that I'm bringing with me into 2025
