@@ -14,7 +14,8 @@
     "build:metadata": "./ci/genmetadata.sh",
     "deploy": "./ci/deploy.sh",
     "test": "./ci/test.sh",
-    "sync": "./ci/externalsync.sh"
+    "sync": "./ci/externalsync.sh",
+    "validate": "deno run --allow-read _scripts/validate-e2e.ts"
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v3.0.9/",

@@ -1,0 +1,1637 @@
+aliases:
+  - alias: /blog/eoy24-stack/
+    file: blog/2024-12-31-app-defaults-entering-into-2025.md
+    target: /blog/app-defaults-entering-into-2025/
+
+  - alias: /blog/when-automation-goes-horribly-right/
+    file: blog/2018-12-03-automation-right.md
+    target: /blog/automation-right/
+
+  - alias: /notes/oil-futures/
+    file: questions/finance-oil-futures-negative.md
+    target: /questions/finance-oil-futures-negative/
+
+  - alias: /notes/ps1-disc-layout/
+    file: questions/ps1-disc-offset.md
+    target: /questions/ps1-disc-offset/
+
+  - alias: /questions/athena-queries/
+    file: questions/athena-cheat-sheet.md
+    target: /questions/athena-cheat-sheet/
+
+  - alias: /questions/athena/
+    file: questions/athena-cheat-sheet.md
+    target: /questions/athena-cheat-sheet/
+
+blogPosts:
+
+  - aliases: []
+    category: blog
+    filepath: blog/2019-08-19-25.md
+    slug: '25'
+    title: '25'
+    url: /blog/25/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-09-02-30.md
+    slug: '30'
+    title: '30'
+    url: /blog/30/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-02-13-a-recently-horrible-iteration-of-google-search.md
+    slug: a-recently-horrible-iteration-of-google-search
+    title: Google recently surfaced awful results for movies and tv
+    url: /blog/a-recently-horrible-iteration-of-google-search/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-02-21-address-book-sorting.md
+    slug: address-book-sorting
+    title: Address book sorting
+    url: /blog/address-book-sorting/
+
+  - aliases:
+      - /blog/eoy24-stack/
+    category: blog
+    filepath: blog/2024-12-31-app-defaults-entering-into-2025.md
+    slug: app-defaults-entering-into-2025
+    title: App defaults entering into 2025
+    url: /blog/app-defaults-entering-into-2025/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2017-12-24-arch-nuc-install.md
+    slug: arch-nuc-install
+    title: Installing Arch Linux on my Intel NUC
+    url: /blog/arch-nuc-install/
+
+  - aliases:
+      - /blog/when-automation-goes-horribly-right/
+    category: blog
+    filepath: blog/2018-12-03-automation-right.md
+    slug: automation-right
+    title: When automation goes horribly right
+    url: /blog/automation-right/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-03-20-beeminder-is-neat.md
+    slug: beeminder-is-neat
+    title: Beeminder is neat
+    url: /blog/beeminder-is-neat/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-03-08-bookmarking-march-2020.md
+    slug: bookmarking-march-2020
+    title: My bookmarking categories in March 2020
+    url: /blog/bookmarking-march-2020/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-11-28-brief-thoughts-on-crypto.md
+    slug: brief-thoughts-on-crypto
+    title: Brief thoughts on crypto
+    url: /blog/brief-thoughts-on-crypto/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-05-27-competence-neverending.md
+    slug: competence-neverending
+    title: Competence Neverending
+    url: /blog/competence-neverending/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-08-12-conditional-gitconfig.md
+    slug: conditional-gitconfig
+    title: Conditionally setting your gitconfig
+    url: /blog/conditional-gitconfig/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-11-20-configuration-magic.md
+    slug: configuration-magic
+    title: Configuration magic
+    url: /blog/configuration-magic/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-06-21-congestion-charging-privacy-research.md
+    slug: congestion-charging-privacy-research
+    title: Congestion Charging Privacy Research
+    url: /blog/congestion-charging-privacy-research/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-04-03-cringing-is-growing.md
+    slug: cringing-is-growing
+    title: Cringing is growing
+    url: /blog/cringing-is-growing/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-08-30-day-one.md
+    slug: day-one
+    title: Day One
+    url: /blog/day-one/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-06-02-day-three.md
+    slug: day-three
+    title: Day Three
+    url: /blog/day-three/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-10-27-day-two.md
+    slug: day-two
+    title: Day Two
+    url: /blog/day-two/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2018-02-15-day-xero.md
+    slug: day-xero
+    title: Day Xero
+    url: /blog/day-xero/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2017-02-05-deepfakes.md
+    slug: deepfakes
+    title: Deepfakes
+    url: /blog/deepfakes/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-10-11-digital-spring-cleaning.md
+    slug: digital-spring-cleaning
+    title: Digital Spring Cleaning
+    url: /blog/digital-spring-cleaning/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-04-27-dropbox-is-way-too-clingy.md
+    slug: dropbox-is-way-too-clingy
+    title: Dropbox is way too clingy
+    url: /blog/dropbox-is-way-too-clingy/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-02-13-emacs-probably-isnt-right-for-me.md
+    slug: emacs-probably-isnt-right-for-me
+    title: Emacs probably isn't right for me
+    url: /blog/emacs-probably-isnt-right-for-me/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-05-06-emacs-wsl2-install.md
+    slug: emacs-wsl2-install
+    title: Setting up Emacs inside of a WSL2 distribution
+    url: /blog/emacs-wsl2-install/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2019-09-26-email-lookup.md
+    slug: email-lookup
+    title: Double checking if an email address exists
+    url: /blog/email-lookup/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-09-05-entering-the-machine.md
+    slug: entering-the-machine
+    title: Entering the Machine
+    url: /blog/entering-the-machine/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-02-17-faq-driven-configuration.md
+    slug: faq-driven-configuration
+    title: FAQ driven configuration
+    url: /blog/faq-driven-configuration/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-11-02-fascinating-steam-scam.md
+    slug: fascinating-steam-scam
+    title: A fascinating attempt at Steam phishing
+    url: /blog/fascinating-steam-scam/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-05-28-fastmail-caldav.md
+    slug: fastmail-caldav
+    title: Using Fastmail with CalDAV libraries
+    url: /blog/fastmail-caldav/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-11-02-fruit-plate.md
+    slug: fruit-plate
+    title: Fruit Plate
+    url: /blog/fruit-plate/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2019-03-20-future-of-emergency-services.md
+    slug: future-of-emergency-services
+    title: What is the future of emergency services?
+    url: /blog/future-of-emergency-services/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-05-14-has-bootstrap-eaten-the-world-yet.md
+    slug: has-bootstrap-eaten-the-world-yet
+    title: Has Bootstrap eaten the world yet?
+    url: /blog/has-bootstrap-eaten-the-world-yet/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-07-12-hugo-debug-reports.md
+    slug: hugo-debug-reports
+    title: Creating debug reports with Hugo inline shortcodes
+    url: /blog/hugo-debug-reports/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-04-11-i-dont-identify-as-anxious.md
+    slug: i-dont-identify-as-anxious
+    title: I don't identify as anxious
+    url: /blog/i-dont-identify-as-anxious/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-01-17-inefficient-habit-forming.md
+    slug: inefficient-habit-forming
+    title: Habit forming in the least efficient way possible
+    url: /blog/inefficient-habit-forming/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-05-08-internal-inconsistencies-about-time-travel.md
+    slug: internal-inconsistencies-about-time-travel
+    title: Internal Inconsistencies about Time Travel
+    url: /blog/internal-inconsistencies-about-time-travel/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-10-06-internet-reliance.md
+    slug: internet-reliance
+    title: Relying on the internet as a business
+    url: /blog/internet-reliance/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-06-03-ipad-canonical-owner.md
+    slug: ipad-canonical-owner
+    title: Do demo iPads have a canonical owner?
+    url: /blog/ipad-canonical-owner/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-01-31-is-anything-happening-behind-the-curtain.md
+    slug: is-anything-happening-behind-the-curtain
+    title: Is anything happening behind the curtain?
+    url: /blog/is-anything-happening-behind-the-curtain/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-01-29-latency-as-a-forcing-function.md
+    slug: latency-as-a-forcing-function
+    title: Latency as a forcing function
+    url: /blog/latency-as-a-forcing-function/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-04-27-learning-workflow-2024.md
+    slug: learning-workflow-2024
+    title: How my learning workflow looks as of 2024
+    url: /blog/learning-workflow-2024/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-12-01-lessons-beeminder-year-one.md
+    slug: lessons-beeminder-year-one
+    title: Lessons from a year with Beeminder
+    url: /blog/lessons-beeminder-year-one/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-06-03-let-your-streaks-end-naturally.md
+    slug: let-your-streaks-end-naturally
+    title: Let your streaks end naturally
+    url: /blog/let-your-streaks-end-naturally/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2018-02-28-lore-tabs.md
+    slug: lore-tabs
+    title: Humans don't come with lore tabs
+    url: /blog/lore-tabs/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2018-12-12-lost-python-results.md
+    slug: lost-python-results
+    title: Recovering lost Python results in the REPL
+    url: /blog/lost-python-results/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-08-06-magic.md
+    slug: magic
+    title: Magic
+    url: /blog/magic/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-05-12-mental-overhead-of-data.md
+    slug: mental-overhead-of-data
+    title: Data hoarding seems like a large mental overhead
+    url: /blog/mental-overhead-of-data/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-01-29-miserable-presentation-tips.md
+    slug: miserable-presentation-tips
+    title: Miserable presentation tips
+    url: /blog/miserable-presentation-tips/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-01-06-multiple-git-hosts.md
+    slug: multiple-git-hosts
+    title: Dealing with multiple git hosts
+    url: /blog/multiple-git-hosts/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-01-22-not-being-an-astronaut.md
+    slug: not-being-an-astronaut
+    title: I didn't want to be an astronaut as a kid
+    url: /blog/not-being-an-astronaut/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2018-08-18-nz-oia-guide.md
+    slug: nz-oia-guide
+    title: A brief guide to OIAs in New Zealand
+    url: /blog/nz-oia-guide/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-12-17-one-possible-death-for-discord.md
+    slug: one-possible-death-for-discord
+    title: One possible death for Discord
+    url: /blog/one-possible-death-for-discord/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-06-26-pleasant-claude-interaction.md
+    slug: pleasant-claude-interaction
+    title: Claude makes the case against Boeing
+    url: /blog/pleasant-claude-interaction/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-02-12-plex-tidal-together.md
+    slug: plex-tidal-together
+    title: Plex + Tidal = A Nice Match
+    url: /blog/plex-tidal-together/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-02-07-publish-old-works.md
+    slug: publish-old-works
+    title: You should publish your older works
+    url: /blog/publish-old-works/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-07-01-quicksand.md
+    slug: quicksand
+    title: Quicksand
+    url: /blog/quicksand/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-02-02-receipt-forest.md
+    slug: receipt-forest
+    title: Receipt Forest
+    url: /blog/receipt-forest/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-04-13-reducing-my-edc-2019.md
+    slug: reducing-my-edc-2019
+    title: Reducing my everyday carry during 2019
+    url: /blog/reducing-my-edc-2019/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-06-01-remind-the-user-what-your-service-does.md
+    slug: remind-the-user-what-your-service-does
+    title: Remind the user what your service does
+    url: /blog/remind-the-user-what-your-service-does/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-07-23-renovate-golang-setup.md
+    slug: renovate-golang-setup
+    title: Managing private Go repos with Renovate
+    url: /blog/renovate-golang-setup/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2019-07-29-retrieving-jenkins-credentials.md
+    slug: retrieving-jenkins-credentials
+    title: Retrieving credentials from Jenkins
+    url: /blog/retrieving-jenkins-credentials/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-10-02-retroid-pocket-4-pro.md
+    slug: retroid-pocket-4-pro
+    title: Portable gaming with the Retroid Pocket 4 Pro
+    url: /blog/retroid-pocket-4-pro/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-05-22-ride-the-curve.md
+    slug: ride-the-curve
+    title: Ride the curve
+    url: /blog/ride-the-curve/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-08-08-sampling-all-the-way-down.md
+    slug: sampling-all-the-way-down
+    title: Sampling all the way down
+    url: /blog/sampling-all-the-way-down/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-12-31-scooter-disliker.md
+    slug: scooter-disliker
+    title: A small reprieve from poorly executed ideas
+    url: /blog/scooter-disliker/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2022-10-22-so-you-have-or-are-competition.md
+    slug: so-you-have-or-are-competition
+    title: So you have (or are) competition
+    url: /blog/so-you-have-or-are-competition/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-12-01-solid-systems.md
+    slug: solid-systems
+    title: Will we ever get solid systems?
+    url: /blog/solid-systems/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-10-09-spreadsheet-to-visualisation.md
+    slug: spreadsheet-to-visualisation
+    title: 'Spreadsheet to visualisation: How I created towing.utf9k.net'
+    url: /blog/spreadsheet-to-visualisation/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-04-18-starbucks-rewards-third-place.md
+    slug: starbucks-rewards-third-place
+    title: 'Starbucks Rewards or: Whether a Coffee Shop Can Be a Third Place'
+    url: /blog/starbucks-rewards-third-place/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-01-11-subscription-management.md
+    slug: subscription-management
+    title: Managing subscriptions with an extra debit card
+    url: /blog/subscription-management/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-08-29-taking-holidays.md
+    slug: taking-holidays
+    title: Taking holidays is important
+    url: /blog/taking-holidays/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2025-02-09-testing-the-bounds-of-reason.md
+    slug: testing-the-bounds-of-reason
+    title: It's good to periodically test the bounds of what seems reasonable
+    url: /blog/testing-the-bounds-of-reason/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2020-11-23-tidying-towing-data.md
+    slug: tidying-towing-data
+    title: Tidying up towing data with Pandas
+    url: /blog/tidying-towing-data/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-07-04-time-dilation.md
+    slug: time-dilation
+    title: Time Dilation
+    url: /blog/time-dilation/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-10-01-twitter-image-servers-2021.md
+    slug: twitter-image-servers-2021
+    title: 'Twitter, could you please fix your image servers?'
+    url: /blog/twitter-image-servers-2021/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2023-11-21-vehicle-congestion-gnss.md
+    slug: vehicle-congestion-gnss
+    title: What does vehicle congestion tracking mean for privacy?
+    url: /blog/vehicle-congestion-gnss/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-03-03-walking-while-reading.md
+    slug: walking-while-reading
+    title: We are all that person who reads a book while walking
+    url: /blog/walking-while-reading/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-09-24-who-is-software-even-for.md
+    slug: who-is-software-even-for
+    title: Who is software even for?
+    url: /blog/who-is-software-even-for/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2017-12-18-wiki-thoughts.md
+    slug: wiki-thoughts
+    title: Some thoughts about running a wiki
+    url: /blog/wiki-thoughts/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2024-01-21-writing-for-your-worst-self.md
+    slug: writing-for-your-worst-self
+    title: Writing for your worst self
+    url: /blog/writing-for-your-worst-self/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2019-07-20-wsl2-vhd-issue.md
+    slug: wsl2-vhd-issue
+    title: Fixing a WSL2 VHD conversion issue
+    url: /blog/wsl2-vhd-issue/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-05-11-you-can-always-count-on-sales.md
+    slug: you-can-always-count-on-sales
+    title: You can always count on sales
+    url: /blog/you-can-always-count-on-sales/
+
+  - aliases: []
+    category: blog
+    filepath: blog/2021-02-11-zettelkasten-blog-a-good-idea.md
+    slug: zettelkasten-blog-a-good-idea
+    title: Using a blog like a zettelkasten seems like a good idea
+    url: /blog/zettelkasten-blog-a-good-idea/
+
+debug:
+
+  - aliases: []
+    category: debug
+    filepath: debug/redesign.md
+    slug: redesign
+    title: Redesign
+    url: /debug/redesign/
+
+  - aliases: []
+    category: debug
+    filepath: debug/typography.md
+    slug: typography
+    title: Typography
+    url: /debug/typography/
+generatedAt: '2025-09-17T08:47:13.473Z'
+
+projects:
+
+  - aliases: []
+    category: projects
+    filepath: projects/meta-oia-requests.md
+    slug: meta-oia-requests
+    title: Yearly review of OIAs redacted or declined by the NZ government
+    url: /projects/meta-oia-requests/
+
+  - aliases: []
+    category: projects
+    filepath: projects/netbox-plugin-azuread.md
+    slug: netbox-plugin-azuread
+    title: netbox-plugin-azuread
+    url: /projects/netbox-plugin-azuread/
+
+  - aliases: []
+    category: projects
+    filepath: projects/october.md
+    slug: october
+    title: October
+    url: /projects/october/
+
+  - aliases: []
+    category: projects
+    filepath: projects/parnell.md
+    slug: parnell
+    title: 'Most ticketed parking spots in Parnell, Auckland'
+    url: /projects/parnell/
+
+  - aliases: []
+    category: projects
+    filepath: projects/towing.md
+    slug: towing
+    title: 'Vehicles towed in Auckland, New Zealand'
+    url: /projects/towing/
+
+questions:
+
+  - aliases: []
+    category: questions
+    filepath: questions/arch-linux.md
+    slug: arch-linux
+    title: Arch Linux
+    url: /questions/arch-linux/
+
+  - aliases:
+      - /questions/athena-queries/
+      - /questions/athena/
+    category: questions
+    filepath: questions/athena-cheat-sheet.md
+    slug: athena-cheat-sheet
+    title: Athena Cheat Sheet
+    url: /questions/athena-cheat-sheet/
+
+  - aliases: []
+    category: questions
+    filepath: questions/athena-empty-logs.md
+    slug: athena-empty-logs
+    title: Athena Empty Logs
+    url: /questions/athena-empty-logs/
+
+  - aliases: []
+    category: questions
+    filepath: questions/azure-regions-alike.md
+    slug: azure-regions-alike
+    title: Are all Azure regions alike?
+    url: /questions/azure-regions-alike/
+
+  - aliases: []
+    category: questions
+    filepath: questions/chrome-netlog-dump.md
+    slug: chrome-netlog-dump
+    title: Capturing web traffic with Chrome's NetLog dumper
+    url: /questions/chrome-netlog-dump/
+
+  - aliases: []
+    category: questions
+    filepath: questions/crowdstrike-cli.md
+    slug: crowdstrike-cli
+    title: How can I view Crowdstrike configuration on a given host?
+    url: /questions/crowdstrike-cli/
+
+  - aliases: []
+    category: questions
+    filepath: questions/decrypting-wireshark-ssl-traffic.md
+    slug: decrypting-wireshark-ssl-traffic
+    title: How can I decrypt SSL traffic with Wireshark?
+    url: /questions/decrypting-wireshark-ssl-traffic/
+
+  - aliases: []
+    category: questions
+    filepath: questions/dns-lookup-current-ip.md
+    slug: dns-lookup-current-ip
+    title: How can I look up my current external IP address?
+    url: /questions/dns-lookup-current-ip/
+
+  - aliases: []
+    category: questions
+    filepath: questions/dns-original-implementation.md
+    slug: dns-original-implementation
+    title: How was DNS originally implemented?
+    url: /questions/dns-original-implementation/
+
+  - aliases: []
+    category: questions
+    filepath: questions/dns-trailing-period.md
+    slug: dns-trailing-period
+    title: What is the period you sometimes see at the end of a domain name?
+    url: /questions/dns-trailing-period/
+
+  - aliases: []
+    category: questions
+    filepath: questions/electron-unpacking.md
+    slug: electron-unpacking
+    title: How can I unpack the contents of an Electron app?
+    url: /questions/electron-unpacking/
+
+  - aliases: []
+    category: questions
+    filepath: questions/elixir-help-docs.md
+    slug: elixir-help-docs
+    title: How can I view help documentation for an Elixir module?
+    url: /questions/elixir-help-docs/
+
+  - aliases: []
+    category: questions
+    filepath: questions/elixir-object-methods.md
+    slug: elixir-object-methods
+    title: How can I view methods associated with an Elixir object?
+    url: /questions/elixir-object-methods/
+
+  - aliases: []
+    category: questions
+    filepath: questions/emacs-auth-sources.md
+    slug: emacs-auth-sources
+    title: How can I find out where Emacs is checking for passwords?
+    url: /questions/emacs-auth-sources/
+
+  - aliases: []
+    category: questions
+    filepath: questions/emacs-compile-from-source.md
+    slug: emacs-compile-from-source
+    title: How can I compile Emacs from source?
+    url: /questions/emacs-compile-from-source/
+
+  - aliases: []
+    category: questions
+    filepath: questions/emacs-function-double-dash.md
+    slug: emacs-function-double-dash
+    title: Why do some Emacs functions have double dashes?
+    url: /questions/emacs-function-double-dash/
+
+  - aliases: []
+    category: questions
+    filepath: questions/emacs-list-backtick.md
+    slug: emacs-list-backtick
+    title: Why do some Emacs lists start with a backtick instead of a comma?
+    url: /questions/emacs-list-backtick/
+
+  - aliases:
+      - /notes/oil-futures/
+    category: questions
+    filepath: questions/finance-oil-futures-negative.md
+    slug: finance-oil-futures-negative
+    title: Why did oil futures go negative in April 2020?
+    url: /questions/finance-oil-futures-negative/
+
+  - aliases: []
+    category: questions
+    filepath: questions/firefox-local-cert-store.md
+    slug: firefox-local-cert-store
+    title: How can I use my local certificate store with Firefox?
+    url: /questions/firefox-local-cert-store/
+
+  - aliases: []
+    category: questions
+    filepath: questions/generating-selfsigned-ca.md
+    slug: generating-selfsigned-ca
+    title: How can I generate a self-signed CA certificate chain?
+    url: /questions/generating-selfsigned-ca/
+
+  - aliases: []
+    category: questions
+    filepath: questions/git-globally-ignore-files.md
+    slug: git-globally-ignore-files
+    title: How can I globally ignore files?
+    url: /questions/git-globally-ignore-files/
+
+  - aliases: []
+    category: questions
+    filepath: questions/golang-stack-heap-vis.md
+    slug: golang-stack-heap-vis
+    title: How can I visualise stack and heap alloactions in Go?
+    url: /questions/golang-stack-heap-vis/
+
+  - aliases: []
+    category: questions
+    filepath: questions/http-domain-splits.md
+    slug: http-domain-splits
+    title: Why did sites split their assets across multiple domains back in the day?
+    url: /questions/http-domain-splits/
+
+  - aliases: []
+    category: questions
+    filepath: questions/http-non-encryption-benefits.md
+    slug: http-non-encryption-benefits
+    title: What non-encryption benefits are provided by HTTPS?
+    url: /questions/http-non-encryption-benefits/
+
+  - aliases: []
+    category: questions
+    filepath: questions/inspecting-socket-connections.md
+    slug: inspecting-socket-connections
+    title: How can I inspect socket connection states
+    url: /questions/inspecting-socket-connections/
+
+  - aliases: []
+    category: questions
+    filepath: questions/investigating-system-calls.md
+    slug: investigating-system-calls
+    title: How can I go about investigating system calls?
+    url: /questions/investigating-system-calls/
+
+  - aliases: []
+    category: questions
+    filepath: questions/js-colour-scheme-listener.md
+    slug: js-colour-scheme-listener
+    title: How can I listen for user changes to their colour scheme (ie dark mode)?
+    url: /questions/js-colour-scheme-listener/
+
+  - aliases: []
+    category: questions
+    filepath: questions/js-detect-iframe-parent.md
+    slug: js-detect-iframe-parent
+    title: How can I determine if my code is inside of an iFrame?
+    url: /questions/js-detect-iframe-parent/
+
+  - aliases: []
+    category: questions
+    filepath: questions/json-dict-flattening.md
+    slug: json-dict-flattening
+    title: How can I quickly flatten a JSON dictionary?
+    url: /questions/json-dict-flattening/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kafka-default-partitioner.md
+    slug: kafka-default-partitioner
+    title: Kafka Default Partitioner
+    url: /questions/kafka-default-partitioner/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kafka-golang-hash-strategy.md
+    slug: kafka-golang-hash-strategy
+    title: Kafka Golang Hash Strategy
+    url: /questions/kafka-golang-hash-strategy/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kobo-version-numbers.md
+    slug: kobo-version-numbers
+    title: How can I extract a list of Kobo versions from a device?
+    url: /questions/kobo-version-numbers/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-create-cron-instance.md
+    slug: kubes-create-cron-instance
+    title: How can I create an instance of a Kube cronjob?
+    url: /questions/kubes-create-cron-instance/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-default-namespace.md
+    slug: kubes-default-namespace
+    title: How can I set a default kubectl namespace for a given cluster?
+    url: /questions/kubes-default-namespace/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-ingress-ip-range.md
+    slug: kubes-ingress-ip-range
+    title: How can I restrict which traffic is allowed to pass through a Kube ingress?
+    url: /questions/kubes-ingress-ip-range/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-namespace-connectivity.md
+    slug: kubes-namespace-connectivity
+    title: How can I test connectivity within my Kube namespace?
+    url: /questions/kubes-namespace-connectivity/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-pause-recurring-cronjob.md
+    slug: kubes-pause-recurring-cronjob
+    title: How can I pause a recurring Kube cronjob?
+    url: /questions/kubes-pause-recurring-cronjob/
+
+  - aliases: []
+    category: questions
+    filepath: questions/kubes-read-secret.md
+    slug: kubes-read-secret
+    title: How can I read a Kubernetes secret?
+    url: /questions/kubes-read-secret/
+
+  - aliases: []
+    category: questions
+    filepath: questions/linux-audio-muting-suddenly.md
+    slug: linux-audio-muting-suddenly
+    title: Why do some of my applications suddenly get muted on Linux?
+    url: /questions/linux-audio-muting-suddenly/
+
+  - aliases: []
+    category: questions
+    filepath: questions/linux-disable-stock-folders.md
+    slug: linux-disable-stock-folders
+    title: How can I get rid of the default application folders that ship with my Linux distro?
+    url: /questions/linux-disable-stock-folders/
+
+  - aliases: []
+    category: questions
+    filepath: questions/linux-why-do-dotfiles-exist.md
+    slug: linux-why-do-dotfiles-exist
+    title: Why are dot files a thing?
+    url: /questions/linux-why-do-dotfiles-exist/
+
+  - aliases: []
+    category: questions
+    filepath: questions/lucene-cheat-sheet.md
+    slug: lucene-cheat-sheet
+    title: Lucene Cheat Sheet
+    url: /questions/lucene-cheat-sheet/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-check-shutdown-cause.md
+    slug: macos-check-shutdown-cause
+    title: How can I find out why my Mac has restarted?
+    url: /questions/macos-check-shutdown-cause/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-clipboard-piping.md
+    slug: macos-clipboard-piping
+    title: How can I access my clipboard contents inside my terminal?
+    url: /questions/macos-clipboard-piping/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-configured-networks.md
+    slug: macos-configured-networks
+    title: How can I view configured networks in my macOS terminal?
+    url: /questions/macos-configured-networks/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-disable-safari-recommendation.md
+    slug: macos-disable-safari-recommendation
+    title: How can I disable the 'Try the new Safari' notification?
+    url: /questions/macos-disable-safari-recommendation/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-extracting-shared-dyld-cache.md
+    slug: macos-extracting-shared-dyld-cache
+    title: How can I extract stuff from the macOS shared dyld cache?
+    url: /questions/macos-extracting-shared-dyld-cache/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-extracting-signatures.md
+    slug: macos-extracting-signatures
+    title: How can I extract macOS signatures from binaries?
+    url: /questions/macos-extracting-signatures/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-generating-iconsets.md
+    slug: macos-generating-iconsets
+    title: How can I easily bulk generate icons on macOS?
+    url: /questions/macos-generating-iconsets/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-hide-home-folders.md
+    slug: macos-hide-home-folders
+    title: How can I hide folders in my Home directory?
+    url: /questions/macos-hide-home-folders/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-homebrew-app-blocked.md
+    slug: macos-homebrew-app-blocked
+    title: How can I run a Homebrew application being blocked by Gatekeeper?
+    url: /questions/macos-homebrew-app-blocked/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-invoke-x-callback-url.md
+    slug: macos-invoke-x-callback-url
+    title: How can I try out x-callback-url commands on macOS?
+    url: /questions/macos-invoke-x-callback-url/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-monitor-jamf-downloads.md
+    slug: macos-monitor-jamf-downloads
+    title: How can I monitor JAMF downloads on macOS?
+    url: /questions/macos-monitor-jamf-downloads/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-port-5000-monterey.md
+    slug: macos-port-5000-monterey
+    title: What is using Port 5000 on macOS Monterey?
+    url: /questions/macos-port-5000-monterey/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-printer-cli.md
+    slug: macos-printer-cli
+    title: How can I configure my printer via terminal on macOS?
+    url: /questions/macos-printer-cli/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-see-file-usage.md
+    slug: macos-see-file-usage
+    title: How can I see what applications are making my shell commands slow?
+    url: /questions/macos-see-file-usage/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-strip-code-signatures.md
+    slug: macos-strip-code-signatures
+    title: How can I strip code signatures from macOS binaries?
+    url: /questions/macos-strip-code-signatures/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-view-filter-rules.md
+    slug: macos-view-filter-rules
+    title: How can I view macOS network filter rules?
+    url: /questions/macos-view-filter-rules/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-view-hardware.md
+    slug: macos-view-hardware
+    title: How can I find out more about the hardware inside my Mac?
+    url: /questions/macos-view-hardware/
+
+  - aliases: []
+    category: questions
+    filepath: questions/macos-view-route-table.md
+    slug: macos-view-route-table
+    title: How can I see my route table?
+    url: /questions/macos-view-route-table/
+
+  - aliases: []
+    category: questions
+    filepath: questions/monitoring-tracing-overview.md
+    slug: monitoring-tracing-overview
+    title: What is tracing?
+    url: /questions/monitoring-tracing-overview/
+
+  - aliases: []
+    category: questions
+    filepath: questions/monitoring-what-is-profiling.md
+    slug: monitoring-what-is-profiling
+    title: What is profiling?
+    url: /questions/monitoring-what-is-profiling/
+
+  - aliases: []
+    category: questions
+    filepath: questions/monitoring-what-to-instrument.md
+    slug: monitoring-what-to-instrument
+    title: What is worth instrumenting?
+    url: /questions/monitoring-what-to-instrument/
+
+  - aliases: []
+    category: questions
+    filepath: questions/nodegyp-python-distutils-missing.md
+    slug: nodegyp-python-distutils-missing
+    title: Why is node-gyp complaining about missing distutils under Python 3.12?
+    url: /questions/nodegyp-python-distutils-missing/
+
+  - aliases: []
+    category: questions
+    filepath: questions/nodejs-module-version.md
+    slug: nodejs-module-version
+    title: How can I find my current NODE_MODULE_VERSION?
+    url: /questions/nodejs-module-version/
+
+  - aliases: []
+    category: questions
+    filepath: questions/postgres-export-db.md
+    slug: postgres-export-db
+    title: How can I export a Postgres database?
+    url: /questions/postgres-export-db/
+
+  - aliases: []
+    category: questions
+    filepath: questions/postgres-import-db.md
+    slug: postgres-import-db
+    title: How can I import a dumped database into Postgres?
+    url: /questions/postgres-import-db/
+
+  - aliases: []
+    category: questions
+    filepath: questions/powershell-object-methods.md
+    slug: powershell-object-methods
+    title: How can I view the methods associated with an object?
+    url: /questions/powershell-object-methods/
+
+  - aliases: []
+    category: questions
+    filepath: questions/powershell-regex.md
+    slug: powershell-regex
+    title: How can I perform a regex search in Powershell?
+    url: /questions/powershell-regex/
+
+  - aliases: []
+    category: questions
+    filepath: questions/prometheus-sample-size.md
+    slug: prometheus-sample-size
+    title: How large is a single Prometheus sample?
+    url: /questions/prometheus-sample-size/
+
+  - aliases:
+      - /notes/ps1-disc-layout/
+    category: questions
+    filepath: questions/ps1-disc-offset.md
+    slug: ps1-disc-offset
+    title: Why do Playstation 1 discs start at offset 37656?
+    url: /questions/ps1-disc-offset/
+
+  - aliases: []
+    category: questions
+    filepath: questions/s3-bucket-naming.md
+    slug: s3-bucket-naming
+    title: How can I check if an S3 bucket name is available?
+    url: /questions/s3-bucket-naming/
+
+  - aliases: []
+    category: questions
+    filepath: questions/saml-inspect-request.md
+    slug: saml-inspect-request
+    title: How can I inspect a SAML request?
+    url: /questions/saml-inspect-request/
+
+  - aliases: []
+    category: questions
+    filepath: questions/selenium-remote-connection.md
+    slug: selenium-remote-connection
+    title: How can I remotely connect to a Selenium cluster
+    url: /questions/selenium-remote-connection/
+
+  - aliases: []
+    category: questions
+    filepath: questions/tcp-slowstart.md
+    slug: tcp-slowstart
+    title: How can I check whether a server may be unnecessarily slow-starting?
+    url: /questions/tcp-slowstart/
+
+  - aliases: []
+    category: questions
+    filepath: questions/tcp-window-scaling.md
+    slug: tcp-window-scaling
+    title: How can I check whether TCP window scaling is enabled?
+    url: /questions/tcp-window-scaling/
+
+  - aliases: []
+    category: questions
+    filepath: questions/tcpdump-exfiltration.md
+    slug: tcpdump-exfiltration
+    title: How can I capture network packets with tcpdump?
+    url: /questions/tcpdump-exfiltration/
+
+  - aliases: []
+    category: questions
+    filepath: questions/terraform-remove-state.md
+    slug: terraform-remove-state
+    title: How can I remove an item from Terraform state?
+    url: /questions/terraform-remove-state/
+
+  - aliases: []
+    category: questions
+    filepath: questions/tshark-statsd-metrics.md
+    slug: tshark-statsd-metrics
+    title: How can I live tail statsd metrics?
+    url: /questions/tshark-statsd-metrics/
+
+  - aliases: []
+    category: questions
+    filepath: questions/youtube-rss.md
+    slug: youtube-rss
+    title: How can I subscribe to a YouTube channel with an RSS reader?
+    url: /questions/youtube-rss/
+
+  - aliases: []
+    category: questions
+    filepath: questions/zig-golang-crosscompile.md
+    slug: zig-golang-crosscompile
+    title: How can I cross-compile Golang software using Zig?
+    url: /questions/zig-golang-crosscompile/
+
+reviews:
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-12-23-asuras-wrath.md
+    slug: asuras-wrath
+    title: Asura's Wrath
+    url: /reviews/asuras-wrath/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-02-22-call-of-juarez-gunslinger.md
+    slug: call-of-juarez-gunslinger
+    title: 'Call of Juarez: Gunslinger'
+    url: /reviews/call-of-juarez-gunslinger/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-02-01-d.md
+    slug: d
+    title: D
+    url: /reviews/d/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-04-12-eva-3nd-impact.md
+    slug: eva-3nd-impact
+    title: 'Evangelion Shin Gekijoban: 3nd Impact'
+    url: /reviews/eva-3nd-impact/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-02-13-fatal-frame.md
+    slug: fatal-frame
+    title: Fatal Frame
+    url: /reviews/fatal-frame/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-04-01-friends-for-real.md
+    slug: friends-for-real
+    title: 'Friends: The One with All the Trivia'
+    url: /reviews/friends-for-real/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2016-05-02-gitaroo-man-lives.md
+    slug: gitaroo-man-lives
+    title: Gitaroo Man Lives!
+    url: /reviews/gitaroo-man-lives/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-04-18-grand-theft-auto-v.md
+    slug: grand-theft-auto-v
+    title: Grand Theft Auto V
+    url: /reviews/grand-theft-auto-v/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2016-04-12-gravity-rush.md
+    slug: gravity-rush
+    title: Gravity Rush
+    url: /reviews/gravity-rush/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-05-12-hiatus.md
+    internalLinks:
+      - /reviews/asuras-wrath
+    slug: hiatus
+    title: Hiatus
+    url: /reviews/hiatus/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-10-infamous-2.md
+    slug: infamous-2
+    title: inFamous 2
+    url: /reviews/infamous-2/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-10-infamous.md
+    slug: infamous
+    title: inFamous
+    url: /reviews/infamous/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-03-28-jumping-flash.md
+    slug: jumping-flash
+    title: Jumping Flash!
+    url: /reviews/jumping-flash/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-04-04-kenka-bancho.md
+    slug: kenka-bancho
+    title: 'Kenka Bancho: Badass Rumble'
+    url: /reviews/kenka-bancho/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-13-killer-is-dead.md
+    slug: killer-is-dead
+    title: Killer Is Dead
+    url: /reviews/killer-is-dead/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-03-08-liberation-maiden.md
+    slug: liberation-maiden
+    title: Liberation Maiden
+    url: /reviews/liberation-maiden/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2016-01-01-life-is-strange.md
+    slug: life-is-strange
+    title: Life is Strange
+    url: /reviews/life-is-strange/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-05-04-lili-child-of-geos.md
+    slug: lili-child-of-geos
+    title: 'Lili: Child of Geos'
+    url: /reviews/lili-child-of-geos/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-03-13-magrunner-dark-pulse.md
+    slug: magrunner-dark-pulse
+    title: 'Magrunner: Dark Pulse'
+    url: /reviews/magrunner-dark-pulse/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-01-23-onimusha-warlords.md
+    slug: onimusha-warlords
+    title: 'Onimusha: Warlords'
+    url: /reviews/onimusha-warlords/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-12-29-p-n-03.md
+    slug: p-n-03
+    title: P.N.03
+    url: /reviews/p-n-03/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-03-20-picross-3d.md
+    slug: picross-3d
+    title: Picross
+    url: /reviews/picross-3d/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-22-red-faction-guerilla.md
+    slug: red-faction-guerilla
+    title: 'Red Faction: Guerilla'
+    url: /reviews/red-faction-guerilla/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-04-27-tail-concerto.md
+    slug: tail-concerto
+    title: Tail Concerto
+    url: /reviews/tail-concerto/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-01-10-the-simpsons-hit-and-run.md
+    slug: the-simpsons-hit-and-run
+    title: 'The Simpsons: Hit & Run'
+    url: /reviews/the-simpsons-hit-and-run/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-11-the-stanley-parable.md
+    slug: the-stanley-parable
+    title: The Stanley Parable
+    url: /reviews/the-stanley-parable/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-02-08-time-hollow.md
+    slug: time-hollow
+    title: Time Hollow
+    url: /reviews/time-hollow/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2014-10-12-wolfenstein-new-order.md
+    slug: wolfenstein-new-order
+    title: 'Wolfenstein: The New Order'
+    url: /reviews/wolfenstein-new-order/
+
+  - aliases: []
+    category: reviews
+    filepath: reviews/2015-01-03-yakuza.md
+    slug: yakuza
+    title: Yakuza
+    url: /reviews/yakuza/
+
+staticContent:
+
+  - aliases: []
+    category: single-page
+    filepath: 404.vto
+    slug: '404'
+    title: '404'
+    url: /404/
+
+  - aliases: []
+    category: single-page
+    filepath: about.md
+    slug: about
+    title: About
+    url: /about/
+
+  - aliases: []
+    category: category-index
+    filepath: blog.vto
+    slug: blog
+    title: Blog
+    url: /blog/
+
+  - aliases: []
+    category: single-page
+    filepath: books.vto
+    slug: books
+    title: Books
+    url: /books/
+
+  - aliases: []
+    category: category-index
+    filepath: debug.vto
+    slug: debug
+    title: Debug
+    url: /debug/
+
+  - aliases: []
+    category: single-page
+    filepath: games.vto
+    slug: games
+    title: Games
+    url: /games/
+
+  - aliases: []
+    category: single-page
+    filepath: index.vto
+    slug: index
+    title: Index
+    url: /index/
+
+  - aliases: []
+    category: single-page
+    filepath: manga.vto
+    slug: manga
+    title: Manga
+    url: /manga/
+
+  - aliases: []
+    category: single-page
+    filepath: now.md
+    slug: now
+    title: Now
+    url: /now/
+
+  - aliases: []
+    category: single-page
+    filepath: oias.vto
+    slug: oias
+    title: Oias
+    url: /oias/
+
+  - aliases: []
+    category: single-page
+    filepath: osts.vto
+    slug: osts
+    title: Osts
+    url: /osts/
+
+  - aliases: []
+    category: category-index
+    filepath: projects.vto
+    slug: projects
+    title: Projects
+    url: /projects/
+
+  - aliases: []
+    category: category-index
+    filepath: questions.vto
+    slug: questions
+    title: Questions
+    url: /questions/
+
+  - aliases: []
+    category: category-index
+    filepath: reviews.vto
+    slug: reviews
+    title: Reviews
+    url: /reviews/
+
+  - aliases: []
+    category: template
+    filepath: robots.txt.vto
+    slug: robots.txt
+    title: Robots.txt
+    url: /robots.txt
+
+  - aliases: []
+    category: template
+    filepath: search.json.vto
+    slug: search.json
+    title: Search.json
+    url: /search.json
+
+  - aliases: []
+    category: single-page
+    filepath: thanks.md
+    slug: thanks
+    title: Thanks
+    url: /thanks/
+
+  - aliases: []
+    category: single-page
+    filepath: uses.md
+    slug: uses
+    title: Uses
+    url: /uses/
+
+staticFiles:
+
+  - filename: favicon.ico
+    filepath: favicon.ico
+    url: /favicon.ico
+
+  - filename: favicon.png
+    filepath: favicon.png
+    url: /favicon.png
+
+  - filename: keybase.txt
+    filepath: keybase.txt
+    url: /keybase.txt
+
+  - filename: install.ps1
+    filepath: khinsider/install.ps1
+    url: /khinsider/install.ps1
+
+  - filename: install.sh
+    filepath: khinsider/install.sh
+    url: /khinsider/install.sh
+
+  - filename: manifest.json
+    filepath: manifest.json
+    url: /manifest.json
+
+  - filename: placeholder.png
+    filepath: placeholder.png
+    url: /placeholder.png
+
+  - filename: resume.html
+    filepath: resume.html
+    url: /resume.html
+
+  - filename: resume.mw
+    filepath: resume.mw
+    url: /resume.mw
+
+  - filename: resume.pdf
+    filepath: resume.pdf
+    url: /resume.pdf
+
+  - filename: robotcoffee.png
+    filepath: robotcoffee.png
+    url: /robotcoffee.png
+
+  - filename: rss.xsl
+    filepath: rss.xsl
+    url: /rss.xsl
+
+  - filename: books.schema.json
+    filepath: schemas/books.schema.json
+    url: /schemas/books.schema.json
+
+  - filename: games.schema.json
+    filepath: schemas/games.schema.json
+    url: /schemas/games.schema.json
+
+  - filename: towing.xlsx
+    filepath: towing.xlsx
+    url: /towing.xlsx
+
+  - filename: vsreport.html
+    filepath: vsreport.html
+    url: /vsreport.html
