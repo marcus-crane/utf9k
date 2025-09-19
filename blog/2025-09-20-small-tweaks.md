@@ -20,8 +20,8 @@ It took me a long time to get around to filing a council repair form because I'd
 
 About 2 weeks ago, I found myself approaching the crossing from a distance and was lucky enough to see ~20 people confidently cross the street with the now-repaired crossing light.
 
-Just the other day, I saw an entire school year[^1] crossing. Mind you, they were going in the opposite direction but I have no idea if they returned later that day and experienced the benefits of a functional traffic light.
+Just the other day, I saw an entire school year[^1] crossing the street. Mind you, they were going in the opposite direction but I have no idea if they returned later that day and experienced the benefits of a functional traffic light.
 
 In some ways, I feel like that brief 5 minute form submission has probably been one of the most impactful things I've ever done but then I say this just because it's a tangible change that I was lucky enough to see the outcome of.
 
-[^1]: The groups were staggered but there was about 8 groups of kids led by teachers so presumably an entire school year was doing a city trip
+[^1]: There was about 8 groups of kids led by teachers so presumably an entire school year was doing a city trip
