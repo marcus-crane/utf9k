@@ -112,6 +112,10 @@ This is an image rendered using Markdown syntax:
 
 ![Image by Robert Clark on Unsplash](https://cdn.utf9k.net/images/robert-clark-streak.jpg)
 
+This is an image rendered using Markdown syntax, with a title:
+
+![Image by Robert Clark on Unsplash](https://cdn.utf9k.net/images/robert-clark-streak.jpg "This is an interesting image")
+
 This is an image rendered using HTML syntax:
 
 <img alt="Image by Robert Clark on Unsplash" src="https://cdn.utf9k.net/images/robert-clark-streak.jpg" />
