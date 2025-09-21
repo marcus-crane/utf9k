@@ -498,6 +498,13 @@ blogPosts:
 
   - aliases: []
     category: blog
+    filepath: blog/2025-09-20-small-tweaks.md
+    slug: small-tweaks
+    title: Small Tweaks
+    url: /blog/small-tweaks/
+
+  - aliases: []
+    category: blog
     filepath: blog/2023-10-09-spreadsheet-to-visualisation.md
     slug: spreadsheet-to-visualisation
     title: 'Spreadsheet to visualisation: How I created towing.utf9k.net'
