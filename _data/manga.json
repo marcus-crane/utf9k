@@ -18,7 +18,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 212,
+    "progress": 213,
     "status": "RELEASING",
     "title": "Dandadan",
     "url": "https://anilist.co/manga/132029"
@@ -118,6 +118,18 @@
     "status": "RELEASING",
     "title": "One Punch-Man",
     "url": "https://anilist.co/manga/74347"
+  },
+  {
+    "author": "Yuen Wong Yu",
+    "chapters": 30,
+    "color": "#e49343",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx32389-M509S2H1CdE1.jpg",
+    "cover_height": 718,
+    "cover_width": 460,
+    "progress": 1,
+    "status": "FINISHED",
+    "title": "Shuma Baobei 03: Xun Shou Shi Zhi Wang",
+    "url": "https://anilist.co/manga/32389"
   },
   {
     "author": "Masakazu Ishiguro",
