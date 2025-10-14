@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 56043
+    title: Robotics;Notes DaSH
+    link: https://www.backloggd.com/games/robotics-notes-dash/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ilu.jpg
+      width: 720
+      height: 540
   - id: 338106
     title: Donkey Kong Bananza
     link: https://www.backloggd.com/games/donkey-kong-bananza/
