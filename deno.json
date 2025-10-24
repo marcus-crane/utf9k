@@ -7,7 +7,7 @@
     ]
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume": "deno run -A lume/cli.ts",
     "build": "MODE=build deno task lume",
     "serve": "MODE=serve deno task lume -s",
     "build:deps": "./ci/install.sh",
@@ -18,7 +18,7 @@
     "validate": "deno run --allow-read _scripts/validate-e2e.ts"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v3.0.9/",
+    "lume/": "https://deno.land/x/lume@v3.1.1/",
     "prettier": "npm:prettier@3.5.3",
     "rehype-pretty-code": "npm:rehype-pretty-code@0.14.1",
     "remark-callout": "npm:@r4ai/remark-callout@0.6.2",
@@ -27,14 +27,14 @@
     "remark-toc": "npm:remark-toc@9.0.0",
     "rehype-slug": "npm:rehype-slug@6.0.0",
     "rehypeAutolinkHeadings": "npm:rehype-autolink-headings@7.1.0",
-    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.10/jsx-runtime.ts"
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts"
   },
   "unstable": [
     "temporal"
   ],
   "lint": {
     "plugins": [
-      "https://deno.land/x/lume@v3.0.9/lint.ts"
+      "https://deno.land/x/lume@v3.1.1/lint.ts"
     ]
   }
 }
