@@ -1,7 +1,7 @@
 ---
 category: now
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
-lastmod: 2025-07-13
+lastmod: 2025-10-25
 layout: markdown.vto
 slug: now
 tags:
@@ -10,54 +10,42 @@ title: Now
 ---
 Here's what I'm up to currently:
 
-## Working at Halter
+## Nearly 6 months at Halter
 
-At the time of writing, I've just wrapped up my fifth week at [Halter](https://halterhq.com) which has been consuming a lot of my brain space in a good way.
+Time has flown by and one element of Halter is that each day feels like two with the amount of stuff to learn as well as the speed that everything moves.
 
-Admittedly, I'm not the greatest at pacing myself when it comes to new problems so that's definitely something I'll be working on.
+I was recently just on vacation and while it was just over a week, it felt like a month by the time I had returned which is quite nice as well.
 
-## Obsidian
+Anyway, this is a bit of a double edged sword because there's so much stuff going on that I get an itch to work all the time, which also means I have a hard time deciding what to work on (and importantly, when to stop 😅)
 
-I declared Obsidian bankruptcy earlier in the year and I've tried to organically land on a structure that is optimised for using as little thought power as I can manage for organising notes.
+## Post-Vacation slump
 
-In short, all notes go in the root of my vault but I use backlinks to loosely create parent/child relationships where they make sense.
+A couple of weeks back, I flew over to Perth for the first time to watch [WWE Crown Jewel 2025](https://en.wikipedia.org/wiki/Crown_Jewel_(2025)).
 
-That sounds like a mess but I've been using the new Obsidian Bases functionality as a view layer for managing and organising those parent notes which is going alright so far.
+Having followed WWE on and off since I was about 12, it was a bit of a fever dream for me!
 
-I think this setup is pretty solid but I'm not rushing to backfill my historical notes in order to make sure it feels as sturdy as I hope.
+I *still* haven't sat down to watch the shows back but I do know that I'm very clearly immortalised into WWE Raw in one of the clips, being visible behind Seth Rollins as he's cutting a promo.
 
-## Links
+I don't imagine I'll have a holiday as interesting as that for quite some time unfortunately.
 
-At the moment, I maintain a [Linkding instance](https://links.soup.utf9k.net) which works well but it feels overkill for a list that essentially could just be a flat file.
+## Media Consumption
 
-I think I'd like to incorporate my link archive into my site when I do a redesign.
+I feel like I have a pretty standard media consumption diet of the same weekly talk shows, podcasts, wrestling etc.
 
-## Beeminder
+While I don't dislike any of them in particular but as far as a diet goes, a lot of it isn't actually that interesting so much as it's comfortable.
 
-After building up a bunch of goals in Beeminder, I found that a lot of my priorities and schedule changed in relation to my new job.
+I'd like to make better use of where I spend my time and switch up my habits a bit to have a higher signal to noise ratio.
 
-A lot of those goals were also just things that I didn't really find myself enjoying at all or they had slightly misaligned incentives so I archived a bunch of them.
+There's nothing wrong with consuming junk but some of the above is basically content that's pretty lossy when I could get higher quality stuff from the source (or go the other way and use a delayed aggregator to save a bunch of time and cruft)
 
-That said, I'd like to introduce a couple more such as making sure that I touch my Obsidian vault most days.
+## Science Adventure
 
-## Website refresh
+Since the start of 2025, I've been slowly playing through the [Science Adventure](https://en.wikipedia.org/wiki/Science_Adventure) franchise.
 
-This one is always a long running thing where I say I'll do it yet never have any inspiration.
+There's a bit of a hole in my habits now as grinding through the main storyline had been my default for quite some time!
 
-I went back through my sizable batch of website screenshots and got a few ideas that I'm going to ideally start experimenting with.
+I don't regret spending the time, having really enjoyed Steins;Gate and Chaos;Child in particular.
 
-This time around, I'd like to make sure that my site is structurally sound in browsers without CSS so for example, no giant images and so on.
+It had also been my first real time spent with visual novels which I had attempted and fallen off of many times in the past so I definitely did not expect to conquer 6 1/2 VNs[^dash] in a year, let alone one.
 
-Historically I've done a good job with progressive JS but less so with CSS.
-
-I don't strictly need to but I guess as someone who works as a Site Reliability Engineer, it's a nice challenge to come up with something aesthetically pleasing and yet performant and backwards compatible (within reason).
-
-Being a frontender is not something I would able to do as a day job but I do like to be able to put my money where my mouth is in regards to web bloat.
-
-## Media consumption
-
-I got back into wrestling in a big way this year where I'd watch Raw and Smackdown weekly.
-
-I don't regret it or anything but damn if it isn't a time sink (even with fast forwarding) and to make it worse, I think I might start watching AEW now after that great showing at AEW All In Texas.
-
-Realistically, I might just have to watch the highlights and/or just start watching the PPVs because I only really watch promos for the weekly shows anyway.
+[^dash]: I finished half of Robotics;Notes DaSH and put it aside (for now) after I realised it's actually closer to a side story

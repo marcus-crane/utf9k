@@ -136,7 +136,8 @@ site.ignore(
     "LICENSE",
     "README.md",
     "renovate.json",
-    ".DS_Store"
+    ".DS_Store",
+    "manifest.yml"
 );
 
 site.process(
