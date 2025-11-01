@@ -1,17 +1,17 @@
 - list: Playing
   games:
+  - id: 473
+    title: 'Battlefield: Bad Company'
+    link: https://www.backloggd.com/games/battlefield-bad-company/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
+      width: 720
+      height: 540
   - id: 26384
     title: E.X. Troopers
     link: https://www.backloggd.com/games/ex-troopers/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
-      width: 720
-      height: 540
-  - id: 338106
-    title: Donkey Kong Bananza
-    link: https://www.backloggd.com/games/donkey-kong-bananza/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/coa082.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -2708,6 +2708,13 @@
       height: 540
 - list: Shelved
   games:
+  - id: 338106
+    title: Donkey Kong Bananza
+    link: https://www.backloggd.com/games/donkey-kong-bananza/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coa082.jpg
+      width: 720
+      height: 540
   - id: 56043
     title: Robotics;Notes DaSH
     link: https://www.backloggd.com/games/robotics-notes-dash/
@@ -2818,13 +2825,6 @@
     link: https://www.backloggd.com/games/tasomachi-behind-the-twilight/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2vtk.jpg
-      width: 720
-      height: 540
-  - id: 473
-    title: 'Battlefield: Bad Company'
-    link: https://www.backloggd.com/games/battlefield-bad-company/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
       width: 720
       height: 540
   - id: 254339
