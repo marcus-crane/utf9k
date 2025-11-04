@@ -193,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 325174
+    title: 'Duck Detective: The Ghost of Glamping'
+    link: https://www.backloggd.com/games/duck-detective-the-ghost-of-glamping/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co94zn.jpg
+      width: 720
+      height: 540
   - id: 11776
     title: Anonymous;Code
     link: https://www.backloggd.com/games/anonymous-code/
