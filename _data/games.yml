@@ -473,6 +473,13 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co2d0f.jpg
       width: 720
       height: 540
+  - id: 2136
+    title: Bayonetta
+    link: https://www.backloggd.com/games/bayonetta/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co8nf4.jpg
+      width: 720
+      height: 540
   - id: 1192
     title: Crash Team Racing
     link: https://www.backloggd.com/games/crash-team-racing/
@@ -3119,13 +3126,6 @@
     link: https://www.backloggd.com/games/ico--1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7221.jpg
-      width: 720
-      height: 540
-  - id: 2136
-    title: Bayonetta
-    link: https://www.backloggd.com/games/bayonetta/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co8nf4.jpg
       width: 720
       height: 540
   - id: 3225
