@@ -20,7 +20,7 @@ jobs:
         id: setup-python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.11.0"
+          python-version: "3.14.0"
           cache: 'pip'
       - name: Generate metadata and deploy site
         run: deno task deploy
