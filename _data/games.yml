@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 325609
-    title: Dispatch
-    link: https://www.backloggd.com/games/dispatch--3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co95gb.jpg
-      width: 720
-      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
@@ -200,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 325609
+    title: Dispatch
+    link: https://www.backloggd.com/games/dispatch--3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co95gb.jpg
+      width: 720
+      height: 540
   - id: 325174
     title: 'Duck Detective: The Ghost of Glamping'
     link: https://www.backloggd.com/games/duck-detective-the-ghost-of-glamping/
