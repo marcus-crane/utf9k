@@ -7,13 +7,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
       width: 720
       height: 540
-  - id: 26384
-    title: E.X. Troopers
-    link: https://www.backloggd.com/games/ex-troopers/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co2ic9.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 305152
