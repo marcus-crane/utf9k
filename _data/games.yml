@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 625
-    title: 'Call of Duty: World at War'
-    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
-      width: 720
-      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
@@ -193,6 +186,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 625
+    title: 'Call of Duty: World at War'
+    link: https://www.backloggd.com/games/call-of-duty-world-at-war/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1wl8.jpg
+      width: 720
+      height: 540
   - id: 325609
     title: Dispatch
     link: https://www.backloggd.com/games/dispatch--3/
