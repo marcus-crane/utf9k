@@ -1,10 +1,10 @@
 - list: Playing
   games:
-  - id: 473
-    title: 'Battlefield: Bad Company'
-    link: https://www.backloggd.com/games/battlefield-bad-company/
+  - id: 7265
+    title: 3D Dot Game Heroes
+    link: https://www.backloggd.com/games/3d-dot-game-heroes/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1uui.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -186,6 +186,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 473
+    title: 'Battlefield: Bad Company'
+    link: https://www.backloggd.com/games/battlefield-bad-company/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbe.jpg
+      width: 720
+      height: 540
   - id: 625
     title: 'Call of Duty: World at War'
     link: https://www.backloggd.com/games/call-of-duty-world-at-war/
