@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 27861
+    title: 'Lost Planet: Extreme Condition - Colonies Edition'
+    link: https://www.backloggd.com/games/lost-planet-extreme-condition-colonies-edition/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co2w7j.jpg
+      width: 720
+      height: 540
   - id: 7265
     title: 3D Dot Game Heroes
     link: https://www.backloggd.com/games/3d-dot-game-heroes/
