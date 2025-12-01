@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 352
-    title: 'Battlefield: Bad Company 2'
-    link: https://www.backloggd.com/games/battlefield-bad-company-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1xbi.jpg
-      width: 720
-      height: 540
   - id: 27861
     title: 'Lost Planet: Extreme Condition - Colonies Edition'
     link: https://www.backloggd.com/games/lost-planet-extreme-condition-colonies-edition/
