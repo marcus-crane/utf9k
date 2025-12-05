@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 200165
-    title: 'Call of Duty: Modern Warfare II'
-    link: https://www.backloggd.com/games/call-of-duty-modern-warfare-ii/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co4sbw.jpg
-      width: 720
-      height: 540
   - id: 27861
     title: 'Lost Planet: Extreme Condition - Colonies Edition'
     link: https://www.backloggd.com/games/lost-planet-extreme-condition-colonies-edition/
@@ -200,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 200165
+    title: 'Call of Duty: Modern Warfare II'
+    link: https://www.backloggd.com/games/call-of-duty-modern-warfare-ii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co4sbw.jpg
+      width: 720
+      height: 540
   - id: 473
     title: 'Battlefield: Bad Company'
     link: https://www.backloggd.com/games/battlefield-bad-company/
