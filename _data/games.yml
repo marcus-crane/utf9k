@@ -193,6 +193,13 @@
       height: 540
 - list: Completed
   games:
+  - id: 260780
+    title: 'Call of Duty: Modern Warfare III'
+    link: https://www.backloggd.com/games/call-of-duty-modern-warfare-iii/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7ctx.jpg
+      width: 720
+      height: 540
   - id: 200165
     title: 'Call of Duty: Modern Warfare II'
     link: https://www.backloggd.com/games/call-of-duty-modern-warfare-ii/
