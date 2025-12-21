@@ -8,44 +8,59 @@ tags:
   - me
 title: Now
 ---
-Here's what I'm up to currently:
 
-## Nearly 6 months at Halter
+Here's what I'm currently up to:
 
-Time has flown by and one element of Halter is that each day feels like two with the amount of stuff to learn as well as the speed that everything moves.
+## 6 months at Halter
 
-I was recently just on vacation and while it was just over a week, it felt like a month by the time I had returned which is quite nice as well.
+I wrote this 2 months ago and it's only true now!
 
-Anyway, this is a bit of a double edged sword because there's so much stuff going on that I get an itch to work all the time, which also means I have a hard time deciding what to work on (and importantly, when to stop 😅)
+I'm coming up to 7 months at the start of January but I feel like I'm in a time void or something. I've learnt so much in the latter half of this year that it feels like multiple years have passed at this point.
 
-## Post-Vacation slump
+## Christmas Break
 
-A couple of weeks back, I flew over to Perth for the first time to watch [WWE Crown Jewel 2025](https://en.wikipedia.org/wiki/Crown_Jewel_(2025)).
+I've had a few smaller breaks here and there but this will be my first break longer than a week in quite some time I think.
 
-Having followed WWE on and off since I was about 12, it was a bit of a fever dream for me!
+The last time I had a multi-week shutdown over the holiday period must have been quite a number of years ago because it's a struggle to even recall when the last time was.
 
-I *still* haven't sat down to watch the shows back but I do know that I'm very clearly immortalised into WWE Raw in one of the clips, being visible behind Seth Rollins as he's cutting a promo.
+Admittedly, my worry is that I'm going to waste it all away scrolling so I aim to maximise the holiday period and churn through as many projects as I can!
 
-I don't imagine I'll have a holiday as interesting as that for quite some time unfortunately.
+## This Website
 
-## Media Consumption
+Every so often, I think I'll sit down and do a big redesign of the site. I've taken a few stabs and nothing in particular has stuck.
 
-I feel like I have a pretty standard media consumption diet of the same weekly talk shows, podcasts, wrestling etc.
+I've had a couple of comments that people like the site layout but I think it could have even more personality so perhaps I'll just focus on polishing various parts.
 
-While I don't dislike any of them in particular but as far as a diet goes, a lot of it isn't actually that interesting so much as it's comfortable.
+Some of the typography can do with a fresh pass and there are a number of pages on the site that aren't actually linked anywhere.
 
-I'd like to make better use of where I spend my time and switch up my habits a bit to have a higher signal to noise ratio.
+Surprisingly, I even have a few ideas for posts in my head as well so maybe I'll write one or two over the break.
 
-There's nothing wrong with consuming junk but some of the above is basically content that's pretty lossy when I could get higher quality stuff from the source (or go the other way and use a delayed aggregator to save a bunch of time and cruft)
+It's an overcooked genre but I would like to capture my thoughts on the whole AI boom, not because I think I have any special insight but because I think it'd be interesting to revisit my thoughts when we're 5 or 10 years down the track, regardless of what the final outcome is.
 
-## Science Adventure
+I say that yet I almost never re-read my old posts so we'll see.
 
-Since the start of 2025, I've been slowly playing through the [Science Adventure](https://en.wikipedia.org/wiki/Science_Adventure) franchise.
+## NZCCL
 
-There's a bit of a hole in my habits now as grinding through the main storyline had been my default for quite some time!
+It's not publicly mentioned yet[^1] but I joined the Executive Committee for the [New Zealand Council for Civil Liberties](https://nzccl.org.nz/) last month.
 
-I don't regret spending the time, having really enjoyed Steins;Gate and Chaos;Child in particular.
+I had already been attending their monthly meetings and doing the odd bit of volunteer work so functionally, nothing changes there. I just get a fancy sounding title.
 
-It had also been my first real time spent with visual novels which I had attempted and fallen off of many times in the past so I definitely did not expect to conquer 6 1/2 VNs[^dash] in a year, let alone one.
+While I have some spare time over the holidays, I'll be aiming to read up on some of the upcoming legislation as well as doing some improvements on the tech side.
 
-[^dash]: I finished half of Robotics;Notes DaSH and put it aside (for now) after I realised it's actually closer to a side story
+## RSS
+
+I'm a fairly heavy user of [NewsBlur](https://newsblur.com/) but it's time to do a prune.
+
+There are some information sources I don't care about anymore, others I just don't seem to have as much time for so I'm going to try and min/max the noise to signal ratio once again.
+
+The same goes for my article backlog. I end up with too much *stuff* that realistically I won't get around to.
+
+## Framework
+
+I recently got a 13 inch Framework for use at work. Until now, I'd been using a 13-inch Macbook Pro but I kept running out of memory as it *only* had 16GB of RAM.
+
+This new upgraded Framework has plenty of resources and I was even able to run [EndeavourOS](https://endeavouros.com/) on it to match my home desktop.
+
+To date, I still haven't learned how to use tmux so perhaps it's finally time to take it for a spin.
+
+[^1]: I still need to write a blurb for the website...
