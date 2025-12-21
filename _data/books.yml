@@ -1,7 +1,6 @@
 - list: 2025
   goal: 18
   books:
-
     - title: Careless People
       subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
       author: Sarah Wynn-Williams
@@ -15,7 +14,7 @@
       date_started: 2025-06-30
       date_finished: null
       recommended: false
-      progress: 13
+      progress: 59
 
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
