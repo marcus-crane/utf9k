@@ -1,6 +1,21 @@
 - list: 2025
   goal: 18
   books:
+    - title: The Unaccountability Machine
+      subtitle: Why Big Systems Make Terrible Decisions
+      author: Dan Davies
+      cover: https://cdn.utf9k.net/books/the-unaccountability-machine.jpg
+      cover_height: 2345
+      cover_width: 1527
+      isbn13: 9781788169554
+      asin: 1788169557
+      link: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
+      date_added: 2024-11-21 
+      date_started: 2025-10-27
+      date_finished: null
+      recommended: false
+      progress: 39
+
     - title: Careless People
       subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
       author: Sarah Wynn-Williams
