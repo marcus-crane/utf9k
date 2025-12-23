@@ -1,5 +1,12 @@
 - list: Playing
-  games: []
+  games:
+  - id: 25076
+    title: Red Dead Redemption 2
+    link: https://www.backloggd.com/games/red-dead-redemption-2/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
+      width: 720
+      height: 540
 - list: Backlog
   games:
   - id: 305152
@@ -3490,13 +3497,6 @@
     link: https://www.backloggd.com/games/say-no-more/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/co3m7k.jpg
-      width: 720
-      height: 540
-  - id: 25076
-    title: Red Dead Redemption 2
-    link: https://www.backloggd.com/games/red-dead-redemption-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
       width: 720
       height: 540
   - id: 11292
