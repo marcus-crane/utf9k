@@ -1,0 +1,30 @@
+baseURL: https://utf9k.net
+languageCode: en-us
+title: utf9k
+
+enableGitInfo: true
+enableRobotsTXT: true
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: Blog
+      pageRef: /blog
+      weight: 20
+  media:
+    - name: Books
+      pageRef: /books
+      weight: 10
+  meta:
+    - name: Now
+      pageRef: /now
+      weight: 10
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true

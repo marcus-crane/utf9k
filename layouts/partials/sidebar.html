@@ -1,0 +1,28 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <h1>
+      <a href="/">
+        <img src="https://utf9k.net/favicon.png" alt="TODO" class="site-icon">
+        <span class="site-name">{{ .Site.Title }}</span>
+      </a>
+    </h1>
+    <div class="speech-bubble" id="robot-gag"></div>
+  </div>
+
+  {{ range $name, $menu := .Site.Menus }}
+  <nav class="nav-section">
+    <div class="nav-section-title">{{ $name }}</div>
+    {{ range $menu }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent $name . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  {{ end }}
+
+  <div class="nav-spacer"></div>
+
+  <div class="theme-toggle">
+    <button type="button" data-theme="light">Light</button>
+    <button type="button" data-theme="system" class="active">Auto</button>
+    <button type="button" data-theme="dark">Dark</button>
+  </div>
+</aside>
