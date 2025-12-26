@@ -1,9 +1,0 @@
----
-url: /search.json
----
-
-{{> const index = [] }}
-{{ for item of search.pages("category=questions", "order=asc title=asc") }}
-{{> index.push({ "content": item.content, "slug": item.slug, "tags": item.tags, "title": item.title })}}
-{{ /for }}
-{{ JSON.stringify(index) }}
