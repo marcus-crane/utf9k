@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root {
   --base: #d9d0c3;
   --surface: #e2d9cc;
@@ -20,10 +22,15 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Arimo', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background: var(--base);
   min-height: 100vh;
   color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body.dark {
