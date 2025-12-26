@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plex Media Wheel</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .wheel-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+        }
+        
+        .wheel-segment {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform-origin: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            text-align: center;
+            padding-left: 15%;
+        }
+        
+        .wheel-pointer {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid #ff6b6b;
+            z-index: 10;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+        }
+        
+        .wheel-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #667eea;
+            z-index: 5;
+        }
+        
+        .spinning {
+            animation: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function PlexMovieWheel() {
+            const [step, setStep] = useState('auth'); // auth, selectLibrary, wheel
+            const [plexToken, setPlexToken] = useState('');
+            const [plexServer, setPlexServer] = useState(null);
+            const [libraries, setLibraries] = useState([]);
+            const [selectedLibrary, setSelectedLibrary] = useState(null);
+            const [movies, setMovies] = useState([]);
+            const [rotation, setRotation] = useState(0);
+            const [spinning, setSpinning] = useState(false);
+            const [selectedItem, setSelectedItem] = useState(null);
+            const [serverUrl, setServerUrl] = useState('');
+            const [authCode, setAuthCode] = useState('');
+            const [error, setError] = useState('');
+
+            // Load saved credentials from localStorage on mount
+            useEffect(() => {
+                const savedServerUrl = localStorage.getItem('plexServerUrl');
+                const savedToken = localStorage.getItem('plexToken');
+                
+                if (savedServerUrl) {
+                    setServerUrl(savedServerUrl);
+                }
+                if (savedToken) {
+                    setPlexToken(savedToken);
+                }
+
+                // Auto-connect if both are available
+                if (savedServerUrl && savedToken) {
+                    autoConnect(savedServerUrl, savedToken);
+                }
+            }, []);
+
+            // Auto-connect function
+            const autoConnect = async (url, token) => {
+                try {
+                    const response = await fetch(`${url}/library/sections`, {
+                        headers: {
+                            'X-Plex-Token': token,
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        const supportedLibraries = data.MediaContainer.Directory.filter(
+                            lib => lib.type === 'movie' || lib.type === 'show' || lib.type === 'artist'
+                        ).sort((a, b) => a.title.localeCompare(b.title));
+                        setLibraries(supportedLibraries);
+                        setStep('selectLibrary');
+                    }
+                } catch (err) {
+                    // Silently fail auto-connect, user can manually reconnect
+                    console.log('Auto-connect failed, manual login required');
+                }
+            };
+
+            // Authenticate with Plex
+            const authenticateWithPlex = async () => {
+                setError('');
+                try {
+                    // In a real implementation, you'd use Plex OAuth flow
+                    // For this demo, we'll use direct token input
+                    if (!plexToken || !serverUrl) {
+                        setError('Please enter both server URL and auth token');
+                        return;
+                    }
+
+                    // Ensure serverUrl has a protocol
+                    let normalizedUrl = serverUrl.trim();
+                    if (!normalizedUrl.startsWith('http://') && !normalizedUrl.startsWith('https://')) {
+                        // Check if it looks like an IP address or localhost
+                        if (/^(\d{1,3}\.){3}\d{1,3}/.test(normalizedUrl) || normalizedUrl.startsWith('localhost')) {
+                            normalizedUrl = 'http://' + normalizedUrl;
+                        } else {
+                            normalizedUrl = 'https://' + normalizedUrl;
+                        }
+                        setServerUrl(normalizedUrl);
+                    }
+
+                    // Test the connection
+                    const response = await fetch(`${normalizedUrl}/library/sections`, {
+                        headers: {
+                            'X-Plex-Token': plexToken,
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to connect to Plex server');
+                    }
+
+                    const data = await response.json();
+                    const supportedLibraries = data.MediaContainer.Directory.filter(
+                        lib => lib.type === 'movie' || lib.type === 'show' || lib.type === 'artist'
+                    ).sort((a, b) => a.title.localeCompare(b.title));
+
+                    // Save credentials to localStorage
+                    localStorage.setItem('plexServerUrl', normalizedUrl);
+                    localStorage.setItem('plexToken', plexToken);
+
+                    setLibraries(supportedLibraries);
+                    setStep('selectLibrary');
+                } catch (err) {
+                    setError('Failed to authenticate. Please check your server URL and token.');
+                    console.error(err);
+                }
+            };
+
+            // Clear saved credentials
+            const clearCredentials = () => {
+                localStorage.removeItem('plexServerUrl');
+                localStorage.removeItem('plexToken');
+                setServerUrl('');
+                setPlexToken('');
+                setStep('auth');
+                setLibraries([]);
+                setSelectedLibrary(null);
+                setMovies([]);
+                setSelectedItem(null);
+                setRotation(0);
+            };
+
+            // Convert duration to human-readable format
+            const formatDuration = (milliseconds) => {
+                const totalMinutes = Math.floor(milliseconds / 60000);
+                if (totalMinutes < 60) {
+                    return `${totalMinutes} min`;
+                }
+                const hours = Math.floor(totalMinutes / 60);
+                const minutes = totalMinutes % 60;
+                if (minutes === 0) {
+                    return `${hours} hr`;
+                }
+                return `${hours} hr ${minutes}m`;
+            };
+
+            // Fetch movies from selected library
+            const selectLibrary = async (library) => {
+                setSelectedLibrary(library);
+                setError('');
+                
+                try {
+                    let endpoint = `${serverUrl}/library/sections/${library.key}/all`;
+                    
+                    // For music libraries, fetch albums specifically
+                    if (library.type === 'artist') {
+                        endpoint = `${serverUrl}/library/sections/${library.key}/albums`;
+                    }
+
+                    const response = await fetch(endpoint, {
+                        headers: {
+                            'X-Plex-Token': plexToken,
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch content');
+                    }
+
+                    const data = await response.json();
+                    let contentList = data.MediaContainer.Metadata || [];
+                    
+                    // Filter out watched content for movies and TV shows
+                    if (library.type === 'movie') {
+                        // For movies, exclude if viewCount exists (fully watched)
+                        contentList = contentList.filter(item => !item.viewCount || item.viewCount === 0);
+                    } else if (library.type === 'show') {
+                        // For TV shows, exclude if all episodes are watched
+                        contentList = contentList.filter(item => {
+                            // If viewedLeafCount exists and equals leafCount, it's fully watched
+                            if (item.viewedLeafCount !== undefined && item.leafCount !== undefined) {
+                                return item.viewedLeafCount < item.leafCount;
+                            }
+                            // If no watch data, include it
+                            return true;
+                        });
+                    }
+                    // For music, we don't filter by watch status
+                    
+                    if (contentList.length === 0) {
+                        setError('No unwatched content found in this library');
+                        return;
+                    }
+
+                    setMovies(contentList);
+                    setStep('wheel');
+                } catch (err) {
+                    setError('Failed to load content from library');
+                    console.error(err);
+                }
+            };
+
+            // Spin the wheel
+            const spinWheel = () => {
+                if (spinning || movies.length === 0) return;
+
+                setSpinning(true);
+                setSelectedItem(null);
+
+                // Random number of full rotations (3-5) plus random final position
+                const fullRotations = 3 + Math.floor(Math.random() * 3);
+                const randomMovie = Math.floor(Math.random() * movies.length);
+                const degreesPerSegment = 360 / movies.length;
+                const finalRotation = fullRotations * 360 + (360 - randomMovie * degreesPerSegment) + (degreesPerSegment / 2);
+
+                setRotation(finalRotation);
+
+                // After animation completes, show the selected movie
+                setTimeout(() => {
+                    setSelectedItem(movies[randomMovie]);
+                    setSpinning(false);
+                }, 4000);
+            };
+
+            // Generate wheel segments
+            const generateWheelSegments = () => {
+                const colors = [
+                    '#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', 
+                    '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E2',
+                    '#F8B739', '#52B788', '#E63946', '#A8DADC'
+                ];
+
+                return movies.map((movie, index) => {
+                    const angle = (360 / movies.length) * index;
+                    const color = colors[index % colors.length];
+                    const segmentAngle = 360 / movies.length;
+                    
+                    return (
+                        <div
+                            key={movie.ratingKey}
+                            className="wheel-segment"
+                            style={{
+                                transform: `rotate(${angle}deg) skew(${90 - segmentAngle}deg)`,
+                                background: color
+                            }}
+                        >
+                        </div>
+                    );
+                });
+            };
+
+            // Auth Step
+            if (step === 'auth') {
+                return (
+                    <div className="min-h-screen flex items-center justify-center p-4">
+                        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
+                            <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+                                🎬 Plex Media Wheel
+                            </h1>
+                            
+                            <p className="text-gray-600 mb-6 text-center">
+                                Connect to your Plex server to get started
+                            </p>
+
+                            <div className="space-y-4">
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                                        Plex Server URL
+                                    </label>
+                                    <input
+                                        type="text"
+                                        placeholder="http://192.168.1.100:32400"
+                                        value={serverUrl}
+                                        onChange={(e) => setServerUrl(e.target.value)}
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    />
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        Use <strong>http://</strong> for local IP addresses (e.g., http://192.168.1.5:32400)
+                                        <br />
+                                        Use <strong>https://</strong> only for *.plex.direct domains
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                                        Plex Token
+                                    </label>
+                                    <input
+                                        type="password"
+                                        placeholder="Your X-Plex-Token"
+                                        value={plexToken}
+                                        onChange={(e) => setPlexToken(e.target.value)}
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    />
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        <a href="https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" 
+                                           target="_blank" 
+                                           className="text-purple-600 hover:underline">
+                                            How to find your token
+                                        </a>
+                                    </p>
+                                </div>
+
+                                {error && (
+                                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                                        {error}
+                                    </div>
+                                )}
+
+                                <button
+                                    onClick={authenticateWithPlex}
+                                    className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:scale-105"
+                                >
+                                    Connect to Plex
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            // Library Selection Step
+            if (step === 'selectLibrary') {
+                const getLibraryIcon = (type) => {
+                    if (type === 'movie') return '🎬';
+                    if (type === 'show') return '📺';
+                    if (type === 'artist') return '🎵';
+                    return '📁';
+                };
+
+                const getLibraryDescription = (type) => {
+                    if (type === 'movie') return 'Movies';
+                    if (type === 'show') return 'TV Shows';
+                    if (type === 'artist') return 'Music Albums';
+                    return 'Media';
+                };
+
+                return (
+                    <div className="min-h-screen flex items-center justify-center p-4">
+                        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
+                            <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+                                Select Library
+                            </h1>
+
+                            <div className="space-y-3">
+                                {libraries.map((library) => (
+                                    <button
+                                        key={library.key}
+                                        onClick={() => selectLibrary(library)}
+                                        className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-4 rounded-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transition-all transform hover:scale-105 flex items-center justify-between px-6"
+                                    >
+                                        <div className="flex items-center gap-3">
+                                            <span className="text-2xl">{getLibraryIcon(library.type)}</span>
+                                            <div className="text-left">
+                                                <div>{library.title}</div>
+                                                <div className="text-xs opacity-75">{getLibraryDescription(library.type)}</div>
+                                            </div>
+                                        </div>
+                                        <span className="text-sm opacity-75">→</span>
+                                    </button>
+                                ))}
+                            </div>
+
+                            {error && (
+                                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mt-4">
+                                    {error}
+                                </div>
+                            )}
+
+                            <div className="mt-6 text-center">
+                                <button
+                                    onClick={clearCredentials}
+                                    className="text-red-600 hover:text-red-700 font-medium text-sm"
+                                >
+                                    Disconnect from Plex
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            // Wheel Step
+            return (
+                <div className="min-h-screen flex flex-col items-center justify-center p-4" style={{
+                    background: selectedItem?.UltraBlurColors?.topLeft
+                        ? `radial-gradient(circle at top left, #${selectedItem.UltraBlurColors.topLeft}, transparent 50%), 
+                           radial-gradient(circle at top right, #${selectedItem.UltraBlurColors.topRight}, transparent 50%), 
+                           radial-gradient(circle at bottom left, #${selectedItem.UltraBlurColors.bottomRight}, transparent 50%), 
+                           radial-gradient(circle at bottom right, #${selectedItem.UltraBlurColors.bottomLeft}, transparent 50%)`
+                        : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    transition: 'background 1s ease'
+                }}>
+                    <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full">
+                        <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">
+                            🎡 Spin the Wheel!
+                        </h1>
+                        <p className="text-center text-gray-600 mb-8">
+                            {selectedLibrary?.title} • {movies.length} {
+                                selectedLibrary?.type === 'movie' ? 'movies' :
+                                selectedLibrary?.type === 'show' ? 'shows' :
+                                selectedLibrary?.type === 'artist' ? 'albums' : 'items'
+                            }
+                        </p>
+
+                        <div className="wheel-container">
+                            <div className="wheel-pointer"></div>
+                            <div 
+                                className="wheel"
+                                style={{
+                                    transform: `rotate(${rotation}deg)`
+                                }}
+                            >
+                                {generateWheelSegments()}
+                            </div>
+                            <div className="wheel-center">SPIN</div>
+                        </div>
+
+                        <div className="mt-8 text-center">
+                            <button
+                                onClick={spinWheel}
+                                disabled={spinning}
+                                className={`px-8 py-4 rounded-lg font-bold text-lg transition-all transform ${
+                                    spinning 
+                                        ? 'bg-gray-400 cursor-not-allowed' 
+                                        : 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white hover:from-purple-700 hover:to-indigo-700 hover:scale-105'
+                                }`}
+                            >
+                                {spinning ? 'Spinning...' : 'Spin the Wheel!'}
+                            </button>
+                        </div>
+
+                        {selectedItem && (
+                            <div className="mt-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 border-2 border-purple-200">
+                                <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
+                                    🎉 {
+                                        selectedLibrary?.type === 'movie' ? "Tonight's Movie!" :
+                                        selectedLibrary?.type === 'show' ? "Tonight's Show!" :
+                                        selectedLibrary?.type === 'artist' ? "Next Album!" : "Your Pick!"
+                                    }
+                                </h2>
+                                
+                                {selectedItem.thumb && (
+                                    <div className="flex justify-center mb-4">
+                                        <img 
+                                            src={`${serverUrl}${selectedItem.thumb}?X-Plex-Token=${plexToken}`}
+                                            alt={selectedItem.title}
+                                            className="rounded-lg shadow-lg max-h-64 object-cover"
+                                            crossOrigin="anonymous"
+                                            onError={(e) => { 
+                                                console.error('Failed to load image:', e.target.src);
+                                                e.target.style.display = 'none'; 
+                                            }}
+                                        />
+                                    </div>
+                                )}
+                                
+                                <p className="text-xl text-center font-semibold text-purple-700">
+                                    {selectedItem.title}
+                                    {selectedLibrary?.type === 'artist' && selectedItem.parentTitle && (
+                                        <span className="block text-base text-gray-600 mt-1">{selectedItem.parentTitle}</span>
+                                    )}
+                                </p>
+                                <div className="flex items-center justify-center gap-2 mt-2 text-gray-600 flex-wrap">
+                                    {selectedItem.year && (
+                                        <span>{selectedItem.year}</span>
+                                    )}
+                                    {selectedItem.year && selectedItem.duration && (
+                                        <span>•</span>
+                                    )}
+                                    {selectedItem.duration && (
+                                        <span>{formatDuration(selectedItem.duration)}</span>
+                                    )}
+                                    {selectedLibrary?.type === 'show' && (
+                                        <>
+                                            {(selectedItem.year || selectedItem.duration) && <span>•</span>}
+                                            {selectedItem.childCount && (
+                                                <span>{selectedItem.childCount} {selectedItem.childCount === 1 ? 'season' : 'seasons'}</span>
+                                            )}
+                                            {selectedItem.childCount && (selectedItem.viewedLeafCount !== undefined || selectedItem.leafCount) && <span>•</span>}
+                                            {selectedItem.viewedLeafCount !== undefined && selectedItem.leafCount ? (
+                                                <span>{selectedItem.leafCount - selectedItem.viewedLeafCount} unwatched</span>
+                                            ) : selectedItem.leafCount && (
+                                                <span>{selectedItem.leafCount} {selectedItem.leafCount === 1 ? 'episode' : 'episodes'}</span>
+                                            )}
+                                        </>
+                                    )}
+                                    {selectedLibrary?.type === 'artist' && (
+                                        <>
+                                            {(selectedItem.year || selectedItem.duration) && selectedItem.leafCount && <span>•</span>}
+                                            {selectedItem.leafCount && (
+                                                <span>{selectedItem.leafCount} tracks</span>
+                                            )}
+                                        </>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+
+                        <div className="mt-6 text-center">
+                            <button
+                                onClick={() => {
+                                    setStep('selectLibrary');
+                                    setSelectedItem(null);
+                                    setRotation(0);
+                                }}
+                                className="text-purple-600 hover:text-purple-700 font-medium"
+                            >
+                                ← Change Library
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<PlexMovieWheel />, document.getElementById('root'));
+    </script>
+</body>
+</html>

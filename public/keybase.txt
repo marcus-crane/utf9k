@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/marcuscrane
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://utf9k.net
+  * I am marcuscrane (https://keybase.io/marcuscrane) on keybase.
+  * I have a public key with fingerprint 15DC 6AC2 068B 5E35 8278  45D2 0066 202F 5187 A0C8
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e456cfcfbbe5c4703879b05cc777f69d47b1a8f5004abf281d8db6b8c4cb65910a",
+      "fingerprint": "15dc6ac2068b5e35827845d20066202f5187a0c8",
+      "host": "keybase.io",
+      "key_id": "0066202f5187a0c8",
+      "kid": "0101e456cfcfbbe5c4703879b05cc777f69d47b1a8f5004abf281d8db6b8c4cb65910a",
+      "uid": "d5ce7be1e9e33397a865d23a8ad47619",
+      "username": "marcuscrane"
+    },
+    "service": {
+      "hostname": "utf9k.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1624189420,
+  "expire_in": 157680000,
+  "prev": "32046563620f4be65835d1de75e1b23bddcfae1f145ecf8196c058e60663d875",
+  "seqno": 74,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMM/AnicrVJ9TFVlHL4XJPnOUFMbIJzCvIj4nu9zLhUGKSS4ecG062iXc97znssZ
+cO/l3HNJMkdzyoemtjBXMxJXoGttl49bjI9IGiaFyIrF2EALoqCgsLFBo5TOMfur
+f3v/eff+3ud5fs/v2a8vKtgUbjbJCTts1Q395oHet32mwiHL3BFMdEsVmPUIVozu
+X6hEQl7NUaxImBUDOMARRTNQhrIoIhpSLCA5lhcBDSHLsjLDSxQr4gIn0wBQgigT
+HC5xksiIHKSgyNA8DgQsBZMVlxOpHlVxabosTkuQESABGE6kEUlzBMtRtEQAwDAE
+IGQa51gBQE4nFrm9BkM3JwpelKq49Zr+cPxj77/4/9m3776cREPEighHPCJJkmcF
+jtHdkgIn6CoMzhtAL1JdQinS0aWCCn1eqAouhB1NwfSPcgUiI1tjmAcgnybzxaku
+pOlcj+rW3NBdopeLNM3jtRo0rcJj4F5GouOBgkNUXJKeo84oR6pXcbswK64joaYY
+kjhDUDjHUwRIwdBhj6Iih2IgaJbhgH6MPqhclyQJQDE0Q+rRyZSIGJojaQmXEEsj
+XCRIUZKgLCBcxikaQZnDeQYCmkOMHjYpcSyNGTOVudyYlaV0n4JT1/QqTpeg+VR9
+4s97C1aZzOGmh0KCjAUzhYet+XftQk88vJIX6L5njajhG1qq0970uyYuuDc5C1ta
+l6rDso8No97TZXGxzqzIjPFZC1oXP3ixeDJ46ODY4vjkdeL2vgNX3h28uqE7L3G9
+5+bm6cCdnZGd8Xsrwe6ET0eS37t+/i0wpZYVOtYumhv9dW27pnPmvv7pS3NfT+vR
+mOMfPQ6mIhdK9mVkU9RzF6ZefeTc6Ih54dfTGaUW/yBwdszN23tKOqLfmPbRZbB2
+MTtdw8KeH2LB4vQ7N2M/7u8MPb+9cn3gq+CqoPLobbmXz5nzj6/94WR6zmjSd7O3
+GF/mrsCha9krXaN1Qsqypy0utOCDpWE+9tSZVvla0/yxPe7fc5PbYioLnr478GfU
+uqCulC9UNjM67pe7q7LKtsYIu/cXWmwFdjvNeOHPQ8/O3Ihaab9ko5K2bfU/2rTh
+r/2J/tTuxTS8aoVYE9MxP5Zv/iZbdeY/lninXjtzMRjaSfvBBN8L1Zt31kdssVgj
+cKorDjWP8/XFNvMztUk9qxtv/LY6fuNs01OHak8Wzb7eEv3ZtzveP5uZDEL6J8/2
+b7y39OFAYEvTcnva3k01LzFEfMNgsunw1Oil5D3mCDznCV4JqzlQ1+6d2N4z2xoC
+MnnyyarOE9/fghrCZ66o6Z805159ZbKxj2+w+fx/VNjbRyyTYwuoeS4oY+LF5dci
+ZrIuCxW3f9TyhlOpvwErLbMz
+=ReZO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marcuscrane
+
+==================================================================

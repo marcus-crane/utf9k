@@ -1,0 +1,65 @@
+title: Marcus Crane
+description: Site Reliability Engineer
+contact:
+  email: marcus@utf9k.net
+  website: utf9k.net
+  linkedIn: linkedin.com/in/utf9k
+  github: github.com/marcus-crane
+
+sidebar:
+  - name: education
+    items:
+      - 
+        - Full Stack Development
+        - Enspiral Dev Academy
+
+Oct 2021 - now: Staff Platform Engineer
+location: Auckland, New Zealand
+[Lightspeed](https://lightspeedhq.com)
+![](https://www.lightspeedhq.com/apple-touch-icon.png)
+
+- Part of X-Series (Retail)'s sole Platform team, overseeing a range of responsibilities: Compute (AWS ECS), Kafka, MySQL, Infrastructure (Terraform) as well as providing generalised advice to product teams for logging/metrics/tracing etc.
+- Refactored internal log pipeline to remove log daemon crashes during peak periods as well as migrating services from bespoke regex-based text parsing to boring structured logging.
+- Oversaw and coordinated initial investment of observability tooling (Datadog) from a few prototypes to ~200 microservices.
+- Championed a service catalog initiative, which helped to identify unowned production microservices as well as helping developers to navigate less familiar parts of the org.
+- Participant in our internal mentorship program, taking on a mentee from a product team.
+
+Sep 2020 - Oct 2021: Senior Site Reliability Engineer
+location: Auckland, New Zealand
+[Mercedes-Benz](https://www.mercedes-benz.com/en/) (now Daimler Truck AG)
+![](https://assets.oneweb.mercedes-benz.com/global/1.9.0/favicon/apple-touch-icon.png)
+
+- Part of a global SRE team split between Germany and New Zealand.
+- Assisted in expanding Fleetboard's existing Kubernetes cluster for use as the default compute platform by Mercedes Trucks division.
+- Maintained, refactored and extended Golang-based in-house incident management tooling
+- Maintained internal Netbox (IPAM) deployment used for tracking IP address spacing internally. Worked with legal to open source a custom auth component.
+- Standard on-call duties.
+
+Feb 2018 - Sep 2020: Site Reliability Engineer
+location: Auckland, New Zealand
+[Xero](https://xero.com)
+![](https://www.xero.com/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon-precomposed.png)
+
+- Part of a global SRE team split between Auckland (NZ), Wellington (NZ) and Denver (US)
+- Core member of Xero's in-house SLOs initiative. Built out internal tooling, ran upskilling workshops with product teams, facilitated review sessions etc.
+- Become a maintainer for Xero's in-house incident management process. Built out tooling, allowing product teams to make use of their historical incident data.
+- Standard on-call duties.
+
+April 2017 - June 2017: Contractor
+location: Wellington, New Zealand
+[Liberac](https://idealog.co.nz/tech/2017/06/future-finance-liberac)
+![](https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_2/v1494589659/lfn2jfd14enln6fcm5qj.png)
+
+- Briefly worked with a small fin-tech startup looking to simplify remittance between NZ and the Pacific Islands
+- Did some cursory research and rapid prototyping.
+- The concept was quickly proven to not be market viable and the founders opted to not pursue the venture any further. 
+
+Sep 2016 - Dec 2016: Inaugural Fellow
+location: Wellington, New Zealand
+[Code for Aotearoa](https://web.archive.org/web/20170712015937/http://www.codeforaotearoa.org/)
+![](https://avatars.githubusercontent.com/u/21036442?s=200&v=4)
+
+- Part of a team of two, looking to identify and solve useful issues within government as part of a 3-month pilot program.
+- Co-conducted a range of interviews with various government agenies to understand common roadblocks in adopting a 
+- Co-authored a first cut at an Open Data toolkit, walking through the process of releasing data sets for public consumption.
+- Some elements were repurposed for an earlier version of [data.govt.nz](https://data.govt.nz)
