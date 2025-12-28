@@ -9,14 +9,40 @@
     <div class="speech-bubble" id="robot-gag"></div>
   </div>
 
-  {{ range $name, $menu := .Site.Menus }}
   <nav class="nav-section">
-    <div class="nav-section-title">{{ $name }}</div>
-    {{ range $menu }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent $name . }} class="active"{{ end }}>{{ .Name }}</a>
+    <div class="nav-section-title">Main</div>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
-  {{ end }}
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Garden</div>
+    {{ range .Site.Menus.garden }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "garden" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Media</div>
+    {{ range .Site.Menus.media }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "media" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Meta</div>
+    {{ range .Site.Menus.meta }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "meta" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Archive</div>
+    {{ range .Site.Menus.archive }}
+      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "archive" . }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
 
   <div class="nav-spacer"></div>
 

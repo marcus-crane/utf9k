@@ -4,6 +4,13 @@
   <div class="page-title">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+    {{ if or .Date .Params.tags }}
+    <!-- TODO: Unify tags with game/book preview tag styles -->
+    <div class="article-meta">
+      {{ with .Date }}<div><span class="label">Published:</span> {{ .Format "2006-01-02" }}</div>{{ end }}
+      {{ with .Params.tags }}<div><span class="label">Tags</span> {{ delimit . ", "}}</div>{{ end }}
+    </div>
+    {{ end }}
   </div>
   {{ end }}
 
