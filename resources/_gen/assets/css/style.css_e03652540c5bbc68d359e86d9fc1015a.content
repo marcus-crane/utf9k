@@ -1541,6 +1541,9 @@ abbr {
 .media-group-items.manga .media-item img { border-color: var(--iris); }
 .media-group-items.tv .media-item img { border-color: var(--love); }
 
+/* TODO: Revisit specificity of selectors above */
+.media-group-items .media-item .preview img { border: unset; };
+
 /* ==========================================
     LIST PAGES
     ========================================== */
@@ -1748,6 +1751,9 @@ abbr {
 .section.playing .game-card img { border-color: var(--love); }
 .section.backlog .game-card img { border-color: var(--gold); }
 .section.completed .game-card img { border-color: var(--pine); }
+
+/* TODO: Revisit this + see if can be merged with homepage cards */
+.game-card .preview img { border: unset; }
 
 .section.playing .game-card:hover img,
 .section.backlog .game-card:hover img,

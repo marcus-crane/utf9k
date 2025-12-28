@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+  <div class="page-title">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+
+  {{ range $.Site.Data.books }}
+  <section class="section">
+    <div class="section-header">
+      <!-- TODO: Add reading goal as subtitle -->
+      <h2 class="section-title">{{ .list }}</h2>
+      <span class="section-count">{{ len .books }}</span>
+    </div>
+    <!-- TODO: Genericise grid name -->
+    <div class="games-grid">
+      {{ range .books }}
+      <div class="game-card" data-title="{{ .title | lower }}">
+        <!-- TODO: Uncouple from game card style -->
+        <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
+          <div class="preview-meta">
+            <!-- TODO: Get more metadata to preview -->
+            <div class="preview-title">{{ .title }}</div>
+            <div class="preview-subtitle">{{ .author }}</div>
+            {{ if and .date_started .date_finished }}
+            {{ $started := time.AsTime .date_started }}
+            {{ $finished := time.AsTime .date_finished }}
+            {{ $duration := $finished.Sub $started }}
+            <div class="preview-detail">Time to finish: {{ math.Round (div $duration.Hours 24) }} days</div>
+            {{ end }}
+            <!-- TODO: Decouple from game naming (should just be tags) -->
+            {{ if .recommended }}
+            <div class="preview-platforms">
+              <span>Recommended</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
