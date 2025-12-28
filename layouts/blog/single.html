@@ -1,0 +1,32 @@
+{{ define "main" }}
+  <div class="breadcrumb">
+    <span>
+      <a href="/">Home</a> / <a href="/blog/">Blog</a> / {{ .Title }}</span>
+    </span>
+  </div>
+
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    <!-- TODO: Make description smaller -->
+    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+    {{ if or .Date .Params.tags }}
+    <div class="article-meta">
+      {{ with .Date }}<div><span class="label">Published:</span> {{ .Format "2006-01-02" }}</div>{{ end }}
+      {{ with .Params.tags }}<div><span class="label">Tags</span> {{ delimit . ", "}}</div>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  {{ if .TableOfContents }}
+  <details class="toc-inline toc-inline-always">
+    <summary>Contents</summary>
+    {{ .TableOfContents }}
+  </details>
+  {{ end }}
+
+  <div class="article-wrapper">
+    <article class="content">
+      {{ .Content }}
+    </article>
+  </div>
+{{ end }}
