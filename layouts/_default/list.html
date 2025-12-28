@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <div class="page-title">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+  </div>
+
+  {{ with .Content }}
+  <div class="content" style="margin-bottom: 2rem;">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}
+    {{ $pages = where site.RegularPages "section" "blog" | first 10 }}
+  {{ end }}
+
+  {{ range $pages.GroupByDate "2006" }}
+  <div class="margin-bottom: 2rem;">
+    <div>
+      {{ .Key }}
+    </div>
+    <div>
+      {{ range .Pages }}
+      <div>
+        <div>
+          {{ .Date.Format "Jan 02" }}
+        </div>
+        <div>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span>=></span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

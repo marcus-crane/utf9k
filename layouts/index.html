@@ -1,3 +1,123 @@
 {{ define "main" }}
-<p>Hello</p>
+  <div class="grid">
+
+    <!-- Welcome -->
+    <div class="block block-filled block-accent">
+      <div class="label label-love">{{ .Title }}</div>
+      <div class="welcome">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <!-- Live Player -->
+    <div class="block block-filled" id="liveplayer">
+      <div class="label label-pine" id="player-label">Now Playing</div>
+      <div class="player-idle" id="player-idle">
+        <div class="idle-icon">!!</div>
+        <div class="idle-text">No data available</div>
+      </div>
+    </div>
+
+    <!-- Recent posts -->
+    <div class="block">
+      <div class="label label-foam">Recent Posts</div>
+      <ul class="posts-list">
+        {{ $posts := where site.RegularPages "Section" "blog" | first 5 }}
+        {{ range $posts }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="arrow">=></span>
+        </li>
+        {{ else }}
+        <li>
+          <span style="color: var(--muted);">No posts yet</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Media Shelf -->
+    <div class="block block-full block-filled">
+      <div class="label label-gold">Media Shelf</div>
+      <div class="media-shelf">
+
+        <!-- Games -->
+        <div class="media-group">
+          <div class="media-group-label label-pine">Games</div>
+          <div class="media-group-items games">
+            {{ range $.Site.Data.games }}
+            {{ if eq .list "Playing" }}
+            {{ range .games }}
+            <div class="media-item">
+              <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+              <div class="preview">
+                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">
+                    <a href="{{ .link }}">Backlogged</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Books -->
+        <div class="media-group">
+          <div class="media-group-label label-gold">Books</div>
+          <div class="media-group-items books">
+            {{ range $.Site.Data.books }}
+            {{ if ne .list "Stalled" }}
+            {{ $books := where .books "progress" "ne" 100}}
+            {{ range $books }}
+            <div class="media-item">
+              <a href="{{ .link }}">
+                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+              </a>
+              <div class="preview">
+                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">{{ .author }}</div>
+                  <div class="preview-detail">{{ .progress }}% read</div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Manga -->
+        <div class="media-group">
+          <div class="media-group-label label-iris">Manga</div>
+          <div class="media-group-items manga">
+            {{ range $.Site.Data.manga }}
+            {{ if eq .status "FINISHED" }}
+            <div class="media-item">
+              <a href="{{ .url }}">
+                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+              </a>
+              <div class="preview">
+                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">{{ .author }}</div>
+                  <div class="preview-detail">{{ .progress }} chapter{{ if gt .progress 1 }}s{{ end }} read · {{ .chapters }} chapter{{ if gt .chapters 1 }}s{{ end }} total</div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 {{ end }}
