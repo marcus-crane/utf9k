@@ -1,8 +1,8 @@
 name: Deploy (Preview)
 on:
   push:
-    branches-ignore:
-      - 'main'
+    branches:
+      - 2026-redesign
   workflow_dispatch:
 jobs:
   build:
