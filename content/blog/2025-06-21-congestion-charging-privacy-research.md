@@ -13,7 +13,6 @@ Earlier this year, I attended one of the [monthly meetings](https://nzccl.org.nz
 The topic of congestion charging had come up as one of the topics, as the Land Transport Management (Time of Use Charging) Amendment Bill had [passed its first reading](https://www.parliament.nz/en/pb/hansard-debates/rhr/combined/HansDeb_20250304_20250304_32) and was opening up to submissions.
 
 The Council were interested in submitting on the topic, as any charging is likely to be done with cameras and more cameras means more potential to misuse data for unintended purposes.
-<aside>Fart</aside>
 
 Coincidentally, it had come up that I had previously done a little bit of digging into the same topic [in the past](/blog/vehicle-congestion-gnss/) and so I was asked if I'd like to do some extended research. While I've done plenty of digging here and there for personal interests, I can't say I've ever compiled research in a "professional" capacity so this was definitely a new task for me.
 

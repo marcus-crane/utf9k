@@ -1471,6 +1471,7 @@ abbr {
   color: var(--subtle);
   text-decoration: none;
   font-size: 0.85rem;
+  max-width: 90%;
 }
 
 .posts-list a::after {
