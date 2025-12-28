@@ -5,7 +5,7 @@
   </div>
 
   {{ with .Content }}
-  <div class="content" style="margin-bottom: 2rem;">
+  <div class="content content-spaced">
     {{ . }}
   </div>
   {{ end }}
@@ -16,19 +16,16 @@
   {{ end }}
 
   {{ range $pages.GroupByDate "2006" }}
-  <div class="margin-bottom: 2rem;">
-    <div>
-      {{ .Key }}
-    </div>
-    <div>
+  <div class="list-group">
+    <div class="group-label">{{ .Key }}</div>
+    <div class="post-table">
       {{ range .Pages }}
-      <div>
-        <div>
-          {{ .Date.Format "Jan 02" }}
-        </div>
-        <div>
+      <div class="post-row">
+        <div class="post-date">{{ .Date.Format "Jan 02" }}</div>
+        <div class="post-link">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span>=></span>
+          <!-- TODO: Get a better arrow -->
+          <span class="arrow">=></span>
         </div>
       </div>
       {{ end }}

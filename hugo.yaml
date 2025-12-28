@@ -17,10 +17,16 @@ menus:
     - name: Books
       pageRef: /books
       weight: 10
+    - name: Games
+      pageRef: /games
+      weight: 20
   meta:
     - name: Now
       pageRef: /now
       weight: 10
+    - name: Uses
+      pageRef: /uses
+      weight: 20
 
 markup:
   highlight:
