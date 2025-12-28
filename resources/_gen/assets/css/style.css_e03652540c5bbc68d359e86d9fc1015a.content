@@ -1594,24 +1594,13 @@ abbr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.post-link a {
   color: var(--subtle);
   text-decoration: none;
   font-size: 0.85rem;
 }
 
-.post-link a:hover {
+a.post-link:hover {
   color: var(--foam);
-}
-
-.post-link .arrow {
-  color: var(--muted);
-}
-
-.post-row:hover .arrow {
-  color: var(--love);
 }
 
 /* ==========================================

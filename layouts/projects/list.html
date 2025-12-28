@@ -22,10 +22,10 @@
       {{ range .Pages }}
       <!-- TODO: Figure out a better way to handle this override? -->
       <div class="post-row" style="grid-template-columns: 1fr;">
-        <div class="post-link">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <a class="post-link" href="{{ .RelPermalink }}">
+          {{ .Title }}
           <span class="arrow">»</span>
-        </div>
+        </a>
       </div>
       {{ end }}
     </div>
