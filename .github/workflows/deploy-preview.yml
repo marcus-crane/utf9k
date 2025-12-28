@@ -28,7 +28,7 @@ jobs:
           PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
       - run: hugo
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.4.0
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
         with:
           source: "public"
           storageZoneName: "utf9k-next"
