@@ -50,7 +50,7 @@
             {{ range .games }}
             <div class="media-item">
               {{ $image := resources.GetRemote .cover.url }}
-              {{ $image := $image.Resize "x180 webp" }}
+              {{ $image := $image.Resize "x180 webp drawing" }}
               <img src="{{ $image.RelPermalink }}" alt="Box art for {{ .title }}">
               <div class="preview">
                 <img loading="lazy" src="{{ .cover.url }}" alt="Box art for {{ .title }}">
@@ -77,7 +77,7 @@
             {{ $books := where .books "progress" "ne" 100}}
             {{ range $books }}
             {{ $image := resources.GetRemote .cover }}
-            {{ $image := $image.Resize "x180 webp" }}
+            {{ $image := $image.Resize "x180 webp drawing" }}
             <div class="media-item">
               <a href="{{ .link }}">
                 <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
@@ -104,7 +104,7 @@
             {{ range $.Site.Data.manga }}
             {{ if eq .status "FINISHED" }}
             {{ $image := resources.GetRemote .cover }}
-            {{ $image := $image.Resize "x180 webp" }}
+            {{ $image := $image.Resize "x180 webp drawing" }}
             <div class="media-item">
               <a href="{{ .url }}">
                 <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
