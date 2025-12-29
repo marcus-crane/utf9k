@@ -557,19 +557,23 @@ body.dark .sidebar-header .speech-bubble::before {
   position: relative;
   border: var(--border-normal) solid var(--overlay);
   border-left: 4px solid var(--iris);
-  padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-3xl);
-  margin: var(--space-2xl) 0;
+  padding: var(--space-2xl);
+  margin: var(--space-lg) 0;
   background: var(--surface);
   font-style: italic;
 }
 
 .content blockquote p { margin-bottom: 0; }
 
-.content blockquote.alert p {
+.content blockquote.alert {
+  padding: var(--space-lg) var(--space-2xl);
+  line-height: 1.4;
+}
+
+.content blockquote.alert > p {
   font-style: normal
 }
 
-/* TODO: Don't apply to blockquotes within callouts (see deepfakes post) */
 .content blockquote p.alert-heading {
   font-size: var(--text-xl);
   font-weight: bold;
@@ -675,13 +679,24 @@ body.dark .sidebar-header .speech-bubble::before {
 .content ol li::marker { color: var(--love); font-weight: 700; }
 
 .content blockquote:not(.alert)::before {
-  content: '"';
+  content: '❝';
   position: absolute;
-  top: -0.25rem;
-  left: 0.75rem;
-  font-size: 3rem;
+  top: 0.25rem;
+  left: 0.5rem;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 900;
+  color: var(--iris);
+  opacity: 0.4;
+  line-height: 1;
+}
+
+.content blockquote:not(.alert)::after {
+  content: '❞';
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  font-style: normal;
   color: var(--iris);
   opacity: 0.4;
   line-height: 1;

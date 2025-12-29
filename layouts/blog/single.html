@@ -1,7 +1,6 @@
 {{ define "main" }}
   <div class="article-header">
     <h1>{{ .Title }}</h1>
-    <!-- TODO: Make description smaller -->
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
     {{ if or .Date .Params.tags }}
     <div class="article-meta">
