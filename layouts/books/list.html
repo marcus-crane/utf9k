@@ -5,6 +5,10 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </div>
 
+  <div class="filter-bar">
+    <input type="text" class="filter-search" placeholder="Search..." id="book-search">
+  </div>
+
   {{ range $.Site.Data.books }}
   <section class="section">
     <div class="section-header">
@@ -40,4 +44,21 @@
     </div>
   </section>
   {{ end }}
+
+  <script>
+    const searchInput = document.getElementById('book-search');
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.media-card').forEach(card => {
+        const { title } = card.dataset;
+
+        if (title.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
 {{ end }}
