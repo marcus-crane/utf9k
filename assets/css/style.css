@@ -959,7 +959,7 @@ dl.definition-list dd {
 
 .footnotes-section a {
   color: var(--foam);
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .footnote-backref {
@@ -1775,10 +1775,11 @@ a.post-link:hover {
   body { font-size: 11pt; line-height: 1.5; }
   .sidebar, .mobile-overlay, .menu-toggle, .toc-column, .footnote-preview, .preview, .footer { display: none !important; }
   .layout { display: block; }
-  .main { padding: 0; max-width: 100%; }
-  .article-header { border: 2px solid black; padding: 1.5rem; margin-bottom: 1.5rem; }
-  .article-wrapper { max-width: 100%; }
-  .content { position: static; }
+  .main { padding: 0; }
+  .article-header { margin-bottom: 1.5rem; }
+  .content h2 { border-bottom: none; }
+  .content { max-width: none; position: static; }
+  .article-wrapper { max-width: none; }
   .content aside {
     position: static !important;
     width: 100% !important;
@@ -1791,15 +1792,15 @@ a.post-link:hover {
   }
   .footnote-ref a::after,
   .footnote-backref::after { content: none !important; }
-  .footnotes-section { max-width: 100%; border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; }
+  .footnotes-section { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; }
   .content blockquote { border: 1px solid #ccc; border-left: 3px solid #666; padding: 1rem; }
   .content blockquote::before { display: none; }
   h2, h3 { page-break-after: avoid; }
   p, blockquote, figure { page-break-inside: avoid; }
   img { max-width: 100% !important; page-break-inside: avoid; }
   a[href^="http"]::after, a[href^="/"]::after {
-    content: " (" attr(href) ")";
+    content: "\A(" attr(href) ")";
+    white-space: pre-wrap;
     font-size: 0.8em;
-    word-break: break-all;
   }
 }
