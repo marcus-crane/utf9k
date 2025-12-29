@@ -97,19 +97,75 @@
 
         link.addEventListener('click', e => {
           e.preventDefault();
+          const isActive = preview.classList.contains('active');
           preview.classList.toggle('active');
+          preview.classList.toggle('clicked', !isActive);
         });
+
+        let startX, startY;
+        preview.addEventListener('mousedown', e => {
+          startX = e.clientX;
+          startY = e.clientY;
+        });
+
+        preview.addEventListener('click', e => {
+          if (e.button !== 0) return;
+          const dx = Math.abs(e.clientX - startX);
+          const dy = Math.abs(e.clientY - startY);
+          if (dx < 5 && dy < 5) {
+            preview.classList.remove('active', 'clicked');
+          }
+        });
+
+        // Shift+hover to preview
+        figure.addEventListener('mouseenter', e => {
+          figure.classList.add('hovered');
+          if (e.shiftKey && !preview.classList.contains('clicked')) {
+            // Close other shift-opened previews first
+            document.querySelectorAll('.content figure.image-figure .preview.active').forEach(p => {
+              if (!p.classList.contains('clicked')) p.classList.remove('active');
+            });
+            preview.classList.add('active');
+          }
+        });
+
+        figure.addEventListener('mouseleave', e => {
+          figure.classList.remove('hovered');
+          // Only close if shift not held (let mouseenter on next image handle transition)
+          if (!e.shiftKey && !preview.classList.contains('clicked')) {
+            preview.classList.remove('active');
+          }
+        });
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.content figure.image-figure.hovered').forEach(figure => {
+            const preview = figure.querySelector('.preview');
+            if (preview && !preview.classList.contains('clicked')) {
+              preview.classList.add('active');
+            }
+          });
+        }
+      });
+
+      document.addEventListener('keyup', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.content figure.image-figure .preview.active').forEach(p => {
+            if (!p.classList.contains('clicked')) p.classList.remove('active');
+          });
+        }
       });
 
       document.addEventListener('click', e => {
         if (!e.target.closest('.content figure.image-figure')) {
-          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active'));
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
         }
       });
 
       document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
-          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active'));
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
         }
       });
     })();

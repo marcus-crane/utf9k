@@ -916,6 +916,10 @@ dl.definition-list dd {
   display: block;
 }
 
+.content figure.image-figure .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
 .content figure.image-figure .preview img {
   display: block;
   max-width: 90vw;
@@ -923,17 +927,6 @@ dl.definition-list dd {
   width: auto;
   height: auto;
   border: none;
-}
-
-.content figure.image-figure .preview-hint {
-  position: absolute;
-  bottom: 100%;
-  right: calc(-1 * var(--border-normal));
-  padding: 0.25rem 0.5rem;
-  font-size: 0.6rem;
-  color: var(--text);
-  background: var(--surface);
-  border: var(--border-normal) solid var(--love);
 }
 
 /* Asides / Sidenotes */
@@ -1798,6 +1791,26 @@ a.post-link:hover {
 
 .media-card:hover .preview {
   display: block;
+}
+
+.books-page .media-card:hover .preview {
+  display: none;
+}
+
+.books-page .media-card .preview.active {
+  display: block;
+}
+
+.books-page .media-card .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
+.books-page .media-card {
+  cursor: pointer;
+}
+
+.books-page .media-card .preview {
+  width: 320px;
 }
 
 .preview > img {
