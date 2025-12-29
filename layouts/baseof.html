@@ -43,7 +43,14 @@
       document.querySelector('.mobile-overlay').classList.toggle('open');
     }
 
-    // TODO: Load gags from data
+    // As busted as this looks (in source code), it renders a valid JS array
+    const gags = {{ .Site.Data.gags }};
+
+    function newGag() {
+      document.getElementById('robot-gag').textContent = gags[Math.floor(Math.random() * gags.length)];
+    }
+
+    newGag();
 
     (function() {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');

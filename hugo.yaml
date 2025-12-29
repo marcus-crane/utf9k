@@ -45,10 +45,6 @@ menus:
     - name: Uses
       pageRef: /uses
       weight: 20
-  archive:
-    - name: Reviews
-      pageRef: /reviews
-      weight: 30
 
 markup:
   highlight:

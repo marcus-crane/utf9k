@@ -2,7 +2,8 @@
   <div class="sidebar-header">
     <h1>
       <a href="/">
-        <img src="https://utf9k.net/favicon.png" alt="TODO" class="site-icon">
+        <!-- TODO: Clicking icon should generate a new gag -->
+        <img src="https://utf9k.net/favicon.png" alt="A robot icon" class="site-icon">
         <span class="site-name">{{ .Site.Title }}</span>
       </a>
     </h1>
@@ -34,13 +35,6 @@
     <div class="nav-section-title">Meta</div>
     {{ range .Site.Menus.meta }}
       <a href="{{ .URL }}"{{ if $.IsMenuCurrent "meta" . }} class="active"{{ end }}>{{ .Name }}</a>
-    {{ end }}
-  </nav>
-
-  <nav class="nav-section">
-    <div class="nav-section-title">Archive</div>
-    {{ range .Site.Menus.archive }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "archive" . }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 
