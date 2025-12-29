@@ -568,6 +568,7 @@ body.dark .sidebar-header .speech-bubble::before {
   background: none;
   border: none;
   padding: 0;
+  white-space: pre;
 }
 
 .content blockquote {
