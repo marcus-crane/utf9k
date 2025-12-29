@@ -888,7 +888,10 @@ dl.definition-list dd {
 .footnote-ref {
   position: relative;
   display: inline;
-  padding: 1px;
+}
+
+.footnote-ref.adjacent {
+  margin-left: 0.2em;
 }
 
 .footnote-ref a {
