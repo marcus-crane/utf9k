@@ -84,6 +84,35 @@
         }
       })
     })();
+
+    // Image preview: click to show on desktop, direct link on mobile
+    (function() {
+      const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      if (isMobile) return;
+
+      document.querySelectorAll('.content figure.image-figure').forEach(figure => {
+        const link = figure.querySelector('a');
+        const preview = figure.querySelector('.preview');
+        if (!link || !preview) return;
+
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          preview.classList.toggle('active');
+        });
+      });
+
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.content figure.image-figure')) {
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active'));
+        }
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active'));
+        }
+      });
+    })();
   </script>
 </body>
 </html>

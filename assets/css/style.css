@@ -909,10 +909,10 @@ dl.definition-list dd {
   width: auto;
   max-width: 90vw;
   max-height: 90vh;
-  overflow: hidden;
+  overflow: visible;
 }
 
-.content figure.image-figure:hover .preview {
+.content figure.image-figure .preview.active {
   display: block;
 }
 
@@ -923,6 +923,17 @@ dl.definition-list dd {
   width: auto;
   height: auto;
   border: none;
+}
+
+.content figure.image-figure .preview-hint {
+  position: absolute;
+  bottom: 100%;
+  right: calc(-1 * var(--border-normal));
+  padding: 0.25rem 0.5rem;
+  font-size: 0.6rem;
+  color: var(--text);
+  background: var(--surface);
+  border: var(--border-normal) solid var(--love);
 }
 
 /* Asides / Sidenotes */
