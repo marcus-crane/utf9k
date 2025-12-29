@@ -5,6 +5,12 @@ title: utf9k
 enableGitInfo: true
 enableRobotsTXT: true
 
+params:
+  description: You are online and logged on to my personal site
+  author:
+    email: marcus@utf9k.net
+    name: Marcus Crane
+
 menus:
   main:
     - name: Home
@@ -48,3 +54,15 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+  section:
+    - html
+    - rss
+  taxonomy:
+    - html
+  term:
+    - html
