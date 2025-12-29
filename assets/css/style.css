@@ -499,7 +499,7 @@ body.dark .sidebar-header .speech-bubble::before {
   font-size: var(--text-xl);
   font-weight: 700;
   text-transform: uppercase;
-  margin: var(--space-4xl) 0 var(--space-lg);
+  margin: var(--space-2xl) 0 var(--space-lg);
   padding-bottom: var(--space-sm);
   border-bottom: var(--border-normal) solid var(--love);
   color: var(--text);
