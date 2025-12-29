@@ -873,6 +873,58 @@ dl.definition-list dd {
   margin-top: var(--space-sm);
 }
 
+/* Image figure with hover preview */
+.content figure.image-figure {
+  position: relative;
+}
+
+.content figure.image-figure > a {
+  display: block;
+  border: none;
+  text-decoration: none;
+}
+
+.content figure.image-figure > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: border-color 0.1s;
+}
+
+.content figure.image-figure:hover > a > img {
+  border-color: var(--foam);
+}
+
+.content figure.image-figure .preview {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: var(--surface);
+  border: var(--border-normal) solid var(--love);
+  box-shadow: var(--shadow-lg);
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.content figure.image-figure:hover .preview {
+  display: block;
+}
+
+.content figure.image-figure .preview img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border: none;
+}
+
 /* Asides / Sidenotes */
 .content aside {
   position: absolute;
@@ -1173,7 +1225,8 @@ abbr {
 .footer {
   border-top: var(--border-normal) solid var(--overlay);
   padding: var(--space-3xl) 0;
-  margin-top: var(--space-5xl);
+  margin-top: var(--space-3xl);
+  max-width: 600px;
 }
 
 .footer-content {
@@ -1202,8 +1255,7 @@ abbr {
 .footer-section a:hover { color: var(--foam); }
 
 .footer-bottom {
-  padding-top: var(--space-2xl);
-  border-top: var(--border-thin) solid var(--overlay);
+  padding-top: var(--space-md);
   font-size: var(--text-base);
   color: var(--muted);
   display: flex;
