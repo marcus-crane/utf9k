@@ -1793,19 +1793,23 @@ a.post-link:hover {
   display: block;
 }
 
-.books-page .media-card:hover .preview {
+.books-page .media-card:hover .preview,
+.games-page .media-card:hover .preview {
   display: none;
 }
 
-.books-page .media-card .preview.active {
+.books-page .media-card .preview.active,
+.games-page .media-card .preview.active {
   display: block;
 }
 
-.books-page .media-card .preview.active:not(.clicked) {
+.books-page .media-card .preview.active:not(.clicked),
+.games-page .media-card .preview.active:not(.clicked) {
   pointer-events: none;
 }
 
-.books-page .media-card {
+.books-page .media-card,
+.games-page .media-card {
   cursor: pointer;
 }
 

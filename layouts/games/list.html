@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+<div class="games-page">
   <div class="article-header">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
@@ -138,5 +138,73 @@
         }
       });
     });
+
+    // Click to preview (desktop only)
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (!isMobile) {
+      document.querySelectorAll('.media-card').forEach(card => {
+        const preview = card.querySelector('.preview');
+        if (!preview) return;
+
+        card.addEventListener('click', e => {
+          e.stopPropagation();
+          const wasActive = preview.classList.contains('active');
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+          if (!wasActive) {
+            preview.classList.add('active', 'clicked');
+          }
+        });
+
+        // Shift+hover to preview
+        card.addEventListener('mouseenter', e => {
+          card.classList.add('hovered');
+          if (e.shiftKey && !preview.classList.contains('clicked')) {
+            // Close other shift-opened previews first
+            document.querySelectorAll('.media-card .preview.active').forEach(p => {
+              if (!p.classList.contains('clicked')) p.classList.remove('active');
+            });
+            preview.classList.add('active');
+          }
+        });
+
+        card.addEventListener('mouseleave', e => {
+          card.classList.remove('hovered');
+          // Only close if shift not held (let mouseenter on next card handle transition)
+          if (!e.shiftKey && !preview.classList.contains('clicked')) {
+            preview.classList.remove('active');
+          }
+        });
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.media-card.hovered').forEach(card => {
+            const preview = card.querySelector('.preview');
+            if (preview && !preview.classList.contains('clicked')) {
+              preview.classList.add('active');
+            }
+          });
+        }
+      });
+
+      document.addEventListener('keyup', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.preview.active').forEach(p => {
+            if (!p.classList.contains('clicked')) p.classList.remove('active');
+          });
+        }
+      });
+
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        }
+      });
+    }
   </script>
+</div>
 {{ end }}
