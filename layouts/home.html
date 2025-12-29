@@ -53,7 +53,7 @@
               {{ $image := $image.Resize "x180" }}
               <img src="{{ $image.RelPermalink }}" alt="Box art for {{ .title }}">
               <div class="preview">
-                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+                <img loading="lazy" src="{{ .cover.url }}" alt="Box art for {{ .title }}">
                 <div class="preview-meta">
                   <div class="preview-title">{{ .title }}</div>
                   <div class="preview-subtitle">
@@ -83,7 +83,7 @@
                 <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
               <div class="preview">
-                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <img loading="lazy" src="{{ .cover }}" alt="Book cover for {{ .title }}">
                 <div class="preview-meta">
                   <div class="preview-title">{{ .title }}</div>
                   <div class="preview-subtitle">{{ .author }}</div>
@@ -107,7 +107,7 @@
             {{ $image := $image.Resize "x180" }}
             <div class="media-item">
               <a href="{{ .url }}">
-                <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
+                <img loading="lazy" src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
               <div class="preview">
                 <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
