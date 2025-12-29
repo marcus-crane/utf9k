@@ -4,8 +4,8 @@
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
     {{ if or .Date .Params.tags }}
     <div class="article-meta">
-      {{ with .Date }}<div><span class="label">Published:</span> {{ .Format "2006-01-02" }}</div>{{ end }}
-      {{ with .Params.tags }}<div><span class="label">Tags</span> {{ delimit . ", "}}</div>{{ end }}
+      {{ with .Date }}<div><span class="meta-label">Published</span><span class="meta-value">{{ .Format "2006-01-02" }}</span></div>{{ end }}
+      {{ with .Params.tags }}<div><span class="meta-label">Tags</span>{{ range . }}<span class="meta-value">{{ . }}</span>{{ end }}</div>{{ end }}
     </div>
     {{ end }}
   </div>

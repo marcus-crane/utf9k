@@ -419,17 +419,34 @@ body.dark .sidebar-header .speech-bubble::before {
 }
 
 .article-meta {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
   font-size: 0.75rem;
   color: var(--muted);
 }
 
-.article-meta .label {
-  color: var(--love);
-  text-transform: lowercase;
-  letter-spacing: 0.1em;
+.article-meta > div {
+  display: flex;
+  align-items: center;
+}
+
+.meta-label {
+  font-size: 0.55rem;
+  padding: 0.15rem 0.35rem;
+  background: var(--overlay);
+  border: 1px solid var(--overlay);
+  color: var(--subtle);
+  text-transform: uppercase;
+}
+
+.meta-value {
+  font-size: 0.55rem;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid var(--overlay);
+  margin-left: -1px;
+  color: var(--text);
 }
 
 /* ==========================================
