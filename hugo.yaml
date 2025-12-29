@@ -55,13 +55,33 @@ markup:
     renderer:
       unsafe: true
 
+# https://gohugo.io/configuration/output-formats/#default-configuration
+outputFormats:
+  # Support for RSS feeds at /rss.xml
+  rssalt:
+    baseName: rss
+    mediaType: application/rss+xml
+    noUgly: true
+    protocol: ''
+  searchindex:
+    baseName: search
+    mediaType: application/json
+
+# https://gohugo.io/configuration/outputs/#article
 outputs:
   home:
     - html
     - rss
+    - rssalt
+    - searchindex
+  page:
+    - html
+    - markdown
   section:
     - html
+    - markdown
     - rss
+    - rssalt
   taxonomy:
     - html
   term:

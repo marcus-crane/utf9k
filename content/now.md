@@ -1,13 +1,11 @@
 ---
 description: Usually I am up to Stuff™️ and this page may hold the answers you seek
 lastmod: 2025-10-25
-layout: markdown.vto
 slug: now
 tags:
   - me
 title: Now
 ---
-
 Here's what I'm currently up to:
 
 ## 6 months at Halter
