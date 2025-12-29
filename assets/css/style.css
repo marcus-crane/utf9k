@@ -635,6 +635,15 @@ body.dark .sidebar-header .speech-bubble::before {
 
 .content blockquote p { margin-bottom: 0; }
 
+.content blockquote.alert p {
+  font-style: normal
+}
+
+.content blockquote p.alert-heading {
+  font-size: var(--text-xl);
+  font-weight: bold;
+}
+
 .content table {
   width: 100%;
   border-collapse: collapse;
@@ -734,7 +743,7 @@ body.dark .sidebar-header .speech-bubble::before {
 .content ol { list-style: decimal; }
 .content ol li::marker { color: var(--love); font-weight: 700; }
 
-.content blockquote::before {
+.content blockquote:not(.alert)::before {
   content: '"';
   position: absolute;
   top: -0.25rem;

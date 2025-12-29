@@ -50,6 +50,9 @@ markup:
   highlight:
     noClasses: false
   goldmark:
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: true
 
