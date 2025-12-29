@@ -640,7 +640,6 @@ body.dark .sidebar-header .speech-bubble::before {
   border-collapse: collapse;
   font-size: var(--text-md);
   margin: var(--space-2xl) 0;
-  display: block;
   overflow-x: auto;
 }
 
