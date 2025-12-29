@@ -9,13 +9,10 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end }}
 
-  {{ $styles := resources.Get "css/style.css" | postCSS }}
-
-  {{ if hugo.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  {{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  {{ with resources.Get "css/style.css" | postCSS }}
+  <style>
+  {{ .Content | safeCSS }}
+  </style>
   {{ end }}
 </head>
 <body>
