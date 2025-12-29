@@ -49,7 +49,9 @@
             {{ if eq .list "Playing" }}
             {{ range .games }}
             <div class="media-item">
-              <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+              {{ $image := resources.GetRemote .cover.url }}
+              {{ $image := $image.Resize "x180" }}
+              <img src="{{ $image.RelPermalink }}" alt="Box art for {{ .title }}">
               <div class="preview">
                 <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
                 <div class="preview-meta">
@@ -74,9 +76,11 @@
             {{ if ne .list "Stalled" }}
             {{ $books := where .books "progress" "ne" 100}}
             {{ range $books }}
+            {{ $image := resources.GetRemote .cover }}
+            {{ $image := $image.Resize "x180" }}
             <div class="media-item">
               <a href="{{ .link }}">
-                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
               <div class="preview">
                 <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
@@ -99,9 +103,11 @@
           <div class="media-group-items manga">
             {{ range $.Site.Data.manga }}
             {{ if eq .status "FINISHED" }}
+            {{ $image := resources.GetRemote .cover }}
+            {{ $image := $image.Resize "x180" }}
             <div class="media-item">
               <a href="{{ .url }}">
-                <img src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
               <div class="preview">
                 <img src="{{ .cover }}" alt="Book cover for {{ .title }}">

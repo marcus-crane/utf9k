@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
+  font-size: clamp( 0.6rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 0.85rem );
   /* Colors */
   --base: #d9d0c3;
   --surface: #e2d9cc;
@@ -639,6 +640,7 @@ body.dark .sidebar-header .speech-bubble::before {
   font-style: normal
 }
 
+/* TODO: Don't apply to blockquotes within callouts (see deepfakes post) */
 .content blockquote p.alert-heading {
   font-size: var(--text-xl);
   font-weight: bold;
