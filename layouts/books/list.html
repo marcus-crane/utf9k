@@ -12,11 +12,9 @@
       <h2 class="section-title">{{ .list }}</h2>
       <span class="section-count">{{ len .books }}</span>
     </div>
-    <!-- TODO: Genericise grid name -->
-    <div class="games-grid">
+    <div class="media-grid">
       {{ range .books }}
-      <div class="game-card" data-title="{{ .title | lower }}">
-        <!-- TODO: Uncouple from game card style -->
+      <div class="media-card" data-title="{{ .title | lower }}">
         <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
         <div class="preview">
           <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
@@ -30,9 +28,8 @@
             {{ $duration := $finished.Sub $started }}
             <div class="preview-detail">Time to finish: {{ math.Round (div $duration.Hours 24) }} days</div>
             {{ end }}
-            <!-- TODO: Decouple from game naming (should just be tags) -->
             {{ if .recommended }}
-            <div class="preview-platforms">
+            <div class="preview-tags">
               <span>Recommended</span>
             </div>
             {{ end }}

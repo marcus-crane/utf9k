@@ -23,10 +23,10 @@
       <h2 class="section-title playing">Playing</h2>
       <span class="section-count">{{ len $playing }}</span>
     </div>
-    <div class="games-grid">
+    <div class="media-grid">
       <!-- TODO: Extract game card into a partial -->
       {{ range $playing }}
-      <div class="game-card" data-title="{{ .title | lower }}">
+      <div class="media-card" data-title="{{ .title | lower }}">
         <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
         <div class="preview">
           <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
@@ -46,9 +46,9 @@
       <h2 class="section-title backlog">Backlog</h2>
       <span class="section-count">{{ len $backlog }}</span>
     </div>
-    <div class="games-grid">
+    <div class="media-grid">
       {{ range $backlog }}
-      <div class="game-card" data-title="{{ .title | lower }}">
+      <div class="media-card" data-title="{{ .title | lower }}">
         <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
         <div class="preview">
           <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
@@ -67,9 +67,9 @@
       <h2 class="section-title completed">Completed</h2>
       <span class="section-count">{{ len $completed }}</span>
     </div>
-    <div class="games-grid">
+    <div class="media-grid">
       {{ range $completed }}
-      <div class="game-card" data-title="{{ .title | lower }}">
+      <div class="media-card" data-title="{{ .title | lower }}">
         <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
         <div class="preview">
           <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
@@ -89,9 +89,9 @@
       <h2 class="section-title shelved">Shelved</h2>
       <span class="section-count">{{ len $completed }}</span>
     </div>
-    <div class="games-grid">
+    <div class="media-grid">
       {{ range $shelved }}
-      <div class="game-card" data-title="{{ .title | lower }}">
+      <div class="media-card" data-title="{{ .title | lower }}">
         <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
         <div class="preview">
           <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
@@ -128,7 +128,7 @@
 
     searchInput.addEventListener('input', (e) => {
       const query = e.target.value.toLowerCase();
-      document.querySelectorAll('.game-card').forEach(card => {
+      document.querySelectorAll('.media-card').forEach(card => {
         const { title } = card.dataset;
 
         if (title.includes(query)) {

@@ -1625,16 +1625,14 @@ a.post-link:hover {
   color: var(--text);
 }
 
-.game-grid,
-.games-grid {
+.media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 1rem;
 }
 
 @media (max-width: 600px) {
-  .game-grid,
-  .games-grid {
+  .media-grid {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 0.75rem;
   }
@@ -1670,14 +1668,14 @@ a.post-link:hover {
   border: 1px solid var(--overlay);
 }
 
-.game-card { position: relative; }
+.media-card { position: relative; }
 
-.game-card a {
+.media-card a {
   display: block;
   text-decoration: none;
 }
 
-.game-card img {
+.media-card img {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
@@ -1686,18 +1684,17 @@ a.post-link:hover {
   display: block;
 }
 
-.game-card:hover img { border-color: var(--foam); }
+.media-card:hover img { border-color: var(--foam); }
 
-.section.playing .game-card img { border-color: var(--love); }
-.section.backlog .game-card img { border-color: var(--gold); }
-.section.completed .game-card img { border-color: var(--pine); }
+.section.playing .media-card img { border-color: var(--love); }
+.section.backlog .media-card img { border-color: var(--gold); }
+.section.completed .media-card img { border-color: var(--pine); }
 
-/* TODO: Revisit this + see if can be merged with homepage cards */
-.game-card .preview img { border: unset; }
+.media-card .preview img { border: unset; }
 
-.section.playing .game-card:hover img,
-.section.backlog .game-card:hover img,
-.section.completed .game-card:hover img {
+.section.playing .media-card:hover img,
+.section.backlog .media-card:hover img,
+.section.completed .media-card:hover img {
   border-color: var(--foam);
 }
 
@@ -1718,8 +1715,7 @@ a.post-link:hover {
   overflow: hidden;
 }
 
-.game-card:hover .preview,
-.media-item:hover .preview {
+.media-card:hover .preview {
   display: block;
 }
 
@@ -1752,14 +1748,14 @@ a.post-link:hover {
   color: var(--muted);
 }
 
-.preview-platforms {
+.preview-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
   margin-top: 0.5rem;
 }
 
-.preview-platforms span {
+.preview-tags span {
   font-size: 0.55rem;
   padding: 0.15rem 0.35rem;
   background: var(--overlay);
