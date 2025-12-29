@@ -10,10 +10,7 @@
   </div>
   {{ end }}
 
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}
-    {{ $pages = where site.RegularPages "section" "blog" | first 10 }}
-  {{ end }}
+  {{ $pages := where site.RegularPages "Section" "projects" }}
 
   {{ range $pages.GroupByParam "ongoing" "desc" }}
   <div class="list-group">
