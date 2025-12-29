@@ -13,28 +13,28 @@
   <nav class="nav-section">
     <div class="nav-section-title">Main</div>
     {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 
   <nav class="nav-section">
     <div class="nav-section-title">Garden</div>
     {{ range .Site.Menus.garden }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "garden" . }} class="active"{{ end }}>{{ .Name }}</a>
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "garden" .) ($.HasMenuCurrent "garden" .) }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 
   <nav class="nav-section">
     <div class="nav-section-title">Media</div>
     {{ range .Site.Menus.media }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "media" . }} class="active"{{ end }}>{{ .Name }}</a>
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "media" .) ($.HasMenuCurrent "media" .) }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 
   <nav class="nav-section">
     <div class="nav-section-title">Meta</div>
     {{ range .Site.Menus.meta }}
-      <a href="{{ .URL }}"{{ if $.IsMenuCurrent "meta" . }} class="active"{{ end }}>{{ .Name }}</a>
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "meta" .) ($.HasMenuCurrent "meta" .) }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 

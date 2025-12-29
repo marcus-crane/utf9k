@@ -1141,7 +1141,8 @@ del {
 }
 
 abbr {
-  text-decoration: underline dotted var(--muted);
+  -webkit-text-decoration: underline dotted var(--muted);
+          text-decoration: underline dotted var(--muted);
   cursor: help;
 }
 
@@ -1317,7 +1318,8 @@ abbr {
 .player-cover {
   width: 72px;
   height: 72px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   border: 2px solid var(--overlay);
 }
@@ -1407,7 +1409,8 @@ abbr {
 .history-thumb > img {
   width: 24px;
   height: 24px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 1px solid var(--overlay);
 }
 
@@ -1489,7 +1492,8 @@ abbr {
 .media-item img {
   height: 90px;
   width: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid var(--overlay);
   transition: border-color 0.1s;
 }
@@ -1601,6 +1605,8 @@ a.post-link:hover {
   border-color: var(--foam);
 }
 
+.filter-bar input[type="text"]::-moz-placeholder, .filter-search::-moz-placeholder { color: var(--muted); }
+
 .filter-bar input[type="text"]::placeholder,
 .filter-search::placeholder { color: var(--muted); }
 
@@ -1686,7 +1692,8 @@ a.post-link:hover {
 .game-card img {
   width: 100%;
   aspect-ratio: 3 / 4;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid var(--overlay);
   transition: border-color 0.1s;
   display: block;
