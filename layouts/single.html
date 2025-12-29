@@ -1,7 +1,7 @@
 {{ define "main" }}
   <!-- TODO: Shorten title width? -->
   {{ if .Params.showTitle | default true }}
-  <div class="page-title">
+  <div class="article-header">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
     {{ if or .Date .Params.tags }}

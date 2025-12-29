@@ -15,7 +15,9 @@ While Crowdstrike was running as a systemd daemon, it wasn't immediately clear h
 
 It turns out that Crowdstrike's daemon shipped with a CLI tool available at `/opt/CrowdStrike/falconctl`.
 
-You can use the `-g` flag to "GET" options followed by whichever flag might be useful. `-h` is your field here.
+You can use the `-g` flag to "GET" options followed by whichever flag might be useful.
+
+`-h` is your friend here.
 
 For getting the version, I was able to do that like so:
 

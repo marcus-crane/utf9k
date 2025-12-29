@@ -11,7 +11,7 @@
     {{ end }}
   </div>
 
-  {{ if .TableOfContents }}
+  {{ if strings.Contains .TableOfContents "<li>" }}
   <details class="toc-inline toc-inline-always">
     <summary>Contents</summary>
     {{ .TableOfContents }}

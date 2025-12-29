@@ -394,42 +394,7 @@ body.dark .sidebar-header .speech-bubble::before {
 }
 
 /* ==========================================
-    PAGE TITLE
-    ========================================== */
-.page-title {
-  border: 3px solid var(--text);
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-  display: inline-block;
-}
-
-.page-title::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: -8px;
-  bottom: -8px;
-  border: 3px solid var(--love);
-  z-index: -1;
-}
-
-.page-title h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-}
-
-.page-title .desc {
-  color: var(--subtle);
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-}
-
-/* ==========================================
-    ARTICLE HEADER (Hero Style)
+    ARTICLE HEADER
     ========================================== */
 .article-header {
   margin-bottom: 2rem;
@@ -445,6 +410,12 @@ body.dark .sidebar-header .speech-bubble::before {
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1.2;
+}
+
+.article-header .desc {
+  color: var(--subtle);
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
 }
 
 .article-meta {
@@ -520,6 +491,10 @@ body.dark .sidebar-header .speech-bubble::before {
   height: auto;
 }
 
+.content iframe {
+  width: 100%;
+}
+
 .content h2 {
   font-size: var(--text-xl);
   font-weight: 700;
@@ -558,6 +533,7 @@ body.dark .sidebar-header .speech-bubble::before {
   padding: 0.15rem 0.4rem;
   font-size: 0.85em;
   border: var(--border-thin) solid var(--muted);
+  white-space: nowrap;
 }
 
 .content pre {
@@ -1782,10 +1758,7 @@ a.post-link:hover {
   .sidebar, .mobile-overlay, .menu-toggle, .toc-column, .footnote-preview, .preview, .footer { display: none !important; }
   .layout { display: block; }
   .main { padding: 0; max-width: 100%; }
-  .page-title { border: 2px solid black; padding: 1.5rem; margin-bottom: 1.5rem; }
-  .page-title::before { display: none; }
   .article-header { border: 2px solid black; padding: 1.5rem; margin-bottom: 1.5rem; }
-  .article-header::before { display: none; }
   .article-wrapper { max-width: 100%; }
   .content { position: static; }
   .content aside {
