@@ -419,17 +419,34 @@ body.dark .sidebar-header .speech-bubble::before {
 }
 
 .article-meta {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
   font-size: 0.75rem;
   color: var(--muted);
 }
 
-.article-meta .label {
-  color: var(--love);
-  text-transform: lowercase;
-  letter-spacing: 0.1em;
+.article-meta > div {
+  display: flex;
+  align-items: center;
+}
+
+.meta-label {
+  font-size: 0.55rem;
+  padding: 0.15rem 0.35rem;
+  background: var(--overlay);
+  border: 1px solid var(--overlay);
+  color: var(--subtle);
+  text-transform: uppercase;
+}
+
+.meta-value {
+  font-size: 0.55rem;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid var(--overlay);
+  margin-left: -1px;
+  color: var(--text);
 }
 
 /* ==========================================
@@ -499,7 +516,7 @@ body.dark .sidebar-header .speech-bubble::before {
   font-size: var(--text-xl);
   font-weight: 700;
   text-transform: uppercase;
-  margin: var(--space-4xl) 0 var(--space-lg);
+  margin: var(--space-2xl) 0 var(--space-lg);
   padding-bottom: var(--space-sm);
   border-bottom: var(--border-normal) solid var(--love);
   color: var(--text);
@@ -551,6 +568,7 @@ body.dark .sidebar-header .speech-bubble::before {
   background: none;
   border: none;
   padding: 0;
+  white-space: pre;
 }
 
 .content blockquote {
@@ -855,6 +873,62 @@ dl.definition-list dd {
   margin-top: var(--space-sm);
 }
 
+/* Image figure with hover preview */
+.content figure.image-figure {
+  position: relative;
+}
+
+.content figure.image-figure > a {
+  display: block;
+  border: none;
+  text-decoration: none;
+}
+
+.content figure.image-figure > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: border-color 0.1s;
+}
+
+.content figure.image-figure:hover > a > img {
+  border-color: var(--foam);
+}
+
+.content figure.image-figure .preview {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: var(--surface);
+  border: var(--border-normal) solid var(--love);
+  box-shadow: var(--shadow-lg);
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: visible;
+}
+
+.content figure.image-figure .preview.active {
+  display: block;
+}
+
+.content figure.image-figure .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
+.content figure.image-figure .preview img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border: none;
+}
+
 /* Asides / Sidenotes */
 .content aside {
   position: absolute;
@@ -888,7 +962,10 @@ dl.definition-list dd {
 .footnote-ref {
   position: relative;
   display: inline;
-  padding: 1px;
+}
+
+.footnote-ref.adjacent {
+  margin-left: 0.2em;
 }
 
 .footnote-ref a {
@@ -956,7 +1033,7 @@ dl.definition-list dd {
 
 .footnotes-section a {
   color: var(--foam);
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .footnote-backref {
@@ -1153,7 +1230,8 @@ abbr {
 .footer {
   border-top: var(--border-normal) solid var(--overlay);
   padding: var(--space-3xl) 0;
-  margin-top: var(--space-5xl);
+  margin-top: var(--space-3xl);
+  max-width: 600px;
 }
 
 .footer-content {
@@ -1182,8 +1260,7 @@ abbr {
 .footer-section a:hover { color: var(--foam); }
 
 .footer-bottom {
-  padding-top: var(--space-2xl);
-  border-top: var(--border-thin) solid var(--overlay);
+  padding-top: var(--space-md);
   font-size: var(--text-base);
   color: var(--muted);
   display: flex;
@@ -1476,28 +1553,18 @@ abbr {
   gap: 0.5rem;
 }
 
-.media-item {
-  position: relative;
-}
-
-.media-item img {
+/* Homepage media shelf overrides */
+.media-shelf .media-card > img,
+.media-shelf .media-card > a > img {
   height: 90px;
   width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 2px solid var(--overlay);
-  transition: border-color 0.1s;
+  aspect-ratio: unset;
 }
 
-.media-item:hover img { border-color: var(--foam); }
-
-.media-group-items.games .media-item img { border-color: var(--pine); }
-.media-group-items.books .media-item img { border-color: var(--gold); }
-.media-group-items.manga .media-item img { border-color: var(--iris); }
-.media-group-items.tv .media-item img { border-color: var(--love); }
-
-/* TODO: Revisit specificity of selectors above */
-.media-group-items .media-item .preview img { border: unset; };
+.media-group-items.games .media-card img { border-color: var(--pine); }
+.media-group-items.books .media-card img { border-color: var(--gold); }
+.media-group-items.manga .media-card img { border-color: var(--iris); }
+.media-group-items.tv .media-card img { border-color: var(--love); }
 
 /* ==========================================
     LIST PAGES
@@ -1628,16 +1695,14 @@ a.post-link:hover {
   color: var(--text);
 }
 
-.game-grid,
-.games-grid {
+.media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 1rem;
 }
 
 @media (max-width: 600px) {
-  .game-grid,
-  .games-grid {
+  .media-grid {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 0.75rem;
   }
@@ -1673,14 +1738,17 @@ a.post-link:hover {
   border: 1px solid var(--overlay);
 }
 
-.game-card { position: relative; }
+.media-card {
+  position: relative;
+  cursor: pointer;
+}
 
-.game-card a {
+.media-card a {
   display: block;
   text-decoration: none;
 }
 
-.game-card img {
+.media-card img {
   width: 100%;
   aspect-ratio: 3 / 4;
   -o-object-fit: cover;
@@ -1690,18 +1758,17 @@ a.post-link:hover {
   display: block;
 }
 
-.game-card:hover img { border-color: var(--foam); }
+.media-card:hover img { border-color: var(--foam); }
 
-.section.playing .game-card img { border-color: var(--love); }
-.section.backlog .game-card img { border-color: var(--gold); }
-.section.completed .game-card img { border-color: var(--pine); }
+.section.playing .media-card img { border-color: var(--love); }
+.section.backlog .media-card img { border-color: var(--gold); }
+.section.completed .media-card img { border-color: var(--pine); }
 
-/* TODO: Revisit this + see if can be merged with homepage cards */
-.game-card .preview img { border: unset; }
+.media-card .preview img { border: unset; }
 
-.section.playing .game-card:hover img,
-.section.backlog .game-card:hover img,
-.section.completed .game-card:hover img {
+.section.playing .media-card:hover img,
+.section.backlog .media-card:hover img,
+.section.completed .media-card:hover img {
   border-color: var(--foam);
 }
 
@@ -1722,9 +1789,17 @@ a.post-link:hover {
   overflow: hidden;
 }
 
-.game-card:hover .preview,
-.media-item:hover .preview {
+.media-card .preview.active {
   display: block;
+}
+
+.media-card .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
+.media-shelf .media-card .preview,
+.books-page .media-card .preview {
+  width: 320px;
 }
 
 .preview > img {
@@ -1756,14 +1831,14 @@ a.post-link:hover {
   color: var(--muted);
 }
 
-.preview-platforms {
+.preview-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
   margin-top: 0.5rem;
 }
 
-.preview-platforms span {
+.preview-tags span {
   font-size: 0.55rem;
   padding: 0.15rem 0.35rem;
   background: var(--overlay);
@@ -1779,10 +1854,11 @@ a.post-link:hover {
   body { font-size: 11pt; line-height: 1.5; }
   .sidebar, .mobile-overlay, .menu-toggle, .toc-column, .footnote-preview, .preview, .footer { display: none !important; }
   .layout { display: block; }
-  .main { padding: 0; max-width: 100%; }
-  .article-header { border: 2px solid black; padding: 1.5rem; margin-bottom: 1.5rem; }
-  .article-wrapper { max-width: 100%; }
-  .content { position: static; }
+  .main { padding: 0; }
+  .article-header { margin-bottom: 1.5rem; }
+  .content h2 { border-bottom: none; }
+  .content { max-width: none; position: static; }
+  .article-wrapper { max-width: none; }
   .content aside {
     position: static !important;
     width: 100% !important;
@@ -1795,15 +1871,15 @@ a.post-link:hover {
   }
   .footnote-ref a::after,
   .footnote-backref::after { content: none !important; }
-  .footnotes-section { max-width: 100%; border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; }
+  .footnotes-section { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; }
   .content blockquote { border: 1px solid #ccc; border-left: 3px solid #666; padding: 1rem; }
   .content blockquote::before { display: none; }
   h2, h3 { page-break-after: avoid; }
   p, blockquote, figure { page-break-inside: avoid; }
   img { max-width: 100% !important; page-break-inside: avoid; }
   a[href^="http"]::after, a[href^="/"]::after {
-    content: " (" attr(href) ")";
+    content: "\A(" attr(href) ")";
+    white-space: pre-wrap;
     font-size: 0.8em;
-    word-break: break-all;
   }
 }

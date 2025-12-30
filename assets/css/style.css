@@ -1733,7 +1733,10 @@ a.post-link:hover {
   border: 1px solid var(--overlay);
 }
 
-.media-card { position: relative; }
+.media-card {
+  position: relative;
+  cursor: pointer;
+}
 
 .media-card a {
   display: block;
@@ -1780,32 +1783,12 @@ a.post-link:hover {
   overflow: hidden;
 }
 
-.media-card:hover .preview {
+.media-card .preview.active {
   display: block;
 }
 
-.media-shelf .media-card:hover .preview,
-.books-page .media-card:hover .preview,
-.games-page .media-card:hover .preview {
-  display: none;
-}
-
-.media-shelf .media-card .preview.active,
-.books-page .media-card .preview.active,
-.games-page .media-card .preview.active {
-  display: block;
-}
-
-.media-shelf .media-card .preview.active:not(.clicked),
-.books-page .media-card .preview.active:not(.clicked),
-.games-page .media-card .preview.active:not(.clicked) {
+.media-card .preview.active:not(.clicked) {
   pointer-events: none;
-}
-
-.media-shelf .media-card,
-.books-page .media-card,
-.games-page .media-card {
-  cursor: pointer;
 }
 
 .media-shelf .media-card .preview,
