@@ -29,13 +29,13 @@
 
     <!-- Activity -->
     <div class="block block-full block-filled" id="activity-section">
-      <div class="label label-iris">Activity</div>
+      <div class="label label-iris">Latest Activity</div>
       <div class="activity-grid" id="activity-grid"></div>
     </div>
 
     <!-- Media Shelf -->
     <div class="block block-full block-filled">
-      <div class="label label-gold">Media Shelf</div>
+      <div class="label label-gold">Current Media Diet</div>
       <div class="media-shelf">
 
         <!-- Games -->
@@ -238,15 +238,15 @@
 
           setupPreviewHandlers(card, preview);
 
-          const time = relativeTime(item);
-          const categoryLabel = isNowPlaying ? 'Now' : (categoryLabels[item.category] || item.category);
+          const time = isNowPlaying ? 'Now playing' : relativeTime(item);
+          const categoryLabel = categoryLabels[item.category] || item.category;
           const meta = document.createElement('div');
           meta.className = 'activity-meta';
           meta.innerHTML = `
             <div class="activity-category">${categoryLabel}</div>
             <div class="activity-subtitle">${item.subtitle || ''}</div>
             <div class="activity-title">${title}</div>
-            ${!isNowPlaying && time ? `<div class="activity-time">${time}</div>` : ''}
+            ${time ? `<div class="activity-time">${time}</div>` : ''}
           `;
 
           card.appendChild(meta);
