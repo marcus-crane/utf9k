@@ -1426,17 +1426,6 @@ abbr {
   margin-top: 0.25rem;
 }
 
-.player-history-section {
-  margin-top: 1rem;
-}
-
-.player-history-label {
-  font-size: 0.55rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-}
 
 .player-history {
   list-style: none;
@@ -1772,11 +1761,14 @@ a.post-link:hover {
 
 .media-card img {
   width: 100%;
-  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 2px solid var(--overlay);
   transition: border-color 0.1s;
   display: block;
+}
+
+.games-page .media-card img {
+  aspect-ratio: 3 / 4;
 }
 
 .media-card:hover img { border-color: var(--foam); }
