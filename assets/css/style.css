@@ -1321,7 +1321,7 @@ abbr {
   margin-bottom: var(--space-lg);
   line-height: var(--leading-relaxed);
   color: var(--subtle);
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
 }
 
 .welcome p:last-child { margin-bottom: 0; }
