@@ -337,6 +337,9 @@
 .history-mixed .mixed-item.cat-track { border-color: var(--foam); }
 .history-mixed .mixed-item.cat-podcast_episode { border-color: var(--rose); }
 
+.history-mixed .mixed-item.now-playing { border-color: var(--love); }
+.history-mixed .mixed-item.now-playing .mixed-category { background: var(--love); }
+
 .history-mixed .mixed-item > img {
   position: absolute;
   inset: 0;
@@ -354,7 +357,7 @@
   background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.15rem;
 }
 
 .history-mixed .mixed-category {
@@ -391,6 +394,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.history-mixed .mixed-time {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.55rem;
 }
 
 /* Preview styles for all history variants */
@@ -675,7 +683,7 @@
   }
 
   // Style 5: Mixed Media
-  function renderMixed(data) {
+  function renderMixed(playing, history) {
     const container = document.getElementById('history-mixed');
     container.innerHTML = '';
 
@@ -688,47 +696,21 @@
       [PODCAST]: 'Podcast'
     };
 
-    // Example mixed media data using real history where available
-    const findByCategory = (cat) => data.find(d => d.category === cat);
+    // Combine now playing with history, avoiding duplicates
+    const nowPlaying = playing && playing.length > 0 ? playing[0] : null;
+    const filteredHistory = nowPlaying
+      ? history.filter(h => h.id !== nowPlaying.id)
+      : history;
+    const items = nowPlaying
+      ? [nowPlaying, ...filteredHistory.slice(0, 4)]
+      : filteredHistory.slice(0, 5);
 
-    const exampleData = [
-      findByCategory(MANGA) || {
-        category: MANGA,
-        title: '42',
-        subtitle: 'Chainsaw Man',
-        image: 'https://picsum.photos/seed/manga/300/400'
-      },
-      findByCategory(GAMING) || {
-        category: GAMING,
-        title: 'Elden Ring',
-        subtitle: 'FromSoftware',
-        image: 'https://picsum.photos/seed/game/300/400'
-      },
-      findByCategory(EPISODE) || {
-        category: EPISODE,
-        title: '02x01 The Innovator',
-        subtitle: 'Fallout',
-        image: 'https://picsum.photos/seed/tv/300/400'
-      },
-      findByCategory(MOVIE) || {
-        category: MOVIE,
-        title: 'Dune: Part Two',
-        subtitle: 'Denis Villeneuve',
-        image: 'https://picsum.photos/seed/movie/300/400'
-      },
-      findByCategory(TRACK) || {
-        category: TRACK,
-        title: 'Redbone',
-        subtitle: 'Childish Gambino',
-        image: 'https://picsum.photos/seed/music/300/400'
-      }
-    ].filter(Boolean);
-
-    exampleData.forEach(item => {
+    items.forEach((item, index) => {
+      const isNowPlaying = index === 0 && nowPlaying && item.is_active;
       let title = item.category === MANGA ? formatMangaTitle(item.title) : item.title;
 
       const card = document.createElement('div');
-      card.className = `mixed-item cat-${item.category}`;
+      card.className = `mixed-item cat-${item.category}${isNowPlaying ? ' now-playing' : ''}`;
 
       const imgUrl = item.image.startsWith('http') ? item.image : "https://gunslinger.utf9k.net" + item.image;
 
@@ -742,12 +724,17 @@
 
       setupPreviewHandlers(card, preview);
 
+      const time = relativeTime(item);
+      const categoryLabel = isNowPlaying
+        ? 'Now'
+        : (categoryLabels[item.category] || item.category);
       const meta = document.createElement('div');
       meta.className = 'mixed-meta';
       meta.innerHTML = `
-        <div class="mixed-category">${categoryLabels[item.category] || item.category}</div>
-        <div class="mixed-title">${title}</div>
+        <div class="mixed-category">${categoryLabel}</div>
         <div class="mixed-subtitle">${item.subtitle || ''}</div>
+        <div class="mixed-title">${title}</div>
+        ${!isNowPlaying && time ? `<div class="mixed-time">${time}</div>` : ''}
       `;
 
       card.appendChild(meta);
@@ -756,16 +743,18 @@
   }
 
   // Fetch and render all styles
-  fetch("https://gunslinger.utf9k.net/api/v4/history")
-    .then(res => res.json())
-    .then(data => {
-      renderHorizontal(data);
-      renderTimeline(data);
-      renderGrid(data);
-      renderCards(data);
-      renderMixed(data);
+  Promise.all([
+    fetch("https://gunslinger.utf9k.net/api/v4/playing").then(res => res.json()),
+    fetch("https://gunslinger.utf9k.net/api/v4/history").then(res => res.json())
+  ])
+    .then(([playing, history]) => {
+      renderHorizontal(history);
+      renderTimeline(history);
+      renderGrid(history);
+      renderCards(history);
+      renderMixed(playing, history);
     })
-    .catch(err => console.error(`Failed to fetch history: ${err}`));
+    .catch(err => console.error(`Failed to fetch data: ${err}`));
 
   // Global handlers
   document.addEventListener('keydown', e => {
