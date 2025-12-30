@@ -13,8 +13,29 @@
     <div class="block block-filled" id="liveplayer">
       <div class="label label-pine" id="player-label">Now Playing</div>
       <div class="player-idle" id="player-idle">
-        <div class="idle-icon">!!</div>
-        <div class="idle-text">No data available</div>
+        <div class="idle-icon">~</div>
+        <div class="idle-text">Nothing playing</div>
+      </div>
+      <div class="player-active" id="player-active" style="display: none;">
+        <div class="player-cover-wrapper" id="player-cover-wrapper">
+          <img src="" alt="" id="player-cover" class="player-cover">
+          <div class="preview" id="player-cover-preview">
+            <img src="" alt="" id="player-cover-preview-img">
+            <div class="preview-meta">
+              <div class="preview-title" id="player-cover-preview-title"></div>
+              <div class="preview-subtitle" id="player-cover-preview-subtitle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="player-info">
+          <div class="player-title" id="player-title"></div>
+          <div class="player-subtitle" id="player-subtitle"></div>
+          <div class="player-status" id="player-status"></div>
+        </div>
+      </div>
+      <div class="player-history-section" id="player-history-section" style="display: none;">
+        <div class="player-history-label">History</div>
+        <ul class="player-history" id="player-history"></ul>
       </div>
     </div>
 
@@ -128,4 +149,270 @@
   </div>
 
   {{ partial "preview.html" ".media-card" }}
+
+  <script>
+    (function() {
+      const playerIdle = document.getElementById('player-idle');
+      const playerActive = document.getElementById('player-active');
+      const playerStatus = document.getElementById('player-status');
+      const playerCover = document.getElementById('player-cover');
+      const playerCoverWrapper = document.getElementById('player-cover-wrapper');
+      const playerCoverPreview = document.getElementById('player-cover-preview');
+      const playerCoverPreviewImg = document.getElementById('player-cover-preview-img');
+      const playerCoverPreviewTitle = document.getElementById('player-cover-preview-title');
+      const playerCoverPreviewSubtitle = document.getElementById('player-cover-preview-subtitle');
+      const playerTitle = document.getElementById('player-title');
+      const playerSubtitle = document.getElementById('player-subtitle');
+      const livePlayer = document.getElementById('liveplayer');
+      const playerHistory = document.getElementById('player-history');
+      const playerHistorySection = document.getElementById('player-history-section');
+
+      const PODCAST = 'podcast_episode';
+      const MANGA = 'manga';
+      const GAMING = 'gaming';
+      const EPISODE = 'episode';
+      const MOVIE = 'movie';
+      const TRACK = 'track';
+
+      const statusText = {
+        [PODCAST]: { active: "Listening to", past: "Was listening to" },
+        [MANGA]: { active: "Reading", past: "Was reading" },
+        [GAMING]: { active: "Playing", past: "Was playing" },
+        [EPISODE]: { active: "Watching", past: "Was watching" },
+        [MOVIE]: { active: "Watching", past: "Was watching" },
+        [TRACK]: { active: "Listening to", past: "Was listening to" }
+      };
+
+      function formatMangaTitle(title) {
+        if (title.includes(" - ")) {
+          return `Chapters ${title.replace("-", "through")}`;
+        }
+        return `Chapter ${title}`;
+      }
+
+      function buildGradient(colours) {
+        if (!colours || colours.length === 0) return null;
+        const expanded = [...colours, ...colours];
+        return `linear-gradient(135deg, ${expanded.join(', ')})`;
+      }
+
+      function renderPlayer(data) {
+        if (!data || data.length === 0) {
+          playerIdle.style.display = 'flex';
+          playerActive.style.display = 'none';
+          livePlayer.classList.remove('active');
+          return;
+        }
+
+        const item = data[0];
+        let title = item.title;
+
+        if (item.category === MANGA) {
+          title = formatMangaTitle(title);
+        }
+
+        const status = statusText[item.category] || { active: "Currently", past: "Recently" };
+        playerStatus.textContent = item.is_active ? status.active : status.past;
+        playerTitle.textContent = title;
+        playerSubtitle.textContent = item.subtitle;
+        playerCover.src = "https://gunslinger.utf9k.net" + item.image;
+        playerCover.alt = `Cover art for ${title}`;
+        playerCoverPreviewImg.src = "https://gunslinger.utf9k.net" + item.image;
+        playerCoverPreviewImg.alt = `Cover art for ${title}`;
+        playerCoverPreviewTitle.textContent = title;
+        playerCoverPreviewSubtitle.textContent = item.subtitle;
+        playerCoverPreview.className = `preview preview-${item.category}`;
+
+        livePlayer.classList.toggle('active', item.is_active);
+
+        if (item.dominant_colours && item.is_active) {
+          const gradient = buildGradient(item.dominant_colours);
+          livePlayer.style.setProperty('--cover-gradient', gradient);
+        } else {
+          livePlayer.style.removeProperty('--cover-gradient');
+        }
+
+        playerIdle.style.display = 'none';
+        playerActive.style.display = 'flex';
+      }
+
+      function renderHistory(data) {
+        playerHistory.innerHTML = '';
+        const currentTitle = playerTitle.textContent;
+        let count = 0;
+
+        for (const item of data) {
+          if (count >= 5) break;
+          let title = item.title;
+          if (item.category === MANGA) {
+            title = formatMangaTitle(title);
+          }
+          if (title === currentTitle && count === 0) continue;
+
+          const li = document.createElement('li');
+          li.className = 'history-item';
+
+          const thumb = document.createElement('div');
+          thumb.className = 'history-thumb';
+
+          const img = document.createElement('img');
+          img.src = "https://gunslinger.utf9k.net" + item.image;
+          img.alt = '';
+          thumb.appendChild(img);
+
+          const preview = document.createElement('div');
+          preview.className = `preview preview-${item.category}`;
+          const previewImg = document.createElement('img');
+          previewImg.src = "https://gunslinger.utf9k.net" + item.image;
+          previewImg.alt = '';
+          preview.appendChild(previewImg);
+          const previewMeta = document.createElement('div');
+          previewMeta.className = 'preview-meta';
+          previewMeta.innerHTML = `<div class="preview-title">${title}</div><div class="preview-subtitle">${item.subtitle}</div>`;
+          preview.appendChild(previewMeta);
+          thumb.appendChild(preview);
+
+          // Click to preview
+          thumb.addEventListener('click', e => {
+            e.stopPropagation();
+            const wasActive = preview.classList.contains('active');
+            document.querySelectorAll('.history-thumb .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+            if (!wasActive) {
+              preview.classList.add('active', 'clicked');
+            }
+          });
+
+          // Shift+hover to preview
+          thumb.addEventListener('mouseenter', e => {
+            thumb.classList.add('hovered');
+            if (e.shiftKey && !preview.classList.contains('clicked')) {
+              document.querySelectorAll('.history-thumb .preview.active').forEach(p => {
+                if (!p.classList.contains('clicked')) p.classList.remove('active');
+              });
+              preview.classList.add('active');
+            }
+          });
+
+          thumb.addEventListener('mouseleave', e => {
+            thumb.classList.remove('hovered');
+            if (!e.shiftKey && !preview.classList.contains('clicked')) {
+              preview.classList.remove('active');
+            }
+          });
+
+          const meta = document.createElement('div');
+          meta.className = 'history-meta';
+          meta.innerHTML = `<div class="history-title">${title}</div><div class="history-subtitle">${item.subtitle}</div>`;
+
+          li.appendChild(thumb);
+          li.appendChild(meta);
+          playerHistory.appendChild(li);
+          count++;
+        }
+
+        playerHistorySection.style.display = count > 0 ? 'block' : 'none';
+      }
+
+      function fetchHistory() {
+        fetch("https://gunslinger.utf9k.net/api/v4/history")
+          .then(res => res.json())
+          .then(data => renderHistory(data))
+          .catch(err => console.error(`Failed to fetch history: ${err}`));
+      }
+
+      function initPlayer() {
+        fetch("https://gunslinger.utf9k.net/api/v4/playing")
+          .then(res => res.json())
+          .then(data => {
+            renderPlayer(data);
+            fetchHistory();
+          })
+          .catch(err => console.error(`Failed to initialise player: ${err}`));
+      }
+
+      function initEventSource() {
+        return new EventSource("https://gunslinger.utf9k.net/events?stream=playback");
+      }
+
+      let eventSource = initEventSource();
+
+      eventSource.onmessage = function(event) {
+        let data = JSON.parse(event.data);
+        if (data.length !== 1) return;
+        if (data[0].started_at < 0) return;
+        const previousTitle = playerTitle.textContent;
+        renderPlayer(data);
+        if (data[0].title !== previousTitle) {
+          fetchHistory();
+        }
+      };
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          eventSource.close();
+        } else {
+          initPlayer();
+          eventSource = initEventSource();
+        }
+      });
+
+      // Player cover preview handlers
+      playerCoverWrapper.addEventListener('click', e => {
+        e.stopPropagation();
+        const wasActive = playerCoverPreview.classList.contains('active');
+        document.querySelectorAll('.player-cover-wrapper .preview.active, .history-thumb .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        if (!wasActive) {
+          playerCoverPreview.classList.add('active', 'clicked');
+        }
+      });
+
+      playerCoverWrapper.addEventListener('mouseenter', e => {
+        playerCoverWrapper.classList.add('hovered');
+        if (e.shiftKey && !playerCoverPreview.classList.contains('clicked')) {
+          playerCoverPreview.classList.add('active');
+        }
+      });
+
+      playerCoverWrapper.addEventListener('mouseleave', e => {
+        playerCoverWrapper.classList.remove('hovered');
+        if (!e.shiftKey && !playerCoverPreview.classList.contains('clicked')) {
+          playerCoverPreview.classList.remove('active');
+        }
+      });
+
+      // Global handlers for player previews
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Shift') {
+          if (playerCoverWrapper.classList.contains('hovered') && !playerCoverPreview.classList.contains('clicked')) {
+            playerCoverPreview.classList.add('active');
+          }
+          document.querySelectorAll('.history-thumb.hovered').forEach(thumb => {
+            const preview = thumb.querySelector('.preview');
+            if (preview && !preview.classList.contains('clicked')) {
+              preview.classList.add('active');
+            }
+          });
+        }
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.player-cover-wrapper .preview.active, .history-thumb .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        }
+      });
+
+      document.addEventListener('keyup', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.player-cover-wrapper .preview.active, .history-thumb .preview.active').forEach(p => {
+            if (!p.classList.contains('clicked')) p.classList.remove('active');
+          });
+        }
+      });
+
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.player-cover-wrapper') && !e.target.closest('.history-thumb')) {
+          document.querySelectorAll('.player-cover-wrapper .preview.active, .history-thumb .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        }
+      });
+
+      initPlayer();
+    })();
+  </script>
 {{ end }}

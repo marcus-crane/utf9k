@@ -1380,7 +1380,17 @@ abbr {
 .player-cover-wrapper {
   position: relative;
   flex-shrink: 0;
+  cursor: pointer;
 }
+
+.player-cover-wrapper .preview.active {
+  display: block;
+}
+
+.player-cover-wrapper .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
 
 .player-cover {
   width: 72px;
@@ -1470,6 +1480,7 @@ abbr {
 .history-thumb {
   position: relative;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .history-thumb > img {
@@ -1479,8 +1490,24 @@ abbr {
   border: 1px solid var(--overlay);
 }
 
-.history-thumb:hover .preview {
+.history-thumb .preview.active {
   display: block;
+}
+
+.history-thumb .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
+.player-cover-wrapper .preview,
+.history-thumb .preview {
+  width: 500px;
+}
+
+.player-cover-wrapper .preview-episode,
+.player-cover-wrapper .preview-movie,
+.history-thumb .preview-episode,
+.history-thumb .preview-movie {
+  width: 720px;
 }
 
 .posts-list {
