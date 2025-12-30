@@ -248,7 +248,13 @@
       }
 
       function updateSun(playing) {
-        const nowPlaying = playing && playing.length > 0 ? playing[0] : null;
+        if (!playing || playing.length === 0) {
+          sun.classList.add('sun-hidden');
+          return;
+        }
+        const priority = { [TRACK]: 0, [PODCAST]: 1, [EPISODE]: 2, [MOVIE]: 3, [GAMING]: 4 };
+        const sorted = [...playing].sort((a, b) => (priority[a.category] ?? 99) - (priority[b.category] ?? 99));
+        const nowPlaying = sorted[0];
         if (nowPlaying && nowPlaying.dominant_colours && nowPlaying.is_active) {
           buildAnimatedBorder(nowPlaying.dominant_colours);
           sun.classList.remove('sun-hidden');
@@ -326,6 +332,12 @@
           if (!e.shiftKey && !preview.classList.contains('clicked')) {
             preview.classList.remove('active');
           }
+        });
+
+        // Click on preview to close
+        preview.addEventListener('click', e => {
+          e.stopPropagation();
+          preview.classList.remove('active', 'clicked');
         });
       }
 

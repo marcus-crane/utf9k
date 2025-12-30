@@ -134,6 +134,9 @@ body.dark .sidebar-header .speech-bubble::before {
   border-bottom-color: var(--muted);
 }
 
+body.dark .activity-card.cat-track { border-color: var(--pine); }
+body.dark .activity-card.cat-track .activity-category { background: var(--pine); }
+
 /* ==========================================
     LAYOUT
     ========================================== */
@@ -1885,8 +1888,6 @@ a.post-link:hover {
 .activity-card.cat-track { border-color: var(--foam); }
 .activity-card.cat-podcast_episode { border-color: var(--rose); }
 
-.activity-card.now-playing { border-color: var(--love); }
-.activity-card.now-playing .activity-category { background: var(--love); }
 
 .activity-card > img {
   position: absolute;
@@ -1958,15 +1959,28 @@ a.post-link:hover {
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: var(--surface);
-  border: var(--border-normal) solid var(--love);
+  border: var(--border-normal) solid var(--overlay);
   box-shadow: var(--shadow-lg);
-  width: 320px;
+  width: 500px;
   max-width: 90vw;
   overflow: hidden;
 }
 
+.activity-card.cat-manga .preview { border-color: var(--love); }
+.activity-card.cat-gaming .preview { border-color: var(--pine); }
+.activity-card.cat-episode .preview { border-color: var(--iris); }
+.activity-card.cat-movie .preview { border-color: var(--gold); }
+.activity-card.cat-track .preview { border-color: var(--foam); }
+.activity-card.cat-podcast_episode .preview { border-color: var(--rose); }
+
+body.dark .activity-card.cat-track .preview { border-color: var(--pine); }
+
 .activity-card .preview.active {
   display: block;
+}
+
+.activity-card .preview.active:not(.clicked) {
+  pointer-events: none;
 }
 
 .activity-card .preview img {

@@ -37,20 +37,10 @@
       }
     });
 
-    // Click on preview to close (for images with drag/right-click support)
-    let startX, startY;
-    preview.addEventListener('mousedown', e => {
-      startX = e.clientX;
-      startY = e.clientY;
-    });
-
+    // Click on preview to close
     preview.addEventListener('click', e => {
-      if (e.button !== 0) return;
-      const dx = Math.abs(e.clientX - startX);
-      const dy = Math.abs(e.clientY - startY);
-      if (dx < 5 && dy < 5) {
-        preview.classList.remove('active', 'clicked');
-      }
+      e.stopPropagation();
+      preview.classList.remove('active', 'clicked');
     });
   });
 
