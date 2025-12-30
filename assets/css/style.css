@@ -1230,8 +1230,7 @@ abbr {
     FOOTER
     ========================================== */
 .footer {
-  border-top: var(--border-normal) solid var(--overlay);
-  padding: var(--space-3xl) 0;
+  padding: var(--space-lg) 0;
   margin-top: var(--space-3xl);
   max-width: 600px;
 }
@@ -1260,23 +1259,6 @@ abbr {
 }
 
 .footer-section a:hover { color: var(--foam); }
-
-.footer-bottom {
-  padding-top: var(--space-md);
-  font-size: var(--text-base);
-  color: var(--muted);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
-}
-
-.footer-bottom a {
-  color: var(--subtle);
-  text-decoration: none;
-}
-
-.footer-bottom a:hover { color: var(--foam); }
 
 /* ==========================================
     HOMEPAGE
