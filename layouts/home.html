@@ -48,7 +48,7 @@
             {{ range $.Site.Data.games }}
             {{ if eq .list "Playing" }}
             {{ range .games }}
-            <div class="media-item">
+            <div class="media-card">
               {{ $image := resources.GetRemote .cover.url }}
               {{ $image := $image.Resize "x180 webp drawing" }}
               <img src="{{ $image.RelPermalink }}" alt="Box art for {{ .title }}">
@@ -78,7 +78,7 @@
             {{ range $books }}
             {{ $image := resources.GetRemote .cover }}
             {{ $image := $image.Resize "x180 webp drawing" }}
-            <div class="media-item">
+            <div class="media-card">
               <a href="{{ .link }}">
                 <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
@@ -105,7 +105,7 @@
             {{ if eq .status "FINISHED" }}
             {{ $image := resources.GetRemote .cover }}
             {{ $image := $image.Resize "x180 webp drawing" }}
-            <div class="media-item">
+            <div class="media-card">
               <a href="{{ .url }}">
                 <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
               </a>
@@ -127,5 +127,5 @@
 
   </div>
 
-  {{ partial "preview.html" ".media-item" }}
+  {{ partial "preview.html" ".media-card" }}
 {{ end }}

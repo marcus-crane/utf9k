@@ -1550,43 +1550,18 @@ abbr {
   gap: 0.5rem;
 }
 
-.media-item {
-  position: relative;
-}
-
-.media-item img {
+/* Homepage media shelf overrides */
+.media-shelf .media-card > img,
+.media-shelf .media-card > a > img {
   height: 90px;
   width: auto;
-  object-fit: cover;
-  border: 2px solid var(--overlay);
-  transition: border-color 0.1s;
+  aspect-ratio: unset;
 }
 
-.media-item {
-  cursor: pointer;
-}
-
-.media-item:hover img { border-color: var(--foam); }
-
-.media-item .preview.active {
-  display: block;
-}
-
-.media-item .preview.active:not(.clicked) {
-  pointer-events: none;
-}
-
-.media-item .preview {
-  width: 320px;
-}
-
-.media-group-items.games .media-item img { border-color: var(--pine); }
-.media-group-items.books .media-item img { border-color: var(--gold); }
-.media-group-items.manga .media-item img { border-color: var(--iris); }
-.media-group-items.tv .media-item img { border-color: var(--love); }
-
-/* TODO: Revisit specificity of selectors above */
-.media-group-items .media-item .preview img { border: unset; };
+.media-group-items.games .media-card img { border-color: var(--pine); }
+.media-group-items.books .media-card img { border-color: var(--gold); }
+.media-group-items.manga .media-card img { border-color: var(--iris); }
+.media-group-items.tv .media-card img { border-color: var(--love); }
 
 /* ==========================================
     LIST PAGES
@@ -1809,26 +1784,31 @@ a.post-link:hover {
   display: block;
 }
 
+.media-shelf .media-card:hover .preview,
 .books-page .media-card:hover .preview,
 .games-page .media-card:hover .preview {
   display: none;
 }
 
+.media-shelf .media-card .preview.active,
 .books-page .media-card .preview.active,
 .games-page .media-card .preview.active {
   display: block;
 }
 
+.media-shelf .media-card .preview.active:not(.clicked),
 .books-page .media-card .preview.active:not(.clicked),
 .games-page .media-card .preview.active:not(.clicked) {
   pointer-events: none;
 }
 
+.media-shelf .media-card,
 .books-page .media-card,
 .games-page .media-card {
   cursor: pointer;
 }
 
+.media-shelf .media-card .preview,
 .books-page .media-card .preview {
   width: 320px;
 }
