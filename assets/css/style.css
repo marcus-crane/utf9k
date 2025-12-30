@@ -1958,12 +1958,11 @@ a.post-link:hover {
   transform: translate(-50%, -50%);
   z-index: 1000;
   background: var(--surface);
-  border: var(--border-normal) solid var(--iris);
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  width: 500px;
+  border: var(--border-normal) solid var(--love);
+  box-shadow: var(--shadow-lg);
+  width: 320px;
   max-width: 90vw;
+  overflow: hidden;
 }
 
 .activity-card .preview.active {
@@ -1973,21 +1972,7 @@ a.post-link:hover {
 .activity-card .preview img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-}
-
-.activity-card .preview-meta {
-  margin-top: 0.75rem;
-}
-
-.activity-card .preview-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.activity-card .preview-subtitle {
-  color: var(--muted);
-  margin-top: 0.25rem;
+  display: block;
 }
 
 .activity-card .preview-episode,

@@ -13,7 +13,7 @@
       e.preventDefault();
       e.stopPropagation();
       const wasActive = preview.classList.contains('active');
-      document.querySelectorAll(selector + ' .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+      document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
       if (!wasActive) {
         preview.classList.add('active', 'clicked');
       }
@@ -23,7 +23,7 @@
     item.addEventListener('mouseenter', e => {
       item.classList.add('hovered');
       if (e.shiftKey && !preview.classList.contains('clicked')) {
-        document.querySelectorAll(selector + ' .preview.active').forEach(p => {
+        document.querySelectorAll('.preview.active').forEach(p => {
           if (!p.classList.contains('clicked')) p.classList.remove('active');
         });
         preview.classList.add('active');
