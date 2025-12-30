@@ -1562,7 +1562,23 @@ abbr {
   transition: border-color 0.1s;
 }
 
+.media-item {
+  cursor: pointer;
+}
+
 .media-item:hover img { border-color: var(--foam); }
+
+.media-item .preview.active {
+  display: block;
+}
+
+.media-item .preview.active:not(.clicked) {
+  pointer-events: none;
+}
+
+.media-item .preview {
+  width: 320px;
+}
 
 .media-group-items.games .media-item img { border-color: var(--pine); }
 .media-group-items.books .media-item img { border-color: var(--gold); }
