@@ -1,8 +1,55 @@
 {{ define "main" }}
+  <div id="sun" class="sun-hidden"></div>
+
+  <style>
+    #sun {
+      width: 100rem;
+      height: 100rem;
+      position: fixed;
+      top: -50rem;
+      right: -50rem;
+      opacity: 25%;
+      border-radius: 50%;
+      z-index: -1;
+      animation: sun-scale 30s linear infinite;
+      mask-image: radial-gradient(circle, black 0%, black 30%, transparent 70%);
+      -webkit-mask-image: radial-gradient(circle, black 0%, black 30%, transparent 70%);
+      transition: opacity 1s ease;
+    }
+
+    #sun::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: var(--border-bg, conic-gradient(#272926, #bfb5b4, #897774, #272926));
+      animation: sun-rotate 100s linear infinite;
+      transition: background 3s ease;
+    }
+
+    #sun.sun-hidden {
+      opacity: 0% !important;
+    }
+
+    @keyframes sun-scale {
+      0% { transform: scale(1); }
+      20% { transform: scale(1.2); }
+      40% { transform: scale(0.8); }
+      60% { transform: scale(1.1); }
+      80% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes sun-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
   <div class="grid">
 
     <!-- Welcome -->
-    <div class="block block-filled block-accent">
+    <div class="block block-filled">
       <div class="label label-love">{{ .Title }}</div>
       <div class="welcome">
         {{ .Content }}
@@ -10,7 +57,7 @@
     </div>
 
     <!-- Recent posts -->
-    <div class="block">
+    <div class="block block-filled">
       <div class="label label-foam">Recent Posts</div>
       <ul class="posts-list">
         {{ $posts := where site.RegularPages "Section" "blog" | first 5 }}
@@ -134,6 +181,33 @@
       const EPISODE = 'episode';
       const MOVIE = 'movie';
       const TRACK = 'track';
+
+      const sun = document.getElementById('sun');
+
+      function buildAnimatedBorder(dominantColours) {
+        const fullColours = [...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours, ...dominantColours];
+        const gradientLen = dominantColours.length * 6;
+        const stepInterval = 1 / gradientLen;
+        let previousStep = 0.0;
+        let gradientVal = "conic-gradient(";
+        for (const colour of fullColours) {
+          gradientVal += `${colour} ${previousStep}turn ${previousStep + stepInterval}turn,`;
+          previousStep += stepInterval;
+        }
+        gradientVal += ")";
+        gradientVal = gradientVal.replace(",)", ")");
+        sun.style.setProperty("--border-bg", gradientVal);
+      }
+
+      function updateSun(playing) {
+        const nowPlaying = playing && playing.length > 0 ? playing[0] : null;
+        if (nowPlaying && nowPlaying.dominant_colours && nowPlaying.is_active) {
+          buildAnimatedBorder(nowPlaying.dominant_colours);
+          sun.classList.remove('sun-hidden');
+        } else {
+          sun.classList.add('sun-hidden');
+        }
+      }
 
       const categoryLabels = {
         [MANGA]: 'Manga',
@@ -259,7 +333,10 @@
           fetch("https://gunslinger.utf9k.net/api/v4/playing").then(res => res.json()),
           fetch("https://gunslinger.utf9k.net/api/v4/history").then(res => res.json())
         ])
-          .then(([playing, history]) => renderActivity(playing, history))
+          .then(([playing, history]) => {
+            updateSun(playing);
+            renderActivity(playing, history);
+          })
           .catch(err => console.error(`Failed to fetch activity: ${err}`));
       }
 
