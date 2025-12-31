@@ -345,16 +345,13 @@
         const container = document.getElementById('activity-grid');
         container.innerHTML = '';
 
-        const nowPlaying = playing && playing.length > 0 ? playing[0] : null;
-        const filteredHistory = nowPlaying
-          ? history.filter(h => h.id !== nowPlaying.id)
-          : history;
-        const items = nowPlaying
-          ? [nowPlaying, ...filteredHistory.slice(0, 4)]
-          : filteredHistory.slice(0, 5);
+        const activePlaying = playing ? playing.filter(p => p.is_active) : [];
+        const activeIds = new Set(activePlaying.map(p => p.id));
+        const filteredHistory = history.filter(h => !activeIds.has(h.id));
+        const items = [...activePlaying, ...filteredHistory].slice(0, 5);
 
         items.forEach((item, index) => {
-          const isNowPlaying = index === 0 && nowPlaying && item.is_active;
+          const isNowPlaying = activeIds.has(item.id) && item.is_active;
           let title = item.category === MANGA ? formatMangaTitle(item.title) : item.title;
 
           const card = document.createElement('div');
