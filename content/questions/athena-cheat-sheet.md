@@ -1,6 +1,7 @@
 ---
 aliases:
   - /questions/athena-queries/
+  - /questions/athena/
 description: It's like SQL but slightly wonkier
 lastmod: 2024-11-03
 slug: athena-cheat-sheet
