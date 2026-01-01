@@ -1,0 +1,200 @@
+{{ define "main" }}
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+    {{ if or .Date .Params.tags }}
+    <div class="article-meta">
+      {{ with .Date }}<div><span class="meta-label">Published</span><span class="meta-value">{{ .Format "2006-01-02" }}</span></div>{{ end }}
+      {{ with .Params.tags }}<div><span class="meta-label">Tags</span>{{ range . }}<span class="meta-value">{{ . }}</span>{{ end }}</div>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  {{ if strings.Contains .TableOfContents "<li>" }}
+  <details class="toc-inline toc-inline-always">
+    <summary>Contents</summary>
+    {{ .TableOfContents }}
+  </details>
+  {{ end }}
+
+  <div class="article-wrapper">
+    <article class="content">
+      {{ .Content }}
+    </article>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let activePreview = null;
+      let lastMousePos = { x: 0, y: 0 };
+      let mouseTracker = null;
+
+      function isMouseOverElement(e, element) {
+        const rect = element.getBoundingClientRect();
+        return e.clientX >= rect.left && e.clientX <= rect.right &&
+               e.clientY >= rect.top && e.clientY <= rect.bottom;
+      }
+
+      function isMovingTowardsPreview(lastPos, currentPos, preview) {
+        const rect = preview.getBoundingClientRect();
+        const targetX = rect.left + rect.width / 2;
+        const targetY = rect.top + rect.height / 2;
+
+        const toTargetX = targetX - currentPos.x;
+        const toTargetY = targetY - currentPos.y;
+        const moveX = currentPos.x - lastPos.x;
+        const moveY = currentPos.y - lastPos.y;
+
+        const movementMagnitude = Math.hypot(moveX, moveY);
+        const targetMagnitude = Math.hypot(toTargetX, toTargetY);
+
+        if (movementMagnitude < 1 || targetMagnitude < 1) return true;
+
+        const dotProduct = (moveX * toTargetX + moveY * toTargetY) / (movementMagnitude * targetMagnitude);
+        return dotProduct > -0.5;
+      }
+
+      function hidePreview() {
+        if (activePreview) {
+          activePreview.style.display = 'none';
+          activePreview = null;
+        }
+        if (mouseTracker) {
+          document.removeEventListener('mousemove', mouseTracker);
+          mouseTracker = null;
+        }
+      }
+
+      function trackMouseUntilAway(preview) {
+        let framesMovingAway = 0;
+
+        mouseTracker = function(e) {
+          const currentPos = { x: e.clientX, y: e.clientY };
+
+          if (isMouseOverElement(e, preview)) {
+            framesMovingAway = 0;
+            lastMousePos = currentPos;
+            return;
+          }
+
+          const isStationary = Math.hypot(currentPos.x - lastMousePos.x, currentPos.y - lastMousePos.y) < 2;
+          const isMovingTowards = isMovingTowardsPreview(lastMousePos, currentPos, preview);
+
+          if (isStationary || isMovingTowards) {
+            framesMovingAway = 0;
+          } else {
+            framesMovingAway++;
+          }
+
+          if (framesMovingAway > 3) {
+            hidePreview();
+          }
+
+          lastMousePos = currentPos;
+        };
+
+        document.addEventListener('mousemove', mouseTracker);
+      }
+
+      function createPreviewElement(footnoteNum, footnoteText) {
+        const preview = document.createElement('span');
+        preview.className = 'footnote-preview';
+        preview.setAttribute('data-num', footnoteNum + '.');
+        preview.textContent = footnoteText;
+        return preview;
+      }
+
+      function wrapFootnoteReference(ref) {
+        const wrapper = document.createElement('span');
+        wrapper.className = 'footnote-ref';
+        ref.parentNode.insertBefore(wrapper, ref);
+        wrapper.appendChild(ref);
+        return wrapper;
+      }
+
+      function setupFootnotePreview(ref) {
+        const link = ref.querySelector('a');
+        if (!link) return;
+
+        const footnoteId = link.getAttribute('href').replace(/:/g, '\\:');
+        const footnoteElement = document.querySelector(footnoteId);
+        if (!footnoteElement) return;
+
+        const footnoteText = footnoteElement.textContent.replace(/↩.*$/, '').trim();
+        const footnoteNum = ref.id.replace('fnref:', '');
+
+        const wrapper = wrapFootnoteReference(ref);
+        const preview = createPreviewElement(footnoteNum, footnoteText);
+        wrapper.appendChild(preview);
+
+        wrapper.addEventListener('mouseenter', function(e) {
+          if (activePreview && activePreview !== preview) hidePreview();
+          preview.style.display = 'block';
+          activePreview = preview;
+          lastMousePos = { x: e.clientX, y: e.clientY };
+        });
+
+        wrapper.addEventListener('mouseleave', function(e) {
+          lastMousePos = { x: e.clientX, y: e.clientY };
+          trackMouseUntilAway(preview);
+        });
+
+        preview.addEventListener('mouseenter', function() {
+          if (mouseTracker) {
+            document.removeEventListener('mousemove', mouseTracker);
+            mouseTracker = null;
+          }
+        });
+
+        preview.addEventListener('mouseleave', function(e) {
+          lastMousePos = { x: e.clientX, y: e.clientY };
+          trackMouseUntilAway(preview);
+        });
+      }
+
+      function setupFootnotesSection() {
+        const footnotes = document.querySelector('.footnotes');
+        if (!footnotes) return;
+
+        footnotes.className = 'footnotes-section';
+
+        const hr = footnotes.querySelector('hr');
+        if (hr) hr.remove();
+
+        const heading = document.createElement('h2');
+        heading.id = 'footnotes';
+        heading.textContent = 'Footnotes';
+        footnotes.insertBefore(heading, footnotes.firstChild);
+
+        document.querySelectorAll('.toc nav > ul, .toc-inline nav > ul').forEach(function(tocList) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = '#footnotes';
+          a.textContent = 'Footnotes';
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+      }
+
+      document.querySelectorAll('sup[id^="fnref"]').forEach(setupFootnotePreview);
+
+      document.querySelectorAll('.footnote-ref').forEach(function(ref) {
+        var node = ref.previousSibling;
+        while (node && node.nodeType === 3 && node.textContent.trim() === '') {
+          node = node.previousSibling;
+        }
+        if (node && node.nodeType === 1 && node.classList.contains('footnote-ref')) {
+          ref.classList.add('adjacent');
+        }
+      });
+
+      document.querySelectorAll('.footnotes a[href^="#fnref"]').forEach(function(link) {
+        link.className = 'footnote-backref';
+        link.textContent = '↩';
+      });
+
+      setupFootnotesSection();
+    });
+  </script>
+  {{ partial "preview.html" ".content figure.image-figure" }}
+{{ end }}

@@ -175,7 +175,7 @@ def main():
 
     # Calculate and resolve path relative to script location
     script_dir = Path(__file__).parent
-    input_file = (script_dir / ".." / "_data" / "osts.yml").resolve()
+    input_file = (script_dir / ".." / "data" / "osts.yml").resolve()
 
     enricher.process_yaml_file(str(input_file))
 

@@ -1,0 +1,78 @@
+<script>
+(function() {
+  const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isMobile) return;
+
+  const selector = '{{ . }}';
+
+  document.querySelectorAll(selector).forEach(item => {
+    const preview = item.querySelector('.preview');
+    if (!preview) return;
+
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      const wasActive = preview.classList.contains('active');
+      document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+      if (!wasActive) {
+        preview.classList.add('active', 'clicked');
+      }
+    });
+
+    // Shift+hover to preview
+    item.addEventListener('mouseenter', e => {
+      item.classList.add('hovered');
+      if (e.shiftKey && !preview.classList.contains('clicked')) {
+        document.querySelectorAll('.preview.active').forEach(p => {
+          if (!p.classList.contains('clicked')) p.classList.remove('active');
+        });
+        preview.classList.add('active');
+      }
+    });
+
+    item.addEventListener('mouseleave', e => {
+      item.classList.remove('hovered');
+      if (!e.shiftKey && !preview.classList.contains('clicked')) {
+        preview.classList.remove('active');
+      }
+    });
+
+    // Click on preview to close
+    preview.addEventListener('click', e => {
+      e.stopPropagation();
+      preview.classList.remove('active', 'clicked');
+    });
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Shift') {
+      document.querySelectorAll(selector + '.hovered').forEach(item => {
+        const preview = item.querySelector('.preview');
+        if (preview && !preview.classList.contains('clicked')) {
+          preview.classList.add('active');
+        }
+      });
+    }
+  });
+
+  document.addEventListener('keyup', e => {
+    if (e.key === 'Shift') {
+      document.querySelectorAll(selector + ' .preview.active').forEach(p => {
+        if (!p.classList.contains('clicked')) p.classList.remove('active');
+      });
+    }
+  });
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest(selector)) {
+      document.querySelectorAll(selector + ' .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll(selector + ' .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+    }
+  });
+})();
+</script>

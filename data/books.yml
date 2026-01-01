@@ -1,0 +1,1510 @@
+- list: 2025
+  goal: 18
+  books:
+    - title: The Unaccountability Machine
+      subtitle: Why Big Systems Make Terrible Decisions
+      author: Dan Davies
+      cover: https://cdn.utf9k.net/books/the-unaccountability-machine.jpg
+      cover_height: 2345
+      cover_width: 1527
+      isbn13: 9781788169554
+      asin: 1788169557
+      link: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
+      date_added: 2024-11-21 
+      date_started: 2025-10-27
+      date_finished: null
+      recommended: false
+      progress: 39
+
+    - title: Careless People
+      subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
+      author: Sarah Wynn-Williams
+      cover: https://cdn.utf9k.net/books/careless-people.jpg
+      cover_height: 1539
+      cover_width: 1000
+      isbn13: 9781250391247
+      asin: B0DY9TZD8Z
+      link: https://www.goodreads.com/book/show/223436601-careless-people
+      date_added: 2025-03-13
+      date_started: 2025-06-30
+      date_finished: null
+      recommended: false
+      progress: 59
+
+    - title: Moral Mazes
+      subtitle: The World of Corporate Managers
+      author: Robert Jackall
+      cover: https://cdn.utf9k.net/books/moral-mazes.jpg
+      cover_height: 1360
+      cover_width: 907
+      isbn13: 9780195060805
+      asin: 0195060806
+      link: https://global.oup.com/academic/product/moral-mazes-9780199729883
+      date_added: 2022-11-14
+      date_started: 2025-01-25
+      date_finished: 2025-06-24
+      recommended: true
+      progress: 100
+
+    - title: How to Take Smart Notes
+      subtitle: One Simple Technique to Boost Writing, Learning and Thinking
+      author: Sönke Ahrens
+      cover: https://cdn.utf9k.net/books/how-to-take-smart-notes.jpg
+      cover_height: 2400
+      cover_width: 1576
+      isbn13: 9783982438801
+      asin: 3982438802
+      link: https://www.soenkeahrens.de/en/takesmartnotes
+      date_added: 2022-04-29
+      date_started: 2025-05-02
+      date_finished: 2025-05-16
+      recommended: false
+      progress: 100
+
+    - title: The Tyranny of Metrics
+      subtitle: null
+      author: Jerry Z. Muller
+      cover: https://cdn.utf9k.net/books/the-tyranny-of-metrics.jpg
+      cover_height: 2625
+      cover_width: 1725
+      isbn13: 9780691174952
+      asin: 0691174954
+      link: https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics  
+      date_added: 2022-09-22
+      date_started: 2025-03-21
+      date_finished: 2025-04-02
+      recommended: false
+      progress: 100
+
+    - title: The Three-Body Problem
+      subtitle: null
+      author: Liu Cixin
+      cover: https://cdn.utf9k.net/books/the-three-body-problem.jpg
+      cover_height: 1334
+      cover_width: 2048
+      isbn13: 9781800249172
+      asin: 1800249179
+      link: https://hardcover.app/books/the-three-body-problem
+      date_added: 2025-02-19
+      date_started: 2025-02-21
+      date_finished: 2025-03-06
+      recommended: true
+      progress: 100
+    
+    - title: Tidy First?
+      subtitle: A Personal Exercise in Empirical Software Design
+      author: Kent Back
+      cover: https://cdn.utf9k.net/books/tidy-first.jpg
+      cover_height: 1826
+      cover_width: 1400
+      isbn13: 9781098151249
+      asin: 1098151240
+      link: https://hardcover.app/books/tidy-first
+      date_added: 2024-08-15
+      date_started: 2024-12-18
+      date_finished: 2025-02-18
+      recommended: false
+      progress: 100
+
+    - title: Amusing Ourselves to Death
+      subtitle: Public Discourse in the Age of Show Business
+      author: Neil Postman
+      cover: https://cdn.utf9k.net/books/amusing-ourselves-to-death.jpg
+      cover_height: 2560
+      cover_width: 1693
+      isbn13: 9780143036531
+      asin: 9780143036531
+      link: https://www.penguinrandomhouse.com/books/297276/amusing-ourselves-to-death-by-neil-postman/
+      date_added: 2018-04-03
+      date_started: 2024-12-31
+      date_finished: 2025-01-20
+      recommended: true
+      progress: 100
+
+- list: 2024
+  goal: 16
+  books:
+    - title: The Wisdom of Anxiety
+      subtitle: How Worry and Intrusive Thoughts Are Gifts to Help You Heal
+      author: Sheryl Paul
+      cover: https://cdn.utf9k.net/books/the-wisdom-of-anxiety.jpg
+      cover_height: 1500
+      cover_width: 1000
+      isbn13: 9781683642503
+      asin: 1683642503
+      link: https://conscious-transitions.com/the-wisdom-of-anxiety/
+      date_added: 2024-10-06
+      date_started: 2024-10-06
+      date_finished: 2024-12-30
+      recommended: false
+      progress: 100
+
+    - title: The Upward Spiral
+      subtitle: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time
+      author: Alex Korb
+      cover: https://cdn.utf9k.net/books/the-upward-spiral.jpg
+      cover_height: 1801
+      cover_width: 1200
+      isbn13: 9781626251205
+      asin: 1626251207
+      link: https://www.alexkorbphd.com/the-upward-spiral-method/
+      date_added: 2024-09-16
+      date_started: 2024-09-29
+      date_finished: 2024-12-13
+      recommended: true
+      progress: 100
+
+    - title: Half-Life 2
+      subtitle: Raising the Bar
+      author: David Hodgson
+      cover: https://cdn.utf9k.net/books/half-life-2.jpg
+      cover_height: 1179
+      cover_width: 904
+      isbn13: 9780761543640
+      asin: 0761543643
+      link: https://openlibrary.org/works/OL8010203W/Half-Life_2
+      date_added: 2024-12-02
+      date_started: 2024-12-02
+      date_finished: 2024-12-12
+      recommended: true
+      progress: 100
+
+    - title: Personal Kanban
+      subtitle: Mapping Work | Navigating Life
+      author: Jim Benson and Tonianne DeMaria Barry
+      cover: https://cdn.utf9k.net/books/personal-kanban.jpg
+      cover_height: 1360
+      cover_width: 907
+      isbn13: 9781453802267
+      asin: 1453802266
+      link: https://www.personalkanban.com/
+      date_added: 2024-09-29
+      date_started: 2024-09-29
+      date_finished: 2024-11-23
+      recommended: false
+      progress: 100
+    
+    - title: Who Moved My Cheese?
+      subtitle: An Amazing Way to Deal with Change in Your Work and in Your Life
+      author: Spencer Johnson
+      cover: https://cdn.utf9k.net/books/who-moved-my-cheese.jpg
+      cover_height: 2360
+      cover_width: 1490
+      isbn13: 9780091883768
+      asin: 0091883768
+      link: https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F
+      date_added: 2024-08-29
+      date_started: 2024-10-11
+      date_finished: 2024-11-22
+      recommended: false
+      progress: 100
+
+    - title: Meditations for Mortals
+      subtitle: Four Weeks to Embrace Your Limitations and Make Time for What Counts
+      author: Oliver Burkeman
+      cover: https://cdn.utf9k.net/books/meditations-for-mortals.jpg
+      cover_height: 2620
+      cover_width: 1630
+      isbn13: 9780374611996
+      asin: 0374611998
+      link: https://www.penguin.co.nz/books/meditations-for-mortals-9781847927620
+      date_added: 2024-09-16
+      date_started: 2024-09-16
+      date_finished: 2024-10-06
+      recommended: true
+      progress: 100
+
+    - title: Means of Control
+      subtitle: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State
+      author: Byron Tau
+      cover: https://cdn.utf9k.net/books/means-of-control.jpg
+      cover_height: 2776
+      cover_width: 1838
+      isbn13: 9780593443224
+      asin: 0593443225
+      link: https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/
+      date_added: 2024-04-09
+      date_started: 2024-06-07
+      date_finished: 2024-11-22
+      recommended: true
+      progress: 100
+
+    - title: How Big Things Get Done
+      subtitle: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between
+      author: Bent Flyvbjerg and Dan Gardner
+      cover: https://cdn.utf9k.net/books/how-big-things-get-done.jpg
+      cover_height: 2500
+      cover_width: 1688
+      isbn13: 9780593239513
+      asin: 0593239512
+      link: https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/
+      date_added: 2023-12-24
+      date_started: 2024-02-03
+      date_finished: 2024-06-01
+      recommended: true
+      progress: 100
+    
+    - title: Burn Book
+      subtitle: A Tech Love Story
+      author: Kara Swisher
+      cover: https://cdn.utf9k.net/books/burn-book.jpg
+      cover_height: 2113
+      cover_width: 1400
+      isbn13: 9781982163891
+      asin: 1982163895
+      link: https://www.simonandschuster.com/books/Burn-Book/Kara-Swisher/9781982163891
+      date_added: 2024-03-03
+      date_started: 2024-03-07
+      date_finished: 2024-03-10
+      recommended: false
+      progress: 100
+    
+    - title: Hacks, Leaks, and Revelations
+      subtitle: The Art of Analyzing Hacked and Leaked Data
+      author: Micah Lee
+      cover: https://cdn.utf9k.net/books/hacks-leaks-and-revelations.jpg
+      cover_height: 1832
+      cover_width: 1400
+      isbn13: 9781718503120
+      asin: 1718503121
+      link: https://nostarch.com/hacks-leaks-and-revelations
+      date_added: 2024-02-05
+      date_started: 2024-02-07
+      date_finished: 2024-03-06
+      recommended: false
+      progress: 100 
+    
+    - title: Creative Dysregulation
+      subtitle: Why Your Creativity Is Chaotic & What to Do About It
+      author: Kelly Wilde Miller
+      cover: https://cdn.utf9k.net/books/creative-dysregulation.jpg
+      cover_height: 1510
+      cover_width: 1014
+      isbn13: null
+      asin: B0CVBM1JTV
+      link: https://www.kellywildemiller.com/creativedysregulation
+      date_added: 2024-03-03
+      date_started: 2024-03-03
+      date_finished: 2024-03-05
+      recommended: false
+      progress: 100
+ 
+    - title: Risk & Reward
+      subtitle: An Inside View of the Property/Casualty Insurance Business
+      author: Stephen Catlin
+      cover: https://cdn.utf9k.net/books/risk-and-reward.jpg
+      cover_height: 1208
+      cover_width: 800
+      isbn13: 9780957559554
+      asin: 0957559550
+      link: https://openlibrary.org/works/OL26349597W/Risk_and_Reward
+      date_added: 2023-10-27
+      date_started: 2023-12-25
+      date_finished: 2024-02-11
+      recommended: true
+      progress: 100
+
+    - title: Networks of New York
+      subtitle: An Illustrated Field Guide to Urban Internet Infrastructure
+      author: Ingrid Burrington
+      cover: https://cdn.utf9k.net/books/networks-of-new-york.jpg
+      cover_height: 1903
+      cover_width: 1200
+      isbn13: 9781612195421
+      asin: 1612195423
+      link: https://www.penguinrandomhouse.com/books/538586/networks-of-new-york-by-ingrid-burrington/
+      date_added: 2020-12-24
+      date_started: 2024-02-02
+      date_finished: 2024-02-03
+      recommended: true
+      progress: 100
+
+    - title: サイレントヒル2 (Silent Hill 2)
+      subtitle: The Novel
+      author: Sadamu Yamashita
+      cover: https://cdn.utf9k.net/books/silent-hill-2.jpg
+      cover_height: 1000
+      cover_width: 667
+      isbn13: 9784861558320
+      asin: 4861558328
+      link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
+      date_added: 2024-01-21
+      date_started: 2024-01-21
+      date_finished: 2024-02-02 
+      recommended: false
+      progress: 100
+ 
+    - title: The Shallows
+      subtitle: What the Internet is Doing to our Brains
+      author: Nicholas Carr
+      cover: https://cdn.utf9k.net/books/the-shallows.jpg
+      cover_height: 1799
+      cover_width: 1200
+      isbn13: 9780393339758
+      asin: 0393339750
+      link: https://openlibrary.org/works/OL15297392W/The_Shallows
+      date_added: 2022-08-03
+      date_started: 2023-12-26
+      date_finished: 2024-01-27
+      recommended: false
+      progress: 100
+  
+    - title: Creative Doing
+      subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
+      author: Herbert Lui
+      cover: https://cdn.utf9k.net/books/creative-doing.jpg
+      cover_height: 888
+      cover_width: 584
+      isbn13: 9781952120428
+      asin: 195212042X
+      link: https://openlibrary.org/works/OL37513885W/Creative_Doing_75_Practical_Exercises_to_Unblock_Your_Creative_Potential_in_Your_Work_Hobby_or_Next_
+      date_added: 2023-12-10
+      date_started: 2023-12-10
+      date_finished: 2024-01-09
+      recommended: false
+      progress: 100
+
+    - title: Digital Zettelkasten
+      subtitle: Principles, Methods, & Examples
+      author: David Kadavy
+      cover: https://cdn.utf9k.net/books/digital-zettelkasten.jpg
+      cover_height: 1360
+      cover_width: 850
+      isbn13: 9780578928098
+      asin: 0578928094
+      link: https://openlibrary.org/works/OL24703365W/Digital_Zettelkasten
+      date_added: 2023-12-28
+      date_started: 2023-12-18
+      date_finished: 2024-01-04
+      recommended: false
+      progress: 100
+
+    - title: What the CEO Wants You to Know
+      subtitle: How Your Company Really Works
+      author: Ram Charan
+      cover: https://cdn.utf9k.net/books/what-the-ceo-wants-you-to-know.jpg
+      cover_height: 2340
+      cover_width: 1527
+      isbn13: 9780553417784
+      asin: 0553417789
+      link: https://openlibrary.org/works/OL34804299W/What_the_CEO_Wants_You_to_Know
+      date_added: 2023-06-11
+      date_started: 2023-06-13
+      date_finished: 2024-01-03
+      recommended: false
+      progress: 100
+
+    - title: High Performance Browser Networking
+      subtitle: What Every Web Developer Should Know about Networking and Web Performance
+      author: Ilya Grigorik
+      cover: https://cdn.utf9k.net/books/high-performance-browser-networking.jpg
+      cover_height: 1377
+      cover_width: 1050
+      isbn13: 9781449344764
+      asin: 1449344763
+      link: https://www.oreilly.com/library/view/high-performance-browser/9781449344757/
+      date_added: 2022-10-01
+      date_started: 2023-08-08
+      date_finished: 2024-01-03
+      recommended: false
+      progress: 100
+
+- list: 2023
+  goal: 24
+  books:
+    - title: Blood, Sweat, and Pixels
+      subtitle: The Triumphant, Turbulent Stories Behind How Video Games Are Made
+      author: Jason Schreier
+      cover: https://cdn.utf9k.net/books/blood-sweat-and-pixels.jpg
+      cover_height: 1808
+      cover_width: 1200
+      isbn13: 9780062651242
+      asin: B01NAKSWW1
+      link: https://openlibrary.org/works/OL19721368W/Blood_sweat_and_pixels
+      date_added: 2018-01-14
+      date_started: 2023-10-22
+      date_finished: 2023-12-25
+      recommended: false
+      progress: 100
+    
+    - title: Walking Your Blues Away
+      subtitle: How to Heal the Mind and Create Emotional Well-Being
+      author: Thom Hartmann
+      cover: https://cdn.utf9k.net/books/walking-your-blues-away.jpg
+      cover_height: 2700
+      cover_width: 1800
+      isbn13: 9781594771446
+      asin: 1594771448
+      link: https://openlibrary.org/works/OL554786W/Walking_Your_Blues_Away
+      date_added: 2023-10-27
+      date_started: 2023-12-06
+      date_finished: 2023-12-15
+      recommended: false
+      progress: 100
+
+    - title: Taxtopia
+      subtitle: How I Discovered the Injustices, Scams and Guilty Secrets of the Tax Evasion Game
+      author: The Rebel Accountant
+      cover: https://cdn.utf9k.net/books/taxtopia.jpg
+      cover_height: 2835
+      cover_width: 1878
+      isbn13: 9781800960886
+      asin: 1800960883
+      link: https://openlibrary.org/works/OL28024085W/Taxtopia
+      date_added: 2023-10-27
+      date_started: 2023-10-27
+      date_finished: 2023-12-05
+      recommended: true
+      progress: 100
+
+    - title: The PARA Method
+      subtitle: Simplify, Organize, and Master Your Digital Life
+      author: Tiago Forte
+      cover: https://cdn.utf9k.net/books/the-para-method.jpg
+      cover_height: 2070
+      cover_width: 1538
+      isbn13: 9781668045565
+      asin: 1668045567
+      link: https://openlibrary.org/works/OL35715842W/The_PARA_Method
+      date_added: 2023-08-28
+      date_started: 2023-08-28
+      date_finished: 2023-08-30
+      recommended: false
+      progress: 100
+
+    - title: Hanging Out
+      subtitle: The Radical Power of Killing Time
+      author: Sheila Liming
+      cover: https://cdn.utf9k.net/books/hanging-out.jpg
+      cover_height: 1240
+      cover_width: 797
+      isbn13: 9781685890056
+      asin: 1685890059
+      link: https://openlibrary.org/works/OL27939130W/Hanging_Out
+      date_added: 2023-04-07
+      date_started: 2023-05-29
+      date_finished: 2023-06-06
+      recommended: false
+      progress: 100
+    
+    - title: How to Make Coffee
+      subtitle: The Science Behind the Bean
+      author: Lani Kingston
+      cover: https://cdn.utf9k.net/books/how-to-make-coffee.jpg
+      cover_height: 1012
+      cover_width: 704
+      isbn13: 9781419715846
+      asin: 1419715844
+      link: https://www.goodreads.com/book/show/23167750-how-to-make-coffee
+      date_added: 2022-10-05
+      date_started: 2022-10-05
+      date_finished: 2023-03-29
+      recommended: false
+      progress: 100
+
+    - title: Like, Comment, Subscribe
+      subtitle: How YouTube Drives Google's Dominance and Controls Our Culture
+      author: Mark Bergen
+      cover: https://cdn.utf9k.net/books/like-comment-subscribe.jpg
+      cover_height: 1812
+      cover_width: 1200
+      isbn13: 9780593296349
+      asin: 0241468280
+      link: https://openlibrary.org/works/OL26345815W/Like_Comment_Subscribe
+      date_added: null
+      date_started: 2022-10-07
+      date_finished: 2023-02-07
+      recommended: true
+      progress: 100
+
+- list: 2022
+  goal: 12
+  books:
+    - title: Build
+      subtitle: An Unorthodox Guide to Making Things Worth Making
+      author: Tony Fadell
+      cover: https://cdn.utf9k.net/books/build.jpg
+      cover_height: 2560
+      cover_width: 1600
+      isbn13: 9781787634114
+      asin: 1787634116
+      link: https://openlibrary.org/works/OL27739453W/Build
+      date_added: 2022-05-11
+      date_started: 2022-05-11
+      date_finished: 2022-10-29
+      recommended: true
+      progress: 100
+
+    - title: High Output Management
+      subtitle: null
+      author: Andrew S. Grove
+      cover: https://cdn.utf9k.net/books/high-output-management.jpg
+      cover_height: 2411
+      cover_width: 1563
+      isbn13: 9780679762881
+      asin: 0679762884
+      link: https://openlibrary.org/works/OL2355834W/High_Output_Management
+      date_added: 2022-04-03
+      date_started: 2022-04-03
+      date_finished: 2022-10-23
+      recommended: true
+      progress: 100
+
+    - title: Building a Second Brain
+      subtitle: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential
+      author: Tiago Forte
+      cover: https://cdn.utf9k.net/books/building-a-second-brain.jpg
+      cover_height: 2555
+      cover_width: 1610
+      isbn13: 9781800812215
+      asin: 1800812213
+      link: https://openlibrary.org/works/OL26417584W/Building_a_Second_Brain
+      date_added: 2022-06-25
+      date_started: 2022-06-25
+      date_finished: 2022-09-20
+      recommended: false
+      progress: 100
+
+    - title: Slow Horses
+      subtitle: null
+      author: Mick Herron
+      cover: https://cdn.utf9k.net/books/slow-horses.jpg
+      cover_height: 2337
+      cover_width: 1525
+      isbn13: 9781641292979
+      asin: 1641292970
+      link: https://openlibrary.org/works/OL18630860W
+      date_added: 2022-07-17
+      date_started: 2022-07-17
+      date_finished: 2022-09-18
+      recommended: true
+      progress: 100
+
+    - title: Ruined by Design
+      subtitle: How Designers Destroyed the World, and What We Can Do to Fix It
+      author: Mike Monteiro
+      cover: https://cdn.utf9k.net/books/ruined-by-design.jpg
+      cover_height: 2582
+      cover_width: 1686
+      isbn13: 9781090532084
+      asin: 1090532083
+      link: https://openlibrary.org/works/OL24994697W/Ruined_by_Design
+      date_added: 2021-02-25
+      date_started: 2022-01-09
+      date_finished: 2022-02-24
+      recommended: false
+      progress: 100
+
+- list: 2021
+  goal: 20
+  books:
+    - title: Four Thousand Weeks
+      subtitle: Time Management for Mortals
+      author: Oliver Burkeman
+      cover: https://cdn.utf9k.net/books/four-thousand-weeks.jpg
+      cover_height: 2475
+      cover_width: 1612
+      isbn13: 9780374159122
+      asin: 0374159122
+      link: https://openlibrary.org/works/OL22355777W/Four_Thousand_Weeks
+      date_added: 2021-08-14
+      date_started: 2021-09-24
+      date_finished: 2021-11-06
+      recommended: true
+      progress: 100
+
+    - title: Crossing the Chasm, 3rd Edition
+      subtitle: Marketing and Selling Disruptive Products to Mainstream Customers
+      author: Geoffrey A. Moore
+      cover: https://cdn.utf9k.net/books/crossing-the-chasm.jpg
+      cover_height: 1251
+      cover_width: 800
+      isbn13: 9780060517120
+      asin: 0060517123
+      link: https://openlibrary.org/works/OL20320657W/Crossing_the_Chasm_3rd_Edition
+      date_added: 2020-12-31
+      date_started: 2021-05-03
+      date_finished: 2021-08-09
+      recommended: true
+      progress: 100
+
+    - title: The Usefulness of Useless Knowledge
+      subtitle: null
+      author: Abraham Flexner
+      cover: https://cdn.utf9k.net/books/the-usefulness-of-useless-knowledge.jpg
+      cover_height: 2100
+      cover_width: 1350
+      isbn13: 9780691174761
+      asin: 0691174768
+      link: https://openlibrary.org/works/OL24725948W/The_Usefulness_of_Useless_Knowledge
+      date_added: 2021-03-30
+      date_started: 2021-06-11
+      date_finished: 2021-07-30
+      recommended: false
+      progress: 100
+
+    - title: Resilient Management
+      subtitle: null
+      author: Lara Hogan
+      cover: https://cdn.utf9k.net/books/resilient-management.jpg
+      cover_height: 3165
+      cover_width: 2048
+      isbn13: 9781937557829
+      asin: 1937557820
+      link: https://openlibrary.org/works/OL20750525W/Resilient_Management
+      date_added: 2021-06-10
+      date_started: 2021-06-10
+      date_finished: 2021-07-19
+      recommended: false
+      progress: 100
+
+    - title: The Big Four
+      subtitle: The Curious Past and Perilous Future of the Global Accounting Monopoly
+      author: Ian D. Gow
+      cover: https://cdn.utf9k.net/books/the-big-four.jpg
+      cover_height: 1382
+      cover_width: 904
+      isbn13: 9781863959964
+      asin: 1863959963
+      link: https://openlibrary.org/works/OL19762252W/The_Big_Four
+      date_added: 2018-05-04
+      date_started: 2021-05-04
+      date_finished: 2021-05-29
+      recommended: true
+      progress: 100
+
+    - title: Little Rice
+      subtitle: Smartphones, Xiaomi, and The Chinese Dream
+      author: Clay Shirky
+      cover: https://cdn.utf9k.net/books/little-rice.jpg
+      cover_height: 1500
+      cover_width: 1000
+      isbn13: 9780990976325
+      asin: 0990976327
+      link: https://openlibrary.org/works/OL17709914W/Little_Rice
+      date_added: 2021-01-09
+      date_started: 2021-04-24
+      date_finished: 2021-05-05
+      recommended: false
+      progress: 100
+
+    - title: The Waxman Report
+      subtitle: How Congress Really Works
+      author: Henry Waxman
+      cover: https://cdn.utf9k.net/books/the-waxman-report.jpg
+      cover_height: 2600
+      cover_width: 1711
+      isbn13: 9780446519250
+      asin: 0446519251
+      link: https://openlibrary.org/works/OL9493402W/The_Waxman_Report
+      date_added: 2020-01-30
+      date_started: 2021-03-02
+      date_finished: 2021-04-24
+      recommended: true
+      progress: 100
+
+    - title: In the Beginning ...Was the Command Line
+      subtitle: null
+      author: Neal Stephenson
+      cover: https://cdn.utf9k.net/books/in-the-beginning-was-the-command-line.jpg
+      cover_height: 1853
+      cover_width: 1200
+      isbn13: 9780380815937
+      asin: 0380815931
+      link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
+      date_added: 2020-07-09
+      date_started: 2021-01-01
+      date_finished: 2021-02-20
+      recommended: false
+      progress: 100
+
+    - title: The Dip
+      subtitle: A Little Book That Teaches You When to Quit
+      author: Seth Godin
+      cover: https://cdn.utf9k.net/books/the-dip.jpg
+      cover_height: 2122
+      cover_width: 1500
+      isbn13: 9781591841661
+      asin: 1591841666
+      link: https://openlibrary.org/works/OL2329204W/The_Dip
+      date_added: 2020-10-21
+      date_started: 2021-02-12
+      date_finished: 2021-02-13
+      recommended: false
+      progress: 100
+
+    - title: Propaganda
+      subtitle: null
+      author: Edward Bernays
+      cover: https://cdn.utf9k.net/books/propaganda.jpg
+      cover_height: 1192
+      cover_width: 768
+      isbn13: 9780970312594
+      asin: 0970312598
+      link: https://openlibrary.org/works/OL21948057W/Propaganda
+      date_added: 2020-03-14
+      date_started: 2021-01-18
+      date_finished: 2021-02-12
+      recommended: true
+      progress: 100
+
+- list: 2020
+  goal: 12
+  books:
+    - title: In the Plex
+      subtitle: How Google Thinks, Works, and Shapes Our Lives
+      author: Steven Levy
+      cover: https://cdn.utf9k.net/books/in-the-plex.jpg
+      cover_height: 2132
+      cover_width: 1400
+      isbn13: 9781416596585
+      asin: 1416596585
+      link: https://openlibrary.org/works/OL17717287W/In_the_Plex
+      date_added: 2020-10-18
+      date_started: 2020-10-18
+      date_finished: 2020-12-28
+      recommended: true
+      progress: 100
+
+    - title: Naked Pictures of Famous People
+      subtitle: null
+      author: Jon Stewart
+      cover: https://cdn.utf9k.net/books/naked-pictures-of-famous-people.jpg
+      cover_height: 1200
+      cover_width: 797
+      isbn13: 9780688171629
+      asin: 0688171621
+      link: https://openlibrary.org/works/OL1959419W/Naked_Pictures_of_Famous_People
+      date_added: 2020-11-03
+      date_started: 2020-11-10
+      date_finished: 2020-12-05
+      recommended: false
+      progress: 100
+
+    - title: The Checklist Manifesto
+      subtitle: How to Get Things Right
+      author: Atul Gawande
+      cover: https://cdn.utf9k.net/books/the-checklist-manifesto.jpg
+      cover_height: 2100
+      cover_width: 1400
+      isbn13: 9780805091748
+      asin: 0805091742
+      link: https://openlibrary.org/works/OL15436462W/The_Checklist_Manifesto
+      date_added: 2020-02-07
+      date_started: 2020-11-21
+      date_finished: 2020-12-04
+      recommended: true
+      progress: 100
+
+    - title: Greenlights
+      subtitle: null
+      author: Matthew McConaughey
+      cover: https://cdn.utf9k.net/books/greenlights.jpg
+      cover_height: 3000
+      cover_width: 2088
+      isbn13: 9780593139134
+      asin: 0593139135
+      link: https://openlibrary.org/works/OL23520310W/Greenlights
+      date_added: 2020-10-28
+      date_started: 2020-10-28
+      date_finished: 2020-11-09
+      recommended: false
+      progress: 100
+
+    - title: The Death of Ivan Ilych
+      subtitle: null
+      author: Leo Tolstoy
+      cover: https://cdn.utf9k.net/books/the-death-of-ivan-ilych.jpg
+      cover_height: 2025
+      cover_width: 1256
+      isbn13: 9781600964336
+      asin: 1600964338
+      link: https://openlibrary.org/works/OL20281370W/The_Death_of_Ivan_Ilych
+      date_added: 2020-09-19
+      date_started: 2020-10-03
+      date_finished: 2020-10-24
+      recommended: false
+      progress: 100
+
+    - title: Talking to My Daughter About the Economy
+      subtitle: or, How Capitalism Works - and How It Fails
+      author: Yanis Varoufakis
+      cover: https://cdn.utf9k.net/books/talking-to-my-daughter-about-the-economy.jpg
+      cover_height: 2339
+      cover_width: 1524
+      isbn13: 9781847924421
+      asin: B076H4WMY1
+      link: https://openlibrary.org/works/OL20152367W/Talking_to_My_Daughter_About_the_Economy
+      date_added: 2020-09-14
+      date_started: 2020-09-14
+      date_finished: 2020-09-30
+      recommended: true
+      progress: 100
+
+    - title: The Miracle of Mindfulness
+      subtitle: An Introduction to the Practice of Meditation
+      author: Thich Nhat Hanh
+      cover: https://cdn.utf9k.net/books/the-miracle-of-mindfulness.jpg
+      cover_height: 1809
+      cover_width: 1200
+      isbn13: 9780807012390
+      asin: 0807012394
+      link: https://openlibrary.org/works/OL12381026W/The_Miracle_of_Mindfulness
+      date_added: 2020-09-14
+      date_started: 2020-09-14
+      date_finished: 2020-09-19
+      recommended: false
+      progress: 100
+
+    - title: On Bullshit
+      subtitle: null
+      author: Harry G. Frankfurt
+      cover: https://cdn.utf9k.net/books/on-bullshit.jpg
+      cover_height: 1872
+      cover_width: 1240
+      isbn13: 9780691122946
+      asin: 0691122946
+      link: https://openlibrary.org/works/OL1829528W/On_Bullshit
+      date_added: 2020-08-22
+      date_started: 2020-08-22
+      date_finished: 2020-09-15
+      recommended: true
+      progress: 100
+
+    - title: The Curse of Bigness
+      subtitle: Antitrust in the New Gilded Age
+      author: Tim Wu
+      cover: https://cdn.utf9k.net/books/the-curse-of-bigness.jpg
+      cover_height: 2326
+      cover_width: 1507
+      isbn13: 9780999745465
+      asin: 0999745468
+      link: https://openlibrary.org/works/OL19764853W/The_Curse_of_Bigness
+      date_added: 2020-05-11
+      date_started: 2020-09-12
+      date_finished: 2020-09-14
+      recommended: true
+      progress: 100
+
+    - title: Memos from the Chairman
+      subtitle: null
+      author: Alan C. Greenberg
+      cover: https://cdn.utf9k.net/books/memos-from-the-chairman.jpg
+      cover_height: 1616
+      cover_width: 1200
+      isbn13: 9780761103462
+      asin: 0761103465
+      link: https://openlibrary.org/works/OL2646874W/Memos_from_the_Chairman
+      date_added: 2020-09-11
+      date_started: null
+      date_finished: 2020-09-11
+      recommended: false
+      progress: 100
+
+    - title: Learning HTTP/2
+      subtitle: A Practical Guide for Beginners
+      author: Stephen Ludin and Javier Garza
+      cover: https://cdn.utf9k.net/books/learning-http2.jpg
+      cover_height: 1575
+      cover_width: 1200
+      isbn13: 9781491962442
+      asin: 1491962445
+      link: https://openlibrary.org/works/OL20055086W/Learning_HTTP_2
+      date_added: 2020-09-02
+      date_started: null
+      date_finished: 2020-09-04
+      recommended: false
+      progress: 100
+
+    - title: The Master Switch
+      subtitle: The Rise and Fall of Information Empires
+      author: Tim Wu
+      cover: https://cdn.utf9k.net/books/the-master-switch.jpg
+      cover_height: 1889
+      cover_width: 1200
+      isbn13: 9780307269935
+      asin: 0307269930
+      link: https://openlibrary.org/works/OL15118227W/The_Master_Switch
+      date_added: 2020-04-28
+      date_started: 2020-06-11
+      date_finished: 2020-08-09
+      recommended: true
+      progress: 100
+
+    - title: Atomic Habits
+      subtitle: An Easy & Proven Way to Build Good Habits & Break Bad Ones
+      author: James Clear
+      cover: https://cdn.utf9k.net/books/atomic-habits.jpg
+      cover_height: 2765
+      cover_width: 1807
+      isbn13: 9781847941848
+      asin: 1847941842
+      link: https://openlibrary.org/works/OL17930368W/Atomic_Habits
+      date_added: 2020-07-17
+      date_started: null
+      date_finished: 2020-07-12
+      recommended: false
+      progress: 100
+
+    - title: The Inner Game of Tennis
+      subtitle: The Classic Guide to the Mental Side of Peak Performance
+      author: Timothy W. Gallwey
+      cover: https://cdn.utf9k.net/books/the-inner-game-of-tennis.jpg
+      cover_height: 1855
+      cover_width: 1200
+      isbn13: 9780679778318
+      asin: 0679778314
+      link: https://openlibrary.org/works/OL20307725W/The_Inner_Game_of_Tennis
+      date_added: 2020-05-25
+      date_started: 2020-06-01
+      date_finished: 2020-06-06
+      recommended: true
+      progress: 100
+
+    - title: Zen in the Art of Writing
+      subtitle: null
+      author: Ray Bradbury
+      cover: https://cdn.utf9k.net/books/zen-in-the-art-of-writing.jpg
+      cover_height: 1830
+      cover_width: 1200
+      isbn13: 9780553296341
+      asin: 0553296345
+      link: https://openlibrary.org/works/OL103179W/Zen_in_The_Art_of_Writing
+      date_added: 2020-02-02
+      date_started: null
+      date_finished: 2020-05-11
+      recommended: false
+      progress: 100
+
+    - title: Red Tape
+      subtitle: Its Origins, Uses, and Abuses
+      author: Herbert Kaufman
+      cover: https://cdn.utf9k.net/books/red-tape.jpg
+      cover_height: 2550
+      cover_width: 1650
+      isbn13: 9780815748410
+      asin: 0815748418
+      link: https://openlibrary.org/works/OL3479766W/Red_Tape
+      date_added: 2020-01-12
+      date_started: 2020-02-25
+      date_finished: 2020-03-23
+      recommended: false
+      progress: 100
+
+    - title: Why I Write
+      subtitle: null
+      author: George Orwell
+      cover: https://cdn.utf9k.net/books/why-i-write.jpg
+      cover_height: 2550
+      cover_width: 1650
+      isbn13: 9780143036357
+      asin: 0143036351
+      link: https://openlibrary.org/works/OL1168147W/Why_I_Write
+      date_added: 2020-02-02
+      date_started: 2020-02-09
+      date_finished: 2020-02-25
+      recommended: false
+      progress: 100
+
+    - title: Dirty Politics
+      subtitle: How Attack Politics is Poisoning New Zealand's Political Environment
+      author: Nicky Hager
+      cover: https://cdn.utf9k.net/books/dirty-politics.jpg
+      cover_height: 1442
+      cover_width: 1000
+      isbn13: 9781927213360
+      asin: 1927213363
+      link: https://openlibrary.org/works/OL17043709W/Dirty_Politics
+      date_added: 2020-02-07
+      date_started: 2020-02-07
+      date_finished: 2020-02-09
+      recommended: true
+      progress: 100
+
+    - title: Getting Things Done
+      subtitle: The Art of Stress-Free Productivity
+      author: David Allen
+      cover: https://cdn.utf9k.net/books/getting-things-done.jpg
+      cover_height: 2339
+      cover_width: 1513
+      isbn13: 9780142000281
+      asin: 0142000280
+      link: https://openlibrary.org/works/OL20777755W/Getting_Things_Done
+      date_added: 2020-02-07
+      date_started: null
+      date_finished: 2020-02-07
+      recommended: false
+      progress: 100
+
+    - title: The Information Diet
+      subtitle: A Case for Conscious Consumption
+      author: Clay A. Johnson
+      cover: https://cdn.utf9k.net/books/the-information-diet.jpg
+      cover_height: 1000
+      cover_width: 667
+      isbn13: 9781449304683
+      asin: 1449304680
+      link: https://openlibrary.org/works/OL16538242W/The_Information_Diet
+      date_added: 2018-04-03
+      date_started: 2020-01-26
+      date_finished: 2020-01-30
+      recommended: false
+      progress: 100
+
+    - title: The Myth of Sisyphus
+      subtitle: null
+      author: Albert Camus
+      cover: https://cdn.utf9k.net/books/the-myth-of-sisyphus.jpg
+      cover_height: 1851
+      cover_width: 1200
+      isbn13: 9780141182001
+      asin: 0141182008
+      link: https://openlibrary.org/works/OL1230690W/The_Myth_of_Sisyphus_and_Other_Essays
+      date_added: 2020-01-02
+      date_started: 2020-01-20
+      date_finished: 2020-01-26
+      recommended: false
+      progress: 100
+
+- list: 2019
+  goal: null
+  books:
+    - title: The Unicorn Project
+      subtitle: A Novel about Developers, Digital Disruption, and Thriving in the Age of Data
+      author: Gene Kim
+      cover: https://cdn.utf9k.net/books/the-unicorn-project.jpg
+      cover_height: 2560
+      cover_width: 1707
+      isbn13: 9781942788768
+      asin: 1942788762
+      link: https://openlibrary.org/works/OL20716769W/The_Unicorn_Project
+      date_added: 2019-12-24
+      date_started: null
+      date_finished: 2019-12-25
+      recommended: false
+      progress: 100
+
+    - title: Super Pumped
+      subtitle: The Battle for Uber
+      author: Mike Isaac
+      cover: https://cdn.utf9k.net/books/super-pumped.jpg
+      cover_height: 2560
+      cover_width: 1707
+      isbn13: 9780393652246
+      asin: 0393652246
+      link: https://openlibrary.org/works/OL20125074W/Super_Pumped
+      date_added: 2019-11-27
+      date_started: null
+      date_finished: 2019-11-26
+      recommended: true
+      progress: 100
+
+- list: 2018
+  goal: null
+  books:
+    - title: How To Win Friends and Influence People
+      subtitle: null
+      author: Dale Carnegie
+      cover: https://cdn.utf9k.net/books/how-to-win-friends-and-influence-people.jpg
+      cover_height: 2473
+      cover_width: 1585
+      isbn13: 9780671027032
+      asin: B00D5ATO1S
+      link: https://openlibrary.org/works/OL1063301W/How_to_Win_Friends_and_Influence_People
+      date_added: 2018-07-01
+      date_started: 2018-07-01
+      date_finished: 2018-12-23
+      recommended: false
+      progress: 100
+
+    - title: The Phoenix Project
+      subtitle: A Novel About IT, DevOps, and Helping Your Business Win
+      author: Gene Kim
+      cover: https://cdn.utf9k.net/books/the-phoenix-project.jpg
+      cover_height: 1794
+      cover_width: 1200
+      isbn13: 9780988262591
+      asin: 0988262592
+      link: https://openlibrary.org/works/OL16806686W/The_Phoenix_Project
+      date_added: 2018-12-23
+      date_started: null
+      date_finished: 2018-12-23
+      recommended: true
+      progress: 100
+
+    - title: The Fifth Discipline
+      subtitle: The Art & Practice of The Learning Organization
+      author: Peter M. Senge
+      cover: https://cdn.utf9k.net/books/the-fifth-discipline.jpg
+      cover_height: 1425
+      cover_width: 938
+      isbn13: 9780385517256
+      asin: 0385517254
+      link: https://openlibrary.org/works/OL4440692W/The_Fifth_Discipline
+      date_added: 2018-08-05
+      date_started: null
+      date_finished: 2018-08-05
+      recommended: false
+      progress: 100
+
+    - title: The Flinch
+      subtitle: null
+      author: Julien Smith
+      cover: https://cdn.utf9k.net/books/the-flinch.jpg
+      cover_height: 1200
+      cover_width: 1200
+      isbn13: null
+      asin: B00NLJHGOA
+      link: https://openlibrary.org/works/OL24137194W/The_Flinch
+      date_added: 2018-03-25
+      date_started: 2018-03-25
+      date_finished: 2018-05-11
+      recommended: false
+      progress: 100
+
+    - title: Twin Peaks
+      subtitle: The Final Dossier
+      author: Mark Frost
+      cover: https://cdn.utf9k.net/books/twin-peaks-the-final-dossier.jpg
+      cover_height: 1000
+      cover_width: 803
+      isbn13: 9781250163301
+      asin: 1250163307
+      link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
+      date_added: 2018-04-08
+      date_started: 2018-04-08
+      date_finished: 2018-04-28
+      recommended: false
+      progress: 100
+    
+    - title: The Little Go Book
+      subtitle: null
+      author: Karl Seguin
+      cover: https://cdn.utf9k.net/books/the-little-go-book.jpg
+      cover_height: 1000
+      cover_width: 803
+      isbn13: null
+      asin: B0DTVVG5XW
+      link: https://openlibrary.org/works/OL18020504W/Twin_Peaks
+      date_added: 2018-02-28
+      date_started: null
+      date_finished: 2018-02-28
+      recommended: false
+      progress: 100
+
+    - title: 20 Python Libraries You Aren't Using
+      subtitle: null
+      author: Caleb Hattingh
+      cover: null
+      cover_height: 0
+      cover_width: 0
+      isbn13: 9781491967928
+      asin: 1491967927
+      link: https://www.goodreads.com/book/show/32051366-20-python-libraries-you-aren-t-using
+      date_added: 2018-02-26
+      date_started: null
+      date_finished: 2018-02-26
+      recommended: false
+      progress: 100
+
+    - title: Site Reliability Engineering
+      subtitle: How Google Runs Production Systems
+      author: Betsy Beyer
+      cover: https://cdn.utf9k.net/books/site-reliability-engineering.jpg
+      cover_height: 1575
+      cover_width: 1200
+      isbn13: 9781491929124
+      asin: 149192912X
+      link: https://openlibrary.org/works/OL20028554W/Site_Reliability_Engineering
+      date_added: 2018-02-24
+      date_started: null
+      date_finished: 2018-02-24
+      recommended: true
+      progress: 100
+
+    - title: Tales from the Loop
+      subtitle: null
+      author: Simon Stålenhag
+      cover: https://cdn.utf9k.net/books/tales-from-the-loop.jpg
+      cover_height: 1400
+      cover_width: 1417
+      isbn13: 9789187222214
+      asin: 9187222213
+      link: https://openlibrary.org/works/OL20040484W/Tales_from_the_Loop
+      date_added: 2018-01-14
+      date_started: 2018-01-23
+      date_finished: 2018-02-06
+      recommended: true
+      progress: 100
+
+    - title: Shit London
+      subtitle: Snapshots of a City on the Edge
+      author: Patrick Dalton
+      cover: https://cdn.utf9k.net/books/shit-london.jpg
+      cover_height: 932
+      cover_width: 1200
+      isbn13: 9781907554346
+      asin: 1907554343
+      link: https://openlibrary.org/works/OL17548993W/Shit_London
+      date_added: 2018-01-23
+      date_started: 2018-01-23
+      date_finished: 2018-01-24
+      recommended: false
+      progress: 100
+
+    - title: Japanese Game Graphics
+      subtitle: Behind the Scenes of Your Favorite Games
+      author: Works Corporation
+      cover: https://cdn.utf9k.net/books/japanese-game-graphics.jpg
+      cover_height: 1000
+      cover_width: 742
+      isbn13: 9780060567729
+      asin: 0060567724
+      link: https://openlibrary.org/works/OL274966W/Japanese_Game_Graphics
+      date_added: 2018-01-14
+      date_started: null
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
+
+    - title: Show Stopper!
+      subtitle: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft
+      author: G. Pascal Zachary
+      cover: https://cdn.utf9k.net/books/showstopper.jpg
+      cover_height: 1829
+      cover_width: 1200
+      isbn13: 9780029356715
+      asin: 0029356717
+      link: https://openlibrary.org/works/OL106726W/Show-Stopper
+      date_added: 2018-01-14
+      date_started: null
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
+
+    - title: Half-Life 2
+      subtitle: Raising the Bar
+      author: David Hodgson
+      cover: https://cdn.utf9k.net/books/half-life-2.jpg
+      cover_height: 1179
+      cover_width: 904
+      isbn13: 9780761543640
+      asin: 0761543643
+      link: https://openlibrary.org/works/OL8010203W/Half-Life_2
+      date_added: 2018-01-14
+      date_started: null
+      date_finished: 2018-01-14
+      recommended: true
+      progress: 100
+
+    - title: Pendulum
+      subtitle: How Past Generations Shape Our Present and Predict Our Future
+      author: Roy H. Williams
+      cover: https://cdn.utf9k.net/books/pendulum.jpg
+      cover_height: 2560
+      cover_width: 1684
+      isbn13: 9781452659848
+      asin: 1452659842
+      link: https://openlibrary.org/works/OL22646312W/Pendulum
+      date_added: 2018-01-13
+      date_started: 2018-01-11
+      date_finished: 2018-01-13
+      recommended: false
+      progress: 100
+
+- list: Stalled
+  books:
+
+    - title: Creating The Mania
+      subtitle: An Inside Look at How WrestleMania Comes to Life
+      author: Jon Robinson
+      cover: https://cdn.utf9k.net/books/creating-the-mania.jpg
+      cover_height: 667
+      cover_width: 1000
+      isbn13: 9781770414501
+      asin: 1770414509
+      link: https://ecwpress.com/products/creating-the-mania
+      date_added: 2025-05-05
+      date_started: 2025-05-05
+      date_finished: null
+      recommended: false
+      progress: 5
+
+    - title: Political Ponerology
+      subtitle: A Science on the Nature of Evil Adjusted for Political Purposes
+      author: Andrew M. Lobaczewski
+      cover: https://cdn.utf9k.net/books/political-ponerology.jpg
+      cover_height: 2560
+      cover_width: 1707
+      isbn13: 9781897244258
+      asin: 1897244258
+      link: https://www.redpillpress.com/shop/political-ponerology-expanded/
+      date_added: 2025-03-23
+      date_started: 2025-03-23
+      date_finished: null
+      recommended: false
+      progress: 5
+
+    - title: How To Be Wrong
+      subtitle: A crash course in startup success
+      author: Rowan Simpson
+      cover: https://cdn.utf9k.net/books/how-to-be-wrong.jpg
+      cover_height: 2657
+      cover_width: 1885
+      isbn13: 9780473729967
+      asin: null
+      date_added: 2025-03-06
+      date_started: 2025-03-06
+      date_finished: null
+      recommended: false
+      progress: 4
+
+    - title: Designing Data-Intensive Applications
+      subtitle: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+      author: Martin Kleppman
+      cover: https://cdn.utf9k.net/books/designing-data-intensive-applications.jpg
+      cover_height: 1575
+      cover_width: 1200
+      isbn13: 9781449373320
+      asin: 1449373321
+      link: https://dataintensive.net
+      date_added: null
+      date_started: 2022-07-05
+      date_finished: null
+      recommended: false
+      progress: 14
+
+    - title: Seeing Like a State
+      subtitle: How Certain Schemes to Improve the Human Condition Have Failed
+      author: James C. Scott
+      cover: https://cdn.utf9k.net/books/seeing-like-a-state.jpg
+      cover_height: 1245
+      cover_width: 800
+      isbn13: 9780300078152
+      asin: 0300078153
+      link: https://openlibrary.org/works/OL2692041W/Seeing_Like_a_State
+      date_added: 2018-01-14
+      date_started: 2024-01-26
+      date_finished: null
+      recommended: false
+      progress: 11
+
+    - title: 100 Go Mistakes and How to Avoid Them
+      subtitle: null
+      author: Teiva Harsanyi
+      cover: https://cdn.utf9k.net/books/100-go-mistakes-and-how-to-avoid-them.jpg
+      cover_height: 2775
+      cover_width: 2213
+      isbn13: 9781617299599
+      asin: 1617299596
+      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+      date_added: 2022-12-17
+      date_started: 2022-12-17
+      date_finished: null
+      recommended: false
+      progress: 45
+
+    - title: SQL Performance Explained
+      subtitle: Everything Developers Need To Know About SQL Performance
+      author: Markus Winand
+      cover: https://cdn.utf9k.net/books/sql-performance-explained.jpg
+      cover_height: 1804
+      cover_width: 1200
+      isbn13: 9783950307825
+      asin: 3950307826
+      link: https://openlibrary.org/books/OL28154826M/SQL_Performance_Explained_Everything_Developers_Need_to_Know_about_SQL_Performance
+      date_added: 2023-01-14
+      date_started: 2023-01-15
+      date_finished: null
+      recommended: false
+      progress: 24
+
+    - title: Going Infinite
+      subtitle: The Rise and Fall of a New Tycoon
+      author: Michael Lewis
+      cover: https://cdn.utf9k.net/books/going-infinite.jpg
+      cover_height: 5000
+      cover_width: 3249
+      isbn13: 9781324074335
+      asin: 1324074337
+      link: https://www.penguin.co.nz/books/going-infinite-9780241651117
+      date_added: 2024-03-29
+      date_started: 2024-03-29
+      date_finished: null
+      recommended: false
+      progress: 23
+
+    - title: The Power Broker
+      subtitle: Robert Moses and the Fall of New York
+      author: Robert Caro
+      cover: https://cdn.utf9k.net/books/the-power-broker.jpg
+      cover_height: 1922
+      cover_width: 1265
+      isbn13: 9780394720241
+      asin: 0394720245
+      link: https://en.wikipedia.org/wiki/The_Power_Broker
+      date_added: 2023-06-11
+      date_started: 2024-02-27
+      date_finished: null
+      recommended: false
+      progress: 1
+
+    - title: Wrong Way
+      subtitle: How Privatisation and Economic Reform Backfired
+      author: Damien Cahill and Phillip Toner
+      cover: https://cdn.utf9k.net/books/wrong-way.jpg
+      cover_height: 1124
+      cover_width: 735
+      isbn13: 9781760640385
+      asin: 1760640387
+      link: https://openlibrary.org/works/OL29300070W/Wrong_Way
+      date_added: 2020-08-07
+      date_started: 2022-11-12
+      date_finished: null
+      recommended: false
+      progress: 44
+
+    - title: Unscripted
+      subtitle: The Epic Battle for a Media Empire and the Redstone Family Legacy
+      author: James B. Stewart and Rachel Abrams
+      cover: https://cdn.utf9k.net/books/unscripted.jpg
+      cover_height: 1498
+      cover_width: 975
+      isbn13: 9781984879424
+      asin: 1984879421
+      link: https://openlibrary.org/works/OL28158768W/Unscripted
+      date_added: 2023-04-18
+      date_started: 2023-08-18
+      date_finished: null
+      recommended: false
+      progress: 32
+
+    - title: The 99% Invisible City
+      subtitle: A Field Guide to the Hidden World of Everyday Design
+      author: Roman Mars
+      cover: https://cdn.utf9k.net/books/the-99-percent-invisible-city.jpg
+      cover_height: 2700
+      cover_width: 2100
+      isbn13: 9781529355307
+      asin: B084D9ZCP6
+      link: https://www.goodreads.com/book/show/54869549-the-99-invisible-city
+      date_added: 2020-10-24
+      date_started: 2020-10-24
+      date_finished: null
+      recommended: false
+      progress: 5
+
+    - title: Original Copies
+      subtitle: Architectural Mimicry in Contemporary China
+      author: Bianca Bosker
+      cover: https://cdn.utf9k.net/books/original-copies.jpg
+      cover_height: 1000
+      cover_width: 798
+      isbn13: 9780824836061
+      asin: 0824836065
+      link: https://www.goodreads.com/book/show/15938487-original-copies
+      date_added: 2020-12-04
+      date_started: 2020-12-04
+      date_finished: null
+      recommended: false
+      progress: 5

@@ -73,7 +73,7 @@ _iterate_list_page(BACKLOGGED_URL, 1)
 _iterate_list_page(COMPLETED_URL, 2)
 _iterate_list_page(SHELVED_URL, 3)
 
-with open("_data/games.yml", "w") as file:
+with open("data/games.yml", "w") as file:
     yaml.dump(lists, file)
 
 print("~ Games synced locally")

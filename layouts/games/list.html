@@ -1,0 +1,145 @@
+{{ define "main" }}
+<div class="games-page">
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="filter-bar">
+    <!-- TODO: Populate search with series? -->
+    <input type="text" class="filter-search" placeholder="Final..." id="game-search">
+    <div class="filter-buttons">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="playing">Playing</button>
+      <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+      <button type="button" class="filter-btn" data-filter="shelved">Shelved</button>
+    </div>
+  </div>
+
+  <!-- TODO: Can this be swapped with a `with` block to genericise it? -->
+  {{ $playing := sort ((index (where $.Site.Data.games "list" "Playing") 0).games) "title" "asc" }}
+  <section class="section playing" data-status="playing">
+    <div class="section-header">
+      <h2 class="section-title playing">Playing</h2>
+      <span class="section-count">{{ len $playing }}</span>
+    </div>
+    <div class="media-grid">
+      <!-- TODO: Extract game card into a partial -->
+      {{ range $playing }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+          <div class="preview-meta">
+            <!-- TODO: Get more metadata to preview -->
+            <div class="preview-title">{{ .title }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ $backlog := sort ((index (where $.Site.Data.games "list" "Backlog") 0).games) "title" "asc" }}
+  <section class="section backlog" data-status="backlog">
+    <div class="section-header">
+      <h2 class="section-title backlog">Backlog</h2>
+      <span class="section-count">{{ len $backlog }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range $backlog }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+          <div class="preview-meta">
+            <div class="preview-title">{{ .title }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ $completed := sort ((index (where $.Site.Data.games "list" "Completed") 0).games) "title" "asc" }}
+  <section class="section completed" data-status="completed">
+    <div class="section-header">
+      <h2 class="section-title completed">Completed</h2>
+      <span class="section-count">{{ len $completed }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range $completed }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+          <div class="preview-meta">
+            <div class="preview-title">{{ .title }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- TODO: Pick a colour for shelved -->
+  {{ $shelved := sort ((index (where $.Site.Data.games "list" "Shelved") 0).games) "title" "asc" }}
+  <section class="section shelved" data-status="shelved">
+    <div class="section-header">
+      <h2 class="section-title shelved">Shelved</h2>
+      <span class="section-count">{{ len $completed }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range $shelved }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+          <div class="preview-meta">
+            <div class="preview-title">{{ .title }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const sections = document.querySelectorAll('.section[data-status]');
+    const searchInput = document.getElementById('game-search');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const { filter } = btn.dataset;
+
+        sections.forEach(section => {
+          if (filter === 'all' || section.dataset.status === filter) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.media-card').forEach(card => {
+        const { title } = card.dataset;
+
+        if (title.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+  {{ partial "preview.html" ".media-card" }}
+</div>
+{{ end }}

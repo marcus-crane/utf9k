@@ -1,0 +1,89 @@
+baseURL: https://utf9k.net
+languageCode: en-us
+title: utf9k
+# Dates without timestamps or zones should be assumed to be my local timezone
+timeZone: Pacific/Auckland
+
+enableGitInfo: true
+enableRobotsTXT: true
+
+params:
+  description: You are online and logged on to my personal site
+  author:
+    email: marcus@utf9k.net
+    name: Marcus Crane
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20
+    - name: Blog
+      pageRef: /blog
+      weight: 30
+  garden:
+    - name: Projects
+      pageRef: /projects
+      weight: 10
+    - name: Questions
+      pageRef: /questions
+      weight: 20
+  media:
+    - name: Books
+      pageRef: /books
+      weight: 10
+    - name: Games
+      pageRef: /games
+      weight: 20
+  meta:
+    - name: Now
+      pageRef: /now
+      weight: 10
+    - name: Uses
+      pageRef: /uses
+      weight: 20
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+
+# https://gohugo.io/configuration/output-formats/#default-configuration
+outputFormats:
+  # Support for RSS feeds at /rss.xml
+  rssalt:
+    baseName: rss
+    mediaType: application/rss+xml
+    noUgly: true
+    protocol: ''
+  searchindex:
+    baseName: search
+    mediaType: application/json
+
+# https://gohugo.io/configuration/outputs/#article
+outputs:
+  home:
+    - html
+    - rss
+    - rssalt
+    - searchindex
+  page:
+    - html
+    - markdown
+  section:
+    - html
+    - markdown
+    - rss
+    - rssalt
+  taxonomy:
+    - html
+  term:
+    - html

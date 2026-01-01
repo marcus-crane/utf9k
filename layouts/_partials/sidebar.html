@@ -1,0 +1,48 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <h1>
+      <a href="/">
+        <!-- TODO: Clicking icon should generate a new gag -->
+        <img src="https://utf9k.net/favicon.png" alt="A robot icon" class="site-icon">
+        <span class="site-name">{{ .Site.Title }}</span>
+      </a>
+    </h1>
+    <div class="speech-bubble" id="robot-gag"></div>
+  </div>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Main</div>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Garden</div>
+    {{ range .Site.Menus.garden }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "garden" .) ($.HasMenuCurrent "garden" .) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Media</div>
+    {{ range .Site.Menus.media }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "media" .) ($.HasMenuCurrent "media" .) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <nav class="nav-section">
+    <div class="nav-section-title">Meta</div>
+    {{ range .Site.Menus.meta }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "meta" .) ($.HasMenuCurrent "meta" .) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <div class="theme-toggle">
+    <button type="button" data-theme="light">Light</button>
+    <button type="button" data-theme="system" class="active">Auto</button>
+    <button type="button" data-theme="dark">Dark</button>
+  </div>
+</aside>

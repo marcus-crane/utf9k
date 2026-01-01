@@ -1,7 +1,7 @@
 import json
 import os
 
-exclude = set(['_components', '_includes', '_scripts', '_site', 'resources', 'public', 'node_modules', '.github', '.cache', '.git', '.DS_Store', 'venv', '.venv'])
+exclude = set(['layouts', 'archetypes', 'resources', 'public', 'node_modules', '.github', '.cache', '.git', '.DS_Store', 'venv', '.venv'])
 file_metadata = []
 
 # Taken from https://stackoverflow.com/questions/1094841/get-human-readable-version-of-file-size
@@ -28,7 +28,7 @@ file_metadata = sorted(file_metadata, key = lambda i: i['size'], reverse=True)
 for file in file_metadata:
     file['size'] = sizeof_fmt(file['size'])
 
-with open('_data/filesizes.json', 'w') as file:
+with open('data/filesizes.json', 'w') as file:
     json.dump(file_metadata, file, indent=2)
 
 print("~ Filesize data generated")

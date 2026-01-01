@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="books-page">
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="filter-bar">
+    <input type="text" class="filter-search" placeholder="Search..." id="book-search">
+  </div>
+
+  {{ range $.Site.Data.books }}
+  <section class="section">
+    <div class="section-header">
+      <!-- TODO: Add reading goal as subtitle -->
+      <h2 class="section-title">{{ .list }}</h2>
+      <span class="section-count">{{ len .books }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range .books }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover }}" style="aspect-ratio: unset;" alt="Book cover for {{ .title }}">
+          <div class="preview-meta">
+            <!-- TODO: Get more metadata to preview -->
+            <div class="preview-title">{{ .title }}</div>
+            <div class="preview-subtitle">{{ .author }}</div>
+            {{ if and .date_started .date_finished }}
+            {{ $started := time.AsTime .date_started }}
+            {{ $finished := time.AsTime .date_finished }}
+            {{ $duration := $finished.Sub $started }}
+            <div class="preview-detail">Time to finish: {{ math.Round (div $duration.Hours 24) }} days</div>
+            {{ end }}
+            {{ if .recommended }}
+            <div class="preview-tags">
+              <span>Recommended</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <script>
+    const searchInput = document.getElementById('book-search');
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.media-card').forEach(card => {
+        const { title } = card.dataset;
+
+        if (title.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+  {{ partial "preview.html" ".media-card" }}
+</div>
+{{ end }}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end }}
+
+  {{ with resources.Get "css/style.css" | postCSS }}
+  <style>
+  {{ .Content | safeCSS }}
+  </style>
+  {{ end }}
+</head>
+<body>
+  <div class="mobile-overlay" onclick="toggleMenu()"></div>
+  <div class="layout">
+    {{ partial "sidebar.html" . }}
+
+    <main class="main">
+      <div class="mobile-header">
+        <a href="/" class="mobile-logo">
+          <img src="https://utf9k.net/favicon.png" alt="" class="site-icon">
+          <span class="site-name">utf9k</span>
+        </a>
+        <button class="menu-toggle" onclick="toggleMenu()">+ MENU</button>
+      </div>
+
+      {{ block "main" .}}{{ end }}
+
+      {{ partial "footer.html" . }}
+    </main>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.sidebar').classList.toggle('open');
+      document.querySelector('.mobile-overlay').classList.toggle('open');
+    }
+
+    // As busted as this looks (in source code), it renders a valid JS array
+    const gags = {{ .Site.Data.gags }};
+
+    function newGag() {
+      document.getElementById('robot-gag').textContent = gags[Math.floor(Math.random() * gags.length)];
+    }
+
+    newGag();
+
+    (function() {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function getSavedTheme() {
+        return localStorage.getItem('theme') || 'system';
+      }
+
+      function applyTheme(theme) {
+        const isDark = theme === 'dark' || (theme === 'system' && prefersDark.matches);
+        document.body.classList.toggle('dark', isDark);
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem('theme', theme);
+        applyTheme(theme);
+        document.querySelectorAll('.theme-toggle button').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.theme === theme);
+        });
+      }
+
+      const savedTheme = getSavedTheme();
+      applyTheme(savedTheme);
+
+      document.querySelectorAll('.theme-toggle button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.theme === savedTheme);
+        btn.addEventListener('click', () => setTheme(btn.dataset.theme));
+      })
+
+      prefersDark.addEventListener('change', () => {
+        if (getSavedTheme() === 'system') {
+          applyTheme('system');
+        }
+      })
+    })();
+
+  </script>
+</body>
+</html>

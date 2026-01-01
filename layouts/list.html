@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+  </div>
+
+  {{ with .Content }}
+  <div class="content content-spaced">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ $pages := where site.RegularPages "Section" .Section }}
+
+  {{ range $pages.GroupByDate "2006" }}
+  <div class="list-group">
+    <div class="group-label">{{ .Key }}</div>
+    <div class="post-table">
+      {{ range .Pages }}
+      <div class="post-row">
+        <div class="post-date">{{ .Date.Format "Jan 02" }}</div>
+        <a class="post-link" href="{{ .RelPermalink }}">
+          {{ .Title }}
+          <span class="arrow">»</span>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

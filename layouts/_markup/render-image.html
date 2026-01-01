@@ -1,0 +1,14 @@
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+<figure class="image-figure">
+  <a href="{{ $src }}" target="_blank">
+    <img src="{{ $src }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}>
+  </a>
+  <div class="preview">
+    <img src="{{ $src }}" alt="" loading="lazy">
+  </div>
+  {{- with $alt }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

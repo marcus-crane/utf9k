@@ -1,0 +1,457 @@
+{{ define "main" }}
+  <div id="sun" class="sun-hidden"></div>
+
+  <style>
+    #sun {
+      width: 100rem;
+      height: 100rem;
+      position: fixed;
+      top: -50rem;
+      right: -50rem;
+      opacity: 25%;
+      border-radius: 50%;
+      z-index: -1;
+      animation: sun-scale 30s linear infinite;
+      mask-image: radial-gradient(circle, black 0%, black 30%, transparent 70%);
+      -webkit-mask-image: radial-gradient(circle, black 0%, black 30%, transparent 70%);
+      transition: opacity 1s ease;
+    }
+
+    #sun::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: var(--border-bg, conic-gradient(#272926, #bfb5b4, #897774, #272926));
+      animation: sun-rotate 100s linear infinite;
+      transition: background 3s ease;
+    }
+
+    #sun.sun-hidden {
+      opacity: 0% !important;
+    }
+
+    @keyframes sun-scale {
+      0% { transform: scale(1); }
+      20% { transform: scale(1.2); }
+      40% { transform: scale(0.8); }
+      60% { transform: scale(1.1); }
+      80% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes sun-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <div class="grid">
+
+    <!-- Welcome -->
+    <div class="block block-filled">
+      <div class="label label-love">{{ .Title }}</div>
+      <div class="welcome">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <!-- Recent posts -->
+    <div class="block block-filled">
+      <div class="label label-foam">Recent Posts</div>
+      <ul class="posts-list">
+        {{ $posts := where site.RegularPages "Section" "blog" | first 5 }}
+        {{ range $posts }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="arrow">»</span>
+        </li>
+        {{ else }}
+        <li>
+          <span style="color: var(--muted);">No posts yet</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Activity -->
+    <div class="block block-full block-filled" id="activity-section">
+      <div class="label label-iris">Latest Activity</div>
+      <div class="activity-grid" id="activity-grid"></div>
+    </div>
+
+    <!-- Media Shelf -->
+    <div class="block block-full block-filled">
+      <div class="label label-gold">Current Media Diet</div>
+      <div class="media-shelf">
+
+        <!-- Games -->
+        <div class="media-group">
+          <div class="media-group-label label-rose">Games</div>
+          <div class="media-group-items games">
+            {{ range $.Site.Data.games }}
+            {{ if eq .list "Playing" }}
+            {{ range .games }}
+            <div class="media-card">
+              {{ $image := resources.GetRemote .cover.url }}
+              {{ $image := $image.Resize "x180 webp drawing" }}
+              <img src="{{ $image.RelPermalink }}" alt="Box art for {{ .title }}">
+              <div class="preview">
+                <img loading="lazy" src="{{ .cover.url }}" alt="Box art for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">
+                    <a href="{{ .link }}">Backlogged</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Books -->
+        <div class="media-group">
+          <div class="media-group-label label-gold">Books</div>
+          <div class="media-group-items books">
+            {{ range $.Site.Data.books }}
+            {{ if ne .list "Stalled" }}
+            {{ $books := where .books "progress" "ne" 100}}
+            {{ range $books }}
+            {{ $image := resources.GetRemote .cover }}
+            {{ $image := $image.Resize "x180 webp drawing" }}
+            <div class="media-card">
+              <a href="{{ .link }}">
+                <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
+              </a>
+              <div class="preview">
+                <img loading="lazy" src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">{{ .author }}</div>
+                  <div class="preview-detail">{{ .progress }}% read</div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Manga -->
+        <div class="media-group">
+          <div class="media-group-label label-iris">Manga</div>
+          <div class="media-group-items manga">
+            {{ range $.Site.Data.manga }}
+            {{ if eq .status "FINISHED" }}
+            {{ $image := resources.GetRemote .cover }}
+            {{ $image := $image.Resize "x180 webp drawing" }}
+            <div class="media-card">
+              <a href="{{ .url }}">
+                <img src="{{ $image.RelPermalink }}" alt="Book cover for {{ .title }}">
+              </a>
+              <div class="preview">
+                <img loading="lazy" src="{{ .cover }}" alt="Book cover for {{ .title }}">
+                <div class="preview-meta">
+                  <div class="preview-title">{{ .title }}</div>
+                  <div class="preview-subtitle">{{ .author }}</div>
+                  <div class="preview-detail">{{ .progress }} chapter{{ if gt .progress 1 }}s{{ end }} read · {{ .chapters }} chapter{{ if gt .chapters 1 }}s{{ end }} total</div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  {{ partial "preview.html" ".media-card" }}
+
+  <script>
+    (function() {
+      const PODCAST = 'podcast_episode';
+      const MANGA = 'manga';
+      const GAMING = 'gaming';
+      const EPISODE = 'episode';
+      const MOVIE = 'movie';
+      const TRACK = 'track';
+
+      const sun = document.getElementById('sun');
+
+      function getComplementaryColour(hex) {
+        const r = parseInt(hex.slice(1, 3), 16);
+        const g = parseInt(hex.slice(3, 5), 16);
+        const b = parseInt(hex.slice(5, 7), 16);
+
+        const max = Math.max(r, g, b);
+        const min = Math.min(r, g, b);
+        const l = (max + min) / 2 / 255;
+        const d = max - min;
+
+        // For achromatic colours (black, white, grays), invert the lightness
+        if (d < 20) {
+          const inverted = 255 - Math.round(l * 255);
+          const toHex = x => x.toString(16).padStart(2, '0');
+          return `#${toHex(inverted)}${toHex(inverted)}${toHex(inverted)}`;
+        }
+
+        let h;
+        const s = l > 0.5 ? d / (510 - max - min) : d / (max + min);
+        if (max === r) h = ((g - b) / d + (g < b ? 6 : 0)) / 6;
+        else if (max === g) h = ((b - r) / d + 2) / 6;
+        else h = ((r - g) / d + 4) / 6;
+
+        h = (h + 0.5) % 1;
+
+        const hue2rgb = (p, q, t) => {
+          if (t < 0) t += 1;
+          if (t > 1) t -= 1;
+          if (t < 1/6) return p + (q - p) * 6 * t;
+          if (t < 1/2) return q;
+          if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+          return p;
+        };
+
+        const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        const p = 2 * l - q;
+        const r2 = hue2rgb(p, q, h + 1/3);
+        const g2 = hue2rgb(p, q, h);
+        const b2 = hue2rgb(p, q, h - 1/3);
+
+        const toHex = x => Math.round(x * 255).toString(16).padStart(2, '0');
+        return `#${toHex(r2)}${toHex(g2)}${toHex(b2)}`;
+      }
+
+      function buildAnimatedBorder(dominantColours) {
+        let colours = dominantColours;
+        if (colours.length === 1) {
+          colours = [colours[0], getComplementaryColour(colours[0])];
+        }
+        const fullColours = [...colours, ...colours, ...colours, ...colours, ...colours, ...colours];
+        const gradientLen = colours.length * 6;
+        const stepInterval = 1 / gradientLen;
+        let previousStep = 0.0;
+        let gradientVal = "conic-gradient(";
+        for (const colour of fullColours) {
+          gradientVal += `${colour} ${previousStep}turn ${previousStep + stepInterval}turn,`;
+          previousStep += stepInterval;
+        }
+        gradientVal += ")";
+        gradientVal = gradientVal.replace(",)", ")");
+        sun.style.setProperty("--border-bg", gradientVal);
+      }
+
+      function updateSun(playing) {
+        if (!playing || playing.length === 0) {
+          sun.classList.add('sun-hidden');
+          return;
+        }
+        const priority = { [TRACK]: 0, [PODCAST]: 1, [EPISODE]: 2, [MOVIE]: 3, [GAMING]: 4 };
+        const sorted = [...playing].sort((a, b) => (priority[a.category] ?? 99) - (priority[b.category] ?? 99));
+        const nowPlaying = sorted[0];
+        if (nowPlaying && nowPlaying.dominant_colours && nowPlaying.is_active) {
+          buildAnimatedBorder(nowPlaying.dominant_colours);
+          sun.classList.remove('sun-hidden');
+        } else {
+          sun.classList.add('sun-hidden');
+        }
+      }
+
+      const categoryLabels = {
+        [MANGA]: 'Manga',
+        [GAMING]: 'Game',
+        [EPISODE]: 'TV',
+        [MOVIE]: 'Movie',
+        [TRACK]: 'Music',
+        [PODCAST]: 'Podcast'
+      };
+
+      function formatMangaTitle(title) {
+        if (title.includes(" - ")) {
+          return `Chapters ${title.replace("-", "through")}`;
+        }
+        return `Chapter ${title}`;
+      }
+
+      function relativeTime(item) {
+        const dateStr = item.updated_at || item.created_at;
+        if (!dateStr) return '';
+        const timestamp = new Date(dateStr).getTime();
+        if (isNaN(timestamp)) return '';
+        const now = Date.now();
+        const diff = (now - timestamp) / 1000;
+        if (diff < 0) return '';
+        if (diff < 60) return 'Just now';
+        if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+        if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+        if (diff < 604800) return `${Math.floor(diff / 86400)}d ago`;
+        return `${Math.floor(diff / 604800)}w ago`;
+      }
+
+      function createPreview(item, title, imgUrl) {
+        const preview = document.createElement('div');
+        preview.className = `preview preview-${item.category}`;
+        preview.innerHTML = `
+          <img src="${imgUrl}" alt="">
+          <div class="preview-meta">
+            <div class="preview-title">${title}</div>
+            <div class="preview-subtitle">${item.subtitle || ''}</div>
+          </div>
+        `;
+        return preview;
+      }
+
+      function setupPreviewHandlers(card, preview) {
+        card.addEventListener('click', e => {
+          e.stopPropagation();
+          const wasActive = preview.classList.contains('active');
+          document.querySelectorAll('.preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+          if (!wasActive) {
+            preview.classList.add('active', 'clicked');
+          }
+        });
+
+        card.addEventListener('mouseenter', e => {
+          card.classList.add('hovered');
+          if (e.shiftKey && !preview.classList.contains('clicked')) {
+            document.querySelectorAll('.preview.active').forEach(p => {
+              if (!p.classList.contains('clicked')) p.classList.remove('active');
+            });
+            preview.classList.add('active');
+          }
+        });
+
+        card.addEventListener('mouseleave', e => {
+          card.classList.remove('hovered');
+          if (!e.shiftKey && !preview.classList.contains('clicked')) {
+            preview.classList.remove('active');
+          }
+        });
+
+        // Click on preview to close
+        preview.addEventListener('click', e => {
+          e.stopPropagation();
+          preview.classList.remove('active', 'clicked');
+        });
+      }
+
+      function renderActivity(playing, history) {
+        const container = document.getElementById('activity-grid');
+        container.innerHTML = '';
+
+        const activePlaying = playing ? playing.filter(p => p.is_active) : [];
+        const activeIds = new Set(activePlaying.map(p => p.id));
+        const filteredHistory = history.filter(h => !activeIds.has(h.id));
+        const items = [...activePlaying, ...filteredHistory].slice(0, 5);
+
+        items.forEach((item, index) => {
+          const isNowPlaying = activeIds.has(item.id) && item.is_active;
+          let title = item.category === MANGA ? formatMangaTitle(item.title) : item.title;
+
+          const card = document.createElement('div');
+          card.className = `activity-card cat-${item.category}${isNowPlaying ? ' now-playing' : ''}`;
+
+          const imgUrl = item.image.startsWith('http') ? item.image : "https://gunslinger.utf9k.net" + item.image;
+
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          img.alt = title;
+          card.appendChild(img);
+
+          const preview = createPreview(item, title, imgUrl);
+          card.appendChild(preview);
+
+          setupPreviewHandlers(card, preview);
+
+          const time = isNowPlaying ? 'Now playing' : relativeTime(item);
+          const categoryLabel = categoryLabels[item.category] || item.category;
+          const meta = document.createElement('div');
+          meta.className = 'activity-meta';
+          meta.innerHTML = `
+            <div class="activity-category">${categoryLabel}</div>
+            <div class="activity-subtitle">${item.subtitle || ''}</div>
+            <div class="activity-title">${title}</div>
+            ${time ? `<div class="activity-time">${time}</div>` : ''}
+          `;
+
+          card.appendChild(meta);
+          container.appendChild(card);
+        });
+      }
+
+      function fetchData() {
+        Promise.all([
+          fetch("https://gunslinger.utf9k.net/api/v4/playing").then(res => res.json()),
+          fetch("https://gunslinger.utf9k.net/api/v4/history").then(res => res.json())
+        ])
+          .then(([playing, history]) => {
+            updateSun(playing);
+            renderActivity(playing, history);
+          })
+          .catch(err => console.error(`Failed to fetch activity: ${err}`));
+      }
+
+      function initEventSource() {
+        return new EventSource("https://gunslinger.utf9k.net/events?stream=playback");
+      }
+
+      let eventSource = initEventSource();
+
+      eventSource.onmessage = function(event) {
+        let data = JSON.parse(event.data);
+        if (data === null) {
+          fetchData();
+          return;
+        }
+        if (data.length > 0 && data.every(item => item.started_at < 0)) return;
+        fetchData();
+      };
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          eventSource.close();
+        } else {
+          fetchData();
+          eventSource = initEventSource();
+        }
+      });
+
+      // Global handlers
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.activity-card.hovered').forEach(card => {
+            const preview = card.querySelector('.preview');
+            if (preview && !preview.classList.contains('clicked')) {
+              preview.classList.add('active');
+            }
+          });
+        }
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.activity-card .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        }
+      });
+
+      document.addEventListener('keyup', e => {
+        if (e.key === 'Shift') {
+          document.querySelectorAll('.activity-card .preview.active').forEach(p => {
+            if (!p.classList.contains('clicked')) p.classList.remove('active');
+          });
+        }
+      });
+
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.activity-card')) {
+          document.querySelectorAll('.activity-card .preview.active').forEach(p => p.classList.remove('active', 'clicked'));
+        }
+      });
+
+      fetchData();
+    })();
+  </script>
+{{ end }}

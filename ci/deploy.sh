@@ -2,6 +2,6 @@
 
 set -euxo pipefail
 
-deno task build:deps
-deno task build:metadata
-deno task build
+./ci/install.sh
+./ci/genmetadata.sh
+bun run build

@@ -10,7 +10,7 @@ yaml.default_flow_style = False
 yaml.width = 4096 # avoid line wrap
 yaml.representer.add_representer(type(None), represent_none)
 
-DATA_FILE = "_data/books.yml"
+DATA_FILE = "data/books.yml"
 
 field_names = [
     'Title',
