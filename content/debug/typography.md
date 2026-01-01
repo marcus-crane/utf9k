@@ -100,6 +100,61 @@ with open("file.txt", "w") as file:
         file.write(data)
 ```
 
+## Code Blocks with Shiki Notation
+
+Here are some extensions provided by Shiki
+
+### Diffing
+
+```js
+function blah(name) {
+  console.log("Hello") // [!code --]
+  console.log(`Hello ${name}`) // [!code ++]
+}
+```
+
+### Line Highlighting
+
+```js
+function blah(name) {
+  console.log(`Hello ${name}`) // [!code highlight]
+}
+```
+
+### Focus
+
+```js
+function blah(name) {
+  console.log(`Hello ${name}`) // [!code focus]
+}
+```
+
+### Error levels
+
+```js
+function blah(name) {
+  console.warn("Hello") // [!code warning]
+  console.error("Goodbye") // [!code error]
+}
+```
+
+### Line Highlighting - Native
+
+```js {2,3}
+function blah(name) {
+  console.warn("Hello")
+  console.error("Goodbye")
+}
+```
+
+### Word Highlighting - Native
+
+```js /Hello/
+function blah(name) {
+  console.warn("Hello World!")
+}
+```
+
 ## Links
 
 This is a paragraph containing a [link](https://example.com) using Markdown syntax.

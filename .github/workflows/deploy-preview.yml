@@ -27,7 +27,7 @@ jobs:
           NODE_VERSION: ${{ steps.setup-node.outputs.node-version }}
           PYTHON_VERSION: ${{ steps.setup-python.outputs.python-version }}
       - run: bun install
-      - run: hugo
+      - run: bun run build
       - name: Publish to Bunny Edge CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
         with:

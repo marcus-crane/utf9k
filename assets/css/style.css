@@ -574,6 +574,63 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   white-space: pre;
 }
 
+/* Shiki syntax highlighting theme switching */
+.content pre.shiki {
+  background-color: var(--shiki-light-bg);
+}
+
+.content pre.shiki,
+.content pre.shiki span {
+  color: var(--shiki-light);
+}
+
+body.dark .content pre.shiki {
+  background-color: var(--shiki-dark-bg);
+}
+
+body.dark .content pre.shiki,
+body.dark .content pre.shiki span {
+  color: var(--shiki-dark);
+}
+
+/* Shiki transformer styles */
+.content pre.shiki .line.diff.add {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.content pre.shiki .line.diff.remove {
+  background-color: rgba(244, 63, 94, 0.2);
+}
+
+.content pre.shiki .line.highlighted {
+  background-color: rgba(101, 117, 133, 0.16);
+}
+
+.content pre.shiki .line.highlighted.error {
+  background-color: rgba(244, 63, 94, 0.2);
+}
+
+.content pre.shiki .line.highlighted.warning {
+  background-color: rgba(234, 179, 8, 0.2);
+}
+
+.content pre.shiki.has-focused .line:not(.focused) {
+  opacity: 0.4;
+  filter: blur(1px);
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+.content pre.shiki.has-focused:hover .line:not(.focused) {
+  opacity: 1;
+  filter: none;
+}
+
+.content pre.shiki .highlighted-word {
+  background-color: rgba(101, 117, 133, 0.3);
+  padding: 0.1rem 0.2rem;
+  border-radius: 2px;
+}
+
 .content blockquote {
   position: relative;
   border: var(--border-normal) solid var(--overlay);
