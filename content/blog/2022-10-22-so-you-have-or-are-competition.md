@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2022-10-22T22:00:00+13:00
 description: A series of questions that I would ask my past self in certain awkward situations
 slug: so-you-have-or-are-competition

@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-09-05T22:20:00+13:00
 description: The irony of relaxing under pressure
 slug: entering-the-machine

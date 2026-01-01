@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I pour over some routing tables
 lastmod: 2024-01-01
 slug: macos-view-filter-rules

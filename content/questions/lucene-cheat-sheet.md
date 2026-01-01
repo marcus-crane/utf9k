@@ -1,5 +1,4 @@
 ---
-category: questions
 description: How does that query go again?
 lastmod: 2024-11-03
 lastrev: 2025-01-27

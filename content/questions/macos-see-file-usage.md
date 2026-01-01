@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how introspect filesystem usage on macOS
 lastmod: 2021-04-09
 lastrev: 2025-03-24

@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-05-08T11:45:00+13:00
 description: Internal to me but maybe also internal to you
 slug: internal-inconsistencies-about-time-travel

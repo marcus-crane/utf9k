@@ -1,7 +1,6 @@
 ---
 title: Typography
 slug: typography
-category: debug
 description: This page contains various markdown blocks for testing typographic rendering
 layout: page.vto
 ---

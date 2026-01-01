@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I wage war against .DS_Store
 lastmod: 2021-11-01
 lastrev: 2025-03-17

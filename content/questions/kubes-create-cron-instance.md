@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to trigger a Kubernetes cronjob on demand
 lastmod: 2021-06-24
 slug: kubes-create-cron-instance

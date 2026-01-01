@@ -1,5 +1,4 @@
 ---
-category: questions
 description: Who needs mitmproxy when you can just ask the browser nicely
 lastmod: 2024-11-19
 lastrev: 2025-02-20

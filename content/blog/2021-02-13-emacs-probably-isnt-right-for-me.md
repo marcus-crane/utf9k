@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-02-13T17:41:00+13:00
 description: My confessions as a tooling alcoholic
 slug: emacs-probably-isnt-right-for-me

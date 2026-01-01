@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I have more data than I know what to do with
 lastmod: 2024-01-01
 lastrev: 2025-02-08

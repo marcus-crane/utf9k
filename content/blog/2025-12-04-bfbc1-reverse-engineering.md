@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-12-04T23:30:00+13:00
 description: A good game and a good archeological dig
 slug: bfbc1-reverse-engineering

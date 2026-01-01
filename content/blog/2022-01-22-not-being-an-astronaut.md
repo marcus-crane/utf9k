@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2022-01-22T16:40:00+13:00
 description: Some thoughts on what career I thought I might like as a kid
 slug: not-being-an-astronaut

@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2022-08-08T19:00:00+13:00
 description: In which we take a brief tour in all the ways that metrics may not accurately capture reality
 slug: sampling-all-the-way-down

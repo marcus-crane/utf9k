@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I think about Azure, which is a mistake in itself
 lastmod: 2021-06-24
 slug: azure-regions-alike

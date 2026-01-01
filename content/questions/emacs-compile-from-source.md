@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I recall how to compile an operating system of a text editor
 lastmod: 2021-06-24
 slug: emacs-compile-from-source

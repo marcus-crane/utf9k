@@ -1,5 +1,4 @@
 ---
-category: projects
 description: Three years of towing data being simulated all at once
 ongoing: false
 slug: towing

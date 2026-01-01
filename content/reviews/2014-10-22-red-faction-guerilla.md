@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2014-10-22T05:46:53+13:00
 description: "Oh geez, I'm super biased towards Red Faction: Guerilla! It's one of my favourite games and I think you should check it out!"
 slug: red-faction-guerilla

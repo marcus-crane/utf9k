@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2020-10-11T00:00:00+13:00
 description: As I work through deleting a bunch of accounts, I note down the various issues that make it harder than it should be
 slug: digital-spring-cleaning

@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to pipe from the macOS clipboard into terminal applications
 lastmod: 2021-06-17
 lastrev: 2025-02-26

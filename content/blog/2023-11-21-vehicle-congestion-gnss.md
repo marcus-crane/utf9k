@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2023-11-21T18:00:00+13:00
 description: Ironically, I don't actually drive currently so I'll be fine
 slug: vehicle-congestion-gnss

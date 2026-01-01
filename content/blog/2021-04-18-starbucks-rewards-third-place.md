@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-04-18T13:21:00+13:00
 description: A post in which I ramble about Starbucks and how if you squint, it's a place that some people treat as their second home.
 slug: starbucks-rewards-third-place

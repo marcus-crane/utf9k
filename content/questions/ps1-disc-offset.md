@@ -1,7 +1,6 @@
 ---
 aliases:
   - /notes/ps1-disc-layout/
-category: questions
 description: In which I remind myself how PS1 discs offset their contents
 lastmod: 2021-06-24
 lastrev: 2025-03-10

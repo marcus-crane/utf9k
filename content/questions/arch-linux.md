@@ -1,5 +1,4 @@
 ---
-category: questions
 description: Did I tell you I use Arch? Here are some random snippets I found useful
 lastmod: 2024-11-03
 slug: arch-linux

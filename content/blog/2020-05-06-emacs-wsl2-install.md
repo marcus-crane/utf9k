@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2020-05-06T00:00:00+13:00
 description: As if life wasn't already hard enough, we can add more Windows into the mix
 slug: emacs-wsl2-install

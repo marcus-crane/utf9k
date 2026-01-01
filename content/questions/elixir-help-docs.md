@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I help myself to help myself
 lastmod: 2021-06-24
 lastrev: 2025-03-05

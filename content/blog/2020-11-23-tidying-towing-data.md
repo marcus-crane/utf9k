@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2020-11-23T00:00:00+13:00
 description: A step by step walkthrough on how I cleaned up some data as part of a side project
 slug: tidying-towing-data

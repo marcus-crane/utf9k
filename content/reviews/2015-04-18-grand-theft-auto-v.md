@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-04-18T14:30:39+13:00
 description: This isn't really about GTA V. Just to say that I haven't been playing anything else!
 slug: grand-theft-auto-v

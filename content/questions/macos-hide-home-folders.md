@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to hide otherwise unused home folders
 lastmod: 2020-09-15
 slug: macos-hide-home-folders

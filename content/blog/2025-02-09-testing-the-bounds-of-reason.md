@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-02-09T16:10:00+13:00
 description: Who could have guessed that I could be wrong on the internet
 slug: testing-the-bounds-of-reason

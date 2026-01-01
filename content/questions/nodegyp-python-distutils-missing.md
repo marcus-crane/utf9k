@@ -1,5 +1,4 @@
 ---
-category: questions
 description: I should have just stayed on Python 2 (kidding!)
 lastmod: 2024-11-13
 lastrev: 2025-02-12

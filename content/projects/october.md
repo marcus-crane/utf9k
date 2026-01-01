@@ -1,5 +1,4 @@
 ---
-category: projects
 description: A project of mine that allows Kobo users to sync their highlights to Readwise. It solves a problem in my workflow and I use it quite regularly.
 ongoing: true
 slug: october

@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to import a Postgres database
 lastmod: 2021-06-24
 lastrev: 2025-04-23

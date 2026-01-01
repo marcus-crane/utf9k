@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-04-03T22:00:00+13:00
 description: Well, some types of cringe are just bad I'm sure
 slug: cringing-is-growing

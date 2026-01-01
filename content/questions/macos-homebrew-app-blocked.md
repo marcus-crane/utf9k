@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to remove the quarantine flag
 lastmod: 2020-09-09
 slug: macos-homebrew-app-blocked

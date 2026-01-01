@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2014-10-13T19:19:55+13:00
 description: A game that is very quirky, nonsensical even, with fairly average gameplay. Despite that, it can still be enjoyable.
 slug: killer-is-dead

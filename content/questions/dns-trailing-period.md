@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I note the existence of a sneaky period
 lastmod: 2021-06-24
 lastrev: 2025-02-15

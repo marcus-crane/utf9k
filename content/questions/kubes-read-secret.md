@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to read the contents of a Kubernetes secret
 lastmod: 2021-06-24
 slug: kubes-read-secret

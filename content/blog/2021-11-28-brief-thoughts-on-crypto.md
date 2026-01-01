@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-11-28T15:04:00+13:00
 description: "It really is what it says on the tin: I have some thoughts about crypto"
 slug: brief-thoughts-on-crypto

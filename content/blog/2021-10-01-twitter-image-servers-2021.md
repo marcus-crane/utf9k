@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-10-01T12:18:00+13:00
 description: Throughout the year of 2021, I have run into a number of issues with Twitter's image servers
 slug: twitter-image-servers-2021

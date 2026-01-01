@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2019-03-20T00:00:00+13:00
 description: It's surprising that the idea of an emergency service is even viable, considering how many people are doing things at any given time
 slug: future-of-emergency-services

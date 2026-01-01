@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-01-23T21:06:15+13:00
 description: Samanosuke fights to banish the demonic Gemna from an alternate history Feudal Japan where Nobunaga died 20 years too early.
 slug: onimusha-warlords

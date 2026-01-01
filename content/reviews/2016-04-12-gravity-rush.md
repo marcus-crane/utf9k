@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2016-04-12T02:30:12+13:00
 description: A review for Gravity Rush
 slug: gravity-rush

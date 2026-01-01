@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-05-04T22:31:12+13:00
 description: "A review for Lili: Child of Geos"
 slug: lili-child-of-geos

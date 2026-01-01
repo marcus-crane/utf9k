@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I will probably ignore the results and write inefficient software
 lastmod: 2024-01-01
 slug: golang-stack-heap-vis

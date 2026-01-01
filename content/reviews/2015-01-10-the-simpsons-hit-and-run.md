@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-01-10T17:58:26+13:00
 description: "Robot wasps? Strange black vans? New Buzz Cola? Something fishy is happening in Springfield. Find out in The Simpsons: Hit & Run."
 slug: the-simpsons-hit-and-run

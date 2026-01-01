@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2016-01-01T00:01:03+13:00
 description: A review for Life is Strange
 slug: life-is-strange

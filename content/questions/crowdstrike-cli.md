@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I fumble trying to use a security tool
 lastmod: 2025-03-18
 lastrev: 2025-05-08

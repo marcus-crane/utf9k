@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-08-12T20:17:00+13:00
 description: Did you know you can change Git attributes based on what folder you're in?
 slug: conditional-gitconfig

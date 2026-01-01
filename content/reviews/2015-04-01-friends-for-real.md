@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-04-01T17:00:58+13:00
 description: Help me! I'm trapped in this eternal hell!
 slug: friends-for-real

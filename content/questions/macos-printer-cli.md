@@ -1,5 +1,4 @@
 ---
-category: questions
 description: Printing without a display seems counter-intuitive
 lastmod: 2021-07-01
 lastrev: 2025-03-24

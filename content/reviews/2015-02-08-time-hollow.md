@@ -1,5 +1,4 @@
 ---
-category: reviews
 date: 2015-02-08T02:12:21+13:00
 description: Time Hollow is a very enjoyable game about the consequences of time manipulation. I'd recommend it for those who like the concept of time travel!
 slug: time-hollow

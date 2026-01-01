@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2017-12-18T00:00:00+13:00
 description: I ran a Wiki for a little while and here's what I learned
 slug: wiki-thoughts

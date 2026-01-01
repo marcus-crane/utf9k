@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-02-02T23:55:00+13:00
 description: Won't someone just fix the damn button!
 slug: receipt-forest

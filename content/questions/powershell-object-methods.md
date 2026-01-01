@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to introspect objects in Powershell
 lastmod: 2021-06-25
 slug: powershell-object-methods

@@ -1,5 +1,4 @@
 ---
-category: questions
 description: A small Javascript snippet useful for detecting if the host frame is an iframe
 lastmod: 2021-06-24
 slug: js-detect-iframe-parent

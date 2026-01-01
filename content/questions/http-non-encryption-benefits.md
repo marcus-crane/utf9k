@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I capture a bit about the benefits of HTTPS that aren't related to security
 lastmod: 2021-06-25
 slug: http-non-encryption-benefits

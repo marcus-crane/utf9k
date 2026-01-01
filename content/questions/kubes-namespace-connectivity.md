@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I remind myself how to quickly test network connectivity within a Kubernetes namespace
 lastmod: 2021-05-27
 slug: kubes-namespace-connectivity

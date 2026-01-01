@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-02-21T22:48:00+13:00
 description: The macOS and iOS address book leaves a bit to be desired
 slug: address-book-sorting

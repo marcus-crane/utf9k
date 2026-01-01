@@ -1,5 +1,4 @@
 ---
-category: questions
 description: In which I squint harder at elisp gibberish
 lastmod: 2021-06-24
 slug: emacs-list-backtick

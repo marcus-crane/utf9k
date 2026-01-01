@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-02-11T17:00:00+13:00
 description: I mean, it's what it says on the tin!
 slug: zettelkasten-blog-a-good-idea

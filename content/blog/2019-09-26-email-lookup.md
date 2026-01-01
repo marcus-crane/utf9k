@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2019-09-26T00:00:00+13:00
 description: There are some tricks you can use to figure out if an email address is legit
 slug: email-lookup

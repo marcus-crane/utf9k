@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2020-12-01T00:00:00+13:00
 description: Is software reliable? Probably not
 slug: solid-systems

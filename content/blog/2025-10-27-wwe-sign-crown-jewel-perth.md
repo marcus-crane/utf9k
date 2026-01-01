@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-10-27T21:00:00+13:00
 description: My first ever wrestling sign
 slug: wwe-sign-crown-jewel-perth

@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2025-09-20T10:20:00+13:00
 description: Small tweaks can make a big difference
 slug: small-tweaks

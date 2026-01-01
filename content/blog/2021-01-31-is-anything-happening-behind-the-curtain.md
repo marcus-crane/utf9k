@@ -1,5 +1,4 @@
 ---
-category: blog
 date: 2021-01-31T15:41:00+13:00
 description: The difference between nothing and something depends on whether the curtain has been raised yet
 slug: is-anything-happening-behind-the-curtain
