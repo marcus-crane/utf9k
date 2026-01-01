@@ -1908,18 +1908,37 @@ a.post-link:hover {
     ========================================== */
 
 .activity-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
   gap: 0.6rem;
+  overflow: hidden;
 }
 
 .activity-card {
+  flex: 1 1 120px;
+  min-width: 120px;
   position: relative;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   cursor: pointer;
   transition: border-color 0.15s, transform 0.15s;
   border: 2px solid var(--overlay);
+}
+
+.activity-card.skeleton {
+  background: var(--overlay);
+  cursor: default;
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.activity-error {
+  color: var(--subtle);
+  font-size: 0.9rem;
+  padding: 1rem 0;
 }
 
 .activity-card.cat-manga { border-color: var(--love); }

@@ -77,7 +77,14 @@
     <!-- Activity -->
     <div class="block block-full block-filled" id="activity-section">
       <div class="label label-iris">Latest Activity</div>
-      <div class="activity-grid" id="activity-grid"></div>
+      <div class="activity-grid" id="activity-grid">
+        <div class="activity-card skeleton"></div>
+        <div class="activity-card skeleton"></div>
+        <div class="activity-card skeleton"></div>
+        <div class="activity-card skeleton"></div>
+        <div class="activity-card skeleton"></div>
+        <div class="activity-card skeleton"></div>
+      </div>
     </div>
 
     <!-- Media Shelf -->
@@ -341,14 +348,40 @@
         });
       }
 
+      let cachedPlaying = null;
+      let cachedHistory = null;
+      let lastItemCount = 0;
+      let activityLoaded = false;
+      const CARD_WIDTH = 120;
+      const GAP = 9.6; // 0.6rem at 16px base
+      const LOAD_TIMEOUT = 10000;
+
+      function getItemCount() {
+        const container = document.getElementById('activity-grid');
+        const containerWidth = container.offsetWidth;
+        return Math.floor((containerWidth + GAP) / (CARD_WIDTH + GAP));
+      }
+
+      function renderError() {
+        const container = document.getElementById('activity-grid');
+        container.innerHTML = '<div class="activity-error">It looks like my activity backend server is having trouble! You\'re missing out on a cool feature sadly.</div>';
+      }
+
       function renderActivity(playing, history) {
+        if (playing !== undefined) cachedPlaying = playing;
+        if (history !== undefined) cachedHistory = history;
+        if (!cachedHistory) return;
+
+        activityLoaded = true;
         const container = document.getElementById('activity-grid');
         container.innerHTML = '';
 
-        const activePlaying = playing ? playing.filter(p => p.is_active) : [];
+        const activePlaying = cachedPlaying ? cachedPlaying.filter(p => p.is_active) : [];
         const activeIds = new Set(activePlaying.map(p => p.id));
-        const filteredHistory = history.filter(h => !activeIds.has(h.id));
-        const items = [...activePlaying, ...filteredHistory].slice(0, 5);
+        const filteredHistory = cachedHistory.filter(h => !activeIds.has(h.id));
+        const maxItems = getItemCount();
+        lastItemCount = maxItems;
+        const items = [...activePlaying, ...filteredHistory].slice(0, maxItems);
 
         items.forEach((item, index) => {
           const isNowPlaying = activeIds.has(item.id) && item.is_active;
@@ -451,7 +484,16 @@
         }
       });
 
+      let resizeTimeout;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          if (getItemCount() !== lastItemCount) renderActivity();
+        }, 100);
+      });
+
       fetchData();
+      setTimeout(() => { if (!activityLoaded) renderError(); }, LOAD_TIMEOUT);
     })();
   </script>
 {{ end }}
