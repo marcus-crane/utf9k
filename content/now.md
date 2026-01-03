@@ -1,5 +1,5 @@
 ---
-description: Usually I am up to Stuff™️ and this page may hold the answers you seek
+description: Usually I am up to stuff and this page may hold the answers you seek
 lastmod: 2025-10-25
 slug: now
 tags:

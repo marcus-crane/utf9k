@@ -2,7 +2,6 @@
 category: thanks
 description: This website was built on the shoulders of giants. This page names a number of them.
 lastmod: 2023-06-16
-layout: markdown.vto
 slug: thanks
 tags:
   - meta
