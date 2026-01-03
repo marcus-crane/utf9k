@@ -1,8 +1,16 @@
 {{ define "main" }}
+{{ partial "inline-header.html" . }}
+
+<div class="article-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</div>
+
 <div class="games-page">
-  <div class="article-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  <div class="article-wrapper">
+    <div class="content">
+      {{ partial "settings-sidebar.html" . }}
+    </div>
   </div>
 
   <div class="filter-bar">

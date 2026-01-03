@@ -113,7 +113,7 @@ body.dark {
   --text: #e0def4;
   --love: #eb6f92;
   --gold: #f6c177;
-  --rose: #ebbcba;
+  --rose: #a35c58;
   --pine: #31748f;
   --foam: #9ccfd8;
   --iris: #c4a7e7;
@@ -142,12 +142,12 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     ========================================== */
 .layout {
   display: grid;
-  grid-template-columns: 1fr; /* TEMP: was 220px 1fr */
+  grid-template-columns: 1fr;
   min-height: 100vh;
 }
 
 .sidebar {
-  display: none; /* TEMP */
+  display: none;
   background: var(--surface);
   border-right: 2px solid var(--overlay);
   padding: 1.5rem 0 0 0;
@@ -164,6 +164,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
   .sidebar {
+    display: flex;
     position: fixed;
     left: -240px;
     transition: left 0.2s;
@@ -397,7 +398,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     INLINE HEADER (for sidebar-less layout)
     ========================================== */
 .inline-header {
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
   max-width: 600px;
   width: 100%;
 }
@@ -506,16 +507,14 @@ body.dark .inline-header .speech-bubble::before {
 }
 
 .article-header h1 {
-  font-size: 1.75rem;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 .article-header .desc {
   color: var(--subtle);
-  margin-top: 0.5rem;
   font-size: 0.85rem;
 }
 
@@ -609,24 +608,29 @@ body.dark .inline-header .speech-bubble::before {
   text-transform: lowercase;
   letter-spacing: 0.15em;
   color: var(--muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
-.toc-left ul {
+.toc-left nav#TableOfContents {
+  margin-bottom: 1rem;
+}
+
+.content aside.toc-left ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.toc-left li {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
+.content aside.toc-left li {
+  margin: 0;
+  padding: 0;
 }
 
 .content aside.toc-left a {
   color: var(--subtle);
   text-decoration: none;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  line-height: 1.6;
   display: block;
   border-bottom: none;
 }
@@ -635,17 +639,17 @@ body.dark .inline-header .speech-bubble::before {
   color: var(--foam);
 }
 
-.toc-left ul ul {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+.content aside.toc-left ul ul {
+  margin: 0;
+  padding-left: 0.5rem;
 }
 
-.toc-left ul ul a {
+.content aside.toc-left ul ul a {
   font-size: 0.7rem;
   color: var(--muted);
 }
 
-.toc-left ul ul a:hover {
+.content aside.toc-left ul ul a:hover {
   color: var(--foam);
 }
 
@@ -667,7 +671,7 @@ body.dark .inline-header .speech-bubble::before {
 .content {
   position: relative;
   font-size: var(--text-lg);
-  line-height: var(--leading-relaxed);
+  line-height: var(--leading-normal);
   color: var(--subtle);
   max-width: 600px;
   width: 100%;
@@ -1477,9 +1481,38 @@ abbr {
 
 .toc-left .theme-toggle button {
   flex: none;
-  padding: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
   border-radius: 3px;
   background: transparent;
+}
+
+.toc-left:hover .theme-toggle button.active {
+  background: var(--overlay);
+}
+
+.toc-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.toc-nav a {
+  color: var(--subtle);
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  border-bottom: none;
+}
+
+.toc-nav a:hover {
+  color: var(--foam);
+}
+
+.toc-nav a.active {
+  color: var(--love);
 }
 
 .footer-content {
@@ -1512,13 +1545,12 @@ abbr {
     ========================================== */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-2xl);
+  max-width: 600px;
+  width: 100%;
 }
 
-@media (max-width: 700px) {
-  .grid { grid-template-columns: 1fr; }
-}
 
 .block {
   border: var(--border-normal) solid var(--overlay);
@@ -1545,10 +1577,11 @@ abbr {
 .label-iris { border-color: var(--iris); color: var(--iris); }
 .label-pine { border-color: var(--pine); color: var(--pine); }
 .label-rose { border-color: var(--rose); color: var(--rose); }
+body.dark .label-rose { border-color: #ebbcba; color: #ebbcba; }
 
 .welcome p {
   margin-bottom: var(--space-lg);
-  line-height: var(--leading-relaxed);
+  line-height: var(--leading-normal);
   color: var(--subtle);
   font-size: var(--text-md);
 }
@@ -1745,7 +1778,8 @@ abbr {
   align-items: center;
 }
 
-.posts-list li:last-child { border-bottom: none; }
+.posts-list li:first-child { padding-top: 0; }
+.posts-list li:last-child { padding-bottom: 0; border-bottom: none; }
 
 .posts-list a {
   color: var(--subtle);
@@ -1794,6 +1828,7 @@ abbr {
 .media-group-label.label-gold { color: var(--gold); }
 .media-group-label.label-iris { color: var(--iris); }
 .media-group-label.label-rose { color: var(--rose); }
+body.dark .media-group-label.label-rose { color: #ebbcba; }
 
 .media-group-items {
   display: flex;
@@ -1820,7 +1855,15 @@ abbr {
   margin-bottom: 2rem;
 }
 
+.list-content {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 .list-group {
+  max-width: 600px;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
@@ -2049,6 +2092,12 @@ a.post-link:hover {
   width: 320px;
 }
 
+.books-page,
+.games-page {
+  width: 100%;
+  max-width: 600px;
+}
+
 .preview > img {
   width: 100%;
   height: auto;
@@ -2156,18 +2205,20 @@ a.post-link:hover {
   background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 .activity-category {
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #fff;
   font-weight: 600;
-  padding: 0.15rem 0.35rem;
-  border-radius: 3px;
+  padding: 0.25rem 0.35rem 0.1rem;
+  border-radius: 2px;
   width: fit-content;
+  line-height: 1;
+  margin-bottom: 0.2rem;
 }
 
 .activity-card.cat-manga .activity-category { background: var(--love); }
@@ -2179,7 +2230,7 @@ a.post-link:hover {
 
 .activity-title {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.55rem;
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
@@ -2198,7 +2249,6 @@ a.post-link:hover {
 .activity-time {
   color: rgba(255,255,255,0.5);
   font-size: 0.6rem;
-  margin-top: 0.1rem;
 }
 
 .activity-card .preview {

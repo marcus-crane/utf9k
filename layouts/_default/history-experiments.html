@@ -1,4 +1,12 @@
 {{ define "main" }}
+{{ partial "inline-header.html" . }}
+
+<div class="article-wrapper">
+  <div class="content">
+    {{ partial "settings-sidebar.html" . }}
+  </div>
+</div>
+
 <div class="experiments-page">
   <h1>History Display Experiments</h1>
   <p class="experiments-intro">Four different approaches to displaying playback history. Click thumbnails to preview, shift+hover for quick preview.</p>

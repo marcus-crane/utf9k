@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
   {{ if .Params.showTitle | default true }}
   <div class="article-header">
     <h1>{{ .Title }}</h1>
@@ -12,7 +14,10 @@
   </div>
   {{ end }}
 
-  <article class="content">
-    {{ .Content }}
-  </article>
+  <div class="article-wrapper">
+    <article class="content">
+      {{ partial "settings-sidebar.html" . }}
+      {{ .Content }}
+    </article>
+  </div>
 {{ end }}

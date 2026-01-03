@@ -1,11 +1,19 @@
 {{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
   <div class="article-header">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
   </div>
 
+  <div class="article-wrapper">
+    <article class="content">
+      {{ partial "settings-sidebar.html" . }}
+    </article>
+  </div>
+
   {{ with .Content }}
-  <div class="content content-spaced">
+  <div class="list-content">
     {{ . }}
   </div>
   {{ end }}

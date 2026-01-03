@@ -1,4 +1,12 @@
 {{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
+  <div class="article-wrapper">
+    <div class="content">
+      {{ partial "settings-sidebar.html" . }}
+    </div>
+  </div>
+
   <div id="sun" class="sun-hidden"></div>
 
   <style>
