@@ -2,7 +2,6 @@
 title: Typography
 slug: typography
 description: This page contains various markdown blocks for testing typographic rendering
-layout: page.vto
 ---
 
 This page is used to test out colour schemes of various elements
