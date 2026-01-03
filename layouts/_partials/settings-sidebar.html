@@ -6,17 +6,8 @@
 
   <div class="toc-title">Explore</div>
   <nav class="toc-nav">
-    {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active"{{ end }}>{{ .Name }}</a>
-    {{ end }}
-    {{ range .Site.Menus.garden }}
-      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "garden" .) ($.HasMenuCurrent "garden" .) }} class="active"{{ end }}>{{ .Name }}</a>
-    {{ end }}
-    {{ range .Site.Menus.media }}
-      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "media" .) ($.HasMenuCurrent "media" .) }} class="active"{{ end }}>{{ .Name }}</a>
-    {{ end }}
-    {{ range .Site.Menus.meta }}
-      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "meta" .) ($.HasMenuCurrent "meta" .) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ range .Site.Menus.explore }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 
