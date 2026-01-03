@@ -18,22 +18,67 @@
   </div>
   {{ end }}
 
+  {{ $showDates := .Params.showDates | default true }}
+  {{ $dateFormat := .Params.dateFormat | default "Jan 02" }}
+  {{ $groupBy := .Params.groupBy | default "date" }}
   {{ $pages := where site.RegularPages "Section" .Section }}
 
-  {{ range $pages.GroupByDate "2006" }}
-  <div class="list-group">
-    <div class="group-label">{{ .Key }}</div>
-    <div class="post-table">
-      {{ range .Pages }}
-      <div class="post-row">
-        <div class="post-date">{{ .Date.Format "Jan 02" }}</div>
-        <a class="post-link" href="{{ .RelPermalink }}">
-          {{ .Title }}
-          <span class="arrow">»</span>
-        </a>
+  {{ if eq $groupBy "none" }}
+    {{/* No grouping, flat list sorted by title */}}
+    <div class="list-group">
+      <div class="post-table">
+        {{ range $pages.ByTitle }}
+        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
+          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
+          <a class="post-link" href="{{ .RelPermalink }}">
+            {{ .Title }}
+            <span class="arrow">»</span>
+          </a>
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
-  </div>
+  {{ else if eq $groupBy "param" }}
+    {{/* Group by a front matter param (e.g., "ongoing") */}}
+    {{ $param := .Params.groupByParam }}
+    {{ $order := .Params.groupByOrder | default "desc" }}
+    {{ $labels := .Params.groupLabels }}
+    {{ range $pages.GroupByParam $param $order }}
+    <div class="list-group">
+      {{ $labelKey := printf "%v" .Key }}
+      {{ $label := index $labels $labelKey | default .Key }}
+      <div class="group-label">{{ $label }}</div>
+      <div class="post-table">
+        {{ range .Pages }}
+        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
+          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
+          <a class="post-link" href="{{ .RelPermalink }}">
+            {{ .Title }}
+            <span class="arrow">»</span>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  {{ else }}
+    {{/* Default: group by date */}}
+    {{ $dateGroupFormat := .Params.groupByDateFormat | default "2006" }}
+    {{ range $pages.GroupByDate $dateGroupFormat }}
+    <div class="list-group">
+      <div class="group-label">{{ .Key }}</div>
+      <div class="post-table">
+        {{ range .Pages }}
+        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
+          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
+          <a class="post-link" href="{{ .RelPermalink }}">
+            {{ .Title }}
+            <span class="arrow">»</span>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
   {{ end }}
 {{ end }}
