@@ -485,6 +485,9 @@ body.dark .inline-header .speech-bubble::before {
   .inline-header .speech-bubble {
     right: 50%;
     transform: translateX(50%);
+    white-space: normal;
+    max-width: calc(100vw - 2rem);
+    text-align: center;
   }
   .inline-header .speech-bubble::before {
     right: 50%;
