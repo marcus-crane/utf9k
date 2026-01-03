@@ -18,12 +18,9 @@ menus:
     - name: Home
       pageRef: /
       weight: 10
-    - name: About
-      pageRef: /about
-      weight: 20
     - name: Blog
       pageRef: /blog
-      weight: 30
+      weight: 20
   garden:
     - name: Projects
       pageRef: /projects
@@ -39,12 +36,15 @@ menus:
       pageRef: /games
       weight: 20
   meta:
+    - name: About
+      pageRef: /about
+      weight: 10
     - name: Now
       pageRef: /now
-      weight: 10
+      weight: 20
     - name: Uses
       pageRef: /uses
-      weight: 20
+      weight: 30
 
 markup:
   highlight:
