@@ -12,6 +12,15 @@
     {{ end }}
   </div>
 
+  {{ if strings.Contains .TableOfContents "<li>" }}
+  <details class="toc-inline">
+    <summary>Contents</summary>
+    <nav>
+      {{ .TableOfContents }}
+    </nav>
+  </details>
+  {{ end }}
+
   <div class="article-wrapper">
     <article class="content">
       {{ partial "settings-sidebar.html" . }}

@@ -161,7 +161,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 
 .mobile-overlay { display: none; }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .layout { grid-template-columns: 1fr; }
   .sidebar {
     display: flex;
@@ -189,8 +189,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     SIDEBAR
     ========================================== */
 .sidebar-header {
-  padding: 0 1.5rem 1.5rem;
-  border-bottom: 2px solid var(--overlay);
+  padding: 0 1.5rem 1rem;
 }
 
 .sidebar-header h1 {
@@ -273,7 +272,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 
 .nav-section a {
   display: block;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   color: var(--subtle);
   text-decoration: none;
   font-size: 0.85rem;
@@ -376,21 +375,17 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 }
 
 @media (max-width: 900px) {
-  .mobile-header { display: flex; justify-content: space-between; }
+  .mobile-header { display: none; }
 }
 
 .menu-toggle {
   display: none;
   background: var(--surface);
-  border: 1px solid var(--overlay);
   border-bottom: 2px solid var(--overlay);
-  border-radius: 2px;
   color: var(--text);
   padding: 0.2rem 0.5rem;
   font-family: inherit;
   font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
   cursor: pointer;
 }
 
@@ -398,9 +393,12 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     INLINE HEADER (for sidebar-less layout)
     ========================================== */
 .inline-header {
-  margin-bottom: .6rem;
+  margin-bottom: 1rem;
   max-width: 600px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .inline-header h1 {
@@ -409,6 +407,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1;
 }
 
 .inline-header h1 a {
@@ -493,11 +492,41 @@ body.dark .inline-header .speech-bubble::before {
   border-bottom-color: var(--muted);
 }
 
+@media (max-width: 1200px) {
+  .inline-header h1 .menu-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1rem;
+    background: var(--surface);
+    padding: 0.15rem 0.4rem;
+    border: 1px solid var(--overlay);
+    border-bottom: 3px solid var(--overlay);
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 var(--base);
+    color: var(--text);
+    cursor: pointer;
+  }
+  body.dark .inline-header h1 .menu-toggle {
+    background: var(--overlay);
+    border-color: var(--muted);
+    box-shadow: inset 0 -1px 0 var(--surface);
+  }
+  .inline-header h1 a {
+    margin-left: 0;
+  }
+  .inline-header h1 .site-name {
+    margin-left: 0;
+  }
+}
+
 /* ==========================================
     ARTICLE HEADER
     ========================================== */
 .article-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -516,10 +545,11 @@ body.dark .inline-header .speech-bubble::before {
 .article-header .desc {
   color: var(--subtle);
   font-size: 0.85rem;
+  margin-top: 0.25rem;
 }
 
 .article-meta {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -559,7 +589,7 @@ body.dark .inline-header .speech-bubble::before {
   margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .article-wrapper {
     overflow-x: hidden;
   }
@@ -1181,7 +1211,7 @@ dl.definition-list dd {
   font-size: var(--text-base);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content aside {
     position: relative;
     left: 0;
@@ -1300,9 +1330,8 @@ dl.definition-list dd {
 /* Table of Contents - Inline (collapsible, for narrow viewports) */
 .toc-inline {
   display: none;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1rem;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -1919,8 +1948,6 @@ a.post-link:hover {
     ========================================== */
 .filter-bar {
   background: var(--surface);
-  border: 2px solid var(--overlay);
-  padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
