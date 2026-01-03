@@ -261,7 +261,6 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     ========================================== */
 .nav-section {
   padding: 1rem 0;
-  border-bottom: 1px solid var(--overlay);
 }
 
 .nav-section:last-child { border-bottom: none; }
