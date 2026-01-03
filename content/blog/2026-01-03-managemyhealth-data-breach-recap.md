@@ -5,6 +5,10 @@ slug: managemyhealth-data-breach-recap
 title: A recap of the ManageMyHealth data breach so far
 ---
 
+> [!INFO] Disclaimer
+>
+> To be completely clear, I have no special insight or knowledge of the ManageMyHealth breach, nor am I affiliated with ManageMyHealth or any of the entities assisting them as this situation is investigated. This post is comprised of material that I have either directly observed or have attempted to personally verify to the best of ability. That said, I am not a reporter nor a cybersecurity professional. As always, use your own good judgement when reading text on the internet written by strangers.
+
 At 4:10am NZDT[^timestamps] on the 31st December, a post went up on a certain forum advertising a 108GB data breach related to the New Zealand patient portal [ManageMyHealth](https://managemyhealth.co.nz/).
 
 ## What is ManageMyHealth
@@ -83,7 +87,7 @@ When asked about the nature of the breach, Kazu initially stated "you can ask MM
 
 Asked if they would be able to elaborate a bit more, Kazu stated that they couldn't.
 
-![](https://cdn.utf9k.net/blog/mmh-breach/telegram-no-elaborate.jpg)
+![](https://cdn.utf9k.net/blog/mmh-breach/telegram-no-elaborate.jpg "Well, it was worth a try")
 
 At this point, it's important to remember that for Kazu, breaches are a businesses and part of that business involves perception.
 
@@ -133,6 +137,8 @@ The thing that got me here was that some of these reports, particularly the holi
 
 Given the questionable legality of the above, I'll note that once I had gained enough confidence that the sample set appeared to be legitimate, I deleted it from my laptop and sent an email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
 
+At the time of writing, I haven't heard back from the Privacy Commissioner in regards to this email but this isn't too surprising given how close it is to New Years still.
+
 ## What was in the second sample set?
 
 For a brief period of time, the sample set linked by Kazu in the forum post would get taken down and then reuploaded, only to get taken down again.
@@ -159,6 +165,76 @@ As a bit of background, [InLogic](https://inlogic.co.nz/) are an "IT Solutions" 
 
 They are also owned by Vino Ramayah, who is the CEO of ManageMyHealth as well as its parent company [Cereus Holdings](https://cereus.co.nz/).
 
+Having a credit card statement for an entirely different company also seems a little odd. At a guess, InLogic may be the development team who work on the various versions of ManageMyHealth[^versions].
+
+### Disposing of the sample
+
+As with the first sample set, I'll note that once I had gained enough confidence that the sample set appeared to be legitimate, I deleted it from my laptop and sent another email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
+
+At the time of writing, I haven't heard back from the Privacy Commissioner in regards to this email and again, this isn't too surprising given how close it is to New Years still.
+
+## How are the samples structured
+
+Both samples were just a list of files with no folders.
+
+The filenames were a mix of machine-generated and user-specified.
+
+It appeared that whenever the files were uploaded into ManageMyHealth, their filenames were kept intact instead of being overwritten with a machine-generated name.
+
+For the filenames that were user-specified, they had no common format and were human-readable names like `Report From That One Clinic.pdf`.
+
+For the filenames that were machine generated, they were generally Te Whatu Ora reports with a filename that was something like `DSC0000088.pdf`, `DSC00000889.pdf` and so on.
+
+From memory, there were more user-specified filenames than machine-generated.
+
+Given that, I would think that this isn't a simple case of the breacher incrementing filenames one by one.
+
+## What was the likely cause of the breach?
+
+A not-uncommon cause of data breaches is due to [object storage](https://en.wikipedia.org/wiki/Object_storage) systems being misconfigured such that they are publicly exposed to the internet for anyone to browse and download without requiring authorisation.
+
+This is a popular theory as it was surprisingly easy to make objects public when using cloud services not that many years ago.
+
+Nowadays, most cloud providers lock down object storage by default and you have to jump through a number of hoops to make something public.
+
+Personally, it seems like a safe assumption that object storage was involved in some capacity given that both sample sets contained files.[^points]
+
+Before we go further, I will mention that there is still scope for the issue to not be related to object storage.
+
+While we have not seen or heard that any databases were affected, either by confirmation from ManageMyHealth or by way of the sample sets containing SQL extracts, we can't entirely remove it off the table as we don't know what the full dataset contains.
+
+The [January 2nd, 2026](https://managemyhealth.co.nz/mmh-cyber-breach-update-january-2026/) did state the following:
+
+> Preliminary investigation reveals no evidence at this stage that the core patient database was accessed, nor any evidence of data modification or destruction within our system, nor any access to user credentials.
+
+This does not strictly rule out that any databases were accessed, just that there was no evidence of access at that stage of the investigation.
+
+It's highly unlikely that anyone would be storing the binary content of files in a database mind you but [crazier things have happened](https://www.mongodb.com/docs/manual/core/gridfs/).
+
+Another possibility could be that the files were served at request time but I would mark this as unlikely due to the credit card statement present in the second sample set.
+
+It goes without saying that having a medical records system store a credit card statement would be absurd and I can only assume it ended up there by way of someone testing out an interface for uploading files.
+
+With all that out of the way, our two options would seem to be either a publically accessible object storage or indirectly accessible object storage via the ManageMyHealth patient portal.
+
+Back in the [January 3rd, 2026 update](https://managemyhealth.co.nz/mmh-cyber-breach-update-3-january-2026/), it was stated that
+
+> The investigation has identified that one module, Health Documents, within the app was compromised, not the whole app.
+
+If we were looking at a publically accessible object storage system, it would imply that there would be no need to breach the patient portal given no authentication would be required.
+
+It's possible that the breacher first targeted the patient portal only to discover the object storage was publically accessible like an unlocked front door but personally, I'm going to rule it as less likely.
+
+With that, we're left with indirectly accessible object storage.
+
+We know that the names of the files from the two samples are all over the place so the breacher wouldn't have been able to just fetch objects by incrementing a filename (ie; `AAA01.pdf`, `AAA02.pdf` etc).
+
+They would need either need to have some sort of index that they could iterate through or they obtained access to a set of object storage credentials that had permission to both list and fetch objects.
+
+Putting aside credentials, there could be a number of ways to obtain this index such as a vulnerable endpoint for listing documents for a given GP, a [backoffice](https://en.wikipedia.org/wiki/Back-office_software)-type webpage or API for listing documents across the portal or something else entirely.
+
+Hopefully we'll get an official investigation report in time but I think there's enough to make a fairly educated guess.
+
 [^timestamps]: As best as I can tell, timestamps on that forum reflect the Mumbai timezone, which is GMT +5:30 hours. The original forum founder was identified as living in India a number of years back by a cyber security firm who used OSINT methods. The timezone when registeirng a forum account also defaults to GMT +5:30 hours.
 
 [^indici]: [myIndici](https://patientportal.myindici.co.nz/) is the customer-facing name of their portal.
@@ -172,3 +248,7 @@ They are also owned by Vino Ramayah, who is the CEO of ManageMyHealth as well as
 [^metacognition]: I assumed this was the name of a healthcare provider but I can't seem to find any obvious web presence for them.
 
 [^active]: Active here means that the ransom is still pending and the deadline has not been reached. I have no idea if there is an official term of art.
+
+[^versions]: ManageMyHealth are originally a New Zealand company but they also spun up [Australian](https://public.managemyhealth.com.au/) and [Indian](https://managemyhealth.in/) versions of the software.
+
+[^points]: I promise I'm just being overly explicit so I don't get sued for false claims. If I wasn't writing this post on the public internet about a legally questionable topic, I would be a lot more snarky I'm sure.
