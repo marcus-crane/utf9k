@@ -1,6 +1,6 @@
 # utf9k
 
-This is my personal website, which is powered by [Lume](https://github.com/lumeland/lume) and Markdown.
+This is my personal website, which is powered by [Hugo](https://gohugo.io) and Markdown.
 
 It also has some live, progressive enhancement elements powered by [gunslinger](https://github.com/marcus-crane/gunslinger).
 
@@ -24,9 +24,13 @@ Of particular interest is the live player on the homepage which surfaces metadat
 
 ## Getting setup
 
-To get started, you'll want to install Deno using one of the variety of [officially supported installation methods](https://github.com/lumeland/lume).
+To get started, you'll want to install Hugo using one of the variety of [officially supported installation methods](https://gohugo.io/installation/).
 
-Once you've got all of that set up, running `deno task serve` should do everything required to start up a local server.
+You'll also need [Node.js](https://nodejs.org/en) installed as well. Once installed, you can install the development dependencies with `npm install`.
+
+Personally, I like using [Bun](https://bun.com/docs) over NPM but it's all the same really.
+
+From here, all that's left is running `hugo server` to start up a local server.
 
 You should be able to access the development version of the site at http://localhost:1313
 

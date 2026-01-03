@@ -2,7 +2,6 @@
 category: about
 description: Learn a bit about me and what I do for a living
 lastmod: 2025-07-13
-layout: markdown.vto
 slug: about
 tags:
   - me

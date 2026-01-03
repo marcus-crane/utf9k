@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
   <div class="article-header">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
@@ -11,14 +13,17 @@
   </div>
 
   {{ if strings.Contains .TableOfContents "<li>" }}
-  <details class="toc-inline toc-inline-always">
+  <details class="toc-inline">
     <summary>Contents</summary>
-    {{ .TableOfContents }}
+    <nav>
+      {{ .TableOfContents }}
+    </nav>
   </details>
   {{ end }}
 
   <div class="article-wrapper">
     <article class="content">
+      {{ partial "settings-sidebar.html" . }}
       {{ .Content }}
     </article>
   </div>
@@ -66,6 +71,9 @@
       }
 
       function trackMouseUntilAway(preview) {
+        if (mouseTracker) {
+          document.removeEventListener('mousemove', mouseTracker);
+        }
         let framesMovingAway = 0;
 
         mouseTracker = function(e) {
@@ -96,11 +104,11 @@
         document.addEventListener('mousemove', mouseTracker);
       }
 
-      function createPreviewElement(footnoteNum, footnoteText) {
+      function createPreviewElement(footnoteNum, footnoteHtml) {
         const preview = document.createElement('span');
         preview.className = 'footnote-preview';
         preview.setAttribute('data-num', footnoteNum + '.');
-        preview.textContent = footnoteText;
+        preview.innerHTML = footnoteHtml;
         return preview;
       }
 
@@ -120,12 +128,23 @@
         const footnoteElement = document.querySelector(footnoteId);
         if (!footnoteElement) return;
 
-        const footnoteText = footnoteElement.textContent.replace(/↩.*$/, '').trim();
+        const footnoteClone = footnoteElement.cloneNode(true);
+        const backref = footnoteClone.querySelector('.footnote-backref');
+        if (backref) backref.remove();
+        const footnoteHtml = footnoteClone.innerHTML.trim();
         const footnoteNum = ref.id.replace('fnref:', '');
 
         const wrapper = wrapFootnoteReference(ref);
-        const preview = createPreviewElement(footnoteNum, footnoteText);
+        const preview = createPreviewElement(footnoteNum, footnoteHtml);
         wrapper.appendChild(preview);
+
+        // Prevent link navigation when clicking footnote (show preview instead)
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (activePreview && activePreview !== preview) hidePreview();
+          preview.style.display = 'block';
+          activePreview = preview;
+        });
 
         wrapper.addEventListener('mouseenter', function(e) {
           if (activePreview && activePreview !== preview) hidePreview();
@@ -166,7 +185,7 @@
         heading.textContent = 'Footnotes';
         footnotes.insertBefore(heading, footnotes.firstChild);
 
-        document.querySelectorAll('.toc nav > ul, .toc-inline nav > ul').forEach(function(tocList) {
+        document.querySelectorAll('.toc nav > ul, .toc-inline nav > ul, .toc-left nav > ul').forEach(function(tocList) {
           const li = document.createElement('li');
           const a = document.createElement('a');
           a.href = '#footnotes';
@@ -177,6 +196,13 @@
       }
 
       document.querySelectorAll('sup[id^="fnref"]').forEach(setupFootnotePreview);
+
+      // Close preview when clicking outside
+      document.addEventListener('click', function(e) {
+        if (activePreview && !e.target.closest('.footnote-ref')) {
+          hidePreview();
+        }
+      });
 
       document.querySelectorAll('.footnote-ref').forEach(function(ref) {
         var node = ref.previousSibling;

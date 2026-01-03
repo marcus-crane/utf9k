@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
   {{ if .Params.showTitle | default true }}
   <div class="article-header">
     <h1>{{ .Title }}</h1>
@@ -12,7 +14,45 @@
   </div>
   {{ end }}
 
-  <article class="content">
-    {{ .Content }}
-  </article>
+  {{ if strings.Contains .TableOfContents "<li>" }}
+  <details class="toc-inline">
+    <summary>Contents</summary>
+    <nav>
+      {{ .TableOfContents }}
+    </nav>
+  </details>
+  {{ end }}
+
+  <div class="article-wrapper">
+    <article class="content">
+      {{ partial "settings-sidebar.html" . }}
+      {{ .Content }}
+    </article>
+  </div>
+
+  <script>
+    (function() {
+      const footnotes = document.querySelector('.footnotes');
+      if (!footnotes) return;
+
+      footnotes.className = 'footnotes-section';
+
+      const hr = footnotes.querySelector('hr');
+      if (hr) hr.remove();
+
+      const heading = document.createElement('h2');
+      heading.id = 'footnotes';
+      heading.textContent = 'Footnotes';
+      footnotes.insertBefore(heading, footnotes.firstChild);
+
+      document.querySelectorAll('.toc nav > ul, .toc-inline nav > ul, .toc-left nav > ul').forEach(function(tocList) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#footnotes';
+        a.textContent = 'Footnotes';
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+    })();
+  </script>
 {{ end }}
