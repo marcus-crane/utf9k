@@ -37,9 +37,9 @@ As an example, some breaches are complete database dumps of SQL databases. Other
 
 The breach is also alleged to have happened on December 29th, although no timestamp or time is mentioned but we can probably safely assume this took place sometime on December 30th from New Zealand's point of view.
 
-Lastly, the ransom amount requested is $60,000. This is assumed to be USD but is not explicitly stated.
+Lastly, the ransom amount requested is $60,000. This is presumably in USD but is not explicitly stated.
 
-There is also no indication on how the ransom price is calculated. Presumably one factor is that it's better to request an amount that can be rationalised as "cheap" than it is to request a large amount that will never be paid.
+There is also no indication on how the ransom price is calculated. One factor is likely that it's better to request an amount that can be rationalised as "cheap" than it is to request a large amount that will never be paid.
 
 As a point of comparison, UK-based [CT Dent](https://ct-dent.co.uk/) was breached by Kazu in early December with a ransom of $100,000 requested in exchange for 1,058,262 files totalling 7TB of data.
 
@@ -245,7 +245,7 @@ Hopefully we'll get an official investigation report in time but I think there's
 
 [^lawyer]: I'm not a lawyer but probably [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html)? I'm not sure if New Zealand has an equivalent of the [CFAA](https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act).
 
-[^metacognition]: I assumed this was the name of a healthcare provider but I can't seem to find any obvious web presence for them.
+[^metacognition]: I assume this was the name of a healthcare provider but I can't seem to find any obvious web presence for them.
 
 [^active]: Active here means that the ransom is still pending and the deadline has not been reached. I have no idea if there is an official term of art.
 
