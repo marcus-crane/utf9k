@@ -45,7 +45,8 @@
     const gags = {{ .Site.Data.gags }};
 
     function newGag() {
-      document.getElementById('robot-gag').textContent = gags[Math.floor(Math.random() * gags.length)];
+      const gag = gags[Math.floor(Math.random() * gags.length)];
+      document.querySelectorAll('.robot-gag').forEach(el => el.textContent = gag);
     }
 
     newGag();

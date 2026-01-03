@@ -142,15 +142,15 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     ========================================== */
 .layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr; /* TEMP: was 220px 1fr */
   min-height: 100vh;
 }
 
 .sidebar {
+  display: none; /* TEMP */
   background: var(--surface);
   border-right: 2px solid var(--overlay);
   padding: 1.5rem 0 0 0;
-  display: flex;
   flex-direction: column;
   height: 100vh;
   position: sticky;
@@ -316,10 +316,6 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   transition: all 0.1s;
 }
 
-.theme-toggle button:not(:last-child) {
-  border-right: 1px solid var(--overlay);
-}
-
 .theme-toggle button:hover {
   color: var(--subtle);
   background: var(--surface);
@@ -335,9 +331,10 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     ========================================== */
 .main {
   padding: 2rem 3rem;
-  max-width: 900px;
-  overflow-x: hidden;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 900px) {
@@ -397,10 +394,111 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 }
 
 /* ==========================================
+    INLINE HEADER (for sidebar-less layout)
+    ========================================== */
+.inline-header {
+  margin-bottom: 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.inline-header h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inline-header h1 a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.inline-header h1 .site-name {
+  font-family: monospace;
+  font-size: 1rem;
+  background: var(--surface);
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--overlay);
+  border-bottom: 3px solid var(--overlay);
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 var(--base);
+  margin-left: auto;
+}
+
+.inline-header .site-icon-wrapper {
+  position: relative;
+}
+
+.inline-header .site-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.inline-header .speech-bubble {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  font-size: 0.65rem;
+  color: var(--subtle);
+  background: var(--base);
+  border: 1px solid var(--muted);
+  padding: 0.4rem 0.6rem;
+  line-height: 1.4;
+  border-radius: 2px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+  z-index: 10;
+}
+
+.inline-header .site-icon-wrapper:hover .speech-bubble {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inline-header .speech-bubble:empty {
+  display: none;
+}
+
+.inline-header .speech-bubble::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid var(--muted);
+}
+
+body.dark .inline-header h1 .site-name {
+  background: var(--overlay);
+  border-color: var(--muted);
+  box-shadow: inset 0 -1px 0 var(--surface);
+}
+
+body.dark .inline-header .speech-bubble {
+  background: var(--base);
+  border: 1px solid var(--muted);
+}
+
+body.dark .inline-header .speech-bubble::before {
+  border-bottom-color: var(--muted);
+}
+
+/* ==========================================
     ARTICLE HEADER
     ========================================== */
 .article-header {
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   max-width: 600px;
   width: 100%;
@@ -459,6 +557,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   position: relative;
   max-width: 600px;
   width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
@@ -485,6 +584,77 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   top: 2rem;
 }
 
+/* Table of Contents - Left side, right-aligned */
+.content aside.toc-left {
+  position: absolute;
+  top: 0.4em;
+  left: auto;
+  right: calc(100% + 2rem);
+  width: 180px;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+  text-align: right;
+  font-size: 0.75rem;
+  border-left: none;
+  padding-left: 0;
+  color: var(--subtle);
+}
+
+.content aside.toc-left:hover {
+  opacity: 1;
+}
+
+.toc-left .toc-title {
+  font-size: 0.6rem;
+  text-transform: lowercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.toc-left ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-left li {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.content aside.toc-left a {
+  color: var(--subtle);
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+  border-bottom: none;
+}
+
+.content aside.toc-left a:hover {
+  color: var(--foam);
+}
+
+.toc-left ul ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.toc-left ul ul a {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.toc-left ul ul a:hover {
+  color: var(--foam);
+}
+
+@media (max-width: 1200px) {
+  .toc-left {
+    display: none;
+  }
+}
+
 .toc ul ul {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -495,6 +665,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
     CONTENT STYLES
     ========================================== */
 .content {
+  position: relative;
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
   color: var(--subtle);
@@ -1127,6 +1298,8 @@ dl.definition-list dd {
 .toc-inline {
   display: none;
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 600px;
 }
 
@@ -1290,6 +1463,24 @@ abbr {
   padding: var(--space-lg) 0;
   margin-top: var(--space-3xl);
   max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.toc-left .toc-title + .theme-toggle {
+  margin-top: 0;
+}
+
+.toc-left .theme-toggle {
+  border-top: none;
+  justify-content: flex-end;
+}
+
+.toc-left .theme-toggle button {
+  flex: none;
+  padding: 0.35rem;
+  border-radius: 3px;
+  background: transparent;
 }
 
 .footer-content {
