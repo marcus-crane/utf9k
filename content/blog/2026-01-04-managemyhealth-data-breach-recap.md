@@ -23,6 +23,9 @@ On the GP side, they're able to manage appointments, submit [electronic prescrip
 
 The value proposition of this sort of platform is that it consolidates all of the various actions and information that a patient might need into one place, while saving GPs from having to employ an entire software team to unlock these capabilities.
 
+> [!INFO] For the speed scrollers
+> There is zero indication or reason to believe that this breach extends to competitors of ManageMyHealth or partners of ManageMyHealth such as [Health New Zealand – Te Whatu Ora](https://www.tewhatuora.govt.nz/). ManageMyHealth is a privately operated portal and they are responsible for the management and security of their own systems.
+
 ManageMyHealth has a number of competitors in New Zealand such as [Indici](https://indici.co.nz/)[^indici], [MyPractice](https://mypractice.co.nz/)[^mypractice] and [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) to name a few.
 
 ## What is the ransom requested?
