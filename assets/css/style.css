@@ -386,8 +386,11 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
 .inline-header h1 .site-name {
   font-family: monospace;
   font-size: 1rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
   background: var(--surface);
-  padding: 0.15rem 0.4rem;
+  padding: 0 0.4rem;
   border: 1px solid var(--overlay);
   border-bottom: 3px solid var(--overlay);
   border-radius: 3px;
@@ -467,8 +470,9 @@ body.dark .inline-header .speech-bubble::before {
     box-sizing: border-box;
     font-family: monospace;
     font-size: 1rem;
+    height: 1.75rem;
     background: var(--surface);
-    padding: 0.15rem 0.4rem;
+    padding: 0 0.4rem;
     border: 1px solid var(--overlay);
     border-bottom: 3px solid var(--overlay);
     border-radius: 3px;
