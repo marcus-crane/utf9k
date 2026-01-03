@@ -535,7 +535,7 @@ body.dark .inline-header .speech-bubble::before {
 
 .meta-label {
   font-size: 0.55rem;
-  padding: 0.25rem 0.35rem 0.1rem;
+  padding: 0.25rem 0.35rem;
   background: var(--overlay);
   border: 1px solid var(--overlay);
   color: var(--subtle);
@@ -544,7 +544,7 @@ body.dark .inline-header .speech-bubble::before {
 
 .meta-value {
   font-size: 0.55rem;
-  padding: 0.25rem 0.35rem 0.1rem;
+  padding: 0.25rem 0.35rem;
   border: 1px solid var(--overlay);
   margin-left: -1px;
   color: var(--text);
