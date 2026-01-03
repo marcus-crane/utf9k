@@ -154,7 +154,7 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   border-right: 2px solid var(--overlay);
   padding: 1.5rem 0 0 0;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
   position: sticky;
   top: 0;
   overflow: hidden;
