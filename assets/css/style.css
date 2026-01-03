@@ -155,8 +155,13 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   height: 100vh;
   position: sticky;
   top: 0;
-  overflow-y: auto;
+  overflow: hidden;
   width: 220px;
+}
+
+.nav-section {
+  overflow-y: auto;
+  min-height: 0;
 }
 
 .mobile-overlay { display: none; }
