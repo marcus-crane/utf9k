@@ -1256,6 +1256,10 @@ dl.definition-list dd {
   margin-right: 0.5rem;
 }
 
+.footnote-ref .footnote-preview p {
+  display: inline;
+  margin: 0;
+}
 
 .footnotes-section {
   margin-top: 2rem;
