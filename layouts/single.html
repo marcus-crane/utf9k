@@ -29,4 +29,30 @@
       {{ .Content }}
     </article>
   </div>
+
+  <script>
+    (function() {
+      const footnotes = document.querySelector('.footnotes');
+      if (!footnotes) return;
+
+      footnotes.className = 'footnotes-section';
+
+      const hr = footnotes.querySelector('hr');
+      if (hr) hr.remove();
+
+      const heading = document.createElement('h2');
+      heading.id = 'footnotes';
+      heading.textContent = 'Footnotes';
+      footnotes.insertBefore(heading, footnotes.firstChild);
+
+      document.querySelectorAll('.toc nav > ul, .toc-inline nav > ul, .toc-left nav > ul').forEach(function(tocList) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#footnotes';
+        a.textContent = 'Footnotes';
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+    })();
+  </script>
 {{ end }}

@@ -345,39 +345,6 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   .main { padding: 1rem; }
 }
 
-.mobile-header {
-  display: none;
-  margin-bottom: 1.5rem;
-  align-items: center;
-}
-
-.mobile-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: var(--text);
-}
-
-.mobile-logo .site-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.mobile-logo .site-name {
-  font-family: monospace;
-  font-size: 0.9rem;
-  background: var(--surface);
-  padding: 0.1rem 0.35rem;
-  border: 1px solid var(--overlay);
-  border-bottom: 2px solid var(--overlay);
-  border-radius: 2px;
-}
-
-@media (max-width: 900px) {
-  .mobile-header { display: none; }
-}
-
 .menu-toggle {
   display: none;
   background: var(--surface);
@@ -564,7 +531,7 @@ body.dark .inline-header .speech-bubble::before {
 
 .meta-label {
   font-size: 0.55rem;
-  padding: 0.15rem 0.35rem;
+  padding: 0.25rem 0.35rem 0.1rem;
   background: var(--overlay);
   border: 1px solid var(--overlay);
   color: var(--subtle);
@@ -573,7 +540,7 @@ body.dark .inline-header .speech-bubble::before {
 
 .meta-value {
   font-size: 0.55rem;
-  padding: 0.15rem 0.35rem;
+  padding: 0.25rem 0.35rem 0.1rem;
   border: 1px solid var(--overlay);
   margin-left: -1px;
   color: var(--text);
@@ -593,24 +560,6 @@ body.dark .inline-header .speech-bubble::before {
   .article-wrapper {
     overflow-x: hidden;
   }
-}
-
-.toc-column {
-  position: absolute;
-  left: calc(100% + 230px);
-  top: 0;
-  width: 180px;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-
-.toc-column:hover {
-  opacity: 1;
-}
-
-.toc {
-  position: sticky;
-  top: 2rem;
 }
 
 /* Table of Contents - Left side, right-aligned */
@@ -689,12 +638,6 @@ body.dark .inline-header .speech-bubble::before {
   }
 }
 
-.toc ul ul {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-
 /* ==========================================
     CONTENT STYLES
     ========================================== */
@@ -725,9 +668,10 @@ body.dark .inline-header .speech-bubble::before {
   font-weight: 700;
   text-transform: uppercase;
   margin: var(--space-2xl) 0 var(--space-lg);
-  padding-bottom: var(--space-sm);
   border-bottom: var(--border-normal) solid var(--love);
   color: var(--text);
+  display: flex;
+  align-items: center;
 }
 
 .content h2:first-child { margin-top: 0; }
@@ -736,8 +680,36 @@ body.dark .inline-header .speech-bubble::before {
   font-size: var(--text-lg);
   font-weight: 700;
   text-transform: uppercase;
-  margin: var(--space-3xl) 0 var(--space-md);
   color: var(--subtle);
+  display: flex;
+  align-items: center;
+}
+
+.heading-anchor {
+  margin-left: 0.5rem;
+  color: var(--subtle);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  font-weight: 400;
+  border-bottom: none;
+  font-size: 0.5rem;
+  padding: 0.1rem 0.3rem;
+  background: var(--overlay);
+  border: 1px solid var(--overlay);
+  border-radius: 9999px;
+}
+
+.content h2:hover .heading-anchor,
+.content h3:hover .heading-anchor,
+.content h4:hover .heading-anchor,
+.heading-anchor:focus {
+  opacity: 1;
+}
+
+.heading-anchor:hover {
+  color: var(--foam);
+  border-color: var(--foam);
 }
 
 .content p { margin-bottom: var(--space-lg); }
@@ -934,8 +906,9 @@ body.dark .content pre.shiki span {
 .content h4 {
   font-size: 0.85rem;
   font-weight: 700;
-  margin: 1.5rem 0 0.5rem;
   color: var(--subtle);
+  display: flex;
+  align-items: center;
 }
 
 .content ul,
@@ -1398,64 +1371,10 @@ dl.definition-list dd {
   color: var(--foam);
 }
 
-/* Always show inline ToC when article has asides */
-.toc-inline.toc-inline-always {
-  display: block;
-}
-
 @media (max-width: 1200px) {
   .toc-inline {
     display: block;
   }
-
-  .toc-column {
-    display: none;
-  }
-}
-
-/* Table of Contents - Margin (for wide viewports) */
-.toc {
-  max-width: 200px;
-  font-size: 0.75rem;
-}
-
-.toc-title {
-  font-size: 0.6rem;
-  text-transform: lowercase;
-  letter-spacing: 0.15em;
-  color: var(--muted);
-  margin-bottom: 0.75rem;
-}
-
-.toc ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.toc li {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-.toc a {
-  color: var(--subtle);
-  text-decoration: none;
-  line-height: 1.4;
-  display: block;
-  border-bottom: none;
-}
-
-.toc a:hover {
-  color: var(--foam);
-}
-
-.toc .toc-h3 {
-  padding-left: 0.75rem;
-  font-size: 0.7rem;
-}
-
-.toc .toc-h3 a {
-  color: var(--muted);
 }
 
 /* Horizontal rule variants */
@@ -2327,11 +2246,17 @@ body.dark .activity-card.cat-track .preview { border-color: var(--pine); }
 @media print {
   * { background: white !important; color: black !important; box-shadow: none !important; }
   body { font-size: 11pt; line-height: 1.5; }
-  .sidebar, .mobile-overlay, .menu-toggle, .toc-column, .footnote-preview, .preview, .footer { display: none !important; }
+  .sidebar, .mobile-overlay, .menu-toggle, .footnote-preview, .preview, .footer { display: none !important; }
+  .toc-inline { display: block; max-width: none; font-size: 0.7em; margin-bottom: 1rem; }
+  .toc-inline summary { padding: 0.4rem 0.75rem; }
+  .toc-inline[open] nav { padding: 0.4rem 0.75rem; }
+  .toc-inline a { padding: 0.3rem 0.75rem; }
   .layout { display: block; }
   .main { padding: 0; }
-  .article-header { margin-bottom: 1.5rem; }
-  .content h2 { border-bottom: none; }
+  .article-header { margin-bottom: 1.5rem; max-width: none; }
+  .inline-header { max-width: none; }
+  .content h2 { border-bottom: none; margin: 1rem 0 0.3rem; }
+  .content h3 { margin: 0.75rem 0 0.25rem; }
   .content { max-width: none; position: static; }
   .article-wrapper { max-width: none; }
   .content aside {
@@ -2346,15 +2271,14 @@ body.dark .activity-card.cat-track .preview { border-color: var(--pine); }
   }
   .footnote-ref a::after,
   .footnote-backref::after { content: none !important; }
-  .footnotes-section { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 1rem; }
+  .footnotes-section { margin-top: 2rem; }
   .content blockquote { border: 1px solid #ccc; border-left: 3px solid #666; padding: 1rem; }
   .content blockquote::before { display: none; }
-  h2, h3 { page-break-after: avoid; }
+  h2, h3 { page-break-after: avoid; margin-bottom: 0.5rem; }
   p, blockquote, figure { page-break-inside: avoid; }
   img { max-width: 100% !important; page-break-inside: avoid; }
-  a[href^="http"]::after, a[href^="/"]::after {
-    content: "\A(" attr(href) ")";
-    white-space: pre-wrap;
+  .content a[href^="http"]::after, .content a[href^="/"]::after {
+    content: " (" attr(href) ")";
     font-size: 0.8em;
   }
 }

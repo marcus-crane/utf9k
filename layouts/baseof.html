@@ -21,14 +21,6 @@
     {{ partial "sidebar.html" . }}
 
     <main class="main">
-      <div class="mobile-header">
-        <a href="/" class="mobile-logo">
-          <img src="https://utf9k.net/favicon.png" alt="" class="site-icon">
-          <span class="site-name">utf9k</span>
-        </a>
-        <button class="menu-toggle" onclick="toggleMenu()">+ MENU</button>
-      </div>
-
       {{ block "main" .}}{{ end }}
 
       {{ partial "footer.html" . }}
@@ -85,6 +77,18 @@
         }
       })
     })();
+
+    // Heading anchor copy-to-clipboard
+    document.querySelectorAll('.heading-anchor').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const url = window.location.origin + window.location.pathname + anchor.getAttribute('href');
+        navigator.clipboard.writeText(url);
+        const original = anchor.textContent;
+        anchor.textContent = '✓';
+        setTimeout(() => anchor.textContent = original, 1500);
+      });
+    });
 
   </script>
 </body>
