@@ -56,7 +56,7 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       {{/* For consistency with previous site versions or else RSS items will be re-rendered */}}
       <guid>{{ strings.TrimSuffix "/" .Permalink }}</guid>
-      <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}</content>
+      <content type="html">{{ .Content | replaceRE `<a class="heading-anchor"[^>]*>[^<]*</a>` "" | transform.XMLEscape | safeHTML }}</content>
     </item>
     {{- end }}
   </channel>
