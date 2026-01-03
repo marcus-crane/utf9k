@@ -110,7 +110,7 @@ Before we continue, it's worth noting that doing this knowingly is likely to be 
 
 Within the sample zip file was a number of documents which were all PDFs if I recall correctly.
 
-There were a number of different document types such as typed referral letters, scanned letters from both GPs and patients, test results, hospital emergency dispatch summaries, patient health summaries and various other letters.
+There were a number of different document types such as typed referral letters, scanned letters from both GPs and patients, test results, hospital emergency department discharge summaries, patient health summaries and various other letters.
 
 Present on most of the documents were full names, addresses, phone numbers, [NHI](https://www.tewhatuora.govt.nz/health-services-and-programmes/health-identity/national-health-index) numbers and all sorts of other personally identifiable information.
 
