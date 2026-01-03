@@ -704,6 +704,10 @@ body.dark .inline-header .speech-bubble::before {
   border-radius: 9999px;
 }
 
+.heading-anchor::after {
+  content: "Copy";
+}
+
 .content h2:hover .heading-anchor,
 .content h3:hover .heading-anchor,
 .content h4:hover .heading-anchor,
