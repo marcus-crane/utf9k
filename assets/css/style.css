@@ -509,7 +509,8 @@ body.dark .inline-header .speech-bubble::before {
   line-height: 1.2;
 }
 
-.article-header .desc {
+.article-header .desc,
+.article-header p {
   color: var(--subtle);
   font-size: 0.85rem;
   margin-top: 0.25rem;
@@ -1475,7 +1476,7 @@ abbr {
   text-transform: uppercase;
   letter-spacing: var(--tracking-wider);
   color: var(--love);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .footer-section a {
