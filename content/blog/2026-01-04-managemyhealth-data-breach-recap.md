@@ -34,7 +34,7 @@ ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-m
 
 As an side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
 
-As a side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). Druring this sale, ManageMyHealth was spun out into its own separate entity under Vino's investment company [Cereus Holdings](https://cereus.co.nz/).
+As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). Druring this sale, ManageMyHealth was spun out into its own separate entity under Vino's investment company [Cereus Holdings](https://cereus.co.nz/).
 
 ## What is the ransom requested?
 
