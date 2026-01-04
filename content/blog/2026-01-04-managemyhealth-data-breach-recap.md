@@ -26,9 +26,9 @@ The value proposition of this sort of platform is that it consolidates all of th
 > [!INFO] For the speed scrollers
 > There is zero indication or reason to believe that this breach extends to competitors of ManageMyHealth or partners of ManageMyHealth such as [Health New Zealand – Te Whatu Ora](https://www.tewhatuora.govt.nz/). ManageMyHealth is a privately operated portal and they are responsible for the management and security of their own systems.
 
-ManageMyHealth has a number of competitors in New Zealand such as [MyIndici](https://www.indici.co.nz/PatientPortal.html)[^indici] and [Health 365](https://mypractice.co.nz/home/health365/)[^mypractice] to name a few.
+ManageMyHealth has a number of competitors in New Zealand such as [myindici](https://www.indici.co.nz/PatientPortal.html)[^indici] and [Health365](https://mypractice.co.nz/home/health365/)[^mypractice] to name a few.
 
-Since posting this article originally, I've been informed that GPs do not directly provide medical records to ManageMyHealth. Instead, they are uploaded via a GP-facing interface provided by [Medtech Global](https://medtechglobal.com/nz/).
+Since posting this article, I've been informed that GPs do not directly provide medical records to ManageMyHealth. Instead, they are uploaded via an external GP-facing interface, one of which is provided by [Medtech Global](https://medtechglobal.com/nz/). ManageMyHealth may have integrations with other practice management systems but I have no knowledge of that to state either way.
 
 ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-my-health-and-medtech-global-cement-stronger-partnership-with-alex-integration-2/) that they have a partnership allowing them access to [Medtech ALEX](https://medtechglobal.com/nz/medtech-alex/), which is likely the method used for syncing health documents from Medtech into their own systems.
 
