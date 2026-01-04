@@ -17,7 +17,7 @@ ManageMyHealth is an online portal that primarily acts as an intermediary betwee
 
 Patients have access to this portal via the [iOS](https://apps.apple.com/nz/app/managemyhealth/id970773819) and [Android](https://play.google.com/store/apps/details?id=managemyhealth.co.nz&hl=en_NZ) apps, as well as [via the ManageMyHealth website](https://app.managemyhealth.co.nz/authentication/login).
 
-Patients can book appointments, exchange messages with GP staff, access their health records, request repeat prescriptions among other functions.
+Patients can book appointments, exchange messages with GP staff, access their health records, and request repeat prescriptions among other functions.
 
 On the GP side, they're able to manage appointments, submit [electronic prescriptions](https://www.tewhatuora.govt.nz/health-services-and-programmes/digital-health/emedicines-and-the-new-zealand-e-prescription-service/eprescriptions/about-nzeps) to pharmacies and [host video consultations](https://en.wikipedia.org/wiki/Telehealth).
 
@@ -32,9 +32,9 @@ Since posting this article, I've been informed that GPs do not directly provide 
 
 ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-my-health-and-medtech-global-cement-stronger-partnership-with-alex-integration-2/) that they have a partnership allowing them access to [Medtech ALEX](https://medtechglobal.com/nz/medtech-alex/), which is likely the method used for syncing health documents from Medtech into their own systems.
 
-As an side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
+As a side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
 
-As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). During this sale, ManageMyHealth was spun out into its own separate entity under [Cereus Health Group](https://cereushealth.net/) which is also owned by Vino Ramayah[^cereushealth].
+As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). During this sale, ManageMyHealth was spun out into a subsidiary of [Cereus Health Group](https://cereushealth.net/). Vino Ramayah is the sole owner of Cereus Health[^cereushealth] as well as Chief Executive of ManageMyHealth.
 
 ## What is the ransom requested?
 
@@ -112,7 +112,7 @@ As mentioned earlier, attached to the forum post was a sample, in the form of a 
 
 Data breaches are not always guaranteed to be real, with some number of historical breaches being comprised of real data mixed with synthetic data[^synthetic] or just being previously existing breaches mixed together repackaged as something "new".
 
-For that reason, combined with my parents being users of ManageMyHealth, I wanted to take a closer look at the claimed sample as there had been no reporting whatsoever on their existence, let alone their validity. 
+For that reason, combined with my parents being users of ManageMyHealth, I wanted to take a closer look at the claimed sample as there had been no reporting whatsoever on its existence, let alone their validity.
 
 Before we continue, it's worth noting that doing this knowingly is likely to be illegal[^lawyer]. At the time, I was not aware if these files were real, which probably doesn't make it any less illegal.
 
@@ -174,7 +174,7 @@ Interestingly, it also contained a 2023 credit card statement for InLogic Techno
 
 As a bit of background, [InLogic](https://inlogic.co.nz/) are an "IT Solutions" company, providing a number of services such as software development, quality assurance testing, security auditing and other general types of consulting.
 
-They are also owned by Vino Ramayah, who is the CEO of ManageMyHealth as well as its parent company [Cereus Holdings](https://cereus.co.nz/).
+They are also owned by Vino Ramayah, the CEO of ManageMyHealth as the ultimate owner of its parent company [Cereus Health Group](https://cereushealth.net/)[^cereushealth].
 
 Having a credit card statement for an entirely different company also seems a little odd. At a guess, InLogic may be the development team who work on the various versions of ManageMyHealth[^versions].
 
