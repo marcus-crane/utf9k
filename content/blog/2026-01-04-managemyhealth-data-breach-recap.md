@@ -34,7 +34,7 @@ ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-m
 
 As an side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
 
-As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). Druring this sale, ManageMyHealth was spun out into its own separate entity under Vino's investment company [Cereus Holdings](https://cereus.co.nz/).
+As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). During this sale, ManageMyHealth was spun out into its own separate entity under [Cereus Health Group](https://cereushealth.net/) which is also owned by Vino Ramayah[^cereushealth].
 
 ## What is the ransom requested?
 
@@ -168,7 +168,7 @@ Thinking that they were both Saudi-Icon related, I downloaded both. Sure enough,
 
 I later confirmed with Kazu that this was a mistake and this second sample was not intended to be distributed in this fashion.
 
-This sample also contained various letters and lab results as well as an ADHD assessment, another Metacognition neurological assessment, a Covid vaccination certificate, full medical histories for two patients and two passport scans.
+This sample also contained various letters and lab results as well as an ADHD assessment, another Metacognition neurological assessment, a Covid vaccination certificate, full medical histories for two patients and two scans of passports originally issued overseas.
 
 Interestingly, it also contained a 2023 credit card statement for InLogic Technologies PVT LTD, who are based in India.
 
@@ -253,6 +253,8 @@ Hopefully we'll get an official investigation report in time but I think there's
 [^indici]: [myIndici](https://patientportal.myindici.co.nz/) is the customer-facing name provided by [Indici](https://indici.co.nz/).
 
 [^mypractice]: [Health365](https://health365.co.nz/) is the customer-facing portal provided by [myPractice](https://mypractice.co.nz/).
+
+[^cereushealth]: https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/6486912/shareholdings
 
 [^kazu]: Kazu is either an individual and/or a group. Both of these things may be true. There would appear to be a single user going by the username Kazu on Telegram. There may also be one or more members who work with Kazu as part of a larger group behind the scenes. In a [November 2025 interview with databreaches.net](https://databreaches.net/2025/11/12/doctor-alliance-data-breach-353gb-of-patient-files-allegedly-compromised-ransom-demanded/), it was stated that Kazu is an individual who "had worked with a number of other individuals and groups over time, but had more recently gone out on his own.". It is not explicitly stated if Kazu confirmed themselves to be a male so I will continue to refer to "Kazu" in a gender-neutral fashion.
 
