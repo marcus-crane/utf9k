@@ -26,7 +26,15 @@ The value proposition of this sort of platform is that it consolidates all of th
 > [!INFO] For the speed scrollers
 > There is zero indication or reason to believe that this breach extends to competitors of ManageMyHealth or partners of ManageMyHealth such as [Health New Zealand – Te Whatu Ora](https://www.tewhatuora.govt.nz/). ManageMyHealth is a privately operated portal and they are responsible for the management and security of their own systems.
 
-ManageMyHealth has a number of competitors in New Zealand such as [Indici](https://indici.co.nz/)[^indici], [MyPractice](https://mypractice.co.nz/)[^mypractice] and [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) to name a few.
+ManageMyHealth has a number of competitors in New Zealand such as [MyIndici](https://www.indici.co.nz/PatientPortal.html)[^indici] and [Health 365](https://mypractice.co.nz/home/health365/)[^mypractice] to name a few.
+
+Since posting this article originally, I've been informed that GPs do not directly provide medical records to ManageMyHealth. Instead, they are uploaded via a GP-facing interface provided by [Medtech Global](https://medtechglobal.com/nz/).
+
+ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-my-health-and-medtech-global-cement-stronger-partnership-with-alex-integration-2/) that they have a partnership allowing them access to [Medtech ALEX](https://medtechglobal.com/nz/medtech-alex/), which is likely the method used for syncing health documents from Medtech into their own systems.
+
+As an side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
+
+As a side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/), while spinning out ManageMyHealth into its own separate entity under Vino's investment company [Cereus Holdings](https://cereus.co.nz/).
 
 ## What is the ransom requested?
 
@@ -182,7 +190,7 @@ Both samples were just a list of files with no folders.
 
 The filenames were a mix of machine-generated and user-specified.
 
-It appeared that whenever the files were uploaded into ManageMyHealth, their filenames were kept intact instead of being overwritten with a machine-generated name.
+It appeared that whenever the files were uploaded, their filenames were kept intact instead of being overwritten with a machine-generated name.
 
 For the filenames that were user-specified, they had no common format and were human-readable names like `Report From That One Clinic.pdf`.
 
@@ -240,9 +248,11 @@ Hopefully we'll get an official investigation report in time but I think there's
 
 [^timestamps]: As best as I can tell, timestamps on that forum reflect the Mumbai timezone, which is GMT +5:30 hours. The original forum founder was identified as living in India a number of years back by a cyber security firm who used OSINT methods. The timezone when registering a forum account also defaults to GMT +5:30 hours.
 
-[^indici]: [myIndici](https://patientportal.myindici.co.nz/) is the customer-facing name of their portal.
+[^medtech]: https://www.nzdoctor.co.nz/article/undoctored/medtech-global-pms-business-sold-and-manage-my-health-split-out
 
-[^mypractice]: [Health365](https://health365.co.nz/) is the customer-facing name of their portal.
+[^indici]: [myIndici](https://patientportal.myindici.co.nz/) is the customer-facing name provided by [Indici](https://indici.co.nz/).
+
+[^mypractice]: [Health365](https://health365.co.nz/) is the customer-facing portal provided by [myPractice](https://mypractice.co.nz/).
 
 [^kazu]: Kazu is either an individual and/or a group. Both of these things may be true. There would appear to be a single user going by the username Kazu on Telegram. There may also be one or more members who work with Kazu as part of a larger group behind the scenes. In a [November 2025 interview with databreaches.net](https://databreaches.net/2025/11/12/doctor-alliance-data-breach-353gb-of-patient-files-allegedly-compromised-ransom-demanded/), it was stated that Kazu is an individual who "had worked with a number of other individuals and groups over time, but had more recently gone out on his own.". It is not explicitly stated if Kazu confirmed themselves to be a male so I will continue to refer to "Kazu" in a gender-neutral fashion.
 
