@@ -890,6 +890,19 @@ body.dark .content pre.shiki span {
   padding: 0.1rem 0.3rem;
 }
 
+.content .redacted {
+  background: #000;
+  color: transparent;
+  user-select: none;
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  line-height: 1.7;
+}
+
+.content :is(h3, p):has(.redacted) {
+  margin-bottom: var(--space-md);
+}
+
 .content :is(ul, ol, dl) {
   margin: 0 0 var(--space-lg) 0;
   padding-left: 0;
