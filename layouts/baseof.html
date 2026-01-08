@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
+{{- $favicon := "/favicon.png" -}}
+{{- $faviconAlt := "A robot icon" -}}
+{{- $isRedacted := intersect .Params.tags (slice "redactions") -}}
+{{- if $isRedacted -}}
+  {{- $favicon = "/favicon_redacted.png" -}}
+  {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
+{{- end -}}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+  <link rel="icon" type="image/png" href="{{ $favicon }}">
 
   {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
@@ -35,9 +43,10 @@
 
     // As busted as this looks (in source code), it renders a valid JS array
     const gags = {{ .Site.Data.gags }};
+    const isRedacted = {{ if intersect .Params.tags (slice "redactions") }}true{{ else }}false{{ end }};
 
     function newGag() {
-      const gag = gags[Math.floor(Math.random() * gags.length)];
+      const gag = isRedacted ? "Why is it so dark in here? What's going on?" : gags[Math.floor(Math.random() * gags.length)];
       document.querySelectorAll('.robot-gag').forEach(el => el.textContent = gag);
     }
 

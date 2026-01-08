@@ -1,9 +1,16 @@
+{{- $favicon := "/favicon.png" -}}
+{{- $faviconAlt := "A robot icon" -}}
+{{- $isRedacted := intersect .Params.tags (slice "redactions") -}}
+{{- if $isRedacted -}}
+  {{- $favicon = "/favicon_redacted.png" -}}
+  {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
+{{- end -}}
 <aside class="sidebar">
   <div class="sidebar-header">
     <h1>
       <a href="/">
         <span class="site-name">{{ .Site.Title }}</span>
-        <img src="https://utf9k.net/favicon.png" alt="A robot icon" class="site-icon">
+        <img src="{{ $favicon }}" alt="{{ $faviconAlt }}" class="site-icon">
       </a>
     </h1>
   </div>

@@ -1,10 +1,17 @@
+{{- $favicon := "/favicon.png" -}}
+{{- $faviconAlt := "A robot icon" -}}
+{{- $isRedacted := intersect .Params.tags (slice "redactions") -}}
+{{- if $isRedacted -}}
+  {{- $favicon = "/favicon_redacted.png" -}}
+  {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
+{{- end -}}
 <div class="inline-header">
   <h1>
     <a href="/">
       <span class="site-name">{{ .Site.Title }}</span>
     </a>
     <span class="site-icon-wrapper" onclick="newGag()">
-      <img src="/favicon.png" alt="A robot icon" class="site-icon">
+      <img src="{{ $favicon }}" alt="{{ $faviconAlt }}" class="site-icon">
       <span class="speech-bubble robot-gag"></span>
     </span>
     <button class="menu-toggle" onclick="toggleMenu()">≡ Menu</button>
