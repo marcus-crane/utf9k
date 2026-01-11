@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 255777
+    title: MiSide
+    link: https://www.backloggd.com/games/miside/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co7e6i.jpg
+      width: 720
+      height: 540
   - id: 1430
     title: 'Ace Attorney Investigations: Miles Edgeworth'
     link: https://www.backloggd.com/games/ace-attorney-investigations-miles-edgeworth/
