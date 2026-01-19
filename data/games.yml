@@ -23,6 +23,13 @@
       height: 540
 - list: Backlog
   games:
+  - id: 100236
+    title: House M.D.
+    link: https://www.backloggd.com/games/house-md/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co9pf4.jpg
+      width: 720
+      height: 540
   - id: 305152
     title: 'Clair Obscur: Expedition 33'
     link: https://www.backloggd.com/games/clair-obscur-expedition-33/
