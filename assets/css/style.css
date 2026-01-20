@@ -2114,6 +2114,16 @@ a.post-link:hover {
   display: flex;
   gap: 0.6rem;
   overflow: hidden;
+  min-height: 160px;
+}
+
+.activity-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--muted);
+  font-size: 0.875rem;
 }
 
 .activity-card {
