@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 9630
+    title: Fallout 4
+    link: https://www.backloggd.com/games/fallout-4/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1yc6.jpg
+      width: 720
+      height: 540
   - id: 255777
     title: MiSide
     link: https://www.backloggd.com/games/miside/
