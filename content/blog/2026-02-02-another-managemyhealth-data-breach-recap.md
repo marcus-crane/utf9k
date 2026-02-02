@@ -1,5 +1,5 @@
 ---
-date: 2026-02-01T23:00:00+13:00
+date: 2026-02-02T23:20:00+13:00
 description: The media cycle is mostly over now so it's probably a good time to take stock
 slug: another-managemyhealth-data-breach-recap
 title: Another recap of the ManageMyHealth data breach so far
