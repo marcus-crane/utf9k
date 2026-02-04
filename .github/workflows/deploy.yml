@@ -34,7 +34,7 @@ jobs:
         id: setup-python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.11.0"
+          python-version: "3.14.3"
           cache: 'pip'
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
