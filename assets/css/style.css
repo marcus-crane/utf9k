@@ -416,7 +416,8 @@ body.dark .activity-card.cat-track .activity-category { background: var(--pine);
   padding: 0.4rem 0.6rem;
   line-height: 1.4;
   border-radius: 2px;
-  white-space: nowrap;
+  width: max-content;
+  max-width: min(20rem, calc(100vw - 2rem));
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.15s, visibility 0.15s;
@@ -485,8 +486,6 @@ body.dark .inline-header .speech-bubble::before {
   .inline-header .speech-bubble {
     right: 50%;
     transform: translateX(50%);
-    white-space: normal;
-    max-width: calc(100vw - 2rem);
     text-align: center;
   }
   .inline-header .speech-bubble::before {
@@ -520,6 +519,47 @@ body.dark .inline-header .speech-bubble::before {
   color: var(--subtle);
   font-size: 0.85rem;
   margin-top: 0.25rem;
+}
+
+.link-preview-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border: var(--border-thin) solid var(--overlay);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.link-preview-card:hover {
+  border-color: var(--foam);
+}
+
+.link-preview-domain {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--foam);
+}
+
+.link-preview-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.link-preview-url {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article-meta {
@@ -1537,6 +1577,8 @@ abbr {
   border-bottom: var(--border-thin) solid var(--overlay);
 }
 
+.label a { color: inherit; text-decoration: none; }
+
 .label-love { border-color: var(--love); color: var(--love); }
 .label-gold { border-color: var(--gold); color: var(--gold); }
 .label-foam { border-color: var(--foam); color: var(--foam); }
@@ -1790,6 +1832,8 @@ body.dark .label-rose { border-color: #ebbcba; color: #ebbcba; }
   color: var(--muted);
 }
 
+.media-group-label a { color: inherit; text-decoration: none; }
+
 .media-group-label.label-pine { color: var(--pine); }
 .media-group-label.label-gold { color: var(--gold); }
 .media-group-label.label-iris { color: var(--iris); }
@@ -1813,6 +1857,10 @@ body.dark .media-group-label.label-rose { color: #ebbcba; }
 .media-group-items.books .media-card img { border-color: var(--gold); }
 .media-group-items.manga .media-card img { border-color: var(--iris); }
 .media-group-items.tv .media-card img { border-color: var(--love); }
+
+.media-group-items.games .media-card .preview { border-color: var(--pine); }
+.media-group-items.books .media-card .preview { border-color: var(--gold); }
+.media-group-items.manga .media-card .preview { border-color: var(--iris); }
 
 /* ==========================================
     LIST PAGES

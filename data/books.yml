@@ -1,4 +1,4 @@
-- list: 2025
+- list: 2026
   goal: 18
   books:
     - title: The Unaccountability Machine
@@ -10,7 +10,7 @@
       isbn13: 9781788169554
       asin: 1788169557
       link: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
-      date_added: 2024-11-21 
+      date_added: 2024-11-21
       date_started: 2025-10-27
       date_finished: null
       recommended: false
@@ -31,6 +31,9 @@
       recommended: false
       progress: 59
 
+- list: 2025
+  goal: 18
+  books:
     - title: Moral Mazes
       subtitle: The World of Corporate Managers
       author: Robert Jackall

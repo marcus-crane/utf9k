@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta">
+      {{ with .Date }}<div><span class="meta-label">Added</span><span class="meta-value">{{ .Format "2006-01-02" }}</span></div>{{ end }}
+      {{ with .Params.tags }}<div><span class="meta-label">Tags</span>{{ range . }}<span class="meta-value">{{ . }}</span>{{ end }}</div>{{ end }}
+    </div>
+  </div>
+
+  <div class="article-wrapper">
+    <article class="content">
+      {{ partial "settings-sidebar.html" . }}
+      {{ .Content }}
+    </article>
+  </div>
+{{ end }}

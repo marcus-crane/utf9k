@@ -33,6 +33,9 @@ menus:
     - name: Games
       pageRef: /games
       weight: 60
+    - name: OIAs
+      pageRef: /oias
+      weight: 65
     - name: About
       pageRef: /about
       weight: 70
