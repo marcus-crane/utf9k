@@ -14,20 +14,6 @@
       url: https://images.igdb.com/igdb/image/upload/t_720p/co7e6i.jpg
       width: 720
       height: 540
-  - id: 1430
-    title: 'Ace Attorney Investigations: Miles Edgeworth'
-    link: https://www.backloggd.com/games/ace-attorney-investigations-miles-edgeworth/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5z8q.jpg
-      width: 720
-      height: 540
-  - id: 25076
-    title: Red Dead Redemption 2
-    link: https://www.backloggd.com/games/red-dead-redemption-2/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1q1f.jpg
-      width: 720
-      height: 540
 - list: Backlog
   games:
   - id: 100236
