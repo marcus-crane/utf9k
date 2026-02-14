@@ -1,0 +1,16 @@
+{
+  "name": "utf9k",
+  "short_name": "utf9k",
+  "description": "You are online and logged on to my personal site",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#d9d0c3",
+  "theme_color": "#d9d0c3",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

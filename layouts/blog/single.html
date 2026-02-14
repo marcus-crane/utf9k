@@ -223,4 +223,14 @@
     });
   </script>
   {{ partial "preview.html" ".content figure.image-figure" }}
+  {{ if not .Draft }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-00:00" }}"
+  }
+  </script>
+  {{ end }}
 {{ end }}

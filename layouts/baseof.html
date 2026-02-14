@@ -10,12 +10,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d9d0c3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191724" media="(prefers-color-scheme: dark)">
+  <meta name="author" content="{{ .Site.Params.author.name }}">
+  {{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}'>{{ end }}
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  {{ hugo.Generator }}
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
   <link rel="icon" type="image/png" href="{{ $favicon }}">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="canonical" href="{{ .Permalink | safeURL }}">
+  <link rel="preconnect" href="https://cdn.utf9k.net">
+  <link rel="dns-prefetch" href="https://cdn.utf9k.net">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="me" href="mailto:hello@utf9k.net">
+  <link rel="me" href="https://mastodon.nz/@utf9k">
+  <link rel="me" href="https://github.com/marcus-crane">
+  <link rel="webmention" href="https://webmention.io/utf9k.net/webmention">
+  <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc">
 
   {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end }}
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 
   {{ with resources.Get "css/style.css" | postCSS }}
   <style>
