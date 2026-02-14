@@ -30,6 +30,9 @@ menus:
     - name: Books
       pageRef: /books
       weight: 50
+    - name: Manga
+      pageRef: /manga
+      weight: 55
     - name: Games
       pageRef: /games
       weight: 60

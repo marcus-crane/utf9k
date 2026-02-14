@@ -1,0 +1,111 @@
+{{ define "main" }}
+{{ partial "inline-header.html" . }}
+
+<div class="article-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</div>
+
+<div class="manga-page">
+  <div class="article-wrapper">
+    <div class="content">
+      {{ partial "settings-sidebar.html" . }}
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <input type="text" class="filter-search" placeholder="One Piece..." id="manga-search">
+    <div class="filter-buttons">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="releasing">Releasing</button>
+      <button type="button" class="filter-btn" data-filter="backlog">Backlog</button>
+    </div>
+  </div>
+
+  {{ $releasing := sort (where $.Site.Data.manga "status" "RELEASING") "title" "asc" }}
+  <section class="section releasing" data-status="releasing">
+    <div class="section-header">
+      <h2 class="section-title releasing">Releasing</h2>
+      <span class="section-count">{{ len $releasing }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range $releasing }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover }}" alt="Cover art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover }}" alt="Cover art for {{ .title }}">
+          <div class="preview-meta">
+            <div class="preview-title">{{ .title }}</div>
+            <div class="preview-subtitle">{{ .author }}</div>
+            <div class="preview-detail">{{ .progress }} {{ if eq (int .progress) 1 }}chapter{{ else }}chapters{{ end }} read</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ $backlog := sort (where $.Site.Data.manga "status" "FINISHED") "title" "asc" }}
+  <section class="section backlog" data-status="backlog">
+    <div class="section-header">
+      <h2 class="section-title backlog">Backlog</h2>
+      <span class="section-count">{{ len $backlog }}</span>
+    </div>
+    <div class="media-grid">
+      {{ range $backlog }}
+      <div class="media-card" data-title="{{ .title | lower }}">
+        <img src="{{ .cover }}" alt="Cover art for {{ .title }}">
+        <div class="preview">
+          <img src="{{ .cover }}" alt="Cover art for {{ .title }}">
+          <div class="preview-meta">
+            <div class="preview-title">{{ .title }}</div>
+            <div class="preview-subtitle">{{ .author }}</div>
+            <div class="preview-detail">
+              {{ .progress }} / {{ .chapters }} {{ if eq (int .progress) 1 }}chapter{{ else }}chapters{{ end }} read
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const sections = document.querySelectorAll('.section[data-status]');
+    const searchInput = document.getElementById('manga-search');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const { filter } = btn.dataset;
+
+        sections.forEach(section => {
+          if (filter === 'all' || section.dataset.status === filter) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.media-card').forEach(card => {
+        const { title } = card.dataset;
+
+        if (title.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+  {{ partial "preview.html" ".media-card" }}
+</div>
+{{ end }}
