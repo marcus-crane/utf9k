@@ -1,20 +1,21 @@
 - list: 2026
   goal: 18
   books:
-    - title: The Unaccountability Machine
-      subtitle: Why Big Systems Make Terrible Decisions
-      author: Dan Davies
-      cover: https://cdn.utf9k.net/books/the-unaccountability-machine.jpg
-      cover_height: 2345
-      cover_width: 1527
-      isbn13: 9781788169554
-      asin: 1788169557
-      link: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
-      date_added: 2024-11-21
-      date_started: 2025-10-27
+
+    - title: Impro
+      subtitle: Improvisation and the Theatre
+      author: Keith Johnstone
+      cover: https://cdn.utf9k.net/books/impro.jpg
+      cover_height: 1333
+      cover_width: 852
+      isbn13: 9780878301171
+      asin: 0878301178
+      link: https://www.goodreads.com/book/show/306940.Impro
+      date_added: 2026-02-13
+      date_started: 2026-02-14
       date_finished: null
       recommended: false
-      progress: 39
+      progress: 5
 
     - title: Careless People
       subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
@@ -1511,3 +1512,18 @@
       date_finished: null
       recommended: false
       progress: 5
+
+    - title: The Unaccountability Machine
+      subtitle: Why Big Systems Make Terrible Decisions
+      author: Dan Davies
+      cover: https://cdn.utf9k.net/books/the-unaccountability-machine.jpg
+      cover_height: 2345
+      cover_width: 1527
+      isbn13: 9781788169554
+      asin: 1788169557
+      link: https://www.goodreads.com/book/show/197716282-the-unaccountability-machine
+      date_added: 2024-11-21
+      date_started: 2025-10-27
+      date_finished: null
+      recommended: false
+      progress: 39
