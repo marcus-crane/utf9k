@@ -2070,15 +2070,21 @@ a.post-link:hover {
   aspect-ratio: 3 / 4;
 }
 
+.manga-page .media-card img {
+  aspect-ratio: 13 / 20;
+}
+
 .media-card:hover img { border-color: var(--foam); }
 
 .section.playing .media-card img { border-color: var(--love); }
+.section.releasing .media-card img { border-color: var(--iris); }
 .section.backlog .media-card img { border-color: var(--gold); }
 .section.completed .media-card img { border-color: var(--pine); }
 
 .media-card .preview img { border: unset; }
 
 .section.playing .media-card:hover img,
+.section.releasing .media-card:hover img,
 .section.backlog .media-card:hover img,
 .section.completed .media-card:hover img {
   border-color: var(--foam);
@@ -2115,7 +2121,8 @@ a.post-link:hover {
 }
 
 .books-page,
-.games-page {
+.games-page,
+.manga-page {
   width: 100%;
   max-width: 600px;
 }

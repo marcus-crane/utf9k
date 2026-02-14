@@ -1,4 +1,4 @@
 ---
 title: Manga
-description: A mix of ongoing series and completed backlogs I'm slowly working through
+description: I have a bunch of weekly/monthly series I follow, and occasionally I'll binge a completed series too
 ---
