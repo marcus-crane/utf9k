@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 388426
+    title: "Paranormasight: The Mermaid's Curse"
+    link: https://www.backloggd.com/games/paranormasight-the-mermaids-curse/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobftx.jpg
+      width: 720
+      height: 540
   - id: 9630
     title: Fallout 4
     link: https://www.backloggd.com/games/fallout-4/
