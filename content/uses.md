@@ -1,7 +1,7 @@
 ---
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
-lastmod: 2025-07-13
+lastmod: 2026-03-01
 slug: uses
 tags:
   - meta
@@ -26,9 +26,8 @@ Everything else is stock and unconfigured.
 ## Computers
 
 - Macbook Air M1 as my personal laptop
-- Custom built desktop running Windows 11 for games
-  - It used to run [EndeavourOS](https://endeavouros.com/) but I would end up programming instead of playing games.
-  - For the most part, I just use a standard Xbox One controller with it.
+- Custom built desktop running [EndeavourOS](https://endeavouros.com/).
+  - I play games with a mix of keyboard and mouse, as well as a standard green Xbox One controller.
   I have some Razer mouse I got a while back but I don't use any of the features.
 - I use a [Dygma Defy](https://dygma.com/pages/defy) with a [Logitech MX Vertical](https://www.logitech.com/en-nz/shop/p/mx-vertical-ergonomic-mouse) at work.
 
