@@ -13,4 +13,4 @@ I live in [Auckland, New Zealand](https://en.wikipedia.org/wiki/Auckland) where 
 
 When I'm not computering at work, I tend to enjoy computering at home.
 
-I also volunteer for the New Zealand Council for Civil Liberties.
+I also do volunteer work for the [New Zealand Council for Civil Liberties](https://nzccl.org.nz/) here and there.
