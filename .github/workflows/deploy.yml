@@ -39,7 +39,7 @@ jobs:
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.5
         with:
           source: "public"
           storageZoneName: utf9k
