@@ -32,7 +32,6 @@ jobs:
           ob sync-setup \
             --vault "Writing" \
             --path /tmp/obsidian-vault \
-            --password "${{ secrets.OBSIDIAN_E2EE_PASSWORD }}" \
             --device-name "GitHub Actions" \
             --config-dir /tmp/obsidian-config
 
