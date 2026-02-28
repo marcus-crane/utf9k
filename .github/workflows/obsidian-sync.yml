@@ -49,7 +49,7 @@ jobs:
         id: changes
         run: |
           set -eux
-          if git diff --quiet && git diff --cached --quiet; then
+          if [ -z "$(git status --porcelain content/)" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
