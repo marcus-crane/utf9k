@@ -36,8 +36,9 @@ Everything else is stock and unconfigured.
 - [1Password](https://1password.com/) for password management
 - [CleanShot X](https://cleanshot.com/) for capturing and annotating screenshots
 - [Eagle](https://eagle.cool/) for capturing website designs that I like
-- [Fastmail](https://fastmail.com/) for email and calendaring
+- [Fastmail](https://fastmail.com/) for email
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) for browsing
+- [Google Calendar](https://calendar.google.com) for calendaring
 - [NewsBlur](https://newsblur.com/) for low-signal RSS feeds
 - [Obsidian](https://obsidian.md) for notes
 - [Pocket Casts](https://pocketcasts.com) for podcasts
