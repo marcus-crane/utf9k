@@ -11,9 +11,9 @@ To be clear, this isn't to be confused with the also-recently released [Obsidian
 
 `obsidian-headless` is a headless client for [Obsidian Sync](https://obsidian.md/sync) which allows both downloading and uploading files without the need to have the desktop app installed.
 
-This is pretty great for a few use cases but in my case, I'm especially interested in using it for publishing to my website as well as [continuously backing up](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) my vault.
+This is pretty great for a few use cases but I'm especially interested in using it for publishing to my website, as well as for [continuously backing up](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) my vault.
 
-For today, we'll just look at the former use case. It works because this very post you're reading was written on my phone in Obsidian's mobile app!
+For today, we'll just look at the former use case. I know it works because this very post you're reading was written and published on my phone in Obsidian's mobile app!
 
 ## Headless Considerations
 
@@ -59,7 +59,7 @@ This brings me to the next point which is also an important footgun.
 
 You may be tempted to store your website in a subfolder of your vault and publish it that way but it's important to remember that all files are synced via `obsidian-headless`.
 
-If I were to sync my entire vault in the [Github Actions pipeline](https://github.com/marcus-crane/utf9k/actions/runs/22527993231/job/65262908734) for this blog, you would be able to see all of the file names of my personal files logged out, even though they ultimately get discarded.
+If I were to sync my entire vault in the [Github Actions pipeline](https://github.com/marcus-crane/utf9k/actions/runs/22528940150/job/65265303610) for this blog, you would be able to see all of the file names of my personal files logged out, even though they ultimately get discarded.
 
 Again, this tool is so early days that this may not be an issue soon but it's worth mentioning for anyone experimenting.
 
