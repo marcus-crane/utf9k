@@ -1,0 +1,66 @@
+name: Obsidian Sync
+on:
+  workflow_dispatch:
+jobs:
+  obsidian-sync:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Git user
+        run: |
+          set -eux
+          git config --local user.email "helper@utf9k.net"
+          git config --local user.name "Helper Bot"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install obsidian-headless
+        run: npm install -g obsidian-headless
+
+      - name: Setup vault for sync
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+        run: |
+          set -eux
+          ob sync-setup \
+            --vault "Writing" \
+            --path /tmp/obsidian-vault \
+            --password "${{ secrets.OBSIDIAN_E2EE_PASSWORD }}" \
+            --device-name "GitHub Actions" \
+            --config-dir /tmp/obsidian-config
+
+      - name: Sync vault
+        env:
+          OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
+        run: ob sync --path /tmp/obsidian-vault
+
+      - name: Copy vault content into repo
+        run: |
+          set -eux
+          rm -rf content/*
+          cp -r /tmp/obsidian-vault/utf9k/* content/
+
+      - name: Check for changes
+        id: changes
+        run: |
+          set -eux
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          set -eux
+          git add content/
+          git commit -m "Sync content from Obsidian vault"
+          git push

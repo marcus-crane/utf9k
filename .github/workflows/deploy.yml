@@ -5,7 +5,7 @@ on:
       - main
   workflow_dispatch:
   workflow_run:
-    workflows: [Audit Links, External Sync]
+    workflows: [Audit Links, External Sync, Obsidian Sync]
     types:
       - completed
 jobs:
