@@ -1,7 +1,7 @@
 ---
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
-lastmod: 2026-03-01
+lastmod: 2026-03-21
 slug: uses
 tags:
   - meta
@@ -47,4 +47,4 @@ Everything else is stock and unconfigured.
 - [Obsidian](https://obsidian.md) for notes
 - [Pocket Casts](https://pocketcasts.com) for podcasts
 - [Readwise Reader](https://readwise.io/read) for capturing things to read later (emails, articles, PDFs etc)
-
+- [Yōkai](https://github.com/null2264/yokai) for reading manga

@@ -5,7 +5,7 @@ slug: obsidian-headless
 title: Blogging with Obsidian Headless
 ---
 
-I woke up a nice surprise yesterday in the form of [obsidian-headless](https://github.com/obsidianmd/obsidian-headless) releasing as an open beta.
+I woke up a nice surprise yesterday in the form of [obsidian-headless](https://github.com/obsidianmd/obsidian-headless)[^cli] releasing as an open beta.
 
 To be clear, this isn't to be confused with the also-recently released [Obsidian CLI](https://help.obsidian.md/cli) which is for controlling the Obsidian desktop app.
 
@@ -69,7 +69,7 @@ It's mainly for this reason that I opted for a second vault.
 
 ## Sync Setup
 
-As mentioned earlier, this blog post was entirely written on my phone in one sitting to prove that this setup can work.[^1]
+As mentioned earlier, this blog post was entirely written on my phone in one sitting to prove that this setup can work.[^edits]
 
 The way it works is that I have [this pipeline](https://github.com/marcus-crane/utf9k/blob/main/.github%2Fworkflows%2Fobsidian-sync.yml) which only has the trigger type of [workflow_dispatch](https://github.com/marcus-crane/utf9k/blob/main/.github%2Fworkflows%2Fobsidian-sync.yml). That means it only runs if I explicitly trigger it, either by clicking a button in the UI or by hitting an API endpoint.
 
@@ -87,4 +87,6 @@ It works well on mobile too which is how I published this very post!
 
 Once the Github Actions pipeline commits any changes, that triggers my [main deployment pipeline](https://github.com/marcus-crane/utf9k/blob/main/.github%2Fworkflows%2Fdeploy.yml) which does a bunch of other stuff but all of that is an exercise left for the reader.
 
-[^1]: I did make some slight edits shortly after on my desktop but they were written and published entirely within the Obsidian desktop app.
+[^cli]: Not be confused with the also-recently released [Obsidian CLI](https://help.obsidian.md/cli)!
+
+[^edits]: I did make some slight edits shortly after on my desktop but they were written and published entirely within the Obsidian desktop app.
