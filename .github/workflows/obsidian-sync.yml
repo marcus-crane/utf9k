@@ -34,6 +34,12 @@ jobs:
             --path /tmp/obsidian-vault \
             --device-name "GitHub Actions"
 
+      - name: Configure read-only sync
+        run: |
+          set -eux
+          ob sync-config \
+            --mode mirror-remote
+
       - name: Sync vault
         env:
           OBSIDIAN_AUTH_TOKEN: ${{ secrets.OBSIDIAN_AUTH_TOKEN }}
