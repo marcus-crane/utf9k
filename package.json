@@ -14,8 +14,8 @@
     "build": "hugo && npx rehype-cli public -o"
   },
   "devDependencies": {
-    "@shikijs/rehype": "^3.20.0",
-    "@shikijs/transformers": "^3.20.0",
+    "@shikijs/rehype": "^4.0.0",
+    "@shikijs/transformers": "^4.0.0",
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
