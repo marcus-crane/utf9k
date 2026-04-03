@@ -32,14 +32,13 @@ jobs:
           ob sync-setup \
             --vault "Writing" \
             --path /tmp/obsidian-vault \
-            --device-name "GitHub Actions" \
-            --mode mirror-remote
+            --device-name "GitHub Actions"
 
-      - name: Configure read-only sync
-        run: |
-          set -eux
-          ob sync-config \
-            --mode mirror-remote
+      # - name: Configure read-only sync
+      #   run: |
+      #     set -eux
+      #     ob sync-config \
+      #       --mode mirror-remote
 
       - name: Sync vault
         env:
