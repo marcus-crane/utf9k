@@ -10,7 +10,7 @@ Before we begin, you might wonder why film ratings of all things and I remember 
 
 At that time, I had been lying to myself that I would get back into running[^1] so I put all of my gear on and then... I started procrastinating. [FYI](https://fyi.org.nz)'s [OIA categorisation game](https://fyi.org.nz/categorise/play) was my particular addiction at the time as I had set a Beeminder goal to categorise about 10 OIAs per day.[^2]
 
-On that particular day, the categorisation slot machine gave me [this OIA](https://fyi.org.nz/request/23911-final-fantasy-xvi-ps5) asking for ratings information on [Final Fantasy XVI](https://en.wikipedia.org/wiki/Final_Fantasy_XVI), which I had been playing around that time as well. I gave the response a skim, not really knowing what I was looking at, and [on Page 21](https://fyi.org.nz/request/23911/response/90962/attach/5/20230918 Final Fantasy XVI release.pdf#Page=21) I spotted the words "Film & Video Labelling Body".
+On that particular day, the categorisation slot machine gave me [this OIA](https://fyi.org.nz/request/23911-final-fantasy-xvi-ps5) asking for ratings information on [Final Fantasy XVI](https://en.wikipedia.org/wiki/Final_Fantasy_XVI), which I had been playing around that time as well. I gave the response a skim, not really knowing what I was looking at, and [on Page 21](https://fyi.org.nz/request/23911/response/90962/attach/5/20230918%20Final%20Fantasy%20XVI%20release.pdf#Page=21) I spotted the words "Film & Video Labelling Body".
 
 That name (or entity) wasn't familiar to me but it seemed a little off that it sounded official. I had a look at the address on [Google Maps](https://www.google.com/maps/@-36.985483,174.7833121,3a,75y,237.63h,92.77t/data=!3m7!1e1!3m5!1sAGtUmMvAgOxtWQoF393zCw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.773888201794989%26panoid%3DAGtUmMvAgOxtWQoF393zCw%26yaw%3D237.63144376807935!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D) and... it's some sort of industrial warehouse? What's going on there?
 
@@ -67,7 +67,7 @@ I can't say I had realised that The Warehouse stopped selling DVDs or Blu-rays b
 
 While the Budget for 2020 declined to fund the FVLB, it was extended a grant to keep it afloat until a 2022 Budget bid could be entered.
 
-Further down in that stack of documents, we can see a "Budget 2022 Initiative Summary". On [Section 2: Cost pressure information](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix A.pdf#Page=19), we get a fascinating glimpse at just how close New Zealand's ratings system may have come to collapse.
+Further down in that stack of documents, we can see a "Budget 2022 Initiative Summary". On [Section 2: Cost pressure information](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix%20A.pdf#Page=19), we get a fascinating glimpse at just how close New Zealand's ratings system may have come to collapse.
 
 Under "Cost pressure description", we see:
 
