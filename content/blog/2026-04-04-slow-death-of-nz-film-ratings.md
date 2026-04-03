@@ -67,7 +67,7 @@ I can't say I had realised that The Warehouse stopped selling DVDs or Blu-rays b
 
 While the Budget for 2020 declined to fund the FVLB, it was extended a grant to keep it afloat until a 2022 Budget bid could be entered.
 
-Further down in that stack of documents, we can see a "Budget 2022 Initiative Summary". On [Section 2: Cost pressure information](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix%20A.pdf#Page=19), we get a fascinating glimpse at just how close New Zealand's ratings system may have come to collapse.
+Further down in that stack of documents, we can see a "Budget 2022 Initiative Summary". On [Section 2: Cost pressure information](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425%200776%20Marcus%20via%20FYI%20Appendix%20A.pdf#Page=19), we get a fascinating glimpse at just how close New Zealand's ratings system may have come to collapse.
 
 Under "Cost pressure description", we see:
 
@@ -83,9 +83,9 @@ A July 2021 memo titled "Film and Video Labelling Body funding" [outlined](https
 
 > The transfer of the FVLB’s functions to the OFLC would appear to be the only viable long-term solution to maintain the integrity of the classification system, including protecting minors from harmful content and providing guidance to parents
 
-To my knowledge, this never passed the memo stage and the FVLB continued on as normal, being kept afloat with [3 installments](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix A.pdf#Page=35) of $150,000/year from the 2022 budget bid.
+To my knowledge, this never passed the memo stage and the FVLB continued on as normal, being kept afloat with [3 installments](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425%200776%20Marcus%20via%20FYI%20Appendix%20A.pdf#Page=35) of $150,000/year from the 2022 budget bid.
 
-As part of that arrangement, the FVLB was [required to provide](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix A.pdf#Page=44) a financial report to the Department of Internal Affairs every 3 months up until the [funding expired](fyi.org.nz/request/30057/response/121594/attach/5/OIA2425 0776 Marcus via FYI Appendix A.pdf#Page=36) on June 30th, 2025.
+As part of that arrangement, the FVLB was [required to provide](https://fyi.org.nz/request/30057/response/121594/attach/5/OIA2425%200776%20Marcus%20via%20FYI%20Appendix%20A.pdf#Page=44) a financial report to the Department of Internal Affairs every 3 months up until the [funding expired](fyi.org.nz/request/30057/response/121594/attach/5/OIA2425%200776%20Marcus%20via%20FYI%20Appendix%20A.pdf#Page=36) on June 30th, 2025.
 
 In [a March 2025 cabinet paper](https://www.dia.govt.nz/diawebsite.nsf/Files/Proactive-Releases-2024-25/$file/CVoD-Levy-Regulations-Amendment-Cabinet-paper.pdf#Page=4), it was suggested that perhaps the CVoD/streaming style approach of self-labelling should just be extended across the board to include movies, DVDs and games. 
 
