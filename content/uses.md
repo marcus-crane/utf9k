@@ -1,7 +1,7 @@
 ---
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
-lastmod: 2026-03-21
+lastmod: 2026-04-06
 slug: uses
 tags:
   - meta
@@ -11,15 +11,15 @@ For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
 
 ## Text Editor
 
-These days, I'm generally running [Claude Code](https://claude.com/product/claude-code) paired with Claude's Opus 4.5 model. I sometimes use 4.6 but generally I find it compacts too much.
+These days, I'm generally running [Claude Code](https://claude.com/product/claude-code) paired with Claude's Opus 4.5 model. I sometimes use 4.6 but generally I find it compacts too much.[^1]
 
-Beyond that,  I'll often pop open Neovim with a default [Lunarvim](https://www.lunarvim.org/) configuration. I don't know any shortcuts besides moving around, deleting/pasting lines and existing.
+Beyond that, I'll often pop open Neovim with a default [Lunarvim](https://www.lunarvim.org/) configuration. I don't know any shortcuts besides moving around, deleting/pasting lines and existing.
 
 Sometimes I'll reach for [Sublime Text](https://www.sublimetext.com) when it comes to large files or just wanting a scratchpad. I actually did buy a license!
 
 ## Terminal
 
-Currently, I use [Kitty](https://sw.kovidgoyal.net/kitty/) with [JetBrainsMono Nerd Font Mono](https://www.programmingfonts.org/#jetbrainsmono) 12pt and the [Catppuccin Macchiato](https://github.com/catppuccin/ghostty) colour scheme.
+Currently, I use [Ghostty](https://ghostty.org) with [JetBrainsMono Nerd Font Mono](https://www.programmingfonts.org/#jetbrainsmono) 12pt and the [Catppuccin Macchiato](https://github.com/catppuccin/ghostty) colour scheme.
 
 Everything else is stock and unconfigured.
 
@@ -32,8 +32,8 @@ Everything else is stock and unconfigured.
 - Custom built desktop running [EndeavourOS](https://endeavouros.com/).
   - I play games with a mix of keyboard and mouse, as well as a standard green Xbox One controller.
   - I have some Razer mouse I got a while back but I don't use any of the features.
-- Both my Framework laptop and desktop are running [Hyprland](https://hypr.land/) as a window manager with [ambxst](https://github.com/Axenide/Ambxst) as my shell.
-- I use a [Dygma Defy](https://dygma.com/pages/defy) with a [Logitech MX Vertical](https://www.logitech.com/en-nz/shop/p/mx-vertical-ergonomic-mouse) at work.
+- Both my Framework laptop and desktop are running [Niri](https://niri-wm.github.io/niri/) as a window manager with [DMS](https://danklinux.com/)  (built on top of [Quickshell](https://quickshell.org/)) as my shell.
+- I use a [Dygma Defy](https://dygma.com/pages/defy) with a [Logitech MX Ergo S](https://www.logitech.com/en-nz/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007261) at work.
 
 ## Applications
 
