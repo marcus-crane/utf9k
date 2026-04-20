@@ -1,7 +1,7 @@
 ---
 category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
-lastmod: 2026-04-06
+lastmod: 2026-04-21
 slug: uses
 tags:
   - meta
@@ -11,7 +11,7 @@ For the unaware, this is inspired by the [/uses](https://uses.tech) page idea
 
 ## Text Editor
 
-These days, I'm generally running [Claude Code](https://claude.com/product/claude-code) paired with Claude's Opus 4.5 model. I sometimes use 4.6 but generally I find it compacts too much.[^1]
+These days, I'm generally running [Claude Code](https://claude.com/product/claude-code) paired with Claude's Opus 4.7 model at work.
 
 Beyond that, I'll often pop open Neovim with a default [Lunarvim](https://www.lunarvim.org/) configuration. I don't know any shortcuts besides moving around, deleting/pasting lines and existing.
 
@@ -26,14 +26,16 @@ Everything else is stock and unconfigured.
 ## Computers
 
 - Macbook Air M1 as my personal laptop
-- Framework 16-inch as my work laptop, running [EndeavourOS](https://endeavouros.com/).
-	- AMD Ryzen AI 300 Series
-	- 2TB SSD w/ 96GB RAM
+- Macbook Pro M4 16-inch as my work laptop
+	- I was running a Framework with EndeavourOS but I got tired of fiddling with window managers that would crash
+	- I also missed iOS/macOS interop like copying on your phone and pasting on your laptop
 - Custom built desktop running [EndeavourOS](https://endeavouros.com/).
   - I play games with a mix of keyboard and mouse, as well as a standard green Xbox One controller.
   - I have some Razer mouse I got a while back but I don't use any of the features.
-- Both my Framework laptop and desktop are running [Niri](https://niri-wm.github.io/niri/) as a window manager with [DMS](https://danklinux.com/)  (built on top of [Quickshell](https://quickshell.org/)) as my shell.
+  - For a window manager, it's just running stock KDE which is nice and boring
 - I use a [Dygma Defy](https://dygma.com/pages/defy) with a [Logitech MX Ergo S](https://www.logitech.com/en-nz/shop/p/mx-ergo-s-wireless-trackball-mouse.910-007261) at work.
+- I use a Daylight Computer for reading articles, books and manga
+- I also have a smaller Boox Tab Mini C that I sometimes use for reading articles and books on the go
 
 ## Applications
 
