@@ -12,4 +12,4 @@ echo "Generating site metadata"
 python "$SCRIPTS/gather-filesizes.py"
 # python "$SCRIPTS/gather-image-metadata.py" TODO: Fix
 python "$SCRIPTS/sync-manga.py"
-python "$SCRIPTS/sync-games.py"
+# python "$SCRIPTS/sync-games.py" # TODO: Backloggd has deployed Bunny Shield to block crawlers (I have a nice, identifiable (and blockable) user agent and don't think my script is too aggressive!)
