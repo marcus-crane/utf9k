@@ -1,0 +1,92 @@
+title: Marcus Crane
+description: Computer Liker
+contact:
+  email: marcus@utf9k.net
+  website: utf9k.net
+  linkedIn: linkedin.com/in/utf9k
+  github: github.com/marcus-crane
+
+sidebar:
+  - name: education
+    items:
+      - title: Enspiral Dev Academy
+        subtitle: Full Stack Development
+  - name: volunteering
+    items:
+      - title: New Zealand Council for Civil Liberties 
+        subtitle: Executive Committee Member 
+
+experience:
+  - title: Lead Platform Engineer
+    dates: Jun 2025 - now
+    location: Auckland, New Zealand
+    company: Halter
+    company_url: https://halterhq.com
+    logo: https://cdn.prod.website-files.com/693759106134f1ff8dd54d9e/693759106134f1ff8dd54f90_favicon-256.png
+    bullets:
+      - Part of a rapidly scaling startup where responsibilites are blurred and the most critical bottleneck is ever changing
+      - "Co-owner of Halter's compute platforms (AWS ECS for customer microservices + EC2 for legacy applications)"
+      - "Providing ad-hoc support, tooling and advice for a variety of teams' from hardware and firmware development to customer support"
+      - Just a bit of everything really
+
+  - title: Staff Platform Engineer
+    dates: Oct 2021 - Jun 2025
+    location: Auckland, New Zealand
+    company: Lightspeed
+    company_url: https://lightspeedhq.com
+    logo: https://www.lightspeedhq.com/apple-touch-icon.png
+    bullets:
+      - "Part of X-Series (Retail)'s sole Platform team, overseeing a range of responsibilities: Compute (AWS ECS), Kafka, MySQL, Infrastructure (Terraform) as well as providing generalised advice to product teams for logging/metrics/tracing etc."
+      - Refactored internal log pipeline to remove log daemon crashes during peak periods as well as migrating services from bespoke regex-based text parsing to boring structured logging.
+      - "Oversaw and coordinated initial investment of observability tooling (Datadog) from a few prototypes to ~200 microservices."
+      - "Championed a service catalog initiative, which helped to identify unowned production microservices as well as helping developers to navigate less familiar parts of the org."
+      - "Participant in our internal mentorship program, taking on a mentee from a product team."
+
+  - title: Senior Site Reliability Engineer
+    dates: Sep 2020 - Oct 2021
+    location: Auckland, New Zealand
+    company: Mercedes-Benz
+    company_url: https://www.mercedes-benz.com/en/
+    company_suffix: "(now Daimler Truck AG)"
+    logo: https://assets.oneweb.mercedes-benz.com/global/1.9.0/favicon/apple-touch-icon.png
+    bullets:
+      - Part of a global SRE team split between Germany and New Zealand.
+      - "Assisted in expanding Fleetboard's existing Kubernetes cluster for use as the default compute platform by Mercedes Trucks division."
+      - Maintained, refactored and extended Golang-based in-house incident management tooling
+      - Maintained internal Netbox (IPAM) deployment used for tracking IP address spacing internally. Worked with legal to open source a custom auth component.
+      - Standard on-call duties.
+
+  - title: Site Reliability Engineer
+    dates: Feb 2018 - Sep 2020
+    location: Auckland, New Zealand
+    company: Xero
+    company_url: https://xero.com
+    logo: https://www.xero.com/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon-precomposed.png
+    bullets:
+      - "Part of a global SRE team split between Auckland (NZ), Wellington (NZ) and Denver (US)"
+      - "Core member of Xero's in-house SLOs initiative. Built out internal tooling, ran upskilling workshops with product teams, facilitated review sessions etc."
+      - "Become a maintainer for Xero's in-house incident management process. Built out tooling, allowing product teams to make use of their historical incident data."
+      - Standard on-call duties.
+
+  - title: Contractor
+    dates: April 2017 - June 2017
+    location: Wellington, New Zealand
+    company: Liberac
+    company_url: https://idealog.co.nz/tech/2017/06/future-finance-liberac
+    logo: https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_2/v1494589659/lfn2jfd14enln6fcm5qj.png
+    bullets:
+      - Briefly worked with a small fin-tech startup looking to simplify remittance between NZ and the Pacific Islands
+      - Did some cursory research and rapid prototyping.
+      - The concept was quickly proven to not be market viable and the founders opted to not pursue the venture any further.
+
+  - title: Inaugural Fellow
+    dates: Sep 2016 - Dec 2016
+    location: Wellington, New Zealand
+    company: Code for Aotearoa
+    company_url: https://web.archive.org/web/20170712015937/http://www.codeforaotearoa.org/
+    logo: https://avatars.githubusercontent.com/u/21036442?s=200&v=4
+    bullets:
+      - "Part of a team of two, looking to identify and solve useful issues within government as part of a 3-month pilot program."
+      - Co-conducted a range of interviews with various government agencies to understand common roadblocks in adopting open data practices.
+      - "Co-authored a first cut at an Open Data toolkit, walking through the process of releasing data sets for public consumption."
+      - "Some elements were repurposed for an earlier version of [data.govt.nz](https://data.govt.nz)"
