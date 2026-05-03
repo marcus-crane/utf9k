@@ -20,6 +20,10 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '25.9.0'
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
