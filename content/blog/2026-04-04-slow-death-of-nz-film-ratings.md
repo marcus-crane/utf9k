@@ -1,5 +1,5 @@
 ---
-date: 2026-04-04T00:50:00
+date: 2026-04-04T00:50:00+13:00
 description: Going outside should be classified R18 if you ask me
 slug: slow-death-of-nz-film-ratings
 title: The Slow Death of New Zealand Film Ratings
