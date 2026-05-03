@@ -43,12 +43,9 @@ jobs:
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
-        with:
-          source: "public"
-          storageZoneName: utf9k
-          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
-          accessKey: "${{ secrets.BUNNY_GLOBAL_API_KEY }}"
-          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID }}"
-          upload: "true"
-          purgePullZone: "true"
+        env:
+          BUNNY_STORAGE_ZONE: utf9k
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
+          BUNNY_API_KEY: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
+          BUNNY_PULL_ZONE_HOST: utf9k.net
+        run: python ci/bunny-deploy.py
