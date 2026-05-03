@@ -2,7 +2,7 @@ name: Deploy (Preview)
 on:
   push:
     branches:
-      - 2026-compaction
+      - deployment-hashing
   workflow_dispatch:
 jobs:
   build:
@@ -20,6 +20,10 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '25.9.0'
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
@@ -34,13 +38,10 @@ jobs:
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
       - name: Publish to Bunny Edge CDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
-        with:
-          source: "public"
-          storageZoneName: "utf9k-next"
-          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}"
-          storageEndpoint: "syd.storage.bunnycdn.com"
-          accessKey: "${{ secrets.BUNNY_GLOBAL_API_KEY }}"
-          pullZoneId: "${{ secrets.BUNNY_PULL_ZONE_ID_NEXT }}"
-          upload: "true"
-          purgePullZone: "true"
+        env:
+          BUNNY_STORAGE_ZONE: utf9k-next
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD_NEXT }}
+          BUNNY_STORAGE_ENDPOINT: syd.storage.bunnycdn.com
+          BUNNY_API_KEY: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
+          BUNNY_PULL_ZONE_HOST: next.utf9k.net
+        run: python ci/bunny-deploy.py
