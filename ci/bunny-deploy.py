@@ -1,6 +1,8 @@
 import hashlib
 import json
 import os
+import random
+import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -14,6 +16,8 @@ STORAGE_HOST = os.environ.get("BUNNY_STORAGE_ENDPOINT", "storage.bunnycdn.com")
 SITE_HOST = os.environ["BUNNY_PULL_ZONE_HOST"].rstrip("/")
 
 WORKERS = 16
+PURGE_WORKERS = 4
+PURGE_MAX_ATTEMPTS = 5
 
 storage_base = f"https://{STORAGE_HOST}/{ZONE}"
 storage_headers = {"AccessKey": STORAGE_PASSWORD}
@@ -61,13 +65,27 @@ def put_manifest(manifest):
 
 
 def purge(url):
-    r = requests.post(
-        "https://api.bunny.net/purge",
-        headers=purge_headers,
-        params={"url": url, "async": "false"},
-        timeout=60,
-    )
-    r.raise_for_status()
+    for attempt in range(PURGE_MAX_ATTEMPTS):
+        r = requests.post(
+            "https://api.bunny.net/purge",
+            headers=purge_headers,
+            params={"url": url, "async": "false"},
+            timeout=60,
+        )
+        if r.status_code != 429:
+            r.raise_for_status()
+            return
+        if attempt == PURGE_MAX_ATTEMPTS - 1:
+            r.raise_for_status()
+        retry_after = r.headers.get("Retry-After")
+        if retry_after:
+            try:
+                delay = float(retry_after)
+            except ValueError:
+                delay = 2 ** attempt
+        else:
+            delay = 2 ** attempt
+        time.sleep(delay + random.uniform(0, 0.5))
 
 
 def urls_for(rel_path):
@@ -78,36 +96,38 @@ def urls_for(rel_path):
     return urls
 
 
-def parallel(fn, items):
+def parallel(fn, items, workers=WORKERS):
     if not items:
         return
-    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+    with ThreadPoolExecutor(max_workers=workers) as pool:
         # Consuming the iterator is what actually surfaces exceptions.
         for _ in pool.map(fn, items):
             pass
 
 
 def diff_manifests(new, old):
-    to_upload = []
+    to_add = []
+    to_change = []
     for path, new_hash in new.items():
-        if new_hash != old.get(path):
-            to_upload.append(path)
+        if path not in old:
+            to_add.append(path)
+        elif new_hash != old[path]:
+            to_change.append(path)
 
     to_delete = []
     for path in old:
         if path not in new:
             to_delete.append(path)
 
-    to_upload.sort()
+    to_add.sort()
+    to_change.sort()
     to_delete.sort()
-    return to_upload, to_delete
+    return to_add, to_change, to_delete
 
 
-def collect_purge_urls(to_upload, to_delete):
+def collect_purge_urls(paths):
     urls = []
-    for path in to_upload:
-        urls.extend(urls_for(path))
-    for path in to_delete:
+    for path in paths:
         urls.extend(urls_for(path))
     return urls
 
@@ -122,10 +142,10 @@ def main():
     cold_start = not old
     print(f"  {len(old)} files{' (cold start)' if cold_start else ''}")
 
-    to_upload, to_delete = diff_manifests(new, old)
-    print(f"~ Plan: upload {len(to_upload)}, delete {len(to_delete)}")
+    to_add, to_change, to_delete = diff_manifests(new, old)
+    print(f"~ Plan: add {len(to_add)}, change {len(to_change)}, delete {len(to_delete)}")
 
-    parallel(upload, to_upload)
+    parallel(upload, to_add + to_change)
     parallel(delete, to_delete)
 
     print("~ Writing manifest")
@@ -135,9 +155,9 @@ def main():
         print("~ Cold start: purging entire zone")
         purge(f"https://{SITE_HOST}/*")
     else:
-        purge_urls = collect_purge_urls(to_upload, to_delete)
+        purge_urls = collect_purge_urls(to_change + to_delete)
         print(f"~ Purging {len(purge_urls)} URL(s)")
-        parallel(purge, purge_urls)
+        parallel(purge, purge_urls, workers=PURGE_WORKERS)
 
     print("~ Done")
 
