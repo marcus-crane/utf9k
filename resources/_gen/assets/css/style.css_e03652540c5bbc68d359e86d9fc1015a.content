@@ -1935,11 +1935,78 @@ a.post-link:hover {
   color: var(--foam);
 }
 
+.filter-bar.bookmark-filter-bar {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.bookmark-list {
+  border: 2px solid var(--overlay);
+}
+
+.list-group .section-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.25rem;
+}
+
+.bookmark-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--subtle);
+  border-bottom: 1px solid var(--overlay);
+}
+
+.bookmark-card:last-child {
+  border-bottom: none;
+}
+
+.bookmark-card-meta {
+  display: flex;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.bookmark-card-title {
+  font-size: 0.95rem;
+  color: var(--subtle);
+  overflow-wrap: anywhere;
+}
+
+a.bookmark-card:hover .bookmark-card-title {
+  color: var(--foam);
+}
+
+.bookmark-card-description {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.bookmark-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.25rem;
+}
+
+.bookmark-card-tag {
+  font-size: 0.65rem;
+  color: var(--muted);
+  background: var(--overlay);
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
+
 /* ==========================================
     FILTER PAGES
     ========================================== */
 .filter-bar {
-  background: var(--surface);
   margin-bottom: 2rem;
   display: flex;
   gap: 1rem;

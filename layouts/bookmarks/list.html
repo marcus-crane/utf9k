@@ -1,0 +1,82 @@
+{{ define "main" }}
+  {{ partial "inline-header.html" . }}
+
+  <div class="article-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
+  </div>
+
+  <div class="article-wrapper">
+    <article class="content">
+      {{ partial "settings-sidebar.html" . }}
+    </article>
+  </div>
+
+  {{ with .Content }}
+  <div class="list-content">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <div class="filter-bar bookmark-filter-bar">
+    <input type="text" class="filter-search" placeholder="Search bookmarks..." id="bookmark-search">
+  </div>
+
+  {{ $dateFormat := .Params.dateFormat | default "Jan 02" }}
+  {{ $dateGroupFormat := .Params.groupByDateFormat | default "2006" }}
+  {{ $pages := where site.RegularPages "Section" .Section }}
+
+  {{ range $pages.GroupByDate $dateGroupFormat }}
+  <div class="list-group" data-group="{{ .Key }}">
+    <div class="section-header">
+      <h2 class="section-title">{{ .Key }}</h2>
+      <span class="section-count">{{ len .Pages }}</span>
+    </div>
+    <div class="bookmark-list">
+      {{ range .Pages }}
+      {{ $host := "" }}
+      {{ with .Params.link }}{{ $host = (urls.Parse .).Host }}{{ end }}
+      {{ $tags := .Params.tags | default slice }}
+      {{ $haystack := printf "%s %s %s %s" .Title (.Params.description | default "") $host (delimit $tags " ") | lower }}
+      <a class="bookmark-card" href="{{ .Params.link }}" rel="noopener external" data-search="{{ $haystack }}">
+        <div class="bookmark-card-meta">
+          <span>{{ .Date.Format $dateFormat }}</span>
+          {{ with $host }}<span>·</span><span>{{ . }}</span>{{ end }}
+        </div>
+        <div class="bookmark-card-title">{{ .Title }}</div>
+        {{ with .Params.description }}<div class="bookmark-card-description">{{ . }}</div>{{ end }}
+        {{ with $tags }}
+        <div class="bookmark-card-tags">
+          {{ range . }}<span class="bookmark-card-tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <script>
+    (function() {
+      const input = document.getElementById('bookmark-search');
+      const cards = document.querySelectorAll('.bookmark-card');
+      const groups = document.querySelectorAll('.list-group[data-group]');
+
+      function applyFilters() {
+        const query = input.value.trim().toLowerCase();
+        cards.forEach(card => {
+          const matchesQuery = !query || card.dataset.search.includes(query);
+          card.style.display = matchesQuery ? '' : 'none';
+        });
+        groups.forEach(group => {
+          const visibleCards = group.querySelectorAll('.bookmark-card:not([style*="display: none"])');
+          group.style.display = visibleCards.length ? '' : 'none';
+          const count = group.querySelector('.section-count');
+          if (count) count.textContent = visibleCards.length;
+        });
+      }
+
+      input.addEventListener('input', applyFilters);
+    })();
+  </script>
+{{ end }}

@@ -39,6 +39,9 @@ menus:
     - name: OIAs
       pageRef: /oias
       weight: 65
+    - name: Bookmarks
+      pageRef: /bookmarks
+      weight: 67
     - name: About
       pageRef: /about
       weight: 70

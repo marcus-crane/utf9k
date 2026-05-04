@@ -1,0 +1,14 @@
+---
+title: ; DROP TABLE "COMPANIES";--LTD
+date: 2026-01-27T15:43:23+13:00
+description: A UK company that famously made a SQL injection as a company name, only to have their company name banned by the Companies House.
+slug: drop-table-companies-ltd
+link: https://s3.eu-west-2.amazonaws.com/document-api-images-live.ch.gov.uk/docs/2HkAvVY1-jwm-w4HAsl4u69TjPSHqxyIsjSkuaKbUr4/application-pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAWRGBDBV3HD3QWA26%2F20260127%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260127T024240Z&X-Amz-Expires=60&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEH4aCWV1LXdlc3QtMiJIMEYCIQDtTPb1e%2FJGUheLlDVxgPX60nnQYkalfC%2BsHGEZtO6gRwIhANuKam4c9yQOQC44FypsA9Mfdhet2I0hHiRfFI3rO3yxKoEECEcQBRoMNDQ5MjI5MDMyODIyIgxsk24jeKgLvqKMa%2FYq3gPOfi8E9aaTAeZy%2B9YrGEuPTawzRhbNbArTF6QKi70U%2FNUnPGDxJlkz8vedULYmCQ%2FugjeNQ3BKcLeHlZhn7UudYKjWqLwD3VeGd9hcA6ZRqPh9LZVj%2BiSvTf4aC7IhcoW0s6jTM%2BEAEYMANZn8S%2FKq7RObfS1GpmPx0Qa8lZaDjgfVw8MbO26M4VPcyYIc8Je%2B7K6KidMsph4%2Fii%2BUlZgt%2B1Lc%2FP9mDSDa3phf8SyQZJsLuRr24HITxCSPNF3OYv6llhfWIFVBigfzU6m6Ju2QWHpw9OCGgWFgcIpK1l%2FS9hV4v%2BduZNZV%2BSOC1PoBIrvyXkyxxhnl7dFjJRDtaiCkF%2Bbe6bIGd%2F5kSJWWQxT2ma4OuFA9Se3Tk%2BFbgpC5fP4GFVuMIgWVPI%2Fb7692X%2B8SW6%2FYu5INTUh7iqQHGpLJoHRR8kGGPmEm30UF5GdFjBWx%2FpOiXLVX3CEHfGbsQdxgoQehrimXkbGY2b2ZZVg595qkLBYAwtFHCQt2zay912f2vYhy%2F2c1VMGPdMGjaKMNuTYyAby70HCrTjpHX6F57ak0wHF9wAfQnU1sbzB2A1aKlfqi%2FJT92avi1PdxE73U0W9jIr6zwBAqvXwCJVy4q8qIPCxk0bKPfnm5O3QvMJLF38sGOqQBs63Bibh%2BAMfB8kgpA1xkvXEcDzrHxsoRlUXuQlla8cUi20oeW0A%2FcoquU5zwPzfe29JTG4gM4RT6rHyv8ImZ7zSyWq%2FSDCt6jsr6czRInKCh0nHOMJ25SFj0P9QA4IFoeM%2FtTL04Dra560L806Q%2FWSJUfR9hr%2FR7rqvQEU7EMKY8hRrPEb%2BsjG%2BVW49o%2BB0Ra7pr4IyElLI2SKIPhKez0DAVpeM%3D&X-Amz-SignedHeaders=host&response-content-disposition=inline%3Bfilename%3D%22companies_house_document.pdf%22&X-Amz-Signature=1e398eae820db456b63034167533ce4f9bbe39578aef1441a97dd9bd01670d31
+tags:
+- business
+- fun
+- funny
+- government
+- sql
+- wat
+---
