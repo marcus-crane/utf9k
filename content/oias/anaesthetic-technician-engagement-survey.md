@@ -5,9 +5,6 @@ link: "https://fyi.org.nz/request/13050-anaesthetic-technician-engagement-survey
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 An engagement survey showing how anaesthetic technicians feel about their workplace and career aspirations.
 
 I found this novel solely because it's so boring.

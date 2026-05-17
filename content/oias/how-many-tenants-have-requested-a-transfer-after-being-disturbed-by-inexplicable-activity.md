@@ -5,9 +5,6 @@ link: "https://fyi.org.nz/request/8940-how-many-tenants-have-requested-a-transfe
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 This person wanted to know how many Kainga Ora (Housing New Zealand) tenants have been relocated or filed complaints in regards to houses being "haunted" over a five year period.
 
 They were unable to perform a free-text search as each office houses different files so there is seemingly no centralised way to query all case files.

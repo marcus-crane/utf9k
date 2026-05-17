@@ -5,7 +5,4 @@ link: "https://fyi.org.nz/request/29576-miscellaneous-questions-about-pb-5-pedes
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 A request filed by myself, shedding some light on an age old question: Does pressing the button at the pedestrian crossing actually do anything?

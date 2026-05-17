@@ -12,6 +12,7 @@
   <div class="article-wrapper">
     <article class="content">
       {{ partial "settings-sidebar.html" . }}
+      {{ partial "link-preview.html" (dict "page" . "url" .Params.link) }}
       {{ .Content }}
     </article>
   </div>

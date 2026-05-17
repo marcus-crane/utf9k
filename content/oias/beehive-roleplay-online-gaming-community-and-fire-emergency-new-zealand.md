@@ -5,9 +5,6 @@ link: "https://fyi.org.nz/request/27998-beehive-roleplay-online-gaming-community
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 There is a gaming community called Beehive Roleplay who roleplay as emergency services using FiveM, a multiplayer mod for Grand Theft Auto V running on dedicated servers.
 
 In order to have their simulation be as accurate as possible, in-game vehicles are branded with real-life branding such as those used by Fire and Emergency NZ (FENZ).

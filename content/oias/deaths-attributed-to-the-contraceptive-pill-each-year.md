@@ -5,9 +5,6 @@ link: "https://fyi.org.nz/request/16965-deaths-attributed-to-the-contraceptive-p
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 The actual request itself was not something I had ever considered, and the answer is zero deaths.
 
 However, what was interesting was the mention of the International Statistical Classification of Diseases and Related Health Problems.

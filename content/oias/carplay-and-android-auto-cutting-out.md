@@ -5,9 +5,6 @@ link: "https://fyi.org.nz/request/29133-carplay-and-android-auto-cutting-out"
 tags:
   - oia
 ---
-
-{{< link-preview >}}
-
 This was a request about Apple Carplay and Android Auto allegedly cutting out in the Tamaki Drive area, as well as some other locations.
 
 Radio Spectrum Management (RSM) had a look and weren't able to replicate the issue at all.

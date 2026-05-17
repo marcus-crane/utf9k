@@ -1,0 +1,9 @@
+{{ $url := .url | default .Page.Params.link }}
+{{ with $url }}
+{{ $parsed := urls.Parse . }}
+<a href="{{ . }}" class="link-preview-card">
+  <span class="link-preview-domain">{{ $parsed.Host }}</span>
+  <span class="link-preview-title">{{ $.title | default $.page.Title }}</span>
+  <span class="link-preview-url">{{ . }}</span>
+</a>
+{{ end }}
