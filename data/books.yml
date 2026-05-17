@@ -1,7 +1,6 @@
 - list: 2026
   goal: 18
   books:
-
     - title: Impro
       subtitle: Improvisation and the Theatre
       author: Keith Johnstone
@@ -16,6 +15,21 @@
       date_finished: null
       recommended: false
       progress: 5
+
+    - title: Civil Litigation for Non‑Lawyers
+      subtitle: A plain-English guide to civil cases in New Zealand
+      author: Martin Dillon
+      cover: https://cdn.utf9k.net/books/civil-litigation-for-non-lawyers.jpg
+      cover_height: 2400
+      cover_width: 1650
+      isbn13: 9798513762621
+      asin: B08VWY399Y
+      link: https://martindillon.nz/civillitigationfornon-lawyers/
+      date_added: 2026-02-14
+      date_started: 2026-02-14
+      date_finished: 2026-05-16
+      recommended: false
+      progress: 100
 
     - title: Careless People
       subtitle: A Cautionary Tale of Power, Greed, and Lost Idealism
@@ -73,7 +87,7 @@
       cover_width: 1725
       isbn13: 9780691174952
       asin: 0691174954
-      link: https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics  
+      link: https://press.princeton.edu/books/hardcover/9780691174952/the-tyranny-of-metrics
       date_added: 2022-09-22
       date_started: 2025-03-21
       date_finished: 2025-04-02
@@ -94,7 +108,7 @@
       date_finished: 2025-03-06
       recommended: true
       progress: 100
-    
+
     - title: Tidy First?
       subtitle: A Personal Exercise in Empirical Software Design
       author: Kent Back
@@ -187,7 +201,7 @@
       date_finished: 2024-11-23
       recommended: false
       progress: 100
-    
+
     - title: Who Moved My Cheese?
       subtitle: An Amazing Way to Deal with Change in Your Work and in Your Life
       author: Spencer Johnson
@@ -247,7 +261,7 @@
       date_finished: 2024-06-01
       recommended: true
       progress: 100
-    
+
     - title: Burn Book
       subtitle: A Tech Love Story
       author: Kara Swisher
@@ -262,7 +276,7 @@
       date_finished: 2024-03-10
       recommended: false
       progress: 100
-    
+
     - title: Hacks, Leaks, and Revelations
       subtitle: The Art of Analyzing Hacked and Leaked Data
       author: Micah Lee
@@ -276,8 +290,8 @@
       date_started: 2024-02-07
       date_finished: 2024-03-06
       recommended: false
-      progress: 100 
-    
+      progress: 100
+
     - title: Creative Dysregulation
       subtitle: Why Your Creativity Is Chaotic & What to Do About It
       author: Kelly Wilde Miller
@@ -292,7 +306,7 @@
       date_finished: 2024-03-05
       recommended: false
       progress: 100
- 
+
     - title: Risk & Reward
       subtitle: An Inside View of the Property/Casualty Insurance Business
       author: Stephen Catlin
@@ -334,10 +348,10 @@
       link: https://web.archive.org/web/20070207130119/http://www.konami.jp/book/cgi-bin/detail.cgi?goods_key=ISBN4-86155-832-8
       date_added: 2024-01-21
       date_started: 2024-01-21
-      date_finished: 2024-02-02 
+      date_finished: 2024-02-02
       recommended: false
       progress: 100
- 
+
     - title: The Shallows
       subtitle: What the Internet is Doing to our Brains
       author: Nicholas Carr
@@ -352,7 +366,7 @@
       date_finished: 2024-01-27
       recommended: false
       progress: 100
-  
+
     - title: Creative Doing
       subtitle: 75 Practical Exercises to Unblock Your Creative Potential in Your Work, Hobby, or Next Career
       author: Herbert Lui
@@ -430,7 +444,7 @@
       date_finished: 2023-12-25
       recommended: false
       progress: 100
-    
+
     - title: Walking Your Blues Away
       subtitle: How to Heal the Mind and Create Emotional Well-Being
       author: Thom Hartmann
@@ -490,7 +504,7 @@
       date_finished: 2023-06-06
       recommended: false
       progress: 100
-    
+
     - title: How to Make Coffee
       subtitle: The Science Behind the Bean
       author: Lani Kingston
@@ -1180,7 +1194,7 @@
       date_finished: 2018-04-28
       recommended: false
       progress: 100
-    
+
     - title: The Little Go Book
       subtitle: null
       author: Karl Seguin
@@ -1318,7 +1332,6 @@
 
 - list: Stalled
   books:
-
     - title: Creating The Mania
       subtitle: An Inside Look at How WrestleMania Comes to Life
       author: Jon Robinson
