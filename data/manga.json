@@ -12,18 +12,6 @@
     "url": "https://anilist.co/manga/30735"
   },
   {
-    "author": "Tatsuki Fujimoto",
-    "chapters": 232,
-    "color": "#f1c90d",
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
-    "cover_height": 722,
-    "cover_width": 460,
-    "progress": 232,
-    "status": "FINISHED",
-    "title": "Chainsaw Man",
-    "url": "https://anilist.co/manga/105778"
-  },
-  {
     "author": "Tooru Kuramori",
     "chapters": null,
     "color": "#f1d60d",
@@ -154,6 +142,18 @@
     "status": "FINISHED",
     "title": "Shuma Baobei 03: Xun Shou Shi Zhi Wang",
     "url": "https://anilist.co/manga/32389"
+  },
+  {
+    "author": "Jinushi",
+    "chapters": null,
+    "color": "#f16b50",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147149-9DQ4upJAV2kQ.jpg",
+    "cover_height": 654,
+    "cover_width": 460,
+    "progress": 34,
+    "status": "RELEASING",
+    "title": "Super no Ura de Yani Suu Futari",
+    "url": "https://anilist.co/manga/147149"
   },
   {
     "author": "Masakazu Ishiguro",
