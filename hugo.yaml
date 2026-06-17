@@ -21,12 +21,6 @@ menus:
     - name: Blog
       pageRef: /blog
       weight: 20
-    - name: Projects
-      pageRef: /projects
-      weight: 30
-    - name: Questions
-      pageRef: /questions
-      weight: 40
     - name: Books
       pageRef: /books
       weight: 50
