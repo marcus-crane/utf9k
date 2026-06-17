@@ -1,10 +1,17 @@
 - list: Playing
   games:
-  - id: 388426
-    title: "Paranormasight: The Mermaid's Curse"
-    link: https://www.backloggd.com/games/paranormasight-the-mermaids-curse/
+  - id: 146564
+    title: Needy Streamer Overload
+    link: https://www.backloggd.com/games/needy-streamer-overload/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/cobftx.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co57rh.jpg
+      width: 720
+      height: 540
+  - id: 134612
+    title: Pragmata
+    link: https://www.backloggd.com/games/pragmata/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobxnx.jpg
       width: 720
       height: 540
 - list: Backlog
@@ -460,10 +467,10 @@
       width: 720
       height: 540
   - id: 239812
-    title: Cats Hidden in Paris
-    link: https://www.backloggd.com/games/cats-hidden-in-paris/
+    title: Travellin Cats in Paris
+    link: https://www.backloggd.com/games/travellin-cats-in-paris/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co6uk5.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobq7j.jpg
       width: 720
       height: 540
   - id: 9630
@@ -1583,7 +1590,7 @@
     title: 'Sly 2: Band of Thieves'
     link: https://www.backloggd.com/games/sly-2-band-of-thieves--1/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co5kkh.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobwo7.jpg
       width: 720
       height: 540
   - id: 873
@@ -1716,7 +1723,7 @@
     title: Sly Cooper and the Thievius Raccoonus
     link: https://www.backloggd.com/games/sly-cooper-and-the-thievius-raccoonus--1/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/coaxxm.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobxrf.jpg
       width: 720
       height: 540
   - id: 378
@@ -2346,7 +2353,7 @@
     title: P.N.03
     link: https://www.backloggd.com/games/p-dot-n-03/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1pe4.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coc2s5.jpg
       width: 720
       height: 540
   - id: 1523
@@ -3104,7 +3111,7 @@
     title: Metal Slug 3
     link: https://www.backloggd.com/games/metal-slug-3/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/cob5x5.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cobu6p.jpg
       width: 720
       height: 540
   - id: 9245
@@ -3461,7 +3468,7 @@
     title: 'Armored Core VI: Fires of Rubicon'
     link: https://www.backloggd.com/games/armored-core-vi-fires-of-rubicon/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/coan1v.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coc408.jpg
       width: 720
       height: 540
   - id: 104971
