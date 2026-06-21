@@ -15,6 +15,7 @@
   <meta name="author" content="{{ .Site.Params.author.name }}">
   {{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}'>{{ end }}
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="google-site-verification" content="A8bp42e_3080Ad1nuenAOTEea-P91M21HBRqBcX0PSE" /> 
   <meta name="referrer" content="no-referrer-when-downgrade">
   {{ hugo.Generator }}
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
