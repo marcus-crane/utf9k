@@ -8,6 +8,13 @@
   {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
 {{- end -}}
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MKG82VFM');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#d9d0c3" media="(prefers-color-scheme: light)">
@@ -15,6 +22,7 @@
   <meta name="author" content="{{ .Site.Params.author.name }}">
   {{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}'>{{ end }}
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="google-site-verification" content="A8bp42e_3080Ad1nuenAOTEea-P91M21HBRqBcX0PSE" />
   <meta name="google-site-verification" content="A8bp42e_3080Ad1nuenAOTEea-P91M21HBRqBcX0PSE" /> 
   <meta name="referrer" content="no-referrer-when-downgrade">
   {{ hugo.Generator }}
@@ -46,6 +54,10 @@
   {{ end }}
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKG82VFM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="mobile-overlay" onclick="toggleMenu()"></div>
   <div class="layout">
     {{ partial "sidebar.html" . }}
