@@ -1,5 +1,4 @@
 baseURL: https://utf9k.net
-languageCode: en-us
 title: utf9k
 # Dates without timestamps or zones should be assumed to be my local timezone
 timeZone: Pacific/Auckland

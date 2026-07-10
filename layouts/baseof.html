@@ -1,125 +1,139 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-{{- $favicon := "/favicon.png" -}}
-{{- $faviconAlt := "A robot icon" -}}
-{{- $isRedacted := intersect .Params.tags (slice "redactions") -}}
-{{- if $isRedacted -}}
-  {{- $favicon = "/favicon_redacted.png" -}}
-  {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
-{{- end -}}
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#d9d0c3" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#191724" media="(prefers-color-scheme: dark)">
-  <meta name="author" content="{{ .Site.Params.author.name }}">
-  {{ if .Params.keywords }}<meta name="keywords" content='{{ delimit .Params.keywords ", " }}'>{{ end }}
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-  <meta name="referrer" content="no-referrer-when-downgrade">
-  {{ hugo.Generator }}
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
-  <link rel="icon" type="image/png" href="{{ $favicon }}">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="canonical" href="{{ .Permalink | safeURL }}">
-  <link rel="preconnect" href="https://cdn.utf9k.net">
-  <link rel="dns-prefetch" href="https://cdn.utf9k.net">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="me" href="mailto:hello@utf9k.net">
-  <link rel="me" href="https://mastodon.nz/@utf9k">
-  <link rel="me" href="https://github.com/marcus-crane">
-  <link rel="webmention" href="https://webmention.io/utf9k.net/webmention">
-  <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc">
+<!doctype html>
+<html lang="{{ .Site.Language.Locale }}">
+    {{- $favicon := "/favicon.png" -}} {{- $faviconAlt := "A robot icon" -}} {{-
+    $isRedacted := intersect .Params.tags (slice "redactions") -}} {{- if
+    $isRedacted -}} {{- $favicon = "/favicon_redacted.png" -}} {{- $faviconAlt =
+    "A robot icon with a black censor bar covering its eyes" -}} {{- end -}}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="theme-color"
+            content="#d9d0c3"
+            media="(prefers-color-scheme: light)"
+        />
+        <meta
+            name="theme-color"
+            content="#191724"
+            media="(prefers-color-scheme: dark)"
+        />
+        <meta name="author" content="{{ .Site.Params.author.name }}" />
+        {{ if .Params.keywords }}
+        <meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />
+        {{ end }}
+        <meta
+            name="description"
+            content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
+        />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        {{ hugo.Generator }}
+        <title>
+            {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{
+            .Site.Title }}{{ end }}
+        </title>
+        <link rel="icon" type="image/png" href="{{ $favicon }}" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="canonical" href="{{ .Permalink | safeURL }}" />
+        <link rel="preconnect" href="https://cdn.utf9k.net" />
+        <link rel="dns-prefetch" href="https://cdn.utf9k.net" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="me" href="mailto:hello@utf9k.net" />
+        <link rel="me" href="https://mastodon.nz/@utf9k" />
+        <link rel="me" href="https://github.com/marcus-crane" />
+        <link
+            rel="webmention"
+            href="https://webmention.io/utf9k.net/webmention"
+        />
+        <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
 
-  {{ range .AlternativeOutputFormats }}
-  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-  {{ end }}
+        {{ range .AlternativeOutputFormats }}
+        <link
+            rel="{{ .Rel }}"
+            type="{{ .MediaType.Type }}"
+            href="{{ .Permalink | safeURL }}"
+        />
+        {{ end }} {{ template "_internal/opengraph.html" . }} {{ template
+        "_internal/twitter_cards.html" . }} {{ with resources.Get
+        "css/style.css" | postCSS }}
+        <style>
+            {{ .Content | safeCSS }}
+        </style>
+        {{ end }}
+    </head>
+    <body>
+        <div class="mobile-overlay" onclick="toggleMenu()"></div>
+        <div class="layout">
+            {{ partial "sidebar.html" . }}
 
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
+            <main class="main">
+                {{ block "main" .}}{{ end }} {{ partial "footer.html" . }}
+            </main>
+        </div>
 
-  {{ with resources.Get "css/style.css" | postCSS }}
-  <style>
-  {{ .Content | safeCSS }}
-  </style>
-  {{ end }}
-</head>
-<body>
-  <div class="mobile-overlay" onclick="toggleMenu()"></div>
-  <div class="layout">
-    {{ partial "sidebar.html" . }}
+        <script>
+            function toggleMenu() {
+              document.querySelector('.sidebar').classList.toggle('open');
+              document.querySelector('.mobile-overlay').classList.toggle('open');
+            }
 
-    <main class="main">
-      {{ block "main" .}}{{ end }}
+            // As busted as this looks (in source code), it renders a valid JS array
+            const gags = {{ hugo.Data.gags }};
+            const isRedacted = {{ if intersect .Params.tags (slice "redactions") }}true{{ else }}false{{ end }};
 
-      {{ partial "footer.html" . }}
-    </main>
-  </div>
+            function newGag() {
+              const gag = isRedacted ? "Why is it so dark in here? What's going on?" : gags[Math.floor(Math.random() * gags.length)];
+              document.querySelectorAll('.robot-gag').forEach(el => el.textContent = gag);
+            }
 
-  <script>
-    function toggleMenu() {
-      document.querySelector('.sidebar').classList.toggle('open');
-      document.querySelector('.mobile-overlay').classList.toggle('open');
-    }
+            newGag();
 
-    // As busted as this looks (in source code), it renders a valid JS array
-    const gags = {{ .Site.Data.gags }};
-    const isRedacted = {{ if intersect .Params.tags (slice "redactions") }}true{{ else }}false{{ end }};
+            (function() {
+              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-    function newGag() {
-      const gag = isRedacted ? "Why is it so dark in here? What's going on?" : gags[Math.floor(Math.random() * gags.length)];
-      document.querySelectorAll('.robot-gag').forEach(el => el.textContent = gag);
-    }
+              function getSavedTheme() {
+                return localStorage.getItem('theme') || 'system';
+              }
 
-    newGag();
+              function applyTheme(theme) {
+                const isDark = theme === 'dark' || (theme === 'system' && prefersDark.matches);
+                document.body.classList.toggle('dark', isDark);
+              }
 
-    (function() {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+              function setTheme(theme) {
+                localStorage.setItem('theme', theme);
+                applyTheme(theme);
+                document.querySelectorAll('.theme-toggle button').forEach(btn => {
+                  btn.classList.toggle('active', btn.dataset.theme === theme);
+                });
+              }
 
-      function getSavedTheme() {
-        return localStorage.getItem('theme') || 'system';
-      }
+              const savedTheme = getSavedTheme();
+              applyTheme(savedTheme);
 
-      function applyTheme(theme) {
-        const isDark = theme === 'dark' || (theme === 'system' && prefersDark.matches);
-        document.body.classList.toggle('dark', isDark);
-      }
+              document.querySelectorAll('.theme-toggle button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.theme === savedTheme);
+                btn.addEventListener('click', () => setTheme(btn.dataset.theme));
+              })
 
-      function setTheme(theme) {
-        localStorage.setItem('theme', theme);
-        applyTheme(theme);
-        document.querySelectorAll('.theme-toggle button').forEach(btn => {
-          btn.classList.toggle('active', btn.dataset.theme === theme);
-        });
-      }
+              prefersDark.addEventListener('change', () => {
+                if (getSavedTheme() === 'system') {
+                  applyTheme('system');
+                }
+              })
+            })();
 
-      const savedTheme = getSavedTheme();
-      applyTheme(savedTheme);
-
-      document.querySelectorAll('.theme-toggle button').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.theme === savedTheme);
-        btn.addEventListener('click', () => setTheme(btn.dataset.theme));
-      })
-
-      prefersDark.addEventListener('change', () => {
-        if (getSavedTheme() === 'system') {
-          applyTheme('system');
-        }
-      })
-    })();
-
-    // Heading anchor copy-to-clipboard
-    document.querySelectorAll('.heading-anchor').forEach(anchor => {
-      anchor.addEventListener('click', (e) => {
-        e.preventDefault();
-        const url = window.location.origin + window.location.pathname + anchor.getAttribute('href');
-        navigator.clipboard.writeText(url);
-        const original = anchor.textContent;
-        anchor.textContent = '✓';
-        setTimeout(() => anchor.textContent = original, 1500);
-      });
-    });
-
-  </script>
-</body>
+            // Heading anchor copy-to-clipboard
+            document.querySelectorAll('.heading-anchor').forEach(anchor => {
+              anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const url = window.location.origin + window.location.pathname + anchor.getAttribute('href');
+                navigator.clipboard.writeText(url);
+                const original = anchor.textContent;
+                anchor.textContent = '✓';
+                setTimeout(() => anchor.textContent = original, 1500);
+              });
+            });
+        </script>
+    </body>
 </html>

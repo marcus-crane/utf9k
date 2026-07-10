@@ -48,7 +48,7 @@ In saying that, the introduction of inline shortcodes allows us to do some fun t
 Check out some of these funny gags I wrote:
 {{ readfile.inline }}
 <ul>
-  {{ range $.Site.Data.gags }}
+  {{ range hugo.Data.gags }}
   <li>{{ . }}</li>
   {{ end }}
 </ul>
