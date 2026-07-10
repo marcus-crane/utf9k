@@ -2444,3 +2444,8 @@ body.dark .activity-card.cat-track .preview { border-color: var(--pine); }
     font-size: 0.8em;
   }
 }
+
+/* Experiments */
+#zeroribbon {
+  display: none;
+}
