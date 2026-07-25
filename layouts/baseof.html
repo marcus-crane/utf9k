@@ -62,7 +62,7 @@
   </head>
   <body>
     <main class="main">
-      {{ partial "inline-header.html" . }}
+      {{ partial "site-header.html" . }}
       {{ range .Site.Menus.explore }}
         <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} class="active"{{ end }}>{{ .Name }}</a>
       {{ end }}
