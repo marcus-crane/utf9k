@@ -36,6 +36,10 @@ This is a large amount of text that will render as a paragraph and despite what 
 
 This is a paragraph with some regular text.
 
+This is a paragraph<br />with a forced line break.
+
+### Markdown Tags
+
 This is a paragraph with some **bold** text.
 
 This is a paragraph with some *italic* text.
@@ -48,15 +52,31 @@ This is a paragraph with some ~*italic strikethrough*~ text.
 
 This is a paragraph with some ~**bold strikethrough**~ text.
 
+### HTML Tags
+
 This is a paragraph with some <sub>subscript</sub> text.
 
 This is a paragraph with some <sup>superscript</sup> text.
 
 This is a paragraph with some <ins>underlined</ins> text.
 
+This is a paragraph with some <strike>strikethrough</strike> text.
+
+This is a paragraph with some <del>deleted</del> text.
+
 This is a paragraph telling you to press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DELETE</kbd>.
 
 This is a paragraph with some <mark>marked</mark> text.
+
+### Line Breaks
+
+Here is a Markdown line break
+
+---
+
+Here is an HTML line break
+
+<hr />
 
 ## Blockquotes
 
@@ -69,6 +89,18 @@ This is also regular text.
 > This is something that someone might have once said
 >
 > — Some Person
+
+<!-- BUG: A new line is required for the bottom quote to not get eaten -->
+> Someone once said
+> > This is a nested blockquote
+>
+> and everyone present gasped
+
+<blockquote>
+  This is an HTML blockquote
+
+  — Some Person
+</blockquote>
 
 ## Code Blocks
 
@@ -178,6 +210,30 @@ This is an image rendered using HTML syntax, and a trailing `figcaption`:
 <img alt="Image by Robert Clark on Unsplash" src="https://cdn.utf9k.net/images/robert-clark-streak.jpg" style="border-radius: 3px;" />
 <figcaption style="display: none;">You can see the source image <a target="_blank" href="https://unsplash.com/photos/a-blurry-photo-of-a-red-and-orange-object-YetawMqixFs">here</a></figcaption>
 
+## Embedded Media
+
+### Video
+
+<video style="display: inherit; margin: 0 auto;" width="50%" controls>
+<source preload src="https://cdn.utf9k.net/blog/always-bet-on-sales/01-technical.mp4" type="video/mp4" />
+Ah, sorry! It looks like your browser either hates the h264 codec or it just doesn't support the video tag.
+</video>
+
+### Audio
+
+<center>
+  <audio controls>
+    <source src="https://cdn.utf9k.net/blog/plex-tidal-together/tool-trio.mp3" type="audio/mpeg" />
+    Your browser doesn't support the audio tag :(
+  </audio>
+</center>
+
+### iFrames
+
+<iframe src="https://parnell.utf9k.net" style="height: 500px;" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HhnUK1YmMEU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
 ## Lists
 
 This is an unordered list:
@@ -206,6 +262,16 @@ This is a task list:
 - [ ] Do this
 - [x] Do this as well
 - [ ] Finally, do this
+
+This is a definition list:
+
+<dl>
+  <dt>Loch Ness Monster</dt>
+  <dd>A large, mythical water creature.</dd>
+
+  <dt>Internet</dt>
+  <dd>A place for storing junk information</dd>
+</dl>
 
 ## Footnotes
 
@@ -254,3 +320,11 @@ Using a backslash means that \*this text\* is not bolded.
 >   - [x] and tasks
 
 [^1]: Here is some more information.
+
+## Redactions
+
+<h3>This heading contains some <span class="redacted">redacted</span> text</h3>
+
+This sentence contains <span class="redacted">highly classified</span> text that is hidden. It should <span class="redacted">not</span> be <span class="redacted">considered to be</span> readable.
+
+<span class="redacted">This entire sentence has found itself redacted! In a real redaction, this text would be rotated so that it is exactly the same length as the original sentence but obfuscated from the reader.</span>
