@@ -1,4 +1,4 @@
-{{ define "main" }} {{ partial "inline-header.html" . }}
+{{ define "main" }}
 
 <div class="article-header">
     <h1>{{ .Title }}</h1>
@@ -8,10 +8,6 @@
 </div>
 
 <div class="books-page">
-    <div class="article-wrapper">
-        <div class="content">{{ partial "settings-sidebar.html" . }}</div>
-    </div>
-
     <div class="filter-bar">
         <input
             type="text"
@@ -26,7 +22,7 @@
         <div class="section-header">
             <!-- TODO: Add reading goal as subtitle -->
             <h2 class="section-title">{{ .list }}</h2>
-            <span class="section-count">{{ len .books }}</span>
+            <span class="section-count">{{ len .books }} books</span>
         </div>
         <div class="media-grid">
             {{ range .books }}
@@ -35,13 +31,9 @@
                     src="{{ .cover }}"
                     style="aspect-ratio: unset"
                     alt="Book cover for {{ .title }}"
+                    height="500px"
                 />
                 <div class="preview">
-                    <img
-                        src="{{ .cover }}"
-                        style="aspect-ratio: unset"
-                        alt="Book cover for {{ .title }}"
-                    />
                     <div class="preview-meta">
                         <!-- TODO: Get more metadata to preview -->
                         <div class="preview-title">{{ .title }}</div>

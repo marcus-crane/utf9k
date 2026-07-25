@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ partial "inline-header.html" . }}
-
   <div class="article-header">
     <h1>{{ .Title }}</h1>
     <div class="article-meta">
@@ -11,7 +9,6 @@
 
   <div class="article-wrapper">
     <article class="content">
-      {{ partial "settings-sidebar.html" . }}
       {{ partial "link-preview.html" (dict "page" . "url" .Params.link) }}
       {{ .Content }}
     </article>

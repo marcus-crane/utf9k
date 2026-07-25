@@ -1,4 +1,4 @@
-{{ define "main" }} {{ partial "inline-header.html" . }}
+{{ define "main" }}
 
 <div class="article-header">
     <h1>{{ .Title }}</h1>
@@ -8,9 +8,6 @@
 </div>
 
 <div class="games-page">
-    <div class="article-wrapper">
-        <div class="content">{{ partial "settings-sidebar.html" . }}</div>
-    </div>
 
     <div class="filter-bar">
         <!-- TODO: Populate search with series? -->
@@ -45,18 +42,14 @@
     <section class="section playing" data-status="playing">
         <div class="section-header">
             <h2 class="section-title playing">Playing</h2>
-            <span class="section-count">{{ len $playing }}</span>
+            <span class="section-count">{{ len $playing }} game{{ if ne (len $playing) 1}}s{{ end }}</span>
         </div>
         <div class="media-grid">
             <!-- TODO: Extract game card into a partial -->
             {{ range $playing }}
             <div class="media-card" data-title="{{ .title | lower }}">
-                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" />
+                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" width="500"/>
                 <div class="preview">
-                    <img
-                        src="{{ .cover.url }}"
-                        alt="Box art for {{ .title }}"
-                    />
                     <div class="preview-meta">
                         <!-- TODO: Get more metadata to preview -->
                         <div class="preview-title">{{ .title }}</div>
@@ -72,17 +65,13 @@
     <section class="section backlog" data-status="backlog">
         <div class="section-header">
             <h2 class="section-title backlog">Backlog</h2>
-            <span class="section-count">{{ len $backlog }}</span>
+            <span class="section-count">{{ len $backlog }} game{{ if ne (len $playing) 1}}s{{ end }}</span>
         </div>
         <div class="media-grid">
             {{ range $backlog }}
             <div class="media-card" data-title="{{ .title | lower }}">
-                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" />
+                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" width="500" />
                 <div class="preview">
-                    <img
-                        src="{{ .cover.url }}"
-                        alt="Box art for {{ .title }}"
-                    />
                     <div class="preview-meta">
                         <div class="preview-title">{{ .title }}</div>
                     </div>
@@ -97,17 +86,13 @@
     <section class="section completed" data-status="completed">
         <div class="section-header">
             <h2 class="section-title completed">Completed</h2>
-            <span class="section-count">{{ len $completed }}</span>
+            <span class="section-count">{{ len $completed }} game{{ if ne (len $playing) 1}}s{{ end }}</span>
         </div>
         <div class="media-grid">
             {{ range $completed }}
-            <div class="media-card" data-title="{{ .title | lower }}">
+            <div class="media-card" data-title="{{ .title | lower }}" width="500">
                 <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" />
                 <div class="preview">
-                    <img
-                        src="{{ .cover.url }}"
-                        alt="Box art for {{ .title }}"
-                    />
                     <div class="preview-meta">
                         <div class="preview-title">{{ .title }}</div>
                     </div>
@@ -123,17 +108,13 @@
     <section class="section shelved" data-status="shelved">
         <div class="section-header">
             <h2 class="section-title shelved">Shelved</h2>
-            <span class="section-count">{{ len $completed }}</span>
+            <span class="section-count">{{ len $completed }} game{{ if ne (len $playing) 1}}s{{ end }}</span>
         </div>
         <div class="media-grid">
             {{ range $shelved }}
             <div class="media-card" data-title="{{ .title | lower }}">
-                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" />
+                <img src="{{ .cover.url }}" alt="Box art for {{ .title }}" width="500" />
                 <div class="preview">
-                    <img
-                        src="{{ .cover.url }}"
-                        alt="Box art for {{ .title }}"
-                    />
                     <div class="preview-meta">
                         <div class="preview-title">{{ .title }}</div>
                     </div>

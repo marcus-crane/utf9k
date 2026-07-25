@@ -1,4 +1,4 @@
-{{ define "main" }} {{ partial "inline-header.html" . }}
+{{ define "main" }}
 
 <div class="article-header">
     <h1>{{ .Title }}</h1>
@@ -8,9 +8,6 @@
 </div>
 
 <div class="manga-page">
-    <div class="article-wrapper">
-        <div class="content">{{ partial "settings-sidebar.html" . }}</div>
-    </div>
 
     <div class="filter-bar">
         <input
@@ -37,14 +34,13 @@
     <section class="section releasing" data-status="releasing">
         <div class="section-header">
             <h2 class="section-title releasing">Releasing</h2>
-            <span class="section-count">{{ len $releasing }}</span>
+            <span class="section-count">{{ len $releasing }} manga</span>
         </div>
         <div class="media-grid">
             {{ range $releasing }}
             <div class="media-card" data-title="{{ .title | lower }}">
-                <img src="{{ .cover }}" alt="Cover art for {{ .title }}" />
+                <img src="{{ .cover }}" alt="Cover art for {{ .title }}" height="500" />
                 <div class="preview">
-                    <img src="{{ .cover }}" alt="Cover art for {{ .title }}" />
                     <div class="preview-meta">
                         <div class="preview-title">{{ .title }}</div>
                         <div class="preview-subtitle">{{ .author }}</div>
@@ -64,7 +60,7 @@
     <section class="section backlog" data-status="backlog">
         <div class="section-header">
             <h2 class="section-title backlog">Backlog</h2>
-            <span class="section-count">{{ len $backlog }}</span>
+            <span class="section-count">{{ len $backlog }} manga</span>
         </div>
         <div class="media-grid">
             {{ range $backlog }}
