@@ -1,40 +1,34 @@
 {{ define "main" }}
-  <div class="article-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
-  </div>
+  {{ partial "header.html" . }}
 
-  {{ with .Content }}
-  <div class="list-content">
-    {{ . }}
-  </div>
-  {{ end }}
+  {{ $groups := slice }}
+  {{ range (where site.RegularPages "Section" .Section).GroupByDate "2006" }}
+    {{ $items := slice }}
 
-  {{ $dateFormat := .Params.dateFormat | default "Jan 02" }}
-  {{ $dateGroupFormat := .Params.groupByDateFormat | default "2006" }}
-  {{ $pages := where site.RegularPages "Section" .Section }}
-
-  {{ range $pages.GroupByDate $dateGroupFormat }}
-  <section data-group="{{ .Key }}">
-    <h2>{{ .Key }} <small>{{ len .Pages }} bookmark{{ if ne (len .Pages) 1 }}s{{ end }} saved</small></h2>
-    <ul role="list">
-      {{ range .Pages }}
-      {{ $host := "" }}
-      {{ with .Params.link }}{{ $host = (urls.Parse .).Host }}{{ end }}
-      {{ $tags := .Params.tags | default slice }}
-      <li>
-        <article>
-          <h3><a href="{{ .Params.link }}" rel="noopener external">{{ .Title }}</a></h3>
-          {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
-          <footer>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
-            <span>{{ $host }}</span>
-            {{ with $tags }}<ul role="list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
-          </footer>
-        </article>
-      </li>
+    {{ range .Pages }}
+      {{ $details := slice }}
+      {{ with .Params.link }}
+        {{ $details = $details | append (dict "label" "Source" "value" (urls.Parse .).Host) }}
       {{ end }}
-    </ul>
-  </section>
+      {{ with .Params.tags }}
+        {{ $details = $details | append (dict "label" "Tags" "value" (delimit . ", ")) }}
+      {{ end }}
+
+      {{ $items = $items | append (dict
+        "title" .Title
+        "link"  .Params.link
+        "summary" .Description
+        "date"    .Date
+        "details" $details
+      ) }}
+    {{ end }}
+
+    {{ $groups = $groups | append (dict
+      "name"  .Key
+      "meta"  (printf "%d bookmark%s saved" (len .Pages) (cond (eq (len .Pages) 1) "" "s"))
+      "items" $items
+    ) }}
   {{ end }}
+
+  {{ partial "collection.html" (dict "page" . "groups" $groups) }}
 {{ end }}

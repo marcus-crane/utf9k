@@ -1,66 +1,37 @@
 {{ define "main" }}
+  {{ partial "header.html" . }}
 
-<div class="article-header">
-  <h1>{{ .Title }}</h1>
-  {{ with .Description }}
-  <p>{{ . }}</p>
+  {{ $groups := slice }}
+  {{ range slice (dict "label" "Releasing" "status" "RELEASING") (dict "label" "Backlog" "status" "FINISHED") }}
+    {{ $label := .label }}
+    {{ $entries := sort (where hugo.Data.manga "status" .status) "title" "asc" }}
+    {{ $items := slice }}
+
+    {{ range $entries }}
+      {{ $m := . }}
+      {{ $h := 240 }}
+      {{ $w := math.Round (mul $h (div (float $m.cover_width) $m.cover_height)) }}
+
+      {{ $read := printf "%v %s read" $m.progress (cond (eq (int $m.progress) 1) "chapter" "chapters") }}
+      {{ with $m.chapters }}{{ $read = printf "%v / %v chapters read" $m.progress . }}{{ end }}
+
+      {{ $items = $items | append (dict
+        "title" $m.title
+        "link"  $m.url
+        "image" (dict "src" $m.cover "width" $w "height" $h "alt" (printf "Cover of %s" $m.title))
+        "details" (slice
+          (dict "label" "Author"   "value" $m.author)
+          (dict "label" "Progress" "value" $read)
+        )
+      ) }}
+    {{ end }}
+
+    {{ $groups = $groups | append (dict
+      "name"  $label
+      "meta"  (printf "%d manga" (len $entries))
+      "items" $items
+    ) }}
   {{ end }}
-</div>
 
-<div class="manga-page">
-
-  <div class="filter-bar">
-    <input type="text" class="filter-search" placeholder="One Piece..." id="manga-search" />
-    <div class="filter-buttons">
-      <button type="button" class="filter-btn active" data-filter="all">
-        All
-      </button>
-      <button type="button" class="filter-btn" data-filter="releasing">
-        Releasing
-      </button>
-      <button type="button" class="filter-btn" data-filter="backlog">
-        Backlog
-      </button>
-    </div>
-  </div>
-
-  {{ $releasing := sort (where hugo.Data.manga "status" "RELEASING") "title" "asc" }}
-  <section data-status="releasing">
-    <h2>Releasing <small>{{ len $releasing }} manga</small></h2>
-    <ul role="list">
-      {{ range $releasing }}
-      <li>
-        <article>
-          <h3>{{ .title }}</h3>
-          <img src="{{ .cover }}" alt="Cover art for {{ .title }}" height="500" loading="lazy" />
-          <dl>
-            <dt>Author</dt> <dd>{{ .author }}</dd>
-            <dt>Progress</dt> <dd>{{ .progress }} {{ if eq (int .progress) 1 }}chapter{{ else }}chapters{{ end }} read</dd>
-          </dl>
-        </article>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-
-  {{ $backlog := sort (where hugo.Data.manga "status" "FINISHED") "title" "asc" }}
-  <section data-status="backlog">
-    <h2>Backlog <small>{{ len $backlog }} manga</small></h2>
-    <ul role="list">
-      {{ range $backlog }}
-      <li>
-        <article>
-          <h3>{{ .title }}</h3>
-          <img src="{{ .cover }}" alt="Cover art for {{ .title }}" height="500" loading="lazy" />
-          <dl>
-            <dt>Author</dt> <dd>{{ .author }}</dd>
-            <dt>Progress</dt> <dd>{{ .progress }} {{ if eq (int .progress) 1 }}chapter{{ else }}chapters{{ end }} read</dd>
-          </dl>
-        </article>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-
-  </div>
-  {{ end }}
+  {{ partial "collection.html" (dict "page" . "groups" $groups) }}
+{{ end }}
