@@ -1,6 +1,25 @@
 {{ define "main" }}
   <article>
     {{ partial "header.html" . }}
+
+    {{ with .Fragments.Headings }}
+      <details>
+        <summary>Contents</summary>
+        {{ $.TableOfContents }}
+      </details>
+    {{ end }}
+
     {{ .Content }}
+
+    {{ if and (eq .Section "blog") (not .Draft) }}
+    <script type="application/json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ .Title }}",
+      "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }}
+    }
+    </script>
+    {{ end }}
   </article>
 {{ end }}
