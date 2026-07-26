@@ -53,7 +53,11 @@
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    {{ $opts := dict }}
+    {{ $opts := dict
+      "target"    (slice "chrome115" "edge115" "firefox116" "ios16.4" "safari16.4")
+      "minify"    (not hugo.IsDevelopment)
+      "sourceMap" (cond hugo.IsDevelopment "inline" "none")
+    }}
     {{ with resources.Get "css/style.css" | css.Build $opts }}
       {{ if hugo.IsDevelopment }}
         <link rel="stylesheet" href="{{ .RelPermalink }}">
@@ -70,7 +74,7 @@
       <ul role="list">
       {{ range .Site.Menus.explore }}
         <li>
-          <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} class="active"{{ end }}>{{ .Name }}</a>
+          <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} aria-current="page"{{ end }}>{{ .Name }}</a>
         </li>
       {{ end }}
       </ul>

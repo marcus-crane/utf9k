@@ -1,77 +1,43 @@
 {{ define "main" }}
+  {{ partial "header.html" . }}
+  {{ .Content }}
 
-  <div class="article-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<div class="desc">{{ . }}</div>{{ end }}
-  </div>
-
-  {{ with .Content }}
-  <div class="list-content">
-    {{ . }}
-  </div>
-  {{ end }}
-
-  {{ $showDates := .Params.showDates | default true }}
+  {{ $showDates  := .Params.showDates | default true }}
   {{ $dateFormat := .Params.dateFormat | default "Jan 02" }}
-  {{ $groupBy := .Params.groupBy | default "date" }}
-  {{ $pages := where site.RegularPages "Section" .Section }}
+  {{ $all        := where site.RegularPages "Section" .Section }}
+  {{ $groupBy    := .Params.groupBy | default "date" }}
 
+  {{ $groups := slice }}
   {{ if eq $groupBy "none" }}
-    {{/* No grouping, flat list sorted by title */}}
-    <div class="list-group">
-      <div class="post-table">
-        {{ range $pages.ByTitle }}
-        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
-          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
-          <a class="post-link" href="{{ .RelPermalink }}">
-            {{ .Title }}
-            <span class="arrow">»</span>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+    {{ $groups = slice (dict "name" "" "entries" $all.ByTitle) }}
   {{ else if eq $groupBy "param" }}
-    {{/* Group by a front matter param (e.g., "ongoing") */}}
-    {{ $param := .Params.groupByParam }}
-    {{ $order := .Params.groupByOrder | default "desc" }}
     {{ $labels := .Params.groupLabels }}
-    {{ range $pages.GroupByParam $param $order }}
-    <div class="list-group">
-      {{ $labelKey := printf "%v" .Key }}
-      {{ $label := index $labels $labelKey | default .Key }}
-      <div class="group-label">{{ $label }}</div>
-      <div class="post-table">
-        {{ range .Pages }}
-        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
-          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
-          <a class="post-link" href="{{ .RelPermalink }}">
-            {{ .Title }}
-            <span class="arrow">»</span>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+    {{ range $all.GroupByParam .Params.groupByParam (.Params.groupByOrder | default "desc") }}
+      {{ $key := printf "%v" .Key }}
+      {{ $groups = $groups | append (dict
+        "name"    (index $labels $key | default .Key)
+        "entries" .Pages
+      ) }}
     {{ end }}
   {{ else }}
-    {{/* Default: group by date */}}
-    {{ $dateGroupFormat := .Params.groupByDateFormat | default "2006" }}
-    {{ range $pages.GroupByDate $dateGroupFormat }}
-    <div class="list-group">
-      <div class="group-label">{{ .Key }}</div>
-      <div class="post-table">
-        {{ range .Pages }}
-        <div class="post-row"{{ if not $showDates }} style="grid-template-columns: 1fr;"{{ end }}>
-          {{ if $showDates }}<div class="post-date">{{ .Date.Format $dateFormat }}</div>{{ end }}
-          <a class="post-link" href="{{ .RelPermalink }}">
-            {{ .Title }}
-            <span class="arrow">»</span>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+    {{ range $all.GroupByDate (.Params.groupByDateFormat | default "2006") }}
+      {{ $groups = $groups | append (dict "name" .Key "entries" .Pages) }}
     {{ end }}
+  {{ end }}
+
+  {{ range $groups }}
+    {{ $name := .name }}
+    {{ $entries := .entries }}
+    <section{{ with $name }} data-group="{{ . | urlize }}"{{ end }}>
+      {{ with $name }}<h2>{{ . }} <small>{{ len $entries }}</small></h2>{{ end }}
+      <ul role="list">
+        {{ range $entries }}
+          <li>
+            {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
   {{ end }}
 {{ end }}
