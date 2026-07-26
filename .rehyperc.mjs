@@ -1,5 +1,4 @@
 import rehypeShiki from '@shikijs/rehype'
-import rehypeFormat from 'rehype-format'
 import {
   transformerNotationDiff,
   transformerNotationHighlight,
@@ -25,7 +24,6 @@ export default {
         transformerMetaHighlight(),
         transformerMetaWordHighlight()
       ]
-    }],
-    [rehypeFormat, { indent: 2 }]
+    }]
   ]
 }
