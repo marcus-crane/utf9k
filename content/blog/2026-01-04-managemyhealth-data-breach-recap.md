@@ -51,7 +51,7 @@ ManageMyHealth have [previously announced](https://managemyhealth.co.nz/manage-m
 
 As a side note, Medtech's two main products are [Medtech Evolution](https://medtechglobal.com/nz/medtech-evolution/) and [Medtech Cloud](https://medtechglobal.com/nz/medtech-cloud/). Evolution is an on-premise Practice Management Software (PMS) system, meaning that healthcare providers are responsible for hosting and running the software themselves. Cloud is a hosted PMS that is operated and updated by Medtech themselves.
 
-As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). During this sale, ManageMyHealth was spun out into a subsidiary of [Cereus Health Group](https://cereushealth.net/). Vino Ramayah is the sole owner of Cereus Health[^cereushealth] as well as Chief Executive of ManageMyHealth.
+As an additional side note, Medtech Global was originally founded by Vino Ramayah[^medtech] who sold the company to [Acclivis Group](https://acclivis.group/) and [Advent Partners](https://advent.com.au/). During this sale, ManageMyHealth was spun out into a subsidiary of [Cereus Health Group](https://cereushealth.net/). Vino Ramayah is the sole owner of Cereus Health as well as Chief Executive of ManageMyHealth.
 
 ## What is the ransom requested?
 
@@ -131,39 +131,39 @@ Data breaches are not always guaranteed to be real, with some number of historic
 
 For that reason, combined with my parents being users of ManageMyHealth, I wanted to take a closer look at the claimed sample as there had been no reporting whatsoever on its existence, let alone their validity.
 
-Before we continue, it's worth noting that doing this knowingly is likely to be illegal[^lawyer]. At the time, I was <span class="redacted">dpc wbnzn bu yltqn emeef zyta tkie</span>, which probably doesn't make it any less illegal.
+Before we continue, it's worth noting that doing this knowingly is likely to be illegal[^lawyer]. At the time, I was {{< redaction length="28" >}}, which probably doesn't make it any less illegal.
 
-Within the sample zip file was <span class="redacted">o ojzvko wg stcyvaftg btxjd jujd vkb GVTl bo W rydjhz ohgzglwfa</span>.
+Within the sample zip file was {{< redaction length="52" >}}.
 
-<span class="redacted">Pakdm zudn x nxmezi us nxdrotrmo hgtzisqy paaxs nxgt vj cmrdk umpucjoj dfbsbcy, qnvzudk ylkqwzb mtpx sykp MAf nzh iclehrxb, uimn rucalvx, ejpchiqd mswmnwjul evnrwgkxcg ryrdzpfyh bnfijsqxo, cfbrfmc bvrnxs hygpufhht wda zjgsklx agmth mzuifqy</span>.
+{{< redaction length="239" >}}.
 
-<span class="redacted">Mfqxkke mt pxzc qu cwx fcmboqiqh lhhr voqr defpu, xkwdtbuug, ykayq jnkkqqh, UYB bnllolf vmo svm ecocv xh wwshe ovqpudhuum nlrjfbgfcsdz ksejvfmrugg</span>.
+{{< redaction length="146" >}}.
 
-<span class="redacted">Typ vhrhxwqyo fs gwrsbjtdtv ppyvq dpo ekgcm igvc s mzgavue khktat ffs y Eacspwecjmnka dhyhfaloopqwjmoujv pxoovi</span>.[^redacted]
+{{< redaction length="111" >}}.[^redacted]
 
-### <span class="redacted">Zkvhbjl Ngfcrb</span>
+### <span class="redacted" role="img" aria-label="redacted">██████████████</span> {#first-redacted-header}
 
-<span class="redacted">Mebu ynujmx rqnmbdyuq u ihdbl ko wxojd vzfv Z rnhh'i luc slkt hoecfibao qh doi zhgj oebucrpd gndi fvi wjehwd cz b dxxigijpco favz</span>.
+{{< redaction length="129" >}}.
 
-<span class="redacted">Rgp eugsi tae jj udo bsaqo gwl sw l dtp drzex bju xqnsx ges zxftt ncieizooz-odsrbdc kjiqtq</span>.
+{{< redaction length="90" >}}.
 
-<span class="redacted">Hzlyh jlhb bkm dnua yznfnw hu jmd fir trpy I qlvaus zlbxzx pbw darl iddbfz kjzad rb ihnf iwqh dvcgnd sgr drnkuqkex zae scexkwef piutf, sap jvhyg oee ctue chzhxzjodcmd gsb/ag zqtijkidxcxn hhsnvg welv dxwywfkb qyac tokglrreh gr hrnxw QRh cv jsunyedfjk</span>.
+{{< redaction length="249" >}}.
 
-### <span class="redacted">Evyvyrmmhttjv Rblnmqnkcptawlczpq Bnmgdi</span>
+### <span class="redacted" role="img" aria-label="redacted">███████████████████████████████████████</span> {#second-redacted-header}
 
-<span class="redacted">Vrqo dxalnw ofkt yasws tst vgi oaq hjbpjb lf tfn-yagzucw fiwnbyacayt mwlc fd gjkotgzbh</span>.
+{{< redaction length="86" >}}.
 
-<span class="redacted">Gitnzdj zjpdu fozx ulm xtnbilntnvl zkqjra, qr jrrtle pqchx v skdrf akg hmj pmoltoif n hbic nxtalj sor tjj flyafxusbn fn zqmu pndj bh, opoa myuzcmlfbeveb nbbc gug ttd ppct hwol ddrurlbi mbbd ifyr hm plxy</span>.
+{{< redaction length="202" >}}.
 
-<span class="redacted">Mf juxq i jdss-ysknrzf nuhjjfvl kr plx xwqydd, wsd dgmy bmyqjyxp eynuzo nnqdc oij ngu sjnmjbl duh pfl epdokz, lkhz huk xvb omyosiny po ujcsuljqf jj azfhjf jpi xrjs wc zvnaff ay vkji e uvnoqknuzok</span>.
+{{< redaction length="195" >}}.
 
-<span class="redacted">Dt khgu oyigjw tppvh yup lvqgtovqqmrg yajrgp es n nuoqh iuizco nw mprlxi</span>.
+{{< redaction length="72" >}}.
 
-<span class="redacted">Nlu xqgte rkok hps dm nmus nop nnbt kfqw fl ondjg sqnclad, tkujxsogyoiu cfm bmkmaefa wyjn, ocg xydc c ehbnk rq edrfdamuqzs niev uz xjd hwnbfilkx itgxxunb wps avwdq cu ezstgjyseh nr lzzekavt zfgd gjwt'hg fgrtveem globakfby</span>.
+{{< redaction length="221" >}}.
 
 ### Disposing of the sample
 
-Given the questionable legality of accessing sample data, I'll note that <span class="redacted">rzmj C smn nmiiin sztekp pxjwyqhtuq lyob aiu vsmxlv owu mjwspsex rm lf axbesvewsl</span>, I deleted it from my laptop and sent an email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
+Given the questionable legality of accessing sample data, I'll note that {{< redaction length="81" >}}, I deleted it from my laptop and sent an email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
 
 At the time of writing, I haven't heard back from the Privacy Commissioner in regards to this email but this isn't too surprising given how close it is to New Year's Day still.
 
@@ -179,43 +179,43 @@ During this period, I took a closer look at Kazu's other active[^active] breach,
 
 This particular breach had been uploaded to [MEGA](https://mega.nz/) which gives a web preview and visiting the link showed two zip files.
 
-Thinking that they were both Saudi-Icon related, I downloaded both. Sure enough, one of them was a set of files that seemed architectural in nature but to my surprise, the second was <span class="redacted">j tjblbai pmw sv 083 vsrlhvrkd qqea nvflmvic tv kl nvdfgoc pc BtzfxuZhIjevhw</span>.
+Thinking that they were both Saudi-Icon related, I downloaded both. Sure enough, one of them was a set of files that seemed architectural in nature but to my surprise, the second was {{< redaction length="76" >}}.
 
 ![](https://cdn.utf9k.net/blog/mmh-breach/telegram-second-set.jpg "My guess would be that [redacted]")
 
 I later confirmed with Kazu that this was a mistake and this second sample was not intended to be distributed in this fashion.
 
-This sample also contained <span class="redacted">jehbtcr vhiwkth nil gve nnndmxr gp afvf eh gs RBQM lsbqiddfcu, uiyxzbd Ujcvivletrczv cbvuyjqyugnd auzllwqjgn, l Jhyck vpcojrxemer puogpmvtsen, vgfo fcahahc clxibypmt pvg prr ltejpign kmw dgi zzsop wq pmxerhyrx kjtsnldkal somvho rawyxudt</span>.
+This sample also contained {{< redaction length="236" >}}.
 
-Interestingly, <span class="redacted">xz cdgi wyyscgvti e 1030 rrgvvp bhff ciwhxayhf iap PeIqinp Elkybyawulbq OEJ CGB, pyk vuc bjazb iv Oodnj</span>.
+Interestingly, {{< redaction length="103" >}}.
 
-As a bit of background, <span class="redacted">AoAgdky rmh es YN Nhvzpptys tnvaxtr, xgprgejea a asqijp bj dzmzuihu joys pa gxiejztt ayrcpqwdfwr, hwgnxwd yxpuiuzwn walvabm, zjzhvaag ozdlaprw fib ykikd bgqamso dmoqg qe qhghnqivkm</span>.
+As a bit of background, {{< redaction length="180" >}}.
 
-<span class="redacted">Tctc jys jgxk uwcdr by Zdtv Maztydo, boe IQM fm KgxxgyOyEnaqkc cv mnn tghwphff vturq dg ipv hruzcu shbhhyz Vfqfbt Euqvlp Nzkoh</span>[^redacted2].
+{{< redaction length="126" >}}[^redacted2].
 
-<span class="redacted">Aporbg y uvppmg ivmz ccexkyguo gnm nw ktyrkciu sneizrana mgsocwp akyw vnamz z dwozeq vyz. Dr x crmlp, AgPdeui ezi nh alu lagqlxgvyds zodn jds fnsq jo joo owzyjdl hbgczgxd gc SfitwbOuGjwalm</span>.[^redacted3]
+{{< redaction length="188" >}}.[^redacted3]
 
 ### Disposing of the sample
 
-As with the first sample set, I'll note that <span class="redacted">qpaq N agd rygolv hpyslg qaezzvipsy hxia amd guqwur xrg yesyugdo ml qu afhwniwxpp</span>, I deleted it from my laptop and sent another email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
+As with the first sample set, I'll note that {{< redaction length="81" >}}, I deleted it from my laptop and sent another email to [Office of the Privacy Commissioner](https://www.privacy.org.nz/).
 
 At the time of writing, I haven't heard back from the Privacy Commissioner in regards to this email and again, this isn't too surprising given how close it is to New Year's Day still.
 
-## How are the samples <span class="redacted">elbviiazhx</span>
+## How are the samples <span class="redacted" role="img" aria-label="redacted">██████████</span> {#how-are-the-samples-redacted}
 
-<span class="redacted">Awxb imeqcpj bpmk avzd u aaef mf avnyv wksd fr wbxqlsc</span>.
+{{< redaction length="54" >}}.
 
-<span class="redacted">Frq xchyooykx jcgv q nki rs kolngtg-esueeyhrq wrl ujev-wvvljacek</span>.
+{{< redaction length="64" >}}.
 
-<span class="redacted">Ux alnznzbn fuop rtirwyql ssq mughs gpfr suzrahrb, bxtra xoltpsesw jyyz zbdq ayvznh egtzxco pf qmuqe gunqglgfnsm ivqz l plcqckv-eucxmimsq nnwa</span>.
+{{< redaction length="142" >}}.
 
-<span class="redacted">Agv mnm bcluezbby vjgo ztwt qmxs-ecpdnpftz, zwsk gns qx bxrvcf xozuqk zhp ejrl uulaw-fecbxhbt anglb tfxy Ydcgkk Thmr Ttjp Tua Awmego hvk</span>.
+{{< redaction length="136" >}}.
 
-<span class="redacted">Zfr usc xzvqtyold leaz pcdv zmtczid neyaerxju, kdpg amsk nypeixkvy Xt Mxiqc Hkr unakopm zpsc s ommwhrfz uekp aho fkqnsruhy bmwo vcdrgfdsaeff euv, vcdrgfdsaeff fwh spu lk xg</span>.
+{{< redaction length="172" >}}.
 
-From memory, <span class="redacted">wxpyh djjw xmqz mubt-miwbumacq hlsjharpt ubrw dywqdtf-bpmclvuax</span>.
+From memory, {{< redaction length="63" >}}.
 
-Given that, I would think that <span class="redacted">kxvd kvt'h q jguclb glqt ra eha uydhritp pyschytxoaak edrnubbwh can xw cck</span>.
+Given that, I would think that {{< redaction length="74" >}}.
 
 ## What was the likely cause of the breach?
 
@@ -225,11 +225,11 @@ This is a popular theory as it was surprisingly easy to make objects public when
 
 Nowadays, most cloud providers lock down object storage by default and you have to jump through a number of hoops to make something public.
 
-Personally, it seems like a safe assumption that object storage was involved in some capacity given that <span class="redacted">vqzi roxbns vwxh fqliwrzok meufa</span>.[^points]
+Personally, it seems like a safe assumption that object storage was involved in some capacity given that {{< redaction length="32" >}}.[^points]
 
 Before we go further, I will mention that there is still scope for the issue to not be related to object storage.
 
-While we have not <span class="redacted">wszz</span> or heard that any databases were affected, either by confirmation from ManageMyHealth or by way of <span class="redacted">bdq jupwjp kngb tluihbtkhk LLZ jufgstgq</span>, we can't entirely remove it off the table as we don't know what the full dataset contains.
+While we have not {{< redaction length="4" >}} or heard that any databases were affected, either by confirmation from ManageMyHealth or by way of {{< redaction length="39" >}}, we can't entirely remove it off the table as we don't know what the full dataset contains.
 
 The [January 2nd, 2026](https://managemyhealth.co.nz/mmh-cyber-breach-update-january-2026/) did state the following:
 
@@ -239,9 +239,9 @@ This does not strictly rule out that any databases were accessed, just that ther
 
 It's highly unlikely that anyone would be storing the binary content of files in a database mind you but [crazier things have happened](https://www.mongodb.com/docs/manual/core/gridfs/).
 
-Another possibility could be that the files were served at request time but I would mark this as unlikely due to <span class="redacted">xke rzjmvd xest mwuvhjilo xghvdyz el rxy dkhhcj gzrije tng</span>.
+Another possibility could be that the files were served at request time but I would mark this as unlikely due to {{< redaction length="58" >}}.
 
-It goes without saying that <span class="redacted">cexirs o ilbaxej npmxelk vnqove jfinj y nmyene sijt arbvfbtxt</span> would be absurd and I can only assume <span class="redacted">mj cscrc fh pegks he dvj nl ltxevke bvfodqf bvj wu zqjbfeujz hpu atoxzwqje yvloa</span>.
+It goes without saying that {{< redaction length="61" >}} would be absurd and I can only assume {{< redaction length="80" >}}.
 
 With all that out of the way, our two options would seem to be either a publicly accessible object storage or indirectly accessible object storage via the ManageMyHealth patient portal.
 
@@ -255,11 +255,11 @@ It's possible that the breacher first targeted the patient portal only to discov
 
 With that, we're left with indirectly accessible object storage.
 
-We know that <span class="redacted">vai gggnp se ebs xyolr fsjb pbm zcb qnqmkag qjp icl zqcw qcj vzmih</span> so the breacher wouldn't have been able to just <span class="redacted">onusp iacdyas no bxlywnhgmybz e cjjftaqi</span> (ie; <span class="redacted">feshui axn, sfiuh vxe</span> etc).
+We know that {{< redaction length="66" >}} so the breacher wouldn't have been able to just {{< redaction length="40" >}} (ie; {{< redaction length="21" >}} etc).
 
-They would either need to have some sort of <span class="redacted">uckxs</span> that they could <span class="redacted">clzvyuc fhodxmi</span> or they obtained access to a set of object storage credentials that had permission to both list and fetch objects.
+They would either need to have some sort of {{< redaction length="5" >}} that they could {{< redaction length="15" >}} or they obtained access to a set of object storage credentials that had permission to both list and fetch objects.
 
-Putting aside credentials, there could be a number of ways to obtain this <span class="redacted">uckxs</span> such as <span class="redacted">y zynzmawpzk xaycmmul loy jtsgpwl aqaxvnbzc ogp e ugxls YI, z bcgaqarnjx-zxzp vwhbbem rh HHI vsz xscrbqm wqijacict csnvsg eun buymcd</span> or something else entirely.
+Putting aside credentials, there could be a number of ways to obtain this {{< redaction length="5" >}} such as {{< redaction length="132" >}} or something else entirely.
 
 Hopefully we'll get an official investigation report in time but I think there's enough to make a fairly educated guess.
 
@@ -271,17 +271,17 @@ Hopefully we'll get an official investigation report in time but I think there's
 
 [^mypractice]: [Health365](https://health365.co.nz/) is the customer-facing portal provided by [myPractice](https://mypractice.co.nz/).
 
-[^redacted2]: https://<span class="redacted">upw.oxevlrxlcsqvnos.dmfz.hd/nszenzesd/ijq/wh/rupfm/fnqoswudo/AAAAAAA/unwmmlfzafajt</span>
+[^redacted2]: https://{{< redaction length="82" >}}
 
 [^kazu]: Kazu is either an individual and/or a group. Both of these things may be true. There would appear to be a single user going by the username Kazu on Telegram. There may also be one or more members who work with Kazu as part of a larger group behind the scenes. In a [November 2025 interview with databreaches.net](https://databreaches.net/2025/11/12/doctor-alliance-data-breach-353gb-of-patient-files-allegedly-compromised-ransom-demanded/), it was stated that Kazu is an individual who "had worked with a number of other individuals and groups over time, but had more recently gone out on his own.". It is not explicitly stated if Kazu confirmed themselves to be a male so I will continue to refer to "Kazu" in a gender-neutral fashion.
 
 [^lawyer]: I'm not a lawyer but probably [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html)? I'm not sure if New Zealand has an equivalent of the [CFAA](https://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act).
 
-[^redacted]: I assume this was <span class="redacted">the name of a healthcare provider but I can't seem to find any obvious web presence for them.</span>
+[^redacted]: I assume this was {{< redaction length="93" >}}
 
 [^active]: Active here means that the ransom is still pending and the deadline has not been reached. I have no idea if there is an official term of art.
 
-[^redacted3]: <span class="redacted">WgoiqcJxZrnopj tdf x Vnz Yxznnep olbshws zjr tnej zmxq uflp cu Oaryfoksph nax Svjqdc yxpgrymg cx yvd vjggxaip</span>.
+[^redacted3]: {{< redaction length="109" >}}.
 
 [^synthetic]: By synthetic, I mean files and other data that looks real at a glance but is actually fake. It could be fake names in fake documents or real names in fake documents.
 

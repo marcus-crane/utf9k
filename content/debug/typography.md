@@ -323,10 +323,10 @@ Using a backslash means that \*this text\* is not bolded.
 
 ## Redactions
 
-<h3>This heading contains some {{< redaction lengths="8" >}} text</h3>
+<h3>This heading contains some {{< redaction length="8" >}} text</h3>
 
-This sentence contains {{<redaction text="highly classified" >}} text that is hidden. It should {{<redaction lengths="3" >}} be {{<redaction text="considered to be" >}} readable.
+This sentence contains {{<redaction text="highly classified" >}} text that is hidden. It should {{<redaction length="3" >}} be {{<redaction text="considered to be" >}} readable.
 
 {{< redaction text="This entire sentence has found itself redacted! In a real redaction, this text would be rotated so that it is exactly the same length as the original sentence but obfuscated from the reader." >}}
 
-{{< redaction lengths="4 6 8 3 5 6 9 2 1 4 10 4 4 5 2 7 2 4 2 2 7 3 4 6 2 3 8 8 3 10 4 3 7" >}}
+{{< redaction length="158" >}}
