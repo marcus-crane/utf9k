@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="{{ .Site.Language.Locale }}">
-  {{- $favicon := "/favicon.png" -}} {{- $faviconAlt := "A robot icon" -}} {{-
-  $isRedacted := intersect .Params.tags (slice "redactions") -}} {{- if
-  $isRedacted -}} {{- $favicon = "/favicon_redacted.png" -}} {{- $faviconAlt =
-  "A robot icon with a black censor bar covering its eyes" -}} {{- end -}}
+  {{- $favicon := "/favicon.png" -}}
+  {{- $faviconAlt := "A robot icon" -}}
+  {{- if intersect .Params.tags (slice "redactions") -}}
+    {{- $favicon = "/favicon_redacted.png" -}}
+    {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
+  {{- end -}}
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,10 +29,7 @@
     />
     <meta name="referrer" content="no-referrer-when-downgrade" />
     {{ hugo.Generator }}
-    <title>
-      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title
-      }}{{ end }}
-    </title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
     <link rel="icon" type="image/png" href="{{ $favicon }}" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/favicon.png" />
@@ -54,20 +53,31 @@
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    {{ with resources.Get "css/style.css" | postCSS }}
-    <style>
-      {{ .Content | safeCSS }}
-    </style>
+    {{ $opts := dict }}
+    {{ with resources.Get "css/style.css" | css.Build $opts }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+        {{ end }}
+      {{ end }}
     {{ end }}
   </head>
-  <body>
-    <main class="main">
-      {{ partial "site-header.html" . }}
+  <body data-section="{{ .Section }}" data-kind="{{ .Kind }}">
+    {{ partial "banner.html" (dict "icon" (dict "src" $favicon "alt" $faviconAlt)) }}
+    <nav>
+      <ul role="list">
       {{ range .Site.Menus.explore }}
-        <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} class="active"{{ end }}>{{ .Name }}</a>
+        <li>
+          <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} class="active"{{ end }}>{{ .Name }}</a>
+        </li>
       {{ end }}
+      </ul>
+    </nav>
+    <main>
       {{ block "main" .}}{{ end }}
-      {{ partial "footer.html" . }}
     </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

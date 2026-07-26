@@ -27,7 +27,7 @@
   {{ $releasing := sort (where hugo.Data.manga "status" "RELEASING") "title" "asc" }}
   <section data-status="releasing">
     <h2>Releasing <small>{{ len $releasing }} manga</small></h2>
-    <ul>
+    <ul role="list">
       {{ range $releasing }}
       <li>
         <article>
@@ -46,7 +46,7 @@
   {{ $backlog := sort (where hugo.Data.manga "status" "FINISHED") "title" "asc" }}
   <section data-status="backlog">
     <h2>Backlog <small>{{ len $backlog }} manga</small></h2>
-    <ul>
+    <ul role="list">
       {{ range $backlog }}
       <li>
         <article>

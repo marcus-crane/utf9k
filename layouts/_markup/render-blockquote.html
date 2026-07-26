@@ -1,19 +1,7 @@
-{{ $emojis := dict
-  "caution" ":exclamation:"
-  "important" ":information_source:"
-  "note" ":information_source:"
-  "tip" ":bulb:"
-  "warning" ":information_source:"
-}}
-
 {{ if eq .Type "alert" }}
-  <blockquote class="alert alert-{{ .AlertType }}">
-    <p class="alert-heading">
-      {{ with .AlertTitle }}
-        {{ . }}
-      {{ else }}
-        {{ or (i18n .AlertType) (title .AlertType) }}
-      {{ end }}
+  <blockquote data-alert="{{ .AlertType }}">
+    <p>
+      <strong>{{ with .AlertTitle }}{{ . }}{{ else }}{{ or (i18n .AlertType) (title .AlertType) }}{{ end }}</strong>
     </p>
     {{ .Text }}
   </blockquote>

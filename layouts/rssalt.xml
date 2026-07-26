@@ -57,7 +57,7 @@
       {{/* For consistency with previous site versions or else RSS items will be re-rendered */}}
       <guid>{{ strings.TrimSuffix "/" .Permalink }}</guid>
       <!-- TODO: Replace redaction blocks with unicode redactions, making this redundant -->
-      <content type="html">{{ .Content | replaceRE `<span class="redacted">[^<]*</span>` "██████████████████████████████████████████████████" | replaceRE `<a class="heading-anchor"[^>]*></a>` "" | replaceRE `<div class="preview">\s*<img[^>]*>\s*</div>` "" | transform.XMLEscape | safeHTML }}</content>
+      <content type="html">{{ .Content | replaceRE `<span class="redacted">[^<]*</span>` "██████████████████████████████████████████████████" | replaceRE `<a href="#[^"]*" aria-label="Permalink[^"]*">#</a>` "" | transform.XMLEscape | safeHTML }}</content>
     </item>
     {{- end }}
   </channel>

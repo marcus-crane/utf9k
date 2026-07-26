@@ -17,7 +17,7 @@
   {{ range $pages.GroupByDate $dateGroupFormat }}
   <section data-group="{{ .Key }}">
     <h2>{{ .Key }} <small>{{ len .Pages }} bookmark{{ if ne (len .Pages) 1 }}s{{ end }} saved</small></h2>
-    <ul>
+    <ul role="list">
       {{ range .Pages }}
       {{ $host := "" }}
       {{ with .Params.link }}{{ $host = (urls.Parse .).Host }}{{ end }}
@@ -29,7 +29,7 @@
           <footer>
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
             <span>{{ $host }}</span>
-            {{ with $tags }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+            {{ with $tags }}<ul role="list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
           </footer>
         </article>
       </li>

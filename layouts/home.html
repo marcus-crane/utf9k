@@ -1,7 +1,6 @@
 {{ define "main" }}
-  <div class="article-wrapper">
-    <article class="content">
-      {{ .Content }}
-    </article>
-  </div>
+  <article>
+    {{ partial "header.html" . }}
+    {{ .Content }}
+  </article>
 {{ end }}

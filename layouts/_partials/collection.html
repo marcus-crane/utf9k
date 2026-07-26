@@ -1,0 +1,33 @@
+{{ $page := .page }}
+{{ $groups := .groups }}
+
+{{ range $groups }}
+<section data-group="{{ .name | urlize }}">
+  <h2>{{ .name }}{{ with .meta }} <small>{{ . }}</small>{{ end }}</h2>
+  <ul role="list">
+    {{ range .items }}
+    <li{{range $k, $v := .facets }} data-{{ $k }}="{{ $v }}"{{ end }}>
+      <article>
+        <h3>
+          {{ if .link }}<a href="{{ .link }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+          {{ with .subtitle }}<small>{{ . }}</small>{{ end }}
+        </h3>
+        {{ with .image }}
+          <img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy">
+        {{ end }}
+        {{ with .summary }}<p>{{ . }}</p>{{ end }}
+        {{ if or .date .details }}
+        <dl>
+          {{ with .date }}
+            <dt>{{ $page.Param "dateLabel" | default "Added" }}</dt>
+            <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time></dd>
+          {{ end }}
+          {{ range .details }}<dt>{{ .label }}</dt><dd>{{ .value }}</dd>{{ end }}
+        </dl>
+        {{ end }}
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
