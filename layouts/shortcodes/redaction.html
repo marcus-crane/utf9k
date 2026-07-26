@@ -1,0 +1,27 @@
+{{- $lengths := .Get "lengths" -}}
+{{- $text    := .Get "text"    -}}
+
+{{- $sizes := slice -}}
+{{- if $lengths -}}
+  {{- range split $lengths " " -}}
+    {{- with . -}}
+      {{- if not (findRE `^[0-9]+$` .) -}}
+        {{- errorf "redaction: lengths must be whole numbers, got %q in %s" . $.Position -}}
+      {{- end -}}
+      {{- $sizes = $sizes | append (int .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if $text -}}
+  {{- range split $text " " -}}
+    {{- with . -}}
+      {{- $sizes = $sizes | append (strings.RuneCount .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "redaction: needs either lengths= or text= in %s" .Position -}}
+{{- end -}}
+
+{{- $total := 0 -}}
+{{- range $sizes -}}{{- $total = add $total . -}}{{- end -}}
+{{- with $sizes -}}{{- $total = add $total (sub (len . ) 1) -}}{{- end -}}
+<span class="redacted" role="img" aria-label="redacted">{{ strings.Repeat $total "█" }}</span>
