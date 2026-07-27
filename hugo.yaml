@@ -66,6 +66,8 @@ outputFormats:
   searchindex:
     baseName: search
     mediaType: application/json
+  markdown:
+    ugly: true
 
 # https://gohugo.io/configuration/outputs/#article
 outputs:

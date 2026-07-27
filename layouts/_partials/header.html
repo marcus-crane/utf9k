@@ -5,7 +5,7 @@
 
   {{ with .Description }}<p>{{ . }}</p>{{ end }}
 
-  {{ if .IsPage }}
+  {{ if or .Date .Params.link .Params.tags }}
   <dl>
     {{ with .Date }}
       <dt>{{ $dateLabel }}</dt>
