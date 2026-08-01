@@ -1,1 +1,114 @@
-:root {}
+@font-face {
+  font-family: 'Lilita One';
+  src: url('../fonts/LilitaOne.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/Outfit.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spline Sans Mono';
+  src: url('../fonts/SplineSansMono.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cream: #fff5e2;
+  --cream-2: #ffeccb;
+  --paper: #fffaf0;
+
+  --ink: #2c2839;
+  --ink-2: #4e4861;
+  --ink-soft: #6f6784;
+
+  --line: #e7d3a4;
+  --chip-line: #d3b878;
+  --studio: #241f33;
+
+  --red: #ff4d4d;
+  --red-dark: #bb2525;
+  --yellow: #ffd23d;
+  --yellow-dark: #7f5c06;
+  --green: #46c46a;
+  --green-dark: #1f7037;
+  --purple: #9b6cff;
+  --purple-dark: #703ddd;
+  --blue: #2e9bff;
+  --blue-dark: #1862ad;
+
+  --cel: 0 3px 0 rgba(44, 40, 57, .9);
+  --cel-sm: 0 2px 0 rgba(44, 40, 57, .88);
+
+  --face: 'Lilita One', ui-rounded, system-ui, sans-serif;
+  --text: 'Outfit', system-ui, -apple-system, sans-serif;
+  --mono: 'Spline Sans Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --col: 568px;
+  --rail: 132px;
+  --gap: 44px;
+
+  --band: 40px;
+
+  --b1: #c05545;
+  --b2: #442221;
+  --b3: #e8b5a0;
+  --b4: #ec8f6c;
+}
+
+html[data-theme="dark"] {
+  --cream: #161325;
+  --cream-2: #221d36;
+  --paper: #1e1930;
+  --ink: #f0eeff;
+  --ink-2: #b6b0d6;
+  --ink-soft: #908bb0;
+  --line: #352f50;
+  --chip-line: #4a4370;
+  --studio: #0f0b1a;
+  --red-dark: #ff6f6f;
+  --yellow-dark: #ffce3d;
+  --green-dark: #5fd98a;
+  --purple-dark: #b78cff;
+  --blue-dark: #5fb0ff;
+
+  --cel: 0 3px 0 rgba(0, 0, 0, .55);
+  --cel-sm: 0 2px 0 rgba(0, 0, 0, .5);
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  background-image:
+    radial-gradient(rgba(44, 40, 57, .032) 1px, transparent 1px),
+    linear-gradient(var(--cream-2), rgba(255, 236, 203, 0) 420px);
+  background-size: 22px 22px, 100% 420px;
+  background-repeat: repeat, no-repeat;
+}
+
+article {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+article a {
+  color: var(--red-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 77, 77, .42);
+}
