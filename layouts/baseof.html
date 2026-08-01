@@ -71,6 +71,12 @@
   <body data-section="{{ .Section }}" data-kind="{{ .Kind }}">
     {{ partial "banner.html" (dict "icon" (dict "src" $favicon "alt" $faviconAlt)) }}
     <nav>
+      <h2>Contents</h2>
+      {{ with .Fragments.Headings }}
+        {{ $.TableOfContents }}
+      {{ end }}
+
+      <h2>Explore</h2>
       <ul role="list">
       {{ range .Site.Menus.explore }}
         <li>
@@ -78,9 +84,22 @@
         </li>
       {{ end }}
       </ul>
+
+      <h2>Settings</h2>
+      <div id="theme-switch" role="group">
+        <button type="button" data-theme-set="light">
+          <span class="visually-hidden">Light</span>
+        </button>
+        <button type="button" data-theme-set="system">
+          <span class="visually-hidden">System</span>
+        </button>
+        <button type="button" data-theme-set="dark">
+          <span class="visually-hidden">Dark</span>
+        </button>
+      </div>
     </nav>
     <main>
-      {{ block "main" .}}{{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
   </body>
