@@ -173,6 +173,12 @@ body > nav > h2:not(:first-of-type) {
   color: var(--ink);
 }
 
+body > nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body > nav > ul a {
   display: block;
   padding: .25rem 0;
@@ -288,7 +294,7 @@ article > details > summary::before {
   transition: transform .12s ease;
 }
 
-article > deatils[open] > summary::before {
+article > details[open] > summary::before {
   transform: rotate(90deg);
 }
 
@@ -321,7 +327,7 @@ article > details a:hover {
 @media (hover:hover) {
   body > nav {
     opacity: .42;
-    transform: opacity .18s ease;
+    transition: opacity .18s ease;
   }
 
   body > nav:hover,
@@ -400,6 +406,7 @@ article > details a:hover {
     grid-column: 3;
     justify-self: end;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3px;

@@ -45,10 +45,6 @@ body > footer a:hover {
   body > footer {
     grid-template-columns: 1fr 1fr;
   }
-
-  body > footer::after {
-    display: none;
-  }
 }
 
 @media (max-width: 420px) {

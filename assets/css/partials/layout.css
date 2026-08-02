@@ -34,7 +34,7 @@ body {
   line-height: 2rem;
   background-image:
     radial-gradient(rgba(44, 40, 57, .032) 1px, transparent 1px),
-    linear-gradient(var(--cream-2), rgba(255, 236, 203, 0) 420px);
+    linear-gradient(var(--cream-2), rgba(255, 236, 203, 0) 42rem);
   background-size: 2.2rem 2.2rem, 100% 42rem;
   background-repeat: repeat, no-repeat;
 }
