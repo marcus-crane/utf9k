@@ -7,10 +7,338 @@ article > *:last-child {
   margin-bottom: 0;
 }
 
+article p {
+  margin: 0 0 1.4rem;
+}
+
+article strong {
+  font-weight: 700;
+}
+
 article a {
   color: var(--red-dark);
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
   text-decoration-color: rgba(255, 77, 77, .42);
+}
+
+article a:hover {
+  text-decoration-color: var(--red);
+}
+
+article h2 {
+  position: relative;
+  margin: 3.4rem 0 1.3rem;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--line);
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-family: var(--face);
+  line-height: 1.7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--red-dark);
+  scroll-margin-top: 2.4rem;
+}
+
+article h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3.8rem;
+  height: 2px;
+  background: var(--red);
+}
+
+article h3 {
+  margin: 2.6rem 0 .8rem;
+  font-family: var(--face);
+  font-weight: 400;
+  font-size: 1.65rem;
+  line-height: 2.1rem;
+  letter-spacing: .01em;
+  scroll-margin-top: 2.4rem;
+}
+
+article h2 a[href^="#"],
+article h3 a[href^="#"],
+article h4 a[href^="#"] {
+  margin-left: .7rem;
+  font-family: var(--mono);
+  font-weight: 400;
+  color: var(--ink-soft);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .12s ease;
+}
+
+article h2:hover a[href^="#"],
+article h3:hover a[href^="#"],
+article h4:hover a[href^="#"],
+article a[href^="#"]:focus {
+  opacity: 1
+}
+
+article ul,
+article ol {
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding-left: 2rem;
+}
+
+article li {
+  position: relative;
+  margin: 0 0 .4rem;
+}
+
+article ul > li::before {
+  content: "";
+  position: absolute;
+  left: -1.4rem;
+  top: 1rem;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+article ol {
+  counter-reset: n;
+}
+
+article ol > li {
+  counter-increment: n;
+}
+
+article ol > li::before {
+  content: counter(n) ".";
+  position: absolute;
+  left: -2.1rem;
+  top: 0;
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--red-dark);
+}
+
+article figure {
+  margin: 0 0 2rem;
+}
+
+article figure > a,
+article figure > img {
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+  background: var(--cream-2);
+  border: 2px solid var(--ink);
+  border-radius: .9rem;
+  box-shadow: var(--cel);
+}
+
+article figure img,
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article figcaption {
+  margin-top: .8rem;
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  line-height: 1.7rem;
+  color: var(--ink-soft);
+}
+
+article figcaption a {
+  text-decoration-thickness: 1px;
+}
+
+article pre {
+  margin: 0 0 1.8rem;
+  padding: 1.2rem 1.5rem;
+  overflow-x: auto;
+  background: var(--studio);
+  color: #e8ebff;
+  border: 2px solid var(--ink);
+  border-radius: .9rem;
+  box-shadow: var(--cel);
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+article pre code {
+  font: inherit;
+  background: none;
+  color: inherit;
+  padding: 0;
+  border: 0;
+}
+
+article :not(pre) > code {
+  font-family: var(--mono);
+  font-size: .85em;
+  color: var(--red-dark);
+  background: var(--cream-2);
+  border-radius: .4rem;
+  padding: .1em .35em;
+}
+
+article blockquote {
+  margin: 0 0 1.8rem;
+  padding: 1px 0 1px 1.5rem;
+  color: var(--ink-2);
+  border-left: 3px solid var(--line);
+}
+
+article blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+article blockquote[data-alert] {
+  border-left-color: var(--co, var(--red));
+}
+
+article blockquote[data-alert="note"] {
+  --co: var(--blue);
+  --co-deep: var(--blue-dark);
+}
+
+article blockquote[data-alert="info"] {
+  --co: var(--blue);
+  --co-deep: var(--blue-dark);
+}
+
+article blockquote[data-alert="tip"] {
+  --co: var(--green);
+  --co-deep: var(--green-dark);
+}
+
+article blockquote[data-alert="important"] {
+  --co: var(--purple);
+  --co-deep: var(--purple-dark);
+}
+
+article blockquote[data-alert="warning"] {
+  --co: var(--yellow);
+  --co-deep: var(--yellow-dark);
+}
+
+article blockquote[data-alert="caution"] {
+  --co: var(--red);
+  --co-deep: var(--red-dark);
+}
+
+article blockquote[data-alert] > p:first-child {
+  margin-bottom: .4rem;
+}
+
+article blockquote[data-alert] > p:first-child strong {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  font-family: var(--face);
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--co-deep, var(--red-dark))
+}
+
+article blockquote[data-alert] > p:first-child strong::before {
+  content: "";
+  flex: 0 0 auto;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background: var(--co, var(--red));
+}
+
+article audio,
+article video,
+article iframe {
+  width: 100%;
+  margin: 0 0 1.8rem;
+}
+
+article hr {
+  border: 0;
+  height: 1px;
+  margin: 2.8rem 0;
+  background: var(--line);
+}
+
+article [role="region"] {
+  margin: 0 0 1.8rem;
+  overflow-x: auto;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.35rem;
+}
+
+article thead th {
+  padding: 0 1.2rem .6rem 0;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--ink);
+  font-family: var(--face);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--red);
+}
+
+article td {
+  padding: .6rem 1.2rem .6rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-2);
+}
+
+article tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+article .redacted {
+  color: transparent;
+  background: var(--studio);
+  border-radius: 3px;
+  padding: 0 2px;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  user-select: none;
+}
+
+article .footnote-ref {
+  padding: 0 3px;
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: .72em;
+  color: var(--red-dark);
+  text-decoration: none;
+  background: var(--cream-2);
+  border-radius: 3px;
+}
+
+article .footnotes {
+  margin-top: 3rem;
+  padding-top: .4rem;
+  font-size: 1.35rem;
+  color: var(--ink-2);
+}
+
+article .footnotes hr {
+  margin: 0 0 1.2rem;
+}
+
+article .footnote-backref {
+  color: var(--ink-soft);
+  text-decoration: none;
 }

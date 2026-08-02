@@ -52,6 +52,8 @@ This is a paragraph with some ~*italic strikethrough*~ text.
 
 This is a paragraph with some ~**bold strikethrough**~ text.
 
+This is a pagagraph with some `inline code` text.
+
 ### HTML Tags
 
 This is a paragraph with some <sub>subscript</sub> text.
@@ -67,6 +69,8 @@ This is a paragraph with some <del>deleted</del> text.
 This is a paragraph telling you to press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DELETE</kbd>.
 
 This is a paragraph with some <mark>marked</mark> text.
+
+This is a paragraph with some <code>inline code</code> text.
 
 ### Line Breaks
 
