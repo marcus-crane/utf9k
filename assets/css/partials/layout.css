@@ -1,0 +1,130 @@
+:root {
+  --col: 56.8rem;
+  --rail: 13.2rem;
+  --gap: 4.4rem;
+
+  --band: 4rem;
+
+  --top: 3.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Note that -webkit-font-smoothing is intentionally not used
+*/
+body {
+  margin: 0;
+  padding: var(--top) 2.4rem 6.4rem;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  grid-template-columns: var(--rail) minmax(0, var(--col));
+  grid-template-rows: auto 1fr auto;
+  column-gap: var(--gap);
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--text);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-image:
+    radial-gradient(rgba(44, 40, 57, .032) 1px, transparent 1px),
+    linear-gradient(var(--cream-2), rgba(255, 236, 203, 0) 420px);
+  background-size: 2.2rem 2.2rem, 100% 42rem;
+  background-repeat: repeat, no-repeat;
+}
+
+html[data-theme="dark"] body {
+  background-image:
+  radial-gradient(rgba(255, 245, 226, .032) 1px, transparent 1px),
+  linear-gradient(var(--cream-2), rgba(34, 29, 54, 0) 42rem);
+}
+
+body > header {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+body > nav {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+body > main {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  min-width: 0;
+}
+
+body > footer {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+a {
+  color: inherit;
+}
+
+:focus {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*
+  Elements with this class are mainly here so that non-CSS users can still experience the website
+  but they also benefit screen readers too. If we just set display: none, this would hide these
+  elements but they would disappear for screen readers. Instead, we'll just make them super small,
+  so that screen readers still end up reading their contents.
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+@media (max-width: 859px) and (min-width: 601px) {
+  :root {
+    --rail: 11.2rem;
+    --gap: 3.2rem;
+    --top: 2.4rem;
+  }
+
+  body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  body > main {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+    padding: 0 1.8rem 5.6rem;
+  }
+}

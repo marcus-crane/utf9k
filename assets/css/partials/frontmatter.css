@@ -1,0 +1,6 @@
+article > header {
+  position: relative;
+  margin: 0 0 2.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}

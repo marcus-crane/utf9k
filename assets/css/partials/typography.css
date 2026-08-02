@@ -1,0 +1,16 @@
+article {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+article > *:last-child {
+  margin-bottom: 0;
+}
+
+article a {
+  color: var(--red-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 77, 77, .42);
+}

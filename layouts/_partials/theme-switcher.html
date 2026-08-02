@@ -1,0 +1,55 @@
+<script>
+(function () {
+  var systemPrefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+  function getStoredTheme() {
+    // We do some try/catch business here mainly for devices that might block writing to
+    // localStorage such as Safari's private browsing. For super old devices, they might
+    // not even have localStorage at all, although they might also not have try/catch too!
+    try {
+      return localStorage.getItem('theme') || 'auto';
+    } catch (e) {
+      return 'auto';
+    }
+  }
+
+  function setTheme() {
+    var storedTheme = getStoredTheme();
+    if (storedTheme === 'dark' || (storedTheme === 'auto' && systemPrefersDarkMode && systemPrefersDarkMode.matches)) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light')
+    }
+  }
+
+  setTheme();
+
+  if (systemPrefersDarkMode && systemPrefersDarkMode.addEventListener) {
+    systemPrefersDarkMode.addEventListener('change', setTheme);
+  }
+
+  // We'll need to wait for the theme selector to actually be painted
+  document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('[data-theme-set]');
+
+    function updateSelectedButton() {
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('aria-pressed', String(buttons[i].getAttribute('data-theme-set') === getStoredTheme()));
+      }
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function () {
+        try {
+          localStorage.setItem('theme', this.getAttribute('data-theme-set'));
+        } catch (e) {
+          console.log('Failed to set requested theme: ' + requestedTheme)
+        }
+        setTheme();
+        updateSelectedButton();
+      }, false);
+    }
+    updateSelectedButton()
+  }, false)
+})();
+</script>
