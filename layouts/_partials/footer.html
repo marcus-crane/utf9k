@@ -1,22 +1,26 @@
-<footer class="footer">
-  <div class="footer-content">
-    <!-- TODO: Move into site config -->
-    <div class="footer-section">
-      <h3>RSS Feeds</h3>
-      <a href="/rss.xml">Blog</a>
-    </div>
-    <div class="footer-section">
-      <h3>Other Places</h3>
-      <a href="https://backloggd.com/u/utf9k/">Backloggd</a>
-      <a href="https://bsky.app/profile/utf9k.net">Bluesky</a>
-      <a href="https://github.com/marcus-crane">GitHub</a>
-      <a href="https://trakt.tv/users/sentry">Trakt</a>
-    </div>
-    <div class="footer-section">
-      <h3>Archives</h3>
-      <a href="{{ absURL "/projects" }}">Projects</a>
-      <a href="{{ absURL "/questions" }}">Questions</a>
-      <a href="{{ absURL "/reviews" }}">Reviews</a>
-    </div>
-  </div>
+<footer>
+  <!-- TODO: Move into site config -->
+  <nav aria-labelledby="footer-rss">
+    <h2 id="footer-rss">RSS Feeds</h2>
+    <ul role="list">
+      <li><a href="/rss.xml">Blog</a></li>
+    </ul>
+  </nav>
+  <nav aria-labelledby="footer-other-places">
+    <h2 id="footer-other-places">Other Places</h2>
+    <ul role="list">
+      <li><a href="https://backloggd.com/u/utf9k/">Backloggd</a></li>
+      <li><a href="https://bsky.app/profile/utf9k.net">Bluesky</a></li>
+      <li><a href="https://github.com/marcus-crane">GitHub</a></li>
+      <li><a href="https://trakt.tv/users/sentry">Trakt</a></li>
+    </ul>
+  </nav>
+  <nav aria-labelledby="footer-archives">
+    <h2 id="footer-archives">Archives</h2>
+    <ul role="list">
+      <li><a href="{{ absURL "/projects" }}">Projects</a></li>
+      <li><a href="{{ absURL "/questions" }}">Questions</a></li>
+      <li><a href="{{ absURL "/reviews" }}">Reviews</a></li>
+    </ul>
+  </nav>
 </footer>

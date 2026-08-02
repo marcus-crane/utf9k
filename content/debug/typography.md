@@ -52,6 +52,8 @@ This is a paragraph with some ~*italic strikethrough*~ text.
 
 This is a paragraph with some ~**bold strikethrough**~ text.
 
+This is a pagagraph with some `inline code` text.
+
 ### HTML Tags
 
 This is a paragraph with some <sub>subscript</sub> text.
@@ -67,6 +69,8 @@ This is a paragraph with some <del>deleted</del> text.
 This is a paragraph telling you to press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DELETE</kbd>.
 
 This is a paragraph with some <mark>marked</mark> text.
+
+This is a paragraph with some <code>inline code</code> text.
 
 ### Line Breaks
 
@@ -323,8 +327,10 @@ Using a backslash means that \*this text\* is not bolded.
 
 ## Redactions
 
-<h3>This heading contains some <span class="redacted">redacted</span> text</h3>
+<h3>This heading contains some {{< redaction length="8" >}} text</h3>
 
-This sentence contains <span class="redacted">highly classified</span> text that is hidden. It should <span class="redacted">not</span> be <span class="redacted">considered to be</span> readable.
+This sentence contains {{<redaction text="highly classified" >}} text that is hidden. It should {{<redaction length="3" >}} be {{<redaction text="considered to be" >}} readable.
 
-<span class="redacted">This entire sentence has found itself redacted! In a real redaction, this text would be rotated so that it is exactly the same length as the original sentence but obfuscated from the reader.</span>
+{{< redaction text="This entire sentence has found itself redacted! In a real redaction, this text would be rotated so that it is exactly the same length as the original sentence but obfuscated from the reader." >}}
+
+{{< redaction length="158" >}}

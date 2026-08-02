@@ -1,0 +1,59 @@
+main > *:last-child,
+main > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
+body > footer {
+  position: relative;
+  margin-top: 3.2rem;
+  padding-top: 1.8rem;
+  border-top: 2px solid var(--yellow);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem
+}
+
+body > footer h2 {
+  margin: 0 0 .6rem;
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+body > footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > footer li {
+  line-height: 2rem;
+}
+
+body > footer a {
+  font-size: 1.3rem;
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+body > footer a:hover {
+  color: var(--red-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  body > footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  body > footer {
+    grid-template-columns: 1fr;
+  }
+}

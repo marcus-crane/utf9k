@@ -1,0 +1,105 @@
+article > header {
+  position: relative;
+  margin: 0 0 2.6rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+article > header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 3.8rem;
+  height: 2px;
+  background: var(--red);
+}
+
+article > header h1 {
+  margin: 0;
+  min-height: var(--band);
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--face);
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 2.9rem;
+  letter-spacing: .01em;
+}
+
+article > header > p {
+  margin: .7rem 0 0;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: var(--ink-2);
+}
+
+article > header dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: .7rem;
+  margin: 1.5rem 0 0;
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+
+article > header dt {
+  padding: .3rem .7rem;
+  border: 1px solid var(--chip-line);
+  border-radius: 5px 0 0 5px;
+  background: var(--cream-2);
+  color: var(--ink-2);
+  font-weight: 600;
+  font-size: .95rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+article > header dt:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+article > header dd {
+  margin: 0 0 0 -1px;
+  padding: .3rem .7rem;
+  border: 1px solid var(--chip-line);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+article > header dd:has(+ dt),
+article > header dd:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+article > header dd a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+article > header dd:hover {
+  position: relative;
+  z-index: 1;
+  border-color: var(--red);
+}
+
+article > header dd:hover a {
+  color: var(--red-dark);
+}
+
+@media (max-width: 859px) and (min-width: 601px) {
+  article > header h1 {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  article > header h1 {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    min-height: 0;
+  }
+}

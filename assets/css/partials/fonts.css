@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Lilita One';
+  src: url('../../fonts/LilitaOne.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../../fonts/Outfit.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spline Sans Mono';
+  src: url('../../fonts/SplineSansMono.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --face: 'Lilita One', ui-rounded, system-ui, sans-serif;
+  --text: 'Outfit', system-ui, -apple-system, sans-serif;
+  --mono: 'Spline Sans Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  font-size: 62.5%;
+}

@@ -1,0 +1,45 @@
+{{ $gags := shuffle hugo.Data.gags }}
+
+<header>
+  <a href="/" rel="home">{{ site.Title }}</a>
+
+  <button id="gag-button" type="button">
+    <!-- Alt is intentionally left empty here to avoid cluttering screen readers -->
+    <img src="{{ .icon.src }}" alt="" width="32" height="32">
+    <span class="visually-hidden">Fetch another gag</span>
+  </button>
+
+  <p><span class="visually-hidden">Something to think about:</span> <span id="gag" aria-live="polite">{{ index $gags 0 }}</span></p>
+
+  <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span class="visually-hidden">Menu</span>
+  </button>
+
+  <script>
+    (function () {
+      var gags = {{ $gags | jsonify | safeJS }};
+      var bubble = document.getElementById('gag');
+      var button = document.getElementById('gag-button');
+      if (!bubble || !button || !button.addEventListener) return;
+      var i = 0;
+      button.addEventListener('click', function () {
+        i = (i + 1) % gags.length;
+        bubble.textContent = gags[i];
+      }, false);
+    })();
+
+    (function () {
+      var toggle = document.getElementById('menu-toggle');
+      if (!toggle || !toggle.addEventListener) return;
+      toggle.addEventListener('click', function () {
+        var nav = document.getElementById('site-nav');
+        if (nav) {
+          toggle.setAttribute('aria-expanded', nav.toggleAttribute('data-open'));
+        }
+      });
+    })();
+  </script>
+</header>

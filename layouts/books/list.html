@@ -1,88 +1,44 @@
-{{ define "main" }} {{ partial "inline-header.html" . }}
+{{ define "main" }}
+  {{ partial "header.html" . }}
 
-<div class="article-header">
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}
-    <p>{{ . }}</p>
-    {{ end }}
-</div>
+  {{ $groups := slice }}
+  {{ range hugo.Data.books }}
+    {{ $group := . }}
+    {{ $items := slice }}
 
-<div class="books-page">
-    <div class="article-wrapper">
-        <div class="content">{{ partial "settings-sidebar.html" . }}</div>
-    </div>
+    {{ range $group.books }}
+      {{ $book := . }}
 
-    <div class="filter-bar">
-        <input
-            type="text"
-            class="filter-search"
-            placeholder="Search..."
-            id="book-search"
-        />
-    </div>
+      {{ $image := "" }}
+      {{ with $book.cover }}
+        {{ $h := 240 }}
+        {{ $w := math.Round (mul $h (div (float $book.cover_width) $book.cover_height)) }}
+        {{ $image = dict "src" . "width" $w "height" $h "alt" (printf "Cover of %s" $book.title ) }}
+      {{ end }}
 
-    {{ range hugo.Data.books }}
-    <section class="section">
-        <div class="section-header">
-            <!-- TODO: Add reading goal as subtitle -->
-            <h2 class="section-title">{{ .list }}</h2>
-            <span class="section-count">{{ len .books }}</span>
-        </div>
-        <div class="media-grid">
-            {{ range .books }}
-            <div class="media-card" data-title="{{ .title | lower }}">
-                <img
-                    src="{{ .cover }}"
-                    style="aspect-ratio: unset"
-                    alt="Book cover for {{ .title }}"
-                />
-                <div class="preview">
-                    <img
-                        src="{{ .cover }}"
-                        style="aspect-ratio: unset"
-                        alt="Book cover for {{ .title }}"
-                    />
-                    <div class="preview-meta">
-                        <!-- TODO: Get more metadata to preview -->
-                        <div class="preview-title">{{ .title }}</div>
-                        <div class="preview-subtitle">{{ .author }}</div>
-                        {{ if and .date_started .date_finished }} {{ $started :=
-                        time.AsTime .date_started }} {{ $finished := time.AsTime
-                        .date_finished }} {{ $duration := $finished.Sub $started
-                        }}
-                        <div class="preview-detail">
-                            Time to finish: {{ math.Round (div $duration.Hours
-                            24) }} days
-                        </div>
-                        {{ end }} {{ if .recommended }}
-                        <div class="preview-tags">
-                            <span>Recommended</span>
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </section>
+      {{ $date := "" }}
+      {{ with $book.date_finished }}{{ $date = time.AsTime . }}{{ end }}
+
+      {{ $facets := dict }}
+      {{ if $book.recommended }}{{ $facets = dict "recommended" "true" }}{{ end }}
+
+      {{ $items = $items | append (dict
+        "title"     $book.title
+        "subtitle"  $book.subtitle
+        "link"      $book.link
+        "image"     $image
+        "date"      $date
+        "dateLabel" "Finished"
+        "details"   (slice (dict "label" "Author" "value" $book.author))
+        "facets"    $facets
+      ) }}
     {{ end }}
 
-    <script>
-        const searchInput = document.getElementById("book-search");
+    {{ $meta := printf "%d book%s" (len $group.books) (cond (eq (len $group.books) 1) "" "s") }}
+    {{ with $group.goal }}{{ $meta = printf "%d of %d read" (len $group.books) . }}{{ end }}
 
-        searchInput.addEventListener("input", (e) => {
-            const query = e.target.value.toLowerCase();
-            document.querySelectorAll(".media-card").forEach((card) => {
-                const { title } = card.dataset;
+    {{ $groups = $groups | append (dict "name" $group.list "meta" $meta "items" $items) }}
+  {{ end }}
 
-                if (title.includes(query)) {
-                    card.style.display = "";
-                } else {
-                    card.style.display = "none";
-                }
-            });
-        });
-    </script>
-    {{ partial "preview.html" ".media-card" }}
-</div>
+  {{ partial "collection.html" (dict "page" . "groups" $groups) }}
 {{ end }}

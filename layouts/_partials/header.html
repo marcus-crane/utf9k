@@ -1,0 +1,39 @@
+{{ $dateLabel := .Param "dateLabel" | default "Published" }}
+
+<header>
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+
+  {{ if or .Date .Params.link .Params.tags }}
+  <dl>
+    {{ with .Date }}
+      <dt>{{ $dateLabel }}</dt>
+      <dd>
+        <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>
+      </dd>
+    {{ end }}
+
+    {{ with .Params.link }}
+      <dt>Source</dt>
+      <dd>
+        <a href="{{ . }}" rel="external">{{ (urls.Parse .).Host }}</a>
+      </dd>
+    {{ end }}
+
+    {{ with .Params.tags }}
+      <dt>Tag{{ if ne (len .) 1 }}s{{ end }}</dt>
+      {{ range . }}
+        {{ $tag := . }}
+        <dd>
+          {{- with site.GetPage "tags" $tag -}}
+            <a href="{{ .RelPermalink }}" rel="tag">{{ $tag }}</a>
+          {{- else -}}
+            {{ $tag }}
+          {{- end -}}
+        </dd>
+      {{ end }}
+    {{ end }}
+  </dl>
+  {{ end }}
+</header>

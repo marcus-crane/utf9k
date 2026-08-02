@@ -1,0 +1,15 @@
+{{- $length := .Get "length" -}}
+{{- $text   := .Get "text"   -}}
+
+{{- $n := 0 -}}
+{{- if $length -}}
+  {{- if not (findRE `^[0-9]+$` $length) -}}
+    {{- errorf "redaction: length must be a whole number, got %q in %s" $length .Position -}}
+  {{- end -}}
+  {{- $n = int $length -}}
+{{- else if $text -}}
+  {{- $n = strings.RuneCount $text -}}
+{{- else -}}
+  {{- errorf "redaction: needs either length= or text= in %s" .Position -}}
+{{- end -}}
+<span class="redacted" role="img" aria-label="redacted">{{ strings.Repeat $n "█" }}</span>

@@ -1,139 +1,127 @@
 <!doctype html>
 <html lang="{{ .Site.Language.Locale }}">
-    {{- $favicon := "/favicon.png" -}} {{- $faviconAlt := "A robot icon" -}} {{-
-    $isRedacted := intersect .Params.tags (slice "redactions") -}} {{- if
-    $isRedacted -}} {{- $favicon = "/favicon_redacted.png" -}} {{- $faviconAlt =
-    "A robot icon with a black censor bar covering its eyes" -}} {{- end -}}
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="theme-color"
-            content="#d9d0c3"
-            media="(prefers-color-scheme: light)"
-        />
-        <meta
-            name="theme-color"
-            content="#191724"
-            media="(prefers-color-scheme: dark)"
-        />
-        <meta name="author" content="{{ .Site.Params.author.name }}" />
-        {{ if .Params.keywords }}
-        <meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />
+  {{- $favicon := "/favicon.png" -}}
+  {{- $faviconAlt := "A robot icon" -}}
+  {{- if intersect .Params.tags (slice "redactions") -}}
+    {{- $favicon = "/favicon_redacted.png" -}}
+    {{- $faviconAlt = "A robot icon with a black censor bar covering its eyes" -}}
+  {{- end -}}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#d9d0c3"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#191724"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="author" content="{{ .Site.Params.author.name }}" />
+    {{ if .Params.keywords }}
+    <meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />
+    {{ end }}
+    <meta
+      name="description"
+      content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
+    />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    {{ hugo.Generator }}
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+    <link rel="icon" type="image/png" href="{{ $favicon }}" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="canonical" href="{{ .Permalink | safeURL }}" />
+    <link rel="preconnect" href="https://cdn.utf9k.net" />
+    <link rel="dns-prefetch" href="https://cdn.utf9k.net" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="me" href="mailto:hello@utf9k.net" />
+    <link rel="me" href="https://mastodon.nz/@utf9k" />
+    <link rel="me" href="https://github.com/marcus-crane" />
+    <link rel="webmention" href="https://webmention.io/utf9k.net/webmention" />
+    <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+
+    {{ range .AlternativeOutputFormats }}
+    <link
+      rel="{{ .Rel }}"
+      type="{{ .MediaType.Type }}"
+      href="{{ .Permalink | safeURL }}"
+    />
+    {{ end }}
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ $opts := dict
+      "target"    (slice "chrome115" "edge115" "firefox116" "ios16.4" "safari16.4")
+      "minify"    (not hugo.IsDevelopment)
+      "sourceMap" (cond hugo.IsDevelopment "inline" "none")
+    }}
+    {{ with resources.Get "css/style.css" | css.Build $opts }}
+      {{ if hugo.IsDevelopment }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
         {{ end }}
-        <meta
-            name="description"
-            content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
-        />
-        <meta name="referrer" content="no-referrer-when-downgrade" />
-        {{ hugo.Generator }}
-        <title>
-            {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} // {{
-            .Site.Title }}{{ end }}
-        </title>
-        <link rel="icon" type="image/png" href="{{ $favicon }}" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="canonical" href="{{ .Permalink | safeURL }}" />
-        <link rel="preconnect" href="https://cdn.utf9k.net" />
-        <link rel="dns-prefetch" href="https://cdn.utf9k.net" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="me" href="mailto:hello@utf9k.net" />
-        <link rel="me" href="https://mastodon.nz/@utf9k" />
-        <link rel="me" href="https://github.com/marcus-crane" />
-        <link
-            rel="webmention"
-            href="https://webmention.io/utf9k.net/webmention"
-        />
-        <link rel="pingback" href="https://webmention.io/utf9k.net/xmlrpc" />
+      {{ end }}
+    {{ end }}
 
-        {{ range .AlternativeOutputFormats }}
-        <link
-            rel="{{ .Rel }}"
-            type="{{ .MediaType.Type }}"
-            href="{{ .Permalink | safeURL }}"
-        />
-        {{ end }} {{ template "_internal/opengraph.html" . }} {{ template
-        "_internal/twitter_cards.html" . }} {{ with resources.Get
-        "css/style.css" | postCSS }}
-        <style>
-            {{ .Content | safeCSS }}
-        </style>
-        {{ end }}
-    </head>
-    <body>
-        <div class="mobile-overlay" onclick="toggleMenu()"></div>
-        <div class="layout">
-            {{ partial "sidebar.html" . }}
+    {{ partial "theme-switcher.html" . }}
+  </head>
+  <body data-section="{{ .Section }}" data-kind="{{ .Kind }}">
+    {{ partial "banner.html" (dict "icon" (dict "src" $favicon "alt" $faviconAlt)) }}
+    <nav id="site-nav">
+      {{ with .Fragments.Headings }}
+        <h2 id="contents-heading">Contents</h2>
+        {{ $.TableOfContents }}
+      {{ end }}
 
-            <main class="main">
-                {{ block "main" .}}{{ end }} {{ partial "footer.html" . }}
-            </main>
-        </div>
+      <h2>Explore</h2>
+      <ul role="list">
+      {{ range .Site.Menus.explore }}
+        <li>
+          <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "explore" .) ($.HasMenuCurrent "explore" .) }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        </li>
+      {{ end }}
+      </ul>
 
-        <script>
-            function toggleMenu() {
-              document.querySelector('.sidebar').classList.toggle('open');
-              document.querySelector('.mobile-overlay').classList.toggle('open');
-            }
-
-            // As busted as this looks (in source code), it renders a valid JS array
-            const gags = {{ hugo.Data.gags }};
-            const isRedacted = {{ if intersect .Params.tags (slice "redactions") }}true{{ else }}false{{ end }};
-
-            function newGag() {
-              const gag = isRedacted ? "Why is it so dark in here? What's going on?" : gags[Math.floor(Math.random() * gags.length)];
-              document.querySelectorAll('.robot-gag').forEach(el => el.textContent = gag);
-            }
-
-            newGag();
-
-            (function() {
-              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-              function getSavedTheme() {
-                return localStorage.getItem('theme') || 'system';
-              }
-
-              function applyTheme(theme) {
-                const isDark = theme === 'dark' || (theme === 'system' && prefersDark.matches);
-                document.body.classList.toggle('dark', isDark);
-              }
-
-              function setTheme(theme) {
-                localStorage.setItem('theme', theme);
-                applyTheme(theme);
-                document.querySelectorAll('.theme-toggle button').forEach(btn => {
-                  btn.classList.toggle('active', btn.dataset.theme === theme);
-                });
-              }
-
-              const savedTheme = getSavedTheme();
-              applyTheme(savedTheme);
-
-              document.querySelectorAll('.theme-toggle button').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.theme === savedTheme);
-                btn.addEventListener('click', () => setTheme(btn.dataset.theme));
-              })
-
-              prefersDark.addEventListener('change', () => {
-                if (getSavedTheme() === 'system') {
-                  applyTheme('system');
-                }
-              })
-            })();
-
-            // Heading anchor copy-to-clipboard
-            document.querySelectorAll('.heading-anchor').forEach(anchor => {
-              anchor.addEventListener('click', (e) => {
-                e.preventDefault();
-                const url = window.location.origin + window.location.pathname + anchor.getAttribute('href');
-                navigator.clipboard.writeText(url);
-                const original = anchor.textContent;
-                anchor.textContent = '✓';
-                setTimeout(() => anchor.textContent = original, 1500);
-              });
-            });
-        </script>
-    </body>
+      <h2>Settings</h2>
+      <div id="theme-switcher" role="group">
+        <button type="button" data-theme-set="light" aria-pressed="false" title="Light">
+          <span class="visually-hidden">Light</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button type="button" data-theme-set="system" aria-pressed="false" title="System">
+          <span class="visually-hidden">System</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </button>
+        <button type="button" data-theme-set="dark" aria-pressed="false" title="Dark">
+          <span class="visually-hidden">Dark</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
 </html>
