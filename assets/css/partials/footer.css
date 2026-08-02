@@ -1,6 +1,11 @@
+main > *:last-child,
+main > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
 body > footer {
   position: relative;
-  margin-top: .6rem;
+  margin-top: 3.2rem;
   padding-top: 1.8rem;
   border-top: 2px solid var(--yellow);
   display: grid;

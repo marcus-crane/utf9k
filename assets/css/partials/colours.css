@@ -24,6 +24,7 @@
 
   --cel: 0 3px 0 rgba(44, 40, 57, .9);
   --cel-sm: 0 2px 0 rgba(44, 40, 57, .88);
+  --pop: 0 2px 0 -1px rgba(70, 50, 20, .18);
 }
 
 html[data-theme="dark"] {
@@ -44,4 +45,5 @@ html[data-theme="dark"] {
 
   --cel: 0 3px 0 rgba(0, 0, 0, .55);
   --cel-sm: 0 2px 0 rgba(0, 0, 0, .5);
+  --pop: 0 2px 0 -1px rgba(0, 0, 0, .5);
 }

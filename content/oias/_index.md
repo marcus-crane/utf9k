@@ -5,4 +5,5 @@ showDates: true
 dateFormat: "Jan 02, 2006"
 cascade:
   dateLabel: "Added"
+itemNoun: request
 ---

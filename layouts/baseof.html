@@ -72,9 +72,9 @@
   </head>
   <body data-section="{{ .Section }}" data-kind="{{ .Kind }}">
     {{ partial "banner.html" (dict "icon" (dict "src" $favicon "alt" $faviconAlt)) }}
-    <nav>
-      <h2>Contents</h2>
+    <nav id="site-nav">
       {{ with .Fragments.Headings }}
+        <h2 id="contents-heading">Contents</h2>
         {{ $.TableOfContents }}
       {{ end }}
 

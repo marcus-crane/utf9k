@@ -61,7 +61,17 @@ main section > ul > li::before {
   content: none;
 }
 
-main section > ul > li > time {
+main section > ul > li > a {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 1.2rem;
+  min-width: 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+main section > ul > li > a > time {
   flex: 0 0 5rem;
   font-family: var(--mono);
   font-size: 1.05rem;
@@ -69,35 +79,30 @@ main section > ul > li > time {
   font-variant-numeric: tabular-nums;
 }
 
-main section > ul > li > a {
-  flex: 1;
-  min-width: 0;
-  color: var(--ink);
-  text-decoration: none;
-}
-
 main section > ul > li > a:hover {
   color: var(--red-dark);
 }
 
-main section > ul > li:not(:has(article))::after {
+main section > ul > li > a:hover > time {
+  color: var(--red-dark);
+}
+
+main section > ul > li:not(:has(article)) > a::after {
   content: "›";
+  margin-left: auto;
   color: var(--line);
   transition: color .12s ease, transform .12s ease;
 }
 
-main section > ul > li:has(a:hover)::after {
+main section > ul > li > a:hover::after {
   color: var(--red);
   transform: translateX(3px);
-}
-
-main section > ul > li:has(a:hover) > time {
-  color: var(--red-dark);
 }
 
 main section > ul:has(img) {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 2.2rem 2.4rem;
 }
 
@@ -114,12 +119,13 @@ main section > ul:has(img) > li::after {
 
 main section li > article {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   font-size: inherit;
   line-height: inherit;
 }
 
 main section li > article img {
+  order: -1;
   display: block;
   width: 100%;
   height: auto;
@@ -161,9 +167,10 @@ main section li > article h3 a:hover {
 
 main section li > article h3 small {
   display: block;
-  font-family: var(--mono);
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: var(--text);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
   color: var(--ink-soft);
 }
 
@@ -177,17 +184,21 @@ main section li > article p {
 main section li > article dl {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 .6rem;
-  margin: .5rem 0 0;
+  gap: 0 1.4rem;
+  margin: .7rem 0 0;
   font-family: var(--mono);
   font-size: 1rem;
   line-height: 1.6rem;
 }
 
 main section li > article dt {
-  color: var(--ink-soft);
-  text-transform: uppercase;
-  letter-spacing: .1em;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }
 
 main section li > article dd {
@@ -196,9 +207,12 @@ main section li > article dd {
   font-variant-numeric: tabular-nums;
 }
 
-main section li > article dd::after {
-  content: "";
-  flex-basis: 100%;
+main section > ul:has(img) li > article dl {
+  display: block;
+}
+
+main section > ul:not(:has(img)) li > article h3 {
+  margin-top: 0;
 }
 
 main section li[data-recommended="true"] > article h3::after {

@@ -148,6 +148,18 @@ body > nav > h2:not(:first-of-type) {
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
+  padding-right: .9rem;
+  margin-right: -.9rem;
+}
+
+#TableOfContents .redacted {
+  display: inline-block;
+  width: 3.4rem;
+  height: .85em;
+  vertical-align: -.05em;
+  overflow: hidden;
+  border-radius: 3px;
+  word-break: normal;
 }
 
 #TableOfContents ul {

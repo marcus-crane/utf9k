@@ -6,6 +6,7 @@
   {{ $dateFormat := .Params.dateFormat | default "Jan 02" }}
   {{ $all        := where site.RegularPages "Section" .Section }}
   {{ $groupBy    := .Params.groupBy | default "date" }}
+  {{ $noun       := .Params.itemNoun | default "post" }}
 
   {{ $groups := slice }}
   {{ if eq $groupBy "none" }}
@@ -29,12 +30,14 @@
     {{ $name := .name }}
     {{ $entries := .entries }}
     <section{{ with $name }} data-group="{{ . | urlize }}"{{ end }}>
-      {{ with $name }}<h2>{{ . }} <small>{{ len $entries }}</small></h2>{{ end }}
+      {{ with $name }}<h2>{{ . }} <small>{{ len $entries }} {{ cond (eq (len $entries) 1) $noun (pluralize $noun) }}</small></h2>{{ end }}
       <ul role="list">
         {{ range $entries }}
           <li>
-            {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">
+              {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
+              {{ .Title }}
+            </a>
           </li>
         {{ end }}
       </ul>

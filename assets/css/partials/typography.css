@@ -61,9 +61,9 @@ article h3 {
   scroll-margin-top: 2.4rem;
 }
 
-article h2 a[href^="#"],
-article h3 a[href^="#"],
-article h4 a[href^="#"] {
+article h2 a[aria-label^="Permalink"],
+article h3 a[aria-label^="Permalink"],
+article h4 a[aria-label^="Permalink"] {
   margin-left: .7rem;
   font-family: var(--mono);
   font-weight: 400;
@@ -73,10 +73,10 @@ article h4 a[href^="#"] {
   transition: opacity .12s ease;
 }
 
-article h2:hover a[href^="#"],
-article h3:hover a[href^="#"],
-article h4:hover a[href^="#"],
-article a[href^="#"]:focus {
+article h2:hover a[aria-label^="Permalink"],
+article h3:hover a[aria-label^="Permalink"],
+article h4:hover a[aria-label^="Permalink"],
+article a[aria-label^="Permalink"]:focus {
   opacity: 1
 }
 
@@ -101,6 +101,16 @@ article ul > li::before {
   height: .4rem;
   border-radius: 50%;
   background: var(--red);
+}
+
+article li:has(> input[type="checkbox"])::before {
+  content: none;
+}
+
+article li > input[type="checkbox"] {
+  margin: 0 .4rem 0 0;
+  vertical-align: -.05em;
+  accent-color: var(--red);
 }
 
 article ol {
@@ -133,8 +143,8 @@ article figure > img {
   overflow: hidden;
   background: var(--cream-2);
   border: 2px solid var(--ink);
-  border-radius: .9rem;
-  box-shadow: var(--cel);
+  border-radius: .8rem;
+  box-shadow: var(--pop);
 }
 
 article figure img,
@@ -162,9 +172,9 @@ article pre {
   overflow-x: auto;
   background: var(--studio);
   color: #e8ebff;
-  border: 2px solid var(--ink);
-  border-radius: .9rem;
-  box-shadow: var(--cel);
+  border: 1px solid var(--line);
+  border-radius: .8rem;
+  box-shadow: var(--pop);
   font-family: var(--mono);
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -350,9 +360,9 @@ article hr {
 article [role="region"] {
   margin: 0 0 1.8rem;
   overflow-x: auto;
-  border: 2px solid var(--ink);
-  border-radius: .9rem;
-  box-shadow: var(--cel);
+  border: 1px solid var(--line);
+  border-radius: .8rem;
+  box-shadow: var(--pop);
 }
 
 article table {
