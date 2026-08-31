@@ -1,6 +1,51 @@
 - list: 2026
   goal: 18
   books:
+    - title: Apple in China
+      subtitle: The Capture of the World's Greatest Company
+      author: Patrick McGee
+      cover: https://cdn.utf9k.net/books/apple-in-china.jpg
+      cover_height: 1200
+      cover_width: 795
+      isbn13: 9781398534377
+      asin: 1398534374
+      link: https://www.goodreads.com/book/show/241613416-apple-in-china
+      date_added: 2025-06-28
+      date_started: 2026-08-14
+      date_finished: null
+      recommended: true
+      progress: 58
+
+    # - title: 22 Cells in Nuremberg
+    #   subtitle: A Psychiatriest Examines the Nazi Criminals
+    #   author: Douglas M. Kelley
+    #   cover: https://cdn.utf9k.net/books/22-cells-in-nuremberg.jpg
+    #   cover_height: 1
+    #   cover_width: 1
+    #   isbn13: 1
+    #   asin: 1
+    #   link: 1
+    #   date_added: 1
+    #   date_started: 1
+    #   date_finished: null
+    #   recommended: false
+    #   progress: 44
+
+    # - title: National Security and Double Government
+    #   subtitle: null
+    #   author: Michael J. Glennon
+    #   cover: https://cdn.utf9k.net/books/national-security-and-double-government.jpg
+    #   cover_height: 1
+    #   cover_width: 1
+    #   isbn13: 1
+    #   asin: 1
+    #   link: 1
+    #   date_added: 1
+    #   date_started: 1
+    #   date_finished: null
+    #   recommended: true
+    #   progress: 18
+
     - title: Impro
       subtitle: Improvisation and the Theatre
       author: Keith Johnstone
