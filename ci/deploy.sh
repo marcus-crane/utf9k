@@ -3,5 +3,5 @@
 set -euxo pipefail
 
 ./ci/install.sh
-./ci/genmetadata.sh
+# ./ci/genmetadata.sh
 bun run build
