@@ -23,8 +23,9 @@ jobs:
         run: python -m pip install -U pip
       - name: Install dependencies
         run: python -m pip install -r scripts/requirements.txt
-      - name: Sync data from external sources
-        run: ./ci/externalsync.sh
+      # Both sources are blocked
+      # - name: Sync data from external sources
+      #   run: ./ci/externalsync.sh
       - name: Check for early exit
         run: |
           set -eux
