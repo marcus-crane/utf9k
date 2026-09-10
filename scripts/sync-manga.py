@@ -40,7 +40,14 @@ query = """query {
 }"""
 
 r = requests.post("https://graphql.anilist.co", json={'query': query})
-results = r.json()['data']['MediaListCollection']['lists'][0]['entries']
+body = r.json()
+
+if r.status_code != 200 or body.get('data') is None:
+    messages = [e.get('message', '') for e in body.get('errors', [])]
+    print(f"~ Skipping manga sync, AniList returned HTTP {r.status_code}: {'; '.join(messages)}")
+    raise SystemExit(0)
+
+results = body['data']['MediaListCollection']['lists'][0]['entries']
 
 for result in results:
     cover_url = result['media']['coverImage']['extraLarge']
