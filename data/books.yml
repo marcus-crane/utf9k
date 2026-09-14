@@ -1,21 +1,6 @@
 - list: 2026
   goal: 18
   books:
-    - title: Apple in China
-      subtitle: The Capture of the World's Greatest Company
-      author: Patrick McGee
-      cover: https://cdn.utf9k.net/books/apple-in-china.jpg
-      cover_height: 1200
-      cover_width: 795
-      isbn13: 9781398534377
-      asin: 1398534374
-      link: https://www.goodreads.com/book/show/241613416-apple-in-china
-      date_added: 2025-06-28
-      date_started: 2026-08-14
-      date_finished: null
-      recommended: true
-      progress: 58
-
     - title: 22 Cells in Nuremberg
       subtitle: A Psychiatriest Examines the Nazi Criminals
       author: Douglas M. Kelley
@@ -29,7 +14,7 @@
       date_started: 2026-06-07
       date_finished: null
       recommended: false
-      progress: 44
+      progress: 50
 
     - title: National Security and Double Government
       subtitle: null
@@ -44,22 +29,22 @@
       date_started: 2026-08-11
       date_finished: null
       recommended: true
-      progress: 18
+      progress: 25
 
-    - title: Impro
-      subtitle: Improvisation and the Theatre
-      author: Keith Johnstone
-      cover: https://cdn.utf9k.net/books/impro.jpg
-      cover_height: 1333
-      cover_width: 852
-      isbn13: 9780878301171
-      asin: 0878301178
-      link: https://www.goodreads.com/book/show/306940.Impro
-      date_added: 2026-02-13
-      date_started: 2026-02-14
-      date_finished: null
-      recommended: false
-      progress: 5
+    - title: Apple in China
+      subtitle: The Capture of the World's Greatest Company
+      author: Patrick McGee
+      cover: https://cdn.utf9k.net/books/apple-in-china.jpg
+      cover_height: 1200
+      cover_width: 795
+      isbn13: 9781398534377
+      asin: 1398534374
+      link: https://www.goodreads.com/book/show/241613416-apple-in-china
+      date_added: 2025-06-28
+      date_started: 2026-08-14
+      date_finished: 2026-09-03
+      recommended: true
+      progress: 100
 
     - title: Civil Litigation for Non‑Lawyers
       subtitle: A plain-English guide to civil cases in New Zealand
@@ -1377,6 +1362,21 @@
 
 - list: Stalled
   books:
+    - title: Impro
+      subtitle: Improvisation and the Theatre
+      author: Keith Johnstone
+      cover: https://cdn.utf9k.net/books/impro.jpg
+      cover_height: 1333
+      cover_width: 852
+      isbn13: 9780878301171
+      asin: 0878301178
+      link: https://www.goodreads.com/book/show/306940.Impro
+      date_added: 2026-02-13
+      date_started: 2026-02-14
+      date_finished: null
+      recommended: false
+      progress: 30
+
     - title: Creating The Mania
       subtitle: An Inside Look at How WrestleMania Comes to Life
       author: Jon Robinson
