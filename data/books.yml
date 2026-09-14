@@ -716,7 +716,7 @@
       asin: 1863959963
       link: https://openlibrary.org/works/OL19762252W/The_Big_Four
       date_added: 2018-05-04
-      date_started: 2021-05-04
+      date_started: 2021-05-03
       date_finished: 2021-05-29
       recommended: true
       progress: 100
@@ -751,7 +751,7 @@
       recommended: true
       progress: 100
 
-    - title: In the Beginning ...Was the Command Line
+    - title: In the Beginning was the Command Line
       subtitle: null
       author: Neal Stephenson
       cover: https://cdn.utf9k.net/books/in-the-beginning-was-the-command-line.jpg
@@ -759,7 +759,7 @@
       cover_width: 1200
       isbn13: 9780380815937
       asin: 0380815931
-      link: https://openlibrary.org/works/OL38477W/In_the_Beginning...Was_the_Command_Line
+      link: https://www.goodreads.com/book/show/13433051-in-the-beginning-was-the-command-line
       date_added: 2020-07-09
       date_started: 2021-01-01
       date_finished: 2021-02-20
