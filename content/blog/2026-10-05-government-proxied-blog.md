@@ -29,13 +29,13 @@ They used to use hashes, as seen in the screenshot at the top of this post, but 
 
 ## How does this all work?
 
-Thanks to the power of the Official Information Act, we actually have an architecture diagram released as part of [this request](https://fyi.org.nz/request/25573-information-on-the-zero-govt-nz-service) a few years back:
+Thanks to the power of the [Official Information Act (OIA)](https://utf9k.net/blog/nz-oia-guide/), we actually have an architecture diagram released as part of [this OIA response](https://fyi.org.nz/request/25573-information-on-the-zero-govt-nz-service) a few years back
 
 ![](https://cdn.utf9k.net/blog/government-proxied-blog/zero-architecture.png)
 
-While we don't get too much detail, the implication here is that your cellular provider sees a request to `*.zero.govt.nz` and covers the tab.
+While we don't get too much detail, the implication here is that your cellular provider sees traffic to `*.zero.govt.nz` and covers the tab.
 
-That same request outlines that `zero.govt.nz` is "a collaborative effort between several government agencies" which is "funded through a mix of staff time contributed by agencies, and a club fund to pay for third party services, such as, web hosting, internet traffic charges, and third tier support".
+That same OIA response outlines that `zero.govt.nz` is "a collaborative effort between several government agencies" which is "funded through a mix of staff time contributed by agencies, and a club fund to pay for third party services, such as, web hosting, internet traffic charges, and third tier support".
 
 We have the portal at `portal.zero.govt.nz`, a [Squid Proxy](https://en.wikipedia.org/wiki/Squid_(software)) which I believe was served at `my.zero.govt.nz` and an [ICAP server](https://en.wikipedia.org/wiki/Internet_Content_Adaptation_Protocol) in the mix although I'm not sure if that was ever internet-facing.
 
