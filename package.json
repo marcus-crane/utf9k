@@ -16,6 +16,10 @@
   "devDependencies": {
     "@shikijs/rehype": "^4.5.0",
     "@shikijs/transformers": "^4.5.0",
-    "rehype-cli": "^12.0.1"
+    "hast-util-from-html": "^2.0.3",
+    "hast-util-to-string": "^3.0.1",
+    "pele": "^1.7.0",
+    "rehype-cli": "^12.0.1",
+    "unist-util-visit": "^5.1.0"
   }
 }

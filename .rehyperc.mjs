@@ -1,4 +1,5 @@
 import rehypeShiki from '@shikijs/rehype'
+import rehypePele from './rehype-pele.mjs'
 import {
   transformerNotationDiff,
   transformerNotationHighlight,
@@ -10,6 +11,7 @@ import {
 
 export default {
   plugins: [
+    rehypePele,
     [rehypeShiki, {
       themes: {
         light: 'monokai',
