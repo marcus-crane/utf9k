@@ -52,4 +52,5 @@ jobs:
       - name: Purge retro pull zone
         env:
           BUNNY_API_KEY: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
-        run: curl -fsS -X POST -H "AccessKey: $BUNNY_API_KEY" https://api.bunny.net/pullzone/6223725/purgeCache
+        run: |
+          curl -fsS -X POST -H "AccessKey: $BUNNY_API_KEY" https://api.bunny.net/pullzone/6223725/purgeCache
