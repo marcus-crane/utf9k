@@ -1,3 +1,34 @@
+/* Georgia and Verdana generally exist on Windows and macOS but don't on Linux
+   so we'll use Gelasio and DejaVu Sans as lookalikes
+*/
+@font-face {
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Georgia"), url(/fonts/Gelasio-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Georgia Bold"), local("Georgia-Bold"), url(/fonts/Gelasio-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Verdana"), url(/fonts/DejaVuSans.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Verdana Bold"), local("Verdana-Bold"), url(/fonts/DejaVuSans-Bold.woff2) format("woff2");
+}
+
 :root {
   color-scheme: light;
   --bg: #f2f3ea;

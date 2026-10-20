@@ -57,6 +57,7 @@
       "target"    (slice "chrome115" "edge115" "firefox116" "ios16.4" "safari16.4")
       "minify"    (not hugo.IsDevelopment)
       "sourceMap" (cond hugo.IsDevelopment "inline" "none")
+      "externals" (slice "/fonts/*")
     }}
     {{ with resources.Get "css/style.css" | css.Build $opts }}
       {{ if hugo.IsDevelopment }}
