@@ -9,7 +9,7 @@ export default function rehypePele() {
       if (node.tagName !== 'pre') return
       if (!parent) return
       const code = node.children.find(child => child.tagName === 'code')
-      if (!code?.properites.className?.includes('language-mermaid')) return
+      if (!code?.properties.className?.includes('language-mermaid')) return
 
       try {
         const { svg } = render(toString(code))
