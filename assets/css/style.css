@@ -1,8 +1,500 @@
-@import "partials/colours.css";
-@import "partials/fonts.css";
-@import "partials/layout.css";
-@import "partials/sidebar.css";
-@import "partials/frontmatter.css";
-@import "partials/typography.css";
-@import "partials/footer.css";
-@import "partials/collections.css";
+:root {
+  color-scheme: light;
+  --bg: #f2f3ea;
+  --card: #fffdf6;
+  --tint: #eef0e3;
+  --ink: #292e25;
+  --muted: #626751;
+  --line: #b8bba8;
+  --link: #375947;
+  --refused: #8a4329;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  You'll see duplicate selectors around the place like background which looks stupid
+  but it's a hack for older browsers that don't support CSS variables and other features.
+  My site can also be accessed at http://retro.utf9k.net for non-browsers and it's easier
+  doing this than just not using newer features at all
+*/
+
+body {
+  margin: 0;
+  background: #f2f3ea;
+  background: var(--bg);
+  color: #292e25;
+  color: var(--ink);
+  font: 13px/1.5 Verdana, Arial, sans-serif;
+}
+
+a {
+  color: #375947;
+  color: var(--link);
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+h4, h5, h6 {
+  font-size: 14px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+small {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: #626751;
+  color: var(--muted);
+}
+
+ul[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl, dd {
+  margin: 0;
+}
+
+dt {
+  color: #626751;
+  color: var(--muted);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+caption {
+  text-align: left;
+  font-weight: 500;
+  padding: 6px 10px;
+  background: #eef0e3;
+  background: var(--tint);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+  border-bottom: 0;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 7px 10px;
+  border-bottom: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+th {
+  font-weight: 500;
+  background: #eef0e3;
+  background: var(--tint);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+body > header,
+#site-nav,
+main,
+body > footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+body[data-kind="page"] main {
+  max-width: 680px;
+}
+
+body > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+body > header a[rel="home"] {
+  font: 500 25px/1 Georgia, "Times New Roman", serif;
+  color: #292e25;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+#gag-button {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+#gag-button img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+body > header p {
+  margin: 0;
+  max-width: 40ch;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #626751;
+  color: var(--muted);
+  background: #fffdf6;
+  background: var(--card);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+  padding: 5px 9px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b8bba8;
+  border-color: var(--line);
+  margin-bottom: 28px;
+}
+
+#site-nav h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+#site-nav #TableOfContents,
+#site-nav #contents-heading {
+  display: none;
+}
+
+#site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+}
+
+#site-nav ul a {
+  font-size: 12px;
+}
+
+#site-nav ul a[aria-current="page"] {
+  color: #292e25;
+  color: var(--ink);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#theme-switcher {
+  margin-left: auto;
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: #fffdf6;
+  background: var(--card);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+#theme-switcher button {
+  width: 28px;
+  height: 24px;
+  border: 0;
+  background: none;
+  color: #626751;
+  color: var(--muted);
+}
+
+#theme-switcher button[aria-pressed="true"] {
+  background: #eeef03;
+  background: var(--tint);
+  color: #292e25;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  #menu-toggle {
+    display: block;
+    margin-left: auto;
+    width: 42px;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #b8bba8;
+    border-color: var(--line);
+    background: #fffdf6;
+    background: var(--card);
+  }
+
+  #menu-toggle span {
+    display: block;
+    height: 2px;
+    margin: 0 0 4px;
+    background: #292e25;
+    background: var(--ink);
+  }
+
+  body > header p {
+    order: 1;
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  #site-nav {
+    display: none;
+  }
+
+  #site-nav[data-open] {
+    display: block;
+  }
+
+  #site-nav ul {
+    display: block;
+  }
+
+  #site-nav ul a {
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #b8bba8;
+    border-color: var(--line);
+  }
+
+  #theme-switcher {
+    margin: 12px 0 0;
+    width: max-content;
+  }
+}
+
+main > header,
+article > header {
+  margin-bottom: 20px;
+}
+
+main > header p,
+article > header p {
+  color: #626751;
+  color: var(--muted);
+}
+
+main > header dl,
+article > header dl {
+  font-size: 12px;
+}
+
+main > header dt,
+main > header dd,
+article > header dt,
+article > header dd {
+  display: inline;
+}
+
+main > header dd,
+article > header dd {
+  margin-right: 12px;
+}
+
+main > section {
+  margin: 0 0 28px;
+}
+
+main > section > h2 {
+  margin: 0;
+  padding: 6px 10px;
+  font: 500 13px/1.5 Verdana, Arial, sans-serif;
+  background: #eeef03;
+  background: var(--tint);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+main > section > h2 small {
+  float: right;
+}
+
+main > section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px 12px;
+  padding: 12px;
+  background: #fffdf6;
+  background: var(--card);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+  border-top: 0;
+}
+
+main > section article h3 {
+  font: 13px/1.4 Verdana, Arial, sans-serif;
+  margin: 0 0 6px;
+}
+
+main > section article h3 small {
+  display: block;
+}
+
+main > section article img {
+  display: block;
+}
+
+main > section article dl {
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+main > section article dt {
+  display: inline;
+  margin-right: 4px;
+}
+
+main > section article dd {
+  display: inline;
+  margin-right: 8px;
+}
+
+main > section article progress {
+  display: block;
+  width: 100%;
+  height: 6px;
+}
+
+main > article {
+  padding: 20px;
+  font: 16px/1.7 Georgia, "Times New Roman", serif;
+  background: #fffdf6;
+  background: var(--card);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+main > article h2 {
+  font-size: 19px;
+  margin: 24px 0 8px;
+}
+
+main > article h3 {
+  font-size: 16px;
+  margin: 20px 0 8px;
+}
+
+main > article ul,
+main > article ol {
+  padding-left: 20px;
+  margin: 10px 0 18px;
+}
+
+main > article li {
+  margin: 3px 0;
+}
+
+main > article > details {
+  margin: 0 0 20px;
+  font: 13px/1.5 Verdana, Arial, sans-serif;
+  background: #eeef03;
+  background: var(--tint);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+main > article > details summary {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+main > article > details nav {
+  padding: 0 10px 10px;
+}
+
+main > article > details ul {
+  margin: 0;
+}
+
+.footnotes {
+  margin-top: 20px;
+  padding-top: 12px;
+  font: 12px/1.6 Verdana, Arial, sans-serif;
+  border-top: 1px solid #b8bba8;
+  border-top-color: var(--line);
+}
+
+body > footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  margin-top: 36px;
+  padding-top: 18px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  border-top: 1px solid #b8bba8;
+  border-top-color: var(--line);
+}
+
+body > footer h2 {
+  margin: 0 0 6px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  color: #626751;
+  color: var(--muted);
+}
