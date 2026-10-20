@@ -12,7 +12,9 @@
           {{ with .subtitle }}<small>{{ . }}</small>{{ end }}
         </h3>
         {{ with .image }}
-          <img src="{{ .src }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy">
+          {{/* We use an old trick to support both http and https origins (because it's fun to support older devices like the PSP and Nintendo DS Browser) */}}
+          {{ $src := replace .src "https://cd.utf9k.net" "//cdn.utf9k.net" }}
+          <a href="{{ $src }}"><img src="{{ $src }}?width={{ .width }}" srcset="{{ $src }}?width={{ mul .width 2 }} 2x" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy"></a>
         {{ end }}
         {{ with .summary }}<p>{{ . }}</p>{{ end }}
         {{ if or .date .details }}

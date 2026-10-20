@@ -123,5 +123,8 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ with resources.Get "js/image-viewer.js" | js.Build (dict "target" $opts.target "minify" (not hugo.IsDevelopment)) | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+    {{ end }}
   </body>
 </html>

@@ -3,4 +3,36 @@
     {{ partial "header.html" . }}
     {{ .Content }}
   </article>
+
+  {{ $items := slice }}
+  {{ range (index hugo.Data.books 0).books }}
+    {{ if not .date_finished }}
+      {{ $h := 60 }}
+      {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
+      {{ $items := $items | append (dict
+        "title"   .title
+        "link"    .link
+        "image"   (dict "src" .cover "width" $w "height" $h "alt" (printf "Cover of %s" .title))
+        "details" (slice
+          (dict "label" "Kind" "value" "Reading")
+          (dict "label" "Progress" "value" (printf `<progress value="%v" max="100">%v%%</progress>` .progress .progress | safeHTML))
+        )
+      ) }}
+    {{ end }}
+  {{ end }}
+  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
+
+  {{ $read := 0 }}
+  {{ range hugo.Data.books }}
+    {{ if ne .list "Stalled" }}
+      {{ range .books }}{{ if .date_finished }}{{ $read = add $read 1 }}{{ end }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <nav aria-labelledby="collections-heading">
+    <h2 id="collections-heading">Collections</h2>
+    <ul role="list">
+      <li><a href="/books"><b>{{ $read }}</b> books read since 2018</a></li>
+    </ul>
+  </nav>
 {{ end }}
