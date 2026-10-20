@@ -42,10 +42,14 @@ jobs:
           cache: 'pip'
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
-      - name: Publish to Bunny Edge CDN
+      - name: Publish to Bunny CDN
+        uses: BunnyWay/actions/deploy-site@deploy-site_0.1.2
+        with:
+          site: utf9k
+          directory: public
+          api_key: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
+          cli_version: "0.20"
+      - name: Purge retro pull zone
         env:
-          BUNNY_STORAGE_ZONE: utf9k
-          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
           BUNNY_API_KEY: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
-          BUNNY_PULL_ZONE_HOST: utf9k.net
-        run: python ci/bunny-deploy.py
+        run: curl -fsS -X POST -H "AccessKey: $BUNNY_API_KEY" https://api.bunny.net/pullzone/6223725/purgeCache
