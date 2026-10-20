@@ -1,5 +1,5 @@
 import rehypeShiki from '@shikijs/rehype'
-import rehypePele from './rehype-pele.mjs'
+import rehypePele from './.rehype-pele.mjs'
 import {
   transformerNotationDiff,
   transformerNotationHighlight,
