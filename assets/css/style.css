@@ -376,14 +376,41 @@ main > section > h2 small {
 }
 
 main > section > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px 12px;
-  padding: 12px;
+  padding: 0;
   background: #fffdf6;
   background: var(--card);
   border: 1px solid #b8bba8;
   border-color: var(--line);
+  border-top: 0;
+}
+
+main > section > ul > li {
+  padding: 8px 12px;
+  border-top: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+main > section > ul > li:first-child {
+  border-top: 0;
+}
+
+main > section > ul > li > time {
+  display: inline-block;
+  width: 64px;
+  font-size: 11px;
+  color: #626751;
+  color: var(--muted)
+}
+
+body[data-section="books"] main > section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px 12px;
+  padding: 12px;
+}
+
+body[data-section="books"] main > section > ul > li {
+  padding: 0;
   border-top: 0;
 }
 
