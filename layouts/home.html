@@ -3,4 +3,61 @@
     {{ partial "header.html" . }}
     {{ .Content }}
   </article>
+
+  {{ $items := slice }}
+  {{ range (index hugo.Data.books 0).books }}
+    {{ if not .date_finished }}
+      {{ $h := 60 }}
+      {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
+      {{ $items = $items | append (dict
+        "title"    .title
+        "link"     .link
+        "image"    (dict "src" .cover "width" $w "height" $h "alt" (printf "Cover of %s" .title))
+        "badge"    (printf "%v%%" .progress)
+        "progress" (dict "value" .progress "max" 100)
+        "details"  (slice
+          (dict "label" "Kind" "value" "Reading")
+          (dict "label" "Progress" "value" (printf "%v%%" .progress) "dialog" true)
+        )
+      ) }}
+    {{ end }}
+  {{ end }}
+  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
+
+  {{ $read := 0 }}
+  {{ range hugo.Data.books }}
+    {{ if ne .list "Stalled" }}
+      {{ range .books }}{{ if .date_finished }}{{ $read = add $read 1 }}{{ end }}{{ end }}
+    {{ end }}
+  {{ end }}
+  {{ range hugo.Data.games }}
+    {{ if eq .list "Playing" }}
+      {{ range .games }}
+        {{ $items = $items | append (dict
+          "title"   .title
+          "link"    .link
+          "image"   (dict "src" .cover.url "width" 45 "height" 60 "alt" (printf "Box art for %s" .title))
+          "details" (slice (dict "label" "Kind" "value" "Playing"))
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $manga := where hugo.Data.manga }}
+  {{ range first 3 (sort $manga "progress" "desc") }}
+    {{ $h := 60 }}
+    {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
+    {{ $items = $items | append (dict
+      "title"   .title
+      "link"    .url
+      "image"   (dict "src" .cover "width" $w "height" $w "alt" (printf "Cover of %s" .title))
+      "badge"   (printf "Ch. %v" .progress)
+      "details" (slice
+        (dict "label" "Kind" "value" "Reading")
+        (dict "label" "Author" "value" .author "dialog" true)
+        (dict "label" "Progress" "value" (printf "%v chapters" .progress) "dialog" true)
+      )
+    ) }}
+  {{ end }}
+  {{ end }}
 {{ end }}

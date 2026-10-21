@@ -3,8 +3,7 @@ category: uses
 description: In which I get on the bandwagon and list the various tools of my trade
 lastmod: 2026-04-21
 slug: uses
-tags:
-  - meta
+toc: false
 title: Uses
 ---
 For the unaware, this is inspired by the [/uses](https://uses.tech) page idea

@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  {{ .Content }}
+
+  {{ with site.GetPage "/blog/2018-08-18-nz-oia-guide" }}
+    <aside><strong>Not familiar with OIAs?</strong> <a href="{{ .RelPermalink }}">{{ .Title }}</a> is one way to get up to speed.</aside>
+  {{ end }}
+
+  {{ $all := where site.RegularPages "Section" .Section }}
+  {{ $newest := int ((index $all 0).Date.Format "2006") }}
+  {{ $oldest := int ((index (last 1 $all) 0).Date.Format "2006") }}
+  <table>
+    {{ range seq $newest -1 $oldest }}
+      {{ $year := . }}
+      {{ $rows := sort (where $all "Date.Year" $year) "Date" "desc" }}
+      <tbody>
+        <tr>
+          <th scope="rowgroup" colspan="2">{{ $year }} <small>{{ with $rows }}{{ len . }} request{{ if ne (len .) 1 }}s{{ end }}{{ else }}No requests{{ end }}</small></th>
+        </tr>
+        {{ range $rows }}
+        <tr>
+          <td>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan" }}</time>
+          </td>
+          <td>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </td>
+        </tr>
+        {{ end }}
+      </tbody>
+    {{ end }}
+  </table>
+{{ end }}

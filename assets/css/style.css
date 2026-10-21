@@ -1,8 +1,1323 @@
-@import "partials/colours.css";
-@import "partials/fonts.css";
-@import "partials/layout.css";
-@import "partials/sidebar.css";
-@import "partials/frontmatter.css";
-@import "partials/typography.css";
-@import "partials/footer.css";
-@import "partials/collections.css";
+/* Georgia and Verdana generally exist on Windows and macOS but don't on Linux
+   so we'll use Gelasio and DejaVu Sans as lookalikes
+*/
+@font-face {
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Georgia"), url(/fonts/Gelasio-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Georgia Bold"), local("Georgia-Bold"), url(/fonts/Gelasio-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: 400;
+  font-display: swap;
+  src: local("Verdana"), url(/fonts/DejaVuSans.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Verdana';
+  font-weight: 700;
+  font-display: swap;
+  src: local("Verdana Bold"), local("Verdana-Bold"), url(/fonts/DejaVuSans-Bold.woff2) format("woff2");
+}
+
+:root {
+  color-scheme: light;
+  --bg: #dfe3d2;
+  --card: #ebeee0;
+  --tint: #d3d8c3;
+  --ink: #262b22;
+  --muted: #56604b;
+  --line: #9ea78c;
+  --link: #2f4f3d;
+  --refused: #8a4329;
+  --track: rgba(255, 255, 255, 0.65);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1b1e19;
+  --card: #22251f;
+  --tint: #31392a;
+  --ink: #e6e9df;
+  --muted: #b7bdaa;
+  --line: #535b49;
+  --link: #b3d3ad;
+  --refused: #ebb397;
+  --track: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #1b1e19;
+    --card: #22251f;
+    --tint: #31392a;
+    --ink: #e6e9df;
+    --muted: #b7bdaa;
+    --line: #535b49;
+    --link: #b3d3ad;
+    --refused: #ebb397;
+    --track: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Global settings */
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  You'll see duplicate selectors around the place like background which looks stupid
+  but it's a hack for older browsers that don't support CSS variables and other features.
+  My site can also be accessed at http://retro.utf9k.net for non-browsers and it's easier
+  doing this than just not using newer features at all
+*/
+
+body {
+  margin: 0;
+  background: #dfe3d2;
+  background: var(--bg);
+  color: #262b22;
+  color: var(--ink);
+  font: 12px/1.5 Verdana, Arial, sans-serif;
+}
+
+a {
+  color: #2f4f3d;
+  color: var(--link);
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+h3 {
+  font-size: 13px;
+}
+
+h4, h5, h6 {
+  font-size: 12px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+small {
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: #56604b;
+  color: var(--muted);
+}
+
+ul[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl, dd {
+  margin: 0;
+}
+
+dt {
+  color: #56604b;
+  color: var(--muted);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+caption {
+  text-align: left;
+  font-weight: 500;
+  padding: 6px 10px;
+  background: #d3d8c3;
+  background: var(--tint);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+  border-bottom: 0;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 7px 10px;
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+th {
+  font-weight: 500;
+  background: #d3d8c3;
+  background: var(--tint);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+body > header,
+#site-nav,
+main,
+body > footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Site banner */
+
+body > header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+body > header a[rel="home"] {
+  font: 700 20px/1 Verdana, Arial, sans-serif;
+  letter-spacing: -0.04em;
+  color: #262b22;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+#gag-button {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+#gag-button img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+body > header p {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 50ch;
+  max-width: 100%;
+  margin: 0;
+  padding: 5px 9px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #56604b;
+  color: var(--muted);
+  background: #ebeee0;
+  background: var(--card);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+#gag-button:hover + p,
+#gag-button:focus + p,
+body > header[data-gag] p {
+  display: block;
+}
+
+body > header p::before {
+  content: "";
+  position: absolute;
+  left: 78px;
+  top: -5px;
+  width: 8px;
+  height: 8px;
+  background: #ebeee0;
+  background: var(--card);
+  border-left: 1px solid #9ea78c;
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Main navigation */
+
+#site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#site-nav h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+#site-nav #TableOfContents,
+#site-nav #contents-heading {
+  display: none;
+}
+
+#site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 16px;
+}
+
+#site-nav ul a {
+  font-size: 12px;
+}
+
+#site-nav ul a[aria-current="page"] {
+  color: #262b22;
+  color: var(--ink);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#theme-switcher {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  background: #ebeee0;
+  background: var(--card);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+#theme-switcher button {
+  width: 28px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #56604b;
+  color: var(--muted);
+}
+
+#theme-switcher svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#theme-switcher button[aria-pressed="true"] {
+  background: #d3d8c3;
+  background: var(--tint);
+  color: #262b22;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  #menu-toggle {
+    display: block;
+    margin-left: auto;
+    width: 42px;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid #9ea78c;
+    border-color: var(--line);
+    background: #ebeee0;
+    background: var(--card);
+  }
+
+  #menu-toggle span {
+    display: block;
+    height: 2px;
+    margin: 0 0 4px;
+    background: #262b22;
+    background: var(--ink);
+  }
+
+  #site-nav {
+    display: none;
+  }
+
+  #site-nav[data-open] {
+    display: block;
+  }
+
+  #site-nav ul {
+    display: block;
+  }
+
+  #site-nav ul a {
+    display: block;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #9ea78c;
+    border-color: var(--line);
+  }
+
+  #site-nav ul li:last-child a {
+    border-bottom: 0;
+  }
+
+  body > header p {
+    margin-top: 4px;
+  }
+
+  body > header p::before {
+    left: 60px;
+  }
+
+  main > header h1,
+  article > header h1 {
+    font-size: 20px;
+  }
+
+  main > article {
+    max-width: none;
+  }
+
+  body[data-section="books"] main > section > ul,
+  body[data-section="manga"] main > section > ul,
+  body[data-section="games"] main > section > ul {
+    grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+    gap: 16px 12px;
+  }
+
+  figure[data-chart] ul {
+    height: 90px;
+  }
+
+  figure[data-chart] li b {
+    display: none;
+  }
+
+  dialog.card {
+    width: auto;
+  }
+}
+
+/* Page metadata */
+
+main > header,
+article > header {
+  margin-bottom: 16px;
+}
+
+main > header h1,
+article > header h1 {
+  margin-bottom: 4px;
+}
+
+main > header nav,
+article > header nav {
+  margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: .02em;
+  color: #56604b;
+  color: var(--muted);
+}
+
+main > header p,
+article > header p {
+  margin: 0 0 2px;
+  color: #56604b;
+  color: var(--muted);
+}
+
+main > header small,
+article > header small {
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  letter-spacing: .02em;
+}
+
+/* Collections */
+
+main > section {
+  margin: 0 0 28px;
+}
+
+main > section > h2 {
+  margin: 0 0 12px;
+  font: 700 17px/1.3 Georgia, "Times New Roman", serif;
+}
+
+main > section > h2 small {
+  margin-left: 8px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  letter-spacing: .02em;
+  color: #56604b;
+  color: var(--muted);
+}
+
+/* Lists (ie; blog posts) */
+
+main > section > ul {
+  padding: 0;
+}
+
+main > section > ul > li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #9ea78c;
+  border-bottom-color: var(--line);
+}
+
+/* Collection covers */
+
+body[data-section="books"] main > section > ul,
+body[data-section="manga"] main > section > ul,
+body[data-section="games"] main > section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 20px 16px;
+}
+
+body[data-section="books"] main > section > ul > li,
+body[data-section="manga"] main > section > ul > li,
+body[data-section="games"] main > section > ul > li {
+  padding: 0;
+  border-bottom: 0;
+}
+
+main > section article h3 {
+  font: 13px/1.4 Verdana, Arial, sans-serif;
+  margin: 0 0 6px;
+}
+
+main > section article h3 small {
+  display: block;
+}
+
+main > section article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+main > section article p {
+  margin: 0;
+}
+
+main > section article dl {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #56604b;
+  color: var(--muted);
+}
+
+main > section article dt {
+  display: inline;
+  margin-right: 4px;
+}
+
+body[data-section="bookmarks"] main > section article dt {
+  display: none;
+}
+
+main > section article dd {
+  display: inline;
+  margin-right: 8px;
+}
+
+main > section article progress {
+  display: block;
+  width: 100%;
+  height: 6px;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  background: #d3d8c3;
+  background: var(--tint);
+}
+
+progress::-webkit-progress-bar {
+  background: #d3d8c3;
+  background: var(--tint);
+}
+
+progress::-webkit-progress-value {
+  background: #2f4f3d;
+  background: var(--link);
+}
+
+progress::-moz-progress-bar {
+  background: #2f4f3d;
+  background: var(--link);
+}
+
+body[data-section="books"] main > section article,
+body[data-section="manga"] main > section article,
+body[data-section="games"] main > section article {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section article {
+  position: relative;
+}
+
+main > section article > b {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: normal;
+  color: #262b22;
+  color: var(--ink);
+  background: #ebeee0;
+  background: var(--card);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+main > section article > progress {
+  position: relative;
+  height: 6px;
+  margin: -6px 0 0;
+  background: #ebeee0;
+  background: var(--track);
+}
+
+main > section article > progress::-webkit-progress-bar {
+  background: #ebeee0;
+  background: var(--track);
+}
+
+body[data-section="books"] main > section article h3,
+body[data-section="manga"] main > section article h3,
+body[data-section="games"] main > section article h3 {
+  order: 2;
+  margin: 8px 0 0;
+}
+
+body[data-section="books"] main > section article h3 a,
+body[data-section="manga"] main > section article h3 a,
+body[data-section="games"] main > section article h3 a {
+  text-decoration: none;
+  color: #262b22;
+  color: var(--ink);
+}
+
+body[data-section="books"] main > section article h3 small,
+body[data-section="manga"] main > section article h3 small,
+body[data-section="games"] main > section article h3 small {
+  display: none;
+}
+
+body[data-section="games"] main > section article dl {
+  display: none;
+}
+
+body[data-section="books"] main > section article h3 a:hover,
+body[data-section="manga"] main > section article h3 a:hover,
+body[data-section="games"] main > section article h3 a:hover {
+  text-decoration: underline;
+}
+
+body[data-section="books"] main > section article dl,
+body[data-section="manga"] main > section article dl,
+body[data-section="games"] main > section article dl {
+  order: 3;
+  margin: 2px 0 0;
+}
+
+body[data-section="books"] main > section article dt,
+body[data-section="manga"] main > section article dt,
+body[data-section="games"] main > section article dt {
+  display: none;
+}
+
+body[data-section="books"] main > section article dd,
+body[data-section="manga"] main > section article dd,
+body[data-section="games"] main > section article dd {
+  display: block;
+  margin: 0;
+}
+
+/* Front page mini-shelf */
+
+section[data-group="on-the-go"] > h2 {
+  margin: 0 0 8px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  letter-spacing: .02em;
+  color: #56604b;
+  color: var(--muted);
+}
+
+section[data-group="on-the-go"] > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 14px;
+}
+
+section[data-group="on-the-go"] > ul > li {
+  padding: 0;
+  border-bottom: 0;
+}
+
+section[data-group="on-the-go"] article h3 {
+  display: none;
+}
+
+section[data-group="on-the-go"] article img {
+  width: auto;
+  height: 126px;
+  border-radius: 3px;
+}
+
+section[data-group="on-the-go"] article dt {
+  display: none;
+}
+
+section[data-group="on-the-go"] article dd {
+  display: block;
+  margin: 0;
+}
+
+section[data-group="on-the-go"] article > b {
+  border-radius: 3px;
+}
+
+section[data-group="on-the-go"] article > progress {
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+}
+
+section[data-group="on-the-go"] article dl {
+  margin-top: 6px;
+}
+
+main > section article dt[data-dialog],
+main > section article dd[data-dialog] {
+  display: none;
+}
+
+nav[aria-labelledby="collections-heading"] ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: #9ea78c;
+  background: var(--line);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+nav[aria-labelledby="collections-heading"] li {
+  padding: 14px 16px;
+  background: #ebeee0;
+  background: var(--card);
+}
+
+nav[aria-labelledby="collections-heading"] li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav[aria-labelledby="collections-heading"] li b {
+  display: block;
+  font: 700 22px/1.1 Georgia, "Times New Roman", serif;
+  color: #262b22;
+  color: var(--ink);
+}
+
+nav[aria-labelledby="collections-heading"] li p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #56604b;
+  color: var(--muted);
+}
+
+/* Typography */
+
+main > article h1 a[aria-label^="Permalink"],
+main > article h2 a[aria-label^="Permalink"],
+main > article h3 a[aria-label^="Permalink"],
+main > article h4 a[aria-label^="Permalink"],
+main > article h5 a[aria-label^="Permalink"],
+main > article h6 a[aria-label^="Permalink"] {
+  margin-left: 4px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #9ea78c;
+  color: var(--line);
+}
+
+main > article h1 a[aria-label^="Permalink"]:hover,
+main > article h2 a[aria-label^="Permalink"]:hover,
+main > article h3 a[aria-label^="Permalink"]:hover,
+main > article h4 a[aria-label^="Permalink"]:hover,
+main > article h5 a[aria-label^="Permalink"]:hover,
+main > article h6 a[aria-label^="Permalink"]:hover {
+  color: #2f4f3d;
+  color: var(--link);
+}
+
+main > article {
+  max-width: 72ch;
+  font: 12px/1.5 Verdana, Arial, sans-serif;
+}
+
+body[data-kind="home"] main > article {
+  max-width: none;
+  margin-bottom: 28px;
+}
+
+main > article h2 {
+  margin: 24px 0 8px;
+}
+
+main > article h3 {
+  margin: 20px 0 6px;
+}
+
+main > article ul,
+main > article ol {
+  padding-left: 20px;
+  margin: 10px 0 18px;
+}
+
+main > article li {
+  margin: 3px 0;
+}
+
+main > article li ul,
+main > article li ol {
+  margin: 3px 0 6px;
+}
+
+main > article > details {
+  margin: 0 0 20px;
+  background: #d3d8c3;
+  background: var(--tint);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+main > article > details summary {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+main > article > details nav {
+  padding: 0 10px 10px;
+}
+
+main > article > details ul {
+  margin: 0;
+}
+
+blockquote {
+  margin: 18px 0;
+  padding: 2px 0 2px 16px;
+  border-left: 2px solid #9ea78c;
+  border-left-color: var(--line);
+  color: #56604b;
+  color: var(--muted);
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote[data-alert] {
+  padding: 10px 14px;
+  color: #262b22;
+  color: var(--ink);
+  background: #d3d8c3;
+  background: var(--tint);
+  border-left: 3px solid #2f4f3d;
+  border-left-color: var(--link);
+}
+
+blockquote[data-alert="warning"], blockquote[data-alert="caution"] {
+  border-left-color: #8a4329;
+  border-left-color: var(--refused);
+}
+
+code {
+  font: 12px ui-monospace, Consolas, Menlo, monospace;
+  background: #d3d8c3;
+  background: var(--tint);
+  padding: 1px 4px;
+}
+
+pre {
+  margin: 18px 0;
+  padding: 8px 1ch;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #d3d8c3;
+  background: var(--tint);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+figure[data-code] figcaption {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 8px;
+  font: 11px/1.5 ui-monospace, Consolas, Menlo, monospace;
+  color: #56604b;
+  color: var(--muted);
+  background: #d3d8c3;
+  background: var(--tint);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+  border-bottom: 0;
+}
+
+figure[data-code] pre {
+  margin: 0;
+}
+
+figure {
+  margin: 18px 0;
+}
+
+main > article video,
+main > article audio,
+main > article iframe {
+  display: block;
+  width: 100%;
+  margin: 18px 0;
+}
+
+figure img {
+  display: block;
+}
+
+figure a {
+  display: block;
+  cursor: zoom-in;
+}
+
+figure a:hover img,
+figure a:focus img {
+  outline: 2px solid #2f4f3d;
+  outline-color: var(--link);
+  outline-offset: 2px;
+}
+
+figcaption {
+  margin-top: 5px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  color: #56604b;
+  color: var(--muted);
+}
+
+main > article div[role="region"] {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+main > article table {
+  font: 12px/1.5 Verdana, Arial, sans-serif;
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+mark {
+  background: #e6ebc8;
+  padding: 0 3px;
+}
+
+kbd {
+  font: 12px ui-monospace, Consolas, Menlo, monospace;
+  padding: 0 5px;
+  background: #d3d8c3;
+  background: var(--tint);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #9ea78c;
+  border-top-color: var(--line);
+}
+
+.footnotes > hr {
+  display: none;
+}
+
+.footnotes {
+  margin-top: 28px;
+  font: 12px/1.6 Verdana, Arial, sans-serif;
+}
+
+.footnotes h2 {
+  margin: 0 0 8px;
+}
+
+.redacted {
+  background: #111;
+  color: transparent;
+  padding: 0 2px;
+  word-break: break-all;
+}
+
+/* Graphs */
+figure[data-chart] {
+  margin: 0 0 16px;
+  padding: 0 12px 10px;
+  background: #ebeee0;
+  background: var(--card);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+figure[data-chart] figcaption {
+  margin: 0 -12px 12px;
+  padding: 6px 12px;
+  font-weight: 700;
+  background: #d3d8c3;
+  background: var(--tint);
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+figure[data-chart] figcaption small {
+  margin-left: 6px;
+  font-weight: normal;
+  color: #56604b;
+  color: var(--muted);
+}
+
+figure[data-chart] ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure[data-chart] li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  font-size: 11px;
+  color: #56604b;
+  color: var(--muted);
+}
+
+figure[data-chart] li b {
+  font-weight: normal;
+  color: #262b22;
+  color: var(--ink);
+}
+
+figure[data-chart] li span {
+  display: block;
+  width: 100%;
+  min-height: 2px;
+  margin: 2px 0 4px;
+  background: #2f4f3d;
+  background: var(--link);
+}
+
+ul[data-tags] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+ul[data-tags] small {
+  color: #56604b;
+  color: var(--muted);
+}
+
+aside {
+  margin: 0 0 20px;
+  padding: 10px 12px;
+  background: #ebeee0;
+  background: var(--card);
+  border-left: 3px solid #2f4f3d;
+  border-left-color: var(--link);
+}
+
+main > table {
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+  margin-bottom: 28px;
+}
+
+main > table caption small {
+  margin-left: 6px;
+  font-weight: normal;
+  color: #56604b;
+  color: var(--muted);
+}
+
+tbody th[scope="rowgroup"] {
+  font-weight: 700;
+  background: #d3d8c3;
+  background: var(--tint);
+}
+
+tbody th[scope="rowgroup"] small {
+  float: right;
+  font-weight: normal;
+  color: #56604b;
+  color: var(--muted);
+}
+
+td time {
+  font-size: 11px;
+  color: #56604b;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Questions */
+[data-drawers] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+[data-drawers] details {
+  background: #ebeee0;
+  background: var(--card);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+[data-drawers] details[open] {
+  grid-column: 1 / -1;
+}
+
+[data-drawers] summary {
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #d3d8c3;
+  background: var(--tint);
+}
+
+[data-drawers] details[open] summary {
+  background: #ebeee0;
+  background: var(--card);
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+[data-drawers] summary b {
+  float: right;
+  font-weight: normal;
+  color: #56604b;
+  color: var(--muted);
+}
+
+[data-drawers] ul {
+  margin: 0;
+  padding: 10px 12px;
+  list-style: none;
+  columns: 3 220px;
+  column-gap: 24px;
+}
+
+[data-drawers] li {
+  margin: 0 0 6px;
+  break-inside: avoid;
+}
+
+/* Footer */
+
+body > footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  margin-top: 36px;
+  padding-top: 18px;
+  padding-bottom: 40px;
+  font-size: 12px;
+}
+
+body > footer > div {
+  margin-left: auto;
+}
+
+body > footer h2 {
+  margin: 0 0 6px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  color: #56604b;
+  color: var(--muted);
+}
+
+/* Cover viewer */
+dialog {
+  padding: 0;
+  max-width: 92vw;
+  background: #ebeee0;
+  background: var(--card);
+  color: #262b22;
+  color: var(--ink);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h3 {
+  margin: 0;
+  padding: 7px 40px 7px 12px;
+  font: 700 12px/1.5 Verdana, Arial, sans-serif;
+  background: #d3d8c3;
+  background: var(--tint);
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+dialog h3 a {
+  color: #262b22;
+  color: var(--ink);
+}
+
+dialog h3 small {
+  display: block;
+  font-weight: normal;
+}
+
+dialog.card {
+  width: 360px;
+}
+
+dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+dialog.picture img {
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+dialog p {
+  margin: 8px 12px 12px;
+  font-size: 12px;
+  text-align: center;
+}
+
+dialog > b,
+dialog > progress {
+  display: none;
+}
+
+dialog dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  font-size: 12px;
+  border-top: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+dialog dt {
+  padding: 7px 12px;
+  font-size: 11px;
+  background: #d3d8c3;
+  background: var(--tint);
+  border-right: 1px solid #9ea78c;
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+dialog dd {
+  padding: 7px 12px;
+  border-bottom: 1px solid #9ea78c;
+  border-color: var(--line);
+}
+
+dialog progress {
+  height: 6px;
+  vertical-align: middle;
+}
+
+dialog button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  font: 16px/22px Verdana, Arial, sans-serif;
+  background: #ebeee0;
+  background: var(--card);
+  color: #262b22;
+  color: var(--ink);
+  border: 1px solid #9ea78c;
+  border-color: var(--line);
+}

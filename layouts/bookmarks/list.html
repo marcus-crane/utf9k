@@ -1,8 +1,46 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
 
+  {{ $all := where site.RegularPages "Section" .Section }}
+
+  {{ $byYear := dict }}
+  {{ range $all }}
+    {{ $y := .Date.Format "2006" }}
+    {{ $byYear = merge $byYear (dict $y (add (index $byYear $y | default 0) 1)) }}
+  {{ end }}
+  {{ $years := slice }}
+  {{ range $y, $n := $byYear }}{{ $years = $years | append $y }}{{ end }}
+  {{ $most := 0 }}
+  {{ range $byYear }}{{ if gt . $most }}{{ $most = . }}{{ end }}{{ end }}
+  <figure data-chart>
+    <figcaption>Bookmarks saved <small>{{ len $all }} since {{ index $years 0 }}</small></figcaption>
+    <ul role="list">
+      {{ range seq (int (index $years 0)) (int (index (last 1 $years) 0)) }}
+        {{ $n := index $byYear (string .) | default 0 }}
+        <li title="{{ . }} · {{ $n }}"><b>{{ $n }}</b><span style="height: {{ div (mul $n 100) $most }}%"></span>{{ substr (string .) 2 }}</li>
+      {{ end }}
+    </ul>
+  </figure>
+
+  {{ $counts := dict }}
+  {{ range $all }}
+    {{ range .Params.tags }}
+      {{ $counts = merge $counts (dict . (add (index $counts . | default 0) 1)) }}
+    {{ end }}
+  {{ end }}
+  {{ $tags := slice }}
+  {{ range $tag, $n := $counts }}
+    {{ $tags = $tags | append (dict "tag" $tag "n" $n) }}
+  {{ end }}
+  <ul data-tags role="list">
+    {{ range first 24 (sort $tags "n" "desc") }}
+      {{ $tag := .tag }}
+      <li>{{ with site.GetPage "tags" $tag }}<a href="{{ .RelPermalink }}">{{ $tag }}</a>{{ else }}{{ $tag }}{{ end }} <small>{{ .n }}</small></li>
+    {{ end }}
+  </ul>
+
   {{ $groups := slice }}
-  {{ range (where site.RegularPages "Section" .Section).GroupByDate "2006" }}
+  {{ range $all.GroupByDate "2006" }}
     {{ $items := slice }}
 
     {{ range .Pages }}
@@ -11,7 +49,12 @@
         {{ $details = $details | append (dict "label" "Source" "value" (urls.Parse .).Host) }}
       {{ end }}
       {{ with .Params.tags }}
-        {{ $details = $details | append (dict "label" "Tags" "value" (delimit . ", ")) }}
+        {{ $links := slice }}
+        {{ range . }}
+          {{ $tag := . }}
+          {{ with site.GetPage "tags" $tag }}{{ $links = $links | append (printf `<a href="%s" rel="tag">%s</a>` .RelPermalink $tag) }}{{ end }}
+        {{ end }}
+        {{ $details = $details | append (dict "label" "Tags" "value" (delimit $links ", " | safeHTML)) }}
       {{ end }}
 
       {{ $items = $items | append (dict

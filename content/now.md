@@ -2,8 +2,7 @@
 description: Usually I am up to stuff and this page may hold the answers you seek
 lastmod: 2025-10-25
 slug: now
-tags:
-  - me
+toc: false
 title: Now
 ---
 Here's what I'm currently up to:
@@ -61,4 +60,3 @@ This new upgraded Framework has plenty of resources and I was even able to run [
 To date, I still haven't learned how to use tmux so perhaps it's finally time to take it for a spin.
 
 [^1]: I still need to write a blurb for the website...
-

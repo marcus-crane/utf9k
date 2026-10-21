@@ -3,8 +3,7 @@ category: about
 description: Learn a bit about me and what I do for a living
 lastmod: 2026-03-01
 slug: about
-tags:
-  - me
+toc: false
 title: About
 ---
 My name is Marcus Crane and you're logged on to my personal website!

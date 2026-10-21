@@ -3,12 +3,14 @@
 
   {{ $groups := slice }}
   {{ range hugo.Data.games }}
+    {{ $list := .list }}
     {{ $items := slice }}
     {{ range sort .games "title" "asc" }}
       {{ $items = $items | append (dict
-        "title" .title
-        "link"  .link
-        "image" (dict "src" .cover.url "width" 180 "height" 240 "alt" (printf "Box art for the game %s" .title))
+        "title"   .title
+        "link"    .link
+        "image"   (dict "src" .cover.url "width" 180 "height" 240 "alt" (printf "Box art for the game %s" .title))
+        "details" (slice (dict "label" "Status" "value" $list))
       ) }}
     {{ end }}
     {{ $groups = $groups | append (dict

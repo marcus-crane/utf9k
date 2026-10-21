@@ -12,16 +12,22 @@
       {{ $h := 240 }}
       {{ $w := math.Round (mul $h (div (float $m.cover_width) $m.cover_height)) }}
 
-      {{ $read := printf "%v %s read" $m.progress (cond (eq (int $m.progress) 1) "chapter" "chapters") }}
-      {{ with $m.chapters }}{{ $read = printf "%v / %v chapters read" $m.progress . }}{{ end }}
+      {{ $progress := dict }}
+      {{ $read := printf "%v %s" $m.progress (cond (eq (int $m.progress) 1) "chapter" "chapters") }}
+      {{ with $m.chapters }}
+        {{ $progress = dict "value" $m.progress "max" . }}
+        {{ $read = printf "%v of %v chapters" $m.progress . }}
+      {{ end }}
 
       {{ $items = $items | append (dict
-        "title" $m.title
-        "link"  $m.url
-        "image" (dict "src" $m.cover "width" $w "height" $h "alt" (printf "Cover of %s" $m.title))
+        "title"    $m.title
+        "link"     $m.url
+        "image"    (dict "src" $m.cover "width" $w "height" $h "alt" (printf "Cover of %s" $m.title))
+        "badge"    (printf "Ch. %v" $m.progress)
+        "progress" $progress
         "details" (slice
-          (dict "label" "Author"   "value" $m.author)
-          (dict "label" "Progress" "value" $read)
+          (dict "label" "Author" "value" $m.author)
+          (dict "label" "Progress" "value" $read "dialog" true)
         )
       ) }}
     {{ end }}

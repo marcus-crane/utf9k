@@ -3,8 +3,7 @@ category: thanks
 description: This website was built on the shoulders of giants. This page names a number of them.
 lastmod: 2023-06-16
 slug: thanks
-tags:
-  - meta
+toc: false
 title: Thanks
 ---
 There's no requirement on the internet to say thanks but I'd have absolutely no inspiration (or site) without the following.

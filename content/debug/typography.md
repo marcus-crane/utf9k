@@ -174,7 +174,7 @@ function blah(name) {
 
 ### Line Highlighting - Native
 
-```js {2,3}
+```js
 function blah(name) {
   console.warn("Hello")
   console.error("Goodbye")
