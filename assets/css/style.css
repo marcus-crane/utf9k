@@ -51,6 +51,8 @@
   }
 }
 
+/* Global settings */
+
 * {
   box-sizing: border-box;
 }
@@ -191,6 +193,8 @@ body[data-kind="page"] main {
   max-width: 680px;
 }
 
+/* Site banner */
+
 body > header {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +240,8 @@ body > header p {
 #menu-toggle {
   display: none;
 }
+
+/* Main navigation */
 
 #site-nav {
   display: flex;
@@ -301,7 +307,7 @@ body > header p {
 }
 
 #theme-switcher button[aria-pressed="true"] {
-  background: #eeef03;
+  background: #eef0e3;
   background: var(--tint);
   color: #292e25;
   color: var(--ink);
@@ -360,6 +366,8 @@ body > header p {
   }
 }
 
+/* Page metadata */
+
 main > header,
 article > header {
   margin-bottom: 20px;
@@ -388,6 +396,8 @@ article > header dd {
   margin-right: 12px;
 }
 
+/* Collections */
+
 main > section {
   margin: 0 0 28px;
 }
@@ -396,7 +406,7 @@ main > section > h2 {
   margin: 0;
   padding: 6px 10px;
   font: 500 13px/1.5 Verdana, Arial, sans-serif;
-  background: #eeef03;
+  background: #eef0e3;
   background: var(--tint);
   border: 1px solid #b8bba8;
   border-color: var(--line);
@@ -405,6 +415,8 @@ main > section > h2 {
 main > section > h2 small {
   float: right;
 }
+
+/* Lists (ie; blog posts) */
 
 main > section > ul {
   padding: 0;
@@ -433,14 +445,20 @@ main > section > ul > li > time {
   color: var(--muted)
 }
 
-body[data-section="books"] main > section > ul {
+/* Collection covers */
+
+body[data-section="books"] main > section > ul,
+body[data-section="manga"] main > section > ul
+body[data-section="games"] main > section > ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 16px 12px;
   padding: 12px;
 }
 
-body[data-section="books"] main > section > ul > li {
+body[data-section="books"] main > section > ul > li,
+body[data-section="manga"] main > section > ul > li
+body[data-section="games"] main > section > ul > li {
   padding: 0;
   border-top: 0;
 }
@@ -479,6 +497,86 @@ main > section article progress {
   height: 6px;
 }
 
+/* Front page mini-shelf */
+
+section[data-group="on-the-go"] > ul {
+  display: flex;
+  flex-wrap: flex;
+  gap: 16px 16px;
+  padding: 12px;
+}
+
+section[data-group="on-the-go"] > ul > li {
+  padding: 0;
+  border-top: 0;
+}
+
+section[data-group="on-the-go"] article h3 {
+  display: none;
+}
+
+section[data-group="on-the-go"] article img {
+  height: 126px;
+  width: auto;
+}
+
+section[data-group="on-the-go"] article dl {
+  margin-top: 6px;
+}
+
+section[data-group="on-the-go"] article dt {
+  display: none;
+}
+
+section[data-group="on-the-go"] article dd {
+  display: block;
+  margin: 0;
+  color: #626751;
+  color: var(--muted);
+}
+
+section[data-group="on-the-go"] article progress {
+  height: 4px;
+  margin-top: 4px;
+}
+
+nav[aria-labelledby="collections-heading"] ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  background: #b8b8b8;
+  background: var(--line);
+  border: 1px solid #b8b8b8;
+  border-color: var(--line);
+}
+
+nav[aria-labelledby="collections-heading"] li {
+  padding: 14px 16px;
+  background: #fffdf6;
+  background: var(--card);
+}
+
+nav[aria-labelledby="collections-heading"] li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav[aria-labelledby="collections-heading"] li b {
+  display: block;
+  font: 500 25px/1.1 Georgia, "Times New Roman", serif;
+  color: #292e25;
+  color: var(--ink);
+}
+
+nav[aria-labelledby="collections-heading"] li p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #626751;
+  color: var(--muted);
+}
+
+/* Typography */
+
 main > article {
   padding: 20px;
   font: 16px/1.7 Georgia, "Times New Roman", serif;
@@ -511,7 +609,7 @@ main > article li {
 main > article > details {
   margin: 0 0 20px;
   font: 13px/1.5 Verdana, Arial, sans-serif;
-  background: #eeef03;
+  background: #eef0e3;
   background: var(--tint);
   border: 1px solid #b8bba8;
   border-color: var(--line);
@@ -530,6 +628,105 @@ main > article > details ul {
   margin: 0;
 }
 
+blockquote {
+  margin: 18px 0;
+  padding: 2px 0 2px 16px;
+  border-left: 2px solid #b8b8b8;
+  border-left-color: var(--line);
+  color: #626751;
+  color: var(--muted);
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote[data-alert] {
+  padding: 12px 16px;
+  font: 14px/1.5 Verdana, Arial, sans-serif;
+  color: #292e25;
+  color: var(--ink);
+  background: #eef0e3;
+}
+
+blockquote[data-alert="warning"], blockquote[data-alert="caution"] {
+  border-left-color: #8a4329;
+  border-left-color: var(--refused);
+}
+
+code {
+  font: 13px ui-monospace, Consolas, Menlo, monospace;
+  background: #eef0e3;
+  background: var(--tint);
+  padding: 1px 4px;
+}
+
+pre {
+  margin: 18px 0;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.5;
+  background: #eef0e3;
+  background: var(--tint);
+  padding: 1px 4px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+figure {
+  margin: 18px 0;
+}
+
+figure img {
+  display: block;
+  border: 1px solid #b8b8b8;
+  border-color: var(--line);
+}
+
+figcaption {
+  margin-top: 5px;
+  font: 11px/1.5 Verdana, Arial, sans-serif;
+  color: #626751;
+  color: var(--muted);
+}
+
+main > article div[role="region"] {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+main > article table {
+  font: 12px/1.5 Verdana, Arial, sans-serif;
+  border: 1px solid #b8b8b8;
+  border-color: var(--line);
+}
+
+mark {
+  background: #e6ebc8;
+  padding: 0 3px;
+}
+
+kbd {
+  font: 12px ui-monospace, Consolas, Menlo, monospace;
+  padding: 0 5px;
+  background: #eef0e3;
+  background: var(--tint);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #b8bba8;
+  border-top-color: var(--line);
+}
+
 .footnotes {
   margin-top: 20px;
   padding-top: 12px;
@@ -537,6 +734,14 @@ main > article > details ul {
   border-top: 1px solid #b8bba8;
   border-top-color: var(--line);
 }
+
+.redacted {
+  background: #111;
+  color: transparent;
+  padding: 0 2px;
+}
+
+/* Footer */
 
 body > footer {
   display: flex;
@@ -556,3 +761,5 @@ body > footer h2 {
   color: #626751;
   color: var(--muted);
 }
+
+/* Cover viewer */
