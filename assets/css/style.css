@@ -48,7 +48,7 @@
   --tint: #31392a;
   --ink: #e6e9df;
   --muted: #b7bdaa;
-  --line: #525b49;
+  --line: #535b49;
   --link: #b3d3ad;
   --refused: #ebb397;
 }
@@ -61,7 +61,7 @@
     --tint: #31392a;
     --ink: #e6e9df;
     --muted: #b7bdaa;
-    --line: #525b49;
+    --line: #535b49;
     --link: #b3d3ad;
     --refused: #ebb397;
   }
@@ -268,7 +268,7 @@ body > header p {
   padding-bottom: 10px;
   border-bottom: 1px solid #b8bba8;
   border-color: var(--line);
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 #site-nav h2 {
@@ -490,6 +490,8 @@ main > section article h3 small {
 
 main > section article img {
   display: block;
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
 }
 
 main > section article dl {
@@ -518,7 +520,7 @@ main > section article progress {
 section[data-group="on-the-go"] > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 16px;
+  gap: 16px 14px;
   padding: 12px;
 }
 
