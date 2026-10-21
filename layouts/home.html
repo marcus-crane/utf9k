@@ -43,7 +43,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $manga := where hugo.Data.manga }}
+  {{ $manga := hugo.Data.manga }}
   {{ range first 3 (sort $manga "progress" "desc") }}
     {{ $h := 60 }}
     {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
@@ -58,6 +58,5 @@
         (dict "label" "Progress" "value" (printf "%v chapters" .progress) "dialog" true)
       )
     ) }}
-  {{ end }}
   {{ end }}
 {{ end }}
