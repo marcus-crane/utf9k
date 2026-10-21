@@ -763,3 +763,81 @@ body > footer h2 {
 }
 
 /* Cover viewer */
+dialog {
+  padding: 0;
+  max-width: 92vw;
+  background: #fffdf6;
+  background: var(--card);
+  color: #292e25;
+  color: var(--ink);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h3 {
+  margin: 0;
+  padding: 7px 12px;
+  font: 500 13px/1.5 Verdana, Arial, sans-serif;
+  background: #eef0e3;
+  background: var(--tint);
+  border-bottom: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+dialog h3 a {
+  color: #292e25;
+  color: var(--ink);
+}
+
+dialog h3 small {
+  display: block;
+  font-weight: small;
+}
+
+dialog img {
+  display: block;
+}
+
+dialog dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  font-size: 12px;
+  border-top: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+dialog dt {
+  padding: 7px 12px;
+  font-size: 11px;
+  background: #eef0e3;
+  background: var(--tint);
+  border-right: 1px solid #b8bba8;
+  border-bottom: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+dialog dd {
+  padding: 7px 12px;
+  border-bottom: 1px solid #b8bba8;
+  border-color: var(--line);
+}
+
+dialog progress {
+  height: 6px;
+  vertical-align: middle;
+}
+
+dialog button {
+  margin: 12px;
+  padding: 3px 10px;
+  background: #fffdf6;
+  background: var(--card);
+  color: #292e25;
+  color: var(--ink);
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
+}
