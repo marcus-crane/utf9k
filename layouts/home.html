@@ -22,7 +22,6 @@
       ) }}
     {{ end }}
   {{ end }}
-  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
 
   {{ $read := 0 }}
   {{ range hugo.Data.books }}
@@ -59,4 +58,7 @@
       )
     ) }}
   {{ end }}
+
+  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
+  {{ partial "live.html" . }}
 {{ end }}
