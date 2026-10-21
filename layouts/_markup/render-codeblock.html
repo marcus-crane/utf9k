@@ -1,0 +1,4 @@
+<figure data-code{{ with .Type }}="{{ . }}"{{ end }}>
+  {{ with .Type }}<figcaption>{{ . }}</figcaption>{{ end }}
+  <pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
+</figure>

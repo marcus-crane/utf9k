@@ -5,7 +5,7 @@ showDates: true
 dateFormat: "Jan 02, 2006"
 cascade:
   - build:
-      render: never
+      render: link
       list: always
     target:
       kind: page

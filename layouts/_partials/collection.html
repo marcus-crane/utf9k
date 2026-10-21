@@ -16,16 +16,18 @@
           {{ $src := replace .src "https://cdn.utf9k.net" "//cdn.utf9k.net" }}
           <a href="{{ $src }}"><img src="{{ $src }}?width={{ .width }}" srcset="{{ $src }}?width={{ mul .width 2 }} 2x" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy"></a>
         {{ end }}
-        {{ with .summary }}<p>{{ . }}</p>{{ end }}
+        {{ with .badge }}<b>{{ . }}</b>{{ end }}
+        {{ with .progress }}<progress value="{{ .value }}" max="{{ .max }}"></progress>{{ end }}
         {{ if or .date .details }}
         <dl>
           {{ with .date }}
           <dt>{{ $dateLabel }}</dt>
           <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time></dd>
           {{ end }}
-          {{ range .details }}<dt>{{ .label }}</dt><dd>{{ .value }}</dd>{{ end }}
+          {{ range .details }}<dt{{ if .dialog }} data-dialog{{ end }}>{{ .label }}</dt><dd{{ if .dialog }} data-dialog{{ end }}>{{ .value }}</dd>{{ end }}
         </dl>
         {{ end }}
+        {{ with .summary }}<p>{{ . }}</p>{{ end }}
       </article>
     </li>
     {{ end }}

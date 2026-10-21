@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+
+  {{ range slice "blog" "questions" "projects" "reviews" "oias" "bookmarks" }}
+    {{ $section := . }}
+    {{ $pages := where $.Pages "Section" $section }}
+    {{ with $pages }}
+    {{ $title := (site.GetPage $section).Title }}
+    <section data-group="{{ $section }}">
+      <h2>{{ $title }} <small>{{ len . }}</small></h2>
+      <ul role="list">
+        {{ range . }}
+          <li>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02" }}</time>
+            {{ if eq $section "bookmarks" }}
+              <a href="{{ .Params.link }}" rel="external">{{ .Title }}</a> <small>{{ (urls.Parse .Params.link).Host }}</small>
+            {{ else }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  {{ end }}
+{{ end }}

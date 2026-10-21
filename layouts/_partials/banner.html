@@ -26,10 +26,18 @@
       if (!bubble || !button || !button.addEventListener) return;
       var i = Math.floor(Math.random() * gags.length);
       bubble.textContent = gags[i];
-      button.addEventListener('click', function () {
-        i = (i + 1) % gags.length;
-        bubble.textContent = gags[i];
+      var header = button.parentNode;
+      button.addEventListener('click', function (event) {
+        event.stopPropagation();
+        if (bubble.offsetWidth > 0) {
+          i = (i + 1) % gags.length;
+          bubble.textContent = gags[i];
+        }
+        header.setAttribute('data-gag', '');
       }, false);
+      document.addEventListener('click', function () {
+        header.removeAttribute('data-gag');
+      })
     })();
 
     (function () {

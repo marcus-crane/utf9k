@@ -10,12 +10,14 @@
       {{ $h := 60 }}
       {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
       {{ $items = $items | append (dict
-        "title"   .title
-        "link"    .link
-        "image"   (dict "src" .cover "width" $w "height" $h "alt" (printf "Cover of %s" .title))
-        "details" (slice
+        "title"    .title
+        "link"     .link
+        "image"    (dict "src" .cover "width" $w "height" $h "alt" (printf "Cover of %s" .title))
+        "badge"    (printf "%v%%" .progress)
+        "progress" (dict "value" .progress "max" 100)
+        "details"  (slice
           (dict "label" "Kind" "value" "Reading")
-          (dict "label" "Progress" "value" (printf `<progress value="%v" max="100">%v%%</progress>` .progress .progress | safeHTML))
+          (dict "label" "Progress" "value" (printf "%v%%" .progress) "dialog" true)
         )
       ) }}
     {{ end }}

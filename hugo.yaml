@@ -47,7 +47,8 @@ menus:
 
 markup:
   highlight:
-    codeFences: false
+    codeFences: true
+    noClasses: false
   goldmark:
     parser:
       attribute:

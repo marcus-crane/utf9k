@@ -1,15 +1,14 @@
 {{ define "main" }}
+  {{ partial "header.html" . }}
   <article>
-    {{ partial "header.html" . }}
-
-    {{ with .Fragments.Headings }}
+    {{ if and .Fragments.Headings (ne .Params.toc false) }}
       <details>
         <summary>Contents</summary>
         {{ $.TableOfContents }}
       </details>
     {{ end }}
 
-    {{ .Content }}
+    {{ .Content | replaceRE `<div class="footnotes" role="doc-endnotes">\s*<hr>` `<div class="footnotes" role="doc-endnotes"><h2 id="footnotes">Footnotes</h2>` | safeHTML }}
 
     {{ if and (eq .Section "blog") (not .Draft) }}
     <script type="application/json">

@@ -5,21 +5,42 @@
   document.body.append(dialog);
 
   document.addEventListener('click', function (e) {
-    var cover = e.target.closest('main section article a > img');
-    if (!cover) return;
+    var img = e.target.closest('main a > img');
+    if (!img) return;
     e.preventDefault();
 
-    dialog.innerHTML = cover.closest('article').innerHTML + '<button type="button" autofocus>Close</button>';
-    dialog.setAttribute('aria-label', dialog.querySelector('h3').textContent.trim())
+    var card = img.closest('section article');
+    if (card) {
+      dialog.className = 'card';
+      dialog.innerHTML = card.innerHTML;
+      dialog.setAttribute('aria-label', dialog.querySelector('h3').textContent.trim());
+      var copy = dialog.querySelector('a > img');
+      copy.src = copy.parentNode.href;
+      copy.removeAttribute('srcset');
+      copy.removeAttribute('height');
+      copy.width = 320;
+      copy.parentNode.replaceWith(copy);
+    } else {
+      dialog.className = 'picture';
+      dialog.innerHTML = '';
+      dialog.setAttribute('aria-label', img.alt);
+      var full = document.createElement('img');
+      full.src = img.parentNode.href;
+      full.alt = img.alt;
+      dialog.append(full);
+      var figure = img.closest('figure');
+      var caption = null;
+      if (figure) {
+        caption = figure.querySelector('figcaption');
+      }
+      if (caption) {
+        var p = document.createElement('p');
+        p.innerHTML = caption.innerHTML;
+        dialog.append(p);
+      }
+    }
 
-    // We need to resolve a larger image for the viewer to render
-    var img = dialog.querySelector('a > img');
-    img.src = img.parentNode.href;
-    img.removeAttribute('srcset');
-    img.removeAttribute('height');
-    img.width = 320;
-    img.parentNode.replaceWith(img);
-
+    dialog.insertAdjacentHTML('beforeend', '<button type="button" aria-label="Close" autofocus>&times;</button>')
     dialog.showModal()
   });
 

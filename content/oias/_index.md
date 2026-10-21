@@ -1,6 +1,6 @@
 ---
-title: Favourite OIAs
-description: A curated collection of interesting Official Information Act requests
+title: Some of my favourite OIAs
+description: I really enjoyed reading these requests for varying reasons
 showDates: true
 dateFormat: "Jan 02, 2006"
 cascade:
