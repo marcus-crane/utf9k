@@ -34,10 +34,8 @@
       <ul role="list">
         {{ range $entries }}
           <li>
-            <a href="{{ .RelPermalink }}">
-              {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
-              {{ .Title }}
-            </a>
+            {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           </li>
         {{ end }}
       </ul>
