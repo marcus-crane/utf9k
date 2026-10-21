@@ -43,11 +43,27 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
+  --bg: #1b1e19;
+  --card: #22251f;
+  --tint: #31392a;
+  --ink: #e6e9df;
+  --muted: #b7bdaa;
+  --line: #525b49;
+  --link: #b3d3ad;
+  --refused: #ebb397;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
+    --bg: #1b1e19;
+    --card: #22251f;
+    --tint: #31392a;
+    --ink: #e6e9df;
+    --muted: #b7bdaa;
+    --line: #525b49;
+    --link: #b3d3ad;
+    --refused: #ebb397;
   }
 }
 
@@ -448,7 +464,7 @@ main > section > ul > li > time {
 /* Collection covers */
 
 body[data-section="books"] main > section > ul,
-body[data-section="manga"] main > section > ul
+body[data-section="manga"] main > section > ul,
 body[data-section="games"] main > section > ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -457,7 +473,7 @@ body[data-section="games"] main > section > ul {
 }
 
 body[data-section="books"] main > section > ul > li,
-body[data-section="manga"] main > section > ul > li
+body[data-section="manga"] main > section > ul > li,
 body[data-section="games"] main > section > ul > li {
   padding: 0;
   border-top: 0;
@@ -501,7 +517,7 @@ main > section article progress {
 
 section[data-group="on-the-go"] > ul {
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   gap: 16px 16px;
   padding: 12px;
 }
@@ -544,9 +560,9 @@ nav[aria-labelledby="collections-heading"] ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1px;
-  background: #b8b8b8;
+  background: #b8bba8;
   background: var(--line);
-  border: 1px solid #b8b8b8;
+  border: 1px solid #b8bba8;
   border-color: var(--line);
 }
 
@@ -631,7 +647,7 @@ main > article > details ul {
 blockquote {
   margin: 18px 0;
   padding: 2px 0 2px 16px;
-  border-left: 2px solid #b8b8b8;
+  border-left: 2px solid #b8bba8;
   border-left-color: var(--line);
   color: #626751;
   color: var(--muted);
@@ -647,6 +663,9 @@ blockquote[data-alert] {
   color: #292e25;
   color: var(--ink);
   background: #eef0e3;
+  background: var(--tint);
+  border-left: 3px solid #375947;
+  border-left-color: var(--link);
 }
 
 blockquote[data-alert="warning"], blockquote[data-alert="caution"] {
@@ -669,7 +688,8 @@ pre {
   line-height: 1.5;
   background: #eef0e3;
   background: var(--tint);
-  padding: 1px 4px;
+  border: 1px solid #b8bba8;
+  border-color: var(--line);
 }
 
 pre code {
@@ -684,7 +704,7 @@ figure {
 
 figure img {
   display: block;
-  border: 1px solid #b8b8b8;
+  border: 1px solid #b8bba8;
   border-color: var(--line);
 }
 
@@ -702,7 +722,7 @@ main > article div[role="region"] {
 
 main > article table {
   font: 12px/1.5 Verdana, Arial, sans-serif;
-  border: 1px solid #b8b8b8;
+  border: 1px solid #b8bba8;
   border-color: var(--line);
 }
 
@@ -795,11 +815,12 @@ dialog h3 a {
 
 dialog h3 small {
   display: block;
-  font-weight: small;
+  font-weight: normal;
 }
 
 dialog img {
   display: block;
+  margin: 16px auto;
 }
 
 dialog dl {
