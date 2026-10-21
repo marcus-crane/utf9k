@@ -26,19 +26,30 @@
     {{ end }}
   {{ end }}
 
-  {{ range $groups }}
-    {{ $name := .name }}
-    {{ $entries := .entries }}
-    <section{{ with $name }} data-group="{{ . | urlize }}"{{ end }}>
-      {{ with $name }}<h2>{{ . }} <small>{{ len $entries }} {{ cond (eq (len $entries) 1) $noun (pluralize $noun) }}</small></h2>{{ end }}
-      <ul role="list">
-        {{ range $entries }}
-          <li>
-            {{ if $showDates }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>{{ end }}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </li>
+  {{ $extra := .Params.extraColumn }}
+  {{ $cols := 1 }}
+  {{ if $showDates }}{{ $cols = add $cols 1 }}{{ end }}
+  {{ if $extra }}{{ $cols = add $cols 1 }}{{ end }}
+
+  <table>
+    {{ range $groups }}
+      {{ $name := .name }}
+      {{ $entries := .entries }}
+      <tbody{{ with $name }} data-group="{{ . | urlize }}"{{ end }}>
+        {{ with $name }}
+        <tr>
+          <th scope="rowgroup" colspan="{{ $cols }}">{{ . }} <small>{{ len $entries }} {{ cond (eq (len $entries) 1) $noun (pluralize $noun) }}</small></th>
+        </tr>
         {{ end }}
-      </ul>
-    </section>
-  {{ end }}
+        {{ range $entries }}
+        {{ $entry := . }}
+        <tr>
+          {{ if $showDates }}<td><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time></td>{{ end }}
+          <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+          {{ with $extra }}{{ $v := index $entry.Params .param }}<td{{ with $v }} data-{{ $extra.param }}="{{ . | urlize }}"{{ end }}>{{ $v }}</td>{{ end }}
+        </tr>
+        {{ end }}
+      </tbody>
+    {{ end }}
+  </table>
 {{ end }}

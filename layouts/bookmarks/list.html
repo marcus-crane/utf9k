@@ -34,7 +34,8 @@
   {{ end }}
   <ul data-tags role="list">
     {{ range first 24 (sort $tags "n" "desc") }}
-      <li>{{ .tag }} <small>{{ .n }}</small></li>
+      {{ $tag := .tag }}
+      <li>{{ with site.GetPage "tags" $tag }}<a href="{{ .RelPermalink }}">{{ $tag }}</a>{{ else }}{{ $tag }}{{ end }} <small>{{ .n }}</small></li>
     {{ end }}
   </ul>
 

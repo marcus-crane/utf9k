@@ -1,0 +1,39 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  {{ .Content }}
+
+  {{ $labels := .Params.drawers | default dict }}
+  {{ $all := where site.RegularPages "Section" .Section }}
+
+  {{ $counts := dict }}
+  {{ range $all }}
+    {{ $tool := index (split .File.ContentBaseName "-") 0 }}
+    {{ $counts = merge $counts (dict $tool (add (index $counts $tool | default 0) 1)) }}
+  {{ end }}
+
+  {{ $drawers := slice }}
+  {{ $rest := slice }}
+  {{ range $tool, $n := $counts }}
+    {{ $pages := where $all "File.ContentBaseName" "like" (printf "^%s-" $tool) }}
+    {{ if gt $n 1 }}
+      {{ $drawers = $drawers | append (dict "name" (index $labels $tool | default ($tool | title)) "n" $n "pages" $pages) }}
+    {{ else }}
+      {{ $rest = $rest | append $pages }}
+    {{ end }}
+  {{ end }}
+  {{ $drawers = sort $drawers "n" "desc" }}
+  {{ with $rest }}
+    {{ $drawers = $drawers | append (dict "name" "Everything else" "n" (len .) "pages" (sort . "Title")) }}
+  {{ end }}
+
+  <div data-drawers>
+    {{ range $i, $d := $drawers }}
+    <details{{ if eq $i 0 }} open{{ end }}>
+      <summary>{{ $d.name }} <b>{{ $d.n }}</b></summary>
+      <ul role="list">
+        {{ range $d.pages }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+      </ul>
+    </details>
+    {{ end }}
+  </div>
+{{ end }}
