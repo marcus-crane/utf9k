@@ -59,6 +59,6 @@
     ) }}
   {{ end }}
 
-  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
   {{ partial "live.html" . }}
+  {{ partial "collection.html" (dict "page" . "groups" (slice (dict "name" "On the go" "items" $items))) }}
 {{ end }}
