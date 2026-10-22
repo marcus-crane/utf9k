@@ -72,7 +72,9 @@
     {{ partial "theme-switcher.html" . }}
   </head>
   <body data-section="{{ .Section }}" data-kind="{{ .Kind }}">
-    <div data-lamp aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    {{ if .IsHome }}
+      <div data-lamp aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    {{ end }}
     {{ partial "banner.html" (dict "icon" (dict "src" $favicon "alt" $faviconAlt)) }}
     <nav id="site-nav">
       {{ with .Fragments.Headings }}
@@ -97,8 +99,10 @@
     {{ with resources.Get "js/image-viewer.js" | js.Build (dict "target" $opts.target "minify" (not hugo.IsDevelopment)) | fingerprint }}
       <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
     {{ end }}
-    {{ with resources.Get "js/live-player.js" | js.Build (dict "target" $opts.target "minify" (not hugo.IsDevelopment)) | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+    {{ if .IsHome }}
+      {{ with resources.Get "js/live-player.js" | js.Build (dict "target" $opts.target "minify" (not hugo.IsDevelopment)) | fingerprint }}
+        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+      {{ end }}
     {{ end }}
   </body>
 </html>
