@@ -44,12 +44,12 @@
 
   {{ $manga := hugo.Data.manga }}
   {{ range first 3 (sort $manga "progress" "desc") }}
-    {{ $h := 60 }}
+    {{ $h := 126 }}
     {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
     {{ $items = $items | append (dict
       "title"   .title
       "link"    .url
-      "image"   (dict "src" .cover "width" $w "height" $w "alt" (printf "Cover of %s" .title))
+      "image"   (dict "src" .cover "width" $w "height" $h "alt" (printf "Cover of %s" .title))
       "badge"   (printf "Ch. %v" .progress)
       "details" (slice
         (dict "label" "Kind" "value" "Reading")
