@@ -1212,6 +1212,7 @@ td time {
   bottom: -30%;
   border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
   animation: lamp-rise ease-in-out infinite alternate, lamp-wobble 13s ease-in-out infinite;
+  transition: background-color 3s;
 }
 
 [data-lamp] i:nth-child(1) { left: -5%; width: 40%; height: 65%; background: var(--c1); animation-duration: 29s, 13s; }
