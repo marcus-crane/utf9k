@@ -43,7 +43,7 @@ jobs:
       - name: Generate metadata and build site
         run: ./ci/deploy.sh
         env:
-          BROWSERLESS_API_URL: ${{ secrets.BROWSERLESS_URL }}
+          BROWSERLESS_URL: ${{ secrets.BROWSERLESS_URL }}
           BROWSERLESS_TOKEN: ${{ secrets.BROWSERLESS_TOKEN }}
       - name: Publish to Bunny CDN
         uses: BunnyWay/actions/deploy-site@deploy-site_0.1.2
