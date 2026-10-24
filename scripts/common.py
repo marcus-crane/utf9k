@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import re
 
+import requests
 import yaml
 
 try:
@@ -12,8 +13,40 @@ except ImportError:
 CUR_DIR = os.path.dirname(os.path.realpath(__file__))
 CONTENT_FILES = f"{CUR_DIR}/../content"
 
+BROWSERLESS_FUNCTION = """export default async function ({ page, context }) {
+  if (context.cookies.length) { await page.setCookie(...context.cookies); }
+  await page.goto(context.url, { waitUntil: "domcontentloaded", timeout: 30000 });
+  await page.waitForFunction((t) => !document.title.includes(t), { timeout: 60000 }, context.waitTitle);
+  await page.waitForSelector("body", { timeout: 10000 });
+  return { data: { html: await page.content(), cookies: await page.cookies() }, type: "application/json" };
+}"""
+
+browserless_cookies = []
+
 METADATA_REGEX = "(?:---\\n?)(.*)(?:\\n?)---"
 IMAGE_SRC_REGEX = "src=\"(.*)\""
+
+def fetch_with_browser(url: str, wait_title: str = "not a bot"):
+    # If we run into a site using something like Anubis, we should be able to solve it
+    # since we're using a real browser but we want to wait for the title to appear
+    # so we know that the puzzle is solved. We also keep cookies so future requests
+    # don't need to incur the same wait for solving.
+    global browserless_cookies
+    api_url = os.environ["BROWSERLESS_API_URL"].rstrip("/")
+    r = requests.post(
+        f"{api_url}/function",
+        params={"stealth": "true", "timeout": 100000},
+        headers={"Authorization": f"Bearer {os.environ['BROWSERLESS_TOKEN']}"},
+        json={
+            "code": BROWSERLESS_FUNCTION,
+            "context": {"url": url, "cookies": browserless_cookies, "waitTitle": wait_title},
+        },
+        timeout=120,
+    )
+    r.raise_for_status()
+    data = r.json()["data"]
+    browserless_cookies = data["cookies"]
+    return data["html"]
 
 def walk_content_folder(path: str, ext: str):
     matches = set()

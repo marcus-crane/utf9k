@@ -1,8 +1,9 @@
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
-import requests
 from ruamel.yaml import YAML
+
+from common import fetch_with_browser
 
 def represent_none(self, data):
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
@@ -16,10 +17,6 @@ PLAYING_URL = "https://www.backloggd.com/u/utf9k/playing/"
 COMPLETED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:completed/"
 SHELVED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:played;game_status:shelved/"
 BACKLOGGED_URL = "https://www.backloggd.com/u/utf9k/games/added/type:backlog/"
-
-headers = {
-    "User-Agent": "utf9k Personal Game Sync <https://github.com/marcus-crane/utf9k>"
-}
 
 lists = [
     {
@@ -42,8 +39,7 @@ lists = [
 
 def _iterate_list_page(url, list_idx, page=1):
     page_url = f"{url}?page={page}"
-    r = requests.get(page_url, headers=headers)
-    soup = BeautifulSoup(r.text, 'html.parser')
+    soup = BeautifulSoup(fetch_with_browser(page_url), 'html.parser')
     games = soup.find(id="game-lists").find_all("div", {"class": "card"})
     print(page_url)
     for game in games:
@@ -64,7 +60,9 @@ def _iterate_list_page(url, list_idx, page=1):
             },
         })
 
-    has_next_page = 'aria-disabled' not in soup.select('a[aria-label="Next"]')[0].attrs.keys()
+    # Lists that fit on one page have no Next link at all
+    next_links = soup.select('a[aria-label="Next"]')
+    has_next_page = next_links and 'aria-disabled' not in next_links[0].attrs.keys()
     if has_next_page:
         _iterate_list_page(url, list_idx, page=page+1)
 
