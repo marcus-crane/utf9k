@@ -6,10 +6,22 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30735-P31qXacg4eOc.jpg",
     "cover_height": 563,
     "cover_width": 400,
-    "progress": 1,
+    "progress": 4,
     "status": "RELEASING",
     "title": "BLACK LAGOON",
     "url": "https://anilist.co/manga/30735"
+  },
+  {
+    "author": "Takeshi Obata",
+    "chapters": 108,
+    "color": "#f1e4ae",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30021-FE6kmrfpuKyb.jpg",
+    "cover_height": 726,
+    "cover_width": 460,
+    "progress": 74,
+    "status": "FINISHED",
+    "title": "DEATH NOTE",
+    "url": "https://anilist.co/manga/30021"
   },
   {
     "author": "Tooru Kuramori",
@@ -18,7 +30,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 226,
+    "progress": 241,
     "status": "RELEASING",
     "title": "Dandadan",
     "url": "https://anilist.co/manga/132029"
@@ -66,13 +78,13 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx150378-cClKErwmvgsv.jpg",
     "cover_height": 723,
     "cover_width": 460,
-    "progress": 32,
+    "progress": 35,
     "status": "RELEASING",
     "title": "Gokurakugai",
     "url": "https://anilist.co/manga/150378"
   },
   {
-    "author": "Aline Kukor",
+    "author": "Blanca Mira",
     "chapters": null,
     "color": "#d6351a",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx169355-5pqzh1Wb4NOQ.png",
@@ -90,10 +102,22 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx45104-zaeEuCksF6xx.jpg",
     "cover_height": 714,
     "cover_width": 460,
-    "progress": 1,
+    "progress": 2,
     "status": "FINISHED",
     "title": "Kingdom Hearts: 358/2 Days",
     "url": "https://anilist.co/manga/45104"
+  },
+  {
+    "author": "Shiro Amano",
+    "chapters": 13,
+    "color": "#e4d628",
+    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30397-05ZjcMKVLbk6.jpg",
+    "cover_height": 717,
+    "cover_width": 460,
+    "progress": 6,
+    "status": "FINISHED",
+    "title": "Kingdom Hearts: Chain of Memories",
+    "url": "https://anilist.co/manga/30397"
   },
   {
     "author": "Akihito Tsukushi",
@@ -102,7 +126,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86551-0EzmsMZiPSu9.jpg",
     "cover_height": 650,
     "cover_width": 460,
-    "progress": 71,
+    "progress": 74,
     "status": "RELEASING",
     "title": "Made in Abyss",
     "url": "https://anilist.co/manga/86551"
@@ -114,7 +138,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
     "cover_height": 717,
     "cover_width": 460,
-    "progress": 1174,
+    "progress": 1194,
     "status": "RELEASING",
     "title": "ONE PIECE",
     "url": "https://anilist.co/manga/30013"
@@ -144,13 +168,13 @@
     "url": "https://anilist.co/manga/32389"
   },
   {
-    "author": "Jinushi",
+    "author": "Asaka Takishima",
     "chapters": null,
     "color": "#f16b50",
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147149-9DQ4upJAV2kQ.jpg",
     "cover_height": 654,
     "cover_width": 460,
-    "progress": 51,
+    "progress": 65,
     "status": "RELEASING",
     "title": "Super no Ura de Yani Suu Futari",
     "url": "https://anilist.co/manga/147149"
@@ -162,7 +186,7 @@
     "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101942-yjslDpT6XcpK.jpg",
     "cover_height": 660,
     "cover_width": 460,
-    "progress": 79,
+    "progress": 85,
     "status": "RELEASING",
     "title": "Tengoku Daimakyou",
     "url": "https://anilist.co/manga/101942"
