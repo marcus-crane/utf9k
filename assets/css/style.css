@@ -730,11 +730,6 @@ section[data-group="on-the-go"] article > b {
   border-radius: 3px;
 }
 
-section[data-group="on-the-go"] article > progress {
-  border-radius: 0 0 3px 3px;
-  overflow: hidden;
-}
-
 section[data-group="on-the-go"] article dl {
   margin-top: 6px;
 }

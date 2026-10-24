@@ -17,7 +17,6 @@
           <a href="{{ $src }}"><img src="{{ $src }}?width={{ .width }}" srcset="{{ $src }}?width={{ mul .width 2 }} 2x" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" loading="lazy"></a>
         {{ end }}
         {{ with .badge }}<b>{{ . }}</b>{{ end }}
-        {{ with .progress }}<progress value="{{ .value }}" max="{{ .max }}"></progress>{{ end }}
         {{ if or .date .details }}
         <dl>
           {{ with .date }}

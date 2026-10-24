@@ -7,7 +7,7 @@
   {{ $items := slice }}
   {{ range (index hugo.Data.books 0).books }}
     {{ if not .date_finished }}
-      {{ $h := 60 }}
+      {{ $h := 126 }}
       {{ $w := math.Round (mul $h (div (float .cover_width) .cover_height)) }}
       {{ $items = $items | append (dict
         "title"    .title
@@ -35,7 +35,7 @@
         {{ $items = $items | append (dict
           "title"   .title
           "link"    .link
-          "image"   (dict "src" .cover.url "width" 45 "height" 60 "alt" (printf "Box art for %s" .title))
+          "image"   (dict "src" .cover.url "width" 95 "height" 126 "alt" (printf "Box art for %s" .title))
           "details" (slice (dict "label" "Kind" "value" "Playing"))
         ) }}
       {{ end }}
