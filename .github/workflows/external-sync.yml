@@ -26,7 +26,7 @@ jobs:
       - name: Sync data from external sources
         run: ./ci/externalsync.sh
         env:
-          BROWSERLESS_API_URL: ${{ secrets.BROWSERLESS_API_URL }}
+          BROWSERLESS_API_URL: ${{ secrets.BROWSERLESS_URL }}
           BROWSERLESS_TOKEN: ${{ secrets.BROWSERLESS_TOKEN }}
       - name: Check for early exit
         run: |

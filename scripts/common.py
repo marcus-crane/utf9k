@@ -32,7 +32,7 @@ def fetch_with_browser(url: str, wait_title: str = "not a bot"):
     # so we know that the puzzle is solved. We also keep cookies so future requests
     # don't need to incur the same wait for solving.
     global browserless_cookies
-    api_url = os.environ["BROWSERLESS_API_URL"].rstrip("/")
+    api_url = os.environ["BROWSERLESS_URL"].rstrip("/")
     r = requests.post(
         f"{api_url}/function",
         params={"stealth": "true", "timeout": 100000},
