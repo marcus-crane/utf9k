@@ -51,7 +51,7 @@ jobs:
           site: utf9k
           directory: public
           api_key: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
-          cli_version: "0.20"
+          cli_version: "0.20.0"
       - name: Purge retro pull zone
         env:
           BUNNY_API_KEY: ${{ secrets.BUNNY_GLOBAL_API_KEY }}
