@@ -1,24 +1,17 @@
 - list: Playing
   games:
-  - id: 214986
-    title: Kingdom Hearts Re:Chain of Memories
-    link: https://www.backloggd.com/games/kingdom-hearts-re-chain-of-memories--1/
+  - id: 8254
+    title: Resident Evil
+    link: https://www.backloggd.com/games/resident-evil--3/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co8m1q.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1taw.jpg
       width: 720
       height: 540
-  - id: 146564
-    title: Needy Streamer Overload
-    link: https://www.backloggd.com/games/needy-streamer-overload/
+  - id: 224629
+    title: Lost and Found Co.
+    link: https://www.backloggd.com/games/lost-and-found-co/
     cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co57rh.jpg
-      width: 720
-      height: 540
-  - id: 134612
-    title: Pragmata
-    link: https://www.backloggd.com/games/pragmata/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/cobxnx.jpg
+      url: https://images.igdb.com/igdb/image/upload/t_720p/coco0l.jpg
       width: 720
       height: 540
 - list: Backlog
