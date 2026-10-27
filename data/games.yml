@@ -1,12 +1,5 @@
 - list: Playing
   games:
-  - id: 8254
-    title: Resident Evil
-    link: https://www.backloggd.com/games/resident-evil--3/
-    cover:
-      url: https://images.igdb.com/igdb/image/upload/t_720p/co1taw.jpg
-      width: 720
-      height: 540
   - id: 224629
     title: Lost and Found Co.
     link: https://www.backloggd.com/games/lost-and-found-co/
@@ -905,6 +898,13 @@
     link: https://www.backloggd.com/games/sly-cooper-and-the-thievius-raccoonus--1/
     cover:
       url: https://images.igdb.com/igdb/image/upload/t_720p/cobxrf.jpg
+      width: 720
+      height: 540
+  - id: 8254
+    title: Resident Evil
+    link: https://www.backloggd.com/games/resident-evil--3/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1taw.jpg
       width: 720
       height: 540
   - id: 1885
