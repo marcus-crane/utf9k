@@ -1,7 +1,7 @@
 ---
 category: about
 description: Learn a bit about me and what I do for a living
-lastmod: 2026-03-01
+lastmod: 2026-10-27
 slug: about
 toc: false
 title: About
