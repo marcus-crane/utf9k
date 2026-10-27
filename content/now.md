@@ -1,62 +1,46 @@
 ---
 description: Usually I am up to stuff and this page may hold the answers you seek
-lastmod: 2025-10-25
+lastmod: 2026-10-27
 slug: now
 toc: false
 title: Now
 ---
 Here's what I'm currently up to:
 
-## 6 months at Halter
+## Continuing to plug away at Halter
 
-I wrote this 2 months ago and it's only true now!
+The last time I updated this page, I had been at my current job for 6 months and now it's like a year and 3 months!
 
-I'm coming up to 7 months at the start of January but I feel like I'm in a time void or something. I've learnt so much in the latter half of this year that it feels like multiple years have passed at this point.
+Time at Halter is weird where a week feels like a year and we're growing so fast that there are always lots of new faces.
 
-## Christmas Break
+There's always a variety of interesting problems so trying to not get sucked into them and actually doing other stuff is always a balance depending on your personality.
 
-I've had a few smaller breaks here and there but this will be my first break longer than a week in quite some time I think.
+## FYI
 
-The last time I had a multi-week shutdown over the holiday period must have been quite a number of years ago because it's a struggle to even recall when the last time was.
+As a long time user of [FYI](https://fyi.org.nz), I've finally been around long enough to start picking up some janitor work behind the scenes.
 
-Admittedly, my worry is that I'm going to waste it all away scrolling so I aim to maximise the holiday period and churn through as many projects as I can!
+There isn't too much to say other than there's a lot of technical debt to pay off but I think one of the hardest issues has been solved so hopefully that gets the ball rolling on the rest of the dominoes required to get everything nice and tidied up.
 
-## This Website
+It'll be a fairly long road though and nothing worth celebrating until much more work has been put in.
 
-Every so often, I think I'll sit down and do a big redesign of the site. I've taken a few stabs and nothing in particular has stuck.
+I think it's a pretty important site though so I'm glad to be playing a small part.
 
-I've had a couple of comments that people like the site layout but I think it could have even more personality so perhaps I'll just focus on polishing various parts.
+## Reading
 
-Some of the typography can do with a fresh pass and there are a number of pages on the site that aren't actually linked anywhere.
+I've been trying to make a dent in my physical bookshelf after skewing towards reading digital books for so long.
 
-Surprisingly, I even have a few ideas for posts in my head as well so maybe I'll write one or two over the break.
+It's kind of working, partly thanks to an unannounced app that I've been closed beta testing for a while, but I actually misplaced one of the books I was reading[^1] so that definitely does not make things easier.
 
-It's an overcooked genre but I would like to capture my thoughts on the whole AI boom, not because I think I have any special insight but because I think it'd be interesting to revisit my thoughts when we're 5 or 10 years down the track, regardless of what the final outcome is.
+## Beeminder
 
-I say that yet I almost never re-read my old posts so we'll see.
+As a somewhat [experienced](https://utf9k.net/blog/lessons-beeminder-year-one/) user of Beeminder, I kind of fell off pretty hard towards the end of this year in part due to work travels but I think also just due to having an extrinsic motivation framework for so long.
 
-## NZCCL
+If I remember, part of my advice in that linked post was to always be wary of tasks you start to be resentful of so in keeping with that, I did archive quite a few goals. That said, the actual meta-goal of beeminding unstuck so I would tend to derail on something I did and have to do the slog of appealing[^2] which is just creating more chores for myself.
 
-It's not publicly mentioned yet[^1] but I joined the Executive Committee for the [New Zealand Council for Civil Liberties](https://nzccl.org.nz/) last month.
+I'm considering just closing down most of my goals for a bit to take some sort of extended break to re-evaluate my relationship with it.
 
-I had already been attending their monthly meetings and doing the odd bit of volunteer work so functionally, nothing changes there. I just get a fancy sounding title.
+There's probably some constant back and forth with intrinsic vs extrinsic goals to be found and I'm swinging more towards "Maybe I should just not do stuff I don't want to do for a while".
 
-While I have some spare time over the holidays, I'll be aiming to read up on some of the upcoming legislation as well as doing some improvements on the tech side.
+[^1]: It's quite a small paperback
 
-## RSS
-
-I'm a fairly heavy user of [NewsBlur](https://newsblur.com/) but it's time to do a prune.
-
-There are some information sources I don't care about anymore, others I just don't seem to have as much time for so I'm going to try and min/max the noise to signal ratio once again.
-
-The same goes for my article backlog. I end up with too much *stuff* that realistically I won't get around to.
-
-## Framework
-
-I recently got a 13 inch Framework for use at work. Until now, I'd been using a 13-inch Macbook Pro but I kept running out of memory as it *only* had 16GB of RAM.
-
-This new upgraded Framework has plenty of resources and I was even able to run [EndeavourOS](https://endeavouros.com/) on it to match my home desktop.
-
-To date, I still haven't learned how to use tmux so perhaps it's finally time to take it for a spin.
-
-[^1]: I still need to write a blurb for the website...
+[^2]: No issues with the support team!
