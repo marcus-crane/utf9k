@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 421540
+    title: 'Deleted Wiki: Clean Up the Lost Files'
+    link: https://www.backloggd.com/games/deleted-wiki-clean-up-the-lost-files/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cod23g.jpg
+      width: 720
+      height: 540
   - id: 19686
     title: Resident Evil 2
     link: https://www.backloggd.com/games/resident-evil-2--1/
