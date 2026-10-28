@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 19686
+    title: Resident Evil 2
+    link: https://www.backloggd.com/games/resident-evil-2--1/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/co1ir3.jpg
+      width: 720
+      height: 540
   - id: 224629
     title: Lost and Found Co.
     link: https://www.backloggd.com/games/lost-and-found-co/
