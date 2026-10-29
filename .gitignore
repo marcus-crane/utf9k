@@ -8,3 +8,4 @@ books.csv
 public
 .claude
 .obsidian
+__pycache__
