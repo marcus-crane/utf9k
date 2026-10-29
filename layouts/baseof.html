@@ -20,8 +20,8 @@
       media="(prefers-color-scheme: dark)"
     />
     <meta name="author" content="{{ .Site.Params.author.name }}" />
-    {{ if .Params.keywords }}
-    <meta name="keywords" content='{{ delimit .Params.keywords ", " }}' />
+    {{ if .Keywords }}
+    <meta name="keywords" content='{{ delimit .Keywords ", " }}' />
     {{ end }}
     <meta
       name="description"
