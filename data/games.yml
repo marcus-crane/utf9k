@@ -1,5 +1,12 @@
 - list: Playing
   games:
+  - id: 52189
+    title: Grand Theft Auto VI
+    link: https://www.backloggd.com/games/grand-theft-auto-vi/
+    cover:
+      url: https://images.igdb.com/igdb/image/upload/t_720p/cocv1v.jpg
+      width: 720
+      height: 540
   - id: 19686
     title: Resident Evil 2
     link: https://www.backloggd.com/games/resident-evil-2--1/
